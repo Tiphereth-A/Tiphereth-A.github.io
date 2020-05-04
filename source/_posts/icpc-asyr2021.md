@@ -1,0 +1,866 @@
+---
+title: 题解 - 2021 ICPC 亚洲区域赛(沈阳)
+categories:
+  - 程序设计
+  - 题解
+  - ICPC
+tags:
+  - 程序设计
+  - 题解
+  - ICPC
+  - 算法
+  - 启发式算法
+  - 数学
+  - 数据结构
+  - 字符串
+  - DP
+  - 打表
+  - 搜索
+  - 模拟
+  - 图论
+  - 计算几何
+  - 组合数学
+  - 线性代数
+  - 概率
+  - 期望
+  - 容斥定理
+  - Cramer法则
+  - 复数
+  - 最短路
+  - 二分图
+  - 匹配
+  - 完美匹配
+  - 最大边权匹配
+  - 线图
+  - 割边/桥
+  - Tarjan算法
+  - Duval算法
+  - 剪枝
+  - DFS
+  - BFS
+  - IDA*
+  - 树形DP
+  - 并查集
+  - 后缀数组
+  - 后缀自动机
+  - Lyndon分解
+  - KMP
+date: 2021-11-21 19:33:27
+---
+
+要 素 过 多
+
+~~图不错, 建议下回多搞点~~
+
+[比赛链接](https://ac.nowcoder.com/acm/contest/24346)
+
+<!-- more -->
+
+## 题目概览
+
+| 题号[^1] | 标题                             | 做法                         |
+| -------- | -------------------------------- | ---------------------------- |
+| \*A      | A Bite of Teyvat                 |                              |
+| B        | Bitwise Exclusive-OR Sequence    | 图论 + 并查集                |
+| \*C      | Cards of Magic                   | 概率 DP                      |
+| \*D      | Cross the Maze                   |                              |
+| E        | Edward Gaming, the Champion      | 签到                         |
+| F        | Encoded Strings I                | 签到 (模拟)                  |
+| \*G      | Encoded Strings II               |                              |
+| H        | Line Graph Matching              | Tarjan (割边)                |
+| I        | Linear Fractional Transformation | 解线性方程组                 |
+| J        | Luggage Lock                     | BFS / IDA\* / ... / 打表     |
+| \*K      | Matrix Operations                | 复杂的数据结构, 先鸽了       |
+| L        | Perfect Matchings                | 容斥定理 + 树形 DP           |
+| M        | String Problem                   | SA / SAM / Lyndon 分解 / KMP |
+
+[^1]: 打\*的是还没写题解的题
+
+[官方题解](official_solutions.pptx)
+
+{% pdf /article/icpc-asyr2021/problems.pdf 600px %}
+
+## A - A Bite of Teyvat
+
+### 题意简述
+
+### 解题思路
+
+### 复杂度
+
+### 代码参考
+
+<details>
+<summary><font color='orange'>Show code</font></summary>
+
+```cpp
+
+```
+
+</details>
+
+## B - Bitwise Exclusive-OR Sequence
+
+### 题意简述
+
+对一个数组 $\{\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n}\}$, 给出 $m$ 条限制, 均为 $a_u\oplus a_v=w$, 其中 $\oplus$ 为异或, 问满足限制条件的数组的和最小为多少, 不存在时输出 `-1`
+
+### 解题思路
+
+对每一位分别判断, 将所有限制为 0 的条件都抽出来, 并将其对应端点在并查集里合并, 然后将限制为 1 的条件对应端点在并查集中 `find` 得到的点间连边, 之后找环, 如果找到了含奇数个结点的环就说明条件间有冲突, 直接结束即可, 否则按 dfs 序统计奇偶结点对应并查集秩的大小之和, 将较小的赋为 1 即可
+
+判环用 dfs 即可
+
+### 复杂度
+
+$O((m\alpha(n)+n)\log\max w)$
+
+### 代码参考
+
+<details>
+<summary><font color='orange'>Show code</font></summary>
+
+```cpp
+#include <bits/stdc++.h>
+using namespace std;
+const int N = 2e5 + 5, M = 4e5 + 5;
+
+struct Edge {
+    int to, next;
+} e[M];
+int head[N], cnt_e;
+
+void addEdge(int u, int v) {
+    e[++cnt_e] = {v, head[u]};
+    head[u] = cnt_e;
+}
+
+#define _for_graph(i, now) for (int i = head[now], v = e[i].to; i; v = e[i = e[i].next].to)
+
+int fa[N];
+int64_t sz[N];
+int find(int x) {
+    if (x == fa[x]) return x;
+    int rt = find(fa[x]);
+    return fa[x] = rt;
+}
+void merge(int u, int v) {
+    int fu = find(u), fv = find(v);
+    if (fu == fv) return;
+    fa[fu] = fv;
+    sz[fv] += sz[fu];
+}
+
+struct Node {
+    int u, v, w;
+} q[N];
+
+bool vis[N];
+int64_t sum[2];
+int endp;
+bool res;
+void dfs(int now, int fa, int idx) {
+    if (vis[now]) {
+        if (now != endp) return;
+        res = !idx;
+        return;
+    }
+    vis[now] = 1;
+    sum[idx] += sz[now];
+    _for_graph(i, now) {
+        if (v == fa) continue;
+        dfs(v, now, idx ^ 1);
+    }
+}
+
+int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+    cout.tie(nullptr);
+    int n, m;
+    cin >> n >> m;
+    for (int i = 1; i <= m; ++i) cin >> q[i].u >> q[i].v >> q[i].w;
+    int maxw = 0;
+    for (int i = 1; i <= m; ++i) maxw = max(maxw, q[i].w);
+
+    int64_t ans = 0;
+    for (int dig = 30; dig >= 0; --dig) {
+        int64_t now = 1ll << dig;
+        if (now > maxw) continue;
+        memset(head, 0, sizeof(head[0]) * (n + 1));
+        memset(vis, 0, sizeof(vis[0]) * (n + 1));
+        cnt_e = 0;
+        for (int i = 1; i <= n; ++i) sz[fa[i] = i] = 1;
+        for (int i = 1; i <= m; ++i)
+            if (!(q[i].w & now)) merge(q[i].u, q[i].v);
+        for (int i = 1; i <= m; ++i)
+            if (q[i].w & now) {
+                addEdge(find(q[i].u), find(q[i].v));
+                addEdge(find(q[i].v), find(q[i].u));
+            }
+        for (int i = 1; i <= n; ++i)
+            if (!vis[i]) {
+                res = 1;
+                dfs(endp = i, sum[0] = sum[1] = 0, 0);
+                if (!res) {
+                    cout << "-1";
+                    return 0;
+                }
+                ans += min(sum[0], sum[1]) * now;
+            }
+    }
+    cout << ans;
+}
+```
+
+</details>
+
+## C - Cards of Magic
+
+### 题意简述
+
+有一个 HP 为 $n$ 的敌人, 你每回合会等概率获得如下三张卡片的一种
+
+- 水人卡: 使用后召唤一个永久存在的水人, 之后你每使用一张牌, 水人都会对敌人造成 1 点伤害, 水人在场上最多只能存在一个 (即若在水人存在的情况下使用水人卡, 则只会对敌人造成 1 点伤害)
+- 火球卡: 使用后对敌人造成 2 点伤害
+- 复制卡: 使用后可以获得一张之前使用过的卡, 如果之前没有使用过卡片则不能使用
+
+你每回合可以使用任意张卡 (包括 0 张), 问在采取最优决策的条件下, 击败敌人 (即将敌人的 HP 变为非负数) 的回合数的期望
+
+### 解题思路
+
+显然是个概率 DP 了, 我们先整理一下最优决策
+
+- 若抽到了水人卡, 则直接使用
+- 若场上不存在水人, 则除非当前手牌可以一波带走, 否则跳过本回合
+- 若场上存在水人
+  - 若抽到了火球卡, 则直接使用, 造成 3 点伤害
+  - 若抽到了复制卡
+    - 若使用过复制卡, 则直接复制复制卡套娃即可
+    - 若使用过火球卡, 则复制火球卡, 造成 4 点伤害
+    - 若复制卡和火球卡都没使用过
+      - 若当前敌人 HP <= 2, 则复制水人卡, 造成 2 点伤害
+      - 否则跳过本回合
+
+画出来大概是这样的
+
+```mermaid
+graph LR;
+v000[0,0,0]
+v001[0,0,1]
+v010[0,1,0]
+v011[0,1,1]
+v100[1,0,0]
+v101[1,0,1]
+v102[1,0,2]
+v110[1,1,0]
+v111[1,1,1]
+v112[1,1,2]
+v000-->v001 & v010 & v100
+v001-->v101 & v011
+v010-->v010 & v110 & v011
+v100-->v100 & v101 & v110
+v011-->v011 & v111
+v101-->v101 & v111 & v102
+v110-->v110 & v111
+v111-->v111 & v112
+```
+
+不管你晕没晕, 反正我晕了
+
+### 复杂度
+
+### 代码参考
+
+<details>
+<summary><font color='orange'>Show code</font></summary>
+
+```cpp
+
+```
+
+</details>
+
+## D - Cross the Maze
+
+### 题意简述
+
+### 解题思路
+
+### 复杂度
+
+### 代码参考
+
+<details>
+<summary><font color='orange'>Show code</font></summary>
+
+```cpp
+
+```
+
+</details>
+
+## E - Edward Gaming, the Champion
+
+Python 一行 `print(input().count('edgnb'))` 即可
+
+## F - Encoded Strings I
+
+### 题意简述
+
+对字符串 $S$, 定义如下函数
+
+- $r_S(c)$ 为字符 $c$ 在 $S$ 中最后一次出现的下标, 即 `find_last_of`
+- $F_S(c):=\operatorname{chr}(|\{x\in S\mid r_S(x)>r_S(c)\}|)$, 其中 $\operatorname{chr}(i)$ 为第 $i+1$ 个小写英文字母, 即 `i + 'a'`
+
+令 $T_S$ 为将 $S$ 的所有字符 $c$ 同时用 $F_S(c)$ 替换后得到的字符串, 对 $S$ 的全部前缀 $\operatorname{Pre}(S)$, 求
+
+$$\max_{S'\in\operatorname{Pre}(S)}T_{S'}$$
+
+### 解题思路
+
+数据规模小, 直接模拟一遍即可
+
+### 复杂度
+
+$O(n^2)$
+
+### 代码参考
+
+<details>
+<summary><font color='orange'>Show code</font></summary>
+
+```cpp
+#include <bits/stdc++.h>
+using namespace std;
+
+#define _for(i, l, r, vals...) for (decltype(l + r) i = (l), i##end = (r), ##vals; i <= i##end; ++i)
+#define _rfor(i, r, l, vals...) for (make_signed_t<decltype(r - l)> i = (r), i##end = (l), ##vals; i >= i##end; --i)
+
+const int N = 1000 + 7;
+int n, bucket[N], a[N], to[N];
+string str, pre[N];
+void f(const string& s, string& res) {
+    int cnt = 0;
+    _for(i, 'a', 'z') bucket[i] = to[i] = a[i] = 0;
+    n = s.size();
+    _rfor(i, n - 1, 0) if (!bucket[s[i]]) {
+        bucket[s[i]]++;
+        a[s[i]] = cnt++;
+    }
+    _for(i, 'a', 'z') to[i] = 'a' + a[i];
+    res = s;
+    _for(i, 0, n) res[i] = to[s[i]];
+}
+
+int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+    cout.tie(nullptr);
+
+    cin >> n >> str;
+    string _;
+    _for(i, 0, n - 1) f(_ += str[i], pre[i]);
+    sort(pre, pre + n, greater<string>());
+    cout << pre[0];
+    return 0;
+}
+```
+
+</details>
+
+## G - Encoded Strings II
+
+### 题意简述
+
+### 解题思路
+
+### 复杂度
+
+### 代码参考
+
+<details>
+<summary><font color='orange'>Show code</font></summary>
+
+```cpp
+
+```
+
+</details>
+
+## H - Line Graph Matching
+
+### 题意简述
+
+给出一个简单带权无向连通图, 求其线图的最大权匹配对应的权值和
+
+### 解题思路
+
+结论题
+
+显然, 线图的匹配对应到原图即为若干条路径
+
+因为原图是简单且连通的, 所以
+
+- 如果原图的边为偶数条, 则线图的任意一个最大匹配的权值和就是原图所有边的权值和
+- 如果原图的边为奇数条, 则线图最大匹配的权值和就是原图所有边中排除某条边后的权值和, 可以排除的边需要满足以下条件之一
+  - 非割边
+  - 割边, 且删去这条边之后的两个子图的边均为偶数条 (否则将删去更多边, 就不是最大匹配了)
+
+### 复杂度
+
+$O(n+m)$
+
+### 代码参考
+
+<details>
+<summary><font color='orange'>Show code</font></summary>
+
+```cpp
+#include <bits/stdc++.h>
+using namespace std;
+using i64 = int64_t;
+using u64 = uint64_t;
+
+const int N = 1e5 + 5, M = 4e5 + 5;
+struct Edge {
+    int64_t w;
+    int to, next;
+    Edge(int64_t _w = 0, int _to = 0, int _next = 0) : w(_w), to(_to), next(_next) {}
+} e[M];
+int head[N], cnt_edge;
+void addEdge(int x, int y, int64_t w = 1) {
+    e[++cnt_edge] = Edge(w, y, head[x]);
+    head[x] = cnt_edge;
+}
+
+#define _for_graph(head, e, i, now) for (int i = head[now], to = e[i].to; i; to = e[i = e[i].next].to)
+#define _for(i, l, r, vals...) for (decltype(l + r) i = (l), i##end = (r), ##vals; i <= i##end; ++i)
+
+i64 w;
+
+int low[N], dfn[N], cnt_dfs;
+int cnt[N];
+void tarjan(int u, int fa = 0) {
+    low[u] = dfn[u] = ++cnt_dfs;
+    cnt[u] = 0;
+    _for_graph(head, e, i, u) {
+        ++cnt[to];
+        if (to == fa) continue;
+        if (!dfn[to]) {
+            tarjan(to, u);
+            low[u] = min(low[u], low[to]);
+            cnt[u] += cnt[to];
+        } else
+            low[u] = min(low[u], dfn[to]);
+        if (low[to] > dfn[u]) {
+            if (cnt[to] % 2 == 0) w = min(w, e[i].w);
+        } else
+            w = min(w, e[i].w);
+    }
+}
+
+int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+    cout.tie(nullptr);
+
+    int n, m;
+    cin >> n >> m;
+    int u, v;
+    i64 sum = 0;
+    if (m % 2 == 0) {
+        _for(i, 1, m) {
+            cin >> u >> v >> w;
+            sum += w;
+        }
+        cout << sum;
+        return 0;
+    }
+    _for(i, 1, m) {
+        cin >> u >> v >> w;
+        addEdge(u, v, w);
+        addEdge(v, u, w);
+        sum += w;
+    }
+    w = INT64_MAX;
+    tarjan(1);
+    cout << sum - w;
+    return 0;
+}
+```
+
+</details>
+
+## I - Linear Fractional Transformation
+
+### 题意简述
+
+给定一个在 $\Complex$ 上的函数
+$$f(z)=\frac{az+b}{cz+d},~a,b,c,d\in\Complex^{\infty}$$
+
+又给定其上的三个点 $(z_i,w_i)$, $i=1,2,3$, 给出复数 $z_0$, 问 $f(z_0)$ 为多少
+
+### 解题思路
+
+> 不知道为啥没人做这题, 明明是签到题啊
+
+#### 法一
+
+首先我们假设 $c\ne 0$, 此时在分式上下同时除 $c$, 变为
+
+$$f(z)=\frac{a'z+b'}{z+d'}$$
+
+然后把三个点代入, 即有
+
+$$
+\begin{cases}
+  z_ia'+b'-w_id'=z_iw_i\\
+  i=1,2,3
+\end{cases}
+$$
+
+如果该方程可解, 那我们直接用 Cramer 法则就做完了, 否则说明 $c=0$, 此时我们在分式上下同时除 $d$, 变为
+
+$$f(z)=a'z+b'$$
+
+解法同上, 这个更好解一些
+
+由于题目保证了这三个点互不相同, 故一定有解
+
+另外复数直接用 C++ 自带的 `complex` 类即可
+
+#### 法二
+
+分式线性变换保交比, 即
+
+$$\frac{(z_0-z_1)(z_3-z_2)}{(z_0-z_2)(z_3-z_1)}=\frac{(w_0-w_1)(w_3-w_2)}{(w_0-w_2)(w_3-w_1)}$$
+
+~~简单的代数知识~~
+
+### 代码参考 (法一)
+
+<details>
+<summary><font color='orange'>Show code</font></summary>
+
+```cpp
+#include <bits/stdc++.h>
+using namespace std;
+using ldb = long double;
+using C = complex<ldb>;
+ldb eps = 1e-8;
+
+int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+    cout.tie(nullptr);
+
+    int t;
+    cin >> t;
+    cout << fixed << setprecision(12);
+    while (t--) {
+        ldb p, q, r, s;
+        cin >> p >> q >> r >> s;
+        C x1(p, q), w1(r, s);
+        cin >> p >> q >> r >> s;
+        C x2(p, q), w2(r, s);
+        cin >> p >> q >> r >> s;
+        C x3(p, q), w3(r, s);
+        cin >> p >> q;
+        C x0(p, q);
+
+        auto divr = -x1 * (w2 - w3) + x2 * (w1 - w3) - x3 * (w1 - w2);
+        if (abs(divr.real()) >= eps || abs(divr.imag()) >= eps) {
+            C a, b, d;
+            a = -w1 * x1 * (w2 - w3) + w2 * x2 * (w1 - w3) - w3 * x3 * (w1 - w2);
+            d = x1 * (w2 * x2 - w3 * x3) - x2 * (w1 * x1 - w3 * x3) + x3 * (w1 * x1 - w2 * x2);
+            b = x1 * w2 * w3 * (x2 - x3) - x2 * w1 * w3 * (x1 - x3) + x3 * w1 * w2 * (x1 - x2);
+            a /= divr;
+            b /= divr;
+            d /= divr;
+            C w0 = (a * x0 + b) / (x0 + d);
+            cout << w0.real() << ' ' << w0.imag() << '\n';
+        } else {
+            C a, b;
+            divr = x1 - x2;
+            a = (w1 - w2) / divr;
+            b = (x1 * w2 - x2 * w1) / divr;
+            C w0 = a * x0 + b;
+            cout << w0.real() << ' ' << w0.imag() << '\n';
+        }
+    }
+}
+```
+
+</details>
+
+## J - Luggage Lock
+
+### 题意简述
+
+有一个四位数的轮盘, 每次操作你可以选取一段相邻的圆盘使其同时顺时针或逆时针转一下 (即在 $\Z_{10}$ 中加 1 或减 1), 问从状态 $S$ 转到状态 $T$ 至少要几步
+
+### 解题思路
+
+<!-- VSCode 的代码格式化让我们喜提赛时代码长度第一 -->
+
+首先我们以状态为点, 两相邻状态为边建图, 此时答案即为点 $S$ 到点 $T$ 的最短路长度
+
+我们定义两点间的减法为每一位分别在 $\Z_{10}$ 下做减法
+
+此时我们发现点 S 到点 T 实际上就是从点 `0000` 到点 $T-S$ 的最短路
+
+然后就随便做了
+
+我们也可以把点 `0000` 到所有点的最短路打个表, 因为最短路长度一定不会超过 $20$ (实际上如果你跑一遍 Floyd 就能发现上确界是 $12$), 所以无论是空间还是代码长度都满足要求
+
+### 代码参考
+
+<details>
+<summary><font color='orange'>Show code</font></summary>
+
+```cpp
+#include <bits/stdc++.h>
+using namespace std;
+
+const int _[] = {
+    // shortest distance from 0000 to all vertices
+};
+
+#define __(x) (((x) + 10) % 10)
+
+int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+    cout.tie(nullptr);
+
+    int _t;
+    cin >> _t;
+    while (_t--) {
+        int a, b;
+        cin >> a >> b;
+        int idx = 1000 * __(b / 1000 - a / 1000) + 100 * __(b % 1000 / 100 - a % 1000 / 100) + 10 * __(b % 100 / 10 - a % 100 / 10) + __(b % 10 - a % 10);
+        cout << _[idx] << '\n';
+    }
+}
+```
+
+</details>
+
+## K - Matrix Operations
+
+### 题意简述
+
+### 解题思路
+
+### 复杂度
+
+### 代码参考
+
+<details>
+<summary><font color='orange'>Show code</font></summary>
+
+```cpp
+
+```
+
+</details>
+
+## L - Perfect Matchings
+
+### 题意简述
+
+给出 $2n$ 个结点的完全图, 在删除能构成一棵树的 $2n-1$ 条边后, 问该图中的完美匹配方案数
+
+### 解题思路
+
+令 $f_n$ 表示 $2n$ 个结点的完美匹配方案数, 则
+
+$$f_n=\frac{1}{n!}\prod_{i=1}^n\binom{2i}{2}=\frac{(2n)!}{2^nn!}$$
+
+不难得出 $f_n=(2n-1)f_{n-1}$
+
+设在删除的那棵树上选了至少 $k$ 条合法边后的方案数为 $g_n(k)$, 根据容斥原理可得最终所求为
+
+$$\sum_{k=0}^{k=n}(-1)^kg_n(k)$$
+
+接下来考虑用树形 DP 求 $g_n(k)$
+
+令
+
+- $R$ 为删除的树的根结点
+- $h_i(r,j)$ 表示在以结点 $r$ 为根的子树上选择 $j$ 条合法边时的方案总数, 其中 $i=0,1$ 表示选择的边中是否包含结点 $r$
+- $h(r,j)=h_0(r,j)+h_1(r,j)$
+- $S(r)$ 表示以结点 $r$ 为根的子树中的所有非根结点
+- $s(r)=|S(r)|+1$ 表示以结点 $r$ 为根的子树的大小
+
+则
+
+$$g_n(k)=f_{n-k}(h_0(R,k)+h_1(R,k))$$
+
+注意到 $k$ 条合法边包含 $2k$ 个结点, 所以状态转移方程如下
+
+$$
+h_0(r,j)=\begin{cases}
+  0,&j<0\\
+  1,&j=0\\
+  \displaystyle\sum_{u\in S(r)}\sum_{t=1}^{\lfloor\frac{s(u)}{2}\rfloor}h(u,t)h_0(r,j-t),&j>0\\
+\end{cases}
+$$
+
+$$
+h_1(r,j)=\begin{cases}
+  0,&j\leqslant 0\\
+  \displaystyle\sum_{u\in S(r)}\left(h_0(r,j-1)+\sum_{t=1}^{\lfloor\frac{s(u)}{2}\rfloor}\left(h(u,t)h_1(r,j-t)+h_0(u,t)h_0(r,j-t-1)\right)\right),&j>0\\
+\end{cases}
+$$
+
+注意转移结束后更新 $s(r)$, 否则复杂度会出错
+
+### 复杂度
+
+$O(n^2)$
+
+### 代码参考
+
+<details>
+<summary><font color='orange'>Show code</font></summary>
+
+```cpp
+#include <bits/stdc++.h>
+using namespace std;
+using i64 = int64_t;
+
+const int N = 4e3 + 5, M = 1e4 + 5;
+struct Edge {
+    int to, next;
+    Edge(int _to = 0, int _next = 0) : to(_to), next(_next) {}
+} e[M];
+int head[N], cnt_edge;
+void addEdge(int x, int y) {
+    e[++cnt_edge] = Edge(y, head[x]);
+    head[x] = cnt_edge;
+}
+
+#define _for_graph(i, now) for (int i = head[now], to = e[i].to; i; to = e[i = e[i].next].to)
+#define _for(i, l, r, vals...) for (decltype(l + r) i = (l), i##end = (r), ##vals; i <= i##end; ++i)
+#define _rfor(i, r, l, vals...) for (make_signed_t<decltype(r - l)> i = (r), i##end = (l), ##vals; i >= i##end; --i)
+
+const int mod = 998244353;
+
+i64 dp[N][N][2];
+int sz[N];
+void dfs(int now, int fa) {
+    sz[now] = dp[now][0][0] = 1;
+    _for_graph(i, now) {
+        if (to == fa) continue;
+        dfs(to, now);
+        _rfor(j, sz[now] / 2, 0) _for(t, 0, sz[to] / 2) {
+            if (t) {
+                (dp[now][j + t][0] += (dp[to][t][0] + dp[to][t][1]) * dp[now][j][0]) %= mod;
+                (dp[now][j + t][1] += (dp[to][t][0] + dp[to][t][1]) * dp[now][j][1]) %= mod;
+            }
+            (dp[now][j + t + 1][1] += dp[to][t][0] * dp[now][j][0]) %= mod;
+        }
+        sz[now] += sz[to];
+    }
+}
+
+i64 f[N];
+int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+    cout.tie(nullptr);
+
+    int n;
+    cin >> n;
+    _for(i, 1, 2 * n - 1, x, y) {
+        cin >> x >> y;
+        addEdge(x, y);
+        addEdge(y, x);
+    }
+    i64 ans = 0;
+    dfs(1, 0);
+    f[0] = 1;
+    _for(i, 1, n) f[i] = f[i - 1] * (2 * i - 1) % mod;
+    _for(i, 0, n, sign = 1) {
+        (ans += sign * (dp[1][i][0] + dp[1][i][1]) * f[n - i]) %= mod;
+        sign *= -1;
+    }
+    cout << (ans + mod) % mod;
+    return 0;
+}
+```
+
+</details>
+
+## M - String Problem
+
+### 题意简述
+
+找给定字符串 $s$ 所有前缀的最大后缀
+
+### 解题思路
+
+这里只讲 Lyndon 分解的做法
+
+为方便起见, 我们改一下 Lyndon 串的定义: 若一个字符串 $s$ 的所有非平凡后缀都比 $s$ **小**, 则称 $s$ 为 Lyndon 串
+
+我们用 Duval 算法求出给定字符串的 Lyndon 分解, 并用 `l[]` 存 Lyndon 串的左边界, 注意我们在这里修改了 Lyndon 串的定义, 所以 Duval 算法里的小于号应该改为大于号
+
+显然, 之后我们要找的最大后缀左边界一定在 `l[]` 中且随遍历顺序单调递增, 右边界即为当前前缀的右边界
+
+我们用 `idx` 来记录当前选择的 `l[]` 下标, 在考虑下一个前缀时, 如果该前缀右边界比当前后缀的左边界大, 说明我们要增加 `idx` 了, 只需要让其对应的后缀是第一个比前缀右边界大即可
+
+### 复杂度
+
+$O(|s|)$
+
+### 代码参考
+
+<details>
+<summary><font color='orange'>Show code</font></summary>
+
+```cpp
+#include <bits/stdc++.h>
+using namespace std;
+const int N = 1e6 + 5;
+#define _for(i, l, r, vals...) for (decltype(l + r) i = (l), i##end = (r), ##vals; i <= i##end; ++i)
+
+int l[N], cnt_l;
+char s[N];
+int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+    cout.tie(nullptr);
+
+    cin >> (s + 1);
+    int n = strlen(s + 1);
+
+    // Duval
+    for (int i = 1, j, k; i <= n;) {
+        k = (j = i) + 1;
+        while (k <= n && s[j] >= s[k]) {
+            j = (s[j] == s[k]) ? j + 1 : i;
+            ++k;
+        }
+        while (i <= j) {
+            l[cnt_l++] = i;
+            i += k - j;
+        }
+    }
+
+    l[cnt_l++] = n + 1;
+    l[cnt_l++] = n + 1;
+    _for(i, 1, n, idx = 0) {
+        if (i >= l[idx + 1] && s[i] > s[i - l[idx + 1] + l[idx]]) {
+            while (l[idx + 1] <= i) ++idx;
+            if (s[i] <= s[i - l[idx] + l[idx - 1]]) --idx;
+        }
+        cout << l[idx] << ' ' << i << '\n';
+    }
+    return 0;
+}
+```
+
+</details>

@@ -1,0 +1,12 @@
+.DS_Store
+Thumbs.db
+db.json
+*.log
+*.code-workspace
+
+node_modules/
+public/
+.deploy*/
+_multiconfig.yml
+.vscode/
+source/_drafts/
