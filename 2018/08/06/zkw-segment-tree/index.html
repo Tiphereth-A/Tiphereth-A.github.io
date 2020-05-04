@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"tiphereth-a.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="又叫堆式线段树, 是一种简单的常数优化 老文章, 可能有很多错误, 懒得修了">
+<meta property="og:type" content="article">
+<meta property="og:title" content="&lt;洛谷日报#35&gt;线段树的扩展之浅谈zkw线段树">
+<meta property="og:url" content="https://tiphereth-a.github.io/2018/08/06/zkw-segment-tree/index.html">
+<meta property="og:site_name" content="Tiphereth&#39;s Blog">
+<meta property="og:description" content="又叫堆式线段树, 是一种简单的常数优化 老文章, 可能有很多错误, 懒得修了">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://tiphereth-a.github.io/2018/08/06/zkw-segment-tree/zkw-segment-tree/seg0_4.png">
+<meta property="og:image" content="https://tiphereth-a.github.io/2018/08/06/zkw-segment-tree/zkw-segment-tree/seg0_5.png">
+<meta property="og:image" content="https://tiphereth-a.github.io/2018/08/06/zkw-segment-tree/zkw-segment-tree/seg1_6.png">
+<meta property="og:image" content="https://tiphereth-a.github.io/2018/08/06/zkw-segment-tree/zkw-segment-tree/seg1_7.png">
+<meta property="og:image" content="https://tiphereth-a.github.io/2018/08/06/zkw-segment-tree/zkw-segment-tree/seg1_8.png">
+<meta property="og:image" content="https://tiphereth-a.github.io/2018/08/06/zkw-segment-tree/zkw-segment-tree/seg1_9.png">
+<meta property="og:image" content="https://tiphereth-a.github.io/2018/08/06/zkw-segment-tree/zkw-segment-tree/seg2_2.png">
+<meta property="og:image" content="https://tiphereth-a.github.io/2018/08/06/zkw-segment-tree/zkw-segment-tree/seg2_3.png">
+<meta property="og:image" content="https://tiphereth-a.github.io/2018/08/06/zkw-segment-tree/zkw-segment-tree/seg2_3.png">
+<meta property="article:published_time" content="2018-08-06T11:22:55.000Z">
+<meta property="article:modified_time" content="2020-05-04T14:13:39.869Z">
+<meta property="article:author" content="Tiphereth">
+<meta property="article:tag" content="程序设计">
+<meta property="article:tag" content="洛谷日报">
+<meta property="article:tag" content="数据结构">
+<meta property="article:tag" content="线段树">
+<meta property="article:tag" content="笔记">
+<meta property="article:tag" content="zkw线段树">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://tiphereth-a.github.io/2018/08/06/zkw-segment-tree/zkw-segment-tree/seg0_4.png">
+
+<link rel="canonical" href="https://tiphereth-a.github.io/2018/08/06/zkw-segment-tree/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title><洛谷日报#35>线段树的扩展之浅谈zkw线段树 | Tiphereth's Blog</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Tiphereth's Blog</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://tiphereth-a.github.io/2018/08/06/zkw-segment-tree/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Tiphereth">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Tiphereth's Blog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          <洛谷日报#35>线段树的扩展之浅谈zkw线段树
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2018-08-06 19:22:55" itemprop="dateCreated datePublished" datetime="2018-08-06T19:22:55+08:00">2018-08-06</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-05-04 22:13:39" itemprop="dateModified" datetime="2020-05-04T22:13:39+08:00">2020-05-04</time>
+              </span>
+
+          
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>又叫堆式线段树, 是一种简单的常数优化</p>
+<p>老文章, 可能有很多错误, 懒得修了</p>
+<a id="more"></a>
+<h1 id="阅读本文前请先阅读"><a href="#阅读本文前请先阅读" class="headerlink" title="阅读本文前请先阅读:"></a>阅读本文前请先阅读:</h1><ul>
+<li><a href="https://pks-loving.blog.luogu.com.cn/senior-data-structure-qian-tan-xian-duan-shu-segment-tree" target="_blank" rel="noopener">【洛谷日报#4】浅谈线段树(Segment Tree)</a></li>
+</ul>
+<p>本文主要是上面文章的延伸, 所以上文有讲的东西本文就不详细讲了QwQ</p>
+<p>笔者的测试代码可能写丑了, 所以如果慢请自行卡常QwQ</p>
+<p>这里还是以RSQ为例</p>
+<h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><p>简单来说, zkw线段树就是<strong>非递归式</strong>线段树</p>
+<p>众所周知, 普通线段树的常数很大, 经常被卡, 而zkw线段树的常数很小</p>
+<p>这里用<a href="https://www.luogu.com.cn/problem/P3372" target="_blank" rel="noopener">洛谷P3372</a>做一个演示(更详细的补充见文末)</p>
+<p><strong>普通线段树</strong><a href="https://www.luogu.com.cn/record/9389075" target="_blank" rel="noopener">R9389075</a></p>
+<p><img src="zkw-segment-tree/seg0_4.png" alt=""></p>
+<p><strong>zkw线段树</strong><a href="https://www.luogu.com.cn/record/9388963" target="_blank" rel="noopener">R9388963</a></p>
+<p><img src="zkw-segment-tree/seg0_5.png" alt=""></p>
+<p>前者运行时间是后者运行时间的<strong>2.05</strong>倍！Σ(°Д°;</p>
+<p><strong>详细测试见后文</strong></p>
+<p>其实zkw线段树不仅快, 而且码量小, 空间小, 好调试<del>吊打普通线段树</del>orz</p>
+<p>而普通线段树的优点则是方便理解与学习, 并且适用范围更广(zkw线段树<strong>不能处理有运算优先级的问题</strong>, 如<a href="https://www.luogu.com.cn/problem/P3373" target="_blank" rel="noopener">洛谷P3373</a>)</p>
+<h1 id="实现"><a href="#实现" class="headerlink" title="实现"></a>实现</h1><p>我们观察一下普通线段树的代码, 很容易就会发现:无论是建树、修改还是查询, 都是<strong>自顶向下</strong>的.</p>
+<p>zkw线段树则正好反过来, 即<strong>自底向上</strong></p>
+<p>具体来说, 就是先把线段树填充成满二叉树(堆式存储), 之后就可以直接找到叶节点, 然后回溯上去了</p>
+<p>听起来好像很简单QwQ</p>
+<p>其实真的很简单QwQ</p>
+<h2 id="建树"><a href="#建树" class="headerlink" title="建树"></a>建树</h2><p>首先是定义变量:<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> MAXN = <span class="number">2e5</span> + <span class="number">5</span>;</span><br><span class="line"><span class="keyword">int</span> tree[MAXN&lt;&lt;<span class="number">2</span>]; <span class="comment">//tree是线段树数组</span></span><br><span class="line"><span class="keyword">int</span> n, N=<span class="number">1</span>;        <span class="comment">//n是原数组实际长度, N下面会解释</span></span><br></pre></td></tr></table></figure></p>
+<p>我们以下图为例</p>
+<p><img src="zkw-segment-tree/seg1_6.png" alt=""></p>
+<p>(由<a href="https://visualgo.net/zh/segmenttree" target="_blank" rel="noopener">visualgo</a>生成. 为便于讲解, 笔者做了一些改动)</p>
+<p>下面的黄圈是原数据, 黄圈下面的红色数字是原数组的下标</p>
+<p>上面的树就是线段树了, 每一个节点内部都是节点下方标明的区间中所有元素的总和, 上边的黑色数字就是线段树的下标</p>
+<p><strong>visualgo生成的数组下标默认是从0开始的, 所以线段树下的区间和原数组有错位, 请注意区分<del>(笔者懒得改了</del></strong></p>
+<p>通过观察, 我们发现一个规律:线段树对应叶子节点的下标和原数组的下标的差值是恒定的($8-1=9-2=…=15-8=7$)</p>
+<p>这个差值就是一个和<code>N</code>很接近的数了(<code>N</code>是叶子节点数)</p>
+<blockquote>
+<p>实际上, $N=2^{\lceil\log_2{(n+1)}\rceil}$</p>
+</blockquote>
+<p>根据这一点, 我们可以这样建树:</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">define</span> fp(i,l,r) for(register int i=(l);i&lt;=(r);++i)</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> fd(i,r,l) for(register int i=(r);i&gt;=(l);--i)</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">build</span><span class="params">()</span> </span>&#123;</span><br><span class="line">  <span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;n);</span><br><span class="line">  <span class="keyword">for</span>(; N &lt;= n+<span class="number">1</span>; N &lt;&lt;= <span class="number">1</span>);</span><br><span class="line">  fp(i, N+<span class="number">1</span>, N+n) <span class="built_in">scanf</span>(<span class="string">"%d"</span>, tree+i); <span class="comment">// 等价于scanf("%d", &amp;tree[i])</span></span><br><span class="line">  fd(i, N<span class="number">-1</span>, <span class="number">1</span>) tree[i] = tree[i &lt;&lt; <span class="number">1</span>] + tree[i &lt;&lt; <span class="number">1</span> | <span class="number">1</span>]; <span class="comment">// 等价于tree[i] = tree[i*2] + tree[i*2 + 1]</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>大家可以和递归版线段树做一下对比</p>
+<p>有细心的读者可能发现了:上例计算出的<code>N</code>是<code>16</code>而不是<code>8</code>!</p>
+<p>还有, 原数组在线段树对应的为止整体向后平移了1位！</p>
+<p>其实这都是为了方便查找</p>
+<p>后面再详细解释</p>
+<h2 id="单点修改-区间查询-amp-区间修改-区间查询"><a href="#单点修改-区间查询-amp-区间修改-区间查询" class="headerlink" title="单点修改+区间查询&amp;区间修改+区间查询"></a>单点修改+区间查询&amp;区间修改+区间查询</h2><h3 id="单点修改-区间查询"><a href="#单点修改-区间查询" class="headerlink" title="单点修改+区间查询"></a>单点修改+区间查询</h3><h4 id="单点修改"><a href="#单点修改" class="headerlink" title="单点修改"></a>单点修改</h4><p>实现很简单, 所以直接放代码<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">modify</span><span class="params">(<span class="keyword">int</span> x, <span class="keyword">int</span> k)</span> </span>&#123;</span><br><span class="line">  <span class="keyword">for</span>(x += N; x; x &gt;&gt;= <span class="number">1</span>) tree[x] += k;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><br>完了?Σ(°Д°;</p>
+<p>完了！</p>
+<p>单点查询更简单, 相信各位读者都能想到QwQ</p>
+<h4 id="单点修改下的区间查询"><a href="#单点修改下的区间查询" class="headerlink" title="单点修改下的区间查询"></a>单点修改下的区间查询</h4><p>我们以查询<code>[2,6]</code>为例(线段树上的, 下同)</p>
+<p><img src="zkw-segment-tree/seg1_7.png" alt=""></p>
+<p>ans=<font color=#b5e61d>[2,2]+[3,3]+[4,4]+[5,5]+[6,6]</font></p>
+<p>观察上图可以发现, 因为在线段树上我们可以直接找到<font color=#00a2e8>[2,3]</font>和<font color=#00a2e8>[4,5]</font>, 所以我们只需要用<font color=#00a2e8>[2,3]</font>代替<font color=#b5e61d>[2,2]</font>和<font color=#b5e61d>[3,3]</font>; 用<font color=#00a2e8>[4,5]</font>代替<font color=#b5e61d>[4,4]</font>和<font color=#b5e61d>[5,5]</font></p>
+<p>于是 ans=<font color=#00a2e8>[2,3]</font>+<font color=#00a2e8>[4,5]</font>+<font color=#b5e61d>[6,6]</font></p>
+<p>自顶向下求和很简单, 怎么实现自底向上的求和呢?</p>
+<p>我们分别在区间左端点-1和右端点+1的位置放两个指针(令其为<code>s,t</code>), 就像这样:</p>
+<p><img src="zkw-segment-tree/seg1_8.png" alt=""></p>
+<p>接着不断将<code>s,t</code>移动到对应节点的父节点处, 直到<code>s,t</code>指向的节点的父节点相同时停止</p>
+<p><img src="zkw-segment-tree/seg1_9.png" alt=""></p>
+<p>在这期间, 如果:</p>
+<ol>
+<li><p><code>s</code>指向的节点是左儿子, 那么<code>ans += 右儿子的值</code></p>
+</li>
+<li><p><code>t</code>指向的节点是右儿子, 那么<code>ans += 左儿子的值</code></p>
+</li>
+</ol>
+<p>如果不能理解就看看上图, 多看几遍就懂了QwQ</p>
+<p>下面是代码</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">il <span class="keyword">int</span> <span class="title">query</span><span class="params">(<span class="keyword">int</span> s, <span class="keyword">int</span> t)</span> </span>&#123;</span><br><span class="line">  <span class="keyword">int</span> ans = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">  <span class="comment">// 这个for的信息量有点大</span></span><br><span class="line">  <span class="comment">// 第一个分号前面就是将s和t初始化</span></span><br><span class="line">  <span class="comment">// s ^ r ^ 1就是判断对应节点的父节点是否相同</span></span><br><span class="line">  <span class="comment">// 很容易看出来当对应节点互为左右儿子时, s^t = 1, 再^1之后就是0</span></span><br><span class="line">  <span class="comment">// 而其他情况时, s^t大于1, ^1后当然不是0</span></span><br><span class="line">  <span class="comment">// 第二个分号后面就是s,t上移</span></span><br><span class="line">  <span class="keyword">for</span>(s = N + s - <span class="number">1</span>, r = N + r + <span class="number">1</span>; s ^ r ^ <span class="number">1</span>; s &gt;&gt;= <span class="number">1</span>, r &gt;&gt;= <span class="number">1</span>) &#123;</span><br><span class="line">    <span class="keyword">if</span>(~s&amp;<span class="number">1</span>) ans += tree[s^<span class="number">1</span>];</span><br><span class="line">    <span class="keyword">if</span>(r&amp;<span class="number">1</span>) ans += tree[r^<span class="number">1</span>];</span><br><span class="line">    <span class="comment">// 这两句的含义对照上面的实现过程看就能明白</span></span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> ans;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>上面的那两个疑问现在可以解释了</p>
+<p>仔细观察上述流程可以发现:我们只能查询<code>[1,n-1]</code>范围(这里还是线段树上标的)内的数据</p>
+<p>如果我们想要查询<code>[0,m]</code>范围内($0\leq m\leq n$)的呢?</p>
+<p><strong>将数组整体平移！</strong></p>
+<p>如果我们想要查询<code>[m,n]</code>范围内($0\leq m\leq n$)的呢?</p>
+<p><strong>把<code>N</code>直接扩大2倍!</strong></p>
+<p><del>_zkw:就是这么狠_</del></p>
+<hr>
+<p>到目前为止zkw线段树还是比较简短的</p>
+<p>可能有人觉得这个和树状数组有点像, 这就对了</p>
+<p>_zkw:树状数组究竟是什么?就是省掉一半空间后的线段树加上中序遍历_ </p>
+<p>orz</p>
+<p><strong>单点修改+区间查询</strong>完结, 整理一下代码:</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//单点修改+区间查询</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> MAXN 200005</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> fp(i,l,r) for(register int i=(l);i&lt;=(r);++i)</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> fd(i,r,l) for(register int i=(r);i&gt;=(l);--i)</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> tree[MAXN&lt;&lt;<span class="number">2</span>];</span><br><span class="line"><span class="keyword">int</span> n, N=<span class="number">1</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">build</span><span class="params">()</span> </span>&#123;</span><br><span class="line">  <span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;n);</span><br><span class="line">  <span class="keyword">for</span>(; N &lt;= n+<span class="number">1</span>; N &lt;&lt;= <span class="number">1</span>);</span><br><span class="line">  fp(i, N+<span class="number">1</span>, N+n) <span class="built_in">scanf</span>(<span class="string">"%d"</span>, tree+i);</span><br><span class="line">  fd(i, N<span class="number">-1</span>, <span class="number">1</span>) tree[i] = tree[i &lt;&lt; <span class="number">1</span>] + tree[i &lt;&lt; <span class="number">1</span> | <span class="number">1</span>];</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">modify</span><span class="params">(<span class="keyword">int</span> x, <span class="keyword">int</span> k)</span> </span>&#123;</span><br><span class="line">  <span class="keyword">for</span>(x += N; x; x &gt;&gt;= <span class="number">1</span>) tree[x] += k;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">query</span><span class="params">(<span class="keyword">int</span> s, <span class="keyword">int</span> t)</span> </span>&#123;</span><br><span class="line">  <span class="keyword">int</span> ans = <span class="number">0</span>;</span><br><span class="line">  <span class="keyword">for</span>(s = N + s - <span class="number">1</span>, r = N + r + <span class="number">1</span>; s ^ r ^ <span class="number">1</span>; s &gt;&gt;= <span class="number">1</span>, r &gt;&gt;= <span class="number">1</span>) &#123;</span><br><span class="line">    <span class="keyword">if</span>(~s&amp;<span class="number">1</span>) ans += tree[s^<span class="number">1</span>];</span><br><span class="line">    <span class="keyword">if</span>(r&amp;<span class="number">1</span>) ans += tree[r^<span class="number">1</span>];</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> ans;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">  <span class="comment">// 按需补充吧</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="区间修改-区间查询"><a href="#区间修改-区间查询" class="headerlink" title="区间修改+区间查询"></a>区间修改+区间查询</h3><h4 id="区间修改"><a href="#区间修改" class="headerlink" title="区间修改"></a>区间修改</h4><p>很显然, 我们不能用上面的方法暴力修改(还不如普通线段树)</p>
+<p>其实堆式存储也可以自顶向下访问</p>
+<p>就是上下各走一次而已</p>
+<p>但是我们有更好的办法 <del>_zkw:使劲想想就知道了_</del></p>
+<p>这里我们采用<strong>标记永久化</strong>的思想(就是<strong>不下推lazy tag</strong><del>让他彻底lazy下去</del>)</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> add[MAXN&lt;&lt;<span class="number">2</span>]; <span class="comment">//这个lazy tag表示当前节点已经更新完, 需要更新子节点</span></span><br></pre></td></tr></table></figure>
+<p>我们需要在自底向上时更新节点的值, 所以我们还需要一个变量记录该节点<strong>包含元素的个数</strong></p>
+<p>另外要注意<strong>修改某个节点的标记时要更新上面的值</strong></p>
+<p>举个例子；我们换一棵树</p>
+<p><img src="zkw-segment-tree/seg2_2.png" alt=""></p>
+<p>以修改<code>[2,10]</code>为例</p>
+<p><img src="zkw-segment-tree/seg2_3.png" alt=""></p>
+<p>当<code>s</code>到了<code>[2,2]</code>节点时, <code>[3,3]</code>节点的add加<code>k</code>, 那么接下来<code>[2,3]</code>、<code>[0,3]</code>节点的值都要加上<code>k*1</code>, 而到了<code>[0,7]</code>节点时, 因为<code>[4,7]</code>节点的add加了<code>k</code>, 所以<code>[0,7]</code>节点的值要加上<code>k*(1+4)=k*5</code>, 自然<code>k</code>要乘的系数又需要一个变量来记录</p>
+<p>需要注意的是, 这次的<strong>修改要上推到根节点</strong></p>
+<p>下面是代码</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">update</span><span class="params">(<span class="keyword">int</span> s, <span class="keyword">int</span> t, <span class="keyword">int</span> k)</span> </span>&#123;</span><br><span class="line">  <span class="keyword">int</span> lNum=<span class="number">0</span>, rNum=<span class="number">0</span>, nNum=<span class="number">1</span>;</span><br><span class="line">  <span class="comment">//lNum:  s一路走来已经包含了几个数</span></span><br><span class="line">  <span class="comment">//rNum:  t一路走来已经包含了几个数</span></span><br><span class="line">  <span class="comment">//nNum:  本层每个节点包含几个数</span></span><br><span class="line">  <span class="keyword">for</span>(s = N+s<span class="number">-1</span>, t = N+t+<span class="number">1</span>; s^t^<span class="number">1</span>; s &gt;&gt;= <span class="number">1</span>, t &gt;&gt;= <span class="number">1</span>, nNum &lt;&lt;= <span class="number">1</span>) &#123;</span><br><span class="line">    <span class="comment">//更新tree</span></span><br><span class="line">    tree[s] += k*lNum;</span><br><span class="line">    tree[t] += k*rNum;</span><br><span class="line">    <span class="comment">//处理add</span></span><br><span class="line">    <span class="keyword">if</span>(~s&amp;<span class="number">1</span>) &#123;add[s^<span class="number">1</span>] += k; tree[s^<span class="number">1</span>] += k*nNum; lNum += nNum;&#125;</span><br><span class="line">    <span class="keyword">if</span>(t&amp;<span class="number">1</span>) &#123;add[t^<span class="number">1</span>] += k; tree[t^<span class="number">1</span>] += k*nNum; rNum += nNum;&#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="comment">//更新上层tree</span></span><br><span class="line">  <span class="keyword">for</span>(; s; s &gt;&gt;= <span class="number">1</span>, t &gt;&gt;= <span class="number">1</span>) &#123;</span><br><span class="line">    tree[s] += k*lNum;</span><br><span class="line">    tree[t] += k*rNum;</span><br><span class="line">  &#125; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="区间查询"><a href="#区间查询" class="headerlink" title="区间查询"></a>区间查询</h4><p>我们以查询<code>[2,10]</code>为例<del>没错笔者我就是要用一张图</del></p>
+<p><img src="zkw-segment-tree/seg2_3.png" alt=""></p>
+<p>过程类似, 要注意<code>s,t</code>每次上推时都要根据当前所在节点的标记和<code>lNum / rNum</code>更新<code>ans</code> (<code>ans += add[s]*lNum</code>)</p>
+<p>可能有些难懂, 多读两遍或者看看代码或者自己手推一下就好了QwQ</p>
+<p>同样, 这个也需要上推到根节点</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">il <span class="keyword">int</span> <span class="title">query</span><span class="params">(<span class="keyword">int</span> s, <span class="keyword">int</span> t)</span></span>&#123;</span><br><span class="line">  <span class="keyword">int</span> lNum=<span class="number">0</span>, rNum=<span class="number">0</span>, nNum=<span class="number">1</span>;</span><br><span class="line">  <span class="keyword">int</span> ans=<span class="number">0</span>;</span><br><span class="line">  <span class="keyword">for</span>(s = N+s<span class="number">-1</span>, t = N+t+<span class="number">1</span>; s^t^<span class="number">1</span>; s &gt;&gt;= <span class="number">1</span>, t &gt;&gt;= <span class="number">1</span>, nNum &lt;&lt;= <span class="number">1</span>) &#123;</span><br><span class="line">    <span class="comment">//根据标记更新</span></span><br><span class="line">    <span class="keyword">if</span>(add[s]) ans += add[s]*lNum;</span><br><span class="line">    <span class="keyword">if</span>(add[t]) ans += add[t]*rNum;</span><br><span class="line">    <span class="comment">//常规求和</span></span><br><span class="line">    <span class="keyword">if</span>(~s&amp;<span class="number">1</span>) &#123;ans += tree[s^<span class="number">1</span>]; lNum += nNum;&#125;</span><br><span class="line">    <span class="keyword">if</span>(t&amp;<span class="number">1</span>) &#123;ans += tree[t^<span class="number">1</span>]; rNum += nNum;&#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="comment">//处理上层标记</span></span><br><span class="line">  <span class="keyword">for</span>(; s; s &gt;&gt;= <span class="number">1</span>, t &gt;&gt;= <span class="number">1</span>) &#123;</span><br><span class="line">    ans += add[s]*lNum;</span><br><span class="line">    ans += add[t]*rNum;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> ans;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>区间修改+区间查询告一段落, 整理一下代码:<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//区间修改+区间查询1</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> MAXN 200005</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> fp(i,l,r) for(register int i=(l);i&lt;=(r);++i)</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> fd(i,r,l) for(register int i=(r);i&gt;=(l);--i)</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> tree[MAXN&lt;&lt;<span class="number">2</span>], add[MAXN&lt;&lt;<span class="number">2</span>];</span><br><span class="line"><span class="keyword">int</span> n, N=<span class="number">1</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">build</span><span class="params">()</span> </span>&#123;</span><br><span class="line">  <span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;n);</span><br><span class="line">  <span class="keyword">for</span>(; N &lt;= n+<span class="number">1</span>; N &lt;&lt;= <span class="number">1</span>);</span><br><span class="line">  fp(i, N+<span class="number">1</span>, N+n) <span class="built_in">scanf</span>(<span class="string">"%d"</span>, tree+i);</span><br><span class="line">  fd(i, N<span class="number">-1</span>, <span class="number">1</span>) tree[i] = tree[i &lt;&lt; <span class="number">1</span>] + tree[i &lt;&lt; <span class="number">1</span> | <span class="number">1</span>];</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">update</span><span class="params">(<span class="keyword">int</span> s, <span class="keyword">int</span> t, <span class="keyword">int</span> k)</span> </span>&#123;</span><br><span class="line">  <span class="keyword">int</span> lNum=<span class="number">0</span>, rNum=<span class="number">0</span>, nNum=<span class="number">1</span>;</span><br><span class="line">  <span class="keyword">for</span>(s = N+s<span class="number">-1</span>, t = N+t+<span class="number">1</span>; s^t^<span class="number">1</span>; s &gt;&gt;= <span class="number">1</span>, t &gt;&gt;= <span class="number">1</span>, nNum &lt;&lt;= <span class="number">1</span>) &#123;</span><br><span class="line">    tree[s] += k*lNum;</span><br><span class="line">    tree[t] += k*rNum;</span><br><span class="line">    <span class="keyword">if</span>(~s&amp;<span class="number">1</span>) &#123;add[s^<span class="number">1</span>] += k; tree[s^<span class="number">1</span>] += k*nNum; lNum += nNum;&#125;</span><br><span class="line">    <span class="keyword">if</span>(t&amp;<span class="number">1</span>) &#123;add[t^<span class="number">1</span>] += k; tree[t^<span class="number">1</span>] += k*nNum; rNum += nNum;&#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">for</span>(; s; s &gt;&gt;= <span class="number">1</span>, t &gt;&gt;= <span class="number">1</span>) &#123;</span><br><span class="line">    tree[s] += k*lNum;</span><br><span class="line">    tree[t] += k*rNum;</span><br><span class="line">  &#125; </span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">query</span><span class="params">(<span class="keyword">int</span> s, <span class="keyword">int</span> t)</span></span>&#123;</span><br><span class="line">  <span class="keyword">int</span> lNum=<span class="number">0</span>, rNum=<span class="number">0</span>, nNum=<span class="number">1</span>;</span><br><span class="line">  <span class="keyword">int</span> ans=<span class="number">0</span>;</span><br><span class="line">  <span class="keyword">for</span>(s = N+s<span class="number">-1</span>, t = N+t+<span class="number">1</span>; s^t^<span class="number">1</span>; s &gt;&gt;= <span class="number">1</span>, t &gt;&gt;= <span class="number">1</span>, nNum &lt;&lt;= <span class="number">1</span>) &#123;</span><br><span class="line">    <span class="keyword">if</span>(add[s]) ans += add[s]*lNum;</span><br><span class="line">    <span class="keyword">if</span>(add[t]) ans += add[t]*rNum;</span><br><span class="line">    <span class="keyword">if</span>(~s&amp;<span class="number">1</span>) &#123;ans += tree[s^<span class="number">1</span>]; lNum += nNum;&#125;</span><br><span class="line">    <span class="keyword">if</span>(t&amp;<span class="number">1</span>) &#123;ans += tree[t^<span class="number">1</span>]; rNum += nNum;&#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">for</span>(; s; s &gt;&gt;= <span class="number">1</span>, t &gt;&gt;= <span class="number">1</span>) &#123;</span><br><span class="line">    ans += add[s]*lNum;</span><br><span class="line">    ans += add[t]*rNum;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> ans;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">  <span class="comment">// 同上</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h4 id="区间修改-区间查询的空间优化"><a href="#区间修改-区间查询的空间优化" class="headerlink" title="区间修改+区间查询的空间优化"></a>区间修改+区间查询的空间优化</h4><p>也许有的读者发现了:标记和值好像可以看成一个东西</p>
+<p>所以, 我们可不可以<strong>不存值, 只存标记</strong>?</p>
+<p><strong>当然可以！</strong></p>
+<p><strong>zkw:永久化的标记就是值!</strong></p>
+<p>_<del>zkw:狗拿耗子, 猫下岗了</del>_ </p>
+<p>那么, 怎么实现呢?</p>
+<p>下面是<strong>区间最值(RMQ)版本</strong>的(以最小值为例)</p>
+<blockquote>
+<p>在这里, 我们不存总和了, 存<code>tree[i]=sum[i]-sum[i&gt;&gt;1] //sum[i]对应上述两个版本代码中的tree[i]</code>(即为子节点-父节点)</p>
+<p>区间修改就直接改<code>tree[i]</code></p>
+<p>查询就从当前节点一直加到根(<code>tree[i]+tree[i&gt;&gt;1]+...+tree[1]</code>)</p>
+<blockquote>
+<p>或者数学一点</p>
+<script type="math/tex; mode=display">\sum_{\text{j}=0}^{\lfloor\log_2\text{i}\rfloor}\mathrm{tree}_{i\cdot2^j}</script></blockquote>
+<p>(修改时的<code>s,t</code>)遇到节点<code>x</code>, 则</p>
+<p><code>A=min(tree[x&gt;&gt;1],tree[x&gt;&gt;1|1]), tree[x]+=A, tree[x&gt;&gt;1]-=A, tree[x&gt;&gt;1|1]-=A</code></p>
+<blockquote>
+<p>这一步可能有一些难懂, 就是修改了一个区间, 可能会导致父节点存储的最值(普通情况下)发生改变, 所以用这一步来修正</p>
+</blockquote>
+</blockquote>
+<p>为什么笔者没有放<strong>区间求和(RSQ)版本</strong>的呢?</p>
+<p>因为笔者觉得求和版本的依然要维护两棵树(一棵存<code>tree[i]-tree[i-1]</code>, 另一棵存<code>i*(tree[i]-tree[i-1])</code>, 类似树状数组), 也就是没有优化(可能是笔者太弱了, 没有想到别的方法)</p>
+<p>当然, 这个版本也是可以单点修改/单点查询的, 不过没有上述代码实用, 所以这里就不讨论了</p>
+<p>直接放代码</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">build</span><span class="params">()</span> </span>&#123;</span><br><span class="line">  <span class="keyword">for</span> (N = <span class="number">1</span>; N &lt;= n + <span class="number">1</span>; N &lt;&lt;= <span class="number">1</span>);</span><br><span class="line">  fp(i, N + <span class="number">1</span>, N + n) <span class="built_in">scanf</span>(<span class="string">"%d"</span>, tree + i);</span><br><span class="line">  fd(i, N - <span class="number">1</span>, <span class="number">1</span>) &#123;</span><br><span class="line">    tree[i] = min(tree[i &lt;&lt; <span class="number">1</span>], tree[i &lt;&lt; <span class="number">1</span> | <span class="number">1</span>]);</span><br><span class="line">    tree[i &lt;&lt; <span class="number">1</span>] -= tree[i];</span><br><span class="line">    tree[i &lt;&lt; <span class="number">1</span> | <span class="number">1</span>] -= tree[i];</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">update</span><span class="params">(<span class="keyword">int</span> s, <span class="keyword">int</span> t, <span class="keyword">int</span> k)</span> </span>&#123;</span><br><span class="line">  <span class="keyword">int</span> tmp;</span><br><span class="line">  <span class="keyword">for</span> (s += N - <span class="number">1</span>, t += N + <span class="number">1</span>; s ^ t ^ <span class="number">1</span>; s &gt;&gt;= <span class="number">1</span>, t &gt;&gt;= <span class="number">1</span>) &#123;</span><br><span class="line">    <span class="keyword">if</span> (~s &amp; <span class="number">1</span>) tree[s ^ <span class="number">1</span>] += k;</span><br><span class="line">    <span class="keyword">if</span> (t &amp; <span class="number">1</span>) tree[t ^ <span class="number">1</span>] += k;</span><br><span class="line">    tmp = min(tree[s], tree[s ^ <span class="number">1</span>]);</span><br><span class="line">    tree[s] -= tmp;</span><br><span class="line">    tree[s ^ <span class="number">1</span>] -= tmp;</span><br><span class="line">    tree[s &gt;&gt; <span class="number">1</span>] += tmp;</span><br><span class="line">    tmp = min(tree[t], tree[t ^ <span class="number">1</span>]);</span><br><span class="line">    tree[t] -= tmp;</span><br><span class="line">    tree[t ^ <span class="number">1</span>] -= tmp;</span><br><span class="line">    tree[t &gt;&gt; <span class="number">1</span>] += tmp;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">for</span> (; s != <span class="number">1</span>; s &gt;&gt;= <span class="number">1</span>) &#123;  <span class="comment">//记得要上推到根节点</span></span><br><span class="line">    tmp = min(tree[s], tree[s ^ <span class="number">1</span>]);</span><br><span class="line">    tree[s] -= tmp;</span><br><span class="line">    tree[s ^ <span class="number">1</span>] -= tmp;</span><br><span class="line">    tree[s &gt;&gt; <span class="number">1</span>] += tmp;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">query</span><span class="params">(<span class="keyword">int</span> s, <span class="keyword">int</span> t)</span> </span>&#123;  <span class="comment">//闭区间</span></span><br><span class="line">  <span class="keyword">int</span> sAns = <span class="number">0</span>, tAns = <span class="number">0</span>;</span><br><span class="line">  s += N, t += N;</span><br><span class="line">  <span class="keyword">if</span> (s != t) &#123;  <span class="comment">//防止查询单点时死循环</span></span><br><span class="line">    <span class="keyword">for</span> (; s ^ t ^ <span class="number">1</span>; s &gt;&gt;= <span class="number">1</span>, t &gt;&gt;= <span class="number">1</span>) &#123;</span><br><span class="line">      sAns += tree[s];</span><br><span class="line">      tAns += tree[t];</span><br><span class="line">      <span class="keyword">if</span> (~s &amp; <span class="number">1</span>) sAns = min(sAns, tree[s ^ <span class="number">1</span>]);</span><br><span class="line">      <span class="keyword">if</span> (t &amp; <span class="number">1</span>) tAns = min(tAns, tree[t ^ <span class="number">1</span>]);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">int</span> ans = min(sAns + tree[s], tAns + tree[t]);</span><br><span class="line">  <span class="keyword">while</span> (s &gt; <span class="number">1</span>) ans += tree[s &gt;&gt;= <span class="number">1</span>];</span><br><span class="line">  <span class="keyword">return</span> ans;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h1 id="大数据测试"><a href="#大数据测试" class="headerlink" title="大数据测试"></a>大数据测试</h1><p>(2020.02.10 upd: <a href="https://www.luogu.com.cn/blog/82152/test-of-zkwSegTree" target="_blank" rel="noopener">测试更新了</a>)</p>
+<p>先来看一看参赛选手:</p>
+<p>1号:递归线段树</p>
+<p>2号:zkw线段树(非差分版本, 差分版本的常数略大, 就不测了)</p>
+<p>3号:树状数组</p>
+<p><del>zkw线段树:说好的我的主场呢?</del></p>
+<p>先以<a href="https://www.luogu.com.cn/problem/P3372" target="_blank" rel="noopener">洛谷P3372</a>做一个热身</p>
+<p>因为图太多, 所以不贴出来了, 有兴趣的读者可以查看提交记录</p>
+<p><strong>读入优化</strong></p>
+<p>1号:递归线段树 412ms / 6.31MB (<a href="https://www.luogu.com.cn/record/9424058" target="_blank" rel="noopener">R9424058</a>)</p>
+<p>2号:zkw线段树 208ms / 4.74MB (<a href="https://www.luogu.com.cn/record/9424567" target="_blank" rel="noopener">R9424567</a>)</p>
+<p>3号:树状数组 196ms / 3.71MB (<a href="https://www.luogu.com.cn/record/9424624" target="_blank" rel="noopener">R9424624</a>)</p>
+<p><strong>读入优化+O2</strong></p>
+<p>1号:递归线段树 220ms / 6.21MB (<a href="https://www.luogu.com.cn/record/9424921" target="_blank" rel="noopener">R9424921</a>)</p>
+<p>2号:zkw线段树 160ms / 4.86MB (<a href="https://www.luogu.com.cn/record/9424805" target="_blank" rel="noopener">R9424805</a>)</p>
+<p>3号:树状数组  96ms / 3.74MB (<a href="https://www.luogu.com.cn/record/9424762" target="_blank" rel="noopener">R9424762</a>)</p>
+<p>可以看到, 没有O2时2号和3号相差无几, 有了O2之后3号吊打全场<del>可能是笔者写的zkw线段树常数太大QwQ</del></p>
+<p>为了<del>防止zkw线段树被吊打得太惨</del>反应算法真实水平以及模拟NOIp竞赛环境, 下面就不开O2了</p>
+<p>在这里先放一下结果, 测试代码和大数据放在<a href="https://www.luogu.com.cn/blog/82152/TestData-and-Code-of-the-text-Introduction-of-zkwSegmentTree" target="_blank" rel="noopener">另一篇文章</a>里</p>
+<p>保证所有输入数据在unsigned long long 范围内, 结果对$2^{64}$取模, 表格中的时间为平均值</p>
+<p>测试环境:</p>
+<blockquote>
+<p>系统:noilinux-1.4.1</p>
+<p>内存:2GB</p>
+<p>CPU:AMD Athlon(tm) II X4 631 Quad-Core Processor 2600 MHz</p>
+</blockquote>
+<ul>
+<li>测试#1:</li>
+</ul>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:center">数据规模</th>
+<th style="text-align:center">递归线段树(ms)</th>
+<th style="text-align:center">zkw线段树(ms)</th>
+<th style="text-align:center">树状数组(ms)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">5e5(5组)</td>
+<td style="text-align:center">3554.359</td>
+<td style="text-align:center">2067.978</td>
+<td style="text-align:center">1968.074</td>
+</tr>
+<tr>
+<td style="text-align:center">1e6(5组)</td>
+<td style="text-align:center">7327.344</td>
+<td style="text-align:center">4922.725</td>
+<td style="text-align:center">4359.272</td>
+</tr>
+<tr>
+<td style="text-align:center">5e6(3组)</td>
+<td style="text-align:center">49416.196</td>
+<td style="text-align:center">34078.837</td>
+<td style="text-align:center">26782.107</td>
+</tr>
+<tr>
+<td style="text-align:center">1e7(3组)</td>
+<td style="text-align:center">126192.820</td>
+<td style="text-align:center">74198.015</td>
+<td style="text-align:center">57485.430</td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul>
+<li>测试#2:</li>
+</ul>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:center">数据规模</th>
+<th style="text-align:center">递归线段树(ms)</th>
+<th style="text-align:center">zkw线段树(ms)</th>
+<th style="text-align:center">树状数组(ms)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">5e5(5组)</td>
+<td style="text-align:center">3985.435</td>
+<td style="text-align:center">2085.221</td>
+<td style="text-align:center">1981.154</td>
+</tr>
+<tr>
+<td style="text-align:center">1e6(5组)</td>
+<td style="text-align:center">6995.611</td>
+<td style="text-align:center">4268.988</td>
+<td style="text-align:center">3991.724</td>
+</tr>
+<tr>
+<td style="text-align:center">5e6(3组)</td>
+<td style="text-align:center">45401.981</td>
+<td style="text-align:center">29582.957</td>
+<td style="text-align:center">25179.336</td>
+</tr>
+<tr>
+<td style="text-align:center">1e7(3组)</td>
+<td style="text-align:center">99805.488</td>
+<td style="text-align:center">67543.985</td>
+<td style="text-align:center">54304.283</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>结论:<strong>不考虑有运算优先级的情况</strong>下, 树状数组吊打全场(zkw线段树哭晕在厕所</p>
+<h1 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h1><p>这篇文章笔者写了<del>将近一天</del>整整三天</p>
+<p>因为笔者是个蒟蒻, 所以这篇文章难免会有错误, 在此希望各位dalao批评的时候别把笔者喷得太惨QwQ</p>
+<p>另外, zkw julao在他的ppt中还讲了许多高端操作, 有兴趣读者可以看一看<del>膜拜orz</del></p>
+<h1 id="主要参考资料"><a href="#主要参考资料" class="headerlink" title="主要参考资料"></a>主要参考资料</h1><ul>
+<li><p><a href="https://artofproblemsolving.com/community/c1368h1020439" target="_blank" rel="noopener">统计的力量——线段树全接触</a><del>(膜拜zkw julao)</del></p>
+</li>
+<li><p><a href="https://blog.csdn.net/zearot/article/details/48299459" target="_blank" rel="noopener">线段树详解 (原理, 实现与应用) - CSDN博客</a></p>
+</li>
+</ul>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/" rel="tag"># 程序设计</a>
+              <a href="/tags/%E6%B4%9B%E8%B0%B7%E6%97%A5%E6%8A%A5/" rel="tag"># 洛谷日报</a>
+              <a href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" rel="tag"># 数据结构</a>
+              <a href="/tags/%E7%BA%BF%E6%AE%B5%E6%A0%91/" rel="tag"># 线段树</a>
+              <a href="/tags/%E7%AC%94%E8%AE%B0/" rel="tag"># 笔记</a>
+              <a href="/tags/zkw%E7%BA%BF%E6%AE%B5%E6%A0%91/" rel="tag"># zkw线段树</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item"></div>
+      <div class="post-nav-item">
+    <a href="/2018/08/09/approx-number/" rel="next" title="<洛谷日报#53>浅谈一些求近似值的方法">
+      <洛谷日报#53>浅谈一些求近似值的方法 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#阅读本文前请先阅读"><span class="nav-number">1.</span> <span class="nav-text">阅读本文前请先阅读:</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#简介"><span class="nav-number">2.</span> <span class="nav-text">简介</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#实现"><span class="nav-number">3.</span> <span class="nav-text">实现</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#建树"><span class="nav-number">3.1.</span> <span class="nav-text">建树</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#单点修改-区间查询-amp-区间修改-区间查询"><span class="nav-number">3.2.</span> <span class="nav-text">单点修改+区间查询&amp;区间修改+区间查询</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#单点修改-区间查询"><span class="nav-number">3.2.1.</span> <span class="nav-text">单点修改+区间查询</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#单点修改"><span class="nav-number">3.2.1.1.</span> <span class="nav-text">单点修改</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#单点修改下的区间查询"><span class="nav-number">3.2.1.2.</span> <span class="nav-text">单点修改下的区间查询</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#区间修改-区间查询"><span class="nav-number">3.2.2.</span> <span class="nav-text">区间修改+区间查询</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#区间修改"><span class="nav-number">3.2.2.1.</span> <span class="nav-text">区间修改</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#区间查询"><span class="nav-number">3.2.2.2.</span> <span class="nav-text">区间查询</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#区间修改-区间查询的空间优化"><span class="nav-number">3.2.2.3.</span> <span class="nav-text">区间修改+区间查询的空间优化</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#大数据测试"><span class="nav-number">4.</span> <span class="nav-text">大数据测试</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#后记"><span class="nav-number">5.</span> <span class="nav-text">后记</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#主要参考资料"><span class="nav-number">6.</span> <span class="nav-text">主要参考资料</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Tiphereth</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">14</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://www.luogu.com.cn/user/82152" title="luogu → https:&#x2F;&#x2F;www.luogu.com.cn&#x2F;user&#x2F;82152" rel="noopener" target="_blank"><i class="fa fa-code fa-fw"></i>luogu</a>
+      </span>
+  </div>
+
+
+  <div class="links-of-blogroll motion-element">
+    <div class="links-of-blogroll-title"><i class="fa fa-link fa-fw"></i>
+      Links
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <a href="https://space.bilibili.com/120174936/" title="https:&#x2F;&#x2F;space.bilibili.com&#x2F;120174936&#x2F;" rel="noopener" target="_blank">不分解的AgOH - Bilibili</a>
+        </li>
+    </ul>
+  </div>
+
+      </div>
+        <div class="back-to-top motion-element">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Tiphereth</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+</div>
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+      
+
+<script>
+  if (typeof MathJax === 'undefined') {
+    window.MathJax = {
+      loader: {
+          load: ['[tex]/mhchem'],
+        source: {
+          '[tex]/amsCd': '[tex]/amscd',
+          '[tex]/AMScd': '[tex]/amscd'
+        }
+      },
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+          packages: {'[+]': ['mhchem']},
+        tags: 'ams'
+      },
+      options: {
+        renderActions: {
+          findScript: [10, doc => {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+              const display = !!node.type.match(/; *mode=display/);
+              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+              const text = document.createTextNode('');
+              node.parentNode.replaceChild(text, node);
+              math.start = {node: text, delim: '', n: 0};
+              math.end = {node: text, delim: '', n: 0};
+              doc.math.push(math);
+            });
+          }, '', false],
+          insertedScript: [200, () => {
+            document.querySelectorAll('mjx-container').forEach(node => {
+              let target = node.parentNode;
+              if (target.nodeName.toLowerCase() === 'li') {
+                target.parentNode.classList.add('has-jax');
+              }
+            });
+          }, '', false]
+        }
+      }
+    };
+    (function () {
+      var script = document.createElement('script');
+      script.src = '//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
+      script.defer = true;
+      document.head.appendChild(script);
+    })();
+  } else {
+    MathJax.startup.document.state(0);
+    MathJax.texReset();
+    MathJax.typeset();
+  }
+</script>
+
+    
+
+  
+
+</body>
+</html>
