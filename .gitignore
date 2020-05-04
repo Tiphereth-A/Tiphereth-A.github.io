@@ -1,0 +1,15 @@
+.DS_Store
+Thumbs.db
+db.json
+*.log
+*.code-workspace
+*.aux
+*.synctex.gz
+
+node_modules/
+public/
+.deploy*/
+_multiconfig.yml
+.vscode/
+source/_drafts/
+_imgcode_tempout/

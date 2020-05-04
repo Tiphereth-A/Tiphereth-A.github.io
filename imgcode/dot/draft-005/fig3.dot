@@ -1,0 +1,6 @@
+graph {
+  "b";
+  subgraph "cluster_1" {
+    "1" -- {"2" "a"};
+  }
+}

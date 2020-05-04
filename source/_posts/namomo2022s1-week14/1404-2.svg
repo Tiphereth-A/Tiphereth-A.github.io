@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<svg width="368pt" height="44pt" viewBox="0.00 0.00 368.00 44.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 40)">
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-40 364,-40 364,4 -4,4" /><g id="node1" class="node">
+<title>0</title>
+<ellipse fill="none" stroke="purple" cx="18" cy="-18" rx="18" ry="18" />
+<text text-anchor="middle" x="18" y="-14.3" font-family="Times New Roman,serif" font-size="14.00">0</text>
+</g><g id="node2" class="node">
+<title>1</title>
+<ellipse fill="none" stroke="purple" cx="72" cy="-18" rx="18" ry="18" />
+<text text-anchor="middle" x="72" y="-14.3" font-family="Times New Roman,serif" font-size="14.00">0</text>
+</g><g id="node3" class="node">
+<title>2</title>
+<ellipse fill="red" stroke="red" cx="126" cy="-18" rx="18" ry="18" />
+<text text-anchor="middle" x="126" y="-14.3" font-family="Times New Roman,serif" font-size="14.00">1</text>
+</g><g id="node4" class="node">
+<title>3</title>
+<ellipse fill="none" stroke="purple" cx="180" cy="-18" rx="18" ry="18" />
+<text text-anchor="middle" x="180" y="-14.3" font-family="Times New Roman,serif" font-size="14.00">0</text>
+</g><g id="node5" class="node">
+<title>4</title>
+<ellipse fill="none" stroke="purple" cx="234" cy="-18" rx="18" ry="18" />
+<text text-anchor="middle" x="234" y="-14.3" font-family="Times New Roman,serif" font-size="14.00">0</text>
+</g><g id="node6" class="node">
+<title>5</title>
+<ellipse fill="none" stroke="purple" cx="288" cy="-18" rx="18" ry="18" />
+<text text-anchor="middle" x="288" y="-14.3" font-family="Times New Roman,serif" font-size="14.00">0</text>
+</g><g id="node7" class="node">
+<title>6</title>
+<ellipse fill="none" stroke="purple" cx="342" cy="-18" rx="18" ry="18" />
+<text text-anchor="middle" x="342" y="-14.3" font-family="Times New Roman,serif" font-size="14.00">0</text>
+</g>
+</g>
+</svg>

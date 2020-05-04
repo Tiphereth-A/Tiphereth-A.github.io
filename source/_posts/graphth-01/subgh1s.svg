@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<svg width="149pt" height="260pt" viewBox="0.00 0.00 149.00 260.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 256)">
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-256 145,-256 145,4 -4,4" /><g id="node1" class="node">
+<title>x</title>
+<ellipse fill="none" stroke="black" cx="27" cy="-162" rx="27" ry="18" />
+<text text-anchor="middle" x="27" y="-158.3" font-family="Times New Roman,serif" font-size="14.00">x</text>
+</g><g id="node2" class="node">
+<title>y</title>
+<ellipse fill="none" stroke="black" cx="87" cy="-90" rx="27" ry="18" />
+<text text-anchor="middle" x="87" y="-86.3" font-family="Times New Roman,serif" font-size="14.00">y</text>
+</g><g id="edge1" class="edge">
+<title>x&#45;&#45;y</title>
+<path fill="none" stroke="black" d="M40.02,-145.81C50.08,-134.07 63.95,-117.89 74.01,-106.16" />
+</g><g id="node3" class="node">
+<title>z</title>
+<ellipse fill="none" stroke="black" cx="114" cy="-18" rx="27" ry="18" />
+<text text-anchor="middle" x="114" y="-14.3" font-family="Times New Roman,serif" font-size="14.00">z</text>
+</g><g id="edge2" class="edge">
+<title>y&#45;&#45;z</title>
+<path fill="none" stroke="black" d="M93.4,-72.41C97.64,-61.41 103.19,-47.03 107.46,-35.96" />
+</g><g id="node4" class="node">
+<title>vw</title>
+<ellipse fill="none" stroke="black" cx="91" cy="-234" rx="27" ry="18" />
+<text text-anchor="middle" x="91" y="-230.3" font-family="Times New Roman,serif" font-size="14.00">vw</text>
+</g><g id="edge3" class="edge">
+<title>vw&#45;&#45;x</title>
+<path fill="none" stroke="black" d="M77.43,-218.15C66.57,-206.28 51.41,-189.7 40.55,-177.82" />
+</g><g id="edge4" class="edge">
+<title>vw&#45;&#45;y</title>
+<path fill="none" stroke="black" d="M85.97,-216.15C82.27,-188.82 80.76,-135.14 82.92,-107.82" />
+</g><g id="edge6" class="edge">
+<title>vw&#45;&#45;y</title>
+<path fill="none" stroke="black" d="M95.08,-216.15C97.24,-188.82 95.73,-135.14 92.03,-107.82" />
+</g><g id="edge5" class="edge">
+<title>vw&#45;&#45;z</title>
+<path fill="none" stroke="black" d="M98.6,-216.62C103.11,-206.31 108.59,-192.61 112,-180 124.61,-133.43 127.05,-120.08 123,-72 121.98,-59.91 119.68,-46.43 117.65,-36.09" />
+</g>
+</g>
+</svg>

@@ -1,0 +1,32 @@
+---
+title: 模板 - Legendre 符号 & 二次剩余
+categories:
+  - 算法竞赛
+  - 模板
+tags:
+  - 算法竞赛
+  - 模板
+  - C++
+  - 数学
+  - 数论
+  - Legendre符号
+  - 二次剩余
+date: 2021-12-31 13:06:27
+---
+
+基于 C++17 标准, 对给定的整数 $n,p$, 若 $\left(\frac{n}{p}\right)\ne1$ 则返回 `std::nullopt`, 否则返回方程 $x^2\equiv n\pmod p$ 的一个根
+
+{% note warning %}
+代码中使用了 `__builtin_ctzll`
+{% endnote %}
+
+<!-- more -->
+
+## 代码
+
+<details open>
+<summary><font color='orange'>Show code</font></summary>
+
+{% include_code lang:cpp quad-residue/quad_r.hpp %}
+
+</details>

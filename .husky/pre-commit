@@ -1,0 +1,177 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+
+regen_figures() {
+  for src in $@; do
+    if [[ ! $src =~ ^imgcode\/* ]]; then
+      continue
+    fi
+    
+    base=${src##*/}
+    dir=${src%$base}
+    temp_dir="_imgcode_tempout/"${dir#imgcode/}${base%.*}"/"
+    output_dir="source/_posts/"${dir#imgcode/*/}
+    outsrc_svg=$output_dir${base/%.*/.svg}
+    
+    echo "---imgcode info start---"
+    echo "src: "$src
+    echo "base: "$base
+    echo "dir: "$dir
+    echo "temp_dir: "$temp_dir
+    echo "output_dir: "$output_dir
+    echo "outsrc_svg: "$outsrc_svg
+    echo "---imgcode info end---"
+
+    result=0
+
+    case $dir in
+      imgcode/dot/*)
+        echo "Proceed as dot"
+        cat $src | dot -Tsvg > $outsrc_svg
+        result=1
+      ;;
+
+      imgcode/circo/*)
+        echo "Proceed as circo"
+        cat $src | circo -Tsvg > $outsrc_svg
+        result=1
+      ;;
+
+      imgcode/neato/*)
+        echo "Proceed as neato"
+        cat $src | neato -Tsvg > $outsrc_svg
+        result=1
+      ;;
+
+      imgcode/drawio/*)
+        echo "Proceed as drawio"
+        draw.io -x -f svg -o $output_dir $src --embed-svg-images
+        result=1
+      ;;
+
+      imgcode/tikz/*)
+        echo "Proceed as TikZ"
+        xelatex -synctex=1 -interaction=nonstopmode -file-line-error -output-directory=$temp_dir $src
+        pdf2svg $temp_dir${base/%tex/pdf} $outsrc_svg || ./bin/pdf2svg-windows/dist-64bits/pdf2svg.exe $temp_dir${base/%tex/pdf} $outsrc_svg
+        result=1
+      ;;
+
+      *)
+        echo "Unknown imagecode type"
+      ;;
+    esac
+
+    if [ $result ]; then
+      git add $outsrc_svg
+    fi
+  done
+}
+
+
+lint_code() {
+  clangformatconf="lint-conf/.clang-format"
+  
+  for src in $@; do
+    if [[ ! $src =~ ^source\/code\/* ]]; then
+      continue
+    fi
+
+    echo "---lint_code info start---"
+    echo "src: "$src
+    echo "clang-format config: "$clangformatconf
+    echo "---lint_code info end---"
+
+    result=0
+
+    case $src in
+      *.c|*.cpp|*.h|*.hpp|*.java)
+        echo "Using Clang-format"
+        clang-format -style=file:$clangformatconf -i $src
+        result=1
+      ;;
+
+      *)
+        echo "Unknown code type"
+      ;;
+    esac
+  done
+}
+
+
+add_intro_md() {
+  for src in $@; do
+    if [[ -n ${src##*.md} ]]; then
+      continue
+    fi
+
+    echo "---add_intro_md info start---"
+    echo "src: "$src
+    echo "---add_intro_md info end---"
+
+    xargs sed -i 's/!\[](\([^\.\)]\+\?\)\.\([^\.\)]\+\?\))/![\1](\1.\2)/g' $src
+  done
+
+}
+
+
+add_space_formula() {
+  for src in $@; do
+    if [[ -n ${src##*.md} ]]; then
+      continue
+    fi
+
+    echo "---add_space_formula info start---"
+    echo "src: "$src
+    echo "---add_space_formula info end---"
+
+    xargs perl -i -CSD -Mutf8 -pe 's/(\p{Han})\$/$1 \$/g' $src
+    xargs perl -i -CSD -Mutf8 -pe 's/\$(\p{Han})/\$ $1/g' $src
+    xargs perl -i -CSD -Mutf8 -pe 's/([^\$]*)\$\$([^\$]+)\$\$/$1\$\$\n$1$2\n$1\$\$/g' $src
+  done
+}
+
+
+fix_svg() {
+  for src in $@; do
+    if [[ -n ${src##*.svg} ]]; then
+      continue
+    fi
+
+    echo "---fix_svg info start---"
+    echo "src: "$src
+    echo "---fix_svg info end---"
+
+    xargs perl -i -CSD -Mutf8 -pe 's/\s*<!DOCTYPE [^\n]+\n//g' $src
+    xargs perl -i -CSD -Mutf8 -0777 -pe 's/\s*<!--[^\n]*?(?:\n\s*|)?-->\n//g' $src
+  done
+}
+
+
+FILES=$(git diff --cached --name-only --diff-filter=ACMR | sed 's| |\\ |g')
+[ -z "$FILES" ] && exit 0
+echo "$FILES" | xargs ./node_modules/.bin/prettier --ignore-unknown --write
+# add_intro_md $FILES
+add_space_formula $FILES
+lint_code $FILES
+echo "$FILES" | xargs git add
+
+FILES=$(git diff --cached --name-only --diff-filter=ACMR | sed 's| |\\ |g')
+[ -z "$FILES" ] && exit 0
+regen_figures $FILES
+echo "$FILES" | xargs git add
+
+FILES=$(git diff --cached --name-only --diff-filter=ACMR | sed 's| |\\ |g')
+[ -z "$FILES" ] && exit 0
+fix_svg $FILES
+echo "$FILES" | xargs git add
+
+FILES=$(git diff --cached --name-only --diff-filter=ACMR | sed 's| |\\ |g')
+[ -z "$FILES" ] && exit 0
+echo "$FILES" | xargs exiftool -a -m -u -U -e -F -overwrite_original_in_place -all= ||
+echo "$FILES" | xargs ./node_modules/.bin/prettier --ignore-unknown --write
+echo "$FILES" | xargs git add
+
+rm -rf _imgcode_tempout/*
+
+exit 0

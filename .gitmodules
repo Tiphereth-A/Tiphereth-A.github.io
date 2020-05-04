@@ -1,0 +1,3 @@
+[submodule "bin/pdf2svg-windows"]
+	path = bin/pdf2svg-windows
+	url = git@github.com:jalios/pdf2svg-windows.git

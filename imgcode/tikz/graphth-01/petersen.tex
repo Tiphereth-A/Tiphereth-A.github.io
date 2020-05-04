@@ -1,0 +1,78 @@
+% From <https://www.integral-domain.org/lwilliams/Resources/tikzsnippets.php>
+\documentclass[tikz]{standalone}
+
+\begin{document}
+
+\tikzset{unode/.style = {
+    circle, 
+    draw=cyan!30!black, 
+    thick,
+    fill=cyan!80!black,
+    inner sep=2.3pt,
+    minimum size=2.3pt } }
+\tikzset{uedge/.style = {
+    draw=cyan!20!black, 
+    very thick} }
+
+\begin{tikzpicture} 
+    \begin{scope} 
+        \foreach \x [count=\i] in {18,90,162,234,306}{
+            \coordinate (i\i) at (\x:1cm) {};
+             \coordinate (o\i) at (\x:1.8cm) {};
+             \path[uedge] (\x:1cm)--(\x:1.8cm);
+        }
+        \path[uedge] (o1) -- (o2) -- (o3) -- (o4)-- (o5)--(o1);
+        \path[uedge] (i1) -- (i3) -- (i5) -- (i2)-- (i4)--(i1);
+        \foreach \x [count=\i] in {18,90,162,234,306}{
+             \node[unode] at (\x:1cm){};
+             \node[unode] at (\x:1.8cm){};
+        }
+    \end{scope}
+
+    \begin{scope}[xshift=5cm]
+        \foreach \x [count=\i] in {0,60,120,180,240,300}{
+            \coordinate (o\i) at (\x:1.8cm) {};
+        }
+        \foreach \x [count=\i] in {30,150,270}{
+            \coordinate (i\i) at (\x:1cm) {};
+        }
+        \coordinate (a) at (0,0) {};
+        
+        \path[uedge] (o1) -- (o2) -- (o3) -- (o4)-- (o5)--(o6)--(o1);
+        \path[uedge] (a)--(i1) ;
+        \path[uedge] (a)--(i2) ;
+        \path[uedge] (a)--(i3) ; 
+        \path[uedge] (o6)--(i1)--(o3) ;
+        \path[uedge] (o2)--(i2)--(o5) ;
+        \path[uedge] (o4)--(i3)--(o1) ;
+        \foreach \x [count=\i] in {0,60,120,180,240,300}{
+            \node[unode] at (\x:1.8cm){};
+        }
+        \foreach \x [count=\i] in {30,150,270}{
+            \node[unode] at (\x:1cm){};
+        }
+        \node[unode] at (0,0){};
+    \end{scope}
+
+    \begin{scope}[xshift=10cm]
+        \foreach \x [count=\i] in {10,50,90,...,370}{
+            \coordinate (o\i) at (\x:1.8cm) {};
+        }
+        
+        \coordinate (a) at (0,0) {};
+        \path[uedge] (o1) -- (o2) -- (o3) -- (o4)-- (o5)--(o6)--(o7)--(o8)--(o9)--(o1);
+        \path[uedge] (o1)--(o5) ;
+        \path[uedge] (o2)--(o7) ;
+        \path[uedge] (o4)--(o8) ;
+        \path[uedge] (a)--(o3) ;
+        \path[uedge] (a)--(o6) ;
+        \path[uedge] (a)--(o9) ;
+        \foreach \x [count=\i] in {10,50,90,...,370}{
+            \node[unode] at (\x:1.8cm){};
+        }
+        \node[unode] at (0,0){};
+    \end{scope}
+
+    
+\end{tikzpicture}
+\end{document}

@@ -1,0 +1,52 @@
+---
+title: 友情链接
+date: 2020-12-27 19:10:00
+---
+
+{% linkgrid %}
+不分解的 AgOH 的个人空间 - Bilibili | https://space.bilibili.com/120174936/ | 准备开始周更的蒟蒻 UP 主 | /images/agoh-bili/ava.jpg
+AgOH's Blog | https://stagoh.com/ | AgOH's Blog | /images/agoh-blog/ava.jpg
+Baobaobear's blog | https://baobaobear.github.io/ | 可持久化折腾和研究算法的抱抱熊博客 | /images/baobaobear-blog/avatar.jpg
+{% endlinkgrid %}
+
+## 如何添加友链
+
+在评论区按如下格式评论
+
+```text
+name:
+description:
+link:
+avatar:
+```
+
+{% note primary %}
+请务必提前在您的 Blog 上添加本站的友链信息
+{% endnote %}
+
+### 要求
+
+- avatar 要求: 图像长宽比不可超过 1.5, 大小最好不超过 512KB. 若提供点阵图, 则还要求尺寸在 128x128 以上
+
+  {% note warning %}
+  为优化访问, 提供的 avatar 会缓存至本站, 若需更新请在 Github 或评论区留言
+  {% endnote %}
+
+  avatar 可以为空. avatar 为空, 图床无效或其他技术原因等情况时默认使用
+
+  ![/images/default-ava/ava](/images/default-ava/ava.png)
+
+- description 可以为空, 为空时与 name 相同
+- 对于 Blog 类型友链的额外要求:
+  - 有一定数量的原创文章, 建站时间一周以上
+  - 全站支持 HTTPS
+  - Blog 主站需能被 Google, Bing 之中至少一个搜索引擎搜索到
+
+### 本站友链信息
+
+```text
+name: Tifa's Blog
+description: 一个数学系 ACMer 的小站
+link: https://blog.tifa-233.com
+avatar: https://blog.tifa-233.com/images/ava.png
+```

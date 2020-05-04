@@ -1,0 +1,30 @@
+% From <https://www.integral-domain.org/lwilliams/Resources/tikzsnippets.php>
+\documentclass[tikz]{standalone}
+
+\begin{document}
+
+\tikzset{unode/.style = {
+    circle, 
+    draw=cyan!30!black, 
+    thick,
+    fill=cyan!80!black,
+    inner sep=2.3pt,
+    minimum size=2.3pt } }
+\tikzset{uedge/.style = {
+    draw=cyan!20!black, 
+    very thick} }
+
+\begin{tikzpicture} 
+    \foreach \i in {0,1,2,3,...,7}{ 
+        \path[uedge] (\i*45:4) edge (45+\i*45:4);
+        \path[uedge] (\i*45:1.646) edge (45+\i*45:4);
+        \path[uedge] (\i*45:1.646) edge (-45+\i*45:4);
+        \path[uedge] (\i*45:1.646) edge (135+\i*45:1.646);
+    }
+ 
+    \foreach \i in {0,1,2,3,...,7}{
+        \node[unode] at (\i*45:1.646) { };
+        \node[unode] at (\i*45:4) { }; 
+    } 
+\end{tikzpicture}
+\end{document}
