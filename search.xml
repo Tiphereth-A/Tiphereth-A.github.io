@@ -8,15 +8,15 @@
 <a id="more"></a>
 <h1 id="求面积诸法"><a href="#求面积诸法" class="headerlink" title="求面积诸法"></a>求面积诸法</h1><p>Simpson法是一种经典的数值积分方法, 一个重要应用就是求不规则图形面积<br>说到不规则图形, 我们往往都是先从曲边梯形开始</p>
 <p>曲边梯形$ABCD$就是下图中曲线$AB$、线段$AC$、$CD$、$DB$围成的图形, 我们想要求出它的面积</p>
-<p><img src="adaptive-simpson-rule/1.png" alt=""></p>
+<p><img src="/.io//1.png" alt></p>
 <p>一个简单而直接的解决方案是: 把曲边梯形分成$n$段, 每一段用一些规则的几何图形去近似, 然后累加每一段的面积, 这样我们就得出结果了</p>
 <p>可以看出, 上述过程的关键就是选择什么样的几何图形去近似</p>
 <p>当然, 用不同的几何图形近似, 效果是不同的</p>
 <h2 id="用矩形去近似"><a href="#用矩形去近似" class="headerlink" title="用矩形去近似"></a>用矩形去近似</h2><p>大致这样</p>
-<p><img src="adaptive-simpson-rule/2.png" alt=""></p>
+<p><img src="/.io//2.png" alt></p>
 <p>我们可以看出这种近似方法太粗糙了, 针对用矩形近似的方案, 我们可以做一些优化: </p>
 <p>对于每一段, 我们取端点中点在函数上的对应点, 借助这个点来构造矩形: </p>
-<p><img src="adaptive-simpson-rule/3.png" alt=""></p>
+<p><img src="/.io//3.png" alt></p>
 <p>这样看起来就舒服多了, 但感觉还是有些粗糙, 有没有更好的方法呢? </p>
 <p>当然有了! </p>
 <p>不过在继续之前, 我们先来看看如何实现这种方法</p>
@@ -25,7 +25,7 @@
 <script type="math/tex; mode=display">\int_a^bf(x)\mathrm{d}x\thickapprox\Delta x_i\sum_{i=1}^{n-1}{f((i+\frac{1}{2})\Delta x_i)}</script><p>为了方便, 我们让每一段的长度相等, 即对于每一段, 均有</p>
 <script type="math/tex; mode=display">\Delta x=\frac{b-a}{n}</script><p>那么</p>
 <script type="math/tex; mode=display">\int_a^bf(x)\mathrm{d}x\thickapprox\Delta x\sum_{i=1}^{n-1}{f((i+\frac{1}{2})\Delta x)}</script><h2 id="用梯形去近似"><a href="#用梯形去近似" class="headerlink" title="用梯形去近似"></a>用梯形去近似</h2><p>大致这样</p>
-<p><img src="adaptive-simpson-rule/4.png" alt=""></p>
+<p><img src="/.io//4.png" alt></p>
 <p><del>易知此法和上述的结果是一样的, 不过此法视觉效果好</del></p>
 <p>有一些部分看起来已经足够精确了, 但感觉还是有些粗糙, 有没有更好的方法呢? </p>
 <p>当然有了!</p>
@@ -36,7 +36,7 @@
 <script type="math/tex; mode=display">\Delta x=\frac{b-a}{n}</script><p>则</p>
 <script type="math/tex; mode=display">\int_a^bf(x)\mathrm{d}x\thickapprox\Delta x(\sum_{i=1}^{n-1}{f(i\Delta x)}+\frac{f(a)+f(b)}{2})</script><h2 id="Simpson法"><a href="#Simpson法" class="headerlink" title="Simpson法"></a>Simpson法</h2><p>进入正题</p>
 <p>Simpson法是先将原曲线近似成一段段抛物线, 然后再用Newton-Leibniz公式求每一段的面积</p>
-<p><img src="adaptive-simpson-rule/5.png" alt=""></p>
+<p><img src="/.io//5.png" alt></p>
 <p>(因为笔者在GeoGebra里没找到根据三点画抛物线的工具, 所以这里用圆弧代替了QwQ)</p>
 <p>可以看出, 此法效果相当不错</p>
 <p>我们来看看如何实现</p>
@@ -117,10 +117,10 @@
 <blockquote>
 <p>为了使每次去掉的区间有一定的规律性, 我们这样来考虑: <strong>每次舍去的区间占舍去前的区间的比例数相同</strong></p>
 <p>下面进一步分析如何按上述两个原则确定合适的试点. 如图2-1 设第1试点、第2试点分别为$x_1$和$x_2$, $x_2&lt;x_1$且$x_1,x_2$关于$[a,b]$的中心对称, 即$x_2-a=b-x_1$</p>
-<p><img src="approx-number/2_1.PNG" alt=""></p>
+<p><img src="/.io//2_1.PNG" alt></p>
 <p> (图2-1, 由GeoGebra生成) </p>
 <p>显然,  不论点$x_2$(或点$x_1$)是好点还是差点, 由对称性,  舍去的区间长度都等于$b-x_1$, 不妨设$x_2$是好点, $x_1$是差点, 于是舍去$(x_1,b]$. 再在存优范围$[a,x_1]$内安排第3次试验, 设试点为$x_3$, $x_3$与$x_2$关于$[a,x_1]$的中心对称 (如图2-2所示) . </p>
-<p><img src="approx-number/2_2.PNG" alt=""></p>
+<p><img src="/.io//2_2.PNG" alt></p>
 <p> (图2-2, 由GeoGebra生成) </p>
 <p>点$x_3$应在点$x_2$左侧, 因为如果点$x_3$在点$x_2$的右侧, 那么当$x_3$是好点, $x_2$是差点时, 要舍去区间$[a,x_2]$, 而它的长度与上次舍去的区间$(x_1,b]$的长度相同, 违背成比例舍去的原则. 于是, 不论点$x_3$ (或点$x_2$) 是好点还是差点, 被舍去的区间长度都等于$x_1-x_2$, 按成比例舍去的原则, 我们有等式</p>
 <script type="math/tex; mode=display">\frac{b-x_1}{b-a}=\frac{x_1-x_2}{x_1-a}\tag{1}</script><p>其中, 左边是第一次舍去的比例数, 右边是第二次舍去的比例数,  对式(1)变形, 得</p>
@@ -169,7 +169,7 @@
 <script type="math/tex; mode=display">\displaystyle\sum_{k=0}^\infty{\frac{f^{(k)}(x_0)}{k!}(x-x_0)^k}</script><p>特别地, 当$x_0=0$时, 有(Maclaurin级数) </p>
 <script type="math/tex; mode=display">\displaystyle\sum_{k=0}^\infty{\frac{f^{(k)}(0)}{k!}}x^k</script><p>另外注意应用Maclaurin级数并且$x$在某个范围之外时, 得到的结果可能是发散的(这个不展开讲, 有兴趣的读者可以去学习无穷级数相关知识) </p>
 <p>附上<a href="https://en.wikipedia.org/wiki/Taylor%27s_theorem" target="_blank" rel="noopener">Wikipedia</a>的动图</p>
-<p><img src="https://upload.wikimedia.org/wikipedia/commons/3/31/Tayloranimation.gif" alt=""></p>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/3/31/Tayloranimation.gif" alt></p>
 <p>对证明感兴趣的读者可以自行查阅相关资料</p>
 <p>下面给出几个常见的Taylor级数</p>
 <script type="math/tex; mode=display">e^x=\displaystyle\sum_{k=0}^\infty{\frac{x^k}{k!}}</script><script type="math/tex; mode=display">\sin x=\displaystyle\sum_{k=0}^\infty{(-1)^k\frac{x^{2k+1}}{(2k+1)!}}</script><script type="math/tex; mode=display">\cos x=\displaystyle\sum_{k=0}^\infty{(-1)^k\frac{x^{2k}}{(2k)!}}</script><p>(有上面三个式子就可以证明欧拉公式之$e^{i\theta}=\cos\theta+i\sin\theta$了) </p>
@@ -183,7 +183,7 @@
 <script type="math/tex; mode=display">x_1=x_0-\frac{f(x_0)}{f^\prime(x_0)}</script><p>既然是迭代, 那么自然就有</p>
 <script type="math/tex; mode=display">x_{n+1}=x_n-\frac{f(x_n)}{f^\prime(x_n)}</script><p>其中$x_n$代表第$n$次迭代</p>
 <p>附上<a href="https://en.wikipedia.org/wiki/Newton&#39;s_method" target="_blank" rel="noopener">Wikipedia</a>的动图</p>
-<p><img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/NewtonIteration_Ani.gif" alt=""></p>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/NewtonIteration_Ani.gif" alt></p>
 <p>二次收敛证明: (Wikipedia上的, 笔者翻译QwQ)</p>
 <blockquote>
 <p>根据<a href="https://en.wikipedia.org/wiki/Taylor%27s_theorem" target="_blank" rel="noopener">Taylor’s theorem</a>, 任何二阶导数连续的函数$f(x)$ (设$\alpha$是根) 都可以写成</p>
@@ -260,9 +260,9 @@
 <p>众所周知, 普通线段树的常数很大, 经常被卡, 而zkw线段树的常数很小</p>
 <p>这里用<a href="https://www.luogu.com.cn/problem/P3372" target="_blank" rel="noopener">洛谷P3372</a>做一个演示(更详细的补充见文末)</p>
 <p><strong>普通线段树</strong><a href="https://www.luogu.com.cn/record/9389075" target="_blank" rel="noopener">R9389075</a></p>
-<p><img src="zkw-segment-tree/seg0_4.png" alt=""></p>
+<p><img src="/.io//seg0_4.png" alt></p>
 <p><strong>zkw线段树</strong><a href="https://www.luogu.com.cn/record/9388963" target="_blank" rel="noopener">R9388963</a></p>
-<p><img src="zkw-segment-tree/seg0_5.png" alt=""></p>
+<p><img src="/.io//seg0_5.png" alt></p>
 <p>前者运行时间是后者运行时间的<strong>2.05</strong>倍！Σ(°Д°;</p>
 <p><strong>详细测试见后文</strong></p>
 <p>其实zkw线段树不仅快, 而且码量小, 空间小, 好调试<del>吊打普通线段树</del>orz</p>
@@ -274,7 +274,7 @@
 <p>其实真的很简单QwQ</p>
 <h2 id="建树"><a href="#建树" class="headerlink" title="建树"></a>建树</h2><p>首先是定义变量:<br><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> MAXN = <span class="number">2e5</span> + <span class="number">5</span>;</span><br><span class="line"><span class="keyword">int</span> tree[MAXN&lt;&lt;<span class="number">2</span>]; <span class="comment">//tree是线段树数组</span></span><br><span class="line"><span class="keyword">int</span> n, N=<span class="number">1</span>;        <span class="comment">//n是原数组实际长度, N下面会解释</span></span><br></pre></td></tr></table></figure></p>
 <p>我们以下图为例</p>
-<p><img src="zkw-segment-tree/seg1_6.png" alt=""></p>
+<p><img src="/.io//seg1_6.png" alt></p>
 <p>(由<a href="https://visualgo.net/zh/segmenttree" target="_blank" rel="noopener">visualgo</a>生成. 为便于讲解, 笔者做了一些改动)</p>
 <p>下面的黄圈是原数据, 黄圈下面的红色数字是原数组的下标</p>
 <p>上面的树就是线段树了, 每一个节点内部都是节点下方标明的区间中所有元素的总和, 上边的黑色数字就是线段树的下标</p>
@@ -295,15 +295,15 @@
 <p>完了！</p>
 <p>单点查询更简单, 相信各位读者都能想到QwQ</p>
 <h4 id="单点修改下的区间查询"><a href="#单点修改下的区间查询" class="headerlink" title="单点修改下的区间查询"></a>单点修改下的区间查询</h4><p>我们以查询<code>[2,6]</code>为例(线段树上的, 下同)</p>
-<p><img src="zkw-segment-tree/seg1_7.png" alt=""></p>
-<p>ans=<font color=#b5e61d>[2,2]+[3,3]+[4,4]+[5,5]+[6,6]</font></p>
-<p>观察上图可以发现, 因为在线段树上我们可以直接找到<font color=#00a2e8>[2,3]</font>和<font color=#00a2e8>[4,5]</font>, 所以我们只需要用<font color=#00a2e8>[2,3]</font>代替<font color=#b5e61d>[2,2]</font>和<font color=#b5e61d>[3,3]</font>; 用<font color=#00a2e8>[4,5]</font>代替<font color=#b5e61d>[4,4]</font>和<font color=#b5e61d>[5,5]</font></p>
-<p>于是 ans=<font color=#00a2e8>[2,3]</font>+<font color=#00a2e8>[4,5]</font>+<font color=#b5e61d>[6,6]</font></p>
+<p><img src="/.io//seg1_7.png" alt></p>
+<p>ans=<font color="#b5e61d">[2,2]+[3,3]+[4,4]+[5,5]+[6,6]</font></p>
+<p>观察上图可以发现, 因为在线段树上我们可以直接找到<font color="#00a2e8">[2,3]</font>和<font color="#00a2e8">[4,5]</font>, 所以我们只需要用<font color="#00a2e8">[2,3]</font>代替<font color="#b5e61d">[2,2]</font>和<font color="#b5e61d">[3,3]</font>; 用<font color="#00a2e8">[4,5]</font>代替<font color="#b5e61d">[4,4]</font>和<font color="#b5e61d">[5,5]</font></p>
+<p>于是 ans=<font color="#00a2e8">[2,3]</font>+<font color="#00a2e8">[4,5]</font>+<font color="#b5e61d">[6,6]</font></p>
 <p>自顶向下求和很简单, 怎么实现自底向上的求和呢?</p>
 <p>我们分别在区间左端点-1和右端点+1的位置放两个指针(令其为<code>s,t</code>), 就像这样:</p>
-<p><img src="zkw-segment-tree/seg1_8.png" alt=""></p>
+<p><img src="/.io//seg1_8.png" alt></p>
 <p>接着不断将<code>s,t</code>移动到对应节点的父节点处, 直到<code>s,t</code>指向的节点的父节点相同时停止</p>
-<p><img src="zkw-segment-tree/seg1_9.png" alt=""></p>
+<p><img src="/.io//seg1_9.png" alt></p>
 <p>在这期间, 如果:</p>
 <ol>
 <li><p><code>s</code>指向的节点是左儿子, 那么<code>ans += 右儿子的值</code></p>
@@ -337,15 +337,15 @@
 <p>我们需要在自底向上时更新节点的值, 所以我们还需要一个变量记录该节点<strong>包含元素的个数</strong></p>
 <p>另外要注意<strong>修改某个节点的标记时要更新上面的值</strong></p>
 <p>举个例子；我们换一棵树</p>
-<p><img src="zkw-segment-tree/seg2_2.png" alt=""></p>
+<p><img src="/.io//seg2_2.png" alt></p>
 <p>以修改<code>[2,10]</code>为例</p>
-<p><img src="zkw-segment-tree/seg2_3.png" alt=""></p>
+<p><img src="/.io//seg2_3.png" alt></p>
 <p>当<code>s</code>到了<code>[2,2]</code>节点时, <code>[3,3]</code>节点的add加<code>k</code>, 那么接下来<code>[2,3]</code>、<code>[0,3]</code>节点的值都要加上<code>k*1</code>, 而到了<code>[0,7]</code>节点时, 因为<code>[4,7]</code>节点的add加了<code>k</code>, 所以<code>[0,7]</code>节点的值要加上<code>k*(1+4)=k*5</code>, 自然<code>k</code>要乘的系数又需要一个变量来记录</p>
 <p>需要注意的是, 这次的<strong>修改要上推到根节点</strong></p>
 <p>下面是代码</p>
 <figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">update</span><span class="params">(<span class="keyword">int</span> s, <span class="keyword">int</span> t, <span class="keyword">int</span> k)</span> </span>&#123;</span><br><span class="line">  <span class="keyword">int</span> lNum=<span class="number">0</span>, rNum=<span class="number">0</span>, nNum=<span class="number">1</span>;</span><br><span class="line">  <span class="comment">//lNum:  s一路走来已经包含了几个数</span></span><br><span class="line">  <span class="comment">//rNum:  t一路走来已经包含了几个数</span></span><br><span class="line">  <span class="comment">//nNum:  本层每个节点包含几个数</span></span><br><span class="line">  <span class="keyword">for</span>(s = N+s<span class="number">-1</span>, t = N+t+<span class="number">1</span>; s^t^<span class="number">1</span>; s &gt;&gt;= <span class="number">1</span>, t &gt;&gt;= <span class="number">1</span>, nNum &lt;&lt;= <span class="number">1</span>) &#123;</span><br><span class="line">    <span class="comment">//更新tree</span></span><br><span class="line">    tree[s] += k*lNum;</span><br><span class="line">    tree[t] += k*rNum;</span><br><span class="line">    <span class="comment">//处理add</span></span><br><span class="line">    <span class="keyword">if</span>(~s&amp;<span class="number">1</span>) &#123;add[s^<span class="number">1</span>] += k; tree[s^<span class="number">1</span>] += k*nNum; lNum += nNum;&#125;</span><br><span class="line">    <span class="keyword">if</span>(t&amp;<span class="number">1</span>) &#123;add[t^<span class="number">1</span>] += k; tree[t^<span class="number">1</span>] += k*nNum; rNum += nNum;&#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="comment">//更新上层tree</span></span><br><span class="line">  <span class="keyword">for</span>(; s; s &gt;&gt;= <span class="number">1</span>, t &gt;&gt;= <span class="number">1</span>) &#123;</span><br><span class="line">    tree[s] += k*lNum;</span><br><span class="line">    tree[t] += k*rNum;</span><br><span class="line">  &#125; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h4 id="区间查询"><a href="#区间查询" class="headerlink" title="区间查询"></a>区间查询</h4><p>我们以查询<code>[2,10]</code>为例<del>没错笔者我就是要用一张图</del></p>
-<p><img src="zkw-segment-tree/seg2_3.png" alt=""></p>
+<p><img src="/.io//seg2_3.png" alt></p>
 <p>过程类似, 要注意<code>s,t</code>每次上推时都要根据当前所在节点的标记和<code>lNum / rNum</code>更新<code>ans</code> (<code>ans += add[s]*lNum</code>)</p>
 <p>可能有些难懂, 多读两遍或者看看代码或者自己手推一下就好了QwQ</p>
 <p>同样, 这个也需要上推到根节点</p>
