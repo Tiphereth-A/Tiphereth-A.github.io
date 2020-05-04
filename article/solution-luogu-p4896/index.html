@@ -20,19 +20,23 @@
     var CONFIG = {"hostname":"tiphereth-a.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="数学 程序设计 算法 数据结构 题解 笔记 数值积分 自适应Simpson算法 洛谷日报 二分 0.618法 Newton迭代法 Taylor级数 线段树 zkw线段树 测试数据 链表 洛谷 位掩码 莫队 前缀和&amp;差分">
-<meta property="og:type" content="website">
-<meta property="og:title" content="标签">
-<meta property="og:url" content="https://tiphereth-a.github.io/tags/index.html">
+  <meta name="description" content="题目 这么好的题怎么能没有“位掩码”题解呢（滑稽">
+<meta property="og:type" content="article">
+<meta property="og:title" content="题解-Luogu-P4896【Oier们的烦恼】">
+<meta property="og:url" content="https://tiphereth-a.github.io/article/solution-luogu-p4896/index.html">
 <meta property="og:site_name" content="Tiphereth&#39;s Blog">
-<meta property="og:description" content="数学 程序设计 算法 数据结构 题解 笔记 数值积分 自适应Simpson算法 洛谷日报 二分 0.618法 Newton迭代法 Taylor级数 线段树 zkw线段树 测试数据 链表 洛谷 位掩码 莫队 前缀和&amp;差分">
+<meta property="og:description" content="题目 这么好的题怎么能没有“位掩码”题解呢（滑稽">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2020-05-04T11:06:24.000Z">
-<meta property="article:modified_time" content="2020-05-04T15:52:32.186Z">
+<meta property="article:published_time" content="2018-11-13T14:35:58.000Z">
+<meta property="article:modified_time" content="2020-05-04T15:34:47.697Z">
 <meta property="article:author" content="Tiphereth">
+<meta property="article:tag" content="程序设计">
+<meta property="article:tag" content="题解">
+<meta property="article:tag" content="洛谷">
+<meta property="article:tag" content="位掩码">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://tiphereth-a.github.io/tags/">
+<link rel="canonical" href="https://tiphereth-a.github.io/article/solution-luogu-p4896/">
 
 
 <script id="page-configurations">
@@ -40,13 +44,12 @@
   CONFIG.page = {
     sidebar: "",
     isHome : false,
-    isPost : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>标签 | Tiphereth's Blog
-</title>
+  <title>题解-Luogu-P4896【Oier们的烦恼】 | Tiphereth's Blog</title>
   
 
 
@@ -177,51 +180,111 @@
       <div class="main-inner">
         <div class="content-wrap">
           
-  
-  
 
-          <div class="content page posts-expand">
+          <div class="content post posts-expand">
             
 
     
-    
-    
-    <div class="post-block" lang="zh-CN">
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://tiphereth-a.github.io/article/solution-luogu-p4896/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Tiphereth">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Tiphereth's Blog">
+    </span>
       <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          题解-Luogu-P4896【Oier们的烦恼】
+        </h1>
 
-<h1 class="post-title" itemprop="name headline">标签
-</h1>
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
 
-<div class="post-meta">
+              <time title="创建时间：2018-11-13 22:35:58" itemprop="dateCreated datePublished" datetime="2018-11-13T22:35:58+08:00">2018-11-13</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-05-04 23:34:47" itemprop="dateModified" datetime="2020-05-04T23:34:47+08:00">2020-05-04</time>
+              </span>
+
+          
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p><a href="https://www.luogu.com.cn/problem/P4896" target="_blank" rel="noopener">题目</a></p>
+<p>这么好的题怎么能没有“位掩码”题解呢（滑稽</p>
+<a id="more"></a>
+<p>大致思路就是<strong>用一个char来记录老师是否在机房和学生是否被抓到</strong>（一共需要3+5=8位来记录，正好是一个char），再<strong>用一个char记录被抓到的学生的编号</strong>，就像这样：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">char in_room, dead;</span><br><span class="line">&#x2F;&#x2F;in_room的1～3位记录老师，4～8位记录学生</span><br></pre></td></tr></table></figure>
+<p>然而为了降低调试难度，我们可以用两个char分别记录老师和学生的状态，就像这样：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">char onlineT, onlineS, deadS;</span><br><span class="line">&#x2F;&#x2F;按字面意思理解即可</span><br></pre></td></tr></table></figure>
+<p>我们还需要定义一些函数来对它们进行操作，就像这样（这里以宏定义为例）：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">#define _teacher_in(i) onlineT |&#x3D; 1 &lt;&lt; i      &#x2F;&#x2F;老师进机房</span><br><span class="line">#define _teacher_out(i) onlineT &amp;&#x3D; ~(1 &lt;&lt; i)  &#x2F;&#x2F;老师出机房</span><br><span class="line">#define _student_in(i) onlineS |&#x3D; 1 &lt;&lt; i      &#x2F;&#x2F;学生开始玩游戏</span><br><span class="line">#define _student_out(i) onlineS &amp;&#x3D; ~(1 &lt;&lt; i)  &#x2F;&#x2F;学生停止玩游戏</span><br><span class="line">#define _dead(i) deadS&amp;(1 &lt;&lt; i)               &#x2F;&#x2F;查询学生是否被发现</span><br><span class="line">#define _kill_student deadS |&#x3D; onlineS        &#x2F;&#x2F;学生被发现</span><br></pre></td></tr></table></figure>
+<p>其他就没什么了，可以参照其他题解<del>没错我就是懒（理直气壮</del></p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/" rel="tag"># 程序设计</a>
+              <a href="/tags/%E9%A2%98%E8%A7%A3/" rel="tag"># 题解</a>
+              <a href="/tags/%E6%B4%9B%E8%B0%B7/" rel="tag"># 洛谷</a>
+              <a href="/tags/%E4%BD%8D%E6%8E%A9%E7%A0%81/" rel="tag"># 位掩码</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/article/adaptive-simpson-rule/" rel="prev" title="<洛谷日报#46>浅谈自适应Simpson法">
+      <i class="fa fa-chevron-left"></i> <洛谷日报#46>浅谈自适应Simpson法
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/article/solution-luogu-p5462/" rel="next" title="题解-Luogu-P5462【X龙珠】">
+      题解-Luogu-P5462【X龙珠】 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
   
 
-</div>
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
-          <div class="tag-cloud">
-            <div class="tag-cloud-title">
-              目前共计 24 个标签
-            </div>
-            <div class="tag-cloud-tags">
-              <a href="/tags/0-618%E6%B3%95/" style="font-size: 12px; color: #ccc">0.618法</a> <a href="/tags/BZOJ/" style="font-size: 12px; color: #ccc">BZOJ</a> <a href="/tags/LOJ/" style="font-size: 12px; color: #ccc">LOJ</a> <a href="/tags/Newton%E8%BF%AD%E4%BB%A3%E6%B3%95/" style="font-size: 12px; color: #ccc">Newton迭代法</a> <a href="/tags/Taylor%E7%BA%A7%E6%95%B0/" style="font-size: 12px; color: #ccc">Taylor级数</a> <a href="/tags/zkw%E7%BA%BF%E6%AE%B5%E6%A0%91/" style="font-size: 12px; color: #ccc">zkw线段树</a> <a href="/tags/%E4%BA%8C%E5%88%86/" style="font-size: 12px; color: #ccc">二分</a> <a href="/tags/%E4%BD%8D%E6%8E%A9%E7%A0%81/" style="font-size: 12px; color: #ccc">位掩码</a> <a href="/tags/%E5%89%8D%E7%BC%80%E5%92%8C-%E5%B7%AE%E5%88%86/" style="font-size: 12px; color: #ccc">前缀和&差分</a> <a href="/tags/%E6%95%B0%E5%80%BC%E7%A7%AF%E5%88%86/" style="font-size: 12px; color: #ccc">数值积分</a> <a href="/tags/%E6%95%B0%E5%AD%A6/" style="font-size: 16.5px; color: #9d9d9d">数学</a> <a href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" style="font-size: 16.5px; color: #9d9d9d">数据结构</a> <a href="/tags/%E6%B4%9B%E8%B0%B7/" style="font-size: 21px; color: #6f6f6f">洛谷</a> <a href="/tags/%E6%B4%9B%E8%B0%B7%E6%97%A5%E6%8A%A5/" style="font-size: 25.5px; color: #404040">洛谷日报</a> <a href="/tags/%E6%B5%8B%E8%AF%95%E6%95%B0%E6%8D%AE/" style="font-size: 16.5px; color: #9d9d9d">测试数据</a> <a href="/tags/%E7%9C%81%E9%80%89/" style="font-size: 12px; color: #ccc">省选</a> <a href="/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/" style="font-size: 30px; color: #111">程序设计</a> <a href="/tags/%E7%AC%94%E8%AE%B0/" style="font-size: 12px; color: #ccc">笔记</a> <a href="/tags/%E7%AE%97%E6%B3%95/" style="font-size: 21px; color: #6f6f6f">算法</a> <a href="/tags/%E7%BA%BF%E6%AE%B5%E6%A0%91/" style="font-size: 16.5px; color: #9d9d9d">线段树</a> <a href="/tags/%E8%87%AA%E9%80%82%E5%BA%94Simpson%E7%AE%97%E6%B3%95/" style="font-size: 12px; color: #ccc">自适应Simpson算法</a> <a href="/tags/%E8%8E%AB%E9%98%9F/" style="font-size: 12px; color: #ccc">莫队</a> <a href="/tags/%E9%93%BE%E8%A1%A8/" style="font-size: 12px; color: #ccc">链表</a> <a href="/tags/%E9%A2%98%E8%A7%A3/" style="font-size: 21px; color: #6f6f6f">题解</a>
-            </div>
-          </div>
-        
-      </div>
-      
-      
-      
-    </div>
-    
-
-    
-    
-    
 
 
           </div>
