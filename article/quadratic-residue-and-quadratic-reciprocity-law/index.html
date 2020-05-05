@@ -9,6 +9,8 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
   <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
 
 <link rel="stylesheet" href="/css/main.css">
 
@@ -277,6 +279,23 @@
     
     
     
+        
+
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>Tiphereth
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="https://tiphereth-a.github.io/article/quadratic-residue-and-quadratic-reciprocity-law/" title="数论笔记-二次剩余,legendre符号与二次互反律">https://tiphereth-a.github.io/article/quadratic-residue-and-quadratic-reciprocity-law/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
 
       <footer class="post-footer">
           <div class="post-tags">
@@ -370,7 +389,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">11</span>
+          <span class="site-state-item-count">13</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -426,6 +445,9 @@
         </li>
         <li class="links-of-blogroll-item">
           <a href="https://poloclub.github.io/cnn-explainer/" title="https:&#x2F;&#x2F;poloclub.github.io&#x2F;cnn-explainer&#x2F;" rel="noopener" target="_blank">CNN Explainer</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="https://mermaid-js.github.io/mermaid" title="https:&#x2F;&#x2F;mermaid-js.github.io&#x2F;mermaid" rel="noopener" target="_blank">Mermaid</a>
         </li>
         <li class="links-of-blogroll-item">
           <a href="https://space.bilibili.com/120174936/" title="https:&#x2F;&#x2F;space.bilibili.com&#x2F;120174936&#x2F;" rel="noopener" target="_blank">不分解的AgOH - Bilibili</a>
@@ -517,6 +539,19 @@
 
 
 
+<script>
+if (document.querySelectorAll('pre.mermaid').length) {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/mermaid@8/dist/mermaid.min.js', () => {
+    mermaid.initialize({
+      theme    : 'forest',
+      logLevel : 3,
+      flowchart: { curve     : 'linear' },
+      gantt    : { axisFormat: '%m/%d/%Y' },
+      sequence : { actorMargin: 50 }
+    });
+  }, window.mermaid);
+}
+</script>
 
 
   
