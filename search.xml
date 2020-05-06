@@ -1,12 +1,576 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>mhchem使用手册-中文文档</title>
+    <url>/article/mhchem-function/</url>
+    <content><![CDATA[<p>来自<a href="https://mhchem.github.io/MathJax-mhchem/" target="_blank" rel="noopener">Manual for: mhchem for MathJax, mhchem for KaTeX</a></p>
+<a id="more"></a>
+<h2 id="数学模式-math-mode-斜体"><a href="#数学模式-math-mode-斜体" class="headerlink" title="数学模式(math mode)/斜体"></a>数学模式(math mode)/斜体</h2><p><code>\ce</code>支持嵌套<code>$...$</code>切换至数学模式(math mode)/使用斜体</p>
+<script type="math/tex; mode=display">\ce{X_$i$^$x$}</script><p><code>\ce{X_$i$^$x$}</code></p>
+<script type="math/tex; mode=display">\ce{$cis${-}[PtCl2(NH3)2]}</script><p><code>\ce{$cis${-}[PtCl2(NH3)2]}</code></p>
+<script type="math/tex; mode=display">\ce{CuS($hP12$)}</script><p><code>\ce{CuS($hP12$)}</code></p>
+<p>可使用<code>~</code>代表空格</p>
+<h2 id="直立文字"><a href="#直立文字" class="headerlink" title="直立文字"></a>直立文字</h2><ul>
+<li><p>使用<code>{...}</code>嵌套</p>
+<p>$\ce{ {Gluconic Acid} + H2O2}$<br><code>\ce{ {Gluconic Acid} + H2O2}</code></p>
+</li>
+<li><p>使用<code>-</code>(不应作为化学键)</p>
+<p>$\ce{ {(+)}_589{-}[Co(en)3]Cl3}$<br><code>\ce{ {(+)}_589{-}[Co(en)3]Cl3}</code></p>
+</li>
+</ul>
+<h2 id="化学方程式-CE"><a href="#化学方程式-CE" class="headerlink" title="化学方程式(CE)"></a>化学方程式(CE)</h2><div class="table-container">
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\ce{CO2 + C -&gt; 2 CO}$</td>
+<td><code>\ce{CO2 + C -&gt; 2 CO}</code></td>
+</tr>
+<tr>
+<td>$\ce{Hg^2+ -&gt;[I-] HgI2 -&gt;[I-] [Hg^{II}I4]^2-}$</td>
+<td><code>\ce{Hg^2+ -&gt;[I-] HgI2 -&gt;[I-] [Hg^{II}I4]^2-}</code></td>
+</tr>
+<tr>
+<td>$C_p[\ce{H2O(l)}] = \pu{75.3 J // mol K}$</td>
+<td><code>C_p[\ce{H2O(l)}] = \pu{75.3 J // mol K}</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="物理单位-PU"><a href="#物理单位-PU" class="headerlink" title="物理单位(PU)"></a>物理单位(PU)</h2><div class="table-container">
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\pu{1.2e3 kJ/mol}$</td>
+<td><code>\pu{1.2e3 kJ/mol}</code></td>
+</tr>
+<tr>
+<td>$\pu{1,2e3 kJ//mol}$</td>
+<td><code>\pu{1,2e3 kJ//mol}</code></td>
+</tr>
+<tr>
+<td>$\pu{1.2E3 kJ mol-1}$</td>
+<td><code>\pu{1.2E3 kJ mol-1}</code></td>
+</tr>
+<tr>
+<td>$\pu{1,2E3 kJ*mol-1}$</td>
+<td><code>\pu{1,2E3 kJ*mol-1}</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="化学式"><a href="#化学式" class="headerlink" title="化学式"></a>化学式</h2><div class="table-container">
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\ce{H2O}$</td>
+<td><code>\ce{H2O}</code></td>
+</tr>
+<tr>
+<td>$\ce{Sb2O3}$</td>
+<td><code>\ce{Sb2O3}</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="离子"><a href="#离子" class="headerlink" title="离子"></a>离子</h2><div class="table-container">
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\ce{H+}$</td>
+<td><code>\ce{H+}</code></td>
+</tr>
+<tr>
+<td>$\ce{CrO4^2-}$</td>
+<td><code>\ce{CrO4^2-}</code></td>
+</tr>
+<tr>
+<td>$\ce{[AgCl2]-}$</td>
+<td><code>\ce{[AgCl2]-}</code></td>
+</tr>
+<tr>
+<td>$\ce{Y^99+}$</td>
+<td><code>\ce{Y^99+}</code></td>
+</tr>
+<tr>
+<td>$\ce{Y^{99+}}$</td>
+<td><code>\ce{Y^{99+}}</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="带化学计量数"><a href="#带化学计量数" class="headerlink" title="带化学计量数"></a>带化学计量数</h2><div class="table-container">
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\ce{2 H2O}$</td>
+<td><code>\ce{2 H2O}</code></td>
+</tr>
+<tr>
+<td>$\ce{2H2O}$</td>
+<td><code>\ce{2H2O}</code></td>
+</tr>
+<tr>
+<td>$\ce{0.5 H2O}$</td>
+<td><code>\ce{0.5 H2O}</code></td>
+</tr>
+<tr>
+<td>$\ce{1/2 H2O}$</td>
+<td><code>\ce{1/2 H2O}</code></td>
+</tr>
+<tr>
+<td>$\ce{(1/2) H2O}$</td>
+<td><code>\ce{(1/2) H2O}</code>(IUPAC Green Book)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<script type="math/tex; mode=display">\ce{$n$ H2O}</script><p><code>\ce{$n$ H2O}</code></p>
+<h2 id="核素"><a href="#核素" class="headerlink" title="核素"></a>核素</h2><div class="table-container">
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\ce{^{227}_{90}Th+}$</td>
+<td><code>\ce{^{227}_{90}Th+}</code></td>
+</tr>
+<tr>
+<td>$\ce{^227_90Th+}$</td>
+<td><code>\ce{^227_90Th+}</code></td>
+</tr>
+<tr>
+<td>$\ce{^{0}_{-1}n^{-}}$</td>
+<td><code>\ce{^{0}_{-1}n^{-}}</code></td>
+</tr>
+<tr>
+<td>$\ce{^0_-1n-}$</td>
+<td><code>\ce{^0_-1n-}</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>上标属于左边还是右边可能是不确定的. 该插件有自动检测功能(仅为数字=质量数=属于右侧)，但要有<code>{}</code>作为分隔符</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\ce{H{}^3HO}$</td>
+<td><code>\ce{H{}^3HO}</code></td>
+</tr>
+<tr>
+<td>$\ce{H^3HO}$</td>
+<td><code>\ce{H^3HO}</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="反应式箭头"><a href="#反应式箭头" class="headerlink" title="反应式箭头"></a>反应式箭头</h2><div class="table-container">
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\ce{A -&gt; B}$</td>
+<td><code>\ce{A -&gt; B}</code></td>
+</tr>
+<tr>
+<td>$\ce{A &lt;- B}$</td>
+<td><code>\ce{A &lt;- B}</code></td>
+</tr>
+<tr>
+<td>$\ce{A &lt;-&gt; B}$</td>
+<td><code>\ce{A &lt;-&gt; B}</code></td>
+</tr>
+<tr>
+<td>$\ce{A &lt;—&gt; B}$</td>
+<td><code>\ce{A &lt;--&gt; B}</code></td>
+</tr>
+<tr>
+<td>$\ce{A &lt;=&gt; B}$</td>
+<td><code>\ce{A &lt;=&gt; B}</code></td>
+</tr>
+<tr>
+<td>$\ce{A &lt;=&gt;&gt; B}$</td>
+<td><code>\ce{A &lt;=&gt;&gt; B}</code></td>
+</tr>
+<tr>
+<td>$\ce{A &lt;&lt;=&gt; B}$</td>
+<td><code>\ce{A &lt;&lt;=&gt; B}</code></td>
+</tr>
+<tr>
+<td>$\ce{A -&gt;[{text above}][{text below}] B}$</td>
+<td><code>\ce{A -&gt;[{text above}][{text below}] B}</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<script type="math/tex; mode=display">\ce{A ->[$x$][$x_i$] B}</script><p><code>\ce{A -&gt;[$x$][$x_i$] B</code></p>
+<p>MathJax无法正确伸长&lt;-&gt;，&lt;=&gt;，&lt;=&gt;&gt;和&lt;&lt;=&gt;箭头 <a href="https://github.com/mathjax/MathJax/issues/1491" target="_blank" rel="noopener">Issue#1491</a></p>
+<h2 id="括号"><a href="#括号" class="headerlink" title="括号"></a>括号</h2><div class="table-container">
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\ce{(NH4)2S}$</td>
+<td><code>\ce{(NH4)2S}</code></td>
+</tr>
+<tr>
+<td>$\ce{[\{(X2)3\}2]^3+}$</td>
+<td><code>\ce{[\{(X2)3\}2]^3+}</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><code>\left</code>和<code>\right</code>应在同一环境内</p>
+<script type="math/tex; mode=display">\ce{CH4 + 2 $\left( \ce{O2 + 79/21 N2} \right)$}</script><p><code>\ce{CH4 + 2 $\left( \ce{O2 + 79/21 N2} \right)$}</code></p>
+<h2 id="聚集状态"><a href="#聚集状态" class="headerlink" title="聚集状态"></a>聚集状态</h2><div class="table-container">
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\ce{H2(aq)}$</td>
+<td><code>\ce{H2(aq)}</code></td>
+</tr>
+<tr>
+<td>$\ce{CO3^2-_{(aq)}}$</td>
+<td><code>\ce{CO3^2-_{(aq)}}</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<script type="math/tex; mode=display">\ce{NaOH(aq,$\infty$)}</script><p><code>\ce{NaOH(aq,$\infty$)}</code> </p>
+<h2 id="晶系"><a href="#晶系" class="headerlink" title="晶系"></a>晶系</h2><script type="math/tex; mode=display">\ce{ZnS($c$)}</script><p><code>\ce{ZnS($c$)}</code></p>
+<script type="math/tex; mode=display">\ce{ZnS(\ca$c$)}</script><p><code>\ce{ZnS(\ca$c$)}</code></p>
+<h2 id="含有变量-使用斜体渲染"><a href="#含有变量-使用斜体渲染" class="headerlink" title="含有变量(使用斜体渲染)"></a>含有变量(使用斜体渲染)</h2><div class="table-container">
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\ce{NO_x}$</td>
+<td><code>\ce{NO_x}</code></td>
+</tr>
+<tr>
+<td>$\ce{Fe^n+}$</td>
+<td><code>\ce{Fe^n+}</code></td>
+</tr>
+<tr>
+<td>$\ce{x Na(NH4)HPO4 -&gt;[\Delta] (NaPO3)_x + x NH3 ^ + x H2O}$</td>
+<td><code>\ce{x Na(NH4)HPO4 -&gt;[\Delta] (NaPO3)_x + x NH3 ^ + x H2O}</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>如果未识别, 可使用数学模式(math mode)</p>
+<h2 id="希腊字母"><a href="#希腊字母" class="headerlink" title="希腊字母"></a>希腊字母</h2><p>MathJax和KaTeX均不支持小写直立希腊字母</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\ce{\mu-Cl}$</td>
+<td><code>\ce{\mu-Cl}</code></td>
+</tr>
+<tr>
+<td>$\ce{[Pt(\eta^2-C2H4)Cl3]-}$</td>
+<td><code>\ce{[Pt(\eta^2-C2H4)Cl3]-}</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>注意希腊字母后的空格会被忽略, 可使用<code>{}</code>分割</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\ce{\beta +}$</td>
+<td><code>\ce{\beta +}</code> (<code>+</code>识别为上标)</td>
+</tr>
+<tr>
+<td>$\ce{^40_18Ar + \gamma{} + \nu_e}$</td>
+<td><code>\ce{^40_18Ar + \gamma{} + \nu_e}</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="化学键"><a href="#化学键" class="headerlink" title="化学键"></a>化学键</h2><div class="table-container">
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\ce{C6H5-CHO}$</td>
+<td><code>\ce{C6H5-CHO}</code></td>
+</tr>
+<tr>
+<td>$\ce{A-B=C#D}$</td>
+<td><code>\ce{A-B=C#D}</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>可使用<code>\bond</code>指令强制按化学键解析</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\ce{A\bond{~}B\bond{~-}C}$</td>
+<td><code>\ce{A\bond{~}B\bond{~-}C}</code></td>
+</tr>
+<tr>
+<td>$\ce{A\bond{…}B\bond{….}C}$</td>
+<td><code>\ce{A\bond{...}B\bond{....}C}</code></td>
+</tr>
+<tr>
+<td>$\ce{A\bond{-&gt;}B\bond{&lt;-}C}$</td>
+<td><code>\ce{A\bond{-&gt;}B\bond{&lt;-}C}</code></td>
+</tr>
+<tr>
+<td>$\ce{A\bond{-}B\bond{=}C\bondD}`</td>
+</tr>
+<tr>
+<td>$\ce{A\bond{1}B\bond{2}C\bond{3}D}$</td>
+<td><code>\ce{A\bond{1}B\bond{2}C\bond{3}D}</code></td>
+</tr>
+<tr>
+<td>$\ce{A\bond{~—}B\bond{~=}C\bond{-~-}D}$</td>
+<td><code>\ce{A\bond{~--}B\bond{~=}C\bond{-~-}D}</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="附加化合物"><a href="#附加化合物" class="headerlink" title="附加化合物"></a>附加化合物</h2><div class="table-container">
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\ce{KCr(SO4)2*12H2O}$</td>
+<td><code>\ce{KCr(SO4)2*12H2O}</code></td>
+</tr>
+<tr>
+<td>$\ce{KCr(SO4)2.12H2O}$</td>
+<td><code>\ce{KCr(SO4)2.12H2O}</code></td>
+</tr>
+<tr>
+<td>$\ce{KCr(SO4)2 * 12 H2O}$</td>
+<td><code>\ce{KCr(SO4)2 * 12 H2O}</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="氧化态"><a href="#氧化态" class="headerlink" title="氧化态"></a>氧化态</h2><p>$\ce{Fe^{II}Fe^{III}2O4}$<br><code>\ce{Fe^{II}Fe^{III}2O4}</code></p>
+<h2 id="不成对电子-自由基"><a href="#不成对电子-自由基" class="headerlink" title="不成对电子, 自由基"></a>不成对电子, 自由基</h2><div class="table-container">
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\ce{OCO^{.-}}$</td>
+<td><code>\ce{OCO^{.-}}</code></td>
+</tr>
+<tr>
+<td>$\ce{NO^{(2.)-}}$</td>
+<td><code>\ce{NO^{(2.)-}}</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="Kroger-Vink表示法"><a href="#Kroger-Vink表示法" class="headerlink" title="Kröger-Vink表示法"></a>Kröger-Vink表示法</h2><div class="table-container">
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\ce{O’’_{i,x}}$</td>
+<td><code>\ce{O&#39;&#39;_{i,x}}</code></td>
+</tr>
+<tr>
+<td>$\ce{M^{..}_i}$</td>
+<td><code>\ce{M^{..}_i}</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<script type="math/tex; mode=display">\ce{$V$^{4'}_{Ti}}</script><p><code>\ce{$V$^{4&#39;}_{Ti}}</code></p>
+<script type="math/tex; mode=display">\ce{V_{V,1}C_{C,0.8}$V$_{C,0.2}}</script><p><code>\ce{V_{V,1}C_{C,0.8}$V$_{C,0.2}}</code></p>
+<script type="math/tex; mode=display">\ce{Li^x_{Li,1-2x}Mg^._{Li,x}$V$'_{Li,x}Cl^x_{Cl}}</script><p><code>\ce{Li^x_{Li,1-2x}Mg^._{Li,x}$V$&#39;_{Li,x}Cl^x_{Cl}}</code></p>
+<h2 id="方程式操作符"><a href="#方程式操作符" class="headerlink" title="方程式操作符"></a>方程式操作符</h2><div class="table-container">
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\ce{A + B}$</td>
+<td><code>\ce{A + B}</code></td>
+</tr>
+<tr>
+<td>$\ce{A - B}$</td>
+<td><code>\ce{A - B}</code></td>
+</tr>
+<tr>
+<td>$\ce{A = B}$</td>
+<td><code>\ce{A = B}</code></td>
+</tr>
+<tr>
+<td>$\ce{A \pm B}$</td>
+<td><code>\ce{A \pm B}</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="沉淀与气体"><a href="#沉淀与气体" class="headerlink" title="沉淀与气体"></a>沉淀与气体</h2><p>$\ce{A v B (v) -&gt; B ^ B (^)}$<br><code>\ce{A v B (v) -&gt; B ^ B (^)}</code></p>
+<h2 id="杂项"><a href="#杂项" class="headerlink" title="杂项"></a>杂项</h2><div class="table-container">
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\ce{NO^*}$</td>
+<td><code>\ce{NO^*}</code> (激发态)</td>
+</tr>
+<tr>
+<td>$\ce{1s^2-N}$</td>
+<td><code>\ce{1s^2-N}</code> (轨道)</td>
+</tr>
+<tr>
+<td>$\ce{n-Pr}$</td>
+<td><code>\ce{n-Pr}</code></td>
+</tr>
+<tr>
+<td>$\ce{iPr}$</td>
+<td><code>\ce{iPr}</code></td>
+</tr>
+<tr>
+<td>$\ce{\ca Fe}$</td>
+<td><code>\ce{\ca Fe}</code></td>
+</tr>
+<tr>
+<td>$\ce{A, B, C; F}$</td>
+<td><code>\ce{A, B, C; F}</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<script type="math/tex; mode=display">\ce{Zn^2+  <=>[+ 2OH-][+ 2H+]  $\underset{\text{amphoteres Hydroxid}}{\ce{Zn(OH)2 v}}$  <=>[+ 2OH-][+ 2H+]  $\underset{\text{Hydroxozikat}}{\ce{[Zn(OH)4]^2-}}$}</script><p><code>\ce{Zn^2+  &lt;=&gt;[+ 2OH-][+ 2H+]  $\underset{\text{amphoteres Hydroxid}}{\ce{Zn(OH)2 v}}$  &lt;=&gt;[+ 2OH-][+ 2H+]  $\underset{\text{Hydroxozikat}}{\ce{[Zn(OH)4]^2-}}$}</code></p>
+<script type="math/tex; mode=display">\ce{$K = \frac{[\ce{Hg^2+}][\ce{Hg}]}{[\ce{Hg2^2+}]}$}</script><p><code>\ce{$K = \frac{[\ce{Hg^2+}][\ce{Hg}]}{[\ce{Hg2^2+}]}$}</code></p>
+<script type="math/tex; mode=display">\ce{$K = \ce{\frac{[Hg^2+][Hg]}{[Hg2^2+]}}$}</script><p><code>\ce{$K = \ce{\frac{[Hg^2+][Hg]}{[Hg2^2+]}}$}</code></p>
+<script type="math/tex; mode=display">\ce{Hg^2+ ->[I-] $\underset{\mathrm{red}}{\ce{HgI2}}$ ->[I-] 
+ $\underset{\mathrm{red}}{\ce{[Hg^{II}I4]^2-}}$}</script><p><code>\ce{Hg^2+ -&gt;[I-] $\underset{\mathrm{red}}{\ce{HgI2}}$ -&gt;[I-]  $\underset{\mathrm{red}}{\ce{[Hg^{II}I4]^2-}}$}</code></p>
+]]></content>
+      <tags>
+        <tag>测试</tag>
+        <tag>文档</tag>
+        <tag>翻译</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>KaTeX支持的指令-中文文档</title>
     <url>/article/katex-supported-functions/</url>
     <content><![CDATA[<p>来自 <a href="https://katex.org/docs/supported.html" target="_blank" rel="noopener">Supported functions - KaTeX</a></p>
 <p>笔者汉化</p>
-<p>注意: 本博客使用MathJax渲染, 渲染结果请以原文为准</p>
+<p>注意: 本博客采用MathJax渲染, 写这篇博客的初衷也是比较二者支持指令的异同, 渲染结果请以原文为准</p>
 <a id="more"></a>
+<p>此处列出KaTeX所支持的TeX指令清单, 按逻辑分组排序, 按字母顺序排列的表格<a href="https://katex.org/docs/support_table.html" target="_blank" rel="noopener">点此</a></p>
 <h2 id="变音符号"><a href="#变音符号" class="headerlink" title="变音符号"></a>变音符号</h2><div class="table-container">
 <table>
 <thead>
@@ -229,68 +793,27 @@
 </tbody>
 </table>
 </div>
-<h2 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h2><div class="table-container">
-<table>
-<thead>
-<tr>
-<th style="text-align:left"></th>
-<th style="text-align:left"></th>
-<th style="text-align:left"></th>
-<th style="text-align:left"></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">$\begin{matrix} a &amp; b \ c &amp; d \end{matrix}$</td>
-<td style="text-align:left"><code>\begin{matrix}</code>   <code>a &amp; b \\</code>   <code>c &amp; d``\end{matrix}</code></td>
-<td style="text-align:left">$\begin{array}{cc}a &amp; b\\c &amp; d\end{array}$</td>
-<td style="text-align:left"><code>\begin{array}{cc}</code>   <code>a &amp; b \\</code>   <code>c &amp; d``\end{array}</code></td>
-</tr>
-<tr>
-<td style="text-align:left">$\begin{pmatrix} a &amp; b \ c &amp; d \end{pmatrix}$</td>
-<td style="text-align:left"><code>\begin{pmatrix}</code>   <code>a &amp; b \\</code>   <code>c &amp; d``\end{pmatrix}</code></td>
-<td style="text-align:left">$\begin{bmatrix} a &amp; b \ c &amp; d \end{bmatrix}$</td>
-<td style="text-align:left"><code>\begin{bmatrix}</code>   <code>a &amp; b \\</code>   <code>c &amp; d``\end{bmatrix}</code></td>
-</tr>
-<tr>
-<td style="text-align:left">$\begin{vmatrix} a &amp; b \ c &amp; d \end{vmatrix}$</td>
-<td style="text-align:left"><code>\begin{vmatrix}</code>   <code>a &amp; b \\</code>   <code>c &amp; d``\end{vmatrix}</code></td>
-<td style="text-align:left">$\begin{Vmatrix} a &amp; b \ c &amp; d \end{Vmatrix}$</td>
-<td style="text-align:left"><code>\begin{Vmatrix}</code>   <code>a &amp; b \\</code>   <code>c &amp; d``\end{Vmatrix}</code></td>
-</tr>
-<tr>
-<td style="text-align:left">$\begin{Bmatrix} a &amp; b \ c &amp; d \end{Bmatrix}$</td>
-<td style="text-align:left"><code>\begin{Bmatrix}</code>   <code>a &amp; b \\</code>   <code>c &amp; d``\end{Bmatrix}</code></td>
-<td style="text-align:left">$\def\arraystretch{1.5}\begin{array}{c:c:c} a &amp; b &amp; c \ \hline d &amp; e &amp; f \ \hdashline g &amp; h &amp; i \end{array}$</td>
-<td style="text-align:left"><code>\def\arraystretch{1.5}</code>   <code>\begin{array}{c:c:c}</code>   <code>a &amp; b &amp; c \\ \hline</code>   <code>d &amp; e &amp; f \\</code>   <code>\hdashline</code>   <code>g &amp; h &amp; i``\end{array}</code></td>
-</tr>
-<tr>
-<td style="text-align:left">$\begin{aligned} a&amp;=b+c \ d+e&amp;=f \end{aligned}$</td>
-<td style="text-align:left"><code>\begin{aligned}</code>   <code>a&amp;=b+c \\</code>   <code>d+e&amp;=f``\end{aligned}</code></td>
-<td style="text-align:left">$\begin{alignedat}{2}10&amp;x+&amp;3&amp;y=2\\3&amp;x+&amp;13&amp;y=4\end{alignedat}$</td>
-<td style="text-align:left"><code>\begin{alignedat}{2}</code>   <code>10&amp;x+ &amp;3&amp;y = 2 \\</code>   <code>3&amp;x+&amp;13&amp;y = 4``\end{alignedat}</code></td>
-</tr>
-<tr>
-<td style="text-align:left">$\begin{gathered} a=b \ e=b+c \end{gathered}$</td>
-<td style="text-align:left"><code>\begin{gathered}</code>   <code>a=b \\</code>   <code>e=b+c``\end{gathered}</code></td>
-<td style="text-align:left">$x = \begin{cases} a &amp;\text{if } b \ c &amp;\text{if } d \end{cases}$</td>
-<td style="text-align:left"><code>x = \begin{cases}</code>   <code>a &amp;\text{if } b  \\</code>   <code>c &amp;\text{if } d``\end{cases}</code></td>
-</tr>
-<tr>
-<td style="text-align:left">$\begin{smallmatrix} a &amp; b \ c &amp; d \end{smallmatrix}$</td>
-<td style="text-align:left"><code>\begin{smallmatrix}</code>   <code>a &amp; b \\</code>   <code>c &amp; d``\end{smallmatrix}</code></td>
-<td style="text-align:left">$\begin{rcases} a &amp;\text{if } b \ c &amp;\text{if } d \end{rcases}⇒…$</td>
-<td style="text-align:left"><code>\begin{rcases}</code>   <code>a &amp;\text{if } b  \\</code>   <code>c &amp;\text{if } d``\end{rcases}⇒…</code></td>
-</tr>
-</tbody>
-</table>
-</div>
-<p>KaTeX也支持 <code>darray</code>, <code>dcases</code>, 和 <code>drcases</code>.</p>
-<p>支持的换行符有: <code>\\</code>, <code>\cr</code>, <code>\\[distance]</code>, and <code>\cr[distance]</code>. *Distance*可由<a href="#单位">单位</a>中提到的一切</p>
-<p>环境<code>{array}</code>下支持的垂直分隔符有 <code>|</code>和<code>:</code></p>
-<p>环境<code>{array}</code>下目前不支持<code>\cline</code>和<code>\multicolumn</code>.</p>
+<h2 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h2><p>因为表格内换行不是很方便, 所以这里选择直接列出</p>
+<p>$\begin{matrix}<br>  a &amp; b \\<br>  c &amp; d<br>\end{matrix}$<br> <code>\begin{matrix} a &amp; b \\ c &amp; d \end{matrix}</code> </p>
+<p>$\begin{array}{cc}<br>  a &amp; b\\<br>  c &amp; d<br>\end{array}$<br> <code>\begin{array}{cc} a &amp; b \\ c &amp; d \end{array}</code></p>
+<p>$\begin{pmatrix}<br>  a &amp; b \\<br>  c &amp; d<br>\end{pmatrix}$<br><code>\begin{pmatrix} a &amp; b \\ c &amp; d \end{pmatrix}</code> </p>
+<p>$\begin{bmatrix}<br>  a &amp; b \\<br>  c &amp; d<br>\end{bmatrix}$<br> <code>\begin{bmatrix} a &amp; b \\ c &amp; d \end{bmatrix}</code></p>
+<p>$\begin{vmatrix}<br>  a &amp; b \\<br>  c &amp; d<br>\end{vmatrix}$<br><code>\begin{vmatrix} a &amp; b \\ c &amp; d \end{vmatrix}</code> </p>
+<p>$\begin{Vmatrix}<br>  a &amp; b \\<br>  c &amp; d<br>\end{Vmatrix}$<br><code>\begin{Vmatrix} a &amp; b \\ c &amp; d \end{Vmatrix}</code></p>
+<p>$\begin{Bmatrix}<br>  a &amp; b \\<br>  c &amp; d<br>\end{Bmatrix}$<br><code>\begin{Bmatrix} a &amp; b \\ c &amp; d \end{Bmatrix}</code></p>
+<p>$\def\arraystretch{1.5}\begin{array}{c:c:c}<br>  a &amp; b &amp; c \\<br>  \hline d &amp; e &amp; f \\<br>  \hdashline g &amp; h &amp; i<br>\end{array}$<br><code>\def\arraystretch{1.5} \begin{array}{c:c:c} a &amp; b &amp; c \\ \hline d &amp; e &amp; f \\ \hdashline g &amp; h &amp; i \end{array}</code></p>
+<p>$\begin{aligned}<br>  a&amp;=b+c \\<br>  d+e&amp;=f<br>\end{aligned}$<br><code>\begin{aligned} a&amp;=b+c \\ d+e&amp;=f \end{aligned}</code></p>
+<p>$\begin{alignedat}{2}<br>  10&amp;x+&amp;3&amp;y=2\\<br>  3&amp;x+&amp;13&amp;y=4<br>\end{alignedat}$<br><code>\begin{alignedat}{2} 10&amp;x+ &amp;3&amp;y = 2 \\  3&amp;x+&amp;13&amp;y = 4 \end{alignedat}</code></p>
+<p>$\begin{gathered}<br>  a=b \\<br>  e=b+c<br>\end{gathered}$<br><code>\begin{gathered} a=b \\ e=b+c \end{gathered}</code></p>
+<p>$x = \begin{cases}<br>  a &amp;\text{if } b \\<br>  c &amp;\text{if } d<br>\end{cases}$<br><code>x = \begin{cases} a &amp;\text{if } b \\ c &amp;\text{if } d \end{cases}</code></p>
+<p>$\begin{smallmatrix}<br>  a &amp; b \\<br>  c &amp; d<br>\end{smallmatrix}$<br> <code>\begin{smallmatrix} a &amp; b \\ c &amp; d \end{smallmatrix}</code> </p>
+<p>$\begin{rcases}<br>  a &amp;\text{if } b \\<br>  c &amp;\text{if } d<br>\end{rcases}⇒…$<br><code>\begin{rcases} a &amp;\text{if } b \\ c &amp;\text{if } d \end{rcases}⇒…</code></p>
+<p>KaTeX也支持 <code>darray</code>, <code>dcases</code>, 和 <code>drcases</code></p>
+<p>支持的换行符有: <code>\\</code>, <code>\cr</code>, <code>\\[distance]</code>, and <code>\cr[distance]</code>, Distance允许<a href="#单位">单位</a>中提到的一切</p>
+<p><code>{array}</code>下支持的垂直分隔符有 <code>|</code>和<code>:</code></p>
+<p><code>{array}</code>下目前不支持<code>\cline</code>和<code>\multicolumn</code></p>
 <h2 id="HTML"><a href="#HTML" class="headerlink" title="HTML"></a>HTML</h2><p>“原始HTML”功能可能对于不受信任的链接具有风险, 所以该功能默认关闭并在调用时命令会变为红色 (可通过<code>errorColor</code>选项配置 <a href="https://katex.org/docs/options.html" target="_blank" rel="noopener">参见</a>)</p>
-<p>完全信任LaTeX输入, 需要将<code>trust</code>选项设置为<code>true</code>, 你也可以通过该选项来设置信任命令或URL <a href="https://katex.org/docs/options.html" target="_blank" rel="noopener">参见</a></p>
+<p>若要完全信任LaTeX输入, 需要将<code>trust</code>选项设置为<code>true</code>, 你也可以通过该选项来设置信任命令或URL <a href="https://katex.org/docs/options.html" target="_blank" rel="noopener">参见</a></p>
 <div class="table-container">
 <table>
 <thead>
@@ -332,7 +855,7 @@
 </table>
 </div>
 <p><code>\includegraphics</code> 的第一个参数支持 <code>height</code>, <code>width</code>, <code>totalheight</code>, 和 <code>alt</code>, <code>height</code>是必要的</p>
-<p>HTML扩展(以<code>\html</code>为前缀)命令是非标准命令, 因此需要取消<code>htmlExtension</code>的<code>strict</code>选项.</p>
+<p>HTML扩展(以<code>\html</code>为前缀)命令是非标准命令, 因此需要取消<code>htmlExtension</code>的<code>strict</code>选项</p>
 <h2 id="字母和Unicode字符"><a href="#字母和Unicode字符" class="headerlink" title="字母和Unicode字符"></a>字母和Unicode字符</h2><p><strong>希腊字母</strong></p>
 <p>直接输入:<br>$Α Β Γ Δ Ε Ζ Η Θ Ι Κ Λ Μ Ν Ξ Ο Π Ρ Σ Τ Υ Φ Χ Ψ Ω$<br>$α β γ δ ϵ ζ η θ ι κ λ μ ν ξ o π ρ σ τ υ ϕ χ ψ ω ε ϑ ϖ ϱ ς φ ϝ$</p>
 <div class="table-container">
@@ -449,7 +972,7 @@
 <td>$\varphi$ <code>\varphi</code></td>
 </tr>
 <tr>
-<td>$\digamma $ <code>\digamma</code></td>
+<td>$\digamma$ <code>\digamma</code></td>
 </tr>
 </tbody>
 </table>
@@ -578,13 +1101,10 @@
 </div>
 <p><strong>Unicode</strong></p>
 <p>上表列出的所有字母在KaTeX任何渲染模式下都能正确渲染</p>
-<p>此外, 文本模式(text mode)支持下梵文, 格鲁吉亚文, 中文, 日文和韩文字形, 但只能以系统字体渲染, 所以可能发生版式冲突.</p>
-<p>你可以在CSS类中提供规则 <code>.latin-fallback</code>, <code>.cyrillic-fallback</code>, <code>.brahmic-fallback</code>, <code>.georgian-fallback</code>, <code>.cjk-fallback</code> 和 <code>.hangul-fallback</code> 来提供备选字体</p>
-<p>这些字形可能导致轻微的垂直对齐问题: KaTeX对绝大多数拉丁字母, 希腊字母和西里尔字母均有详细的度量标准, 其他字形均视作与当前KaTeX字体中的M等高</p>
-<p>如果KaTeX渲染模式为 <code>strict: false</code> 或 <code>strict: &quot;warn&quot;</code> (默认), 则KaTeX在文本模式(text mode)和数学模式(math mode)下均支持所有Unicode字符</p>
-<p>所有未识别字符均按照文本模式(text mode)处理, 同样将会使用系统字体并可能出现上述有关垂直对齐方式的问题</p>
+<p>此外, 文本模式(text mode)支持梵文, 格鲁吉亚文, 中文, 日文和韩文字形, 但只能以系统字体渲染, 所以可能发生版式冲突<br>你可以在CSS类中提供规则 <code>.latin-fallback</code>, <code>.cyrillic-fallback</code>, <code>.brahmic-fallback</code>, <code>.georgian-fallback</code>, <code>.cjk-fallback</code> 和 <code>.hangul-fallback</code> 来提供备选字体<br>这些字体可能导致轻微的垂直对齐问题: KaTeX对绝大多数拉丁字母, 希腊字母和西里尔字母均有详细的度量标准, 其他字形均视作与当前KaTeX字体中的M等高</p>
+<p>如果KaTeX渲染模式为 <code>strict: false</code> 或 <code>strict: &quot;warn&quot;</code> (默认), 则KaTeX在文本模式(text mode)和数学模式(math mode)下均支持所有Unicode字符<br>所有未识别字符均按照文本模式(text mode)处理, 同样将会使用系统字体并可能出现上述有关垂直对齐方式的问题</p>
 <p>对于波斯语复合字符, 有一个用户提供的<a href="https://github.com/HosseinAgha/persian-katex-plugin" target="_blank" rel="noopener">插件</a>正在开发</p>
-<h2 id="布局"><a href="#布局" class="headerlink" title="布局"></a>布局</h2><h3 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h3><div class="table-container">
+<h2 id="布局"><a href="#布局" class="headerlink" title="布局"></a>布局</h2><h3 id="注解"><a href="#注解" class="headerlink" title="注解"></a>注解</h3><div class="table-container">
 <table>
 <thead>
 <tr>
@@ -640,7 +1160,7 @@
 <tr>
 <td style="text-align:left">$_u^o $ <code>_u^o</code></td>
 <td style="text-align:left">$\underset{!}{=}$ <code>\underset{!}{=}</code></td>
-<td style="text-align:left"><script type="math/tex">\sum_{\substack{0<i<m\\0<j<n}}</script> <code>\sum_{\substack{0&lt;i&lt;m\\0&lt;j&lt;n}}</code></td>
+<td style="text-align:left">$\sum_{\substack{0&lt;i&lt;m\\0&lt;j&lt;n}}$ <code>\sum_{\substack{0&lt;i&lt;m\\0&lt;j&lt;n}}</code></td>
 </tr>
 </tbody>
 </table>
@@ -667,7 +1187,7 @@
 </table>
 </div>
 <p>$\displaystyle\sum_{\mathclap{1\le i\le j\le n}} x_{ij}$ <code>\sum_{\mathclap{1\le i\le j\le n}} x_{ij}</code></p>
-<p>KaTeX也支持<code>\llap</code>, <code>\rlap</code> 和 <code>\clap</code>, 但只能接受文字参数</p>
+<p>KaTeX也支持<code>\llap</code>, <code>\rlap</code> 和 <code>\clap</code>, 但只能接受文字参数<sup><a href="#fn_1" id="reffn_1">1</a></sup></p>
 <p><strong>间距</strong></p>
 <div class="table-container">
 <table>
@@ -767,7 +1287,7 @@
 </div>
 <p><strong>注意:</strong></p>
 <p><code>distance</code>允许<a href="#单位">单位</a>中提到的一切</p>
-<p><code>\kern</code>, <code>\mkern</code>, <code>\mskip</code> 和 <code>\hspace</code> 接受无支撑距离(unbraced distances), 如 <code>\kern1em</code>.</p>
+<p><code>\kern</code>, <code>\mkern</code>, <code>\mskip</code> 和 <code>\hspace</code> 接受无支撑距离(unbraced distances), 如 <code>\kern1em</code></p>
 <p><code>\mkern</code> 和 <code>\mskip</code> 在文本模式(text mode)下无效, 且二者均会为除<code>mu</code>外的任何单元输出控制台警告</p>
 <h2 id="逻辑与集合论符号"><a href="#逻辑与集合论符号" class="headerlink" title="逻辑与集合论符号"></a>逻辑与集合论符号</h2><div class="table-container">
 <table>
@@ -879,7 +1399,7 @@
 </table>
 </div>
 <p>宏指令也可在KaTeX<a href="https://katex.org/docs/options.html" target="_blank" rel="noopener">渲染模式</a>中设置</p>
-<p>宏指令最多接受九个参数: #1, #2,…</p>
+<p>宏指令最多接受九个参数: #1, #2,..</p>
 <p><code>\gdef</code>, <code>\xdef</code>, <code>\global\def</code>, <code>\global\edef</code>, <code>\global\let</code> 和 <code>\global\futurelet</code> 可在多条数学表达式中保留</p>
 <p>KaTeX没有<code>\par</code>, 故所有宏指令长度固定且<code>\long</code>指令无效</p>
 <p>可由指令包括<br><code>\char</code> <code>\mathchoice</code> <code>\TextOrMath</code> <code>\@ifstar</code> <code>\@ifnextchar</code> <code>\@firstoftwo</code> <code>\@secondoftwo</code> <code>\relax</code> <code>\expandafter</code> <code>\noexpand</code></p>
@@ -1809,7 +2329,7 @@
 </tbody>
 </table>
 </div>
-<p>形如<code>\textXX</code>的指令可叠加控制字体家族, 粗细和形状. 所以<code>\textsf{\textbf{H}}</code> 渲染效果为 $\textsf{\textbf{H}}$. 其它形式的指令则不能, 例如 <code>\mathsf{\mathbf{H}}</code> 渲染效果为 $\mathsf{\mathbf{H}}$.</p>
+<p>形如<code>\textXX</code>的指令可叠加控制字体家族, 粗细和形状. 所以<code>\textsf{\textbf{H}}</code> 渲染效果为 $\textsf{\textbf{H}}$. 其它形式的指令则不能, 例如 <code>\mathsf{\mathbf{H}}</code> 渲染效果为 $\mathsf{\mathbf{H}}$</p>
 <p>如果KaTeX字体没有粗体形式, 可用 <code>\pmb</code> 模拟, 如 <code>\pmb{\mu}</code> 渲染效果为 $\pmb{\mu}$</p>
 <p><strong>大小</strong></p>
 <div class="table-container">
@@ -1950,7 +2470,7 @@
 <td style="text-align:left">$\ddagger$ <code>\ddagger</code></td>
 </tr>
 <tr>
-<td style="text-align:left">$<code>$ &lt;code&gt;</code>&lt;/code&gt;</td>
+<td style="text-align:left"><sup><a href="#fn_2" id="reffn_2">2</a></sup></td>
 <td style="text-align:left">$\text{\textellipsis}$ <code>\text{\textellipsis}</code></td>
 <td style="text-align:left">$\text{\textdaggerdbl}$ <code>\text{\textdaggerdbl}</code></td>
 </tr>
@@ -2177,6 +2697,15 @@
 </tbody>
 </table>
 </div>
+<h2 id="附-表格转化程序"><a href="#附-表格转化程序" class="headerlink" title="附: 表格转化程序"></a>附: 表格转化程序</h2><p>来自 <a href="https://blog.csdn.net/tonydz0523/article/details/88420049" target="_blank" rel="noopener">https://blog.csdn.net/tonydz0523/article/details/88420049</a></p>
+<p>实际上本篇博客的md源码来自<br><a href="https://github.com/KaTeX/KaTeX/blob/master/docs/supported.md" target="_blank" rel="noopener">https://github.com/KaTeX/KaTeX/blob/master/docs/supported.md</a>, 并未使用该程序</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> bs4 <span class="keyword">import</span> BeautifulSoup</span><br><span class="line"></span><br><span class="line">num = <span class="number">3</span></span><br><span class="line"></span><br><span class="line">html = open(<span class="string">'html.txt'</span>, encoding=<span class="string">'utf-8'</span>)</span><br><span class="line">soup = BeautifulSoup(html, <span class="string">"lxml"</span>)</span><br><span class="line">all_code = soup.find_all(<span class="string">'code'</span>)</span><br><span class="line">codes = list(map(<span class="keyword">lambda</span> x: x.get_text(strip=<span class="literal">True</span>), all_code))</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(len(codes)//num+<span class="number">1</span>):</span><br><span class="line">    code_list = list(map(<span class="keyword">lambda</span> x: <span class="string">' $&#123;0&#125;$ `&#123;0&#125;` '</span>.format(x), codes[i*num:(i+<span class="number">1</span>)*num]))</span><br><span class="line">    print(<span class="string">'|'</span>.join(code_list))</span><br><span class="line">    <span class="keyword">if</span> i == <span class="number">0</span>:</span><br><span class="line">        print(<span class="string">'|:--:|:--:|:--:|:--:|'</span>)</span><br></pre></td></tr></table></figure>
+<blockquote id="fn_1">
+<sup>1</sup>. MathJax支持<code>\llap</code>, <code>\rlap</code> 和 <code>\clap</code><a href="#reffn_1" title="Jump back to footnote [1] in the text."> &#8617;</a>
+</blockquote>
+<blockquote id="fn_2">
+<sup>2</sup>. 为<code>&#96;</code>, 效果为$`$ <a href="#reffn_2" title="Jump back to footnote [2] in the text."> &#8617;</a>
+</blockquote>
 ]]></content>
       <tags>
         <tag>测试</tag>
@@ -2455,8 +2984,8 @@
         <tag>程序设计</tag>
         <tag>算法</tag>
         <tag>题解</tag>
-        <tag>省选</tag>
         <tag>洛谷</tag>
+        <tag>省选</tag>
         <tag>BZOJ</tag>
         <tag>LOJ</tag>
         <tag>莫队</tag>

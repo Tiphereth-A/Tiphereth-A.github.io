@@ -22,15 +22,15 @@
     var CONFIG = {"hostname":"tiphereth-a.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="来自 Supported functions - KaTeX 笔者汉化 注意: 本博客使用MathJax渲染, 渲染结果请以原文为准">
+  <meta name="description" content="来自 Supported functions - KaTeX 笔者汉化 注意: 本博客采用MathJax渲染, 写这篇博客的初衷也是比较二者支持指令的异同, 渲染结果请以原文为准">
 <meta property="og:type" content="article">
 <meta property="og:title" content="KaTeX支持的指令-中文文档">
 <meta property="og:url" content="https://tiphereth-a.github.io/article/katex-supported-functions/index.html">
 <meta property="og:site_name" content="Tiphereth&#39;s Blog">
-<meta property="og:description" content="来自 Supported functions - KaTeX 笔者汉化 注意: 本博客使用MathJax渲染, 渲染结果请以原文为准">
+<meta property="og:description" content="来自 Supported functions - KaTeX 笔者汉化 注意: 本博客采用MathJax渲染, 写这篇博客的初衷也是比较二者支持指令的异同, 渲染结果请以原文为准">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-05-05T15:59:37.000Z">
-<meta property="article:modified_time" content="2020-05-06T06:44:45.766Z">
+<meta property="article:modified_time" content="2020-05-06T08:31:18.978Z">
 <meta property="article:author" content="Tiphereth">
 <meta property="article:tag" content="测试">
 <meta property="article:tag" content="文档">
@@ -219,7 +219,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-05-06 14:44:45" itemprop="dateModified" datetime="2020-05-06T14:44:45+08:00">2020-05-06</time>
+                <time title="修改时间：2020-05-06 16:31:18" itemprop="dateModified" datetime="2020-05-06T16:31:18+08:00">2020-05-06</time>
               </span>
 
           
@@ -242,8 +242,9 @@
       
         <p>来自 <a href="https://katex.org/docs/supported.html" target="_blank" rel="noopener">Supported functions - KaTeX</a></p>
 <p>笔者汉化</p>
-<p>注意: 本博客使用MathJax渲染, 渲染结果请以原文为准</p>
+<p>注意: 本博客采用MathJax渲染, 写这篇博客的初衷也是比较二者支持指令的异同, 渲染结果请以原文为准</p>
 <a id="more"></a>
+<p>此处列出KaTeX所支持的TeX指令清单, 按逻辑分组排序, 按字母顺序排列的表格<a href="https://katex.org/docs/support_table.html" target="_blank" rel="noopener">点此</a></p>
 <h2 id="变音符号"><a href="#变音符号" class="headerlink" title="变音符号"></a>变音符号</h2><div class="table-container">
 <table>
 <thead>
@@ -466,68 +467,27 @@
 </tbody>
 </table>
 </div>
-<h2 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h2><div class="table-container">
-<table>
-<thead>
-<tr>
-<th style="text-align:left"></th>
-<th style="text-align:left"></th>
-<th style="text-align:left"></th>
-<th style="text-align:left"></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">$\begin{matrix} a &amp; b \ c &amp; d \end{matrix}$</td>
-<td style="text-align:left"><code>\begin{matrix}</code>   <code>a &amp; b \\</code>   <code>c &amp; d``\end{matrix}</code></td>
-<td style="text-align:left">$\begin{array}{cc}a &amp; b\\c &amp; d\end{array}$</td>
-<td style="text-align:left"><code>\begin{array}{cc}</code>   <code>a &amp; b \\</code>   <code>c &amp; d``\end{array}</code></td>
-</tr>
-<tr>
-<td style="text-align:left">$\begin{pmatrix} a &amp; b \ c &amp; d \end{pmatrix}$</td>
-<td style="text-align:left"><code>\begin{pmatrix}</code>   <code>a &amp; b \\</code>   <code>c &amp; d``\end{pmatrix}</code></td>
-<td style="text-align:left">$\begin{bmatrix} a &amp; b \ c &amp; d \end{bmatrix}$</td>
-<td style="text-align:left"><code>\begin{bmatrix}</code>   <code>a &amp; b \\</code>   <code>c &amp; d``\end{bmatrix}</code></td>
-</tr>
-<tr>
-<td style="text-align:left">$\begin{vmatrix} a &amp; b \ c &amp; d \end{vmatrix}$</td>
-<td style="text-align:left"><code>\begin{vmatrix}</code>   <code>a &amp; b \\</code>   <code>c &amp; d``\end{vmatrix}</code></td>
-<td style="text-align:left">$\begin{Vmatrix} a &amp; b \ c &amp; d \end{Vmatrix}$</td>
-<td style="text-align:left"><code>\begin{Vmatrix}</code>   <code>a &amp; b \\</code>   <code>c &amp; d``\end{Vmatrix}</code></td>
-</tr>
-<tr>
-<td style="text-align:left">$\begin{Bmatrix} a &amp; b \ c &amp; d \end{Bmatrix}$</td>
-<td style="text-align:left"><code>\begin{Bmatrix}</code>   <code>a &amp; b \\</code>   <code>c &amp; d``\end{Bmatrix}</code></td>
-<td style="text-align:left">$\def\arraystretch{1.5}\begin{array}{c:c:c} a &amp; b &amp; c \ \hline d &amp; e &amp; f \ \hdashline g &amp; h &amp; i \end{array}$</td>
-<td style="text-align:left"><code>\def\arraystretch{1.5}</code>   <code>\begin{array}{c:c:c}</code>   <code>a &amp; b &amp; c \\ \hline</code>   <code>d &amp; e &amp; f \\</code>   <code>\hdashline</code>   <code>g &amp; h &amp; i``\end{array}</code></td>
-</tr>
-<tr>
-<td style="text-align:left">$\begin{aligned} a&amp;=b+c \ d+e&amp;=f \end{aligned}$</td>
-<td style="text-align:left"><code>\begin{aligned}</code>   <code>a&amp;=b+c \\</code>   <code>d+e&amp;=f``\end{aligned}</code></td>
-<td style="text-align:left">$\begin{alignedat}{2}10&amp;x+&amp;3&amp;y=2\\3&amp;x+&amp;13&amp;y=4\end{alignedat}$</td>
-<td style="text-align:left"><code>\begin{alignedat}{2}</code>   <code>10&amp;x+ &amp;3&amp;y = 2 \\</code>   <code>3&amp;x+&amp;13&amp;y = 4``\end{alignedat}</code></td>
-</tr>
-<tr>
-<td style="text-align:left">$\begin{gathered} a=b \ e=b+c \end{gathered}$</td>
-<td style="text-align:left"><code>\begin{gathered}</code>   <code>a=b \\</code>   <code>e=b+c``\end{gathered}</code></td>
-<td style="text-align:left">$x = \begin{cases} a &amp;\text{if } b \ c &amp;\text{if } d \end{cases}$</td>
-<td style="text-align:left"><code>x = \begin{cases}</code>   <code>a &amp;\text{if } b  \\</code>   <code>c &amp;\text{if } d``\end{cases}</code></td>
-</tr>
-<tr>
-<td style="text-align:left">$\begin{smallmatrix} a &amp; b \ c &amp; d \end{smallmatrix}$</td>
-<td style="text-align:left"><code>\begin{smallmatrix}</code>   <code>a &amp; b \\</code>   <code>c &amp; d``\end{smallmatrix}</code></td>
-<td style="text-align:left">$\begin{rcases} a &amp;\text{if } b \ c &amp;\text{if } d \end{rcases}⇒…$</td>
-<td style="text-align:left"><code>\begin{rcases}</code>   <code>a &amp;\text{if } b  \\</code>   <code>c &amp;\text{if } d``\end{rcases}⇒…</code></td>
-</tr>
-</tbody>
-</table>
-</div>
-<p>KaTeX也支持 <code>darray</code>, <code>dcases</code>, 和 <code>drcases</code>.</p>
-<p>支持的换行符有: <code>\\</code>, <code>\cr</code>, <code>\\[distance]</code>, and <code>\cr[distance]</code>. *Distance*可由<a href="#单位">单位</a>中提到的一切</p>
-<p>环境<code>{array}</code>下支持的垂直分隔符有 <code>|</code>和<code>:</code></p>
-<p>环境<code>{array}</code>下目前不支持<code>\cline</code>和<code>\multicolumn</code>.</p>
+<h2 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h2><p>因为表格内换行不是很方便, 所以这里选择直接列出</p>
+<p>$\begin{matrix}<br>  a &amp; b \\<br>  c &amp; d<br>\end{matrix}$<br> <code>\begin{matrix} a &amp; b \\ c &amp; d \end{matrix}</code> </p>
+<p>$\begin{array}{cc}<br>  a &amp; b\\<br>  c &amp; d<br>\end{array}$<br> <code>\begin{array}{cc} a &amp; b \\ c &amp; d \end{array}</code></p>
+<p>$\begin{pmatrix}<br>  a &amp; b \\<br>  c &amp; d<br>\end{pmatrix}$<br><code>\begin{pmatrix} a &amp; b \\ c &amp; d \end{pmatrix}</code> </p>
+<p>$\begin{bmatrix}<br>  a &amp; b \\<br>  c &amp; d<br>\end{bmatrix}$<br> <code>\begin{bmatrix} a &amp; b \\ c &amp; d \end{bmatrix}</code></p>
+<p>$\begin{vmatrix}<br>  a &amp; b \\<br>  c &amp; d<br>\end{vmatrix}$<br><code>\begin{vmatrix} a &amp; b \\ c &amp; d \end{vmatrix}</code> </p>
+<p>$\begin{Vmatrix}<br>  a &amp; b \\<br>  c &amp; d<br>\end{Vmatrix}$<br><code>\begin{Vmatrix} a &amp; b \\ c &amp; d \end{Vmatrix}</code></p>
+<p>$\begin{Bmatrix}<br>  a &amp; b \\<br>  c &amp; d<br>\end{Bmatrix}$<br><code>\begin{Bmatrix} a &amp; b \\ c &amp; d \end{Bmatrix}</code></p>
+<p>$\def\arraystretch{1.5}\begin{array}{c:c:c}<br>  a &amp; b &amp; c \\<br>  \hline d &amp; e &amp; f \\<br>  \hdashline g &amp; h &amp; i<br>\end{array}$<br><code>\def\arraystretch{1.5} \begin{array}{c:c:c} a &amp; b &amp; c \\ \hline d &amp; e &amp; f \\ \hdashline g &amp; h &amp; i \end{array}</code></p>
+<p>$\begin{aligned}<br>  a&amp;=b+c \\<br>  d+e&amp;=f<br>\end{aligned}$<br><code>\begin{aligned} a&amp;=b+c \\ d+e&amp;=f \end{aligned}</code></p>
+<p>$\begin{alignedat}{2}<br>  10&amp;x+&amp;3&amp;y=2\\<br>  3&amp;x+&amp;13&amp;y=4<br>\end{alignedat}$<br><code>\begin{alignedat}{2} 10&amp;x+ &amp;3&amp;y = 2 \\  3&amp;x+&amp;13&amp;y = 4 \end{alignedat}</code></p>
+<p>$\begin{gathered}<br>  a=b \\<br>  e=b+c<br>\end{gathered}$<br><code>\begin{gathered} a=b \\ e=b+c \end{gathered}</code></p>
+<p>$x = \begin{cases}<br>  a &amp;\text{if } b \\<br>  c &amp;\text{if } d<br>\end{cases}$<br><code>x = \begin{cases} a &amp;\text{if } b \\ c &amp;\text{if } d \end{cases}</code></p>
+<p>$\begin{smallmatrix}<br>  a &amp; b \\<br>  c &amp; d<br>\end{smallmatrix}$<br> <code>\begin{smallmatrix} a &amp; b \\ c &amp; d \end{smallmatrix}</code> </p>
+<p>$\begin{rcases}<br>  a &amp;\text{if } b \\<br>  c &amp;\text{if } d<br>\end{rcases}⇒…$<br><code>\begin{rcases} a &amp;\text{if } b \\ c &amp;\text{if } d \end{rcases}⇒…</code></p>
+<p>KaTeX也支持 <code>darray</code>, <code>dcases</code>, 和 <code>drcases</code></p>
+<p>支持的换行符有: <code>\\</code>, <code>\cr</code>, <code>\\[distance]</code>, and <code>\cr[distance]</code>, Distance允许<a href="#单位">单位</a>中提到的一切</p>
+<p><code>{array}</code>下支持的垂直分隔符有 <code>|</code>和<code>:</code></p>
+<p><code>{array}</code>下目前不支持<code>\cline</code>和<code>\multicolumn</code></p>
 <h2 id="HTML"><a href="#HTML" class="headerlink" title="HTML"></a>HTML</h2><p>“原始HTML”功能可能对于不受信任的链接具有风险, 所以该功能默认关闭并在调用时命令会变为红色 (可通过<code>errorColor</code>选项配置 <a href="https://katex.org/docs/options.html" target="_blank" rel="noopener">参见</a>)</p>
-<p>完全信任LaTeX输入, 需要将<code>trust</code>选项设置为<code>true</code>, 你也可以通过该选项来设置信任命令或URL <a href="https://katex.org/docs/options.html" target="_blank" rel="noopener">参见</a></p>
+<p>若要完全信任LaTeX输入, 需要将<code>trust</code>选项设置为<code>true</code>, 你也可以通过该选项来设置信任命令或URL <a href="https://katex.org/docs/options.html" target="_blank" rel="noopener">参见</a></p>
 <div class="table-container">
 <table>
 <thead>
@@ -569,7 +529,7 @@
 </table>
 </div>
 <p><code>\includegraphics</code> 的第一个参数支持 <code>height</code>, <code>width</code>, <code>totalheight</code>, 和 <code>alt</code>, <code>height</code>是必要的</p>
-<p>HTML扩展(以<code>\html</code>为前缀)命令是非标准命令, 因此需要取消<code>htmlExtension</code>的<code>strict</code>选项.</p>
+<p>HTML扩展(以<code>\html</code>为前缀)命令是非标准命令, 因此需要取消<code>htmlExtension</code>的<code>strict</code>选项</p>
 <h2 id="字母和Unicode字符"><a href="#字母和Unicode字符" class="headerlink" title="字母和Unicode字符"></a>字母和Unicode字符</h2><p><strong>希腊字母</strong></p>
 <p>直接输入:<br>$Α Β Γ Δ Ε Ζ Η Θ Ι Κ Λ Μ Ν Ξ Ο Π Ρ Σ Τ Υ Φ Χ Ψ Ω$<br>$α β γ δ ϵ ζ η θ ι κ λ μ ν ξ o π ρ σ τ υ ϕ χ ψ ω ε ϑ ϖ ϱ ς φ ϝ$</p>
 <div class="table-container">
@@ -686,7 +646,7 @@
 <td>$\varphi$ <code>\varphi</code></td>
 </tr>
 <tr>
-<td>$\digamma $ <code>\digamma</code></td>
+<td>$\digamma$ <code>\digamma</code></td>
 </tr>
 </tbody>
 </table>
@@ -815,13 +775,10 @@
 </div>
 <p><strong>Unicode</strong></p>
 <p>上表列出的所有字母在KaTeX任何渲染模式下都能正确渲染</p>
-<p>此外, 文本模式(text mode)支持下梵文, 格鲁吉亚文, 中文, 日文和韩文字形, 但只能以系统字体渲染, 所以可能发生版式冲突.</p>
-<p>你可以在CSS类中提供规则 <code>.latin-fallback</code>, <code>.cyrillic-fallback</code>, <code>.brahmic-fallback</code>, <code>.georgian-fallback</code>, <code>.cjk-fallback</code> 和 <code>.hangul-fallback</code> 来提供备选字体</p>
-<p>这些字形可能导致轻微的垂直对齐问题: KaTeX对绝大多数拉丁字母, 希腊字母和西里尔字母均有详细的度量标准, 其他字形均视作与当前KaTeX字体中的M等高</p>
-<p>如果KaTeX渲染模式为 <code>strict: false</code> 或 <code>strict: &quot;warn&quot;</code> (默认), 则KaTeX在文本模式(text mode)和数学模式(math mode)下均支持所有Unicode字符</p>
-<p>所有未识别字符均按照文本模式(text mode)处理, 同样将会使用系统字体并可能出现上述有关垂直对齐方式的问题</p>
+<p>此外, 文本模式(text mode)支持梵文, 格鲁吉亚文, 中文, 日文和韩文字形, 但只能以系统字体渲染, 所以可能发生版式冲突<br>你可以在CSS类中提供规则 <code>.latin-fallback</code>, <code>.cyrillic-fallback</code>, <code>.brahmic-fallback</code>, <code>.georgian-fallback</code>, <code>.cjk-fallback</code> 和 <code>.hangul-fallback</code> 来提供备选字体<br>这些字体可能导致轻微的垂直对齐问题: KaTeX对绝大多数拉丁字母, 希腊字母和西里尔字母均有详细的度量标准, 其他字形均视作与当前KaTeX字体中的M等高</p>
+<p>如果KaTeX渲染模式为 <code>strict: false</code> 或 <code>strict: &quot;warn&quot;</code> (默认), 则KaTeX在文本模式(text mode)和数学模式(math mode)下均支持所有Unicode字符<br>所有未识别字符均按照文本模式(text mode)处理, 同样将会使用系统字体并可能出现上述有关垂直对齐方式的问题</p>
 <p>对于波斯语复合字符, 有一个用户提供的<a href="https://github.com/HosseinAgha/persian-katex-plugin" target="_blank" rel="noopener">插件</a>正在开发</p>
-<h2 id="布局"><a href="#布局" class="headerlink" title="布局"></a>布局</h2><h3 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h3><div class="table-container">
+<h2 id="布局"><a href="#布局" class="headerlink" title="布局"></a>布局</h2><h3 id="注解"><a href="#注解" class="headerlink" title="注解"></a>注解</h3><div class="table-container">
 <table>
 <thead>
 <tr>
@@ -877,7 +834,7 @@
 <tr>
 <td style="text-align:left">$_u^o $ <code>_u^o</code></td>
 <td style="text-align:left">$\underset{!}{=}$ <code>\underset{!}{=}</code></td>
-<td style="text-align:left"><script type="math/tex">\sum_{\substack{0<i<m\\0<j<n}}</script> <code>\sum_{\substack{0&lt;i&lt;m\\0&lt;j&lt;n}}</code></td>
+<td style="text-align:left">$\sum_{\substack{0&lt;i&lt;m\\0&lt;j&lt;n}}$ <code>\sum_{\substack{0&lt;i&lt;m\\0&lt;j&lt;n}}</code></td>
 </tr>
 </tbody>
 </table>
@@ -904,7 +861,7 @@
 </table>
 </div>
 <p>$\displaystyle\sum_{\mathclap{1\le i\le j\le n}} x_{ij}$ <code>\sum_{\mathclap{1\le i\le j\le n}} x_{ij}</code></p>
-<p>KaTeX也支持<code>\llap</code>, <code>\rlap</code> 和 <code>\clap</code>, 但只能接受文字参数</p>
+<p>KaTeX也支持<code>\llap</code>, <code>\rlap</code> 和 <code>\clap</code>, 但只能接受文字参数<sup><a href="#fn_1" id="reffn_1">1</a></sup></p>
 <p><strong>间距</strong></p>
 <div class="table-container">
 <table>
@@ -1004,7 +961,7 @@
 </div>
 <p><strong>注意:</strong></p>
 <p><code>distance</code>允许<a href="#单位">单位</a>中提到的一切</p>
-<p><code>\kern</code>, <code>\mkern</code>, <code>\mskip</code> 和 <code>\hspace</code> 接受无支撑距离(unbraced distances), 如 <code>\kern1em</code>.</p>
+<p><code>\kern</code>, <code>\mkern</code>, <code>\mskip</code> 和 <code>\hspace</code> 接受无支撑距离(unbraced distances), 如 <code>\kern1em</code></p>
 <p><code>\mkern</code> 和 <code>\mskip</code> 在文本模式(text mode)下无效, 且二者均会为除<code>mu</code>外的任何单元输出控制台警告</p>
 <h2 id="逻辑与集合论符号"><a href="#逻辑与集合论符号" class="headerlink" title="逻辑与集合论符号"></a>逻辑与集合论符号</h2><div class="table-container">
 <table>
@@ -1116,7 +1073,7 @@
 </table>
 </div>
 <p>宏指令也可在KaTeX<a href="https://katex.org/docs/options.html" target="_blank" rel="noopener">渲染模式</a>中设置</p>
-<p>宏指令最多接受九个参数: #1, #2,…</p>
+<p>宏指令最多接受九个参数: #1, #2,..</p>
 <p><code>\gdef</code>, <code>\xdef</code>, <code>\global\def</code>, <code>\global\edef</code>, <code>\global\let</code> 和 <code>\global\futurelet</code> 可在多条数学表达式中保留</p>
 <p>KaTeX没有<code>\par</code>, 故所有宏指令长度固定且<code>\long</code>指令无效</p>
 <p>可由指令包括<br><code>\char</code> <code>\mathchoice</code> <code>\TextOrMath</code> <code>\@ifstar</code> <code>\@ifnextchar</code> <code>\@firstoftwo</code> <code>\@secondoftwo</code> <code>\relax</code> <code>\expandafter</code> <code>\noexpand</code></p>
@@ -2046,7 +2003,7 @@
 </tbody>
 </table>
 </div>
-<p>形如<code>\textXX</code>的指令可叠加控制字体家族, 粗细和形状. 所以<code>\textsf{\textbf{H}}</code> 渲染效果为 $\textsf{\textbf{H}}$. 其它形式的指令则不能, 例如 <code>\mathsf{\mathbf{H}}</code> 渲染效果为 $\mathsf{\mathbf{H}}$.</p>
+<p>形如<code>\textXX</code>的指令可叠加控制字体家族, 粗细和形状. 所以<code>\textsf{\textbf{H}}</code> 渲染效果为 $\textsf{\textbf{H}}$. 其它形式的指令则不能, 例如 <code>\mathsf{\mathbf{H}}</code> 渲染效果为 $\mathsf{\mathbf{H}}$</p>
 <p>如果KaTeX字体没有粗体形式, 可用 <code>\pmb</code> 模拟, 如 <code>\pmb{\mu}</code> 渲染效果为 $\pmb{\mu}$</p>
 <p><strong>大小</strong></p>
 <div class="table-container">
@@ -2187,7 +2144,7 @@
 <td style="text-align:left">$\ddagger$ <code>\ddagger</code></td>
 </tr>
 <tr>
-<td style="text-align:left">$<code>$ &lt;code&gt;</code>&lt;/code&gt;</td>
+<td style="text-align:left"><sup><a href="#fn_2" id="reffn_2">2</a></sup></td>
 <td style="text-align:left">$\text{\textellipsis}$ <code>\text{\textellipsis}</code></td>
 <td style="text-align:left">$\text{\textdaggerdbl}$ <code>\text{\textdaggerdbl}</code></td>
 </tr>
@@ -2414,6 +2371,15 @@
 </tbody>
 </table>
 </div>
+<h2 id="附-表格转化程序"><a href="#附-表格转化程序" class="headerlink" title="附: 表格转化程序"></a>附: 表格转化程序</h2><p>来自 <a href="https://blog.csdn.net/tonydz0523/article/details/88420049" target="_blank" rel="noopener">https://blog.csdn.net/tonydz0523/article/details/88420049</a></p>
+<p>实际上本篇博客的md源码来自<br><a href="https://github.com/KaTeX/KaTeX/blob/master/docs/supported.md" target="_blank" rel="noopener">https://github.com/KaTeX/KaTeX/blob/master/docs/supported.md</a>, 并未使用该程序</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> bs4 <span class="keyword">import</span> BeautifulSoup</span><br><span class="line"></span><br><span class="line">num = <span class="number">3</span></span><br><span class="line"></span><br><span class="line">html = open(<span class="string">'html.txt'</span>, encoding=<span class="string">'utf-8'</span>)</span><br><span class="line">soup = BeautifulSoup(html, <span class="string">"lxml"</span>)</span><br><span class="line">all_code = soup.find_all(<span class="string">'code'</span>)</span><br><span class="line">codes = list(map(<span class="keyword">lambda</span> x: x.get_text(strip=<span class="literal">True</span>), all_code))</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(len(codes)//num+<span class="number">1</span>):</span><br><span class="line">    code_list = list(map(<span class="keyword">lambda</span> x: <span class="string">' $&#123;0&#125;$ `&#123;0&#125;` '</span>.format(x), codes[i*num:(i+<span class="number">1</span>)*num]))</span><br><span class="line">    print(<span class="string">'|'</span>.join(code_list))</span><br><span class="line">    <span class="keyword">if</span> i == <span class="number">0</span>:</span><br><span class="line">        print(<span class="string">'|:--:|:--:|:--:|:--:|'</span>)</span><br></pre></td></tr></table></figure>
+<blockquote id="fn_1">
+<sup>1</sup>. MathJax支持<code>\llap</code>, <code>\rlap</code> 和 <code>\clap</code><a href="#reffn_1" title="Jump back to footnote [1] in the text."> &#8617;</a>
+</blockquote>
+<blockquote id="fn_2">
+<sup>2</sup>. 为<code>&#96;</code>, 效果为$`$ <a href="#reffn_2" title="Jump back to footnote [2] in the text."> &#8617;</a>
+</blockquote>
 
     </div>
 
@@ -2454,7 +2420,10 @@
     <a href="/article/quadratic-residue-and-quadratic-reciprocity-law/" rel="prev" title="数论笔记-二次剩余,legendre符号与二次互反律">
       <i class="fa fa-chevron-left"></i> 数论笔记-二次剩余,legendre符号与二次互反律
     </a></div>
-      <div class="post-nav-item"></div>
+      <div class="post-nav-item">
+    <a href="/article/mhchem-function/" rel="next" title="mhchem使用手册-中文文档">
+      mhchem使用手册-中文文档 <i class="fa fa-chevron-right"></i>
+    </a></div>
     </div>
       </footer>
     
@@ -2513,7 +2482,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#变音符号"><span class="nav-number">1.</span> <span class="nav-text">变音符号</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#定界符"><span class="nav-number">2.</span> <span class="nav-text">定界符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#环境"><span class="nav-number">3.</span> <span class="nav-text">环境</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#HTML"><span class="nav-number">4.</span> <span class="nav-text">HTML</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#字母和Unicode字符"><span class="nav-number">5.</span> <span class="nav-text">字母和Unicode字符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#布局"><span class="nav-number">6.</span> <span class="nav-text">布局</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#注释"><span class="nav-number">6.1.</span> <span class="nav-text">注释</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#换行符"><span class="nav-number">6.2.</span> <span class="nav-text">换行符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#垂直布局"><span class="nav-number">6.3.</span> <span class="nav-text">垂直布局</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#重叠与间距"><span class="nav-number">6.4.</span> <span class="nav-text">重叠与间距</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#逻辑与集合论符号"><span class="nav-number">7.</span> <span class="nav-text">逻辑与集合论符号</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#宏指令"><span class="nav-number">8.</span> <span class="nav-text">宏指令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#运算符"><span class="nav-number">9.</span> <span class="nav-text">运算符</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#大型运算符"><span class="nav-number">9.1.</span> <span class="nav-text">大型运算符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#二元运算符"><span class="nav-number">9.2.</span> <span class="nav-text">二元运算符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#分数与二项式"><span class="nav-number">9.3.</span> <span class="nav-text">分数与二项式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#数学运算符"><span class="nav-number">9.4.</span> <span class="nav-text">数学运算符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#sqrt"><span class="nav-number">9.5.</span> <span class="nav-text">\sqrt</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#关系符"><span class="nav-number">10.</span> <span class="nav-text">关系符</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#否定关系符"><span class="nav-number">10.1.</span> <span class="nav-text">否定关系符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#箭头"><span class="nav-number">10.2.</span> <span class="nav-text">箭头</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#特殊符号"><span class="nav-number">11.</span> <span class="nav-text">特殊符号</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#样式-颜色-大小和字体"><span class="nav-number">12.</span> <span class="nav-text">样式, 颜色, 大小和字体</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#其他符号"><span class="nav-number">13.</span> <span class="nav-text">其他符号</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#单位"><span class="nav-number">14.</span> <span class="nav-text">单位</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#变音符号"><span class="nav-number">1.</span> <span class="nav-text">变音符号</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#定界符"><span class="nav-number">2.</span> <span class="nav-text">定界符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#环境"><span class="nav-number">3.</span> <span class="nav-text">环境</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#HTML"><span class="nav-number">4.</span> <span class="nav-text">HTML</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#字母和Unicode字符"><span class="nav-number">5.</span> <span class="nav-text">字母和Unicode字符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#布局"><span class="nav-number">6.</span> <span class="nav-text">布局</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#注解"><span class="nav-number">6.1.</span> <span class="nav-text">注解</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#换行符"><span class="nav-number">6.2.</span> <span class="nav-text">换行符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#垂直布局"><span class="nav-number">6.3.</span> <span class="nav-text">垂直布局</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#重叠与间距"><span class="nav-number">6.4.</span> <span class="nav-text">重叠与间距</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#逻辑与集合论符号"><span class="nav-number">7.</span> <span class="nav-text">逻辑与集合论符号</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#宏指令"><span class="nav-number">8.</span> <span class="nav-text">宏指令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#运算符"><span class="nav-number">9.</span> <span class="nav-text">运算符</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#大型运算符"><span class="nav-number">9.1.</span> <span class="nav-text">大型运算符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#二元运算符"><span class="nav-number">9.2.</span> <span class="nav-text">二元运算符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#分数与二项式"><span class="nav-number">9.3.</span> <span class="nav-text">分数与二项式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#数学运算符"><span class="nav-number">9.4.</span> <span class="nav-text">数学运算符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#sqrt"><span class="nav-number">9.5.</span> <span class="nav-text">\sqrt</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#关系符"><span class="nav-number">10.</span> <span class="nav-text">关系符</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#否定关系符"><span class="nav-number">10.1.</span> <span class="nav-text">否定关系符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#箭头"><span class="nav-number">10.2.</span> <span class="nav-text">箭头</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#特殊符号"><span class="nav-number">11.</span> <span class="nav-text">特殊符号</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#样式-颜色-大小和字体"><span class="nav-number">12.</span> <span class="nav-text">样式, 颜色, 大小和字体</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#其他符号"><span class="nav-number">13.</span> <span class="nav-text">其他符号</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#单位"><span class="nav-number">14.</span> <span class="nav-text">单位</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#附-表格转化程序"><span class="nav-number">15.</span> <span class="nav-text">附: 表格转化程序</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -2527,7 +2496,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">14</span>
+          <span class="site-state-item-count">15</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>

@@ -1,0 +1,1130 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"tiphereth-a.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="来自Manual for: mhchem for MathJax, mhchem for KaTeX">
+<meta property="og:type" content="article">
+<meta property="og:title" content="mhchem使用手册-中文文档">
+<meta property="og:url" content="https://tiphereth-a.github.io/article/mhchem-function/index.html">
+<meta property="og:site_name" content="Tiphereth&#39;s Blog">
+<meta property="og:description" content="来自Manual for: mhchem for MathJax, mhchem for KaTeX">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-05-06T08:31:03.000Z">
+<meta property="article:modified_time" content="2020-05-06T09:36:30.817Z">
+<meta property="article:author" content="Tiphereth">
+<meta property="article:tag" content="测试">
+<meta property="article:tag" content="文档">
+<meta property="article:tag" content="翻译">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://tiphereth-a.github.io/article/mhchem-function/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>mhchem使用手册-中文文档 | Tiphereth's Blog</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Tiphereth's Blog</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://tiphereth-a.github.io/article/mhchem-function/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Tiphereth">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Tiphereth's Blog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          mhchem使用手册-中文文档
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-05-06 16:31:03 / 修改时间：17:36:30" itemprop="dateCreated datePublished" datetime="2020-05-06T16:31:03+08:00">2020-05-06</time>
+            </span>
+
+          
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>来自<a href="https://mhchem.github.io/MathJax-mhchem/" target="_blank" rel="noopener">Manual for: mhchem for MathJax, mhchem for KaTeX</a></p>
+<a id="more"></a>
+<h2 id="数学模式-math-mode-斜体"><a href="#数学模式-math-mode-斜体" class="headerlink" title="数学模式(math mode)/斜体"></a>数学模式(math mode)/斜体</h2><p><code>\ce</code>支持嵌套<code>$...$</code>切换至数学模式(math mode)/使用斜体</p>
+<script type="math/tex; mode=display">\ce{X_$i$^$x$}</script><p><code>\ce{X_$i$^$x$}</code></p>
+<script type="math/tex; mode=display">\ce{$cis${-}[PtCl2(NH3)2]}</script><p><code>\ce{$cis${-}[PtCl2(NH3)2]}</code></p>
+<script type="math/tex; mode=display">\ce{CuS($hP12$)}</script><p><code>\ce{CuS($hP12$)}</code></p>
+<p>可使用<code>~</code>代表空格</p>
+<h2 id="直立文字"><a href="#直立文字" class="headerlink" title="直立文字"></a>直立文字</h2><ul>
+<li><p>使用<code>{...}</code>嵌套</p>
+<p>$\ce{ {Gluconic Acid} + H2O2}$<br><code>\ce{ {Gluconic Acid} + H2O2}</code></p>
+</li>
+<li><p>使用<code>-</code>(不应作为化学键)</p>
+<p>$\ce{ {(+)}_589{-}[Co(en)3]Cl3}$<br><code>\ce{ {(+)}_589{-}[Co(en)3]Cl3}</code></p>
+</li>
+</ul>
+<h2 id="化学方程式-CE"><a href="#化学方程式-CE" class="headerlink" title="化学方程式(CE)"></a>化学方程式(CE)</h2><div class="table-container">
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\ce{CO2 + C -&gt; 2 CO}$</td>
+<td><code>\ce{CO2 + C -&gt; 2 CO}</code></td>
+</tr>
+<tr>
+<td>$\ce{Hg^2+ -&gt;[I-] HgI2 -&gt;[I-] [Hg^{II}I4]^2-}$</td>
+<td><code>\ce{Hg^2+ -&gt;[I-] HgI2 -&gt;[I-] [Hg^{II}I4]^2-}</code></td>
+</tr>
+<tr>
+<td>$C_p[\ce{H2O(l)}] = \pu{75.3 J // mol K}$</td>
+<td><code>C_p[\ce{H2O(l)}] = \pu{75.3 J // mol K}</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="物理单位-PU"><a href="#物理单位-PU" class="headerlink" title="物理单位(PU)"></a>物理单位(PU)</h2><div class="table-container">
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\pu{1.2e3 kJ/mol}$</td>
+<td><code>\pu{1.2e3 kJ/mol}</code></td>
+</tr>
+<tr>
+<td>$\pu{1,2e3 kJ//mol}$</td>
+<td><code>\pu{1,2e3 kJ//mol}</code></td>
+</tr>
+<tr>
+<td>$\pu{1.2E3 kJ mol-1}$</td>
+<td><code>\pu{1.2E3 kJ mol-1}</code></td>
+</tr>
+<tr>
+<td>$\pu{1,2E3 kJ*mol-1}$</td>
+<td><code>\pu{1,2E3 kJ*mol-1}</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="化学式"><a href="#化学式" class="headerlink" title="化学式"></a>化学式</h2><div class="table-container">
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\ce{H2O}$</td>
+<td><code>\ce{H2O}</code></td>
+</tr>
+<tr>
+<td>$\ce{Sb2O3}$</td>
+<td><code>\ce{Sb2O3}</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="离子"><a href="#离子" class="headerlink" title="离子"></a>离子</h2><div class="table-container">
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\ce{H+}$</td>
+<td><code>\ce{H+}</code></td>
+</tr>
+<tr>
+<td>$\ce{CrO4^2-}$</td>
+<td><code>\ce{CrO4^2-}</code></td>
+</tr>
+<tr>
+<td>$\ce{[AgCl2]-}$</td>
+<td><code>\ce{[AgCl2]-}</code></td>
+</tr>
+<tr>
+<td>$\ce{Y^99+}$</td>
+<td><code>\ce{Y^99+}</code></td>
+</tr>
+<tr>
+<td>$\ce{Y^{99+}}$</td>
+<td><code>\ce{Y^{99+}}</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="带化学计量数"><a href="#带化学计量数" class="headerlink" title="带化学计量数"></a>带化学计量数</h2><div class="table-container">
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\ce{2 H2O}$</td>
+<td><code>\ce{2 H2O}</code></td>
+</tr>
+<tr>
+<td>$\ce{2H2O}$</td>
+<td><code>\ce{2H2O}</code></td>
+</tr>
+<tr>
+<td>$\ce{0.5 H2O}$</td>
+<td><code>\ce{0.5 H2O}</code></td>
+</tr>
+<tr>
+<td>$\ce{1/2 H2O}$</td>
+<td><code>\ce{1/2 H2O}</code></td>
+</tr>
+<tr>
+<td>$\ce{(1/2) H2O}$</td>
+<td><code>\ce{(1/2) H2O}</code>(IUPAC Green Book)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<script type="math/tex; mode=display">\ce{$n$ H2O}</script><p><code>\ce{$n$ H2O}</code></p>
+<h2 id="核素"><a href="#核素" class="headerlink" title="核素"></a>核素</h2><div class="table-container">
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\ce{^{227}_{90}Th+}$</td>
+<td><code>\ce{^{227}_{90}Th+}</code></td>
+</tr>
+<tr>
+<td>$\ce{^227_90Th+}$</td>
+<td><code>\ce{^227_90Th+}</code></td>
+</tr>
+<tr>
+<td>$\ce{^{0}_{-1}n^{-}}$</td>
+<td><code>\ce{^{0}_{-1}n^{-}}</code></td>
+</tr>
+<tr>
+<td>$\ce{^0_-1n-}$</td>
+<td><code>\ce{^0_-1n-}</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>上标属于左边还是右边可能是不确定的. 该插件有自动检测功能(仅为数字=质量数=属于右侧)，但要有<code>{}</code>作为分隔符</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\ce{H{}^3HO}$</td>
+<td><code>\ce{H{}^3HO}</code></td>
+</tr>
+<tr>
+<td>$\ce{H^3HO}$</td>
+<td><code>\ce{H^3HO}</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="反应式箭头"><a href="#反应式箭头" class="headerlink" title="反应式箭头"></a>反应式箭头</h2><div class="table-container">
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\ce{A -&gt; B}$</td>
+<td><code>\ce{A -&gt; B}</code></td>
+</tr>
+<tr>
+<td>$\ce{A &lt;- B}$</td>
+<td><code>\ce{A &lt;- B}</code></td>
+</tr>
+<tr>
+<td>$\ce{A &lt;-&gt; B}$</td>
+<td><code>\ce{A &lt;-&gt; B}</code></td>
+</tr>
+<tr>
+<td>$\ce{A &lt;—&gt; B}$</td>
+<td><code>\ce{A &lt;--&gt; B}</code></td>
+</tr>
+<tr>
+<td>$\ce{A &lt;=&gt; B}$</td>
+<td><code>\ce{A &lt;=&gt; B}</code></td>
+</tr>
+<tr>
+<td>$\ce{A &lt;=&gt;&gt; B}$</td>
+<td><code>\ce{A &lt;=&gt;&gt; B}</code></td>
+</tr>
+<tr>
+<td>$\ce{A &lt;&lt;=&gt; B}$</td>
+<td><code>\ce{A &lt;&lt;=&gt; B}</code></td>
+</tr>
+<tr>
+<td>$\ce{A -&gt;[{text above}][{text below}] B}$</td>
+<td><code>\ce{A -&gt;[{text above}][{text below}] B}</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<script type="math/tex; mode=display">\ce{A ->[$x$][$x_i$] B}</script><p><code>\ce{A -&gt;[$x$][$x_i$] B</code></p>
+<p>MathJax无法正确伸长&lt;-&gt;，&lt;=&gt;，&lt;=&gt;&gt;和&lt;&lt;=&gt;箭头 <a href="https://github.com/mathjax/MathJax/issues/1491" target="_blank" rel="noopener">Issue#1491</a></p>
+<h2 id="括号"><a href="#括号" class="headerlink" title="括号"></a>括号</h2><div class="table-container">
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\ce{(NH4)2S}$</td>
+<td><code>\ce{(NH4)2S}</code></td>
+</tr>
+<tr>
+<td>$\ce{[\{(X2)3\}2]^3+}$</td>
+<td><code>\ce{[\{(X2)3\}2]^3+}</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><code>\left</code>和<code>\right</code>应在同一环境内</p>
+<script type="math/tex; mode=display">\ce{CH4 + 2 $\left( \ce{O2 + 79/21 N2} \right)$}</script><p><code>\ce{CH4 + 2 $\left( \ce{O2 + 79/21 N2} \right)$}</code></p>
+<h2 id="聚集状态"><a href="#聚集状态" class="headerlink" title="聚集状态"></a>聚集状态</h2><div class="table-container">
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\ce{H2(aq)}$</td>
+<td><code>\ce{H2(aq)}</code></td>
+</tr>
+<tr>
+<td>$\ce{CO3^2-_{(aq)}}$</td>
+<td><code>\ce{CO3^2-_{(aq)}}</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<script type="math/tex; mode=display">\ce{NaOH(aq,$\infty$)}</script><p><code>\ce{NaOH(aq,$\infty$)}</code> </p>
+<h2 id="晶系"><a href="#晶系" class="headerlink" title="晶系"></a>晶系</h2><script type="math/tex; mode=display">\ce{ZnS($c$)}</script><p><code>\ce{ZnS($c$)}</code></p>
+<script type="math/tex; mode=display">\ce{ZnS(\ca$c$)}</script><p><code>\ce{ZnS(\ca$c$)}</code></p>
+<h2 id="含有变量-使用斜体渲染"><a href="#含有变量-使用斜体渲染" class="headerlink" title="含有变量(使用斜体渲染)"></a>含有变量(使用斜体渲染)</h2><div class="table-container">
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\ce{NO_x}$</td>
+<td><code>\ce{NO_x}</code></td>
+</tr>
+<tr>
+<td>$\ce{Fe^n+}$</td>
+<td><code>\ce{Fe^n+}</code></td>
+</tr>
+<tr>
+<td>$\ce{x Na(NH4)HPO4 -&gt;[\Delta] (NaPO3)_x + x NH3 ^ + x H2O}$</td>
+<td><code>\ce{x Na(NH4)HPO4 -&gt;[\Delta] (NaPO3)_x + x NH3 ^ + x H2O}</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>如果未识别, 可使用数学模式(math mode)</p>
+<h2 id="希腊字母"><a href="#希腊字母" class="headerlink" title="希腊字母"></a>希腊字母</h2><p>MathJax和KaTeX均不支持小写直立希腊字母</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\ce{\mu-Cl}$</td>
+<td><code>\ce{\mu-Cl}</code></td>
+</tr>
+<tr>
+<td>$\ce{[Pt(\eta^2-C2H4)Cl3]-}$</td>
+<td><code>\ce{[Pt(\eta^2-C2H4)Cl3]-}</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>注意希腊字母后的空格会被忽略, 可使用<code>{}</code>分割</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\ce{\beta +}$</td>
+<td><code>\ce{\beta +}</code> (<code>+</code>识别为上标)</td>
+</tr>
+<tr>
+<td>$\ce{^40_18Ar + \gamma{} + \nu_e}$</td>
+<td><code>\ce{^40_18Ar + \gamma{} + \nu_e}</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="化学键"><a href="#化学键" class="headerlink" title="化学键"></a>化学键</h2><div class="table-container">
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\ce{C6H5-CHO}$</td>
+<td><code>\ce{C6H5-CHO}</code></td>
+</tr>
+<tr>
+<td>$\ce{A-B=C#D}$</td>
+<td><code>\ce{A-B=C#D}</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>可使用<code>\bond</code>指令强制按化学键解析</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\ce{A\bond{~}B\bond{~-}C}$</td>
+<td><code>\ce{A\bond{~}B\bond{~-}C}</code></td>
+</tr>
+<tr>
+<td>$\ce{A\bond{…}B\bond{….}C}$</td>
+<td><code>\ce{A\bond{...}B\bond{....}C}</code></td>
+</tr>
+<tr>
+<td>$\ce{A\bond{-&gt;}B\bond{&lt;-}C}$</td>
+<td><code>\ce{A\bond{-&gt;}B\bond{&lt;-}C}</code></td>
+</tr>
+<tr>
+<td>$\ce{A\bond{-}B\bond{=}C\bondD}`</td>
+</tr>
+<tr>
+<td>$\ce{A\bond{1}B\bond{2}C\bond{3}D}$</td>
+<td><code>\ce{A\bond{1}B\bond{2}C\bond{3}D}</code></td>
+</tr>
+<tr>
+<td>$\ce{A\bond{~—}B\bond{~=}C\bond{-~-}D}$</td>
+<td><code>\ce{A\bond{~--}B\bond{~=}C\bond{-~-}D}</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="附加化合物"><a href="#附加化合物" class="headerlink" title="附加化合物"></a>附加化合物</h2><div class="table-container">
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\ce{KCr(SO4)2*12H2O}$</td>
+<td><code>\ce{KCr(SO4)2*12H2O}</code></td>
+</tr>
+<tr>
+<td>$\ce{KCr(SO4)2.12H2O}$</td>
+<td><code>\ce{KCr(SO4)2.12H2O}</code></td>
+</tr>
+<tr>
+<td>$\ce{KCr(SO4)2 * 12 H2O}$</td>
+<td><code>\ce{KCr(SO4)2 * 12 H2O}</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="氧化态"><a href="#氧化态" class="headerlink" title="氧化态"></a>氧化态</h2><p>$\ce{Fe^{II}Fe^{III}2O4}$<br><code>\ce{Fe^{II}Fe^{III}2O4}</code></p>
+<h2 id="不成对电子-自由基"><a href="#不成对电子-自由基" class="headerlink" title="不成对电子, 自由基"></a>不成对电子, 自由基</h2><div class="table-container">
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\ce{OCO^{.-}}$</td>
+<td><code>\ce{OCO^{.-}}</code></td>
+</tr>
+<tr>
+<td>$\ce{NO^{(2.)-}}$</td>
+<td><code>\ce{NO^{(2.)-}}</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="Kroger-Vink表示法"><a href="#Kroger-Vink表示法" class="headerlink" title="Kröger-Vink表示法"></a>Kröger-Vink表示法</h2><div class="table-container">
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\ce{O’’_{i,x}}$</td>
+<td><code>\ce{O&#39;&#39;_{i,x}}</code></td>
+</tr>
+<tr>
+<td>$\ce{M^{..}_i}$</td>
+<td><code>\ce{M^{..}_i}</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<script type="math/tex; mode=display">\ce{$V$^{4'}_{Ti}}</script><p><code>\ce{$V$^{4&#39;}_{Ti}}</code></p>
+<script type="math/tex; mode=display">\ce{V_{V,1}C_{C,0.8}$V$_{C,0.2}}</script><p><code>\ce{V_{V,1}C_{C,0.8}$V$_{C,0.2}}</code></p>
+<script type="math/tex; mode=display">\ce{Li^x_{Li,1-2x}Mg^._{Li,x}$V$'_{Li,x}Cl^x_{Cl}}</script><p><code>\ce{Li^x_{Li,1-2x}Mg^._{Li,x}$V$&#39;_{Li,x}Cl^x_{Cl}}</code></p>
+<h2 id="方程式操作符"><a href="#方程式操作符" class="headerlink" title="方程式操作符"></a>方程式操作符</h2><div class="table-container">
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\ce{A + B}$</td>
+<td><code>\ce{A + B}</code></td>
+</tr>
+<tr>
+<td>$\ce{A - B}$</td>
+<td><code>\ce{A - B}</code></td>
+</tr>
+<tr>
+<td>$\ce{A = B}$</td>
+<td><code>\ce{A = B}</code></td>
+</tr>
+<tr>
+<td>$\ce{A \pm B}$</td>
+<td><code>\ce{A \pm B}</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="沉淀与气体"><a href="#沉淀与气体" class="headerlink" title="沉淀与气体"></a>沉淀与气体</h2><p>$\ce{A v B (v) -&gt; B ^ B (^)}$<br><code>\ce{A v B (v) -&gt; B ^ B (^)}</code></p>
+<h2 id="杂项"><a href="#杂项" class="headerlink" title="杂项"></a>杂项</h2><div class="table-container">
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\ce{NO^*}$</td>
+<td><code>\ce{NO^*}</code> (激发态)</td>
+</tr>
+<tr>
+<td>$\ce{1s^2-N}$</td>
+<td><code>\ce{1s^2-N}</code> (轨道)</td>
+</tr>
+<tr>
+<td>$\ce{n-Pr}$</td>
+<td><code>\ce{n-Pr}</code></td>
+</tr>
+<tr>
+<td>$\ce{iPr}$</td>
+<td><code>\ce{iPr}</code></td>
+</tr>
+<tr>
+<td>$\ce{\ca Fe}$</td>
+<td><code>\ce{\ca Fe}</code></td>
+</tr>
+<tr>
+<td>$\ce{A, B, C; F}$</td>
+<td><code>\ce{A, B, C; F}</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<script type="math/tex; mode=display">\ce{Zn^2+  <=>[+ 2OH-][+ 2H+]  $\underset{\text{amphoteres Hydroxid}}{\ce{Zn(OH)2 v}}$  <=>[+ 2OH-][+ 2H+]  $\underset{\text{Hydroxozikat}}{\ce{[Zn(OH)4]^2-}}$}</script><p><code>\ce{Zn^2+  &lt;=&gt;[+ 2OH-][+ 2H+]  $\underset{\text{amphoteres Hydroxid}}{\ce{Zn(OH)2 v}}$  &lt;=&gt;[+ 2OH-][+ 2H+]  $\underset{\text{Hydroxozikat}}{\ce{[Zn(OH)4]^2-}}$}</code></p>
+<script type="math/tex; mode=display">\ce{$K = \frac{[\ce{Hg^2+}][\ce{Hg}]}{[\ce{Hg2^2+}]}$}</script><p><code>\ce{$K = \frac{[\ce{Hg^2+}][\ce{Hg}]}{[\ce{Hg2^2+}]}$}</code></p>
+<script type="math/tex; mode=display">\ce{$K = \ce{\frac{[Hg^2+][Hg]}{[Hg2^2+]}}$}</script><p><code>\ce{$K = \ce{\frac{[Hg^2+][Hg]}{[Hg2^2+]}}$}</code></p>
+<script type="math/tex; mode=display">\ce{Hg^2+ ->[I-] $\underset{\mathrm{red}}{\ce{HgI2}}$ ->[I-] 
+ $\underset{\mathrm{red}}{\ce{[Hg^{II}I4]^2-}}$}</script><p><code>\ce{Hg^2+ -&gt;[I-] $\underset{\mathrm{red}}{\ce{HgI2}}$ -&gt;[I-]  $\underset{\mathrm{red}}{\ce{[Hg^{II}I4]^2-}}$}</code></p>
+
+    </div>
+
+    
+    
+    
+        
+
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>Tiphereth
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="https://tiphereth-a.github.io/article/mhchem-function/" title="mhchem使用手册-中文文档">https://tiphereth-a.github.io/article/mhchem-function/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E6%B5%8B%E8%AF%95/" rel="tag"># 测试</a>
+              <a href="/tags/%E6%96%87%E6%A1%A3/" rel="tag"># 文档</a>
+              <a href="/tags/%E7%BF%BB%E8%AF%91/" rel="tag"># 翻译</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/article/katex-supported-functions/" rel="prev" title="KaTeX支持的指令-中文文档">
+      <i class="fa fa-chevron-left"></i> KaTeX支持的指令-中文文档
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#数学模式-math-mode-斜体"><span class="nav-number">1.</span> <span class="nav-text">数学模式(math mode)&#x2F;斜体</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#直立文字"><span class="nav-number">2.</span> <span class="nav-text">直立文字</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#化学方程式-CE"><span class="nav-number">3.</span> <span class="nav-text">化学方程式(CE)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#物理单位-PU"><span class="nav-number">4.</span> <span class="nav-text">物理单位(PU)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#化学式"><span class="nav-number">5.</span> <span class="nav-text">化学式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#离子"><span class="nav-number">6.</span> <span class="nav-text">离子</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#带化学计量数"><span class="nav-number">7.</span> <span class="nav-text">带化学计量数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#核素"><span class="nav-number">8.</span> <span class="nav-text">核素</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#反应式箭头"><span class="nav-number">9.</span> <span class="nav-text">反应式箭头</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#括号"><span class="nav-number">10.</span> <span class="nav-text">括号</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#聚集状态"><span class="nav-number">11.</span> <span class="nav-text">聚集状态</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#晶系"><span class="nav-number">12.</span> <span class="nav-text">晶系</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#含有变量-使用斜体渲染"><span class="nav-number">13.</span> <span class="nav-text">含有变量(使用斜体渲染)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#希腊字母"><span class="nav-number">14.</span> <span class="nav-text">希腊字母</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#化学键"><span class="nav-number">15.</span> <span class="nav-text">化学键</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#附加化合物"><span class="nav-number">16.</span> <span class="nav-text">附加化合物</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#氧化态"><span class="nav-number">17.</span> <span class="nav-text">氧化态</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#不成对电子-自由基"><span class="nav-number">18.</span> <span class="nav-text">不成对电子, 自由基</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Kroger-Vink表示法"><span class="nav-number">19.</span> <span class="nav-text">Kröger-Vink表示法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#方程式操作符"><span class="nav-number">20.</span> <span class="nav-text">方程式操作符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#沉淀与气体"><span class="nav-number">21.</span> <span class="nav-text">沉淀与气体</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#杂项"><span class="nav-number">22.</span> <span class="nav-text">杂项</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Tiphereth</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">15</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">37</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/Tiphereth-A" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;Tiphereth-A" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+  </div>
+
+
+  <div class="links-of-blogroll motion-element">
+    <div class="links-of-blogroll-title"><i class="fa fa-link fa-fw"></i>
+      Links
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <a href="https://oi-wiki.org/" title="https:&#x2F;&#x2F;oi-wiki.org&#x2F;" rel="noopener" target="_blank">OI Wiki</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="https://oeis.org/" title="https:&#x2F;&#x2F;oeis.org&#x2F;" rel="noopener" target="_blank">OEIS</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="https://www.wolframalpha.com/" title="https:&#x2F;&#x2F;www.wolframalpha.com&#x2F;" rel="noopener" target="_blank">Wolfram|Alpha</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="https://zh.cppreference.com/w/%e9%a6%96%e9%a1%b5" title="https:&#x2F;&#x2F;zh.cppreference.com&#x2F;w&#x2F;%e9%a6%96%e9%a1%b5" rel="noopener" target="_blank">cppreference</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="https://visualgo.net/zh" title="https:&#x2F;&#x2F;visualgo.net&#x2F;zh" rel="noopener" target="_blank">VisuAlgo</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="https://www.cs.usfca.edu/~galles/visualization/Algorithms.html" title="https:&#x2F;&#x2F;www.cs.usfca.edu&#x2F;~galles&#x2F;visualization&#x2F;Algorithms.html" rel="noopener" target="_blank">Data Structure Visualizations</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="https://paste.ubuntu.com/" title="https:&#x2F;&#x2F;paste.ubuntu.com&#x2F;" rel="noopener" target="_blank">Ubuntu Pastebin</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="https://rubular.com/" title="https:&#x2F;&#x2F;rubular.com&#x2F;" rel="noopener" target="_blank">Rubular</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="https://csacademy.com/app/graph_editor/" title="https:&#x2F;&#x2F;csacademy.com&#x2F;app&#x2F;graph_editor&#x2F;" rel="noopener" target="_blank">Graph Editor</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="http://www.tablesgenerator.com/" title="http:&#x2F;&#x2F;www.tablesgenerator.com&#x2F;" rel="noopener" target="_blank">LaTeX Tables Generator</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="https://poloclub.github.io/cnn-explainer/" title="https:&#x2F;&#x2F;poloclub.github.io&#x2F;cnn-explainer&#x2F;" rel="noopener" target="_blank">CNN Explainer</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="https://mermaid-js.github.io/mermaid" title="https:&#x2F;&#x2F;mermaid-js.github.io&#x2F;mermaid" rel="noopener" target="_blank">Mermaid</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="https://space.bilibili.com/120174936/" title="https:&#x2F;&#x2F;space.bilibili.com&#x2F;120174936&#x2F;" rel="noopener" target="_blank">不分解的AgOH - Bilibili</a>
+        </li>
+    </ul>
+  </div>
+
+      </div>
+        <div class="back-to-top motion-element">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Tiphereth</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+</div>
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+<script>
+if (document.querySelectorAll('pre.mermaid').length) {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/mermaid@8/dist/mermaid.min.js', () => {
+    mermaid.initialize({
+      theme    : 'forest',
+      logLevel : 3,
+      flowchart: { curve     : 'linear' },
+      gantt    : { axisFormat: '%m/%d/%Y' },
+      sequence : { actorMargin: 50 }
+    });
+  }, window.mermaid);
+}
+</script>
+
+
+  
+
+  
+      
+
+<script>
+  if (typeof MathJax === 'undefined') {
+    window.MathJax = {
+      loader: {
+          load: ['[tex]/mhchem'],
+        source: {
+          '[tex]/amsCd': '[tex]/amscd',
+          '[tex]/AMScd': '[tex]/amscd'
+        }
+      },
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+          packages: {'[+]': ['mhchem']},
+        tags: 'ams'
+      },
+      options: {
+        renderActions: {
+          findScript: [10, doc => {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+              const display = !!node.type.match(/; *mode=display/);
+              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+              const text = document.createTextNode('');
+              node.parentNode.replaceChild(text, node);
+              math.start = {node: text, delim: '', n: 0};
+              math.end = {node: text, delim: '', n: 0};
+              doc.math.push(math);
+            });
+          }, '', false],
+          insertedScript: [200, () => {
+            document.querySelectorAll('mjx-container').forEach(node => {
+              let target = node.parentNode;
+              if (target.nodeName.toLowerCase() === 'li') {
+                target.parentNode.classList.add('has-jax');
+              }
+            });
+          }, '', false]
+        }
+      }
+    };
+    (function () {
+      var script = document.createElement('script');
+      script.src = '//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
+      script.defer = true;
+      document.head.appendChild(script);
+    })();
+  } else {
+    MathJax.startup.document.state(0);
+    MathJax.texReset();
+    MathJax.typeset();
+  }
+</script>
+
+    
+
+  
+
+</body>
+</html>
