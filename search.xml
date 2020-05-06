@@ -4,18 +4,19 @@
     <title>mhchem使用手册-中文文档</title>
     <url>/article/mhchem-function/</url>
     <content><![CDATA[<p>来自<a href="https://mhchem.github.io/MathJax-mhchem/" target="_blank" rel="noopener">Manual for: mhchem for MathJax, mhchem for KaTeX</a></p>
+<p>笔者汉化</p>
 <a id="more"></a>
 <h2 id="数学模式-math-mode-斜体"><a href="#数学模式-math-mode-斜体" class="headerlink" title="数学模式(math mode)/斜体"></a>数学模式(math mode)/斜体</h2><p><code>\ce</code>支持嵌套<code>$...$</code>切换至数学模式(math mode)/使用斜体</p>
 <script type="math/tex; mode=display">\ce{X_$i$^$x$}</script><p><code>\ce{X_$i$^$x$}</code></p>
 <script type="math/tex; mode=display">\ce{$cis${-}[PtCl2(NH3)2]}</script><p><code>\ce{$cis${-}[PtCl2(NH3)2]}</code></p>
 <script type="math/tex; mode=display">\ce{CuS($hP12$)}</script><p><code>\ce{CuS($hP12$)}</code></p>
 <p>可使用<code>~</code>代表空格</p>
-<h2 id="直立文字"><a href="#直立文字" class="headerlink" title="直立文字"></a>直立文字</h2><ul>
+<h2 id="直体"><a href="#直体" class="headerlink" title="直体"></a>直体</h2><ul>
 <li><p>使用<code>{...}</code>嵌套</p>
-<p>$\ce{ {Gluconic Acid} + H2O2}$<br><code>\ce{ {Gluconic Acid} + H2O2}</code></p>
+<p>$\ce{ {Gluconic Acid} + H2O2}$  <code>\ce{ {Gluconic Acid} + H2O2}</code></p>
 </li>
 <li><p>使用<code>-</code>(不应作为化学键)</p>
-<p>$\ce{ {(+)}_589{-}[Co(en)3]Cl3}$<br><code>\ce{ {(+)}_589{-}[Co(en)3]Cl3}</code></p>
+<p>$\ce{ {(+)}_589{-}[Co(en)3]Cl3}$  <code>\ce{ {(+)}_589{-}[Co(en)3]Cl3}</code></p>
 </li>
 </ul>
 <h2 id="化学方程式-CE"><a href="#化学方程式-CE" class="headerlink" title="化学方程式(CE)"></a>化学方程式(CE)</h2><div class="table-container">
@@ -183,7 +184,7 @@
 </tbody>
 </table>
 </div>
-<p>上标属于左边还是右边可能是不确定的. 该插件有自动检测功能(仅为数字=质量数=属于右侧)，但要有<code>{}</code>作为分隔符</p>
+<p>上标属于左边还是右边可能是不确定的, mhchem会自动检测<br>可以用<code>{}</code>指定</p>
 <div class="table-container">
 <table>
 <thead>
@@ -320,7 +321,7 @@
 </table>
 </div>
 <p>如果未识别, 可使用数学模式(math mode)</p>
-<h2 id="希腊字母"><a href="#希腊字母" class="headerlink" title="希腊字母"></a>希腊字母</h2><p>MathJax和KaTeX均不支持小写直立希腊字母</p>
+<h2 id="希腊字母"><a href="#希腊字母" class="headerlink" title="希腊字母"></a>希腊字母</h2><p>MathJax和KaTeX均不支持小写直体希腊字母</p>
 <div class="table-container">
 <table>
 <thead>
@@ -405,9 +406,6 @@
 <td><code>\ce{A\bond{-&gt;}B\bond{&lt;-}C}</code></td>
 </tr>
 <tr>
-<td>$\ce{A\bond{-}B\bond{=}C\bondD}`</td>
-</tr>
-<tr>
 <td>$\ce{A\bond{1}B\bond{2}C\bond{3}D}$</td>
 <td><code>\ce{A\bond{1}B\bond{2}C\bond{3}D}</code></td>
 </tr>
@@ -442,7 +440,7 @@
 </tbody>
 </table>
 </div>
-<h2 id="氧化态"><a href="#氧化态" class="headerlink" title="氧化态"></a>氧化态</h2><p>$\ce{Fe^{II}Fe^{III}2O4}$<br><code>\ce{Fe^{II}Fe^{III}2O4}</code></p>
+<h2 id="氧化态"><a href="#氧化态" class="headerlink" title="氧化态"></a>氧化态</h2><p>$\ce{Fe^{II}Fe^{III}2O4}$ <code>\ce{Fe^{II}Fe^{III}2O4}</code></p>
 <h2 id="不成对电子-自由基"><a href="#不成对电子-自由基" class="headerlink" title="不成对电子, 自由基"></a>不成对电子, 自由基</h2><div class="table-container">
 <table>
 <thead>
@@ -2944,9 +2942,9 @@
 <p><a href="../zkw-segment-tree">回到原文</a></p>
 ]]></content>
       <tags>
+        <tag>测试</tag>
         <tag>程序设计</tag>
         <tag>洛谷日报</tag>
-        <tag>测试</tag>
       </tags>
   </entry>
   <entry>
@@ -2984,8 +2982,8 @@
         <tag>程序设计</tag>
         <tag>算法</tag>
         <tag>题解</tag>
-        <tag>洛谷</tag>
         <tag>省选</tag>
+        <tag>洛谷</tag>
         <tag>BZOJ</tag>
         <tag>LOJ</tag>
         <tag>莫队</tag>
@@ -3293,9 +3291,9 @@
 <p><a href="../zkw-segment-tree">回到原文</a></p>
 ]]></content>
       <tags>
+        <tag>测试</tag>
         <tag>程序设计</tag>
         <tag>洛谷日报</tag>
-        <tag>测试</tag>
       </tags>
   </entry>
   <entry>
@@ -3550,28 +3548,12 @@
 </ul>
 ]]></content>
       <tags>
-        <tag>程序设计</tag>
-        <tag>洛谷日报</tag>
         <tag>笔记</tag>
+        <tag>程序设计</tag>
         <tag>数据结构</tag>
         <tag>线段树</tag>
+        <tag>洛谷日报</tag>
         <tag>zkw线段树</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>加密测试</title>
-    <url>/article/encrypt-test/</url>
-    <content><![CDATA[<div id="hexo-blog-encrypt" data-wpm="抱歉, 这个密码看着不太对, 请再试试." data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.">
-  <div class="hbe-input-container">
-  <input type="password" id="hbePass" placeholder="" />
-    <label for="hbePass">请输入密码(123456)</label>
-    <div class="bottom-line"></div>
-  </div>
-  <script id="hbeData" type="hbeData" data-hmacdigest="84ebbac840a025394911fe091493afbbd4456ff46cb219193431d08a884e647b">c178bfcf42be0853f87a30315420f0b50e6088349860ee50f05b013d370793c2031a9b8ea96c883654d01db9191bc4be9fe80eebe26e02aa57673ecade689ff0c373ab2c42f0e7851ad7cd015c4c4fa11d1ca9b1a70f6c2a41f5405392dc35bedb1d92be4d11012ccb82422de9bd005ef5244a93502260c23b6b932339ac45a8123b060d47b71d7679e40c6b1db3401228af071ccc1a93e5d68adbd62d4359ca32ed5d69dcd4dd847a60fbe27c8c9813e62c2865fd58d810ea358089253c14240e521900c74d7f12e1876eb342faef013bcfa3a6979f8f97430d319eb42057ca</script>
-</div>
-<script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
-      <tags>
-        <tag>测试</tag>
       </tags>
   </entry>
   <entry>
@@ -3716,6 +3698,22 @@ merge newbranch</pre>
 
 <h1 id="LaTeX"><a href="#LaTeX" class="headerlink" title="LaTeX"></a>LaTeX</h1><p><a href="../katex-supported-functions">参见</a></p>
 ]]></content>
+      <tags>
+        <tag>测试</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>加密测试</title>
+    <url>/article/encrypt-test/</url>
+    <content><![CDATA[<div id="hexo-blog-encrypt" data-wpm="抱歉, 这个密码看着不太对, 请再试试." data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.">
+  <div class="hbe-input-container">
+  <input type="password" id="hbePass" placeholder="" />
+    <label for="hbePass">请输入密码(123456)</label>
+    <div class="bottom-line"></div>
+  </div>
+  <script id="hbeData" type="hbeData" data-hmacdigest="84ebbac840a025394911fe091493afbbd4456ff46cb219193431d08a884e647b">c178bfcf42be0853f87a30315420f0b50e6088349860ee50f05b013d370793c2031a9b8ea96c883654d01db9191bc4be9fe80eebe26e02aa57673ecade689ff0c373ab2c42f0e7851ad7cd015c4c4fa11d1ca9b1a70f6c2a41f5405392dc35bedb1d92be4d11012ccb82422de9bd005ef5244a93502260c23b6b932339ac45a8123b060d47b71d7679e40c6b1db3401228af071ccc1a93e5d68adbd62d4359ca32ed5d69dcd4dd847a60fbe27c8c9813e62c2865fd58d810ea358089253c14240e521900c74d7f12e1876eb342faef013bcfa3a6979f8f97430d319eb42057ca</script>
+</div>
+<script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
       <tags>
         <tag>测试</tag>
       </tags>
