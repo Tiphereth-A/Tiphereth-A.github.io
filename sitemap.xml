@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://tiphereth-a.github.io/article/test-encrypt/</loc>
+    
+    <lastmod>2020-05-07T15:01:06.271Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://tiphereth-a.github.io/article/katex-support-table/</loc>
     
     <lastmod>2020-05-07T14:54:43.197Z</lastmod>
@@ -61,13 +68,6 @@
     <loc>https://tiphereth-a.github.io/article/test-a/</loc>
     
     <lastmod>2020-05-05T16:27:36.567Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://tiphereth-a.github.io/article/encrypt-test/</loc>
-    
-    <lastmod>2020-05-05T14:32:33.713Z</lastmod>
     
   </url>
   
