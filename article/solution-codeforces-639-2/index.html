@@ -16,25 +16,27 @@
 
 
 <link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+  <link rel="stylesheet" href="/lib/pace/pace-theme-minimal.min.css">
+  <script src="/lib/pace/pace.min.js"></script>
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"tiphereth-a.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+    var CONFIG = {"hostname":"tiphereth-a.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="比赛链接 emm, 打一半改成unrated了海星 惨 Monogon 惨">
+  <meta name="description" content="比赛链接 打一半改成unrated了海星 惨 Monogon 惨">
 <meta property="og:type" content="article">
 <meta property="og:title" content="题解 - Codeforces Round #639 Div. 1 &amp; Div. 2">
 <meta property="og:url" content="https://tiphereth-a.github.io/article/solution-codeforces-639-2/index.html">
 <meta property="og:site_name" content="Tiphereth&#39;s Blog">
-<meta property="og:description" content="比赛链接 emm, 打一半改成unrated了海星 惨 Monogon 惨">
+<meta property="og:description" content="比赛链接 打一半改成unrated了海星 惨 Monogon 惨">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://tiphereth-a.github.io/article/solution-codeforces-639-2/A_1.bmp">
 <meta property="og:image" content="https://tiphereth-a.github.io/article/solution-codeforces-639-2/A_2.bmp">
 <meta property="og:image" content="https://tiphereth-a.github.io/article/solution-codeforces-639-2/A_3.bmp">
 <meta property="og:image" content="https://tiphereth-a.github.io/article/solution-codeforces-639-2/B_1.bmp">
 <meta property="article:published_time" content="2020-05-06T16:07:49.000Z">
-<meta property="article:modified_time" content="2020-05-07T07:46:57.382Z">
+<meta property="article:modified_time" content="2020-05-08T09:49:23.185Z">
 <meta property="article:author" content="Tiphereth">
 <meta property="article:tag" content="程序设计">
 <meta property="article:tag" content="题解">
@@ -86,6 +88,7 @@
   </style>
 </noscript><!-- hexo-inject:begin --><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.css'><!-- hexo-inject:end -->
 
+<link rel="alternate" href="/atom.xml" title="Tiphereth's Blog" type="application/atom+xml">
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage">
@@ -135,12 +138,17 @@
   </li>
         <li class="menu-item menu-item-tags">
 
-    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">38</span></a>
 
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">18</span></a>
+
+  </li>
+        <li class="menu-item menu-item-sitemap">
+
+    <a href="/sitemap.xml" rel="section"><i class="fa fa-sitemap fa-fw"></i>站点地图</a>
 
   </li>
       <li class="menu-item menu-item-search">
@@ -216,10 +224,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2020-05-07 00:07:49 / 修改时间：15:46:57" itemprop="dateCreated datePublished" datetime="2020-05-07T00:07:49+08:00">2020-05-07</time>
+              <time title="创建时间：2020-05-07 00:07:49" itemprop="dateCreated datePublished" datetime="2020-05-07T00:07:49+08:00">2020-05-07</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-05-08 17:49:23" itemprop="dateModified" datetime="2020-05-08T17:49:23+08:00">2020-05-08</time>
+              </span>
 
           
             <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
@@ -240,7 +254,7 @@
 
       
         <p><a href="https://codeforces.com/contest/1344,1345" target="_blank" rel="noopener">比赛链接</a></p>
-<p>emm, 打一半改成unrated了海星</p>
+<p>打一半改成unrated了海星</p>
 <p>惨 Monogon 惨</p>
 <a id="more"></a>
 <!-- Div 2的C~F对应Div 1 的A~D -->
@@ -491,7 +505,7 @@ x\ne y+kn,k\in\Bbb{Z}
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">17</span>
+          <span class="site-state-item-count">18</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -505,7 +519,10 @@ x\ne y+kn,k\in\Bbb{Z}
 </div>
   <div class="links-of-author motion-element">
       <span class="links-of-author-item">
-        <a href="https://github.com/Tiphereth-A" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;Tiphereth-A" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+        <a href="https://github.com/Tiphereth-A" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;Tiphereth-A" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="/atom.xml" title="RSS → &#x2F;atom.xml"><i class="fa fa-rss fa-fw"></i></a>
       </span>
   </div>
 
@@ -592,6 +609,23 @@ x\ne y+kn,k\in\Bbb{Z}
         
 <div class="busuanzi-count">
   <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
 </div>
 
 
@@ -608,6 +642,7 @@ x\ne y+kn,k\in\Bbb{Z}
   
   <script src="/lib/anime.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/lozad@1/dist/lozad.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/pangu@4/dist/browser/pangu.min.js"></script>
   <script src="/lib/velocity/velocity.min.js"></script>
   <script src="/lib/velocity/velocity.ui.min.js"></script>
 
@@ -661,10 +696,20 @@ if (document.querySelectorAll('pre.mermaid').length) {
 
   
       
-<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex@0/dist/katex.min.css"><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex@0/dist/katex.min.css">
 
 
   
+  <script src="//cdn.jsdelivr.net/npm/quicklink@1/dist/quicklink.umd.js"></script>
+  <script>
+      window.addEventListener('load', () => {
+      quicklink({
+        timeout : 3000,
+        priority: true,
+        ignores : [uri => uri.includes('#'),uri => uri === 'https://tiphereth-a.github.io/article/solution-codeforces-639-2/',]
+      });
+      });
+  </script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 
 </body>
 </html>

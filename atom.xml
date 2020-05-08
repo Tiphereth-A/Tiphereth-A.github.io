@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Tiphereth&#39;s Blog</title>
+  <icon>https://tiphereth-a.github.io/icon.png</icon>
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://tiphereth-a.github.io/"/>
+  <updated>2020-05-08T09:49:23.185Z</updated>
+  <id>https://tiphereth-a.github.io/</id>
+  
+  <author>
+    <name>Tiphereth</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>题解 - Codeforces Round #639 Div. 1 &amp; Div. 2</title>
+    <link href="https://tiphereth-a.github.io/article/solution-codeforces-639-2/"/>
+    <id>https://tiphereth-a.github.io/article/solution-codeforces-639-2/</id>
+    <published>2020-05-06T16:07:49.000Z</published>
+    <updated>2020-05-08T09:49:23.185Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;a href=&quot;https://codeforces.com/contest/1344,1345&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;比赛链接&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;打一半改成unrated了海星&lt;/p&gt;
+&lt;p&gt;惨 Monogon 惨&lt;/p&gt;
+    
+    </summary>
+    
+    
+    
+      <category term="程序设计" scheme="https://tiphereth-a.github.io/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
+    
+      <category term="题解" scheme="https://tiphereth-a.github.io/tags/%E9%A2%98%E8%A7%A3/"/>
+    
+      <category term="CodeForces" scheme="https://tiphereth-a.github.io/tags/CodeForces/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>mhchem指令手册-中文文档</title>
+    <link href="https://tiphereth-a.github.io/article/mhchem-function/"/>
+    <id>https://tiphereth-a.github.io/article/mhchem-function/</id>
+    <published>2020-05-06T08:31:03.000Z</published>
+    <updated>2020-05-06T13:48:58.092Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;汉化自&lt;a href=&quot;https://mhchem.github.io/MathJax-mhchem/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Manual for: mhchem for MathJax, mhchem for KaTeX&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;按笔者习惯调整了顺序&lt;/p&gt;
+    
+    </summary>
+    
+    
+    
+      <category term="测试" scheme="https://tiphereth-a.github.io/tags/%E6%B5%8B%E8%AF%95/"/>
+    
+      <category term="文档" scheme="https://tiphereth-a.github.io/tags/%E6%96%87%E6%A1%A3/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>KaTeX指令速查表</title>
+    <link href="https://tiphereth-a.github.io/article/katex-support-table/"/>
+    <id>https://tiphereth-a.github.io/article/katex-support-table/</id>
+    <published>2020-05-05T15:59:37.000Z</published>
+    <updated>2020-05-08T09:47:49.066Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;来自 &lt;a href=&quot;https://katex.org/docs/support_table.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Support table - KaTeX&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;s&gt;注意: 本博客采用MathJax渲染, 示例请以原文为准&lt;/s&gt;&lt;/p&gt;
+&lt;p&gt;本博客渲染引擎已更换为KaTeX, MathJax不支持的指令已注明, KaTeX🐂🍺&lt;/p&gt;
+    
+    </summary>
+    
+    
+    
+      <category term="测试" scheme="https://tiphereth-a.github.io/tags/%E6%B5%8B%E8%AF%95/"/>
+    
+      <category term="文档" scheme="https://tiphereth-a.github.io/tags/%E6%96%87%E6%A1%A3/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>KaTeX指令手册-中文文档</title>
+    <link href="https://tiphereth-a.github.io/article/katex-supported-functions/"/>
+    <id>https://tiphereth-a.github.io/article/katex-supported-functions/</id>
+    <published>2020-05-05T15:59:37.000Z</published>
+    <updated>2020-05-08T08:22:35.707Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;汉化自 &lt;a href=&quot;https://katex.org/docs/supported.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Supported functions - KaTeX&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;s&gt;注意: 本博客采用MathJax渲染, 写这篇博客的初衷也是比较二者支持指令的异同, 渲染结果请以原文为准&lt;/s&gt;&lt;/p&gt;
+&lt;p&gt;本博客渲染引擎已更换为KaTeX, MathJax不支持的指令已注明, KaTeX🐂🍺&lt;/p&gt;
+    
+    </summary>
+    
+    
+    
+      <category term="测试" scheme="https://tiphereth-a.github.io/tags/%E6%B5%8B%E8%AF%95/"/>
+    
+      <category term="文档" scheme="https://tiphereth-a.github.io/tags/%E6%96%87%E6%A1%A3/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>数论笔记-二次剩余,legendre符号与二次互反律</title>
+    <link href="https://tiphereth-a.github.io/article/quadratic-residue-and-quadratic-reciprocity-law/"/>
+    <id>https://tiphereth-a.github.io/article/quadratic-residue-and-quadratic-reciprocity-law/</id>
+    <published>2020-04-19T03:02:38.000Z</published>
+    <updated>2020-05-05T11:44:58.711Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;二次剩余&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#二次剩余&quot;&gt;&lt;/a&gt; 二次剩余&lt;/h1&gt;
+&lt;p&gt;满足&lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi mathvariant=&quot;normal&quot;&gt;∃&lt;/mi&gt;&lt;mi&gt;x&lt;/mi&gt;&lt;mo&gt;∈&lt;/mo&gt;&lt;msub&gt;&lt;mi mathvariant=&quot;double-struck&quot;&gt;Z&lt;/mi&gt;&lt;mi&gt;m&lt;/mi&gt;&lt;/msub&gt;&lt;mo separator=&quot;true&quot;&gt;,&lt;/mo&gt;&lt;mtext&gt; &lt;/mtext&gt;&lt;mi&gt;s&lt;/mi&gt;&lt;mi mathvariant=&quot;normal&quot;&gt;.&lt;/mi&gt;&lt;mi&gt;t&lt;/mi&gt;&lt;mi mathvariant=&quot;normal&quot;&gt;.&lt;/mi&gt;&lt;mtext&gt; &lt;/mtext&gt;&lt;msup&gt;&lt;mi&gt;x&lt;/mi&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;/msup&gt;&lt;mo&gt;≡&lt;/mo&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;mspace&gt;&lt;/mspace&gt;&lt;mspace width=&quot;0.4444444444444444em&quot;/&gt;&lt;mo stretchy=&quot;false&quot;&gt;(&lt;/mo&gt;&lt;mrow&gt;&lt;mi mathvariant=&quot;normal&quot;&gt;m&lt;/mi&gt;&lt;mi mathvariant=&quot;normal&quot;&gt;o&lt;/mi&gt;&lt;mi mathvariant=&quot;normal&quot;&gt;d&lt;/mi&gt;&lt;/mrow&gt;&lt;mspace width=&quot;0.3333333333333333em&quot;/&gt;&lt;mi&gt;m&lt;/mi&gt;&lt;mo stretchy=&quot;false&quot;&gt;)&lt;/mo&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;\exists x\in\Bbb{Z}_m,\ s.t.\ x^2\equiv a\pmod m&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.73354em;vertical-align:-0.0391em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;∃&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2777777777777778em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mrel&quot;&gt;∈&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2777777777777778em;&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:1.008548em;vertical-align:-0.19444em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord mathbb&quot;&gt;Z&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;msupsub&quot;&gt;&lt;span class=&quot;vlist-t vlist-t2&quot;&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.151392em;&quot;&gt;&lt;span style=&quot;top:-2.5500000000000003em;margin-right:0.05em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:2.7em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;sizing reset-size6 size3 mtight&quot;&gt;&lt;span class=&quot;mord mathdefault mtight&quot;&gt;m&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-s&quot;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.15em;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;mpunct&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.16666666666666666em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mspace&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mspace&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord mathdefault&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;msupsub&quot;&gt;&lt;span class=&quot;vlist-t&quot;&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.8141079999999999em;&quot;&gt;&lt;span style=&quot;top:-3.063em;margin-right:0.05em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:2.7em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;sizing reset-size6 size3 mtight&quot;&gt;&lt;span class=&quot;mord mtight&quot;&gt;2&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2777777777777778em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mrel&quot;&gt;≡&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2777777777777778em;&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.43056em;vertical-align:0em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;mspace allowbreak&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.4444444444444444em;&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:1em;vertical-align:-0.25em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mopen&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord mathrm&quot;&gt;m&lt;/span&gt;&lt;span class=&quot;mord mathrm&quot;&gt;o&lt;/span&gt;&lt;span class=&quot;mord mathrm&quot;&gt;d&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.3333333333333333em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot;&gt;m&lt;/span&gt;&lt;span class=&quot;mclose&quot;&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;的&lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;a&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.43056em;vertical-align:0em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot;&gt;a&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;为模&lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;p&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;p&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.625em;vertical-align:-0.19444em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot;&gt;p&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;的二次剩余&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;以下所有内容假定&lt;strong&gt;模数为奇素数&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+    
+      <category term="数学" scheme="https://tiphereth-a.github.io/tags/%E6%95%B0%E5%AD%A6/"/>
+    
+      <category term="笔记" scheme="https://tiphereth-a.github.io/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="数论" scheme="https://tiphereth-a.github.io/tags/%E6%95%B0%E8%AE%BA/"/>
+    
+      <category term="二次剩余" scheme="https://tiphereth-a.github.io/tags/%E4%BA%8C%E6%AC%A1%E5%89%A9%E4%BD%99/"/>
+    
+      <category term="Legendre符号" scheme="https://tiphereth-a.github.io/tags/Legendre%E7%AC%A6%E5%8F%B7/"/>
+    
+      <category term="二次互反律" scheme="https://tiphereth-a.github.io/tags/%E4%BA%8C%E6%AC%A1%E4%BA%92%E5%8F%8D%E5%BE%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>数论笔记-原根与指数(离散对数)</title>
+    <link href="https://tiphereth-a.github.io/article/primitive-root-and-discrete-logarithm/"/>
+    <id>https://tiphereth-a.github.io/article/primitive-root-and-discrete-logarithm/</id>
+    <published>2020-04-18T14:54:50.000Z</published>
+    <updated>2020-05-05T03:11:42.937Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;阶&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#阶&quot;&gt;&lt;/a&gt; 阶&lt;/h1&gt;
+&lt;p&gt;对&lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;gcd&lt;/mi&gt;&lt;mo&gt;⁡&lt;/mo&gt;&lt;mo stretchy=&quot;false&quot;&gt;(&lt;/mo&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;mo separator=&quot;true&quot;&gt;,&lt;/mo&gt;&lt;mi&gt;m&lt;/mi&gt;&lt;mo stretchy=&quot;false&quot;&gt;)&lt;/mo&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;\gcd(a,m)=1&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:1em;vertical-align:-0.25em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mop&quot;&gt;&lt;span style=&quot;margin-right:0.01389em;&quot;&gt;g&lt;/span&gt;cd&lt;/span&gt;&lt;span class=&quot;mopen&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;mpunct&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.16666666666666666em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot;&gt;m&lt;/span&gt;&lt;span class=&quot;mclose&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2777777777777778em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mrel&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2777777777777778em;&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.64444em;vertical-align:0em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;1&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;, &lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;msub&gt;&lt;mi mathvariant=&quot;normal&quot;&gt;ord&lt;/mi&gt;&lt;mo&gt;⁡&lt;/mo&gt;&lt;mi&gt;m&lt;/mi&gt;&lt;/msub&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;mo&gt;:&lt;/mo&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mi&gt;min&lt;/mi&gt;&lt;mo&gt;⁡&lt;/mo&gt;&lt;mo stretchy=&quot;false&quot;&gt;{&lt;/mo&gt;&lt;mi&gt;l&lt;/mi&gt;&lt;mo&gt;∈&lt;/mo&gt;&lt;msup&gt;&lt;mi mathvariant=&quot;double-struck&quot;&gt;N&lt;/mi&gt;&lt;mo&gt;∗&lt;/mo&gt;&lt;/msup&gt;&lt;mi mathvariant=&quot;normal&quot;&gt;∣&lt;/mi&gt;&lt;msup&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;mi&gt;l&lt;/mi&gt;&lt;/msup&gt;&lt;mo&gt;≡&lt;/mo&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;mspace&gt;&lt;/mspace&gt;&lt;mspace width=&quot;0.4444444444444444em&quot;/&gt;&lt;mo stretchy=&quot;false&quot;&gt;(&lt;/mo&gt;&lt;mrow&gt;&lt;mi mathvariant=&quot;normal&quot;&gt;m&lt;/mi&gt;&lt;mi mathvariant=&quot;normal&quot;&gt;o&lt;/mi&gt;&lt;mi mathvariant=&quot;normal&quot;&gt;d&lt;/mi&gt;&lt;/mrow&gt;&lt;mspace width=&quot;0.3333333333333333em&quot;/&gt;&lt;mi&gt;m&lt;/mi&gt;&lt;mo stretchy=&quot;false&quot;&gt;)&lt;/mo&gt;&lt;mo stretchy=&quot;false&quot;&gt;}&lt;/mo&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;\operatorname{ord}_ma:=\min\{l\in\Bbb{N}^*|a^l\equiv1\pmod m\}&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.84444em;vertical-align:-0.15em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mop&quot;&gt;&lt;span class=&quot;mop&quot;&gt;&lt;span class=&quot;mord mathrm&quot;&gt;o&lt;/span&gt;&lt;span class=&quot;mord mathrm&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;mord mathrm&quot;&gt;d&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;msupsub&quot;&gt;&lt;span class=&quot;vlist-t vlist-t2&quot;&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.151392em;&quot;&gt;&lt;span style=&quot;top:-2.5500000000000003em;margin-right:0.05em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:2.7em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;sizing reset-size6 size3 mtight&quot;&gt;&lt;span class=&quot;mord mathdefault mtight&quot;&gt;m&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-s&quot;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.15em;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.16666666666666666em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2777777777777778em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mrel&quot;&gt;:&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.36687em;vertical-align:0em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mrel&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2777777777777778em;&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:1em;vertical-align:-0.25em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mop&quot;&gt;min&lt;/span&gt;&lt;span class=&quot;mopen&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot; style=&quot;margin-right:0.01968em;&quot;&gt;l&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2777777777777778em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mrel&quot;&gt;∈&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2777777777777778em;&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:1.099108em;vertical-align:-0.25em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord mathbb&quot;&gt;N&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;msupsub&quot;&gt;&lt;span class=&quot;vlist-t&quot;&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.688696em;&quot;&gt;&lt;span style=&quot;top:-3.063em;margin-right:0.05em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:2.7em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;sizing reset-size6 size3 mtight&quot;&gt;&lt;span class=&quot;mbin mtight&quot;&gt;∗&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;∣&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord mathdefault&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;msupsub&quot;&gt;&lt;span class=&quot;vlist-t&quot;&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.849108em;&quot;&gt;&lt;span style=&quot;top:-3.063em;margin-right:0.05em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:2.7em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;sizing reset-size6 size3 mtight&quot;&gt;&lt;span class=&quot;mord mathdefault mtight&quot; style=&quot;margin-right:0.01968em;&quot;&gt;l&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2777777777777778em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mrel&quot;&gt;≡&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2777777777777778em;&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.64444em;vertical-align:0em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;mspace allowbreak&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.4444444444444444em;&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:1em;vertical-align:-0.25em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mopen&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord mathrm&quot;&gt;m&lt;/span&gt;&lt;span class=&quot;mord mathrm&quot;&gt;o&lt;/span&gt;&lt;span class=&quot;mord mathrm&quot;&gt;d&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.3333333333333333em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot;&gt;m&lt;/span&gt;&lt;span class=&quot;mclose&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;mclose&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+    
+      <category term="数学" scheme="https://tiphereth-a.github.io/tags/%E6%95%B0%E5%AD%A6/"/>
+    
+      <category term="笔记" scheme="https://tiphereth-a.github.io/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="数论" scheme="https://tiphereth-a.github.io/tags/%E6%95%B0%E8%AE%BA/"/>
+    
+      <category term="阶" scheme="https://tiphereth-a.github.io/tags/%E9%98%B6/"/>
+    
+      <category term="原根" scheme="https://tiphereth-a.github.io/tags/%E5%8E%9F%E6%A0%B9/"/>
+    
+      <category term="离散对数" scheme="https://tiphereth-a.github.io/tags/%E7%A6%BB%E6%95%A3%E5%AF%B9%E6%95%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>数论笔记-数论函数,dirichlet卷积与möbius反演</title>
+    <link href="https://tiphereth-a.github.io/article/mobius-inverse-formula/"/>
+    <id>https://tiphereth-a.github.io/article/mobius-inverse-formula/</id>
+    <published>2020-04-18T10:06:32.000Z</published>
+    <updated>2020-05-04T16:35:20.467Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;开胃菜数论分块&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#开胃菜数论分块&quot;&gt;&lt;/a&gt; 开胃菜(数论分块)&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi mathvariant=&quot;normal&quot;&gt;∀&lt;/mi&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;mo separator=&quot;true&quot;&gt;,&lt;/mo&gt;&lt;mi&gt;b&lt;/mi&gt;&lt;mo separator=&quot;true&quot;&gt;,&lt;/mo&gt;&lt;mi&gt;c&lt;/mi&gt;&lt;mo&gt;∈&lt;/mo&gt;&lt;msup&gt;&lt;mi mathvariant=&quot;double-struck&quot;&gt;N&lt;/mi&gt;&lt;mo&gt;∗&lt;/mo&gt;&lt;/msup&gt;&lt;mo separator=&quot;true&quot;&gt;,&lt;/mo&gt;&lt;mstyle scriptlevel=&quot;0&quot; displaystyle=&quot;true&quot;&gt;&lt;mo fence=&quot;false&quot;&gt;⌊&lt;/mo&gt;&lt;mfrac&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;mrow&gt;&lt;mi&gt;b&lt;/mi&gt;&lt;mi&gt;c&lt;/mi&gt;&lt;/mrow&gt;&lt;/mfrac&gt;&lt;mo fence=&quot;false&quot;&gt;⌋&lt;/mo&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mo fence=&quot;false&quot;&gt;⌊&lt;/mo&gt;&lt;mfrac&gt;&lt;mrow&gt;&lt;mo stretchy=&quot;false&quot;&gt;⌊&lt;/mo&gt;&lt;mfrac&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;mi&gt;b&lt;/mi&gt;&lt;/mfrac&gt;&lt;mo stretchy=&quot;false&quot;&gt;⌋&lt;/mo&gt;&lt;/mrow&gt;&lt;mi&gt;c&lt;/mi&gt;&lt;/mfrac&gt;&lt;mo fence=&quot;false&quot;&gt;⌋&lt;/mo&gt;&lt;/mstyle&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;\forall a,b,c\in\Bbb{N}^*,\displaystyle\Big\lfloor{a\over bc}\Big\rfloor=\bigg\lfloor{\lfloor{a\over b}\rfloor\over c}\bigg\rfloor&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.8888799999999999em;vertical-align:-0.19444em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;∀&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;mpunct&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.16666666666666666em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;mpunct&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.16666666666666666em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2777777777777778em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mrel&quot;&gt;∈&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2777777777777778em;&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:1.8359999999999999em;vertical-align:-0.686em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord mathbb&quot;&gt;N&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;msupsub&quot;&gt;&lt;span class=&quot;vlist-t&quot;&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.688696em;&quot;&gt;&lt;span style=&quot;top:-3.063em;margin-right:0.05em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:2.7em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;sizing reset-size6 size3 mtight&quot;&gt;&lt;span class=&quot;mbin mtight&quot;&gt;∗&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;mpunct&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.16666666666666666em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;delimsizing size2&quot;&gt;⌊&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mopen nulldelimiter&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mfrac&quot;&gt;&lt;span class=&quot;vlist-t vlist-t2&quot;&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:1.10756em;&quot;&gt;&lt;span style=&quot;top:-2.314em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:3em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord mathdefault&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot;&gt;c&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;top:-3.23em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:3em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;frac-line&quot; style=&quot;border-bottom-width:0.04em;&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;top:-3.677em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:3em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord mathdefault&quot;&gt;a&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-s&quot;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.686em;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;mclose nulldelimiter&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;delimsizing size2&quot;&gt;⌋&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2777777777777778em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mrel&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2777777777777778em;&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:2.43503em;vertical-align:-0.95003em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;delimsizing size3&quot;&gt;⌊&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mopen nulldelimiter&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mfrac&quot;&gt;&lt;span class=&quot;vlist-t vlist-t2&quot;&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:1.4849999999999999em;&quot;&gt;&lt;span style=&quot;top:-2.314em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:3em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord mathdefault&quot;&gt;c&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;top:-3.23em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:3em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;frac-line&quot; style=&quot;border-bottom-width:0.04em;&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;top:-3.7350000000000003em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:3em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mopen&quot;&gt;⌊&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mopen nulldelimiter&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mfrac&quot;&gt;&lt;span class=&quot;vlist-t vlist-t2&quot;&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.695392em;&quot;&gt;&lt;span style=&quot;top:-2.6550000000000002em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:3em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;sizing reset-size6 size3 mtight&quot;&gt;&lt;span class=&quot;mord mtight&quot;&gt;&lt;span class=&quot;mord mathdefault mtight&quot;&gt;b&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;top:-3.23em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:3em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;frac-line&quot; style=&quot;border-bottom-width:0.04em;&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;top:-3.394em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:3em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;sizing reset-size6 size3 mtight&quot;&gt;&lt;span class=&quot;mord mtight&quot;&gt;&lt;span class=&quot;mord mathdefault mtight&quot;&gt;a&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-s&quot;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.345em;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;mclose nulldelimiter&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;mclose&quot;&gt;⌋&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-s&quot;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.686em;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;mclose nulldelimiter&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;delimsizing size3&quot;&gt;⌋&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mo fence=&quot;false&quot;&gt;∣&lt;/mo&gt;&lt;mo fence=&quot;false&quot;&gt;{&lt;/mo&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mo&gt;∈&lt;/mo&gt;&lt;msup&gt;&lt;mi mathvariant=&quot;double-struck&quot;&gt;N&lt;/mi&gt;&lt;mo&gt;∗&lt;/mo&gt;&lt;/msup&gt;&lt;mo fence=&quot;false&quot;&gt;∣&lt;/mo&gt;&lt;mstyle scriptlevel=&quot;0&quot; displaystyle=&quot;true&quot;&gt;&lt;mo fence=&quot;false&quot;&gt;⌊&lt;/mo&gt;&lt;mfrac&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;/mfrac&gt;&lt;mo fence=&quot;false&quot;&gt;⌋&lt;/mo&gt;&lt;mo separator=&quot;true&quot;&gt;,&lt;/mo&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;mo&gt;⩽&lt;/mo&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;mo&gt;⩽&lt;/mo&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mo fence=&quot;false&quot;&gt;}&lt;/mo&gt;&lt;mo fence=&quot;false&quot;&gt;∣&lt;/mo&gt;&lt;mo&gt;⩽&lt;/mo&gt;&lt;mo stretchy=&quot;false&quot;&gt;⌊&lt;/mo&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;msqrt&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;/msqrt&gt;&lt;mo stretchy=&quot;false&quot;&gt;⌋&lt;/mo&gt;&lt;/mstyle&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;\Big|\Big\{n\in\Bbb{N}^*\Big|\displaystyle\Big\lfloor{n\over i}\Big\rfloor,1\leqslant i\leqslant n\Big\}\Big|\leqslant\lfloor2\sqrt{n}\rfloor&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:1.818005em;vertical-align:-0.65002em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;delimsizing mult&quot;&gt;&lt;span class=&quot;vlist-t vlist-t2&quot;&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:1.167985em;&quot;&gt;&lt;span style=&quot;top:-1.955985em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:2.606em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;delimsizinginner delim-size1&quot;&gt;&lt;span&gt;∣&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;top:-2.561985em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:2.606em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;delimsizinginner delim-size1&quot;&gt;&lt;span&gt;∣&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;top:-3.167985em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:2.606em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;delimsizinginner delim-size1&quot;&gt;&lt;span&gt;∣&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-s&quot;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.6500149999999999em;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;delimsizing size2&quot;&gt;{&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2777777777777778em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mrel&quot;&gt;∈&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2777777777777778em;&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:1.8539850000000002em;vertical-align:-0.686em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord mathbb&quot;&gt;N&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;msupsub&quot;&gt;&lt;span class=&quot;vlist-t&quot;&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.688696em;&quot;&gt;&lt;span style=&quot;top:-3.063em;margin-right:0.05em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:2.7em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;sizing reset-size6 size3 mtight&quot;&gt;&lt;span class=&quot;mbin mtight&quot;&gt;∗&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;delimsizing mult&quot;&gt;&lt;span class=&quot;vlist-t vlist-t2&quot;&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:1.167985em;&quot;&gt;&lt;span style=&quot;top:-1.955985em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:2.606em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;delimsizinginner delim-size1&quot;&gt;&lt;span&gt;∣&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;top:-2.561985em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:2.606em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;delimsizinginner delim-size1&quot;&gt;&lt;span&gt;∣&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;top:-3.167985em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:2.606em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;delimsizinginner delim-size1&quot;&gt;&lt;span&gt;∣&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-s&quot;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.6500149999999999em;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;delimsizing size2&quot;&gt;⌊&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mopen nulldelimiter&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mfrac&quot;&gt;&lt;span class=&quot;vlist-t vlist-t2&quot;&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:1.10756em;&quot;&gt;&lt;span style=&quot;top:-2.314em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:3em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord mathdefault&quot;&gt;i&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;top:-3.23em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:3em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;frac-line&quot; style=&quot;border-bottom-width:0.04em;&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;top:-3.677em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:3em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord mathdefault&quot;&gt;n&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-s&quot;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.686em;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;mclose nulldelimiter&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;delimsizing size2&quot;&gt;⌋&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;mpunct&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.16666666666666666em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2777777777777778em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mrel amsrm&quot;&gt;⩽&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2777777777777778em;&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.79619em;vertical-align:-0.13667em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2777777777777778em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mrel amsrm&quot;&gt;⩽&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2777777777777778em;&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:1.818005em;vertical-align:-0.65002em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;delimsizing size2&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;delimsizing mult&quot;&gt;&lt;span class=&quot;vlist-t vlist-t2&quot;&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:1.167985em;&quot;&gt;&lt;span style=&quot;top:-1.955985em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:2.606em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;delimsizinginner delim-size1&quot;&gt;&lt;span&gt;∣&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;top:-2.561985em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:2.606em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;delimsizinginner delim-size1&quot;&gt;&lt;span&gt;∣&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;top:-3.167985em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:2.606em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;delimsizinginner delim-size1&quot;&gt;&lt;span&gt;∣&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-s&quot;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.6500149999999999em;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2777777777777778em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mrel amsrm&quot;&gt;⩽&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2777777777777778em;&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:1.099155em;vertical-align:-0.25em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mopen&quot;&gt;⌊&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;mord sqrt&quot;&gt;&lt;span class=&quot;vlist-t vlist-t2&quot;&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.8491550000000001em;&quot;&gt;&lt;span class=&quot;svg-align&quot; style=&quot;top:-3em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:3em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot; style=&quot;padding-left:0.833em;&quot;&gt;&lt;span class=&quot;mord mathdefault&quot;&gt;n&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;top:-2.809155em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:3em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;hide-tail&quot; style=&quot;min-width:0.853em;height:1.08em;&quot;&gt;&lt;svg width=&#39;400em&#39; height=&#39;1.08em&#39; viewBox=&#39;0 0 400000 1080&#39; preserveAspectRatio=&#39;xMinYMin slice&#39;&gt;&lt;path d=&#39;M95,702c-2.7,0,-7.17,-2.7,-13.5,-8c-5.8,-5.3,-9.5,
+-10,-9.5,-14c0,-2,0.3,-3.3,1,-4c1.3,-2.7,23.83,-20.7,67.5,-54c44.2,-33.3,65.8,
+-50.3,66.5,-51c1.3,-1.3,3,-2,5,-2c4.7,0,8.7,3.3,12,10s173,378,173,378c0.7,0,
+35.3,-71,104,-213c68.7,-142,137.5,-285,206.5,-429c69,-144,104.5,-217.7,106.5,
+-221c5.3,-9.3,12,-14,20,-14H400000v40H845.2724s-225.272,467,-225.272,467
+s-235,486,-235,486c-2.7,4.7,-9,7,-19,7c-6,0,-10,-1,-12,-3s-194,-422,-194,-422
+s-65,47,-65,47z M834 80H400000v40H845z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-s&quot;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.190845em;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;mclose&quot;&gt;⌋&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi mathvariant=&quot;normal&quot;&gt;∀&lt;/mi&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;mo&gt;&amp;lt;&lt;/mo&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mo separator=&quot;true&quot;&gt;,&lt;/mo&gt;&lt;mi&gt;max&lt;/mi&gt;&lt;mo&gt;⁡&lt;/mo&gt;&lt;mo stretchy=&quot;false&quot;&gt;{&lt;/mo&gt;&lt;mi&gt;j&lt;/mi&gt;&lt;mo&gt;∈&lt;/mo&gt;&lt;msup&gt;&lt;mi mathvariant=&quot;double-struck&quot;&gt;N&lt;/mi&gt;&lt;mo&gt;∗&lt;/mo&gt;&lt;/msup&gt;&lt;mi mathvariant=&quot;normal&quot;&gt;∣&lt;/mi&gt;&lt;mo stretchy=&quot;false&quot;&gt;⌊&lt;/mo&gt;&lt;mfrac&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;/mfrac&gt;&lt;mo stretchy=&quot;false&quot;&gt;⌋&lt;/mo&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mo stretchy=&quot;false&quot;&gt;⌊&lt;/mo&gt;&lt;mfrac&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mi&gt;j&lt;/mi&gt;&lt;/mfrac&gt;&lt;mo stretchy=&quot;false&quot;&gt;⌋&lt;/mo&gt;&lt;mo stretchy=&quot;false&quot;&gt;}&lt;/mo&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mstyle scriptlevel=&quot;0&quot; displaystyle=&quot;true&quot;&gt;&lt;mo fence=&quot;false&quot;&gt;⌊&lt;/mo&gt;&lt;mfrac&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mrow&gt;&lt;mo stretchy=&quot;false&quot;&gt;⌊&lt;/mo&gt;&lt;mfrac&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;/mfrac&gt;&lt;mo stretchy=&quot;false&quot;&gt;⌋&lt;/mo&gt;&lt;/mrow&gt;&lt;/mfrac&gt;&lt;mo fence=&quot;false&quot;&gt;⌋&lt;/mo&gt;&lt;/mstyle&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;\forall i&amp;lt;n,\max\{j\in\Bbb{N}^*|\lfloor{n\over i}\rfloor=\lfloor{n\over j}\rfloor\}=\displaystyle\bigg\lfloor{n\over\lfloor{n\over i}\rfloor}\bigg\rfloor&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.73354em;vertical-align:-0.0391em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;∀&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2777777777777778em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mrel&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2777777777777778em;&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:1em;vertical-align:-0.25em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;mpunct&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.16666666666666666em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mop&quot;&gt;max&lt;/span&gt;&lt;span class=&quot;mopen&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot; style=&quot;margin-right:0.05724em;&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2777777777777778em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mrel&quot;&gt;∈&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2777777777777778em;&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:1.095em;vertical-align:-0.345em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord mathbb&quot;&gt;N&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;msupsub&quot;&gt;&lt;span class=&quot;vlist-t&quot;&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.688696em;&quot;&gt;&lt;span style=&quot;top:-3.063em;margin-right:0.05em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:2.7em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;sizing reset-size6 size3 mtight&quot;&gt;&lt;span class=&quot;mbin mtight&quot;&gt;∗&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;∣&lt;/span&gt;&lt;span class=&quot;mopen&quot;&gt;⌊&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mopen nulldelimiter&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mfrac&quot;&gt;&lt;span class=&quot;vlist-t vlist-t2&quot;&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.695392em;&quot;&gt;&lt;span style=&quot;top:-2.6550000000000002em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:3em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;sizing reset-size6 size3 mtight&quot;&gt;&lt;span class=&quot;mord mtight&quot;&gt;&lt;span class=&quot;mord mathdefault mtight&quot;&gt;i&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;top:-3.23em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:3em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;frac-line&quot; style=&quot;border-bottom-width:0.04em;&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;top:-3.394em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:3em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;sizing reset-size6 size3 mtight&quot;&gt;&lt;span class=&quot;mord mtight&quot;&gt;&lt;span class=&quot;mord mathdefault mtight&quot;&gt;n&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-s&quot;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.345em;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;mclose nulldelimiter&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;mclose&quot;&gt;⌋&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2777777777777778em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mrel&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2777777777777778em;&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:1.2311079999999999em;vertical-align:-0.481108em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mopen&quot;&gt;⌊&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mopen nulldelimiter&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mfrac&quot;&gt;&lt;span class=&quot;vlist-t vlist-t2&quot;&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.695392em;&quot;&gt;&lt;span style=&quot;top:-2.6550000000000002em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:3em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;sizing reset-size6 size3 mtight&quot;&gt;&lt;span class=&quot;mord mtight&quot;&gt;&lt;span class=&quot;mord mathdefault mtight&quot; style=&quot;margin-right:0.05724em;&quot;&gt;j&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;top:-3.23em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:3em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;frac-line&quot; style=&quot;border-bottom-width:0.04em;&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;top:-3.394em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:3em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;sizing reset-size6 size3 mtight&quot;&gt;&lt;span class=&quot;mord mtight&quot;&gt;&lt;span class=&quot;mord mathdefault mtight&quot;&gt;n&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-s&quot;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.481108em;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;mclose nulldelimiter&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;mclose&quot;&gt;⌋&lt;/span&gt;&lt;span class=&quot;mclose&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2777777777777778em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mrel&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2777777777777778em;&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:2.481em;vertical-align:-1.0310000000000001em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;delimsizing size3&quot;&gt;⌊&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mopen nulldelimiter&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mfrac&quot;&gt;&lt;span class=&quot;vlist-t vlist-t2&quot;&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:1.10756em;&quot;&gt;&lt;span style=&quot;top:-2.314em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:3em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mopen&quot;&gt;⌊&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mopen nulldelimiter&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mfrac&quot;&gt;&lt;span class=&quot;vlist-t vlist-t2&quot;&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.695392em;&quot;&gt;&lt;span style=&quot;top:-2.6550000000000002em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:3em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;sizing reset-size6 size3 mtight&quot;&gt;&lt;span class=&quot;mord mtight&quot;&gt;&lt;span class=&quot;mord mathdefault mtight&quot;&gt;i&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;top:-3.23em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:3em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;frac-line&quot; style=&quot;border-bottom-width:0.04em;&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;top:-3.394em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:3em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;sizing reset-size6 size3 mtight&quot;&gt;&lt;span class=&quot;mord mtight&quot;&gt;&lt;span class=&quot;mord mathdefault mtight&quot;&gt;n&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-s&quot;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.345em;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;mclose nulldelimiter&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;mclose&quot;&gt;⌋&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;top:-3.23em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:3em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;frac-line&quot; style=&quot;border-bottom-width:0.04em;&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;top:-3.677em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:3em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord mathdefault&quot;&gt;n&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-s&quot;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:1.0310000000000001em;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;mclose nulldelimiter&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;delimsizing size3&quot;&gt;⌋&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;/ol&gt;
+    
+    </summary>
+    
+    
+    
+      <category term="数学" scheme="https://tiphereth-a.github.io/tags/%E6%95%B0%E5%AD%A6/"/>
+    
+      <category term="笔记" scheme="https://tiphereth-a.github.io/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="数论" scheme="https://tiphereth-a.github.io/tags/%E6%95%B0%E8%AE%BA/"/>
+    
+      <category term="数论分块" scheme="https://tiphereth-a.github.io/tags/%E6%95%B0%E8%AE%BA%E5%88%86%E5%9D%97/"/>
+    
+      <category term="数论函数" scheme="https://tiphereth-a.github.io/tags/%E6%95%B0%E8%AE%BA%E5%87%BD%E6%95%B0/"/>
+    
+      <category term="Dirichlet卷积" scheme="https://tiphereth-a.github.io/tags/Dirichlet%E5%8D%B7%E7%A7%AF/"/>
+    
+      <category term="Möbius反演" scheme="https://tiphereth-a.github.io/tags/Mobius%E5%8F%8D%E6%BC%94/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>“线段树的扩展之浅谈zkw线段树”一文的测试代码与结果更新</title>
+    <link href="https://tiphereth-a.github.io/article/zkw-segment-tree-test2/"/>
+    <id>https://tiphereth-a.github.io/article/zkw-segment-tree-test2/</id>
+    <published>2020-02-09T18:04:18.000Z</published>
+    <updated>2020-05-05T12:33:36.232Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;更新的原因主要是笔者觉得以前的码风很乱QwQ&lt;/p&gt;
+    
+    </summary>
+    
+    
+    
+      <category term="程序设计" scheme="https://tiphereth-a.github.io/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
+    
+      <category term="洛谷日报" scheme="https://tiphereth-a.github.io/tags/%E6%B4%9B%E8%B0%B7%E6%97%A5%E6%8A%A5/"/>
+    
+      <category term="测试" scheme="https://tiphereth-a.github.io/tags/%E6%B5%8B%E8%AF%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>题解 - [CQOI2018]异或序列</title>
+    <link href="https://tiphereth-a.github.io/article/solution-luogu-p4462/"/>
+    <id>https://tiphereth-a.github.io/article/solution-luogu-p4462/</id>
+    <published>2020-01-27T07:40:12.000Z</published>
+    <updated>2020-05-06T16:28:39.312Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;题面&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#题面&quot;&gt;&lt;/a&gt; 题面&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.luogu.com.cn/problem/P4462&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;洛谷 P4462&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.lydsy.com/JudgeOnline/problem.php?id=5301&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;BZOJ 5301&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://loj.ac/problem/2534&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;LOJ 2534&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+    
+      <category term="程序设计" scheme="https://tiphereth-a.github.io/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
+    
+      <category term="算法" scheme="https://tiphereth-a.github.io/tags/%E7%AE%97%E6%B3%95/"/>
+    
+      <category term="题解" scheme="https://tiphereth-a.github.io/tags/%E9%A2%98%E8%A7%A3/"/>
+    
+      <category term="省选" scheme="https://tiphereth-a.github.io/tags/%E7%9C%81%E9%80%89/"/>
+    
+      <category term="洛谷" scheme="https://tiphereth-a.github.io/tags/%E6%B4%9B%E8%B0%B7/"/>
+    
+      <category term="BZOJ" scheme="https://tiphereth-a.github.io/tags/BZOJ/"/>
+    
+      <category term="LOJ" scheme="https://tiphereth-a.github.io/tags/LOJ/"/>
+    
+      <category term="CQOI" scheme="https://tiphereth-a.github.io/tags/CQOI/"/>
+    
+      <category term="莫队" scheme="https://tiphereth-a.github.io/tags/%E8%8E%AB%E9%98%9F/"/>
+    
+      <category term="前缀和&amp;差分" scheme="https://tiphereth-a.github.io/tags/%E5%89%8D%E7%BC%80%E5%92%8C-%E5%B7%AE%E5%88%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>题解 - Luogu P5462【X龙珠】</title>
+    <link href="https://tiphereth-a.github.io/article/solution-luogu-p5462/"/>
+    <id>https://tiphereth-a.github.io/article/solution-luogu-p5462/</id>
+    <published>2019-07-14T17:29:34.000Z</published>
+    <updated>2020-05-06T16:29:03.386Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;a href=&quot;https://www.luogu.com.cn/problem/P5462&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;题目&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;我太菜了，只会用线段树+双向链表做QwQ&lt;/p&gt;
+    
+    </summary>
+    
+    
+    
+      <category term="程序设计" scheme="https://tiphereth-a.github.io/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
+    
+      <category term="题解" scheme="https://tiphereth-a.github.io/tags/%E9%A2%98%E8%A7%A3/"/>
+    
+      <category term="洛谷" scheme="https://tiphereth-a.github.io/tags/%E6%B4%9B%E8%B0%B7/"/>
+    
+      <category term="数据结构" scheme="https://tiphereth-a.github.io/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    
+      <category term="线段树" scheme="https://tiphereth-a.github.io/tags/%E7%BA%BF%E6%AE%B5%E6%A0%91/"/>
+    
+      <category term="链表" scheme="https://tiphereth-a.github.io/tags/%E9%93%BE%E8%A1%A8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>题解 - Luogu P4896【Oier们的烦恼】</title>
+    <link href="https://tiphereth-a.github.io/article/solution-luogu-p4896/"/>
+    <id>https://tiphereth-a.github.io/article/solution-luogu-p4896/</id>
+    <published>2018-11-13T14:35:58.000Z</published>
+    <updated>2020-05-06T16:28:55.347Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;a href=&quot;https://www.luogu.com.cn/problem/P4896&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;题目&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;这么好的题怎么能没有“位掩码”题解呢（滑稽&lt;/p&gt;
+    
+    </summary>
+    
+    
+    
+      <category term="程序设计" scheme="https://tiphereth-a.github.io/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
+    
+      <category term="题解" scheme="https://tiphereth-a.github.io/tags/%E9%A2%98%E8%A7%A3/"/>
+    
+      <category term="洛谷" scheme="https://tiphereth-a.github.io/tags/%E6%B4%9B%E8%B0%B7/"/>
+    
+      <category term="位掩码" scheme="https://tiphereth-a.github.io/tags/%E4%BD%8D%E6%8E%A9%E7%A0%81/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【洛谷日报#46】浅谈自适应Simpson法</title>
+    <link href="https://tiphereth-a.github.io/article/adaptive-simpson-rule/"/>
+    <id>https://tiphereth-a.github.io/article/adaptive-simpson-rule/</id>
+    <published>2018-08-12T07:33:58.000Z</published>
+    <updated>2020-05-05T11:46:39.928Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;一种经典的数值积分算法&lt;/p&gt;
+&lt;p&gt;老文章, 可能有很多错误, 懒得修了&lt;/p&gt;
+    
+    </summary>
+    
+    
+    
+      <category term="数学" scheme="https://tiphereth-a.github.io/tags/%E6%95%B0%E5%AD%A6/"/>
+    
+      <category term="程序设计" scheme="https://tiphereth-a.github.io/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
+    
+      <category term="算法" scheme="https://tiphereth-a.github.io/tags/%E7%AE%97%E6%B3%95/"/>
+    
+      <category term="洛谷日报" scheme="https://tiphereth-a.github.io/tags/%E6%B4%9B%E8%B0%B7%E6%97%A5%E6%8A%A5/"/>
+    
+      <category term="数值积分" scheme="https://tiphereth-a.github.io/tags/%E6%95%B0%E5%80%BC%E7%A7%AF%E5%88%86/"/>
+    
+      <category term="自适应Simpson算法" scheme="https://tiphereth-a.github.io/tags/%E8%87%AA%E9%80%82%E5%BA%94Simpson%E7%AE%97%E6%B3%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【洛谷日报#53】浅谈一些求近似值的方法</title>
+    <link href="https://tiphereth-a.github.io/article/approx-number/"/>
+    <id>https://tiphereth-a.github.io/article/approx-number/</id>
+    <published>2018-08-09T01:06:31.000Z</published>
+    <updated>2020-05-05T11:46:49.727Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;s&gt;只是为了拿本子随便写的&lt;/s&gt;&lt;/p&gt;
+&lt;p&gt;老文章, 可能有很多错误, 懒得修了&lt;/p&gt;
+    
+    </summary>
+    
+    
+    
+      <category term="数学" scheme="https://tiphereth-a.github.io/tags/%E6%95%B0%E5%AD%A6/"/>
+    
+      <category term="程序设计" scheme="https://tiphereth-a.github.io/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
+    
+      <category term="算法" scheme="https://tiphereth-a.github.io/tags/%E7%AE%97%E6%B3%95/"/>
+    
+      <category term="洛谷日报" scheme="https://tiphereth-a.github.io/tags/%E6%B4%9B%E8%B0%B7%E6%97%A5%E6%8A%A5/"/>
+    
+      <category term="二分" scheme="https://tiphereth-a.github.io/tags/%E4%BA%8C%E5%88%86/"/>
+    
+      <category term="0.618法" scheme="https://tiphereth-a.github.io/tags/0-618%E6%B3%95/"/>
+    
+      <category term="Newton迭代法" scheme="https://tiphereth-a.github.io/tags/Newton%E8%BF%AD%E4%BB%A3%E6%B3%95/"/>
+    
+      <category term="Taylor级数" scheme="https://tiphereth-a.github.io/tags/Taylor%E7%BA%A7%E6%95%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>“线段树的扩展之浅谈zkw线段树”一文的测试代码、数据、详细测试结果与生成器</title>
+    <link href="https://tiphereth-a.github.io/article/zkw-segment-tree-test1/"/>
+    <id>https://tiphereth-a.github.io/article/zkw-segment-tree-test1/</id>
+    <published>2018-08-08T05:05:56.000Z</published>
+    <updated>2020-05-05T12:33:33.918Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;测试代码&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#测试代码&quot;&gt;&lt;/a&gt; 测试代码：&lt;/h1&gt;
+    
+    </summary>
+    
+    
+    
+      <category term="程序设计" scheme="https://tiphereth-a.github.io/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
+    
+      <category term="洛谷日报" scheme="https://tiphereth-a.github.io/tags/%E6%B4%9B%E8%B0%B7%E6%97%A5%E6%8A%A5/"/>
+    
+      <category term="测试" scheme="https://tiphereth-a.github.io/tags/%E6%B5%8B%E8%AF%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【洛谷日报#35】线段树的扩展之浅谈zkw线段树</title>
+    <link href="https://tiphereth-a.github.io/article/zkw-segment-tree/"/>
+    <id>https://tiphereth-a.github.io/article/zkw-segment-tree/</id>
+    <published>2018-08-06T11:22:55.000Z</published>
+    <updated>2020-05-08T07:12:32.806Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;又叫堆式线段树, 是一种简单的常数优化&lt;/p&gt;
+&lt;p&gt;老文章, 可能有很多错误, 懒得修了&lt;/p&gt;
+    
+    </summary>
+    
+    
+    
+      <category term="程序设计" scheme="https://tiphereth-a.github.io/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
+    
+      <category term="洛谷日报" scheme="https://tiphereth-a.github.io/tags/%E6%B4%9B%E8%B0%B7%E6%97%A5%E6%8A%A5/"/>
+    
+      <category term="笔记" scheme="https://tiphereth-a.github.io/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="数据结构" scheme="https://tiphereth-a.github.io/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    
+      <category term="线段树" scheme="https://tiphereth-a.github.io/tags/%E7%BA%BF%E6%AE%B5%E6%A0%91/"/>
+    
+      <category term="zkw线段树" scheme="https://tiphereth-a.github.io/tags/zkw%E7%BA%BF%E6%AE%B5%E6%A0%91/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>测试文章-加密</title>
+    <link href="https://tiphereth-a.github.io/article/test-encrypt/"/>
+    <id>https://tiphereth-a.github.io/article/test-encrypt/</id>
+    <published>0999-12-31T15:55:00.000Z</published>
+    <updated>2020-05-08T09:14:21.271Z</updated>
+    
+    <summary type="html">
+    
+      有东西被加密了，请输入密码查看
+    
+    </summary>
+    
+    
+    
+      <category term="测试" scheme="https://tiphereth-a.github.io/tags/%E6%B5%8B%E8%AF%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>测试文章-mermaid</title>
+    <link href="https://tiphereth-a.github.io/article/test-mermaid/"/>
+    <id>https://tiphereth-a.github.io/article/test-mermaid/</id>
+    <published>0999-12-31T15:55:00.000Z</published>
+    <updated>2020-05-08T09:13:26.232Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;部分示例来自 &lt;a href=&quot;https://mermaid-js.github.io/mermaid&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://mermaid-js.github.io/mermaid&lt;/a&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+    
+      <category term="测试" scheme="https://tiphereth-a.github.io/tags/%E6%B5%8B%E8%AF%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>测试文章-Tags</title>
+    <link href="https://tiphereth-a.github.io/article/test-tag/"/>
+    <id>https://tiphereth-a.github.io/article/test-tag/</id>
+    <published>0999-12-31T15:55:00.000Z</published>
+    <updated>2020-05-08T09:20:26.724Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;来自 &lt;a href=&quot;https://tding.top/archives/29bfe8c9.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://tding.top/archives/29bfe8c9.html&lt;/a&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+    
+      <category term="测试" scheme="https://tiphereth-a.github.io/tags/%E6%B5%8B%E8%AF%95/"/>
+    
+  </entry>
+  
+</feed>
