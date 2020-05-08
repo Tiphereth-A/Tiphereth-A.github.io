@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8">
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
 <meta name="generator" content="Hexo 4.2.0">
@@ -19,7 +19,7 @@
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"tiphereth-a.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+    var CONFIG = {"hostname":"tiphereth-a.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
   <meta name="description" content="汉化自Manual for: mhchem for MathJax, mhchem for KaTeX 按笔者习惯调整了顺序">
@@ -78,12 +78,12 @@
   .use-motion .logo-line-before i { left: initial; }
   .use-motion .logo-line-after i { right: initial; }
   </style>
-</noscript>
+</noscript><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage">
-  <div class="container use-motion">
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container use-motion">
     <div class="headband"></div>
 
     <header class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -236,20 +236,32 @@
         <p>汉化自<a href="https://mhchem.github.io/MathJax-mhchem/" target="_blank" rel="noopener">Manual for: mhchem for MathJax, mhchem for KaTeX</a></p>
 <p>按笔者习惯调整了顺序</p>
 <a id="more"></a>
-<h2 id="数学模式-math-mode-斜体"><a href="#数学模式-math-mode-斜体" class="headerlink" title="数学模式(math mode)/斜体"></a>数学模式(math mode)/斜体</h2><p><code>\ce</code>支持嵌套<code>$...$</code>切换至数学模式(math mode)/使用斜体</p>
-<script type="math/tex; mode=display">\ce{X_$i$^$x$}</script><p><code>\ce{X_$i$^$x$}</code></p>
-<script type="math/tex; mode=display">\ce{$cis${-}[PtCl2(NH3)2]}</script><p><code>\ce{$cis${-}[PtCl2(NH3)2]}</code></p>
-<script type="math/tex; mode=display">\ce{CuS($hP12$)}</script><p><code>\ce{CuS($hP12$)}</code></p>
+<h2 id="数学模式math-mode斜体"><a class="markdownIt-Anchor" href="#数学模式math-mode斜体"></a> 数学模式(math mode)/斜体</h2>
+<p><code>\ce</code>支持嵌套<code>$...$</code>切换至数学模式(math mode)/使用斜体</p>
+<p class='katex-block katex-error' title='ParseError: KaTeX parse error: Undefined control sequence: \ce at position 1: \̲c̲e̲{X_$i$^$x$}
+'>\ce{X_$i$^$x$}
+</p>
+<p><code>\ce{X_$i$^$x$}</code></p>
+<p class='katex-block katex-error' title='ParseError: KaTeX parse error: Undefined control sequence: \ce at position 1: \̲c̲e̲{$cis${-}[PtCl2…'>\ce{$cis${-}[PtCl2(NH3)2]}
+</p>
+<p><code>\ce{$cis${-}[PtCl2(NH3)2]}</code></p>
+<p class='katex-block katex-error' title='ParseError: KaTeX parse error: Undefined control sequence: \ce at position 1: \̲c̲e̲{CuS($hP12$)}
+'>\ce{CuS($hP12$)}
+</p>
+<p><code>\ce{CuS($hP12$)}</code></p>
 <p>可使用<code>~</code>代表空格</p>
-<h2 id="直体"><a href="#直体" class="headerlink" title="直体"></a>直体</h2><ul>
-<li><p>使用<code>{...}</code>嵌套</p>
-<p>$\ce{ {Gluconic Acid} + H2O2}$  <code>\ce{ {Gluconic Acid} + H2O2}</code></p>
+<h2 id="直体"><a class="markdownIt-Anchor" href="#直体"></a> 直体</h2>
+<ul>
+<li>
+<p>使用<code>{...}</code>嵌套</p>
+<p><span class='katex-error' title='ParseError: KaTeX parse error: Undefined control sequence: \ce at position 1: \̲c̲e̲{ {Gluconic Aci…'>\ce{ {Gluconic Acid} + H2O2}</span>  <code>\ce{ {Gluconic Acid} + H2O2}</code></p>
 </li>
-<li><p>使用<code>-</code>(不应作为化学键)</p>
-<p>$\ce{ {(+)}_589{-}[Co(en)3]Cl3}$  <code>\ce{ {(+)}_589{-}[Co(en)3]Cl3}</code></p>
+<li>
+<p>使用<code>-</code>(不应作为化学键)</p>
+<p><span class='katex-error' title='ParseError: KaTeX parse error: Undefined control sequence: \ce at position 1: \̲c̲e̲{ {(+)}_589{-}[…'>\ce{ {(+)}_589{-}[Co(en)3]Cl3}</span>  <code>\ce{ {(+)}_589{-}[Co(en)3]Cl3}</code></p>
 </li>
 </ul>
-<h2 id="化学方程式-CE"><a href="#化学方程式-CE" class="headerlink" title="化学方程式(CE)"></a>化学方程式(CE)</h2><div class="table-container">
+<h2 id="化学方程式ce"><a class="markdownIt-Anchor" href="#化学方程式ce"></a> 化学方程式(CE)</h2>
 <table>
 <thead>
 <tr>
@@ -259,21 +271,20 @@
 </thead>
 <tbody>
 <tr>
-<td>$\ce{CO2 + C -&gt; 2 CO}$</td>
+<td><span class='katex-error' title='ParseError: KaTeX parse error: Undefined control sequence: \ce at position 1: \̲c̲e̲{CO2 + C -&gt; 2 C…'>\ce{CO2 + C -&gt; 2 CO}</span></td>
 <td><code>\ce{CO2 + C -&gt; 2 CO}</code></td>
 </tr>
 <tr>
-<td>$\ce{Hg^2+ -&gt;[I-] HgI2 -&gt;[I-] [Hg^{II}I4]^2-}$</td>
+<td><span class='katex-error' title='ParseError: KaTeX parse error: Undefined control sequence: \ce at position 1: \̲c̲e̲{Hg^2+ -&gt;[I-] H…'>\ce{Hg^2+ -&gt;[I-] HgI2 -&gt;[I-] [Hg^{II}I4]^2-}</span></td>
 <td><code>\ce{Hg^2+ -&gt;[I-] HgI2 -&gt;[I-] [Hg^{II}I4]^2-}</code></td>
 </tr>
 <tr>
-<td>$C_p[\ce{H2O(l)}] = \pu{75.3 J // mol K}$</td>
+<td><span class='katex-error' title='ParseError: KaTeX parse error: Undefined control sequence: \ce at position 5: C_p[\̲c̲e̲{H2O(l)}] = \pu…'>C_p[\ce{H2O(l)}] = \pu{75.3 J // mol K}</span></td>
 <td><code>C_p[\ce{H2O(l)}] = \pu{75.3 J // mol K}</code></td>
 </tr>
 </tbody>
 </table>
-</div>
-<h2 id="物理单位-PU"><a href="#物理单位-PU" class="headerlink" title="物理单位(PU)"></a>物理单位(PU)</h2><div class="table-container">
+<h2 id="物理单位pu"><a class="markdownIt-Anchor" href="#物理单位pu"></a> 物理单位(PU)</h2>
 <table>
 <thead>
 <tr>
@@ -283,25 +294,24 @@
 </thead>
 <tbody>
 <tr>
-<td>$\pu{1.2e3 kJ/mol}$</td>
+<td><span class='katex-error' title='ParseError: KaTeX parse error: Undefined control sequence: \pu at position 1: \̲p̲u̲{1.2e3 kJ/mol}'>\pu{1.2e3 kJ/mol}</span></td>
 <td><code>\pu{1.2e3 kJ/mol}</code></td>
 </tr>
 <tr>
-<td>$\pu{1,2e3 kJ//mol}$</td>
+<td><span class='katex-error' title='ParseError: KaTeX parse error: Undefined control sequence: \pu at position 1: \̲p̲u̲{1,2e3 kJ//mol}'>\pu{1,2e3 kJ//mol}</span></td>
 <td><code>\pu{1,2e3 kJ//mol}</code></td>
 </tr>
 <tr>
-<td>$\pu{1.2E3 kJ mol-1}$</td>
+<td><span class='katex-error' title='ParseError: KaTeX parse error: Undefined control sequence: \pu at position 1: \̲p̲u̲{1.2E3 kJ mol-1…'>\pu{1.2E3 kJ mol-1}</span></td>
 <td><code>\pu{1.2E3 kJ mol-1}</code></td>
 </tr>
 <tr>
-<td>$\pu{1,2E3 kJ*mol-1}$</td>
+<td><span class='katex-error' title='ParseError: KaTeX parse error: Undefined control sequence: \pu at position 1: \̲p̲u̲{1,2E3 kJ*mol-1…'>\pu{1,2E3 kJ*mol-1}</span></td>
 <td><code>\pu{1,2E3 kJ*mol-1}</code></td>
 </tr>
 </tbody>
 </table>
-</div>
-<h2 id="化学式"><a href="#化学式" class="headerlink" title="化学式"></a>化学式</h2><div class="table-container">
+<h2 id="化学式"><a class="markdownIt-Anchor" href="#化学式"></a> 化学式</h2>
 <table>
 <thead>
 <tr>
@@ -311,17 +321,16 @@
 </thead>
 <tbody>
 <tr>
-<td>$\ce{H2O}$</td>
+<td><span class='katex-error' title='ParseError: KaTeX parse error: Undefined control sequence: \ce at position 1: \̲c̲e̲{H2O}'>\ce{H2O}</span></td>
 <td><code>\ce{H2O}</code></td>
 </tr>
 <tr>
-<td>$\ce{Sb2O3}$</td>
+<td><span class='katex-error' title='ParseError: KaTeX parse error: Undefined control sequence: \ce at position 1: \̲c̲e̲{Sb2O3}'>\ce{Sb2O3}</span></td>
 <td><code>\ce{Sb2O3}</code></td>
 </tr>
 </tbody>
 </table>
-</div>
-<h2 id="离子"><a href="#离子" class="headerlink" title="离子"></a>离子</h2><div class="table-container">
+<h2 id="离子"><a class="markdownIt-Anchor" href="#离子"></a> 离子</h2>
 <table>
 <thead>
 <tr>
@@ -331,29 +340,28 @@
 </thead>
 <tbody>
 <tr>
-<td>$\ce{H+}$</td>
+<td><span class='katex-error' title='ParseError: KaTeX parse error: Undefined control sequence: \ce at position 1: \̲c̲e̲{H+}'>\ce{H+}</span></td>
 <td><code>\ce{H+}</code></td>
 </tr>
 <tr>
-<td>$\ce{CrO4^2-}$</td>
+<td><span class='katex-error' title='ParseError: KaTeX parse error: Undefined control sequence: \ce at position 1: \̲c̲e̲{CrO4^2-}'>\ce{CrO4^2-}</span></td>
 <td><code>\ce{CrO4^2-}</code></td>
 </tr>
 <tr>
-<td>$\ce{[AgCl2]-}$</td>
+<td><span class='katex-error' title='ParseError: KaTeX parse error: Undefined control sequence: \ce at position 1: \̲c̲e̲{[AgCl2]-}'>\ce{[AgCl2]-}</span></td>
 <td><code>\ce{[AgCl2]-}</code></td>
 </tr>
 <tr>
-<td>$\ce{Y^99+}$</td>
+<td><span class='katex-error' title='ParseError: KaTeX parse error: Undefined control sequence: \ce at position 1: \̲c̲e̲{Y^99+}'>\ce{Y^99+}</span></td>
 <td><code>\ce{Y^99+}</code></td>
 </tr>
 <tr>
-<td>$\ce{Y^{99+}}$</td>
+<td><span class='katex-error' title='ParseError: KaTeX parse error: Undefined control sequence: \ce at position 1: \̲c̲e̲{Y^{99+}}'>\ce{Y^{99+}}</span></td>
 <td><code>\ce{Y^{99+}}</code></td>
 </tr>
 </tbody>
 </table>
-</div>
-<h2 id="带化学计量数"><a href="#带化学计量数" class="headerlink" title="带化学计量数"></a>带化学计量数</h2><div class="table-container">
+<h2 id="带化学计量数"><a class="markdownIt-Anchor" href="#带化学计量数"></a> 带化学计量数</h2>
 <table>
 <thead>
 <tr>
@@ -363,30 +371,32 @@
 </thead>
 <tbody>
 <tr>
-<td>$\ce{2 H2O}$</td>
+<td><span class='katex-error' title='ParseError: KaTeX parse error: Undefined control sequence: \ce at position 1: \̲c̲e̲{2 H2O}'>\ce{2 H2O}</span></td>
 <td><code>\ce{2 H2O}</code></td>
 </tr>
 <tr>
-<td>$\ce{2H2O}$</td>
+<td><span class='katex-error' title='ParseError: KaTeX parse error: Undefined control sequence: \ce at position 1: \̲c̲e̲{2H2O}'>\ce{2H2O}</span></td>
 <td><code>\ce{2H2O}</code></td>
 </tr>
 <tr>
-<td>$\ce{0.5 H2O}$</td>
+<td><span class='katex-error' title='ParseError: KaTeX parse error: Undefined control sequence: \ce at position 1: \̲c̲e̲{0.5 H2O}'>\ce{0.5 H2O}</span></td>
 <td><code>\ce{0.5 H2O}</code></td>
 </tr>
 <tr>
-<td>$\ce{1/2 H2O}$</td>
+<td><span class='katex-error' title='ParseError: KaTeX parse error: Undefined control sequence: \ce at position 1: \̲c̲e̲{1/2 H2O}'>\ce{1/2 H2O}</span></td>
 <td><code>\ce{1/2 H2O}</code></td>
 </tr>
 <tr>
-<td>$\ce{(1/2) H2O}$</td>
+<td><span class='katex-error' title='ParseError: KaTeX parse error: Undefined control sequence: \ce at position 1: \̲c̲e̲{(1/2) H2O}'>\ce{(1/2) H2O}</span></td>
 <td><code>\ce{(1/2) H2O}</code></td>
 </tr>
 </tbody>
 </table>
-</div>
-<script type="math/tex; mode=display">\ce{$n$ H2O}</script><p><code>\ce{$n$ H2O}</code></p>
-<h2 id="核素"><a href="#核素" class="headerlink" title="核素"></a>核素</h2><div class="table-container">
+<p class='katex-block katex-error' title='ParseError: KaTeX parse error: Undefined control sequence: \ce at position 1: \̲c̲e̲{$n$ H2O}
+'>\ce{$n$ H2O}
+</p>
+<p><code>\ce{$n$ H2O}</code></p>
+<h2 id="核素"><a class="markdownIt-Anchor" href="#核素"></a> 核素</h2>
 <table>
 <thead>
 <tr>
@@ -396,26 +406,25 @@
 </thead>
 <tbody>
 <tr>
-<td>$\ce{^{227}_{90}Th+}$</td>
+<td><span class='katex-error' title='ParseError: KaTeX parse error: Undefined control sequence: \ce at position 1: \̲c̲e̲{^{227}_{90}Th+…'>\ce{^{227}_{90}Th+}</span></td>
 <td><code>\ce{^{227}_{90}Th+}</code></td>
 </tr>
 <tr>
-<td>$\ce{^227_90Th+}$</td>
+<td><span class='katex-error' title='ParseError: KaTeX parse error: Undefined control sequence: \ce at position 1: \̲c̲e̲{^227_90Th+}'>\ce{^227_90Th+}</span></td>
 <td><code>\ce{^227_90Th+}</code></td>
 </tr>
 <tr>
-<td>$\ce{^{0}_{-1}n^{-}}$</td>
+<td><span class='katex-error' title='ParseError: KaTeX parse error: Undefined control sequence: \ce at position 1: \̲c̲e̲{^{0}_{-1}n^{-}…'>\ce{^{0}_{-1}n^{-}}</span></td>
 <td><code>\ce{^{0}_{-1}n^{-}}</code></td>
 </tr>
 <tr>
-<td>$\ce{^0_-1n-}$</td>
+<td><span class='katex-error' title='ParseError: KaTeX parse error: Undefined control sequence: \ce at position 1: \̲c̲e̲{^0_-1n-}'>\ce{^0_-1n-}</span></td>
 <td><code>\ce{^0_-1n-}</code></td>
 </tr>
 </tbody>
 </table>
-</div>
-<p>上标属于左边还是右边可能是不确定的, mhchem会自动检测<br>可以用<code>{}</code>指定</p>
-<div class="table-container">
+<p>上标属于左边还是右边可能是不确定的, mhchem会自动检测<br />
+可以用<code>{}</code>指定</p>
 <table>
 <thead>
 <tr>
@@ -425,17 +434,16 @@
 </thead>
 <tbody>
 <tr>
-<td>$\ce{H{}^3HO}$</td>
+<td><span class='katex-error' title='ParseError: KaTeX parse error: Undefined control sequence: \ce at position 1: \̲c̲e̲{H{}^3HO}'>\ce{H{}^3HO}</span></td>
 <td><code>\ce{H{}^3HO}</code></td>
 </tr>
 <tr>
-<td>$\ce{H^3HO}$</td>
+<td><span class='katex-error' title='ParseError: KaTeX parse error: Undefined control sequence: \ce at position 1: \̲c̲e̲{H^3HO}'>\ce{H^3HO}</span></td>
 <td><code>\ce{H^3HO}</code></td>
 </tr>
 </tbody>
 </table>
-</div>
-<h2 id="反应式箭头"><a href="#反应式箭头" class="headerlink" title="反应式箭头"></a>反应式箭头</h2><div class="table-container">
+<h2 id="反应式箭头"><a class="markdownIt-Anchor" href="#反应式箭头"></a> 反应式箭头</h2>
 <table>
 <thead>
 <tr>
@@ -445,43 +453,44 @@
 </thead>
 <tbody>
 <tr>
-<td>$\ce{A -&gt; B}$</td>
+<td><span class='katex-error' title='ParseError: KaTeX parse error: Undefined control sequence: \ce at position 1: \̲c̲e̲{A -&gt; B}'>\ce{A -&gt; B}</span></td>
 <td><code>\ce{A -&gt; B}</code></td>
 </tr>
 <tr>
-<td>$\ce{A &lt;- B}$</td>
+<td><span class='katex-error' title='ParseError: KaTeX parse error: Undefined control sequence: \ce at position 1: \̲c̲e̲{A &lt;- B}'>\ce{A &lt;- B}</span></td>
 <td><code>\ce{A &lt;- B}</code></td>
 </tr>
 <tr>
-<td>$\ce{A &lt;-&gt; B}$</td>
+<td><span class='katex-error' title='ParseError: KaTeX parse error: Undefined control sequence: \ce at position 1: \̲c̲e̲{A &lt;-&gt; B}'>\ce{A &lt;-&gt; B}</span></td>
 <td><code>\ce{A &lt;-&gt; B}</code></td>
 </tr>
 <tr>
-<td>$\ce{A &lt;—&gt; B}$</td>
+<td><span class='katex-error' title='ParseError: KaTeX parse error: Undefined control sequence: \ce at position 1: \̲c̲e̲{A &lt;--&gt; B}'>\ce{A &lt;--&gt; B}</span></td>
 <td><code>\ce{A &lt;--&gt; B}</code></td>
 </tr>
 <tr>
-<td>$\ce{A &lt;=&gt; B}$</td>
+<td><span class='katex-error' title='ParseError: KaTeX parse error: Undefined control sequence: \ce at position 1: \̲c̲e̲{A &lt;=&gt; B}'>\ce{A &lt;=&gt; B}</span></td>
 <td><code>\ce{A &lt;=&gt; B}</code></td>
 </tr>
 <tr>
-<td>$\ce{A &lt;=&gt;&gt; B}$</td>
+<td><span class='katex-error' title='ParseError: KaTeX parse error: Undefined control sequence: \ce at position 1: \̲c̲e̲{A &lt;=&gt;&gt; B}'>\ce{A &lt;=&gt;&gt; B}</span></td>
 <td><code>\ce{A &lt;=&gt;&gt; B}</code></td>
 </tr>
 <tr>
-<td>$\ce{A &lt;&lt;=&gt; B}$</td>
+<td><span class='katex-error' title='ParseError: KaTeX parse error: Undefined control sequence: \ce at position 1: \̲c̲e̲{A &lt;&lt;=&gt; B}'>\ce{A &lt;&lt;=&gt; B}</span></td>
 <td><code>\ce{A &lt;&lt;=&gt; B}</code></td>
 </tr>
 <tr>
-<td>$\ce{A -&gt;[{text above}][{text below}] B}$</td>
+<td><span class='katex-error' title='ParseError: KaTeX parse error: Undefined control sequence: \ce at position 1: \̲c̲e̲{A -&gt;[{text abo…'>\ce{A -&gt;[{text above}][{text below}] B}</span></td>
 <td><code>\ce{A -&gt;[{text above}][{text below}] B}</code></td>
 </tr>
 </tbody>
 </table>
-</div>
-<script type="math/tex; mode=display">\ce{A ->[$x$][$x_i$] B}</script><p><code>\ce{A -&gt;[$x$][$x_i$] B</code></p>
+<p class='katex-block katex-error' title='ParseError: KaTeX parse error: Undefined control sequence: \ce at position 1: \̲c̲e̲{A -&gt;[$x$][$x_i…'>\ce{A -&gt;[$x$][$x_i$] B}
+</p>
+<p><code>\ce{A -&gt;[$x$][$x_i$] B</code></p>
 <p>MathJax无法正确伸长&lt;-&gt;，&lt;=&gt;，&lt;=&gt;&gt;和&lt;&lt;=&gt;箭头 <a href="https://github.com/mathjax/MathJax/issues/1491" target="_blank" rel="noopener">Issue#1491</a></p>
-<h2 id="括号"><a href="#括号" class="headerlink" title="括号"></a>括号</h2><div class="table-container">
+<h2 id="括号"><a class="markdownIt-Anchor" href="#括号"></a> 括号</h2>
 <table>
 <thead>
 <tr>
@@ -491,19 +500,20 @@
 </thead>
 <tbody>
 <tr>
-<td>$\ce{(NH4)2S}$</td>
+<td><span class='katex-error' title='ParseError: KaTeX parse error: Undefined control sequence: \ce at position 1: \̲c̲e̲{(NH4)2S}'>\ce{(NH4)2S}</span></td>
 <td><code>\ce{(NH4)2S}</code></td>
 </tr>
 <tr>
-<td>$\ce{[\{(X2)3\}2]^3+}$</td>
+<td><span class='katex-error' title='ParseError: KaTeX parse error: Undefined control sequence: \ce at position 1: \̲c̲e̲{[\{(X2)3\}2]^3…'>\ce{[\{(X2)3\}2]^3+}</span></td>
 <td><code>\ce{[\{(X2)3\}2]^3+}</code></td>
 </tr>
 </tbody>
 </table>
-</div>
 <p><code>\left</code>和<code>\right</code>应在同一环境内</p>
-<script type="math/tex; mode=display">\ce{CH4 + 2 $\left( \ce{O2 + 79/21 N2} \right)$}</script><p><code>\ce{CH4 + 2 $\left( \ce{O2 + 79/21 N2} \right)$}</code></p>
-<h2 id="聚集状态"><a href="#聚集状态" class="headerlink" title="聚集状态"></a>聚集状态</h2><div class="table-container">
+<p class='katex-block katex-error' title='ParseError: KaTeX parse error: Undefined control sequence: \ce at position 1: \̲c̲e̲{CH4 + 2 $\left…'>\ce{CH4 + 2 $\left( \ce{O2 + 79/21 N2} \right)$}
+</p>
+<p><code>\ce{CH4 + 2 $\left( \ce{O2 + 79/21 N2} \right)$}</code></p>
+<h2 id="聚集状态"><a class="markdownIt-Anchor" href="#聚集状态"></a> 聚集状态</h2>
 <table>
 <thead>
 <tr>
@@ -513,20 +523,28 @@
 </thead>
 <tbody>
 <tr>
-<td>$\ce{H2(aq)}$</td>
+<td><span class='katex-error' title='ParseError: KaTeX parse error: Undefined control sequence: \ce at position 1: \̲c̲e̲{H2(aq)}'>\ce{H2(aq)}</span></td>
 <td><code>\ce{H2(aq)}</code></td>
 </tr>
 <tr>
-<td>$\ce{CO3^2-_{(aq)}}$</td>
+<td><span class='katex-error' title='ParseError: KaTeX parse error: Undefined control sequence: \ce at position 1: \̲c̲e̲{CO3^2-_{(aq)}}'>\ce{CO3^2-_{(aq)}}</span></td>
 <td><code>\ce{CO3^2-_{(aq)}}</code></td>
 </tr>
 </tbody>
 </table>
-</div>
-<script type="math/tex; mode=display">\ce{NaOH(aq,$\infty$)}</script><p><code>\ce{NaOH(aq,$\infty$)}</code> </p>
-<h2 id="晶系"><a href="#晶系" class="headerlink" title="晶系"></a>晶系</h2><script type="math/tex; mode=display">\ce{ZnS($c$)}</script><p><code>\ce{ZnS($c$)}</code></p>
-<script type="math/tex; mode=display">\ce{ZnS(\ca$c$)}</script><p><code>\ce{ZnS(\ca$c$)}</code></p>
-<h2 id="含有变量-使用斜体渲染"><a href="#含有变量-使用斜体渲染" class="headerlink" title="含有变量(使用斜体渲染)"></a>含有变量(使用斜体渲染)</h2><div class="table-container">
+<p class='katex-block katex-error' title='ParseError: KaTeX parse error: Undefined control sequence: \ce at position 1: \̲c̲e̲{NaOH(aq,$\inft…'>\ce{NaOH(aq,$\infty$)}
+</p>
+<p><code>\ce{NaOH(aq,$\infty$)}</code></p>
+<h2 id="晶系"><a class="markdownIt-Anchor" href="#晶系"></a> 晶系</h2>
+<p class='katex-block katex-error' title='ParseError: KaTeX parse error: Undefined control sequence: \ce at position 1: \̲c̲e̲{ZnS($c$)}
+'>\ce{ZnS($c$)}
+</p>
+<p><code>\ce{ZnS($c$)}</code></p>
+<p class='katex-block katex-error' title='ParseError: KaTeX parse error: Undefined control sequence: \ce at position 1: \̲c̲e̲{ZnS(\ca$c$)}
+'>\ce{ZnS(\ca$c$)}
+</p>
+<p><code>\ce{ZnS(\ca$c$)}</code></p>
+<h2 id="含有变量使用斜体渲染"><a class="markdownIt-Anchor" href="#含有变量使用斜体渲染"></a> 含有变量(使用斜体渲染)</h2>
 <table>
 <thead>
 <tr>
@@ -536,23 +554,22 @@
 </thead>
 <tbody>
 <tr>
-<td>$\ce{NO_x}$</td>
+<td><span class='katex-error' title='ParseError: KaTeX parse error: Undefined control sequence: \ce at position 1: \̲c̲e̲{NO_x}'>\ce{NO_x}</span></td>
 <td><code>\ce{NO_x}</code></td>
 </tr>
 <tr>
-<td>$\ce{Fe^n+}$</td>
+<td><span class='katex-error' title='ParseError: KaTeX parse error: Undefined control sequence: \ce at position 1: \̲c̲e̲{Fe^n+}'>\ce{Fe^n+}</span></td>
 <td><code>\ce{Fe^n+}</code></td>
 </tr>
 <tr>
-<td>$\ce{x Na(NH4)HPO4 -&gt;[\Delta] (NaPO3)_x + x NH3 ^ + x H2O}$</td>
+<td><span class='katex-error' title='ParseError: KaTeX parse error: Undefined control sequence: \ce at position 1: \̲c̲e̲{x Na(NH4)HPO4 …'>\ce{x Na(NH4)HPO4 -&gt;[\Delta] (NaPO3)_x + x NH3 ^ + x H2O}</span></td>
 <td><code>\ce{x Na(NH4)HPO4 -&gt;[\Delta] (NaPO3)_x + x NH3 ^ + x H2O}</code></td>
 </tr>
 </tbody>
 </table>
-</div>
 <p>如果未识别, 可使用数学模式(math mode)</p>
-<h2 id="希腊字母"><a href="#希腊字母" class="headerlink" title="希腊字母"></a>希腊字母</h2><p>MathJax和KaTeX均不支持小写直体希腊字母</p>
-<div class="table-container">
+<h2 id="希腊字母"><a class="markdownIt-Anchor" href="#希腊字母"></a> 希腊字母</h2>
+<p>MathJax和KaTeX均不支持小写直体希腊字母</p>
 <table>
 <thead>
 <tr>
@@ -562,18 +579,16 @@
 </thead>
 <tbody>
 <tr>
-<td>$\ce{\mu-Cl}$</td>
+<td><span class='katex-error' title='ParseError: KaTeX parse error: Undefined control sequence: \ce at position 1: \̲c̲e̲{\mu-Cl}'>\ce{\mu-Cl}</span></td>
 <td><code>\ce{\mu-Cl}</code></td>
 </tr>
 <tr>
-<td>$\ce{[Pt(\eta^2-C2H4)Cl3]-}$</td>
+<td><span class='katex-error' title='ParseError: KaTeX parse error: Undefined control sequence: \ce at position 1: \̲c̲e̲{[Pt(\eta^2-C2H…'>\ce{[Pt(\eta^2-C2H4)Cl3]-}</span></td>
 <td><code>\ce{[Pt(\eta^2-C2H4)Cl3]-}</code></td>
 </tr>
 </tbody>
 </table>
-</div>
 <p>注意希腊字母后的空格会被忽略, 可使用<code>{}</code>分割</p>
-<div class="table-container">
 <table>
 <thead>
 <tr>
@@ -583,17 +598,16 @@
 </thead>
 <tbody>
 <tr>
-<td>$\ce{\beta +}$</td>
+<td><span class='katex-error' title='ParseError: KaTeX parse error: Undefined control sequence: \ce at position 1: \̲c̲e̲{\beta +}'>\ce{\beta +}</span></td>
 <td><code>\ce{\beta +}</code> (<code>+</code>识别为上标)</td>
 </tr>
 <tr>
-<td>$\ce{^40_18Ar + \gamma{} + \nu_e}$</td>
+<td><span class='katex-error' title='ParseError: KaTeX parse error: Undefined control sequence: \ce at position 1: \̲c̲e̲{^40_18Ar + \ga…'>\ce{^40_18Ar + \gamma{} + \nu_e}</span></td>
 <td><code>\ce{^40_18Ar + \gamma{} + \nu_e}</code></td>
 </tr>
 </tbody>
 </table>
-</div>
-<h2 id="化学键"><a href="#化学键" class="headerlink" title="化学键"></a>化学键</h2><div class="table-container">
+<h2 id="化学键"><a class="markdownIt-Anchor" href="#化学键"></a> 化学键</h2>
 <table>
 <thead>
 <tr>
@@ -603,18 +617,16 @@
 </thead>
 <tbody>
 <tr>
-<td>$\ce{C6H5-CHO}$</td>
+<td><span class='katex-error' title='ParseError: KaTeX parse error: Undefined control sequence: \ce at position 1: \̲c̲e̲{C6H5-CHO}'>\ce{C6H5-CHO}</span></td>
 <td><code>\ce{C6H5-CHO}</code></td>
 </tr>
 <tr>
-<td>$\ce{A-B=C#D}$</td>
+<td><span class='katex-error' title='ParseError: KaTeX parse error: Undefined control sequence: \ce at position 1: \̲c̲e̲{A-B=C#D}'>\ce{A-B=C#D}</span></td>
 <td><code>\ce{A-B=C#D}</code></td>
 </tr>
 </tbody>
 </table>
-</div>
 <p>可使用<code>\bond</code>指令强制按化学键解析</p>
-<div class="table-container">
 <table>
 <thead>
 <tr>
@@ -624,29 +636,28 @@
 </thead>
 <tbody>
 <tr>
-<td>$\ce{A\bond{~}B\bond{~-}C}$</td>
+<td><span class='katex-error' title='ParseError: KaTeX parse error: Undefined control sequence: \ce at position 1: \̲c̲e̲{A\bond{~}B\bon…'>\ce{A\bond{~}B\bond{~-}C}</span></td>
 <td><code>\ce{A\bond{~}B\bond{~-}C}</code></td>
 </tr>
 <tr>
-<td>$\ce{A\bond{…}B\bond{….}C}$</td>
+<td><span class='katex-error' title='ParseError: KaTeX parse error: Undefined control sequence: \ce at position 1: \̲c̲e̲{A\bond{...}B\b…'>\ce{A\bond{...}B\bond{....}C}</span></td>
 <td><code>\ce{A\bond{...}B\bond{....}C}</code></td>
 </tr>
 <tr>
-<td>$\ce{A\bond{-&gt;}B\bond{&lt;-}C}$</td>
+<td><span class='katex-error' title='ParseError: KaTeX parse error: Undefined control sequence: \ce at position 1: \̲c̲e̲{A\bond{-&gt;}B\bo…'>\ce{A\bond{-&gt;}B\bond{&lt;-}C}</span></td>
 <td><code>\ce{A\bond{-&gt;}B\bond{&lt;-}C}</code></td>
 </tr>
 <tr>
-<td>$\ce{A\bond{1}B\bond{2}C\bond{3}D}$</td>
+<td><span class='katex-error' title='ParseError: KaTeX parse error: Undefined control sequence: \ce at position 1: \̲c̲e̲{A\bond{1}B\bon…'>\ce{A\bond{1}B\bond{2}C\bond{3}D}</span></td>
 <td><code>\ce{A\bond{1}B\bond{2}C\bond{3}D}</code></td>
 </tr>
 <tr>
-<td>$\ce{A\bond{~—}B\bond{~=}C\bond{-~-}D}$</td>
+<td><span class='katex-error' title='ParseError: KaTeX parse error: Undefined control sequence: \ce at position 1: \̲c̲e̲{A\bond{~--}B\b…'>\ce{A\bond{~--}B\bond{~=}C\bond{-~-}D}</span></td>
 <td><code>\ce{A\bond{~--}B\bond{~=}C\bond{-~-}D}</code></td>
 </tr>
 </tbody>
 </table>
-</div>
-<h2 id="附加化合物"><a href="#附加化合物" class="headerlink" title="附加化合物"></a>附加化合物</h2><div class="table-container">
+<h2 id="附加化合物"><a class="markdownIt-Anchor" href="#附加化合物"></a> 附加化合物</h2>
 <table>
 <thead>
 <tr>
@@ -656,22 +667,22 @@
 </thead>
 <tbody>
 <tr>
-<td>$\ce{KCr(SO4)2*12H2O}$</td>
+<td><span class='katex-error' title='ParseError: KaTeX parse error: Undefined control sequence: \ce at position 1: \̲c̲e̲{KCr(SO4)2*12H2…'>\ce{KCr(SO4)2*12H2O}</span></td>
 <td><code>\ce{KCr(SO4)2*12H2O}</code></td>
 </tr>
 <tr>
-<td>$\ce{KCr(SO4)2.12H2O}$</td>
+<td><span class='katex-error' title='ParseError: KaTeX parse error: Undefined control sequence: \ce at position 1: \̲c̲e̲{KCr(SO4)2.12H2…'>\ce{KCr(SO4)2.12H2O}</span></td>
 <td><code>\ce{KCr(SO4)2.12H2O}</code></td>
 </tr>
 <tr>
-<td>$\ce{KCr(SO4)2 * 12 H2O}$</td>
+<td><span class='katex-error' title='ParseError: KaTeX parse error: Undefined control sequence: \ce at position 1: \̲c̲e̲{KCr(SO4)2 * 12…'>\ce{KCr(SO4)2 * 12 H2O}</span></td>
 <td><code>\ce{KCr(SO4)2 * 12 H2O}</code></td>
 </tr>
 </tbody>
 </table>
-</div>
-<h2 id="氧化态"><a href="#氧化态" class="headerlink" title="氧化态"></a>氧化态</h2><p>$\ce{Fe^{II}Fe^{III}2O4}$ <code>\ce{Fe^{II}Fe^{III}2O4}</code></p>
-<h2 id="不成对电子-自由基"><a href="#不成对电子-自由基" class="headerlink" title="不成对电子, 自由基"></a>不成对电子, 自由基</h2><div class="table-container">
+<h2 id="氧化态"><a class="markdownIt-Anchor" href="#氧化态"></a> 氧化态</h2>
+<p><span class='katex-error' title='ParseError: KaTeX parse error: Undefined control sequence: \ce at position 1: \̲c̲e̲{Fe^{II}Fe^{III…'>\ce{Fe^{II}Fe^{III}2O4}</span> <code>\ce{Fe^{II}Fe^{III}2O4}</code></p>
+<h2 id="不成对电子-自由基"><a class="markdownIt-Anchor" href="#不成对电子-自由基"></a> 不成对电子, 自由基</h2>
 <table>
 <thead>
 <tr>
@@ -681,17 +692,16 @@
 </thead>
 <tbody>
 <tr>
-<td>$\ce{OCO^{.-}}$</td>
+<td><span class='katex-error' title='ParseError: KaTeX parse error: Undefined control sequence: \ce at position 1: \̲c̲e̲{OCO^{.-}}'>\ce{OCO^{.-}}</span></td>
 <td><code>\ce{OCO^{.-}}</code></td>
 </tr>
 <tr>
-<td>$\ce{NO^{(2.)-}}$</td>
+<td><span class='katex-error' title='ParseError: KaTeX parse error: Undefined control sequence: \ce at position 1: \̲c̲e̲{NO^{(2.)-}}'>\ce{NO^{(2.)-}}</span></td>
 <td><code>\ce{NO^{(2.)-}}</code></td>
 </tr>
 </tbody>
 </table>
-</div>
-<h2 id="Kroger-Vink表示法"><a href="#Kroger-Vink表示法" class="headerlink" title="Kröger-Vink表示法"></a>Kröger-Vink表示法</h2><div class="table-container">
+<h2 id="kröger-vink表示法"><a class="markdownIt-Anchor" href="#kröger-vink表示法"></a> Kröger-Vink表示法</h2>
 <table>
 <thead>
 <tr>
@@ -701,20 +711,25 @@
 </thead>
 <tbody>
 <tr>
-<td>$\ce{O’’_{i,x}}$</td>
-<td><code>\ce{O&#39;&#39;_{i,x}}</code></td>
+<td><span class='katex-error' title='ParseError: KaTeX parse error: Undefined control sequence: \ce at position 1: \̲c̲e̲{O&#039;&#039;_{i,x}}'>\ce{O&#039;&#039;_{i,x}}</span></td>
+<td><code>\ce{O''_{i,x}}</code></td>
 </tr>
 <tr>
-<td>$\ce{M^{..}_i}$</td>
+<td><span class='katex-error' title='ParseError: KaTeX parse error: Undefined control sequence: \ce at position 1: \̲c̲e̲{M^{..}_i}'>\ce{M^{..}_i}</span></td>
 <td><code>\ce{M^{..}_i}</code></td>
 </tr>
 </tbody>
 </table>
-</div>
-<script type="math/tex; mode=display">\ce{$V$^{4'}_{Ti}}</script><p><code>\ce{$V$^{4&#39;}_{Ti}}</code></p>
-<script type="math/tex; mode=display">\ce{V_{V,1}C_{C,0.8}$V$_{C,0.2}}</script><p><code>\ce{V_{V,1}C_{C,0.8}$V$_{C,0.2}}</code></p>
-<script type="math/tex; mode=display">\ce{Li^x_{Li,1-2x}Mg^._{Li,x}$V$'_{Li,x}Cl^x_{Cl}}</script><p><code>\ce{Li^x_{Li,1-2x}Mg^._{Li,x}$V$&#39;_{Li,x}Cl^x_{Cl}}</code></p>
-<h2 id="方程式操作符"><a href="#方程式操作符" class="headerlink" title="方程式操作符"></a>方程式操作符</h2><div class="table-container">
+<p class='katex-block katex-error' title='ParseError: KaTeX parse error: Undefined control sequence: \ce at position 1: \̲c̲e̲{$V$^{4&#039;}_{Ti}}…'>\ce{$V$^{4&#039;}_{Ti}}
+</p>
+<p><code>\ce{$V$^{4'}_{Ti}}</code></p>
+<p class='katex-block katex-error' title='ParseError: KaTeX parse error: Undefined control sequence: \ce at position 1: \̲c̲e̲{V_{V,1}C_{C,0.…'>\ce{V_{V,1}C_{C,0.8}$V$_{C,0.2}}
+</p>
+<p><code>\ce{V_{V,1}C_{C,0.8}$V$_{C,0.2}}</code></p>
+<p class='katex-block katex-error' title='ParseError: KaTeX parse error: Undefined control sequence: \ce at position 1: \̲c̲e̲{Li^x_{Li,1-2x}…'>\ce{Li^x_{Li,1-2x}Mg^._{Li,x}$V$&#039;_{Li,x}Cl^x_{Cl}}
+</p>
+<p><code>\ce{Li^x_{Li,1-2x}Mg^._{Li,x}$V$'_{Li,x}Cl^x_{Cl}}</code></p>
+<h2 id="方程式操作符"><a class="markdownIt-Anchor" href="#方程式操作符"></a> 方程式操作符</h2>
 <table>
 <thead>
 <tr>
@@ -724,26 +739,27 @@
 </thead>
 <tbody>
 <tr>
-<td>$\ce{A + B}$</td>
+<td><span class='katex-error' title='ParseError: KaTeX parse error: Undefined control sequence: \ce at position 1: \̲c̲e̲{A + B}'>\ce{A + B}</span></td>
 <td><code>\ce{A + B}</code></td>
 </tr>
 <tr>
-<td>$\ce{A - B}$</td>
+<td><span class='katex-error' title='ParseError: KaTeX parse error: Undefined control sequence: \ce at position 1: \̲c̲e̲{A - B}'>\ce{A - B}</span></td>
 <td><code>\ce{A - B}</code></td>
 </tr>
 <tr>
-<td>$\ce{A = B}$</td>
+<td><span class='katex-error' title='ParseError: KaTeX parse error: Undefined control sequence: \ce at position 1: \̲c̲e̲{A = B}'>\ce{A = B}</span></td>
 <td><code>\ce{A = B}</code></td>
 </tr>
 <tr>
-<td>$\ce{A \pm B}$</td>
+<td><span class='katex-error' title='ParseError: KaTeX parse error: Undefined control sequence: \ce at position 1: \̲c̲e̲{A \pm B}'>\ce{A \pm B}</span></td>
 <td><code>\ce{A \pm B}</code></td>
 </tr>
 </tbody>
 </table>
-</div>
-<h2 id="沉淀与气体"><a href="#沉淀与气体" class="headerlink" title="沉淀与气体"></a>沉淀与气体</h2><p>$\ce{A v B (v) -&gt; B ^ B (^)}$<br><code>\ce{A v B (v) -&gt; B ^ B (^)}</code></p>
-<h2 id="杂项"><a href="#杂项" class="headerlink" title="杂项"></a>杂项</h2><div class="table-container">
+<h2 id="沉淀与气体"><a class="markdownIt-Anchor" href="#沉淀与气体"></a> 沉淀与气体</h2>
+<p><span class='katex-error' title='ParseError: KaTeX parse error: Undefined control sequence: \ce at position 1: \̲c̲e̲{A v B (v) -&gt; B…'>\ce{A v B (v) -&gt; B ^ B (^)}</span><br />
+<code>\ce{A v B (v) -&gt; B ^ B (^)}</code></p>
+<h2 id="杂项"><a class="markdownIt-Anchor" href="#杂项"></a> 杂项</h2>
 <table>
 <thead>
 <tr>
@@ -753,37 +769,43 @@
 </thead>
 <tbody>
 <tr>
-<td>$\ce{NO^*}$</td>
+<td><span class='katex-error' title='ParseError: KaTeX parse error: Undefined control sequence: \ce at position 1: \̲c̲e̲{NO^*}'>\ce{NO^*}</span></td>
 <td><code>\ce{NO^*}</code></td>
 </tr>
 <tr>
-<td>$\ce{1s^2-N}$</td>
+<td><span class='katex-error' title='ParseError: KaTeX parse error: Undefined control sequence: \ce at position 1: \̲c̲e̲{1s^2-N}'>\ce{1s^2-N}</span></td>
 <td><code>\ce{1s^2-N}</code></td>
 </tr>
 <tr>
-<td>$\ce{n-Pr}$</td>
+<td><span class='katex-error' title='ParseError: KaTeX parse error: Undefined control sequence: \ce at position 1: \̲c̲e̲{n-Pr}'>\ce{n-Pr}</span></td>
 <td><code>\ce{n-Pr}</code></td>
 </tr>
 <tr>
-<td>$\ce{iPr}$</td>
+<td><span class='katex-error' title='ParseError: KaTeX parse error: Undefined control sequence: \ce at position 1: \̲c̲e̲{iPr}'>\ce{iPr}</span></td>
 <td><code>\ce{iPr}</code></td>
 </tr>
 <tr>
-<td>$\ce{\ca Fe}$</td>
+<td><span class='katex-error' title='ParseError: KaTeX parse error: Undefined control sequence: \ce at position 1: \̲c̲e̲{\ca Fe}'>\ce{\ca Fe}</span></td>
 <td><code>\ce{\ca Fe}</code></td>
 </tr>
 <tr>
-<td>$\ce{A, B, C; F}$</td>
+<td><span class='katex-error' title='ParseError: KaTeX parse error: Undefined control sequence: \ce at position 1: \̲c̲e̲{A, B, C; F}'>\ce{A, B, C; F}</span></td>
 <td><code>\ce{A, B, C; F}</code></td>
 </tr>
 </tbody>
 </table>
-</div>
-<script type="math/tex; mode=display">\ce{Zn^2+  <=>[+ 2OH-][+ 2H+]  $\underset{\text{amphoteres Hydroxid}}{\ce{Zn(OH)2 v}}$  <=>[+ 2OH-][+ 2H+]  $\underset{\text{Hydroxozikat}}{\ce{[Zn(OH)4]^2-}}$}</script><p><code>\ce{Zn^2+  &lt;=&gt;[+ 2OH-][+ 2H+]  $\underset{\text{amphoteres Hydroxid}}{\ce{Zn(OH)2 v}}$  &lt;=&gt;[+ 2OH-][+ 2H+]  $\underset{\text{Hydroxozikat}}{\ce{[Zn(OH)4]^2-}}$}</code></p>
-<script type="math/tex; mode=display">\ce{$K = \frac{[\ce{Hg^2+}][\ce{Hg}]}{[\ce{Hg2^2+}]}$}</script><p><code>\ce{$K = \frac{[\ce{Hg^2+}][\ce{Hg}]}{[\ce{Hg2^2+}]}$}</code></p>
-<script type="math/tex; mode=display">\ce{$K = \ce{\frac{[Hg^2+][Hg]}{[Hg2^2+]}}$}</script><p><code>\ce{$K = \ce{\frac{[Hg^2+][Hg]}{[Hg2^2+]}}$}</code></p>
-<script type="math/tex; mode=display">\ce{Hg^2+ ->[I-] $\underset{\mathrm{red}}{\ce{HgI2}}$ ->[I-] 
- $\underset{\mathrm{red}}{\ce{[Hg^{II}I4]^2-}}$}</script><p><code>\ce{Hg^2+ -&gt;[I-] $\underset{\mathrm{red}}{\ce{HgI2}}$ -&gt;[I-]  $\underset{\mathrm{red}}{\ce{[Hg^{II}I4]^2-}}$}</code></p>
+<p class='katex-block katex-error' title='ParseError: KaTeX parse error: Undefined control sequence: \ce at position 1: \̲c̲e̲{Zn^2+  &lt;=&gt;[+ 2…'>\ce{Zn^2+  &lt;=&gt;[+ 2OH-][+ 2H+]  $\underset{\text{amphoteres Hydroxid}}{\ce{Zn(OH)2 v}}$  &lt;=&gt;[+ 2OH-][+ 2H+]  $\underset{\text{Hydroxozikat}}{\ce{[Zn(OH)4]^2-}}$}
+</p>
+<p><code>\ce{Zn^2+ &lt;=&gt;[+ 2OH-][+ 2H+] $\underset{\text{amphoteres Hydroxid}}{\ce{Zn(OH)2 v}}$ &lt;=&gt;[+ 2OH-][+ 2H+] $\underset{\text{Hydroxozikat}}{\ce{[Zn(OH)4]^2-}}$}</code></p>
+<p class='katex-block katex-error' title='ParseError: KaTeX parse error: Undefined control sequence: \ce at position 1: \̲c̲e̲{$K = \frac{[\c…'>\ce{$K = \frac{[\ce{Hg^2+}][\ce{Hg}]}{[\ce{Hg2^2+}]}$}
+</p>
+<p><code>\ce{$K = \frac{[\ce{Hg^2+}][\ce{Hg}]}{[\ce{Hg2^2+}]}$}</code></p>
+<p class='katex-block katex-error' title='ParseError: KaTeX parse error: Undefined control sequence: \ce at position 1: \̲c̲e̲{$K = \ce{\frac…'>\ce{$K = \ce{\frac{[Hg^2+][Hg]}{[Hg2^2+]}}$}
+</p>
+<p><code>\ce{$K = \ce{\frac{[Hg^2+][Hg]}{[Hg2^2+]}}$}</code></p>
+<p class='katex-block katex-error' title='ParseError: KaTeX parse error: Undefined control sequence: \ce at position 1: \̲c̲e̲{Hg^2+ -&gt;[I-] $…'>\ce{Hg^2+ -&gt;[I-] $\underset{\mathrm{red}}{\ce{HgI2}}$ -&gt;[I-] 
+$\underset{\mathrm{red}}{\ce{[Hg^{II}I4]^2-}}$}</p>
+<p><code>\ce{Hg^2+ -&gt;[I-] $\underset{\mathrm{red}}{\ce{HgI2}}$ -&gt;[I-] $\underset{\mathrm{red}}{\ce{[Hg^{II}I4]^2-}}$}</code></p>
 
     </div>
 
@@ -885,7 +907,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#数学模式-math-mode-斜体"><span class="nav-number">1.</span> <span class="nav-text">数学模式(math mode)&#x2F;斜体</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#直体"><span class="nav-number">2.</span> <span class="nav-text">直体</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#化学方程式-CE"><span class="nav-number">3.</span> <span class="nav-text">化学方程式(CE)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#物理单位-PU"><span class="nav-number">4.</span> <span class="nav-text">物理单位(PU)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#化学式"><span class="nav-number">5.</span> <span class="nav-text">化学式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#离子"><span class="nav-number">6.</span> <span class="nav-text">离子</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#带化学计量数"><span class="nav-number">7.</span> <span class="nav-text">带化学计量数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#核素"><span class="nav-number">8.</span> <span class="nav-text">核素</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#反应式箭头"><span class="nav-number">9.</span> <span class="nav-text">反应式箭头</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#括号"><span class="nav-number">10.</span> <span class="nav-text">括号</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#聚集状态"><span class="nav-number">11.</span> <span class="nav-text">聚集状态</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#晶系"><span class="nav-number">12.</span> <span class="nav-text">晶系</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#含有变量-使用斜体渲染"><span class="nav-number">13.</span> <span class="nav-text">含有变量(使用斜体渲染)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#希腊字母"><span class="nav-number">14.</span> <span class="nav-text">希腊字母</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#化学键"><span class="nav-number">15.</span> <span class="nav-text">化学键</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#附加化合物"><span class="nav-number">16.</span> <span class="nav-text">附加化合物</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#氧化态"><span class="nav-number">17.</span> <span class="nav-text">氧化态</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#不成对电子-自由基"><span class="nav-number">18.</span> <span class="nav-text">不成对电子, 自由基</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Kroger-Vink表示法"><span class="nav-number">19.</span> <span class="nav-text">Kröger-Vink表示法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#方程式操作符"><span class="nav-number">20.</span> <span class="nav-text">方程式操作符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#沉淀与气体"><span class="nav-number">21.</span> <span class="nav-text">沉淀与气体</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#杂项"><span class="nav-number">22.</span> <span class="nav-text">杂项</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#数学模式math-mode斜体"><span class="nav-number">1.</span> <span class="nav-text"> 数学模式(math mode)&#x2F;斜体</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#直体"><span class="nav-number">2.</span> <span class="nav-text"> 直体</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#化学方程式ce"><span class="nav-number">3.</span> <span class="nav-text"> 化学方程式(CE)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#物理单位pu"><span class="nav-number">4.</span> <span class="nav-text"> 物理单位(PU)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#化学式"><span class="nav-number">5.</span> <span class="nav-text"> 化学式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#离子"><span class="nav-number">6.</span> <span class="nav-text"> 离子</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#带化学计量数"><span class="nav-number">7.</span> <span class="nav-text"> 带化学计量数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#核素"><span class="nav-number">8.</span> <span class="nav-text"> 核素</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#反应式箭头"><span class="nav-number">9.</span> <span class="nav-text"> 反应式箭头</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#括号"><span class="nav-number">10.</span> <span class="nav-text"> 括号</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#聚集状态"><span class="nav-number">11.</span> <span class="nav-text"> 聚集状态</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#晶系"><span class="nav-number">12.</span> <span class="nav-text"> 晶系</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#含有变量使用斜体渲染"><span class="nav-number">13.</span> <span class="nav-text"> 含有变量(使用斜体渲染)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#希腊字母"><span class="nav-number">14.</span> <span class="nav-text"> 希腊字母</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#化学键"><span class="nav-number">15.</span> <span class="nav-text"> 化学键</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#附加化合物"><span class="nav-number">16.</span> <span class="nav-text"> 附加化合物</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#氧化态"><span class="nav-number">17.</span> <span class="nav-text"> 氧化态</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#不成对电子-自由基"><span class="nav-number">18.</span> <span class="nav-text"> 不成对电子, 自由基</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#kröger-vink表示法"><span class="nav-number">19.</span> <span class="nav-text"> Kröger-Vink表示法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#方程式操作符"><span class="nav-number">20.</span> <span class="nav-text"> 方程式操作符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#沉淀与气体"><span class="nav-number">21.</span> <span class="nav-text"> 沉淀与气体</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#杂项"><span class="nav-number">22.</span> <span class="nav-text"> 杂项</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -1015,6 +1037,7 @@
 
   
   <script src="/lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/lozad@1/dist/lozad.min.js"></script>
   <script src="/lib/velocity/velocity.min.js"></script>
   <script src="/lib/velocity/velocity.ui.min.js"></script>
 
@@ -1068,60 +1091,8 @@ if (document.querySelectorAll('pre.mermaid').length) {
 
   
       
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex@0/dist/katex.min.css"><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 
-<script>
-  if (typeof MathJax === 'undefined') {
-    window.MathJax = {
-      loader: {
-          load: ['[tex]/mhchem'],
-        source: {
-          '[tex]/amsCd': '[tex]/amscd',
-          '[tex]/AMScd': '[tex]/amscd'
-        }
-      },
-      tex: {
-        inlineMath: {'[+]': [['$', '$']]},
-          packages: {'[+]': ['mhchem']},
-        tags: 'ams'
-      },
-      options: {
-        renderActions: {
-          findScript: [10, doc => {
-            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
-              const display = !!node.type.match(/; *mode=display/);
-              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
-              const text = document.createTextNode('');
-              node.parentNode.replaceChild(text, node);
-              math.start = {node: text, delim: '', n: 0};
-              math.end = {node: text, delim: '', n: 0};
-              doc.math.push(math);
-            });
-          }, '', false],
-          insertedScript: [200, () => {
-            document.querySelectorAll('mjx-container').forEach(node => {
-              let target = node.parentNode;
-              if (target.nodeName.toLowerCase() === 'li') {
-                target.parentNode.classList.add('has-jax');
-              }
-            });
-          }, '', false]
-        }
-      }
-    };
-    (function () {
-      var script = document.createElement('script');
-      script.src = '//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
-      script.defer = true;
-      document.head.appendChild(script);
-    })();
-  } else {
-    MathJax.startup.document.state(0);
-    MathJax.texReset();
-    MathJax.typeset();
-  }
-</script>
-
-    
 
   
 
