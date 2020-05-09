@@ -24,12 +24,12 @@
     var CONFIG = {"hostname":"tifa-233.xyz","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="404 Not Found                      The page you are looking for is not found.     		 		var gitalkConfig &#x3D; {&quot;clientID&quot;:&quot;94f5ce5fe1eb15833417&quot;,&quot;clientSecret&quot;:&quot;57c14fb3ec61d040946de2a7d00322">
+  <meta name="description" content="404 Not Found                      The page you are looking for is not found.">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Tiphereth&#39;s Blog">
 <meta property="og:url" content="https://tifa-233.xyz/404.html">
 <meta property="og:site_name" content="Tiphereth&#39;s Blog">
-<meta property="og:description" content="404 Not Found                      The page you are looking for is not found.     		 		var gitalkConfig &#x3D; {&quot;clientID&quot;:&quot;94f5ce5fe1eb15833417&quot;,&quot;clientSecret&quot;:&quot;57c14fb3ec61d040946de2a7d00322">
+<meta property="og:description" content="404 Not Found                      The page you are looking for is not found.">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-05-09T12:06:22.259Z">
 <meta property="article:modified_time" content="2020-05-05T12:08:59.204Z">
@@ -218,15 +218,6 @@
           </h1>
           <p>The page you are looking for is not found.</p>
 
-<div id="gitalk-container"></div>
-<script src="https://cdn.bootcss.com/blueimp-md5/2.12.0/js/md5.min.js"></script><link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css"><script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
-
-		<script>
-		var gitalkConfig = {"clientID":"94f5ce5fe1eb15833417","clientSecret":"57c14fb3ec61d040946de2a7d00322973fe9ca24","repo":"blog_comments","owner":"Tiphareth-A","admin":["Tiphareth-A"],"distractionFreeMode":false};
-	    gitalkConfig.id = md5(location.pathname);
-		var gitalk = new Gitalk(gitalkConfig);
-	    gitalk.render("gitalk-container");
-	    </script>
       </div>
       
       
@@ -241,6 +232,7 @@
 
           </div>
           
+    <div class="comments" id="gitalk-container"></div>
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -507,7 +499,27 @@ if (document.querySelectorAll('pre.mermaid').length) {
         ignores : [uri => uri.includes('#'),uri => uri === 'https://tifa-233.xyz/404.html',]
       });
       });
-  </script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+  </script>
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
+
+<script>
+NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js', () => {
+    var gitalk = new Gitalk({
+      clientID    : '94f5ce5fe1eb15833417',
+      clientSecret: '57c14fb3ec61d040946de2a7d00322973fe9ca24',
+      repo        : 'blog_comments',
+      owner       : 'Tiphereth-A',
+      admin       : ['Tiphereth-A'],
+      id          : '516a35d265e49707e113184afbcbb8c8',
+        language: '',
+      distractionFreeMode: true
+    });
+    gitalk.render('gitalk-container');
+  }, window.Gitalk);
+});
+</script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 
 </body>
 </html>
