@@ -1,0 +1,16 @@
+# hexo robots.txt
+User-agent: *
+Allow: /
+Allow: /archives/
+Allow: /article/
+
+Disallow: /vendors/
+Disallow: /js/
+Disallow: /css/
+Disallow: /lib/
+Disallow: /fonts/
+Disallow: /vendors/
+Disallow: /fancybox/
+
+Sitemap: http://tifa-233.xyz/sitemap.xml
+Sitemap: http://tifa-233.xyz/baidusitemap.xml

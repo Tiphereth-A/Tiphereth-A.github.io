@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://tifa-233.xyz/article/test-mermaid/</loc>
+    <lastmod>2020-05-09</lastmod>
+  </url>  <url>
     <loc>https://tifa-233.xyz/article/solution-codeforces-639-2/</loc>
     <lastmod>2020-05-09</lastmod>
   </url>  <url>
@@ -17,9 +20,6 @@
     <lastmod>2020-05-08</lastmod>
   </url>  <url>
     <loc>https://tifa-233.xyz/article/zkw-segment-tree-test2/</loc>
-    <lastmod>2020-05-08</lastmod>
-  </url>  <url>
-    <loc>https://tifa-233.xyz/article/test-mermaid/</loc>
     <lastmod>2020-05-08</lastmod>
   </url>  <url>
     <loc>https://tifa-233.xyz/article/solution-luogu-p4462/</loc>
