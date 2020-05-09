@@ -381,6 +381,15 @@ merge newbranch</pre>
 <h1 id="latex"><a class="markdownIt-Anchor" href="#latex"></a> LaTeX</h1>
 <p><a href="../katex-supported-functions">参见</a></p>
 
+<div id="gitalk-container"></div>
+<script src="https://cdn.bootcss.com/blueimp-md5/2.12.0/js/md5.min.js"></script><link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css"><script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+		<script>
+		var gitalkConfig = {"clientID":"94f5ce5fe1eb15833417","clientSecret":"57c14fb3ec61d040946de2a7d00322973fe9ca24","repo":"blog_comments","owner":"Tiphareth-A","admin":["Tiphareth-A"],"distractionFreeMode":false};
+	    gitalkConfig.id = md5(location.pathname);
+		var gitalk = new Gitalk(gitalkConfig);
+	    gitalk.render("gitalk-container");
+	    </script>
     </div>
 
     
@@ -414,10 +423,13 @@ merge newbranch</pre>
 
         
     <div class="post-nav">
-      <div class="post-nav-item"></div>
       <div class="post-nav-item">
-    <a href="/article/test-tag/" rel="next" title="测试文章-Tags">
-      测试文章-Tags <i class="fa fa-chevron-right"></i>
+    <a href="/article/test-tag/" rel="prev" title="测试文章-Tags">
+      <i class="fa fa-chevron-left"></i> 测试文章-Tags
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/article/test-encrypt/" rel="next" title="测试文章-加密">
+      测试文章-加密 <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>

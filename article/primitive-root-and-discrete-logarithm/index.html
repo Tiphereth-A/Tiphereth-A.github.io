@@ -311,6 +311,15 @@
 </li>
 </ol>
 
+<div id="gitalk-container"></div>
+<script src="https://cdn.bootcss.com/blueimp-md5/2.12.0/js/md5.min.js"></script><link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css"><script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+		<script>
+		var gitalkConfig = {"clientID":"94f5ce5fe1eb15833417","clientSecret":"57c14fb3ec61d040946de2a7d00322973fe9ca24","repo":"blog_comments","owner":"Tiphareth-A","admin":["Tiphareth-A"],"distractionFreeMode":false};
+	    gitalkConfig.id = md5(location.pathname);
+		var gitalk = new Gitalk(gitalkConfig);
+	    gitalk.render("gitalk-container");
+	    </script>
     </div>
 
     

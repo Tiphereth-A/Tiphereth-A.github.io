@@ -260,6 +260,15 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">#define _teacher_in(i) onlineT |&#x3D; 1 &lt;&lt; i      &#x2F;&#x2F;老师进机房</span><br><span class="line">#define _teacher_out(i) onlineT &amp;&#x3D; ~(1 &lt;&lt; i)  &#x2F;&#x2F;老师出机房</span><br><span class="line">#define _student_in(i) onlineS |&#x3D; 1 &lt;&lt; i      &#x2F;&#x2F;学生开始玩游戏</span><br><span class="line">#define _student_out(i) onlineS &amp;&#x3D; ~(1 &lt;&lt; i)  &#x2F;&#x2F;学生停止玩游戏</span><br><span class="line">#define _dead(i) deadS&amp;(1 &lt;&lt; i)               &#x2F;&#x2F;查询学生是否被发现</span><br><span class="line">#define _kill_student deadS |&#x3D; onlineS        &#x2F;&#x2F;学生被发现</span><br></pre></td></tr></table></figure>
 <p>其他就没什么了，可以参照其他题解<s>没错我就是懒（理直气壮</s></p>
 
+<div id="gitalk-container"></div>
+<script src="https://cdn.bootcss.com/blueimp-md5/2.12.0/js/md5.min.js"></script><link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css"><script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+		<script>
+		var gitalkConfig = {"clientID":"94f5ce5fe1eb15833417","clientSecret":"57c14fb3ec61d040946de2a7d00322973fe9ca24","repo":"blog_comments","owner":"Tiphareth-A","admin":["Tiphareth-A"],"distractionFreeMode":false};
+	    gitalkConfig.id = md5(location.pathname);
+		var gitalk = new Gitalk(gitalkConfig);
+	    gitalk.render("gitalk-container");
+	    </script>
     </div>
 
     
