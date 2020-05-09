@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tiphereth-a.github.io/"/>
-  <updated>2020-05-08T10:04:52.691Z</updated>
+  <updated>2020-05-09T08:36:01.576Z</updated>
   <id>https://tiphereth-a.github.io/</id>
   
   <author>
@@ -17,15 +17,15 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>题解 - Codeforces Round #639 Div. 1 &amp; Div. 2</title>
+    <title>题解 - Codeforces Round #639 Div. 2</title>
     <link href="https://tiphereth-a.github.io/article/solution-codeforces-639-2/"/>
     <id>https://tiphereth-a.github.io/article/solution-codeforces-639-2/</id>
     <published>2020-05-06T16:07:49.000Z</published>
-    <updated>2020-05-08T10:04:52.691Z</updated>
+    <updated>2020-05-09T08:36:01.576Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;&lt;a href=&quot;https://codeforces.com/contest/1344,1345&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;比赛链接&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;a href=&quot;https://codeforces.com/contest/1345&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;比赛链接&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;打一半改成unrated了海星&lt;/p&gt;
 &lt;p&gt;惨 Monogon 惨&lt;/p&gt;
     
@@ -263,9 +263,9 @@ s-65,47,-65,47z M834 80H400000v40H845z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/sp
     
       <category term="题解" scheme="https://tiphereth-a.github.io/tags/%E9%A2%98%E8%A7%A3/"/>
     
-      <category term="洛谷" scheme="https://tiphereth-a.github.io/tags/%E6%B4%9B%E8%B0%B7/"/>
-    
       <category term="省选" scheme="https://tiphereth-a.github.io/tags/%E7%9C%81%E9%80%89/"/>
+    
+      <category term="洛谷" scheme="https://tiphereth-a.github.io/tags/%E6%B4%9B%E8%B0%B7/"/>
     
       <category term="BZOJ" scheme="https://tiphereth-a.github.io/tags/BZOJ/"/>
     
