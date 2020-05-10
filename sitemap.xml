@@ -2,30 +2,114 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://tifa-233.xyz/article/katex-supported-functions/</loc>
+    <loc>https://tifa-233.xyz/categories/index.html</loc>
     
-    <lastmod>2020-05-10T05:29:45.732Z</lastmod>
+    <lastmod>2020-05-10T09:13:22.915Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://tifa-233.xyz/article/quadratic-residue-and-quadratic-reciprocity-law/</loc>
+    
+    <lastmod>2020-05-10T09:13:07.364Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://tifa-233.xyz/article/primitive-root-and-discrete-logarithm/</loc>
+    
+    <lastmod>2020-05-10T09:13:02.029Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://tifa-233.xyz/article/mobius-inverse-formula/</loc>
+    
+    <lastmod>2020-05-10T09:12:58.275Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://tifa-233.xyz/article/solution-luogu-p5462/</loc>
+    
+    <lastmod>2020-05-10T09:12:07.538Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://tifa-233.xyz/article/solution-luogu-p4462/</loc>
+    
+    <lastmod>2020-05-10T09:10:29.922Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://tifa-233.xyz/article/approx-number/</loc>
+    
+    <lastmod>2020-05-10T09:09:57.042Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://tifa-233.xyz/article/adaptive-simpson-rule/</loc>
+    
+    <lastmod>2020-05-10T09:09:40.752Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://tifa-233.xyz/article/zkw-segment-tree/</loc>
+    
+    <lastmod>2020-05-10T09:03:31.078Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://tifa-233.xyz/article/zkw-segment-tree-test1/</loc>
+    
+    <lastmod>2020-05-10T09:03:22.710Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://tifa-233.xyz/article/solution-luogu-p4896/</loc>
+    
+    <lastmod>2020-05-10T09:02:48.349Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://tifa-233.xyz/article/solution-codeforces-640-4/</loc>
     
-    <lastmod>2020-05-10T05:23:22.639Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://tifa-233.xyz/article/solution-codeforces-639-2/</loc>
-    
-    <lastmod>2020-05-10T04:18:01.756Z</lastmod>
+    <lastmod>2020-05-10T09:02:29.993Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://tifa-233.xyz/article/mhchem-function/</loc>
     
-    <lastmod>2020-05-09T14:11:14.824Z</lastmod>
+    <lastmod>2020-05-10T09:01:38.127Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://tifa-233.xyz/article/katex-supported-functions/</loc>
+    
+    <lastmod>2020-05-10T09:01:24.747Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://tifa-233.xyz/article/katex-support-table/</loc>
+    
+    <lastmod>2020-05-10T09:01:14.089Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://tifa-233.xyz/article/solution-codeforces-639-2/</loc>
+    
+    <lastmod>2020-05-10T08:37:30.386Z</lastmod>
     
   </url>
   
@@ -58,27 +142,6 @@
   </url>
   
   <url>
-    <loc>https://tifa-233.xyz/article/katex-support-table/</loc>
-    
-    <lastmod>2020-05-09T13:19:09.491Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://tifa-233.xyz/article/zkw-segment-tree/</loc>
-    
-    <lastmod>2020-05-08T10:04:52.702Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://tifa-233.xyz/article/zkw-segment-tree-test1/</loc>
-    
-    <lastmod>2020-05-08T10:04:52.700Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://tifa-233.xyz/article/test-tag/</loc>
     
     <lastmod>2020-05-08T10:04:52.699Z</lastmod>
@@ -89,62 +152,6 @@
     <loc>https://tifa-233.xyz/article/zkw-segment-tree-test2/</loc>
     
     <lastmod>2020-05-08T10:04:52.695Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://tifa-233.xyz/article/solution-luogu-p4462/</loc>
-    
-    <lastmod>2020-05-08T10:04:52.673Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://tifa-233.xyz/article/quadratic-residue-and-quadratic-reciprocity-law/</loc>
-    
-    <lastmod>2020-05-08T10:04:52.670Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://tifa-233.xyz/article/solution-luogu-p5462/</loc>
-    
-    <lastmod>2020-05-08T10:04:52.669Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://tifa-233.xyz/article/solution-luogu-p4896/</loc>
-    
-    <lastmod>2020-05-08T10:04:52.655Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://tifa-233.xyz/article/primitive-root-and-discrete-logarithm/</loc>
-    
-    <lastmod>2020-05-08T10:04:52.650Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://tifa-233.xyz/article/mobius-inverse-formula/</loc>
-    
-    <lastmod>2020-05-08T10:04:52.647Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://tifa-233.xyz/article/approx-number/</loc>
-    
-    <lastmod>2020-05-08T10:04:52.637Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://tifa-233.xyz/article/adaptive-simpson-rule/</loc>
-    
-    <lastmod>2020-05-08T10:04:52.636Z</lastmod>
     
   </url>
   

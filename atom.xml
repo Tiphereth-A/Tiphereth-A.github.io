@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tifa-233.xyz/"/>
-  <updated>2020-05-10T05:23:22.639Z</updated>
+  <updated>2020-05-10T09:02:29.993Z</updated>
   <id>https://tifa-233.xyz/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://tifa-233.xyz/article/solution-codeforces-640-4/"/>
     <id>https://tifa-233.xyz/article/solution-codeforces-640-4/</id>
     <published>2020-05-09T17:03:23.000Z</published>
-    <updated>2020-05-10T05:23:22.639Z</updated>
+    <updated>2020-05-10T09:02:29.993Z</updated>
     
     <summary type="html">
     
@@ -29,6 +29,10 @@
     
     </summary>
     
+    
+      <category term="程序设计" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
+    
+      <category term="题解" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E9%A2%98%E8%A7%A3/"/>
     
     
       <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
@@ -44,7 +48,7 @@
     <link href="https://tifa-233.xyz/article/solution-codeforces-639-2/"/>
     <id>https://tifa-233.xyz/article/solution-codeforces-639-2/</id>
     <published>2020-05-06T16:07:49.000Z</published>
-    <updated>2020-05-10T04:18:01.756Z</updated>
+    <updated>2020-05-10T08:37:30.386Z</updated>
     
     <summary type="html">
     
@@ -54,6 +58,10 @@
     
     </summary>
     
+    
+      <category term="程序设计" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
+    
+      <category term="题解" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E9%A2%98%E8%A7%A3/"/>
     
     
       <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
@@ -65,19 +73,22 @@
   </entry>
   
   <entry>
-    <title>mhchem指令手册-中文文档</title>
-    <link href="https://tifa-233.xyz/article/mhchem-function/"/>
-    <id>https://tifa-233.xyz/article/mhchem-function/</id>
-    <published>2020-05-06T08:31:03.000Z</published>
-    <updated>2020-05-09T14:11:14.824Z</updated>
+    <title>KaTeX指令速查表</title>
+    <link href="https://tifa-233.xyz/article/katex-support-table/"/>
+    <id>https://tifa-233.xyz/article/katex-support-table/</id>
+    <published>2020-05-05T15:59:37.000Z</published>
+    <updated>2020-05-10T09:01:14.089Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;汉化自&lt;a href=&quot;https://mhchem.github.io/MathJax-mhchem/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Manual for: mhchem for MathJax, mhchem for KaTeX&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;按笔者习惯调整了顺序&lt;/p&gt;
+      &lt;p&gt;来自 &lt;a href=&quot;https://katex.org/docs/support_table.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Support table - KaTeX&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;s&gt;注意: 本博客采用MathJax渲染, 示例请以原文为准&lt;/s&gt;&lt;/p&gt;
+&lt;p&gt;本博客渲染引擎已更换为KaTeX, MathJax不支持的指令已注明, KaTeX🐂🍺&lt;/p&gt;
     
     </summary>
     
+    
+      <category term="文档" scheme="https://tifa-233.xyz/categories/%E6%96%87%E6%A1%A3/"/>
     
     
       <category term="文档" scheme="https://tifa-233.xyz/tags/%E6%96%87%E6%A1%A3/"/>
@@ -89,7 +100,7 @@
     <link href="https://tifa-233.xyz/article/katex-supported-functions/"/>
     <id>https://tifa-233.xyz/article/katex-supported-functions/</id>
     <published>2020-05-05T15:59:37.000Z</published>
-    <updated>2020-05-10T05:29:45.732Z</updated>
+    <updated>2020-05-10T09:01:24.747Z</updated>
     
     <summary type="html">
     
@@ -100,26 +111,7 @@
     </summary>
     
     
-    
-      <category term="文档" scheme="https://tifa-233.xyz/tags/%E6%96%87%E6%A1%A3/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>KaTeX指令速查表</title>
-    <link href="https://tifa-233.xyz/article/katex-support-table/"/>
-    <id>https://tifa-233.xyz/article/katex-support-table/</id>
-    <published>2020-05-05T15:59:37.000Z</published>
-    <updated>2020-05-09T13:19:09.491Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;来自 &lt;a href=&quot;https://katex.org/docs/support_table.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Support table - KaTeX&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;s&gt;注意: 本博客采用MathJax渲染, 示例请以原文为准&lt;/s&gt;&lt;/p&gt;
-&lt;p&gt;本博客渲染引擎已更换为KaTeX, MathJax不支持的指令已注明, KaTeX🐂🍺&lt;/p&gt;
-    
-    </summary>
-    
+      <category term="文档" scheme="https://tifa-233.xyz/categories/%E6%96%87%E6%A1%A3/"/>
     
     
       <category term="文档" scheme="https://tifa-233.xyz/tags/%E6%96%87%E6%A1%A3/"/>
@@ -131,7 +123,7 @@
     <link href="https://tifa-233.xyz/article/quadratic-residue-and-quadratic-reciprocity-law/"/>
     <id>https://tifa-233.xyz/article/quadratic-residue-and-quadratic-reciprocity-law/</id>
     <published>2020-04-19T03:02:38.000Z</published>
-    <updated>2020-05-08T10:04:52.670Z</updated>
+    <updated>2020-05-10T09:13:07.364Z</updated>
     
     <summary type="html">
     
@@ -143,6 +135,10 @@
     
     </summary>
     
+    
+      <category term="笔记" scheme="https://tifa-233.xyz/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="数学" scheme="https://tifa-233.xyz/categories/%E7%AC%94%E8%AE%B0/%E6%95%B0%E5%AD%A6/"/>
     
     
       <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
@@ -164,7 +160,7 @@
     <link href="https://tifa-233.xyz/article/primitive-root-and-discrete-logarithm/"/>
     <id>https://tifa-233.xyz/article/primitive-root-and-discrete-logarithm/</id>
     <published>2020-04-18T14:54:50.000Z</published>
-    <updated>2020-05-08T10:04:52.650Z</updated>
+    <updated>2020-05-10T09:13:02.029Z</updated>
     
     <summary type="html">
     
@@ -173,6 +169,10 @@
     
     </summary>
     
+    
+      <category term="笔记" scheme="https://tifa-233.xyz/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="数学" scheme="https://tifa-233.xyz/categories/%E7%AC%94%E8%AE%B0/%E6%95%B0%E5%AD%A6/"/>
     
     
       <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
@@ -194,7 +194,7 @@
     <link href="https://tifa-233.xyz/article/mobius-inverse-formula/"/>
     <id>https://tifa-233.xyz/article/mobius-inverse-formula/</id>
     <published>2020-04-18T10:06:32.000Z</published>
-    <updated>2020-05-08T10:04:52.647Z</updated>
+    <updated>2020-05-10T09:12:58.275Z</updated>
     
     <summary type="html">
     
@@ -218,6 +218,10 @@ M834 80h400000v40h-400000z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/s
     
     </summary>
     
+    
+      <category term="笔记" scheme="https://tifa-233.xyz/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="数学" scheme="https://tifa-233.xyz/categories/%E7%AC%94%E8%AE%B0/%E6%95%B0%E5%AD%A6/"/>
     
     
       <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
@@ -264,7 +268,7 @@ M834 80h400000v40h-400000z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/s
     <link href="https://tifa-233.xyz/article/solution-luogu-p4462/"/>
     <id>https://tifa-233.xyz/article/solution-luogu-p4462/</id>
     <published>2020-01-27T07:40:12.000Z</published>
-    <updated>2020-05-08T10:04:52.673Z</updated>
+    <updated>2020-05-10T09:10:29.922Z</updated>
     
     <summary type="html">
     
@@ -278,6 +282,10 @@ M834 80h400000v40h-400000z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/s
     </summary>
     
     
+      <category term="程序设计" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
+    
+      <category term="题解" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E9%A2%98%E8%A7%A3/"/>
+    
     
       <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
     
@@ -285,9 +293,9 @@ M834 80h400000v40h-400000z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/s
     
       <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
     
-      <category term="省选" scheme="https://tifa-233.xyz/tags/%E7%9C%81%E9%80%89/"/>
-    
       <category term="洛谷" scheme="https://tifa-233.xyz/tags/%E6%B4%9B%E8%B0%B7/"/>
+    
+      <category term="省选" scheme="https://tifa-233.xyz/tags/%E7%9C%81%E9%80%89/"/>
     
       <category term="BZOJ" scheme="https://tifa-233.xyz/tags/BZOJ/"/>
     
@@ -306,7 +314,7 @@ M834 80h400000v40h-400000z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/s
     <link href="https://tifa-233.xyz/article/solution-luogu-p5462/"/>
     <id>https://tifa-233.xyz/article/solution-luogu-p5462/</id>
     <published>2019-07-14T17:29:34.000Z</published>
-    <updated>2020-05-08T10:04:52.669Z</updated>
+    <updated>2020-05-10T09:12:07.538Z</updated>
     
     <summary type="html">
     
@@ -315,6 +323,10 @@ M834 80h400000v40h-400000z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/s
     
     </summary>
     
+    
+      <category term="程序设计" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
+    
+      <category term="题解" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E9%A2%98%E8%A7%A3/"/>
     
     
       <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
@@ -336,7 +348,7 @@ M834 80h400000v40h-400000z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/s
     <link href="https://tifa-233.xyz/article/solution-luogu-p4896/"/>
     <id>https://tifa-233.xyz/article/solution-luogu-p4896/</id>
     <published>2018-11-13T14:35:58.000Z</published>
-    <updated>2020-05-08T10:04:52.655Z</updated>
+    <updated>2020-05-10T09:02:48.349Z</updated>
     
     <summary type="html">
     
@@ -345,6 +357,10 @@ M834 80h400000v40h-400000z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/s
     
     </summary>
     
+    
+      <category term="程序设计" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
+    
+      <category term="题解" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E9%A2%98%E8%A7%A3/"/>
     
     
       <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
@@ -362,7 +378,7 @@ M834 80h400000v40h-400000z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/s
     <link href="https://tifa-233.xyz/article/adaptive-simpson-rule/"/>
     <id>https://tifa-233.xyz/article/adaptive-simpson-rule/</id>
     <published>2018-08-12T07:33:58.000Z</published>
-    <updated>2020-05-08T10:04:52.636Z</updated>
+    <updated>2020-05-10T09:09:40.752Z</updated>
     
     <summary type="html">
     
@@ -371,6 +387,10 @@ M834 80h400000v40h-400000z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/s
     
     </summary>
     
+    
+      <category term="程序设计" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
+    
+      <category term="算法" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E7%AE%97%E6%B3%95/"/>
     
     
       <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
@@ -392,7 +412,7 @@ M834 80h400000v40h-400000z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/s
     <link href="https://tifa-233.xyz/article/approx-number/"/>
     <id>https://tifa-233.xyz/article/approx-number/</id>
     <published>2018-08-09T01:06:31.000Z</published>
-    <updated>2020-05-08T10:04:52.637Z</updated>
+    <updated>2020-05-10T09:09:57.042Z</updated>
     
     <summary type="html">
     
@@ -401,6 +421,10 @@ M834 80h400000v40h-400000z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/s
     
     </summary>
     
+    
+      <category term="程序设计" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
+    
+      <category term="算法" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E7%AE%97%E6%B3%95/"/>
     
     
       <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
@@ -426,7 +450,7 @@ M834 80h400000v40h-400000z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/s
     <link href="https://tifa-233.xyz/article/zkw-segment-tree-test1/"/>
     <id>https://tifa-233.xyz/article/zkw-segment-tree-test1/</id>
     <published>2018-08-08T05:05:56.000Z</published>
-    <updated>2020-05-08T10:04:52.700Z</updated>
+    <updated>2020-05-10T09:03:22.710Z</updated>
     
     <summary type="html">
     
@@ -449,7 +473,7 @@ M834 80h400000v40h-400000z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/s
     <link href="https://tifa-233.xyz/article/zkw-segment-tree/"/>
     <id>https://tifa-233.xyz/article/zkw-segment-tree/</id>
     <published>2018-08-06T11:22:55.000Z</published>
-    <updated>2020-05-08T10:04:52.702Z</updated>
+    <updated>2020-05-10T09:03:31.078Z</updated>
     
     <summary type="html">
     
@@ -458,6 +482,10 @@ M834 80h400000v40h-400000z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/s
     
     </summary>
     
+    
+      <category term="程序设计" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
+    
+      <category term="数据结构" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
     
     
       <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
@@ -471,6 +499,28 @@ M834 80h400000v40h-400000z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/s
       <category term="线段树" scheme="https://tifa-233.xyz/tags/%E7%BA%BF%E6%AE%B5%E6%A0%91/"/>
     
       <category term="zkw线段树" scheme="https://tifa-233.xyz/tags/zkw%E7%BA%BF%E6%AE%B5%E6%A0%91/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>mhchem指令手册-中文文档</title>
+    <link href="https://tifa-233.xyz/article/mhchem-function/"/>
+    <id>https://tifa-233.xyz/article/mhchem-function/</id>
+    <published>1020-05-06T08:26:03.000Z</published>
+    <updated>2020-05-10T09:01:38.127Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;汉化自&lt;a href=&quot;https://mhchem.github.io/MathJax-mhchem/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Manual for: mhchem for MathJax, mhchem for KaTeX&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;按笔者习惯调整了顺序&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="文档" scheme="https://tifa-233.xyz/categories/%E6%96%87%E6%A1%A3/"/>
+    
+    
+      <category term="文档" scheme="https://tifa-233.xyz/tags/%E6%96%87%E6%A1%A3/"/>
     
   </entry>
   
@@ -494,15 +544,15 @@ M834 80h400000v40h-400000z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/s
   </entry>
   
   <entry>
-    <title>测试文章-Tags</title>
-    <link href="https://tifa-233.xyz/article/test-tag/"/>
-    <id>https://tifa-233.xyz/article/test-tag/</id>
+    <title>测试文章-mermaid</title>
+    <link href="https://tifa-233.xyz/article/test-mermaid/"/>
+    <id>https://tifa-233.xyz/article/test-mermaid/</id>
     <published>0999-12-31T15:55:43.000Z</published>
-    <updated>2020-05-08T10:04:52.699Z</updated>
+    <updated>2020-05-09T13:20:15.404Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;来自 &lt;a href=&quot;https://tding.top/archives/29bfe8c9.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://tding.top/archives/29bfe8c9.html&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;部分示例来自 &lt;a href=&quot;https://mermaid-js.github.io/mermaid&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://mermaid-js.github.io/mermaid&lt;/a&gt;&lt;/p&gt;
     
     </summary>
     
@@ -513,15 +563,15 @@ M834 80h400000v40h-400000z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/s
   </entry>
   
   <entry>
-    <title>测试文章-mermaid</title>
-    <link href="https://tifa-233.xyz/article/test-mermaid/"/>
-    <id>https://tifa-233.xyz/article/test-mermaid/</id>
+    <title>测试文章-Tags</title>
+    <link href="https://tifa-233.xyz/article/test-tag/"/>
+    <id>https://tifa-233.xyz/article/test-tag/</id>
     <published>0999-12-31T15:55:43.000Z</published>
-    <updated>2020-05-09T13:20:15.404Z</updated>
+    <updated>2020-05-08T10:04:52.699Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;部分示例来自 &lt;a href=&quot;https://mermaid-js.github.io/mermaid&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://mermaid-js.github.io/mermaid&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;来自 &lt;a href=&quot;https://tding.top/archives/29bfe8c9.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://tding.top/archives/29bfe8c9.html&lt;/a&gt;&lt;/p&gt;
     
     </summary>
     
