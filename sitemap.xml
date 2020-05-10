@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://tifa-233.xyz/article/test-tag/</loc>
+    
+    <lastmod>2020-05-10T13:37:09.111Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://tifa-233.xyz/article/adaptive-simpson-rule/</loc>
     
     <lastmod>2020-05-10T13:01:42.054Z</lastmod>
@@ -145,13 +152,6 @@
     <loc>https://tifa-233.xyz/article/test-mermaid/</loc>
     
     <lastmod>2020-05-09T13:20:15.404Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://tifa-233.xyz/article/test-tag/</loc>
-    
-    <lastmod>2020-05-08T10:04:52.699Z</lastmod>
     
   </url>
   
