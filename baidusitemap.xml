@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://tifa-233.xyz/article/solution-codeforces-639-2/</loc>
+    <loc>https://tifa-233.xyz/article/linear-space/</loc>
     <lastmod>2020-05-27</lastmod>
   </url>  <url>
-    <loc>https://tifa-233.xyz/article/solution-codeforces-645-2/</loc>
-    <lastmod>2020-05-27</lastmod>
-  </url>  <url>
-    <loc>https://tifa-233.xyz/article/about/</loc>
+    <loc>https://tifa-233.xyz/article/mobius-inverse-formula/</loc>
     <lastmod>2020-05-27</lastmod>
   </url>  <url>
     <loc>https://tifa-233.xyz/article/quadratic-residue-and-quadratic-reciprocity-law/</loc>
@@ -16,7 +13,13 @@
     <loc>https://tifa-233.xyz/article/primitive-root-and-discrete-logarithm/</loc>
     <lastmod>2020-05-27</lastmod>
   </url>  <url>
-    <loc>https://tifa-233.xyz/article/mobius-inverse-formula/</loc>
+    <loc>https://tifa-233.xyz/article/solution-codeforces-639-2/</loc>
+    <lastmod>2020-05-27</lastmod>
+  </url>  <url>
+    <loc>https://tifa-233.xyz/article/solution-codeforces-645-2/</loc>
+    <lastmod>2020-05-27</lastmod>
+  </url>  <url>
+    <loc>https://tifa-233.xyz/article/about/</loc>
     <lastmod>2020-05-27</lastmod>
   </url>  <url>
     <loc>https://tifa-233.xyz/article/adaptive-simpson-rule/</loc>

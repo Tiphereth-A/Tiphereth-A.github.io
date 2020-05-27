@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tifa-233.xyz/"/>
-  <updated>2020-05-27T10:03:20.659Z</updated>
+  <updated>2020-05-27T16:20:06.603Z</updated>
   <id>https://tifa-233.xyz/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>笔记 - 线性空间</title>
+    <link href="https://tifa-233.xyz/article/linear-space/"/>
+    <id>https://tifa-233.xyz/article/linear-space/</id>
+    <published>2020-05-27T12:37:42.000Z</published>
+    <updated>2020-05-27T16:20:06.603Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;线性空间是基于集合的, 在集合的基础上又额外要求了各元素之间的关系&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="笔记" scheme="https://tifa-233.xyz/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="数学" scheme="https://tifa-233.xyz/categories/%E7%AC%94%E8%AE%B0/%E6%95%B0%E5%AD%A6/"/>
+    
+    
+      <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
+    
+      <category term="笔记" scheme="https://tifa-233.xyz/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="线性代数" scheme="https://tifa-233.xyz/tags/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/"/>
+    
+      <category term="线性空间" scheme="https://tifa-233.xyz/tags/%E7%BA%BF%E6%80%A7%E7%A9%BA%E9%97%B4/"/>
+    
+  </entry>
   
   <entry>
     <title>题解 - Codeforces Round #645 Div. 2 (A-D)</title>
@@ -207,11 +236,11 @@
   </entry>
   
   <entry>
-    <title>二次剩余,legendre符号与二次互反律</title>
+    <title>笔记 - 二次剩余,legendre符号与二次互反律</title>
     <link href="https://tifa-233.xyz/article/quadratic-residue-and-quadratic-reciprocity-law/"/>
     <id>https://tifa-233.xyz/article/quadratic-residue-and-quadratic-reciprocity-law/</id>
     <published>2020-04-19T03:02:38.000Z</published>
-    <updated>2020-05-27T07:11:40.398Z</updated>
+    <updated>2020-05-27T15:17:09.148Z</updated>
     
     <summary type="html">
     
@@ -244,11 +273,11 @@
   </entry>
   
   <entry>
-    <title>原根与指数(离散对数)</title>
+    <title>笔记 - 原根与指数(离散对数)</title>
     <link href="https://tifa-233.xyz/article/primitive-root-and-discrete-logarithm/"/>
     <id>https://tifa-233.xyz/article/primitive-root-and-discrete-logarithm/</id>
     <published>2020-04-18T14:54:50.000Z</published>
-    <updated>2020-05-27T07:11:36.985Z</updated>
+    <updated>2020-05-27T15:17:05.682Z</updated>
     
     <summary type="html">
     
@@ -278,11 +307,11 @@
   </entry>
   
   <entry>
-    <title>数论函数,dirichlet卷积与möbius反演</title>
+    <title>笔记 - 数论函数,dirichlet卷积与möbius反演</title>
     <link href="https://tifa-233.xyz/article/mobius-inverse-formula/"/>
     <id>https://tifa-233.xyz/article/mobius-inverse-formula/</id>
     <published>2020-04-18T10:06:32.000Z</published>
-    <updated>2020-05-27T07:11:33.411Z</updated>
+    <updated>2020-05-27T15:17:13.807Z</updated>
     
     <summary type="html">
     
@@ -610,25 +639,6 @@ M834 80h400000v40h-400000z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/s
     
     
       <category term="文档" scheme="https://tifa-233.xyz/tags/%E6%96%87%E6%A1%A3/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>测试文章-加密</title>
-    <link href="https://tifa-233.xyz/article/test-encrypt/"/>
-    <id>https://tifa-233.xyz/article/test-encrypt/</id>
-    <published>0999-12-31T15:55:43.000Z</published>
-    <updated>2020-05-09T14:01:14.074Z</updated>
-    
-    <summary type="html">
-    
-      有东西被加密了，请输入密码查看
-    
-    </summary>
-    
-    
-    
-      <category term="测试" scheme="https://tifa-233.xyz/tags/%E6%B5%8B%E8%AF%95/"/>
     
   </entry>
   
