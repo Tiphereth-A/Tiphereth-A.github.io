@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tifa-233.xyz/"/>
-  <updated>2020-05-11T14:20:04.192Z</updated>
+  <updated>2020-05-27T10:03:20.659Z</updated>
   <id>https://tifa-233.xyz/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>题解 - Codeforces Round #645 Div. 2 (A-D)</title>
+    <link href="https://tifa-233.xyz/article/solution-codeforces-645-2/"/>
+    <id>https://tifa-233.xyz/article/solution-codeforces-645-2/</id>
+    <published>2020-05-27T07:12:06.000Z</published>
+    <updated>2020-05-27T10:03:20.659Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;a href=&quot;https://codeforces.com/contest/1358&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;比赛链接&lt;/a&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="程序设计" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
+    
+      <category term="题解" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E9%A2%98%E8%A7%A3/"/>
+    
+    
+      <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
+    
+      <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
+    
+      <category term="CodeForces" scheme="https://tifa-233.xyz/tags/CodeForces/"/>
+    
+  </entry>
   
   <entry>
     <title>差分约束 - 学习笔记</title>
@@ -87,11 +114,11 @@
   </entry>
   
   <entry>
-    <title>题解 - Codeforces Round #639 Div. 2</title>
+    <title>题解 - Codeforces Round #639 Div. 2 (A-D)</title>
     <link href="https://tifa-233.xyz/article/solution-codeforces-639-2/"/>
     <id>https://tifa-233.xyz/article/solution-codeforces-639-2/</id>
     <published>2020-05-06T16:07:49.000Z</published>
-    <updated>2020-05-27T06:51:35.009Z</updated>
+    <updated>2020-05-27T10:04:01.767Z</updated>
     
     <summary type="html">
     
@@ -166,18 +193,12 @@
     <link href="https://tifa-233.xyz/article/about/"/>
     <id>https://tifa-233.xyz/article/about/</id>
     <published>2020-05-04T11:07:23.000Z</published>
-    <updated>2020-05-27T07:02:17.838Z</updated>
+    <updated>2020-05-27T08:00:45.363Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;一个ACMer记录自己学习过程的小站&lt;/p&gt;
-
-        
-      
+      &lt;p&gt;一个ACMer记录用的小站&lt;/p&gt;
+&lt;p&gt;题解中的代码删去了头文件等, 只是为了让代码的逻辑更清晰&lt;/p&gt;
     
     </summary>
     
@@ -186,11 +207,11 @@
   </entry>
   
   <entry>
-    <title>数论笔记-二次剩余,legendre符号与二次互反律</title>
+    <title>二次剩余,legendre符号与二次互反律</title>
     <link href="https://tifa-233.xyz/article/quadratic-residue-and-quadratic-reciprocity-law/"/>
     <id>https://tifa-233.xyz/article/quadratic-residue-and-quadratic-reciprocity-law/</id>
     <published>2020-04-19T03:02:38.000Z</published>
-    <updated>2020-05-27T06:51:43.883Z</updated>
+    <updated>2020-05-27T07:11:40.398Z</updated>
     
     <summary type="html">
     
@@ -223,11 +244,11 @@
   </entry>
   
   <entry>
-    <title>数论笔记-原根与指数(离散对数)</title>
+    <title>原根与指数(离散对数)</title>
     <link href="https://tifa-233.xyz/article/primitive-root-and-discrete-logarithm/"/>
     <id>https://tifa-233.xyz/article/primitive-root-and-discrete-logarithm/</id>
     <published>2020-04-18T14:54:50.000Z</published>
-    <updated>2020-05-27T06:51:46.332Z</updated>
+    <updated>2020-05-27T07:11:36.985Z</updated>
     
     <summary type="html">
     
@@ -257,11 +278,11 @@
   </entry>
   
   <entry>
-    <title>数论笔记-数论函数,dirichlet卷积与möbius反演</title>
+    <title>数论函数,dirichlet卷积与möbius反演</title>
     <link href="https://tifa-233.xyz/article/mobius-inverse-formula/"/>
     <id>https://tifa-233.xyz/article/mobius-inverse-formula/</id>
     <published>2020-04-18T10:06:32.000Z</published>
-    <updated>2020-05-27T06:51:48.852Z</updated>
+    <updated>2020-05-27T07:11:33.411Z</updated>
     
     <summary type="html">
     
@@ -593,34 +614,15 @@ M834 80h400000v40h-400000z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/s
   </entry>
   
   <entry>
-    <title>测试文章-mermaid</title>
-    <link href="https://tifa-233.xyz/article/test-mermaid/"/>
-    <id>https://tifa-233.xyz/article/test-mermaid/</id>
+    <title>测试文章-加密</title>
+    <link href="https://tifa-233.xyz/article/test-encrypt/"/>
+    <id>https://tifa-233.xyz/article/test-encrypt/</id>
     <published>0999-12-31T15:55:43.000Z</published>
-    <updated>2020-05-09T13:20:15.404Z</updated>
+    <updated>2020-05-09T14:01:14.074Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;部分示例来自 &lt;a href=&quot;https://mermaid-js.github.io/mermaid&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://mermaid-js.github.io/mermaid&lt;/a&gt;&lt;/p&gt;
-    
-    </summary>
-    
-    
-    
-      <category term="测试" scheme="https://tifa-233.xyz/tags/%E6%B5%8B%E8%AF%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>测试文章-Tags</title>
-    <link href="https://tifa-233.xyz/article/test-tag/"/>
-    <id>https://tifa-233.xyz/article/test-tag/</id>
-    <published>0999-12-31T15:55:43.000Z</published>
-    <updated>2020-05-10T13:37:09.111Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;来自 &lt;a href=&quot;https://tding.top/archives/29bfe8c9.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://tding.top/archives/29bfe8c9.html&lt;/a&gt;&lt;/p&gt;
+      有东西被加密了，请输入密码查看
     
     </summary>
     
