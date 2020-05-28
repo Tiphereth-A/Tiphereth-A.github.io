@@ -36,7 +36,7 @@
 <meta property="og:description" content="开胃菜(数论分块)  ∀a,b,c∈N∗,⌊abc⌋&#x3D;⌊⌊ab⌋c⌋\forall a,b,c\in\Bbb{N}^*,\displaystyle\Big\lfloor{a\over bc}\Big\rfloor&#x3D;\bigg\lfloor{\lfloor{a\over b}\rfloor\over c}\bigg\rfloor∀a,b,c∈N∗,⌊bca​⌋&#x3D;⌊c⌊ba​⌋​⌋ ∣{n∈N∗∣⌊">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-04-18T10:06:32.000Z">
-<meta property="article:modified_time" content="2020-05-27T15:17:13.807Z">
+<meta property="article:modified_time" content="2020-05-28T05:34:15.688Z">
 <meta property="article:author" content="Tiphereth">
 <meta property="article:tag" content="数学">
 <meta property="article:tag" content="笔记">
@@ -45,6 +45,7 @@
 <meta property="article:tag" content="数论函数">
 <meta property="article:tag" content="Dirichlet卷积">
 <meta property="article:tag" content="Möbius反演">
+<meta property="article:tag" content="卷积">
 <meta name="twitter:card" content="summary">
 
 <link rel="canonical" href="https://tifa-233.xyz/article/mobius-inverse-formula/">
@@ -136,17 +137,17 @@
   </li>
         <li class="menu-item menu-item-tags">
 
-    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">44</span></a>
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">46</span></a>
 
   </li>
         <li class="menu-item menu-item-categories">
 
-    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">7</span></a>
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">9</span></a>
 
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">23</span></a>
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">24</span></a>
 
   </li>
         <li class="menu-item menu-item-favlinks">
@@ -236,7 +237,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-05-27 23:17:13" itemprop="dateModified" datetime="2020-05-27T23:17:13+08:00">2020-05-27</time>
+                <time title="修改时间：2020-05-28 13:34:15" itemprop="dateModified" datetime="2020-05-28T13:34:15+08:00">2020-05-28</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -323,12 +324,7 @@ M834 80h400000v40h-400000z'/></svg></span></span></span><span class="vlist-s">�
 <p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mi>f</mi><mo>∗</mo><mi>g</mi><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo><mo>:</mo><mo>=</mo><mstyle scriptlevel="0" displaystyle="true"><munder><mo>∑</mo><mrow><mi>d</mi><mo>∣</mo><mi>n</mi></mrow></munder><mi>f</mi><mo stretchy="false">(</mo><mi>d</mi><mo stretchy="false">)</mo><mi>g</mi><mo stretchy="false">(</mo><mfrac><mi>n</mi><mi>d</mi></mfrac><mo stretchy="false">)</mo></mstyle></mrow><annotation encoding="application/x-tex">(f*g)(n):=\displaystyle\sum_{d\mid n}f(d)g({n\over d})</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.10764em;">f</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">g</span><span class="mclose">)</span><span class="mopen">(</span><span class="mord mathdefault">n</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">:</span></span><span class="base"><span class="strut" style="height:0.36687em;vertical-align:0em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:2.623565em;vertical-align:-1.516005em;"></span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.050005em;"><span style="top:-1.808995em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">d</span><span class="mrel mtight">∣</span><span class="mord mathdefault mtight">n</span></span></span></span><span style="top:-3.0500049999999996em;"><span class="pstrut" style="height:3.05em;"></span><span><span class="mop op-symbol large-op">∑</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.516005em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.10764em;">f</span><span class="mopen">(</span><span class="mord mathdefault">d</span><span class="mclose">)</span><span class="mord mathdefault" style="margin-right:0.03588em;">g</span><span class="mopen">(</span><span class="mord"><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.10756em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault">d</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.686em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span><span class="mclose">)</span></span></span></span></p>
 <h3 id="性质-2"><a class="markdownIt-Anchor" href="#性质-2"></a> 性质</h3>
 <ol>
-<li>结合律, 交换律, 幺元, 单位元
-<ul>
-<li>幺元: <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>e</mi><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">e(n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">e</span><span class="mopen">(</span><span class="mord mathdefault">n</span><span class="mclose">)</span></span></span></span></li>
-<li>单位元: <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϵ</mi><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\epsilon(n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">ϵ</span><span class="mopen">(</span><span class="mord mathdefault">n</span><span class="mclose">)</span></span></span></span></li>
-</ul>
-</li>
+<li><a href="../multiple-sum">结合律</a>, 交换律, 乘法幺元: <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>e</mi></mrow><annotation encoding="application/x-tex">e</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">e</span></span></span></span>, 卷积幺元: <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϵ</mi></mrow><annotation encoding="application/x-tex">\epsilon</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">ϵ</span></span></span></span></li>
 </ol>
 <h3 id="例子-3"><a class="markdownIt-Anchor" href="#例子-3"></a> 例子</h3>
 <ol>
@@ -371,6 +367,7 @@ M834 80h400000v40h-400000z'/></svg></span></span></span><span class="vlist-s">�
               <a href="/tags/%E6%95%B0%E8%AE%BA%E5%87%BD%E6%95%B0/" rel="tag"># 数论函数</a>
               <a href="/tags/Dirichlet%E5%8D%B7%E7%A7%AF/" rel="tag"># Dirichlet卷积</a>
               <a href="/tags/Mobius%E5%8F%8D%E6%BC%94/" rel="tag"># Möbius反演</a>
+              <a href="/tags/%E5%8D%B7%E7%A7%AF/" rel="tag"># 卷积</a>
           </div>
 
         
@@ -459,20 +456,20 @@ M834 80h400000v40h-400000z'/></svg></span></span></span><span class="vlist-s">�
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">23</span>
+          <span class="site-state-item-count">24</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">7</span>
+        <span class="site-state-item-count">9</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">44</span>
+        <span class="site-state-item-count">46</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>

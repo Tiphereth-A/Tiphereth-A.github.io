@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tifa-233.xyz/"/>
-  <updated>2020-05-27T16:20:06.603Z</updated>
+  <updated>2020-05-28T05:50:02.669Z</updated>
   <id>https://tifa-233.xyz/</id>
   
   <author>
@@ -17,15 +17,44 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>随笔 - 从卷积的结合律看多重求和</title>
+    <link href="https://tifa-233.xyz/article/multiple-sum/"/>
+    <id>https://tifa-233.xyz/article/multiple-sum/</id>
+    <published>2020-05-28T05:02:58.000Z</published>
+    <updated>2020-05-28T05:50:02.669Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mtext&gt;  &lt;/mtext&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;\;&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0em;vertical-align:0em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2777777777777778em;&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="随笔" scheme="https://tifa-233.xyz/categories/%E9%9A%8F%E7%AC%94/"/>
+    
+      <category term="数学" scheme="https://tifa-233.xyz/categories/%E9%9A%8F%E7%AC%94/%E6%95%B0%E5%AD%A6/"/>
+    
+    
+      <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
+    
+      <category term="数论" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E8%AE%BA/"/>
+    
+      <category term="卷积" scheme="https://tifa-233.xyz/tags/%E5%8D%B7%E7%A7%AF/"/>
+    
+      <category term="随笔" scheme="https://tifa-233.xyz/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+  </entry>
+  
+  <entry>
     <title>笔记 - 线性空间</title>
     <link href="https://tifa-233.xyz/article/linear-space/"/>
     <id>https://tifa-233.xyz/article/linear-space/</id>
     <published>2020-05-27T12:37:42.000Z</published>
-    <updated>2020-05-27T16:20:06.603Z</updated>
+    <updated>2020-05-28T03:12:48.680Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;线性空间是基于集合的, 在集合的基础上又额外要求了各元素之间的关系&lt;/p&gt;
+      &lt;p&gt;线性空间是基于集合的, 在集合的基础上又额外规定了各元素之间的关系&lt;/p&gt;
     
     </summary>
     
@@ -120,11 +149,12 @@
     <link href="https://tifa-233.xyz/article/solution-codeforces-640-4/"/>
     <id>https://tifa-233.xyz/article/solution-codeforces-640-4/</id>
     <published>2020-05-09T17:03:23.000Z</published>
-    <updated>2020-05-27T06:51:30.995Z</updated>
+    <updated>2020-05-28T05:53:50.675Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;菜 我 菜&lt;/p&gt;
+      &lt;p&gt;&lt;a href=&quot;https://codeforces.com/contest/1352&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;比赛链接&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;菜 我 菜&lt;/p&gt;
     
     </summary>
     
@@ -311,7 +341,7 @@
     <link href="https://tifa-233.xyz/article/mobius-inverse-formula/"/>
     <id>https://tifa-233.xyz/article/mobius-inverse-formula/</id>
     <published>2020-04-18T10:06:32.000Z</published>
-    <updated>2020-05-27T15:17:13.807Z</updated>
+    <updated>2020-05-28T05:34:15.688Z</updated>
     
     <summary type="html">
     
@@ -354,6 +384,8 @@ M834 80h400000v40h-400000z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/s
       <category term="Dirichlet卷积" scheme="https://tifa-233.xyz/tags/Dirichlet%E5%8D%B7%E7%A7%AF/"/>
     
       <category term="Möbius反演" scheme="https://tifa-233.xyz/tags/Mobius%E5%8F%8D%E6%BC%94/"/>
+    
+      <category term="卷积" scheme="https://tifa-233.xyz/tags/%E5%8D%B7%E7%A7%AF/"/>
     
   </entry>
   
@@ -410,9 +442,9 @@ M834 80h400000v40h-400000z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/s
     
       <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
     
-      <category term="省选" scheme="https://tifa-233.xyz/tags/%E7%9C%81%E9%80%89/"/>
-    
       <category term="洛谷" scheme="https://tifa-233.xyz/tags/%E6%B4%9B%E8%B0%B7/"/>
+    
+      <category term="省选" scheme="https://tifa-233.xyz/tags/%E7%9C%81%E9%80%89/"/>
     
       <category term="BZOJ" scheme="https://tifa-233.xyz/tags/BZOJ/"/>
     
@@ -616,29 +648,6 @@ M834 80h400000v40h-400000z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/s
       <category term="线段树" scheme="https://tifa-233.xyz/tags/%E7%BA%BF%E6%AE%B5%E6%A0%91/"/>
     
       <category term="zkw线段树" scheme="https://tifa-233.xyz/tags/zkw%E7%BA%BF%E6%AE%B5%E6%A0%91/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>mhchem指令手册-中文文档</title>
-    <link href="https://tifa-233.xyz/article/mhchem-function/"/>
-    <id>https://tifa-233.xyz/article/mhchem-function/</id>
-    <published>1020-05-06T08:26:03.000Z</published>
-    <updated>2020-05-27T06:52:56.718Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;汉化自&lt;a href=&quot;https://mhchem.github.io/MathJax-mhchem/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Manual for: mhchem for MathJax, mhchem for KaTeX&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;在将渲染引擎切换为KaTeX之后暂未找到开启mhchem的方式, 所以效果请参照原文&lt;/p&gt;
-&lt;p&gt;按笔者习惯调整了顺序&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="文档" scheme="https://tifa-233.xyz/categories/%E6%96%87%E6%A1%A3/"/>
-    
-    
-      <category term="文档" scheme="https://tifa-233.xyz/tags/%E6%96%87%E6%A1%A3/"/>
     
   </entry>
   
