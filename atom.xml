@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tifa-233.xyz/"/>
-  <updated>2020-05-28T07:15:29.123Z</updated>
+  <updated>2020-05-29T01:31:42.452Z</updated>
   <id>https://tifa-233.xyz/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>随笔 - 从卷积的结合律看多重求和</title>
+    <title>随笔 - 从卷积的结合律看多重求和的交换</title>
     <link href="https://tifa-233.xyz/article/multiple-sum/"/>
     <id>https://tifa-233.xyz/article/multiple-sum/</id>
     <published>2020-05-28T05:02:58.000Z</published>
-    <updated>2020-05-28T07:15:29.123Z</updated>
+    <updated>2020-05-29T01:31:42.452Z</updated>
     
     <summary type="html">
     
@@ -37,11 +37,11 @@
     
       <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
     
-      <category term="随笔" scheme="https://tifa-233.xyz/tags/%E9%9A%8F%E7%AC%94/"/>
-    
       <category term="数论" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E8%AE%BA/"/>
     
       <category term="卷积" scheme="https://tifa-233.xyz/tags/%E5%8D%B7%E7%A7%AF/"/>
+    
+      <category term="随笔" scheme="https://tifa-233.xyz/tags/%E9%9A%8F%E7%AC%94/"/>
     
   </entry>
   
@@ -341,7 +341,7 @@
     <link href="https://tifa-233.xyz/article/mobius-inverse-formula/"/>
     <id>https://tifa-233.xyz/article/mobius-inverse-formula/</id>
     <published>2020-04-18T10:06:32.000Z</published>
-    <updated>2020-05-28T05:34:15.688Z</updated>
+    <updated>2020-05-29T01:29:15.469Z</updated>
     
     <summary type="html">
     
@@ -377,8 +377,6 @@ M834 80h400000v40h-400000z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/s
     
       <category term="数论" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E8%AE%BA/"/>
     
-      <category term="卷积" scheme="https://tifa-233.xyz/tags/%E5%8D%B7%E7%A7%AF/"/>
-    
       <category term="数论分块" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E8%AE%BA%E5%88%86%E5%9D%97/"/>
     
       <category term="数论函数" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E8%AE%BA%E5%87%BD%E6%95%B0/"/>
@@ -386,6 +384,8 @@ M834 80h400000v40h-400000z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/s
       <category term="Dirichlet卷积" scheme="https://tifa-233.xyz/tags/Dirichlet%E5%8D%B7%E7%A7%AF/"/>
     
       <category term="Möbius反演" scheme="https://tifa-233.xyz/tags/Mobius%E5%8F%8D%E6%BC%94/"/>
+    
+      <category term="卷积" scheme="https://tifa-233.xyz/tags/%E5%8D%B7%E7%A7%AF/"/>
     
   </entry>
   
@@ -442,9 +442,9 @@ M834 80h400000v40h-400000z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/s
     
       <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
     
-      <category term="省选" scheme="https://tifa-233.xyz/tags/%E7%9C%81%E9%80%89/"/>
-    
       <category term="洛谷" scheme="https://tifa-233.xyz/tags/%E6%B4%9B%E8%B0%B7/"/>
+    
+      <category term="省选" scheme="https://tifa-233.xyz/tags/%E7%9C%81%E9%80%89/"/>
     
       <category term="BZOJ" scheme="https://tifa-233.xyz/tags/BZOJ/"/>
     
