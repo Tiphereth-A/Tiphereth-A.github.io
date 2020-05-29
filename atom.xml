@@ -50,7 +50,7 @@
     <link href="https://tifa-233.xyz/article/linear-space/"/>
     <id>https://tifa-233.xyz/article/linear-space/</id>
     <published>2020-05-27T12:37:42.000Z</published>
-    <updated>2020-05-28T09:02:06.960Z</updated>
+    <updated>2020-05-29T02:01:56.121Z</updated>
     
     <summary type="html">
     
@@ -202,16 +202,16 @@
   </entry>
   
   <entry>
-    <title>KaTeX指令手册-中文文档</title>
-    <link href="https://tifa-233.xyz/article/katex-supported-functions/"/>
-    <id>https://tifa-233.xyz/article/katex-supported-functions/</id>
+    <title>KaTeX指令速查表</title>
+    <link href="https://tifa-233.xyz/article/katex-support-table/"/>
+    <id>https://tifa-233.xyz/article/katex-support-table/</id>
     <published>2020-05-05T15:59:37.000Z</published>
-    <updated>2020-05-10T09:01:24.747Z</updated>
+    <updated>2020-05-10T09:01:14.089Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;汉化自 &lt;a href=&quot;https://katex.org/docs/supported.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Supported functions - KaTeX&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;s&gt;注意: 本博客采用MathJax渲染, 写这篇博客的初衷也是比较二者支持指令的异同, 渲染结果请以原文为准&lt;/s&gt;&lt;/p&gt;
+      &lt;p&gt;来自 &lt;a href=&quot;https://katex.org/docs/support_table.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Support table - KaTeX&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;s&gt;注意: 本博客采用MathJax渲染, 示例请以原文为准&lt;/s&gt;&lt;/p&gt;
 &lt;p&gt;本博客渲染引擎已更换为KaTeX, MathJax不支持的指令已注明, KaTeX🐂🍺&lt;/p&gt;
     
     </summary>
@@ -225,16 +225,16 @@
   </entry>
   
   <entry>
-    <title>KaTeX指令速查表</title>
-    <link href="https://tifa-233.xyz/article/katex-support-table/"/>
-    <id>https://tifa-233.xyz/article/katex-support-table/</id>
+    <title>KaTeX指令手册-中文文档</title>
+    <link href="https://tifa-233.xyz/article/katex-supported-functions/"/>
+    <id>https://tifa-233.xyz/article/katex-supported-functions/</id>
     <published>2020-05-05T15:59:37.000Z</published>
-    <updated>2020-05-10T09:01:14.089Z</updated>
+    <updated>2020-05-10T09:01:24.747Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;来自 &lt;a href=&quot;https://katex.org/docs/support_table.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Support table - KaTeX&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;s&gt;注意: 本博客采用MathJax渲染, 示例请以原文为准&lt;/s&gt;&lt;/p&gt;
+      &lt;p&gt;汉化自 &lt;a href=&quot;https://katex.org/docs/supported.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Supported functions - KaTeX&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;s&gt;注意: 本博客采用MathJax渲染, 写这篇博客的初衷也是比较二者支持指令的异同, 渲染结果请以原文为准&lt;/s&gt;&lt;/p&gt;
 &lt;p&gt;本博客渲染引擎已更换为KaTeX, MathJax不支持的指令已注明, KaTeX🐂🍺&lt;/p&gt;
     
     </summary>
@@ -442,9 +442,9 @@ M834 80h400000v40h-400000z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/s
     
       <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
     
-      <category term="洛谷" scheme="https://tifa-233.xyz/tags/%E6%B4%9B%E8%B0%B7/"/>
-    
       <category term="省选" scheme="https://tifa-233.xyz/tags/%E7%9C%81%E9%80%89/"/>
+    
+      <category term="洛谷" scheme="https://tifa-233.xyz/tags/%E6%B4%9B%E8%B0%B7/"/>
     
       <category term="BZOJ" scheme="https://tifa-233.xyz/tags/BZOJ/"/>
     
