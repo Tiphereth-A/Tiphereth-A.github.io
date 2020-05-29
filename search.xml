@@ -9693,7 +9693,7 @@ M834 80h400000v40h-400000z'/></svg></span></span></span><span class="vlist-s">�
 <p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mi>f</mi><mo>∗</mo><mi>g</mi><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo><mo>:</mo><mo>=</mo><mstyle scriptlevel="0" displaystyle="true"><munder><mo>∑</mo><mrow><mi>d</mi><mo>∣</mo><mi>n</mi></mrow></munder><mi>f</mi><mo stretchy="false">(</mo><mi>d</mi><mo stretchy="false">)</mo><mi>g</mi><mo stretchy="false">(</mo><mfrac><mi>n</mi><mi>d</mi></mfrac><mo stretchy="false">)</mo></mstyle></mrow><annotation encoding="application/x-tex">(f*g)(n):=\displaystyle\sum_{d\mid n}f(d)g({n\over d})</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.10764em;">f</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">g</span><span class="mclose">)</span><span class="mopen">(</span><span class="mord mathdefault">n</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">:</span></span><span class="base"><span class="strut" style="height:0.36687em;vertical-align:0em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:2.623565em;vertical-align:-1.516005em;"></span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.050005em;"><span style="top:-1.808995em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">d</span><span class="mrel mtight">∣</span><span class="mord mathdefault mtight">n</span></span></span></span><span style="top:-3.0500049999999996em;"><span class="pstrut" style="height:3.05em;"></span><span><span class="mop op-symbol large-op">∑</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.516005em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.10764em;">f</span><span class="mopen">(</span><span class="mord mathdefault">d</span><span class="mclose">)</span><span class="mord mathdefault" style="margin-right:0.03588em;">g</span><span class="mopen">(</span><span class="mord"><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.10756em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault">d</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.686em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span><span class="mclose">)</span></span></span></span></p>
 <h3 id="性质-2"><a class="markdownIt-Anchor" href="#性质-2"></a> 性质</h3>
 <ul>
-<li>幺半群
+<li>交换幺半群
 <ul>
 <li><a href="../multiple-sum">结合律</a>, 交换律, 幺元: <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϵ</mi></mrow><annotation encoding="application/x-tex">\epsilon</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">ϵ</span></span></span></span></li>
 </ul>
@@ -9864,8 +9864,8 @@ M834 80h400000v40h-400000z'/></svg></span></span></span><span class="vlist-s">�
         <tag>程序设计</tag>
         <tag>算法</tag>
         <tag>题解</tag>
-        <tag>省选</tag>
         <tag>洛谷</tag>
+        <tag>省选</tag>
         <tag>BZOJ</tag>
         <tag>LOJ</tag>
         <tag>CQOI</tag>
@@ -11270,6 +11270,50 @@ $\underset{\mathrm{red}}{\ce{[Hg^{II}I4]^2-}}$}</p>
       </tags>
   </entry>
   <entry>
+    <title>测试文章-Tags</title>
+    <url>/article/test-tag/</url>
+    <content><![CDATA[<p>来自 <a href="https://tding.top/archives/29bfe8c9.html" target="_blank" rel="noopener">https://tding.top/archives/29bfe8c9.html</a></p>
+<a id="more"></a>
+<h2 id="文本居中引用"><a class="markdownIt-Anchor" href="#文本居中引用"></a> 文本居中引用</h2>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>世间所有的相遇，都是久别重逢</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+<h2 id="提示"><a class="markdownIt-Anchor" href="#提示"></a> 提示</h2>
+<div class="note default">
+            <p>default 提示块标签</p>
+          </div>
+<div class="note primary">
+            <p>primary 提示块标签</p>
+          </div>
+<div class="note success">
+            <p>success 提示块标签</p>
+          </div>
+<div class="note info">
+            <p>info 提示块标签</p>
+          </div>
+<div class="note warning">
+            <p>warning 提示块标签</p>
+          </div>
+<div class="note danger">
+            <p>danger 提示块标签</p>
+          </div>
+<h2 id="标签"><a class="markdownIt-Anchor" href="#标签"></a> 标签</h2>
+<span class="label default">默认</span> <span class="label primary">主要</span> <span class="label success">成功</span> <span class="label info">信息</span> <span class="label warning">警告</span> <span class="label danger">危险</span> 
+<span class="label success">这是成功的信息</span>
+<h2 id="选项卡"><a class="markdownIt-Anchor" href="#选项卡"></a> 选项卡</h2>
+<div class="tabs" id="tab"><ul class="nav-tabs"><li class="tab active"><a href="#tab-1">tab 1</a></li><li class="tab"><a href="#tab-2">tab 2</a></li><li class="tab"><a href="#tab-3">A</a></li></ul><div class="tab-content"><div class="tab-pane active" id="tab-1"><p><strong>选项卡 1</strong></p></div><div class="tab-pane" id="tab-2"><p><strong>选项卡 2</strong></p></div><div class="tab-pane" id="tab-3"><p><strong>选项卡 3</strong> 名字为A</p></div></div></div>
+<h2 id="按钮"><a class="markdownIt-Anchor" href="#按钮"></a> 按钮</h2>
+<div><a class="btn" href="https://tiphereth-a.github.io/ " target="_blank" rel="noopener">
+            <i class="fa fa-home fa-fw"></i>首页
+          </a></div>]]></content>
+      <tags>
+        <tag>测试</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>测试文章-mermaid</title>
     <url>/article/test-mermaid/</url>
     <content><![CDATA[<p>部分示例来自 <a href="https://mermaid-js.github.io/mermaid" target="_blank" rel="noopener">https://mermaid-js.github.io/mermaid</a></p>
@@ -11405,50 +11449,6 @@ merge newbranch</pre>
         thi --> [*]
     }</pre>
 ]]></content>
-      <tags>
-        <tag>测试</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>测试文章-Tags</title>
-    <url>/article/test-tag/</url>
-    <content><![CDATA[<p>来自 <a href="https://tding.top/archives/29bfe8c9.html" target="_blank" rel="noopener">https://tding.top/archives/29bfe8c9.html</a></p>
-<a id="more"></a>
-<h2 id="文本居中引用"><a class="markdownIt-Anchor" href="#文本居中引用"></a> 文本居中引用</h2>
-<blockquote class="blockquote-center">
-            <i class="fa fa-quote-left"></i>
-            <p>世间所有的相遇，都是久别重逢</p>
-
-            <i class="fa fa-quote-right"></i>
-          </blockquote>
-<h2 id="提示"><a class="markdownIt-Anchor" href="#提示"></a> 提示</h2>
-<div class="note default">
-            <p>default 提示块标签</p>
-          </div>
-<div class="note primary">
-            <p>primary 提示块标签</p>
-          </div>
-<div class="note success">
-            <p>success 提示块标签</p>
-          </div>
-<div class="note info">
-            <p>info 提示块标签</p>
-          </div>
-<div class="note warning">
-            <p>warning 提示块标签</p>
-          </div>
-<div class="note danger">
-            <p>danger 提示块标签</p>
-          </div>
-<h2 id="标签"><a class="markdownIt-Anchor" href="#标签"></a> 标签</h2>
-<span class="label default">默认</span> <span class="label primary">主要</span> <span class="label success">成功</span> <span class="label info">信息</span> <span class="label warning">警告</span> <span class="label danger">危险</span> 
-<span class="label success">这是成功的信息</span>
-<h2 id="选项卡"><a class="markdownIt-Anchor" href="#选项卡"></a> 选项卡</h2>
-<div class="tabs" id="tab"><ul class="nav-tabs"><li class="tab active"><a href="#tab-1">tab 1</a></li><li class="tab"><a href="#tab-2">tab 2</a></li><li class="tab"><a href="#tab-3">A</a></li></ul><div class="tab-content"><div class="tab-pane active" id="tab-1"><p><strong>选项卡 1</strong></p></div><div class="tab-pane" id="tab-2"><p><strong>选项卡 2</strong></p></div><div class="tab-pane" id="tab-3"><p><strong>选项卡 3</strong> 名字为A</p></div></div></div>
-<h2 id="按钮"><a class="markdownIt-Anchor" href="#按钮"></a> 按钮</h2>
-<div><a class="btn" href="https://tiphereth-a.github.io/ " target="_blank" rel="noopener">
-            <i class="fa fa-home fa-fw"></i>首页
-          </a></div>]]></content>
       <tags>
         <tag>测试</tag>
       </tags>
