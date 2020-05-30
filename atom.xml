@@ -50,7 +50,7 @@
     <link href="https://tifa-233.xyz/article/linear-space/"/>
     <id>https://tifa-233.xyz/article/linear-space/</id>
     <published>2020-05-27T12:37:42.000Z</published>
-    <updated>2020-05-29T02:01:56.121Z</updated>
+    <updated>2020-05-30T04:27:55.369Z</updated>
     
     <summary type="html">
     
@@ -252,11 +252,11 @@
     <link href="https://tifa-233.xyz/article/about/"/>
     <id>https://tifa-233.xyz/article/about/</id>
     <published>2020-05-04T11:07:23.000Z</published>
-    <updated>2020-05-27T08:00:45.363Z</updated>
+    <updated>2020-05-30T04:28:57.444Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;一个ACMer记录用的小站&lt;/p&gt;
+      &lt;p&gt;一个数学系ACMer记录用的小站&lt;/p&gt;
 &lt;p&gt;题解中的代码删去了头文件等, 只是为了让代码的逻辑更清晰&lt;/p&gt;
     
     </summary>
@@ -442,9 +442,9 @@ M834 80h400000v40h-400000z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/s
     
       <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
     
-      <category term="洛谷" scheme="https://tifa-233.xyz/tags/%E6%B4%9B%E8%B0%B7/"/>
-    
       <category term="省选" scheme="https://tifa-233.xyz/tags/%E7%9C%81%E9%80%89/"/>
+    
+      <category term="洛谷" scheme="https://tifa-233.xyz/tags/%E6%B4%9B%E8%B0%B7/"/>
     
       <category term="BZOJ" scheme="https://tifa-233.xyz/tags/BZOJ/"/>
     
