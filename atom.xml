@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tifa-233.xyz/"/>
-  <updated>2020-06-01T14:09:35.105Z</updated>
+  <updated>2020-06-03T16:37:13.305Z</updated>
   <id>https://tifa-233.xyz/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>题解 - Codeforces Round #641 Div. 2 (A-E)</title>
+    <link href="https://tifa-233.xyz/article/solution-codeforces-641-2/"/>
+    <id>https://tifa-233.xyz/article/solution-codeforces-641-2/</id>
+    <published>2020-06-02T15:20:27.000Z</published>
+    <updated>2020-06-03T16:37:13.305Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;a href=&quot;https://codeforces.com/contest/1350&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;比赛链接&lt;/a&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="程序设计" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
+    
+      <category term="题解" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E9%A2%98%E8%A7%A3/"/>
+    
+      <category term="CodeForces" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E9%A2%98%E8%A7%A3/CodeForces/"/>
+    
+    
+      <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
+    
+      <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
+    
+      <category term="CodeForces" scheme="https://tifa-233.xyz/tags/CodeForces/"/>
+    
+  </entry>
   
   <entry>
     <title>随笔 - 从卷积的结合律看多重求和</title>
@@ -276,7 +305,7 @@
     <link href="https://tifa-233.xyz/article/multiply-ex-fast-power/"/>
     <id>https://tifa-233.xyz/article/multiply-ex-fast-power/</id>
     <published>2020-04-27T05:48:01.000Z</published>
-    <updated>2020-06-01T14:21:31.587Z</updated>
+    <updated>2020-06-01T14:34:58.067Z</updated>
     
     <summary type="html">
     
@@ -483,9 +512,9 @@ M834 80h400000v40h-400000z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/s
     
       <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
     
-      <category term="洛谷" scheme="https://tifa-233.xyz/tags/%E6%B4%9B%E8%B0%B7/"/>
-    
       <category term="省选" scheme="https://tifa-233.xyz/tags/%E7%9C%81%E9%80%89/"/>
+    
+      <category term="洛谷" scheme="https://tifa-233.xyz/tags/%E6%B4%9B%E8%B0%B7/"/>
     
       <category term="BZOJ" scheme="https://tifa-233.xyz/tags/BZOJ/"/>
     
@@ -523,9 +552,9 @@ M834 80h400000v40h-400000z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/s
     
       <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
     
-      <category term="数据结构" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
-    
       <category term="洛谷" scheme="https://tifa-233.xyz/tags/%E6%B4%9B%E8%B0%B7/"/>
+    
+      <category term="数据结构" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
     
       <category term="线段树" scheme="https://tifa-233.xyz/tags/%E7%BA%BF%E6%AE%B5%E6%A0%91/"/>
     
@@ -632,29 +661,6 @@ M834 80h400000v40h-400000z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/s
       <category term="Newton迭代法" scheme="https://tifa-233.xyz/tags/Newton%E8%BF%AD%E4%BB%A3%E6%B3%95/"/>
     
       <category term="Taylor级数" scheme="https://tifa-233.xyz/tags/Taylor%E7%BA%A7%E6%95%B0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>“线段树的扩展之浅谈zkw线段树”一文的测试代码、数据、详细测试结果与生成器</title>
-    <link href="https://tifa-233.xyz/article/zkw-segment-tree/zkw-segment-tree-test1/"/>
-    <id>https://tifa-233.xyz/article/zkw-segment-tree/zkw-segment-tree-test1/</id>
-    <published>2018-08-08T05:05:56.000Z</published>
-    <updated>2020-05-27T06:49:13.433Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;测试代码&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#测试代码&quot;&gt;&lt;/a&gt; 测试代码：&lt;/h2&gt;
-    
-    </summary>
-    
-    
-    
-      <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
-    
-      <category term="洛谷日报" scheme="https://tifa-233.xyz/tags/%E6%B4%9B%E8%B0%B7%E6%97%A5%E6%8A%A5/"/>
-    
-      <category term="测试" scheme="https://tifa-233.xyz/tags/%E6%B5%8B%E8%AF%95/"/>
     
   </entry>
   
