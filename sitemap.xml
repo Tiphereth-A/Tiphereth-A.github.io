@@ -2,9 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://tifa-233.xyz/tags/index.html</loc>
+    
+    <lastmod>2020-06-04T01:07:46.382Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://tifa-233.xyz/article/solution-codeforces-645-2/</loc>
+    
+    <lastmod>2020-06-04T01:07:40.686Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://tifa-233.xyz/article/solution-codeforces-639-2/</loc>
+    
+    <lastmod>2020-06-04T01:06:24.879Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://tifa-233.xyz/article/solution-codeforces-641-2/</loc>
     
-    <lastmod>2020-06-03T16:37:13.305Z</lastmod>
+    <lastmod>2020-06-04T01:04:53.198Z</lastmod>
     
   </url>
   
@@ -12,13 +33,6 @@
     <loc>https://tifa-233.xyz/article/multiply-ex-fast-power/</loc>
     
     <lastmod>2020-06-01T14:34:58.067Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://tifa-233.xyz/tags/index.html</loc>
-    
-    <lastmod>2020-06-01T14:25:34.807Z</lastmod>
     
   </url>
   
@@ -37,23 +51,9 @@
   </url>
   
   <url>
-    <loc>https://tifa-233.xyz/article/solution-codeforces-639-2/</loc>
-    
-    <lastmod>2020-06-01T13:49:04.571Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://tifa-233.xyz/article/solution-codeforces-640-4/</loc>
     
     <lastmod>2020-06-01T13:48:59.308Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://tifa-233.xyz/article/solution-codeforces-645-2/</loc>
-    
-    <lastmod>2020-06-01T13:48:56.318Z</lastmod>
     
   </url>
   

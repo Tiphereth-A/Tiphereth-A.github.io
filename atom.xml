@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tifa-233.xyz/"/>
-  <updated>2020-06-03T16:37:13.305Z</updated>
+  <updated>2020-06-04T01:04:53.198Z</updated>
   <id>https://tifa-233.xyz/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://tifa-233.xyz/article/solution-codeforces-641-2/"/>
     <id>https://tifa-233.xyz/article/solution-codeforces-641-2/</id>
     <published>2020-06-02T15:20:27.000Z</published>
-    <updated>2020-06-03T16:37:13.305Z</updated>
+    <updated>2020-06-04T01:04:53.198Z</updated>
     
     <summary type="html">
     
@@ -39,9 +39,17 @@
     
       <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
     
+      <category term="数论" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E8%AE%BA/"/>
+    
       <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
     
       <category term="CodeForces" scheme="https://tifa-233.xyz/tags/CodeForces/"/>
+    
+      <category term="dp" scheme="https://tifa-233.xyz/tags/dp/"/>
+    
+      <category term="LIS" scheme="https://tifa-233.xyz/tags/LIS/"/>
+    
+      <category term="BFS" scheme="https://tifa-233.xyz/tags/BFS/"/>
     
   </entry>
   
@@ -108,7 +116,7 @@
     <link href="https://tifa-233.xyz/article/solution-codeforces-645-2/"/>
     <id>https://tifa-233.xyz/article/solution-codeforces-645-2/</id>
     <published>2020-05-27T07:12:06.000Z</published>
-    <updated>2020-06-01T13:48:56.318Z</updated>
+    <updated>2020-06-04T01:07:40.686Z</updated>
     
     <summary type="html">
     
@@ -129,6 +137,8 @@
       <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
     
       <category term="CodeForces" scheme="https://tifa-233.xyz/tags/CodeForces/"/>
+    
+      <category term="尺取法" scheme="https://tifa-233.xyz/tags/%E5%B0%BA%E5%8F%96%E6%B3%95/"/>
     
   </entry>
   
@@ -210,7 +220,7 @@
     <link href="https://tifa-233.xyz/article/solution-codeforces-639-2/"/>
     <id>https://tifa-233.xyz/article/solution-codeforces-639-2/</id>
     <published>2020-05-06T16:07:49.000Z</published>
-    <updated>2020-06-01T13:49:04.571Z</updated>
+    <updated>2020-06-04T01:06:24.879Z</updated>
     
     <summary type="html">
     
@@ -233,6 +243,8 @@
       <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
     
       <category term="CodeForces" scheme="https://tifa-233.xyz/tags/CodeForces/"/>
+    
+      <category term="DFS" scheme="https://tifa-233.xyz/tags/DFS/"/>
     
   </entry>
   
