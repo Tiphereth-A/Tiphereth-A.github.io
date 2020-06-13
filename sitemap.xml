@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://tifa-233.xyz/article/about/</loc>
+    
+    <lastmod>2020-06-13T02:53:17.611Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://tifa-233.xyz/article/solution-codeforces-641-2/</loc>
     
-    <lastmod>2020-06-07T07:24:37.283Z</lastmod>
+    <lastmod>2020-06-13T02:52:01.341Z</lastmod>
     
   </url>
   
@@ -68,13 +75,6 @@
     <loc>https://tifa-233.xyz/article/zkw-segment-tree/</loc>
     
     <lastmod>2020-05-30T11:29:36.422Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://tifa-233.xyz/article/about/</loc>
-    
-    <lastmod>2020-05-30T04:28:57.444Z</lastmod>
     
   </url>
   
