@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tifa-233.xyz/"/>
-  <updated>2020-06-13T02:52:01.341Z</updated>
+  <updated>2020-06-17T05:09:11.796Z</updated>
   <id>https://tifa-233.xyz/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>随笔 - C语言的泛型</title>
+    <link href="https://tifa-233.xyz/article/c-generic-macro/"/>
+    <id>https://tifa-233.xyz/article/c-generic-macro/</id>
+    <published>2020-06-17T01:22:53.000Z</published>
+    <updated>2020-06-17T05:09:11.796Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;简要介绍C11之前和之后的泛型写法&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="随笔" scheme="https://tifa-233.xyz/categories/%E9%9A%8F%E7%AC%94/"/>
+    
+      <category term="C" scheme="https://tifa-233.xyz/categories/%E9%9A%8F%E7%AC%94/C/"/>
+    
+    
+      <category term="C" scheme="https://tifa-233.xyz/tags/C/"/>
+    
+      <category term="随笔" scheme="https://tifa-233.xyz/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+      <category term="宏" scheme="https://tifa-233.xyz/tags/%E5%AE%8F/"/>
+    
+      <category term="泛型" scheme="https://tifa-233.xyz/tags/%E6%B3%9B%E5%9E%8B/"/>
+    
+  </entry>
   
   <entry>
     <title>题解 - Codeforces Round #641 Div. 2 (A-E)</title>
@@ -74,13 +103,13 @@
       <category term="数学" scheme="https://tifa-233.xyz/categories/%E9%9A%8F%E7%AC%94/%E6%95%B0%E5%AD%A6/"/>
     
     
+      <category term="随笔" scheme="https://tifa-233.xyz/tags/%E9%9A%8F%E7%AC%94/"/>
+    
       <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
     
       <category term="数论" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E8%AE%BA/"/>
     
       <category term="卷积" scheme="https://tifa-233.xyz/tags/%E5%8D%B7%E7%A7%AF/"/>
-    
-      <category term="随笔" scheme="https://tifa-233.xyz/tags/%E9%9A%8F%E7%AC%94/"/>
     
   </entry>
   
@@ -171,11 +200,11 @@
     
       <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
     
-      <category term="笔记" scheme="https://tifa-233.xyz/tags/%E7%AC%94%E8%AE%B0/"/>
-    
       <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
     
       <category term="算法" scheme="https://tifa-233.xyz/tags/%E7%AE%97%E6%B3%95/"/>
+    
+      <category term="笔记" scheme="https://tifa-233.xyz/tags/%E7%AC%94%E8%AE%B0/"/>
     
       <category term="图论" scheme="https://tifa-233.xyz/tags/%E5%9B%BE%E8%AE%BA/"/>
     
@@ -530,9 +559,9 @@ M834 80h400000v40h-400000z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/s
     
       <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
     
-      <category term="省选" scheme="https://tifa-233.xyz/tags/%E7%9C%81%E9%80%89/"/>
-    
       <category term="洛谷" scheme="https://tifa-233.xyz/tags/%E6%B4%9B%E8%B0%B7/"/>
+    
+      <category term="省选" scheme="https://tifa-233.xyz/tags/%E7%9C%81%E9%80%89/"/>
     
       <category term="BZOJ" scheme="https://tifa-233.xyz/tags/BZOJ/"/>
     
@@ -570,9 +599,9 @@ M834 80h400000v40h-400000z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/s
     
       <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
     
-      <category term="洛谷" scheme="https://tifa-233.xyz/tags/%E6%B4%9B%E8%B0%B7/"/>
-    
       <category term="数据结构" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    
+      <category term="洛谷" scheme="https://tifa-233.xyz/tags/%E6%B4%9B%E8%B0%B7/"/>
     
       <category term="线段树" scheme="https://tifa-233.xyz/tags/%E7%BA%BF%E6%AE%B5%E6%A0%91/"/>
     
@@ -641,44 +670,6 @@ M834 80h400000v40h-400000z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/s
       <category term="数值积分" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%80%BC%E7%A7%AF%E5%88%86/"/>
     
       <category term="自适应Simpson算法" scheme="https://tifa-233.xyz/tags/%E8%87%AA%E9%80%82%E5%BA%94Simpson%E7%AE%97%E6%B3%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>【洛谷日报#53】浅谈一些求近似值的方法</title>
-    <link href="https://tifa-233.xyz/article/approx-number/"/>
-    <id>https://tifa-233.xyz/article/approx-number/</id>
-    <published>2018-08-09T01:06:31.000Z</published>
-    <updated>2020-05-27T06:53:06.094Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;s&gt;只是为了拿本子随便写的&lt;/s&gt;&lt;/p&gt;
-&lt;p&gt;老文章, 可能有很多错误, 懒得修了&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="程序设计" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
-    
-      <category term="算法" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E7%AE%97%E6%B3%95/"/>
-    
-    
-      <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
-    
-      <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
-    
-      <category term="算法" scheme="https://tifa-233.xyz/tags/%E7%AE%97%E6%B3%95/"/>
-    
-      <category term="洛谷日报" scheme="https://tifa-233.xyz/tags/%E6%B4%9B%E8%B0%B7%E6%97%A5%E6%8A%A5/"/>
-    
-      <category term="二分" scheme="https://tifa-233.xyz/tags/%E4%BA%8C%E5%88%86/"/>
-    
-      <category term="0.618法" scheme="https://tifa-233.xyz/tags/0-618%E6%B3%95/"/>
-    
-      <category term="Newton迭代法" scheme="https://tifa-233.xyz/tags/Newton%E8%BF%AD%E4%BB%A3%E6%B3%95/"/>
-    
-      <category term="Taylor级数" scheme="https://tifa-233.xyz/tags/Taylor%E7%BA%A7%E6%95%B0/"/>
     
   </entry>
   
