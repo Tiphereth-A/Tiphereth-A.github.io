@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tifa-233.xyz/"/>
-  <updated>2020-06-17T05:09:11.796Z</updated>
+  <updated>2020-06-22T01:44:58.392Z</updated>
   <id>https://tifa-233.xyz/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>随笔 - C中的&quot;操作符&quot; &quot;--&gt;&quot;</title>
+    <link href="https://tifa-233.xyz/article/c-fake-operator/"/>
+    <id>https://tifa-233.xyz/article/c-fake-operator/</id>
+    <published>2020-06-22T01:33:45.000Z</published>
+    <updated>2020-06-22T01:44:58.392Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;在 &lt;a href=&quot;https://stackoverflow.com/questions/1642028/what-is-the-operator-in-c&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://stackoverflow.com/questions/1642028/what-is-the-operator-in-c&lt;/a&gt; 看到个好玩的东西&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="随笔" scheme="https://tifa-233.xyz/categories/%E9%9A%8F%E7%AC%94/"/>
+    
+      <category term="C" scheme="https://tifa-233.xyz/categories/%E9%9A%8F%E7%AC%94/C/"/>
+    
+    
+      <category term="C" scheme="https://tifa-233.xyz/tags/C/"/>
+    
+      <category term="随笔" scheme="https://tifa-233.xyz/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+      <category term="操作符" scheme="https://tifa-233.xyz/tags/%E6%93%8D%E4%BD%9C%E7%AC%A6/"/>
+    
+  </entry>
   
   <entry>
     <title>随笔 - C语言的泛型</title>
@@ -103,9 +130,9 @@
       <category term="数学" scheme="https://tifa-233.xyz/categories/%E9%9A%8F%E7%AC%94/%E6%95%B0%E5%AD%A6/"/>
     
     
-      <category term="随笔" scheme="https://tifa-233.xyz/tags/%E9%9A%8F%E7%AC%94/"/>
-    
       <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
+    
+      <category term="随笔" scheme="https://tifa-233.xyz/tags/%E9%9A%8F%E7%AC%94/"/>
     
       <category term="数论" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E8%AE%BA/"/>
     
@@ -118,7 +145,7 @@
     <link href="https://tifa-233.xyz/article/linear-space/"/>
     <id>https://tifa-233.xyz/article/linear-space/</id>
     <published>2020-05-27T12:37:42.000Z</published>
-    <updated>2020-05-30T04:27:55.369Z</updated>
+    <updated>2020-06-20T08:21:25.312Z</updated>
     
     <summary type="html">
     
@@ -131,14 +158,20 @@
     
       <category term="数学" scheme="https://tifa-233.xyz/categories/%E7%AC%94%E8%AE%B0/%E6%95%B0%E5%AD%A6/"/>
     
+      <category term="高等代数" scheme="https://tifa-233.xyz/categories/%E7%AC%94%E8%AE%B0/%E6%95%B0%E5%AD%A6/%E9%AB%98%E7%AD%89%E4%BB%A3%E6%95%B0/"/>
+    
     
       <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
     
       <category term="笔记" scheme="https://tifa-233.xyz/tags/%E7%AC%94%E8%AE%B0/"/>
     
-      <category term="线性代数" scheme="https://tifa-233.xyz/tags/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/"/>
+      <category term="高等代数" scheme="https://tifa-233.xyz/tags/%E9%AB%98%E7%AD%89%E4%BB%A3%E6%95%B0/"/>
     
       <category term="线性空间" scheme="https://tifa-233.xyz/tags/%E7%BA%BF%E6%80%A7%E7%A9%BA%E9%97%B4/"/>
+    
+      <category term="线性同构" scheme="https://tifa-233.xyz/tags/%E7%BA%BF%E6%80%A7%E5%90%8C%E6%9E%84/"/>
+    
+      <category term="直和" scheme="https://tifa-233.xyz/tags/%E7%9B%B4%E5%92%8C/"/>
     
   </entry>
   
@@ -559,9 +592,9 @@ M834 80h400000v40h-400000z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/s
     
       <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
     
-      <category term="洛谷" scheme="https://tifa-233.xyz/tags/%E6%B4%9B%E8%B0%B7/"/>
-    
       <category term="省选" scheme="https://tifa-233.xyz/tags/%E7%9C%81%E9%80%89/"/>
+    
+      <category term="洛谷" scheme="https://tifa-233.xyz/tags/%E6%B4%9B%E8%B0%B7/"/>
     
       <category term="BZOJ" scheme="https://tifa-233.xyz/tags/BZOJ/"/>
     
@@ -599,9 +632,9 @@ M834 80h400000v40h-400000z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/s
     
       <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
     
-      <category term="数据结构" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
-    
       <category term="洛谷" scheme="https://tifa-233.xyz/tags/%E6%B4%9B%E8%B0%B7/"/>
+    
+      <category term="数据结构" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
     
       <category term="线段树" scheme="https://tifa-233.xyz/tags/%E7%BA%BF%E6%AE%B5%E6%A0%91/"/>
     
@@ -636,40 +669,6 @@ M834 80h400000v40h-400000z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/s
       <category term="洛谷" scheme="https://tifa-233.xyz/tags/%E6%B4%9B%E8%B0%B7/"/>
     
       <category term="位掩码" scheme="https://tifa-233.xyz/tags/%E4%BD%8D%E6%8E%A9%E7%A0%81/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>【洛谷日报#46】浅谈自适应Simpson法</title>
-    <link href="https://tifa-233.xyz/article/adaptive-simpson-rule/"/>
-    <id>https://tifa-233.xyz/article/adaptive-simpson-rule/</id>
-    <published>2018-08-12T07:33:58.000Z</published>
-    <updated>2020-05-27T06:53:09.057Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;一种经典的数值积分算法&lt;/p&gt;
-&lt;p&gt;老文章, 可能有很多错误, 懒得修了&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="程序设计" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
-    
-      <category term="算法" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E7%AE%97%E6%B3%95/"/>
-    
-    
-      <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
-    
-      <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
-    
-      <category term="算法" scheme="https://tifa-233.xyz/tags/%E7%AE%97%E6%B3%95/"/>
-    
-      <category term="洛谷日报" scheme="https://tifa-233.xyz/tags/%E6%B4%9B%E8%B0%B7%E6%97%A5%E6%8A%A5/"/>
-    
-      <category term="数值积分" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%80%BC%E7%A7%AF%E5%88%86/"/>
-    
-      <category term="自适应Simpson算法" scheme="https://tifa-233.xyz/tags/%E8%87%AA%E9%80%82%E5%BA%94Simpson%E7%AE%97%E6%B3%95/"/>
     
   </entry>
   
