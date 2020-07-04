@@ -1,5 +1,5 @@
-https://tifa-233.xyz/article/linear-transformation-in-linear-space/
 https://tifa-233.xyz/article/c-fake-operator/
 https://tifa-233.xyz/article/symmetric-bilinear-metric-space-and-system-of-linear-equations/
 https://tifa-233.xyz/article/c-generic-macro/
 https://tifa-233.xyz/article/solution-codeforces-641-2/
+https://tifa-233.xyz/article/multiple-sum/
