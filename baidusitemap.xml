@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://tifa-233.xyz/article/about/</loc>
+    <lastmod>2020-07-25</lastmod>
+  </url>  <url>
+    <loc>https://tifa-233.xyz/article/advanced-algebra/catalog/</loc>
+    <lastmod>2020-07-25</lastmod>
+  </url>  <url>
+    <loc>https://tifa-233.xyz/article/symmetric-bilinear-metric-space-and-system-of-linear-equations/</loc>
+    <lastmod>2020-07-25</lastmod>
+  </url>  <url>
     <loc>https://tifa-233.xyz/article/sa-poj-1141/</loc>
     <lastmod>2020-07-25</lastmod>
   </url>  <url>
@@ -40,9 +49,6 @@
     <loc>https://tifa-233.xyz/article/advanced-algebra/linear-equations-1/</loc>
     <lastmod>2020-07-24</lastmod>
   </url>  <url>
-    <loc>https://tifa-233.xyz/article/advanced-algebra/catalog/</loc>
-    <lastmod>2020-07-24</lastmod>
-  </url>  <url>
     <loc>https://tifa-233.xyz/article/solution-codeforces-645-2/</loc>
     <lastmod>2020-07-24</lastmod>
   </url>  <url>
@@ -58,14 +64,8 @@
     <loc>https://tifa-233.xyz/article/mobius-inverse-formula/</loc>
     <lastmod>2020-07-24</lastmod>
   </url>  <url>
-    <loc>https://tifa-233.xyz/article/about/</loc>
-    <lastmod>2020-07-24</lastmod>
-  </url>  <url>
     <loc>https://tifa-233.xyz/article/advanced-algebra/basic-knowledge/</loc>
     <lastmod>2020-07-22</lastmod>
-  </url>  <url>
-    <loc>https://tifa-233.xyz/article/symmetric-bilinear-metric-space-and-system-of-linear-equations/</loc>
-    <lastmod>2020-07-14</lastmod>
   </url>  <url>
     <loc>https://tifa-233.xyz/article/linear-space/</loc>
     <lastmod>2020-07-14</lastmod>
