@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://tifa-233.xyz/article/c-another-assert/</loc>
+    
+    <lastmod>2020-07-26T10:49:28.667Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://tifa-233.xyz/article/c-fake-operator/</loc>
+    
+    <lastmod>2020-07-26T10:11:05.112Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://tifa-233.xyz/article/katex-supported-functions/</loc>
     
     <lastmod>2020-07-26T03:10:48.152Z</lastmod>
@@ -208,13 +222,6 @@
     <loc>https://tifa-233.xyz/article/test-mermaid/</loc>
     
     <lastmod>2020-06-28T08:02:40.096Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://tifa-233.xyz/article/c-fake-operator/</loc>
-    
-    <lastmod>2020-06-22T01:48:25.259Z</lastmod>
     
   </url>
   
