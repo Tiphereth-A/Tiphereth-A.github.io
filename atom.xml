@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tifa-233.xyz/"/>
-  <updated>2020-07-26T10:49:28.667Z</updated>
+  <updated>2020-07-28T17:59:42.498Z</updated>
   <id>https://tifa-233.xyz/</id>
   
   <author>
@@ -15,6 +15,262 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>题解 - [POJ 1650] Integer Approximation</title>
+    <link href="https://tifa-233.xyz/article/poj-1650/"/>
+    <id>https://tifa-233.xyz/article/poj-1650/</id>
+    <published>2020-07-28T13:47:20.000Z</published>
+    <updated>2020-07-28T17:59:42.498Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;a href=&quot;http://poj.org/problem?id=1650&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;题目链接&lt;/a&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="程序设计" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
+    
+      <category term="题解" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E9%A2%98%E8%A7%A3/"/>
+    
+    
+      <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
+    
+      <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
+    
+      <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
+    
+      <category term="POJ" scheme="https://tifa-233.xyz/tags/POJ/"/>
+    
+      <category term="枚举" scheme="https://tifa-233.xyz/tags/%E6%9E%9A%E4%B8%BE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>题解 - [UVa 1415] Gauss Prime</title>
+    <link href="https://tifa-233.xyz/article/uva-1415/"/>
+    <id>https://tifa-233.xyz/article/uva-1415/</id>
+    <published>2020-07-27T15:00:20.000Z</published>
+    <updated>2020-07-28T18:19:07.681Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;a href=&quot;https://vjudge.net/problem/UVA-1415/origin&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;题目链接&lt;/a&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="程序设计" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
+    
+      <category term="题解" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E9%A2%98%E8%A7%A3/"/>
+    
+    
+      <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
+    
+      <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
+    
+      <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
+    
+      <category term="数论" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E8%AE%BA/"/>
+    
+      <category term="复数" scheme="https://tifa-233.xyz/tags/%E5%A4%8D%E6%95%B0/"/>
+    
+      <category term="Gauss整数" scheme="https://tifa-233.xyz/tags/Gauss%E6%95%B4%E6%95%B0/"/>
+    
+      <category term="Gauss素数" scheme="https://tifa-233.xyz/tags/Gauss%E7%B4%A0%E6%95%B0/"/>
+    
+      <category term="UVa" scheme="https://tifa-233.xyz/tags/UVa/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>题解 - [POJ 3361] Gaussian Prime Factors</title>
+    <link href="https://tifa-233.xyz/article/poj-3361/"/>
+    <id>https://tifa-233.xyz/article/poj-3361/</id>
+    <published>2020-07-27T14:59:46.000Z</published>
+    <updated>2020-07-28T18:16:37.244Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;a href=&quot;http://poj.org/problem?id=3361&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;题目链接&lt;/a&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="程序设计" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
+    
+      <category term="题解" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E9%A2%98%E8%A7%A3/"/>
+    
+    
+      <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
+    
+      <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
+    
+      <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
+    
+      <category term="数论" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E8%AE%BA/"/>
+    
+      <category term="POJ" scheme="https://tifa-233.xyz/tags/POJ/"/>
+    
+      <category term="复数" scheme="https://tifa-233.xyz/tags/%E5%A4%8D%E6%95%B0/"/>
+    
+      <category term="Gauss整数" scheme="https://tifa-233.xyz/tags/Gauss%E6%95%B4%E6%95%B0/"/>
+    
+      <category term="Gauss素数" scheme="https://tifa-233.xyz/tags/Gauss%E7%B4%A0%E6%95%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>题解 - [POJ 1381 等] Secret Code</title>
+    <link href="https://tifa-233.xyz/article/sa-poj-1381/"/>
+    <id>https://tifa-233.xyz/article/sa-poj-1381/</id>
+    <published>2020-07-27T14:58:52.000Z</published>
+    <updated>2020-07-28T17:59:42.510Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;题目链接&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://poj.org/problem?id=1381&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;POJ 1381&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://vjudge.net/problem/ZOJ-2011/origin&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;ZOJ 2011&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="程序设计" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
+    
+      <category term="题解" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E9%A2%98%E8%A7%A3/"/>
+    
+    
+      <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
+    
+      <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
+    
+      <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
+    
+      <category term="POJ" scheme="https://tifa-233.xyz/tags/POJ/"/>
+    
+      <category term="复数" scheme="https://tifa-233.xyz/tags/%E5%A4%8D%E6%95%B0/"/>
+    
+      <category term="Gauss整数" scheme="https://tifa-233.xyz/tags/Gauss%E6%95%B4%E6%95%B0/"/>
+    
+      <category term="ZOJ" scheme="https://tifa-233.xyz/tags/ZOJ/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>题解 - [POJ 1777 等] Vivian&#39;s Problem</title>
+    <link href="https://tifa-233.xyz/article/sa-poj-1777/"/>
+    <id>https://tifa-233.xyz/article/sa-poj-1777/</id>
+    <published>2020-07-27T14:58:08.000Z</published>
+    <updated>2020-07-28T17:59:42.514Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;题目链接&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://poj.org/problem?id=1777&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;POJ 1777&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://vjudge.net/problem/UVA-1323/origin&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;UVA 1323&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="程序设计" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
+    
+      <category term="题解" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E9%A2%98%E8%A7%A3/"/>
+    
+    
+      <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
+    
+      <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
+    
+      <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
+    
+      <category term="数论" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E8%AE%BA/"/>
+    
+      <category term="POJ" scheme="https://tifa-233.xyz/tags/POJ/"/>
+    
+      <category term="UVa" scheme="https://tifa-233.xyz/tags/UVa/"/>
+    
+      <category term="Mersenne素数" scheme="https://tifa-233.xyz/tags/Mersenne%E7%B4%A0%E6%95%B0/"/>
+    
+      <category term="状压DP" scheme="https://tifa-233.xyz/tags/%E7%8A%B6%E5%8E%8BDP/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>题解 - [POJ 1528 等] Perfection</title>
+    <link href="https://tifa-233.xyz/article/sa-poj-1528/"/>
+    <id>https://tifa-233.xyz/article/sa-poj-1528/</id>
+    <published>2020-07-27T14:55:48.000Z</published>
+    <updated>2020-07-28T17:59:42.513Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;题目链接&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://poj.org/problem?id=1528&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;POJ 1528&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://vjudge.net/problem/ZOJ-1284/origin&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;ZOJ 1284&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://vjudge.net/problem/UVA-382/origin&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;UVA 382&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="程序设计" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
+    
+      <category term="题解" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E9%A2%98%E8%A7%A3/"/>
+    
+    
+      <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
+    
+      <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
+    
+      <category term="POJ" scheme="https://tifa-233.xyz/tags/POJ/"/>
+    
+      <category term="ZOJ" scheme="https://tifa-233.xyz/tags/ZOJ/"/>
+    
+      <category term="UVa" scheme="https://tifa-233.xyz/tags/UVa/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>题解 - [POJ 3904] Sky Code</title>
+    <link href="https://tifa-233.xyz/article/poj-3904/"/>
+    <id>https://tifa-233.xyz/article/poj-3904/</id>
+    <published>2020-07-27T14:49:46.000Z</published>
+    <updated>2020-07-28T18:17:47.328Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;a href=&quot;http://poj.org/problem?id=3904&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;题目链接&lt;/a&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="程序设计" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
+    
+      <category term="题解" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E9%A2%98%E8%A7%A3/"/>
+    
+    
+      <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
+    
+      <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
+    
+      <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
+    
+      <category term="数论" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E8%AE%BA/"/>
+    
+      <category term="Möbius函数" scheme="https://tifa-233.xyz/tags/Mobius%E5%87%BD%E6%95%B0/"/>
+    
+      <category term="POJ" scheme="https://tifa-233.xyz/tags/POJ/"/>
+    
+      <category term="容斥定理" scheme="https://tifa-233.xyz/tags/%E5%AE%B9%E6%96%A5%E5%AE%9A%E7%90%86/"/>
+    
+  </entry>
   
   <entry>
     <title>随笔 - C中的编译时检测版assert &quot;-!!(e)&quot;</title>
@@ -46,16 +302,16 @@
     <link href="https://tifa-233.xyz/article/sa-poj-1141/"/>
     <id>https://tifa-233.xyz/article/sa-poj-1141/</id>
     <published>2020-07-25T14:14:38.000Z</published>
-    <updated>2020-07-25T15:19:16.356Z</updated>
+    <updated>2020-07-27T16:18:21.830Z</updated>
     
     <summary type="html">
     
       &lt;p&gt;题目链接&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;http://poj.org/problem?id=1141&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;POJ 1141&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://zoj.pintia.cn/problem-sets/91827364500/problems/91827364962&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;ZOJ 1463&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://onlinejudge.org/index.php?page=show_problem&amp;amp;problem=4501&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;UVa 1626&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Ural 1183&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://vjudge.net/problem/ZOJ-1463/origin&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;ZOJ 1463&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://vjudge.net/problem/UVA-1626/origin&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;UVa 1626&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://acm.timus.ru/problem.aspx?space=1&amp;amp;num=1183&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Ural 1183&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
     
     </summary>
@@ -105,15 +361,15 @@
       <category term="题解" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E9%A2%98%E8%A7%A3/"/>
     
     
+      <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
+    
       <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
     
       <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
     
-      <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
+      <category term="HDU" scheme="https://tifa-233.xyz/tags/HDU/"/>
     
       <category term="数论" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E8%AE%BA/"/>
-    
-      <category term="HDU" scheme="https://tifa-233.xyz/tags/HDU/"/>
     
       <category term="Wilson定理" scheme="https://tifa-233.xyz/tags/Wilson%E5%AE%9A%E7%90%86/"/>
     
@@ -124,19 +380,11 @@
     <link href="https://tifa-233.xyz/article/advanced-algebra/linear-equations-1/"/>
     <id>https://tifa-233.xyz/article/advanced-algebra/linear-equations-1/</id>
     <published>2020-07-24T17:06:59.000Z</published>
-    <updated>2020-07-24T17:07:59.776Z</updated>
+    <updated>2020-07-26T13:13:38.815Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;!-- ---
-## 参考资料:
-- 高等代数教程/郭聿琦, 岑嘉评, 王正攀编著. ——北京: 科学出版社, 2014. 7
-        
-      
+      &lt;p&gt;简要介绍部分线性方程组相关概念&lt;/p&gt;
     
     </summary>
     
@@ -157,6 +405,8 @@
       <category term="代数" scheme="https://tifa-233.xyz/tags/%E4%BB%A3%E6%95%B0/"/>
     
       <category term="高等代数" scheme="https://tifa-233.xyz/tags/%E9%AB%98%E7%AD%89%E4%BB%A3%E6%95%B0/"/>
+    
+      <category term="线性方程组" scheme="https://tifa-233.xyz/tags/%E7%BA%BF%E6%80%A7%E6%96%B9%E7%A8%8B%E7%BB%84/"/>
     
   </entry>
   
@@ -210,15 +460,15 @@
       <category term="题解" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E9%A2%98%E8%A7%A3/"/>
     
     
+      <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
+    
       <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
     
       <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
     
-      <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
+      <category term="数论" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E8%AE%BA/"/>
     
       <category term="LightOJ" scheme="https://tifa-233.xyz/tags/LightOJ/"/>
-    
-      <category term="数论" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E8%AE%BA/"/>
     
       <category term="素数/质数" scheme="https://tifa-233.xyz/tags/%E7%B4%A0%E6%95%B0-%E8%B4%A8%E6%95%B0/"/>
     
@@ -247,15 +497,15 @@
       <category term="题解" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E9%A2%98%E8%A7%A3/"/>
     
     
+      <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
+    
       <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
     
       <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
     
-      <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
+      <category term="数论" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E8%AE%BA/"/>
     
       <category term="LightOJ" scheme="https://tifa-233.xyz/tags/LightOJ/"/>
-    
-      <category term="数论" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E8%AE%BA/"/>
     
       <category term="素数/质数" scheme="https://tifa-233.xyz/tags/%E7%B4%A0%E6%95%B0-%E8%B4%A8%E6%95%B0/"/>
     
@@ -282,11 +532,11 @@
       <category term="题解" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E9%A2%98%E8%A7%A3/"/>
     
     
+      <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
+    
       <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
     
       <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
-    
-      <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
     
       <category term="LightOJ" scheme="https://tifa-233.xyz/tags/LightOJ/"/>
     
@@ -313,15 +563,15 @@
       <category term="题解" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E9%A2%98%E8%A7%A3/"/>
     
     
+      <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
+    
       <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
     
       <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
     
-      <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
+      <category term="数论" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E8%AE%BA/"/>
     
       <category term="LightOJ" scheme="https://tifa-233.xyz/tags/LightOJ/"/>
-    
-      <category term="数论" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E8%AE%BA/"/>
     
       <category term="素数/质数" scheme="https://tifa-233.xyz/tags/%E7%B4%A0%E6%95%B0-%E8%B4%A8%E6%95%B0/"/>
     
@@ -348,11 +598,11 @@
       <category term="题解" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E9%A2%98%E8%A7%A3/"/>
     
     
+      <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
+    
       <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
     
       <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
-    
-      <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
     
       <category term="LightOJ" scheme="https://tifa-233.xyz/tags/LightOJ/"/>
     
@@ -365,7 +615,7 @@
     <link href="https://tifa-233.xyz/article/advanced-algebra/basic-knowledge/"/>
     <id>https://tifa-233.xyz/article/advanced-algebra/basic-knowledge/</id>
     <published>2020-07-14T15:29:59.000Z</published>
-    <updated>2020-07-22T09:12:39.231Z</updated>
+    <updated>2020-07-26T13:13:07.211Z</updated>
     
     <summary type="html">
     
@@ -438,7 +688,7 @@
     <link href="https://tifa-233.xyz/article/c-fake-operator/"/>
     <id>https://tifa-233.xyz/article/c-fake-operator/</id>
     <published>2020-06-22T01:33:45.000Z</published>
-    <updated>2020-07-26T10:11:05.112Z</updated>
+    <updated>2020-07-26T13:09:00.464Z</updated>
     
     <summary type="html">
     
@@ -457,261 +707,6 @@
       <category term="随笔" scheme="https://tifa-233.xyz/tags/%E9%9A%8F%E7%AC%94/"/>
     
       <category term="操作符" scheme="https://tifa-233.xyz/tags/%E6%93%8D%E4%BD%9C%E7%AC%A6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>笔记 - 对称双线性度量空间与线性方程组</title>
-    <link href="https://tifa-233.xyz/article/symmetric-bilinear-metric-space-and-system-of-linear-equations/"/>
-    <id>https://tifa-233.xyz/article/symmetric-bilinear-metric-space-and-system-of-linear-equations/</id>
-    <published>2020-06-20T08:08:42.000Z</published>
-    <updated>2020-07-25T15:53:18.857Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;线性函数, 双线性函数, Euclid空间等&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="笔记" scheme="https://tifa-233.xyz/categories/%E7%AC%94%E8%AE%B0/"/>
-    
-      <category term="数学" scheme="https://tifa-233.xyz/categories/%E7%AC%94%E8%AE%B0/%E6%95%B0%E5%AD%A6/"/>
-    
-      <category term="代数" scheme="https://tifa-233.xyz/categories/%E7%AC%94%E8%AE%B0/%E6%95%B0%E5%AD%A6/%E4%BB%A3%E6%95%B0/"/>
-    
-      <category term="高等代数" scheme="https://tifa-233.xyz/categories/%E7%AC%94%E8%AE%B0/%E6%95%B0%E5%AD%A6/%E4%BB%A3%E6%95%B0/%E9%AB%98%E7%AD%89%E4%BB%A3%E6%95%B0/"/>
-    
-    
-      <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
-    
-      <category term="笔记" scheme="https://tifa-233.xyz/tags/%E7%AC%94%E8%AE%B0/"/>
-    
-      <category term="代数" scheme="https://tifa-233.xyz/tags/%E4%BB%A3%E6%95%B0/"/>
-    
-      <category term="高等代数" scheme="https://tifa-233.xyz/tags/%E9%AB%98%E7%AD%89%E4%BB%A3%E6%95%B0/"/>
-    
-      <category term="线性空间" scheme="https://tifa-233.xyz/tags/%E7%BA%BF%E6%80%A7%E7%A9%BA%E9%97%B4/"/>
-    
-      <category term="度量空间" scheme="https://tifa-233.xyz/tags/%E5%BA%A6%E9%87%8F%E7%A9%BA%E9%97%B4/"/>
-    
-      <category term="线性函数" scheme="https://tifa-233.xyz/tags/%E7%BA%BF%E6%80%A7%E5%87%BD%E6%95%B0/"/>
-    
-      <category term="双线性函数" scheme="https://tifa-233.xyz/tags/%E5%8F%8C%E7%BA%BF%E6%80%A7%E5%87%BD%E6%95%B0/"/>
-    
-      <category term="对称双线性度量空间" scheme="https://tifa-233.xyz/tags/%E5%AF%B9%E7%A7%B0%E5%8F%8C%E7%BA%BF%E6%80%A7%E5%BA%A6%E9%87%8F%E7%A9%BA%E9%97%B4/"/>
-    
-      <category term="线性方程组" scheme="https://tifa-233.xyz/tags/%E7%BA%BF%E6%80%A7%E6%96%B9%E7%A8%8B%E7%BB%84/"/>
-    
-      <category term="Euclid空间" scheme="https://tifa-233.xyz/tags/Euclid%E7%A9%BA%E9%97%B4/"/>
-    
-      <category term="最小二乘法" scheme="https://tifa-233.xyz/tags/%E6%9C%80%E5%B0%8F%E4%BA%8C%E4%B9%98%E6%B3%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>随笔 - C语言的泛型</title>
-    <link href="https://tifa-233.xyz/article/c-generic-macro/"/>
-    <id>https://tifa-233.xyz/article/c-generic-macro/</id>
-    <published>2020-06-17T01:22:53.000Z</published>
-    <updated>2020-06-17T05:09:11.796Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;简要介绍C11之前和之后的泛型写法&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="随笔" scheme="https://tifa-233.xyz/categories/%E9%9A%8F%E7%AC%94/"/>
-    
-      <category term="C" scheme="https://tifa-233.xyz/categories/%E9%9A%8F%E7%AC%94/C/"/>
-    
-    
-      <category term="C" scheme="https://tifa-233.xyz/tags/C/"/>
-    
-      <category term="随笔" scheme="https://tifa-233.xyz/tags/%E9%9A%8F%E7%AC%94/"/>
-    
-      <category term="宏" scheme="https://tifa-233.xyz/tags/%E5%AE%8F/"/>
-    
-      <category term="泛型" scheme="https://tifa-233.xyz/tags/%E6%B3%9B%E5%9E%8B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>题解 - Codeforces Round #641 Div. 2 (A-E)</title>
-    <link href="https://tifa-233.xyz/article/solution-codeforces-641-2/"/>
-    <id>https://tifa-233.xyz/article/solution-codeforces-641-2/</id>
-    <published>2020-06-02T15:20:27.000Z</published>
-    <updated>2020-07-24T17:03:39.175Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;a href=&quot;https://codeforces.com/contest/1350&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;比赛链接&lt;/a&gt;&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="程序设计" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
-    
-      <category term="题解" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E9%A2%98%E8%A7%A3/"/>
-    
-    
-      <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
-    
-      <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
-    
-      <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
-    
-      <category term="CodeForces" scheme="https://tifa-233.xyz/tags/CodeForces/"/>
-    
-      <category term="数论" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E8%AE%BA/"/>
-    
-      <category term="dp" scheme="https://tifa-233.xyz/tags/dp/"/>
-    
-      <category term="LIS" scheme="https://tifa-233.xyz/tags/LIS/"/>
-    
-      <category term="BFS" scheme="https://tifa-233.xyz/tags/BFS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>随笔 - 从卷积的结合律看多重求和</title>
-    <link href="https://tifa-233.xyz/article/multiple-sum/"/>
-    <id>https://tifa-233.xyz/article/multiple-sum/</id>
-    <published>2020-05-28T05:02:58.000Z</published>
-    <updated>2020-06-01T14:09:35.105Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mtext&gt;  &lt;/mtext&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;\;&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0em;vertical-align:0em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2777777777777778em;&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="随笔" scheme="https://tifa-233.xyz/categories/%E9%9A%8F%E7%AC%94/"/>
-    
-      <category term="数学" scheme="https://tifa-233.xyz/categories/%E9%9A%8F%E7%AC%94/%E6%95%B0%E5%AD%A6/"/>
-    
-    
-      <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
-    
-      <category term="随笔" scheme="https://tifa-233.xyz/tags/%E9%9A%8F%E7%AC%94/"/>
-    
-      <category term="数论" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E8%AE%BA/"/>
-    
-      <category term="卷积" scheme="https://tifa-233.xyz/tags/%E5%8D%B7%E7%A7%AF/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>笔记 - 线性空间</title>
-    <link href="https://tifa-233.xyz/article/linear-space/"/>
-    <id>https://tifa-233.xyz/article/linear-space/</id>
-    <published>2020-05-27T12:37:42.000Z</published>
-    <updated>2020-07-14T15:08:30.346Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;线性空间是基于集合的, 在集合的基础上又额外规定了各元素之间的关系&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="笔记" scheme="https://tifa-233.xyz/categories/%E7%AC%94%E8%AE%B0/"/>
-    
-      <category term="数学" scheme="https://tifa-233.xyz/categories/%E7%AC%94%E8%AE%B0/%E6%95%B0%E5%AD%A6/"/>
-    
-      <category term="代数" scheme="https://tifa-233.xyz/categories/%E7%AC%94%E8%AE%B0/%E6%95%B0%E5%AD%A6/%E4%BB%A3%E6%95%B0/"/>
-    
-      <category term="高等代数" scheme="https://tifa-233.xyz/categories/%E7%AC%94%E8%AE%B0/%E6%95%B0%E5%AD%A6/%E4%BB%A3%E6%95%B0/%E9%AB%98%E7%AD%89%E4%BB%A3%E6%95%B0/"/>
-    
-    
-      <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
-    
-      <category term="笔记" scheme="https://tifa-233.xyz/tags/%E7%AC%94%E8%AE%B0/"/>
-    
-      <category term="代数" scheme="https://tifa-233.xyz/tags/%E4%BB%A3%E6%95%B0/"/>
-    
-      <category term="高等代数" scheme="https://tifa-233.xyz/tags/%E9%AB%98%E7%AD%89%E4%BB%A3%E6%95%B0/"/>
-    
-      <category term="线性空间" scheme="https://tifa-233.xyz/tags/%E7%BA%BF%E6%80%A7%E7%A9%BA%E9%97%B4/"/>
-    
-      <category term="线性同构" scheme="https://tifa-233.xyz/tags/%E7%BA%BF%E6%80%A7%E5%90%8C%E6%9E%84/"/>
-    
-      <category term="直和" scheme="https://tifa-233.xyz/tags/%E7%9B%B4%E5%92%8C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>题解 - Codeforces Round #645 Div. 2 (A-D)</title>
-    <link href="https://tifa-233.xyz/article/solution-codeforces-645-2/"/>
-    <id>https://tifa-233.xyz/article/solution-codeforces-645-2/</id>
-    <published>2020-05-27T07:12:06.000Z</published>
-    <updated>2020-07-24T17:03:47.666Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;a href=&quot;https://codeforces.com/contest/1358&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;比赛链接&lt;/a&gt;&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="程序设计" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
-    
-      <category term="题解" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E9%A2%98%E8%A7%A3/"/>
-    
-    
-      <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
-    
-      <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
-    
-      <category term="CodeForces" scheme="https://tifa-233.xyz/tags/CodeForces/"/>
-    
-      <category term="尺取法" scheme="https://tifa-233.xyz/tags/%E5%B0%BA%E5%8F%96%E6%B3%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>差分约束 - 学习笔记</title>
-    <link href="https://tifa-233.xyz/article/difference-constraint/"/>
-    <id>https://tifa-233.xyz/article/difference-constraint/</id>
-    <published>2020-05-11T06:39:55.000Z</published>
-    <updated>2020-05-11T14:20:04.192Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;求解如下形式不等式组的方法&lt;/p&gt;
-&lt;p class=&#39;katex-block&#39;&gt;&lt;span class=&quot;katex-display&quot;&gt;&lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mo fence=&quot;true&quot;&gt;{&lt;/mo&gt;&lt;mtable rowspacing=&quot;0.3599999999999999em&quot; columnalign=&quot;left left&quot; columnspacing=&quot;1em&quot;&gt;&lt;mtr&gt;&lt;mtd&gt;&lt;mstyle scriptlevel=&quot;0&quot; displaystyle=&quot;false&quot;&gt;&lt;mrow&gt;&lt;msub&gt;&lt;mi&gt;x&lt;/mi&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;/msub&gt;&lt;mo&gt;−&lt;/mo&gt;&lt;msub&gt;&lt;mi&gt;x&lt;/mi&gt;&lt;mi&gt;j&lt;/mi&gt;&lt;/msub&gt;&lt;mo&gt;⩽&lt;/mo&gt;&lt;msub&gt;&lt;mi&gt;c&lt;/mi&gt;&lt;mi&gt;k&lt;/mi&gt;&lt;/msub&gt;&lt;/mrow&gt;&lt;/mstyle&gt;&lt;/mtd&gt;&lt;/mtr&gt;&lt;mtr&gt;&lt;mtd&gt;&lt;mstyle scriptlevel=&quot;0&quot; displaystyle=&quot;false&quot;&gt;&lt;mrow&gt;&lt;msub&gt;&lt;mi&gt;c&lt;/mi&gt;&lt;mi&gt;k&lt;/mi&gt;&lt;/msub&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mi&gt;c&lt;/mi&gt;&lt;mi&gt;o&lt;/mi&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mi&gt;s&lt;/mi&gt;&lt;mi&gt;t&lt;/mi&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mi&gt;t&lt;/mi&gt;&lt;/mrow&gt;&lt;/mstyle&gt;&lt;/mtd&gt;&lt;/mtr&gt;&lt;mtr&gt;&lt;mtd&gt;&lt;mstyle scriptlevel=&quot;0&quot; displaystyle=&quot;false&quot;&gt;&lt;mrow&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;mo&gt;⩽&lt;/mo&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;mo separator=&quot;true&quot;&gt;,&lt;/mo&gt;&lt;mi&gt;j&lt;/mi&gt;&lt;mo&gt;⩽&lt;/mo&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;/mrow&gt;&lt;/mstyle&gt;&lt;/mtd&gt;&lt;/mtr&gt;&lt;mtr&gt;&lt;mtd&gt;&lt;mstyle scriptlevel=&quot;0&quot; displaystyle=&quot;false&quot;&gt;&lt;mrow&gt;&lt;mi&gt;k&lt;/mi&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;mo separator=&quot;true&quot;&gt;,&lt;/mo&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;mo separator=&quot;true&quot;&gt;,&lt;/mo&gt;&lt;mi mathvariant=&quot;normal&quot;&gt;.&lt;/mi&gt;&lt;mi mathvariant=&quot;normal&quot;&gt;.&lt;/mi&gt;&lt;mi mathvariant=&quot;normal&quot;&gt;.&lt;/mi&gt;&lt;mo separator=&quot;true&quot;&gt;,&lt;/mo&gt;&lt;mi&gt;m&lt;/mi&gt;&lt;/mrow&gt;&lt;/mstyle&gt;&lt;/mtd&gt;&lt;/mtr&gt;&lt;/mtable&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;\begin{cases}
-  x_i-x_j\leqslant c_k\\
-  c_k=constant\\
-  1\leqslant i,j\leqslant n\\
-  k=1,2,...,m\\
-\end{cases}&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:5.76em;vertical-align:-2.63em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;minner&quot;&gt;&lt;span class=&quot;mopen&quot;&gt;&lt;span class=&quot;delimsizing mult&quot;&gt;&lt;span class=&quot;vlist-t vlist-t2&quot;&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:2.9500200000000008em;&quot;&gt;&lt;span style=&quot;top:-1.59999em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:3.15em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;delimsizinginner delim-size4&quot;&gt;&lt;span&gt;⎩&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;top:-1.5949900000000001em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:3.15em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;delimsizinginner delim-size4&quot;&gt;&lt;span&gt;⎪&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;top:-1.8899900000000003em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:3.15em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;delimsizinginner delim-size4&quot;&gt;&lt;span&gt;⎪&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;top:-2.1849900000000004em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:3.15em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;delimsizinginner delim-size4&quot;&gt;&lt;span&gt;⎪&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;top:-2.2049900000000004em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:3.15em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;delimsizinginner delim-size4&quot;&gt;&lt;span&gt;⎪&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;top:-3.1500100000000004em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:3.15em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;delimsizinginner delim-size4&quot;&gt;&lt;span&gt;⎨&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;top:-4.29501em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:3.15em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;delimsizinginner delim-size4&quot;&gt;&lt;span&gt;⎪&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;top:-4.59001em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:3.15em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;delimsizinginner delim-size4&quot;&gt;&lt;span&gt;⎪&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;top:-4.885010000000001em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:3.15em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;delimsizinginner delim-size4&quot;&gt;&lt;span&gt;⎪&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;top:-4.905010000000001em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:3.15em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;delimsizinginner delim-size4&quot;&gt;&lt;span&gt;⎪&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;top:-5.20002em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:3.15em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;delimsizinginner delim-size4&quot;&gt;&lt;span&gt;⎧&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-s&quot;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:2.45002em;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mtable&quot;&gt;&lt;span class=&quot;col-align-l&quot;&gt;&lt;span class=&quot;vlist-t vlist-t2&quot;&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:3.1300000000000003em;&quot;&gt;&lt;span style=&quot;top:-5.130000000000001em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:3.008em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord mathdefault&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;msupsub&quot;&gt;&lt;span class=&quot;vlist-t vlist-t2&quot;&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.31166399999999994em;&quot;&gt;&lt;span style=&quot;top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:2.7em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;sizing reset-size6 size3 mtight&quot;&gt;&lt;span class=&quot;mord mathdefault mtight&quot;&gt;i&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-s&quot;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.15em;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2222222222222222em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mbin&quot;&gt;−&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2222222222222222em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord mathdefault&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;msupsub&quot;&gt;&lt;span class=&quot;vlist-t vlist-t2&quot;&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.311664em;&quot;&gt;&lt;span style=&quot;top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:2.7em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;sizing reset-size6 size3 mtight&quot;&gt;&lt;span class=&quot;mord mathdefault mtight&quot; style=&quot;margin-right:0.05724em;&quot;&gt;j&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-s&quot;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.286108em;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2777777777777778em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mrel amsrm&quot;&gt;⩽&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2777777777777778em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord mathdefault&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;msupsub&quot;&gt;&lt;span class=&quot;vlist-t vlist-t2&quot;&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.33610799999999996em;&quot;&gt;&lt;span style=&quot;top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:2.7em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;sizing reset-size6 size3 mtight&quot;&gt;&lt;span class=&quot;mord mathdefault mtight&quot; style=&quot;margin-right:0.03148em;&quot;&gt;k&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-s&quot;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.15em;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;top:-3.6900000000000004em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:3.008em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord mathdefault&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;msupsub&quot;&gt;&lt;span class=&quot;vlist-t vlist-t2&quot;&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.33610799999999996em;&quot;&gt;&lt;span style=&quot;top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:2.7em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;sizing reset-size6 size3 mtight&quot;&gt;&lt;span class=&quot;mord mathdefault mtight&quot; style=&quot;margin-right:0.03148em;&quot;&gt;k&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-s&quot;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.15em;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2777777777777778em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mrel&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2777777777777778em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot;&gt;o&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot;&gt;t&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;top:-2.2500000000000004em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:3.008em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2777777777777778em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mrel amsrm&quot;&gt;⩽&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2777777777777778em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;mpunct&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.16666666666666666em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot; style=&quot;margin-right:0.05724em;&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2777777777777778em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mrel amsrm&quot;&gt;⩽&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2777777777777778em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot;&gt;n&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;top:-0.8100000000000002em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:3.008em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord mathdefault&quot; style=&quot;margin-right:0.03148em;&quot;&gt;k&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2777777777777778em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mrel&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2777777777777778em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;mpunct&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.16666666666666666em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;mpunct&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.16666666666666666em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mpunct&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.16666666666666666em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot;&gt;m&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-s&quot;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:2.63em;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;mclose nulldelimiter&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="程序设计" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
-    
-      <category term="算法" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E7%AE%97%E6%B3%95/"/>
-    
-    
-      <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
-    
-      <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
-    
-      <category term="算法" scheme="https://tifa-233.xyz/tags/%E7%AE%97%E6%B3%95/"/>
-    
-      <category term="笔记" scheme="https://tifa-233.xyz/tags/%E7%AC%94%E8%AE%B0/"/>
-    
-      <category term="图论" scheme="https://tifa-233.xyz/tags/%E5%9B%BE%E8%AE%BA/"/>
-    
-      <category term="最短路" scheme="https://tifa-233.xyz/tags/%E6%9C%80%E7%9F%AD%E8%B7%AF/"/>
-    
-      <category term="不等式" scheme="https://tifa-233.xyz/tags/%E4%B8%8D%E7%AD%89%E5%BC%8F/"/>
-    
-      <category term="差分约束" scheme="https://tifa-233.xyz/tags/%E5%B7%AE%E5%88%86%E7%BA%A6%E6%9D%9F/"/>
     
   </entry>
   
