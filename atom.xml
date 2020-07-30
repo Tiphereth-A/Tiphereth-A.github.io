@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tifa-233.xyz/"/>
-  <updated>2020-07-29T15:58:51.387Z</updated>
+  <updated>2020-07-30T15:08:05.828Z</updated>
   <id>https://tifa-233.xyz/</id>
   
   <author>
@@ -15,6 +15,123 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>学习笔记 - Prufer序列</title>
+    <link href="https://tifa-233.xyz/article/prufer-sequence/"/>
+    <id>https://tifa-233.xyz/article/prufer-sequence/</id>
+    <published>2020-07-30T14:51:02.000Z</published>
+    <updated>2020-07-30T15:08:05.828Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;据说一切与度数有关的树上计数问题, 都可以用它以及它的性质来解决&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="程序设计" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
+    
+    
+      <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
+    
+      <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
+    
+      <category term="算法" scheme="https://tifa-233.xyz/tags/%E7%AE%97%E6%B3%95/"/>
+    
+      <category term="数据结构" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    
+      <category term="笔记" scheme="https://tifa-233.xyz/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="树" scheme="https://tifa-233.xyz/tags/%E6%A0%91/"/>
+    
+      <category term="计数" scheme="https://tifa-233.xyz/tags/%E8%AE%A1%E6%95%B0/"/>
+    
+      <category term="无根树" scheme="https://tifa-233.xyz/tags/%E6%97%A0%E6%A0%B9%E6%A0%91/"/>
+    
+      <category term="prufer序列" scheme="https://tifa-233.xyz/tags/prufer%E5%BA%8F%E5%88%97/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>题解 - [POJ 2568 等] Decode the Tree</title>
+    <link href="https://tifa-233.xyz/article/sa-poj-2568/"/>
+    <id>https://tifa-233.xyz/article/sa-poj-2568/</id>
+    <published>2020-07-30T14:03:55.000Z</published>
+    <updated>2020-07-30T15:10:08.956Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;题目链接&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://poj.org/problem?id=2568&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;POJ 2568&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://vjudge.net/problem/ZOJ-1965/origin&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;ZOJ 1965&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="程序设计" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
+    
+      <category term="题解" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E9%A2%98%E8%A7%A3/"/>
+    
+    
+      <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
+    
+      <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
+    
+      <category term="数据结构" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    
+      <category term="POJ" scheme="https://tifa-233.xyz/tags/POJ/"/>
+    
+      <category term="树" scheme="https://tifa-233.xyz/tags/%E6%A0%91/"/>
+    
+      <category term="无根树" scheme="https://tifa-233.xyz/tags/%E6%97%A0%E6%A0%B9%E6%A0%91/"/>
+    
+      <category term="ZOJ" scheme="https://tifa-233.xyz/tags/ZOJ/"/>
+    
+      <category term="Prufer序列" scheme="https://tifa-233.xyz/tags/Prufer%E5%BA%8F%E5%88%97/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>题解 - [POJ 2309] BST</title>
+    <link href="https://tifa-233.xyz/article/poj-2309/"/>
+    <id>https://tifa-233.xyz/article/poj-2309/</id>
+    <published>2020-07-30T14:03:05.000Z</published>
+    <updated>2020-07-30T15:09:06.675Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;a href=&quot;http://poj.org/problem?id=2309&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;题目链接&lt;/a&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="程序设计" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
+    
+      <category term="题解" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E9%A2%98%E8%A7%A3/"/>
+    
+    
+      <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
+    
+      <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
+    
+      <category term="数据结构" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    
+      <category term="POJ" scheme="https://tifa-233.xyz/tags/POJ/"/>
+    
+      <category term="树" scheme="https://tifa-233.xyz/tags/%E6%A0%91/"/>
+    
+      <category term="二叉树" scheme="https://tifa-233.xyz/tags/%E4%BA%8C%E5%8F%89%E6%A0%91/"/>
+    
+      <category term="平衡树" scheme="https://tifa-233.xyz/tags/%E5%B9%B3%E8%A1%A1%E6%A0%91/"/>
+    
+      <category term="BST" scheme="https://tifa-233.xyz/tags/BST/"/>
+    
+      <category term="位运算" scheme="https://tifa-233.xyz/tags/%E4%BD%8D%E8%BF%90%E7%AE%97/"/>
+    
+  </entry>
   
   <entry>
     <title>题解 - [POJ 1850] Code</title>
@@ -607,110 +724,6 @@
       <category term="素数/质数" scheme="https://tifa-233.xyz/tags/%E7%B4%A0%E6%95%B0-%E8%B4%A8%E6%95%B0/"/>
     
       <category term="筛法" scheme="https://tifa-233.xyz/tags/%E7%AD%9B%E6%B3%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>题解 - [LightOJ 1245] Harmonic Number (II)</title>
-    <link href="https://tifa-233.xyz/article/lightoj-1245/"/>
-    <id>https://tifa-233.xyz/article/lightoj-1245/</id>
-    <published>2020-07-24T16:12:29.000Z</published>
-    <updated>2020-07-25T03:33:40.741Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;a href=&quot;http://lightoj.com/volume_showproblem.php?problem=1245&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;题目链接&lt;/a&gt;&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="程序设计" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
-    
-      <category term="题解" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E9%A2%98%E8%A7%A3/"/>
-    
-    
-      <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
-    
-      <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
-    
-      <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
-    
-      <category term="LightOJ" scheme="https://tifa-233.xyz/tags/LightOJ/"/>
-    
-      <category term="数论分块/整除分块" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E8%AE%BA%E5%88%86%E5%9D%97-%E6%95%B4%E9%99%A4%E5%88%86%E5%9D%97/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>高等代数笔记 - 基础知识</title>
-    <link href="https://tifa-233.xyz/article/advanced-algebra/basic-knowledge/"/>
-    <id>https://tifa-233.xyz/article/advanced-algebra/basic-knowledge/</id>
-    <published>2020-07-14T15:29:59.000Z</published>
-    <updated>2020-07-26T13:13:07.211Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;本章主要列举一些前置知识&lt;/p&gt;
-&lt;p&gt;随用随补&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="笔记" scheme="https://tifa-233.xyz/categories/%E7%AC%94%E8%AE%B0/"/>
-    
-      <category term="数学" scheme="https://tifa-233.xyz/categories/%E7%AC%94%E8%AE%B0/%E6%95%B0%E5%AD%A6/"/>
-    
-      <category term="代数" scheme="https://tifa-233.xyz/categories/%E7%AC%94%E8%AE%B0/%E6%95%B0%E5%AD%A6/%E4%BB%A3%E6%95%B0/"/>
-    
-      <category term="高等代数" scheme="https://tifa-233.xyz/categories/%E7%AC%94%E8%AE%B0/%E6%95%B0%E5%AD%A6/%E4%BB%A3%E6%95%B0/%E9%AB%98%E7%AD%89%E4%BB%A3%E6%95%B0/"/>
-    
-    
-      <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
-    
-      <category term="笔记" scheme="https://tifa-233.xyz/tags/%E7%AC%94%E8%AE%B0/"/>
-    
-      <category term="代数" scheme="https://tifa-233.xyz/tags/%E4%BB%A3%E6%95%B0/"/>
-    
-      <category term="高等代数" scheme="https://tifa-233.xyz/tags/%E9%AB%98%E7%AD%89%E4%BB%A3%E6%95%B0/"/>
-    
-      <category term="群" scheme="https://tifa-233.xyz/tags/%E7%BE%A4/"/>
-    
-      <category term="环" scheme="https://tifa-233.xyz/tags/%E7%8E%AF/"/>
-    
-      <category term="域" scheme="https://tifa-233.xyz/tags/%E5%9F%9F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>高等代数笔记 - 综述 &amp; 目录 (更新中)</title>
-    <link href="https://tifa-233.xyz/article/advanced-algebra/catalog/"/>
-    <id>https://tifa-233.xyz/article/advanced-algebra/catalog/</id>
-    <published>2020-07-14T15:05:16.000Z</published>
-    <updated>2020-07-25T15:54:28.884Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;开个大坑&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="笔记" scheme="https://tifa-233.xyz/categories/%E7%AC%94%E8%AE%B0/"/>
-    
-      <category term="数学" scheme="https://tifa-233.xyz/categories/%E7%AC%94%E8%AE%B0/%E6%95%B0%E5%AD%A6/"/>
-    
-      <category term="代数" scheme="https://tifa-233.xyz/categories/%E7%AC%94%E8%AE%B0/%E6%95%B0%E5%AD%A6/%E4%BB%A3%E6%95%B0/"/>
-    
-      <category term="高等代数" scheme="https://tifa-233.xyz/categories/%E7%AC%94%E8%AE%B0/%E6%95%B0%E5%AD%A6/%E4%BB%A3%E6%95%B0/%E9%AB%98%E7%AD%89%E4%BB%A3%E6%95%B0/"/>
-    
-    
-      <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
-    
-      <category term="笔记" scheme="https://tifa-233.xyz/tags/%E7%AC%94%E8%AE%B0/"/>
-    
-      <category term="代数" scheme="https://tifa-233.xyz/tags/%E4%BB%A3%E6%95%B0/"/>
-    
-      <category term="高等代数" scheme="https://tifa-233.xyz/tags/%E9%AB%98%E7%AD%89%E4%BB%A3%E6%95%B0/"/>
     
   </entry>
   

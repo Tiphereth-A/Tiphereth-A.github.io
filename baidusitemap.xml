@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://tifa-233.xyz/article/sa-poj-2568/</loc>
+    <lastmod>2020-07-30</lastmod>
+  </url>  <url>
+    <loc>https://tifa-233.xyz/article/poj-2309/</loc>
+    <lastmod>2020-07-30</lastmod>
+  </url>  <url>
+    <loc>https://tifa-233.xyz/article/prufer-sequence/</loc>
+    <lastmod>2020-07-30</lastmod>
+  </url>  <url>
+    <loc>https://tifa-233.xyz/article/difference-constraint/</loc>
+    <lastmod>2020-07-30</lastmod>
+  </url>  <url>
     <loc>https://tifa-233.xyz/article/poj-1850/</loc>
     <lastmod>2020-07-29</lastmod>
   </url>  <url>
@@ -141,9 +153,6 @@
   </url>  <url>
     <loc>https://tifa-233.xyz/article/zkw-segment-tree/zkw-segment-tree-test1/</loc>
     <lastmod>2020-05-27</lastmod>
-  </url>  <url>
-    <loc>https://tifa-233.xyz/article/difference-constraint/</loc>
-    <lastmod>2020-05-11</lastmod>
   </url>  <url>
     <loc>https://tifa-233.xyz/article/solution-luogu-p4896/</loc>
     <lastmod>2020-05-10</lastmod>
