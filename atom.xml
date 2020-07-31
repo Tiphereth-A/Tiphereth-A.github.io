@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tifa-233.xyz/"/>
-  <updated>2020-07-30T15:08:05.828Z</updated>
+  <updated>2020-07-31T02:24:46.325Z</updated>
   <id>https://tifa-233.xyz/</id>
   
   <author>
@@ -15,6 +15,41 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>题解 - [UVa 10497] Sweet Child Makes Trouble</title>
+    <link href="https://tifa-233.xyz/article/uva-10497/"/>
+    <id>https://tifa-233.xyz/article/uva-10497/</id>
+    <published>2020-07-31T02:17:18.000Z</published>
+    <updated>2020-07-31T02:24:46.325Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;a href=&quot;https://vjudge.net/problem/UVA-10497/origin&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;题目链接&lt;/a&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="程序设计" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
+    
+      <category term="题解" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E9%A2%98%E8%A7%A3/"/>
+    
+    
+      <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
+    
+      <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
+    
+      <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
+    
+      <category term="计数" scheme="https://tifa-233.xyz/tags/%E8%AE%A1%E6%95%B0/"/>
+    
+      <category term="UVa" scheme="https://tifa-233.xyz/tags/UVa/"/>
+    
+      <category term="错排" scheme="https://tifa-233.xyz/tags/%E9%94%99%E6%8E%92/"/>
+    
+      <category term="高精度" scheme="https://tifa-233.xyz/tags/%E9%AB%98%E7%B2%BE%E5%BA%A6/"/>
+    
+  </entry>
   
   <entry>
     <title>学习笔记 - Prufer序列</title>
@@ -43,9 +78,9 @@
     
       <category term="笔记" scheme="https://tifa-233.xyz/tags/%E7%AC%94%E8%AE%B0/"/>
     
-      <category term="树" scheme="https://tifa-233.xyz/tags/%E6%A0%91/"/>
-    
       <category term="计数" scheme="https://tifa-233.xyz/tags/%E8%AE%A1%E6%95%B0/"/>
+    
+      <category term="树" scheme="https://tifa-233.xyz/tags/%E6%A0%91/"/>
     
       <category term="无根树" scheme="https://tifa-233.xyz/tags/%E6%97%A0%E6%A0%B9%E6%A0%91/"/>
     
@@ -86,9 +121,9 @@
     
       <category term="树" scheme="https://tifa-233.xyz/tags/%E6%A0%91/"/>
     
-      <category term="无根树" scheme="https://tifa-233.xyz/tags/%E6%97%A0%E6%A0%B9%E6%A0%91/"/>
-    
       <category term="ZOJ" scheme="https://tifa-233.xyz/tags/ZOJ/"/>
+    
+      <category term="无根树" scheme="https://tifa-233.xyz/tags/%E6%97%A0%E6%A0%B9%E6%A0%91/"/>
     
       <category term="Prufer序列" scheme="https://tifa-233.xyz/tags/Prufer%E5%BA%8F%E5%88%97/"/>
     
@@ -138,7 +173,7 @@
     <link href="https://tifa-233.xyz/article/poj-1850/"/>
     <id>https://tifa-233.xyz/article/poj-1850/</id>
     <published>2020-07-29T15:27:26.000Z</published>
-    <updated>2020-07-29T15:58:51.387Z</updated>
+    <updated>2020-07-31T02:25:49.953Z</updated>
     
     <summary type="html">
     
@@ -159,6 +194,8 @@
       <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
     
       <category term="POJ" scheme="https://tifa-233.xyz/tags/POJ/"/>
+    
+      <category term="计数" scheme="https://tifa-233.xyz/tags/%E8%AE%A1%E6%95%B0/"/>
     
       <category term="组合数学" scheme="https://tifa-233.xyz/tags/%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/"/>
     
@@ -689,41 +726,6 @@
       <category term="LightOJ" scheme="https://tifa-233.xyz/tags/LightOJ/"/>
     
       <category term="快速幂" scheme="https://tifa-233.xyz/tags/%E5%BF%AB%E9%80%9F%E5%B9%82/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>题解 - [LightOJ 1259] Goldbach`s Conjecture</title>
-    <link href="https://tifa-233.xyz/article/lightoj-1259/"/>
-    <id>https://tifa-233.xyz/article/lightoj-1259/</id>
-    <published>2020-07-24T16:19:21.000Z</published>
-    <updated>2020-07-25T03:33:51.191Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;a href=&quot;http://lightoj.com/volume_showproblem.php?problem=1259&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;题目链接&lt;/a&gt;&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="程序设计" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
-    
-      <category term="题解" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E9%A2%98%E8%A7%A3/"/>
-    
-    
-      <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
-    
-      <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
-    
-      <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
-    
-      <category term="数论" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E8%AE%BA/"/>
-    
-      <category term="LightOJ" scheme="https://tifa-233.xyz/tags/LightOJ/"/>
-    
-      <category term="素数/质数" scheme="https://tifa-233.xyz/tags/%E7%B4%A0%E6%95%B0-%E8%B4%A8%E6%95%B0/"/>
-    
-      <category term="筛法" scheme="https://tifa-233.xyz/tags/%E7%AD%9B%E6%B3%95/"/>
     
   </entry>
   
