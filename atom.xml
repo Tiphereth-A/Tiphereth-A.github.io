@@ -41,9 +41,9 @@
     
       <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
     
-      <category term="图论" scheme="https://tifa-233.xyz/tags/%E5%9B%BE%E8%AE%BA/"/>
-    
       <category term="HDU" scheme="https://tifa-233.xyz/tags/HDU/"/>
+    
+      <category term="图论" scheme="https://tifa-233.xyz/tags/%E5%9B%BE%E8%AE%BA/"/>
     
       <category term="Ramsey定理" scheme="https://tifa-233.xyz/tags/Ramsey%E5%AE%9A%E7%90%86/"/>
     
@@ -74,9 +74,9 @@
     
       <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
     
-      <category term="计数" scheme="https://tifa-233.xyz/tags/%E8%AE%A1%E6%95%B0/"/>
-    
       <category term="容斥定理" scheme="https://tifa-233.xyz/tags/%E5%AE%B9%E6%96%A5%E5%AE%9A%E7%90%86/"/>
+    
+      <category term="计数" scheme="https://tifa-233.xyz/tags/%E8%AE%A1%E6%95%B0/"/>
     
       <category term="ZOJ" scheme="https://tifa-233.xyz/tags/ZOJ/"/>
     
@@ -107,9 +107,9 @@
     
       <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
     
-      <category term="计数" scheme="https://tifa-233.xyz/tags/%E8%AE%A1%E6%95%B0/"/>
-    
       <category term="容斥定理" scheme="https://tifa-233.xyz/tags/%E5%AE%B9%E6%96%A5%E5%AE%9A%E7%90%86/"/>
+    
+      <category term="计数" scheme="https://tifa-233.xyz/tags/%E8%AE%A1%E6%95%B0/"/>
     
       <category term="Ural" scheme="https://tifa-233.xyz/tags/Ural/"/>
     
@@ -214,13 +214,13 @@
     
       <category term="算法" scheme="https://tifa-233.xyz/tags/%E7%AE%97%E6%B3%95/"/>
     
-      <category term="笔记" scheme="https://tifa-233.xyz/tags/%E7%AC%94%E8%AE%B0/"/>
-    
       <category term="数据结构" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
     
-      <category term="树" scheme="https://tifa-233.xyz/tags/%E6%A0%91/"/>
+      <category term="笔记" scheme="https://tifa-233.xyz/tags/%E7%AC%94%E8%AE%B0/"/>
     
       <category term="计数" scheme="https://tifa-233.xyz/tags/%E8%AE%A1%E6%95%B0/"/>
+    
+      <category term="树" scheme="https://tifa-233.xyz/tags/%E6%A0%91/"/>
     
       <category term="无根树" scheme="https://tifa-233.xyz/tags/%E6%97%A0%E6%A0%B9%E6%A0%91/"/>
     
@@ -346,7 +346,7 @@
     <link href="https://tifa-233.xyz/article/poj-1650/"/>
     <id>https://tifa-233.xyz/article/poj-1650/</id>
     <published>2020-07-28T13:47:20.000Z</published>
-    <updated>2020-07-28T17:59:42.498Z</updated>
+    <updated>2020-08-01T14:57:38.394Z</updated>
     
     <summary type="html">
     
@@ -589,9 +589,9 @@
     
       <category term="数论" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E8%AE%BA/"/>
     
-      <category term="Möbius函数" scheme="https://tifa-233.xyz/tags/Mobius%E5%87%BD%E6%95%B0/"/>
-    
       <category term="POJ" scheme="https://tifa-233.xyz/tags/POJ/"/>
+    
+      <category term="Möbius函数" scheme="https://tifa-233.xyz/tags/Mobius%E5%87%BD%E6%95%B0/"/>
     
       <category term="容斥定理" scheme="https://tifa-233.xyz/tags/%E5%AE%B9%E6%96%A5%E5%AE%9A%E7%90%86/"/>
     
