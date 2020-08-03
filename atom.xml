@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tifa-233.xyz/"/>
-  <updated>2020-07-31T15:48:48.968Z</updated>
+  <updated>2020-08-03T07:59:34.927Z</updated>
   <id>https://tifa-233.xyz/</id>
   
   <author>
@@ -15,6 +15,39 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>题解 - [Luogu P3599] Koishi Loves Construction</title>
+    <link href="https://tifa-233.xyz/article/luogu-p3599/"/>
+    <id>https://tifa-233.xyz/article/luogu-p3599/</id>
+    <published>2020-08-03T06:23:09.000Z</published>
+    <updated>2020-08-03T07:59:34.927Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;a href=&quot;https://www.luogu.com.cn/problem/P3599&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;题目链接&lt;/a&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="程序设计" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
+    
+      <category term="题解" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E9%A2%98%E8%A7%A3/"/>
+    
+    
+      <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
+    
+      <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
+    
+      <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
+    
+      <category term="数论" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E8%AE%BA/"/>
+    
+      <category term="洛谷" scheme="https://tifa-233.xyz/tags/%E6%B4%9B%E8%B0%B7/"/>
+    
+      <category term="逆元" scheme="https://tifa-233.xyz/tags/%E9%80%86%E5%85%83/"/>
+    
+  </entry>
   
   <entry>
     <title>题解 - [HDU 6152] Friend-Graph</title>
@@ -41,9 +74,9 @@
     
       <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
     
-      <category term="图论" scheme="https://tifa-233.xyz/tags/%E5%9B%BE%E8%AE%BA/"/>
-    
       <category term="HDU" scheme="https://tifa-233.xyz/tags/HDU/"/>
+    
+      <category term="图论" scheme="https://tifa-233.xyz/tags/%E5%9B%BE%E8%AE%BA/"/>
     
       <category term="Ramsey定理" scheme="https://tifa-233.xyz/tags/Ramsey%E5%AE%9A%E7%90%86/"/>
     
@@ -695,37 +728,6 @@
       <category term="高等代数" scheme="https://tifa-233.xyz/tags/%E9%AB%98%E7%AD%89%E4%BB%A3%E6%95%B0/"/>
     
       <category term="线性方程组" scheme="https://tifa-233.xyz/tags/%E7%BA%BF%E6%80%A7%E6%96%B9%E7%A8%8B%E7%BB%84/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>题解 - [CodeForces 696 A] Lorenzo Von Matterhorn</title>
-    <link href="https://tifa-233.xyz/article/codeforces-696-A/"/>
-    <id>https://tifa-233.xyz/article/codeforces-696-A/</id>
-    <published>2020-07-24T16:48:00.000Z</published>
-    <updated>2020-07-25T03:20:20.116Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;a href=&quot;https://codeforces.com/problemset/problem/696/A&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;题目链接&lt;/a&gt;&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="程序设计" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
-    
-      <category term="题解" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E9%A2%98%E8%A7%A3/"/>
-    
-    
-      <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
-    
-      <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
-    
-      <category term="CodeForces" scheme="https://tifa-233.xyz/tags/CodeForces/"/>
-    
-      <category term="数据结构" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
-    
-      <category term="完全二叉树" scheme="https://tifa-233.xyz/tags/%E5%AE%8C%E5%85%A8%E4%BA%8C%E5%8F%89%E6%A0%91/"/>
     
   </entry>
   
