@@ -103,9 +103,9 @@
     
       <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
     
-      <category term="HDU" scheme="https://tifa-233.xyz/tags/HDU/"/>
-    
       <category term="图论" scheme="https://tifa-233.xyz/tags/%E5%9B%BE%E8%AE%BA/"/>
+    
+      <category term="HDU" scheme="https://tifa-233.xyz/tags/HDU/"/>
     
       <category term="Ramsey定理" scheme="https://tifa-233.xyz/tags/Ramsey%E5%AE%9A%E7%90%86/"/>
     
@@ -284,13 +284,13 @@
     
       <category term="无根树" scheme="https://tifa-233.xyz/tags/%E6%97%A0%E6%A0%B9%E6%A0%91/"/>
     
-      <category term="Prufer序列" scheme="https://tifa-233.xyz/tags/Prufer%E5%BA%8F%E5%88%97/"/>
-    
       <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
     
       <category term="POJ" scheme="https://tifa-233.xyz/tags/POJ/"/>
     
       <category term="ZOJ" scheme="https://tifa-233.xyz/tags/ZOJ/"/>
+    
+      <category term="Prufer序列" scheme="https://tifa-233.xyz/tags/Prufer%E5%BA%8F%E5%88%97/"/>
     
   </entry>
   
@@ -424,13 +424,13 @@
     
       <category term="数论" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E8%AE%BA/"/>
     
+      <category term="UVa" scheme="https://tifa-233.xyz/tags/UVa/"/>
+    
       <category term="复数" scheme="https://tifa-233.xyz/tags/%E5%A4%8D%E6%95%B0/"/>
     
       <category term="Gauss整数" scheme="https://tifa-233.xyz/tags/Gauss%E6%95%B4%E6%95%B0/"/>
     
       <category term="Gauss素数" scheme="https://tifa-233.xyz/tags/Gauss%E7%B4%A0%E6%95%B0/"/>
-    
-      <category term="UVa" scheme="https://tifa-233.xyz/tags/UVa/"/>
     
   </entry>
   
@@ -502,11 +502,11 @@
     
       <category term="POJ" scheme="https://tifa-233.xyz/tags/POJ/"/>
     
+      <category term="ZOJ" scheme="https://tifa-233.xyz/tags/ZOJ/"/>
+    
       <category term="复数" scheme="https://tifa-233.xyz/tags/%E5%A4%8D%E6%95%B0/"/>
     
       <category term="Gauss整数" scheme="https://tifa-233.xyz/tags/Gauss%E6%95%B4%E6%95%B0/"/>
-    
-      <category term="ZOJ" scheme="https://tifa-233.xyz/tags/ZOJ/"/>
     
   </entry>
   
@@ -614,9 +614,9 @@
     
       <category term="数论" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E8%AE%BA/"/>
     
-      <category term="Möbius函数" scheme="https://tifa-233.xyz/tags/Mobius%E5%87%BD%E6%95%B0/"/>
-    
       <category term="POJ" scheme="https://tifa-233.xyz/tags/POJ/"/>
+    
+      <category term="Möbius函数" scheme="https://tifa-233.xyz/tags/Mobius%E5%87%BD%E6%95%B0/"/>
     
       <category term="容斥定理" scheme="https://tifa-233.xyz/tags/%E5%AE%B9%E6%96%A5%E5%AE%9A%E7%90%86/"/>
     
