@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tifa-233.xyz/"/>
-  <updated>2020-08-18T09:29:12.139Z</updated>
+  <updated>2020-08-18T09:32:22.036Z</updated>
   <id>https://tifa-233.xyz/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://tifa-233.xyz/article/codeforces-global-round-10/"/>
     <id>https://tifa-233.xyz/article/codeforces-global-round-10/</id>
     <published>2020-08-18T06:51:12.000Z</published>
-    <updated>2020-08-18T09:29:12.139Z</updated>
+    <updated>2020-08-18T09:32:22.036Z</updated>
     
     <summary type="html">
     
@@ -47,8 +47,6 @@
       <category term="CodeForces" scheme="https://tifa-233.xyz/tags/CodeForces/"/>
     
       <category term="模拟" scheme="https://tifa-233.xyz/tags/%E6%A8%A1%E6%8B%9F/"/>
-    
-      <category term="构造" scheme="https://tifa-233.xyz/tags/%E6%9E%84%E9%80%A0/"/>
     
   </entry>
   
@@ -178,9 +176,9 @@
     
       <category term="计数" scheme="https://tifa-233.xyz/tags/%E8%AE%A1%E6%95%B0/"/>
     
-      <category term="ZOJ" scheme="https://tifa-233.xyz/tags/ZOJ/"/>
-    
       <category term="容斥定理" scheme="https://tifa-233.xyz/tags/%E5%AE%B9%E6%96%A5%E5%AE%9A%E7%90%86/"/>
+    
+      <category term="ZOJ" scheme="https://tifa-233.xyz/tags/ZOJ/"/>
     
   </entry>
   
@@ -211,9 +209,9 @@
     
       <category term="计数" scheme="https://tifa-233.xyz/tags/%E8%AE%A1%E6%95%B0/"/>
     
-      <category term="Ural" scheme="https://tifa-233.xyz/tags/Ural/"/>
-    
       <category term="容斥定理" scheme="https://tifa-233.xyz/tags/%E5%AE%B9%E6%96%A5%E5%AE%9A%E7%90%86/"/>
+    
+      <category term="Ural" scheme="https://tifa-233.xyz/tags/Ural/"/>
     
   </entry>
   
@@ -654,9 +652,9 @@
     
       <category term="数论" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E8%AE%BA/"/>
     
-      <category term="POJ" scheme="https://tifa-233.xyz/tags/POJ/"/>
-    
       <category term="Möbius函数" scheme="https://tifa-233.xyz/tags/Mobius%E5%87%BD%E6%95%B0/"/>
+    
+      <category term="POJ" scheme="https://tifa-233.xyz/tags/POJ/"/>
     
       <category term="容斥定理" scheme="https://tifa-233.xyz/tags/%E5%AE%B9%E6%96%A5%E5%AE%9A%E7%90%86/"/>
     
