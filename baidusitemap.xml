@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://tifa-233.xyz/article/asr/</loc>
+    <lastmod>2020-10-02</lastmod>
+  </url>  <url>
+    <loc>https://tifa-233.xyz/article/adaptive-simpson-rule/</loc>
+    <lastmod>2020-10-02</lastmod>
+  </url>  <url>
     <loc>https://tifa-233.xyz/article/codeforces-global-round-10/</loc>
     <lastmod>2020-08-18</lastmod>
   </url>  <url>
@@ -162,9 +168,6 @@
   </url>  <url>
     <loc>https://tifa-233.xyz/article/zkw-segment-tree/</loc>
     <lastmod>2020-05-30</lastmod>
-  </url>  <url>
-    <loc>https://tifa-233.xyz/article/adaptive-simpson-rule/</loc>
-    <lastmod>2020-05-27</lastmod>
   </url>  <url>
     <loc>https://tifa-233.xyz/article/approx-number/</loc>
     <lastmod>2020-05-27</lastmod>

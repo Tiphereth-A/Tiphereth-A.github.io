@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tifa-233.xyz/"/>
-  <updated>2020-08-18T09:32:37.804Z</updated>
+  <updated>2020-10-02T14:27:26.160Z</updated>
   <id>https://tifa-233.xyz/</id>
   
   <author>
@@ -15,6 +15,39 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>算法笔记 - Simpson法与自适应Simpson法</title>
+    <link href="https://tifa-233.xyz/article/asr/"/>
+    <id>https://tifa-233.xyz/article/asr/</id>
+    <published>2020-10-02T14:23:57.000Z</published>
+    <updated>2020-10-02T14:27:26.160Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;自适应Simpson法是一种基于Simpson法的数值积分算法&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="程序设计" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
+    
+      <category term="算法" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E7%AE%97%E6%B3%95/"/>
+    
+    
+      <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
+    
+      <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
+    
+      <category term="算法" scheme="https://tifa-233.xyz/tags/%E7%AE%97%E6%B3%95/"/>
+    
+      <category term="数值积分" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%80%BC%E7%A7%AF%E5%88%86/"/>
+    
+      <category term="自适应Simpson法" scheme="https://tifa-233.xyz/tags/%E8%87%AA%E9%80%82%E5%BA%94Simpson%E6%B3%95/"/>
+    
+      <category term="Simpson法" scheme="https://tifa-233.xyz/tags/Simpson%E6%B3%95/"/>
+    
+  </entry>
   
   <entry>
     <title>题解 - [Codeforces Global Round 10](A - D &amp; F)</title>
@@ -357,11 +390,11 @@
     
       <category term="树" scheme="https://tifa-233.xyz/tags/%E6%A0%91/"/>
     
+      <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
+    
       <category term="二叉树" scheme="https://tifa-233.xyz/tags/%E4%BA%8C%E5%8F%89%E6%A0%91/"/>
     
       <category term="平衡树" scheme="https://tifa-233.xyz/tags/%E5%B9%B3%E8%A1%A1%E6%A0%91/"/>
-    
-      <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
     
       <category term="POJ" scheme="https://tifa-233.xyz/tags/POJ/"/>
     
@@ -652,9 +685,9 @@
     
       <category term="数论" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E8%AE%BA/"/>
     
-      <category term="POJ" scheme="https://tifa-233.xyz/tags/POJ/"/>
-    
       <category term="Möbius函数" scheme="https://tifa-233.xyz/tags/Mobius%E5%87%BD%E6%95%B0/"/>
+    
+      <category term="POJ" scheme="https://tifa-233.xyz/tags/POJ/"/>
     
       <category term="容斥定理" scheme="https://tifa-233.xyz/tags/%E5%AE%B9%E6%96%A5%E5%AE%9A%E7%90%86/"/>
     
@@ -682,51 +715,6 @@
       <category term="C" scheme="https://tifa-233.xyz/tags/C/"/>
     
       <category term="随笔" scheme="https://tifa-233.xyz/tags/%E9%9A%8F%E7%AC%94/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>题解 - [POJ 1141 等] Brackets Sequence</title>
-    <link href="https://tifa-233.xyz/article/sa-poj-1141/"/>
-    <id>https://tifa-233.xyz/article/sa-poj-1141/</id>
-    <published>2020-07-25T14:14:38.000Z</published>
-    <updated>2020-07-27T16:18:21.830Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;题目链接&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://poj.org/problem?id=1141&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;POJ 1141&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://vjudge.net/problem/ZOJ-1463/origin&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;ZOJ 1463&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://vjudge.net/problem/UVA-1626/origin&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;UVa 1626&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://acm.timus.ru/problem.aspx?space=1&amp;amp;num=1183&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Ural 1183&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-    
-    </summary>
-    
-    
-      <category term="程序设计" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
-    
-      <category term="题解" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E9%A2%98%E8%A7%A3/"/>
-    
-    
-      <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
-    
-      <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
-    
-      <category term="POJ" scheme="https://tifa-233.xyz/tags/POJ/"/>
-    
-      <category term="ZOJ" scheme="https://tifa-233.xyz/tags/ZOJ/"/>
-    
-      <category term="Ural" scheme="https://tifa-233.xyz/tags/Ural/"/>
-    
-      <category term="UVa" scheme="https://tifa-233.xyz/tags/UVa/"/>
-    
-      <category term="DP" scheme="https://tifa-233.xyz/tags/DP/"/>
-    
-      <category term="区间类DP" scheme="https://tifa-233.xyz/tags/%E5%8C%BA%E9%97%B4%E7%B1%BBDP/"/>
-    
-      <category term="记忆化搜索" scheme="https://tifa-233.xyz/tags/%E8%AE%B0%E5%BF%86%E5%8C%96%E6%90%9C%E7%B4%A2/"/>
     
   </entry>
   
