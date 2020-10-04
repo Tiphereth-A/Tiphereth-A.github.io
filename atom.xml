@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tifa-233.xyz/"/>
-  <updated>2020-10-04T04:02:08.242Z</updated>
+  <updated>2020-10-04T05:47:39.231Z</updated>
   <id>https://tifa-233.xyz/</id>
   
   <author>
@@ -17,11 +17,44 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>题解 - [Luogu P3951] 小凯的疑惑 / [蓝桥杯2013省]买不到的数目</title>
+    <link href="https://tifa-233.xyz/article/luogu-p3951/"/>
+    <id>https://tifa-233.xyz/article/luogu-p3951/</id>
+    <published>2020-10-04T04:27:01.000Z</published>
+    <updated>2020-10-04T05:47:39.231Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;a href=&quot;https://www.luogu.com.cn/problem/P3951&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;题目链接&lt;/a&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="程序设计" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
+    
+      <category term="题解" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E9%A2%98%E8%A7%A3/"/>
+    
+    
+      <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
+    
+      <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
+    
+      <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
+    
+      <category term="数论" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E8%AE%BA/"/>
+    
+      <category term="洛谷" scheme="https://tifa-233.xyz/tags/%E6%B4%9B%E8%B0%B7/"/>
+    
+      <category term="构造" scheme="https://tifa-233.xyz/tags/%E6%9E%84%E9%80%A0/"/>
+    
+  </entry>
+  
+  <entry>
     <title>笔记 - 整除, 素数, gcd &amp; lcm, 同余, 逆元, CRT</title>
     <link href="https://tifa-233.xyz/article/nt-1/"/>
     <id>https://tifa-233.xyz/article/nt-1/</id>
     <published>2020-10-03T17:14:43.000Z</published>
-    <updated>2020-10-04T04:02:08.242Z</updated>
+    <updated>2020-10-04T05:50:36.403Z</updated>
     
     <summary type="html">
     
@@ -50,6 +83,8 @@
       <category term="筛法" scheme="https://tifa-233.xyz/tags/%E7%AD%9B%E6%B3%95/"/>
     
       <category term="逆元" scheme="https://tifa-233.xyz/tags/%E9%80%86%E5%85%83/"/>
+    
+      <category term="构造" scheme="https://tifa-233.xyz/tags/%E6%9E%84%E9%80%A0/"/>
     
       <category term="整除" scheme="https://tifa-233.xyz/tags/%E6%95%B4%E9%99%A4/"/>
     
@@ -280,9 +315,9 @@
     
       <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
     
-      <category term="HDU" scheme="https://tifa-233.xyz/tags/HDU/"/>
-    
       <category term="图论" scheme="https://tifa-233.xyz/tags/%E5%9B%BE%E8%AE%BA/"/>
+    
+      <category term="HDU" scheme="https://tifa-233.xyz/tags/HDU/"/>
     
       <category term="Ramsey定理" scheme="https://tifa-233.xyz/tags/Ramsey%E5%AE%9A%E7%90%86/"/>
     
@@ -725,42 +760,6 @@
       <category term="Mersenne素数" scheme="https://tifa-233.xyz/tags/Mersenne%E7%B4%A0%E6%95%B0/"/>
     
       <category term="状压DP" scheme="https://tifa-233.xyz/tags/%E7%8A%B6%E5%8E%8BDP/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>题解 - [POJ 1528 等] Perfection</title>
-    <link href="https://tifa-233.xyz/article/sa-poj-1528/"/>
-    <id>https://tifa-233.xyz/article/sa-poj-1528/</id>
-    <published>2020-07-27T14:55:48.000Z</published>
-    <updated>2020-07-28T17:59:42.513Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;题目链接&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://poj.org/problem?id=1528&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;POJ 1528&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://vjudge.net/problem/ZOJ-1284/origin&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;ZOJ 1284&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://vjudge.net/problem/UVA-382/origin&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;UVA 382&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-    
-    </summary>
-    
-    
-      <category term="程序设计" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
-    
-      <category term="题解" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E9%A2%98%E8%A7%A3/"/>
-    
-    
-      <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
-    
-      <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
-    
-      <category term="POJ" scheme="https://tifa-233.xyz/tags/POJ/"/>
-    
-      <category term="ZOJ" scheme="https://tifa-233.xyz/tags/ZOJ/"/>
-    
-      <category term="UVa" scheme="https://tifa-233.xyz/tags/UVa/"/>
     
   </entry>
   
