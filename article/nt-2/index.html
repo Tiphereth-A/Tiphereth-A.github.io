@@ -36,7 +36,7 @@
 <meta property="og:description" content="整除分块, Dirichlet卷积, Dirichlet前缀和, 积性函数, Möbius反演, 杜教筛">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-10-04T16:52:51.000Z">
-<meta property="article:modified_time" content="2020-10-05T03:01:03.990Z">
+<meta property="article:modified_time" content="2020-10-05T03:07:56.776Z">
 <meta property="article:author" content="Tiphereth">
 <meta property="article:tag" content="程序设计">
 <meta property="article:tag" content="笔记">
@@ -48,9 +48,9 @@
 <meta property="article:tag" content="积性函数">
 <meta property="article:tag" content="完全积性函数">
 <meta property="article:tag" content="Dirichlet卷积">
+<meta property="article:tag" content="Dirichlet前缀和">
 <meta property="article:tag" content="Möbius反演">
 <meta property="article:tag" content="Möbius函数">
-<meta property="article:tag" content="Dirichlet前缀和">
 <meta property="article:tag" content="杜教筛">
 <meta name="twitter:card" content="summary">
 
@@ -96,9 +96,9 @@
   .use-motion .logo-line-before i { left: initial; }
   .use-motion .logo-line-after i { right: initial; }
   </style>
-</noscript><!-- hexo-inject:begin --><link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.css'><!-- hexo-inject:end -->
+</noscript>
 
-<link rel="alternate" href="/atom.xml" title="Tiphereth's Blog" type="application/atom+xml">
+<link rel="alternate" href="/atom.xml" title="Tiphereth's Blog" type="application/atom+xml"><!-- hexo-inject:begin --><link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.css'><!-- hexo-inject:end -->
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage">
@@ -153,7 +153,7 @@
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">66</span></a>
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">64</span></a>
 
   </li>
         <li class="menu-item menu-item-favlinks">
@@ -237,7 +237,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2020-10-05 00:52:51 / 修改时间：11:01:03" itemprop="dateCreated datePublished" datetime="2020-10-05T00:52:51+08:00">2020-10-05</time>
+              <time title="创建时间：2020-10-05 00:52:51 / 修改时间：11:07:56" itemprop="dateCreated datePublished" datetime="2020-10-05T00:52:51+08:00">2020-10-05</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -514,7 +514,7 @@ M834 80h400000v40h-400000z'/></svg></span></span></span><span class="vlist-s">�
 <li>对加法的分配律: <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>∗</mo><mo stretchy="false">(</mo><mi>g</mi><mo>+</mo><mi>h</mi><mo stretchy="false">)</mo><mo>=</mo><mi>f</mi><mo>∗</mo><mi>g</mi><mo>+</mo><mi>f</mi><mo>∗</mo><mi>h</mi></mrow><annotation encoding="application/x-tex">f*(g+h)=f*g+f*h</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord mathdefault" style="margin-right:0.10764em;">f</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.03588em;">g</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">h</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord mathdefault" style="margin-right:0.10764em;">f</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.7777700000000001em;vertical-align:-0.19444em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">g</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord mathdefault" style="margin-right:0.10764em;">f</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault">h</span></span></span></span></li>
 <li>存在单位元: <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>∗</mo><mi>ϵ</mi><mo>=</mo><mi>f</mi></mrow><annotation encoding="application/x-tex">f*\epsilon=f</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord mathdefault" style="margin-right:0.10764em;">f</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">ϵ</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord mathdefault" style="margin-right:0.10764em;">f</span></span></span></span></li>
 </ol>
-<p>下面对结合律进行证明</p>
+<p>下面对结合律进行证明 <a href="../multiple-sum">另一篇证明</a></p>
 <h4 id="a-hrefend-t-31-idt-31定理-31a-结合律"><a class="markdownIt-Anchor" href="#a-hrefend-t-31-idt-31定理-31a-结合律"></a> <a href="#end-t-3.1" id="t-3.1">定理 - 3.1</a> (结合律)</h4>
 <p>令<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo separator="true">,</mo><mi>g</mi><mo separator="true">,</mo><mi>h</mi></mrow><annotation encoding="application/x-tex">f,g,h</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord mathdefault" style="margin-right:0.10764em;">f</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">g</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">h</span></span></span></span>是数论函数, 则</p>
 <p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>∗</mo><mo stretchy="false">(</mo><mi>g</mi><mo>∗</mo><mi>h</mi><mo stretchy="false">)</mo><mo>=</mo><mo stretchy="false">(</mo><mi>f</mi><mo>∗</mo><mi>g</mi><mo stretchy="false">)</mo><mo>∗</mo><mi>h</mi></mrow><annotation encoding="application/x-tex">f*(g*h)=(f*g)*h
@@ -1119,9 +1119,9 @@ M834 80h400000v40h-400000z'/></svg></span></span></span><span class="vlist-s">�
               <a href="/tags/%E7%A7%AF%E6%80%A7%E5%87%BD%E6%95%B0/" rel="tag"># 积性函数</a>
               <a href="/tags/%E5%AE%8C%E5%85%A8%E7%A7%AF%E6%80%A7%E5%87%BD%E6%95%B0/" rel="tag"># 完全积性函数</a>
               <a href="/tags/Dirichlet%E5%8D%B7%E7%A7%AF/" rel="tag"># Dirichlet卷积</a>
+              <a href="/tags/Dirichlet%E5%89%8D%E7%BC%80%E5%92%8C/" rel="tag"># Dirichlet前缀和</a>
               <a href="/tags/Mobius%E5%8F%8D%E6%BC%94/" rel="tag"># Möbius反演</a>
               <a href="/tags/Mobius%E5%87%BD%E6%95%B0/" rel="tag"># Möbius函数</a>
-              <a href="/tags/Dirichlet%E5%89%8D%E7%BC%80%E5%92%8C/" rel="tag"># Dirichlet前缀和</a>
               <a href="/tags/%E6%9D%9C%E6%95%99%E7%AD%9B/" rel="tag"># 杜教筛</a>
           </div>
 
@@ -1208,7 +1208,7 @@ M834 80h400000v40h-400000z'/></svg></span></span></span><span class="vlist-s">�
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">66</span>
+          <span class="site-state-item-count">64</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
