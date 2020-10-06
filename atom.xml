@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tifa-233.xyz/"/>
-  <updated>2020-10-05T10:23:54.542Z</updated>
+  <updated>2020-10-06T14:11:13.526Z</updated>
   <id>https://tifa-233.xyz/</id>
   
   <author>
@@ -15,6 +15,42 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>笔记 - 扩展中国剩余定理(exCRT)</title>
+    <link href="https://tifa-233.xyz/article/excrt/"/>
+    <id>https://tifa-233.xyz/article/excrt/</id>
+    <published>2020-10-06T13:45:51.000Z</published>
+    <updated>2020-10-06T14:11:13.526Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;我们都知道, CRT用于求解的方程组要求其模数必须两两互素, 而exCRT则没有这条限制&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;CRT的介绍参见 &lt;a href=&quot;/article/nt-1/#%E4%B8%AD%E5%9B%BD%E5%89%A9%E4%BD%99%E5%AE%9A%E7%90%86&quot;&gt;链接&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="程序设计" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
+    
+      <category term="数学" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E6%95%B0%E5%AD%A6/"/>
+    
+    
+      <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
+    
+      <category term="笔记" scheme="https://tifa-233.xyz/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
+    
+      <category term="数论" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E8%AE%BA/"/>
+    
+      <category term="扩展中国剩余定理(exCRT)" scheme="https://tifa-233.xyz/tags/%E6%89%A9%E5%B1%95%E4%B8%AD%E5%9B%BD%E5%89%A9%E4%BD%99%E5%AE%9A%E7%90%86-exCRT/"/>
+    
+      <category term="exgcd" scheme="https://tifa-233.xyz/tags/exgcd/"/>
+    
+  </entry>
   
   <entry>
     <title>笔记 - 整除分块, Dirichlet卷积, Dirichlet前缀和, 积性函数, Möbius反演, 杜教筛</title>
@@ -103,7 +139,7 @@
     <link href="https://tifa-233.xyz/article/nt-1/"/>
     <id>https://tifa-233.xyz/article/nt-1/</id>
     <published>2020-10-03T17:14:43.000Z</published>
-    <updated>2020-10-04T07:27:41.575Z</updated>
+    <updated>2020-10-06T13:47:54.532Z</updated>
     
     <summary type="html">
     
@@ -124,6 +160,8 @@
       <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
     
       <category term="数论" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E8%AE%BA/"/>
+    
+      <category term="exgcd" scheme="https://tifa-233.xyz/tags/exgcd/"/>
     
       <category term="Wilson定理" scheme="https://tifa-233.xyz/tags/Wilson%E5%AE%9A%E7%90%86/"/>
     
@@ -151,13 +189,11 @@
     
       <category term="同余" scheme="https://tifa-233.xyz/tags/%E5%90%8C%E4%BD%99/"/>
     
-      <category term="exgcd" scheme="https://tifa-233.xyz/tags/exgcd/"/>
-    
       <category term="Fermat小定理" scheme="https://tifa-233.xyz/tags/Fermat%E5%B0%8F%E5%AE%9A%E7%90%86/"/>
     
       <category term="Euler定理" scheme="https://tifa-233.xyz/tags/Euler%E5%AE%9A%E7%90%86/"/>
     
-      <category term="中国剩余定理" scheme="https://tifa-233.xyz/tags/%E4%B8%AD%E5%9B%BD%E5%89%A9%E4%BD%99%E5%AE%9A%E7%90%86/"/>
+      <category term="中国剩余定理(CRT)" scheme="https://tifa-233.xyz/tags/%E4%B8%AD%E5%9B%BD%E5%89%A9%E4%BD%99%E5%AE%9A%E7%90%86-CRT/"/>
     
   </entry>
   
@@ -188,9 +224,9 @@
     
       <category term="数值积分" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%80%BC%E7%A7%AF%E5%88%86/"/>
     
-      <category term="自适应Simpson法" scheme="https://tifa-233.xyz/tags/%E8%87%AA%E9%80%82%E5%BA%94Simpson%E6%B3%95/"/>
-    
       <category term="Simpson法" scheme="https://tifa-233.xyz/tags/Simpson%E6%B3%95/"/>
+    
+      <category term="自适应Simpson法" scheme="https://tifa-233.xyz/tags/%E8%87%AA%E9%80%82%E5%BA%94Simpson%E6%B3%95/"/>
     
   </entry>
   
@@ -535,11 +571,11 @@
     
       <category term="树" scheme="https://tifa-233.xyz/tags/%E6%A0%91/"/>
     
-      <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
-    
       <category term="二叉树" scheme="https://tifa-233.xyz/tags/%E4%BA%8C%E5%8F%89%E6%A0%91/"/>
     
       <category term="平衡树" scheme="https://tifa-233.xyz/tags/%E5%B9%B3%E8%A1%A1%E6%A0%91/"/>
+    
+      <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
     
       <category term="POJ" scheme="https://tifa-233.xyz/tags/POJ/"/>
     
@@ -723,47 +759,6 @@
       <category term="Gauss整数" scheme="https://tifa-233.xyz/tags/Gauss%E6%95%B4%E6%95%B0/"/>
     
       <category term="ZOJ" scheme="https://tifa-233.xyz/tags/ZOJ/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>题解 - [POJ 1777 等] Vivian&#39;s Problem</title>
-    <link href="https://tifa-233.xyz/article/sa-poj-1777/"/>
-    <id>https://tifa-233.xyz/article/sa-poj-1777/</id>
-    <published>2020-07-27T14:58:08.000Z</published>
-    <updated>2020-07-28T17:59:42.514Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;题目链接&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://poj.org/problem?id=1777&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;POJ 1777&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://vjudge.net/problem/UVA-1323/origin&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;UVA 1323&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-    
-    </summary>
-    
-    
-      <category term="程序设计" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
-    
-      <category term="题解" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E9%A2%98%E8%A7%A3/"/>
-    
-    
-      <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
-    
-      <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
-    
-      <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
-    
-      <category term="数论" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E8%AE%BA/"/>
-    
-      <category term="POJ" scheme="https://tifa-233.xyz/tags/POJ/"/>
-    
-      <category term="UVa" scheme="https://tifa-233.xyz/tags/UVa/"/>
-    
-      <category term="Mersenne素数" scheme="https://tifa-233.xyz/tags/Mersenne%E7%B4%A0%E6%95%B0/"/>
-    
-      <category term="状压DP" scheme="https://tifa-233.xyz/tags/%E7%8A%B6%E5%8E%8BDP/"/>
     
   </entry>
   
