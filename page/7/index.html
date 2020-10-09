@@ -315,7 +315,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-10-09 21:43:07" itemprop="dateModified" datetime="2020-10-09T21:43:07+08:00">2020-10-09</time>
+                <time title="修改时间：2020-10-09 21:45:48" itemprop="dateModified" datetime="2020-10-09T21:45:48+08:00">2020-10-09</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -343,12 +343,14 @@
 
       
           <p>话说真的有人会用这东西吗</p>
-<!-- code -->
-<details>
-<summary><font color='orange'>Show code</font></summary>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">namespace</span> BFS &#123;</span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;queue&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="comment">//!</span></span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">int</span> <span class="keyword">_state_t</span>;</span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">int</span> <span class="keyword">_point_t</span>;</span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">long</span> <span class="keyword">long</span> <span class="keyword">_step_t</span>;</span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">char</span> <span class="keyword">_map_t</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">//!</span></span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> N = <span class="number">305</span>, M = <span class="number">305</span>;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">_state_t</span> __valid__ = <span class="number">0</span>, __forbidden__ = <span class="number">1</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> n, m;</span><br><span class="line"><span class="keyword">_state_t</span> __state[N][M];</span><br><span class="line"><span class="keyword">_map_t</span> __map[N][M];</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">Point</span> &#123;</span></span><br><span class="line">  <span class="keyword">_point_t</span> x, y;</span><br><span class="line"></span><br><span class="line">  Point <span class="keyword">operator</span>=(<span class="keyword">const</span> Point&amp; other) &#123;</span><br><span class="line">    x = other.x;</span><br><span class="line">    y = other.y;</span><br><span class="line">    <span class="keyword">return</span> *<span class="keyword">this</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  Point <span class="keyword">operator</span>+=(<span class="keyword">const</span> Point&amp; other) &#123;</span><br><span class="line">    x += other.x;</span><br><span class="line">    y += other.y;</span><br><span class="line">    <span class="keyword">return</span> *<span class="keyword">this</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">bool</span> <span class="keyword">operator</span>==(<span class="keyword">const</span> Point&amp; other) <span class="keyword">const</span> &#123;</span><br><span class="line">    <span class="keyword">return</span> x == other.x &amp;&amp; y == other.y;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="function"><span class="keyword">_state_t</span> <span class="title">get_state</span><span class="params">()</span> <span class="keyword">const</span> </span>&#123; <span class="keyword">return</span> __state[x][y]; &#125;</span><br><span class="line">  <span class="comment">//!</span></span><br><span class="line">  <span class="function"><span class="keyword">bool</span> <span class="title">valid</span><span class="params">()</span> <span class="keyword">const</span> </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> x &gt; <span class="number">0</span> &amp;&amp; y &gt; <span class="number">0</span> &amp;&amp; x &lt;= n &amp;&amp; y &lt;= m &amp;&amp;</span><br><span class="line">           <span class="keyword">this</span>-&gt;get_state() != __forbidden__;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="function"><span class="keyword">void</span> <span class="title">set_state</span><span class="params">(<span class="keyword">_state_t</span> state)</span> <span class="keyword">const</span> </span>&#123; __state[x][y] = state; &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">Node</span> &#123;</span></span><br><span class="line">  Point p;</span><br><span class="line">  <span class="keyword">_step_t</span> step;</span><br><span class="line"></span><br><span class="line">  Node <span class="keyword">operator</span>+=(<span class="keyword">const</span> Node&amp; other) &#123;</span><br><span class="line">    p += other.p;</span><br><span class="line">    step += other.step;</span><br><span class="line">    <span class="keyword">return</span> *<span class="keyword">this</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  Node <span class="keyword">operator</span>+(<span class="keyword">const</span> Node&amp; other) <span class="keyword">const</span> &#123;</span><br><span class="line">    Node tmp = *<span class="keyword">this</span>;</span><br><span class="line">    <span class="keyword">return</span> tmp += other;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="function"><span class="keyword">bool</span> <span class="title">valid</span><span class="params">()</span> <span class="keyword">const</span> </span>&#123; <span class="keyword">return</span> p.valid(); &#125;</span><br><span class="line">  <span class="function"><span class="keyword">void</span> <span class="title">set_state</span><span class="params">(<span class="keyword">_state_t</span> state)</span> <span class="keyword">const</span> </span>&#123; p.set_state(state); &#125;</span><br><span class="line">  <span class="function"><span class="keyword">_state_t</span> <span class="title">get_state</span><span class="params">()</span> <span class="keyword">const</span> </span>&#123; <span class="keyword">return</span> p.get_state(); &#125;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="comment">//!</span></span><br><span class="line"><span class="keyword">const</span> Node move[] = &#123;&#123;&#123;<span class="number">1</span>, <span class="number">0</span>&#125;, <span class="number">1</span>&#125;, &#123;&#123;<span class="number">0</span>, <span class="number">1</span>&#125;, <span class="number">1</span>&#125;, &#123;&#123;<span class="number">-1</span>, <span class="number">0</span>&#125;, <span class="number">1</span>&#125;, &#123;&#123;<span class="number">0</span>, <span class="number">-1</span>&#125;, <span class="number">1</span>&#125;&#125;;</span><br><span class="line"></span><br><span class="line"><span class="built_in">std</span>::<span class="built_in">queue</span>&lt;Node&gt; <span class="built_in">queue</span>;</span><br><span class="line">Point start, end;</span><br><span class="line"></span><br><span class="line"><span class="comment">//!</span></span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="keyword">void</span> <span class="title">init</span><span class="params">()</span> </span>&#123;&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="keyword">void</span> <span class="title">bfs</span><span class="params">()</span> </span>&#123;</span><br><span class="line">  init();</span><br><span class="line">  <span class="built_in">queue</span>.push((Node)&#123;start, <span class="number">0</span>&#125;);</span><br><span class="line">  start.set_state(__forbidden__);</span><br><span class="line">  <span class="keyword">while</span> (!<span class="built_in">queue</span>.empty()) &#123;</span><br><span class="line">    Node now = <span class="built_in">queue</span>.front();</span><br><span class="line">    <span class="built_in">queue</span>.pop();</span><br><span class="line">    <span class="comment">//!</span></span><br><span class="line">    <span class="keyword">if</span> (now.p == end) &#123;</span><br><span class="line">      <span class="built_in">printf</span>(<span class="string">"%lld"</span>, now.step);</span><br><span class="line">      <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">auto</span> i : move) &#123;</span><br><span class="line">      Node next = now + i;</span><br><span class="line">      <span class="comment">//!</span></span><br><span class="line">      <span class="keyword">if</span> (next.valid()) &#123;</span><br><span class="line">        next.set_state(__forbidden__);</span><br><span class="line">        <span class="built_in">queue</span>.push(next);</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&#125;  <span class="comment">// namespace BFS</span></span><br><span class="line"><span class="keyword">using</span> BFS::bfs;</span><br></pre></td></tr></table></figure>
-</details>
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/article/template-bfs/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -427,78 +429,6 @@
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/article/mhchem-function/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://tifa-233.xyz/article/test-encrypt/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Tiphereth">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Tiphereth's Blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/article/test-encrypt/" class="post-title-link" itemprop="url">测试文章-加密</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：1000-01-01 00:01:26" itemprop="dateCreated datePublished" datetime="1000-01-01T00:01:26+08:05">1000-01-01</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-05-09 22:01:14" itemprop="dateModified" datetime="2020-05-09T22:01:14+08:00">2020-05-09</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          有东西被加密了，请输入密码查看
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/article/test-encrypt/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -643,6 +573,78 @@
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/article/test-tag/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://tifa-233.xyz/article/test-encrypt/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Tiphereth">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Tiphereth's Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/article/test-encrypt/" class="post-title-link" itemprop="url">测试文章-加密</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：1000-01-01 00:01:26" itemprop="dateCreated datePublished" datetime="1000-01-01T00:01:26+08:05">1000-01-01</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-05-09 22:01:14" itemprop="dateModified" datetime="2020-05-09T22:01:14+08:00">2020-05-09</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          有东西被加密了，请输入密码查看
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/article/test-encrypt/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
