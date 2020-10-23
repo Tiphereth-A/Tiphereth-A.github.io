@@ -31,16 +31,16 @@
   <meta name="description" content="题面  洛谷 P4462 BZOJ 5301 LOJ 2534">
 <meta property="og:type" content="article">
 <meta property="og:title" content="题解 - [CQOI2018]异或序列">
-<meta property="og:url" content="https://tifa-233.xyz/article/solution-luogu-p4462/index.html">
+<meta property="og:url" content="https://tifa-233.xyz/article/luogu-p4462/index.html">
 <meta property="og:site_name" content="Tifa&#39;s Blog">
 <meta property="og:description" content="题面  洛谷 P4462 BZOJ 5301 LOJ 2534">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-01-27T07:40:12.000Z">
-<meta property="article:modified_time" content="2020-07-25T14:16:32.994Z">
+<meta property="article:modified_time" content="2020-10-23T10:31:04.763Z">
 <meta property="article:author" content="Tifa">
 <meta property="article:tag" content="程序设计">
-<meta property="article:tag" content="算法">
 <meta property="article:tag" content="题解">
+<meta property="article:tag" content="算法">
 <meta property="article:tag" content="洛谷">
 <meta property="article:tag" content="省选">
 <meta property="article:tag" content="BZOJ">
@@ -50,7 +50,7 @@
 <meta property="article:tag" content="前缀和&amp;差分">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://tifa-233.xyz/article/solution-luogu-p4462/">
+<link rel="canonical" href="https://tifa-233.xyz/article/luogu-p4462/">
 
 
 <script id="page-configurations">
@@ -214,7 +214,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://tifa-233.xyz/article/solution-luogu-p4462/">
+    <link itemprop="mainEntityOfPage" href="https://tifa-233.xyz/article/luogu-p4462/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -244,7 +244,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-07-25 22:16:32" itemprop="dateModified" datetime="2020-07-25T22:16:32+08:00">2020-07-25</time>
+                <time title="修改时间：2020-10-23 18:31:04" itemprop="dateModified" datetime="2020-10-23T18:31:04+08:00">2020-10-23</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -328,7 +328,11 @@ M834 80h400000v40h-400000z'/></svg></span></span></span><span class="vlist-s">�
 </li>
 </ol>
 <h2 id="代码"><a class="markdownIt-Anchor" href="#代码"></a> 代码</h2>
+<details>
+<summary><font color='orange'>Show code</font></summary>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 注意异或的性质, 本题将a^b==c转为a^c==b</span></span><br><span class="line"><span class="keyword">int</span> n, m, sqrt_n, belongs[N];</span><br><span class="line">i64 k;</span><br><span class="line">i64 xor_num[N];</span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">node</span> &#123;</span></span><br><span class="line">  <span class="keyword">int</span> l, r, id;</span><br><span class="line">  <span class="keyword">bool</span> <span class="keyword">operator</span>&lt;(<span class="keyword">const</span> node&amp; other) <span class="keyword">const</span> &#123;</span><br><span class="line">    <span class="keyword">return</span> (belongs[l] != belongs[other.l]) ? l &lt; other.l : (r &gt; other.r) ^ (belongs[l] &amp; <span class="number">1</span>);</span><br><span class="line">  &#125;</span><br><span class="line">&#125; query[N];</span><br><span class="line">i64 ans[N];</span><br><span class="line"><span class="keyword">namespace</span> MO &#123;</span><br><span class="line">i64 cnt[M];</span><br><span class="line"><span class="function">i64 <span class="title">add</span><span class="params">(<span class="keyword">int</span> p)</span> </span>&#123;</span><br><span class="line">  i64 ans = cnt[xor_num[p] ^ k];</span><br><span class="line">  ++cnt[xor_num[p]];</span><br><span class="line">  <span class="keyword">return</span> ans;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function">i64 <span class="title">del</span><span class="params">(<span class="keyword">int</span> p)</span> </span>&#123;</span><br><span class="line">  --cnt[xor_num[p]];</span><br><span class="line">  <span class="keyword">return</span> cnt[xor_num[p] ^ k];</span><br><span class="line">&#125;</span><br><span class="line">&#125;  <span class="comment">// namespace MO</span></span><br><span class="line"><span class="keyword">using</span> MO::add;</span><br><span class="line"><span class="keyword">using</span> MO::del;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">  read(n, m, k);</span><br><span class="line">  sqrt_n = <span class="built_in">sqrt</span>(n);</span><br><span class="line">  _for(i, <span class="number">1</span>, n) belongs[i] = (i - <span class="number">1</span>) / sqrt_n + <span class="number">1</span>;</span><br><span class="line">  _for(i, <span class="number">1</span>, n) &#123;</span><br><span class="line">    read(xor_num[i]);</span><br><span class="line">    xor_num[i] ^= xor_num[i - <span class="number">1</span>];</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>, l, r; i &lt;= m; ++i) &#123;</span><br><span class="line">    read(l, r);</span><br><span class="line">    query[i] = &#123;l - <span class="number">1</span>, r, i&#125;;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="built_in">std</span>::sort(query + <span class="number">1</span>, query + m + <span class="number">1</span>);</span><br><span class="line">  <span class="keyword">int</span> l = <span class="number">1</span>, r = <span class="number">0</span>;</span><br><span class="line">  i64 now_ans = <span class="number">0</span>;</span><br><span class="line">  _for(i, <span class="number">1</span>, m) &#123;</span><br><span class="line">    <span class="keyword">int</span> now_l = query[i].l, now_r = query[i].r;</span><br><span class="line">    <span class="keyword">while</span> (l &lt; now_l)</span><br><span class="line">      now_ans -= del(l++);</span><br><span class="line">    <span class="keyword">while</span> (l &gt; now_l)</span><br><span class="line">      now_ans += add(--l);</span><br><span class="line">    <span class="keyword">while</span> (r &lt; now_r)</span><br><span class="line">      now_ans += add(++r);</span><br><span class="line">    <span class="keyword">while</span> (r &gt; now_r)</span><br><span class="line">      now_ans -= del(r--);</span><br><span class="line">    ans[query[i].id] = now_ans;</span><br><span class="line">  &#125;</span><br><span class="line">  _for(i, <span class="number">1</span>, m) print(ans[i]);</span><br><span class="line">  FastIO::flush();</span><br><span class="line">  <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</details>
+
     </div>
 
     
@@ -343,7 +347,7 @@ M834 80h400000v40h-400000z'/></svg></span></span></span><span class="vlist-s">�
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="https://tifa-233.xyz/article/solution-luogu-p4462/" title="题解 - [CQOI2018]异或序列">https://tifa-233.xyz/article/solution-luogu-p4462/</a>
+    <a href="https://tifa-233.xyz/article/luogu-p4462/" title="题解 - [CQOI2018]异或序列">https://tifa-233.xyz/article/luogu-p4462/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -355,8 +359,8 @@ M834 80h400000v40h-400000z'/></svg></span></span></span><span class="vlist-s">�
       <footer class="post-footer">
           <div class="post-tags">
               <a href="/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/" rel="tag"># 程序设计</a>
-              <a href="/tags/%E7%AE%97%E6%B3%95/" rel="tag"># 算法</a>
               <a href="/tags/%E9%A2%98%E8%A7%A3/" rel="tag"># 题解</a>
+              <a href="/tags/%E7%AE%97%E6%B3%95/" rel="tag"># 算法</a>
               <a href="/tags/%E6%B4%9B%E8%B0%B7/" rel="tag"># 洛谷</a>
               <a href="/tags/%E7%9C%81%E9%80%89/" rel="tag"># 省选</a>
               <a href="/tags/BZOJ/" rel="tag"># BZOJ</a>
@@ -372,7 +376,7 @@ M834 80h400000v40h-400000z'/></svg></span></span></span><span class="vlist-s">�
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/article/solution-luogu-p5462/" rel="prev" title="题解 - Luogu P5462【X龙珠】">
+    <a href="/article/luogu-p5462/" rel="prev" title="题解 - Luogu P5462【X龙珠】">
       <i class="fa fa-chevron-left"></i> 题解 - Luogu P5462【X龙珠】
     </a></div>
       <div class="post-nav-item">
@@ -629,7 +633,7 @@ if (document.querySelectorAll('pre.mermaid').length) {
       quicklink({
         timeout : 3000,
         priority: true,
-        ignores : [uri => uri.includes('#'),uri => uri === 'https://tifa-233.xyz/article/solution-luogu-p4462/',]
+        ignores : [uri => uri.includes('#'),uri => uri === 'https://tifa-233.xyz/article/luogu-p4462/',]
       });
       });
   </script>
@@ -645,7 +649,7 @@ NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
       repo        : 'blog_comments',
       owner       : 'Tiphereth-A',
       admin       : ['Tiphereth-A'],
-      id          : '497becff068ba812c851d1d40263f962',
+      id          : '758ef2564b2573079d3d3952cc1fdabf',
         language: '',
       distractionFreeMode: true
     });
