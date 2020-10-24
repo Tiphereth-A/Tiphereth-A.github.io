@@ -36,7 +36,7 @@
 <meta property="og:description" content="整除, 素数, 最大公约数 &amp; 最小公倍数, 同余, 逆元, 中国剩余定理">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-10-03T17:14:43.000Z">
-<meta property="article:modified_time" content="2020-10-06T13:47:54.532Z">
+<meta property="article:modified_time" content="2020-10-24T15:24:08.018Z">
 <meta property="article:author" content="Tifa">
 <meta property="article:tag" content="程序设计">
 <meta property="article:tag" content="笔记">
@@ -255,7 +255,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-10-06 21:47:54" itemprop="dateModified" datetime="2020-10-06T21:47:54+08:00">2020-10-06</time>
+                <time title="修改时间：2020-10-24 23:24:08" itemprop="dateModified" datetime="2020-10-24T23:24:08+08:00">2020-10-24</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -800,7 +800,7 @@ M834 80h400000v40h-400000z'/></svg></span></span></span><span class="vlist-s">�
 </ol>
 <details>
 <summary><font color='orange'>Show code</font></summary>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">s[<span class="number">0</span>] = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; ++i) s[i] = s[i - <span class="number">1</span>] * a[i] % p;</span><br><span class="line">v[n] = qpow(s[n], p - <span class="number">2</span>);</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = n; i &gt;= <span class="number">1</span>; --i) v[i - <span class="number">1</span>] = v[i] * a[i] % p;</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; ++i) inv[i] = sv[i] * s[i - <span class="number">1</span>] % p;</span><br></pre></td></tr></table></figure>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">s[<span class="number">0</span>] = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; ++i) s[i] = s[i - <span class="number">1</span>] * a[i] % p;</span><br><span class="line">v[n] = qpow(s[n], p - <span class="number">2</span>);</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = n; i &gt;= <span class="number">1</span>; --i) v[i - <span class="number">1</span>] = v[i] * a[i] % p;</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; ++i) inv[i] = v[i] * s[i - <span class="number">1</span>] % p;</span><br></pre></td></tr></table></figure>
 </details>
 <p>时间复杂度:<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mi>n</mi><mo>+</mo><mi>log</mi><mo>⁡</mo><mi>p</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(n+\log p)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathdefault">n</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mop">lo<span style="margin-right:0.01389em;">g</span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">p</span><span class="mclose">)</span></span></span></span></p>
 </li>
@@ -809,6 +809,7 @@ M834 80h400000v40h-400000z'/></svg></span></span></span><span class="vlist-s">�
 <ul>
 <li>洛谷 <a href="https://www.luogu.com.cn/problem/P1593" target="_blank" rel="noopener">P1593 因子和</a></li>
 <li>洛谷 <a href="https://www.luogu.com.cn/problem/P3811" target="_blank" rel="noopener">P3811 【模板】乘法逆元</a></li>
+<li>洛谷 <a href="https://www.luogu.com.cn/problem/P5431" target="_blank" rel="noopener">P5431 【模板】乘法逆元2</a></li>
 <li>LOJ <a href="https://loj.ac/problem/161" target="_blank" rel="noopener">161 乘法逆元 2</a></li>
 </ul>
 <h2 id="中国剩余定理"><a class="markdownIt-Anchor" href="#中国剩余定理"></a> 中国剩余定理</h2>
