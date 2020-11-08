@@ -54,17 +54,27 @@
 <meta property="og:image" content="https://tifa-233.xyz/article/dlx/DLX_8.svg">
 <meta property="og:image" content="https://tifa-233.xyz/article/dlx/DLX_9.svg">
 <meta property="og:image" content="https://tifa-233.xyz/article/dlx/DLX_10.svg">
+<meta property="og:image" content="https://tifa-233.xyz/article/dlx/DLX_del_1.svg">
+<meta property="og:image" content="https://tifa-233.xyz/article/dlx/DLX_del_2.svg">
+<meta property="og:image" content="https://tifa-233.xyz/article/dlx/DLX_del_3.svg">
+<meta property="og:image" content="https://tifa-233.xyz/article/dlx/DLX_del_4.svg">
+<meta property="og:image" content="https://tifa-233.xyz/article/dlx/DLX_del_3.svg">
+<meta property="og:image" content="https://tifa-233.xyz/article/dlx/DLX_del_5.svg">
+<meta property="og:image" content="https://tifa-233.xyz/article/dlx/DLX_del_2.svg">
+<meta property="og:image" content="https://tifa-233.xyz/article/dlx/DLX_del_6.svg">
+<meta property="og:image" content="https://tifa-233.xyz/article/dlx/DLX_del_1.svg">
+<meta property="og:image" content="https://tifa-233.xyz/article/dlx/DLX_del_7.svg">
 <meta property="article:published_time" content="2020-10-25T08:54:34.000Z">
-<meta property="article:modified_time" content="2020-11-08T09:13:49.554Z">
+<meta property="article:modified_time" content="2020-11-08T13:44:54.809Z">
 <meta property="article:author" content="Tifa">
 <meta property="article:tag" content="程序设计">
 <meta property="article:tag" content="算法">
-<meta property="article:tag" content="搜索">
 <meta property="article:tag" content="数据结构">
 <meta property="article:tag" content="精确覆盖问题">
 <meta property="article:tag" content="X算法">
 <meta property="article:tag" content="DLX">
 <meta property="article:tag" content="重复覆盖问题">
+<meta property="article:tag" content="搜索">
 <meta property="article:tag" content="剪枝">
 <meta property="article:tag" content="IDA*">
 <meta property="article:tag" content="链表">
@@ -266,7 +276,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-11-08 17:13:49" itemprop="dateModified" datetime="2020-11-08T17:13:49+08:00">2020-11-08</time>
+                <time title="修改时间：2020-11-08 21:44:54" itemprop="dateModified" datetime="2020-11-08T21:44:54+08:00">2020-11-08</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -820,7 +830,7 @@
 <li>接收一个参数<code>_col</code>: 代表要删除的列</li>
 <li>功能是删除某一列和与这一列相交的所有行</li>
 </ul>
-<p>结合该图我们不难写出代码(这里在删除行中元素以从左向右删为例)</p>
+<p>结合该图我们不难写出代码</p>
 <p><img src="DLX_change.svg" alt="" /></p>
 <details open>
 <summary><font color='orange'>Show code</font></summary>
@@ -828,8 +838,6 @@
 </details>
 <h4 id="恢复"><a class="markdownIt-Anchor" href="#恢复"></a> 恢复</h4>
 <p>恢复操作和删除操作类似, 在此不再赘述</p>
-<p>值得注意的是, 恢复的顺序和删除的顺序是<strong>相反</strong>的, 即若你删除行中元素是<strong>从左向右</strong>删, 则恢复时要<strong>从右向左</strong>恢复 (类比递归和回溯的顺序关系)</p>
-<p>如果相同则会显著降低代码速度, 具体在后文讲述</p>
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">restore</span><span class="params">(<span class="built_in">std</span>::<span class="keyword">size_t</span> _col)</span> </span>&#123;</span><br><span class="line">    _r(_l(_col)) = _l(_r(_col)) = _col;</span><br><span class="line">    _for(i, _col, u) _for(j, i, r) &#123;</span><br><span class="line">        _u(_d(j)) = _d(_u(j)) = j;</span><br><span class="line">        ++cnt_col[_col(j)];</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -851,6 +859,8 @@
 <li>返回<code>false</code></li>
 </ol>
 <p>我们注意到第一步中选取的列不影响最终答案, 所以我们可以加个常数优化, 即选取<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∣</mi><mi>C</mi><mo stretchy="false">(</mo><mi>i</mi><mo stretchy="false">)</mo><mi mathvariant="normal">∣</mi></mrow><annotation encoding="application/x-tex">|C(i)|</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">∣</span><span class="mord mathdefault" style="margin-right:0.07153em;">C</span><span class="mopen">(</span><span class="mord mathdefault">i</span><span class="mclose">)</span><span class="mord">∣</span></span></span></span>最小的<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>i</mi></mrow><annotation encoding="application/x-tex">i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.65952em;vertical-align:0em;"></span><span class="mord mathdefault">i</span></span></span></span></p>
+<p>值得注意的是, <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo stretchy="false">(</mo><mi>j</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">R(j)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.00773em;">R</span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.05724em;">j</span><span class="mclose">)</span></span></span></span>删除的顺序和恢复的顺序是<strong>相反</strong>的, 即若你删除行中元素是<strong>从左向右</strong>删, 则恢复时要<strong>从右向左</strong>恢复 (类比递归和回溯的顺序关系)</p>
+<p>如果相同则会显著降低代码速度, 具体在后文讲述</p>
 <p>我们可以结合例子模拟一遍</p>
 <details>
 <summary><font color='orange'>Show / Hide</font></summary>
@@ -923,6 +933,51 @@
 <h3 id="时间复杂度"><a class="markdownIt-Anchor" href="#时间复杂度"></a> 时间复杂度</h3>
 <p>不难发现是<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><msup><mi>c</mi><mi>n</mi></msup><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(c^n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord"><span class="mord mathdefault">c</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.664392em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">n</span></span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span>的, 其中<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi></mrow><annotation encoding="application/x-tex">c</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">c</span></span></span></span>是个接近<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span>的常数</p>
 <p>在实际应用中, 因为<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi></mrow><annotation encoding="application/x-tex">c</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">c</span></span></span></span>足够接近<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span>, 所以dlx效率很高</p>
+<h3 id="关于删除和恢复的顺序"><a class="markdownIt-Anchor" href="#关于删除和恢复的顺序"></a> 关于删除和恢复的顺序</h3>
+<p>我在上问说过, 删除和恢复的方向相同时速度会显著变慢, 这里具体讲一下</p>
+<p>以下图为例</p>
+<p>注意: 以下所有图片均省略了需要&quot;割成两段&quot;的指针</p>
+<p><img src="DLX_del_1.svg" alt="" /></p>
+<p>首先我们先删除</p>
+<ul>
+<li>
+<p><code>remove 2</code></p>
+<p><img src="DLX_del_2.svg" alt="" /></p>
+</li>
+<li>
+<p><code>remove 4</code></p>
+<p><img src="DLX_del_3.svg" alt="" /></p>
+</li>
+<li>
+<p><code>remove 5</code></p>
+<p><img src="DLX_del_4.svg" alt="" /></p>
+</li>
+</ul>
+<p>之后我们恢复</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">方向相反</th>
+<th style="text-align:center">方向相同</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><code>restore 5</code><br><img src="DLX_del_3.svg" alt="" /></td>
+<td style="text-align:center"><code>restore 2</code><br><img src="DLX_del_5.svg" alt="" /></td>
+</tr>
+<tr>
+<td style="text-align:center"><code>restore 4</code><br><img src="DLX_del_2.svg" alt="" /></td>
+<td style="text-align:center"><code>restore 4</code><br><img src="DLX_del_6.svg" alt="" /></td>
+</tr>
+<tr>
+<td style="text-align:center"><code>restore 2</code><br><img src="DLX_del_1.svg" alt="" /></td>
+<td style="text-align:center"><code>restore 5</code><br><img src="DLX_del_7.svg" alt="" /></td>
+</tr>
+</tbody>
+</table>
+<p>我们注意到这两种方式都是正确的, 但是如果删除和恢复的方向相同, 则会恢复一些不需要恢复的节点, 也有一些指针会出现多余的赋值, 所以就会变慢</p>
+<p>比较极端的情况可以在 洛谷 <a href="https://www.luogu.com.cn/problem/P4205" target="_blank" rel="noopener">P4205 [NOI2005]智慧珠游戏</a> 中的数据点#13找到, 两种不同的恢复顺序能使得最后时间相差十多倍</p>
 <h3 id="例题"><a class="markdownIt-Anchor" href="#例题"></a> 例题</h3>
 <ul>
 <li>
@@ -991,12 +1046,12 @@
           <div class="post-tags">
               <a href="/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/" rel="tag"># 程序设计</a>
               <a href="/tags/%E7%AE%97%E6%B3%95/" rel="tag"># 算法</a>
-              <a href="/tags/%E6%90%9C%E7%B4%A2/" rel="tag"># 搜索</a>
               <a href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" rel="tag"># 数据结构</a>
               <a href="/tags/%E7%B2%BE%E7%A1%AE%E8%A6%86%E7%9B%96%E9%97%AE%E9%A2%98/" rel="tag"># 精确覆盖问题</a>
               <a href="/tags/X%E7%AE%97%E6%B3%95/" rel="tag"># X算法</a>
               <a href="/tags/DLX/" rel="tag"># DLX</a>
               <a href="/tags/%E9%87%8D%E5%A4%8D%E8%A6%86%E7%9B%96%E9%97%AE%E9%A2%98/" rel="tag"># 重复覆盖问题</a>
+              <a href="/tags/%E6%90%9C%E7%B4%A2/" rel="tag"># 搜索</a>
               <a href="/tags/%E5%89%AA%E6%9E%9D/" rel="tag"># 剪枝</a>
               <a href="/tags/IDA/" rel="tag"># IDA*</a>
               <a href="/tags/%E9%93%BE%E8%A1%A8/" rel="tag"># 链表</a>
@@ -1075,7 +1130,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#精确覆盖问题"><span class="nav-number">1.</span> <span class="nav-text"> 精确覆盖问题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#x算法"><span class="nav-number">2.</span> <span class="nav-text"> X算法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#dlx"><span class="nav-number">3.</span> <span class="nav-text"> DLX</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#准备工作"><span class="nav-number">3.1.</span> <span class="nav-text"> 准备工作</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#存储"><span class="nav-number">3.1.1.</span> <span class="nav-text"> 存储</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#初始化"><span class="nav-number">3.1.2.</span> <span class="nav-text"> 初始化</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#存入head节点和列首节点"><span class="nav-number">3.1.2.1.</span> <span class="nav-text"> 存入head节点和列首节点</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#存入其他节点"><span class="nav-number">3.1.2.2.</span> <span class="nav-text"> 存入其他节点</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#求解"><span class="nav-number">3.2.</span> <span class="nav-text"> 求解</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#删除"><span class="nav-number">3.2.1.</span> <span class="nav-text"> 删除</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#恢复"><span class="nav-number">3.2.2.</span> <span class="nav-text"> 恢复</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#dance"><span class="nav-number">3.2.3.</span> <span class="nav-text"> dance</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#时间复杂度"><span class="nav-number">3.3.</span> <span class="nav-text"> 时间复杂度</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#例题"><span class="nav-number">3.4.</span> <span class="nav-text"> 例题</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#重复覆盖问题"><span class="nav-number">4.</span> <span class="nav-text"> 重复覆盖问题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考资料"><span class="nav-number">5.</span> <span class="nav-text"> 参考资料</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#精确覆盖问题"><span class="nav-number">1.</span> <span class="nav-text"> 精确覆盖问题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#x算法"><span class="nav-number">2.</span> <span class="nav-text"> X算法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#dlx"><span class="nav-number">3.</span> <span class="nav-text"> DLX</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#准备工作"><span class="nav-number">3.1.</span> <span class="nav-text"> 准备工作</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#存储"><span class="nav-number">3.1.1.</span> <span class="nav-text"> 存储</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#初始化"><span class="nav-number">3.1.2.</span> <span class="nav-text"> 初始化</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#存入head节点和列首节点"><span class="nav-number">3.1.2.1.</span> <span class="nav-text"> 存入head节点和列首节点</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#存入其他节点"><span class="nav-number">3.1.2.2.</span> <span class="nav-text"> 存入其他节点</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#求解"><span class="nav-number">3.2.</span> <span class="nav-text"> 求解</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#删除"><span class="nav-number">3.2.1.</span> <span class="nav-text"> 删除</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#恢复"><span class="nav-number">3.2.2.</span> <span class="nav-text"> 恢复</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#dance"><span class="nav-number">3.2.3.</span> <span class="nav-text"> dance</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#时间复杂度"><span class="nav-number">3.3.</span> <span class="nav-text"> 时间复杂度</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#关于删除和恢复的顺序"><span class="nav-number">3.4.</span> <span class="nav-text"> 关于删除和恢复的顺序</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#例题"><span class="nav-number">3.5.</span> <span class="nav-text"> 例题</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#重复覆盖问题"><span class="nav-number">4.</span> <span class="nav-text"> 重复覆盖问题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考资料"><span class="nav-number">5.</span> <span class="nav-text"> 参考资料</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
