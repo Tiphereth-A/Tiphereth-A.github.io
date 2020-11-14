@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tifa-233.xyz/"/>
-  <updated>2020-11-04T09:28:11.812Z</updated>
+  <updated>2020-11-14T08:18:08.576Z</updated>
   <id>https://tifa-233.xyz/</id>
   
   <author>
@@ -15,6 +15,46 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>笔记 - Cantor展开与逆Cantor展开</title>
+    <link href="https://tifa-233.xyz/article/contor/"/>
+    <id>https://tifa-233.xyz/article/contor/</id>
+    <published>2020-11-13T16:12:11.000Z</published>
+    <updated>2020-11-14T08:18:08.576Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;洛谷给我推了个模板题, 就顺便补一下笔记&lt;/p&gt;
+&lt;p&gt;Cantor展开是用于求排列字典序的算法, 逆Cantor展开即根据字典序还原排列的算法&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="程序设计" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
+    
+      <category term="算法" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E7%AE%97%E6%B3%95/"/>
+    
+    
+      <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
+    
+      <category term="笔记" scheme="https://tifa-233.xyz/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="算法" scheme="https://tifa-233.xyz/tags/%E7%AE%97%E6%B3%95/"/>
+    
+      <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
+    
+      <category term="组合数学" scheme="https://tifa-233.xyz/tags/%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/"/>
+    
+      <category term="平衡树" scheme="https://tifa-233.xyz/tags/%E5%B9%B3%E8%A1%A1%E6%A0%91/"/>
+    
+      <category term="Cantor展开" scheme="https://tifa-233.xyz/tags/Cantor%E5%B1%95%E5%BC%80/"/>
+    
+      <category term="逆Cantor展开" scheme="https://tifa-233.xyz/tags/%E9%80%86Cantor%E5%B1%95%E5%BC%80/"/>
+    
+      <category term="树状数组" scheme="https://tifa-233.xyz/tags/%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84/"/>
+    
+  </entry>
   
   <entry>
     <title>题解 - [Luogu P3524] [POI2011]IMP-Party</title>
@@ -118,7 +158,7 @@
     <link href="https://tifa-233.xyz/article/dlx/"/>
     <id>https://tifa-233.xyz/article/dlx/</id>
     <published>2020-10-25T08:54:34.000Z</published>
-    <updated>2020-11-11T16:10:19.739Z</updated>
+    <updated>2020-11-13T16:14:53.889Z</updated>
     
     <summary type="html">
     
@@ -133,6 +173,8 @@
     
     
       <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
+    
+      <category term="笔记" scheme="https://tifa-233.xyz/tags/%E7%AC%94%E8%AE%B0/"/>
     
       <category term="算法" scheme="https://tifa-233.xyz/tags/%E7%AE%97%E6%B3%95/"/>
     
@@ -732,45 +774,6 @@
       <category term="ZOJ" scheme="https://tifa-233.xyz/tags/ZOJ/"/>
     
       <category term="Prufer序列" scheme="https://tifa-233.xyz/tags/Prufer%E5%BA%8F%E5%88%97/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>题解 - [POJ 2309] BST</title>
-    <link href="https://tifa-233.xyz/article/poj-2309/"/>
-    <id>https://tifa-233.xyz/article/poj-2309/</id>
-    <published>2020-07-30T14:03:05.000Z</published>
-    <updated>2020-10-23T10:23:17.787Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;a href=&quot;http://poj.org/problem?id=2309&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;题目链接&lt;/a&gt;&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="程序设计" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
-    
-      <category term="题解" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E9%A2%98%E8%A7%A3/"/>
-    
-    
-      <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
-    
-      <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
-    
-      <category term="数据结构" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
-    
-      <category term="树" scheme="https://tifa-233.xyz/tags/%E6%A0%91/"/>
-    
-      <category term="二叉树" scheme="https://tifa-233.xyz/tags/%E4%BA%8C%E5%8F%89%E6%A0%91/"/>
-    
-      <category term="平衡树" scheme="https://tifa-233.xyz/tags/%E5%B9%B3%E8%A1%A1%E6%A0%91/"/>
-    
-      <category term="POJ" scheme="https://tifa-233.xyz/tags/POJ/"/>
-    
-      <category term="BST" scheme="https://tifa-233.xyz/tags/BST/"/>
-    
-      <category term="位运算" scheme="https://tifa-233.xyz/tags/%E4%BD%8D%E8%BF%90%E7%AE%97/"/>
     
   </entry>
   
