@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tifa-233.xyz/"/>
-  <updated>2020-11-14T09:39:13.097Z</updated>
+  <updated>2020-11-14T17:18:57.068Z</updated>
   <id>https://tifa-233.xyz/</id>
   
   <author>
@@ -17,11 +17,48 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>codeforces-501-d</title>
+    <link href="https://tifa-233.xyz/article/codeforces-501-d/"/>
+    <id>https://tifa-233.xyz/article/codeforces-501-d/</id>
+    <published>2020-11-14T16:21:06.000Z</published>
+    <updated>2020-11-14T17:18:57.068Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;a href=&quot;https://codeforces.com/problemset/problem/501/D&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;题目链接&lt;/a&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="程序设计" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
+    
+      <category term="题解" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E9%A2%98%E8%A7%A3/"/>
+    
+    
+      <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
+    
+      <category term="算法" scheme="https://tifa-233.xyz/tags/%E7%AE%97%E6%B3%95/"/>
+    
+      <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
+    
+      <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
+    
+      <category term="组合数学" scheme="https://tifa-233.xyz/tags/%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/"/>
+    
+      <category term="Cantor展开" scheme="https://tifa-233.xyz/tags/Cantor%E5%B1%95%E5%BC%80/"/>
+    
+      <category term="逆Cantor展开" scheme="https://tifa-233.xyz/tags/%E9%80%86Cantor%E5%B1%95%E5%BC%80/"/>
+    
+      <category term="CodeForces" scheme="https://tifa-233.xyz/tags/CodeForces/"/>
+    
+  </entry>
+  
+  <entry>
     <title>笔记 - Cantor展开与逆Cantor展开</title>
     <link href="https://tifa-233.xyz/article/cantor_exp/"/>
     <id>https://tifa-233.xyz/article/cantor_exp/</id>
     <published>2020-11-13T16:12:11.000Z</published>
-    <updated>2020-11-14T09:39:13.097Z</updated>
+    <updated>2020-11-14T16:24:08.245Z</updated>
     
     <summary type="html">
     
@@ -441,9 +478,9 @@
     
       <category term="数论" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E8%AE%BA/"/>
     
-      <category term="exgcd" scheme="https://tifa-233.xyz/tags/exgcd/"/>
-    
       <category term="Wilson定理" scheme="https://tifa-233.xyz/tags/Wilson%E5%AE%9A%E7%90%86/"/>
+    
+      <category term="exgcd" scheme="https://tifa-233.xyz/tags/exgcd/"/>
     
       <category term="最小公倍数" scheme="https://tifa-233.xyz/tags/%E6%9C%80%E5%B0%8F%E5%85%AC%E5%80%8D%E6%95%B0/"/>
     
@@ -747,41 +784,6 @@
       <category term="Ural" scheme="https://tifa-233.xyz/tags/Ural/"/>
     
       <category term="抽屉原理" scheme="https://tifa-233.xyz/tags/%E6%8A%BD%E5%B1%89%E5%8E%9F%E7%90%86/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>题解 - [UVa 10497] Sweet Child Makes Trouble</title>
-    <link href="https://tifa-233.xyz/article/uva-10497/"/>
-    <id>https://tifa-233.xyz/article/uva-10497/</id>
-    <published>2020-07-31T02:17:18.000Z</published>
-    <updated>2020-10-23T10:32:44.907Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;a href=&quot;https://vjudge.net/problem/UVA-10497/origin&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;题目链接&lt;/a&gt;&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="程序设计" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
-    
-      <category term="题解" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E9%A2%98%E8%A7%A3/"/>
-    
-    
-      <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
-    
-      <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
-    
-      <category term="计数" scheme="https://tifa-233.xyz/tags/%E8%AE%A1%E6%95%B0/"/>
-    
-      <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
-    
-      <category term="UVa" scheme="https://tifa-233.xyz/tags/UVa/"/>
-    
-      <category term="错排" scheme="https://tifa-233.xyz/tags/%E9%94%99%E6%8E%92/"/>
-    
-      <category term="高精度" scheme="https://tifa-233.xyz/tags/%E9%AB%98%E7%B2%BE%E5%BA%A6/"/>
     
   </entry>
   
