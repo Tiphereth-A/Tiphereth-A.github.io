@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tifa-233.xyz/"/>
-  <updated>2020-11-14T17:31:14.698Z</updated>
+  <updated>2020-11-15T09:55:39.011Z</updated>
   <id>https://tifa-233.xyz/</id>
   
   <author>
@@ -18,10 +18,10 @@
   
   <entry>
     <title>题解 - [CodeForces 501 D] Misha and Permutations Summation</title>
-    <link href="https://tifa-233.xyz/article/codeforces-501-D/"/>
-    <id>https://tifa-233.xyz/article/codeforces-501-D/</id>
+    <link href="https://tifa-233.xyz/article/codeforces-501-d/"/>
+    <id>https://tifa-233.xyz/article/codeforces-501-d/</id>
     <published>2020-11-14T16:21:06.000Z</published>
-    <updated>2020-11-14T17:31:14.698Z</updated>
+    <updated>2020-11-15T09:55:39.011Z</updated>
     
     <summary type="html">
     
@@ -45,11 +45,11 @@
     
       <category term="组合数学" scheme="https://tifa-233.xyz/tags/%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/"/>
     
+      <category term="CodeForces" scheme="https://tifa-233.xyz/tags/CodeForces/"/>
+    
       <category term="Cantor展开" scheme="https://tifa-233.xyz/tags/Cantor%E5%B1%95%E5%BC%80/"/>
     
       <category term="逆Cantor展开" scheme="https://tifa-233.xyz/tags/%E9%80%86Cantor%E5%B1%95%E5%BC%80/"/>
-    
-      <category term="CodeForces" scheme="https://tifa-233.xyz/tags/CodeForces/"/>
     
   </entry>
   
@@ -478,9 +478,9 @@
     
       <category term="数论" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E8%AE%BA/"/>
     
-      <category term="exgcd" scheme="https://tifa-233.xyz/tags/exgcd/"/>
-    
       <category term="Wilson定理" scheme="https://tifa-233.xyz/tags/Wilson%E5%AE%9A%E7%90%86/"/>
+    
+      <category term="exgcd" scheme="https://tifa-233.xyz/tags/exgcd/"/>
     
       <category term="最小公倍数" scheme="https://tifa-233.xyz/tags/%E6%9C%80%E5%B0%8F%E5%85%AC%E5%80%8D%E6%95%B0/"/>
     
