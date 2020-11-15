@@ -42,8 +42,8 @@
 <meta property="article:tag" content="笔记">
 <meta property="article:tag" content="数学">
 <meta property="article:tag" content="数论">
-<meta property="article:tag" content="Wilson定理">
 <meta property="article:tag" content="exgcd">
+<meta property="article:tag" content="Wilson定理">
 <meta property="article:tag" content="最小公倍数">
 <meta property="article:tag" content="素数&#x2F;质数">
 <meta property="article:tag" content="筛法">
@@ -160,7 +160,7 @@
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">72</span></a>
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">73</span></a>
 
   </li>
         <li class="menu-item menu-item-rss">
@@ -883,8 +883,8 @@ M834 80h400000v40h-400000z'/></svg></span></span></span><span class="vlist-s">�
               <a href="/tags/%E7%AC%94%E8%AE%B0/" rel="tag"># 笔记</a>
               <a href="/tags/%E6%95%B0%E5%AD%A6/" rel="tag"># 数学</a>
               <a href="/tags/%E6%95%B0%E8%AE%BA/" rel="tag"># 数论</a>
-              <a href="/tags/Wilson%E5%AE%9A%E7%90%86/" rel="tag"># Wilson定理</a>
               <a href="/tags/exgcd/" rel="tag"># exgcd</a>
+              <a href="/tags/Wilson%E5%AE%9A%E7%90%86/" rel="tag"># Wilson定理</a>
               <a href="/tags/%E6%9C%80%E5%B0%8F%E5%85%AC%E5%80%8D%E6%95%B0/" rel="tag"># 最小公倍数</a>
               <a href="/tags/%E7%B4%A0%E6%95%B0-%E8%B4%A8%E6%95%B0/" rel="tag"># 素数/质数</a>
               <a href="/tags/%E7%AD%9B%E6%B3%95/" rel="tag"># 筛法</a>
@@ -988,7 +988,7 @@ M834 80h400000v40h-400000z'/></svg></span></span></span><span class="vlist-s">�
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">72</span>
+          <span class="site-state-item-count">73</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -1133,6 +1133,26 @@ M834 80h400000v40h-400000z'/></svg></span></span></span><span class="vlist-s">�
 
 
 
+<script>
+document.querySelectorAll('.pdfobject-container').forEach(element => {
+  let url = element.dataset.target;
+  let pdfOpenParams = {
+    navpanes : 0,
+    toolbar  : 0,
+    statusbar: 0,
+    pagemode : 'thumbs',
+    view     : 'FitH'
+  };
+  let pdfOpenFragment = '#' + Object.entries(pdfOpenParams).map(([key, value]) => `${key}=${encodeURIComponent(value)}`).join('&');
+  let fullURL = `/lib/pdf/web/viewer.html?file=${encodeURIComponent(url)}${pdfOpenFragment}`;
+
+  if (NexT.utils.supportsPDFs()) {
+    element.innerHTML = `<embed class="pdfobject" src="${url + pdfOpenFragment}" type="application/pdf" style="height: ${element.dataset.height};">`;
+  } else {
+    element.innerHTML = `<iframe src="${fullURL}" style="height: ${element.dataset.height};" frameborder="0"></iframe>`;
+  }
+});
+</script>
 
 
 <script>

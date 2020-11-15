@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tifa-233.xyz/"/>
-  <updated>2020-11-14T17:18:57.068Z</updated>
+  <updated>2020-11-14T17:31:14.698Z</updated>
   <id>https://tifa-233.xyz/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>codeforces-501-d</title>
-    <link href="https://tifa-233.xyz/article/codeforces-501-d/"/>
-    <id>https://tifa-233.xyz/article/codeforces-501-d/</id>
+    <title>题解 - [CodeForces 501 D] Misha and Permutations Summation</title>
+    <link href="https://tifa-233.xyz/article/codeforces-501-D/"/>
+    <id>https://tifa-233.xyz/article/codeforces-501-D/</id>
     <published>2020-11-14T16:21:06.000Z</published>
-    <updated>2020-11-14T17:18:57.068Z</updated>
+    <updated>2020-11-14T17:31:14.698Z</updated>
     
     <summary type="html">
     
@@ -58,7 +58,7 @@
     <link href="https://tifa-233.xyz/article/cantor_exp/"/>
     <id>https://tifa-233.xyz/article/cantor_exp/</id>
     <published>2020-11-13T16:12:11.000Z</published>
-    <updated>2020-11-14T16:24:08.245Z</updated>
+    <updated>2020-11-14T17:29:44.574Z</updated>
     
     <summary type="html">
     
@@ -319,11 +319,11 @@
     
       <category term="洛谷" scheme="https://tifa-233.xyz/tags/%E6%B4%9B%E8%B0%B7/"/>
     
+      <category term="逆元" scheme="https://tifa-233.xyz/tags/%E9%80%86%E5%85%83/"/>
+    
       <category term="省选" scheme="https://tifa-233.xyz/tags/%E7%9C%81%E9%80%89/"/>
     
       <category term="SDOI" scheme="https://tifa-233.xyz/tags/SDOI/"/>
-    
-      <category term="逆元" scheme="https://tifa-233.xyz/tags/%E9%80%86%E5%85%83/"/>
     
       <category term="中国剩余定理(CRT)" scheme="https://tifa-233.xyz/tags/%E4%B8%AD%E5%9B%BD%E5%89%A9%E4%BD%99%E5%AE%9A%E7%90%86-CRT/"/>
     
@@ -478,9 +478,9 @@
     
       <category term="数论" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E8%AE%BA/"/>
     
-      <category term="Wilson定理" scheme="https://tifa-233.xyz/tags/Wilson%E5%AE%9A%E7%90%86/"/>
-    
       <category term="exgcd" scheme="https://tifa-233.xyz/tags/exgcd/"/>
+    
+      <category term="Wilson定理" scheme="https://tifa-233.xyz/tags/Wilson%E5%AE%9A%E7%90%86/"/>
     
       <category term="最小公倍数" scheme="https://tifa-233.xyz/tags/%E6%9C%80%E5%B0%8F%E5%85%AC%E5%80%8D%E6%95%B0/"/>
     
@@ -703,9 +703,9 @@
     
       <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
     
-      <category term="计数" scheme="https://tifa-233.xyz/tags/%E8%AE%A1%E6%95%B0/"/>
-    
       <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
+    
+      <category term="计数" scheme="https://tifa-233.xyz/tags/%E8%AE%A1%E6%95%B0/"/>
     
       <category term="容斥定理" scheme="https://tifa-233.xyz/tags/%E5%AE%B9%E6%96%A5%E5%AE%9A%E7%90%86/"/>
     
@@ -736,9 +736,9 @@
     
       <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
     
-      <category term="计数" scheme="https://tifa-233.xyz/tags/%E8%AE%A1%E6%95%B0/"/>
-    
       <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
+    
+      <category term="计数" scheme="https://tifa-233.xyz/tags/%E8%AE%A1%E6%95%B0/"/>
     
       <category term="容斥定理" scheme="https://tifa-233.xyz/tags/%E5%AE%B9%E6%96%A5%E5%AE%9A%E7%90%86/"/>
     
@@ -773,9 +773,9 @@
     
       <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
     
-      <category term="计数" scheme="https://tifa-233.xyz/tags/%E8%AE%A1%E6%95%B0/"/>
-    
       <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
+    
+      <category term="计数" scheme="https://tifa-233.xyz/tags/%E8%AE%A1%E6%95%B0/"/>
     
       <category term="前缀和" scheme="https://tifa-233.xyz/tags/%E5%89%8D%E7%BC%80%E5%92%8C/"/>
     

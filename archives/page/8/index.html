@@ -135,7 +135,7 @@
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">72</span></a>
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">73</span></a>
 
   </li>
         <li class="menu-item menu-item-rss">
@@ -203,7 +203,7 @@
     <div class="posts-collapse">
       <div class="collection-title">
         
-        <span class="collection-header">不错! 目前共计 72 篇日志。 继续努力。</span>
+        <span class="collection-header">不错! 目前共计 73 篇日志。 继续努力。</span>
       </div>
 
       
@@ -216,15 +216,15 @@
 
       <div class="post-meta">
         <time itemprop="dateCreated"
-              datetime="1000-01-01T00:01:26+08:05"
+              datetime="1000-01-01T00:00:46+08:05"
               content="1000-01-01">
           01-01
         </time>
       </div>
 
       <div class="post-title">
-          <a class="post-title-link" href="/article/test-mermaid/" itemprop="url">
-            <span itemprop="name">测试文章-mermaid</span>
+          <a class="post-title-link" href="/article/test-encrypt/" itemprop="url">
+            <span itemprop="name">测试文章 - 加密</span>
           </a>
       </div>
 
@@ -236,7 +236,27 @@
 
       <div class="post-meta">
         <time itemprop="dateCreated"
-              datetime="1000-01-01T00:01:26+08:05"
+              datetime="1000-01-01T00:00:45+08:05"
+              content="1000-01-01">
+          01-01
+        </time>
+      </div>
+
+      <div class="post-title">
+          <a class="post-title-link" href="/article/test-mermaid/" itemprop="url">
+            <span itemprop="name">测试文章 - mermaid</span>
+          </a>
+      </div>
+
+    </header>
+  </article>
+
+  <article itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      <div class="post-meta">
+        <time itemprop="dateCreated"
+              datetime="1000-01-01T00:00:44+08:05"
               content="1000-01-01">
           01-01
         </time>
@@ -244,7 +264,7 @@
 
       <div class="post-title">
           <a class="post-title-link" href="/article/test-tag/" itemprop="url">
-            <span itemprop="name">测试文章-Tags</span>
+            <span itemprop="name">测试文章 - 杂项</span>
           </a>
       </div>
 
@@ -326,7 +346,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">72</span>
+          <span class="site-state-item-count">73</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -471,6 +491,26 @@
 
 
 
+<script>
+document.querySelectorAll('.pdfobject-container').forEach(element => {
+  let url = element.dataset.target;
+  let pdfOpenParams = {
+    navpanes : 0,
+    toolbar  : 0,
+    statusbar: 0,
+    pagemode : 'thumbs',
+    view     : 'FitH'
+  };
+  let pdfOpenFragment = '#' + Object.entries(pdfOpenParams).map(([key, value]) => `${key}=${encodeURIComponent(value)}`).join('&');
+  let fullURL = `/lib/pdf/web/viewer.html?file=${encodeURIComponent(url)}${pdfOpenFragment}`;
+
+  if (NexT.utils.supportsPDFs()) {
+    element.innerHTML = `<embed class="pdfobject" src="${url + pdfOpenFragment}" type="application/pdf" style="height: ${element.dataset.height};">`;
+  } else {
+    element.innerHTML = `<iframe src="${fullURL}" style="height: ${element.dataset.height};" frameborder="0"></iframe>`;
+  }
+});
+</script>
 
 
 <script>

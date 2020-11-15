@@ -44,9 +44,9 @@
 <meta property="article:tag" content="数论">
 <meta property="article:tag" content="快速幂">
 <meta property="article:tag" content="洛谷">
+<meta property="article:tag" content="逆元">
 <meta property="article:tag" content="省选">
 <meta property="article:tag" content="SDOI">
-<meta property="article:tag" content="逆元">
 <meta property="article:tag" content="中国剩余定理(CRT)">
 <meta property="article:tag" content="Lucas">
 <meta property="article:tag" content="Euler定理">
@@ -151,7 +151,7 @@
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">72</span></a>
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">73</span></a>
 
   </li>
         <li class="menu-item menu-item-rss">
@@ -385,9 +385,9 @@ M834 80h400000v40h-400000z'/></svg></span></span></span><span class="vlist-s">�
               <a href="/tags/%E6%95%B0%E8%AE%BA/" rel="tag"># 数论</a>
               <a href="/tags/%E5%BF%AB%E9%80%9F%E5%B9%82/" rel="tag"># 快速幂</a>
               <a href="/tags/%E6%B4%9B%E8%B0%B7/" rel="tag"># 洛谷</a>
+              <a href="/tags/%E9%80%86%E5%85%83/" rel="tag"># 逆元</a>
               <a href="/tags/%E7%9C%81%E9%80%89/" rel="tag"># 省选</a>
               <a href="/tags/SDOI/" rel="tag"># SDOI</a>
-              <a href="/tags/%E9%80%86%E5%85%83/" rel="tag"># 逆元</a>
               <a href="/tags/%E4%B8%AD%E5%9B%BD%E5%89%A9%E4%BD%99%E5%AE%9A%E7%90%86-CRT/" rel="tag"># 中国剩余定理(CRT)</a>
               <a href="/tags/Lucas/" rel="tag"># Lucas</a>
               <a href="/tags/Euler%E5%AE%9A%E7%90%86/" rel="tag"># Euler定理</a>
@@ -479,7 +479,7 @@ M834 80h400000v40h-400000z'/></svg></span></span></span><span class="vlist-s">�
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">72</span>
+          <span class="site-state-item-count">73</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -624,6 +624,26 @@ M834 80h400000v40h-400000z'/></svg></span></span></span><span class="vlist-s">�
 
 
 
+<script>
+document.querySelectorAll('.pdfobject-container').forEach(element => {
+  let url = element.dataset.target;
+  let pdfOpenParams = {
+    navpanes : 0,
+    toolbar  : 0,
+    statusbar: 0,
+    pagemode : 'thumbs',
+    view     : 'FitH'
+  };
+  let pdfOpenFragment = '#' + Object.entries(pdfOpenParams).map(([key, value]) => `${key}=${encodeURIComponent(value)}`).join('&');
+  let fullURL = `/lib/pdf/web/viewer.html?file=${encodeURIComponent(url)}${pdfOpenFragment}`;
+
+  if (NexT.utils.supportsPDFs()) {
+    element.innerHTML = `<embed class="pdfobject" src="${url + pdfOpenFragment}" type="application/pdf" style="height: ${element.dataset.height};">`;
+  } else {
+    element.innerHTML = `<iframe src="${fullURL}" style="height: ${element.dataset.height};" frameborder="0"></iframe>`;
+  }
+});
+</script>
 
 
 <script>

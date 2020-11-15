@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://tifa-233.xyz/article/codeforces-501-d/</loc>
+    <loc>https://tifa-233.xyz/article/test-tag/</loc>
+    <lastmod>2020-11-15</lastmod>
+  </url>  <url>
+    <loc>https://tifa-233.xyz/article/test-echarts/</loc>
+    <lastmod>2020-11-14</lastmod>
+  </url>  <url>
+    <loc>https://tifa-233.xyz/article/test-encrypt/</loc>
+    <lastmod>2020-11-14</lastmod>
+  </url>  <url>
+    <loc>https://tifa-233.xyz/article/test-mermaid/</loc>
+    <lastmod>2020-11-14</lastmod>
+  </url>  <url>
+    <loc>https://tifa-233.xyz/article/codeforces-501-D/</loc>
     <lastmod>2020-11-14</lastmod>
   </url>  <url>
     <loc>https://tifa-233.xyz/article/cantor_exp/</loc>
@@ -133,9 +145,6 @@
     <loc>https://tifa-233.xyz/article/codeforces-696-A/</loc>
     <lastmod>2020-10-23</lastmod>
   </url>  <url>
-    <loc>https://tifa-233.xyz/article/test-tag/</loc>
-    <lastmod>2020-10-23</lastmod>
-  </url>  <url>
     <loc>https://tifa-233.xyz/article/luogu-p2480/</loc>
     <lastmod>2020-10-21</lastmod>
   </url>  <url>
@@ -190,9 +199,6 @@
     <loc>https://tifa-233.xyz/article/primitive-root-and-discrete-logarithm/</loc>
     <lastmod>2020-06-29</lastmod>
   </url>  <url>
-    <loc>https://tifa-233.xyz/article/test-mermaid/</loc>
-    <lastmod>2020-06-28</lastmod>
-  </url>  <url>
     <loc>https://tifa-233.xyz/article/c-generic-macro/</loc>
     <lastmod>2020-06-17</lastmod>
   </url>  <url>
@@ -213,8 +219,5 @@
   </url>  <url>
     <loc>https://tifa-233.xyz/article/katex-support-table/</loc>
     <lastmod>2020-05-10</lastmod>
-  </url>  <url>
-    <loc>https://tifa-233.xyz/article/test-encrypt/</loc>
-    <lastmod>2020-05-09</lastmod>
   </url>
 </urlset>
