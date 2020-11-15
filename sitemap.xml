@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://tifa-233.xyz/article/test-others/</loc>
+    
+    <lastmod>2020-11-15T09:58:56.052Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://tifa-233.xyz/article/codeforces-g10/</loc>
+    
+    <lastmod>2020-11-15T09:58:16.204Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://tifa-233.xyz/article/codeforces-501-d/</loc>
     
     <lastmod>2020-11-15T09:55:39.011Z</lastmod>
@@ -12,13 +26,6 @@
     <loc>https://tifa-233.xyz/article/codeforces-696-a/</loc>
     
     <lastmod>2020-11-15T09:55:35.054Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://tifa-233.xyz/article/test-tag/</loc>
-    
-    <lastmod>2020-11-15T09:43:50.043Z</lastmod>
     
   </url>
   
@@ -320,13 +327,6 @@
     <loc>https://tifa-233.xyz/article/hdu-2973/</loc>
     
     <lastmod>2020-10-23T10:19:55.577Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://tifa-233.xyz/article/codeforces-global-round-10/</loc>
-    
-    <lastmod>2020-10-23T10:19:17.549Z</lastmod>
     
   </url>
   
