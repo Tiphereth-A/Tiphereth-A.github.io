@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tifa-233.xyz/"/>
-  <updated>2020-11-16T15:48:42.873Z</updated>
+  <updated>2020-11-22T07:54:45.117Z</updated>
   <id>https://tifa-233.xyz/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://tifa-233.xyz/article/icpc-cjxp2020/"/>
     <id>https://tifa-233.xyz/article/icpc-cjxp2020/</id>
     <published>2020-11-15T15:01:18.000Z</published>
-    <updated>2020-11-16T15:48:42.873Z</updated>
+    <updated>2020-11-22T07:54:45.117Z</updated>
     
     <summary type="html">
     
@@ -35,11 +35,11 @@
       <category term="题解" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E9%A2%98%E8%A7%A3/"/>
     
     
+      <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
+    
       <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
     
       <category term="算法" scheme="https://tifa-233.xyz/tags/%E7%AE%97%E6%B3%95/"/>
-    
-      <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
     
       <category term="图论" scheme="https://tifa-233.xyz/tags/%E5%9B%BE%E8%AE%BA/"/>
     
@@ -47,15 +47,31 @@
     
       <category term="ICPC" scheme="https://tifa-233.xyz/tags/ICPC/"/>
     
+      <category term="计数" scheme="https://tifa-233.xyz/tags/%E8%AE%A1%E6%95%B0/"/>
+    
       <category term="组合数学" scheme="https://tifa-233.xyz/tags/%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/"/>
+    
+      <category term="搜索" scheme="https://tifa-233.xyz/tags/%E6%90%9C%E7%B4%A2/"/>
+    
+      <category term="DFS" scheme="https://tifa-233.xyz/tags/DFS/"/>
     
       <category term="数据结构" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
     
       <category term="二分" scheme="https://tifa-233.xyz/tags/%E4%BA%8C%E5%88%86/"/>
     
-      <category term="DP" scheme="https://tifa-233.xyz/tags/DP/"/>
+      <category term="树状数组" scheme="https://tifa-233.xyz/tags/%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84/"/>
     
       <category term="数论" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E8%AE%BA/"/>
+    
+      <category term="打表" scheme="https://tifa-233.xyz/tags/%E6%89%93%E8%A1%A8/"/>
+    
+      <category term="模拟" scheme="https://tifa-233.xyz/tags/%E6%A8%A1%E6%8B%9F/"/>
+    
+      <category term="DP" scheme="https://tifa-233.xyz/tags/DP/"/>
+    
+      <category term="容斥定理" scheme="https://tifa-233.xyz/tags/%E5%AE%B9%E6%96%A5%E5%AE%9A%E7%90%86/"/>
+    
+      <category term="整除" scheme="https://tifa-233.xyz/tags/%E6%95%B4%E9%99%A4/"/>
     
       <category term="位运算" scheme="https://tifa-233.xyz/tags/%E4%BD%8D%E8%BF%90%E7%AE%97/"/>
     
@@ -73,9 +89,13 @@
     
       <category term="分块" scheme="https://tifa-233.xyz/tags/%E5%88%86%E5%9D%97/"/>
     
+      <category term="自动机" scheme="https://tifa-233.xyz/tags/%E8%87%AA%E5%8A%A8%E6%9C%BA/"/>
+    
       <category term="后缀自动机" scheme="https://tifa-233.xyz/tags/%E5%90%8E%E7%BC%80%E8%87%AA%E5%8A%A8%E6%9C%BA/"/>
     
       <category term="状压DP" scheme="https://tifa-233.xyz/tags/%E7%8A%B6%E5%8E%8BDP/"/>
+    
+      <category term="线段树" scheme="https://tifa-233.xyz/tags/%E7%BA%BF%E6%AE%B5%E6%A0%91/"/>
     
   </entry>
   
@@ -98,11 +118,11 @@
       <category term="题解" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E9%A2%98%E8%A7%A3/"/>
     
     
+      <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
+    
       <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
     
       <category term="算法" scheme="https://tifa-233.xyz/tags/%E7%AE%97%E6%B3%95/"/>
-    
-      <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
     
       <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
     
@@ -121,7 +141,7 @@
     <link href="https://tifa-233.xyz/article/cantor_exp/"/>
     <id>https://tifa-233.xyz/article/cantor_exp/</id>
     <published>2020-11-13T16:12:11.000Z</published>
-    <updated>2020-11-14T17:29:44.574Z</updated>
+    <updated>2020-11-22T08:14:17.670Z</updated>
     
     <summary type="html">
     
@@ -136,17 +156,19 @@
       <category term="算法" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E7%AE%97%E6%B3%95/"/>
     
     
-      <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
+      <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
     
       <category term="笔记" scheme="https://tifa-233.xyz/tags/%E7%AC%94%E8%AE%B0/"/>
     
-      <category term="算法" scheme="https://tifa-233.xyz/tags/%E7%AE%97%E6%B3%95/"/>
+      <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
     
-      <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
+      <category term="算法" scheme="https://tifa-233.xyz/tags/%E7%AE%97%E6%B3%95/"/>
     
       <category term="组合数学" scheme="https://tifa-233.xyz/tags/%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/"/>
     
       <category term="平衡树" scheme="https://tifa-233.xyz/tags/%E5%B9%B3%E8%A1%A1%E6%A0%91/"/>
+    
+      <category term="模板" scheme="https://tifa-233.xyz/tags/%E6%A8%A1%E6%9D%BF/"/>
     
       <category term="Cantor展开" scheme="https://tifa-233.xyz/tags/Cantor%E5%B1%95%E5%BC%80/"/>
     
@@ -161,7 +183,7 @@
     <link href="https://tifa-233.xyz/article/luogu-p3524/"/>
     <id>https://tifa-233.xyz/article/luogu-p3524/</id>
     <published>2020-11-04T08:32:04.000Z</published>
-    <updated>2020-11-16T00:45:46.541Z</updated>
+    <updated>2020-11-22T08:04:03.783Z</updated>
     
     <summary type="html">
     
@@ -196,7 +218,7 @@
     <link href="https://tifa-233.xyz/article/icpc-cnwp2020/"/>
     <id>https://tifa-233.xyz/article/icpc-cnwp2020/</id>
     <published>2020-10-31T16:57:43.000Z</published>
-    <updated>2020-11-16T14:03:00.341Z</updated>
+    <updated>2020-11-22T08:00:36.027Z</updated>
     
     <summary type="html">
     
@@ -210,9 +232,9 @@
       <category term="题解" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E9%A2%98%E8%A7%A3/"/>
     
     
-      <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
-    
       <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
+    
+      <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
     
       <category term="图论" scheme="https://tifa-233.xyz/tags/%E5%9B%BE%E8%AE%BA/"/>
     
@@ -222,9 +244,9 @@
     
       <category term="前缀和" scheme="https://tifa-233.xyz/tags/%E5%89%8D%E7%BC%80%E5%92%8C/"/>
     
-      <category term="DP" scheme="https://tifa-233.xyz/tags/DP/"/>
-    
       <category term="数论" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E8%AE%BA/"/>
+    
+      <category term="DP" scheme="https://tifa-233.xyz/tags/DP/"/>
     
       <category term="最小公倍数" scheme="https://tifa-233.xyz/tags/%E6%9C%80%E5%B0%8F%E5%85%AC%E5%80%8D%E6%95%B0/"/>
     
@@ -238,6 +260,10 @@
     
       <category term="随机化" scheme="https://tifa-233.xyz/tags/%E9%9A%8F%E6%9C%BA%E5%8C%96/"/>
     
+      <category term="虚树" scheme="https://tifa-233.xyz/tags/%E8%99%9A%E6%A0%91/"/>
+    
+      <category term="LCA" scheme="https://tifa-233.xyz/tags/LCA/"/>
+    
   </entry>
   
   <entry>
@@ -245,7 +271,7 @@
     <link href="https://tifa-233.xyz/article/luogu-p4205/"/>
     <id>https://tifa-233.xyz/article/luogu-p4205/</id>
     <published>2020-10-25T09:01:58.000Z</published>
-    <updated>2020-10-25T09:49:37.665Z</updated>
+    <updated>2020-11-22T08:07:20.249Z</updated>
     
     <summary type="html">
     
@@ -276,7 +302,7 @@
     <link href="https://tifa-233.xyz/article/luogu-p1074/"/>
     <id>https://tifa-233.xyz/article/luogu-p1074/</id>
     <published>2020-10-25T09:01:50.000Z</published>
-    <updated>2020-10-25T09:20:17.829Z</updated>
+    <updated>2020-11-22T08:07:20.249Z</updated>
     
     <summary type="html">
     
@@ -307,7 +333,7 @@
     <link href="https://tifa-233.xyz/article/dlx/"/>
     <id>https://tifa-233.xyz/article/dlx/</id>
     <published>2020-10-25T08:54:34.000Z</published>
-    <updated>2020-11-13T16:14:53.889Z</updated>
+    <updated>2020-11-22T08:14:31.519Z</updated>
     
     <summary type="html">
     
@@ -321,15 +347,17 @@
       <category term="算法" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E7%AE%97%E6%B3%95/"/>
     
     
-      <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
-    
       <category term="笔记" scheme="https://tifa-233.xyz/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
     
       <category term="算法" scheme="https://tifa-233.xyz/tags/%E7%AE%97%E6%B3%95/"/>
     
       <category term="搜索" scheme="https://tifa-233.xyz/tags/%E6%90%9C%E7%B4%A2/"/>
     
       <category term="数据结构" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    
+      <category term="模板" scheme="https://tifa-233.xyz/tags/%E6%A8%A1%E6%9D%BF/"/>
     
       <category term="精确覆盖问题" scheme="https://tifa-233.xyz/tags/%E7%B2%BE%E7%A1%AE%E8%A6%86%E7%9B%96%E9%97%AE%E9%A2%98/"/>
     
@@ -356,7 +384,7 @@
     <link href="https://tifa-233.xyz/article/luogu-p2480/"/>
     <id>https://tifa-233.xyz/article/luogu-p2480/</id>
     <published>2020-10-20T08:26:05.000Z</published>
-    <updated>2020-10-21T08:07:25.455Z</updated>
+    <updated>2020-11-22T08:05:12.487Z</updated>
     
     <summary type="html">
     
@@ -370,9 +398,9 @@
       <category term="题解" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E9%A2%98%E8%A7%A3/"/>
     
     
-      <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
-    
       <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
+    
+      <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
     
       <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
     
@@ -401,7 +429,7 @@
     <link href="https://tifa-233.xyz/article/excrt/"/>
     <id>https://tifa-233.xyz/article/excrt/</id>
     <published>2020-10-06T13:45:51.000Z</published>
-    <updated>2020-11-10T15:19:41.940Z</updated>
+    <updated>2020-11-22T08:14:44.173Z</updated>
     
     <summary type="html">
     
@@ -418,11 +446,13 @@
       <category term="数学" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E6%95%B0%E5%AD%A6/"/>
     
     
-      <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
+      <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
     
       <category term="笔记" scheme="https://tifa-233.xyz/tags/%E7%AC%94%E8%AE%B0/"/>
     
-      <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
+      <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
+    
+      <category term="模板" scheme="https://tifa-233.xyz/tags/%E6%A8%A1%E6%9D%BF/"/>
     
       <category term="数论" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E8%AE%BA/"/>
     
@@ -437,7 +467,7 @@
     <link href="https://tifa-233.xyz/article/nt-2/"/>
     <id>https://tifa-233.xyz/article/nt-2/</id>
     <published>2020-10-04T16:52:51.000Z</published>
-    <updated>2020-10-23T10:44:27.040Z</updated>
+    <updated>2020-11-22T08:15:04.063Z</updated>
     
     <summary type="html">
     
@@ -451,11 +481,13 @@
       <category term="数学" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E6%95%B0%E5%AD%A6/"/>
     
     
-      <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
+      <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
     
       <category term="笔记" scheme="https://tifa-233.xyz/tags/%E7%AC%94%E8%AE%B0/"/>
     
-      <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
+      <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
+    
+      <category term="模板" scheme="https://tifa-233.xyz/tags/%E6%A8%A1%E6%9D%BF/"/>
     
       <category term="数论" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E8%AE%BA/"/>
     
@@ -486,7 +518,7 @@
     <link href="https://tifa-233.xyz/article/luogu-p3951/"/>
     <id>https://tifa-233.xyz/article/luogu-p3951/</id>
     <published>2020-10-04T04:27:01.000Z</published>
-    <updated>2020-10-04T07:20:18.126Z</updated>
+    <updated>2020-11-22T08:05:12.487Z</updated>
     
     <summary type="html">
     
@@ -500,17 +532,21 @@
       <category term="题解" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E9%A2%98%E8%A7%A3/"/>
     
     
-      <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
-    
       <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
+    
+      <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
     
       <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
     
       <category term="数论" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E8%AE%BA/"/>
     
+      <category term="构造" scheme="https://tifa-233.xyz/tags/%E6%9E%84%E9%80%A0/"/>
+    
       <category term="洛谷" scheme="https://tifa-233.xyz/tags/%E6%B4%9B%E8%B0%B7/"/>
     
-      <category term="构造" scheme="https://tifa-233.xyz/tags/%E6%9E%84%E9%80%A0/"/>
+      <category term="蓝桥杯" scheme="https://tifa-233.xyz/tags/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
+    
+      <category term="Bézout定理" scheme="https://tifa-233.xyz/tags/Bezout%E5%AE%9A%E7%90%86/"/>
     
   </entry>
   
@@ -519,7 +555,7 @@
     <link href="https://tifa-233.xyz/article/nt-1/"/>
     <id>https://tifa-233.xyz/article/nt-1/</id>
     <published>2020-10-03T17:14:43.000Z</published>
-    <updated>2020-10-24T15:24:08.018Z</updated>
+    <updated>2020-11-22T08:14:59.742Z</updated>
     
     <summary type="html">
     
@@ -533,19 +569,29 @@
       <category term="数学" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E6%95%B0%E5%AD%A6/"/>
     
     
-      <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
+      <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
     
       <category term="笔记" scheme="https://tifa-233.xyz/tags/%E7%AC%94%E8%AE%B0/"/>
     
-      <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
+      <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
+    
+      <category term="模板" scheme="https://tifa-233.xyz/tags/%E6%A8%A1%E6%9D%BF/"/>
+    
+      <category term="最大公约数" scheme="https://tifa-233.xyz/tags/%E6%9C%80%E5%A4%A7%E5%85%AC%E7%BA%A6%E6%95%B0/"/>
     
       <category term="数论" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E8%AE%BA/"/>
+    
+      <category term="同余" scheme="https://tifa-233.xyz/tags/%E5%90%8C%E4%BD%99/"/>
+    
+      <category term="构造" scheme="https://tifa-233.xyz/tags/%E6%9E%84%E9%80%A0/"/>
+    
+      <category term="最小公倍数" scheme="https://tifa-233.xyz/tags/%E6%9C%80%E5%B0%8F%E5%85%AC%E5%80%8D%E6%95%B0/"/>
     
       <category term="exgcd" scheme="https://tifa-233.xyz/tags/exgcd/"/>
     
       <category term="Wilson定理" scheme="https://tifa-233.xyz/tags/Wilson%E5%AE%9A%E7%90%86/"/>
     
-      <category term="最小公倍数" scheme="https://tifa-233.xyz/tags/%E6%9C%80%E5%B0%8F%E5%85%AC%E5%80%8D%E6%95%B0/"/>
+      <category term="整除" scheme="https://tifa-233.xyz/tags/%E6%95%B4%E9%99%A4/"/>
     
       <category term="素数/质数" scheme="https://tifa-233.xyz/tags/%E7%B4%A0%E6%95%B0-%E8%B4%A8%E6%95%B0/"/>
     
@@ -557,21 +603,13 @@
     
       <category term="Euler定理" scheme="https://tifa-233.xyz/tags/Euler%E5%AE%9A%E7%90%86/"/>
     
-      <category term="构造" scheme="https://tifa-233.xyz/tags/%E6%9E%84%E9%80%A0/"/>
-    
-      <category term="整除" scheme="https://tifa-233.xyz/tags/%E6%95%B4%E9%99%A4/"/>
+      <category term="Bézout定理" scheme="https://tifa-233.xyz/tags/Bezout%E5%AE%9A%E7%90%86/"/>
     
       <category term="Eratosthenes筛" scheme="https://tifa-233.xyz/tags/Eratosthenes%E7%AD%9B/"/>
     
       <category term="Euler筛" scheme="https://tifa-233.xyz/tags/Euler%E7%AD%9B/"/>
     
-      <category term="最大公约数" scheme="https://tifa-233.xyz/tags/%E6%9C%80%E5%A4%A7%E5%85%AC%E7%BA%A6%E6%95%B0/"/>
-    
       <category term="辗转相除法" scheme="https://tifa-233.xyz/tags/%E8%BE%97%E8%BD%AC%E7%9B%B8%E9%99%A4%E6%B3%95/"/>
-    
-      <category term="Bézout定理" scheme="https://tifa-233.xyz/tags/Bezout%E5%AE%9A%E7%90%86/"/>
-    
-      <category term="同余" scheme="https://tifa-233.xyz/tags/%E5%90%8C%E4%BD%99/"/>
     
       <category term="Fermat小定理" scheme="https://tifa-233.xyz/tags/Fermat%E5%B0%8F%E5%AE%9A%E7%90%86/"/>
     
@@ -582,7 +620,7 @@
     <link href="https://tifa-233.xyz/article/asr/"/>
     <id>https://tifa-233.xyz/article/asr/</id>
     <published>2020-10-02T14:23:57.000Z</published>
-    <updated>2020-10-08T15:44:59.448Z</updated>
+    <updated>2020-11-22T08:14:09.032Z</updated>
     
     <summary type="html">
     
@@ -596,15 +634,17 @@
       <category term="数学" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E6%95%B0%E5%AD%A6/"/>
     
     
+      <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
+    
       <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
     
       <category term="算法" scheme="https://tifa-233.xyz/tags/%E7%AE%97%E6%B3%95/"/>
     
-      <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
-    
       <category term="数值积分" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%80%BC%E7%A7%AF%E5%88%86/"/>
     
       <category term="自适应Simpson法" scheme="https://tifa-233.xyz/tags/%E8%87%AA%E9%80%82%E5%BA%94Simpson%E6%B3%95/"/>
+    
+      <category term="模板" scheme="https://tifa-233.xyz/tags/%E6%A8%A1%E6%9D%BF/"/>
     
       <category term="Simpson法" scheme="https://tifa-233.xyz/tags/Simpson%E6%B3%95/"/>
     
@@ -615,7 +655,7 @@
     <link href="https://tifa-233.xyz/article/codeforces-g10/"/>
     <id>https://tifa-233.xyz/article/codeforces-g10/</id>
     <published>2020-08-18T06:51:12.000Z</published>
-    <updated>2020-11-15T09:58:16.204Z</updated>
+    <updated>2020-11-22T08:07:20.249Z</updated>
     
     <summary type="html">
     
@@ -630,9 +670,9 @@
       <category term="题解" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E9%A2%98%E8%A7%A3/"/>
     
     
-      <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
-    
       <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
+    
+      <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
     
       <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
     
@@ -649,7 +689,7 @@
     <link href="https://tifa-233.xyz/article/luogu-p5627/"/>
     <id>https://tifa-233.xyz/article/luogu-p5627/</id>
     <published>2020-08-12T03:31:46.000Z</published>
-    <updated>2020-10-23T10:22:21.636Z</updated>
+    <updated>2020-11-22T08:07:20.249Z</updated>
     
     <summary type="html">
     
@@ -663,9 +703,9 @@
       <category term="题解" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E9%A2%98%E8%A7%A3/"/>
     
     
-      <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
-    
       <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
+    
+      <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
     
       <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
     
@@ -680,7 +720,7 @@
     <link href="https://tifa-233.xyz/article/luogu-p3599/"/>
     <id>https://tifa-233.xyz/article/luogu-p3599/</id>
     <published>2020-08-03T06:23:09.000Z</published>
-    <updated>2020-10-23T10:22:00.940Z</updated>
+    <updated>2020-11-22T08:05:12.487Z</updated>
     
     <summary type="html">
     
@@ -694,9 +734,9 @@
       <category term="题解" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E9%A2%98%E8%A7%A3/"/>
     
     
-      <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
-    
       <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
+    
+      <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
     
       <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
     
@@ -715,7 +755,7 @@
     <link href="https://tifa-233.xyz/article/hdu-6152/"/>
     <id>https://tifa-233.xyz/article/hdu-6152/</id>
     <published>2020-07-31T12:59:49.000Z</published>
-    <updated>2020-10-23T10:20:14.560Z</updated>
+    <updated>2020-11-22T08:03:44.773Z</updated>
     
     <summary type="html">
     
@@ -729,9 +769,9 @@
       <category term="题解" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E9%A2%98%E8%A7%A3/"/>
     
     
-      <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
-    
       <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
+    
+      <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
     
       <category term="图论" scheme="https://tifa-233.xyz/tags/%E5%9B%BE%E8%AE%BA/"/>
     
@@ -762,9 +802,9 @@
       <category term="题解" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E9%A2%98%E8%A7%A3/"/>
     
     
-      <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
-    
       <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
+    
+      <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
     
       <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
     
@@ -795,9 +835,9 @@
       <category term="题解" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E9%A2%98%E8%A7%A3/"/>
     
     
-      <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
-    
       <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
+    
+      <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
     
       <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
     

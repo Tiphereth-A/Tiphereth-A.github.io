@@ -41,11 +41,11 @@
 <meta property="og:image" content="https://tifa-233.xyz/article/adaptive-simpson-rule/1-4.png">
 <meta property="og:image" content="https://tifa-233.xyz/article/adaptive-simpson-rule/1-5.png">
 <meta property="article:published_time" content="2018-08-12T07:33:58.000Z">
-<meta property="article:modified_time" content="2020-10-06T13:39:46.996Z">
+<meta property="article:modified_time" content="2020-11-22T08:03:44.773Z">
 <meta property="article:author" content="Tifa">
+<meta property="article:tag" content="数学">
 <meta property="article:tag" content="程序设计">
 <meta property="article:tag" content="算法">
-<meta property="article:tag" content="数学">
 <meta property="article:tag" content="洛谷日报">
 <meta property="article:tag" content="数值积分">
 <meta property="article:tag" content="自适应Simpson法">
@@ -141,7 +141,7 @@
   </li>
         <li class="menu-item menu-item-tags">
 
-    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">156</span></a>
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">166</span></a>
 
   </li>
         <li class="menu-item menu-item-categories">
@@ -246,7 +246,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-10-06 21:39:46" itemprop="dateModified" datetime="2020-10-06T21:39:46+08:00">2020-10-06</time>
+                <time title="修改时间：2020-11-22 16:03:44" itemprop="dateModified" datetime="2020-11-22T16:03:44+08:00">2020-11-22</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -371,7 +371,7 @@
 </ol>
 <p>可以看出这个方法在保证了精度的同时保证了效率</p>
 <p>我们注意到, 上述操作中有两个地方含糊不清</p>
-<p>一个是如何确定“差别不大”, 一个是面积的近似值已经求得后返回的面积是多少</p>
+<p>一个是如何确定&quot;差别不大&quot;, 一个是面积的近似值已经求得后返回的面积是多少</p>
 <p>我们认为当且仅当<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∣</mi><msub><mi>S</mi><mn>1</mn></msub><mo>+</mo><msub><mi>S</mi><mn>2</mn></msub><mo>−</mo><msub><mi>S</mi><mn>0</mn></msub><mi mathvariant="normal">∣</mi><mo>&lt;</mo><mn>15</mn><mi>ϵ</mi></mrow><annotation encoding="application/x-tex">|S_1+S_2-S_0|&lt;15\epsilon</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">∣</span><span class="mord"><span class="mord mathdefault" style="margin-right:0.05764em;">S</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.05764em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.05764em;">S</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.05764em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.05764em;">S</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.05764em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">0</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord">∣</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">&lt;</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span><span class="mord">5</span><span class="mord mathdefault">ϵ</span></span></span></span>时<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>S</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">S_0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.05764em;">S</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.05764em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">0</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>与<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>S</mi><mn>1</mn></msub><mo>+</mo><msub><mi>S</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">S_1+S_2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.05764em;">S</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.05764em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.05764em;">S</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.05764em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>差别不大</p>
 <blockquote>
 <p>乘以<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>15</mn></mrow><annotation encoding="application/x-tex">15</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span><span class="mord">5</span></span></span></span>是经过一系列误差分析后得出的, 具体笔者可能会另写一篇文章<s>咕咕咕</s>, 感谢@<a href="https://www.luogu.org/space/show?uid=17930" target="_blank" rel="noopener">Marser</a>和@<a href="https://www.luogu.org/space/show?uid=7868" target="_blank" rel="noopener">_rqy</a>两位dalao的补充</p>
@@ -412,9 +412,9 @@
 
       <footer class="post-footer">
           <div class="post-tags">
+              <a href="/tags/%E6%95%B0%E5%AD%A6/" rel="tag"># 数学</a>
               <a href="/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/" rel="tag"># 程序设计</a>
               <a href="/tags/%E7%AE%97%E6%B3%95/" rel="tag"># 算法</a>
-              <a href="/tags/%E6%95%B0%E5%AD%A6/" rel="tag"># 数学</a>
               <a href="/tags/%E6%B4%9B%E8%B0%B7%E6%97%A5%E6%8A%A5/" rel="tag"># 洛谷日报</a>
               <a href="/tags/%E6%95%B0%E5%80%BC%E7%A7%AF%E5%88%86/" rel="tag"># 数值积分</a>
               <a href="/tags/%E8%87%AA%E9%80%82%E5%BA%94Simpson%E6%B3%95/" rel="tag"># 自适应Simpson法</a>
@@ -519,7 +519,7 @@
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">156</span>
+        <span class="site-state-item-count">166</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
