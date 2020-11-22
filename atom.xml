@@ -43,8 +43,6 @@
     
       <category term="图论" scheme="https://tifa-233.xyz/tags/%E5%9B%BE%E8%AE%BA/"/>
     
-      <category term="数据结构" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
-    
       <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
     
       <category term="ICPC" scheme="https://tifa-233.xyz/tags/ICPC/"/>
@@ -57,17 +55,19 @@
     
       <category term="DFS" scheme="https://tifa-233.xyz/tags/DFS/"/>
     
+      <category term="数据结构" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    
       <category term="二分" scheme="https://tifa-233.xyz/tags/%E4%BA%8C%E5%88%86/"/>
     
       <category term="树状数组" scheme="https://tifa-233.xyz/tags/%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84/"/>
-    
-      <category term="DP" scheme="https://tifa-233.xyz/tags/DP/"/>
     
       <category term="数论" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E8%AE%BA/"/>
     
       <category term="模拟" scheme="https://tifa-233.xyz/tags/%E6%A8%A1%E6%8B%9F/"/>
     
       <category term="打表" scheme="https://tifa-233.xyz/tags/%E6%89%93%E8%A1%A8/"/>
+    
+      <category term="DP" scheme="https://tifa-233.xyz/tags/DP/"/>
     
       <category term="容斥定理" scheme="https://tifa-233.xyz/tags/%E5%AE%B9%E6%96%A5%E5%AE%9A%E7%90%86/"/>
     
@@ -128,11 +128,11 @@
     
       <category term="组合数学" scheme="https://tifa-233.xyz/tags/%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/"/>
     
-      <category term="CodeForces" scheme="https://tifa-233.xyz/tags/CodeForces/"/>
-    
       <category term="Cantor展开" scheme="https://tifa-233.xyz/tags/Cantor%E5%B1%95%E5%BC%80/"/>
     
       <category term="逆Cantor展开" scheme="https://tifa-233.xyz/tags/%E9%80%86Cantor%E5%B1%95%E5%BC%80/"/>
+    
+      <category term="CodeForces" scheme="https://tifa-233.xyz/tags/CodeForces/"/>
     
   </entry>
   
@@ -164,9 +164,9 @@
     
       <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
     
-      <category term="平衡树" scheme="https://tifa-233.xyz/tags/%E5%B9%B3%E8%A1%A1%E6%A0%91/"/>
-    
       <category term="组合数学" scheme="https://tifa-233.xyz/tags/%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/"/>
+    
+      <category term="平衡树" scheme="https://tifa-233.xyz/tags/%E5%B9%B3%E8%A1%A1%E6%A0%91/"/>
     
       <category term="模板" scheme="https://tifa-233.xyz/tags/%E6%A8%A1%E6%9D%BF/"/>
     
@@ -244,9 +244,9 @@
     
       <category term="前缀和" scheme="https://tifa-233.xyz/tags/%E5%89%8D%E7%BC%80%E5%92%8C/"/>
     
-      <category term="DP" scheme="https://tifa-233.xyz/tags/DP/"/>
-    
       <category term="数论" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E8%AE%BA/"/>
+    
+      <category term="DP" scheme="https://tifa-233.xyz/tags/DP/"/>
     
       <category term="最小公倍数" scheme="https://tifa-233.xyz/tags/%E6%9C%80%E5%B0%8F%E5%85%AC%E5%80%8D%E6%95%B0/"/>
     
@@ -353,9 +353,9 @@
     
       <category term="算法" scheme="https://tifa-233.xyz/tags/%E7%AE%97%E6%B3%95/"/>
     
-      <category term="数据结构" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
-    
       <category term="搜索" scheme="https://tifa-233.xyz/tags/%E6%90%9C%E7%B4%A2/"/>
+    
+      <category term="数据结构" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
     
       <category term="模板" scheme="https://tifa-233.xyz/tags/%E6%A8%A1%E6%9D%BF/"/>
     
@@ -577,19 +577,19 @@
     
       <category term="模板" scheme="https://tifa-233.xyz/tags/%E6%A8%A1%E6%9D%BF/"/>
     
-      <category term="最大公约数" scheme="https://tifa-233.xyz/tags/%E6%9C%80%E5%A4%A7%E5%85%AC%E7%BA%A6%E6%95%B0/"/>
-    
       <category term="数论" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E8%AE%BA/"/>
-    
-      <category term="最小公倍数" scheme="https://tifa-233.xyz/tags/%E6%9C%80%E5%B0%8F%E5%85%AC%E5%80%8D%E6%95%B0/"/>
     
       <category term="构造" scheme="https://tifa-233.xyz/tags/%E6%9E%84%E9%80%A0/"/>
     
+      <category term="最大公约数" scheme="https://tifa-233.xyz/tags/%E6%9C%80%E5%A4%A7%E5%85%AC%E7%BA%A6%E6%95%B0/"/>
+    
       <category term="同余" scheme="https://tifa-233.xyz/tags/%E5%90%8C%E4%BD%99/"/>
     
-      <category term="Wilson定理" scheme="https://tifa-233.xyz/tags/Wilson%E5%AE%9A%E7%90%86/"/>
+      <category term="最小公倍数" scheme="https://tifa-233.xyz/tags/%E6%9C%80%E5%B0%8F%E5%85%AC%E5%80%8D%E6%95%B0/"/>
     
       <category term="exgcd" scheme="https://tifa-233.xyz/tags/exgcd/"/>
+    
+      <category term="Wilson定理" scheme="https://tifa-233.xyz/tags/Wilson%E5%AE%9A%E7%90%86/"/>
     
       <category term="整除" scheme="https://tifa-233.xyz/tags/%E6%95%B4%E9%99%A4/"/>
     
