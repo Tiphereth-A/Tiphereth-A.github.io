@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://tifa-233.xyz/article/notes/0001/</loc>
+    <lastmod>2020-12-02</lastmod>
+  </url>  <url>
+    <loc>https://tifa-233.xyz/article/about/</loc>
+    <lastmod>2020-11-22</lastmod>
+  </url>  <url>
     <loc>https://tifa-233.xyz/article/nt-2/</loc>
     <lastmod>2020-11-22</lastmod>
   </url>  <url>
@@ -43,16 +49,16 @@
     <loc>https://tifa-233.xyz/article/symmetric-bilinear-metric-space-and-system-of-linear-equations/</loc>
     <lastmod>2020-11-22</lastmod>
   </url>  <url>
-    <loc>https://tifa-233.xyz/article/luogu-p2413/</loc>
+    <loc>https://tifa-233.xyz/article/luogu-p2480/</loc>
     <lastmod>2020-11-22</lastmod>
   </url>  <url>
-    <loc>https://tifa-233.xyz/article/luogu-p3599/</loc>
+    <loc>https://tifa-233.xyz/article/luogu-p2413/</loc>
     <lastmod>2020-11-22</lastmod>
   </url>  <url>
     <loc>https://tifa-233.xyz/article/luogu-p3951/</loc>
     <lastmod>2020-11-22</lastmod>
   </url>  <url>
-    <loc>https://tifa-233.xyz/article/luogu-p2480/</loc>
+    <loc>https://tifa-233.xyz/article/luogu-p3599/</loc>
     <lastmod>2020-11-22</lastmod>
   </url>  <url>
     <loc>https://tifa-233.xyz/article/atcoder-arc051-b/</loc>
@@ -182,9 +188,6 @@
     <lastmod>2020-10-23</lastmod>
   </url>  <url>
     <loc>https://tifa-233.xyz/article/hdu-2973/</loc>
-    <lastmod>2020-10-23</lastmod>
-  </url>  <url>
-    <loc>https://tifa-233.xyz/article/about/</loc>
     <lastmod>2020-10-23</lastmod>
   </url>  <url>
     <loc>https://tifa-233.xyz/article/template-bfs/</loc>
