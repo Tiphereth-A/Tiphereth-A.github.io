@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://tifa-233.xyz/article/notes/0001/</loc>
-    <lastmod>2020-12-02</lastmod>
+    <loc>https://tifa-233.xyz/article/draft/0001/</loc>
+    <lastmod>2020-12-03</lastmod>
   </url>  <url>
     <loc>https://tifa-233.xyz/article/about/</loc>
     <lastmod>2020-11-22</lastmod>
@@ -55,10 +55,10 @@
     <loc>https://tifa-233.xyz/article/luogu-p2413/</loc>
     <lastmod>2020-11-22</lastmod>
   </url>  <url>
-    <loc>https://tifa-233.xyz/article/luogu-p3951/</loc>
+    <loc>https://tifa-233.xyz/article/luogu-p3599/</loc>
     <lastmod>2020-11-22</lastmod>
   </url>  <url>
-    <loc>https://tifa-233.xyz/article/luogu-p3599/</loc>
+    <loc>https://tifa-233.xyz/article/luogu-p3951/</loc>
     <lastmod>2020-11-22</lastmod>
   </url>  <url>
     <loc>https://tifa-233.xyz/article/atcoder-arc051-b/</loc>
@@ -73,10 +73,10 @@
     <loc>https://tifa-233.xyz/article/sa-poj-1141/</loc>
     <lastmod>2020-11-22</lastmod>
   </url>  <url>
-    <loc>https://tifa-233.xyz/article/test-encrypt/</loc>
+    <loc>https://tifa-233.xyz/article/test-echarts/</loc>
     <lastmod>2020-11-22</lastmod>
   </url>  <url>
-    <loc>https://tifa-233.xyz/article/test-echarts/</loc>
+    <loc>https://tifa-233.xyz/article/test-encrypt/</loc>
     <lastmod>2020-11-22</lastmod>
   </url>  <url>
     <loc>https://tifa-233.xyz/article/c-generic-macro/</loc>
