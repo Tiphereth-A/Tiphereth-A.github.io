@@ -2,16 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://tifa-233.xyz/article/draft/0001/</loc>
+    <loc>https://tifa-233.xyz/article/about/</loc>
     
-    <lastmod>2020-12-03T05:37:36.569Z</lastmod>
+    <lastmod>2020-12-03T07:39:44.397Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://tifa-233.xyz/article/about/</loc>
+    <loc>https://tifa-233.xyz/article/icpc-cnwp2020/</loc>
     
-    <lastmod>2020-11-22T10:05:01.598Z</lastmod>
+    <lastmod>2020-12-03T07:36:34.528Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://tifa-233.xyz/article/draft/0001/</loc>
+    
+    <lastmod>2020-12-03T05:37:36.569Z</lastmod>
     
   </url>
   
@@ -222,13 +229,6 @@
     <loc>https://tifa-233.xyz/article/adaptive-simpson-rule/</loc>
     
     <lastmod>2020-11-22T08:03:44.773Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://tifa-233.xyz/article/icpc-cnwp2020/</loc>
-    
-    <lastmod>2020-11-22T08:00:36.027Z</lastmod>
     
   </url>
   
