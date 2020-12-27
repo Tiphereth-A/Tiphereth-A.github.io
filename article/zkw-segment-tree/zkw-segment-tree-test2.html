@@ -1,71 +1,4 @@
-<hr />
-<p>title: 「线段树的扩展之浅谈zkw线段树」一文的测试代码与结果更新<br />
-tags:</p>
-<ul>
-<li>程序设计</li>
-<li>洛谷日报</li>
-<li>测试<br />
-abbrlink: bf1f9035<br />
-date: 2020-02-10 02:04:18<br />
-comments: false</li>
-</ul>
-<hr />
-<p>更新的原因主要是笔者觉得以前的码风很乱QwQ</p>
-<!--more-->
-<p>测试平台:</p>
-<ul>
-<li>
-<p>系统: Ubuntu 18.04 LTS 64位</p>
-</li>
-<li>
-<p>CPU: Intel® Core™ i5-9300H CPU @ 2.40GHz</p>
-</li>
-</ul>
-<p>所有代码均使用基于<code>fread</code>和<code>fwrite</code>的快读快写模板, 并在编译时使用C++98标准和O3优化</p>
-<p>结果 (单位: s):</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:center"></th>
-<th style="text-align:center">递归线段树</th>
-<th style="text-align:center">zkw线段树</th>
-<th style="text-align:center">树状数组</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">1e6(5组)</td>
-<td style="text-align:center">0.31803</td>
-<td style="text-align:center">0.20853</td>
-<td style="text-align:center">0.17850</td>
-</tr>
-<tr>
-<td style="text-align:center">5e6(5组)</td>
-<td style="text-align:center">2.04103</td>
-<td style="text-align:center">0.96225</td>
-<td style="text-align:center">1.45518</td>
-</tr>
-<tr>
-<td style="text-align:center">1e7(5组)</td>
-<td style="text-align:center">6.47973</td>
-<td style="text-align:center">3.73674</td>
-<td style="text-align:center">3.76717</td>
-</tr>
-<tr>
-<td style="text-align:center">2e7(5组)</td>
-<td style="text-align:center">14.7163</td>
-<td style="text-align:center">8.07310</td>
-<td style="text-align:center">7.91748</td>
-</tr>
-</tbody>
-</table>
-<p>可以注意到, 正如 @<a href="https://www.luogu.com.cn/user/23398" target="_blank" rel="noopener">frankchenfu</a> 在原文评论里所说, 开了O3优化后, zkw线段树得到了更显著的优化, 速度与树状数组更加接近(毕竟依zkw julao所说, 二者理论上速度应该差不多)</p>
-<p>而且笔者自认为zkw线段树更优美, 所以还是推荐各位学习zkw线段树QwQ</p>
-<p>测试代码:</p>
-<ol>
-<li>递归线段树:</li>
-</ol>
-<pre class="highlight"><code class="cpp"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;sys/time.h&gt;</span></span>
+<hr><p>title: 「线段树的扩展之浅谈zkw线段树」一文的测试代码与结果更新<br>tags:</p><ul><li>程序设计</li><li>洛谷日报</li><li>测试<br>abbrlink: bf1f9035<br>date: 2020-02-10 02:04:18<br>comments: false</li></ul><hr><p>更新的原因主要是笔者觉得以前的码风很乱QwQ</p><!--more--><p>测试平台:</p><ul><li><p>系统: Ubuntu 18.04 LTS 64位</p></li><li><p>CPU: Intel® Core™ i5-9300H CPU @ 2.40GHz</p></li></ul><p>所有代码均使用基于<code>fread</code>和<code>fwrite</code>的快读快写模板, 并在编译时使用C++98标准和O3优化</p><p>结果 (单位: s):</p><table><thead><tr><th style="text-align:center"></th><th style="text-align:center">递归线段树</th><th style="text-align:center">zkw线段树</th><th style="text-align:center">树状数组</th></tr></thead><tbody><tr><td style="text-align:center">1e6(5组)</td><td style="text-align:center">0.31803</td><td style="text-align:center">0.20853</td><td style="text-align:center">0.17850</td></tr><tr><td style="text-align:center">5e6(5组)</td><td style="text-align:center">2.04103</td><td style="text-align:center">0.96225</td><td style="text-align:center">1.45518</td></tr><tr><td style="text-align:center">1e7(5组)</td><td style="text-align:center">6.47973</td><td style="text-align:center">3.73674</td><td style="text-align:center">3.76717</td></tr><tr><td style="text-align:center">2e7(5组)</td><td style="text-align:center">14.7163</td><td style="text-align:center">8.07310</td><td style="text-align:center">7.91748</td></tr></tbody></table><p>可以注意到, 正如 @<a href="https://www.luogu.com.cn/user/23398" target="_blank" rel="noopener">frankchenfu</a> 在原文评论里所说, 开了O3优化后, zkw线段树得到了更显著的优化, 速度与树状数组更加接近(毕竟依zkw julao所说, 二者理论上速度应该差不多)</p><p>而且笔者自认为zkw线段树更优美, 所以还是推荐各位学习zkw线段树QwQ</p><p>测试代码:</p><ol><li>递归线段树:</li></ol><pre class="highlight"><code class="cpp"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;sys/time.h&gt;</span></span>
 <span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cassert&gt;</span></span>
 <span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span>
 <span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span>
@@ -225,11 +158,7 @@ u64 k;
             &lt;&lt; <span class="built_in">std</span>::<span class="built_in">endl</span>;
   <span class="keyword">return</span> <span class="number">0</span>;
 }
-</code></pre>
-<ol start="2">
-<li>zkw线段树:</li>
-</ol>
-<pre class="highlight"><code class="cpp"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;sys/time.h&gt;</span></span>
+</code></pre><ol start="2"><li>zkw线段树:</li></ol><pre class="highlight"><code class="cpp"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;sys/time.h&gt;</span></span>
 <span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cassert&gt;</span></span>
 <span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span>
 <span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span>
@@ -395,11 +324,7 @@ u64 k;
             &lt;&lt; <span class="built_in">std</span>::<span class="built_in">endl</span>;
   <span class="keyword">return</span> <span class="number">0</span>;
 }
-</code></pre>
-<ol start="3">
-<li>树状数组:</li>
-</ol>
-<pre class="highlight"><code class="cpp"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;sys/time.h&gt;</span></span>
+</code></pre><ol start="3"><li>树状数组:</li></ol><pre class="highlight"><code class="cpp"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;sys/time.h&gt;</span></span>
 <span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cassert&gt;</span></span>
 <span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span>
 <span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span>
@@ -527,11 +452,7 @@ u64 op, x, y, k;
             &lt;&lt; <span class="built_in">std</span>::<span class="built_in">endl</span>;
   <span class="keyword">return</span> <span class="number">0</span>;
 }
-</code></pre>
-<ol start="4">
-<li>数据生成器:</li>
-</ol>
-<pre class="highlight"><code class="cpp"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;climits&gt;</span></span>
+</code></pre><ol start="4"><li>数据生成器:</li></ol><pre class="highlight"><code class="cpp"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;climits&gt;</span></span>
 <span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;ctime&gt;</span></span>
 <span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;fstream&gt;</span></span>
 <span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;random&gt;</span></span>
@@ -576,5 +497,4 @@ ofstream out;
   }
   <span class="keyword">return</span> <span class="number">0</span>;
 }
-</code></pre>
-<p><a href="..">回到原文</a></p>
+</code></pre><p><a href="..">回到原文</a></p>
