@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://tifa-233.xyz/article/test-admonitions/</loc>
+    
+    <lastmod>2020-12-27T10:25:51.558Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://tifa-233.xyz/article/test-echarts/</loc>
+    
+    <lastmod>2020-12-27T09:50:04.251Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://tifa-233.xyz/article/test-others/</loc>
     
     <lastmod>2020-12-27T09:34:06.860Z</lastmod>
@@ -362,13 +376,6 @@
     <loc>https://tifa-233.xyz/article/luogu-p2413/</loc>
     
     <lastmod>2020-11-22T08:05:12.487Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://tifa-233.xyz/article/test-echarts/</loc>
-    
-    <lastmod>2020-11-22T08:04:03.783Z</lastmod>
     
   </url>
   
