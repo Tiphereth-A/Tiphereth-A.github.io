@@ -1267,7 +1267,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #bdffd6;
+  background: #f2f;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -1510,7 +1510,7 @@ pre .javascript .function {
   width: 100%;
 }
 .with-love {
-  color: #666;
+  color: #f00;
   display: inline-block;
   margin: 0 5px;
   animation: iconAnimate 1.33s ease-in-out infinite;
@@ -2967,4 +2967,9 @@ ul.breadcrumb li + li:last-child {
   100% {
     transform: translate(1pt, -2pt) rotate(-1deg);
   }
+}
+.post-body p a:hover {
+  color: #fc6423;
+  border-bottom: none;
+  border-bottom: 1px solid #fc6423;
 }

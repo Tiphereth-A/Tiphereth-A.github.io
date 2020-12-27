@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://tifa-233.xyz/article/test-others/</loc>
+    <lastmod>2020-12-27</lastmod>
+  </url>  <url>
     <loc>https://tifa-233.xyz/article/icpc-ajnr2020/</loc>
     <lastmod>2020-12-27</lastmod>
   </url>  <url>
@@ -70,19 +73,19 @@
     <loc>https://tifa-233.xyz/article/poj-3361/</loc>
     <lastmod>2020-12-06</lastmod>
   </url>  <url>
-    <loc>https://tifa-233.xyz/article/sa-poj-1141/</loc>
-    <lastmod>2020-12-06</lastmod>
-  </url>  <url>
     <loc>https://tifa-233.xyz/article/sa-poj-1381/</loc>
     <lastmod>2020-12-06</lastmod>
   </url>  <url>
-    <loc>https://tifa-233.xyz/article/sa-poj-1528/</loc>
+    <loc>https://tifa-233.xyz/article/sa-poj-1141/</loc>
     <lastmod>2020-12-06</lastmod>
   </url>  <url>
     <loc>https://tifa-233.xyz/article/sa-poj-1777/</loc>
     <lastmod>2020-12-06</lastmod>
   </url>  <url>
     <loc>https://tifa-233.xyz/article/sa-poj-2356/</loc>
+    <lastmod>2020-12-06</lastmod>
+  </url>  <url>
+    <loc>https://tifa-233.xyz/article/sa-poj-1528/</loc>
     <lastmod>2020-12-06</lastmod>
   </url>  <url>
     <loc>https://tifa-233.xyz/article/ural-1091/</loc>
@@ -145,10 +148,10 @@
     <loc>https://tifa-233.xyz/article/luogu-p2413/</loc>
     <lastmod>2020-11-22</lastmod>
   </url>  <url>
-    <loc>https://tifa-233.xyz/article/luogu-p3599/</loc>
+    <loc>https://tifa-233.xyz/article/luogu-p2480/</loc>
     <lastmod>2020-11-22</lastmod>
   </url>  <url>
-    <loc>https://tifa-233.xyz/article/luogu-p2480/</loc>
+    <loc>https://tifa-233.xyz/article/luogu-p3599/</loc>
     <lastmod>2020-11-22</lastmod>
   </url>  <url>
     <loc>https://tifa-233.xyz/article/test-echarts/</loc>
@@ -182,9 +185,6 @@
     <lastmod>2020-11-22</lastmod>
   </url>  <url>
     <loc>https://tifa-233.xyz/article/katex-supported-functions/</loc>
-    <lastmod>2020-11-17</lastmod>
-  </url>  <url>
-    <loc>https://tifa-233.xyz/article/test-others/</loc>
     <lastmod>2020-11-17</lastmod>
   </url>  <url>
     <loc>https://tifa-233.xyz/article/luogu-p4462/</loc>

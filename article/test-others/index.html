@@ -22,12 +22,13 @@
 
 <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Noto Sans:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
 <link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css">
   <link rel="stylesheet" href="/lib/pace/pace-theme-minimal.min.css">
   <script src="/lib/pace/pace.min.js"></script>
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"tifa-233.xyz","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+    var CONFIG = {"hostname":"tifa-233.xyz","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
   <meta name="description" content="DOC:  https:&#x2F;&#x2F;theme-next.js.org&#x2F;docs&#x2F;tag-plugins https:&#x2F;&#x2F;www.u2sb.top&#x2F;docs&#x2F;hexo-tag-mmedia">
@@ -42,7 +43,7 @@
 <meta property="og:image" content="https://tifa-233.xyz/images/avatar.gif">
 <meta property="og:image" content="https://tifa-233.xyz/images/avatar.gif">
 <meta property="article:published_time" content="0999-12-31T15:55:01.000Z">
-<meta property="article:modified_time" content="2020-11-17T04:56:06.148Z">
+<meta property="article:modified_time" content="2020-12-27T09:34:06.860Z">
 <meta property="article:author" content="Tifa">
 <meta property="article:tag" content="测试">
 <meta name="twitter:card" content="summary">
@@ -60,6 +61,7 @@
     lang   : 'zh-CN'
   };
 </script>
+
 
   <title>测试文章 - 杂项 | Tifa's Blog</title>
   
@@ -243,7 +245,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-11-17 12:56:06" itemprop="dateModified" datetime="2020-11-17T12:56:06+08:00">2020-11-17</time>
+                <time title="修改时间：2020-12-27 17:34:06" itemprop="dateModified" datetime="2020-12-27T17:34:06+08:00">2020-12-27</time>
               </span>
 
           
@@ -368,14 +370,14 @@ div.text-center {
 
         <style>.bbplayer{width: 100%; max-width: 850px; margin: auto}</style>
         <div class="bbplayer">
-        <iframe class="bbplayer" id="mmedia-rxvNaiRI" src="//player.bilibili.com/player.html?bvid=1C4411u7rK&page=1&high_quality=1&danmaku=true"
+        <iframe class="bbplayer" id="mmedia-TTrdXjBj" src="//player.bilibili.com/player.html?bvid=1C4411u7rK&page=1&high_quality=1&danmaku=true"
             allowfullscreen="no"
             scrolling="no" frameborder="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts allow-popups"></iframe>
         </div>
         <script>
-            document.getElementById("mmedia-rxvNaiRI").style.height=document.getElementById("mmedia-rxvNaiRI").scrollWidth*0.76+"px";
+            document.getElementById("mmedia-TTrdXjBj").style.height=document.getElementById("mmedia-TTrdXjBj").scrollWidth*0.76+"px";
             window.onresize = function(){
-              document.getElementById("mmedia-rxvNaiRI").style.height=document.getElementById("mmedia-rxvNaiRI").scrollWidth*0.76+"px";
+              document.getElementById("mmedia-TTrdXjBj").style.height=document.getElementById("mmedia-TTrdXjBj").scrollWidth*0.76+"px";
             };
         </script>
         
@@ -404,8 +406,9 @@ div.text-center {
 
 
       <footer class="post-footer">
+          
           <div class="post-tags">
-              <a href="/tags/%E6%B5%8B%E8%AF%95/" rel="tag"># 测试</a>
+              <a href="/tags/%E6%B5%8B%E8%AF%95/" rel="tag"><i class="fa fa-tag"></i> 测试</a>
           </div>
 
         
@@ -600,6 +603,8 @@ div.text-center {
   
   <script size="300" alpha="0.6" zIndex="-1" src="/lib/canvas-ribbon/canvas-ribbon.js"></script>
   <script src="/lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+  <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/pangu@4/dist/browser/pangu.min.js"></script>
   <script src="/lib/velocity/velocity.min.js"></script>
   <script src="/lib/velocity/velocity.ui.min.js"></script>
@@ -620,6 +625,31 @@ div.text-center {
 
 
   
+  <script>
+    (function(){
+      var canonicalURL, curProtocol;
+      //Get the <link> tag
+      var x=document.getElementsByTagName("link");
+		//Find the last canonical URL
+		if(x.length > 0){
+			for (i=0;i<x.length;i++){
+				if(x[i].rel.toLowerCase() == 'canonical' && x[i].href){
+					canonicalURL=x[i].href;
+				}
+			}
+		}
+    //Get protocol
+	    if (!canonicalURL){
+	    	curProtocol = window.location.protocol.split(':')[0];
+	    }
+	    else{
+	    	curProtocol = canonicalURL.split(':')[0];
+	    }
+      //Get current URL if the canonical URL does not exist
+	    if (!canonicalURL) canonicalURL = window.location.href;
+	    //Assign script content. Replace current URL with the canonical URL
+      !function(){var e=/([http|https]:\/\/[a-zA-Z0-9\_\.]+\.baidu\.com)/gi,r=canonicalURL,t=document.referrer;if(!e.test(r)){var n=(String(curProtocol).toLowerCase() === 'https')?"https://sp0.baidu.com/9_Q4simg2RQJ8t7jm9iCKT-xh_/s.gif":"//api.share.baidu.com/s.gif";t?(n+="?r="+encodeURIComponent(document.referrer),r&&(n+="&l="+r)):r&&(n+="?l="+r);var i=new Image;i.src=n}}(window);})();
+  </script>
 
 
 

@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://tifa-233.xyz/article/test-others/</loc>
+    
+    <lastmod>2020-12-27T09:34:06.860Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://tifa-233.xyz/article/icpc-ajnr2020/</loc>
     
     <lastmod>2020-12-27T08:12:47.204Z</lastmod>
@@ -432,13 +439,6 @@
     <loc>https://tifa-233.xyz/article/katex-supported-functions/</loc>
     
     <lastmod>2020-11-17T13:10:08.197Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://tifa-233.xyz/article/test-others/</loc>
-    
-    <lastmod>2020-11-17T04:56:06.148Z</lastmod>
     
   </url>
   

@@ -22,12 +22,13 @@
 
 <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Noto Sans:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
 <link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css">
   <link rel="stylesheet" href="/lib/pace/pace-theme-minimal.min.css">
   <script src="/lib/pace/pace.min.js"></script>
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"tifa-233.xyz","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+    var CONFIG = {"hostname":"tifa-233.xyz","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
   <meta name="description" content="整除分块, Dirichlet卷积, Dirichlet前缀和, 积性函数, Möbius反演, 杜教筛">
@@ -42,12 +43,12 @@
 <meta property="article:author" content="Tifa">
 <meta property="article:tag" content="程序设计">
 <meta property="article:tag" content="数学">
-<meta property="article:tag" content="数论">
 <meta property="article:tag" content="笔记">
+<meta property="article:tag" content="数论">
 <meta property="article:tag" content="模板">
-<meta property="article:tag" content="数论分块&#x2F;整除分块">
 <meta property="article:tag" content="Euler函数">
 <meta property="article:tag" content="Möbius反演">
+<meta property="article:tag" content="数论分块&#x2F;整除分块">
 <meta property="article:tag" content="数论函数">
 <meta property="article:tag" content="积性函数">
 <meta property="article:tag" content="完全积性函数">
@@ -69,6 +70,7 @@
     lang   : 'zh-CN'
   };
 </script>
+
 
   <title>笔记 - 整除分块, Dirichlet卷积, Dirichlet前缀和, 积性函数, Möbius反演, 杜教筛 | Tifa's Blog</title>
   
@@ -1123,22 +1125,23 @@ M834 80h400000v40h-400000z'/></svg></span></span></span><span class="vlist-s">�
 
 
       <footer class="post-footer">
+          
           <div class="post-tags">
-              <a href="/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/" rel="tag"># 程序设计</a>
-              <a href="/tags/%E6%95%B0%E5%AD%A6/" rel="tag"># 数学</a>
-              <a href="/tags/%E6%95%B0%E8%AE%BA/" rel="tag"># 数论</a>
-              <a href="/tags/%E7%AC%94%E8%AE%B0/" rel="tag"># 笔记</a>
-              <a href="/tags/%E6%A8%A1%E6%9D%BF/" rel="tag"># 模板</a>
-              <a href="/tags/%E6%95%B0%E8%AE%BA%E5%88%86%E5%9D%97-%E6%95%B4%E9%99%A4%E5%88%86%E5%9D%97/" rel="tag"># 数论分块/整除分块</a>
-              <a href="/tags/Euler%E5%87%BD%E6%95%B0/" rel="tag"># Euler函数</a>
-              <a href="/tags/Mobius%E5%8F%8D%E6%BC%94/" rel="tag"># Möbius反演</a>
-              <a href="/tags/%E6%95%B0%E8%AE%BA%E5%87%BD%E6%95%B0/" rel="tag"># 数论函数</a>
-              <a href="/tags/%E7%A7%AF%E6%80%A7%E5%87%BD%E6%95%B0/" rel="tag"># 积性函数</a>
-              <a href="/tags/%E5%AE%8C%E5%85%A8%E7%A7%AF%E6%80%A7%E5%87%BD%E6%95%B0/" rel="tag"># 完全积性函数</a>
-              <a href="/tags/Dirichlet%E5%8D%B7%E7%A7%AF/" rel="tag"># Dirichlet卷积</a>
-              <a href="/tags/Dirichlet%E5%89%8D%E7%BC%80%E5%92%8C/" rel="tag"># Dirichlet前缀和</a>
-              <a href="/tags/Mobius%E5%87%BD%E6%95%B0/" rel="tag"># Möbius函数</a>
-              <a href="/tags/%E6%9D%9C%E6%95%99%E7%AD%9B/" rel="tag"># 杜教筛</a>
+              <a href="/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/" rel="tag"><i class="fa fa-tag"></i> 程序设计</a>
+              <a href="/tags/%E6%95%B0%E5%AD%A6/" rel="tag"><i class="fa fa-tag"></i> 数学</a>
+              <a href="/tags/%E7%AC%94%E8%AE%B0/" rel="tag"><i class="fa fa-tag"></i> 笔记</a>
+              <a href="/tags/%E6%95%B0%E8%AE%BA/" rel="tag"><i class="fa fa-tag"></i> 数论</a>
+              <a href="/tags/%E6%A8%A1%E6%9D%BF/" rel="tag"><i class="fa fa-tag"></i> 模板</a>
+              <a href="/tags/Euler%E5%87%BD%E6%95%B0/" rel="tag"><i class="fa fa-tag"></i> Euler函数</a>
+              <a href="/tags/Mobius%E5%8F%8D%E6%BC%94/" rel="tag"><i class="fa fa-tag"></i> Möbius反演</a>
+              <a href="/tags/%E6%95%B0%E8%AE%BA%E5%88%86%E5%9D%97-%E6%95%B4%E9%99%A4%E5%88%86%E5%9D%97/" rel="tag"><i class="fa fa-tag"></i> 数论分块/整除分块</a>
+              <a href="/tags/%E6%95%B0%E8%AE%BA%E5%87%BD%E6%95%B0/" rel="tag"><i class="fa fa-tag"></i> 数论函数</a>
+              <a href="/tags/%E7%A7%AF%E6%80%A7%E5%87%BD%E6%95%B0/" rel="tag"><i class="fa fa-tag"></i> 积性函数</a>
+              <a href="/tags/%E5%AE%8C%E5%85%A8%E7%A7%AF%E6%80%A7%E5%87%BD%E6%95%B0/" rel="tag"><i class="fa fa-tag"></i> 完全积性函数</a>
+              <a href="/tags/Dirichlet%E5%8D%B7%E7%A7%AF/" rel="tag"><i class="fa fa-tag"></i> Dirichlet卷积</a>
+              <a href="/tags/Dirichlet%E5%89%8D%E7%BC%80%E5%92%8C/" rel="tag"><i class="fa fa-tag"></i> Dirichlet前缀和</a>
+              <a href="/tags/Mobius%E5%87%BD%E6%95%B0/" rel="tag"><i class="fa fa-tag"></i> Möbius函数</a>
+              <a href="/tags/%E6%9D%9C%E6%95%99%E7%AD%9B/" rel="tag"><i class="fa fa-tag"></i> 杜教筛</a>
           </div>
 
         
@@ -1337,6 +1340,8 @@ M834 80h400000v40h-400000z'/></svg></span></span></span><span class="vlist-s">�
   
   <script size="300" alpha="0.6" zIndex="-1" src="/lib/canvas-ribbon/canvas-ribbon.js"></script>
   <script src="/lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+  <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/pangu@4/dist/browser/pangu.min.js"></script>
   <script src="/lib/velocity/velocity.min.js"></script>
   <script src="/lib/velocity/velocity.ui.min.js"></script>
@@ -1357,6 +1362,31 @@ M834 80h400000v40h-400000z'/></svg></span></span></span><span class="vlist-s">�
 
 
   
+  <script>
+    (function(){
+      var canonicalURL, curProtocol;
+      //Get the <link> tag
+      var x=document.getElementsByTagName("link");
+		//Find the last canonical URL
+		if(x.length > 0){
+			for (i=0;i<x.length;i++){
+				if(x[i].rel.toLowerCase() == 'canonical' && x[i].href){
+					canonicalURL=x[i].href;
+				}
+			}
+		}
+    //Get protocol
+	    if (!canonicalURL){
+	    	curProtocol = window.location.protocol.split(':')[0];
+	    }
+	    else{
+	    	curProtocol = canonicalURL.split(':')[0];
+	    }
+      //Get current URL if the canonical URL does not exist
+	    if (!canonicalURL) canonicalURL = window.location.href;
+	    //Assign script content. Replace current URL with the canonical URL
+      !function(){var e=/([http|https]:\/\/[a-zA-Z0-9\_\.]+\.baidu\.com)/gi,r=canonicalURL,t=document.referrer;if(!e.test(r)){var n=(String(curProtocol).toLowerCase() === 'https')?"https://sp0.baidu.com/9_Q4simg2RQJ8t7jm9iCKT-xh_/s.gif":"//api.share.baidu.com/s.gif";t?(n+="?r="+encodeURIComponent(document.referrer),r&&(n+="&l="+r)):r&&(n+="?l="+r);var i=new Image;i.src=n}}(window);})();
+  </script>
 
 
 
