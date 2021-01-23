@@ -1,5 +1,4 @@
 https://tifa-233.xyz/article/general-physics/
-https://tifa-233.xyz/article/draft/0003/
 https://tifa-233.xyz/article/draft/0002/
 https://tifa-233.xyz/article/icpc-ajnr2020/
 https://tifa-233.xyz/article/icpc-anjr2020/
@@ -13,3 +12,4 @@ https://tifa-233.xyz/article/codeforces-501-d/
 https://tifa-233.xyz/article/cantor_exp/
 https://tifa-233.xyz/article/luogu-p3524/
 https://tifa-233.xyz/article/icpc-cnwp2020/
+https://tifa-233.xyz/article/luogu-p4205/

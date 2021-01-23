@@ -40,41 +40,6 @@
   </entry>
   
   <entry>
-    <title>用 MATLAB 对种群演化进行模拟</title>
-    <link href="https://tifa-233.xyz/article/draft/0003/"/>
-    <id>https://tifa-233.xyz/article/draft/0003/</id>
-    <published>2021-01-09T15:53:22.000Z</published>
-    <updated>2021-01-22T17:20:02.946Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;本篇讲述了如何应用 MATLAB 对三种群的 Lotka-Volterra 模型进行模拟并可视化&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="随笔" scheme="https://tifa-233.xyz/categories/%E9%9A%8F%E7%AC%94/"/>
-    
-    
-    <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
-    
-    <category term="随笔" scheme="https://tifa-233.xyz/tags/%E9%9A%8F%E7%AC%94/"/>
-    
-    <category term="MATLAB" scheme="https://tifa-233.xyz/tags/MATLAB/"/>
-    
-    <category term="ODE" scheme="https://tifa-233.xyz/tags/ODE/"/>
-    
-    <category term="Malthus模型" scheme="https://tifa-233.xyz/tags/Malthus%E6%A8%A1%E5%9E%8B/"/>
-    
-    <category term="Logistic模型" scheme="https://tifa-233.xyz/tags/Logistic%E6%A8%A1%E5%9E%8B/"/>
-    
-    <category term="Lotka-Volterra模型" scheme="https://tifa-233.xyz/tags/Lotka-Volterra%E6%A8%A1%E5%9E%8B/"/>
-    
-    <category term="Euler方法" scheme="https://tifa-233.xyz/tags/Euler%E6%96%B9%E6%B3%95/"/>
-    
-    <category term="Runge-Kutta方法" scheme="https://tifa-233.xyz/tags/Runge-Kutta%E6%96%B9%E6%B3%95/"/>
-    
-  </entry>
-  
-  <entry>
     <title>论文笔记 - Multiscale structural complexity of natural patterns</title>
     <link href="https://tifa-233.xyz/article/draft/0002/"/>
     <id>https://tifa-233.xyz/article/draft/0002/</id>
@@ -344,9 +309,9 @@
     
     <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
     
-    <category term="树" scheme="https://tifa-233.xyz/tags/%E6%A0%91/"/>
-    
     <category term="随笔" scheme="https://tifa-233.xyz/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+    <category term="树" scheme="https://tifa-233.xyz/tags/%E6%A0%91/"/>
     
     <category term="贪心" scheme="https://tifa-233.xyz/tags/%E8%B4%AA%E5%BF%83/"/>
     
@@ -730,11 +695,11 @@
     
     <category term="洛谷" scheme="https://tifa-233.xyz/tags/%E6%B4%9B%E8%B0%B7/"/>
     
+    <category term="逆元" scheme="https://tifa-233.xyz/tags/%E9%80%86%E5%85%83/"/>
+    
     <category term="省选" scheme="https://tifa-233.xyz/tags/%E7%9C%81%E9%80%89/"/>
     
     <category term="SDOI" scheme="https://tifa-233.xyz/tags/SDOI/"/>
-    
-    <category term="逆元" scheme="https://tifa-233.xyz/tags/%E9%80%86%E5%85%83/"/>
     
     <category term="中国剩余定理(CRT)" scheme="https://tifa-233.xyz/tags/%E4%B8%AD%E5%9B%BD%E5%89%A9%E4%BD%99%E5%AE%9A%E7%90%86-CRT/"/>
     
@@ -777,6 +742,55 @@
     <category term="扩展中国剩余定理(exCRT)" scheme="https://tifa-233.xyz/tags/%E6%89%A9%E5%B1%95%E4%B8%AD%E5%9B%BD%E5%89%A9%E4%BD%99%E5%AE%9A%E7%90%86-exCRT/"/>
     
     <category term="exgcd" scheme="https://tifa-233.xyz/tags/exgcd/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>笔记 - 整除分块, Dirichlet卷积, Dirichlet前缀和, 积性函数, Möbius反演, 杜教筛</title>
+    <link href="https://tifa-233.xyz/article/nt-2/"/>
+    <id>https://tifa-233.xyz/article/nt-2/</id>
+    <published>2020-10-04T16:52:51.000Z</published>
+    <updated>2020-11-22T08:15:04.063Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;整除分块, Dirichlet卷积, Dirichlet前缀和, 积性函数, Möbius反演, 杜教筛&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="程序设计" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
+    
+    <category term="数学" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E6%95%B0%E5%AD%A6/"/>
+    
+    
+    <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
+    
+    <category term="笔记" scheme="https://tifa-233.xyz/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+    <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
+    
+    <category term="数论" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E8%AE%BA/"/>
+    
+    <category term="模板" scheme="https://tifa-233.xyz/tags/%E6%A8%A1%E6%9D%BF/"/>
+    
+    <category term="Euler函数" scheme="https://tifa-233.xyz/tags/Euler%E5%87%BD%E6%95%B0/"/>
+    
+    <category term="数论分块/整除分块" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E8%AE%BA%E5%88%86%E5%9D%97-%E6%95%B4%E9%99%A4%E5%88%86%E5%9D%97/"/>
+    
+    <category term="Möbius函数" scheme="https://tifa-233.xyz/tags/Mobius%E5%87%BD%E6%95%B0/"/>
+    
+    <category term="Möbius反演" scheme="https://tifa-233.xyz/tags/Mobius%E5%8F%8D%E6%BC%94/"/>
+    
+    <category term="数论函数" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E8%AE%BA%E5%87%BD%E6%95%B0/"/>
+    
+    <category term="积性函数" scheme="https://tifa-233.xyz/tags/%E7%A7%AF%E6%80%A7%E5%87%BD%E6%95%B0/"/>
+    
+    <category term="完全积性函数" scheme="https://tifa-233.xyz/tags/%E5%AE%8C%E5%85%A8%E7%A7%AF%E6%80%A7%E5%87%BD%E6%95%B0/"/>
+    
+    <category term="Dirichlet卷积" scheme="https://tifa-233.xyz/tags/Dirichlet%E5%8D%B7%E7%A7%AF/"/>
+    
+    <category term="Dirichlet前缀和" scheme="https://tifa-233.xyz/tags/Dirichlet%E5%89%8D%E7%BC%80%E5%92%8C/"/>
+    
+    <category term="杜教筛" scheme="https://tifa-233.xyz/tags/%E6%9D%9C%E6%95%99%E7%AD%9B/"/>
     
   </entry>
   
