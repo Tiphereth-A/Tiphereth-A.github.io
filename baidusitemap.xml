@@ -1,8 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://tifa-233.xyz/article/cpp-std-transform/</loc>
-    <lastmod>2021-01-26</lastmod>
+    <loc>https://tifa-233.xyz/article/draft/0008/</loc>
+    <lastmod>2021-02-01</lastmod>
+  </url>
+  <url>
+    <loc>https://tifa-233.xyz/article/draft/0004/</loc>
+    <lastmod>2021-02-01</lastmod>
+  </url>
+  <url>
+    <loc>https://tifa-233.xyz/article/draft/0003/</loc>
+    <lastmod>2021-02-01</lastmod>
+  </url>
+  <url>
+    <loc>https://tifa-233.xyz/article/draft/0002/</loc>
+    <lastmod>2021-02-01</lastmod>
+  </url>
+  <url>
+    <loc>https://tifa-233.xyz/article/nt-2/</loc>
+    <lastmod>2021-02-01</lastmod>
+  </url>
+  <url>
+    <loc>https://tifa-233.xyz/article/draft/0001/</loc>
+    <lastmod>2021-02-01</lastmod>
+  </url>
+  <url>
+    <loc>https://tifa-233.xyz/article/draft/0005/</loc>
+    <lastmod>2021-02-01</lastmod>
+  </url>
+  <url>
+    <loc>https://tifa-233.xyz/article/draft/0006/</loc>
+    <lastmod>2021-02-01</lastmod>
+  </url>
+  <url>
+    <loc>https://tifa-233.xyz/article/draft/0007/</loc>
+    <lastmod>2021-02-01</lastmod>
   </url>
   <url>
     <loc>https://tifa-233.xyz/article/uva-10887/</loc>
@@ -17,10 +49,6 @@
     <lastmod>2021-01-22</lastmod>
   </url>
   <url>
-    <loc>https://tifa-233.xyz/article/draft/0002/</loc>
-    <lastmod>2021-01-15</lastmod>
-  </url>
-  <url>
     <loc>https://tifa-233.xyz/article/katex-supported-functions/</loc>
     <lastmod>2021-01-15</lastmod>
   </url>
@@ -31,10 +59,6 @@
   <url>
     <loc>https://tifa-233.xyz/article/test-encrypt/</loc>
     <lastmod>2021-01-15</lastmod>
-  </url>
-  <url>
-    <loc>https://tifa-233.xyz/article/draft/0001/</loc>
-    <lastmod>2021-01-09</lastmod>
   </url>
   <url>
     <loc>https://tifa-233.xyz/article/icpc-ajnr2020/</loc>
@@ -129,11 +153,11 @@
     <lastmod>2020-12-06</lastmod>
   </url>
   <url>
-    <loc>https://tifa-233.xyz/article/poj-3361/</loc>
+    <loc>https://tifa-233.xyz/article/poj-3904/</loc>
     <lastmod>2020-12-06</lastmod>
   </url>
   <url>
-    <loc>https://tifa-233.xyz/article/poj-3904/</loc>
+    <loc>https://tifa-233.xyz/article/poj-3361/</loc>
     <lastmod>2020-12-06</lastmod>
   </url>
   <url>
@@ -145,11 +169,11 @@
     <lastmod>2020-12-06</lastmod>
   </url>
   <url>
-    <loc>https://tifa-233.xyz/article/sa-poj-1528/</loc>
+    <loc>https://tifa-233.xyz/article/sa-poj-1777/</loc>
     <lastmod>2020-12-06</lastmod>
   </url>
   <url>
-    <loc>https://tifa-233.xyz/article/sa-poj-1777/</loc>
+    <loc>https://tifa-233.xyz/article/sa-poj-1528/</loc>
     <lastmod>2020-12-06</lastmod>
   </url>
   <url>
@@ -193,10 +217,6 @@
     <lastmod>2020-12-03</lastmod>
   </url>
   <url>
-    <loc>https://tifa-233.xyz/article/nt-2/</loc>
-    <lastmod>2020-11-22</lastmod>
-  </url>
-  <url>
     <loc>https://tifa-233.xyz/article/nt-1/</loc>
     <lastmod>2020-11-22</lastmod>
   </url>
@@ -238,10 +258,6 @@
   </url>
   <url>
     <loc>https://tifa-233.xyz/article/luogu-p3599/</loc>
-    <lastmod>2020-11-22</lastmod>
-  </url>
-  <url>
-    <loc>https://tifa-233.xyz/article/c-generic-macro/</loc>
     <lastmod>2020-11-22</lastmod>
   </url>
   <url>
@@ -321,14 +337,6 @@
     <lastmod>2020-10-05</lastmod>
   </url>
   <url>
-    <loc>https://tifa-233.xyz/article/c-fake-operator/</loc>
-    <lastmod>2020-07-26</lastmod>
-  </url>
-  <url>
-    <loc>https://tifa-233.xyz/article/c-another-assert/</loc>
-    <lastmod>2020-07-26</lastmod>
-  </url>
-  <url>
     <loc>https://tifa-233.xyz/article/linear-space/</loc>
     <lastmod>2020-07-14</lastmod>
   </url>
@@ -339,9 +347,5 @@
   <url>
     <loc>https://tifa-233.xyz/article/primitive-root-and-discrete-logarithm/</loc>
     <lastmod>2020-06-29</lastmod>
-  </url>
-  <url>
-    <loc>https://tifa-233.xyz/article/multiple-sum/</loc>
-    <lastmod>2020-06-01</lastmod>
   </url>
 </urlset> 
