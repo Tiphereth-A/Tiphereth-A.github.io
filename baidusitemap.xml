@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://tifa-233.xyz/article/abc-126/</loc>
+    <lastmod>2021-02-02</lastmod>
+  </url>
+  <url>
+    <loc>https://tifa-233.xyz/article/abc-184/</loc>
+    <lastmod>2021-02-02</lastmod>
+  </url>
+  <url>
+    <loc>https://tifa-233.xyz/article/codeforces-501-d/</loc>
+    <lastmod>2021-02-02</lastmod>
+  </url>
+  <url>
     <loc>https://tifa-233.xyz/article/draft/0008/</loc>
     <lastmod>2021-02-01</lastmod>
   </url>
@@ -133,11 +145,11 @@
     <lastmod>2020-12-06</lastmod>
   </url>
   <url>
-    <loc>https://tifa-233.xyz/article/poj-1650/</loc>
+    <loc>https://tifa-233.xyz/article/poj-1850/</loc>
     <lastmod>2020-12-06</lastmod>
   </url>
   <url>
-    <loc>https://tifa-233.xyz/article/poj-1850/</loc>
+    <loc>https://tifa-233.xyz/article/poj-1650/</loc>
     <lastmod>2020-12-06</lastmod>
   </url>
   <url>
@@ -169,7 +181,7 @@
     <lastmod>2020-12-06</lastmod>
   </url>
   <url>
-    <loc>https://tifa-233.xyz/article/sa-poj-1777/</loc>
+    <loc>https://tifa-233.xyz/article/sa-poj-2356/</loc>
     <lastmod>2020-12-06</lastmod>
   </url>
   <url>
@@ -177,7 +189,7 @@
     <lastmod>2020-12-06</lastmod>
   </url>
   <url>
-    <loc>https://tifa-233.xyz/article/sa-poj-2356/</loc>
+    <loc>https://tifa-233.xyz/article/sa-poj-1777/</loc>
     <lastmod>2020-12-06</lastmod>
   </url>
   <url>
@@ -253,11 +265,11 @@
     <lastmod>2020-11-22</lastmod>
   </url>
   <url>
-    <loc>https://tifa-233.xyz/article/luogu-p2480/</loc>
+    <loc>https://tifa-233.xyz/article/luogu-p3599/</loc>
     <lastmod>2020-11-22</lastmod>
   </url>
   <url>
-    <loc>https://tifa-233.xyz/article/luogu-p3599/</loc>
+    <loc>https://tifa-233.xyz/article/luogu-p2480/</loc>
     <lastmod>2020-11-22</lastmod>
   </url>
   <url>
@@ -290,10 +302,6 @@
   </url>
   <url>
     <loc>https://tifa-233.xyz/article/luogu-p4462/</loc>
-    <lastmod>2020-11-15</lastmod>
-  </url>
-  <url>
-    <loc>https://tifa-233.xyz/article/codeforces-501-d/</loc>
     <lastmod>2020-11-15</lastmod>
   </url>
   <url>

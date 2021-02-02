@@ -6,7 +6,7 @@
   <link href="https://tifa-233.xyz/atom.xml" rel="self"/>
   
   <link href="https://tifa-233.xyz/"/>
-  <updated>2021-02-01T15:09:15.617Z</updated>
+  <updated>2021-02-02T09:12:30.973Z</updated>
   <id>https://tifa-233.xyz/</id>
   
   <author>
@@ -15,6 +15,92 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>题解 - [Atcoder ABC 126] (C - F)</title>
+    <link href="https://tifa-233.xyz/article/abc-126/"/>
+    <id>https://tifa-233.xyz/article/abc-126/</id>
+    <published>2021-02-02T04:06:09.000Z</published>
+    <updated>2021-02-02T09:12:30.973Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://atcoder.jp/contests/abc126&quot;&gt;比赛链接&lt;/a&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="程序设计" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
+    
+    <category term="题解" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E9%A2%98%E8%A7%A3/"/>
+    
+    
+    <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
+    
+    <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
+    
+    <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
+    
+    <category term="构造" scheme="https://tifa-233.xyz/tags/%E6%9E%84%E9%80%A0/"/>
+    
+    <category term="AtCoder" scheme="https://tifa-233.xyz/tags/AtCoder/"/>
+    
+    <category term="概率" scheme="https://tifa-233.xyz/tags/%E6%A6%82%E7%8E%87/"/>
+    
+    <category term="期望" scheme="https://tifa-233.xyz/tags/%E6%9C%9F%E6%9C%9B/"/>
+    
+    <category term="搜索" scheme="https://tifa-233.xyz/tags/%E6%90%9C%E7%B4%A2/"/>
+    
+    <category term="DFS" scheme="https://tifa-233.xyz/tags/DFS/"/>
+    
+    <category term="并查集" scheme="https://tifa-233.xyz/tags/%E5%B9%B6%E6%9F%A5%E9%9B%86/"/>
+    
+    <category term="思维" scheme="https://tifa-233.xyz/tags/%E6%80%9D%E7%BB%B4/"/>
+    
+    <category term="异或" scheme="https://tifa-233.xyz/tags/%E5%BC%82%E6%88%96/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>题解 - [Atcoder ABC 184] (C - F)</title>
+    <link href="https://tifa-233.xyz/article/abc-184/"/>
+    <id>https://tifa-233.xyz/article/abc-184/</id>
+    <published>2021-02-02T04:05:57.000Z</published>
+    <updated>2021-02-02T09:12:23.279Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://atcoder.jp/contests/abc_184&quot;&gt;比赛链接&lt;/a&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="程序设计" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
+    
+    <category term="题解" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E9%A2%98%E8%A7%A3/"/>
+    
+    
+    <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
+    
+    <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
+    
+    <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
+    
+    <category term="构造" scheme="https://tifa-233.xyz/tags/%E6%9E%84%E9%80%A0/"/>
+    
+    <category term="AtCoder" scheme="https://tifa-233.xyz/tags/AtCoder/"/>
+    
+    <category term="概率" scheme="https://tifa-233.xyz/tags/%E6%A6%82%E7%8E%87/"/>
+    
+    <category term="期望" scheme="https://tifa-233.xyz/tags/%E6%9C%9F%E6%9C%9B/"/>
+    
+    <category term="搜索" scheme="https://tifa-233.xyz/tags/%E6%90%9C%E7%B4%A2/"/>
+    
+    <category term="思维" scheme="https://tifa-233.xyz/tags/%E6%80%9D%E7%BB%B4/"/>
+    
+    <category term="记忆化搜索" scheme="https://tifa-233.xyz/tags/%E8%AE%B0%E5%BF%86%E5%8C%96%E6%90%9C%E7%B4%A2/"/>
+    
+    <category term="BFS" scheme="https://tifa-233.xyz/tags/BFS/"/>
+    
+    <category term="折半搜索" scheme="https://tifa-233.xyz/tags/%E6%8A%98%E5%8D%8A%E6%90%9C%E7%B4%A2/"/>
+    
+  </entry>
   
   <entry>
     <title>随笔 - C++ 中的 std::transform 用法 (C++11)</title>
@@ -221,15 +307,15 @@
     
     <category term="DP" scheme="https://tifa-233.xyz/tags/DP/"/>
     
+    <category term="概率" scheme="https://tifa-233.xyz/tags/%E6%A6%82%E7%8E%87/"/>
+    
+    <category term="期望" scheme="https://tifa-233.xyz/tags/%E6%9C%9F%E6%9C%9B/"/>
+    
     <category term="打表" scheme="https://tifa-233.xyz/tags/%E6%89%93%E8%A1%A8/"/>
     
     <category term="排序" scheme="https://tifa-233.xyz/tags/%E6%8E%92%E5%BA%8F/"/>
     
     <category term="互素 / 互质" scheme="https://tifa-233.xyz/tags/%E4%BA%92%E7%B4%A0-%E4%BA%92%E8%B4%A8/"/>
-    
-    <category term="概率" scheme="https://tifa-233.xyz/tags/%E6%A6%82%E7%8E%87/"/>
-    
-    <category term="期望" scheme="https://tifa-233.xyz/tags/%E6%9C%9F%E6%9C%9B/"/>
     
     <category term="三分法" scheme="https://tifa-233.xyz/tags/%E4%B8%89%E5%88%86%E6%B3%95/"/>
     
@@ -332,17 +418,17 @@
     
     <category term="数论" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E8%AE%BA/"/>
     
+    <category term="期望" scheme="https://tifa-233.xyz/tags/%E6%9C%9F%E6%9C%9B/"/>
+    
+    <category term="思维" scheme="https://tifa-233.xyz/tags/%E6%80%9D%E7%BB%B4/"/>
+    
     <category term="排序" scheme="https://tifa-233.xyz/tags/%E6%8E%92%E5%BA%8F/"/>
     
     <category term="贪心" scheme="https://tifa-233.xyz/tags/%E8%B4%AA%E5%BF%83/"/>
     
-    <category term="期望" scheme="https://tifa-233.xyz/tags/%E6%9C%9F%E6%9C%9B/"/>
-    
     <category term="互素/互质" scheme="https://tifa-233.xyz/tags/%E4%BA%92%E7%B4%A0-%E4%BA%92%E8%B4%A8/"/>
     
     <category term="Euler函数" scheme="https://tifa-233.xyz/tags/Euler%E5%87%BD%E6%95%B0/"/>
-    
-    <category term="思维" scheme="https://tifa-233.xyz/tags/%E6%80%9D%E7%BB%B4/"/>
     
   </entry>
   
@@ -441,13 +527,15 @@
     
     <category term="计数" scheme="https://tifa-233.xyz/tags/%E8%AE%A1%E6%95%B0/"/>
     
+    <category term="搜索" scheme="https://tifa-233.xyz/tags/%E6%90%9C%E7%B4%A2/"/>
+    
+    <category term="DFS" scheme="https://tifa-233.xyz/tags/DFS/"/>
+    
     <category term="组合数学" scheme="https://tifa-233.xyz/tags/%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/"/>
     
     <category term="二分" scheme="https://tifa-233.xyz/tags/%E4%BA%8C%E5%88%86/"/>
     
     <category term="树状数组" scheme="https://tifa-233.xyz/tags/%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84/"/>
-    
-    <category term="DFS" scheme="https://tifa-233.xyz/tags/DFS/"/>
     
     <category term="打表" scheme="https://tifa-233.xyz/tags/%E6%89%93%E8%A1%A8/"/>
     
@@ -460,8 +548,6 @@
     <category term="容斥定理" scheme="https://tifa-233.xyz/tags/%E5%AE%B9%E6%96%A5%E5%AE%9A%E7%90%86/"/>
     
     <category term="状压DP" scheme="https://tifa-233.xyz/tags/%E7%8A%B6%E5%8E%8BDP/"/>
-    
-    <category term="搜索" scheme="https://tifa-233.xyz/tags/%E6%90%9C%E7%B4%A2/"/>
     
     <category term="整除" scheme="https://tifa-233.xyz/tags/%E6%95%B4%E9%99%A4/"/>
     
@@ -488,7 +574,7 @@
     <link href="https://tifa-233.xyz/article/codeforces-501-d/"/>
     <id>https://tifa-233.xyz/article/codeforces-501-d/</id>
     <published>2020-11-14T16:21:06.000Z</published>
-    <updated>2020-11-15T09:55:39.011Z</updated>
+    <updated>2021-02-02T04:17:17.704Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://codeforces.com/problemset/problem/501/D&quot;&gt;题目链接&lt;/a&gt;&lt;/p&gt;</summary>
@@ -622,9 +708,9 @@
     
     <category term="DP" scheme="https://tifa-233.xyz/tags/DP/"/>
     
-    <category term="前缀和" scheme="https://tifa-233.xyz/tags/%E5%89%8D%E7%BC%80%E5%92%8C/"/>
-    
     <category term="最小公倍数" scheme="https://tifa-233.xyz/tags/%E6%9C%80%E5%B0%8F%E5%85%AC%E5%80%8D%E6%95%B0/"/>
+    
+    <category term="前缀和" scheme="https://tifa-233.xyz/tags/%E5%89%8D%E7%BC%80%E5%92%8C/"/>
     
     <category term="三分法" scheme="https://tifa-233.xyz/tags/%E4%B8%89%E5%88%86%E6%B3%95/"/>
     
@@ -670,84 +756,6 @@
     <category term="DLX" scheme="https://tifa-233.xyz/tags/DLX/"/>
     
     <category term="NOI" scheme="https://tifa-233.xyz/tags/NOI/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>题解 - [Luogu P1074] 靶形数独</title>
-    <link href="https://tifa-233.xyz/article/luogu-p1074/"/>
-    <id>https://tifa-233.xyz/article/luogu-p1074/</id>
-    <published>2020-10-25T09:01:50.000Z</published>
-    <updated>2020-12-08T15:55:14.118Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://www.luogu.com.cn/problem/P1074&quot;&gt;题目链接&lt;/a&gt;&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="程序设计" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
-    
-    <category term="题解" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E9%A2%98%E8%A7%A3/"/>
-    
-    
-    <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
-    
-    <category term="算法" scheme="https://tifa-233.xyz/tags/%E7%AE%97%E6%B3%95/"/>
-    
-    <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
-    
-    <category term="洛谷" scheme="https://tifa-233.xyz/tags/%E6%B4%9B%E8%B0%B7/"/>
-    
-    <category term="DLX" scheme="https://tifa-233.xyz/tags/DLX/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>笔记 - 精确覆盖问题, 重复覆盖问题与DLX</title>
-    <link href="https://tifa-233.xyz/article/dlx/"/>
-    <id>https://tifa-233.xyz/article/dlx/</id>
-    <published>2020-10-25T08:54:34.000Z</published>
-    <updated>2020-12-08T15:48:58.936Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;DLX(Dancing Links X)是一种用于解决精确覆盖问题的优美算法&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="程序设计" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
-    
-    <category term="算法" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E7%AE%97%E6%B3%95/"/>
-    
-    
-    <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
-    
-    <category term="笔记" scheme="https://tifa-233.xyz/tags/%E7%AC%94%E8%AE%B0/"/>
-    
-    <category term="算法" scheme="https://tifa-233.xyz/tags/%E7%AE%97%E6%B3%95/"/>
-    
-    <category term="数据结构" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
-    
-    <category term="模板" scheme="https://tifa-233.xyz/tags/%E6%A8%A1%E6%9D%BF/"/>
-    
-    <category term="DLX" scheme="https://tifa-233.xyz/tags/DLX/"/>
-    
-    <category term="链表" scheme="https://tifa-233.xyz/tags/%E9%93%BE%E8%A1%A8/"/>
-    
-    <category term="搜索" scheme="https://tifa-233.xyz/tags/%E6%90%9C%E7%B4%A2/"/>
-    
-    <category term="精确覆盖问题" scheme="https://tifa-233.xyz/tags/%E7%B2%BE%E7%A1%AE%E8%A6%86%E7%9B%96%E9%97%AE%E9%A2%98/"/>
-    
-    <category term="X算法" scheme="https://tifa-233.xyz/tags/X%E7%AE%97%E6%B3%95/"/>
-    
-    <category term="重复覆盖问题" scheme="https://tifa-233.xyz/tags/%E9%87%8D%E5%A4%8D%E8%A6%86%E7%9B%96%E9%97%AE%E9%A2%98/"/>
-    
-    <category term="剪枝" scheme="https://tifa-233.xyz/tags/%E5%89%AA%E6%9E%9D/"/>
-    
-    <category term="迭代加深搜索" scheme="https://tifa-233.xyz/tags/%E8%BF%AD%E4%BB%A3%E5%8A%A0%E6%B7%B1%E6%90%9C%E7%B4%A2/"/>
-    
-    <category term="IDA*" scheme="https://tifa-233.xyz/tags/IDA/"/>
-    
-    <category term="双向十字链表" scheme="https://tifa-233.xyz/tags/%E5%8F%8C%E5%90%91%E5%8D%81%E5%AD%97%E9%93%BE%E8%A1%A8/"/>
     
   </entry>
   
