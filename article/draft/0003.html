@@ -1,0 +1,45 @@
+<hr />
+<p>title: 随笔 - C中的&quot;操作符&quot; “–&gt;”<br />
+categories:</p>
+<ul>
+<li>随笔</li>
+<li>C<br />
+tags:</li>
+<li>C</li>
+<li>随笔</li>
+<li>操作符<br />
+abbrlink: aec18804<br />
+date: 2020-06-22 09:33:45</li>
+</ul>
+<hr />
+<p>在 <a href="https://stackoverflow.com/questions/1642028/what-is-the-operator-in-c">https://stackoverflow.com/questions/1642028/what-is-the-operator-in-c</a> 看到个好玩的东西</p>
+<!-- more -->
+<pre class="highlight"><code class="c"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;stdio.h&gt;</span></span>
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> </span>{
+  <span class="hljs-keyword">int</span> x = <span class="hljs-number">10</span>;
+  <span class="hljs-keyword">while</span> (x --&gt; <span class="hljs-number">0</span>) <span class="hljs-comment">// x goes to 0</span>
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">"%d "</span>, x);
+}
+</code></pre>
+<p>这段代码的输出是</p>
+<pre class="highlight"><code class="">9 8 7 6 5 4 3 2 1 0
+</code></pre>
+<p>这里的<code>--&gt;</code>看起来就像操作符一样</p>
+<p>实际上<code>while (x --&gt; 0)</code>的意义是<code>while ((x--) &gt; 0)</code></p>
+<p>类似的, 我们还可以写出 <code>while (x ----&gt; 0)</code> -&gt; <code>8 6 4 2 0</code></p>
+<p>我们也可以一定程度上假装用C写Pascal程序</p>
+<pre class="highlight"><code class="c"><span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> upto   ++&lt;</span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> downto --&gt;</span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> for while(</span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> do )</span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> begin {</span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> end }</span>
+
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;stdio.h&gt;</span></span>
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> </span>{
+  <span class="hljs-keyword">int</span> x = <span class="hljs-number">10</span>;
+  <span class="hljs-keyword">for</span> x downto <span class="hljs-number">0</span> <span class="hljs-function"><span class="hljs-keyword">do</span> <span class="hljs-built_in">begin</span>
+    <span class="hljs-title">printf</span><span class="hljs-params">(<span class="hljs-string">"%d "</span>, x)</span></span>;
+  <span class="hljs-built_in">end</span>
+}
+</code></pre>

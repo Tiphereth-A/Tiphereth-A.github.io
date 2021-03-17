@@ -1,0 +1,29 @@
+<hr />
+<p>title: 随笔 - C中的编译时检测版assert “-!!(e)”<br />
+categories:</p>
+<ul>
+<li>随笔</li>
+<li>C<br />
+tags:</li>
+<li>C</li>
+<li>随笔<br />
+abbrlink: 2361b072<br />
+date: 2020-07-26 18:19:46</li>
+</ul>
+<hr />
+<p>在 <a href="https://stackoverflow.com/questions/9229601/what-is-in-c-code">https://stackoverflow.com/questions/9229601/what-is-in-c-code</a> 看到个有趣的东西</p>
+<!-- more -->
+<p>众所周知, <code>assert()</code> 会在程序运行到相关代码时检验返回值的值, 如果为<code>0</code>则终止程序运行并输出指定错误信息</p>
+<p>实际上, 我们可以通过如下手段实现在编译过程中检验语句的真假</p>
+<pre class="highlight"><code class="c"><span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> _compile_assert(exp) sizeof(struct { int: -!!(exp); }))</span>
+</code></pre>
+<p>我们把它拆开来看</p>
+<ul>
+<li><code>!!(exp)</code>: 如果<code>exp == 0</code>, 则该部分为<code>0</code>, 否则为<code>1</code></li>
+<li><code>-!!(exp)</code>: 取反, 如果<code>exp == 0</code>, 则该部分为<code>0</code>, 否则为<code>-1</code></li>
+<li><code>int: -!!(exp);</code>: 如果<code>exp == 0</code>, 则该部分为<code>int: 0;</code>, 否则为<code>int: -1;</code></li>
+</ul>
+<p>到这里就已经很清楚了, 占<code>-1</code>个位的变量自然是无法声明的, 而占<code>0</code>个位的变量可以声明, 且不会对程序造成任何影响</p>
+<blockquote>
+<p>如果看不懂可以自行搜索位域(bitfield)</p>
+</blockquote>

@@ -1,0 +1,89 @@
+<hr />
+<p>title: 随笔 - C语言的泛型<br />
+categories:</p>
+<ul>
+<li>随笔</li>
+<li>C<br />
+tags:</li>
+<li>C</li>
+<li>随笔</li>
+<li>宏</li>
+<li>泛型<br />
+abbrlink: 2b788a18<br />
+date: 2020-06-17 09:22:53</li>
+</ul>
+<hr />
+<p>简要介绍C11之前和之后的泛型写法</p>
+<!-- more -->
+<h2 id="c11之前"><a class="markdownIt-Anchor" href="#c11之前"></a> C11之前</h2>
+<p>利用宏实现</p>
+<pre class="highlight"><code class="c"><span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> min(x, y) ({                   \
+    typeof(x) _min_1 = (x);            \
+    typeof(y) _min_2 = (y);            \
+    (void)(&amp;_min_1 == &amp;_min_2);        \
+    _min_1 &lt; _min_2 ? _min_1 : _min_2; \
+  })</span>
+</code></pre>
+<p>其中<code>(void)(&amp;_min_1 == &amp;_min_2);</code>利用了不同类型指针做逻辑比较在编译过程会报错来保证两参数类型相同</p>
+<h2 id="c11之后"><a class="markdownIt-Anchor" href="#c11之后"></a> C11之后</h2>
+<p>C11中添加了<code>_Generic</code>关键字, 使得编写泛型函数更方便了</p>
+<p>用法<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup>:</p>
+<blockquote>
+<p>generic-selection:</p>
+<p><code>_Generic ( assignment-expression , generic-assoc-list )</code></p>
+<p>generic-assoc-list:</p>
+<blockquote>
+<p>generic-association</p>
+<p>generic-assoc-list , generic-association</p>
+</blockquote>
+<p>generic-association:</p>
+<blockquote>
+<p>type-name : assignment-expression</p>
+<p><code>default</code> : assignment-expression</p>
+</blockquote>
+</blockquote>
+<p>例如<sup class="footnote-ref"><a href="#fn2" id="fnref2">[2]</a></sup>:</p>
+<pre class="highlight"><code class="c"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;math.h&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;stdio.h&gt;</span></span>
+
+<span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> GENERAL_ABS(x) _Generic((x), \
+    int    : abs,                    \
+    float  : fabsf,                  \
+    double : fabs)(x)</span>
+
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">(<span class="hljs-keyword">void</span>)</span> </span>{
+  <span class="hljs-built_in">printf</span>(<span class="hljs-string">"intabs:%d\n"</span>, GENERAL_ABS(<span class="hljs-number">-12</span>));
+  <span class="hljs-built_in">printf</span>(<span class="hljs-string">"floatabs:%f\n"</span>, GENERAL_ABS(<span class="hljs-number">-12.04f</span>));
+  <span class="hljs-built_in">printf</span>(<span class="hljs-string">"doubleabs:%f\n"</span>, GENERAL_ABS(<span class="hljs-number">-13.09876</span>));
+
+  <span class="hljs-keyword">int</span> a = <span class="hljs-number">10</span>;
+  <span class="hljs-keyword">int</span> b = <span class="hljs-number">0</span>, c = <span class="hljs-number">0</span>;
+
+  _Generic(a + <span class="hljs-number">0.1f</span>, <span class="hljs-keyword">int</span> : b, <span class="hljs-keyword">float</span> : c, <span class="hljs-keyword">default</span> : b)++;
+  <span class="hljs-built_in">printf</span>(<span class="hljs-string">"b=%d,c=%d\n"</span>, b, c);
+
+  _Generic(a += <span class="hljs-number">1.1f</span>, <span class="hljs-keyword">int</span> : b, <span class="hljs-keyword">float</span> : c, <span class="hljs-keyword">default</span> : b)++;
+  <span class="hljs-built_in">printf</span>(<span class="hljs-string">"a=%d,b=%d,c=%d\n"</span>, a, b, c);
+}
+</code></pre>
+<p>输出:</p>
+<pre class="highlight"><code class="">intabs:12
+floatabs:12.040000
+doubleabs:13.098760
+b=0,c=1
+a=10,b=1,c=1
+</code></pre>
+<p>简要讲讲代码的含义</p>
+<p><code>_Generic(a + 0.1f, int : b, float : c, default : b)++;</code></p>
+<p>a为<code>int</code>, <code>a + 0.1f</code>为<code>float</code>, 所以<code>_Generic</code>执行<code>float</code>对应的操作, 即返回<code>c</code>, 最终该语句为<code>c++</code></p>
+<p><code>_Generic(a += 1.1f, int : b, float : c, default : b)++;</code></p>
+<p>a为<code>int</code>, <code>a += 1.1f</code><strong>不改变<code>a</code>的值</strong>, <code>_Generic</code>判断<code>a</code>的类型, 执行<code>int</code>对应的操作, 即返回<code>b</code>, 最终该语句为<code>b++</code></p>
+<hr class="footnotes-sep" />
+<section class="footnotes">
+<ol class="footnotes-list">
+<li id="fn1" class="footnote-item"><p><a href="http://www.open-std.org/jtc1/sc22/wg14/www/docs/n1570.pdf">ISO/IEC 9899:201x - N1570 - Programming languages - C</a> <a href="#fnref1" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn2" class="footnote-item"><p><a href="https://baike.baidu.com/item/C11">C11_百度百科</a> <a href="#fnref2" class="footnote-backref">↩︎</a></p>
+</li>
+</ol>
+</section>
