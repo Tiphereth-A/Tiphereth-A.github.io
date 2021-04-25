@@ -6,7 +6,7 @@
   <link href="https://tifa-233.xyz/atom.xml" rel="self"/>
   
   <link href="https://tifa-233.xyz/"/>
-  <updated>2021-04-25T08:21:55.566Z</updated>
+  <updated>2021-04-25T16:11:01.667Z</updated>
   <id>https://tifa-233.xyz/</id>
   
   <author>
@@ -15,6 +15,62 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>题解 - [CodeForces 1139 D] Steps to One (杜教筛版)</title>
+    <link href="https://tifa-233.xyz/article/codeforces-1139-d/"/>
+    <id>https://tifa-233.xyz/article/codeforces-1139-d/</id>
+    <published>2021-04-25T14:07:03.000Z</published>
+    <updated>2021-04-25T16:11:01.667Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;为了补天梯赛题写的题解&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://codeforces.com/problemset/problem/1139/D&quot;&gt;题目链接&lt;/a&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="程序设计" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
+    
+    <category term="题解" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E9%A2%98%E8%A7%A3/"/>
+    
+    
+    <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
+    
+    <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
+    
+    <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
+    
+    <category term="数论" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E8%AE%BA/"/>
+    
+    <category term="DP" scheme="https://tifa-233.xyz/tags/DP/"/>
+    
+    <category term="概率" scheme="https://tifa-233.xyz/tags/%E6%A6%82%E7%8E%87/"/>
+    
+    <category term="期望" scheme="https://tifa-233.xyz/tags/%E6%9C%9F%E6%9C%9B/"/>
+    
+    <category term="CodeForces" scheme="https://tifa-233.xyz/tags/CodeForces/"/>
+    
+    <category term="级数" scheme="https://tifa-233.xyz/tags/%E7%BA%A7%E6%95%B0/"/>
+    
+    <category term="AGP/算术-几何级数" scheme="https://tifa-233.xyz/tags/AGP-%E7%AE%97%E6%9C%AF-%E5%87%A0%E4%BD%95%E7%BA%A7%E6%95%B0/"/>
+    
+    <category term="数论分块/整除分块" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E8%AE%BA%E5%88%86%E5%9D%97-%E6%95%B4%E9%99%A4%E5%88%86%E5%9D%97/"/>
+    
+    <category term="快速幂" scheme="https://tifa-233.xyz/tags/%E5%BF%AB%E9%80%9F%E5%B9%82/"/>
+    
+    <category term="逆元" scheme="https://tifa-233.xyz/tags/%E9%80%86%E5%85%83/"/>
+    
+    <category term="杜教筛" scheme="https://tifa-233.xyz/tags/%E6%9D%9C%E6%95%99%E7%AD%9B/"/>
+    
+    <category term="Möbius反演" scheme="https://tifa-233.xyz/tags/Mobius%E5%8F%8D%E6%BC%94/"/>
+    
+    <category term="Möbius函数" scheme="https://tifa-233.xyz/tags/Mobius%E5%87%BD%E6%95%B0/"/>
+    
+    <category term="概率DP" scheme="https://tifa-233.xyz/tags/%E6%A6%82%E7%8E%87DP/"/>
+    
+    <category term="容斥定理" scheme="https://tifa-233.xyz/tags/%E5%AE%B9%E6%96%A5%E5%AE%9A%E7%90%86/"/>
+    
+  </entry>
   
   <entry>
     <title>题解 - 第十二届蓝桥杯大赛软件赛省赛 - C/C++大学A组</title>
@@ -64,9 +120,9 @@
     
     <category term="暴力" scheme="https://tifa-233.xyz/tags/%E6%9A%B4%E5%8A%9B/"/>
     
-    <category term="最小公倍数" scheme="https://tifa-233.xyz/tags/%E6%9C%80%E5%B0%8F%E5%85%AC%E5%80%8D%E6%95%B0/"/>
-    
     <category term="前缀和" scheme="https://tifa-233.xyz/tags/%E5%89%8D%E7%BC%80%E5%92%8C/"/>
+    
+    <category term="最小公倍数" scheme="https://tifa-233.xyz/tags/%E6%9C%80%E5%B0%8F%E5%85%AC%E5%80%8D%E6%95%B0/"/>
     
     <category term="树形DP" scheme="https://tifa-233.xyz/tags/%E6%A0%91%E5%BD%A2DP/"/>
     
@@ -113,11 +169,11 @@
     
     <category term="数论" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E8%AE%BA/"/>
     
+    <category term="平衡树" scheme="https://tifa-233.xyz/tags/%E5%B9%B3%E8%A1%A1%E6%A0%91/"/>
+    
     <category term="AtCoder" scheme="https://tifa-233.xyz/tags/AtCoder/"/>
     
     <category term="并查集" scheme="https://tifa-233.xyz/tags/%E5%B9%B6%E6%9F%A5%E9%9B%86/"/>
-    
-    <category term="平衡树" scheme="https://tifa-233.xyz/tags/%E5%B9%B3%E8%A1%A1%E6%A0%91/"/>
     
     <category term="最大公约数" scheme="https://tifa-233.xyz/tags/%E6%9C%80%E5%A4%A7%E5%85%AC%E7%BA%A6%E6%95%B0/"/>
     
@@ -394,7 +450,7 @@
     <link href="https://tifa-233.xyz/article/icpc-ncna2019/"/>
     <id>https://tifa-233.xyz/article/icpc-ncna2019/</id>
     <published>2021-03-07T10:11:53.000Z</published>
-    <updated>2021-04-23T13:00:03.813Z</updated>
+    <updated>2021-04-25T14:07:57.463Z</updated>
     
     
     <summary type="html">&lt;p&gt;比赛链接:&lt;/p&gt;
@@ -760,35 +816,6 @@
     <category term="树形DP" scheme="https://tifa-233.xyz/tags/%E6%A0%91%E5%BD%A2DP/"/>
     
     <category term="抽屉原理" scheme="https://tifa-233.xyz/tags/%E6%8A%BD%E5%B1%89%E5%8E%9F%E7%90%86/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>题解 - 2020 ICPC 亚洲区域赛(南京) 热身赛</title>
-    <link href="https://tifa-233.xyz/article/icpc-anjr2020-p/"/>
-    <id>https://tifa-233.xyz/article/icpc-anjr2020-p/</id>
-    <published>2020-12-19T13:51:29.000Z</published>
-    <updated>2021-04-23T12:59:28.154Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://ac.nowcoder.com/acm/contest/10271&quot;&gt;比赛链接&lt;/a&gt;&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="程序设计" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
-    
-    <category term="题解" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E9%A2%98%E8%A7%A3/"/>
-    
-    <category term="ICPC" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E9%A2%98%E8%A7%A3/ICPC/"/>
-    
-    
-    <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
-    
-    <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
-    
-    <category term="ICPC" scheme="https://tifa-233.xyz/tags/ICPC/"/>
-    
-    <category term="贪心" scheme="https://tifa-233.xyz/tags/%E8%B4%AA%E5%BF%83/"/>
     
   </entry>
   
