@@ -6,7 +6,7 @@
   <link href="https://tifa-233.xyz/atom.xml" rel="self"/>
   
   <link href="https://tifa-233.xyz/"/>
-  <updated>2021-04-26T12:49:02.907Z</updated>
+  <updated>2021-04-27T14:54:17.390Z</updated>
   <id>https://tifa-233.xyz/</id>
   
   <author>
@@ -15,6 +15,45 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>题解 - [LOJ 6053] 简单的函数</title>
+    <link href="https://tifa-233.xyz/article/loj-6053/"/>
+    <id>https://tifa-233.xyz/article/loj-6053/</id>
+    <published>2021-04-27T14:52:08.000Z</published>
+    <updated>2021-04-27T14:54:17.390Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://loj.ac/p/6053&quot;&gt;题目链接&lt;/a&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="程序设计" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
+    
+    <category term="题解" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E9%A2%98%E8%A7%A3/"/>
+    
+    
+    <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
+    
+    <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
+    
+    <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
+    
+    <category term="数论" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E8%AE%BA/"/>
+    
+    <category term="杜教筛" scheme="https://tifa-233.xyz/tags/%E6%9D%9C%E6%95%99%E7%AD%9B/"/>
+    
+    <category term="Euler函数" scheme="https://tifa-233.xyz/tags/Euler%E5%87%BD%E6%95%B0/"/>
+    
+    <category term="素数/质数" scheme="https://tifa-233.xyz/tags/%E7%B4%A0%E6%95%B0-%E8%B4%A8%E6%95%B0/"/>
+    
+    <category term="筛法" scheme="https://tifa-233.xyz/tags/%E7%AD%9B%E6%B3%95/"/>
+    
+    <category term="LibreOJ" scheme="https://tifa-233.xyz/tags/LibreOJ/"/>
+    
+    <category term="Powerful number筛" scheme="https://tifa-233.xyz/tags/Powerful-number%E7%AD%9B/"/>
+    
+  </entry>
   
   <entry>
     <title>题解 - [第六届团体程序设计天梯赛 L3-3] 可怜的简单题</title>
@@ -77,7 +116,7 @@
     <link href="https://tifa-233.xyz/article/powerful-num/"/>
     <id>https://tifa-233.xyz/article/powerful-num/</id>
     <published>2021-04-26T04:58:33.000Z</published>
-    <updated>2021-04-27T07:38:02.545Z</updated>
+    <updated>2021-04-27T14:53:53.051Z</updated>
     
     
     <summary type="html">&lt;p&gt;Powerful number 筛是一种能在最佳 &lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;O&lt;/mi&gt;&lt;mo stretchy=&quot;false&quot;&gt;(&lt;/mo&gt;&lt;msqrt&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;/msqrt&gt;&lt;mo stretchy=&quot;false&quot;&gt;)&lt;/mo&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;O(\sqrt n)&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:1.05028em;vertical-align:-0.25em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot; style=&quot;margin-right:0.02778em;&quot;&gt;O&lt;/span&gt;&lt;span class=&quot;mopen&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mord sqrt&quot;&gt;&lt;span class=&quot;vlist-t vlist-t2&quot;&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.8002800000000001em;&quot;&gt;&lt;span class=&quot;svg-align&quot; style=&quot;top:-3em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:3em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot; style=&quot;padding-left:0.833em;&quot;&gt;n&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;top:-2.76028em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:3em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;hide-tail&quot; style=&quot;min-width:0.853em;height:1.08em;&quot;&gt;&lt;svg width=&#39;400em&#39; height=&#39;1.08em&#39; viewBox=&#39;0 0 400000 1080&#39; preserveAspectRatio=&#39;xMinYMin slice&#39;&gt;&lt;path d=&#39;M95,702
@@ -108,7 +147,7 @@ M834 80h400000v40h-400000z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/s
     
     <category term="数论" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E8%AE%BA/"/>
     
-    <category term="LOJ" scheme="https://tifa-233.xyz/tags/LOJ/"/>
+    <category term="Powerful number筛" scheme="https://tifa-233.xyz/tags/Powerful-number%E7%AD%9B/"/>
     
     <category term="数论函数" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E8%AE%BA%E5%87%BD%E6%95%B0/"/>
     
@@ -117,8 +156,6 @@ M834 80h400000v40h-400000z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/s
     <category term="Dirichlet卷积" scheme="https://tifa-233.xyz/tags/Dirichlet%E5%8D%B7%E7%A7%AF/"/>
     
     <category term="Powerful number" scheme="https://tifa-233.xyz/tags/Powerful-number/"/>
-    
-    <category term="Powerful number筛" scheme="https://tifa-233.xyz/tags/Powerful-number%E7%AD%9B/"/>
     
   </entry>
   
@@ -212,7 +249,7 @@ M834 80h400000v40h-400000z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/s
     <link href="https://tifa-233.xyz/article/lq2021-p1/"/>
     <id>https://tifa-233.xyz/article/lq2021-p1/</id>
     <published>2021-04-19T11:21:54.000Z</published>
-    <updated>2021-04-27T10:24:33.729Z</updated>
+    <updated>2021-04-27T12:38:17.845Z</updated>
     
     
     <summary type="html">&lt;ul&gt;
@@ -253,9 +290,9 @@ M834 80h400000v40h-400000z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/s
     
     <category term="最大公约数" scheme="https://tifa-233.xyz/tags/%E6%9C%80%E5%A4%A7%E5%85%AC%E7%BA%A6%E6%95%B0/"/>
     
-    <category term="最小公倍数" scheme="https://tifa-233.xyz/tags/%E6%9C%80%E5%B0%8F%E5%85%AC%E5%80%8D%E6%95%B0/"/>
-    
     <category term="暴力" scheme="https://tifa-233.xyz/tags/%E6%9A%B4%E5%8A%9B/"/>
+    
+    <category term="最小公倍数" scheme="https://tifa-233.xyz/tags/%E6%9C%80%E5%B0%8F%E5%85%AC%E5%80%8D%E6%95%B0/"/>
     
     <category term="前缀和" scheme="https://tifa-233.xyz/tags/%E5%89%8D%E7%BC%80%E5%92%8C/"/>
     
@@ -797,41 +834,6 @@ M834 80h400000v40h-400000z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/s
     <category term="笔记" scheme="https://tifa-233.xyz/tags/%E7%AC%94%E8%AE%B0/"/>
     
     <category term="物理" scheme="https://tifa-233.xyz/tags/%E7%89%A9%E7%90%86/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>随笔 - 运用 MATLAB 基于 Lotka-Volterra 模型模拟种群演化</title>
-    <link href="https://tifa-233.xyz/article/draft/0007/"/>
-    <id>https://tifa-233.xyz/article/draft/0007/</id>
-    <published>2021-01-09T15:53:22.000Z</published>
-    <updated>2021-02-01T15:07:18.136Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;本篇讲述了如何应用 MATLAB 对三种群的 Lotka-Volterra 模型进行模拟并可视化&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="随笔" scheme="https://tifa-233.xyz/categories/%E9%9A%8F%E7%AC%94/"/>
-    
-    
-    <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
-    
-    <category term="随笔" scheme="https://tifa-233.xyz/tags/%E9%9A%8F%E7%AC%94/"/>
-    
-    <category term="MATLAB" scheme="https://tifa-233.xyz/tags/MATLAB/"/>
-    
-    <category term="ODE" scheme="https://tifa-233.xyz/tags/ODE/"/>
-    
-    <category term="Malthus模型" scheme="https://tifa-233.xyz/tags/Malthus%E6%A8%A1%E5%9E%8B/"/>
-    
-    <category term="Logistic模型" scheme="https://tifa-233.xyz/tags/Logistic%E6%A8%A1%E5%9E%8B/"/>
-    
-    <category term="Lotka-Volterra模型" scheme="https://tifa-233.xyz/tags/Lotka-Volterra%E6%A8%A1%E5%9E%8B/"/>
-    
-    <category term="Euler方法" scheme="https://tifa-233.xyz/tags/Euler%E6%96%B9%E6%B3%95/"/>
-    
-    <category term="Runge-Kutta方法" scheme="https://tifa-233.xyz/tags/Runge-Kutta%E6%96%B9%E6%B3%95/"/>
     
   </entry>
   
