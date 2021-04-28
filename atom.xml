@@ -6,7 +6,7 @@
   <link href="https://tifa-233.xyz/atom.xml" rel="self"/>
   
   <link href="https://tifa-233.xyz/"/>
-  <updated>2021-04-28T06:05:12.207Z</updated>
+  <updated>2021-04-28T06:10:05.169Z</updated>
   <id>https://tifa-233.xyz/</id>
   
   <author>
@@ -17,37 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>生成函数笔记 - 目录页 (更新中)</title>
-    <link href="https://tifa-233.xyz/article/contents/gfology/"/>
-    <id>https://tifa-233.xyz/article/contents/gfology/</id>
-    <published>2021-04-28T05:15:32.000Z</published>
-    <updated>2021-04-28T06:05:12.207Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;本篇文章为生成函数笔记的目录&lt;/p&gt;
-&lt;p&gt;生成函数是组合数学中的重要内容之一&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="目录" scheme="https://tifa-233.xyz/categories/%E7%9B%AE%E5%BD%95/"/>
-    
-    
-    <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
-    
-    <category term="组合数学" scheme="https://tifa-233.xyz/tags/%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/"/>
-    
-    <category term="目录" scheme="https://tifa-233.xyz/tags/%E7%9B%AE%E5%BD%95/"/>
-    
-    <category term="生成函数" scheme="https://tifa-233.xyz/tags/%E7%94%9F%E6%88%90%E5%87%BD%E6%95%B0/"/>
-    
-  </entry>
-  
-  <entry>
     <title>生成函数01 - 简介</title>
     <link href="https://tifa-233.xyz/article/gfology/0001/"/>
     <id>https://tifa-233.xyz/article/gfology/0001/</id>
-    <published>2021-04-28T05:15:32.000Z</published>
-    <updated>2021-04-28T06:05:12.210Z</updated>
+    <published>2021-04-28T05:15:33.000Z</published>
+    <updated>2021-04-28T06:10:05.169Z</updated>
     
     
     <summary type="html">&lt;p&gt;生成函数是一种描述数列的方法, 因其具有的诸多良好性质而被广泛应用&lt;/p&gt;</summary>
@@ -76,6 +50,32 @@
     <category term="指数生成函数" scheme="https://tifa-233.xyz/tags/%E6%8C%87%E6%95%B0%E7%94%9F%E6%88%90%E5%87%BD%E6%95%B0/"/>
     
     <category term="Dirichlet生成函数" scheme="https://tifa-233.xyz/tags/Dirichlet%E7%94%9F%E6%88%90%E5%87%BD%E6%95%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>生成函数笔记 - 目录页 (更新中)</title>
+    <link href="https://tifa-233.xyz/article/contents/gfology/"/>
+    <id>https://tifa-233.xyz/article/contents/gfology/</id>
+    <published>2021-04-28T05:15:32.000Z</published>
+    <updated>2021-04-28T06:05:12.207Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;本篇文章为生成函数笔记的目录&lt;/p&gt;
+&lt;p&gt;生成函数是组合数学中的重要内容之一&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="目录" scheme="https://tifa-233.xyz/categories/%E7%9B%AE%E5%BD%95/"/>
+    
+    
+    <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
+    
+    <category term="组合数学" scheme="https://tifa-233.xyz/tags/%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/"/>
+    
+    <category term="目录" scheme="https://tifa-233.xyz/tags/%E7%9B%AE%E5%BD%95/"/>
+    
+    <category term="生成函数" scheme="https://tifa-233.xyz/tags/%E7%94%9F%E6%88%90%E5%87%BD%E6%95%B0/"/>
     
   </entry>
   
@@ -345,21 +345,21 @@ M834 80h400000v40h-400000z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/s
     
     <category term="模拟" scheme="https://tifa-233.xyz/tags/%E6%A8%A1%E6%8B%9F/"/>
     
-    <category term="搜索" scheme="https://tifa-233.xyz/tags/%E6%90%9C%E7%B4%A2/"/>
-    
     <category term="数论" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E8%AE%BA/"/>
     
     <category term="DP" scheme="https://tifa-233.xyz/tags/DP/"/>
+    
+    <category term="搜索" scheme="https://tifa-233.xyz/tags/%E6%90%9C%E7%B4%A2/"/>
     
     <category term="记忆化搜索" scheme="https://tifa-233.xyz/tags/%E8%AE%B0%E5%BF%86%E5%8C%96%E6%90%9C%E7%B4%A2/"/>
     
     <category term="最大公约数" scheme="https://tifa-233.xyz/tags/%E6%9C%80%E5%A4%A7%E5%85%AC%E7%BA%A6%E6%95%B0/"/>
     
-    <category term="前缀和" scheme="https://tifa-233.xyz/tags/%E5%89%8D%E7%BC%80%E5%92%8C/"/>
-    
     <category term="暴力" scheme="https://tifa-233.xyz/tags/%E6%9A%B4%E5%8A%9B/"/>
     
     <category term="最小公倍数" scheme="https://tifa-233.xyz/tags/%E6%9C%80%E5%B0%8F%E5%85%AC%E5%80%8D%E6%95%B0/"/>
+    
+    <category term="前缀和" scheme="https://tifa-233.xyz/tags/%E5%89%8D%E7%BC%80%E5%92%8C/"/>
     
     <category term="树形DP" scheme="https://tifa-233.xyz/tags/%E6%A0%91%E5%BD%A2DP/"/>
     
@@ -406,11 +406,11 @@ M834 80h400000v40h-400000z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/s
     
     <category term="数论" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E8%AE%BA/"/>
     
+    <category term="平衡树" scheme="https://tifa-233.xyz/tags/%E5%B9%B3%E8%A1%A1%E6%A0%91/"/>
+    
     <category term="AtCoder" scheme="https://tifa-233.xyz/tags/AtCoder/"/>
     
     <category term="并查集" scheme="https://tifa-233.xyz/tags/%E5%B9%B6%E6%9F%A5%E9%9B%86/"/>
-    
-    <category term="平衡树" scheme="https://tifa-233.xyz/tags/%E5%B9%B3%E8%A1%A1%E6%A0%91/"/>
     
     <category term="最大公约数" scheme="https://tifa-233.xyz/tags/%E6%9C%80%E5%A4%A7%E5%85%AC%E7%BA%A6%E6%95%B0/"/>
     
@@ -703,13 +703,13 @@ M834 80h400000v40h-400000z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/s
     
     <category term="ICPC" scheme="https://tifa-233.xyz/tags/ICPC/"/>
     
-    <category term="搜索" scheme="https://tifa-233.xyz/tags/%E6%90%9C%E7%B4%A2/"/>
-    
     <category term="计算几何" scheme="https://tifa-233.xyz/tags/%E8%AE%A1%E7%AE%97%E5%87%A0%E4%BD%95/"/>
     
-    <category term="DFS" scheme="https://tifa-233.xyz/tags/DFS/"/>
-    
     <category term="构造" scheme="https://tifa-233.xyz/tags/%E6%9E%84%E9%80%A0/"/>
+    
+    <category term="搜索" scheme="https://tifa-233.xyz/tags/%E6%90%9C%E7%B4%A2/"/>
+    
+    <category term="DFS" scheme="https://tifa-233.xyz/tags/DFS/"/>
     
     <category term="计数" scheme="https://tifa-233.xyz/tags/%E8%AE%A1%E6%95%B0/"/>
     
@@ -752,11 +752,11 @@ M834 80h400000v40h-400000z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/s
     
     <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
     
+    <category term="构造" scheme="https://tifa-233.xyz/tags/%E6%9E%84%E9%80%A0/"/>
+    
     <category term="搜索" scheme="https://tifa-233.xyz/tags/%E6%90%9C%E7%B4%A2/"/>
     
     <category term="DFS" scheme="https://tifa-233.xyz/tags/DFS/"/>
-    
-    <category term="构造" scheme="https://tifa-233.xyz/tags/%E6%9E%84%E9%80%A0/"/>
     
     <category term="AtCoder" scheme="https://tifa-233.xyz/tags/AtCoder/"/>
     
@@ -795,9 +795,9 @@ M834 80h400000v40h-400000z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/s
     
     <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
     
-    <category term="搜索" scheme="https://tifa-233.xyz/tags/%E6%90%9C%E7%B4%A2/"/>
-    
     <category term="构造" scheme="https://tifa-233.xyz/tags/%E6%9E%84%E9%80%A0/"/>
+    
+    <category term="搜索" scheme="https://tifa-233.xyz/tags/%E6%90%9C%E7%B4%A2/"/>
     
     <category term="AtCoder" scheme="https://tifa-233.xyz/tags/AtCoder/"/>
     
