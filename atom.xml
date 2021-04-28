@@ -6,7 +6,7 @@
   <link href="https://tifa-233.xyz/atom.xml" rel="self"/>
   
   <link href="https://tifa-233.xyz/"/>
-  <updated>2021-04-27T14:54:17.390Z</updated>
+  <updated>2021-04-28T06:05:12.207Z</updated>
   <id>https://tifa-233.xyz/</id>
   
   <author>
@@ -17,11 +17,74 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>生成函数笔记 - 目录页 (更新中)</title>
+    <link href="https://tifa-233.xyz/article/contents/gfology/"/>
+    <id>https://tifa-233.xyz/article/contents/gfology/</id>
+    <published>2021-04-28T05:15:32.000Z</published>
+    <updated>2021-04-28T06:05:12.207Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;本篇文章为生成函数笔记的目录&lt;/p&gt;
+&lt;p&gt;生成函数是组合数学中的重要内容之一&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="目录" scheme="https://tifa-233.xyz/categories/%E7%9B%AE%E5%BD%95/"/>
+    
+    
+    <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
+    
+    <category term="组合数学" scheme="https://tifa-233.xyz/tags/%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/"/>
+    
+    <category term="目录" scheme="https://tifa-233.xyz/tags/%E7%9B%AE%E5%BD%95/"/>
+    
+    <category term="生成函数" scheme="https://tifa-233.xyz/tags/%E7%94%9F%E6%88%90%E5%87%BD%E6%95%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>生成函数01 - 简介</title>
+    <link href="https://tifa-233.xyz/article/gfology/0001/"/>
+    <id>https://tifa-233.xyz/article/gfology/0001/</id>
+    <published>2021-04-28T05:15:32.000Z</published>
+    <updated>2021-04-28T06:05:12.210Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;生成函数是一种描述数列的方法, 因其具有的诸多良好性质而被广泛应用&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="笔记" scheme="https://tifa-233.xyz/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    <category term="数学" scheme="https://tifa-233.xyz/categories/%E7%AC%94%E8%AE%B0/%E6%95%B0%E5%AD%A6/"/>
+    
+    <category term="生成函数" scheme="https://tifa-233.xyz/categories/%E7%AC%94%E8%AE%B0/%E6%95%B0%E5%AD%A6/%E7%94%9F%E6%88%90%E5%87%BD%E6%95%B0/"/>
+    
+    
+    <category term="笔记" scheme="https://tifa-233.xyz/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+    <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
+    
+    <category term="组合数学" scheme="https://tifa-233.xyz/tags/%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/"/>
+    
+    <category term="生成函数" scheme="https://tifa-233.xyz/tags/%E7%94%9F%E6%88%90%E5%87%BD%E6%95%B0/"/>
+    
+    <category term="核函数" scheme="https://tifa-233.xyz/tags/%E6%A0%B8%E5%87%BD%E6%95%B0/"/>
+    
+    <category term="普通生成函数" scheme="https://tifa-233.xyz/tags/%E6%99%AE%E9%80%9A%E7%94%9F%E6%88%90%E5%87%BD%E6%95%B0/"/>
+    
+    <category term="指数生成函数" scheme="https://tifa-233.xyz/tags/%E6%8C%87%E6%95%B0%E7%94%9F%E6%88%90%E5%87%BD%E6%95%B0/"/>
+    
+    <category term="Dirichlet生成函数" scheme="https://tifa-233.xyz/tags/Dirichlet%E7%94%9F%E6%88%90%E5%87%BD%E6%95%B0/"/>
+    
+  </entry>
+  
+  <entry>
     <title>题解 - [LOJ 6053] 简单的函数</title>
     <link href="https://tifa-233.xyz/article/loj-6053/"/>
     <id>https://tifa-233.xyz/article/loj-6053/</id>
     <published>2021-04-27T14:52:08.000Z</published>
-    <updated>2021-04-27T14:54:17.390Z</updated>
+    <updated>2021-04-27T15:15:59.381Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://loj.ac/p/6053&quot;&gt;题目链接&lt;/a&gt;&lt;/p&gt;</summary>
@@ -116,7 +179,7 @@
     <link href="https://tifa-233.xyz/article/powerful-num/"/>
     <id>https://tifa-233.xyz/article/powerful-num/</id>
     <published>2021-04-26T04:58:33.000Z</published>
-    <updated>2021-04-27T15:13:42.218Z</updated>
+    <updated>2021-04-28T06:03:39.910Z</updated>
     
     
     <summary type="html">&lt;p&gt;Powerful number 筛是一种能在最佳 &lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;O&lt;/mi&gt;&lt;mo stretchy=&quot;false&quot;&gt;(&lt;/mo&gt;&lt;msqrt&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;/msqrt&gt;&lt;mo stretchy=&quot;false&quot;&gt;)&lt;/mo&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;O(\sqrt n)&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:1.05028em;vertical-align:-0.25em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot; style=&quot;margin-right:0.02778em;&quot;&gt;O&lt;/span&gt;&lt;span class=&quot;mopen&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mord sqrt&quot;&gt;&lt;span class=&quot;vlist-t vlist-t2&quot;&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.8002800000000001em;&quot;&gt;&lt;span class=&quot;svg-align&quot; style=&quot;top:-3em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:3em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot; style=&quot;padding-left:0.833em;&quot;&gt;n&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;top:-2.76028em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:3em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;hide-tail&quot; style=&quot;min-width:0.853em;height:1.08em;&quot;&gt;&lt;svg width=&#39;400em&#39; height=&#39;1.08em&#39; viewBox=&#39;0 0 400000 1080&#39; preserveAspectRatio=&#39;xMinYMin slice&#39;&gt;&lt;path d=&#39;M95,702
@@ -292,11 +355,11 @@ M834 80h400000v40h-400000z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/s
     
     <category term="最大公约数" scheme="https://tifa-233.xyz/tags/%E6%9C%80%E5%A4%A7%E5%85%AC%E7%BA%A6%E6%95%B0/"/>
     
+    <category term="前缀和" scheme="https://tifa-233.xyz/tags/%E5%89%8D%E7%BC%80%E5%92%8C/"/>
+    
     <category term="暴力" scheme="https://tifa-233.xyz/tags/%E6%9A%B4%E5%8A%9B/"/>
     
     <category term="最小公倍数" scheme="https://tifa-233.xyz/tags/%E6%9C%80%E5%B0%8F%E5%85%AC%E5%80%8D%E6%95%B0/"/>
-    
-    <category term="前缀和" scheme="https://tifa-233.xyz/tags/%E5%89%8D%E7%BC%80%E5%92%8C/"/>
     
     <category term="树形DP" scheme="https://tifa-233.xyz/tags/%E6%A0%91%E5%BD%A2DP/"/>
     
@@ -343,11 +406,11 @@ M834 80h400000v40h-400000z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/s
     
     <category term="数论" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E8%AE%BA/"/>
     
-    <category term="平衡树" scheme="https://tifa-233.xyz/tags/%E5%B9%B3%E8%A1%A1%E6%A0%91/"/>
-    
     <category term="AtCoder" scheme="https://tifa-233.xyz/tags/AtCoder/"/>
     
     <category term="并查集" scheme="https://tifa-233.xyz/tags/%E5%B9%B6%E6%9F%A5%E9%9B%86/"/>
+    
+    <category term="平衡树" scheme="https://tifa-233.xyz/tags/%E5%B9%B3%E8%A1%A1%E6%A0%91/"/>
     
     <category term="最大公约数" scheme="https://tifa-233.xyz/tags/%E6%9C%80%E5%A4%A7%E5%85%AC%E7%BA%A6%E6%95%B0/"/>
     
@@ -407,18 +470,14 @@ M834 80h400000v40h-400000z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/s
     <link href="https://tifa-233.xyz/article/set-theory/0005/"/>
     <id>https://tifa-233.xyz/article/set-theory/0005/</id>
     <published>2021-03-27T09:38:32.000Z</published>
-    <updated>2021-03-28T09:57:00.750Z</updated>
+    <updated>2021-04-28T05:24:02.144Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;hr /&gt;
-&lt;h2 id=&quot;参考资料&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#参考资料&quot;&gt;&lt;/a&gt; 参考资料&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;周民强; 实变函数论; 北京大学出版社;</summary>
+    <summary type="html">&lt;a</summary>
         
       
     
@@ -444,18 +503,14 @@ M834 80h400000v40h-400000z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/s
     <link href="https://tifa-233.xyz/article/set-theory/0004/"/>
     <id>https://tifa-233.xyz/article/set-theory/0004/</id>
     <published>2021-03-27T09:37:32.000Z</published>
-    <updated>2021-03-28T09:56:58.208Z</updated>
+    <updated>2021-04-28T06:05:12.212Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;hr /&gt;
-&lt;h2 id=&quot;参考资料&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#参考资料&quot;&gt;&lt;/a&gt; 参考资料&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;周民强; 实变函数论; 北京大学出版社;</summary>
+    <summary type="html">&lt;a</summary>
         
       
     
@@ -481,18 +536,14 @@ M834 80h400000v40h-400000z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/s
     <link href="https://tifa-233.xyz/article/set-theory/0003/"/>
     <id>https://tifa-233.xyz/article/set-theory/0003/</id>
     <published>2021-03-27T09:36:32.000Z</published>
-    <updated>2021-03-28T09:56:54.130Z</updated>
+    <updated>2021-04-28T05:23:55.655Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;hr /&gt;
-&lt;h2 id=&quot;参考资料&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#参考资料&quot;&gt;&lt;/a&gt; 参考资料&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;周民强; 实变函数论; 北京大学出版社;</summary>
+    <summary type="html">&lt;a</summary>
         
       
     
@@ -518,18 +569,14 @@ M834 80h400000v40h-400000z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/s
     <link href="https://tifa-233.xyz/article/set-theory/0002/"/>
     <id>https://tifa-233.xyz/article/set-theory/0002/</id>
     <published>2021-03-27T09:35:32.000Z</published>
-    <updated>2021-03-28T09:56:50.983Z</updated>
+    <updated>2021-04-28T05:23:52.902Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;hr /&gt;
-&lt;h2 id=&quot;参考资料&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#参考资料&quot;&gt;&lt;/a&gt; 参考资料&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;郭聿琦, 冯爱芳, 雷鹏; 抽象代数基础; 科学出版社;</summary>
+    <summary type="html">&lt;a</summary>
         
       
     
@@ -555,7 +602,7 @@ M834 80h400000v40h-400000z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/s
     <link href="https://tifa-233.xyz/article/set-theory/0001/"/>
     <id>https://tifa-233.xyz/article/set-theory/0001/</id>
     <published>2021-03-27T09:34:32.000Z</published>
-    <updated>2021-04-23T13:01:56.694Z</updated>
+    <updated>2021-04-28T05:23:33.181Z</updated>
     
     
     <summary type="html">&lt;p&gt;本篇主要介绍集合论中的基础概念&lt;/p&gt;
@@ -599,11 +646,11 @@ M834 80h400000v40h-400000z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/s
   </entry>
   
   <entry>
-    <title>集合论笔记 - 目录页</title>
+    <title>集合论笔记 - 目录页 (更新中)</title>
     <link href="https://tifa-233.xyz/article/contents/set-theory/"/>
     <id>https://tifa-233.xyz/article/contents/set-theory/</id>
     <published>2021-03-27T09:14:32.000Z</published>
-    <updated>2021-03-28T10:15:59.946Z</updated>
+    <updated>2021-04-28T05:23:40.708Z</updated>
     
     
     <summary type="html">&lt;p&gt;本篇文章为集合论笔记的目录, 因该笔记内容是作为抽象代数和实变函数的前置知识, 故只包括对上述学科比较重要的内容&lt;/p&gt;</summary>
@@ -612,6 +659,8 @@ M834 80h400000v40h-400000z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/s
     
     <category term="目录" scheme="https://tifa-233.xyz/categories/%E7%9B%AE%E5%BD%95/"/>
     
+    
+    <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
     
     <category term="目录" scheme="https://tifa-233.xyz/tags/%E7%9B%AE%E5%BD%95/"/>
     
@@ -786,56 +835,6 @@ M834 80h400000v40h-400000z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/s
     <category term="随笔" scheme="https://tifa-233.xyz/tags/%E9%9A%8F%E7%AC%94/"/>
     
     <category term="C++" scheme="https://tifa-233.xyz/tags/C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>题解 - [UVa 10887] Concatenation of Languages</title>
-    <link href="https://tifa-233.xyz/article/uva-10887/"/>
-    <id>https://tifa-233.xyz/article/uva-10887/</id>
-    <published>2021-01-25T09:28:20.000Z</published>
-    <updated>2021-01-25T09:36:44.074Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://vjudge.net/problem/UVA-10887/origin&quot;&gt;题目链接&lt;/a&gt;&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="程序设计" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
-    
-    <category term="题解" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E9%A2%98%E8%A7%A3/"/>
-    
-    
-    <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
-    
-    <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
-    
-    <category term="UVa" scheme="https://tifa-233.xyz/tags/UVa/"/>
-    
-    <category term="字符串" scheme="https://tifa-233.xyz/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>课程笔记 - 普通物理</title>
-    <link href="https://tifa-233.xyz/article/general-physics/"/>
-    <id>https://tifa-233.xyz/article/general-physics/</id>
-    <published>2021-01-23T12:20:40.000Z</published>
-    <updated>2021-01-23T13:12:58.910Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;期末复习写的, 十分粗糙(尤其力学部分)&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="笔记" scheme="https://tifa-233.xyz/categories/%E7%AC%94%E8%AE%B0/"/>
-    
-    <category term="物理" scheme="https://tifa-233.xyz/categories/%E7%AC%94%E8%AE%B0/%E7%89%A9%E7%90%86/"/>
-    
-    
-    <category term="笔记" scheme="https://tifa-233.xyz/tags/%E7%AC%94%E8%AE%B0/"/>
-    
-    <category term="物理" scheme="https://tifa-233.xyz/tags/%E7%89%A9%E7%90%86/"/>
     
   </entry>
   

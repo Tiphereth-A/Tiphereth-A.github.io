@@ -1,8 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://tifa-233.xyz/article/set-theory/0004/</loc>
+    <lastmod>2021-04-28</lastmod>
+  </url>
+  <url>
+    <loc>https://tifa-233.xyz/article/gfology/0001/</loc>
+    <lastmod>2021-04-28</lastmod>
+  </url>
+  <url>
+    <loc>https://tifa-233.xyz/article/contents/gfology/</loc>
+    <lastmod>2021-04-28</lastmod>
+  </url>
+  <url>
     <loc>https://tifa-233.xyz/article/powerful-num/</loc>
-    <lastmod>2021-04-27</lastmod>
+    <lastmod>2021-04-28</lastmod>
+  </url>
+  <url>
+    <loc>https://tifa-233.xyz/article/about/</loc>
+    <lastmod>2021-04-28</lastmod>
+  </url>
+  <url>
+    <loc>https://tifa-233.xyz/article/contents/advanced-algebra/</loc>
+    <lastmod>2021-04-28</lastmod>
+  </url>
+  <url>
+    <loc>https://tifa-233.xyz/article/advanced-algebra/0001/</loc>
+    <lastmod>2021-04-28</lastmod>
+  </url>
+  <url>
+    <loc>https://tifa-233.xyz/article/set-theory/0005/</loc>
+    <lastmod>2021-04-28</lastmod>
+  </url>
+  <url>
+    <loc>https://tifa-233.xyz/article/set-theory/0003/</loc>
+    <lastmod>2021-04-28</lastmod>
+  </url>
+  <url>
+    <loc>https://tifa-233.xyz/article/set-theory/0002/</loc>
+    <lastmod>2021-04-28</lastmod>
+  </url>
+  <url>
+    <loc>https://tifa-233.xyz/article/contents/set-theory/</loc>
+    <lastmod>2021-04-28</lastmod>
+  </url>
+  <url>
+    <loc>https://tifa-233.xyz/article/set-theory/0001/</loc>
+    <lastmod>2021-04-28</lastmod>
   </url>
   <url>
     <loc>https://tifa-233.xyz/article/loj-6053/</loc>
@@ -14,10 +58,6 @@
   </url>
   <url>
     <loc>https://tifa-233.xyz/article/nt-2/</loc>
-    <lastmod>2021-04-27</lastmod>
-  </url>
-  <url>
-    <loc>https://tifa-233.xyz/article/about/</loc>
     <lastmod>2021-04-27</lastmod>
   </url>
   <url>
@@ -43,10 +83,6 @@
   <url>
     <loc>https://tifa-233.xyz/article/icpc-ncna2019/</loc>
     <lastmod>2021-04-25</lastmod>
-  </url>
-  <url>
-    <loc>https://tifa-233.xyz/article/set-theory/0001/</loc>
-    <lastmod>2021-04-23</lastmod>
   </url>
   <url>
     <loc>https://tifa-233.xyz/article/icpc-cnwp2020/</loc>
@@ -109,36 +145,8 @@
     <lastmod>2021-04-05</lastmod>
   </url>
   <url>
-    <loc>https://tifa-233.xyz/article/contents/set-theory/</loc>
-    <lastmod>2021-03-28</lastmod>
-  </url>
-  <url>
     <loc>https://tifa-233.xyz/article/contents/draft/</loc>
     <lastmod>2021-03-28</lastmod>
-  </url>
-  <url>
-    <loc>https://tifa-233.xyz/article/contents/advanced-algebra/</loc>
-    <lastmod>2021-03-28</lastmod>
-  </url>
-  <url>
-    <loc>https://tifa-233.xyz/article/set-theory/0005/</loc>
-    <lastmod>2021-03-28</lastmod>
-  </url>
-  <url>
-    <loc>https://tifa-233.xyz/article/set-theory/0004/</loc>
-    <lastmod>2021-03-28</lastmod>
-  </url>
-  <url>
-    <loc>https://tifa-233.xyz/article/set-theory/0003/</loc>
-    <lastmod>2021-03-28</lastmod>
-  </url>
-  <url>
-    <loc>https://tifa-233.xyz/article/set-theory/0002/</loc>
-    <lastmod>2021-03-28</lastmod>
-  </url>
-  <url>
-    <loc>https://tifa-233.xyz/article/advanced-algebra/0001/</loc>
-    <lastmod>2021-03-27</lastmod>
   </url>
   <url>
     <loc>https://tifa-233.xyz/article/draft/0008/</loc>
@@ -245,11 +253,11 @@
     <lastmod>2020-12-06</lastmod>
   </url>
   <url>
-    <loc>https://tifa-233.xyz/article/poj-3361/</loc>
+    <loc>https://tifa-233.xyz/article/poj-3904/</loc>
     <lastmod>2020-12-06</lastmod>
   </url>
   <url>
-    <loc>https://tifa-233.xyz/article/poj-3904/</loc>
+    <loc>https://tifa-233.xyz/article/poj-3361/</loc>
     <lastmod>2020-12-06</lastmod>
   </url>
   <url>
