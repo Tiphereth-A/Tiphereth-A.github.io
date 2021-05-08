@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://tifa-233.xyz/article/icpc-ncna2019/</loc>
+    <lastmod>2021-05-08</lastmod>
+  </url>
+  <url>
     <loc>https://tifa-233.xyz/article/draft/0014/</loc>
     <lastmod>2021-05-08</lastmod>
   </url>
@@ -126,10 +130,6 @@
   </url>
   <url>
     <loc>https://tifa-233.xyz/article/codeforces-906-d/</loc>
-    <lastmod>2021-04-25</lastmod>
-  </url>
-  <url>
-    <loc>https://tifa-233.xyz/article/icpc-ncna2019/</loc>
     <lastmod>2021-04-25</lastmod>
   </url>
   <url>
@@ -289,11 +289,11 @@
     <lastmod>2020-12-06</lastmod>
   </url>
   <url>
-    <loc>https://tifa-233.xyz/article/sa-poj-1528/</loc>
+    <loc>https://tifa-233.xyz/article/sa-poj-1381/</loc>
     <lastmod>2020-12-06</lastmod>
   </url>
   <url>
-    <loc>https://tifa-233.xyz/article/sa-poj-1381/</loc>
+    <loc>https://tifa-233.xyz/article/sa-poj-1528/</loc>
     <lastmod>2020-12-06</lastmod>
   </url>
   <url>
