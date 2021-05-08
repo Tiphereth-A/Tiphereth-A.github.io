@@ -6,7 +6,7 @@
   <link href="https://tifa-233.xyz/atom.xml" rel="self"/>
   
   <link href="https://tifa-233.xyz/"/>
-  <updated>2021-04-28T10:04:05.323Z</updated>
+  <updated>2021-05-07T06:36:41.095Z</updated>
   <id>https://tifa-233.xyz/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>随笔 - 一些数学公式</title>
+    <link href="https://tifa-233.xyz/article/draft/0014/"/>
+    <id>https://tifa-233.xyz/article/draft/0014/</id>
+    <published>2021-05-07T06:05:47.000Z</published>
+    <updated>2021-05-07T06:36:41.095Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;记录一些杂七杂八的数学公式&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="随笔" scheme="https://tifa-233.xyz/categories/%E9%9A%8F%E7%AC%94/"/>
+    
+    <category term="数学" scheme="https://tifa-233.xyz/categories/%E9%9A%8F%E7%AC%94/%E6%95%B0%E5%AD%A6/"/>
+    
+    
+    <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
+    
+    <category term="随笔" scheme="https://tifa-233.xyz/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+  </entry>
   
   <entry>
     <title>生成函数01 - 简介</title>
@@ -226,10 +249,10 @@ M834 80h400000v40h-400000z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/s
   
   <entry>
     <title>随笔 - Arithmetico-geometric Progression (AGP)</title>
-    <link href="https://tifa-233.xyz/article/draft/0014/"/>
-    <id>https://tifa-233.xyz/article/draft/0014/</id>
+    <link href="https://tifa-233.xyz/article/draft/0016/"/>
+    <id>https://tifa-233.xyz/article/draft/0016/</id>
     <published>2021-04-25T16:20:47.000Z</published>
-    <updated>2021-04-25T16:24:34.411Z</updated>
+    <updated>2021-05-07T06:05:02.045Z</updated>
     
     
     <summary type="html">&lt;p&gt;AGP(Arithmetico-geometric Progression, 没找到中文名, 暂且称为&amp;quot;算术-几何级数&amp;quot;) 公式&lt;/p&gt;</summary>
@@ -314,7 +337,7 @@ M834 80h400000v40h-400000z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/s
     <link href="https://tifa-233.xyz/article/lq2021-p1/"/>
     <id>https://tifa-233.xyz/article/lq2021-p1/</id>
     <published>2021-04-19T11:21:54.000Z</published>
-    <updated>2021-04-27T12:38:17.845Z</updated>
+    <updated>2021-05-08T16:44:56.778Z</updated>
     
     
     <summary type="html">&lt;ul&gt;
@@ -345,11 +368,11 @@ M834 80h400000v40h-400000z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/s
     
     <category term="模拟" scheme="https://tifa-233.xyz/tags/%E6%A8%A1%E6%8B%9F/"/>
     
+    <category term="搜索" scheme="https://tifa-233.xyz/tags/%E6%90%9C%E7%B4%A2/"/>
+    
     <category term="数论" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E8%AE%BA/"/>
     
     <category term="DP" scheme="https://tifa-233.xyz/tags/DP/"/>
-    
-    <category term="搜索" scheme="https://tifa-233.xyz/tags/%E6%90%9C%E7%B4%A2/"/>
     
     <category term="记忆化搜索" scheme="https://tifa-233.xyz/tags/%E8%AE%B0%E5%BF%86%E5%8C%96%E6%90%9C%E7%B4%A2/"/>
     
@@ -470,7 +493,7 @@ M834 80h400000v40h-400000z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/s
     <link href="https://tifa-233.xyz/article/set-theory/0004/"/>
     <id>https://tifa-233.xyz/article/set-theory/0004/</id>
     <published>2021-03-27T09:38:32.000Z</published>
-    <updated>2021-04-28T13:28:20.171Z</updated>
+    <updated>2021-04-28T13:31:55.736Z</updated>
     
     
       
@@ -499,11 +522,11 @@ M834 80h400000v40h-400000z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/s
   </entry>
   
   <entry>
-    <title>集合论03 - 映射, 基数</title>
+    <title>集合论03 - 映射, 基数/势</title>
     <link href="https://tifa-233.xyz/article/set-theory/0003/"/>
     <id>https://tifa-233.xyz/article/set-theory/0003/</id>
     <published>2021-03-27T09:36:32.000Z</published>
-    <updated>2021-04-28T13:30:49.582Z</updated>
+    <updated>2021-04-29T10:38:53.841Z</updated>
     
     
     <summary type="html">&lt;p&gt;本篇主要介绍映射与基数相关概念&lt;/p&gt;</summary>
@@ -523,9 +546,27 @@ M834 80h400000v40h-400000z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/s
     
     <category term="集合论" scheme="https://tifa-233.xyz/tags/%E9%9B%86%E5%90%88%E8%AE%BA/"/>
     
+    <category term="关系" scheme="https://tifa-233.xyz/tags/%E5%85%B3%E7%B3%BB/"/>
+    
     <category term="映射" scheme="https://tifa-233.xyz/tags/%E6%98%A0%E5%B0%84/"/>
     
-    <category term="基数" scheme="https://tifa-233.xyz/tags/%E5%9F%BA%E6%95%B0/"/>
+    <category term="基数/势" scheme="https://tifa-233.xyz/tags/%E5%9F%BA%E6%95%B0-%E5%8A%BF/"/>
+    
+    <category term="特征函数" scheme="https://tifa-233.xyz/tags/%E7%89%B9%E5%BE%81%E5%87%BD%E6%95%B0/"/>
+    
+    <category term="对等" scheme="https://tifa-233.xyz/tags/%E5%AF%B9%E7%AD%89/"/>
+    
+    <category term="不动点" scheme="https://tifa-233.xyz/tags/%E4%B8%8D%E5%8A%A8%E7%82%B9/"/>
+    
+    <category term="等价关系" scheme="https://tifa-233.xyz/tags/%E7%AD%89%E4%BB%B7%E5%85%B3%E7%B3%BB/"/>
+    
+    <category term="偏序关系" scheme="https://tifa-233.xyz/tags/%E5%81%8F%E5%BA%8F%E5%85%B3%E7%B3%BB/"/>
+    
+    <category term="映射分离定理" scheme="https://tifa-233.xyz/tags/%E6%98%A0%E5%B0%84%E5%88%86%E7%A6%BB%E5%AE%9A%E7%90%86/"/>
+    
+    <category term="分离集" scheme="https://tifa-233.xyz/tags/%E5%88%86%E7%A6%BB%E9%9B%86/"/>
+    
+    <category term="Cantor-Bernstein定理" scheme="https://tifa-233.xyz/tags/Cantor-Bernstein%E5%AE%9A%E7%90%86/"/>
     
   </entry>
   
@@ -534,7 +575,7 @@ M834 80h400000v40h-400000z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/s
     <link href="https://tifa-233.xyz/article/set-theory/0002/"/>
     <id>https://tifa-233.xyz/article/set-theory/0002/</id>
     <published>2021-03-27T09:35:32.000Z</published>
-    <updated>2021-04-28T13:31:14.627Z</updated>
+    <updated>2021-04-28T13:31:55.731Z</updated>
     
     
     <summary type="html">&lt;p&gt;本篇主要介绍一些常见的关系与 Zorn 引理&lt;/p&gt;</summary>
@@ -567,7 +608,7 @@ M834 80h400000v40h-400000z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/s
     <link href="https://tifa-233.xyz/article/set-theory/0001/"/>
     <id>https://tifa-233.xyz/article/set-theory/0001/</id>
     <published>2021-03-27T09:34:32.000Z</published>
-    <updated>2021-04-28T13:22:01.260Z</updated>
+    <updated>2021-04-29T08:42:51.685Z</updated>
     
     
     <summary type="html">&lt;p&gt;本篇主要介绍集合论中的基础概念&lt;/p&gt;</summary>
@@ -587,15 +628,15 @@ M834 80h400000v40h-400000z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/s
     
     <category term="集合论" scheme="https://tifa-233.xyz/tags/%E9%9B%86%E5%90%88%E8%AE%BA/"/>
     
-    <category term="关系" scheme="https://tifa-233.xyz/tags/%E5%85%B3%E7%B3%BB/"/>
-    
-    <category term="二元关系" scheme="https://tifa-233.xyz/tags/%E4%BA%8C%E5%85%83%E5%85%B3%E7%B3%BB/"/>
-    
     <category term="集合族" scheme="https://tifa-233.xyz/tags/%E9%9B%86%E5%90%88%E6%97%8F/"/>
     
     <category term="集合列" scheme="https://tifa-233.xyz/tags/%E9%9B%86%E5%90%88%E5%88%97/"/>
     
     <category term="指标集" scheme="https://tifa-233.xyz/tags/%E6%8C%87%E6%A0%87%E9%9B%86/"/>
+    
+    <category term="关系" scheme="https://tifa-233.xyz/tags/%E5%85%B3%E7%B3%BB/"/>
+    
+    <category term="二元关系" scheme="https://tifa-233.xyz/tags/%E4%BA%8C%E5%85%83%E5%85%B3%E7%B3%BB/"/>
     
     <category term="多元关系" scheme="https://tifa-233.xyz/tags/%E5%A4%9A%E5%85%83%E5%85%B3%E7%B3%BB/"/>
     
@@ -616,7 +657,7 @@ M834 80h400000v40h-400000z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/s
     <link href="https://tifa-233.xyz/article/contents/set-theory/"/>
     <id>https://tifa-233.xyz/article/contents/set-theory/</id>
     <published>2021-03-27T09:14:32.000Z</published>
-    <updated>2021-04-28T13:30:23.181Z</updated>
+    <updated>2021-04-29T09:35:35.982Z</updated>
     
     
     <summary type="html">&lt;p&gt;本篇文章为集合论笔记的目录, 因该笔记内容是作为抽象代数和实变函数的前置知识, 故只包括对上述学科比较重要的内容&lt;/p&gt;
@@ -670,13 +711,13 @@ M834 80h400000v40h-400000z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/s
     
     <category term="ICPC" scheme="https://tifa-233.xyz/tags/ICPC/"/>
     
-    <category term="计算几何" scheme="https://tifa-233.xyz/tags/%E8%AE%A1%E7%AE%97%E5%87%A0%E4%BD%95/"/>
-    
-    <category term="构造" scheme="https://tifa-233.xyz/tags/%E6%9E%84%E9%80%A0/"/>
-    
     <category term="搜索" scheme="https://tifa-233.xyz/tags/%E6%90%9C%E7%B4%A2/"/>
     
+    <category term="计算几何" scheme="https://tifa-233.xyz/tags/%E8%AE%A1%E7%AE%97%E5%87%A0%E4%BD%95/"/>
+    
     <category term="DFS" scheme="https://tifa-233.xyz/tags/DFS/"/>
+    
+    <category term="构造" scheme="https://tifa-233.xyz/tags/%E6%9E%84%E9%80%A0/"/>
     
     <category term="计数" scheme="https://tifa-233.xyz/tags/%E8%AE%A1%E6%95%B0/"/>
     
@@ -719,11 +760,11 @@ M834 80h400000v40h-400000z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/s
     
     <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
     
-    <category term="构造" scheme="https://tifa-233.xyz/tags/%E6%9E%84%E9%80%A0/"/>
-    
     <category term="搜索" scheme="https://tifa-233.xyz/tags/%E6%90%9C%E7%B4%A2/"/>
     
     <category term="DFS" scheme="https://tifa-233.xyz/tags/DFS/"/>
+    
+    <category term="构造" scheme="https://tifa-233.xyz/tags/%E6%9E%84%E9%80%A0/"/>
     
     <category term="AtCoder" scheme="https://tifa-233.xyz/tags/AtCoder/"/>
     
@@ -731,9 +772,9 @@ M834 80h400000v40h-400000z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/s
     
     <category term="期望" scheme="https://tifa-233.xyz/tags/%E6%9C%9F%E6%9C%9B/"/>
     
-    <category term="思维" scheme="https://tifa-233.xyz/tags/%E6%80%9D%E7%BB%B4/"/>
-    
     <category term="并查集" scheme="https://tifa-233.xyz/tags/%E5%B9%B6%E6%9F%A5%E9%9B%86/"/>
+    
+    <category term="思维" scheme="https://tifa-233.xyz/tags/%E6%80%9D%E7%BB%B4/"/>
     
     <category term="异或" scheme="https://tifa-233.xyz/tags/%E5%BC%82%E6%88%96/"/>
     
@@ -762,9 +803,9 @@ M834 80h400000v40h-400000z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/s
     
     <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
     
-    <category term="构造" scheme="https://tifa-233.xyz/tags/%E6%9E%84%E9%80%A0/"/>
-    
     <category term="搜索" scheme="https://tifa-233.xyz/tags/%E6%90%9C%E7%B4%A2/"/>
+    
+    <category term="构造" scheme="https://tifa-233.xyz/tags/%E6%9E%84%E9%80%A0/"/>
     
     <category term="AtCoder" scheme="https://tifa-233.xyz/tags/AtCoder/"/>
     
@@ -772,11 +813,11 @@ M834 80h400000v40h-400000z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/s
     
     <category term="期望" scheme="https://tifa-233.xyz/tags/%E6%9C%9F%E6%9C%9B/"/>
     
+    <category term="思维" scheme="https://tifa-233.xyz/tags/%E6%80%9D%E7%BB%B4/"/>
+    
     <category term="记忆化搜索" scheme="https://tifa-233.xyz/tags/%E8%AE%B0%E5%BF%86%E5%8C%96%E6%90%9C%E7%B4%A2/"/>
     
     <category term="BFS" scheme="https://tifa-233.xyz/tags/BFS/"/>
-    
-    <category term="思维" scheme="https://tifa-233.xyz/tags/%E6%80%9D%E7%BB%B4/"/>
     
     <category term="折半搜索" scheme="https://tifa-233.xyz/tags/%E6%8A%98%E5%8D%8A%E6%90%9C%E7%B4%A2/"/>
     
@@ -802,33 +843,6 @@ M834 80h400000v40h-400000z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/s
     <category term="随笔" scheme="https://tifa-233.xyz/tags/%E9%9A%8F%E7%AC%94/"/>
     
     <category term="C++" scheme="https://tifa-233.xyz/tags/C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>题解 - [UVa 10887] Concatenation of Languages</title>
-    <link href="https://tifa-233.xyz/article/uva-10887/"/>
-    <id>https://tifa-233.xyz/article/uva-10887/</id>
-    <published>2021-01-25T09:28:20.000Z</published>
-    <updated>2021-01-25T09:36:44.074Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://vjudge.net/problem/UVA-10887/origin&quot;&gt;题目链接&lt;/a&gt;&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="程序设计" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
-    
-    <category term="题解" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E9%A2%98%E8%A7%A3/"/>
-    
-    
-    <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
-    
-    <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
-    
-    <category term="UVa" scheme="https://tifa-233.xyz/tags/UVa/"/>
-    
-    <category term="字符串" scheme="https://tifa-233.xyz/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/"/>
     
   </entry>
   
