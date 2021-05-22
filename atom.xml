@@ -337,7 +337,7 @@ M834 80h400000v40h-400000z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/s
     <link href="https://tifa-233.xyz/article/lq2021-p1/"/>
     <id>https://tifa-233.xyz/article/lq2021-p1/</id>
     <published>2021-04-19T11:21:54.000Z</published>
-    <updated>2021-05-10T11:26:16.150Z</updated>
+    <updated>2021-05-10T12:17:44.031Z</updated>
     
     
     <summary type="html">&lt;ul&gt;
@@ -378,15 +378,13 @@ M834 80h400000v40h-400000z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/s
     
     <category term="最大公约数" scheme="https://tifa-233.xyz/tags/%E6%9C%80%E5%A4%A7%E5%85%AC%E7%BA%A6%E6%95%B0/"/>
     
-    <category term="最小公倍数" scheme="https://tifa-233.xyz/tags/%E6%9C%80%E5%B0%8F%E5%85%AC%E5%80%8D%E6%95%B0/"/>
-    
     <category term="暴力" scheme="https://tifa-233.xyz/tags/%E6%9A%B4%E5%8A%9B/"/>
+    
+    <category term="最小公倍数" scheme="https://tifa-233.xyz/tags/%E6%9C%80%E5%B0%8F%E5%85%AC%E5%80%8D%E6%95%B0/"/>
     
     <category term="前缀和" scheme="https://tifa-233.xyz/tags/%E5%89%8D%E7%BC%80%E5%92%8C/"/>
     
     <category term="树形DP" scheme="https://tifa-233.xyz/tags/%E6%A0%91%E5%BD%A2DP/"/>
-    
-    <category term="素数/质数" scheme="https://tifa-233.xyz/tags/%E7%B4%A0%E6%95%B0-%E8%B4%A8%E6%95%B0/"/>
     
     <category term="蓝桥杯" scheme="https://tifa-233.xyz/tags/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
     
@@ -397,6 +395,8 @@ M834 80h400000v40h-400000z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/s
     <category term="状态压缩" scheme="https://tifa-233.xyz/tags/%E7%8A%B6%E6%80%81%E5%8E%8B%E7%BC%A9/"/>
     
     <category term="博弈论" scheme="https://tifa-233.xyz/tags/%E5%8D%9A%E5%BC%88%E8%AE%BA/"/>
+    
+    <category term="素数/质数" scheme="https://tifa-233.xyz/tags/%E7%B4%A0%E6%95%B0-%E8%B4%A8%E6%95%B0/"/>
     
   </entry>
   
@@ -429,11 +429,11 @@ M834 80h400000v40h-400000z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/s
     
     <category term="数论" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E8%AE%BA/"/>
     
-    <category term="平衡树" scheme="https://tifa-233.xyz/tags/%E5%B9%B3%E8%A1%A1%E6%A0%91/"/>
-    
     <category term="AtCoder" scheme="https://tifa-233.xyz/tags/AtCoder/"/>
     
     <category term="并查集" scheme="https://tifa-233.xyz/tags/%E5%B9%B6%E6%9F%A5%E9%9B%86/"/>
+    
+    <category term="平衡树" scheme="https://tifa-233.xyz/tags/%E5%B9%B3%E8%A1%A1%E6%A0%91/"/>
     
     <category term="最大公约数" scheme="https://tifa-233.xyz/tags/%E6%9C%80%E5%A4%A7%E5%85%AC%E7%BA%A6%E6%95%B0/"/>
     
@@ -526,7 +526,7 @@ M834 80h400000v40h-400000z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/s
     <link href="https://tifa-233.xyz/article/set-theory/0003/"/>
     <id>https://tifa-233.xyz/article/set-theory/0003/</id>
     <published>2021-03-27T09:36:32.000Z</published>
-    <updated>2021-05-08T17:22:01.016Z</updated>
+    <updated>2021-05-14T12:42:11.970Z</updated>
     
     
     <summary type="html">&lt;p&gt;本篇主要介绍映射与基数相关概念&lt;/p&gt;</summary>
@@ -567,6 +567,10 @@ M834 80h400000v40h-400000z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/s
     <category term="分离集" scheme="https://tifa-233.xyz/tags/%E5%88%86%E7%A6%BB%E9%9B%86/"/>
     
     <category term="Cantor-Bernstein定理" scheme="https://tifa-233.xyz/tags/Cantor-Bernstein%E5%AE%9A%E7%90%86/"/>
+    
+    <category term="可数集" scheme="https://tifa-233.xyz/tags/%E5%8F%AF%E6%95%B0%E9%9B%86/"/>
+    
+    <category term="可列集" scheme="https://tifa-233.xyz/tags/%E5%8F%AF%E5%88%97%E9%9B%86/"/>
     
   </entry>
   
@@ -628,15 +632,15 @@ M834 80h400000v40h-400000z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/s
     
     <category term="集合论" scheme="https://tifa-233.xyz/tags/%E9%9B%86%E5%90%88%E8%AE%BA/"/>
     
+    <category term="关系" scheme="https://tifa-233.xyz/tags/%E5%85%B3%E7%B3%BB/"/>
+    
+    <category term="二元关系" scheme="https://tifa-233.xyz/tags/%E4%BA%8C%E5%85%83%E5%85%B3%E7%B3%BB/"/>
+    
     <category term="集合族" scheme="https://tifa-233.xyz/tags/%E9%9B%86%E5%90%88%E6%97%8F/"/>
     
     <category term="集合列" scheme="https://tifa-233.xyz/tags/%E9%9B%86%E5%90%88%E5%88%97/"/>
     
     <category term="指标集" scheme="https://tifa-233.xyz/tags/%E6%8C%87%E6%A0%87%E9%9B%86/"/>
-    
-    <category term="关系" scheme="https://tifa-233.xyz/tags/%E5%85%B3%E7%B3%BB/"/>
-    
-    <category term="二元关系" scheme="https://tifa-233.xyz/tags/%E4%BA%8C%E5%85%83%E5%85%B3%E7%B3%BB/"/>
     
     <category term="多元关系" scheme="https://tifa-233.xyz/tags/%E5%A4%9A%E5%85%83%E5%85%B3%E7%B3%BB/"/>
     
