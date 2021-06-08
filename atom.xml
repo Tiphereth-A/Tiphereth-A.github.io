@@ -6,7 +6,7 @@
   <link href="https://tifa-233.xyz/atom.xml" rel="self"/>
   
   <link href="https://tifa-233.xyz/"/>
-  <updated>2021-06-04T16:04:43.333Z</updated>
+  <updated>2021-06-08T07:24:59.036Z</updated>
   <id>https://tifa-233.xyz/</id>
   
   <author>
@@ -15,6 +15,39 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>笔记 - 关于 gcd 求和与计数的问题</title>
+    <link href="https://tifa-233.xyz/article/count-of-gcd/"/>
+    <id>https://tifa-233.xyz/article/count-of-gcd/</id>
+    <published>2021-06-08T05:18:28.000Z</published>
+    <updated>2021-06-08T07:24:59.036Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;总结一些 Möbius 反演中一些关于 gcd 求和与计数问题的解法&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="笔记" scheme="https://tifa-233.xyz/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    <category term="数学" scheme="https://tifa-233.xyz/categories/%E7%AC%94%E8%AE%B0/%E6%95%B0%E5%AD%A6/"/>
+    
+    
+    <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
+    
+    <category term="笔记" scheme="https://tifa-233.xyz/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+    <category term="算法" scheme="https://tifa-233.xyz/tags/%E7%AE%97%E6%B3%95/"/>
+    
+    <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
+    
+    <category term="数论" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E8%AE%BA/"/>
+    
+    <category term="最大公约数" scheme="https://tifa-233.xyz/tags/%E6%9C%80%E5%A4%A7%E5%85%AC%E7%BA%A6%E6%95%B0/"/>
+    
+    <category term="Möbius反演" scheme="https://tifa-233.xyz/tags/Mobius%E5%8F%8D%E6%BC%94/"/>
+    
+  </entry>
   
   <entry>
     <title>题解 - [Luogu P1829] [国家集训队]Crash的数字表格 / JZPTAB</title>
@@ -578,9 +611,9 @@ M834 80h400000v40h-400000z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/s
     
     <category term="暴力" scheme="https://tifa-233.xyz/tags/%E6%9A%B4%E5%8A%9B/"/>
     
-    <category term="最小公倍数" scheme="https://tifa-233.xyz/tags/%E6%9C%80%E5%B0%8F%E5%85%AC%E5%80%8D%E6%95%B0/"/>
-    
     <category term="前缀和" scheme="https://tifa-233.xyz/tags/%E5%89%8D%E7%BC%80%E5%92%8C/"/>
+    
+    <category term="最小公倍数" scheme="https://tifa-233.xyz/tags/%E6%9C%80%E5%B0%8F%E5%85%AC%E5%80%8D%E6%95%B0/"/>
     
     <category term="树形DP" scheme="https://tifa-233.xyz/tags/%E6%A0%91%E5%BD%A2DP/"/>
     
@@ -811,39 +844,6 @@ M834 80h400000v40h-400000z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/s
     <category term="广义连续统假设" scheme="https://tifa-233.xyz/tags/%E5%B9%BF%E4%B9%89%E8%BF%9E%E7%BB%AD%E7%BB%9F%E5%81%87%E8%AE%BE/"/>
     
     <category term="ZF公理系统" scheme="https://tifa-233.xyz/tags/ZF%E5%85%AC%E7%90%86%E7%B3%BB%E7%BB%9F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>集合论02 - 关系, Zorn 引理</title>
-    <link href="https://tifa-233.xyz/article/set-theory/0002/"/>
-    <id>https://tifa-233.xyz/article/set-theory/0002/</id>
-    <published>2021-03-27T09:35:32.000Z</published>
-    <updated>2021-04-28T13:31:55.731Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;本篇主要介绍一些常见的关系与 Zorn 引理&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="笔记" scheme="https://tifa-233.xyz/categories/%E7%AC%94%E8%AE%B0/"/>
-    
-    <category term="数学" scheme="https://tifa-233.xyz/categories/%E7%AC%94%E8%AE%B0/%E6%95%B0%E5%AD%A6/"/>
-    
-    <category term="集合论" scheme="https://tifa-233.xyz/categories/%E7%AC%94%E8%AE%B0/%E6%95%B0%E5%AD%A6/%E9%9B%86%E5%90%88%E8%AE%BA/"/>
-    
-    
-    <category term="笔记" scheme="https://tifa-233.xyz/tags/%E7%AC%94%E8%AE%B0/"/>
-    
-    <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
-    
-    <category term="集合论" scheme="https://tifa-233.xyz/tags/%E9%9B%86%E5%90%88%E8%AE%BA/"/>
-    
-    <category term="关系" scheme="https://tifa-233.xyz/tags/%E5%85%B3%E7%B3%BB/"/>
-    
-    <category term="二元关系" scheme="https://tifa-233.xyz/tags/%E4%BA%8C%E5%85%83%E5%85%B3%E7%B3%BB/"/>
-    
-    <category term="等价关系" scheme="https://tifa-233.xyz/tags/%E7%AD%89%E4%BB%B7%E5%85%B3%E7%B3%BB/"/>
     
   </entry>
   

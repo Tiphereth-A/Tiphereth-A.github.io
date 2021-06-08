@@ -1,3 +1,4 @@
+https://tifa-233.xyz/article/count-of-gcd/
 https://tifa-233.xyz/article/luogu-p1829/
 https://tifa-233.xyz/article/luogu-p5177/
 https://tifa-233.xyz/article/luogu-p4861/
@@ -12,4 +13,3 @@ https://tifa-233.xyz/article/gplt2021-l3-3/
 https://tifa-233.xyz/article/powerful-num/
 https://tifa-233.xyz/article/draft/0016/
 https://tifa-233.xyz/article/codeforces-1139-d/
-https://tifa-233.xyz/article/lq2021-p1/

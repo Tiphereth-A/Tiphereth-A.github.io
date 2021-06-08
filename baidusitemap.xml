@@ -1,6 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://tifa-233.xyz/article/count-of-gcd/</loc>
+    <lastmod>2021-06-08</lastmod>
+  </url>
+  <url>
+    <loc>https://tifa-233.xyz/article/cantor-exp/</loc>
+    <lastmod>2021-06-08</lastmod>
+  </url>
+  <url>
+    <loc>https://tifa-233.xyz/article/codeforces-501-d/</loc>
+    <lastmod>2021-06-08</lastmod>
+  </url>
+  <url>
+    <loc>https://tifa-233.xyz/article/contents/draft/</loc>
+    <lastmod>2021-06-06</lastmod>
+  </url>
+  <url>
+    <loc>https://tifa-233.xyz/article/draft/0004/</loc>
+    <lastmod>2021-06-06</lastmod>
+  </url>
+  <url>
     <loc>https://tifa-233.xyz/article/luogu-p3524/</loc>
     <lastmod>2021-06-06</lastmod>
   </url>
@@ -95,10 +115,6 @@
   <url>
     <loc>https://tifa-233.xyz/article/linear-space/</loc>
     <lastmod>2021-05-24</lastmod>
-  </url>
-  <url>
-    <loc>https://tifa-233.xyz/article/cantor_exp/</loc>
-    <lastmod>2021-05-21</lastmod>
   </url>
   <url>
     <loc>https://tifa-233.xyz/article/lq2021-p1/</loc>
@@ -249,16 +265,8 @@
     <lastmod>2021-04-17</lastmod>
   </url>
   <url>
-    <loc>https://tifa-233.xyz/article/codeforces-501-d/</loc>
-    <lastmod>2021-04-17</lastmod>
-  </url>
-  <url>
     <loc>https://tifa-233.xyz/article/test-admonitions/</loc>
     <lastmod>2021-04-05</lastmod>
-  </url>
-  <url>
-    <loc>https://tifa-233.xyz/article/contents/draft/</loc>
-    <lastmod>2021-03-28</lastmod>
   </url>
   <url>
     <loc>https://tifa-233.xyz/article/draft/0008/</loc>
@@ -275,10 +283,6 @@
   <url>
     <loc>https://tifa-233.xyz/article/abc-184/</loc>
     <lastmod>2021-02-02</lastmod>
-  </url>
-  <url>
-    <loc>https://tifa-233.xyz/article/draft/0004/</loc>
-    <lastmod>2021-02-01</lastmod>
   </url>
   <url>
     <loc>https://tifa-233.xyz/article/draft/0003/</loc>
@@ -353,11 +357,11 @@
     <lastmod>2020-12-06</lastmod>
   </url>
   <url>
-    <loc>https://tifa-233.xyz/article/sa-poj-1528/</loc>
+    <loc>https://tifa-233.xyz/article/sa-poj-1381/</loc>
     <lastmod>2020-12-06</lastmod>
   </url>
   <url>
-    <loc>https://tifa-233.xyz/article/sa-poj-1381/</loc>
+    <loc>https://tifa-233.xyz/article/sa-poj-1528/</loc>
     <lastmod>2020-12-06</lastmod>
   </url>
   <url>
@@ -409,11 +413,11 @@
     <lastmod>2020-11-22</lastmod>
   </url>
   <url>
-    <loc>https://tifa-233.xyz/article/luogu-p2413/</loc>
+    <loc>https://tifa-233.xyz/article/luogu-p2480/</loc>
     <lastmod>2020-11-22</lastmod>
   </url>
   <url>
-    <loc>https://tifa-233.xyz/article/luogu-p2480/</loc>
+    <loc>https://tifa-233.xyz/article/luogu-p2413/</loc>
     <lastmod>2020-11-22</lastmod>
   </url>
   <url>
