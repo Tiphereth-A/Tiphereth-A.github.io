@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://tifa-233.xyz/article/contents/draft/</loc>
-    <lastmod>2021-07-11</lastmod>
-  </url>
-  <url>
     <loc>https://tifa-233.xyz/article/draft/0018/</loc>
-    <lastmod>2021-07-11</lastmod>
-  </url>
-  <url>
-    <loc>https://tifa-233.xyz/article/contents/numanys-exp/</loc>
     <lastmod>2021-07-11</lastmod>
   </url>
   <url>
@@ -30,6 +22,14 @@
   </url>
   <url>
     <loc>https://tifa-233.xyz/article/draft/0011/</loc>
+    <lastmod>2021-07-11</lastmod>
+  </url>
+  <url>
+    <loc>https://tifa-233.xyz/article/contents/draft/</loc>
+    <lastmod>2021-07-11</lastmod>
+  </url>
+  <url>
+    <loc>https://tifa-233.xyz/article/contents/numanys-exp/</loc>
     <lastmod>2021-07-11</lastmod>
   </url>
   <url>
@@ -397,11 +397,11 @@
     <lastmod>2020-12-06</lastmod>
   </url>
   <url>
-    <loc>https://tifa-233.xyz/article/sa-poj-1528/</loc>
+    <loc>https://tifa-233.xyz/article/sa-poj-1381/</loc>
     <lastmod>2020-12-06</lastmod>
   </url>
   <url>
-    <loc>https://tifa-233.xyz/article/sa-poj-1381/</loc>
+    <loc>https://tifa-233.xyz/article/sa-poj-1528/</loc>
     <lastmod>2020-12-06</lastmod>
   </url>
   <url>
@@ -449,19 +449,19 @@
     <lastmod>2020-11-22</lastmod>
   </url>
   <url>
-    <loc>https://tifa-233.xyz/article/luogu-p2480/</loc>
-    <lastmod>2020-11-22</lastmod>
-  </url>
-  <url>
     <loc>https://tifa-233.xyz/article/luogu-p2413/</loc>
     <lastmod>2020-11-22</lastmod>
   </url>
   <url>
-    <loc>https://tifa-233.xyz/article/mhchem-function/</loc>
+    <loc>https://tifa-233.xyz/article/luogu-p2480/</loc>
     <lastmod>2020-11-22</lastmod>
   </url>
   <url>
     <loc>https://tifa-233.xyz/article/luogu-p5462/</loc>
+    <lastmod>2020-11-22</lastmod>
+  </url>
+  <url>
+    <loc>https://tifa-233.xyz/article/mhchem-function/</loc>
     <lastmod>2020-11-22</lastmod>
   </url>
   <url>
