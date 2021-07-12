@@ -6,7 +6,7 @@
   <link href="https://tifa-233.xyz/atom.xml" rel="self"/>
   
   <link href="https://tifa-233.xyz/"/>
-  <updated>2021-07-12T14:13:12.271Z</updated>
+  <updated>2021-07-12T14:19:01.597Z</updated>
   <id>https://tifa-233.xyz/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>题解 - [POJ 3361] Gaussian Prime Factors</title>
+    <title>题解 - [POJ 3734] Gaussian Prime Factors</title>
     <link href="https://tifa-233.xyz/article/poj-3734/"/>
     <id>https://tifa-233.xyz/article/poj-3734/</id>
     <published>2021-07-12T13:33:51.000Z</published>
-    <updated>2021-07-12T14:13:12.271Z</updated>
+    <updated>2021-07-12T14:19:01.597Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://vjudge.net/problem/POJ-3734/origin&quot;&gt;题目链接&lt;/a&gt;&lt;/p&gt;</summary>
