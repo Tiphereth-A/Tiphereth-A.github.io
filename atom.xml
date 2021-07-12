@@ -6,7 +6,7 @@
   <link href="https://tifa-233.xyz/atom.xml" rel="self"/>
   
   <link href="https://tifa-233.xyz/"/>
-  <updated>2021-07-12T14:19:01.597Z</updated>
+  <updated>2021-07-12T14:51:03.350Z</updated>
   <id>https://tifa-233.xyz/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://tifa-233.xyz/article/poj-3734/"/>
     <id>https://tifa-233.xyz/article/poj-3734/</id>
     <published>2021-07-12T13:33:51.000Z</published>
-    <updated>2021-07-12T14:19:01.597Z</updated>
+    <updated>2021-07-12T14:51:03.350Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://vjudge.net/problem/POJ-3734/origin&quot;&gt;题目链接&lt;/a&gt;&lt;/p&gt;</summary>
@@ -39,7 +39,11 @@
     
     <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
     
+    <category term="DP" scheme="https://tifa-233.xyz/tags/DP/"/>
+    
     <category term="组合数学" scheme="https://tifa-233.xyz/tags/%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/"/>
+    
+    <category term="快速幂" scheme="https://tifa-233.xyz/tags/%E5%BF%AB%E9%80%9F%E5%B9%82/"/>
     
     <category term="容斥定理" scheme="https://tifa-233.xyz/tags/%E5%AE%B9%E6%96%A5%E5%AE%9A%E7%90%86/"/>
     
@@ -52,6 +56,8 @@
     <category term="二项式定理" scheme="https://tifa-233.xyz/tags/%E4%BA%8C%E9%A1%B9%E5%BC%8F%E5%AE%9A%E7%90%86/"/>
     
     <category term="多项式定理" scheme="https://tifa-233.xyz/tags/%E5%A4%9A%E9%A1%B9%E5%BC%8F%E5%AE%9A%E7%90%86/"/>
+    
+    <category term="矩阵快速幂" scheme="https://tifa-233.xyz/tags/%E7%9F%A9%E9%98%B5%E5%BF%AB%E9%80%9F%E5%B9%82/"/>
     
   </entry>
   
