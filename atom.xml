@@ -6,7 +6,7 @@
   <link href="https://tifa-233.xyz/atom.xml" rel="self"/>
   
   <link href="https://tifa-233.xyz/"/>
-  <updated>2021-07-28T13:46:36.115Z</updated>
+  <updated>2021-07-30T04:20:01.641Z</updated>
   <id>https://tifa-233.xyz/</id>
   
   <author>
@@ -21,11 +21,11 @@
     <link href="https://tifa-233.xyz/article/fast-io/"/>
     <id>https://tifa-233.xyz/article/fast-io/</id>
     <published>2021-07-28T13:40:03.000Z</published>
-    <updated>2021-07-28T13:46:36.115Z</updated>
+    <updated>2021-07-30T04:20:01.641Z</updated>
     
     
     <summary type="html">&lt;p&gt;实现了 有符号算术类型、无符号算术类型、C 风格字符串、&lt;code&gt;std::string&lt;/code&gt; 的读入和有符号算术类型、无符号算术类型、&lt;code&gt;char&lt;/code&gt;、&lt;code&gt;std::string&lt;/code&gt; 的输出&lt;/p&gt;
-&lt;p&gt;性能相当于 开了 O2、关闭流同步、解绑、不使用 &lt;code&gt;std::endl&lt;/code&gt; 等的 &lt;code&gt;std::cin&lt;/code&gt; / &lt;code&gt;std::cout&lt;/code&gt;, 实际上没什么应用价值, 就当作模板偏特化方面的练习了&lt;/p&gt;
+&lt;p&gt;实际上没什么应用价值, 开了 O2、关闭流同步、解绑、不使用 &lt;code&gt;std::endl&lt;/code&gt; 等的 &lt;code&gt;std::cin&lt;/code&gt; / &lt;code&gt;std::cout&lt;/code&gt; 的性能已经和本模板差不多了, 就当作模板偏特化方面的练习了,&lt;/p&gt;
 &lt;p&gt;若使用了 &lt;code&gt;FastIO::print()&lt;/code&gt;, 记得后面跟上 &lt;code&gt;FastIO::flush();&lt;/code&gt;&lt;/p&gt;</summary>
     
     
@@ -315,7 +315,7 @@
     <link href="https://tifa-233.xyz/article/count-of-gcd/"/>
     <id>https://tifa-233.xyz/article/count-of-gcd/</id>
     <published>2021-06-08T05:18:28.000Z</published>
-    <updated>2021-06-08T07:29:01.516Z</updated>
+    <updated>2021-08-04T12:45:23.502Z</updated>
     
     
     <summary type="html">&lt;p&gt;总结一些 Möbius 反演中一些关于 gcd 求和与计数问题的解法&lt;/p&gt;</summary>
