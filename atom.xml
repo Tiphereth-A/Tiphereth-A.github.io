@@ -6,7 +6,7 @@
   <link href="https://tifa-233.xyz/atom.xml" rel="self"/>
   
   <link href="https://tifa-233.xyz/"/>
-  <updated>2021-08-04T13:28:13.612Z</updated>
+  <updated>2021-09-13T09:47:36.277Z</updated>
   <id>https://tifa-233.xyz/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://tifa-233.xyz/article/fast-io/"/>
     <id>https://tifa-233.xyz/article/fast-io/</id>
     <published>2021-07-28T13:40:03.000Z</published>
-    <updated>2021-08-04T13:28:13.612Z</updated>
+    <updated>2021-09-13T09:47:36.277Z</updated>
     
     
     <summary type="html">&lt;p&gt;实现了 有符号算术类型、无符号算术类型、C 风格字符串、&lt;code&gt;std::string&lt;/code&gt; 的读入和有符号算术类型、无符号算术类型、&lt;code&gt;char&lt;/code&gt;、&lt;code&gt;std::string&lt;/code&gt; 的输出&lt;/p&gt;</summary>
@@ -112,7 +112,7 @@
     <link href="https://tifa-233.xyz/article/hfm-tree/"/>
     <id>https://tifa-233.xyz/article/hfm-tree/</id>
     <published>2021-07-15T10:41:12.000Z</published>
-    <updated>2021-07-15T11:30:09.206Z</updated>
+    <updated>2021-09-18T05:23:13.329Z</updated>
     
     
     <summary type="html">&lt;p&gt;Huffman 编码是一种基于 Huffman 树的, 按字符概率构造的, 能保证编码平均长度最短的编码方式&lt;/p&gt;</summary>
