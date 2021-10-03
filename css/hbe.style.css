@@ -354,7 +354,7 @@
 /* flip theme {{{ */
 .hbe-input-field-flip {
 	width: 100%;
-	background-color:  rgba(130,130,130,0.1);
+	background-color: #d0d1d0;
 	border: 2px solid transparent;
 	-webkit-transition: background-color 0.25s, border-color 0.25s;
 	transition: background-color 0.25s, border-color 0.25s;
