@@ -6,7 +6,7 @@
   <link href="https://tifa-233.xyz/atom.xml" rel="self"/>
   
   <link href="https://tifa-233.xyz/"/>
-  <updated>2021-10-01T15:47:22.004Z</updated>
+  <updated>2021-10-04T11:29:34.751Z</updated>
   <id>https://tifa-233.xyz/</id>
   
   <author>
@@ -15,6 +15,47 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>题解 - 洛谷 10 月月赛 II &amp; JROI R3</title>
+    <link href="https://tifa-233.xyz/article/lgr-094/"/>
+    <id>https://tifa-233.xyz/article/lgr-094/</id>
+    <published>2021-10-04T10:26:00.000Z</published>
+    <updated>2021-10-04T11:29:34.751Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;比赛链接&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.luogu.com.cn/contest/52665&quot;&gt;Div. 2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.luogu.com.cn/contest/52664&quot;&gt;Div. 1&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="程序设计" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
+    
+    <category term="题解" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E9%A2%98%E8%A7%A3/"/>
+    
+    
+    <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
+    
+    <category term="算法" scheme="https://tifa-233.xyz/tags/%E7%AE%97%E6%B3%95/"/>
+    
+    <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
+    
+    <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
+    
+    <category term="数据结构" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    
+    <category term="树" scheme="https://tifa-233.xyz/tags/%E6%A0%91/"/>
+    
+    <category term="洛谷" scheme="https://tifa-233.xyz/tags/%E6%B4%9B%E8%B0%B7/"/>
+    
+    <category term="洛谷月赛" scheme="https://tifa-233.xyz/tags/%E6%B4%9B%E8%B0%B7%E6%9C%88%E8%B5%9B/"/>
+    
+    <category term="交互题" scheme="https://tifa-233.xyz/tags/%E4%BA%A4%E4%BA%92%E9%A2%98/"/>
+    
+  </entry>
   
   <entry>
     <title>随笔 - Laplace算子的旋转不变性</title>
@@ -684,32 +725,6 @@
     <category term="普通生成函数" scheme="https://tifa-233.xyz/tags/%E6%99%AE%E9%80%9A%E7%94%9F%E6%88%90%E5%87%BD%E6%95%B0/"/>
     
     <category term="Dirichlet生成函数" scheme="https://tifa-233.xyz/tags/Dirichlet%E7%94%9F%E6%88%90%E5%87%BD%E6%95%B0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>生成函数笔记 - 目录页 (更新中)</title>
-    <link href="https://tifa-233.xyz/article/contents/gfology/"/>
-    <id>https://tifa-233.xyz/article/contents/gfology/</id>
-    <published>2021-04-28T05:15:32.000Z</published>
-    <updated>2021-04-28T06:05:12.207Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;本篇文章为生成函数笔记的目录&lt;/p&gt;
-&lt;p&gt;生成函数是组合数学中的重要内容之一&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="目录" scheme="https://tifa-233.xyz/categories/%E7%9B%AE%E5%BD%95/"/>
-    
-    
-    <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
-    
-    <category term="组合数学" scheme="https://tifa-233.xyz/tags/%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/"/>
-    
-    <category term="生成函数" scheme="https://tifa-233.xyz/tags/%E7%94%9F%E6%88%90%E5%87%BD%E6%95%B0/"/>
-    
-    <category term="目录" scheme="https://tifa-233.xyz/tags/%E7%9B%AE%E5%BD%95/"/>
     
   </entry>
   
