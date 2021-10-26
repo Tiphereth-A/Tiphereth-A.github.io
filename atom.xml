@@ -6,7 +6,7 @@
   <link href="https://tifa-233.xyz/atom.xml" rel="self"/>
   
   <link href="https://tifa-233.xyz/"/>
-  <updated>2021-10-26T15:00:31.923Z</updated>
+  <updated>2021-10-26T16:13:56.662Z</updated>
   <id>https://tifa-233.xyz/</id>
   
   <author>
@@ -21,11 +21,13 @@
     <link href="https://tifa-233.xyz/article/modint/"/>
     <id>https://tifa-233.xyz/article/modint/</id>
     <published>2021-10-26T14:44:15.000Z</published>
-    <updated>2021-10-26T15:00:31.923Z</updated>
+    <updated>2021-10-26T16:13:56.662Z</updated>
     
     
     <summary type="html">&lt;p&gt;即 &lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;msub&gt;&lt;mi mathvariant=&quot;double-struck&quot;&gt;Z&lt;/mi&gt;&lt;mi&gt;m&lt;/mi&gt;&lt;/msub&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;\Z_m&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.83889em;vertical-align:-0.15em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord mathbb&quot;&gt;Z&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;msupsub&quot;&gt;&lt;span class=&quot;vlist-t vlist-t2&quot;&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.151392em;&quot;&gt;&lt;span style=&quot;top:-2.5500000000000003em;margin-right:0.05em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:2.7em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;sizing reset-size6 size3 mtight&quot;&gt;&lt;span class=&quot;mord mathdefault mtight&quot;&gt;m&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-s&quot;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.15em;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;基于 C++14 标准, 实现了四则运算, 逆元与对输入输出流的支持&lt;/p&gt;</summary>
+&lt;p&gt;基于 C++14 标准, 实现了四则运算, 逆元与对输入输出流的支持&lt;/p&gt;
+&lt;div class=&quot;admonition warning&quot;&gt;&lt;p class=&quot;admonition-title&quot;&gt;warning&lt;/p&gt;&lt;p&gt;仅在 G++ 下测试过&lt;/p&gt;
+&lt;/div&gt;</summary>
     
     
     
@@ -37,6 +39,8 @@
     <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
     
     <category term="模板" scheme="https://tifa-233.xyz/tags/%E6%A8%A1%E6%9D%BF/"/>
+    
+    <category term="C++" scheme="https://tifa-233.xyz/tags/C/"/>
     
   </entry>
   
@@ -85,7 +89,7 @@
     <link href="https://tifa-233.xyz/article/rpow/"/>
     <id>https://tifa-233.xyz/article/rpow/</id>
     <published>2021-10-24T12:34:44.000Z</published>
-    <updated>2021-10-24T14:03:35.828Z</updated>
+    <updated>2021-10-26T15:13:15.882Z</updated>
     
     
     <summary type="html">&lt;p&gt;光速幂是一种针对固定底数和模数的高速求幂算法, 其基本思路和BSGS相同&lt;/p&gt;</summary>
@@ -104,6 +108,8 @@
     <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
     
     <category term="模板" scheme="https://tifa-233.xyz/tags/%E6%A8%A1%E6%9D%BF/"/>
+    
+    <category term="C++" scheme="https://tifa-233.xyz/tags/C/"/>
     
     <category term="光速幂" scheme="https://tifa-233.xyz/tags/%E5%85%89%E9%80%9F%E5%B9%82/"/>
     
@@ -137,9 +143,9 @@
     
     <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
     
-    <category term="数据结构" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
-    
     <category term="模拟" scheme="https://tifa-233.xyz/tags/%E6%A8%A1%E6%8B%9F/"/>
+    
+    <category term="数据结构" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
     
     <category term="计算几何" scheme="https://tifa-233.xyz/tags/%E8%AE%A1%E7%AE%97%E5%87%A0%E4%BD%95/"/>
     
@@ -400,7 +406,7 @@ M834 80h400000v40h-400000z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/s
     <link href="https://tifa-233.xyz/article/ud-heap/"/>
     <id>https://tifa-233.xyz/article/ud-heap/</id>
     <published>2021-07-15T11:34:54.000Z</published>
-    <updated>2021-07-15T11:37:20.130Z</updated>
+    <updated>2021-10-26T15:13:26.575Z</updated>
     
     
     <summary type="html">&lt;p&gt;一个大根堆一个小根堆怼一起, 可以解决动态求中位数问题&lt;/p&gt;</summary>
@@ -417,6 +423,8 @@ M834 80h400000v40h-400000z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/s
     <category term="数据结构" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
     
     <category term="模板" scheme="https://tifa-233.xyz/tags/%E6%A8%A1%E6%9D%BF/"/>
+    
+    <category term="C++" scheme="https://tifa-233.xyz/tags/C/"/>
     
     <category term="堆" scheme="https://tifa-233.xyz/tags/%E5%A0%86/"/>
     
