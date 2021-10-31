@@ -6,7 +6,7 @@
   <link href="https://tifa-233.xyz/atom.xml" rel="self"/>
   
   <link href="https://tifa-233.xyz/"/>
-  <updated>2021-10-29T17:08:34.704Z</updated>
+  <updated>2021-10-31T14:34:00.135Z</updated>
   <id>https://tifa-233.xyz/</id>
   
   <author>
@@ -15,6 +15,39 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>模板 - 矩阵</title>
+    <link href="https://tifa-233.xyz/article/matrix/"/>
+    <id>https://tifa-233.xyz/article/matrix/</id>
+    <published>2021-10-31T13:28:15.000Z</published>
+    <updated>2021-10-31T14:34:00.135Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;基于 C++14 标准, 实现了矩阵的四则运算, 求逆, 转置, 秩, 行列式与对输入输出流的支持&lt;/p&gt;
+&lt;div class=&quot;admonition warning&quot;&gt;&lt;p class=&quot;admonition-title&quot;&gt;warning&lt;/p&gt;&lt;p&gt;仅在 G++ 下测试过&lt;/p&gt;
+&lt;/div&gt;</summary>
+    
+    
+    
+    <category term="程序设计" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
+    
+    <category term="模板" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E6%A8%A1%E6%9D%BF/"/>
+    
+    
+    <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
+    
+    <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
+    
+    <category term="模板" scheme="https://tifa-233.xyz/tags/%E6%A8%A1%E6%9D%BF/"/>
+    
+    <category term="C++" scheme="https://tifa-233.xyz/tags/C/"/>
+    
+    <category term="矩阵" scheme="https://tifa-233.xyz/tags/%E7%9F%A9%E9%98%B5/"/>
+    
+    <category term="Gauss消去法" scheme="https://tifa-233.xyz/tags/Gauss%E6%B6%88%E5%8E%BB%E6%B3%95/"/>
+    
+  </entry>
   
   <entry>
     <title>题解 - [Luogu P2011] 计算电压</title>
@@ -35,9 +68,9 @@
     
     <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
     
-    <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
-    
     <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
+    
+    <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
     
     <category term="线性方程组" scheme="https://tifa-233.xyz/tags/%E7%BA%BF%E6%80%A7%E6%96%B9%E7%A8%8B%E7%BB%84/"/>
     
@@ -78,9 +111,9 @@
     
     <category term="动态规划(DP)" scheme="https://tifa-233.xyz/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92-DP/"/>
     
-    <category term="状态压缩" scheme="https://tifa-233.xyz/tags/%E7%8A%B6%E6%80%81%E5%8E%8B%E7%BC%A9/"/>
-    
     <category term="洛谷" scheme="https://tifa-233.xyz/tags/%E6%B4%9B%E8%B0%B7/"/>
+    
+    <category term="状态压缩" scheme="https://tifa-233.xyz/tags/%E7%8A%B6%E6%80%81%E5%8E%8B%E7%BC%A9/"/>
     
     <category term="NOIp" scheme="https://tifa-233.xyz/tags/NOIp/"/>
     
@@ -95,7 +128,7 @@
     <link href="https://tifa-233.xyz/article/modint/"/>
     <id>https://tifa-233.xyz/article/modint/</id>
     <published>2021-10-26T14:44:15.000Z</published>
-    <updated>2021-10-26T16:15:24.098Z</updated>
+    <updated>2021-10-31T14:00:52.895Z</updated>
     
     
     <summary type="html">&lt;p&gt;即 &lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;msub&gt;&lt;mi mathvariant=&quot;double-struck&quot;&gt;Z&lt;/mi&gt;&lt;mi&gt;m&lt;/mi&gt;&lt;/msub&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;\Z_m&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.83889em;vertical-align:-0.15em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord mathbb&quot;&gt;Z&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;msupsub&quot;&gt;&lt;span class=&quot;vlist-t vlist-t2&quot;&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.151392em;&quot;&gt;&lt;span style=&quot;top:-2.5500000000000003em;margin-right:0.05em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:2.7em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;sizing reset-size6 size3 mtight&quot;&gt;&lt;span class=&quot;mord mathdefault mtight&quot;&gt;m&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-s&quot;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.15em;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
@@ -111,6 +144,8 @@
     
     
     <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
+    
+    <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
     
     <category term="模板" scheme="https://tifa-233.xyz/tags/%E6%A8%A1%E6%9D%BF/"/>
     
@@ -138,9 +173,9 @@
     
     <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
     
-    <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
-    
     <category term="算法" scheme="https://tifa-233.xyz/tags/%E7%AE%97%E6%B3%95/"/>
+    
+    <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
     
     <category term="动态规划(DP)" scheme="https://tifa-233.xyz/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92-DP/"/>
     
@@ -209,6 +244,12 @@
     
     <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
     
+    <category term="算法" scheme="https://tifa-233.xyz/tags/%E7%AE%97%E6%B3%95/"/>
+    
+    <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
+    
+    <category term="图论" scheme="https://tifa-233.xyz/tags/%E5%9B%BE%E8%AE%BA/"/>
+    
     <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
     
     <category term="模拟" scheme="https://tifa-233.xyz/tags/%E6%A8%A1%E6%8B%9F/"/>
@@ -216,12 +257,6 @@
     <category term="数据结构" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
     
     <category term="计算几何" scheme="https://tifa-233.xyz/tags/%E8%AE%A1%E7%AE%97%E5%87%A0%E4%BD%95/"/>
-    
-    <category term="算法" scheme="https://tifa-233.xyz/tags/%E7%AE%97%E6%B3%95/"/>
-    
-    <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
-    
-    <category term="图论" scheme="https://tifa-233.xyz/tags/%E5%9B%BE%E8%AE%BA/"/>
     
     <category term="动态规划(DP)" scheme="https://tifa-233.xyz/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92-DP/"/>
     
@@ -364,9 +399,9 @@ M834 80h400000v40h-400000z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/s
     
     <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
     
-    <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
-    
     <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
+    
+    <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
     
     <category term="数论" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E8%AE%BA/"/>
     
@@ -401,13 +436,13 @@ M834 80h400000v40h-400000z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/s
     
     <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
     
-    <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
-    
-    <category term="数据结构" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
-    
     <category term="算法" scheme="https://tifa-233.xyz/tags/%E7%AE%97%E6%B3%95/"/>
     
     <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
+    
+    <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
+    
+    <category term="数据结构" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
     
     <category term="树" scheme="https://tifa-233.xyz/tags/%E6%A0%91/"/>
     
@@ -564,11 +599,11 @@ M834 80h400000v40h-400000z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/s
     
     <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
     
-    <category term="数据结构" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
-    
     <category term="笔记" scheme="https://tifa-233.xyz/tags/%E7%AC%94%E8%AE%B0/"/>
     
     <category term="算法" scheme="https://tifa-233.xyz/tags/%E7%AE%97%E6%B3%95/"/>
+    
+    <category term="数据结构" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
     
     <category term="树" scheme="https://tifa-233.xyz/tags/%E6%A0%91/"/>
     
@@ -599,9 +634,9 @@ M834 80h400000v40h-400000z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/s
     
     <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
     
-    <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
-    
     <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
+    
+    <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
     
     <category term="动态规划(DP)" scheme="https://tifa-233.xyz/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92-DP/"/>
     
@@ -743,37 +778,6 @@ M834 80h400000v40h-400000z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/s
     <category term="改进平方根法" scheme="https://tifa-233.xyz/tags/%E6%94%B9%E8%BF%9B%E5%B9%B3%E6%96%B9%E6%A0%B9%E6%B3%95/"/>
     
     <category term="追赶法" scheme="https://tifa-233.xyz/tags/%E8%BF%BD%E8%B5%B6%E6%B3%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>笔记 - 关于 gcd 求和与计数的问题</title>
-    <link href="https://tifa-233.xyz/article/count-of-gcd/"/>
-    <id>https://tifa-233.xyz/article/count-of-gcd/</id>
-    <published>2021-06-08T05:18:28.000Z</published>
-    <updated>2021-08-04T12:45:23.502Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;总结一些 Möbius 反演中一些关于 gcd 求和与计数问题的解法&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="笔记" scheme="https://tifa-233.xyz/categories/%E7%AC%94%E8%AE%B0/"/>
-    
-    <category term="数学" scheme="https://tifa-233.xyz/categories/%E7%AC%94%E8%AE%B0/%E6%95%B0%E5%AD%A6/"/>
-    
-    
-    <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
-    
-    <category term="笔记" scheme="https://tifa-233.xyz/tags/%E7%AC%94%E8%AE%B0/"/>
-    
-    <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
-    
-    <category term="数论" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E8%AE%BA/"/>
-    
-    <category term="最大公约数" scheme="https://tifa-233.xyz/tags/%E6%9C%80%E5%A4%A7%E5%85%AC%E7%BA%A6%E6%95%B0/"/>
-    
-    <category term="Möbius反演" scheme="https://tifa-233.xyz/tags/Mobius%E5%8F%8D%E6%BC%94/"/>
     
   </entry>
   

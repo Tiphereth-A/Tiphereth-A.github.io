@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://tifa-233.xyz/article/matrix/</loc>
+    <lastmod>2021-10-31</lastmod>
+  </url>
+  <url>
+    <loc>https://tifa-233.xyz/article/modint/</loc>
+    <lastmod>2021-10-31</lastmod>
+  </url>
+  <url>
     <loc>https://tifa-233.xyz/article/luogu-p2011/</loc>
     <lastmod>2021-10-29</lastmod>
   </url>
@@ -67,10 +75,6 @@
   <url>
     <loc>https://tifa-233.xyz/article/luogu-p3951/</loc>
     <lastmod>2021-10-28</lastmod>
-  </url>
-  <url>
-    <loc>https://tifa-233.xyz/article/modint/</loc>
-    <lastmod>2021-10-26</lastmod>
   </url>
   <url>
     <loc>https://tifa-233.xyz/article/ud-heap/</loc>
@@ -529,11 +533,11 @@
     <lastmod>2020-11-22</lastmod>
   </url>
   <url>
-    <loc>https://tifa-233.xyz/article/luogu-p2413/</loc>
+    <loc>https://tifa-233.xyz/article/luogu-p2480/</loc>
     <lastmod>2020-11-22</lastmod>
   </url>
   <url>
-    <loc>https://tifa-233.xyz/article/luogu-p2480/</loc>
+    <loc>https://tifa-233.xyz/article/luogu-p2413/</loc>
     <lastmod>2020-11-22</lastmod>
   </url>
   <url>
