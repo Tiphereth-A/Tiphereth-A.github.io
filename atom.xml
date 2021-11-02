@@ -54,7 +54,7 @@
     <link href="https://tifa-233.xyz/article/matrix/"/>
     <id>https://tifa-233.xyz/article/matrix/</id>
     <published>2021-10-31T13:28:15.000Z</published>
-    <updated>2021-11-01T04:57:56.822Z</updated>
+    <updated>2021-11-02T10:49:12.940Z</updated>
     
     
     <summary type="html">&lt;p&gt;基于 C++14 标准, 实现了矩阵的四则运算, 求逆, 转置, 秩, 行列式与对输入输出流的支持&lt;/p&gt;
@@ -103,9 +103,9 @@
     
     <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
     
-    <category term="线性方程组" scheme="https://tifa-233.xyz/tags/%E7%BA%BF%E6%80%A7%E6%96%B9%E7%A8%8B%E7%BB%84/"/>
-    
     <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
+    
+    <category term="线性方程组" scheme="https://tifa-233.xyz/tags/%E7%BA%BF%E6%80%A7%E6%96%B9%E7%A8%8B%E7%BB%84/"/>
     
     <category term="洛谷" scheme="https://tifa-233.xyz/tags/%E6%B4%9B%E8%B0%B7/"/>
     
@@ -262,7 +262,7 @@
     <link href="https://tifa-233.xyz/article/lzu-fhc1/"/>
     <id>https://tifa-233.xyz/article/lzu-fhc1/</id>
     <published>2021-10-24T12:15:45.000Z</published>
-    <updated>2021-10-29T16:53:09.035Z</updated>
+    <updated>2021-11-02T07:18:09.726Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://ojv6.lovelyanqi.com/contest/1000&quot;&gt;比赛链接&lt;/a&gt;&lt;/p&gt;
@@ -324,6 +324,8 @@
     <category term="光速幂" scheme="https://tifa-233.xyz/tags/%E5%85%89%E9%80%9F%E5%B9%82/"/>
     
     <category term="不动点" scheme="https://tifa-233.xyz/tags/%E4%B8%8D%E5%8A%A8%E7%82%B9/"/>
+    
+    <category term="二次剩余" scheme="https://tifa-233.xyz/tags/%E4%BA%8C%E6%AC%A1%E5%89%A9%E4%BD%99/"/>
     
   </entry>
   
@@ -673,11 +675,11 @@ M834 80h400000v40h-400000z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/s
     
     <category term="动态规划(DP)" scheme="https://tifa-233.xyz/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92-DP/"/>
     
-    <category term="组合数学" scheme="https://tifa-233.xyz/tags/%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/"/>
-    
     <category term="快速幂" scheme="https://tifa-233.xyz/tags/%E5%BF%AB%E9%80%9F%E5%B9%82/"/>
     
     <category term="容斥定理" scheme="https://tifa-233.xyz/tags/%E5%AE%B9%E6%96%A5%E5%AE%9A%E7%90%86/"/>
+    
+    <category term="组合数学" scheme="https://tifa-233.xyz/tags/%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/"/>
     
     <category term="POJ" scheme="https://tifa-233.xyz/tags/POJ/"/>
     
