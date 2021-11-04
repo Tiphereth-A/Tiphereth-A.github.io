@@ -1,6 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://tifa-233.xyz/article/draft/0004/</loc>
+    <lastmod>2021-11-04</lastmod>
+  </url>
+  <url>
+    <loc>https://tifa-233.xyz/article/draft/0003/</loc>
+    <lastmod>2021-11-04</lastmod>
+  </url>
+  <url>
+    <loc>https://tifa-233.xyz/article/draft/0002/</loc>
+    <lastmod>2021-11-04</lastmod>
+  </url>
+  <url>
+    <loc>https://tifa-233.xyz/article/draft/0022/</loc>
+    <lastmod>2021-11-04</lastmod>
+  </url>
+  <url>
+    <loc>https://tifa-233.xyz/article/contents/draft/</loc>
+    <lastmod>2021-11-04</lastmod>
+  </url>
+  <url>
+    <loc>https://tifa-233.xyz/article/loj-2286/</loc>
+    <lastmod>2021-11-03</lastmod>
+  </url>
+  <url>
     <loc>https://tifa-233.xyz/article/luogu-p3200/</loc>
     <lastmod>2021-11-03</lastmod>
   </url>
@@ -65,10 +89,6 @@
     <lastmod>2021-10-29</lastmod>
   </url>
   <url>
-    <loc>https://tifa-233.xyz/article/loj-2286/</loc>
-    <lastmod>2021-10-29</lastmod>
-  </url>
-  <url>
     <loc>https://tifa-233.xyz/article/codeforces-641-2/</loc>
     <lastmod>2021-10-29</lastmod>
   </url>
@@ -98,10 +118,6 @@
   </url>
   <url>
     <loc>https://tifa-233.xyz/article/draft/0014/</loc>
-    <lastmod>2021-10-26</lastmod>
-  </url>
-  <url>
-    <loc>https://tifa-233.xyz/article/contents/draft/</loc>
     <lastmod>2021-10-26</lastmod>
   </url>
   <url>
@@ -177,11 +193,11 @@
     <lastmod>2021-09-18</lastmod>
   </url>
   <url>
-    <loc>https://tifa-233.xyz/article/hdu-6152/</loc>
+    <loc>https://tifa-233.xyz/article/hfm-tree/</loc>
     <lastmod>2021-09-18</lastmod>
   </url>
   <url>
-    <loc>https://tifa-233.xyz/article/hfm-tree/</loc>
+    <loc>https://tifa-233.xyz/article/hdu-6152/</loc>
     <lastmod>2021-09-18</lastmod>
   </url>
   <url>
@@ -275,10 +291,6 @@
   <url>
     <loc>https://tifa-233.xyz/article/codeforces-501-d/</loc>
     <lastmod>2021-06-08</lastmod>
-  </url>
-  <url>
-    <loc>https://tifa-233.xyz/article/draft/0004/</loc>
-    <lastmod>2021-06-06</lastmod>
   </url>
   <url>
     <loc>https://tifa-233.xyz/article/luogu-p3524/</loc>
@@ -441,14 +453,6 @@
     <lastmod>2021-02-02</lastmod>
   </url>
   <url>
-    <loc>https://tifa-233.xyz/article/draft/0003/</loc>
-    <lastmod>2021-02-01</lastmod>
-  </url>
-  <url>
-    <loc>https://tifa-233.xyz/article/draft/0002/</loc>
-    <lastmod>2021-02-01</lastmod>
-  </url>
-  <url>
     <loc>https://tifa-233.xyz/article/draft/0001/</loc>
     <lastmod>2021-02-01</lastmod>
   </url>
@@ -481,11 +485,11 @@
     <lastmod>2020-12-16</lastmod>
   </url>
   <url>
-    <loc>https://tifa-233.xyz/article/poj-1850/</loc>
+    <loc>https://tifa-233.xyz/article/poj-1650/</loc>
     <lastmod>2020-12-06</lastmod>
   </url>
   <url>
-    <loc>https://tifa-233.xyz/article/poj-1650/</loc>
+    <loc>https://tifa-233.xyz/article/poj-1850/</loc>
     <lastmod>2020-12-06</lastmod>
   </url>
   <url>
