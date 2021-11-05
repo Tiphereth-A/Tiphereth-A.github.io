@@ -6,7 +6,7 @@
   <link href="https://tifa-233.xyz/atom.xml" rel="self"/>
   
   <link href="https://tifa-233.xyz/"/>
-  <updated>2021-11-04T12:57:22.896Z</updated>
+  <updated>2021-11-05T02:04:32.705Z</updated>
   <id>https://tifa-233.xyz/</id>
   
   <author>
@@ -17,17 +17,58 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>题解 - [Luogu P2277] [HNOI2003]24点游戏</title>
+    <link href="https://tifa-233.xyz/article/luogu-p2277/"/>
+    <id>https://tifa-233.xyz/article/luogu-p2277/</id>
+    <published>2021-11-04T17:01:36.000Z</published>
+    <updated>2021-11-05T02:04:32.705Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://www.luogu.com.cn/problem/P2277&quot;&gt;题目链接&lt;/a&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="程序设计" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
+    
+    <category term="题解" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E9%A2%98%E8%A7%A3/"/>
+    
+    
+    <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
+    
+    <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
+    
+    <category term="模拟" scheme="https://tifa-233.xyz/tags/%E6%A8%A1%E6%8B%9F/"/>
+    
+    <category term="暴力" scheme="https://tifa-233.xyz/tags/%E6%9A%B4%E5%8A%9B/"/>
+    
+    <category term="洛谷" scheme="https://tifa-233.xyz/tags/%E6%B4%9B%E8%B0%B7/"/>
+    
+    <category term="省选" scheme="https://tifa-233.xyz/tags/%E7%9C%81%E9%80%89/"/>
+    
+    <category term="HNOI" scheme="https://tifa-233.xyz/tags/HNOI/"/>
+    
+    <category term="hash" scheme="https://tifa-233.xyz/tags/hash/"/>
+    
+    <category term="排列" scheme="https://tifa-233.xyz/tags/%E6%8E%92%E5%88%97/"/>
+    
+    <category term="全排列" scheme="https://tifa-233.xyz/tags/%E5%85%A8%E6%8E%92%E5%88%97/"/>
+    
+    <category term="Cartesian积/Descartes积" scheme="https://tifa-233.xyz/tags/Cartesian%E7%A7%AF-Descartes%E7%A7%AF/"/>
+    
+  </entry>
+  
+  <entry>
     <title>随笔 - C 语言宏定义的一些进阶操作</title>
     <link href="https://tifa-233.xyz/article/draft/0022/"/>
     <id>https://tifa-233.xyz/article/draft/0022/</id>
     <published>2021-11-04T12:21:45.000Z</published>
-    <updated>2021-11-04T12:57:22.896Z</updated>
+    <updated>2021-11-05T01:03:22.669Z</updated>
     
     
     <summary type="html">&lt;p&gt;众所周知, C中宏定义是几乎图灵完备的, 所以我们可以整些花活, 比如:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;生成全排列&lt;/li&gt;
-&lt;li&gt;生成 Cartesian 积&lt;/li&gt;
+&lt;li&gt;生成 Cartesian 积 (Descartes 积)&lt;/li&gt;
 &lt;/ul&gt;</summary>
     
     
@@ -49,7 +90,7 @@
     
     <category term="全排列" scheme="https://tifa-233.xyz/tags/%E5%85%A8%E6%8E%92%E5%88%97/"/>
     
-    <category term="Cartesian积" scheme="https://tifa-233.xyz/tags/Cartesian%E7%A7%AF/"/>
+    <category term="Cartesian积/Descartes积" scheme="https://tifa-233.xyz/tags/Cartesian%E7%A7%AF-Descartes%E7%A7%AF/"/>
     
   </entry>
   
@@ -185,9 +226,9 @@
     
     <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
     
-    <category term="线性方程组" scheme="https://tifa-233.xyz/tags/%E7%BA%BF%E6%80%A7%E6%96%B9%E7%A8%8B%E7%BB%84/"/>
-    
     <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
+    
+    <category term="线性方程组" scheme="https://tifa-233.xyz/tags/%E7%BA%BF%E6%80%A7%E6%96%B9%E7%A8%8B%E7%BB%84/"/>
     
     <category term="洛谷" scheme="https://tifa-233.xyz/tags/%E6%B4%9B%E8%B0%B7/"/>
     
@@ -222,9 +263,9 @@
     
     <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
     
-    <category term="动态规划(DP)" scheme="https://tifa-233.xyz/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92-DP/"/>
-    
     <category term="剪枝" scheme="https://tifa-233.xyz/tags/%E5%89%AA%E6%9E%9D/"/>
+    
+    <category term="动态规划(DP)" scheme="https://tifa-233.xyz/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92-DP/"/>
     
     <category term="状态压缩" scheme="https://tifa-233.xyz/tags/%E7%8A%B6%E6%80%81%E5%8E%8B%E7%BC%A9/"/>
     
@@ -367,9 +408,9 @@
     
     <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
     
-    <category term="数据结构" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
-    
     <category term="模拟" scheme="https://tifa-233.xyz/tags/%E6%A8%A1%E6%8B%9F/"/>
+    
+    <category term="数据结构" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
     
     <category term="计算几何" scheme="https://tifa-233.xyz/tags/%E8%AE%A1%E7%AE%97%E5%87%A0%E4%BD%95/"/>
     
@@ -729,51 +770,6 @@ M834 80h400000v40h-400000z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/s
     <category term="Huffman树" scheme="https://tifa-233.xyz/tags/Huffman%E6%A0%91/"/>
     
     <category term="Huffman编码" scheme="https://tifa-233.xyz/tags/Huffman%E7%BC%96%E7%A0%81/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>题解 - [POJ 3734] Gaussian Prime Factors</title>
-    <link href="https://tifa-233.xyz/article/poj-3734/"/>
-    <id>https://tifa-233.xyz/article/poj-3734/</id>
-    <published>2021-07-12T13:33:51.000Z</published>
-    <updated>2021-10-29T16:53:09.037Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://vjudge.net/problem/POJ-3734/origin&quot;&gt;题目链接&lt;/a&gt;&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="程序设计" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
-    
-    <category term="题解" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E9%A2%98%E8%A7%A3/"/>
-    
-    
-    <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
-    
-    <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
-    
-    <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
-    
-    <category term="动态规划(DP)" scheme="https://tifa-233.xyz/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92-DP/"/>
-    
-    <category term="组合数学" scheme="https://tifa-233.xyz/tags/%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/"/>
-    
-    <category term="快速幂" scheme="https://tifa-233.xyz/tags/%E5%BF%AB%E9%80%9F%E5%B9%82/"/>
-    
-    <category term="容斥定理" scheme="https://tifa-233.xyz/tags/%E5%AE%B9%E6%96%A5%E5%AE%9A%E7%90%86/"/>
-    
-    <category term="POJ" scheme="https://tifa-233.xyz/tags/POJ/"/>
-    
-    <category term="生成函数" scheme="https://tifa-233.xyz/tags/%E7%94%9F%E6%88%90%E5%87%BD%E6%95%B0/"/>
-    
-    <category term="指数生成函数" scheme="https://tifa-233.xyz/tags/%E6%8C%87%E6%95%B0%E7%94%9F%E6%88%90%E5%87%BD%E6%95%B0/"/>
-    
-    <category term="二项式定理" scheme="https://tifa-233.xyz/tags/%E4%BA%8C%E9%A1%B9%E5%BC%8F%E5%AE%9A%E7%90%86/"/>
-    
-    <category term="多项式定理" scheme="https://tifa-233.xyz/tags/%E5%A4%9A%E9%A1%B9%E5%BC%8F%E5%AE%9A%E7%90%86/"/>
-    
-    <category term="矩阵快速幂" scheme="https://tifa-233.xyz/tags/%E7%9F%A9%E9%98%B5%E5%BF%AB%E9%80%9F%E5%B9%82/"/>
     
   </entry>
   
