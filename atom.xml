@@ -6,7 +6,7 @@
   <link href="https://tifa-233.xyz/atom.xml" rel="self"/>
   
   <link href="https://tifa-233.xyz/"/>
-  <updated>2021-11-08T11:08:19.740Z</updated>
+  <updated>2021-11-09T06:14:54.680Z</updated>
   <id>https://tifa-233.xyz/</id>
   
   <author>
@@ -15,6 +15,39 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>题解 - [Luogu P1337] [JSOI2004]平衡点 / 吊打XXX</title>
+    <link href="https://tifa-233.xyz/article/luogu-p1337/"/>
+    <id>https://tifa-233.xyz/article/luogu-p1337/</id>
+    <published>2021-11-09T06:02:15.000Z</published>
+    <updated>2021-11-09T06:14:54.680Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://www.luogu.com.cn/problem/P1337&quot;&gt;题目链接&lt;/a&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="程序设计" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
+    
+    <category term="题解" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E9%A2%98%E8%A7%A3/"/>
+    
+    
+    <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
+    
+    <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
+    
+    <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
+    
+    <category term="三分" scheme="https://tifa-233.xyz/tags/%E4%B8%89%E5%88%86/"/>
+    
+    <category term="洛谷" scheme="https://tifa-233.xyz/tags/%E6%B4%9B%E8%B0%B7/"/>
+    
+    <category term="省选" scheme="https://tifa-233.xyz/tags/%E7%9C%81%E9%80%89/"/>
+    
+    <category term="JSOI" scheme="https://tifa-233.xyz/tags/JSOI/"/>
+    
+  </entry>
   
   <entry>
     <title>题解 - [Luogu P3768] 简单的数学题</title>
@@ -163,9 +196,9 @@
     
     <category term="洛谷" scheme="https://tifa-233.xyz/tags/%E6%B4%9B%E8%B0%B7/"/>
     
-    <category term="递推" scheme="https://tifa-233.xyz/tags/%E9%80%92%E6%8E%A8/"/>
-    
     <category term="省选" scheme="https://tifa-233.xyz/tags/%E7%9C%81%E9%80%89/"/>
+    
+    <category term="递推" scheme="https://tifa-233.xyz/tags/%E9%80%92%E6%8E%A8/"/>
     
     <category term="HNOI" scheme="https://tifa-233.xyz/tags/HNOI/"/>
     
@@ -262,9 +295,9 @@
     
     <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
     
-    <category term="线性方程组" scheme="https://tifa-233.xyz/tags/%E7%BA%BF%E6%80%A7%E6%96%B9%E7%A8%8B%E7%BB%84/"/>
-    
     <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
+    
+    <category term="线性方程组" scheme="https://tifa-233.xyz/tags/%E7%BA%BF%E6%80%A7%E6%96%B9%E7%A8%8B%E7%BB%84/"/>
     
     <category term="洛谷" scheme="https://tifa-233.xyz/tags/%E6%B4%9B%E8%B0%B7/"/>
     
@@ -299,9 +332,9 @@
     
     <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
     
-    <category term="动态规划(DP)" scheme="https://tifa-233.xyz/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92-DP/"/>
-    
     <category term="剪枝" scheme="https://tifa-233.xyz/tags/%E5%89%AA%E6%9E%9D/"/>
+    
+    <category term="动态规划(DP)" scheme="https://tifa-233.xyz/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92-DP/"/>
     
     <category term="状态压缩" scheme="https://tifa-233.xyz/tags/%E7%8A%B6%E6%80%81%E5%8E%8B%E7%BC%A9/"/>
     
@@ -444,9 +477,9 @@
     
     <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
     
-    <category term="数据结构" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
-    
     <category term="模拟" scheme="https://tifa-233.xyz/tags/%E6%A8%A1%E6%8B%9F/"/>
+    
+    <category term="数据结构" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
     
     <category term="计算几何" scheme="https://tifa-233.xyz/tags/%E8%AE%A1%E7%AE%97%E5%87%A0%E4%BD%95/"/>
     
@@ -732,45 +765,6 @@ M834 80h400000v40h-400000z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/s
     <category term="堆" scheme="https://tifa-233.xyz/tags/%E5%A0%86/"/>
     
     <category term="对顶堆" scheme="https://tifa-233.xyz/tags/%E5%AF%B9%E9%A1%B6%E5%A0%86/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>题解 - [UOJ 130 等] 【NOI2015】荷马史诗</title>
-    <link href="https://tifa-233.xyz/article/sa-uoj-130/"/>
-    <id>https://tifa-233.xyz/article/sa-uoj-130/</id>
-    <published>2021-07-15T10:57:13.000Z</published>
-    <updated>2021-07-15T11:29:23.797Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;题目链接&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://uoj.ac/problem/130&quot;&gt;UOJ 130&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;BZOJ 4198&lt;/li&gt;
-&lt;/ul&gt;</summary>
-    
-    
-    
-    <category term="程序设计" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
-    
-    <category term="题解" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E9%A2%98%E8%A7%A3/"/>
-    
-    
-    <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
-    
-    <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
-    
-    <category term="数据结构" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
-    
-    <category term="树" scheme="https://tifa-233.xyz/tags/%E6%A0%91/"/>
-    
-    <category term="Huffman树" scheme="https://tifa-233.xyz/tags/Huffman%E6%A0%91/"/>
-    
-    <category term="NOI" scheme="https://tifa-233.xyz/tags/NOI/"/>
-    
-    <category term="BZOJ" scheme="https://tifa-233.xyz/tags/BZOJ/"/>
-    
-    <category term="UOJ" scheme="https://tifa-233.xyz/tags/UOJ/"/>
     
   </entry>
   
