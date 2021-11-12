@@ -16,7 +16,6 @@ struct Node {
     u64 hash;
     double data;
 
-
     Node(const int& type, const i64& a, const i64& b, const i64& c, const i64& d, const char* opab, const char* opbc, const char* opcd, const double& _data) : data(_data) {
         // 0 -> (((a b) c) d)
         // 1 -> ((a (b c)) d)
@@ -57,7 +56,6 @@ struct Node {
 
     bool operator<(const Node& rhs) const { return hash < rhs.hash; }
 };
-
 
 int main() {
     ios::sync_with_stdio(false);
