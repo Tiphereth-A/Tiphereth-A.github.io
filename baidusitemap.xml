@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://tifa-233.xyz/article/xor-basis/</loc>
+    <lastmod>2021-11-12</lastmod>
+  </url>
+  <url>
+    <loc>https://tifa-233.xyz/article/multiply/</loc>
+    <lastmod>2021-11-12</lastmod>
+  </url>
+  <url>
+    <loc>https://tifa-233.xyz/article/lzu-fhc1/</loc>
+    <lastmod>2021-11-12</lastmod>
+  </url>
+  <url>
     <loc>https://tifa-233.xyz/article/set-theory/0003/</loc>
     <lastmod>2021-11-12</lastmod>
   </url>
@@ -98,10 +110,6 @@
   </url>
   <url>
     <loc>https://tifa-233.xyz/article/symmetric-bilinear-metric-space-and-system-of-linear-equations/</loc>
-    <lastmod>2021-11-12</lastmod>
-  </url>
-  <url>
-    <loc>https://tifa-233.xyz/article/lzu-fhc1/</loc>
     <lastmod>2021-11-12</lastmod>
   </url>
   <url>
@@ -351,10 +359,6 @@
   <url>
     <loc>https://tifa-233.xyz/article/icpc-ncna2019/</loc>
     <lastmod>2021-09-18</lastmod>
-  </url>
-  <url>
-    <loc>https://tifa-233.xyz/article/multiply/</loc>
-    <lastmod>2021-07-15</lastmod>
   </url>
   <url>
     <loc>https://tifa-233.xyz/article/draft/0018/</loc>
