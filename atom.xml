@@ -6,7 +6,7 @@
   <link href="https://tifa-233.xyz/atom.xml" rel="self"/>
   
   <link href="https://tifa-233.xyz/"/>
-  <updated>2021-11-14T17:26:15.298Z</updated>
+  <updated>2021-11-17T07:48:45.289Z</updated>
   <id>https://tifa-233.xyz/</id>
   
   <author>
@@ -15,6 +15,57 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>题解 - [Luogu P3923] 大学数学题</title>
+    <link href="https://tifa-233.xyz/article/luogu-p3923/"/>
+    <id>https://tifa-233.xyz/article/luogu-p3923/</id>
+    <published>2021-11-17T05:38:14.000Z</published>
+    <updated>2021-11-17T07:48:45.289Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://www.luogu.com.cn/problem/P3923&quot;&gt;题目链接&lt;/a&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="程序设计" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
+    
+    <category term="题解" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E9%A2%98%E8%A7%A3/"/>
+    
+    
+    <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
+    
+    <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
+    
+    <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
+    
+    <category term="代数" scheme="https://tifa-233.xyz/tags/%E4%BB%A3%E6%95%B0/"/>
+    
+    <category term="构造" scheme="https://tifa-233.xyz/tags/%E6%9E%84%E9%80%A0/"/>
+    
+    <category term="洛谷" scheme="https://tifa-233.xyz/tags/%E6%B4%9B%E8%B0%B7/"/>
+    
+    <category term="抽象代数" scheme="https://tifa-233.xyz/tags/%E6%8A%BD%E8%B1%A1%E4%BB%A3%E6%95%B0/"/>
+    
+    <category term="特征" scheme="https://tifa-233.xyz/tags/%E7%89%B9%E5%BE%81/"/>
+    
+    <category term="域" scheme="https://tifa-233.xyz/tags/%E5%9F%9F/"/>
+    
+    <category term="素域" scheme="https://tifa-233.xyz/tags/%E7%B4%A0%E5%9F%9F/"/>
+    
+    <category term="有限域" scheme="https://tifa-233.xyz/tags/%E6%9C%89%E9%99%90%E5%9F%9F/"/>
+    
+    <category term="分裂域" scheme="https://tifa-233.xyz/tags/%E5%88%86%E8%A3%82%E5%9F%9F/"/>
+    
+    <category term="理想" scheme="https://tifa-233.xyz/tags/%E7%90%86%E6%83%B3/"/>
+    
+    <category term="极大理想" scheme="https://tifa-233.xyz/tags/%E6%9E%81%E5%A4%A7%E7%90%86%E6%83%B3/"/>
+    
+    <category term="多项式" scheme="https://tifa-233.xyz/tags/%E5%A4%9A%E9%A1%B9%E5%BC%8F/"/>
+    
+    <category term="卷积" scheme="https://tifa-233.xyz/tags/%E5%8D%B7%E7%A7%AF/"/>
+    
+  </entry>
   
   <entry>
     <title>题解 - [Luogu P7075] [CSP-S2020] 儒略日</title>
@@ -170,7 +221,7 @@
     <link href="https://tifa-233.xyz/article/ha-sa/"/>
     <id>https://tifa-233.xyz/article/ha-sa/</id>
     <published>2021-11-11T11:20:54.000Z</published>
-    <updated>2021-11-11T11:35:23.599Z</updated>
+    <updated>2021-11-17T07:50:28.446Z</updated>
     
     
     <summary type="html">&lt;p&gt;基于 C++14 的模拟退火模板, 支持通过重排序给定序列和按给定范围生成序列两种方式, 推荐使用前者&lt;/p&gt;
@@ -192,7 +243,7 @@
     
     <category term="随机化" scheme="https://tifa-233.xyz/tags/%E9%9A%8F%E6%9C%BA%E5%8C%96/"/>
     
-    <category term="启发式算法" scheme="https://tifa-233.xyz/tags/%E5%90%AF%E5%8F%91%E5%BC%8F%E7%AE%97%E6%B3%95/"/>
+    <category term="随机化算法" scheme="https://tifa-233.xyz/tags/%E9%9A%8F%E6%9C%BA%E5%8C%96%E7%AE%97%E6%B3%95/"/>
     
     <category term="模拟退火" scheme="https://tifa-233.xyz/tags/%E6%A8%A1%E6%8B%9F%E9%80%80%E7%81%AB/"/>
     
@@ -740,31 +791,6 @@
     <category term="不动点" scheme="https://tifa-233.xyz/tags/%E4%B8%8D%E5%8A%A8%E7%82%B9/"/>
     
     <category term="二次剩余" scheme="https://tifa-233.xyz/tags/%E4%BA%8C%E6%AC%A1%E5%89%A9%E4%BD%99/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>随笔 - 计算 sum(i^k) 的4种方法</title>
-    <link href="https://tifa-233.xyz/article/draft/0021/"/>
-    <id>https://tifa-233.xyz/article/draft/0021/</id>
-    <published>2021-10-22T14:57:59.000Z</published>
-    <updated>2021-10-22T15:17:08.804Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;只是存个代码, 阅读意义不大&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="随笔" scheme="https://tifa-233.xyz/categories/%E9%9A%8F%E7%AC%94/"/>
-    
-    <category term="数学" scheme="https://tifa-233.xyz/categories/%E9%9A%8F%E7%AC%94/%E6%95%B0%E5%AD%A6/"/>
-    
-    
-    <category term="算法" scheme="https://tifa-233.xyz/tags/%E7%AE%97%E6%B3%95/"/>
-    
-    <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
-    
-    <category term="随笔" scheme="https://tifa-233.xyz/tags/%E9%9A%8F%E7%AC%94/"/>
     
   </entry>
   
