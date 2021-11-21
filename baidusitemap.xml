@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://tifa-233.xyz/article/icpc-asyr2021/</loc>
+    <lastmod>2021-11-21</lastmod>
+  </url>
+  <url>
+    <loc>https://tifa-233.xyz/article/about/</loc>
+    <lastmod>2021-11-21</lastmod>
+  </url>
+  <url>
     <loc>https://tifa-233.xyz/article/powerful-num/</loc>
     <lastmod>2021-11-20</lastmod>
   </url>
@@ -237,10 +245,6 @@
     <lastmod>2021-11-08</lastmod>
   </url>
   <url>
-    <loc>https://tifa-233.xyz/article/about/</loc>
-    <lastmod>2021-11-05</lastmod>
-  </url>
-  <url>
     <loc>https://tifa-233.xyz/article/fast-io/</loc>
     <lastmod>2021-11-05</lastmod>
   </url>
@@ -357,11 +361,11 @@
     <lastmod>2021-09-18</lastmod>
   </url>
   <url>
-    <loc>https://tifa-233.xyz/article/hdu-6152/</loc>
+    <loc>https://tifa-233.xyz/article/hfm-tree/</loc>
     <lastmod>2021-09-18</lastmod>
   </url>
   <url>
-    <loc>https://tifa-233.xyz/article/hfm-tree/</loc>
+    <loc>https://tifa-233.xyz/article/hdu-6152/</loc>
     <lastmod>2021-09-18</lastmod>
   </url>
   <url>
