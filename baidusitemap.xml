@@ -1,8 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://tifa-233.xyz/article/contents/diff-geo/</loc>
+    <lastmod>2021-11-26</lastmod>
+  </url>
+  <url>
+    <loc>https://tifa-233.xyz/article/multiply/</loc>
+    <lastmod>2021-11-26</lastmod>
+  </url>
+  <url>
     <loc>https://tifa-233.xyz/article/icpc-asyr2021/</loc>
-    <lastmod>2021-11-22</lastmod>
+    <lastmod>2021-11-24</lastmod>
   </url>
   <url>
     <loc>https://tifa-233.xyz/article/about/</loc>
@@ -38,10 +46,6 @@
   </url>
   <url>
     <loc>https://tifa-233.xyz/article/xor-basis/</loc>
-    <lastmod>2021-11-12</lastmod>
-  </url>
-  <url>
-    <loc>https://tifa-233.xyz/article/multiply/</loc>
     <lastmod>2021-11-12</lastmod>
   </url>
   <url>
@@ -93,11 +97,11 @@
     <lastmod>2021-11-12</lastmod>
   </url>
   <url>
-    <loc>https://tifa-233.xyz/article/draft/0015/</loc>
+    <loc>https://tifa-233.xyz/article/draft/0013/</loc>
     <lastmod>2021-11-12</lastmod>
   </url>
   <url>
-    <loc>https://tifa-233.xyz/article/draft/0013/</loc>
+    <loc>https://tifa-233.xyz/article/draft/0015/</loc>
     <lastmod>2021-11-12</lastmod>
   </url>
   <url>
@@ -361,11 +365,11 @@
     <lastmod>2021-09-18</lastmod>
   </url>
   <url>
-    <loc>https://tifa-233.xyz/article/hfm-tree/</loc>
+    <loc>https://tifa-233.xyz/article/hdu-6152/</loc>
     <lastmod>2021-09-18</lastmod>
   </url>
   <url>
-    <loc>https://tifa-233.xyz/article/hdu-6152/</loc>
+    <loc>https://tifa-233.xyz/article/hfm-tree/</loc>
     <lastmod>2021-09-18</lastmod>
   </url>
   <url>
