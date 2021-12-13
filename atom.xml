@@ -6,7 +6,7 @@
   <link href="https://tifa-233.xyz/atom.xml" rel="self"/>
   
   <link href="https://tifa-233.xyz/"/>
-  <updated>2021-12-13T15:07:29.911Z</updated>
+  <updated>2021-12-13T15:08:27.126Z</updated>
   <id>https://tifa-233.xyz/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://tifa-233.xyz/article/sa-luogu-p4920/"/>
     <id>https://tifa-233.xyz/article/sa-luogu-p4920/</id>
     <published>2021-12-13T14:48:39.000Z</published>
-    <updated>2021-12-13T15:07:29.911Z</updated>
+    <updated>2021-12-13T15:08:27.126Z</updated>
     
     
     <summary type="html">&lt;p&gt;题目链接&lt;/p&gt;
@@ -76,7 +76,7 @@
     <link href="https://tifa-233.xyz/article/hydro-h1060/"/>
     <id>https://tifa-233.xyz/article/hydro-h1060/</id>
     <published>2021-12-01T10:38:35.000Z</published>
-    <updated>2021-12-01T11:12:54.013Z</updated>
+    <updated>2021-12-13T15:58:22.265Z</updated>
     
     
     <summary type="html">&lt;p&gt;雀食&lt;/p&gt;
@@ -206,6 +206,8 @@
     
     <category term="线性代数" scheme="https://tifa-233.xyz/tags/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/"/>
     
+    <category term="后缀自动机" scheme="https://tifa-233.xyz/tags/%E5%90%8E%E7%BC%80%E8%87%AA%E5%8A%A8%E6%9C%BA/"/>
+    
     <category term="启发式算法" scheme="https://tifa-233.xyz/tags/%E5%90%AF%E5%8F%91%E5%BC%8F%E7%AE%97%E6%B3%95/"/>
     
     <category term="Cramer法则" scheme="https://tifa-233.xyz/tags/Cramer%E6%B3%95%E5%88%99/"/>
@@ -227,8 +229,6 @@
     <category term="IDA*" scheme="https://tifa-233.xyz/tags/IDA/"/>
     
     <category term="后缀数组" scheme="https://tifa-233.xyz/tags/%E5%90%8E%E7%BC%80%E6%95%B0%E7%BB%84/"/>
-    
-    <category term="后缀自动机" scheme="https://tifa-233.xyz/tags/%E5%90%8E%E7%BC%80%E8%87%AA%E5%8A%A8%E6%9C%BA/"/>
     
     <category term="Lyndon分解" scheme="https://tifa-233.xyz/tags/Lyndon%E5%88%86%E8%A7%A3/"/>
     
@@ -351,7 +351,7 @@
     <link href="https://tifa-233.xyz/article/luogu-p3923/"/>
     <id>https://tifa-233.xyz/article/luogu-p3923/</id>
     <published>2021-11-17T05:38:14.000Z</published>
-    <updated>2021-11-17T07:52:46.232Z</updated>
+    <updated>2021-12-13T16:16:09.039Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://www.luogu.com.cn/problem/P3923&quot;&gt;题目链接&lt;/a&gt;&lt;/p&gt;</summary>
@@ -404,7 +404,7 @@
     <link href="https://tifa-233.xyz/article/luogu-p7075/"/>
     <id>https://tifa-233.xyz/article/luogu-p7075/</id>
     <published>2021-11-14T16:45:28.000Z</published>
-    <updated>2021-11-14T17:26:15.298Z</updated>
+    <updated>2021-12-13T16:30:49.979Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://www.luogu.com.cn/problem/P7075&quot;&gt;题目链接&lt;/a&gt;&lt;/p&gt;</summary>
@@ -486,7 +486,7 @@
     <link href="https://tifa-233.xyz/article/luogu-p3396/"/>
     <id>https://tifa-233.xyz/article/luogu-p3396/</id>
     <published>2021-11-11T17:55:36.000Z</published>
-    <updated>2021-11-12T02:07:58.632Z</updated>
+    <updated>2021-12-13T16:14:22.060Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://www.luogu.com.cn/problem/P3396&quot;&gt;题目链接&lt;/a&gt;&lt;/p&gt;
@@ -518,7 +518,7 @@
     <link href="https://tifa-233.xyz/article/luogu-p3878/"/>
     <id>https://tifa-233.xyz/article/luogu-p3878/</id>
     <published>2021-11-11T15:03:58.000Z</published>
-    <updated>2021-11-12T02:08:54.942Z</updated>
+    <updated>2021-12-13T16:15:56.591Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://www.luogu.com.cn/problem/P3878&quot;&gt;题目链接&lt;/a&gt;&lt;/p&gt;</summary>
@@ -626,7 +626,7 @@
     <link href="https://tifa-233.xyz/article/luogu-p1337/"/>
     <id>https://tifa-233.xyz/article/luogu-p1337/</id>
     <published>2021-11-09T06:02:15.000Z</published>
-    <updated>2021-11-12T02:15:13.867Z</updated>
+    <updated>2021-12-13T16:09:32.641Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://www.luogu.com.cn/problem/P1337&quot;&gt;题目链接&lt;/a&gt;&lt;/p&gt;</summary>
@@ -659,7 +659,7 @@
     <link href="https://tifa-233.xyz/article/luogu-p3768/"/>
     <id>https://tifa-233.xyz/article/luogu-p3768/</id>
     <published>2021-11-08T10:38:23.000Z</published>
-    <updated>2021-11-08T11:08:19.740Z</updated>
+    <updated>2021-12-13T16:15:40.191Z</updated>
     
     
     <summary type="html">&lt;p&gt;强烈谴责这种起无意义标题的做法&lt;/p&gt;
@@ -695,7 +695,7 @@
     <link href="https://tifa-233.xyz/article/luogu-p2277/"/>
     <id>https://tifa-233.xyz/article/luogu-p2277/</id>
     <published>2021-11-04T17:01:36.000Z</published>
-    <updated>2021-11-12T02:15:13.867Z</updated>
+    <updated>2021-12-13T16:12:55.487Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://www.luogu.com.cn/problem/P2277&quot;&gt;题目链接&lt;/a&gt;&lt;/p&gt;</summary>
@@ -773,7 +773,7 @@
     <link href="https://tifa-233.xyz/article/luogu-p3200/"/>
     <id>https://tifa-233.xyz/article/luogu-p3200/</id>
     <published>2021-11-03T09:56:45.000Z</published>
-    <updated>2021-11-12T02:07:51.438Z</updated>
+    <updated>2021-12-13T16:14:05.756Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://www.luogu.com.cn/problem/P3200&quot;&gt;题目链接&lt;/a&gt;&lt;/p&gt;</summary>
@@ -801,9 +801,9 @@
     
     <category term="洛谷" scheme="https://tifa-233.xyz/tags/%E6%B4%9B%E8%B0%B7/"/>
     
-    <category term="递推" scheme="https://tifa-233.xyz/tags/%E9%80%92%E6%8E%A8/"/>
-    
     <category term="省选" scheme="https://tifa-233.xyz/tags/%E7%9C%81%E9%80%89/"/>
+    
+    <category term="递推" scheme="https://tifa-233.xyz/tags/%E9%80%92%E6%8E%A8/"/>
     
     <category term="HNOI" scheme="https://tifa-233.xyz/tags/HNOI/"/>
     
