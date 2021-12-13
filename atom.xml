@@ -6,7 +6,7 @@
   <link href="https://tifa-233.xyz/atom.xml" rel="self"/>
   
   <link href="https://tifa-233.xyz/"/>
-  <updated>2021-12-01T11:12:54.013Z</updated>
+  <updated>2021-12-13T15:07:29.911Z</updated>
   <id>https://tifa-233.xyz/</id>
   
   <author>
@@ -15,6 +15,61 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>题解 - [Luogu P4920 等] [WC2015]未来程序</title>
+    <link href="https://tifa-233.xyz/article/sa-luogu-p4920/"/>
+    <id>https://tifa-233.xyz/article/sa-luogu-p4920/</id>
+    <published>2021-12-13T14:48:39.000Z</published>
+    <updated>2021-12-13T15:07:29.911Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;题目链接&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.luogu.com.cn/problem/P4920&quot;&gt;洛谷 P4920&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://uoj.ac/problem/73&quot;&gt;UOJ #73&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="程序设计" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
+    
+    <category term="题解" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E9%A2%98%E8%A7%A3/"/>
+    
+    
+    <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
+    
+    <category term="算法" scheme="https://tifa-233.xyz/tags/%E7%AE%97%E6%B3%95/"/>
+    
+    <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
+    
+    <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
+    
+    <category term="搜索" scheme="https://tifa-233.xyz/tags/%E6%90%9C%E7%B4%A2/"/>
+    
+    <category term="数据结构" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    
+    <category term="洛谷" scheme="https://tifa-233.xyz/tags/%E6%B4%9B%E8%B0%B7/"/>
+    
+    <category term="DLX" scheme="https://tifa-233.xyz/tags/DLX/"/>
+    
+    <category term="矩阵快速幂" scheme="https://tifa-233.xyz/tags/%E7%9F%A9%E9%98%B5%E5%BF%AB%E9%80%9F%E5%B9%82/"/>
+    
+    <category term="UOJ" scheme="https://tifa-233.xyz/tags/UOJ/"/>
+    
+    <category term="Fibonacci数列" scheme="https://tifa-233.xyz/tags/Fibonacci%E6%95%B0%E5%88%97/"/>
+    
+    <category term="WC" scheme="https://tifa-233.xyz/tags/WC/"/>
+    
+    <category term="DP" scheme="https://tifa-233.xyz/tags/DP/"/>
+    
+    <category term="单调栈" scheme="https://tifa-233.xyz/tags/%E5%8D%95%E8%B0%83%E6%A0%88/"/>
+    
+    <category term="Brent判圈" scheme="https://tifa-233.xyz/tags/Brent%E5%88%A4%E5%9C%88/"/>
+    
+    <category term="Floyd判圈" scheme="https://tifa-233.xyz/tags/Floyd%E5%88%A4%E5%9C%88/"/>
+    
+  </entry>
   
   <entry>
     <title>题解 - [Hydro #H1060] 绝世傻逼题</title>
@@ -131,9 +186,9 @@
     
     <category term="期望" scheme="https://tifa-233.xyz/tags/%E6%9C%9F%E6%9C%9B/"/>
     
-    <category term="BFS" scheme="https://tifa-233.xyz/tags/BFS/"/>
-    
     <category term="并查集" scheme="https://tifa-233.xyz/tags/%E5%B9%B6%E6%9F%A5%E9%9B%86/"/>
+    
+    <category term="BFS" scheme="https://tifa-233.xyz/tags/BFS/"/>
     
     <category term="组合数学" scheme="https://tifa-233.xyz/tags/%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/"/>
     
@@ -819,43 +874,6 @@
     <category term="C++" scheme="https://tifa-233.xyz/tags/C/"/>
     
     <category term="矩阵" scheme="https://tifa-233.xyz/tags/%E7%9F%A9%E9%98%B5/"/>
-    
-    <category term="Gauss消去法" scheme="https://tifa-233.xyz/tags/Gauss%E6%B6%88%E5%8E%BB%E6%B3%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>题解 - [Luogu P2011] 计算电压</title>
-    <link href="https://tifa-233.xyz/article/luogu-p2011/"/>
-    <id>https://tifa-233.xyz/article/luogu-p2011/</id>
-    <published>2021-10-29T16:29:57.000Z</published>
-    <updated>2021-11-12T02:06:28.345Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://www.luogu.com.cn/problem/P2011&quot;&gt;题目链接&lt;/a&gt;&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="程序设计" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
-    
-    <category term="题解" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E9%A2%98%E8%A7%A3/"/>
-    
-    
-    <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
-    
-    <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
-    
-    <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
-    
-    <category term="线性方程组" scheme="https://tifa-233.xyz/tags/%E7%BA%BF%E6%80%A7%E6%96%B9%E7%A8%8B%E7%BB%84/"/>
-    
-    <category term="洛谷" scheme="https://tifa-233.xyz/tags/%E6%B4%9B%E8%B0%B7/"/>
-    
-    <category term="物理" scheme="https://tifa-233.xyz/tags/%E7%89%A9%E7%90%86/"/>
-    
-    <category term="Kirchhoff定律" scheme="https://tifa-233.xyz/tags/Kirchhoff%E5%AE%9A%E5%BE%8B/"/>
-    
-    <category term="Kirchhoff第一定律(KCL)" scheme="https://tifa-233.xyz/tags/Kirchhoff%E7%AC%AC%E4%B8%80%E5%AE%9A%E5%BE%8B-KCL/"/>
     
     <category term="Gauss消去法" scheme="https://tifa-233.xyz/tags/Gauss%E6%B6%88%E5%8E%BB%E6%B3%95/"/>
     
