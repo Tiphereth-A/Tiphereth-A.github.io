@@ -6,7 +6,7 @@
   <link href="https://tifa-233.xyz/atom.xml" rel="self"/>
   
   <link href="https://tifa-233.xyz/"/>
-  <updated>2021-12-13T15:08:27.126Z</updated>
+  <updated>2021-12-22T13:30:58.856Z</updated>
   <id>https://tifa-233.xyz/</id>
   
   <author>
@@ -17,11 +17,101 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>模板 &amp; 题解 - [Luogu P4000] 斐波那契数列</title>
+    <link href="https://tifa-233.xyz/article/luogu-p4000/"/>
+    <id>https://tifa-233.xyz/article/luogu-p4000/</id>
+    <published>2021-12-22T12:54:01.000Z</published>
+    <updated>2021-12-22T13:30:58.856Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://www.luogu.com.cn/problem/P4000&quot;&gt;题目链接&lt;/a&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="程序设计" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
+    
+    <category term="模板" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E6%A8%A1%E6%9D%BF/"/>
+    
+    
+    <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
+    
+    <category term="算法" scheme="https://tifa-233.xyz/tags/%E7%AE%97%E6%B3%95/"/>
+    
+    <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
+    
+    <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
+    
+    <category term="数论" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E8%AE%BA/"/>
+    
+    <category term="Fibonacci数" scheme="https://tifa-233.xyz/tags/Fibonacci%E6%95%B0/"/>
+    
+    <category term="最大公约数" scheme="https://tifa-233.xyz/tags/%E6%9C%80%E5%A4%A7%E5%85%AC%E7%BA%A6%E6%95%B0/"/>
+    
+    <category term="模板" scheme="https://tifa-233.xyz/tags/%E6%A8%A1%E6%9D%BF/"/>
+    
+    <category term="最小公倍数" scheme="https://tifa-233.xyz/tags/%E6%9C%80%E5%B0%8F%E5%85%AC%E5%80%8D%E6%95%B0/"/>
+    
+    <category term="洛谷" scheme="https://tifa-233.xyz/tags/%E6%B4%9B%E8%B0%B7/"/>
+    
+    <category term="Fibonacci数列" scheme="https://tifa-233.xyz/tags/Fibonacci%E6%95%B0%E5%88%97/"/>
+    
+    <category term="Lucas数列" scheme="https://tifa-233.xyz/tags/Lucas%E6%95%B0%E5%88%97/"/>
+    
+    <category term="Fibonacci数列循环节" scheme="https://tifa-233.xyz/tags/Fibonacci%E6%95%B0%E5%88%97%E5%BE%AA%E7%8E%AF%E8%8A%82/"/>
+    
+    <category term="二次剩余" scheme="https://tifa-233.xyz/tags/%E4%BA%8C%E6%AC%A1%E5%89%A9%E4%BD%99/"/>
+    
+    <category term="高精度" scheme="https://tifa-233.xyz/tags/%E9%AB%98%E7%B2%BE%E5%BA%A6/"/>
+    
+    <category term="矩阵快速幂" scheme="https://tifa-233.xyz/tags/%E7%9F%A9%E9%98%B5%E5%BF%AB%E9%80%9F%E5%B9%82/"/>
+    
+    <category term="科技" scheme="https://tifa-233.xyz/tags/%E7%A7%91%E6%8A%80/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>模板 - string 转 uint 的一种快速算法</title>
+    <link href="https://tifa-233.xyz/article/fast-str2uint/"/>
+    <id>https://tifa-233.xyz/article/fast-str2uint/</id>
+    <published>2021-12-21T13:21:01.000Z</published>
+    <updated>2021-12-22T13:29:56.693Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;基于 C++14 标准, 一种高效的十进制字符串转无符号整数的算法&lt;/p&gt;
+&lt;div class=&quot;admonition error&quot;&gt;&lt;p class=&quot;admonition-title&quot;&gt;Caution
+&lt;/p&gt;&lt;p&gt;仅在小端 CPU 下正确&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;admonition warning&quot;&gt;&lt;p class=&quot;admonition-title&quot;&gt;warning&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;仅在 G++ 下测试过&lt;/li&gt;
+&lt;li&gt;推荐用于 64 位系统&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;</summary>
+    
+    
+    
+    <category term="程序设计" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
+    
+    <category term="模板" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E6%A8%A1%E6%9D%BF/"/>
+    
+    
+    <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
+    
+    <category term="算法" scheme="https://tifa-233.xyz/tags/%E7%AE%97%E6%B3%95/"/>
+    
+    <category term="模板" scheme="https://tifa-233.xyz/tags/%E6%A8%A1%E6%9D%BF/"/>
+    
+    <category term="C++" scheme="https://tifa-233.xyz/tags/C/"/>
+    
+    <category term="常数优化" scheme="https://tifa-233.xyz/tags/%E5%B8%B8%E6%95%B0%E4%BC%98%E5%8C%96/"/>
+    
+  </entry>
+  
+  <entry>
     <title>题解 - [Luogu P4920 等] [WC2015]未来程序</title>
     <link href="https://tifa-233.xyz/article/sa-luogu-p4920/"/>
     <id>https://tifa-233.xyz/article/sa-luogu-p4920/</id>
     <published>2021-12-13T14:48:39.000Z</published>
-    <updated>2021-12-13T15:08:27.126Z</updated>
+    <updated>2021-12-13T16:37:43.332Z</updated>
     
     
     <summary type="html">&lt;p&gt;题目链接&lt;/p&gt;
@@ -45,23 +135,23 @@
     
     <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
     
-    <category term="搜索" scheme="https://tifa-233.xyz/tags/%E6%90%9C%E7%B4%A2/"/>
-    
     <category term="数据结构" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    
+    <category term="动态规划(DP)" scheme="https://tifa-233.xyz/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92-DP/"/>
+    
+    <category term="搜索" scheme="https://tifa-233.xyz/tags/%E6%90%9C%E7%B4%A2/"/>
     
     <category term="洛谷" scheme="https://tifa-233.xyz/tags/%E6%B4%9B%E8%B0%B7/"/>
     
     <category term="DLX" scheme="https://tifa-233.xyz/tags/DLX/"/>
     
+    <category term="Fibonacci数列" scheme="https://tifa-233.xyz/tags/Fibonacci%E6%95%B0%E5%88%97/"/>
+    
     <category term="矩阵快速幂" scheme="https://tifa-233.xyz/tags/%E7%9F%A9%E9%98%B5%E5%BF%AB%E9%80%9F%E5%B9%82/"/>
     
     <category term="UOJ" scheme="https://tifa-233.xyz/tags/UOJ/"/>
     
-    <category term="Fibonacci数列" scheme="https://tifa-233.xyz/tags/Fibonacci%E6%95%B0%E5%88%97/"/>
-    
     <category term="WC" scheme="https://tifa-233.xyz/tags/WC/"/>
-    
-    <category term="DP" scheme="https://tifa-233.xyz/tags/DP/"/>
     
     <category term="单调栈" scheme="https://tifa-233.xyz/tags/%E5%8D%95%E8%B0%83%E6%A0%88/"/>
     
@@ -168,19 +258,19 @@
     
     <category term="ICPC" scheme="https://tifa-233.xyz/tags/ICPC/"/>
     
-    <category term="模拟" scheme="https://tifa-233.xyz/tags/%E6%A8%A1%E6%8B%9F/"/>
-    
-    <category term="搜索" scheme="https://tifa-233.xyz/tags/%E6%90%9C%E7%B4%A2/"/>
-    
     <category term="数据结构" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
     
+    <category term="模拟" scheme="https://tifa-233.xyz/tags/%E6%A8%A1%E6%8B%9F/"/>
+    
     <category term="计算几何" scheme="https://tifa-233.xyz/tags/%E8%AE%A1%E7%AE%97%E5%87%A0%E4%BD%95/"/>
+    
+    <category term="动态规划(DP)" scheme="https://tifa-233.xyz/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92-DP/"/>
+    
+    <category term="搜索" scheme="https://tifa-233.xyz/tags/%E6%90%9C%E7%B4%A2/"/>
     
     <category term="DFS" scheme="https://tifa-233.xyz/tags/DFS/"/>
     
     <category term="剪枝" scheme="https://tifa-233.xyz/tags/%E5%89%AA%E6%9E%9D/"/>
-    
-    <category term="动态规划(DP)" scheme="https://tifa-233.xyz/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92-DP/"/>
     
     <category term="概率" scheme="https://tifa-233.xyz/tags/%E6%A6%82%E7%8E%87/"/>
     
@@ -206,8 +296,6 @@
     
     <category term="线性代数" scheme="https://tifa-233.xyz/tags/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/"/>
     
-    <category term="后缀自动机" scheme="https://tifa-233.xyz/tags/%E5%90%8E%E7%BC%80%E8%87%AA%E5%8A%A8%E6%9C%BA/"/>
-    
     <category term="启发式算法" scheme="https://tifa-233.xyz/tags/%E5%90%AF%E5%8F%91%E5%BC%8F%E7%AE%97%E6%B3%95/"/>
     
     <category term="Cramer法则" scheme="https://tifa-233.xyz/tags/Cramer%E6%B3%95%E5%88%99/"/>
@@ -229,6 +317,8 @@
     <category term="IDA*" scheme="https://tifa-233.xyz/tags/IDA/"/>
     
     <category term="后缀数组" scheme="https://tifa-233.xyz/tags/%E5%90%8E%E7%BC%80%E6%95%B0%E7%BB%84/"/>
+    
+    <category term="后缀自动机" scheme="https://tifa-233.xyz/tags/%E5%90%8E%E7%BC%80%E8%87%AA%E5%8A%A8%E6%9C%BA/"/>
     
     <category term="Lyndon分解" scheme="https://tifa-233.xyz/tags/Lyndon%E5%88%86%E8%A7%A3/"/>
     
@@ -328,6 +418,8 @@
     
     <category term="国家集训队" scheme="https://tifa-233.xyz/tags/%E5%9B%BD%E5%AE%B6%E9%9B%86%E8%AE%AD%E9%98%9F/"/>
     
+    <category term="Fibonacci数列" scheme="https://tifa-233.xyz/tags/Fibonacci%E6%95%B0%E5%88%97/"/>
+    
     <category term="倍增" scheme="https://tifa-233.xyz/tags/%E5%80%8D%E5%A2%9E/"/>
     
     <category term="UOJ" scheme="https://tifa-233.xyz/tags/UOJ/"/>
@@ -335,8 +427,6 @@
     <category term="Euler回路" scheme="https://tifa-233.xyz/tags/Euler%E5%9B%9E%E8%B7%AF/"/>
     
     <category term="Kruskal算法" scheme="https://tifa-233.xyz/tags/Kruskal%E7%AE%97%E6%B3%95/"/>
-    
-    <category term="Fibonacci数列" scheme="https://tifa-233.xyz/tags/Fibonacci%E6%95%B0%E5%88%97/"/>
     
     <category term="Thue-Morse序列" scheme="https://tifa-233.xyz/tags/Thue-Morse%E5%BA%8F%E5%88%97/"/>
     
@@ -801,81 +891,15 @@
     
     <category term="洛谷" scheme="https://tifa-233.xyz/tags/%E6%B4%9B%E8%B0%B7/"/>
     
-    <category term="省选" scheme="https://tifa-233.xyz/tags/%E7%9C%81%E9%80%89/"/>
-    
     <category term="递推" scheme="https://tifa-233.xyz/tags/%E9%80%92%E6%8E%A8/"/>
+    
+    <category term="省选" scheme="https://tifa-233.xyz/tags/%E7%9C%81%E9%80%89/"/>
     
     <category term="HNOI" scheme="https://tifa-233.xyz/tags/HNOI/"/>
     
     <category term="Euler筛" scheme="https://tifa-233.xyz/tags/Euler%E7%AD%9B/"/>
     
     <category term="Catalan数" scheme="https://tifa-233.xyz/tags/Catalan%E6%95%B0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>模板 - 可持久化线段树(主席树)</title>
-    <link href="https://tifa-233.xyz/article/pst-seg-tree/"/>
-    <id>https://tifa-233.xyz/article/pst-seg-tree/</id>
-    <published>2021-11-01T07:18:10.000Z</published>
-    <updated>2021-11-12T02:15:13.867Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;基于 C++14 标准, 实现了初始化, 单点修改与查询&lt;/p&gt;
-&lt;div class=&quot;admonition warning&quot;&gt;&lt;p class=&quot;admonition-title&quot;&gt;warning&lt;/p&gt;&lt;p&gt;仅在 G++ 下测试过&lt;/p&gt;
-&lt;/div&gt;</summary>
-    
-    
-    
-    <category term="程序设计" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
-    
-    <category term="模板" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E6%A8%A1%E6%9D%BF/"/>
-    
-    
-    <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
-    
-    <category term="数据结构" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
-    
-    <category term="模板" scheme="https://tifa-233.xyz/tags/%E6%A8%A1%E6%9D%BF/"/>
-    
-    <category term="C++" scheme="https://tifa-233.xyz/tags/C/"/>
-    
-    <category term="线段树" scheme="https://tifa-233.xyz/tags/%E7%BA%BF%E6%AE%B5%E6%A0%91/"/>
-    
-    <category term="可持久化线段树(主席树)" scheme="https://tifa-233.xyz/tags/%E5%8F%AF%E6%8C%81%E4%B9%85%E5%8C%96%E7%BA%BF%E6%AE%B5%E6%A0%91-%E4%B8%BB%E5%B8%AD%E6%A0%91/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>模板 - 矩阵</title>
-    <link href="https://tifa-233.xyz/article/matrix/"/>
-    <id>https://tifa-233.xyz/article/matrix/</id>
-    <published>2021-10-31T13:28:15.000Z</published>
-    <updated>2021-11-12T02:15:13.867Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;基于 C++14 标准, 实现了矩阵的四则运算, 求逆, 转置, 秩, 行列式与对输入输出流的支持&lt;/p&gt;
-&lt;div class=&quot;admonition warning&quot;&gt;&lt;p class=&quot;admonition-title&quot;&gt;warning&lt;/p&gt;&lt;p&gt;仅在 G++ 下测试过&lt;/p&gt;
-&lt;/div&gt;</summary>
-    
-    
-    
-    <category term="程序设计" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
-    
-    <category term="模板" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E6%A8%A1%E6%9D%BF/"/>
-    
-    
-    <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
-    
-    <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
-    
-    <category term="模板" scheme="https://tifa-233.xyz/tags/%E6%A8%A1%E6%9D%BF/"/>
-    
-    <category term="C++" scheme="https://tifa-233.xyz/tags/C/"/>
-    
-    <category term="矩阵" scheme="https://tifa-233.xyz/tags/%E7%9F%A9%E9%98%B5/"/>
-    
-    <category term="Gauss消去法" scheme="https://tifa-233.xyz/tags/Gauss%E6%B6%88%E5%8E%BB%E6%B3%95/"/>
     
   </entry>
   
