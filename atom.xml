@@ -122,7 +122,7 @@
     <link href="https://tifa-233.xyz/article/diff-geo/0001/"/>
     <id>https://tifa-233.xyz/article/diff-geo/0001/</id>
     <published>2022-01-19T06:20:59.000Z</published>
-    <updated>2022-01-19T07:52:58.599Z</updated>
+    <updated>2022-01-23T09:15:02.661Z</updated>
     
     
     <summary type="html">&lt;p&gt;本章主要讨论&lt;/p&gt;
@@ -149,6 +149,34 @@
     
     <category term="微分几何" scheme="https://tifa-233.xyz/tags/%E5%BE%AE%E5%88%86%E5%87%A0%E4%BD%95/"/>
     
+    <category term="曲线" scheme="https://tifa-233.xyz/tags/%E6%9B%B2%E7%BA%BF/"/>
+    
+    <category term="正则曲线" scheme="https://tifa-233.xyz/tags/%E6%AD%A3%E5%88%99%E6%9B%B2%E7%BA%BF/"/>
+    
+    <category term="切向量" scheme="https://tifa-233.xyz/tags/%E5%88%87%E5%90%91%E9%87%8F/"/>
+    
+    <category term="法向量" scheme="https://tifa-233.xyz/tags/%E6%B3%95%E5%90%91%E9%87%8F/"/>
+    
+    <category term="主法向量" scheme="https://tifa-233.xyz/tags/%E4%B8%BB%E6%B3%95%E5%90%91%E9%87%8F/"/>
+    
+    <category term="副法向量" scheme="https://tifa-233.xyz/tags/%E5%89%AF%E6%B3%95%E5%90%91%E9%87%8F/"/>
+    
+    <category term="法平面" scheme="https://tifa-233.xyz/tags/%E6%B3%95%E5%B9%B3%E9%9D%A2/"/>
+    
+    <category term="从切平面" scheme="https://tifa-233.xyz/tags/%E4%BB%8E%E5%88%87%E5%B9%B3%E9%9D%A2/"/>
+    
+    <category term="密切平面" scheme="https://tifa-233.xyz/tags/%E5%AF%86%E5%88%87%E5%B9%B3%E9%9D%A2/"/>
+    
+    <category term="曲率" scheme="https://tifa-233.xyz/tags/%E6%9B%B2%E7%8E%87/"/>
+    
+    <category term="挠率" scheme="https://tifa-233.xyz/tags/%E6%8C%A0%E7%8E%87/"/>
+    
+    <category term="Frenet标架" scheme="https://tifa-233.xyz/tags/Frenet%E6%A0%87%E6%9E%B6/"/>
+    
+    <category term="Frenet公式" scheme="https://tifa-233.xyz/tags/Frenet%E5%85%AC%E5%BC%8F/"/>
+    
+    <category term="曲线论基本定理" scheme="https://tifa-233.xyz/tags/%E6%9B%B2%E7%BA%BF%E8%AE%BA%E5%9F%BA%E6%9C%AC%E5%AE%9A%E7%90%86/"/>
+    
   </entry>
   
   <entry>
@@ -156,7 +184,7 @@
     <link href="https://tifa-233.xyz/article/diff-geo/0000/"/>
     <id>https://tifa-233.xyz/article/diff-geo/0000/</id>
     <published>2022-01-19T06:19:59.000Z</published>
-    <updated>2022-01-19T07:54:32.347Z</updated>
+    <updated>2022-01-19T08:34:51.418Z</updated>
     
     
     <summary type="html">&lt;p&gt;本章主要列举一些前置知识与约定&lt;/p&gt;</summary>
@@ -178,6 +206,8 @@
     
     <category term="微分几何" scheme="https://tifa-233.xyz/tags/%E5%BE%AE%E5%88%86%E5%87%A0%E4%BD%95/"/>
     
+    <category term="Euclid空间" scheme="https://tifa-233.xyz/tags/Euclid%E7%A9%BA%E9%97%B4/"/>
+    
     <category term="向量函数" scheme="https://tifa-233.xyz/tags/%E5%90%91%E9%87%8F%E5%87%BD%E6%95%B0/"/>
     
     <category term="参数曲线" scheme="https://tifa-233.xyz/tags/%E5%8F%82%E6%95%B0%E6%9B%B2%E7%BA%BF/"/>
@@ -194,7 +224,7 @@
     
     <category term="混合积" scheme="https://tifa-233.xyz/tags/%E6%B7%B7%E5%90%88%E7%A7%AF/"/>
     
-    <category term="Lagrange 恒等式" scheme="https://tifa-233.xyz/tags/Lagrange-%E6%81%92%E7%AD%89%E5%BC%8F/"/>
+    <category term="Lagrange恒等式" scheme="https://tifa-233.xyz/tags/Lagrange%E6%81%92%E7%AD%89%E5%BC%8F/"/>
     
     <category term="合同变换" scheme="https://tifa-233.xyz/tags/%E5%90%88%E5%90%8C%E5%8F%98%E6%8D%A2/"/>
     
@@ -518,6 +548,8 @@
     
     <category term="线性代数" scheme="https://tifa-233.xyz/tags/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/"/>
     
+    <category term="后缀自动机" scheme="https://tifa-233.xyz/tags/%E5%90%8E%E7%BC%80%E8%87%AA%E5%8A%A8%E6%9C%BA/"/>
+    
     <category term="启发式算法" scheme="https://tifa-233.xyz/tags/%E5%90%AF%E5%8F%91%E5%BC%8F%E7%AE%97%E6%B3%95/"/>
     
     <category term="Cramer法则" scheme="https://tifa-233.xyz/tags/Cramer%E6%B3%95%E5%88%99/"/>
@@ -539,8 +571,6 @@
     <category term="IDA*" scheme="https://tifa-233.xyz/tags/IDA/"/>
     
     <category term="后缀数组" scheme="https://tifa-233.xyz/tags/%E5%90%8E%E7%BC%80%E6%95%B0%E7%BB%84/"/>
-    
-    <category term="后缀自动机" scheme="https://tifa-233.xyz/tags/%E5%90%8E%E7%BC%80%E8%87%AA%E5%8A%A8%E6%9C%BA/"/>
     
     <category term="Lyndon分解" scheme="https://tifa-233.xyz/tags/Lyndon%E5%88%86%E8%A7%A3/"/>
     
@@ -679,11 +709,11 @@
     
     <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
     
-    <category term="代数" scheme="https://tifa-233.xyz/tags/%E4%BB%A3%E6%95%B0/"/>
-    
     <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
     
     <category term="构造" scheme="https://tifa-233.xyz/tags/%E6%9E%84%E9%80%A0/"/>
+    
+    <category term="代数" scheme="https://tifa-233.xyz/tags/%E4%BB%A3%E6%95%B0/"/>
     
     <category term="洛谷" scheme="https://tifa-233.xyz/tags/%E6%B4%9B%E8%B0%B7/"/>
     
