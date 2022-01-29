@@ -73,8 +73,8 @@ comments: false</li>
 <span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> _for_u64(i, l, r) for (register u64 i = (l); i &lt;= (r); ++i)</span>
 <span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> _for_u32(i, l, r) for (register u32 i = (l); i &lt;= (r); ++i)</span>
 <span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> FINLINE __inline__ __attribute__((always_inline))</span>
-<span class="hljs-keyword">typedef</span> <span class="hljs-keyword">unsigned</span> <span class="hljs-keyword">long</span> <span class="hljs-keyword">long</span> u64;
-<span class="hljs-keyword">typedef</span> <span class="hljs-keyword">unsigned</span> <span class="hljs-keyword">int</span> u32;
+<span class="hljs-keyword">using</span> u64 = <span class="hljs-keyword">uint64_t</span>;
+<span class="hljs-keyword">using</span> u32 = <span class="hljs-keyword">uint32_t</span>;
 
 <span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">timeval</span> <span class="hljs-title">start</span>, <span class="hljs-title">end</span>;</span>
 
@@ -234,8 +234,8 @@ u64 k;
 <span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;cstdio&gt;</span></span>
 <span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;iostream&gt;</span></span>
 
-<span class="hljs-keyword">typedef</span> <span class="hljs-keyword">unsigned</span> <span class="hljs-keyword">long</span> <span class="hljs-keyword">long</span> u64;
-<span class="hljs-keyword">typedef</span> <span class="hljs-keyword">unsigned</span> <span class="hljs-keyword">int</span> u32;
+<span class="hljs-keyword">using</span> u64 = <span class="hljs-keyword">uint64_t</span>;
+<span class="hljs-keyword">using</span> u32 = <span class="hljs-keyword">uint32_t</span>;
 <span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> FINLINE __inline__ __attribute__((always_inline))</span>
 
 <span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">timeval</span> <span class="hljs-title">start</span>, <span class="hljs-title">end</span>;</span>
@@ -406,8 +406,8 @@ u64 k;
 
 <span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> _lowbit(x) (1 &lt;&lt; __builtin_ctz(x))</span>
 <span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> FINLINE __inline__ __attribute__((always_inline))</span>
-<span class="hljs-keyword">typedef</span> <span class="hljs-keyword">unsigned</span> <span class="hljs-keyword">long</span> <span class="hljs-keyword">long</span> u64;
-<span class="hljs-keyword">typedef</span> <span class="hljs-keyword">unsigned</span> <span class="hljs-keyword">int</span> u32;
+<span class="hljs-keyword">using</span> u64 = <span class="hljs-keyword">uint64_t</span>;
+<span class="hljs-keyword">using</span> u32 = <span class="hljs-keyword">uint32_t</span>;
 
 <span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">timeval</span> <span class="hljs-title">start</span>, <span class="hljs-title">end</span>;</span>
 
@@ -550,7 +550,7 @@ ofstream out;
     <span class="hljs-function">default_random_engine <span class="hljs-title">e</span><span class="hljs-params">(time(<span class="hljs-literal">NULL</span>))</span></span>;
     <span class="hljs-function">uniform_int_distribution&lt;<span class="hljs-keyword">unsigned</span>&gt; <span class="hljs-title">u_mn</span><span class="hljs-params">(max_n[i - <span class="hljs-number">1</span>], max_n[i])</span>,
         <span class="hljs-title">u_case</span><span class="hljs-params">(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>)</span></span>;
-    <span class="hljs-function">uniform_int_distribution&lt;<span class="hljs-keyword">unsigned</span> <span class="hljs-keyword">long</span> <span class="hljs-keyword">long</span>&gt; <span class="hljs-title">u_data</span><span class="hljs-params">(<span class="hljs-number">0</span>, ULLONG_MAX)</span></span>;
+    <span class="hljs-function">uniform_int_distribution&lt;<span class="hljs-keyword">uint64_t</span>&gt; <span class="hljs-title">u_data</span><span class="hljs-params">(<span class="hljs-number">0</span>, ULLONG_MAX)</span></span>;
     <span class="hljs-keyword">for</span> (<span class="hljs-keyword">register</span> <span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">5</span>; ++i, ++cnt) {
       ss.clear();
       ss &lt;&lt; cnt &lt;&lt; <span class="hljs-string">".in"</span>;

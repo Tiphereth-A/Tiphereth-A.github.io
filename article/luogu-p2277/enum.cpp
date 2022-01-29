@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
-using i64 = long long;
-using u64 = unsigned long long;
+using i64 = int64_t;
+using u64 = uint64_t;
 
 int dict[256];
 const auto _STATIC_ = []() {

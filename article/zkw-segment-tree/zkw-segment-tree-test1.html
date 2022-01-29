@@ -19,19 +19,19 @@ comments: false</li>
 <span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;sys/time.h&gt;</span></span>
 <span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;string&gt;</span></span>
 <span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;sstream&gt;</span></span>
-<span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> fp(i,l,r) for(register unsigned long long i=(l);i&lt;=(r);++i)</span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> fp(i,l,r) for(register uint64_t i=(l);i&lt;=(r);++i)</span>
 <span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> fr(a) freopen((a),<span class="hljs-meta-string">"r"</span>,stdin)</span>
 <span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> fw(a) freopen((a),<span class="hljs-meta-string">"w"</span>,stdout)</span>
 <span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> fc fclose(stdin),fclose(stdout)</span>
 <span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> il inline</span>
 <span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> ls rt&lt;&lt;1</span>
 <span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> rs rt&lt;&lt;1|1</span>
-<span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> Mid unsigned long long m=((r-l)&gt;&gt;1)+l</span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> Mid uint64_t m=((r-l)&gt;&gt;1)+l</span>
 <span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> tpn typename</span>
 <span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> MAXN 10000005</span>
 <span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> MAXBUF 140000000</span>
-<span class="hljs-keyword">typedef</span> <span class="hljs-keyword">long</span> <span class="hljs-keyword">long</span> i64;
-<span class="hljs-keyword">typedef</span> <span class="hljs-keyword">unsigned</span> <span class="hljs-keyword">long</span> <span class="hljs-keyword">long</span> u64;
+<span class="hljs-keyword">using</span> i64 = <span class="hljs-keyword">int64_t</span>;
+<span class="hljs-keyword">using</span> u64 = <span class="hljs-keyword">uint64_t</span>;
 
 <span class="hljs-function">il <span class="hljs-keyword">char</span> <span class="hljs-title">gc</span><span class="hljs-params">()</span> </span>{
     <span class="hljs-keyword">static</span> <span class="hljs-keyword">char</span> buf[MAXBUF],*p1=buf,*p2=buf;
@@ -144,8 +144,8 @@ u64 sum[MAXN &lt;&lt; <span class="hljs-number">2</span>], add[MAXN &lt;&lt; <sp
 <span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;sys/time.h&gt;</span></span>
 <span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;string&gt;</span></span>
 <span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;sstream&gt;</span></span>
-<span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> fp(i,l,r) for(register unsigned long long (i)=(l);(i)&lt;=(r);(i)++)</span>
-<span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> fd(i,l,r) for(register unsigned long long i=l;i&gt;=r;--i)</span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> fp(i,l,r) for(register uint64_t (i)=(l);(i)&lt;=(r);(i)++)</span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> fd(i,l,r) for(register uint64_t i=l;i&gt;=r;--i)</span>
 <span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> fr(a) freopen((a),<span class="hljs-meta-string">"r"</span>,stdin)</span>
 <span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> fw(a) freopen((a),<span class="hljs-meta-string">"w"</span>,stdout)</span>
 <span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> fc fclose(stdin),fclose(stdout)</span>
@@ -153,7 +153,7 @@ u64 sum[MAXN &lt;&lt; <span class="hljs-number">2</span>], add[MAXN &lt;&lt; <sp
 <span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> tpn typename</span>
 <span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> MAXN 10000005</span>
 <span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> MAXBUF 140000000</span>
-<span class="hljs-keyword">typedef</span> <span class="hljs-keyword">unsigned</span> <span class="hljs-keyword">long</span> <span class="hljs-keyword">long</span> u64;
+<span class="hljs-keyword">using</span> u64 = <span class="hljs-keyword">uint64_t</span>;
 
 <span class="hljs-function">il <span class="hljs-keyword">char</span> <span class="hljs-title">gc</span><span class="hljs-params">()</span> </span>{
     <span class="hljs-keyword">static</span> <span class="hljs-keyword">char</span> buf[MAXBUF],*p1=buf,*p2=buf;
@@ -255,7 +255,7 @@ u64 n,N=<span class="hljs-number">1</span>,m;
 <span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;sys/time.h&gt;</span></span>
 <span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;string&gt;</span></span>
 <span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;sstream&gt;</span></span>
-<span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> fp(i,l,r) for(register unsigned long long i=(l);i&lt;=(r);++i)</span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> fp(i,l,r) for(register uint64_t i=(l);i&lt;=(r);++i)</span>
 <span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> lowbit(x) ((x)&amp;-(x))</span>
 <span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> fr(a) freopen((a),<span class="hljs-meta-string">"r"</span>,stdin)</span>
 <span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> fw(a) freopen((a),<span class="hljs-meta-string">"w"</span>,stdout)</span>
@@ -264,7 +264,7 @@ u64 n,N=<span class="hljs-number">1</span>,m;
 <span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> tpn typename</span>
 <span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> MAXN 10000005</span>
 <span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> MAXBUF 140000000</span>
-<span class="hljs-keyword">typedef</span> <span class="hljs-keyword">unsigned</span> <span class="hljs-keyword">long</span> <span class="hljs-keyword">long</span> u64;
+<span class="hljs-keyword">using</span> u64 = <span class="hljs-keyword">uint64_t</span>;
 
 <span class="hljs-function">il <span class="hljs-keyword">char</span> <span class="hljs-title">gc</span><span class="hljs-params">()</span> </span>{
     <span class="hljs-keyword">static</span> <span class="hljs-keyword">char</span> buf[MAXBUF],*p1=buf,*p2=buf;
