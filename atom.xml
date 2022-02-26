@@ -6,7 +6,7 @@
   <link href="https://tifa-233.xyz/atom.xml" rel="self"/>
   
   <link href="https://tifa-233.xyz/"/>
-  <updated>2022-01-19T08:29:48.663Z</updated>
+  <updated>2022-02-26T14:10:44.746Z</updated>
   <id>https://tifa-233.xyz/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Namomo Spring Camp 2022 Div1 每日一题记录</title>
+    <link href="https://tifa-233.xyz/article/namomo2022s1-record/"/>
+    <id>https://tifa-233.xyz/article/namomo2022s1-record/</id>
+    <published>2022-02-26T13:44:56.000Z</published>
+    <updated>2022-02-26T14:10:44.746Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;Namomo Spring Camp 2022 Div1 每日一题记录&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="程序设计" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
+    
+    <category term="题解" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E9%A2%98%E8%A7%A3/"/>
+    
+    
+    <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
+    
+    <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
+    
+    <category term="数据结构" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    
+    <category term="单调栈" scheme="https://tifa-233.xyz/tags/%E5%8D%95%E8%B0%83%E6%A0%88/"/>
+    
+  </entry>
   
   <entry>
     <title>微分几何笔记04 - 外微分法</title>
@@ -402,11 +429,11 @@
     
     <category term="矩阵快速幂" scheme="https://tifa-233.xyz/tags/%E7%9F%A9%E9%98%B5%E5%BF%AB%E9%80%9F%E5%B9%82/"/>
     
+    <category term="单调栈" scheme="https://tifa-233.xyz/tags/%E5%8D%95%E8%B0%83%E6%A0%88/"/>
+    
     <category term="UOJ" scheme="https://tifa-233.xyz/tags/UOJ/"/>
     
     <category term="WC" scheme="https://tifa-233.xyz/tags/WC/"/>
-    
-    <category term="单调栈" scheme="https://tifa-233.xyz/tags/%E5%8D%95%E8%B0%83%E6%A0%88/"/>
     
     <category term="Brent判圈" scheme="https://tifa-233.xyz/tags/Brent%E5%88%A4%E5%9C%88/"/>
     
@@ -465,13 +492,13 @@
     
     <category term="代数" scheme="https://tifa-233.xyz/tags/%E4%BB%A3%E6%95%B0/"/>
     
-    <category term="目录" scheme="https://tifa-233.xyz/tags/%E7%9B%AE%E5%BD%95/"/>
-    
     <category term="几何" scheme="https://tifa-233.xyz/tags/%E5%87%A0%E4%BD%95/"/>
     
-    <category term="分析" scheme="https://tifa-233.xyz/tags/%E5%88%86%E6%9E%90/"/>
-    
     <category term="微分几何" scheme="https://tifa-233.xyz/tags/%E5%BE%AE%E5%88%86%E5%87%A0%E4%BD%95/"/>
+    
+    <category term="目录" scheme="https://tifa-233.xyz/tags/%E7%9B%AE%E5%BD%95/"/>
+    
+    <category term="分析" scheme="https://tifa-233.xyz/tags/%E5%88%86%E6%9E%90/"/>
     
   </entry>
   
@@ -544,9 +571,9 @@
     
     <category term="复数" scheme="https://tifa-233.xyz/tags/%E5%A4%8D%E6%95%B0/"/>
     
-    <category term="线性代数" scheme="https://tifa-233.xyz/tags/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/"/>
-    
     <category term="字符串" scheme="https://tifa-233.xyz/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/"/>
+    
+    <category term="线性代数" scheme="https://tifa-233.xyz/tags/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/"/>
     
     <category term="启发式算法" scheme="https://tifa-233.xyz/tags/%E5%90%AF%E5%8F%91%E5%BC%8F%E7%AE%97%E6%B3%95/"/>
     
@@ -887,39 +914,6 @@
     <category term="状压DP" scheme="https://tifa-233.xyz/tags/%E7%8A%B6%E5%8E%8BDP/"/>
     
     <category term="TJOI" scheme="https://tifa-233.xyz/tags/TJOI/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>模板 - 模拟退火</title>
-    <link href="https://tifa-233.xyz/article/ha-sa/"/>
-    <id>https://tifa-233.xyz/article/ha-sa/</id>
-    <published>2021-11-11T11:20:54.000Z</published>
-    <updated>2021-11-17T07:50:28.446Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;基于 C++14 的模拟退火模板, 支持通过重排序给定序列和按给定范围生成序列两种方式, 推荐使用前者&lt;/p&gt;
-&lt;div class=&quot;admonition warning&quot;&gt;&lt;p class=&quot;admonition-title&quot;&gt;warning&lt;/p&gt;&lt;p&gt;仅在 G++ 下测试过&lt;/p&gt;
-&lt;/div&gt;</summary>
-    
-    
-    
-    <category term="程序设计" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
-    
-    <category term="模板" scheme="https://tifa-233.xyz/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E6%A8%A1%E6%9D%BF/"/>
-    
-    
-    <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
-    
-    <category term="模板" scheme="https://tifa-233.xyz/tags/%E6%A8%A1%E6%9D%BF/"/>
-    
-    <category term="C++" scheme="https://tifa-233.xyz/tags/C/"/>
-    
-    <category term="随机化" scheme="https://tifa-233.xyz/tags/%E9%9A%8F%E6%9C%BA%E5%8C%96/"/>
-    
-    <category term="随机化算法" scheme="https://tifa-233.xyz/tags/%E9%9A%8F%E6%9C%BA%E5%8C%96%E7%AE%97%E6%B3%95/"/>
-    
-    <category term="模拟退火" scheme="https://tifa-233.xyz/tags/%E6%A8%A1%E6%8B%9F%E9%80%80%E7%81%AB/"/>
     
   </entry>
   
