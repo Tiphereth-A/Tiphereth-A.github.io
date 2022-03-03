@@ -6,7 +6,7 @@
   <link href="https://tifa-233.xyz/atom.xml" rel="self"/>
   
   <link href="https://tifa-233.xyz/"/>
-  <updated>2022-03-02T02:23:49.753Z</updated>
+  <updated>2022-03-02T02:24:20.330Z</updated>
   <id>https://tifa-233.xyz/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://tifa-233.xyz/article/codeforces-1637-f/"/>
     <id>https://tifa-233.xyz/article/codeforces-1637-f/</id>
     <published>2022-03-02T02:02:42.000Z</published>
-    <updated>2022-03-02T02:23:49.753Z</updated>
+    <updated>2022-03-02T02:24:20.330Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://codeforces.com/problemset/problem/1637/F&quot;&gt;题目链接&lt;/a&gt;&lt;/p&gt;</summary>
@@ -50,7 +50,7 @@
     <link href="https://tifa-233.xyz/article/namomo2022s1-week1/"/>
     <id>https://tifa-233.xyz/article/namomo2022s1-week1/</id>
     <published>2022-02-26T13:44:56.000Z</published>
-    <updated>2022-03-02T00:45:48.176Z</updated>
+    <updated>2022-03-03T05:37:33.395Z</updated>
     
     
     <summary type="html">&lt;p&gt;Namomo Spring Camp 2022 Div1 每日一题记录 (2022.02.26-2022.03.04)&lt;/p&gt;</summary>
@@ -64,11 +64,11 @@
     
     <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
     
+    <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
+    
     <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
     
     <category term="数据结构" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
-    
-    <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
     
     <category term="DP" scheme="https://tifa-233.xyz/tags/DP/"/>
     
@@ -78,15 +78,17 @@
     
     <category term="组合数学" scheme="https://tifa-233.xyz/tags/%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/"/>
     
-    <category term="滚动数组" scheme="https://tifa-233.xyz/tags/%E6%BB%9A%E5%8A%A8%E6%95%B0%E7%BB%84/"/>
-    
     <category term="抽屉原理" scheme="https://tifa-233.xyz/tags/%E6%8A%BD%E5%B1%89%E5%8E%9F%E7%90%86/"/>
+    
+    <category term="滚动数组" scheme="https://tifa-233.xyz/tags/%E6%BB%9A%E5%8A%A8%E6%95%B0%E7%BB%84/"/>
     
     <category term="区间DP" scheme="https://tifa-233.xyz/tags/%E5%8C%BA%E9%97%B4DP/"/>
     
+    <category term="LCA" scheme="https://tifa-233.xyz/tags/LCA/"/>
+    
     <category term="单调栈" scheme="https://tifa-233.xyz/tags/%E5%8D%95%E8%B0%83%E6%A0%88/"/>
     
-    <category term="LCA" scheme="https://tifa-233.xyz/tags/LCA/"/>
+    <category term="可持久化线段树(主席树)" scheme="https://tifa-233.xyz/tags/%E5%8F%AF%E6%8C%81%E4%B9%85%E5%8C%96%E7%BA%BF%E6%AE%B5%E6%A0%91-%E4%B8%BB%E5%B8%AD%E6%A0%91/"/>
     
   </entry>
   
@@ -362,11 +364,11 @@
     
     <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
     
-    <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
-    
     <category term="算法" scheme="https://tifa-233.xyz/tags/%E7%AE%97%E6%B3%95/"/>
     
     <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
+    
+    <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
     
     <category term="数论" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E8%AE%BA/"/>
     
@@ -456,15 +458,15 @@
     
     <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
     
+    <category term="算法" scheme="https://tifa-233.xyz/tags/%E7%AE%97%E6%B3%95/"/>
+    
+    <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
+    
     <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
     
     <category term="搜索" scheme="https://tifa-233.xyz/tags/%E6%90%9C%E7%B4%A2/"/>
     
     <category term="数据结构" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
-    
-    <category term="算法" scheme="https://tifa-233.xyz/tags/%E7%AE%97%E6%B3%95/"/>
-    
-    <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
     
     <category term="DP" scheme="https://tifa-233.xyz/tags/DP/"/>
     
@@ -508,9 +510,9 @@
     
     <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
     
-    <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
-    
     <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
+    
+    <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
     
     <category term="数论" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E8%AE%BA/"/>
     
@@ -539,13 +541,13 @@
     
     <category term="代数" scheme="https://tifa-233.xyz/tags/%E4%BB%A3%E6%95%B0/"/>
     
-    <category term="目录" scheme="https://tifa-233.xyz/tags/%E7%9B%AE%E5%BD%95/"/>
-    
     <category term="几何" scheme="https://tifa-233.xyz/tags/%E5%87%A0%E4%BD%95/"/>
     
-    <category term="分析" scheme="https://tifa-233.xyz/tags/%E5%88%86%E6%9E%90/"/>
-    
     <category term="微分几何" scheme="https://tifa-233.xyz/tags/%E5%BE%AE%E5%88%86%E5%87%A0%E4%BD%95/"/>
+    
+    <category term="目录" scheme="https://tifa-233.xyz/tags/%E7%9B%AE%E5%BD%95/"/>
+    
+    <category term="分析" scheme="https://tifa-233.xyz/tags/%E5%88%86%E6%9E%90/"/>
     
   </entry>
   
@@ -572,6 +574,14 @@
     
     <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
     
+    <category term="算法" scheme="https://tifa-233.xyz/tags/%E7%AE%97%E6%B3%95/"/>
+    
+    <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
+    
+    <category term="图论" scheme="https://tifa-233.xyz/tags/%E5%9B%BE%E8%AE%BA/"/>
+    
+    <category term="最短路" scheme="https://tifa-233.xyz/tags/%E6%9C%80%E7%9F%AD%E8%B7%AF/"/>
+    
     <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
     
     <category term="ICPC" scheme="https://tifa-233.xyz/tags/ICPC/"/>
@@ -587,14 +597,6 @@
     <category term="DFS" scheme="https://tifa-233.xyz/tags/DFS/"/>
     
     <category term="剪枝" scheme="https://tifa-233.xyz/tags/%E5%89%AA%E6%9E%9D/"/>
-    
-    <category term="算法" scheme="https://tifa-233.xyz/tags/%E7%AE%97%E6%B3%95/"/>
-    
-    <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
-    
-    <category term="图论" scheme="https://tifa-233.xyz/tags/%E5%9B%BE%E8%AE%BA/"/>
-    
-    <category term="最短路" scheme="https://tifa-233.xyz/tags/%E6%9C%80%E7%9F%AD%E8%B7%AF/"/>
     
     <category term="DP" scheme="https://tifa-233.xyz/tags/DP/"/>
     
@@ -622,6 +624,8 @@
     
     <category term="线性代数" scheme="https://tifa-233.xyz/tags/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/"/>
     
+    <category term="后缀自动机" scheme="https://tifa-233.xyz/tags/%E5%90%8E%E7%BC%80%E8%87%AA%E5%8A%A8%E6%9C%BA/"/>
+    
     <category term="启发式算法" scheme="https://tifa-233.xyz/tags/%E5%90%AF%E5%8F%91%E5%BC%8F%E7%AE%97%E6%B3%95/"/>
     
     <category term="Cramer法则" scheme="https://tifa-233.xyz/tags/Cramer%E6%B3%95%E5%88%99/"/>
@@ -643,8 +647,6 @@
     <category term="IDA*" scheme="https://tifa-233.xyz/tags/IDA/"/>
     
     <category term="后缀数组" scheme="https://tifa-233.xyz/tags/%E5%90%8E%E7%BC%80%E6%95%B0%E7%BB%84/"/>
-    
-    <category term="后缀自动机" scheme="https://tifa-233.xyz/tags/%E5%90%8E%E7%BC%80%E8%87%AA%E5%8A%A8%E6%9C%BA/"/>
     
     <category term="Lyndon分解" scheme="https://tifa-233.xyz/tags/Lyndon%E5%88%86%E8%A7%A3/"/>
     
@@ -671,11 +673,11 @@
     
     <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
     
-    <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
-    
     <category term="算法" scheme="https://tifa-233.xyz/tags/%E7%AE%97%E6%B3%95/"/>
     
     <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
+    
+    <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
     
     <category term="数论" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E8%AE%BA/"/>
     
@@ -726,15 +728,15 @@
     
     <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
     
-    <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
-    
-    <category term="数据结构" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
-    
     <category term="算法" scheme="https://tifa-233.xyz/tags/%E7%AE%97%E6%B3%95/"/>
     
     <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
     
     <category term="图论" scheme="https://tifa-233.xyz/tags/%E5%9B%BE%E8%AE%BA/"/>
+    
+    <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
+    
+    <category term="数据结构" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
     
     <category term="并查集" scheme="https://tifa-233.xyz/tags/%E5%B9%B6%E6%9F%A5%E9%9B%86/"/>
     
@@ -781,9 +783,9 @@
     
     <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
     
-    <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
-    
     <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
+    
+    <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
     
     <category term="构造" scheme="https://tifa-233.xyz/tags/%E6%9E%84%E9%80%A0/"/>
     
@@ -834,9 +836,9 @@
     
     <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
     
-    <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
-    
     <category term="数学" scheme="https://tifa-233.xyz/tags/%E6%95%B0%E5%AD%A6/"/>
+    
+    <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
     
     <category term="洛谷" scheme="https://tifa-233.xyz/tags/%E6%B4%9B%E8%B0%B7/"/>
     
@@ -919,9 +921,9 @@
     
     <category term="程序设计" scheme="https://tifa-233.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
     
-    <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
-    
     <category term="算法" scheme="https://tifa-233.xyz/tags/%E7%AE%97%E6%B3%95/"/>
+    
+    <category term="题解" scheme="https://tifa-233.xyz/tags/%E9%A2%98%E8%A7%A3/"/>
     
     <category term="洛谷" scheme="https://tifa-233.xyz/tags/%E6%B4%9B%E8%B0%B7/"/>
     
