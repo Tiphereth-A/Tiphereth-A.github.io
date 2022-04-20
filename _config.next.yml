@@ -324,8 +324,6 @@ tagcloud:
   amount: 600 # Total amount of tags
   orderby: name # Order of tags
   order: 1 # Sort order
-  start: "#4A569D" # Start color (hex, rgba, hsla or color keywords)
-  end: "#DC2424" # End color (hex, rgba, hsla or color keywords)
 
 # Google Calendar
 # Share your recent schedule to others via calendar page.
