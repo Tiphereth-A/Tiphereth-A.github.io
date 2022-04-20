@@ -1,0 +1,234 @@
+---
+title: '题解 - [CodeForces 1139 D] Steps to One (杜教筛版)'
+categories:
+  - 程序设计
+  - 题解
+tags:
+  - 程序设计
+  - 题解
+  - CodeForces
+  - 数学
+  - 概率
+  - 数论
+  - DP
+  - 期望
+  - 级数
+  - 几何级数
+  - 数论分块/整除分块
+  - 快速幂
+  - 逆元
+  - 杜教筛
+  - Möbius反演
+  - Möbius函数
+  - 概率DP
+  - 容斥定理
+date: 2021-04-25 22:07:03
+---
+
+为了补天梯赛题写的题解
+
+[题目链接](https://codeforces.com/problemset/problem/1139/D)
+
+<!-- more -->
+
+## 原始题面
+
+time limit per test: 2 seconds
+
+memory limit per test: 256 megabytes
+
+input: standard input
+
+output: standard output
+
+### Description
+
+Vivek initially has an empty array $a$ and some integer constant $m$
+
+He performs the following algorithm:
+
+1. Select $a$ random integer $x$ uniformly in range from $1$ to $m$ and append it to the end of $a$
+1. Compute the greatest common divisor of integers in $a$
+1. In case it equals to $1$, break
+1. Otherwise, return to step $1$
+
+Find the expected length of $a$. It can be shown that it can be represented as ${P\over Q}$ where $P$ and $Q$ are coprime integers and $Q\ne 0\pmod{10^9+7}$. Print the value of $P\cdot Q^{-1}\pmod{10^9+7}$
+
+### Input
+
+The first and only line contains a single integer $m$ ($1\leqslant m\leqslant 100000$)
+
+### Output
+
+Print a single integer — the expected length of the array $a$ written as $P\cdot Q^{-1}\pmod{10^9+7}$
+
+### Example
+
+#### Input 1
+
+```input1
+1
+```
+
+#### Output 1
+
+```output1
+1
+```
+
+#### Input 2
+
+```input2
+2
+```
+
+#### Output 2
+
+```output2
+2
+```
+
+#### Input 3
+
+```input3
+4
+```
+
+#### Output 3
+
+```output3
+333333338
+```
+
+### Note
+
+In the first example, since Vivek can choose only integers from $1$ to $1$, he will have $a=[1]$ after the first append operation, and after that quit the algorithm. Hence the length of $a$ is always $1$, so its expected value is $1$ as well
+
+In the second example, Vivek each time will append either $1$ or $2$, so after finishing the algorithm he will end up having some number of $2$'s (possibly zero), and $a$ single $1$ in the end. The expected length of the list is $\def\enum#1{ #1\cdot{1\over 2^{ #1}}}\enum{1}+\enum{2}+\enum{3}+...=2$
+
+## 题意简述
+
+对一个初始为空的正整数序列 $a$, 每次随机在 $[1,m]_{\N}$ 内选一个数插入, 当其最大公因数为 $1$ 时停止, 问序列期望长度 $\in\Z_p^*,~p=10^9+7$
+
+## 解题思路
+
+$O(m\log m)$ 的概率DP做法看官方题解即可, 这里讲讲 $1\leqslant m\leqslant 10^{11}, 1\leqslant p\leqslant 10^{12}$ 时候 (即 第六届团体程序设计天梯赛 的 L3-3) 该怎么做
+
+首先推式子, 令事件 $X$ 为序列长度, 则
+
+$$\begin{aligned}
+  E(X)&=\sum_{i=1}^{\infty}iP(X=i)&(1)\\
+  &=\sum_{i=1}^{\infty}\sum_{j=1}^iP(X=i)&(2)\\
+  &=\sum_{i=1}^{\infty}P(X\geqslant i)&(3)\\
+  &=1+\sum_{i=1}^{\infty}(1-P(X\leqslant i))&(4)\\
+  &=1+\sum_{i=1}^{\infty}\left(1-P\left(\gcd_{j=1}^ia_i=1\right)\right)&(5)\\
+  &=1+\sum_{i=1}^{\infty}\left(1-\sum_{d=1}^m\mu(d)\left({\lfloor{m\over d}\rfloor\over m}\right)^i\right)&(6)\\
+  &=1-\sum_{i=1}^{\infty}\sum_{d=2}^m\mu(d)\left({\lfloor{m\over d}\rfloor\over m}\right)^i&(7)\\
+  &=1-\sum_{d=2}^m\mu(d)\sum_{i=1}^{\infty}\left({\lfloor{m\over d}\rfloor\over m}\right)^i&(8)\\
+  &=1-\sum_{d=2}^m\mu(d){\lfloor{m\over d}\rfloor\over m-\lfloor{m\over d}\rfloor}&(9)\\
+\end{aligned}$$
+
+其中:
+
+- $(1)\to (4)$: 常规操作
+- $(5)$: 由题意立得
+- $(6)$: 容斥/Möbius反演
+- $(7)$: 不难注意到 $d=1$ 时, $\mu(d)\left({\lfloor{m\over d}\rfloor\over m}\right)^i=1$ (结合题意想想为何会这样)
+- $(8)$: 交换求和号以处理掉级数
+- $(9)$: 考虑几何级数
+
+之后就很显然了, 我们做个杜教筛+整除分块就行了
+
+> u1s1, 这题考察的范围还挺广
+
+可以加如下常数优化
+
+- 预先算一遍 $\sum_{i=1}^m\mu(i)$, 这样整除分块过程中要求的所有 $\sum\mu$ 就都被求过一遍了
+- 因为我们往往使用 `map` 存 $\sum\mu$, 所以在整除分块的过程中可以用变量记录上一步的 $\sum\mu$
+
+## 复杂度
+
+假设
+
+- 预先筛出 $\mu(i),~i=1,2,...,n$
+- $f(x)=\lfloor{m\over x}\rfloor$
+- 杜教筛求 $\sum_{i=1}^n\mu(i)$ 的时间复杂度为 $\Theta(T(n))$
+
+则时间复杂度为
+
+$$\Theta\left(n+T(n)+\sum_{i\in f([2,m]_{\N})}\log p\right)=O\left(n+{m\over\sqrt n}+\sqrt m\log p\right)$$
+
+## 代码参考
+
+> 天梯赛版 [见此](/article/gplt2021-l3-3/#代码参考)
+
+<details>
+<summary><font color='orange'>Show code</font></summary>
+
+```cpp
+/*
+* @Author: Tifa
+* @LastEditTime: 2021-04-25 22:07:03
+* @Description:
+*/
+
+#include <bits/stdc++.h>
+using namespace std;
+using i64 = int64_t;
+
+#define _for(i, l, r) for (auto i = (l); i <= (r); ++i)
+
+#define _rfor(i, r, l) for (auto i = (r); i >= (l); --i)
+
+const int OFFSET = 5;
+const int N = 5e6 + OFFSET, p = 1e9 + 7;
+
+map<i64, i64> sum_mu;
+bool vis[N];
+int prime[N], mu[N], cnt_prime;
+void init_prime(int p, int n = N - 1) {
+    mu[1] = 1;
+    _for(i, 2, n) {
+        if (!vis[i]) mu[prime[++cnt_prime] = i] = -1;
+        for (int j = 1; j <= cnt_prime && i * prime[j] <= n; ++j) {
+            vis[i * prime[j]] = 1;
+            if (i % prime[j] == 0) break;
+            mu[i * prime[j]] = -mu[i];
+        }
+    }
+    _for(i, 2, n)(mu[i] += mu[i - 1]) %= p;
+}
+
+i64 inv(i64 a, i64 mod) {
+    i64 res = 1, b = mod - 2;
+    for (; b; b >>= 1, (a *= a) %= mod)
+        if (b & 1) (res *= a) %= mod;
+    return res;
+}
+
+i64 get_sum_mu(i64 n, i64 p) {
+    if (n < N) return mu[n];
+    if (sum_mu[n]) return sum_mu[n];
+    i64 ans = 1;
+    for (i64 l = 2, r; l <= n; l = r + 1) {
+        r = n / (n / l);
+        ((ans -= (r - l + 1) * get_sum_mu(n / l, p) % p) += p) %= p;
+    }
+    return sum_mu[n] = ans;
+}
+
+int main() {
+    i64 n;
+    cin >> n;
+    init_prime(p);
+    i64 ans = 0;
+    for (i64 l = 2, r; l <= n; l = r + 1) {
+        r = n / (n / l);
+        (ans += ((get_sum_mu(r, p) - get_sum_mu(l - 1, p)) % p + p) % p * (n / l) % p * inv(n - n / l, p) % p) %= p;
+    }
+    cout << ((1 - ans) % p + p) % p;
+    return 0;
+}
+```
+
+</details>
