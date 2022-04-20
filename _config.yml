@@ -194,7 +194,7 @@ feed:
 pandoc:
   pandoc_path: pandoc
 
-neat_enable: false
+neat_enable: true
 
 neat_html:
   enable: true
