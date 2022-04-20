@@ -11,7 +11,7 @@ tags:
   - 数论分块/整除分块
 date: 2020-07-25 00:12:29
 ---
-[题目链接](https://lightoj.com/volume_showproblem.php?problem=1245)
+[题目链接](https://vjudge.net/problem/LightOJ-1245/origin)
 
 <!-- more -->
 

@@ -17,7 +17,7 @@ date: 2020-07-27 22:58:08
 ---
 题目链接
 
-- [POJ 1777](https://poj.org/problem?id=1777)
+- [POJ 1777](https://vjudge.net/problem/POJ-1777/origin)
 - [UVA 1323](https://vjudge.net/problem/UVA-1323/origin)
 
 <!-- more -->

@@ -23,7 +23,7 @@ date: 2020-01-27 15:40:12
 ## 题面
 
 - [洛谷 P4462](https://www.luogu.com.cn/problem/P4462)
-- [BZOJ 5301](https://www.lydsy.com/JudgeOnline/problem.php?id=5301)
+- [BZOJ 5301](https://vjudge.net/problem/%E9%BB%91%E6%9A%97%E7%88%86%E7%82%B8-5301/origin)
 - [LOJ 2534](https://loj.ac/problem/2534)
 
 <!--more-->

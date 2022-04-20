@@ -16,7 +16,7 @@ date: 2020-07-31 20:58:31
 ---
 题目链接
 
-- [POJ 2356](https://poj.org/problem?id=2356)
+- [POJ 2356](https://vjudge.net/problem/POJ-2356/origin)
 - [Ural 1032](https://vjudge.net/problem/URAL-1032/origin)
 
 <!-- more -->

@@ -1273,7 +1273,7 @@ int main() {
 
 ### 例题
 
-- POJ [1084 Square Destroyer](https://poj.org/problem?id=1084)
+- POJ [1084 Square Destroyer](https://vjudge.net/problem/POJ-1084/origin)
 - FZU [1686 神龙的难题](https://acm.fzu.edu.cn/problem.php?pid=1686)
 
 ---

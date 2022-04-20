@@ -11,7 +11,7 @@ tags:
   - 快速幂
 date: 2020-07-25 00:24:27
 ---
-[题目链接](https://lightoj.com/volume_showproblem.php?problem=1282)
+[题目链接](https://vjudge.net/problem/LightOJ-1282/origin)
 
 <!-- more -->
 

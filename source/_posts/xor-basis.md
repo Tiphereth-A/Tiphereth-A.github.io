@@ -196,8 +196,8 @@ class Xor_base {
 
 - 洛谷 [P3812 【模板】线性基](https://www.luogu.com.cn/problem/P3812) (最大子集异或和)
 - 洛谷 [P3857 [TJOI2008]彩灯](https://www.luogu.com.cn/problem/P3857) (子集异或和的种数, 即线性基的秩)
-- HDU [3949 XOR](https://acm.hdu.edu.cn/showproblem.php?pid=3949) (子集k小异或和)
+- HDU [3949 XOR](https://vjudge.net/problem/HDU-3949/origin) (子集k小异或和)
 - 洛谷 [P4869 albus就是要第一个出场](https://www.luogu.com.cn/problem/P4869) (子集异或和排名)
 - 洛谷 [P4151 [WC2011]最大XOR和路径](https://www.luogu.com.cn/problem/P4151) (图上最大异或和路径)
 - 洛谷 [P3292 [SCOI2016]幸运数字](https://www.luogu.com.cn/problem/P3292) (树上路径点的最大子集异或和)
-- HDU [6579 Operation](https://acm.hdu.edu.cn/showproblem.php?pid=6579) (子集k小异或和)
+- HDU [6579 Operation](https://vjudge.net/problem/HDU-6579/origin) (子集k小异或和)

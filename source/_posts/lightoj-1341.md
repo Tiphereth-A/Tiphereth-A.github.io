@@ -13,7 +13,7 @@ tags:
   - 筛法
 date: 2020-07-25 00:29:43
 ---
-[题目链接](https://lightoj.com/volume_showproblem.php?problem=1341)
+[题目链接](https://vjudge.net/problem/LightOJ-1341/origin)
 
 <!-- more -->
 
