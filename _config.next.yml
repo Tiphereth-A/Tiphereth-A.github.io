@@ -374,7 +374,7 @@ codeblock:
   # All available themes: https://theme-next.js.org/highlight/
   theme:
     light: github
-    dark: github
+    dark: github-dark-dimmed
   prism:
     light: prism
     dark: prism-dark
