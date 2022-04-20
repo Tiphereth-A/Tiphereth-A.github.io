@@ -465,12 +465,12 @@ font:
   posts:
     external: true
     family:
-    size: 1
+    size: .8
 
   # Font settings for <code> and code blocks.
   codes:
     external: true
-    family:
+    family: Fira Code
 
 
 # ---------------------------------------------------------------
