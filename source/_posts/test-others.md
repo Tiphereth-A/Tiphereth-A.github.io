@@ -9,7 +9,7 @@ comments: false
 DOC:
 
 - <https://theme-next.js.org/docs/tag-plugins>
-- <https://www.u2sb.top/docs/hexo-tag-mmedia>
+- <https://www.u2sb.com/pages/748f02/>
 
 <!--more-->
 
@@ -88,11 +88,11 @@ div.text-center {
 ## Link Grid
 
 {% linkgrid %}
-Theme NexT | <https://theme-next.js.org/> | Stay Simple. Stay NexT. | /images/apple-touch-icon-next.png
-Theme NexT | <https://theme-next.js.org/> | Stay Simple. Stay NexT. | /images/apple-touch-icon-next.png
-Theme NexT | <https://theme-next.js.org/> | Stay Simple. Stay NexT. | /images/apple-touch-icon-next.png
-Theme NexT | <https://theme-next.js.org/> | Stay Simple. Stay NexT. | /images/apple-touch-icon-next.png
-% Theme NexT | <https://theme-next.js.org/> | Stay Simple. Stay NexT. | /images/apple-touch-icon-next.png
+Theme NexT | https://theme-next.js.org/ | Stay Simple. Stay NexT. | /images/apple-touch-icon-next.png
+Theme NexT | https://theme-next.js.org/ | Stay Simple. Stay NexT. | /images/apple-touch-icon-next.png
+Theme NexT | https://theme-next.js.org/ | Stay Simple. Stay NexT. | /images/apple-touch-icon-next.png
+Theme NexT | https://theme-next.js.org/ | Stay Simple. Stay NexT. | /images/apple-touch-icon-next.png
+% Theme NexT | https://theme-next.js.org/ | Stay Simple. Stay NexT. | /images/apple-touch-icon-next.png
 {% endlinkgrid %}
 
 ## 插入PDF
@@ -105,6 +105,6 @@ Theme NexT | <https://theme-next.js.org/> | Stay Simple. Stay NexT. | /images/ap
 
 {% mmedia "video" ./SquareToCircle.mp4 %}
 
-### Bilibili视频 - BV1C4411u7rK (Firefox 暂不支持)
+### Bilibili视频 - BV1C4411u7rK
 
 {% mmedia "bilibili" "bvid:1C4411u7rK" "quality:high" "danmaku" "allowfullscreen" %}
