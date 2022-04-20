@@ -17,7 +17,7 @@ Namomo Spring Camp 2022 Div1 每日一题记录 (2022.03.12-2022.03.18)
 
 ## 301 - 连续子序列
 
-[题目链接](http://oj.daimayuan.top/course/10/problem/504)
+[题目链接](https://oj.daimayuan.top/course/10/problem/504)
 
 1s, 512MB
 
@@ -71,7 +71,7 @@ Namomo Spring Camp 2022 Div1 每日一题记录 (2022.03.12-2022.03.18)
 
 ## 302 - 工作安排
 
-[题目链接](http://oj.daimayuan.top/course/10/problem/503)
+[题目链接](https://oj.daimayuan.top/course/10/problem/503)
 
 1s, 256MB
 
@@ -136,7 +136,7 @@ $0 \leq D_i,P_i \leq 1\times10^9$
 
 ## 303 - 三角果计数
 
-[题目链接](http://oj.daimayuan.top/course/10/problem/505)
+[题目链接](https://oj.daimayuan.top/course/10/problem/505)
 
 1s, 1024MB
 
@@ -198,7 +198,7 @@ $0 \leq D_i,P_i \leq 1\times10^9$
 
 ## 304 - 整齐的数组2
 
-[题目链接](http://oj.daimayuan.top/course/10/problem/555)
+[题目链接](https://oj.daimayuan.top/course/10/problem/555)
 
 1s, 512MB
 
@@ -261,7 +261,7 @@ Polycarp 有一个长度为 $n$ 的数组 $a_1,a_2,...,a_n$ ($n$ 是偶数) . Po
 
 ## 305 - 三进制循环
 
-[题目链接](http://oj.daimayuan.top/course/10/problem/556)
+[题目链接](https://oj.daimayuan.top/course/10/problem/556)
 
 2s, 256MB
 
@@ -325,7 +325,7 @@ Polycarp 有一个长度为 $n$ 的数组 $a_1,a_2,...,a_n$ ($n$ 是偶数) . Po
 
 ## 306 - 树上逆序对
 
-[题目链接](http://oj.daimayuan.top/course/10/problem/559)
+[题目链接](https://oj.daimayuan.top/course/10/problem/559)
 
 1s, 1024MB
 
@@ -376,7 +376,7 @@ Polycarp 有一个长度为 $n$ 的数组 $a_1,a_2,...,a_n$ ($n$ 是偶数) . Po
 
 ## 307 - 约分 (CCPC Harbin 2021 D)
 
-[题目链接](http://oj.daimayuan.top/course/10/problem/560)
+[题目链接](https://oj.daimayuan.top/course/10/problem/560)
 
 1s, 1024MB
 

@@ -569,7 +569,7 @@ $$\prod_{i=1}^{\varphi(m)}a_i=\prod_{i=1}^{\varphi(m)}aa_i=a^{\varphi(m)}\prod_{
 ### 例题
 
 - 洛谷 [P4942 小凯的数字](https://www.luogu.com.cn/problem/P4942)
-- HDU [2973 YAPTCHA](http://acm.hdu.edu.cn/showproblem.php?pid=2973)
+- HDU [2973 YAPTCHA](https://acm.hdu.edu.cn/showproblem.php?pid=2973)
 
 ## 逆元
 

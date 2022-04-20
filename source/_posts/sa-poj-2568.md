@@ -16,7 +16,7 @@ date: 2020-07-30 22:03:55
 ---
 题目链接
 
-- [POJ 2568](http://poj.org/problem?id=2568)
+- [POJ 2568](https://poj.org/problem?id=2568)
 - [ZOJ 1965](https://vjudge.net/problem/ZOJ-1965/origin)
 
 <!-- more -->

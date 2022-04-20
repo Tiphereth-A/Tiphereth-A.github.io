@@ -25,7 +25,7 @@ Namomo Spring Camp 2022 Div1 每日一题记录 (2022.03.05-2022.03.11)
 
 ## 201 - 摘桃子
 
-[题目链接](http://oj.daimayuan.top/problem/466)
+[题目链接](https://oj.daimayuan.top/problem/466)
 
 1s, 1024MB
 
@@ -105,7 +105,7 @@ int main() {
 
 ## 202 - 路径计数2 (CF559C)
 
-[题目链接](http://oj.daimayuan.top/problem/467)
+[题目链接](https://oj.daimayuan.top/problem/467)
 
 1s, 512MB
 
@@ -217,7 +217,7 @@ int main() {
 
 ## 203 - 函数求和
 
-[题目链接](http://oj.daimayuan.top/problem/468)
+[题目链接](https://oj.daimayuan.top/problem/468)
 
 1s, 1024MB
 
@@ -324,7 +324,7 @@ int main() {
 
 ## 204 - XOR Inverse (CF1416C)
 
-[题目链接](http://oj.daimayuan.top/course/10/problem/497)
+[题目链接](https://oj.daimayuan.top/course/10/problem/497)
 
 2s, 512MB
 
@@ -403,7 +403,7 @@ $1\leq n\leq 3\cdot 10^5$, $0\leq a_i\leq 10^9$
 
 ## 205 - Closest Equals (CF522D)
 
-[题目链接](http://oj.daimayuan.top/course/10/problem/469)
+[题目链接](https://oj.daimayuan.top/course/10/problem/469)
 
 2s, 512MB
 
@@ -488,7 +488,7 @@ $1\leq n\leq 3\cdot 10^5$, $0\leq a_i\leq 10^9$
 
 ## 206 - CCPC Harbin 2021 G, Damaged Bicycle
 
-[题目链接](http://oj.daimayuan.top/course/10/problem/380)
+[题目链接](https://oj.daimayuan.top/course/10/problem/380)
 
 3s, 1024MB
 
@@ -622,7 +622,7 @@ As given in the input, the only bicycle has $\frac{50}{100}$ probability to be d
 
 ## 207 - 拆方块 (CF573B, 51NOD1550)
 
-[题目链接](http://oj.daimayuan.top/course/10/problem/501)
+[题目链接](https://oj.daimayuan.top/course/10/problem/501)
 
 1s, 1024MB
 

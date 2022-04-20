@@ -57,7 +57,7 @@ date: 2020-11-15 23:01:18
 | G    | Mathematical Practice                        | 39 / 64    | 组合数学               |
 | H    | Sequence                                     | 15 / 74    | 分块 / 线段树          |
 | I    | Simple Math Problem                          | 107 / 452  | 签到                   |
-| J    | [Split Game](http://poj.org/problem?id=2311) | 4 / 133    | 博弈论                 |
+| J    | [Split Game](https://poj.org/problem?id=2311) | 4 / 133    | 博弈论                 |
 | K    | Travel Expense                               | 33 / 280   | Floyd + 二分           |
 | *L   | WZB's Harem                                  | 9 / 97     | 状压DP                 |
 | M    | Zoos's Animal Codes                          | 205 / 241  | 签到                   |

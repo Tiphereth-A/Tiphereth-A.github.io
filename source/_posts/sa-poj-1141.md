@@ -17,7 +17,7 @@ date: 2020-07-25 22:14:38
 ---
 题目链接
 
-- [POJ 1141](http://poj.org/problem?id=1141)
+- [POJ 1141](https://poj.org/problem?id=1141)
 - [ZOJ 1463](https://vjudge.net/problem/ZOJ-1463/origin)
 - [UVa 1626](https://vjudge.net/problem/UVA-1626/origin)
 - [Ural 1183](https://acm.timus.ru/problem.aspx?space=1&num=1183)

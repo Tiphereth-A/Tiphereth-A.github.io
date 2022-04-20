@@ -15,7 +15,7 @@ date: 2020-07-27 22:58:52
 ---
 题目链接
 
-- [POJ 1381](http://poj.org/problem?id=1381)
+- [POJ 1381](https://poj.org/problem?id=1381)
 - [ZOJ 2011](https://vjudge.net/problem/ZOJ-2011/origin)
 
 <!-- more -->

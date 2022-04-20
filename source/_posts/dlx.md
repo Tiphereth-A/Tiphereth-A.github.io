@@ -1273,8 +1273,8 @@ int main() {
 
 ### 例题
 
-- POJ [1084 Square Destroyer](http://poj.org/problem?id=1084)
-- FZU [1686 神龙的难题](http://acm.fzu.edu.cn/problem.php?pid=1686)
+- POJ [1084 Square Destroyer](https://poj.org/problem?id=1084)
+- FZU [1686 神龙的难题](https://acm.fzu.edu.cn/problem.php?pid=1686)
 
 ---
 

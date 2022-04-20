@@ -34,7 +34,7 @@ Namomo Spring Camp 2022 Div1 每日一题记录 (2022.03.19-2022.03.25)
 
 ## 401 - 蜗蜗的数列 (CF1634F)
 
-[题目链接](http://oj.daimayuan.top/course/10/problem/562)
+[题目链接](https://oj.daimayuan.top/course/10/problem/562)
 
 2s, 512MB
 
@@ -202,7 +202,7 @@ int main() {
 
 ## 402 - 最大公约数 (JZOJ4922)
 
-[题目链接](http://oj.daimayuan.top/course/10/problem/131)
+[题目链接](https://oj.daimayuan.top/course/10/problem/131)
 
 1s, 1024MB
 
@@ -308,7 +308,7 @@ int main() {
 
 ## 403 - 平方计数
 
-[题目链接](http://oj.daimayuan.top/course/10/problem/607)
+[题目链接](https://oj.daimayuan.top/course/10/problem/607)
 
 1s, 1024MB
 
@@ -438,7 +438,7 @@ int main() {
 
 ## 404 - 字典序最小 (ICPC North Central NA 2019 E)
 
-[题目链接](http://oj.daimayuan.top/course/10/problem/608)
+[题目链接](https://oj.daimayuan.top/course/10/problem/608)
 
 1s, 1024MB
 
@@ -482,7 +482,7 @@ int main() {
 
 ## 405 - 拆拆
 
-[题目链接](http://oj.daimayuan.top/course/10/problem/611)
+[题目链接](https://oj.daimayuan.top/course/10/problem/611)
 
 1s, 1024MB
 
@@ -646,7 +646,7 @@ int main() {
 
 ## 406 - "Z"型矩阵 (CF628E)
 
-[题目链接](http://oj.daimayuan.top/course/10/problem/614)
+[题目链接](https://oj.daimayuan.top/course/10/problem/614)
 
 5s, 1024MB
 
@@ -760,7 +760,7 @@ int main() {
 
 ## 407 - 好序列 (UVa1608, BZOJ4059)
 
-[题目链接](http://oj.daimayuan.top/course/10/problem/613)
+[题目链接](https://oj.daimayuan.top/course/10/problem/613)
 
 3s, 1024MB
 

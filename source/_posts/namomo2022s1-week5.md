@@ -18,7 +18,7 @@ Namomo Spring Camp 2022 Div1 每日一题记录 (2022.03.26-2022.04.01)
 
 ## 501 - 社交圈 (CF1060D)
 
-[题目链接](http://oj.daimayuan.top/course/10/problem/606)
+[题目链接](https://oj.daimayuan.top/course/10/problem/606)
 
 1s, 256MB
 
@@ -89,7 +89,7 @@ int main() {
 
 ## 502 - 区间和
 
-[题目链接](http://oj.daimayuan.top/course/10/problem/609)
+[题目链接](https://oj.daimayuan.top/course/10/problem/609)
 
 1s, 512MB
 
@@ -173,7 +173,7 @@ int main() {
 
 ## 503 - 选数2 ([40th Petrozavodsk Programming Camp, Winter 2021, day 1, M](https://qoj.ac/problem/862))
 
-[题目链接](http://oj.daimayuan.top/course/10/problem/618)
+[题目链接](https://oj.daimayuan.top/course/10/problem/618)
 
 1s, 1024MB
 

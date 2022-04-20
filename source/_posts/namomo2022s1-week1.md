@@ -33,7 +33,7 @@ Namomo Spring Camp 2022 Div1 每日一题记录 (2022.02.26-2022.03.04)
 
 ## 103 - 子串的最大差 (CF817D)
 
-[题目链接](http://oj.daimayuan.top/problem/436)
+[题目链接](https://oj.daimayuan.top/problem/436)
 
 1s, 1024MB
 
@@ -155,7 +155,7 @@ int main() {
 
 ## 104 - no crossing (CF793D)
 
-[题目链接](http://oj.daimayuan.top/problem/437)
+[题目链接](https://oj.daimayuan.top/problem/437)
 
 1s, 1024MB
 
@@ -279,7 +279,7 @@ int main() {
 
 ## 105 - Dis
 
-[题目链接](http://oj.daimayuan.top/problem/451)
+[题目链接](https://oj.daimayuan.top/problem/451)
 
 1s, 512MB
 
@@ -335,7 +335,7 @@ LCA 板子题, 略
 
 ## 106 - 选数 (POJ2356)
 
-[题目链接](http://oj.daimayuan.top/problem/456)
+[题目链接](https://oj.daimayuan.top/problem/456)
 
 1s, 1024MB
 
@@ -387,7 +387,7 @@ $3 + 5 = 8$, $8 \ mod \ 4 = 0$
 
 ## 107 - 序列操作 (CF1198B)
 
-[题目链接](http://oj.daimayuan.top/problem/452)
+[题目链接](https://oj.daimayuan.top/problem/452)
 
 1s, 1024MB
 
@@ -482,7 +482,7 @@ int main() {
 
 ## 108 - 数数 (HDU4417)
 
-[题目链接](http://oj.daimayuan.top/problem/464)
+[题目链接](https://oj.daimayuan.top/problem/464)
 
 1s, 1024MB
 
@@ -614,7 +614,7 @@ int main() {
 
 ## 109 - Minimum Or Spanning Tree (CF1624G)
 
-[题目链接](http://oj.daimayuan.top/problem/464)
+[题目链接](https://oj.daimayuan.top/problem/464)
 
 1s, 1024MB
 

@@ -22,5 +22,5 @@ date: 2021-04-28 13:15:32
 ## 参考资料
 
 - [Generatingfunctionology (by Herbert S. Wilf)](https://www2.math.upenn.edu/~wilf/gfologyLinked2.pdf)
-- <http://jyywiki.cn/OI/gf.slides/>
+- <https://jyywiki.cn/OI/gf.slides/>
 - [生成函数简介 - OI Wiki](https://oi-wiki.org/math/gen-func/intro/)

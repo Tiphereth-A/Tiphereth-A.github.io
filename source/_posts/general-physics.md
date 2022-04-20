@@ -340,7 +340,7 @@ $$\nabla\cdot\bm{E}={\rho\over\epsilon_0}$$
 
 $$\oint_L\bm{E}\cdot\mathrm{d}\bm{l}=0$$
 
-> 保守场 $\implies\atop{\Longleftarrow}\llap{/\thickspamathrm}$ 无旋场 (<http://dxwl.bnu.edu.cn/CN/Y1985/V1/I2/48>)
+> 保守场 $\implies\atop{\Longleftarrow}\llap{/\thickspamathrm}$ 无旋场 (<https://dxwl.bnu.edu.cn/CN/Y1985/V1/I2/48>)
 
 #### 电势, 电势能, 功
 

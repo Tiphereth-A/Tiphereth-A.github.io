@@ -16,7 +16,7 @@ date: 2021-07-15 18:57:13
 ---
 题目链接
 
-- [UOJ 130](http://uoj.ac/problem/130)
+- [UOJ 130](https://uoj.ac/problem/130)
 - BZOJ 4198
 
 <!-- more -->

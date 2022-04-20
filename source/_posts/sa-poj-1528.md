@@ -14,7 +14,7 @@ date: 2020-07-27 22:55:48
 ---
 题目链接
 
-- [POJ 1528](http://poj.org/problem?id=1528)
+- [POJ 1528](https://poj.org/problem?id=1528)
 - [ZOJ 1284](https://vjudge.net/problem/ZOJ-1284/origin)
 - [UVA 382](https://vjudge.net/problem/UVA-382/origin)
 
