@@ -14,8 +14,7 @@ jobs:
         uses: github/super-linter@v4.9.2
         env:
           # VALIDATE_ALL_CODEBASE: false
-          FILTER_REGEX_INCLUDE: source/.*
-          FILTER_REGEX_INCLUDE: .*\.(?:svg|jpg|png|bmp|pdf|zip)
+          FILTER_REGEX_INCLUDE: source/.*\.md
           DEFAULT_BRANCH: master
 
           VALIDATE_CPP: false
