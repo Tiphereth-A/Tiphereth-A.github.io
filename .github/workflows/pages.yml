@@ -18,6 +18,7 @@ jobs:
           DEFAULT_BRANCH: master
 
           VALIDATE_CPP: false
+          VALIDATE_CLANG_FORMAT: false
 
           MARKDOWN_LINTER_RULES: .markdownlint.json
 
