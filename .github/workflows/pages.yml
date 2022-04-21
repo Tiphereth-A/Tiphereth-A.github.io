@@ -11,9 +11,8 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - run: npm install markdownlint-cli2 --global
-      - name: Load config
       - name: Run markdownlint
-        run: markdownlint-cli2-config .github/linters/.markdownlint.json 'source/**/*.md'
+        run: markdownlint-cli2-config '.github/linters/.markdownlint.json' 'source/**/*.md'
 
   pages:
     needs: lint-md
