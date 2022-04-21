@@ -6,6 +6,12 @@
   "MD029": {
     "style": "one_or_ordered"
   },
+  "MD030": {
+    "ol_single": 1,
+    "ul_single": 1,
+    "ol_multi": 1,
+    "ul_multi": 1
+  },
   "MD032": false,
   "MD033": false,
   "MD034": false,
