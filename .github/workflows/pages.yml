@@ -17,7 +17,6 @@ jobs:
           FILTER_REGEX_INCLUDE: source/.*
           DEFAULT_BRANCH: master
 
-          LINTER_RULES_PATH: /.github/config/
           MARKDOWN_LINTER_RULES: .markdownlint.json
 
   pages:
