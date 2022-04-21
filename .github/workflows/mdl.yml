@@ -5,8 +5,12 @@ on:
     branches:
       - master
 
+permissions:
+  checks: write
+  contents: write
+
 jobs:
-  pages:
+  mdl:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
