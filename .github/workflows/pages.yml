@@ -6,6 +6,15 @@ on:
       - master
 
 jobs:
+  mdl:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Run markdownlint (mdl)
+        uses: bewuethr/mdl-action@v1
+        with:
+          style-file: .github/workflows/mdl-style.rb
+
   pages:
     runs-on: ubuntu-latest
     steps:
