@@ -101,7 +101,7 @@ menu:
   categories: /categories/ || fa fa-th
   archives: /archives/ || fa fa-archive
   frilinks: /frilinks/ || fa fa-users
-  rss: /atom.xml || fa fa-rss
+  RSS: /atom.xml || fa fa-rss
   favlinks: /favlinks/ || fa fa-book
   notfound: /404/ || fa fa-heart
 
