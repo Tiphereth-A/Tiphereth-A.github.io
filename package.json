@@ -7,7 +7,7 @@
     "clean": "hexo clean",
     "deploy": "hexo deploy",
     "server": "hexo server",
-    "check": "remark source -r .remarkrc --quiet --frail"
+    "check": "remark source -r .remarkrc --quiet"
   },
   "hexo": {
     "version": "6.1.0"
