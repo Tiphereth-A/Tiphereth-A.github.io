@@ -16,7 +16,9 @@ jobs:
           # VALIDATE_ALL_CODEBASE: false
           FILTER_REGEX_INCLUDE: source/.*
           DEFAULT_BRANCH: master
-          MARKDOWN_CONFIG_FILE: .github/config/markdownlint-config.json
+
+          LINTER_RULES_PATH: /.github/config/
+          MARKDOWN_LINTER_RULES: .markdownlint.json
 
   pages:
     needs: linter
