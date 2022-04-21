@@ -6,17 +6,20 @@ on:
       - master
 
 jobs:
-  markdownlint:
+  linter:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Run markdownlint (mdl)
-        uses: bewuethr/mdl-action@v1
-        with:
-          style-file: .github/workflows/mdl-style.rb
+      - name: Super-Linter
+        uses: github/super-linter@v4.9.2
+        env:
+          # VALIDATE_ALL_CODEBASE: false
+          FILTER_REGEX_INCLUDE: source/.*
+          DEFAULT_BRANCH: master
+          MARKDOWN_CONFIG_FILE: markdownlint-config.json
 
   pages:
-    needs: markdownlint
+    needs: linter
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
