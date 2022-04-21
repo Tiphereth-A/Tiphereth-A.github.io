@@ -6,7 +6,7 @@ on:
       - master
 
 jobs:
-  mdl:
+  markdownlint:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -16,6 +16,7 @@ jobs:
           style-file: .github/workflows/mdl-style.rb
 
   pages:
+    needs: markdownlint
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
