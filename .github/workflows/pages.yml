@@ -11,10 +11,10 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Run markdownlint
-          uses: articulate/actions-markdownlint@v1
-          with:
-            config: .github/linters/.markdownlint.json
-            files: 'source/**/*.md'
+        uses: articulate/actions-markdownlint@v1
+        with:
+          config: .github/linters/.markdownlint.json
+          files: 'source/**/*.md'
 
   pages:
     needs: lint-md
