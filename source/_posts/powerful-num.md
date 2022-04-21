@@ -47,6 +47,7 @@ Powerful number 有如下性质
 - $\implies$:
 
   令
+
   - $P_1'=\{(p_i,\alpha_i)\in P_n:2\mid\alpha_i\}$
   - $P_2'=\{(p_i,\alpha_i)\in P_n:2\nmid\alpha_i\}$
 
@@ -54,11 +55,13 @@ Powerful number 有如下性质
   $$P_n=P_1'\cup P_2',~P_1'\cap P_2'=\varnothing$$
 
   令
+
   - $$a=\prod_{(p,\alpha)\in P_1'}p^\frac{\alpha}{2}\prod_{(p,\alpha)\in P_2'}p^\frac{\alpha-3}{2}$$
   - $$b=\prod_{(p,\alpha)\in P_2'}p$$
 
   则
   $$n=\prod_{i=1}^{\omega(n)}p_i^{\alpha_i}=a^2b^3$$
+
 - $\impliedby$:
 
   $$n=a^2b^3=\prod_{(p,\alpha)\in P_a}p^{2\alpha}\cdot\prod_{(p,\alpha)\in P_b}p^{3\alpha}=\prod_{(p,\alpha)\in P_n}p^\alpha$$
@@ -149,7 +152,7 @@ void dfs(i64 now_x, i64 now_h, i64 idx_prime) {
 ## 例题
 
 1. [LOJ 6053 简单的函数](https://loj.ac/p/6053)
-  
+
    题解: [题解 - [LOJ 6053] 简单的函数](/article/loj-6053/)
 
 ## 参考资料

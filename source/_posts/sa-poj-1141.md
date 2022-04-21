@@ -1,5 +1,5 @@
 ---
-title: '题解 - [POJ 1141 等] Brackets Sequence'
+title: "题解 - [POJ 1141 等] Brackets Sequence"
 categories:
   - 程序设计
   - 题解
@@ -15,6 +15,7 @@ tags:
   - 记忆化搜索
 date: 2020-07-25 22:14:38
 ---
+
 题目链接
 
 - [POJ 1141](https://vjudge.net/problem/POJ-1141/origin)
@@ -78,7 +79,7 @@ Northeastern Europe 2001
 
 ## 解题思路
 
-一道区间类DP题, 我们这样考虑状态转移方程
+一道区间类 DP 题, 我们这样考虑状态转移方程
 
 记给定字符串$s$, $s_i$为其第$i$位的字符, $s_{i\to j}$为其第$i$位第$j$位构成的子串
 
@@ -95,12 +96,14 @@ $$f(i,j)=\min_{i\leqslant k\leqslant j}\{f(i,k)+f(k+1,j)\}$$
 
 总结一下就是
 
-$$f(i,j)=\begin{cases}
+$$
+f(i,j)=\begin{cases}
   0,&i>j\\
   1,&i=j\\
   f(i+1,j-1),&s_i, s_j~\text{are}~\text{matched}\\
   \displaystyle\min_{i\leqslant k< j}\{f(i,k)+f(k+1,j)\},&\text{otherwise}
-\end{cases}$$
+\end{cases}
+$$
 
 由于用循环来实现比较困难, 所以这里选用记忆化搜索的方式来实现
 

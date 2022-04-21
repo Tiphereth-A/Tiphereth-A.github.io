@@ -1,5 +1,5 @@
 ---
-title: '题解 - [CodeForces 1139 D] Steps to One (杜教筛版)'
+title: "题解 - [CodeForces 1139 D] Steps to One (杜教筛版)"
 categories:
   - 程序设计
   - 题解
@@ -112,11 +112,12 @@ In the second example, Vivek each time will append either $1$ or $2$, so after f
 
 ## 解题思路
 
-$O(m\log m)$ 的概率DP做法看官方题解即可, 这里讲讲 $1\leqslant m\leqslant 10^{11}, 1\leqslant p\leqslant 10^{12}$ 时候 (即 第六届团体程序设计天梯赛 的 L3-3) 该怎么做
+$O(m\log m)$ 的概率 DP 做法看官方题解即可, 这里讲讲 $1\leqslant m\leqslant 10^{11}, 1\leqslant p\leqslant 10^{12}$ 时候 (即 第六届团体程序设计天梯赛 的 L3-3) 该怎么做
 
 首先推式子, 令事件 $X$ 为序列长度, 则
 
-$$\begin{aligned}
+$$
+\begin{aligned}
   E(X)&=\sum_{i=1}^{\infty}iP(X=i)&(1)\\
   &=\sum_{i=1}^{\infty}\sum_{j=1}^iP(X=i)&(2)\\
   &=\sum_{i=1}^{\infty}P(X\geqslant i)&(3)\\
@@ -126,13 +127,14 @@ $$\begin{aligned}
   &=1-\sum_{i=1}^{\infty}\sum_{d=2}^m\mu(d)\left({\lfloor\frac{m}{d}\rfloor\over m}\right)^i&(7)\\
   &=1-\sum_{d=2}^m\mu(d)\sum_{i=1}^{\infty}\left({\lfloor\frac{m}{d}\rfloor\over m}\right)^i&(8)\\
   &=1-\sum_{d=2}^m\mu(d){\lfloor\frac{m}{d}\rfloor\over m-\lfloor\frac{m}{d}\rfloor}&(9)\\
-\end{aligned}$$
+\end{aligned}
+$$
 
 其中:
 
 - $(1)\to (4)$: 常规操作
 - $(5)$: 由题意立得
-- $(6)$: 容斥/Möbius反演
+- $(6)$: 容斥/Möbius 反演
 - $(7)$: 不难注意到 $d=1$ 时, $\mu(d)\left({\lfloor\frac{m}{d}\rfloor\over m}\right)^i=1$ (结合题意想想为何会这样)
 - $(8)$: 交换求和号以处理掉级数
 - $(9)$: 考虑几何级数

@@ -1,6 +1,6 @@
 ---
 title: 题解 - 兰州大学第一届『飞马杯』程序设计竞赛
-author: 'Tifa & AgOH(code D)'
+author: "Tifa & AgOH(code D)"
 categories:
   - 程序设计
   - 题解
@@ -42,20 +42,20 @@ date: 2021-10-24 20:15:45
 
 ## 题目概览
 
-| 题号 | 标题           | 做法           |
-| ---- | -------------- | -------------- |
-| A    | ★★比赛新机制★★ | 前缀和         |
-| B    | ★★体育课排队★★ | 最大流         |
-| C    | ★★生命的游戏★★ | 模拟           |
-| D    | ★★飞马祝福语★★ | 动态DP         |
-| E    | ★★序列大团结★★ | hash           |
-| F    | ★★飞马分隔符★★ | 签到           |
-| G    | ★★糖果魔法阵★★ | 数学           |
-| H    | ★★温暖的力量★★ | 签到           |
-| I    | ★★平形四边行★★ | 数学           |
-| J    | ★★翻滚吧硬币★★ | 几何           |
-| K    | ★★快乐苹果树★★ | 期望, 树链剖分 |
-| L    | ★★星星收集者★★ | 博弈论         |
+| 题号 | 标题             | 做法           |
+| ---- | ---------------- | -------------- |
+| A    | ★★ 比赛新机制 ★★ | 前缀和         |
+| B    | ★★ 体育课排队 ★★ | 最大流         |
+| C    | ★★ 生命的游戏 ★★ | 模拟           |
+| D    | ★★ 飞马祝福语 ★★ | 动态 DP        |
+| E    | ★★ 序列大团结 ★★ | hash           |
+| F    | ★★ 飞马分隔符 ★★ | 签到           |
+| G    | ★★ 糖果魔法阵 ★★ | 数学           |
+| H    | ★★ 温暖的力量 ★★ | 签到           |
+| I    | ★★ 平形四边行 ★★ | 数学           |
+| J    | ★★ 翻滚吧硬币 ★★ | 几何           |
+| K    | ★★ 快乐苹果树 ★★ | 期望, 树链剖分 |
+| L    | ★★ 星星收集者 ★★ | 博弈论         |
 
 {% pdf /article/lzu-fhc1/problems.pdf 600px %}
 
@@ -63,7 +63,7 @@ date: 2021-10-24 20:15:45
 
 {% pdf /article/lzu-fhc1/official_solutions.pdf 600px %}
 
-## A - ★★比赛新机制★★
+## A - ★★ 比赛新机制 ★★
 
 <details>
 <summary><font color='orange'>Show code</font></summary>
@@ -119,7 +119,7 @@ int main() {
 
 </details>
 
-## B - ★★体育课排队★★
+## B - ★★ 体育课排队 ★★
 
 <details>
 <summary><font color='orange'>Show code</font></summary>
@@ -135,7 +135,7 @@ int main() {
 
 </details>
 
-## C - ★★生命的游戏★★
+## C - ★★ 生命的游戏 ★★
 
 <details>
 <summary><font color='orange'>Show code</font></summary>
@@ -201,7 +201,7 @@ int main() {
 
 </details>
 
-## D - ★★飞马祝福语★★
+## D - ★★ 飞马祝福语 ★★
 
 <details>
 <summary><font color='orange'>Show code</font></summary>
@@ -340,7 +340,7 @@ int main() {
 
 </details>
 
-## E - ★★序列大团结★★
+## E - ★★ 序列大团结 ★★
 
 <details>
 <summary><font color='orange'>Show code</font></summary>
@@ -401,7 +401,7 @@ int main() {
 
 </details>
 
-## G - ★★糖果魔法阵★★
+## G - ★★ 糖果魔法阵 ★★
 
 <details>
 <summary><font color='orange'>Show code</font></summary>
@@ -479,7 +479,7 @@ int main() {
 
 </details>
 
-## I - ★★平形四边行★★
+## I - ★★ 平形四边行 ★★
 
 <details>
 <summary><font color='orange'>Show code</font></summary>
@@ -532,7 +532,7 @@ int main() {
 
 </details>
 
-## J - ★★翻滚吧硬币★★
+## J - ★★ 翻滚吧硬币 ★★
 
 <details>
 <summary><font color='orange'>Show code</font></summary>
@@ -573,7 +573,7 @@ int main() {
 
 </details>
 
-## K - ★★快乐苹果树★★
+## K - ★★ 快乐苹果树 ★★
 
 <details>
 <summary><font color='orange'>Show code</font></summary>
@@ -589,7 +589,7 @@ int main() {
 
 </details>
 
-## L - ★★星星收集者★★
+## L - ★★ 星星收集者 ★★
 
 <details>
 <summary><font color='orange'>Show code</font></summary>

@@ -34,7 +34,7 @@ Huffman 编码通过对 Huffman 树进行层序遍历得到
 ## 例题
 
 - [UOJ 130 - 【NOI2015】荷马史诗](https://uoj.ac/problem/130)
-  
+
   [题解](../sa-uoj-130/)
 
 ## 代码 (K 叉 Huffman 树)

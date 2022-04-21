@@ -48,7 +48,7 @@ Namomo Spring Camp 2022 Div1 每日一题记录 (2022.03.19-2022.03.25)
 
 蜗蜗有两个长度都为 $n$​ 的数列 $A,B$​​​, 同时他会进行 $q$​ 次操作
 
-对于每一次操作, 他会先选择其中一个数列 $(A/B)$, 再选择一个区间 $[l,r](1\le l\le r\le n)$, 将选定的序列 $[l,r]$ 中的数对位加上Fibonacci数列
+对于每一次操作, 他会先选择其中一个数列 $(A/B)$, 再选择一个区间 $[l,r](1\le l\le r\le n)$, 将选定的序列 $[l,r]$ 中的数对位加上 Fibonacci 数列
 
 换句话说, 就是将选定数列的第 $l$ 项加上 $1$, 第 $l+1$ 项加上 $1$, 第 $l+2$ 项加上 $2$, 第 $l+3$ 项加上 $3\dots$ 第 $r$ 项加上 $Fib(r-l+1)$​​, 即 Fibonacci 数列的第 $r-l+1$ 项
 
@@ -66,7 +66,7 @@ Namomo Spring Camp 2022 Div1 每日一题记录 (2022.03.19-2022.03.25)
 
 输出 $q$​ 行, 每行一个字符串 Yes 或 No, 表示此时两个数列是否在模 $M$ 的意义下相同
 
-### 样例1输入
+### 样例 1 输入
 
 ```input1
 3 5 3
@@ -79,7 +79,7 @@ B 2 2
 A 3 3
 ```
 
-### 样例1输出
+### 样例 1 输出
 
 ```output1
 Yes
@@ -89,7 +89,7 @@ No
 Yes
 ```
 
-### 样例2输入
+### 样例 2 输入
 
 ```input2
 5 3 10
@@ -100,7 +100,7 @@ B 3 4
 A 1 2
 ```
 
-### 样例2输出
+### 样例 2 输出
 
 ```output2
 No
@@ -128,11 +128,13 @@ Yes
 
 令 $d_i=A_i-B_i$,
 
-$$\Delta_n=\begin{cases}
+$$
+\Delta_n=\begin{cases}
   d_1,&n=1\\
   d_2-d_1,&n=2\\
   d_n-d_{n-1}-d_{n-2},&n>2
-\end{cases}$$
+\end{cases}
+$$
 
 此时对区间 $[l,r]$ 加 Fibonacci 数列的操作便转为:
 
@@ -222,14 +224,14 @@ int main() {
 
 输出$n$行, 第$i$行表示切成$i$段时的最大优美程度
 
-### 样例输入1
+### 样例输入 1
 
 ```input1
 7
 2 3 3 3 3 3 3
 ```
 
-### 样例输出1
+### 样例输出 1
 
 ```output1
 20
@@ -241,13 +243,13 @@ int main() {
 1
 ```
 
-### 样例输入输出2
+### 样例输入输出 2
 
 见 [下发文件](problem_131.zip)
 
 ### 数据规模
 
-共10个测试点
+共 10 个测试点
 
 测试点$1, 2$满足$n\leq 20$
 
@@ -551,17 +553,19 @@ $$f(\alpha,Y)=\binom{\alpha+Y-1}{\alpha}$$
 <details>
 <summary><font color='orange'>推导过程</font></summary>
 
-> 考虑二元OGF
+> 考虑二元 OGF
 > $$F(x,y)=\sum_{m=1}^\infty\sum_{n=1}^\infty f(m,n)x^my^n$$
 >
 > 整理一下
 > $$\begin{aligned}
+
     F(x,y)&=x\sum_{n=1}^\infty y^n+y\sum_{m=1}^\infty x^m-xy+\sum_{m=2}^\infty\sum_{n=2}^\infty f(m,n)x^my^n\\
     &=x\sum_{n=1}^\infty y^n+y\sum_{m=1}^\infty x^m-xy+\sum_{m=2}^\infty\sum_{n=2}^\infty(f(m-1,n)+f(m,n-1))x^my^n\\
     &=x\sum_{n=1}^\infty y^n+y\sum_{m=1}^\infty x^m-xy+x\left(F(x,y)-\sum_{m=1}^\infty x^my\right)+y\left(F(x,y)-\sum_{n=1}^\infty xy^n\right)\\
     &=(x+y)F(x,y)+xy\left(\frac{1}{1-y}+\frac{1}{1-x}-1-\frac{y}{1-y}-\frac{x}{1-x}\right)
-  \end{aligned}$$
->
+
+\end{aligned}$$
+
 > 即
 >
 > $$F(x,y)=\frac{xy}{1-x-y}$$
@@ -770,12 +774,12 @@ int main() {
 
 多组数据
 
-第一行有一个整数T($1\leq T\leq 10000$), 描述数据组数
+第一行有一个整数 T($1\leq T\leq 10000$), 描述数据组数
 
 对于每组数据, 第一行有一个整数$n$, 第二行有$n$个整数$A_i$
 输出格式
 
-对于每组数据, 你需要判断给出的序列是不是好的, 如果是好的输出non-boring, 否则输出boring
+对于每组数据, 你需要判断给出的序列是不是好的, 如果是好的输出 non-boring, 否则输出 boring
 
 ### 样例输入
 

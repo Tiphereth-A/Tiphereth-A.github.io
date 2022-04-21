@@ -1,5 +1,5 @@
 ---
-title: '题解 - [POJ 1528 等] Perfection'
+title: "题解 - [POJ 1528 等] Perfection"
 categories:
   - 程序设计
   - 题解
@@ -12,6 +12,7 @@ tags:
   - 模拟
 date: 2020-07-27 22:55:48
 ---
+
 题目链接
 
 - [POJ 1528](https://vjudge.net/problem/POJ-1528/origin)

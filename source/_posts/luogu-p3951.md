@@ -1,5 +1,5 @@
 ---
-title: '题解 - [Luogu P3951] 小凯的疑惑 / [蓝桥杯2013省]买不到的数目'
+title: "题解 - [Luogu P3951] 小凯的疑惑 / [蓝桥杯2013省]买不到的数目"
 categories:
   - 程序设计
   - 题解
@@ -16,6 +16,7 @@ tags:
   - 构造
 date: 2020-10-04 12:27:01
 ---
+
 [题目链接](https://www.luogu.com.cn/problem/P3951)
 
 <!-- more -->
@@ -75,9 +76,9 @@ $$\nexists x,y\in\N,~s.t.~ax+by=n\tag{1}$$
 
 ## 解题思路
 
-由Bézout定理, 我们知道, 如果$x,y$是在整数范围内的, 那么这个$n$是不存在的
+由 Bézout 定理, 我们知道, 如果$x,y$是在整数范围内的, 那么这个$n$是不存在的
 
-但这题将$x,y$限制在了正整数范围内, Bézout定理就不能用了
+但这题将$x,y$限制在了正整数范围内, Bézout 定理就不能用了
 
 我们这样考虑:
 
@@ -86,10 +87,13 @@ $$\nexists x,y\in\N,~s.t.~ax+by=n\tag{1}$$
 假设$x=-1$, 此时设$y=y'$
 
 我们有通式
-$$\begin{cases}
+
+$$
+\begin{cases}
     x=-1+bt\\
     y=y'-at
-\end{cases}$$
+\end{cases}
+$$
 
 因为$b>1$, $x$随$t$严格单调递增, $y$随$t$严格单调递减
 
@@ -111,12 +115,14 @@ $$\begin{cases}
 
 取$x_0=n\bmod b$, 则$x_0\in[0,b-1]$, 有
 
-$$\begin{aligned}
+$$
+\begin{aligned}
   by_0&=n-ax_0\\
   &\geqslant n-a(b-1)\\
   &>ab-a-b-a(b-1)\\
   &=-b
-\end{aligned}$$
+\end{aligned}
+$$
 
 即$b(y_0+1)>0$, 从而有$y_0\geqslant 0$
 

@@ -13,6 +13,7 @@ tags:
   - 基环内/外向树
 date: 2020-04-27 13:48:01
 ---
+
 想不到吧, 倍增还能和快速幂联系到一起
 
 <!-- more -->
@@ -23,17 +24,20 @@ date: 2020-04-27 13:48:01
 
 1. $m$元运算: 一个$A^m\to A$的映射
 1. 对一元运算$\phi,\nu$
+
    1. 恒等运算: $e:A\to A;a\mapsto a$
    1. 乘法: $(\phi\circ\nu)(a):=\phi(\nu(a))$
 
       在不引起歧义的情况下可记作$\phi\nu(a)$
 
       该运算显然具有结合律
+
    1. 乘方: $\phi^n(a):=\begin{cases}
      e(a),&n=0\\
      \phi^{n-1}\phi(a),&n>0
    \end{cases}(n\in\N)$
    1. $\phi_k:=\phi^{2^k}$
+
 1. 对二元运算$\tau$
    1. 对$l,r\in\N,l\leqslant r$, 定义$\tau[l,r]:=\begin{cases}
   \tau(l,l),&l=r\\
@@ -73,6 +77,7 @@ date: 2020-04-27 13:48:01
     7 & \quad \textbf{return}~ \phi \\
     8 & \textbf{end}~\textbf{function}
   \end{array}$
+
 - 计算$\phi^n(a)$
 
   $\begin{array}{r|l:l}
@@ -83,16 +88,16 @@ date: 2020-04-27 13:48:01
   5 & \quad \textbf{return}~ a \\
   6 & \textbf{end}~\textbf{function}
   \end{array}$
-  
+
 ## 应用
 
 ### 快速幂
 
 只有理论上的意义, 即快速幂和倍增二者之间的关系
 
-### ST表
+### ST 表
 
-ST表是用于解决**可重复性贡献问题**的数据结构[^1]
+ST 表是用于解决**可重复性贡献问题**的数据结构[^1]
 
 可重复性贡献问题即在$\tau(x,x)=x$且$\tau$满足结合律时询问$\tau[l,r]$
 
@@ -122,6 +127,6 @@ $\begin{array}{l|l}
 
 ### LCA
 
-### 基环内/外向树dp
+### 基环内/外向树 dp
 
 [^1]: [ST 表 - OI Wiki](https://oi-wiki.org/ds/sparse-table/)

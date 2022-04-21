@@ -1,5 +1,5 @@
 ---
-title: '题解 - [Luogu P3524] [POI2011]IMP-Party'
+title: "题解 - [Luogu P3524] [POI2011]IMP-Party"
 categories:
   - 程序设计
   - 题解
@@ -13,6 +13,7 @@ tags:
   - 随机化
 date: 2020-11-04 16:32:04
 ---
+
 [题目链接](https://www.luogu.com.cn/problem/P3524)
 
 <!-- more -->
@@ -81,7 +82,7 @@ In the first and only line of the standard output your program should print $\fr
 
 ## 题意简述
 
-给定一张n个点m条边的图$n\equiv 0(mod\ 3)$, 保证存在一个大小为$\frac{2}{3}n$的团, 要求输出一个大小为$\frac{n}{3}$的团
+给定一张 n 个点 m 条边的图$n\equiv 0(mod\ 3)$, 保证存在一个大小为$\frac{2}{3}n$的团, 要求输出一个大小为$\frac{n}{3}$的团
 
 ## 解题思路
 
@@ -141,7 +142,7 @@ In the first and only line of the standard output your program should print $\fr
 
 我们观察这个反例可以发现如果我们把取点策略换成: 在前$2n\over 3$个点里随机取$n\over3$的点, 就有很大概率正确
 
-所以我们搞个Las Vegas随机就好了(本篇题解只是单纯的单次`shuffle`, 并没有加Las Vegas随机)
+所以我们搞个 Las Vegas 随机就好了(本篇题解只是单纯的单次`shuffle`, 并没有加 Las Vegas 随机)
 
 不考虑输入部分的话, 时间复杂度主要在排序上, 也就是$O(n\log n)$, 这是比正解快的 (输入部分的时间复杂度是 $O(n^2)$)
 

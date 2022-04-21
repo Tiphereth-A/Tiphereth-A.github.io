@@ -19,7 +19,8 @@ tags:
   - 最小二乘法
 date: 2020-06-20 16:08:42
 ---
-线性函数, 双线性函数, Euclid空间等
+
+线性函数, 双线性函数, Euclid 空间等
 
 <!-- more -->
 
@@ -32,7 +33,9 @@ date: 2020-06-20 16:08:42
 ### 基本定义
 
 {% tabs define-1-base,1 %}
+
 <!-- tab 线性函数 -->
+
 > **定义** 线性函数
 >
 > 对映射$f:V\to\mathbb{P}$, 满足$(\forall\alpha,\beta\in V,k,l\in\mathbb{P}),~f(k\alpha+l\beta)=kf(\alpha)+lf(\beta)$
@@ -41,6 +44,7 @@ date: 2020-06-20 16:08:42
 
 <!-- endtab -->
 <!-- tab 双线性函数 -->
+
 > **定义** 双线性函数
 >
 > 对映射$f:V\times V\to\mathbb{P}$, 满足
@@ -49,12 +53,15 @@ date: 2020-06-20 16:08:42
 > - $(\forall\alpha,\beta,\gamma\in V,k,l\in\mathbb{P}),~f(\gamma,k\alpha+l\beta)=kf(\gamma,\alpha)+lf(\gamma,\beta)$
 
 <!-- endtab -->
+
 {% endtabs %}
 
 ### 表示向量/表示矩阵
 
 {% tabs define-1-representation,1 %}
+
 <!-- tab 线性函数 -->
+
 > **定义** 表示向量
 >
 > 令$(\def\enum#1{\epsilon_{ #1}}\enum{1},\enum{2},...,\enum{n})$为$V$的一组基, 称
@@ -73,6 +80,7 @@ $\eta:L(V,\mathbb{P})\to\mathbb{P}^n;~f\mapsto(\def\enum#1{f(\epsilon_{ #1})}\en
 
 <!-- endtab -->
 <!-- tab 双线性函数 -->
+
 > **定义** 表示矩阵/度量矩阵
 >
 > 令$(\def\enum#1{\epsilon_{ #1}}\enum{1},\enum{2},...,\enum{n})$为$V$的一组基, 称
@@ -90,6 +98,7 @@ $\zeta:BL(V,\mathbb{P})\to\mathbb{P}^{n\times n};~f\mapsto(f(\epsilon_i,\epsilon
 <a href="#t-1-1-2" id="end-t-1-1-2">$\Box$</a>
 
 <!-- endtab -->
+
 {% endtabs %}
 
 证明很简单, 读者可尝试自行补充
@@ -105,18 +114,22 @@ $$f(\alpha,\beta)=X^TAY$$
 类比线性空间中的零元, 我们可定义零线性函数/零双线性函数
 
 {% tabs define-1-zero,1 %}
+
 <!-- tab 线性函数 -->
+
 > **定义** 零线性函数
 >
 > 对于线性函数$f$, 若$(\forall\alpha\in V),~f(\alpha)=0$, 则称$f$为**零线性函数**, 记作$\bold{0}$
 
 <!-- endtab -->
 <!-- tab 双线性函数 -->
+
 > **定义** 零双线性函数
 >
 > 对于双线性函数$f$, 若$(\forall\alpha,\beta\in V),~f(\alpha,\beta)=0$, 则称$f$为**零双线性函数**, 记作$\bold{0}$
 
 <!-- endtab -->
+
 {% endtabs %}
 
 ### 基底间的过渡
@@ -126,7 +139,9 @@ $$f(\alpha,\beta)=X^TAY$$
 $$(\def\enum#1{\eta_{ #1}}\enum{1},\enum{2},...,\enum{n})=(\def\enum#1{\epsilon_{ #1}}\enum{1},\enum{2},...,\enum{n})T$$
 
 {% tabs define-1-trans,1 %}
+
 <!-- tab 线性函数 -->
+
 若线性函数$f$在$(\def\enum#1{\epsilon_{ #1}}\enum{1},\enum{2},...,\enum{n})$和$(\def\enum#1{\eta_{ #1}}\enum{1},\enum{2},...,\enum{n})$下的表示向量分别为$(\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n})$和$(\def\enum#1{b_{ #1}}\enum{1},\enum{2},...,\enum{n})$, 则
 
 $$(\def\enum#1{b_{ #1}}\enum{1},\enum{2},...,\enum{n})=(\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n})T$$
@@ -135,6 +150,7 @@ $$(\def\enum#1{b_{ #1}}\enum{1},\enum{2},...,\enum{n})=(\def\enum#1{a_{ #1}}\enu
 
 <!-- endtab -->
 <!-- tab 双线性函数 -->
+
 若双线性函数$f$在$(\def\enum#1{\epsilon_{ #1}}\enum{1},\enum{2},...,\enum{n})$和$(\def\enum#1{\eta_{ #1}}\enum{1},\enum{2},...,\enum{n})$下的表示矩阵分别为$A$和$B$, 则
 
 $$B=T^TAT$$
@@ -142,6 +158,7 @@ $$B=T^TAT$$
 因此$T$非奇异, **称$\operatorname{rk}A$为$f$的秩**
 
 <!-- endtab -->
+
 {% endtabs %}
 
 ---
@@ -168,10 +185,12 @@ $$B=T^TAT$$
 
 $1\iff2:$
 
-$$\begin{aligned}
+$$
+\begin{aligned}
   (\forall\alpha\in V,~\forall\beta\in V,~f(\alpha,\beta)=0\implies\alpha=0)&\iff(\forall X\in\mathbb{P}^n,~\forall Y\in\mathbb{P}^n,~X^TAY=0\implies X=0)\\
   &\iff(\forall X\in\mathbb{P}^n,~X^TA=0\implies X=0)
-\end{aligned}$$
+\end{aligned}
+$$
 
 $2\iff3:$ 显然
 
@@ -212,7 +231,7 @@ $2\iff4:$ 参照$1\iff2$
 > 称$f$是**正定的**, 若
 > $$(\forall\alpha\in V/\{\theta\}),~f(\alpha,\alpha)>0$$
 
-我们将在 [Euclid空间](#euclid空间) 见到它
+我们将在 [Euclid 空间](#euclid空间) 见到它
 
 它有类似 <a href="#t-1-2">定理 - 1-2</a>, <a href="#t-1-3">定理 - 1-3</a> 的定理 (<a href="#t-3-4">定理 - 3-4</a>)
 
@@ -248,7 +267,7 @@ $2\iff4:$ 参照$1\iff2$
   $$(\exist\epsilon\in V),~f(\epsilon,\epsilon)\ne0\tag{1.4.1}$$
 
   接下来对$\dim V$应用第二数学归纳法
-  
+
   - 当$\dim V=1$时, 任意基底均为所求
   - 若对$1\leqslant\dim V\leqslant n-1$的情况命题都成立, 考察$\dim V=n$的情形
 
@@ -278,6 +297,7 @@ $2\iff4:$ 参照$1\iff2$
   $$f(\alpha,\beta)=\sum_{i=1}^rx_iy_i$$
 
   其中$r=\operatorname{rk}f$
+
 - 若$V$为$\R$上一$n$维线性空间, 其余同上, 则
 
   $$f(\alpha,\beta)=\sum_{i=1}^px_iy_i-\sum_{i=p+1}^rx_iy_i$$
@@ -325,7 +345,8 @@ $2\iff4:$ 参照$1\iff2$
    则$(\forall s,t\in\mathbb{P}),~f_i(s\alpha+t\beta)=sf_i(\alpha)+tf_i(\beta)=0,~i=1,2,...,k$
 
    因此$W\leqslant V$
-1
+   1
+
    - 若$W=V$, 则令$f(\alpha)=0,~\forall\alpha\in V$, $W$为$f$的零化子空间
    - 若$W=\{\theta\}$, 则$W$为$L(V,\mathbb{P})$的零化子空间
    - 若$\dim W=r\in[1,n)$, 取$W$的一组基$\def\enum#1{\epsilon_{ #1}}\enum{1},\enum{2},...,\enum{r}$, $V$的一组基$\def\enum#1{\epsilon_{ #1}}\enum{1},\enum{2},...,\enum{n}$
@@ -362,17 +383,19 @@ $2\iff4:$ 参照$1\iff2$
    - 若$a,b$均不为$0$, 考虑
      $$f(\alpha+t\beta,\alpha+t\beta)=f(\alpha,\alpha)+2tf(\alpha,\beta)+t^2f(\beta,\beta)$$
      此时$t$有根$t_1$, 故令$\zeta=\alpha+t_1\beta$, 则$f(\zeta,\zeta)=0$
-1. 由1知, $(\exist\theta\ne\zeta\in V),~f(\zeta,\zeta)=0$
+
+1. 由 1 知, $(\exist\theta\ne\zeta\in V),~f(\zeta,\zeta)=0$
 
    取$\zeta\ne\xi'\in V/\{\theta\}$, 由$f$非奇异知$f(\zeta,\xi')=b\ne0$
 
    令$\xi=\displaystyle\frac{\xi'}{b}$
+
    - 若$f(\xi,\xi)=0$, 则命题得证
    - 若$f(\xi,\xi)\ne0$, 考虑$f(\xi+t\zeta,\xi+t\zeta)$
 
      $f(\zeta,\xi+t\zeta)=1$
 
-     由1知, $t$有根$t_1$使得$f(\xi+t_1\zeta,\xi+t_1\zeta)=0$
+     由 1 知, $t$有根$t_1$使得$f(\xi+t_1\zeta,\xi+t_1\zeta)=0$
 
      令$\eta=\xi+t_1\zeta$即可
 
@@ -386,7 +409,7 @@ $2\iff4:$ 参照$1\iff2$
 
 就是有**非奇异对称双线性函数**的线性空间
 
-特别的, 当$\mathbb{P}=\R$时即称其为**伪Euclid空间**
+特别的, 当$\mathbb{P}=\R$时即称其为**伪 Euclid 空间**
 
 显然, 这个非奇异对称双线性函数是**满秩**的, 即
 
@@ -454,7 +477,7 @@ $$X^TA(\def\enum#1{B_{ #1}}\enum{1},\enum{2},...,\enum{r})=\theta$$
 
    因此$\dim S=n-r$
 
-1. 由1知, $\dim V_1^\perp=n-r,~\dim~(V_1^\perp)^\perp=r=\dim V_1$
+1. 由 1 知, $\dim V_1^\perp=n-r,~\dim~(V_1^\perp)^\perp=r=\dim V_1$
 
    又$V_1\subseteq(V_1^\perp)^\perp$
 
@@ -485,20 +508,23 @@ $$f_E([\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n}]^T,[\def\enum#1{b_{ #1
 
 - 齐次线性方程组$(2.3.1)$可记作
 
-  $$\begin{cases}
+  $$
+  \begin{cases}
     f_E(A_i^T,X)=0\\
     i=1,2,...,m
-  \end{cases}$$
+  \end{cases}
+  $$
 
   其中$A_i=(\def\enum#1{a_{i #1}}\enum{1},\enum{2},...,\enum{n}),~i=1,2,...,m$
 
   令$V_1=G[\def\enum#1{A_{ #1}^T}\enum{1},\enum{2},...,\enum{m}]$, 则上述齐次线性方程组的解空间恰为$V_1^\perp$
+
 - 非齐次线性方程组$(2.3.2)$有解$\iff\operatorname{rk}(\def\enum#1{A^{ #1}}\enum{1},\enum{2},...,\enum{n})=\operatorname{rk}(\def\enum#1{A^{ #1}}\enum{1},\enum{2},...,\enum{n},B)\iff B\in G[\def\enum#1{A^{ #1}}\enum{1},\enum{2},...,\enum{n}]$
 
   其中$A^i=(\def\enum#1{a_{ #1i}}\enum{1},\enum{2},...,\enum{m})^T,~i=1,2,...,n$
 
   考虑$(2.3.2)$的转置齐次线性方程组
-  
+
   $$A^TY=\theta\tag{2.3.3}$$
 
   由上一部分的讨论可知, $(2.3.3)$的解空间为$G[\def\enum#1{A^{ #1}}\enum{1},\enum{2},...,\enum{n}]^\perp$
@@ -509,9 +535,9 @@ $$f_E([\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n}]^T,[\def\enum#1{b_{ #1
 
 #### <a href="#end-t-2-2" id="t-2-2">定理 - 2-2</a>
 
-  非齐次线性方程组$(2.3.2)$有解当且仅当$B$与$(2.3.3)$的解空间正交
+非齐次线性方程组$(2.3.2)$有解当且仅当$B$与$(2.3.3)$的解空间正交
 
-  <a href="#p-t-2-2" id="end-t-2-2">$\Box$</a>
+<a href="#p-t-2-2" id="end-t-2-2">$\Box$</a>
 
 ### 习题
 
@@ -534,26 +560,26 @@ $$(\exist0\ne\eta\in V_1+G[\zeta]),(\forall\alpha\in V_1),~f(\eta,\alpha)=0$$
 
 > **定义** Euclid 空间
 >
-> 令$V$为实线性空间, 若其上一对称双线性函数$f$满足**正定性**, 则称$V$连同$f$构成**Euclid空间**
+> 令$V$为实线性空间, 若其上一对称双线性函数$f$满足**正定性**, 则称$V$连同$f$构成**Euclid 空间**
 >
 > 称$f$为**内积**, 记作$(~,~)$, $f(\alpha,\beta)$可简记为$(\alpha,\beta)$
 
-显然Euclid空间是伪Euclid空间
+显然 Euclid 空间是伪 Euclid 空间
 
 > **例 - 1**
 >
 > 定义$f$如下:
 > $$f(g(x),h(x))=\int_a^bf(x)g(x)\mathrm{d}x$$
-> 易证$f$是内积, $C[a,b]$连同$f$构成Euclid空间
+> 易证$f$是内积, $C[a,b]$连同$f$构成 Euclid 空间
 
 ### 向量的长度与夹角 (度量)
 
-Euclid空间有一个很好的性质, 就是我们可以在其上定义向量的长度, 夹角等在直观几何中的概念  
-这一点即使是在一般的伪Euclid空间都是做不到的
+Euclid 空间有一个很好的性质, 就是我们可以在其上定义向量的长度, 夹角等在直观几何中的概念  
+这一点即使是在一般的伪 Euclid 空间都是做不到的
 
 > **定义** 长度
 >
-> 令$V$为一Euclid空间, $\alpha\in V$, 称$\sqrt{(\alpha,\alpha)}$为$\alpha$的**长度**, 记作$|\alpha|$
+> 令$V$为一 Euclid 空间, $\alpha\in V$, 称$\sqrt{(\alpha,\alpha)}$为$\alpha$的**长度**, 记作$|\alpha|$
 
 ---
 
@@ -567,15 +593,15 @@ Euclid空间有一个很好的性质, 就是我们可以在其上定义向量的
 
 在定义夹角之前, 我们需要证明$\displaystyle\frac{|(\alpha,\beta)|}{|\alpha||\beta|}\leqslant1$
 
-在高中数学中, 这个形式等价于$\displaystyle\left|\sum_{i=1}^na_ib_i\right|\leqslant\sqrt{\sum_{i=1}^na_i^2}\sqrt{\sum_{i=1}^nb_i^2}$, 这就是大名鼎鼎的Cauchy不等式
+在高中数学中, 这个形式等价于$\displaystyle\left|\sum_{i=1}^na_ib_i\right|\leqslant\sqrt{\sum_{i=1}^na_i^2}\sqrt{\sum_{i=1}^nb_i^2}$, 这就是大名鼎鼎的 Cauchy 不等式
 
-到了Euclid空间, 我们自然也会考虑是否能将Cauchy不等式推广过来
+到了 Euclid 空间, 我们自然也会考虑是否能将 Cauchy 不等式推广过来
 
 很幸运, 这是可行的
 
-#### <a href="#end-t-3-1" id="t-3-1">定理 - 3-1</a> (Cauchy-Bunjakovski-Schwarz不等式)
+#### <a href="#end-t-3-1" id="t-3-1">定理 - 3-1</a> (Cauchy-Bunjakovski-Schwarz 不等式)
 
-令$V$为一Euclid空间, 则对其上任意非零向量$\alpha,\beta$, 均有
+令$V$为一 Euclid 空间, 则对其上任意非零向量$\alpha,\beta$, 均有
 $$\frac{|(\alpha,\beta)|}{|\alpha||\beta|}\leqslant1$$
 等号成立当且仅当$\alpha,\beta$线性相关
 
@@ -597,7 +623,7 @@ $$\frac{|(\alpha,\beta)|}{|\alpha||\beta|}\leqslant1$$
 
 <a href="#p-t-3-1" id="end-t-3-1">$\Box$</a>
 
-Cauchy-Bunjakovski-Schwarz不等式有两个著名的实例
+Cauchy-Bunjakovski-Schwarz 不等式有两个著名的实例
 
 - $$\left|\sum_{i=1}^na_ib_i\right|\leqslant\sqrt{\sum_{i=1}^na_i^2}\sqrt{\sum_{i=1}^nb_i^2}$$
 - $$\left|\int_a^bf(x)g(x)\mathrm{d}x\right|\leqslant\sqrt{\int_a^bf^2(x)\mathrm{d}x}\sqrt{\int_a^bg^2(x)\mathrm{d}x}$$
@@ -608,13 +634,13 @@ Cauchy-Bunjakovski-Schwarz不等式有两个著名的实例
 
 > **定义** 夹角
 >
-> 令$V$为一Euclid空间, $\alpha,\beta\in V/\{\theta\}$, 称$\displaystyle\arccos\frac{(\alpha,\beta)}{|\alpha||\beta|}\in[0,\pi]$为$\alpha$和$\beta$的**夹角**, 记作$\langle\alpha,\beta\rangle$
+> 令$V$为一 Euclid 空间, $\alpha,\beta\in V/\{\theta\}$, 称$\displaystyle\arccos\frac{(\alpha,\beta)}{|\alpha||\beta|}\in[0,\pi]$为$\alpha$和$\beta$的**夹角**, 记作$\langle\alpha,\beta\rangle$
 
-接下来我们可以尝试把我们熟知的, 与长度和角度相关的几何定理都推广到Euclid空间了 (其实, 在 <a href="#ifr-3-2">推论 - 3-2</a> 的保障下, 我们可以更大胆些)
+接下来我们可以尝试把我们熟知的, 与长度和角度相关的几何定理都推广到 Euclid 空间了 (其实, 在 <a href="#ifr-3-2">推论 - 3-2</a> 的保障下, 我们可以更大胆些)
 
 #### <a href="#end-t-3-2" id="t-3-2">定理 - 3-2</a>
 
-令$V$为一Euclid空间, $\alpha,\beta\in V$, 则
+令$V$为一 Euclid 空间, $\alpha,\beta\in V$, 则
 
 1. $|\alpha+\beta|\leqslant|\alpha|+|\beta|$ (三角不等式)
 1. $(\alpha,\beta)=0\implies|\alpha+\beta|^2=|\alpha|^2+|\beta|^2$ (勾股定理)
@@ -635,16 +661,16 @@ Cauchy-Bunjakovski-Schwarz不等式有两个著名的实例
 
 > **定义** 标准正交基底
 >
-> 称$n$维Euclid空间上的一组基$(\def\enum#1{\epsilon_{ #1}}\enum{1},\enum{2},...,\enum{n})$是**标准正交**的, 若
+> 称$n$维 Euclid 空间上的一组基$(\def\enum#1{\epsilon_{ #1}}\enum{1},\enum{2},...,\enum{n})$是**标准正交**的, 若
 >
 > - $|\epsilon_i|=1,~i=1,2,...,n$
 > - $(\epsilon_i,\epsilon_j)=0,~i,j=1,2,...,n,i\ne j$
 
-容易验证, $n$维Euclid空间存在标准正交基, 而且我们还可以将其上任意基底标准正交化
+容易验证, $n$维 Euclid 空间存在标准正交基, 而且我们还可以将其上任意基底标准正交化
 
 #### <a href="#end-t-3-3" id="t-3-3">定理 - 3-3</a> (标准正交化)
 
-若$(\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{n})$为$n$维Euclid空间上的一组基, 则其上存在标准正交基$(\def\enum#1{\beta_{ #1}}\enum{1},\enum{2},...,\enum{n})$使得
+若$(\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{n})$为$n$维 Euclid 空间上的一组基, 则其上存在标准正交基$(\def\enum#1{\beta_{ #1}}\enum{1},\enum{2},...,\enum{n})$使得
 
 $$G[\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{i}]=G[\def\enum#1{\beta_{ #1}}\enum{1},\enum{2},...,\enum{i}],~i=1,2,...,n$$
 
@@ -660,6 +686,7 @@ $$G[\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{i}]=G[\def\enum#1{\beta
   时此式成立
 
   由$\beta'_2=\alpha_2+k\beta'_1=\alpha_2+k\alpha_1$可知$\beta'_1,\beta'_2$线性无关, 故$G[\beta'_1,\beta'_2]=G[\alpha_1,\alpha_2]$
+
 - 假设已找到$m<n$个两两正交的向量$\def\enum#1{\beta'_{ #1}}\enum{1},\enum{2},...,\enum{m}$满足条件
 
   令
@@ -678,7 +705,7 @@ $$G[\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{i}]=G[\def\enum#1{\beta
 因此我们可以找到一组正交基$(\def\enum#1{\beta'_{ #1}}\enum{1},\enum{2},...,\enum{n})$满足  
 $$G[\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{i}]=G[\def\enum#1{\beta'_{ #1}}\enum{1},\enum{2},...,\enum{i}],~i=1,2,...,n$$
 
-> 上述过程即Schmidt正交化
+> 上述过程即 Schmidt 正交化
 
 又令$\beta_i=\displaystyle\frac{1}{|\beta'_i|}\beta'_i,~i=1,2,...,n$, 命题即得证
 
@@ -690,7 +717,7 @@ $$G[\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{i}]=G[\def\enum#1{\beta
 
 #### <a href="#end-ifr-3-1" id="ifr-3-1">推论 - 3-1</a>
 
-令$(\def\enum#1{\epsilon_{ #1}}\enum{1},\enum{2},...,\enum{n})$为$n$维Euclid空间$V$的一组标准正交基, 则
+令$(\def\enum#1{\epsilon_{ #1}}\enum{1},\enum{2},...,\enum{n})$为$n$维 Euclid 空间$V$的一组标准正交基, 则
 
 - $V$的内积的度量矩阵为$E$
 - 若$\alpha,~\beta\in V$在其上的坐标分别为$A=(\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n})^T,~B=(\def\enum#1{b_{ #1}}\enum{1},\enum{2},...,\enum{n})^T$, 则
@@ -712,7 +739,7 @@ $$G[\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{i}]=G[\def\enum#1{\beta
 
 $1\implies2:$
 
-可知$V$连同$f$构成Euclid空间
+可知$V$连同$f$构成 Euclid 空间
 
 故由 <a href="#ifr-3-1">推论 - 3-1</a> 可知, 存在标准正交基$(\def\enum#1{\epsilon_{ #1}}\enum{1},\enum{2},...,\enum{n})$使得$f$的度量矩阵为$E$
 
@@ -732,11 +759,11 @@ $3\implies1:$
 
 <a href="#p-t-3-4" id="end-t-3-4">$\Box$</a>
 
-### Euclid空间的同构
+### Euclid 空间的同构
 
-> **定义** Euclid空间同构映射
+> **定义** Euclid 空间同构映射
 >
-> 令$V,V'$为两个Euclid空间, 称$V$到$V'$的同构映射$f$是$V$到$V'$的**Euclid空间同构映射**, 若
+> 令$V,V'$为两个 Euclid 空间, 称$V$到$V'$的同构映射$f$是$V$到$V'$的**Euclid 空间同构映射**, 若
 > $$(\forall\alpha,\beta\in V),~(f(\alpha),f(\beta))=(\alpha,\beta)$$
 > 此时, 称$V$与$V'$是同构的
 
@@ -744,7 +771,7 @@ $3\implies1:$
 
 #### <a href="#end-t-3-5" id="t-3-5">定理 - 3-5</a>
 
-两有限维Euclid空间$V,V'$同构当且仅当$\dim V=\dim V'$
+两有限维 Euclid 空间$V,V'$同构当且仅当$\dim V=\dim V'$
 
 ##### <a href="#t-3-5" id="p-t-3-5">证明</a>
 
@@ -752,7 +779,7 @@ $\implies$: 显然
 
 $\impliedby$:
 
-只需证$n$维Euclid空间$V$同构于$\R^n$
+只需证$n$维 Euclid 空间$V$同构于$\R^n$
 
 令$(\def\enum#1{\epsilon_{ #1}}\enum{1},\enum{2},...,\enum{n})$为$V$的一组标准正交基, 建立映射
 
@@ -762,11 +789,13 @@ $$f_{\{\epsilon_i\}_{i=1}^n}:\alpha\mapsto(\def\enum#1{x_{ #1}}\enum{1},\enum{2}
 
 任取$\alpha=\sum_{i=1}^nx_i\epsilon_i,\beta=\sum_{i=1}^ny_i\epsilon_i$, 均有
 
-$$\begin{aligned}
+$$
+\begin{aligned}
   (\alpha,\beta)&=\sum_{i=1}^nx_iy_i\\
   &=((\def\enum#1{x_{ #1}}\enum{1},\enum{2},...,\enum{n})^T,(\def\enum#1{y_{ #1}}\enum{1},\enum{2},...,\enum{n})^T)\\
   &=(f_{\{\epsilon_i\}_{i=1}^n}(\alpha),f_{\{\epsilon_i\}_{i=1}^n}(\beta))
-\end{aligned}$$
+\end{aligned}
+$$
 
 <a href="#p-t-3-5" id="end-t-3-5">$\Box$</a>
 
@@ -774,13 +803,13 @@ $$\begin{aligned}
 
 #### <a href="#end-ifr-3-2" id="ifr-3-2">推论 - 3-2</a>
 
-在Euclid空间中, 所有关于两个或三个向量的命题均可在三维直观几何空间验证
+在 Euclid 空间中, 所有关于两个或三个向量的命题均可在三维直观几何空间验证
 
 ##### <a href="#ifr-3-2" id="p-ifr-3-2">证明</a>
 
-在Euclid空间中, 两个或三个向量可生成维数不超过3的Euclid空间, 由 <a href="#t-3-5">定理 - 3-5</a> 可知其与三维直观几何空间或其子空间同构
+在 Euclid 空间中, 两个或三个向量可生成维数不超过 3 的 Euclid 空间, 由 <a href="#t-3-5">定理 - 3-5</a> 可知其与三维直观几何空间或其子空间同构
 
-而Euclid空间中的命题均可只用空间说的加法, 实数乘和内积描述, 因此只需在三维直观几何空间中验证就行
+而 Euclid 空间中的命题均可只用空间说的加法, 实数乘和内积描述, 因此只需在三维直观几何空间中验证就行
 
 <a href="#p-ifr-3-2" id="end-ifr-3-2">$\Box$</a>
 
@@ -790,7 +819,7 @@ $$\begin{aligned}
 
 #### <a href="#end-t-3-6" id="t-3-6">定理 - 3-6</a>
 
-令$V$为一$n$维Euclid空间, $\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{m}\in V$, 则有如下平行的事实
+令$V$为一$n$维 Euclid 空间, $\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{m}\in V$, 则有如下平行的事实
 
 1. 若$\alpha_i\ne\theta,~(\alpha_i,\alpha_j)=0,~i,j=1,2,...,m,~i\ne j$, 则$m\leqslant n$
 1. 若$(\alpha_i,\alpha_j)<0,~i,j=1,2,...,m,~i\ne j$, 则$m\leqslant n+1$
@@ -813,6 +842,7 @@ $$\begin{aligned}
    因此$\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{m}$线性无关
 
    因此$m\leqslant n$
+
 1. 不妨设$m=n+2$
 
    则
@@ -842,13 +872,13 @@ $$\begin{aligned}
    - 若情况为后者, 则命题得证
    - 若情况为前者, 不妨设
 
-      $$k_i>0,k_j<0,~i=1,2,...,s,~j=s+1,s+2,...,t,~1\leqslant s<t\leqslant m-1$$
-      则$\sum_{i=1}^sk_i\alpha_i=-\sum_{i=s+1}^tk_i\alpha_i$
+     $$k_i>0,k_j<0,~i=1,2,...,s,~j=s+1,s+2,...,t,~1\leqslant s<t\leqslant m-1$$
+     则$\sum_{i=1}^sk_i\alpha_i=-\sum_{i=s+1}^tk_i\alpha_i$
 
-      而
-      $$(\sum_{i=1}^sk_i\alpha_i,-\sum_{i=s+1}^tk_i\alpha_i)=-\sum_{i=1}^s\sum_{j=s+1}^t(k_i\alpha_i,k_j\alpha_j)<0$$
+     而
+     $$(\sum_{i=1}^sk_i\alpha_i,-\sum_{i=s+1}^tk_i\alpha_i)=-\sum_{i=1}^s\sum_{j=s+1}^t(k_i\alpha_i,k_j\alpha_j)<0$$
 
-      这与点积的正定性矛盾, 故情况只能为后者
+     这与点积的正定性矛盾, 故情况只能为后者
 
 1. 由条件知 $\alpha_i\ne\theta,i=1,2,...,m$
 
@@ -864,6 +894,7 @@ $$\begin{aligned}
      即满足条件的向量组长度至少为$f(1)+1$, 与$m\leqslant f(n)$矛盾!
 
      因此$1\notin D(f)$
+
    - 当$n\geqslant2$时, $\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{m}$中存在两向量线性无关, 设其为$\alpha'_1,\alpha'_2$
 
      假设$f(n)\in\Z^+$, 令$m=f(n)$
@@ -884,7 +915,7 @@ $$\begin{aligned}
 
 #### <a href="#end-prob-3-1" id="prob-3-1">习题 - 3-1</a>
 
-令$V$为一$n$维Euclid空间, $\alpha$为$V$中一向量, 证明:
+令$V$为一$n$维 Euclid 空间, $\alpha$为$V$中一向量, 证明:
 
 1. $f(\beta)=(\beta,\alpha)$定义$V$上一线性函数
 1. 若$g(\eta):=(\eta,\beta),~\beta\ne\alpha$, 则$f\ne g$
@@ -897,7 +928,9 @@ $$\begin{aligned}
 1. 任取$V$上一组基$\def\enum#1{\epsilon_{ #1}}\enum{1},\enum{2},...,\enum{n}$, 设$f(\epsilon_i)=t_i,~i=1,2,...,n$
 
    考虑方程组
-   $$\begin{bmatrix}
+
+   $$
+   \begin{bmatrix}
      (\epsilon_1,\epsilon_1)&(\epsilon_1,\epsilon_2)&...&(\epsilon_1,\epsilon_n)\\
      (\epsilon_2,\epsilon_1)&(\epsilon_2,\epsilon_2)&...&(\epsilon_2,\epsilon_n)\\
      \vdots&\vdots&\ddots&\vdots\\
@@ -906,7 +939,8 @@ $$\begin{aligned}
      k_1\\k_2\\\vdots\\k_n
    \end{bmatrix}=\begin{bmatrix}
      t_1\\t_2\\\vdots\\t_n
-   \end{bmatrix}$$
+   \end{bmatrix}
+   $$
 
    由$((\epsilon_i,\epsilon_j))_{n\times n}$的正定性可知方程组有唯一解, 令$\alpha=\displaystyle\sum_{i=1}^nk_i\epsilon_i$
 
@@ -918,15 +952,15 @@ $$\begin{aligned}
 
 ## 向量到子空间的距离与线性方程组的最小二乘法
 
-若无明确说明, 本章内容均在**有限维Euclid空间**内进行讨论
+若无明确说明, 本章内容均在**有限维 Euclid 空间**内进行讨论
 
 ### 向量在子空间的正射影
 
-我们在 <a href="#t-2-1">定理 - 2-1</a> 得知$\dim V_1+\dim V_1^\perp=\dim V$, 而如果$V$是$n$维Euclid空间, 我们有更进一步的结论
+我们在 <a href="#t-2-1">定理 - 2-1</a> 得知$\dim V_1+\dim V_1^\perp=\dim V$, 而如果$V$是$n$维 Euclid 空间, 我们有更进一步的结论
 
 #### <a href="#end-t-4-1" id="t-4-1">定理 - 4-1</a>
 
-令$V$为一$n$维Euclid空间, 则$\forall V_1\leqslant V$, 均有
+令$V$为一$n$维 Euclid 空间, 则$\forall V_1\leqslant V$, 均有
 $$V=V_1\oplus V_1^\perp$$
 
 ##### <a href="#t-4-1" id="p-t-4-1">证明</a>
@@ -939,11 +973,11 @@ $$V=V_1\oplus V_1^\perp$$
 
 <a href="#p-t-4-1" id="end-t-4-1">$\Box$</a>
 
-有了这个定理, 我们就可在Euclid空间定义正射影了
+有了这个定理, 我们就可在 Euclid 空间定义正射影了
 
 > **定义** 正射影
 >
-> 令$V$为一$n$维Euclid空间, $V_1\leqslant V$, 则$\forall\alpha\in V_1,~\alpha$均有唯一分解
+> 令$V$为一$n$维 Euclid 空间, $V_1\leqslant V$, 则$\forall\alpha\in V_1,~\alpha$均有唯一分解
 > $$\alpha=\alpha_1+\alpha_2,~\alpha_1\in V_1,\alpha_2\in V_1^\perp$$
 > 称$\alpha_1$为$\alpha$在$V_1$上的**正射影**
 
@@ -951,19 +985,19 @@ $$V=V_1\oplus V_1^\perp$$
 
 > **定义** 向量间距离
 >
-> 令$V$为一$n$维Euclid空间, $\alpha,\beta\in V$, 称$d(\alpha,\beta):=|\alpha-\beta|$为$\alpha$与$\beta$的**距离**
+> 令$V$为一$n$维 Euclid 空间, $\alpha,\beta\in V$, 称$d(\alpha,\beta):=|\alpha-\beta|$为$\alpha$与$\beta$的**距离**
 
-类似在直观几何空间中的距离, Euclid空间中的距离也有如下性质
+类似在直观几何空间中的距离, Euclid 空间中的距离也有如下性质
 
 - $(\forall\alpha,\beta\in V),~d(\alpha,\beta)=d(\beta,\alpha)$
 - $(\forall\alpha,\beta\in V),~d(\alpha,\beta)\geqslant0$, 等号成立当且仅当$\alpha=\beta$
 - $(\forall\alpha,\beta,\gamma\in V),~d(\alpha,\beta)\leqslant d(\alpha,\gamma)+d(\beta,\gamma)$ (三角不等式)
 
-在三维直观几何空间中, 一点到一平面的最短距离即是该点到垂足的连线, 在Euclid空间中表现为
+在三维直观几何空间中, 一点到一平面的最短距离即是该点到垂足的连线, 在 Euclid 空间中表现为
 
 #### <a href="#end-t-4-2" id="t-4-2">定理 - 4-2</a>
 
-令$V$为一$n$维Euclid空间, $V_1\leqslant V,\alpha\in V$, $\alpha_1\in V_1$为$\alpha$在$V_1$上的正射影, 则
+令$V$为一$n$维 Euclid 空间, $V_1\leqslant V,\alpha\in V$, $\alpha_1\in V_1$为$\alpha$在$V_1$上的正射影, 则
 $$(\forall\beta\in V_1,\beta\ne\alpha_1),~d(\alpha,\alpha_1)<d(\alpha,\beta)$$
 
 ##### <a href="#t-4-2" id="p-t-4-2">证明</a>
@@ -977,7 +1011,7 @@ $\alpha-\beta=(\alpha-\alpha_1)+(\alpha_1-\beta),~\alpha_1-\beta\in V_1,\alpha-\
 
 <a href="#p-t-4-2" id="end-t-4-2">$\Box$</a>
 
-因此, 我们可在Euclid空间下定义向量到子空间的距离
+因此, 我们可在 Euclid 空间下定义向量到子空间的距离
 
 > **定义** 向量到子空间的距离
 >
@@ -991,17 +1025,17 @@ $\alpha-\beta=(\alpha-\alpha_1)+(\alpha_1-\beta),~\alpha_1-\beta\in V_1,\alpha-\
 
 首先我们需要定义一个特殊矩阵
 
-> **定义** Gram矩阵
+> **定义** Gram 矩阵
 >
-> 令$V$为一$n$维Euclid空间, $\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{m}\in V$, 称
+> 令$V$为一$n$维 Euclid 空间, $\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{m}\in V$, 称
 > $$((\alpha_i,\alpha_j))_{m\times m}$$
-> 为$\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{m}$的**Gram矩阵**, 记作$G(\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{m})$
+> 为$\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{m}$的**Gram 矩阵**, 记作$G(\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{m})$
 
 接下来我们就可以给出做法了
 
 #### <a href="#end-t-4-3" id="t-4-3">定理 - 4-3</a>
 
-令$V$为一$n$维Euclid空间, $V_1=G[\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{m}]\leqslant V$, $\alpha\in V$, $X=(\def\enum#1{x_{ #1}}\enum{1},\enum{2},...,\enum{m})^T\in\R^m$
+令$V$为一$n$维 Euclid 空间, $V_1=G[\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{m}]\leqslant V$, $\alpha\in V$, $X=(\def\enum#1{x_{ #1}}\enum{1},\enum{2},...,\enum{m})^T\in\R^m$
 
 则
 $$\gamma=(\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{m})X=\sum_{i=1}^mx_i\alpha_i\tag{4-3.1}$$
@@ -1011,11 +1045,14 @@ $$G(\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{m})X=(\def\enum#1{(\alp
 ##### <a href="#t-4-3" id="p-t-4-3">证明</a>
 
 显然$\alpha$的正射影$\gamma$一定存在, 则
-$$\begin{aligned}
+
+$$
+\begin{aligned}
   (\text{4-3.1})&\iff \left(\alpha-\sum_{i=1}^mx_i\alpha_i\right)\in V_1^\perp\\
   &\iff 0=(\alpha_j,\alpha-\sum_{i=1}^mx_i\alpha_i)=(\alpha,\alpha_j)-\sum_{i=1}^mx_i(\alpha_j,\alpha_i),~j=1,2,...,m\\
   &\iff G(\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{m})X=(\def\enum#1{(\alpha,\alpha_{ #1})}\enum{1},\enum{2},...,\enum{m})^T
-\end{aligned}$$
+\end{aligned}
+$$
 
 <a href="#p-t-4-3" id="end-t-4-3">$\Box$</a>
 
@@ -1035,7 +1072,7 @@ $$\sum_{i=1}^n(b_1-\sum_{j=1}^na_{ij}x_j)^2\ne0\tag{4.1}$$
 此时, 我们则需要寻找一组实数$\def\enum#1{x_{ #1}}\enum{1},\enum{2},...,\enum{n}$使得式$(4.1)$左端的值最小  
 这样的$\def\enum#1{x_{ #1}}\enum{1},\enum{2},...,\enum{n}$即为$AX=B$的**最小二乘解**
 
-下面我们将在$m$维Euclid空间讨论该问题
+下面我们将在$m$维 Euclid 空间讨论该问题
 
 将$A$按列分块, $A=(\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{n}),~\alpha_i\in\R^m,i=1,2,...,n$
 
@@ -1069,13 +1106,13 @@ $(4.4)$的可解性也可通过$\operatorname{rk}(A^TA)=\operatorname{rk}((A^TA,
 
 #### <a href="#end-prob-4-1" id="prob-4-1">习题 - 4-1</a>
 
-令$V$为一$n$维Euclid空间, $\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{m}\in V$, 证明:  
+令$V$为一$n$维 Euclid 空间, $\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{m}\in V$, 证明:  
 $\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{m}$线性无关当且仅当$|G(\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{m})|\ne0$
 
 ##### <a href="#prob-4-1" id="p-prob-4-1">解</a>
 
 - $\impliedby$:
-  
+
   设$\displaystyle\sum_{i=1}^nk_i\alpha_i=\theta$
 
   则$\displaystyle\sum_{i=1}^nk_i(\alpha_j,\alpha_i)=0,~j=1,2,...,n$

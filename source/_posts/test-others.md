@@ -39,24 +39,32 @@ code block in note tag
 
 Lorem {% label @ipsum %} {% label primary@dolor sit %} amet, consectetur {% label success@adipiscing elit, %} sed {% label info@do eiusmod %} tempor incididunt ut labore et dolore magna aliqua.
 
-Ut enim *{% label warning @ad %}* minim veniam, quis **{% label danger@nostrud %}** exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Ut enim _{% label warning @ad %}_ minim veniam, quis **{% label danger@nostrud %}** exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 
 Duis aute irure dolor in reprehenderit in voluptate ~~{% label default @velit %}~~ <mark>esse</mark> cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 ## 选项卡
 
 {% tabs First unique name %}
+
 <!-- tab -->
+
 **This is Tab 1.**
+
 <!-- endtab -->
 
 <!-- tab -->
+
 **This is Tab 2.**
+
 <!-- endtab -->
 
 <!-- tab -->
+
 **This is Tab 3.**
+
 <!-- endtab -->
+
 {% endtabs %}
 
 ## 按钮
@@ -95,16 +103,16 @@ Theme NexT | https://theme-next.js.org/ | Stay Simple. Stay NexT. | /images/appl
 % Theme NexT | https://theme-next.js.org/ | Stay Simple. Stay NexT. | /images/apple-touch-icon-next.png
 {% endlinkgrid %}
 
-## 插入PDF
+## 插入 PDF
 
 {% pdf /article/test-others/test.pdf 600px %}
 
 ## 插入视频
 
-### manim示例 - SquareToCircle
+### manim 示例 - SquareToCircle
 
 {% mmedia "video" ./SquareToCircle.mp4 %}
 
-### Bilibili视频 - BV1C4411u7rK
+### Bilibili 视频 - BV1C4411u7rK
 
 {% mmedia "bilibili" "bvid:1C4411u7rK" "quality:high" "danmaku" "allowfullscreen" %}

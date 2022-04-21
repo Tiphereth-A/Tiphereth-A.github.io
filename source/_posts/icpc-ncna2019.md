@@ -25,6 +25,7 @@ tags:
   - DFS
 date: 2021-03-07 18:11:53
 ---
+
 比赛链接:
 
 - [Kattis](https://ncna19.kattis.com/problems)
@@ -48,9 +49,10 @@ date: 2021-03-07 18:11:53
 | J    | 1.7      | 模拟         |
 | K    | 7.5      | ~~乱搞~~     |
 
-> u1s1, 我觉得这个难度值略奇怪, 一道很简单的贪心, 难度居然比网络流高1.6, 比最小圆覆盖高1.5
+> u1s1, 我觉得这个难度值略奇怪, 一道很简单的贪心, 难度居然比网络流高 1.6, 比最小圆覆盖高 1.5
 
 ---
+
 > 2022.02.23 UPD: 这难度值应该没问题, 刚又做了 E, 发现这个思路并不是特别好想
 
 ## 其他题解
@@ -516,6 +518,7 @@ Print, on a single line, the least positive number a such that $a⊗a=N$. If the
 - $\oplus$: 无进位的十进制"加法"
 
   如: $37⊕48=75$, 而不是$85$
+
 - $\otimes$: 设$a=\overline{\def\enum#1{a_{ #1}}\enum{n}...\enum{1}\enum{0}},~b=\overline{\def\enum#1{b_{ #1}}\enum{m}...\enum{1}\enum{0}},~a\otimes b=c$, 其中$~c=\overline{\def\enum#1{c_{ #1}}\enum{l}...\enum{1}\enum{0}},~l=m+n$
 
   则
@@ -531,13 +534,14 @@ Print, on a single line, the least positive number a such that $a⊗a=N$. If the
 
 注意到, $N_i$由$\def\enum#1{a_{ #1}}\enum{0},\enum{1},...,\enum{i}$决定, $i<k$, 故我们有一个简单的想法, 就是对$N_i$枚举可能的$a_i$
 
-但是我们肯定不能去无脑DFS
+但是我们肯定不能去无脑 DFS
 
 首先, 由 $a_k^2\equiv N_{2k}{\equiv}\llap{/\,}0\pmod{10}$ 可知: 若$l$为偶数则必无解
 
 注意到
 
-$$\exist a_0~s.t.~a_0^2\equiv N_0\pmod{10}\iff\begin{cases}
+$$
+\exist a_0~s.t.~a_0^2\equiv N_0\pmod{10}\iff\begin{cases}
   N_0{\equiv}\llap{/\,}\pm 2\pmod{5}\\
   a_0\in\begin{cases}
     \{0\},&N_0=0\\
@@ -547,7 +551,8 @@ $$\exist a_0~s.t.~a_0^2\equiv N_0\pmod{10}\iff\begin{cases}
     \{4,6\},&N_0=6\\
     \{3,7\},&N_0=9
   \end{cases}
-\end{cases}$$
+\end{cases}
+$$
 
 $$2a_0a_1\equiv N_1\pmod{10}$$
 $$2a_0a_2+a_1^2\equiv N_2\pmod{10}$$
@@ -595,8 +600,9 @@ $$...$$
     19 & 1 & 0 & 12222 & 1000000000000000000   \\ \hdashline
     21 & 1 & 0 & 32222 & 101040101040000000000 \\
   \end{array}$
-  
+
   其中:
+
   - $n_1$: 枚举$1$个情况的总数
   - $n_2$: 枚举$2$个情况的总数
   - $n_{10}$: 枚举$10$个情况的总数
@@ -605,8 +611,10 @@ $$...$$
 
   应用回归分析推测复杂度为$O(1.765948^l)$
 
-- 平均情况  
-  $$\def\arraystretch{1.5}
+- 平均情况
+
+  $$
+  \def\arraystretch{1.5}
   \begin{array}{llll}
     l & n_1     & n_2      & n_{10}   \\ \hline
     1 & 1\over3 & 2\over3  & 0        \\ \hdashline
@@ -618,6 +626,7 @@ $$...$$
   $$
 
   其中:
+
   - $n_1$: 枚举$1$个情况的期望
   - $n_2$: 枚举$2$个情况的期望
   - $n_{10}$: 枚举$10$个情况的期望
@@ -1281,7 +1290,7 @@ Output the maximum number of color changes Alice can force Bob to make on his ro
 
 这样问题便转化成了求无向图上从$1$到$N$的最短路, 答案即为最短路长度$-1$
 
-直接用BFS求最短路就行, 下面给出的是用Dijkstra求的
+直接用 BFS 求最短路就行, 下面给出的是用 Dijkstra 求的
 
 ### 代码参考
 
@@ -1751,11 +1760,14 @@ $$\max_{x\in D}f(x)$$
 ```
 
 我们列出对应函数
-$$\begin{aligned}
+
+$$
+\begin{aligned}
   f_1(a)&=\max\{0,10\}\\
   f_2(a)&=\max\{0,10-2|a-1|,10-2|2\pi-|a-1||\}\\
   f_3(a)&=\max\{0,10-4|a-1.5|,10-4|2\pi-|a-1.5||\}\\
-\end{aligned}$$
+\end{aligned}
+$$
 
 画个图
 

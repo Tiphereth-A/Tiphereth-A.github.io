@@ -1,5 +1,5 @@
 ---
-title: '题解 - [CodeForces 906 D] Power Tower'
+title: "题解 - [CodeForces 906 D] Power Tower"
 categories:
   - 程序设计
   - 题解
@@ -14,6 +14,7 @@ tags:
   - 扩展Euler定理
 date: 2020-12-18 22:43:39
 ---
+
 [题目链接](https://codeforces.com/problemset/problem/906/D)
 
 <!-- more -->
@@ -23,7 +24,7 @@ date: 2020-12-18 22:43:39
 time limit per test: 4.5 seconds  
 memory limit per test: 256 megabytes  
 input: standard input  
-output: standard output  
+output: standard output
 
 ### Description
 
@@ -89,11 +90,15 @@ $$w_l^{w_{l+1}^{\cdot^{\cdot^{\cdot^{w_r}}}}}\bmod m$$
 
 ## 解题思路
 
-由扩展Euler定理
-$$a^b\equiv\begin{cases}
+由扩展 Euler 定理
+
+$$
+a^b\equiv\begin{cases}
   a^{b\bmod\varphi(m)+\varphi(m)},&(a,m)>1,b>\varphi(m)\\
   a^{b\bmod\varphi(m)},&\texttt{otherwise}\\
-\end{cases}\pmod m$$
+\end{cases}\pmod m
+$$
+
 递归求解即可
 
 ## 复杂度
@@ -109,7 +114,7 @@ $$\Theta\left(\log m+\sum_{i=1}^q\min\{r_i-l_i+1,\log m\}\right)\implies O(q\log
 /*
  * @Author: Tifa
  * @LastEditTime: 2020-12-18 22:43:39
- * @Description: 
+ * @Description:
  */
 
 #include <bits/stdc++.h>

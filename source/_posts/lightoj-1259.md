@@ -1,5 +1,5 @@
 ---
-title: '题解 - [LightOJ 1259] Goldbach`s Conjecture'
+title: "题解 - [LightOJ 1259] Goldbach`s Conjecture"
 categories:
   - 程序设计
   - 题解
@@ -13,6 +13,7 @@ tags:
   - 筛法
 date: 2020-07-25 00:19:21
 ---
+
 [题目链接](https://vjudge.net/problem/LightOJ-1259/origin)
 
 <!-- more -->

@@ -103,7 +103,7 @@ int main() {
 
 </details>
 
-## 202 - 路径计数2 (CF559C)
+## 202 - 路径计数 2 (CF559C)
 
 [题目链接](https://oj.daimayuan.top/problem/467)
 
@@ -225,7 +225,7 @@ int main() {
 
 定义函数$f(x)$为满足$a_i \& x \neq a_i$的最小的$i$, 当满足条件的$i$不存在时 $f(x)=0$
 
-求$\sum_{i = 0}^{2^k - 1}f(i)$.  由于答案可能很大, 输出答案取模$998244353$后的值
+求$\sum_{i = 0}^{2^k - 1}f(i)$. 由于答案可能很大, 输出答案取模$998244353$后的值
 
 ### 输入格式
 
@@ -237,40 +237,40 @@ int main() {
 
 一行一个整数, 表示答案
 
-### 样例输入1
+### 样例输入 1
 
 ```input1
 2 1
 0 1
 ```
 
-### 样例输出1
+### 样例输出 1
 
 ```output1
 2
 ```
 
-### 样例输入2
+### 样例输入 2
 
 ```input2
 2 2
 2 1
 ```
 
-### 样例输出2
+### 样例输出 2
 
 ```output2
 4
 ```
 
-### 样例输入3
+### 样例输入 3
 
 ```input3
 5 10
 389 144 883 761 556
 ```
 
-### 样例输出3
+### 样例输出 3
 
 ```output3
 1118
@@ -278,7 +278,7 @@ int main() {
 
 ### 样例解释
 
-对于样例1, $f(0) = 2$, $f(1) = 0$, 答案 $= 2$
+对于样例 1, $f(0) = 2$, $f(1) = 0$, 答案 $= 2$
 
 ### 数据规模
 
@@ -386,6 +386,7 @@ int main() {
 $1\leq n\leq 3\cdot 10^5$, $0\leq a_i\leq 10^9$
 
 ### 解题思路
+
 >
 
 ### 复杂度
@@ -430,7 +431,7 @@ $1\leq n\leq 3\cdot 10^5$, $0\leq a_i\leq 10^9$
 
 输出 $m$ 行, 每行包含一个整数作为询问的答案
 
-### 输入样例1
+### 输入样例 1
 
 ```input1
 5 3
@@ -440,7 +441,7 @@ $1\leq n\leq 3\cdot 10^5$, $0\leq a_i\leq 10^9$
 3 5
 ```
 
-### 输出样例1
+### 输出样例 1
 
 ```output1
 1
@@ -448,7 +449,7 @@ $1\leq n\leq 3\cdot 10^5$, $0\leq a_i\leq 10^9$
 2
 ```
 
-### 输入样例2
+### 输入样例 2
 
 ```input2
 6 5
@@ -460,7 +461,7 @@ $1\leq n\leq 3\cdot 10^5$, $0\leq a_i\leq 10^9$
 1 6
 ```
 
-### 输出样例2
+### 输出样例 2
 
 ```output2
 2
@@ -471,6 +472,7 @@ $1\leq n\leq 3\cdot 10^5$, $0\leq a_i\leq 10^9$
 ```
 
 ### 解题思路
+
 >
 
 ### 复杂度
@@ -506,7 +508,7 @@ Now George wants to save time to get to the classroom. So you, George's roommate
 
 In this problem, you should only consider the time of walking and cycling, and you can assume that the other actions(scanning QR code, getting on, getting off, $\cdots$) cost no time
 
-简单中文翻译：校园可以被看成$n$个点, $m$条无向边的图, 其中第$i$条边的长度是$w_i$. 你的宿舍在$1$号点, 教学楼在$n$号点, 你想从宿舍去教学楼. 你的走路速度是每秒$t$, 骑车速度是每秒$r$. 根据共享单车app, 校园内一共有$k$个停车点. 第$i$个停车点在$a_i$点, 但是有$\frac{p_i}{100}$的概率, 车可能是坏的. 但是你只有到达$a_i$点, 然后扫描二维码之后才能知道第$i$辆车是不是好的. 如果车是好的, 那就可以骑到终点
+简单中文翻译：校园可以被看成$n$个点, $m$条无向边的图, 其中第$i$条边的长度是$w_i$. 你的宿舍在$1$号点, 教学楼在$n$号点, 你想从宿舍去教学楼. 你的走路速度是每秒$t$, 骑车速度是每秒$r$. 根据共享单车 app, 校园内一共有$k$个停车点. 第$i$个停车点在$a_i$点, 但是有$\frac{p_i}{100}$的概率, 车可能是坏的. 但是你只有到达$a_i$点, 然后扫描二维码之后才能知道第$i$辆车是不是好的. 如果车是好的, 那就可以骑到终点
 
 问你最优策略下, 你最小的到达终点的期望时间是多少. 如果到达不了$n$号点, 输出-1
 
@@ -605,6 +607,7 @@ Considering the time cost on the way:
 As given in the input, the only bicycle has $\frac{50}{100}$ probability to be damaged. So the expectation time cost is $\frac{50}{100}\times 700 + (1 - \frac{50}{100})\times 220 = 460$
 
 ### 解题思路
+
 >
 
 ### 复杂度
@@ -634,9 +637,9 @@ As given in the input, the only bicycle has $\frac{50}{100}$ probability to be d
 
 ### 输入格式
 
-第一行有一个整数n($1\leq n\leq 10^5$)
+第一行有一个整数 n($1\leq n\leq 10^5$)
 
-第二行有n个整数$h_i$($1\leq h_i\leq 10^9$), 表示第i堆方块的数目
+第二行有 n 个整数$h_i$($1\leq h_i\leq 10^9$), 表示第 i 堆方块的数目
 
 ### 输出格式
 
@@ -664,6 +667,7 @@ As given in the input, the only bicycle has $\frac{50}{100}$ probability to be d
 所有数据保证 $1\leq n \leq 10^5, 1 \leq h_i\leq 10^9$
 
 ### 解题思路
+
 >
 
 ### 复杂度

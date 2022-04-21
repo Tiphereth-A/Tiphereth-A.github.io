@@ -1,5 +1,5 @@
 ---
-title: '模板 & 题解 - [Luogu P4000] 斐波那契数列'
+title: "模板 & 题解 - [Luogu P4000] 斐波那契数列"
 categories:
   - 程序设计
   - 模板
@@ -36,7 +36,7 @@ date: 2021-12-22 20:54:01
 - $f_1 = 1$
 - $f_2 = 1$
 - $f_n = f_{n-1} + f_{n-2}$ ($n \geq 2$ 且 $n$ 为整数)
-请你求出 $f_n \mod p$ 的值
+  请你求出 $f_n \mod p$ 的值
 
 ### 输入格式
 
@@ -96,12 +96,13 @@ date: 2021-12-22 20:54:01
   令 $l(p)$ 为 $F_n$ 模 $p$ 的循环节, 则
 
   $$l(p)=\operatorname{lcm}\{\def\enum#1{l(p_{ #1}^{\alpha_{ #1}})}\enum{1},\enum{2},...,\enum{\omega(p)}\}$$
+
 - 对素数 $p$, 有如下定理:
   - $$l(p^n)\mid l(p)p^{n-1}$$
   - 若 $\left(\frac{5}{p}\right)=1$, 即 $p\equiv\pm 1\pmod{5}$, 则
-      $$l(p)\mid p-1$$
+    $$l(p)\mid p-1$$
   - 若 $\left(\frac{5}{p}\right)=-1$, 即 $p\equiv\pm 2\pmod{5}$, 则
-      $$l(p)\mid 2(p+1)$$
+    $$l(p)\mid 2(p+1)$$
 
 > 代码里还有一些别的科技, 推荐看一看
 

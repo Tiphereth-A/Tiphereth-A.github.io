@@ -1,5 +1,5 @@
 ---
-title: '题解 - [Luogu P2277] [HNOI2003]24点游戏'
+title: "题解 - [Luogu P2277] [HNOI2003]24点游戏"
 categories:
   - 程序设计
   - 题解
@@ -26,9 +26,9 @@ date: 2021-11-05 01:01:36
 
 ### 题目描述
 
-为了培养小孩的计算能力, 大人们经常给小孩玩这样的游戏：从1付扑克牌中任意抽出4张扑克, 要小孩用 "+", "-", "*", " /"和括号组成一个合法的表达式, 并使表达式的值为24点. 这种游戏就是所谓的"24点游戏"
+为了培养小孩的计算能力, 大人们经常给小孩玩这样的游戏：从 1 付扑克牌中任意抽出 4 张扑克, 要小孩用 "+", "-", "\*", " /"和括号组成一个合法的表达式, 并使表达式的值为 24 点. 这种游戏就是所谓的"24 点游戏"
 
-请你编程求出对于给出的任意4个正整数 a, b, c, d, 请你编程求出这4个整数能组成多少个值为24的不同表达式
+请你编程求出对于给出的任意 4 个正整数 a, b, c, d, 请你编程求出这 4 个整数能组成多少个值为 24 的不同表达式
 
 ### 输入输出格式
 
@@ -36,13 +36,13 @@ date: 2021-11-05 01:01:36
 
 输入文件名：input.txt
 
-输入文件共一行, 为4个正整数a, b, c, d. (0<=a,b,c,d<=100)
+输入文件共一行, 为 4 个正整数 a, b, c, d. (0<=a,b,c,d<=100)
 
 #### 输出格式
 
 输出文件名：output.txt
 
-输出文件为由a, b, c, d组成的值为24表达式个数, 如没有, 输出0
+输出文件为由 a, b, c, d 组成的值为 24 表达式个数, 如没有, 输出 0
 
 ### 输入输出样例
 
@@ -72,109 +72,109 @@ date: 2021-11-05 01:01:36
 
 1. 我们需要一个能枚举 $\{a,b,c,d\}^3$ (乘法为 Descartes 积) 的宏定义来枚举所有运算符的情况
 
-    <details>
-    <summary><font color='orange'>Show code</font></summary>
+   <details>
+   <summary><font color='orange'>Show code</font></summary>
 
-    ```c
-    #define _CPROD1_4_HELPER(a, b, c, d, ...) a, __VA_ARGS__, b, __VA_ARGS__, c, __VA_ARGS__, d, __VA_ARGS__
+   ```c
+   #define _CPROD1_4_HELPER(a, b, c, d, ...) a, __VA_ARGS__, b, __VA_ARGS__, c, __VA_ARGS__, d, __VA_ARGS__
 
-    #define _CPROD2_4_HELPER(a, b, c, d, ...) _CPROD1_4_HELPER(a, b, c, d, a, __VA_ARGS__), _CPROD1_4_HELPER(a, b, c, d, b, __VA_ARGS__), _CPROD1_4_HELPER(a, b, c, d, c, __VA_ARGS__), _CPROD1_4_HELPER(a, b, c, d, d, __VA_ARGS__)
+   #define _CPROD2_4_HELPER(a, b, c, d, ...) _CPROD1_4_HELPER(a, b, c, d, a, __VA_ARGS__), _CPROD1_4_HELPER(a, b, c, d, b, __VA_ARGS__), _CPROD1_4_HELPER(a, b, c, d, c, __VA_ARGS__), _CPROD1_4_HELPER(a, b, c, d, d, __VA_ARGS__)
 
-    #define CPROD3_4(a, b, c, d) _CPROD2_4_HELPER(a, b, c, d, a), _CPROD2_4_HELPER(a, b, c, d, b), _CPROD2_4_HELPER(a, b, c, d, c), _CPROD2_4_HELPER(a, b, c, d, d)
+   #define CPROD3_4(a, b, c, d) _CPROD2_4_HELPER(a, b, c, d, a), _CPROD2_4_HELPER(a, b, c, d, b), _CPROD2_4_HELPER(a, b, c, d, c), _CPROD2_4_HELPER(a, b, c, d, d)
 
-    // use this
-    #define OPANDS CPROD3_4(+, -, *, /)
-    ```
+   // use this
+   #define OPANDS CPROD3_4(+, -, *, /)
+   ```
 
-    </details>
+   </details>
 
-    然后我们需要这样的宏定义来得到每一组运算符
+   然后我们需要这样的宏定义来得到每一组运算符
 
-    <details>
-    <summary><font color='orange'>Show code</font></summary>
+   <details>
+   <summary><font color='orange'>Show code</font></summary>
 
-    ```c
-    #define _RM3(_1, _2, _3, ...) __VA_ARGS__
-    #define _SEL3(_1, _2, _3, ...) _1, _2, _3
+   ```c
+   #define _RM3(_1, _2, _3, ...) __VA_ARGS__
+   #define _SEL3(_1, _2, _3, ...) _1, _2, _3
 
-    // use this
-    // remove first 3 elements
-    #define RM3(...) _RM3(__VA_ARGS__)
-    // use this
-    // select first 3 elements
-    #define SEL3(...) _SEL3(__VA_ARGS__)
-    ```
+   // use this
+   // remove first 3 elements
+   #define RM3(...) _RM3(__VA_ARGS__)
+   // use this
+   // select first 3 elements
+   #define SEL3(...) _SEL3(__VA_ARGS__)
+   ```
 
-    </details>
+   </details>
 
 1. 我们需要一个能枚举 $\{a,b,c,d\}$ 全排列的宏定义来枚举所有数的情况 (实际上, 因为这样会让编译时间过长甚至让编译器爆栈, 所以这个并没有用上)
 
-    <details>
-    <summary><font color='orange'>Show code</font></summary>
+   <details>
+   <summary><font color='orange'>Show code</font></summary>
 
-    ```c
-    #define _P2_HELPER(a, b, ...) a, b, __VA_ARGS__, b, a, __VA_ARGS__
+   ```c
+   #define _P2_HELPER(a, b, ...) a, b, __VA_ARGS__, b, a, __VA_ARGS__
 
-    #define _P3_HELPER(a, b, c, ...) _P2_HELPER(a, b, c, __VA_ARGS__), _P2_HELPER(b, c, a, __VA_ARGS__), _P2_HELPER(c, a, b, __VA_ARGS__)
+   #define _P3_HELPER(a, b, c, ...) _P2_HELPER(a, b, c, __VA_ARGS__), _P2_HELPER(b, c, a, __VA_ARGS__), _P2_HELPER(c, a, b, __VA_ARGS__)
 
-    // use this
-    #define P4 _P3_HELPER(a, b, c, d), _P3_HELPER(b, c, d, a), _P3_HELPER(c, d, a, b), _P3_HELPER(d, a, b, c)
-    ```
+   // use this
+   #define P4 _P3_HELPER(a, b, c, d), _P3_HELPER(b, c, d, a), _P3_HELPER(c, d, a, b), _P3_HELPER(d, a, b, c)
+   ```
 
-    </details>
+   </details>
 
-    然后我们需要这样的宏定义来得到每一组数
+   然后我们需要这样的宏定义来得到每一组数
 
-    <details>
-    <summary><font color='orange'>Show code</font></summary>
+   <details>
+   <summary><font color='orange'>Show code</font></summary>
 
-    ```c
-    #define _RM4(_1, _2, _3, _4, ...) __VA_ARGS__
-    #define _SEL4(_1, _2, _3, _4, ...) _1, _2, _3, _4
+   ```c
+   #define _RM4(_1, _2, _3, _4, ...) __VA_ARGS__
+   #define _SEL4(_1, _2, _3, _4, ...) _1, _2, _3, _4
 
-    // use this
-    // remove first 4 elements
-    #define RM4(...) _RM4(__VA_ARGS__)
-    // use this
-    // select first 4 elements
-    #define SEL4(...) _SEL4(__VA_ARGS__)
-    ```
+   // use this
+   // remove first 4 elements
+   #define RM4(...) _RM4(__VA_ARGS__)
+   // use this
+   // select first 4 elements
+   #define SEL4(...) _SEL4(__VA_ARGS__)
+   ```
 
-    </details>
+   </details>
 
 1. 我们需要枚举 5 种运算方式
 
-      - $(((a\odot b)\odot c)\odot d)$
-      - $((a\odot (b\odot c))\odot d)$
-      - $(a\odot ((b\odot c)\odot d))$
-      - $(a\odot (b\odot (c\odot d)))$
-      - $((a\odot b)\odot (c\odot d))$
+   - $(((a\odot b)\odot c)\odot d)$
+   - $((a\odot (b\odot c))\odot d)$
+   - $(a\odot ((b\odot c)\odot d))$
+   - $(a\odot (b\odot (c\odot d)))$
+   - $((a\odot b)\odot (c\odot d))$
 
-      其中 $\odot\in\{+,-,\times,\div\}$
+   其中 $\odot\in\{+,-,\times,\div\}$
 
-      这个写成宏定义就很简单
+   这个写成宏定义就很简单
 
-      <details>
-      <summary><font color='orange'>Show code</font></summary>
+     <details>
+     <summary><font color='orange'>Show code</font></summary>
 
-      ```c
-      #define ___CALC0(a, b, c, d, opab, opbc, opcd) Node(0, a, b, c, d, #opab, #opbc, #opcd, ((double(a) opab double(b))opbc double(c))opcd double(d))
+   ```c
+   #define ___CALC0(a, b, c, d, opab, opbc, opcd) Node(0, a, b, c, d, #opab, #opbc, #opcd, ((double(a) opab double(b))opbc double(c))opcd double(d))
 
-      #define ___CALC1(a, b, c, d, opab, opbc, opcd) Node(1, a, b, c, d, #opab, #opbc, #opcd, (double(a) opab(double(b) opbc double(c)))opcd double(d))
+   #define ___CALC1(a, b, c, d, opab, opbc, opcd) Node(1, a, b, c, d, #opab, #opbc, #opcd, (double(a) opab(double(b) opbc double(c)))opcd double(d))
 
-      #define ___CALC2(a, b, c, d, opab, opbc, opcd) Node(2, a, b, c, d, #opab, #opbc, #opcd, double(a) opab((double(b) opbc double(c))opcd double(d)))
+   #define ___CALC2(a, b, c, d, opab, opbc, opcd) Node(2, a, b, c, d, #opab, #opbc, #opcd, double(a) opab((double(b) opbc double(c))opcd double(d)))
 
-      #define ___CALC3(a, b, c, d, opab, opbc, opcd) Node(3, a, b, c, d, #opab, #opbc, #opcd, double(a) opab(double(b) opbc(double(c) opcd double(d))))
+   #define ___CALC3(a, b, c, d, opab, opbc, opcd) Node(3, a, b, c, d, #opab, #opbc, #opcd, double(a) opab(double(b) opbc(double(c) opcd double(d))))
 
-      #define ___CALC4(a, b, c, d, opab, opbc, opcd) Node(4, a, b, c, d, #opab, #opbc, #opcd, ((double(a) opab double(b))opbc(double(c) opcd double(d))))
+   #define ___CALC4(a, b, c, d, opab, opbc, opcd) Node(4, a, b, c, d, #opab, #opbc, #opcd, ((double(a) opab double(b))opbc(double(c) opcd double(d))))
 
-      #define ___CALC(a, b, c, d, opab, opbc, opcd) ___CALC0(a, b, c, d, opab, opbc, opcd), ___CALC1(a, b, c, d, opab, opbc, opcd), ___CALC2(a, b, c, d, opab, opbc, opcd), ___CALC3(a, b, c, d, opab, opbc, opcd), ___CALC4(a, b, c, d, opab, opbc, opcd)
+   #define ___CALC(a, b, c, d, opab, opbc, opcd) ___CALC0(a, b, c, d, opab, opbc, opcd), ___CALC1(a, b, c, d, opab, opbc, opcd), ___CALC2(a, b, c, d, opab, opbc, opcd), ___CALC3(a, b, c, d, opab, opbc, opcd), ___CALC4(a, b, c, d, opab, opbc, opcd)
 
-      // use this
-      #define __CALC(...) ___CALC(__VA_ARGS__)
-      ```
+   // use this
+   #define __CALC(...) ___CALC(__VA_ARGS__)
+   ```
 
-      </details>
+     </details>
 
 接下来就是把这三部分拼接起来就好了
 

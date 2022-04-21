@@ -15,6 +15,7 @@ tags:
   - 构造
 date: 2020-12-27 15:26:45
 ---
+
 [比赛链接](https://ac.nowcoder.com/acm/contest/10662)
 
 <!-- more -->
@@ -24,19 +25,20 @@ date: 2020-12-27 15:26:45
 | 题号[^1] | 标题[^2]                 | 做法       |
 | -------- | ------------------------ | ---------- |
 | A        | Matrix Equation          | 数学       |
-| *B       | Number Game              |            |
+| \*B      | Number Game              |            |
 | C        | Stone Game               | 签到(贪心) |
 | D        | Fight against involution | 签到(贪心) |
-| *E       | Tree Transform           |            |
-| *F       | Gcd Product              |            |
+| \*E      | Tree Transform           |            |
+| \*F      | Gcd Product              |            |
 | G        | Xor Transformation       | 签到(构造) |
-| *H       | Path Killer              |            |
-| *I       | Random Walk On Tree      |            |
-| *J       | Tree Constructer         |            |
-| *K       | Kth Query                |            |
-| *L       | Bit Sequence             |            |
+| \*H      | Path Killer              |            |
+| \*I      | Random Walk On Tree      |            |
+| \*J      | Tree Constructer         |            |
+| \*K      | Kth Query                |            |
+| \*L      | Bit Sequence             |            |
 | M        | Cook Pancakes!           | 签到       |
-[^1]: 打*的是还没写题解的题
+
+[^1]: 打\*的是还没写题解的题
 [^2]: 带超链接的是找到了原题或原型
 
 {% pdf /article/icpc-ajnr2020/problems.pdf 600px %}
@@ -54,19 +56,21 @@ date: 2020-12-27 15:26:45
 
 ### 题意简述
 
-> **定义** $n$阶01方阵
+> **定义** $n$阶 01 方阵
 >
 > 只由$0$和$1$组成的$n$阶方阵
 
-给出$n$阶01方阵$A,B$, 问有多少个$n$阶01方阵$C$满足
+给出$n$阶 01 方阵$A,B$, 问有多少个$n$阶 01 方阵$C$满足
 $$A\times C=B\cdot C\tag{A-1}$$
 
 其中
 
-$$\begin{aligned}
+$$
+\begin{aligned}
   A_{n\times n}\times B_{n\times n}&:=\left(\sum_{k=1}^na_{i,k}b_{k,j}\right)_{n\times n}\\
   A_{n\times n}\cdot B_{n\times n}&:=(a_{i,j}b_{i,j})_{n\times n}
-\end{aligned}$$
+\end{aligned}
+$$
 
 ### 解题思路
 

@@ -1,5 +1,5 @@
 ---
-title: '题解 - [Luogu P1829] [国家集训队]Crash的数字表格 / JZPTAB'
+title: "题解 - [Luogu P1829] [国家集训队]Crash的数字表格 / JZPTAB"
 categories:
   - 程序设计
   - 题解
@@ -13,6 +13,7 @@ tags:
   - Möbius反演
 date: 2021-06-04 20:59:51
 ---
+
 [题目链接](https://www.luogu.com.cn/problem/P1829)
 
 <!-- more -->
@@ -72,10 +73,12 @@ date: 2021-06-04 20:59:51
 
 推式子, 不妨设 $n\leqslant m$
 
-$$\begin{aligned}
+$$
+\begin{aligned}
   \sum_{i=1}^n\sum_{j=1}^m\frac{ij}{(i,j)}&=\sum_{d=1}^nd\sum_{i=1}^{\lfloor\frac{n}{d}\rfloor}\sum_{j=1}^{\lfloor\frac{m}{d}\rfloor}[(i,j)=1]ij\\
   &=\sum_{d=1}^nd\sum_{e=1}^{\lfloor\frac{n}{d}\rfloor}\mu(e)e^2{\lfloor\frac{n}{de}\rfloor(\lfloor\frac{n}{de}\rfloor+1)\over 2}{\lfloor\frac{m}{de}\rfloor(\lfloor\frac{m}{de}\rfloor+1)\over 2}\\
-\end{aligned}$$
+\end{aligned}
+$$
 
 懒得继续推了, 现在已经可以两次数论分块解决了, 要是接着推就是令 $D=de$ 然后一次数论分块
 

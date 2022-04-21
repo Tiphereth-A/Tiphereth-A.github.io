@@ -60,21 +60,21 @@ date: 2021-11-21 19:33:27
 
 | 题号[^1] | 标题                             | 做法                         |
 | -------- | -------------------------------- | ---------------------------- |
-| *A       | A Bite of Teyvat                 |                              |
+| \*A      | A Bite of Teyvat                 |                              |
 | B        | Bitwise Exclusive-OR Sequence    | 图论 + 并查集                |
-| *C       | Cards of Magic                   | 概率DP                       |
-| *D       | Cross the Maze                   |                              |
+| \*C      | Cards of Magic                   | 概率 DP                      |
+| \*D      | Cross the Maze                   |                              |
 | E        | Edward Gaming, the Champion      | 签到                         |
 | F        | Encoded Strings I                | 签到 (模拟)                  |
-| *G       | Encoded Strings II               |                              |
+| \*G      | Encoded Strings II               |                              |
 | H        | Line Graph Matching              | Tarjan (割边)                |
 | I        | Linear Fractional Transformation | 解线性方程组                 |
-| J        | Luggage Lock                     | BFS / IDA* / ... / 打表      |
-| *K       | Matrix Operations                | 复杂的数据结构, 先鸽了       |
-| L        | Perfect Matchings                | 容斥定理 + 树形DP            |
+| J        | Luggage Lock                     | BFS / IDA\* / ... / 打表     |
+| \*K      | Matrix Operations                | 复杂的数据结构, 先鸽了       |
+| L        | Perfect Matchings                | 容斥定理 + 树形 DP           |
 | M        | String Problem                   | SA / SAM / Lyndon 分解 / KMP |
 
-[^1]: 打*的是还没写题解的题
+[^1]: 打\*的是还没写题解的题
 
 [官方题解](official_solutions.pptx)
 
@@ -513,10 +513,12 @@ $$f(z)=\frac{a'z+b'}{z+d'}$$
 
 然后把三个点代入, 即有
 
-$$\begin{cases}
+$$
+\begin{cases}
   z_ia'+b'-w_id'=z_iw_i\\
   i=1,2,3
-\end{cases}$$
+\end{cases}
+$$
 
 如果该方程可解, 那我们直接用 Cramer 法则就做完了, 否则说明 $c=0$, 此时我们在分式上下同时除 $d$, 变为
 
@@ -682,7 +684,7 @@ $$f_n=\frac{1}{n!}\prod_{i=1}^n\binom{2i}{2}=\frac{(2n)!}{2^nn!}$$
 
 $$\sum_{k=0}^{k=n}(-1)^kg_n(k)$$
 
-接下来考虑用树形DP求 $g_n(k)$
+接下来考虑用树形 DP 求 $g_n(k)$
 
 令
 
@@ -698,15 +700,20 @@ $$g_n(k)=f_{n-k}(h_0(R,k)+h_1(R,k))$$
 
 注意到 $k$ 条合法边包含 $2k$ 个结点, 所以状态转移方程如下
 
-$$h_0(r,j)=\begin{cases}
+$$
+h_0(r,j)=\begin{cases}
   0,&j<0\\
   1,&j=0\\
   \displaystyle\sum_{u\in S(r)}\sum_{t=1}^{\lfloor\frac{s(u)}{2}\rfloor}h(u,t)h_0(r,j-t),&j>0\\
-\end{cases}$$
-$$h_1(r,j)=\begin{cases}
+\end{cases}
+$$
+
+$$
+h_1(r,j)=\begin{cases}
   0,&j\leqslant 0\\
   \displaystyle\sum_{u\in S(r)}\left(h_0(r,j-1)+\sum_{t=1}^{\lfloor\frac{s(u)}{2}\rfloor}\left(h(u,t)h_1(r,j-t)+h_0(u,t)h_0(r,j-t-1)\right)\right),&j>0\\
-\end{cases}$$
+\end{cases}
+$$
 
 注意转移结束后更新 $s(r)$, 否则复杂度会出错
 

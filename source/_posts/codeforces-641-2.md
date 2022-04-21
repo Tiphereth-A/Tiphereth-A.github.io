@@ -1,5 +1,5 @@
 ---
-title: '题解 - Codeforces Round #641 Div. 2 (A-E)'
+title: "题解 - Codeforces Round #641 Div. 2 (A-E)"
 categories:
   - 程序设计
   - 题解
@@ -18,6 +18,7 @@ tags:
   - 构造
 date: 2020-06-02 23:20:27
 ---
+
 [比赛链接](https://codeforces.com/contest/1350)
 
 <!-- more -->
@@ -45,7 +46,7 @@ date: 2020-06-02 23:20:27
 
 ### 思路&做法
 
-多了个限制条件的LIS, 做法自然也是dp
+多了个限制条件的 LIS, 做法自然也是 dp
 
 设`f[i]`为`s[i..n]`中的最大值
 
@@ -148,7 +149,7 @@ int main() {
 
 对每个数进行标准分解, 然后取对应指数的非严格次小值即可
 
-不推荐这么做的原因是处理很麻烦, 细节贼多, 而且很容易写丑 ~~交了十几次才A, 我太菜了~~
+不推荐这么做的原因是处理很麻烦, 细节贼多, 而且很容易写丑 ~~交了十几次才 A, 我太菜了~~
 
 #### 法二
 
@@ -171,11 +172,13 @@ $|\{a_i|p^k\mid a_i,~1\leqslant i\leqslant n\}|\geqslant n-1\iff\forall1\leqslan
 
 所以设
 
-$$d_i=\begin{cases}
+$$
+d_i=\begin{cases}
   \gcd_{2\leqslant j\leqslant n}\{a_j\},&i=1\\
   \gcd\{\gcd_{1\leqslant j\leqslant i-1}\{a_j\},\gcd_{i+1\leqslant j\leqslant n}\{a_j\}\},&1<i<n\\
   \gcd_{1\leqslant j\leqslant n-1}\{a_j\},&i=n\\
-\end{cases}$$
+\end{cases}
+$$
 
 则$S=\operatorname{lcm}_{1\leqslant i\leqslant n}\{a_i\}$
 
@@ -190,19 +193,23 @@ $$d_i=\begin{cases}
 
 设 $d_{ij}=\gcd\{a_i,a_j\}$, 则
 
-$$\begin{aligned}
+$$
+\begin{aligned}
   \gcd_{1\leqslant i<j\leqslant n}\{\operatorname{lcm}(a_i,a_j)\}&=\gcd_{1\leqslant i\leqslant n}\{\gcd_{i<j\leqslant n}\{\operatorname{lcm}(a_i,a_j)\}\}\\
   &=\gcd_{1\leqslant i\leqslant n}\Bigg\{\gcd_{i<j\leqslant n}\bigg\{ {a_ia_j\over d_{ij} }\bigg\}\Bigg\}\\
-\end{aligned}$$
+\end{aligned}
+$$
 
 固定$a_i$, 考虑 $\displaystyle\gcd_{i<j\leqslant n}\left\{ {a_ia_j\over d_{ij}}\right\}$
 
-$$\begin{aligned}
+$$
+\begin{aligned}
   \gcd_{i<j\leqslant n}\left\{ {a_ia_j\over d_{ij}}\right\}&=a_i\gcd_{i<j\leqslant n}\left\{ {a_j\over d_{ij}}\right\}\\
   &=a_i{\gcd_{i<j\leqslant n}\{a_j\}\over\gcd_{i<j\leqslant n}\{d_{ij}\}}\\
   &={a_i\gcd_{i<j\leqslant n}\{a_j\}\over\gcd\{a_i,\gcd_{i<j\leqslant n}\{a_j\}\}}\\
   &=\operatorname{lcm}\{a_i,\gcd_{i<j\leqslant n}\{a_j\}\}
-\end{aligned}$$
+\end{aligned}
+$$
 
 故
 
@@ -446,7 +453,7 @@ int main() {
 
 所以我们只需求出这段时间有多长即可
 
-我们可以使用BFS求解, 最开始找出所有可变色的方格, 然后慢慢向外扩展
+我们可以使用 BFS 求解, 最开始找出所有可变色的方格, 然后慢慢向外扩展
 
 ### 复杂度
 
@@ -515,7 +522,7 @@ int main() {
     }
     return 0;
   }
-  
+
   while (!q.empty()) {
     point now_p = q.front();
     q.pop();

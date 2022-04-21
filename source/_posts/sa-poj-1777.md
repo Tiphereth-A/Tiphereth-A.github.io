@@ -1,5 +1,5 @@
 ---
-title: '题解 - [POJ 1777 等] Vivian''s Problem'
+title: "题解 - [POJ 1777 等] Vivian's Problem"
 categories:
   - 程序设计
   - 题解
@@ -15,6 +15,7 @@ tags:
   - 状压DP
 date: 2020-07-27 22:58:08
 ---
+
 题目链接
 
 - [POJ 1777](https://vjudge.net/problem/POJ-1777/origin)
@@ -78,11 +79,11 @@ $$M=2^{\sum_{i=1}^sx_i}\iff N=\prod_{i=1}^s(2^{x_i}-1),~2^{x_i}-1~\text{is}~\tex
 
 其正确性是显然的
 
-由这条定理, 我们只需判断能否选取一组数$\def\enum#1{e_{ #1}}\enum{1},\enum{2},...,\enum{k}\in\{0,1\}$使得$N$为几个不同的Mersenne素数的乘积, 即在$\def\enum#1{p_{ #1}}\enum{1},\enum{2},...,\enum{k}$中选取一些数使得$N$为几个不同的Mersenne素数的乘积
+由这条定理, 我们只需判断能否选取一组数$\def\enum#1{e_{ #1}}\enum{1},\enum{2},...,\enum{k}\in\{0,1\}$使得$N$为几个不同的 Mersenne 素数的乘积, 即在$\def\enum#1{p_{ #1}}\enum{1},\enum{2},...,\enum{k}$中选取一些数使得$N$为几个不同的 Mersenne 素数的乘积
 
-我们注意到在$[1,2^{31}]$中只有$8$个Mersenne素数, 分别为$\def\enum#1{2^{ #1}-1}\enum{2},\enum{3},\enum{5},\enum{7},\enum{13},\enum{17},\enum{19},\enum{31}$
+我们注意到在$[1,2^{31}]$中只有$8$个 Mersenne 素数, 分别为$\def\enum#1{2^{ #1}-1}\enum{2},\enum{3},\enum{5},\enum{7},\enum{13},\enum{17},\enum{19},\enum{31}$
 
-因为$N$与这些Mersenne素数之间的整除关系的状态种数较少, 所以这里我们可以考虑使用状压DP
+因为$N$与这些 Mersenne 素数之间的整除关系的状态种数较少, 所以这里我们可以考虑使用状压 DP
 
 ## 代码参考
 

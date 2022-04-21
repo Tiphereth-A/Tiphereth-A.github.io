@@ -1,5 +1,5 @@
 ---
-title: '笔记 - 整除, 素数, gcd & lcm, 同余, 逆元, CRT, exCRT'
+title: "笔记 - 整除, 素数, gcd & lcm, 同余, 逆元, CRT, exCRT"
 categories:
   - 程序设计
   - 数学
@@ -29,6 +29,7 @@ tags:
   - 构造
 date: 2020-10-04 01:14:43
 ---
+
 整除, 素数, 最大公约数 & 最小公倍数, 同余, 逆元, 中国剩余定理
 
 <!-- more -->
@@ -104,16 +105,16 @@ $$a=qd+r,~q\in\Z,r\in[0,d)\cap\N$$
 
 ### 例题
 
-- 设$n$是大于1的整数, 证明: $\displaystyle\sum_{i=1}^n\frac{1}{i}$不是整数
-- 洛谷 [P2651 添加括号III](https://www.luogu.com.cn/problem/P2651)
+- 设$n$是大于 1 的整数, 证明: $\displaystyle\sum_{i=1}^n\frac{1}{i}$不是整数
+- 洛谷 [P2651 添加括号 III](https://www.luogu.com.cn/problem/P2651)
 
 ## 素数/质数
 
-即只能被1和其自身整除且大于1的数
+即只能被 1 和其自身整除且大于 1 的数
 
-不满足上述条件, 但大于1的数称为合数
+不满足上述条件, 但大于 1 的数称为合数
 
-1既不是素数也不是合数
+1 既不是素数也不是合数
 
 ### <a href="#end-t-2.1" id="t-2.1">定理 - 2.1</a>
 
@@ -135,7 +136,7 @@ $$a=qd+r,~q\in\Z,r\in[0,d)\cap\N$$
 
 #### <a href="#end-t-2.2" id="t-2.2">定理 - 2.2</a>
 
-所有大于1的整数均可分解为有限个素数的乘积, 若不计各素数出现的顺序, 则这种分解唯一
+所有大于 1 的整数均可分解为有限个素数的乘积, 若不计各素数出现的顺序, 则这种分解唯一
 
 证明略
 
@@ -226,11 +227,14 @@ void Eratosthenes_sieve(int n) {
 $$T(n)=\sum_{p\in\{prime\}\cap[2,n]}\left\lfloor\frac{n}{i}\right\rfloor$$
 
 而
-$$\begin{aligned}
+
+$$
+\begin{aligned}
   O(T(n))&=O\left(\sum_{p\in\{prime\}\cap[2,n]}\left\lfloor\frac{n}{i}\right\rfloor\right)\\
   &=O\left(n\sum_{p\in\{prime\}\cap[2,n]}\left\lfloor\frac{1}{p}\right\rfloor\right)\\
   &=O(n\log\log n)
-\end{aligned}$$
+\end{aligned}
+$$
 
 故时间复杂度为$O(n\log\log n)$
 
@@ -307,9 +311,9 @@ $$[\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n}]:=\min\{d\in\N^*|a_i\mid d
 1. 设$c\in\Z/\{0\},a,b\in\Z$, 若$c\mid ab,(c,b)=1$, 则$c\mid a$
    - 特别地, 若$p$为素数, $p\mid ab$, 则$p\mid a$或$p\mid b$
 
-下面对性质8给出证明
+下面对性质 8 给出证明
 
-##### <a href="#end-t-3.1" id="t-3.1">定理 - 3.1</a>(性质8, Bézout定理)
+##### <a href="#end-t-3.1" id="t-3.1">定理 - 3.1</a>(性质 8, Bézout 定理)
 
 设$\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n}$是不全为零的整数, $(\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n})=d$, 则
 $$S:=\left\{\sum_{i=1}^na_ix_i\bigg|x_i\in\Z,i=1,2,...,n\right\}=d\Z$$
@@ -358,22 +362,26 @@ int gcd(int a,int b) { return b == 0 ? a : gcd(b, a % b); }
 
 我们知道, $b\to a \bmod b$这个过程中, $b$的值大致可认为是减半, 所以时间复杂度为$O(\log n)$
 
-最坏情况即为对两相邻的Fibonacci数求最大公约数
+最坏情况即为对两相邻的 Fibonacci 数求最大公约数
 
-> Fibonacci数的定义如下:
-> $$F_i:=\begin{cases}
+> Fibonacci 数的定义如下:
+>
+> $$
+> F_i:=\begin{cases}
 > 0,&i=0\\
 > 1,&i=1\\
 > F_{i-1}+F_{i-2},&i>1
-> \end{cases}$$
+> \end{cases}
+> $$
+>
 > 容易求得
 > $$F_n=\frac{\phi^n-(1-\phi)^n}{\sqrt 5},~\phi={1+\sqrt{5}\over2}$$
 
 计算$(F_{n+1},F_{n})$需要$n$次迭代, 此时的时间复杂度也为$O(\log n)$
 
-> 实际上求gcd是有$O(1)$算法的, 此次略去
+> 实际上求 gcd 是有$O(1)$算法的, 此次略去
 
-### 扩展Euclid (exgcd)
+### 扩展 Euclid (exgcd)
 
 用于对给定的$a,b,c$, 寻找$ax+by=c$的一组可行解
 
@@ -382,10 +390,14 @@ int gcd(int a,int b) { return b == 0 ? a : gcd(b, a % b); }
 接下来, 令$d=\frac{c}{(a,b)}$, 则求出$ax+by=(a,b)$的一组解$x=x',y=y'$后, 容易得知$x=dx',y=dy'$即为$ax+by=c$的一组解
 
 另外, 若$ax+by=c$有一组解$x=x',y=y'$, 则
-$$\begin{cases}
+
+$$
+\begin{cases}
   x=x'-bt\\
   y=y'+at
-\end{cases}(t\in\Z)$$
+\end{cases}(t\in\Z)
+$$
+
 也为该方程的解, 所以方程$ax+by=c$若有解, 则必有无数组解
 
 经过如下分析, 我们发现: 求出方程$ax+by=(a,b)$的一组解是关键, 下面给出求法
@@ -393,10 +405,13 @@ $$\begin{cases}
 #### 求法
 
 考虑这两个式子
-$$\begin{aligned}
+
+$$
+\begin{aligned}
   ax+by&=(a,b)\\
   bx'+(a\bmod b)y'&=(b,a\bmod b)=(a,b)
-\end{aligned}$$
+\end{aligned}
+$$
 
 注意到
 $$a\bmod b=a-\left\lfloor\frac{a}{b}\right\rfloor b$$
@@ -405,10 +420,13 @@ $$a\bmod b=a-\left\lfloor\frac{a}{b}\right\rfloor b$$
 $$ax+by=bx'+(a-\left\lfloor\frac{a}{b}\right\rfloor b)y'$$
 
 可知
-$$\begin{cases}
+
+$$
+\begin{cases}
   x=y'\\
   y=x'-\left\lfloor\frac{a}{b}\right\rfloor y'
-\end{cases}$$
+\end{cases}
+$$
 
 接下来不断向下迭代即可, 直到$b=0$, 此时显然有$x=1,y=0$
 
@@ -438,7 +456,7 @@ int exgcd(int a, int b, int& x, int& y) {
 - 洛谷 [P2158 [SDOI2008]仪仗队](https://www.luogu.com.cn/problem/P2158)
 - 洛谷 [P4549 【模板】裴蜀定理](https://www.luogu.com.cn/problem/P4549)
 - 洛谷 [P5656 【模板】二元一次不定方程(exgcd)](https://www.luogu.com.cn/problem/P5656)
-- 洛谷 [P3951 小凯的疑惑 / [蓝桥杯2013省]买不到的数目](https://www.luogu.com.cn/problem/P3951) -> [**题解**](../luogu-p3951/#more)
+- 洛谷 [P3951 小凯的疑惑 / [蓝桥杯 2013 省]买不到的数目](https://www.luogu.com.cn/problem/P3951) -> [**题解**](../luogu-p3951/#more)
 
 ## 同余
 
@@ -466,29 +484,31 @@ int exgcd(int a, int b, int& x, int& y) {
 
 另外在这里列出三条重要定理
 
-1. **Wilson定理**:
+1. **Wilson 定理**:
    $$(p-1)!\equiv-1\pmod p$$
 
-1. **Fermat小定理**: 若$(a,p)=1$, 则
+1. **Fermat 小定理**: 若$(a,p)=1$, 则
    $$a^{p-1}\equiv1\pmod p$$
 
-1. **Euler定理**: 若$(a,m)=1$, 则
+1. **Euler 定理**: 若$(a,m)=1$, 则
    $$a^{\varphi(m)}\equiv1\pmod m$$
-   其中$\varphi(n)$为Euler函数, 指的是$[1,n]$中所有与$n$互素的数的个数
+   其中$\varphi(n)$为 Euler 函数, 指的是$[1,n]$中所有与$n$互素的数的个数
 
-   > 这里简单写写Euler函数的性质
+   > 这里简单写写 Euler 函数的性质
    >
    > - 若$p$为素数, $a$为自然数, 则$\varphi(p^a)=p^a-p^{a-1}$
    >
    >   特别地, $\varphi(p)=p-1$
+   >
    > - 若$(m,n)=1$, 则$\varphi(mn)=\varphi(m)\varphi(n)$
 
-   不难发现: Euler定理 即为 Fermat定理 的推广
-   > Wilson定理, Fermat小定理, Euler定理 和后面要讲的 中国剩余定理 合称初等数论四大定理
+   不难发现: Euler 定理 即为 Fermat 定理 的推广
 
-接下来给出性质4和5的证明
+   > Wilson 定理, Fermat 小定理, Euler 定理 和后面要讲的 中国剩余定理 合称初等数论四大定理
 
-#### <a href="#end-t-4.1" id="t-4.1">定理 - 4.1</a> (性质4)
+接下来给出性质 4 和 5 的证明
+
+#### <a href="#end-t-4.1" id="t-4.1">定理 - 4.1</a> (性质 4)
 
 $a\equiv b\pmod m,c\equiv d\pmod m\implies a\pm c\equiv b\pm d\pmod m,ac\equiv bd\pmod m$
 
@@ -497,18 +517,26 @@ $a\equiv b\pmod m,c\equiv d\pmod m\implies a\pm c\equiv b\pm d\pmod m,ac\equiv b
 由$a\equiv b\pmod m,c\equiv d\pmod m$可得$m\mid a-b$及$m\mid c-d$
 
 于是
-$$\begin{cases}
+
+$$
+\begin{cases}
   m\mid (a-b)\pm(c-d)=(a\pm c)-(b\pm d)\\
   m\mid (a-b)c+(c-d)b=ac-bd
-\end{cases}$$
+\end{cases}
+$$
+
 因此
-$$\begin{cases}
+
+$$
+\begin{cases}
   a\pm c\equiv b\pm d\pmod m\\
   ac\equiv bd\pmod m
-\end{cases}$$
+\end{cases}
+$$
+
 <a href="#p-t-4.1" id="end-t-4.1">$\Box$</a>
 
-#### <a href="#end-t-4.2" id="t-4.2">定理 - 4.2</a> (性质5)
+#### <a href="#end-t-4.2" id="t-4.2">定理 - 4.2</a> (性质 5)
 
 $ac\equiv bc\pmod m\implies a\equiv b\pmod{~\frac{m}{(c,m)}}$, 特别地, 若$(c,m)=1$, 则$a\equiv b\pmod{m}$
 
@@ -522,13 +550,13 @@ $$a\equiv b\pmod{~\frac{m}{(c,m)}}$$
 
 <a href="#p-t-4.2" id="end-t-4.2">$\Box$</a>
 
-性质4说明我们在同余意义下加法, 减法和乘法可以照常运算, 但是由于性质5, 除法并不能随意去运算, 在逆元章节中我们将进行进一步讨论
+性质 4 说明我们在同余意义下加法, 减法和乘法可以照常运算, 但是由于性质 5, 除法并不能随意去运算, 在逆元章节中我们将进行进一步讨论
 
 ---
 
-这里附上Wilson定理和Euler定理的证明
+这里附上 Wilson 定理和 Euler 定理的证明
 
-#### <a href="#end-t-4.3" id="t-4.3">定理 - 4.3</a> (Wilson定理)
+#### <a href="#end-t-4.3" id="t-4.3">定理 - 4.3</a> (Wilson 定理)
 
 $$(p-1)!\equiv-1\pmod p$$
 
@@ -548,7 +576,7 @@ $$(p-1)!\equiv-1\pmod p$$
 
 > 在讲到原根时会给出另一个证明
 
-#### <a href="#end-t-4.4" id="t-4.4">定理 - 4.4</a> (Euler定理)
+#### <a href="#end-t-4.4" id="t-4.4">定理 - 4.4</a> (Euler 定理)
 
 若$(a,m)=1$, 则
 $$a^{\varphi(m)}\equiv1\pmod m$$
@@ -597,13 +625,15 @@ $$\prod_{i=1}^{\varphi(m)}a_i=\prod_{i=1}^{\varphi(m)}aa_i=a^{\varphi(m)}\prod_{
    这个$x$就是$a$的逆元
 
    时间复杂度:$O(\log m)$
-1. Fermat小定理 / Euler定理
+
+1. Fermat 小定理 / Euler 定理
 
    由$a^{\varphi(m)}\equiv 1\pmod m$可知$a^{\varphi(m)-1}\equiv a^{-1}\pmod m$, 故所求逆元即为$a^{\varphi(m)-1}$
 
    时间复杂度:$O(\log m)$
 
    一般来说更推荐用扩欧求逆元, 因为计算$\varphi(m)$相对麻烦一些
+
 1. 筛法
 
    用于求$[1,n]$模$p$逆元的方法
@@ -611,11 +641,14 @@ $$\prod_{i=1}^{\varphi(m)}a_i=\prod_{i=1}^{\varphi(m)}aa_i=a^{\varphi(m)}\prod_{
    首先, $1$的逆元是$1$
 
    然后考虑$p$对$i$做带余除法$p=ki+j,j\in[0,i)\cap\N$, 在模$p$意义下即有
-   $$\begin{aligned}
+
+   $$
+   \begin{aligned}
      ki+j&\equiv0\pmod p\\
      i^{-1}&\equiv-kj^{-1}\pmod p\\
      i^{-1}&\equiv-\left(\frac{p}{i}\right)(p\bmod i)^{-1}\pmod p
-   \end{aligned}$$
+   \end{aligned}
+   $$
 
    <details>
    <summary><font color='orange'>Show code</font></summary>
@@ -626,6 +659,7 @@ $$\prod_{i=1}^{\varphi(m)}a_i=\prod_{i=1}^{\varphi(m)}aa_i=a^{\varphi(m)}\prod_{
    ```
 
    </details>
+
 1. 求任意$n$个数模$p$的逆元
 
    对于任意$n$个数$\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n}$, 我们可以这样求出其逆元
@@ -633,10 +667,12 @@ $$\prod_{i=1}^{\varphi(m)}a_i=\prod_{i=1}^{\varphi(m)}aa_i=a^{\varphi(m)}\prod_{
    1. 令$s_i=\prod_{j=1}^ia_j$
    1. 求出$s_n$的逆元, 记作$v_n$
    1. 注意到
-      $$\begin{cases}
+      $$
+      \begin{cases}
         v_{i-1}&=v_ia_i\\
         a_i^{-1}&=v_is_{i-1}
-      \end{cases},i=1,2,...,n-1$$
+      \end{cases},i=1,2,...,n-1
+      $$
       故此时$\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n}$的逆元便可求得
 
    <details>
@@ -656,7 +692,7 @@ $$\prod_{i=1}^{\varphi(m)}a_i=\prod_{i=1}^{\varphi(m)}aa_i=a^{\varphi(m)}\prod_{
 
 - 洛谷 [P1593 因子和](https://www.luogu.com.cn/problem/P1593)
 - 洛谷 [P3811 【模板】乘法逆元](https://www.luogu.com.cn/problem/P3811)
-- 洛谷 [P5431 【模板】乘法逆元2](https://www.luogu.com.cn/problem/P5431)
+- 洛谷 [P5431 【模板】乘法逆元 2](https://www.luogu.com.cn/problem/P5431)
 - 洛谷 [P7887 「MCOI-06」Existence of Truth](https://www.luogu.com.cn/problem/P7887) -> [**题解**](../luogu-p7887/#more)
 - LOJ [161 乘法逆元 2](https://loj.ac/problem/161)
 
@@ -667,10 +703,14 @@ $$\prod_{i=1}^{\varphi(m)}a_i=\prod_{i=1}^{\varphi(m)}aa_i=a^{\varphi(m)}\prod_{
 ### <a href="#end-t-6.1" id="t-6.1">定理 - 6.1</a> (中国剩余定理)
 
 设$\def\enum#1{m_{ #1}}\enum{1},\enum{2},...,\enum{k}$是两两互素的正整数, 则对任意整数$\def\enum#1{b_{ #1}}\enum{1},\enum{2},...,\enum{k}$, 方程组
-$$\begin{cases}
+
+$$
+\begin{cases}
   x\equiv b_i\pmod{m_i}\\
   i=1,2,...,k
-\end{cases}\tag{6.1-1}$$
+\end{cases}\tag{6.1-1}
+$$
+
 必有解, 且其全部解模$\prod_{i=1}^k m_i$同余
 
 #### <a href="#t-6.1" id="p-t-6.1">证明</a>
@@ -678,10 +718,13 @@ $$\begin{cases}
 令$M=\prod_{i=1}^km_i$
 
 证明是构造性的, 我们首先尝试求解方程组
-$$\begin{cases}
+
+$$
+\begin{cases}
   x\equiv1\pmod{m_i}\\
   x\equiv0\pmod{m_j}~(j\ne i)
-\end{cases}$$
+\end{cases}
+$$
 
 容易发现$x\mid M_i:=\frac{M}{m_i}$, 令$x=M_iy$, 则可得到方程
 $$M_iy\equiv1\pmod{m_i}$$
@@ -701,13 +744,17 @@ $$A-B\equiv0\pmod{m_i},~i=1,2,...,k$$
 
 ### 扩展中国剩余定理 (exCRT)
 
-为什么CRT要求其模数必须两两互素?
+为什么 CRT 要求其模数必须两两互素?
 
-因为我们在 <a href="#t-6.1">定理 - 6.1</a> 证明过程中即可发现, CRT的关键便是构造这样的方程组
-$$\begin{cases}
+因为我们在 <a href="#t-6.1">定理 - 6.1</a> 证明过程中即可发现, CRT 的关键便是构造这样的方程组
+
+$$
+\begin{cases}
   x\equiv1\pmod{m_i}\\
   x\equiv0\pmod{m_j}~(j\ne i)
-\end{cases}$$
+\end{cases}
+$$
+
 此时的$x=M_iN_i$, $M_i=\prod_{j=1,j\ne i}^km_j$, 而$N_i$是$M_i$关于$m_i$的**逆元**
 
 我们知道, 如果一个整数$a$在模$m$意义下有逆元, 其前提之一便是$(a,m)=1$
@@ -720,19 +767,25 @@ $$\begin{cases}
 
 当然可以!
 
-这就要求我们在构建解的时候绕开CRT的证明, 另辟蹊径
+这就要求我们在构建解的时候绕开 CRT 的证明, 另辟蹊径
 
 我们观察下面的式子
-$$\begin{cases}
+
+$$
+\begin{cases}
     x\equiv b_1\pmod{m_1}\\
     x\equiv b_2\pmod{m_2}
-\end{cases}$$
+\end{cases}
+$$
 
 由同余定义, 我们有
-$$\begin{cases}
+
+$$
+\begin{cases}
     m_1\mid x-b_1\\
     m_2\mid x-b_2
-\end{cases}$$
+\end{cases}
+$$
 
 即存在整数$k_1,k_2$使得
 $$x=m_1k_1+b_1=m_2k_2+b_2$$

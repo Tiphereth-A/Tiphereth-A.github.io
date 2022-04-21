@@ -16,43 +16,51 @@ tags:
   - 平衡树
 date: 2020-11-14 00:12:11
 ---
+
 洛谷给我推了个模板题, 就顺便补一下笔记
 
-Cantor展开是用于求排列字典序的算法, 逆Cantor展开即根据字典序还原排列的算法
+Cantor 展开是用于求排列字典序的算法, 逆 Cantor 展开即根据字典序还原排列的算法
 
 <!-- more -->
+
 ## 一些定义
 
 - $\Z_a^b:=[a,b]\cap\Z$
-  
+
   在不引起歧义的情况下, 可将$\Z_a^b$简记为$a..b$
+
 - $f_n:=((n-1)!,(n-2)!,...,1!,0!)\in\N^n$
 - $1..n$的排列: 称$A:=(\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n})\in(\Z_1^n)^n$为$1..n$的排列, 若
   $$\{\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n}\}=\{1,2,...,n\}$$
 
   为了方便下文叙述, 我们定义
+
   - $1..n$的所有排列组成的集合为$S_n$
-  
+
     显然$|S_n|=n!$
+
   - 对$1..n$的排列$A=(\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n})$,
     $$D_i(A):=\{(d_1,d_2,...,d_n)\in S_n~|~d_i<a_i;~\forall j\in \Z_1^{i-1}, d_j=a_j\}$$
 
     在不引起歧义的情况下, 可将$D_i(A)$简记为$D_i$
+
 - $1..n$排列的字典序: 对$1..n$的排列$A=(\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n})$, 定义其序号为
   $$d(A)=\left|\bigcup_{i=1}^nD_i(A)\right|+1=\sum_{i=1}^n|D_i(A)|+1$$
 
   显然
+
   - $d(1,2,...,n)=1$
   - $d(n,n-1,...,1)=n!$
+
 - 对$1..n$的排列$A=(\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n})$, 定义$P_A:=(\def\enum#1{p_{ #1}}\enum{1},\enum{2},...,\enum{n})$, 其中$p_i=|\{a_j~|~a_j<a_i,\forall j\in\Z_i^n\}|,~i=1,2,...,n$
 
   如$P_{(3,2,1,4)}=(2,1,0,0)$
 
   显然$p_i\leqslant n-i$
 
-## Cantor展开
+## Cantor 展开
 
-Cantor展开即对$1..n$的排列$A$求$d(A)$的算法
+Cantor 展开即对$1..n$的排列$A$求$d(A)$的算法
 
 我们有如下定理
 
@@ -144,9 +152,9 @@ size_t main(size_t n, const size_t a[]) {
 
 </details>
 
-## 逆Cantor展开
+## 逆 Cantor 展开
 
-逆Cantor展开即对$1..n$的排列$A$, 已知$d(A)$求$A$的算法
+逆 Cantor 展开即对$1..n$的排列$A$, 已知$d(A)$求$A$的算法
 
 首先我们有定理
 
@@ -156,13 +164,15 @@ $$\forall n\in\N^+,~n!=\sum_{i=0}^{n-1}i\cdot i!$$
 
 #### <a href="#t-2" id="p-t-2">证明</a>
 
-$$\begin{aligned}
+$$
+\begin{aligned}
   n!&=(n-1+1)\cdot(n-1)!\\
   &=(n-1)\cdot(n-1)!+(n-1)!\\
   &=(n-1)\cdot(n-1)!+(n-2)!\cdot(n-2)!+(n-3)!\\
   &...\\
   &=\sum_{i=0}^{n-1}i\cdot i!
-\end{aligned}$$
+\end{aligned}
+$$
 
 <a href="#p-t-2" id="end-t-2">$\Box$</a>
 

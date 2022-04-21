@@ -1,5 +1,5 @@
 ---
-title: '【洛谷日报#46】浅谈自适应Simpson法'
+title: "【洛谷日报#46】浅谈自适应Simpson法"
 categories:
   - 程序设计
   - 算法
@@ -17,13 +17,13 @@ date: 2018-08-12 15:33:58
 
 老文章, 可能有很多错误, 懒得修了
 
-2020.10.06 upd: 我重写了一篇介绍自适应Simpson算法的文章, 讲解更加清晰 [链接](/article/asr/)
+2020.10.06 upd: 我重写了一篇介绍自适应 Simpson 算法的文章, 讲解更加清晰 [链接](/article/asr/)
 
 <!--more-->
 
 ## 求面积诸法
 
-Simpson法是一种经典的数值积分方法, 一个重要应用就是求不规则图形面积
+Simpson 法是一种经典的数值积分方法, 一个重要应用就是求不规则图形面积
 说到不规则图形, 我们往往都是先从曲边梯形开始
 
 曲边梯形$ABCD$就是下图中曲线$AB$、线段$AC$、$CD$、$DB$围成的图形, 我们想要求出它的面积
@@ -95,15 +95,15 @@ $$\Delta x=\frac{b-a}{n}$$
 
 $$\int_a^bf(x)\mathrm{d}x\thickapprox\Delta x(\sum_{i=1}^{n-1}{f(i\Delta x)}+\frac{f(a)+f(b)}{2})$$
 
-### Simpson法
+### Simpson 法
 
 进入正题
 
-Simpson法是先将原曲线近似成一段段抛物线, 然后再用Newton-Leibniz公式求每一段的面积
+Simpson 法是先将原曲线近似成一段段抛物线, 然后再用 Newton-Leibniz 公式求每一段的面积
 
 ![](1-5.png)
 
-(因为笔者在GeoGebra里没找到根据三点画抛物线的工具, 所以这里用圆弧代替了QwQ)
+(因为笔者在 GeoGebra 里没找到根据三点画抛物线的工具, 所以这里用圆弧代替了 QwQ)
 
 可以看出, 此法效果相当不错
 
@@ -123,38 +123,42 @@ $$\Delta x=\frac{b-a}{n}$$
 
 有
 
-$$\begin{cases}
+$$
+\begin{cases}
   f(x_{2i-2})&=g(x_{2i-2})\\
   f(x_{2i-1})&=g(x_{2i-1})\\
   f(x_{2i})&=g(x_{2i})
-\end{cases}$$
+\end{cases}
+$$
 
 于是
 
-$$\begin{aligned}
+$$
+\begin{aligned}
   \int_{x_{2i-2}}^{x_{2i}}f(x)\mathrm{d}x&\thickapprox\int_{x_{2i-2}}^{x_{2i}}g(x)\mathrm{d}x\\
   &=(\frac{A}{3}x^3+\frac{B}{2}x^2+Cx)\Big|_{x_{2i-2}}^{x_{2i}}\\
   &=\frac{\Delta x}{3}[f(x_{2i-2})+4f(x_{2i-1})+f(x_{2i})]
-\end{aligned}$$
+\end{aligned}
+$$
 
 故
 
 $$\int_a^bf(x)\mathrm{d}x\thickapprox\frac{\Delta x}{3}\sum_{i=0}^{2n-2}[f(x_{2i})+4f(x_{2i+1})+f(x_{2i+2})]$$
 
-一部分资料认为Simpson法只用一段抛物线替代, 即
+一部分资料认为 Simpson 法只用一段抛物线替代, 即
 
 $$\displaystyle\int_a^bf(x)\mathrm{d}x\thickapprox\frac{b-a}{6}[f(a)+4f(\frac{a+b}{2})+f(b)]$$
 
-下称此情况为三点Simpson法
+下称此情况为三点 Simpson 法
 
-## 自适应Simpson法
+## 自适应 Simpson 法
 
-自适应Simpson法就是对Simpson法的一个优化
+自适应 Simpson 法就是对 Simpson 法的一个优化
 
 对一段区间$[a,b]$, 我们做如下操作
 
 1. 取中点$mid=\frac{a+b}{2}$
-1. 分别对区间$[a,b]$、区间$[a,mid]$、区间$[mid,b]$应用三点Simpson法, 设得到的面积分别为$S_0$、$S_1$、$S_2$
+1. 分别对区间$[a,b]$、区间$[a,mid]$、区间$[mid,b]$应用三点 Simpson 法, 设得到的面积分别为$S_0$、$S_1$、$S_2$
 1. 若$S_0$与$S_1+S_2$差别不大, 就认为区间$[a,b]$面积的近似值已经求得, 否则分别对区间$[a,mid]$、区间$[mid,b]$递归应用本操作
 
 可以看出这个方法在保证了精度的同时保证了效率
@@ -165,7 +169,7 @@ $$\displaystyle\int_a^bf(x)\mathrm{d}x\thickapprox\frac{b-a}{6}[f(a)+4f(\frac{a+
 
 我们认为当且仅当$|S_1+S_2-S_0|<15\epsilon$时$S_0$与$S_1+S_2$差别不大
 
-> 乘以$15$是经过一系列误差分析后得出的, 具体笔者可能会另写一篇文章~~咕咕咕~~, 感谢@[Marser](https://www.luogu.org/space/show?uid=17930)和@[_rqy](https://www.luogu.org/space/show?uid=7868)两位dalao的补充
+> 乘以$15$是经过一系列误差分析后得出的, 具体笔者可能会另写一篇文章~~咕咕咕~~, 感谢@[Marser](https://www.luogu.org/space/show?uid=17930)和@[\_rqy](https://www.luogu.org/space/show?uid=7868)两位 dalao 的补充
 
 返回的面积则是$S_1+S_2+\frac{S_1+S_2-S_0}{15}$
 
@@ -187,15 +191,15 @@ double asr(double a, double b, double eps, double S) {
   if (fabs(lS + rS - S) <= 15 * eps)
     return lS + rS + (lS + rS - S) / 15.0;
   // 注意这里eps要除以2
-  return asr(a, c, eps / 2, lS) + asr(c, b, eps / 2, rS); 
+  return asr(a, c, eps / 2, lS) + asr(c, b, eps / 2, rS);
 }
 ```
 
 ## 后记
 
-这篇文章笔者写了4h吧, 内容还算简单, 希望各位能够愉快地享用~(￣▽￣)~*
+这篇文章笔者写了 4h 吧, 内容还算简单, 希望各位能够愉快地享用~(￣ ▽ ￣)~\*
 
-btw, 洛谷P4525、P4526是模板题ヾ(≧▽≦*)~~连切两道紫题真开心~~
+btw, 洛谷 P4525、P4526 是模板题ヾ(≧▽≦\*)~~连切两道紫题真开心~~
 
 ## 主要参考书目
 

@@ -33,20 +33,22 @@ date: 2021-11-12 17:59:15
 1. $\epsilon_i(i+1..n)=0$
 1. 若 $\epsilon_i(i)=1$, 则 $\forall j,~\epsilon_j(i)=\delta_{ij}$
 
-> 对 $\alpha\in\mathbb{P}^n$, $\alpha(x)$ 即为 $\alpha$ 第 $x$ 维的元素, $\alpha(x..y)$  即为 $\alpha$ 第 $x$ 维到第 $y$ 维所有元素构成的向量
+> 对 $\alpha\in\mathbb{P}^n$, $\alpha(x)$ 即为 $\alpha$ 第 $x$ 维的元素, $\alpha(x..y)$ 即为 $\alpha$ 第 $x$ 维到第 $y$ 维所有元素构成的向量
 
 写成矩阵来看更直白些, 矩阵看起来就像是缺了几列的三角形
 
 比如这样
 
-$$(\def\enum#1{\epsilon_{ #1}}\enum{1},\enum{2},...,\enum{6})=\begin{bmatrix}
+$$
+(\def\enum#1{\epsilon_{ #1}}\enum{1},\enum{2},...,\enum{6})=\begin{bmatrix}
    & & & & &1\\
    & & & &1& \\
    & & &0&1&1\\
    & &1& & & \\
    &1& & & & \\
   1& & & & & \\
-\end{bmatrix}$$
+\end{bmatrix}
+$$
 
 ### 性质
 
@@ -196,8 +198,8 @@ class Xor_base {
 
 - 洛谷 [P3812 【模板】线性基](https://www.luogu.com.cn/problem/P3812) (最大子集异或和)
 - 洛谷 [P3857 [TJOI2008]彩灯](https://www.luogu.com.cn/problem/P3857) (子集异或和的种数, 即线性基的秩)
-- HDU [3949 XOR](https://vjudge.net/problem/HDU-3949/origin) (子集k小异或和)
-- 洛谷 [P4869 albus就是要第一个出场](https://www.luogu.com.cn/problem/P4869) (子集异或和排名)
-- 洛谷 [P4151 [WC2011]最大XOR和路径](https://www.luogu.com.cn/problem/P4151) (图上最大异或和路径)
+- HDU [3949 XOR](https://vjudge.net/problem/HDU-3949/origin) (子集 k 小异或和)
+- 洛谷 [P4869 albus 就是要第一个出场](https://www.luogu.com.cn/problem/P4869) (子集异或和排名)
+- 洛谷 [P4151 [WC2011]最大 XOR 和路径](https://www.luogu.com.cn/problem/P4151) (图上最大异或和路径)
 - 洛谷 [P3292 [SCOI2016]幸运数字](https://www.luogu.com.cn/problem/P3292) (树上路径点的最大子集异或和)
-- HDU [6579 Operation](https://vjudge.net/problem/HDU-6579/origin) (子集k小异或和)
+- HDU [6579 Operation](https://vjudge.net/problem/HDU-6579/origin) (子集 k 小异或和)

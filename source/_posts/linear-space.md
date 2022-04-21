@@ -15,6 +15,7 @@ tags:
   - Vandermonde行列式
 date: 2020-05-27 20:37:42
 ---
+
 线性空间是基于集合的, 在集合的基础上又额外规定了各元素之间的关系
 
 <!-- more -->
@@ -34,11 +35,11 @@ date: 2020-05-27 20:37:42
 1. 加法结合律: $(\forall\alpha,\beta,\gamma\in V),(\alpha+\beta)+\gamma=\alpha+(\beta+\gamma)$
 1. "零元": $(\exist\theta\in V,\forall\alpha\in V),\alpha+\theta=\alpha$
 1. "逆元": $(\forall\alpha\in V,\exist-\alpha\in V),\alpha+(-\alpha)=\theta$
-1. 数乘与加法的分配律(2条):
+1. 数乘与加法的分配律(2 条):
    1. 左:  
-   $(\forall\alpha,\beta\in V,k\in\mathbb{P}),k\cdot(\alpha+\beta)=k\cdot\alpha+k\cdot\beta$
+      $(\forall\alpha,\beta\in V,k\in\mathbb{P}),k\cdot(\alpha+\beta)=k\cdot\alpha+k\cdot\beta$
    1. 右:  
-   $(\forall\alpha\in V,k,l\in\mathbb{P}),(k+l)\cdot\alpha=k\cdot\alpha+l\cdot\alpha$
+      $(\forall\alpha\in V,k,l\in\mathbb{P}),(k+l)\cdot\alpha=k\cdot\alpha+l\cdot\alpha$
 1. 数乘结合律: $(\forall\alpha\in V,k,l\in\mathbb{P}),(kl)\cdot\alpha=k\cdot(l\cdot\alpha)$
 1. "幺元": $(\exist 1\in\mathbb{P},\forall\alpha\in V),1\cdot\alpha=\alpha$
 
@@ -81,10 +82,12 @@ date: 2020-05-27 20:37:42
 1. $\mathbb{P}$上的$n$维向量对于向量的加法和$\mathbb{P}$中的数乘
 1. $\mathbb{P}$上的$m\times n$矩阵对于矩阵的加法和$\mathbb{P}$中的数乘
 1. 代数系统$(\mathbb{P}^2,\oplus,\odot,\mathbb{P})$, 其中
+
    - $(\forall(x_1,x_2),(y_1,y_2)\in\mathbb{P}^2),(x_1,x_2)\oplus(y_1,y_2):=(x_1+y_1,x_2+y_2+x_1y_1)$
    - $(\forall(x_1,x_2)\in\mathbb{P}^2,k\in\mathbb{P}),k\odot(x_1,x_2):=\left(kx_1,kx_2+\frac{k(k-1)}{2}x_1^2\right)$
-  
+
    (没错这个真的是个线性空间)
+
 1. 区间$[a,b]$上全体连续函数$C[a,b]$关于连续函数的加法和数与连续函数的数乘
 1. 线性空间$V$上的全体线性变换$L(V)$关于线性变换的加法和数与线性变换的数乘
 
@@ -135,7 +138,7 @@ date: 2020-05-27 20:37:42
 1. $V_1\cap V_2=\{\theta\}$
 1. $\dim V_1+\dim V_2=\dim(V_1+V_2)$
 1. 若$(\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{m})$是$V_1$的一组基, $(\def\enum#1{\beta_{ #1}}\enum{1},\enum{2},...,\enum{n})$是$V_2$的一组基,  
-则$(\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{m},\def\enum#1{\beta_{ #1}}\enum{1},\enum{2},...,\enum{n})$是$V_1+V_2$的一组基
+   则$(\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{m},\def\enum#1{\beta_{ #1}}\enum{1},\enum{2},...,\enum{n})$是$V_1+V_2$的一组基
 
 #### <a href="#t-2-2" id="p-t-2-2">证明</a>
 
@@ -164,7 +167,7 @@ $$\theta\ne\beta_1-\gamma_1=\gamma_2-\beta_2\in V_1\cap V_2$$
 
 与条件矛盾
 
-1, 5, 6之间关系可由 <a href="#t-3-1">定理 - 3-1</a> 直接推得
+1, 5, 6 之间关系可由 <a href="#t-3-1">定理 - 3-1</a> 直接推得
 
 <a href="#p-t-2-2" id="end-t-2-2">$\Box$</a>
 
@@ -211,12 +214,12 @@ $(\def\enum#1{k_#1}\enum{1},\enum{2},...,\enum{n})\in\mathbb{P}^n$为$\alpha$在
 ### 例子
 
 1. $\mathbb{P}[x]$即为无限维的
-1. $\{\theta\}$为0维的, 称作**平凡线性空间**
+1. $\{\theta\}$为 0 维的, 称作**平凡线性空间**
 1. 对于$n$维线性空间$\mathbb{P}_n[x]$中向量$\alpha=f(x)=\displaystyle\sum_{i=0}^{n-1}a_ix^i$
 
    显然$(1,\def\enum#1{x^{ #1}}\enum{1},\enum{2},...,\enum{n-1})$为一组基底, 对应的坐标为$(a_0,\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n-1})$
 
-   又由Taylor公式可得$f(x)=\displaystyle\sum_{i=0}^{n-1}{f^{(i)}(a)\over i!}(x-a)^i$
+   又由 Taylor 公式可得$f(x)=\displaystyle\sum_{i=0}^{n-1}{f^{(i)}(a)\over i!}(x-a)^i$
 
    故$\left(1,x-a,\def\enum#1{(x-a)^{ #1}}\enum{2},...,\enum{n-1}\right)$为一组基底, 对应的坐标为$(f(a),f'(a),...,{f^{(n-1)}(a)\over(n-1)!})$, 当$a=0$时, 即为前述情况
 
@@ -305,9 +308,9 @@ $V$的一组基底$(\def\enum#1{\epsilon_{ #1}}\enum{1},\enum{2},...,\enum{n})$�
 
 1. 分配律:
    1. 左:  
-   $(\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{n})A+(\def\enum#1{\beta_{ #1}}\enum{1},\enum{2},...,\enum{n})A=(\def\enum#1{\alpha_{ #1}+\beta_{ #1}}\enum{1},\enum{2},...,\enum{n})A$
+      $(\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{n})A+(\def\enum#1{\beta_{ #1}}\enum{1},\enum{2},...,\enum{n})A=(\def\enum#1{\alpha_{ #1}+\beta_{ #1}}\enum{1},\enum{2},...,\enum{n})A$
    1. 右:  
-   $(\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{n})A+(\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{n})B=(\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{n})(A+B)$
+      $(\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{n})A+(\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{n})B=(\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{n})(A+B)$
 1. 数乘的交换律: $k(\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{n})A=(\def\enum#1{k\alpha_{ #1}}\enum{1},\enum{2},...,\enum{n})A=(\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{n})(kA)$
 1. 矩阵乘法的结合律: $[(\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{n})A]B=(\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{n})AB$
 
@@ -317,9 +320,11 @@ $V$的一组基底$(\def\enum#1{\epsilon_{ #1}}\enum{1},\enum{2},...,\enum{n})$�
 
 设向量$\alpha$在$(\def\enum#1{\epsilon_{ #1}}\enum{1},\enum{2},...,\enum{n})$下的坐标为$(\def\enum#1{x_{ #1}}\enum{1},\enum{2},...,\enum{n})$, 则$\alpha$可记作
 
-$$\alpha=(\def\enum#1{\epsilon_{ #1}}\enum{1},\enum{2},...,\enum{n})\begin{bmatrix}
+$$
+\alpha=(\def\enum#1{\epsilon_{ #1}}\enum{1},\enum{2},...,\enum{n})\begin{bmatrix}
    x_1\\x_2\\\vdots\\x_n
-\end{bmatrix}$$
+\end{bmatrix}
+$$
 
 ### 过渡矩阵
 
@@ -335,7 +340,8 @@ $$(\def\enum#1{\epsilon'_{ #1}}\enum{1},\enum{2},...,\enum{n})=(\def\enum#1{\eps
 
 设向量$\alpha$在$(\def\enum#1{\epsilon_{ #1}}\enum{1},\enum{2},...,\enum{n}),(\def\enum#1{\epsilon'_{ #1}}\enum{1},\enum{2},...,\enum{n})$下的坐标分别为$(\def\enum#1{x_{ #1}}\enum{1},\enum{2},...,\enum{n}),(\def\enum#1{x'_{ #1}}\enum{1},\enum{2},...,\enum{n})$, 则
 
-$$\begin{aligned}
+$$
+\begin{aligned}
    \alpha=(\def\enum#1{\epsilon_{ #1}}\enum{1},\enum{2},...,\enum{n})\begin{bmatrix}
       x_1\\x_2\\\vdots\\x_n
    \end{bmatrix}&=(\def\enum#1{\epsilon'_{ #1}}\enum{1},\enum{2},...,\enum{n})\begin{bmatrix}
@@ -347,11 +353,13 @@ $$\begin{aligned}
    &=(\def\enum#1{\epsilon_{ #1}}\enum{1},\enum{2},...,\enum{n})(T\begin{bmatrix}
       x'_1\\x'_2\\\vdots\\x'_n
    \end{bmatrix})
-\end{aligned}$$
+\end{aligned}
+$$
 
 故
 
-$$\begin{bmatrix}
+$$
+\begin{bmatrix}
       x_1\\x_2\\\vdots\\x_n
    \end{bmatrix}=T\begin{bmatrix}
       x'_1\\x'_2\\\vdots\\x'_n
@@ -412,7 +420,7 @@ $\mathbb{P}$上线性空间$V_1,V_2$同构$\iff\dim V_1=\dim V_2$
 
 ##### <a href="#prob-5-1" id="p-prob-5-1">解</a>
 
-这类题往往可以通过$V$与$\mathbb{P}^n$同构并利用Vandermonde行列式等解决
+这类题往往可以通过$V$与$\mathbb{P}^n$同构并利用 Vandermonde 行列式等解决
 
 注意到 $\mathbb{P}^n$中形如
 
@@ -420,7 +428,7 @@ $$(1,a,a^2,...,a^{n-1}),a\in\N^*$$
 
 的向量有无限个
 
-这些向量中的任意$n$个均可构成非0的Vandermonde行列式, 故这些向量线性无关
+这些向量中的任意$n$个均可构成非 0 的 Vandermonde 行列式, 故这些向量线性无关
 
 又由$n$维线性空间与$\mathbb{P}^n$同构可知命题成立
 
@@ -438,24 +446,24 @@ $$(1,a,a^2,...,a^{n-1}),a\in\N^*$$
 - 当$m=1$时, 命题显然成立
 - 当$m=2$时, 取$\alpha\in V/V_1$, 若$\alpha\notin V_2$, 则命题成立, 否则$\exist\beta\in V/V_2$
 
-   可知$k\alpha+\beta\notin V_2,\forall k\in\mathbb{P}$, 否则可推出$(k\alpha+\beta)-k\alpha=\beta\in V_2$
+  可知$k\alpha+\beta\notin V_2,\forall k\in\mathbb{P}$, 否则可推出$(k\alpha+\beta)-k\alpha=\beta\in V_2$
 
-   取$k_1,k_2\in\mathbb{P},k_1\ne k_2$
+  取$k_1,k_2\in\mathbb{P},k_1\ne k_2$
 
-   则$k_1\alpha+\beta\in V_1$和$k_2\alpha+\beta\in V_1$不同时成立, 否则可推出  
+  则$k_1\alpha+\beta\in V_1$和$k_2\alpha+\beta\in V_1$不同时成立, 否则可推出  
    $(k_1\alpha+\beta)-(k_2\alpha+\beta)=(k_1-k_2)\alpha\in V_1$
 
-   因此当$m=2$时命题成立
+  因此当$m=2$时命题成立
 
 - 假设$m-1$时命题成立, 则$(\exist\alpha\in V),\alpha\notin V_i,i=1,2,...,m-1$, 若$\alpha\notin V_m$, 则命题成立, 否则$\exist\beta\in V/V_m$
 
-   可知$k\alpha+\beta\notin V_m,\forall k\in\mathbb{P}$, 否则可推出$(k\alpha+\beta)-k\alpha=\beta\in V_m$
+  可知$k\alpha+\beta\notin V_m,\forall k\in\mathbb{P}$, 否则可推出$(k\alpha+\beta)-k\alpha=\beta\in V_m$
 
-   取$k_1,k_2\in\mathbb{P},k_1\ne k_2$
+  取$k_1,k_2\in\mathbb{P},k_1\ne k_2$
 
-   则$k_1\alpha+\beta\in V_i$和$k_2\alpha+\beta\in V_i$不同时成立, $(i=1,2,...,m-1)$, 否则可推出$(k_1\alpha+\beta)-(k_2\alpha+\beta)=(k_1-k_2)\alpha\in V_i$
+  则$k_1\alpha+\beta\in V_i$和$k_2\alpha+\beta\in V_i$不同时成立, $(i=1,2,...,m-1)$, 否则可推出$(k_1\alpha+\beta)-(k_2\alpha+\beta)=(k_1-k_2)\alpha\in V_i$
 
-   此时取$m$个不相等的数$k_1,k_2,...,k_m$, 可知  
+  此时取$m$个不相等的数$k_1,k_2,...,k_m$, 可知  
    $(\exist k\in\{k_1,k_2,...,k_m\}),k\alpha+\beta\notin V_i,i=1,2,...,m-1$, 又由$k\alpha+\beta\notin V_m$可知该向量即为所求
 
 <a href="#p-prob-5-2-1" id="end-prob-5-2-1">$\Box$</a>
@@ -468,7 +476,7 @@ $$(1,a,a^2,...,a^{n-1}),a\in\N^*$$
 
 的向量有无限个
 
-这些向量中的任意$n$个均可构成非0的Vandermonde行列式, 故这些向量线性无关
+这些向量中的任意$n$个均可构成非 0 的 Vandermonde 行列式, 故这些向量线性无关
 
 而$\def\enum#1{V_{ #1}}\enum{1},\enum{2},...,\enum{s}$最多只需使用其中$m(n-1)$个向量张成, 故在$V$中总能找到满足要求的向量
 
@@ -503,17 +511,21 @@ $$(1,a,a^2,...,a^{n-1}),a\in\N^*$$
 
 齐次线性方程组
 
-$$(a_{ij})_{t\times n}\begin{bmatrix}
+$$
+(a_{ij})_{t\times n}\begin{bmatrix}
    x_1\\x_2\\\vdots\\x_n
-\end{bmatrix}=\theta$$
+\end{bmatrix}=\theta
+$$
 
 有$n-t$个解$\beta_i=(\def\enum#1{b_{i{ #1}}}\enum{1},\enum{2},...,\enum{n})^T,~i=1,2,...,n-t$张成解空间
 
 故齐次线性方程组
 
-$$(b_{ij})_{(n-t)\times n}\begin{bmatrix}
+$$
+(b_{ij})_{(n-t)\times n}\begin{bmatrix}
    x_1\\x_2\\\vdots\\x_n
-\end{bmatrix}=\theta$$
+\end{bmatrix}=\theta
+$$
 
 有$t$个解$\alpha_i=(\def\enum#1{a_{i{ #1}}}\enum{1},\enum{2},...,\enum{n}),~i=1,2,...,t$张成解空间
 
@@ -547,19 +559,19 @@ $$(b_{ij})_{(n-t)\times n}\begin{bmatrix}
 - 注意到  
    $\alpha\in V_1,\beta\in V_2\implies f(A)\alpha=g(A)\beta=0\implies f(A)g(A)\alpha=f(A)g(A)\beta=0\implies\alpha,\beta\in V$
 
-   故$V_1,V_2\leqslant V$
+  故$V_1,V_2\leqslant V$
 
 - 又由$(f(x),g(x)=1$知$\exist u(x),v(x)\in\mathbb{P}[x]$使得$f(A)u(A)+g(A)v(A)=E$
 
-   则$\forall\alpha\in V,\alpha=f(A)u(A)\alpha+g(A)v(A)\alpha\xlongequal[\alpha_2=g(A)v(A)\alpha]{\alpha_1=f(A)u(A)\alpha}\alpha_1+\alpha_2$
+  则$\forall\alpha\in V,\alpha=f(A)u(A)\alpha+g(A)v(A)\alpha\xlongequal[\alpha_2=g(A)v(A)\alpha]{\alpha_1=f(A)u(A)\alpha}\alpha_1+\alpha_2$
 
-   可得$g(A)\alpha_1=u(A)(f(A)g(A)\alpha)=0$, 故$\alpha_1\in V_2$, 同理$\alpha_2\in V_1$, 因此$V=V_1+V_2$
+  可得$g(A)\alpha_1=u(A)(f(A)g(A)\alpha)=0$, 故$\alpha_1\in V_2$, 同理$\alpha_2\in V_1$, 因此$V=V_1+V_2$
 
 - 又令$\beta\in V_1\cup V_2$, 则有$f(A)\beta=g(A)\beta=0$
 
-   于是$\beta=(f(A)u(A)+g(A)v(A))\beta=0$, 即$V_1\cup V_2=\{0\}$
+  于是$\beta=(f(A)u(A)+g(A)v(A))\beta=0$, 即$V_1\cup V_2=\{0\}$
 
-   因此$V=V_1\oplus V_2$
+  因此$V=V_1\oplus V_2$
 
 <a href="#p-prob-6-2" id="end-prob-6-2">$\Box$</a>
 

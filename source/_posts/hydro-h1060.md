@@ -1,5 +1,5 @@
 ---
-title: '题解 - [Hydro #H1060] 绝世傻逼题'
+title: "题解 - [Hydro #H1060] 绝世傻逼题"
 categories:
   - 程序设计
   - 题解

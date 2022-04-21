@@ -1,5 +1,5 @@
 ---
-title: '笔记 - 整除分块, Dirichlet卷积, Dirichlet前缀和, 积性函数, Möbius反演, 杜教筛'
+title: "笔记 - 整除分块, Dirichlet卷积, Dirichlet前缀和, 积性函数, Möbius反演, 杜教筛"
 categories:
   - 程序设计
   - 数学
@@ -21,7 +21,8 @@ tags:
   - 杜教筛
 date: 2020-10-05 00:52:51
 ---
-整除分块, Dirichlet卷积, Dirichlet前缀和, 积性函数, Möbius反演, 杜教筛
+
+整除分块, Dirichlet 卷积, Dirichlet 前缀和, 积性函数, Möbius 反演, 杜教筛
 
 <!-- more -->
 
@@ -41,12 +42,15 @@ $$\frac{a}{b}=\left\lfloor\frac{a}{b}\right\rfloor+\left\{ \frac{a}{b}\right\}$$
 其中$\{ \frac{a}{b}\}$是$a\over b$的小数部分
 
 故
-$$\begin{aligned}
+
+$$
+\begin{aligned}
   \left\lfloor\frac{a}{bc}\right\rfloor&=\left\lfloor\frac{a}{b}\cdot\frac{1}{c}\right\rfloor\\
   &=\left\lfloor\left(\left\lfloor\frac{a}{b}\right\rfloor+\left\{ \frac{a}{b}\right\}\right)\frac{1}{c}\right\rfloor\\
   &=\left\lfloor{\left\lfloor\frac{a}{b}\right\rfloor\over c}+\left\{ \frac{a}{b}\right\}\frac{1}{c}\right\rfloor\\
   &=\left\lfloor{\left\lfloor\frac{a}{b}\right\rfloor\over c}\right\rfloor
-\end{aligned}$$
+\end{aligned}
+$$
 
 <a href="#p-t-1.1" id="end-t-1.1">$\Box$</a>
 
@@ -77,12 +81,12 @@ $$\forall n\in\N^*,\left|\left\{\left\lfloor\frac{n}{i}\right\rfloor\big|~i=1,2,
 令$n=15$, $f(i)=\lfloor\frac{n}{i}\rfloor$ 我们可列出下表
 | $f(i)$ | $i$的范围 |
 | ------ | --------- |
-| 15     | $[1,1]$   |
-| 7      | $[2,2]$   |
-| 5      | $[3,3]$   |
-| 3      | $[4,5]$   |
-| 2      | $[6,7]$   |
-| 1      | $[8,15]$  |
+| 15 | $[1,1]$ |
+| 7 | $[2,2]$ |
+| 5 | $[3,3]$ |
+| 3 | $[4,5]$ |
+| 2 | $[6,7]$ |
+| 1 | $[8,15]$ |
 
 我们可以发现, $f$任一像对应的原象是一段区间, 所以我们可以考虑直接求出对应区间长度, 从而就能快速求值
 
@@ -92,7 +96,7 @@ $$\forall n\in\N^*,\left|\left\{\left\lfloor\frac{n}{i}\right\rfloor\big|~i=1,2,
 1. 初始时, $l\leftarrow1,S\leftarrow0$
 1. 计算$r$
 1. $S\leftarrow S+(r-l+1)\lfloor\frac{n}{l}\rfloor$
-1. $l\leftarrow r+1$, 若$l\leqslant n$则回到3
+1. $l\leftarrow r+1$, 若$l\leqslant n$则回到 3
 
 关键就在于如何求$r$
 
@@ -128,6 +132,7 @@ int get_sum(int n) {
 
   只需令
   $$r=\min\left\{\left\lfloor{n\over{\lfloor\frac{n}{l}\rfloor} }\right\rfloor,\left\lfloor{m\over{\lfloor\frac{m}{l}\rfloor} }\right\rfloor\right\}$$
+
 - 如何求$\sum_{i=1}^n\lfloor\frac{n}{ai+b}\rfloor$
 
   令$\lfloor\frac{n}{al+b}\rfloor=k_l$, 不难发现
@@ -160,9 +165,9 @@ int get_sum(int n) {
 
 如果某个数论函数具有简单的表达式$f(n)$, 在不引起歧义的情况下我们也可以将其简写为$\{f(n)\}$, 如$\{1\}$, $\{n\}$
 
-## Dirichlet卷积
+## Dirichlet 卷积
 
-对数论函数$f,g$, 定义其Dirichlet卷积为$f*g$, 满足:
+对数论函数$f,g$, 定义其 Dirichlet 卷积为$f*g$, 满足:
 $$(f*g)(n):=\displaystyle\sum_{d\mid n}f(d)g(\frac{n}{d})$$
 
 如
@@ -186,12 +191,14 @@ $$f*(g*h)=(f*g)*h$$
 
 ##### <a href="#t-3.1" id="p-t-3.1">证明</a>
 
-$$\begin{aligned}
+$$
+\begin{aligned}
   (f*(g*h))(n)&=\sum_{a\mid n}f(a)\sum_{b\mid\frac{n}{a}}g(b)h(\frac{n}{ab})\\
   &=\sum_{abc=n}f(a)g(b)h(c)\\
   &=\sum_{a\mid n}\left(\sum_{b\mid a}f(b)g(\frac{a}{b})\right)h(\frac{n}{a})\\
   &=((f*g)*h)(n)
-\end{aligned}$$
+\end{aligned}
+$$
 
 <a href="#p-t-3.1" id="end-t-3.1">$\Box$</a>
 
@@ -203,7 +210,7 @@ $$\begin{aligned}
 
 证明略
 
-### Dirichlet前缀和
+### Dirichlet 前缀和
 
 用于解决如下问题:
 给出$\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n}$, 求$\def\enum#1{b_{ #1}}\enum{1},\enum{2},...,\enum{n}$, 其中
@@ -251,9 +258,9 @@ void Dirichlet_sum(int n) {
 
    > 即积性函数关于乘法, 除法, 卷积封闭
 
-下面给出性质1的证明
+下面给出性质 1 的证明
 
-#### <a href="#end-t-4.1" id="t-4.1">定理 - 4.1</a> (性质1)
+#### <a href="#end-t-4.1" id="t-4.1">定理 - 4.1</a> (性质 1)
 
 $f,g$为积性函数$\implies\ fg,\displaystyle\frac{f}{g},f*g$为积性函数
 
@@ -263,13 +270,15 @@ $f,g$为积性函数$\implies\ fg,\displaystyle\frac{f}{g},f*g$为积性函数
 
 令$h=f*g$, $(m,n)=1$, 则
 
-$$\begin{aligned}
+$$
+\begin{aligned}
    h(mn)&=\sum_{d\mid mn}f(d)g(\frac{mn}{d})\\
    &=\sum_{d_1\mid m}\sum_{d_2\mid n}f(d_1d_2)g(\frac{m}{d_1}\frac{n}{d_2})\\
    &=\sum_{d_1\mid m}\sum_{d_2\mid n}f(d_1)f(d_2)g(\frac{m}{d_1})g(\frac{n}{d_2})\\
    &=\left(\sum_{d_1\mid m}f(d_1)g(\frac{m}{d_1})\right)\left(\sum_{d_2\mid n}f(d_2)g(\frac{n}{d_2})\right)\\
    &=h(m)h(n)
-\end{aligned}$$
+\end{aligned}
+$$
 
 <a href="#p-t-4.1" id="end-t-4.1">$\Box$</a>
 
@@ -282,10 +291,10 @@ $$\begin{aligned}
 1. $\sigma_k(n):=\displaystyle\sum_{d\mid n}d^k=\operatorname{id}_k*\{1\}$
    - 因子个数: $\tau(n):=\sigma_0(n)$
    - 因子和: $\sigma(n):=\sigma_1(n)$
-1. Euler函数: $\varphi(n):=\displaystyle\sum_{i=1}^n[(i,n)=1]$
-1. Möbius函数: $\mu(n):=[\forall p\in\text{Prime}^+,p^2\nmid n]*(-1)^{\omega(n)}$
+1. Euler 函数: $\varphi(n):=\displaystyle\sum_{i=1}^n[(i,n)=1]$
+1. Möbius 函数: $\mu(n):=[\forall p\in\text{Prime}^+,p^2\nmid n]*(-1)^{\omega(n)}$
 
-Euler函数和Möbius函数积性的证明在后面给出, 下面给出$\tau$和$\sigma$积性的证明
+Euler 函数和 Möbius 函数积性的证明在后面给出, 下面给出$\tau$和$\sigma$积性的证明
 
 #### <a href="#end-t-4.2" id="t-4.2">定理 - 4.2</a>
 
@@ -311,36 +320,40 @@ $$\sigma(n)=\prod_{i=1}^r{p_i^{\alpha_i+1}-1\over p_i-1}$$
 
 满足$\forall m, n\in\Bbb{N}^+,f(mn)=f(m)f(n)$的$f(n)$
 
-## Euler函数
+## Euler 函数
 
 记作$\varphi(n)$, 指的是$[1,n]$中所有与$n$互素的数
 
 ### 性质
 
 1. $\varphi(n)$是积性函数
-1. (1的推论) 若$n$为奇数, 则$\varphi(2n)=\varphi(n)$
+1. (1 的推论) 若$n$为奇数, 则$\varphi(2n)=\varphi(n)$
 1. 若$p$为素数, $a$为自然数, 则$\varphi(p^a)=p^a-p^{a-1}$
 
    特别地, $\varphi(p)=p-1$
-1. (1,3的推论) 设$n=\prod_{i=1}^{\omega(n)}p_i^{\alpha_i}$, 则
+
+1. (1,3 的推论) 设$n=\prod_{i=1}^{\omega(n)}p_i^{\alpha_i}$, 则
    $$\varphi(n)=\prod_{i=1}^{\omega(n)}p_i^{\alpha_i}\left(1-\frac{1}{p_i}\right)=n\prod_{i=1}^{\omega(n)}\frac{p_i-1}{p_i}$$
 1. 当$n>2$时, $\varphi(n)$为偶数
 
-下面给出性质1的证明
+下面给出性质 1 的证明
 
-#### <a href="#end-t-5.1" id="t-5.1">定理 - 5.1</a> (性质1)
+#### <a href="#end-t-5.1" id="t-5.1">定理 - 5.1</a> (性质 1)
 
 $\varphi(n)$是积性函数
 
 ##### <a href="#t-5.1" id="p-t-5.1">证明</a>
 
 设$n,m$是互素的正整数, 我们将$\{0,1,...,mn-1\}$如下列出
-$$\begin{matrix}
+
+$$
+\begin{matrix}
   0&1&...&m-1\\
   m&m+1&...&2m-1\\
   \vdots&\vdots&\ddots&\vdots\\
   (n-1)m&(n-1)m+1&...&mn-1
-\end{matrix}$$
+\end{matrix}
+$$
 
 考察第$j$列的数$im+j,~i=0,1,...,n-1$, 其均属于模$m$的同余类$\overline{j},~j=0,1,...,m-1$, 故共有$\varphi(m)$列中的数与$m$互素
 
@@ -361,45 +374,45 @@ $$\begin{matrix}
    <details>
    <summary><font color='orange'>Show code</font></summary>
 
-    ```cpp
-    int euler_phi(int n) {
-        int ans = n;
-        for (int i = 2; i <= sqrt(n); ++i)
-            if (n % i == 0) {
-                ans = ans / i * (i - 1);
-                while (n % i == 0) n /= i;
-            }
-        if (n > 1) ans = ans / n * (n - 1);
-        return ans;
-    }
-    ```
+   ```cpp
+   int euler_phi(int n) {
+       int ans = n;
+       for (int i = 2; i <= sqrt(n); ++i)
+           if (n % i == 0) {
+               ans = ans / i * (i - 1);
+               while (n % i == 0) n /= i;
+           }
+       if (n > 1) ans = ans / n * (n - 1);
+       return ans;
+   }
+   ```
 
    </details>
 
-1. 筛法 (以Euler筛为例)
+1. 筛法 (以 Euler 筛为例)
 
    依据积性和$\varphi(p^a)=p^a-p^{a-1}$计算
 
    <details>
    <summary><font color='orange'>Show code</font></summary>
 
-    ```cpp
-    void Euler_sieve(int n) {
-        phi[1] = 1;
-        for (int i = 2; i <= n; ++i) {
-            if (!vis[i]) {
-                prime[++cnt] = i;
-                phi[i] = i - 1;
-            }
-            for (int j = 1; j <= cnt && i * prime[j] <= n; ++j) {
-                vis[i * prime[j]] = 1;
-                phi[i * prime[j]] = phi[i] * prime[j];
-                if (i % prime[j] == 0) break;
-                phi[i * prime[j]] -= phi[i];
-            }
-        }
-    }
-    ```
+   ```cpp
+   void Euler_sieve(int n) {
+       phi[1] = 1;
+       for (int i = 2; i <= n; ++i) {
+           if (!vis[i]) {
+               prime[++cnt] = i;
+               phi[i] = i - 1;
+           }
+           for (int j = 1; j <= cnt && i * prime[j] <= n; ++j) {
+               vis[i * prime[j]] = 1;
+               phi[i * prime[j]] = phi[i] * prime[j];
+               if (i % prime[j] == 0) break;
+               phi[i * prime[j]] -= phi[i];
+           }
+       }
+   }
+   ```
 
    </details>
 
@@ -408,13 +421,16 @@ $$\begin{matrix}
 - 洛谷 [P2568 GCD](https://www.luogu.com.cn/problem/P2568)
 - 洛谷 [P2398 GCD SUM](https://www.luogu.com.cn/problem/P2398)
 
-## Möbius函数
+## Möbius 函数
 
 记作$\mu(n)$, 设$n=\prod_{i=1}^{\omega(n)}p_i^{\alpha_i}$, 则
-$$\mu(n)=\begin{cases}
+
+$$
+\mu(n)=\begin{cases}
   0,&\exist i\in[1,\omega(n)],~s.t.~\alpha_i>1\\
   (-1)^{\omega(n)},&otherwise
-\end{cases}$$
+\end{cases}
+$$
 
 或者说, $\mu(n)$满足如下条件:
 
@@ -423,6 +439,7 @@ $$\mu(n)=\begin{cases}
    平方因子即满足$\exist a\in\Z^*, a^2\mid n$的因子
 
    显然, $n$中有平方因子等价于$n$中有平方素因子
+
 1. 若$n$中无平方因子, 则$\mu(n)=(-1)^{\omega(n)}$, $\omega(n)$即为$n$的本质不同素因子个数
 
 ### 性质
@@ -431,11 +448,11 @@ $$\mu(n)=\begin{cases}
 1. $$\sum_{d\mid n}\mu(d)=\epsilon(n)$$
    即
    $$\mu*\{1\}=\epsilon$$
-1. (2的推论) $\displaystyle[(x,y)=1]=\sum_{d\mid (x,y)}\mu(d)$
+1. (2 的推论) $\displaystyle[(x,y)=1]=\sum_{d\mid (x,y)}\mu(d)$
 
-下面给出性质1和性质2的证明
+下面给出性质 1 和性质 2 的证明
 
-#### <a href="#end-t-6.1" id="t-6.1">定理 - 6.1</a> (性质1)
+#### <a href="#end-t-6.1" id="t-6.1">定理 - 6.1</a> (性质 1)
 
 $\forall m,n\in\N^*,~(m,n)=1\implies\mu(mn)=\mu(m)\mu(n)$
 
@@ -452,7 +469,7 @@ $$\mu(mn)=(-1)^{r+s}=(-1)^r(-1)^s=\mu(m)\mu(n)$$
 
 <a href="#p-t-6.1" id="end-t-6.1">$\Box$</a>
 
-#### <a href="#end-t-6.2-2" id="t-6.2">定理 - 6.2</a> (性质2)
+#### <a href="#end-t-6.2-2" id="t-6.2">定理 - 6.2</a> (性质 2)
 
 $$\mu*\{1\}=\epsilon$$
 
@@ -488,11 +505,14 @@ $$\forall p\in\text{Prime}^+,\forall\alpha\in\N^*,~f(p^{\alpha})=\epsilon(p^{\al
 对上述的$p$和$\alpha$, 一方面, $\epsilon(p^{\alpha})=0$
 
 另一方面,
-$$\begin{aligned}
+
+$$
+\begin{aligned}
   f(p^{\alpha})&=\sum_{i=0}^{\alpha}\mu(p^i)\\
   &=\mu(1)+\mu(p)\\
   &=0
-\end{aligned}$$
+\end{aligned}
+$$
 
 因此命题得证
 
@@ -503,34 +523,35 @@ $$\begin{aligned}
 1. 单个数
 
    很少出现, 直接按定义即可
-1. 筛法 (以Euler筛为例)
+
+1. 筛法 (以 Euler 筛为例)
 
    基于积性和定义
 
    <details>
    <summary><font color='orange'>Show code</font></summary>
 
-    ```cpp
-    void Euler_sieve(int n) {
-        mu[1] = 1;
-        for (int i = 2; i <= n; ++i) {
-            if (!vis[i]) {
-                prime[++cnt] = i;
-                mu[i] = -1;
-            }
-            for (int j = 1; j <= cnt && i * prime[j] <= n; ++j) {
-                vis[i * prime[j]] = 1;
-                mu[i * prime[j]] = 0;
-                if (i % prime[j] == 0) break;
-                mu[i * prime[j]] = -mu[i];
-            }
-        }
-    }
-    ```
+   ```cpp
+   void Euler_sieve(int n) {
+       mu[1] = 1;
+       for (int i = 2; i <= n; ++i) {
+           if (!vis[i]) {
+               prime[++cnt] = i;
+               mu[i] = -1;
+           }
+           for (int j = 1; j <= cnt && i * prime[j] <= n; ++j) {
+               vis[i * prime[j]] = 1;
+               mu[i * prime[j]] = 0;
+               if (i % prime[j] == 0) break;
+               mu[i * prime[j]] = -mu[i];
+           }
+       }
+   }
+   ```
 
    </details>
 
-## Möbius反演
+## Möbius 反演
 
 ### <a href="#end-t-7.1" id="t-7.1">定理 - 7.1</a>
 
@@ -545,7 +566,7 @@ $$\forall n\in\N^*,~f(n)=\sum_{d\mid n}g(d)\iff g(n)=\sum_{d\mid n}f(d)\mu\left(
 如果用卷积证明的话十分简洁
 $$f=g*\{1\}\iff f*\mu=g*\{1\}*\mu=g*\epsilon=g$$
 
-但这里我们给出不使用卷积运算法则的证明方法, 因为这是交换求和次序的绝佳练习, 交换求和次序也是应用Möbius反演解题的重要操作
+但这里我们给出不使用卷积运算法则的证明方法, 因为这是交换求和次序的绝佳练习, 交换求和次序也是应用 Möbius 反演解题的重要操作
 
 在这里复述一遍命题
 $$\forall n\in\N^*,~f(n)=\sum_{d\mid n}g(d)\tag{1}$$
@@ -576,11 +597,14 @@ $$\sum_{e\mid n}\sum_{e\mid d\mid n}g(e)\mu\left(\frac{n}{d}\right)=\sum_{e\mid 
 $$\frac{n}{d}=\frac{n}{e}\cdot\frac{e}{d}={ \frac{n}{e}\over d'}$$
 
 因此固定$e$, 则有
-$$\begin{aligned}
+
+$$
+\begin{aligned}
   \sum_{e\mid d\mid n}\mu\left(\frac{n}{d}\right)&=\sum_{d'\mid\frac{n}{e}}\mu\left({ \frac{n}{e}\over d'}\right)\\
   &=\sum_{d'\mid\frac{n}{e}}\mu\left(d'\right)\\
   &=\epsilon(d')
-\end{aligned}$$
+\end{aligned}
+$$
 
 此式表明$\displaystyle\sum_{e\mid d\mid n}\mu\left(\frac{n}{d}\right)$只有在$e$取$n$时才为$1$, 其余时为$0$
 
@@ -589,7 +613,9 @@ $$\begin{aligned}
 我们把步骤合并起来
 
 若$(1)$成立, 则有
-$$\begin{aligned}
+
+$$
+\begin{aligned}
   \sum_{d\mid n}f(d)\mu\left(\frac{n}{d}\right)&=\sum_{d\mid n}\sum_{e\mid d}g(e)\mu\left(\frac{n}{d}\right)\\
   &=\sum_{e\mid n}\sum_{e\mid d\mid n}g(e)\mu\left(\frac{n}{d}\right)\\
   &=\sum_{e\mid n}g(e)\sum_{e\mid d\mid n}\mu\left(\frac{n}{d}\right)\\
@@ -598,15 +624,19 @@ $$\begin{aligned}
   &=\sum_{e\mid n}g(e)\epsilon(d')\\
   &=\sum_{e\mid n}g(e)\epsilon\left(\frac{d}{e}\right)\\
   &=g(n)
-\end{aligned}$$
+\end{aligned}
+$$
 
 类似可证$(1)\impliedby(2)$, 简要列出步骤
-$$\begin{aligned}
+
+$$
+\begin{aligned}
   \sum_{d\mid n}g(d)&=\sum_{d\mid n}\sum_{e\mid d}\mu\left(\frac{d}{e}\right)f(e)\\
   &=\sum_{e\mid n}f(e)\sum_{e\mid d\mid n}\mu\left(\frac{d}{e}\right)\\
   &\xlongequal{d'=d/e}\sum_{e\mid n}f(e)\sum_{d'\mid\frac{n}{e}}\mu(d')\\
   &=f(n)
-\end{aligned}$$
+\end{aligned}
+$$
 
 <a href="#p-t-7.1" id="end-t-7.1">$\Box$</a>
 
@@ -623,7 +653,7 @@ $$\begin{aligned}
   > 题解 [见此](/article/luogu-p3704)
 - 洛谷 [P5518 [MtOI2019]幽灵乐团 / 莫比乌斯反演基础练习题](https://www.luogu.com.cn/problem/P5518)
 - 洛谷 [P2522 [HAOI2011]Problem b](https://www.luogu.com.cn/problem/P2522)
-- 洛谷 [P2257 YY的GCD](https://www.luogu.com.cn/problem/P2257)
+- 洛谷 [P2257 YY 的 GCD](https://www.luogu.com.cn/problem/P2257)
 
 ## 杜教筛
 
@@ -638,12 +668,14 @@ $$g(1)S(n)=\sum_{i=1}^n(f*g)(i)-\sum_{i=2}^ng(i)S\left(\left\lfloor\frac{n}{i}\r
 
 #### <a href="#t-8.1" id="p-t-8.1">证明</a>
 
-$$\begin{aligned}
+$$
+\begin{aligned}
   \sum_{i=1}^n(f*g)(i)&=\sum_{i=1}^n\sum_{d\mid i}f(d)g\left(\frac{i}{d}\right)\\
   &=\sum_{d=1}^ng(d)\sum_{i=1}^{\lfloor\frac{n}{d}\rfloor}f(i)\\
   &=\sum_{d=1}^ng(d)S\left(\left\lfloor\frac{n}{d}\right\rfloor\right)\\
   &=g(1)S(n)+\sum_{i=2}^ng(i)S\left(\left\lfloor\frac{n}{i}\right\rfloor\right)
-\end{aligned}$$
+\end{aligned}
+$$
 
 <a href="#p-t-8.1" id="end-t-8.1">$\Box$</a>
 
@@ -669,18 +701,23 @@ $
 
 设求出$S(n)$的时间函数为$T(n)$, 则
 
-$$\begin{aligned}
+$$
+\begin{aligned}
   O(T(n))&=O\left(\sum_{i=1}^{\sqrt n}\left(O(\sqrt{i})+O\left(\sqrt\frac{n}{i}\right)\right)\right)\\
   &=O\left(\int_1^{\sqrt{n}}\left(\sqrt{x}+\sqrt\frac{n}{x}\right)\mathrm{d}x\right)\\
   &=O(n^\frac{3}{4})
-\end{aligned}$$
+\end{aligned}
+$$
 
 如果我们能够预处理出$S(i),~i=1,2,...,m$, 设预处理的时间复杂度为$O(W(m))$, 则时间复杂度可变为
-$$\begin{aligned}
+
+$$
+\begin{aligned}
   O(T(n))&=O\left(\sum_{i=1}^{\lfloor\frac{n}{m}\rfloor}O\left(\sqrt\frac{n}{i}\right)+W(m)\right)\\
   &=O\left(\int_1^{\lfloor\frac{n}{m}\rfloor}\sqrt\frac{n}{x}\mathrm{d}x+W(m)\right)\\
   &=O\left(\frac{n}{\sqrt m}+W(m)\right)
-\end{aligned}$$
+\end{aligned}
+$$
 
 以线性筛作为预处理方式为例, 此时$O(W(m))=O(m)$  
 由平均值不等式可知, 当$m=(\frac{n}{2})^\frac{2}{3}$时, 其时间复杂度最小, 为$O(n^\frac{2}{3})$

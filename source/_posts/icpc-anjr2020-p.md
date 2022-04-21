@@ -11,14 +11,15 @@ tags:
   - 贪心
 date: 2020-12-19 21:51:29
 ---
+
 [比赛链接](https://ac.nowcoder.com/acm/contest/10271)
 
 <!-- more -->
 
 ## 题目概览
 
-| 题号 | 标题                      | 做法 | 备注                                                                                                                 |
-| ---- | ----------------------------- | ---- | -------------------------------------------------------------------------------------------------------------------- |
+| 题号 | 标题                          | 做法 | 备注                                                                                                                  |
+| ---- | ----------------------------- | ---- | --------------------------------------------------------------------------------------------------------------------- |
 | A    | Algorithm Course              | 签到 |
 | B    | Best Grouping                 | 贪心 | [牛客多校](https://ac.nowcoder.com/acm/contest/5669/H), [CodeForces](https://codeforces.com/problemset/problem/449/C) |
 | C    | Computer Science Ability Test | 莽   |
@@ -35,7 +36,7 @@ date: 2020-12-19 21:51:29
 
 ### 解题思路
 
-懂了, 这就学Python
+懂了, 这就学 Python
 
 ### 代码参考
 
@@ -141,15 +142,15 @@ int main() {
 > 1. (微积分) ${y\mathrm{d}x-x\mathrm{d}y\over x^2-y^2}=\mathrm{d}(\frac{1}{2}\ln|\frac{x-y}{x+y}|)$
 > 1. (离散数学) $\varnothing\subseteq\{\varnothing\}$
 > 1. (物理) 在可逆绝热过程中, 一摩尔理想气体从$V_0$膨胀到$2V_0$, 如果气体的温度降低$25\%$, 则该气体可能是一种单原子气体
-> 1. (数据结构) Fibonacci堆插入操作的均摊时间复杂度为$O(1)$
-> 1. (近似算法) 若$\texttt{P}\ne\texttt{NP}$, 则对于完全图上的旅行商问题, 不存在 polynomial-time $2$-approximation 算法, 但是存在polynomial-time $2^n$-approximation 算法
+> 1. (数据结构) Fibonacci 堆插入操作的均摊时间复杂度为$O(1)$
+> 1. (近似算法) 若$\texttt{P}\ne\texttt{NP}$, 则对于完全图上的旅行商问题, 不存在 polynomial-time $2$-approximation 算法, 但是存在 polynomial-time $2^n$-approximation 算法
 > 1. (量子算法) 存在一种基于比较的量子排序算法, 其时间复杂度优于$\Omega(n\log n)$
-> 1. (操作系统) 有一个由4个具有相同类型的资源组成的系统. 假设最多有3个进程同时使用资源, 每个进程最多使用2个资源, 那么该系统是无死锁的
+> 1. (操作系统) 有一个由 4 个具有相同类型的资源组成的系统. 假设最多有 3 个进程同时使用资源, 每个进程最多使用 2 个资源, 那么该系统是无死锁的
 > 1. (计算机理论) 假设$L(M)$是图灵机$M$接受的语言, 则语言  
-> $\{``M"|M\texttt{ is a Turing machine and }L(M)\texttt{ is uncountable}\}$  
-> 是递归可枚举而不是递归的
+>    $\{``M"|M\texttt{ is a Turing machine and }L(M)\texttt{ is uncountable}\}$  
+>    是递归可枚举而不是递归的
 > 1. (编译原理) 存在一种语法满足是 LL(1) 但不是 LALR(1)
->
+
 ### 解题思路
 
 答案是 FTTFTFFTFT

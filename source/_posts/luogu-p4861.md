@@ -1,5 +1,5 @@
 ---
-title: '题解 - [Luogu P4861] 按钮 (aka 模板 - 阶)'
+title: "题解 - [Luogu P4861] 按钮 (aka 模板 - 阶)"
 categories:
   - 程序设计
   - 题解
@@ -22,25 +22,25 @@ date: 2021-06-03 14:00:59
 
 ### 题目背景
 
-Ada被关在了一个房间里
+Ada 被关在了一个房间里
 
 ### 题目描述
 
 房间的铁门上有一个按钮, 还有一个显示屏显示着"1"
 
-旁边还有一行小字: "这是一个高精度M进制计算器, 每按一次按钮, 屏幕上的数便会乘以K. 当个位数再次变为1时, 门就开了. "
+旁边还有一行小字: "这是一个高精度 M 进制计算器, 每按一次按钮, 屏幕上的数便会乘以 K. 当个位数再次变为 1 时, 门就开了. "
 
-由于Ada急于出去, 所以你要在1s之内求出她的最小按键次数
+由于 Ada 急于出去, 所以你要在 1s 之内求出她的最小按键次数
 
 ### 输入输出格式
 
 #### 输入格式
 
-一行, 两个整数M和K
+一行, 两个整数 M 和 K
 
 #### 输出格式
 
-一行一个数字, 表示最小按键次数.  如果无论Ada按多少次都无法让门打开, 输出"Let's go Blue Jays!" (不含引号)
+一行一个数字, 表示最小按键次数. 如果无论 Ada 按多少次都无法让门打开, 输出"Let's go Blue Jays!" (不含引号)
 
 ### 输入输出样例
 
@@ -70,11 +70,11 @@ Let's go Blue Jays!
 
 ### 说明
 
-对于30%的数据, $2\leq M,K\leq10^4$
+对于 30%的数据, $2\leq M,K\leq10^4$
 
-对于100%的数据, $2\leq M,K\leq2\times 10^{9}$
+对于 100%的数据, $2\leq M,K\leq2\times 10^{9}$
 
-update: 我们不认为个位为11,21,...为问题的解 (例如, 11在16进制下记为B)
+update: 我们不认为个位为 11,21,...为问题的解 (例如, 11 在 16 进制下记为 B)
 
 ## 解题思路
 
@@ -82,10 +82,12 @@ update: 我们不认为个位为11,21,...为问题的解 (例如, 11在16进制�
 
 ## 时间复杂度
 
-$$\begin{aligned}
+$$
+\begin{aligned}
   \Theta\Bigg(\sqrt{K}+\sum_{d\mid\varphi(K);~d\leqslant\sqrt{\varphi(K)}}\log\varphi(K)\Bigg)&=O\left(\sqrt{K}+\frac{\varphi(K)-\varphi(\varphi(K))}{2}\log\varphi(K)\right)\\
   &=O\left(\sqrt{K}+\sqrt{\varphi(K)}\log\varphi(K)\right)
-\end{aligned}$$
+\end{aligned}
+$$
 
 ## 代码参考
 

@@ -1,5 +1,5 @@
 ---
-title: '题解 - [Luogu P3878] [TJOI2010]分金币'
+title: "题解 - [Luogu P3878] [TJOI2010]分金币"
 categories:
   - 程序设计
   - 题解

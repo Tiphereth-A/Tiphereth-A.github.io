@@ -1,5 +1,5 @@
 ---
-title: '题解 - [Luogu P6156] 简单题'
+title: "题解 - [Luogu P6156] 简单题"
 categories:
   - 程序设计
   - 题解
@@ -132,12 +132,14 @@ $$
 其中
 
 - $$S(n)=\sum_{i=1}^{2n}(-1)^{[i>n]}\sum_{j=1}^ij^k$$
-- $$(\mu*\{\operatorname{id}\mu^2\})(p^k)=\begin{cases}
+- $$
+  (\mu*\{\operatorname{id}\mu^2\})(p^k)=\begin{cases}
     1,&k=0\\
     p-1,&k=1\\
     -p,&k=2\\
     0,&k>2
-  \end{cases}$$
+  \end{cases}
+  $$
 
 ## 时间复杂度
 

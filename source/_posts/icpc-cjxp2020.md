@@ -40,29 +40,30 @@ tags:
   - 树状数组
 date: 2020-11-15 23:01:18
 ---
+
 [比赛链接](https://ac.nowcoder.com/acm/contest/8827)
 
 <!-- more -->
 
 ## 题目概览
 
-| 题号[^1] | 标题[^2]                                     | AC / total | 做法                   |
-| ---- | -------------------------------------------- | ---------- | ---------------------- |
-| A    | A Simple Math Problem                        | 15 / 207   | Möbius反演 / 容斥定理  |
-| B    | Apple                                        | 198 / 562  | 签到                   |
-| *C   | Charging                                     | 9 / 157    | 线段树/树状数组 + 二分 |
-| *D   | Chinese Valentine's Day                      | 0 / 195    | 后缀自动机             |
-| E    | Color Sequence                               | 29 / 231   | 位运算                 |
-| F    | Magical Number                               | 3 / 23     | 打表 + DFS             |
-| G    | Mathematical Practice                        | 39 / 64    | 组合数学               |
-| H    | Sequence                                     | 15 / 74    | 分块 / 线段树          |
-| I    | Simple Math Problem                          | 107 / 452  | 签到                   |
-| J    | [Split Game](https://vjudge.net/problem/POJ-2311/origin) | 4 / 133    | 博弈论                 |
-| K    | Travel Expense                               | 33 / 280   | Floyd + 二分           |
-| *L   | WZB's Harem                                  | 9 / 97     | 状压DP                 |
-| M    | Zoos's Animal Codes                          | 205 / 241  | 签到                   |
+| 题号[^1] | 标题[^2]                                                 | AC / total | 做法                   |
+| -------- | -------------------------------------------------------- | ---------- | ---------------------- |
+| A        | A Simple Math Problem                                    | 15 / 207   | Möbius 反演 / 容斥定理 |
+| B        | Apple                                                    | 198 / 562  | 签到                   |
+| \*C      | Charging                                                 | 9 / 157    | 线段树/树状数组 + 二分 |
+| \*D      | Chinese Valentine's Day                                  | 0 / 195    | 后缀自动机             |
+| E        | Color Sequence                                           | 29 / 231   | 位运算                 |
+| F        | Magical Number                                           | 3 / 23     | 打表 + DFS             |
+| G        | Mathematical Practice                                    | 39 / 64    | 组合数学               |
+| H        | Sequence                                                 | 15 / 74    | 分块 / 线段树          |
+| I        | Simple Math Problem                                      | 107 / 452  | 签到                   |
+| J        | [Split Game](https://vjudge.net/problem/POJ-2311/origin) | 4 / 133    | 博弈论                 |
+| K        | Travel Expense                                           | 33 / 280   | Floyd + 二分           |
+| \*L      | WZB's Harem                                              | 9 / 97     | 状压 DP                |
+| M        | Zoos's Animal Codes                                      | 205 / 241  | 签到                   |
 
-[^1]: 打*的是还没写题解的题
+[^1]: 打\*的是还没写题解的题
 [^2]: 带超链接的是找到了原题或原型
 
 [官方题解](official_solutions.zip)
@@ -78,15 +79,18 @@ $$\sum_{i=1}^n\sum_{j=1}^i[(i,j)=1]F(j)$$
 
 ### 解题思路
 
-> 你这咋还和I抢上名字了
+> 你这咋还和 I 抢上名字了
 
-官方题解是容斥定理, 不过我按Möbius反演板子题做的
-$$\begin{aligned}
+官方题解是容斥定理, 不过我按 Möbius 反演板子题做的
+
+$$
+\begin{aligned}
   \sum_{i=1}^n\sum_{j=1}^i[(i,j)=1]F(j)&=\sum_{i=1}^n\sum_{j=1}^iF(j)\sum_{d\mid(i,j)}\mu(d)\\
   &=\sum_{d=1}^n\mu(d)\sum_{i=1}^{\lfloor\frac{n}{d}\rfloor}\sum_{j=1}^iF(jd)\\
   &=\sum_{d=1}^n\mu(d)\sum_{j=1}^{\lfloor\frac{n}{d}\rfloor}(n-j+1)F(jd)\\
   &=\sum_{d=1}^n\mu(d)\left((n+1)\sum_{j=1}^{\lfloor\frac{n}{d}\rfloor}F(jd)-\sum_{j=1}^{\lfloor\frac{n}{d}\rfloor}jF(jd)\right)\\
-\end{aligned}$$
+\end{aligned}
+$$
 
 令$g_n(d)=\sum_{j=1}^{\lfloor\frac{n}{d}\rfloor}F(jd)$, $h_n(d)=\sum_{j=1}^{\lfloor\frac{n}{d}\rfloor}jF(jd)$
 
@@ -141,7 +145,7 @@ int main() {
             _ /= 10;
         }
     }
-    for (int i = 1; i <= n; ++i) 
+    for (int i = 1; i <= n; ++i)
         for (int j = 1; j <= sqrt(i); ++j)
             if (i % j == 0) {
                 b[j] += i / j * a[i];
@@ -276,7 +280,7 @@ $$\forall i\in[1,k]\cap\N,~i\mid\overline{a_1a_2...a_i}$$
   下面不考虑$s=0$的情况
 
   设$A_i=\overline{a_1a_2...a_i}$, 则$A_i=10A_{i-1}+a_i$
-  
+
   设$A_i$满足条件, 令$a_i$取值构成的集合为$S_A(i)$, 不难证明
   $$|S_A(i)|\leqslant\left\lceil\frac{10}{i}\right\rceil$$
 
@@ -285,8 +289,9 @@ $$\forall i\in[1,k]\cap\N,~i\mid\overline{a_1a_2...a_i}$$
   容易验证满足条件的$A_i$有限
 
   </details>
+
 - 如果可以有前导零
-  
+
   情况稍微复杂一些, 但类似无前导零的情况
 
   首先我们注意到, 若$6\mid n$则一定有解($n\over6$个$0$即是一种情况)
@@ -299,7 +304,7 @@ $$\forall i\in[1,k]\cap\N,~i\mid\overline{a_1a_2...a_i}$$
 
   > 官方题解给的是一共有$20456$个数满足条件, 最长的数为$3608528850358400786036725$
 
-所以状态数不是很大, 直接DFS即可
+所以状态数不是很大, 直接 DFS 即可
 
 ### 代码参考
 
@@ -316,7 +321,7 @@ $$\forall i\in[1,k]\cap\N,~i\mid\overline{a_1a_2...a_i}$$
 using namespace std;
 using i128 = __int128_t;
 const int num_stick[10] = {6, 2, 5, 5, 4, 5, 6, 3, 7, 6};
- 
+
 int n;
 i128 max_ans;
 bool dfs(i128 ans = 0, int sum = 0, int dep = 0) {
@@ -330,7 +335,7 @@ bool dfs(i128 ans = 0, int sum = 0, int dep = 0) {
         if ((ans * 10 + i) % (dep + 1) == 0) f |= dfs(ans * 10 + i, sum + num_stick[i], dep + 1);
     return f;
 }
- 
+
 ostream& operator<<(ostream& os, i128 n) {
     if (n < 0) {
         os << '-';
@@ -340,7 +345,7 @@ ostream& operator<<(ostream& os, i128 n) {
     os << (int)(n % 10);
     return os;
 }
- 
+
 int main() {
     cin >> n;
     if (n > 139 || !dfs()) {
@@ -372,7 +377,7 @@ int main() {
 
 - 猛男做法
 
-  结合第二类Stirling数和排列数的定义不难推出答案为
+  结合第二类 Stirling 数和排列数的定义不难推出答案为
   $$\sum_{i=0}^n\sum_{j=0}^i{i\brace j}\binom{n}{i}\binom{m}{j}j!\bmod998244353$$
 
   又
@@ -565,7 +570,7 @@ int main() {
 
 ### 解题思路
 
-显然Floyd+二分, 需要注意不要去求$k^{d(s,t)}$, 会爆`int64_t`
+显然 Floyd+二分, 需要注意不要去求$k^{d(s,t)}$, 会爆`int64_t`
 
 ### 复杂度
 
@@ -656,7 +661,7 @@ int main() {
 
 ### 解题思路
 
-> 模数出锅还不修是真的np
+> 模数出锅还不修是真的 np
 
 ### 复杂度
 

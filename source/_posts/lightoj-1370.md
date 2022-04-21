@@ -1,5 +1,5 @@
 ---
-title: '题解 - [LightOJ 1370] Bi-shoe and Phi-shoe'
+title: "题解 - [LightOJ 1370] Bi-shoe and Phi-shoe"
 categories:
   - 程序设计
   - 题解
@@ -14,6 +14,7 @@ tags:
   - Euler函数
 date: 2020-07-25 00:39:08
 ---
+
 [题目链接](https://vjudge.net/problem/LightOJ-1341/origin)
 
 <!-- more -->
@@ -26,7 +27,7 @@ $$\sum_{i=1}^n(f_i)_{min}$$
 
 ## 解题思路
 
-根据Euler函数的性质, 我们可以很容易地推知: 对于$a_i$, 只要找不小于$a_i+1$的最小素数即可
+根据 Euler 函数的性质, 我们可以很容易地推知: 对于$a_i$, 只要找不小于$a_i+1$的最小素数即可
 
 ## 代码
 

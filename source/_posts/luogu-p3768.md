@@ -1,5 +1,5 @@
 ---
-title: '题解 - [Luogu P3768] 简单的数学题'
+title: "题解 - [Luogu P3768] 简单的数学题"
 categories:
   - 程序设计
   - 题解
@@ -59,17 +59,17 @@ $$\left(\sum_{i=1}^n\sum_{j=1}^n ij \gcd(i,j)\right) \bmod p$$
 
 ### 说明
 
-对于20%的数据, $n \leq 1000$
+对于 20%的数据, $n \leq 1000$
 
-对于30%的数据, $n \leq 5000$
+对于 30%的数据, $n \leq 5000$
 
-对于60%的数据, $n \leq 10^6$, 时限1s
+对于 60%的数据, $n \leq 10^6$, 时限 1s
 
-对于另外20%的数据, $n \leq 10^9$, 时限3s
+对于另外 20%的数据, $n \leq 10^9$, 时限 3s
 
-对于最后20%的数据, $n \leq 10^{10}$, 时限4s
+对于最后 20%的数据, $n \leq 10^{10}$, 时限 4s
 
-对于100%的数据, $5 \times 10^8 \leq p \leq 1.1 \times 10^9$ 且 $p$ 为质数
+对于 100%的数据, $5 \times 10^8 \leq p \leq 1.1 \times 10^9$ 且 $p$ 为质数
 
 ## 解题思路
 
@@ -87,10 +87,12 @@ $$
 
 令 $g(n)=n^2$, 有
 
-$$\begin{aligned}
+$$
+\begin{aligned}
  S(n)=g(1)S(n)&=\sum_{i=1}^n(f*g)(i)-\sum_{i=2}^ng(i)S\left(\left\lfloor\frac{n}{d}\right\rfloor\right)\\
   &=\left(\frac{n(n+1)}{2}\right)^2-\sum_{i=2}^ni^2S\left(\left\lfloor\frac{n}{d}\right\rfloor\right)
-\end{aligned}$$
+\end{aligned}
+$$
 
 ## 时间复杂度
 

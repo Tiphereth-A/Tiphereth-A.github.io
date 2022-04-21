@@ -1,5 +1,5 @@
 ---
-title: '题解 - [Codeforces Global Round 10](A - D & F)'
+title: "题解 - [Codeforces Global Round 10](A - D & F)"
 categories:
   - 程序设计
   - 题解
@@ -12,11 +12,13 @@ tags:
   - 模拟
 date: 2020-08-18 14:51:12
 ---
+
 [比赛链接](https://codeforces.com/contest/1392)
 
 贪心 + 数学赛, 海星
 
 <!-- more -->
+
 ## 题目概览
 
 | 题目 | 知识点     |
@@ -341,24 +343,26 @@ In the third test case, the array is already nondecreasing, so Omkar does $0$ op
 - 当$a$是整体是非下降的时候
 
   直接输出
+
 - 当$a$是整体是非上升的时候, 如
 
   ![](C-sol-1.png)
 
   直接填平就好
+
 - 其他情况, 如
   ![](C-sol-2.png)
 
   我们可以按如下步骤化为上一种情况
 
   1. 填平  
-    ![](C-sol-3.png)
-    得
-    ![](C-sol-4.png)
+     ![](C-sol-3.png)
+     得
+     ![](C-sol-4.png)
   1. 填平  
-    ![](C-sol-5.png)
-    得
-    ![](C-sol-6.png)
+     ![](C-sol-5.png)
+     得
+     ![](C-sol-6.png)
 
 ### 代码参考
 
@@ -407,7 +411,7 @@ Currently, each player is attacking either the player to their left or the playe
 
 Unfortunately, it might be that some players in this game are not following Bed Wars strategy correctly. Omkar is aware of whom each player is currently attacking, and he can talk to any amount of the $n$
 
-players in the game to make them instead attack another player  - i. e. if they are currently attacking the player to their left, Omkar can convince them to instead attack the player to their right; if they are currently attacking the player to their right, Omkar can convince them to instead attack the player to their left
+players in the game to make them instead attack another player - i. e. if they are currently attacking the player to their left, Omkar can convince them to instead attack the player to their right; if they are currently attacking the player to their right, Omkar can convince them to instead attack the player to their left
 
 Omkar would like all players to be acting logically. Calculate the minimum amount of players that Omkar needs to talk to so that after all players he talked to (if any) have changed which player they are attacking, all players are acting logically according to Bed Wars strategy
 
@@ -477,7 +481,7 @@ $n$个人站成一圈, 编号$0,1,2,...,n-1$, 第$(i+1)\bmod n$个人在第$i$�
 
 ### 解题思路
 
-当我看到这题的tag有 dp 和 string suffix structures 时我是震惊的
+当我看到这题的 tag 有 dp 和 string suffix structures 时我是震惊的
 
 其实我们只需让环中没有$3$个连续的`L`或`R`即可
 
@@ -601,7 +605,7 @@ In the sixth minute, nothing else can change so the landslide stops and our answ
 
 ### 解题思路
 
-> 比赛花1h写了堆shit还wa了, 菜 我 菜
+> 比赛花 1h 写了堆 shit 还 wa 了, 菜 我 菜
 
 设$S=\sum_{i=1}^n a_i$, 我们可以证明:
 

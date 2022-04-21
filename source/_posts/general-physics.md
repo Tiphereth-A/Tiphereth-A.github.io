@@ -22,21 +22,25 @@ date: 2021-01-23 20:20:40
   - $\bm{v}=v_i\bm{i}+v_j\bm{j}+v_k\bm{k}$
   - $\bm{a}=a_i\bm{i}+a_j\bm{j}+a_k\bm{k}$
 - 极坐标系
+
   - $\bm{\rho}=\rho\bm{e_{\rho}}$
   - $\bm{v}=\displaystyle{\mathrm{d}\rho\over\mathrm{d}t}\bm{e_{\rho}}+\rho{\mathrm{d}\theta\over\mathrm{d}t}\bm{e_{\theta}}=:v_{\rho}\bm{e_{\rho}}+v_{\theta}\bm{e_{\theta}}$
   - $\bm{a}=\displaystyle\left({\mathrm{d}^2\rho\over\mathrm{d}t^2}-\rho\left({\mathrm{d}\theta\over\mathrm{d}t}\right)^2\right)\bm{e_{\rho}}+\left(2{\mathrm{d}\rho\over\mathrm{d}t}{\mathrm{d}\theta\over\mathrm{d}t}+\rho{\mathrm{d}^2\theta\over\mathrm{d}t^2}\right)\bm{e_{\theta}}=:a_{\rho}\bm{e_{\rho}}+a_{\theta}\bm{e_{\theta}}$
 
-   定义 $\displaystyle\omega:={\mathrm{d}\theta\over\mathrm{d}t},~\beta:={\mathrm{d}^2\theta\over\mathrm{d}t^2}$
+  定义 $\displaystyle\omega:={\mathrm{d}\theta\over\mathrm{d}t},~\beta:={\mathrm{d}^2\theta\over\mathrm{d}t^2}$
 
-   则
+  则
+
   - $v_{\theta}=\rho\omega$
   - $a_{\rho}=\displaystyle{\mathrm{d}v_{\rho}\over\mathrm{d}t}-\rho\omega^2$
   - $a_{\theta}=2v_{\rho}\omega+\rho\displaystyle{\mathrm{d}\omega\over\mathrm{d}t}=2v_{\rho}\omega+\rho\beta$
+
 - 自然坐标系
+
   - $\bm{v}=v\bm{e_{\tau}}$
   - $\bm{a}=\displaystyle{\mathrm{d}v\over\mathrm{d}t}\bm{e_{\tau}}+v{\mathrm{d}\theta\over\mathrm{d}t}\bm{e_n}=:a_{\tau}\bm{e_{\tau}}+a_n\bm{e_n}$
 
-   设$\rho$为曲率半径, 则$a_n=\displaystyle\frac{v^2}{\rho}$
+  设$\rho$为曲率半径, 则$a_n=\displaystyle\frac{v^2}{\rho}$
 
 ### 万有引力
 
@@ -45,16 +49,18 @@ date: 2021-01-23 20:20:40
 
 #### <a href="#end-prob-1.1.1" id="prob-1.1.1">例题 - 1.1.1</a>
 
-证明Kepler行星第二定律
+证明 Kepler 行星第二定律
 
 ##### <a href="#prob-1.1.1" id="p-prob-1.1.1">解</a>
 
 $$\bm{F}=-\displaystyle G{m_{earth}m\over\rho^2}\bm{e_{\rho}}$$
 
-$$\bm{a}=-G\displaystyle{m_{earth}\over\rho^2}\bm{e_{\rho}}=a_{\rho}\bm{e_{\rho}}+a_{\theta}\bm{e_{\theta}}\implies\begin{cases}
+$$
+\bm{a}=-G\displaystyle{m_{earth}\over\rho^2}\bm{e_{\rho}}=a_{\rho}\bm{e_{\rho}}+a_{\theta}\bm{e_{\theta}}\implies\begin{cases}
   \displaystyle\left({\mathrm{d}^2\rho\over\mathrm{d}t^2}-\rho\left({\mathrm{d}\theta\over\mathrm{d}t}\right)^2\right)=-G\displaystyle{m_{earth}\over\rho^2}\\
   \displaystyle\left(2{\mathrm{d}\rho\over\mathrm{d}t}{\mathrm{d}\theta\over\mathrm{d}t}+\rho{\mathrm{d}^2\theta\over\mathrm{d}t^2}\right)=0
-\end{cases}$$
+\end{cases}
+$$
 
 又单位时间扫过面积为
 $$\displaystyle{\mathrm{d}S\over\mathrm{d}t}=\frac{1}{2}\rho^2{\mathrm{d}\theta\over\mathrm{d}t}$$
@@ -95,11 +101,13 @@ $$v-v_0=u\ln N$$
 
 ### 力矩
 
-$$\bm{M}:=\bm{r}\times\bm{F}=\begin{vmatrix}
+$$
+\bm{M}:=\bm{r}\times\bm{F}=\begin{vmatrix}
   \bm{i}&\bm{j}&\bm{k}\\
   x&y&z\\
   F_x&F_y&F_z
-\end{vmatrix}=:M_x\bm{i}+M_y\bm{j}+M_z\bm{k}$$
+\end{vmatrix}=:M_x\bm{i}+M_y\bm{j}+M_z\bm{k}
+$$
 
 #### 求分量
 
@@ -201,7 +209,7 @@ $$\mathrm{d}Q_V=v\mathrm{d}S$$
 
 平均流速: $\bar{v}=\displaystyle\frac{Q_V}{S}$
 
-### Bernouli方程
+### Bernouli 方程
 
 $$\frac{1}{2}\rho v^2+\rho gh+p=\texttt{const}$$
 
@@ -227,7 +235,7 @@ $$p_1+\frac{1}{2}\rho v_1^2+\rho gh_1=p_2+\frac{1}{2}\rho v_2^2+\rho gh_2+w$$
 - 减小$p_1-p_2$
 - 减小$h_1-h_2$
 
-#### Poiseuille定律
+#### Poiseuille 定律
 
 $$Q_V=\frac{\pi}{8\eta}\left(\frac{p_1-p_2}{l}\right)r^4$$
 
@@ -235,14 +243,14 @@ $$Q_V=\frac{\pi}{8\eta}\left(\frac{p_1-p_2}{l}\right)r^4$$
 
 水平圆管道: $w=\displaystyle\frac{8\eta l}{r^2}\bar{v}$
 
-#### 湍流和Reynolds数
+#### 湍流和 Reynolds 数
 
 - 湍流: $w\propto \bar{v}^2$
-- Reynolds数: $Re=\displaystyle\frac{\rho vr}{\eta}$
-- 临界Reynolds数$Re_c$ (**范围**)
+- Reynolds 数: $Re=\displaystyle\frac{\rho vr}{\eta}$
+- 临界 Reynolds 数$Re_c$ (**范围**)
 - 临界流速$v_c=\displaystyle\frac{Re_c\eta}{\rho r}$ (**范围**)
 
-#### Stokes粘性公式
+#### Stokes 粘性公式
 
 $$F=6\pi\eta rv$$
 
@@ -271,14 +279,16 @@ $$A=\sqrt{A_1^2+A_2^2-2A_1A_2\cos((\omega_2-\omega_1)t+\varphi_2-\varphi_1)}\in[
 #### 互相垂直
 
 - 频率相同:
-  
+
   $x=A\cos(\omega t+\alpha),~y=A\cos(\omega t+\beta)$
 
   $$\frac{x^2}{A^2}+\frac{y^2}{B^2}-\frac{2xy}{AB}\cos(\beta-\alpha)=\sin^2(\beta-\alpha)$$
 
   椭圆
+
   - $\beta-\alpha=0~or~\pi$: 两条相交线段
   - $\beta-\alpha=\pm\frac{\pi}{2}$: 以坐标轴为主轴的椭圆
+
 - 频率不同:
   - 有整数比: 李萨如图形
   - 无整数比: 准周期运动
@@ -295,7 +305,7 @@ $$\bar{\epsilon}_k=\frac{1}{2}m_0\bar{v^2}=\frac{3}{2}kT$$
 
 ## Ch 10. 电荷和静磁场
 
-### 电荷, Coulomb定律, 电场, 电场强度
+### 电荷, Coulomb 定律, 电场, 电场强度
 
 #### 电荷守恒定律 (P244)
 
@@ -330,9 +340,9 @@ $$\oint_S\bm{E}\cdot\mathrm{d}\bm{S}=\frac{1}{\epsilon_0}\int_V\rho\mathrm{d}V$$
 或
 $$\nabla\cdot\bm{E}=\frac{\rho}{\epsilon_0}$$
 
-证明: 由Stokes公式易得
+证明: 由 Stokes 公式易得
 
-> Gauss面内无电荷 $\impliedby\atop{\Longrightarrow}\llap{/\enspamathrm}$ Gauss面上的电场强度处处为零
+> Gauss 面内无电荷 $\impliedby\atop{\Longrightarrow}\llap{/\enspamathrm}$ Gauss 面上的电场强度处处为零
 
 #### 均匀带电球体在某一点处的电场强度 (P259)
 
@@ -395,7 +405,7 @@ $$E_{\theta}=\frac{1}{4\pi\epsilon_0}\frac{p\sin\theta}{r^3}$$
 - 场致发射显微镜
 - Van de Graaff 静电高压起电机
 - 避雷针
-- Coulomb平方反比律的精确验证
+- Coulomb 平方反比律的精确验证
 
 #### 两平行导体平板电荷面密度 (P274)
 
@@ -445,7 +455,7 @@ $$\oint_S\bm{P}\cdot\mathrm{d}\bm{S}=-\int_V\mathrm{d}q$$
 
 **当电容器两极板间电容率变为$\epsilon_r$倍时, 电容变大$\epsilon_r$倍**
 
-#### 电介质存在时的Gauss定理
+#### 电介质存在时的 Gauss 定理
 
 $$\oint_S\bm{D}\cdot\mathrm{d}\bm{S}=\int_V\rho\mathrm{d}V$$
 $$\nabla\cdot\bm{D}=\rho$$
@@ -481,7 +491,7 @@ $$\nabla\cdot\bm{D}=\rho$$
   单位: $\mathrm{A\cdot m^{-2}}$
 
 - $$I=\int_S\bm{j}\cdot\mathrm{d}\bm{S}$$
-  
+
   电流就是电流密度通量
 
 - 电流场
@@ -503,7 +513,7 @@ $$\nabla\cdot\bm{j}=-\frac{\partial\rho}{\partial t}$$
 $$\oint_S\bm{j}\cdot\mathrm{d}\bm{S}=0$$
 $$\nabla\cdot\bm{j}=0$$
 
-- Coulomb电场: 恒定电场与静电场
+- Coulomb 电场: 恒定电场与静电场
 
 - 电导 $G$
 
@@ -520,13 +530,13 @@ $$\rho:=\frac{E}{j}$$
 
 - 电导率 $\sigma$
 
-#### Ohm定律的微分形式
+#### Ohm 定律的微分形式
 
 $$\bm{j}=\sigma\bm{E}$$
 
 - 在变化的电流场中依然成立
 
-### Biot-Savart定律
+### Biot-Savart 定律
 
 $$\mathrm{d}\bm{B}=\frac{\mu_0}{4\pi}{I\mathrm{d}\bm{l}\times\bm{r}\over r^3}$$
 
@@ -550,14 +560,14 @@ $$\bm{B}=\frac{\mu_0}{4\pi}{q\bm{v}\times\bm{r}\over r^3}=\mu_0\epsilon_0\bm{v}\
 
   $\bm{e}_n$指向与$I$满足**右螺旋关系**
 
-### 磁场的Gauss定理和Ampère环路定理
+### 磁场的 Gauss 定理和 Ampère 环路定理
 
-#### 恒定电流磁场的Gauss定理
+#### 恒定电流磁场的 Gauss 定理
 
 $$\oint_S\bm{B}\cdot\mathrm{d}\bm{S}=0$$
 $$\nabla\cdot\bm{B}=0$$
 
-#### Ampère环路定理
+#### Ampère 环路定理
 
 $$\oint_L\bm{B}\cdot\mathrm{d}\bm{l}=\bm{\mu}_0\sum_{i}I_i$$
 积分方向与电流方向满足右螺旋时取正值, 满足左螺旋时取负值
@@ -585,7 +595,7 @@ $$B=\mu_0nI$$
 
 ### 磁场对电流的作用
 
-#### Ampère定律
+#### Ampère 定律
 
 $$\mathrm{d}\bm{F}=I\mathrm{d}\bm{l}\times\bm{B}$$
 $$\bm{F}=\int_LI\mathrm{d}\bm{l}\times\bm{B}$$
@@ -616,9 +626,9 @@ $\alpha:=\lang\bm{B},\bm{m}\rang$
 ### 带电粒子在磁场中的运动
 
 - 磁聚焦
-- Hall效应
-  
-  Hall系数 $K_H=\frac{1}{nq}$
+- Hall 效应
+
+  Hall 系数 $K_H=\frac{1}{nq}$
 
 ### 磁介质的磁化
 
@@ -630,15 +640,16 @@ $\alpha:=\lang\bm{B},\bm{m}\rang$
 
 - 磁化
 - 磁化强度: 单位体积内分子磁矩矢量和
-  
+
   $$\bm{M}:={\sum\bm{m}\over\Delta\tau}$$
+
 - 均匀磁化
 
 #### 磁化电流
 
 $i'$
 
-  螺线管内部:
+螺线管内部:
 
 - $$M=i'$$
 - $$\bm{B}=\bm{B}_0+\mu_0\bm{M}$$
@@ -648,10 +659,10 @@ $i'$
 $$\oint_L\bm{M}\cdot\mathrm{d}\bm{l}=\sum_{\text{In}~L}I'$$
 
 - 介质表面: $\bm{M}\times\bm{e}_n=\bm{i}'$
-  
+
   介质表面磁化电流密度只与磁化强度沿表面的切向分量有关, 而与法向分量无关
 
-#### 有磁介质的Ampère环路定理
+#### 有磁介质的 Ampère 环路定理
 
 - 磁场强度
   $$\bm{H}:={\bm{B}\over\mu_0}-\bm{M}$$
@@ -661,12 +672,13 @@ $$\oint_L\bm{H}\cdot\mathrm{d}\bm{l}=\int_V\bm{j}_0\cdot\mathrm{d}\bm{S}$$
 $$\nabla\times\bm{H}=\bm{j}_0$$
 
 - 对于各向同性的顺磁质和抗磁质
+
   - 磁化率$\chi_m$
     $$\bm{M}=\chi_m\bm{H}$$
   - 相对磁导率$\mu_r:=1+\chi_m$
     $$\bm{B}=\mu_0\mu_r\bm{H}$$
   - 绝对磁导率$\mu:=\mu_0\mu_r$
-  
+
   - 顺磁质: $\chi_m>0,\mu_r\gtrapprox 1$
   - 铁磁质: $\chi_m,\mu_r$均很大, 且是$\bm{M}$的非单值函数
   - 抗磁质: $\chi_m<0,\mu_r\lessapprox 1$
@@ -679,20 +691,20 @@ $$\nabla\times\bm{H}=\bm{j}_0$$
 
 #### 对比
 
-|                | 电                      | 公式                                                                 | 磁                      | 公式                                                                   |
-| -------------- | ----------------------- | -------------------------------------------------------------------- | ----------------------- | ---------------------------------------------------------------------- |
+|                | 电                      | 公式                                                                 | 磁                      | 公式                                                                       |
+| -------------- | ----------------------- | -------------------------------------------------------------------- | ----------------------- | -------------------------------------------------------------------------- |
 | 物理量         | 极化强度 $\bm{P}$       |                                                                      | 磁化强度 $\bm{M}$       |
-|                |                         | $\displaystyle\bm{P}:={\sum\bm{p}\over\Delta\tau}$                   |                         | $\displaystyle\bm{M}:={\sum\bm{m}\over\Delta\tau}$                     |
-|                |                         | $\bm{P}\cdot\bm{e}_n=\sigma'$                                        |                         | $\bm{M}\times\bm{e}_n=\bm{i}'$                                         |
+|                |                         | $\displaystyle\bm{P}:={\sum\bm{p}\over\Delta\tau}$                   |                         | $\displaystyle\bm{M}:={\sum\bm{m}\over\Delta\tau}$                         |
+|                |                         | $\bm{P}\cdot\bm{e}_n=\sigma'$                                        |                         | $\bm{M}\times\bm{e}_n=\bm{i}'$                                             |
 |                |                         | $\displaystyle\oint_S\bm{P}\cdot\mathrm{d}\bm{S}=-\int_V\mathrm{d}q$ |                         | $\displaystyle\oint_L\bm{M}\cdot\mathrm{d}\bm{l}=\int_V\bm{j}'\mathrm{d}V$ |
 |                | 电位移 $\bm{D}$         |                                                                      | 磁场强度 $\bm{H}$       |
-|                |                         | $\bm{D}:=\epsilon_0\bm{E}+\bm{P}$                                    |                         | $\bm{H}:={\bm{B}\over\mu_0}-\bm{M}$                                    |
+|                |                         | $\bm{D}:=\epsilon_0\bm{E}+\bm{P}$                                    |                         | $\bm{H}:={\bm{B}\over\mu_0}-\bm{M}$                                        |
 |                | 极化率$\chi_e$          |                                                                      | 磁化率$\chi_m$          |
 |                | 相对电容率 $\epsilon_r$ |                                                                      | 相对磁导率 $\mu_r$      |
-|                |                         | $\epsilon_r:=1+\chi_e$                                               |                         | $\mu_r:=1+\chi_m$                                                      |
+|                |                         | $\epsilon_r:=1+\chi_e$                                               |                         | $\mu_r:=1+\chi_m$                                                          |
 |                | 绝对电容率 $\epsilon$   |                                                                      | 绝对磁导率 $\mu$        |
-|                |                         | $\epsilon:=\epsilon_0\epsilon_r$                                     |                         | $\mu:=\mu_0\mu_r$                                                      |
-| 各向同性情况下 |                         | $\bm{P}=\chi_e\epsilon_0\bm{E}$                                      |                         | $\bm{M}=\chi_m\bm{H}$                                                  |
+|                |                         | $\epsilon:=\epsilon_0\epsilon_r$                                     |                         | $\mu:=\mu_0\mu_r$                                                          |
+| 各向同性情况下 |                         | $\bm{P}=\chi_e\epsilon_0\bm{E}$                                      |                         | $\bm{M}=\chi_m\bm{H}$                                                      |
 | 边界条件       | $\bm{D}$ 的法向分量不变 |                                                                      | $\bm{B}$ 的法向分量不变 |
 |                | $\bm{E}$ 的切向分量不变 |                                                                      | $\bm{H}$ 的切向分量不变 |
 
@@ -705,17 +717,18 @@ $$\nabla\times\bm{H}=\bm{j}_0$$
   - 外加磁场较小时
   - 外加磁场较大时
 - 磁滞现象
+
   - 饱和磁化强度$M_s$
   - 剩余磁化强度$M_r$
   - 矫顽力$H_c$
   - 磁滞回线
-  
+
   - 软磁材料
   - 硬磁材料
   - 矩磁材料
   - 微波磁材料
 
-## Ch 12. 电磁感应和Maxwell电磁理论
+## Ch 12. 电磁感应和 Maxwell 电磁理论
 
 ### 电磁感应及其基本规律
 
@@ -728,13 +741,14 @@ $$\nabla\times\bm{H}=\bm{j}_0$$
   - 闭合导体
     $\epsilon_i=\oint_L(\bm{v}\times\bm{B})\mathrm{d}\bm{l}$
 - 感生电动势
+
   - 不闭合导体
     $\epsilon_i=\int_L\bm{E}_W\mathrm{d}\bm{l}$
   - 闭合导体
     $\epsilon_i=\oint_L\bm{E}_W\mathrm{d}\bm{l}$
 
 - 全电场 $\bm{E}=\bm{E}_C+\bm{E}_W$
-  
+
   $$\oint_L\bm{E}\cdot\mathrm{d}\bm{l}=-\int_S{\partial\bm{B}\over\partial t}\cdot\mathrm{d}\bm{S}$$
   $$\nabla\times\bm{E}=-{\partial\bm{B}\over\partial t}$$
 
@@ -768,7 +782,6 @@ $$\Phi=LI$$
   $$\epsilon=-{\mathrm{d}\over\mathrm{d}t}(LI)$$
   线圈的**形状**, **大小**保持不变, 且不存在**铁磁质**时
   $$\epsilon=-L{\mathrm{d}I\over\mathrm{d}t}$$
-  
 - 单位: $\mathrm{H}$, $1\mathrm{ H}=1\mathrm{ Wb\cdot A^{-1}}=1\mathrm{ V\cdot s\cdot A^{-1}}$
 
 - 自感电弧
@@ -827,15 +840,15 @@ $L_1,L_2,M$
 
 - 零电阻性
   - 不存在随时间变化的磁场 ($\displaystyle{\partial\bm{B}\over\partial t}=-\nabla\times\bm{E}=0$)
-- 完全抗磁性 (Meissner效应)
+- 完全抗磁性 (Meissner 效应)
 
 > 完全抗磁性与零电阻性是超导体两种**独立**的基本性质
 
 - 同位素效应 $T\propto A_r^{-1/2}$
-  
+
   电子与晶格之间的相互作用是超导现象中的重要因素
 
-### Maxwell电磁理论
+### Maxwell 电磁理论
 
 #### 位移电流
 
@@ -843,17 +856,17 @@ $$\bm{j}_d:={\partial\bm{D}\over\partial t}=\epsilon{\partial\bm{E}\over\partial
 
 - 全电流密度 $\bm{j}:=\bm{j}_0+\bm{j}_d$
 
-#### Maxwell方程组
+#### Maxwell 方程组
 
 适用于恒静和变化的电磁场
 
-- Gauss定理
+- Gauss 定理
   $$\oint_S\bm{D}\cdot\mathrm{d}\bm{S}=\int_V\rho_0\mathrm{d}V$$
 - 电场环路定理
   $$\oint_L\bm{E}\cdot\mathrm{d}\bm{l}=-\int_S{\partial\bm{B}\over\partial t}\cdot\mathrm{d}\bm{S}$$
-- 磁场的Gauss定理
+- 磁场的 Gauss 定理
   $$\oint_S\bm{B}\cdot\mathrm{d}S=0$$
-- Ampère环路定理
+- Ampère 环路定理
   $$\oint_L\bm{H}\cdot\mathrm{d}\bm{l}=\int_S\left(\bm{j}_0+{\partial\bm{D}\over\partial t}\right)\cdot\mathrm{d}\bm{S}$$
 
 ##### 积分形式
@@ -892,41 +905,48 @@ $$
 ##### 对真空中和各向同性的介质
 
 - 在遇到电磁场与物质的相互作用时需补充
-  $$\begin{cases}
+  $$
+  \begin{cases}
     \bm{D}&=\epsilon_0\epsilon_r\bm{E}\\
     \bm{B}&=\mu_0\mu_r\bm{H}\\
     \bm{j}_0&=\sigma\bm{E}
-  \end{cases}$$
+  \end{cases}
+  $$
 - 存在非静电性电场$K$时, $\bm{j}_0=\sigma(\bm{E}+\bm{K})$
 
 ### 电磁波的产生和传播
 
-#### LC振荡电路
+#### LC 振荡电路
 
 $$f={1\over2\pi\sqrt{LC}}$$
 
 - 发射电磁波的条件
   - 频率高
   - 电路开放
-  
+
 #### 偶极振子
 
 - 平均能流密度 $\bar{S}=\frac{1}{2}E_0H_0$
+
   - 性质:
 
     - 正比于频率的四次方
     - 反比于离开振子中心的平方
     - 正比于$\sin^2\theta$ ($\theta$为传播方向与极轴的夹角), 具有强烈的方向性, 垂直于轴线方向的辐射最强, 沿轴线方向的辐射为$0$
+
 - 瞬时能流密度 $\bm{S}=\bm{E}\times\bm{H}$
 
 ## Ch 13. 电路和磁路
-### Kirchhoff定律
-#### Kirchhoff第一定律
+
+### Kirchhoff 定律
+
+#### Kirchhoff 第一定律
 
 汇集于同一结点的各支路电流代数和为$0$
 
 - 约定流出结点的电流为正, 流入结点的电流为负
-#### Kirchhoff第二定律
+
+#### Kirchhoff 第二定律
 
 在一个回路中, 电阻电势降代数和等于电源电动势代数和
 
@@ -935,7 +955,9 @@ $$f={1\over2\pi\sqrt{LC}}$$
   - 电源电动势沿绕行方向时为正
 
 ### 交流电和交流电路的基本概念
+
 #### 物理量
+
 ##### 阻抗和相位差
 
 $$Z:=\frac{U_0}{I_0}=\frac{U}{I}$$
@@ -985,6 +1007,7 @@ $$\tilde{Z}_R=R$$
 #### 电感
 
 $$\tilde{Z}_L=j\omega L$$
+
 #### 电容
 
 $$\tilde{Z}_C=\frac{1}{j\omega C}$$
@@ -993,22 +1016,25 @@ $$\tilde{Z}_C=\frac{1}{j\omega C}$$
 
 $$\tilde{U}=\sum_i\tilde{U_i}$$
 $$\tilde{Z}=\sum_i\tilde{Z_i}$$
+
 #### 并联电路
 
 $$\tilde{I}=\sum_i\tilde{I_i}$$
 $${1\over\tilde{Z}}=\sum_i{1\over\tilde{Z_i}}$$
 
-#### Kirchhoff方程组
+#### Kirchhoff 方程组
 
 $$\sum\pm\tilde{I}=0$$
 $$\sum\pm\tilde{I}\tilde{Z}=\sum\pm\tilde{E}$$
 
 #### RLC 串联电路
+
 $$\tilde{Z}=R+j\left(\omega L-\frac{1}{\omega C}\right)$$
 
 - $\omega<{1\over\sqrt{LC}}$: 电压落后电流, 表现为容抗性
 
 ### 交流电的功率
+
 #### 瞬时功率
 
 $$p(t)=u(t)i(t)=\frac{1}{2}U_0I_0(\cos\varphi+\cos(2\omega t-\varphi))=UI(\cos\varphi+\cos(2\omega t-\varphi))$$
@@ -1020,6 +1046,7 @@ $$p(t)=u(t)i(t)=\frac{1}{2}U_0I_0(\cos\varphi+\cos(2\omega t-\varphi))=UI(\cos\v
 $$P=\frac{1}{T}\int_0^Tp(t)\mathrm{d}t=UI\cos\varphi$$
 
 - $\cos\varphi$: 功率因数, 有功功率在视在功率中所占比例
+
   - 纯电阻电路: $P=UI$
   - 纯电感/纯电容电路: $P=0$, 正值功率等于负值功率
 
@@ -1043,11 +1070,13 @@ $$P=\frac{1}{T}\int_0^Tp(t)\mathrm{d}t=UI\cos\varphi$$
 $$S^2=P^2+P_q^2$$
 
 ### 磁路和磁路定律
+
 #### 磁介质分界面上磁感应线的折射
 
 $$\frac{\tan i}{\tan r}={\mu_{r1}\over\mu_{r2}}$$
 
 #### 磁路
+
 - 漏磁
 
 - 串联磁路
@@ -1061,14 +1090,16 @@ $$\frac{\tan i}{\tan r}={\mu_{r1}\over\mu_{r2}}$$
   - $NI_0$: 磁通势, $\epsilon_m$
   - $\frac{l_i}{\mu_iS_i}$: 磁阻, $R_{mi}$
   - $\Phi R_{mi}$: 磁势降落
-  
+
   $$\epsilon_n=\Phi\sum_iR_{mi}$$
   闭合磁路磁通势等于各段磁路上的磁势降落之和
+
 - 有效磁导率 (与相同空心螺绕环的比值) $\mu_e:=\frac{\Phi}{\Phi_0}$
 
 - 开气隙使磁导率大幅下降, 但能极大改善器件的温度稳定性
 
 ## Ch 14. 光学
+
 ### 光波及其相干条件
 
 - 波速$u={1\over\sqrt{\epsilon\mu}}$
@@ -1082,65 +1113,84 @@ $$\frac{\tan i}{\tan r}={\mu_{r1}\over\mu_{r2}}$$
 - 沿$r$方向传播的平面电磁波 $\bm{E}=\bm{E}_0\cos(\omega t-\bm{k}\cdot\bm{r}+\varphi_0)$
 
 #### 光程
+
 $l=nx$
 
 - 等光程原理
 
 #### 干涉
+
 - 频率相同
 - 存在互相平行的振动分量
 - 具有固定的相位关系
 
 - 干涉加强 光程差为半波长偶数倍
 - 干涉减弱 光程差为半波长奇数倍
+
 #### 获得相干波的方法
+
 ##### 分波前法
+
 - 杨氏双缝干涉
+
   - 光程差$\Delta=\frac{2a}{D}x$
   - 亮条纹条件 $2\frac{r_2-r_1}{\lambda}=2k$ (光程差为半波长偶数倍)
 
     $x=\frac{D}{2a}2k\frac{\lambda}{2}$
+
   - 暗条纹条件 $2\frac{r_2-r_1}{\lambda}=2k+1$ (光程差为半波长奇数倍)
 
     $x=\frac{D}{2a}(2k+1)\frac{\lambda}{2}$
 
 ##### 分振幅法
+
 - 薄膜干涉
+
   - 等倾干涉
     - 光程差 $\Delta=2ne\cos r+\frac{\lambda}{2}$
   - 等厚干涉
+
     - 光程差 $\Delta=2ne+\frac{\lambda}{2}$
 
     - 空气劈尖
       - 厚度 $h=\frac{\lambda}{2l}L$, $l$ 相邻条纹间距
-    - Newton环
+    - Newton 环
       - 气隙厚度 $e=\frac{r^2}{2R}$
       - 暗环半径 $r=\sqrt{kR\lambda}$
-- Michelson干涉
+
+- Michelson 干涉
   - 干涉环移过$m$个条纹, 平移距离 $d=m\frac{\lambda}{2}$
+
 ##### 分振动面法
+
 - 偏振光干涉
 
 ### 衍射
-#### Fresnel衍射
-#### Fraunhofer衍射
+
+#### Fresnel 衍射
+
+#### Fraunhofer 衍射
+
 - 单缝
+
   - 光强$I_P=I_0(\frac{\sin\alpha}{\alpha})^2$
   - $\alpha=\frac{\delta}{2}=\frac{\pi a}{\lambda}\sin\varphi$
-  
+
   - $\alpha=0$: 主极大
   - $\alpha=k\pi$: 暗条纹
     - 第一暗条纹的衍射角$\varphi_0=\arcsin\frac{\lambda}{a}\approx\frac{\lambda}{a}$
   - 次极大 $A_p=A_0\frac{\sin\alpha}{\alpha}$
-  
+
   - 明纹条件 ${\mathrm{d}A_p\over\mathrm{d}\alpha}=0\implies\tan\alpha=\alpha$
+
 - 圆孔
   - 中央亮斑半角宽度 $1.22\frac{\lambda}{D}$, 半径 $1.22\frac{\lambda f}{D}$
-  - Rayleigh判据
+  - Rayleigh 判据
     - 最小分辨角 $\theta_0=1.22\frac{\lambda}{D}$
     - 光学系统分辨率 $1\over\theta_0$
 
 ---
 
 ## 主要参考资料
+
 - 物理学 (第五版). 刘克哲, 张承琚, 刘建强, 宋洪晓. 2018.8

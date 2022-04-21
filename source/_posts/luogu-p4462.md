@@ -1,5 +1,5 @@
 ---
-title: '题解 - [CQOI2018]异或序列'
+title: "题解 - [CQOI2018]异或序列"
 categories:
   - 程序设计
   - 题解
@@ -38,21 +38,23 @@ date: 2020-01-27 15:40:12
 
 1. $\Rightarrow O(n^2m)$: 前缀和 (计算异或和: $O(n)\Rightarrow O(1)$)
 
-    令
-    $$s_i:=\bigoplus_{i=1}^x a_i$$
+   令
+   $$s_i:=\bigoplus_{i=1}^x a_i$$
 
-    则
-    $$\bigoplus_{i=l}^r a_i=s_{l-1}\oplus s_r$$
+   则
+   $$\bigoplus_{i=l}^r a_i=s_{l-1}\oplus s_r$$
 
 1. $\Rightarrow O(nm)$: 莫队
-    - 转换思路
 
-        注意到
-        $$a\oplus b=c\iff a\oplus c=b$$
+   - 转换思路
 
-        用一个桶``cnt[x]``记录当前区间内``s[i]=x``的个数
+     注意到
+     $$a\oplus b=c\iff a\oplus c=b$$
 
-        则当前区间的结果为$\displaystyle\sum_{i=l}^r\mathrm{cnt}_{s_i\oplus k}$
+     用一个桶`cnt[x]`记录当前区间内`s[i]=x`的个数
+
+     则当前区间的结果为$\displaystyle\sum_{i=l}^r\mathrm{cnt}_{s_i\oplus k}$
+
 1. $\Rightarrow O(n\min\{m,\sqrt n\})$: 奇偶化排序优化
 
 ## 代码

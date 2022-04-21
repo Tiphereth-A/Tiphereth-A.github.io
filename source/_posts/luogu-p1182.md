@@ -1,5 +1,5 @@
 ---
-title: '题解 - [Luogu P1182] 数列分段 Section II'
+title: "题解 - [Luogu P1182] 数列分段 Section II"
 categories:
   - 程序设计
   - 题解
@@ -11,6 +11,7 @@ tags:
   - 二分答案
 date: 2020-01-15 09:47:41
 ---
+
 [题目链接](https://www.luogu.com.cn/problem/P1182)
 
 <!-- more -->
@@ -83,7 +84,7 @@ $$[4][2\ 4][5\ 1]$$
 查询区间:
 $$\displaystyle\bigg[\max_{1\leqslant i\leqslant n}\{A_i\},\sum_{i=1}^n A_i\bigg]$$
 
-另外, 注意左端点, 如果令其为 0 则会WA一个点
+另外, 注意左端点, 如果令其为 0 则会 WA 一个点
 
 ## 时间复杂度
 

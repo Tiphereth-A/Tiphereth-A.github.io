@@ -18,6 +18,7 @@ tags:
   - 思维
 date: 2020-12-12 21:24:04
 ---
+
 [比赛链接](https://ac.nowcoder.com/acm/contest/9731)
 
 <!-- more -->
@@ -26,7 +27,7 @@ date: 2020-12-12 21:24:04
 
 | 题号 | 标题       | 做法                |
 | ---- | ---------- | ------------------- |
-| A    | Game       | Euler函数           |
+| A    | Game       | Euler 函数          |
 | B    | Strawberry | 贪心                |
 | C    | Circle     | 均分纸牌 / 货仓选址 |
 
@@ -43,6 +44,7 @@ date: 2020-12-12 21:24:04
 ### 解题思路
 
 举例说明, 例如$n=5$, 列出所有可能情况并去重
+
 $$
 \def\c#1{\color{cyan}{ #1}}
 \def\m#1{\color{magenta}{ #1}}
@@ -62,18 +64,22 @@ $$
   \m{(2,3)}&\m{(4,5)}\\
   \c{(2,4)}&\m{(3,5)}\\
   \m{(2,5)}&\m{(3,4)}\\
-\end{matrix}$$
+\end{matrix}
+$$
 
 其中每一行即为一种取法, <font color="magenta">品红色</font>的数对为互质的, <font color="cyan">青色</font>的数对为不互质的
 
 答案即为<font color="magenta">品红色</font>数对个数除以行数
 
 即
-$$\begin{aligned}
+
+$$
+\begin{aligned}
   &{ {(n-2)!\over 2^{\lfloor\frac{n}{2}-1\rfloor}\lfloor\frac{n}{2}-1\rfloor!}\sum_{i=1}^n\varphi(n)\over{n!\over 2^{\lfloor\frac{n}{2}\rfloor}\lfloor\frac{n}{2}\rfloor!}}\\
   =~&{\lfloor\frac{n}{2}\rfloor\sum_{i=1}^n\varphi(n)\over \binom{n}{2}}\\
   =~&{\sum_{i=1}^n\varphi(n)\over n-[2\mid n]}
-\end{aligned}$$
+\end{aligned}
+$$
 
 ### 代码参考
 
@@ -155,12 +161,13 @@ $$\max_{\min\{0,k-mn\}\leqslant t\leqslant k}\sum_{i=0}^{k-t}(t+i)$$
 
 - 网格变为长度为$n$的线段 (在$\N^+$下)
 - 初始位置为$x$, 左端点为$1$, 右端点为$n$
-  
+
   则初始位置到左右端点的距离分别为$x-1,~n-x$
 
   令 $l=\min\{x-1,n-x\}$, $L=\max\{x-1,n-x\}$
 
   则 $l\leqslant\lfloor\frac{n-1}{2}\rfloor$, $L=n-l-1\geqslant\lceil\frac{n-1}{2}\rceil$
+
 - 每天只能选择向左走一格, 向右走一格, 不动
 
 此时的最优走法为: 先向短边方向走$t_1$天 $(0\leqslant t_1\leqslant\max\{0,\min\{l,\lfloor\frac{k-L}{2}\rfloor\}\})$, 然后等$t_2$天 $(0\leqslant t_2\leqslant\max\{k-2l-L,[k>L][2\nmid k-L]\})$, 最后反方向走到端点
@@ -168,17 +175,23 @@ $$\max_{\min\{0,k-mn\}\leqslant t\leqslant k}\sum_{i=0}^{k-t}(t+i)$$
 ![](B-4.svg)
 
 该走法对应的最大积分为
-$$\begin{cases}
+
+$$
+\begin{cases}
   \max_{t_1,t_2}\left(\sum_{i=1}^{t_1}i+t_1t_2+2\sum_{i=1}^{t_1-1}i+\sum_{i=1}^{k-2t_1-t_2}(2t_1+t_2+i)\right),&k>L\\
   \sum_{i=0}^k(k+i),&k\leqslant L
 \end{cases}
 $$
 
 当
-$$\begin{aligned}
+
+$$
+\begin{aligned}
   t_1&=\max\left\{0,\min\left\{l,\left\lfloor\frac{k-L}{2}\right\rfloor\right\}\right\}\\
   t_2&=\max\{k-2l-L,[k>L][2\nmid k-L]\}
-\end{aligned}$$
+\end{aligned}
+$$
+
 时取得最大值
 
 ### 代码参考

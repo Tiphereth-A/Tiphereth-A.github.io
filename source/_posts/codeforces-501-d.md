@@ -1,5 +1,5 @@
 ---
-title: '题解 - [CodeForces 501 D] Misha and Permutations Summation'
+title: "题解 - [CodeForces 501 D] Misha and Permutations Summation"
 categories:
   - 程序设计
   - 题解
@@ -13,6 +13,7 @@ tags:
   - 逆Cantor展开
 date: 2020-11-15 00:21:06
 ---
+
 [题目链接](https://codeforces.com/problemset/problem/501/D)
 
 <!-- more -->
@@ -110,13 +111,13 @@ In the third sample $\texttt{Ord}(p) = 3$ and $\texttt{Ord}(q) = 5$, so the answ
 
 ## 解题思路
 
-显然是Cantor展开和逆Cantor展开的模板题
+显然是 Cantor 展开和逆 Cantor 展开的模板题
 
 但这题的$n$是 `2e5` 的, 我们肯定不能直接套板子
 
 注意到$d(A)=P_Af_n^T$, 对于给出的$p,q$, 我们可以考虑直接将$P_p,P_q$相加并还原即可
 
-另外注意在CF的评测环境是32位的, 即`std::size_t`是`unsigned int`而不是`uint64_t`
+另外注意在 CF 的评测环境是 32 位的, 即`std::size_t`是`unsigned int`而不是`uint64_t`
 
 ## 复杂度
 
@@ -131,7 +132,7 @@ $O(n\log n)$
 /*
  * @Author: Tifa
  * @LastEditTime: 2020-11-15 01:07:29
- * @Description: 
+ * @Description:
  */
 
 #include <bits/stdc++.h>

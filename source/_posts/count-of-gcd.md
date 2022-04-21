@@ -28,13 +28,15 @@ $$\sum_{\nu\in\prod_{i=1}^m[1,n_i]_\N}f(\nu)g(\gcd\nu)$$
 
 令 $n_0=\min_{i=1}^mn_i$, $g_n=\gcd_{i=1}^mn_i$, 则我们可以按如下方法处理
 
-$$\begin{aligned}
+$$
+\begin{aligned}
   \sum_{\nu\in\prod_{i=1}^m[1,n_i]_\N}f(\nu)g(\gcd\nu)&=\sum_{d=1}^{n_0}g(d)\sum_{\nu\in\prod_{i=1}^m[1,n_i]_\N}f[\nu](\gcd\nu=d)&(1)\\
   &=\sum_{d=1}^{n_0}g(d)\sum_{\nu\in\prod_{i=1}^m[1,\lfloor\frac{n_i}{d}\rfloor]_\N}f[d\nu](\gcd\nu=1)&(2)\\
   &=\sum_{d=1}^{n_0}g(d)\sum_{\nu\in\prod_{i=1}^m[1,\lfloor\frac{n_i}{d}\rfloor]_\N}f(d\nu)\sum_{e\mid\gcd\nu}\mu(e)&(3)\\
   &=\sum_{d=1}^{n_0}g(d)\sum_{e=1}^{ \frac{g_n}{d}}\mu(e)\sum_{\nu\in\prod_{i=1}^m[1,\lfloor\frac{n_i}{de}\rfloor]_\N}f(de\nu)&(4)\\
   &\xlongequal[D=de]{F(x)=\sum_{\nu\in\prod_{i=1}^m[1,\lfloor\frac{n_i}{x}\rfloor]_\N}f(x\nu)}\sum_{D=1}^{n_0}F(D)(g*\mu)(D)&(5)\\
-\end{aligned}$$
+\end{aligned}
+$$
 
 其中
 
@@ -73,14 +75,16 @@ $$\sum_{\nu\in\prod_{i=1}^m[1,n_i]_\N}[\gcd\nu\in K=\{\def\enum#1{k_{ #1}}\enum{
 
 令 $n_0=\min_{i=1}^mn_i$, $g_n=\gcd_{i=1}^mn_i$, 则我们可以按如下方法处理
 
-$$\begin{aligned}
+$$
+\begin{aligned}
   \sum_{\nu\in\prod_{i=1}^m[1,n_i]_\N}[\gcd\nu\in K]&=\sum_{k\in K}\sum_{\nu\in\prod_{i=1}^m[1,n_i]_\N}[\gcd\nu=k]\\
   &=\sum_{D=1}^{n_0}\left(\prod_{i=1}^m\left\lfloor\frac{n_i}{D}\right\rfloor\right)\sum_{k\mid D;~k\in K}\mu\left(\frac{D}{k}\right)
-\end{aligned}$$
+\end{aligned}
+$$
 
 > 具体推导看上一节即可, 可看作 $f(x)=1$, $g(x)=\epsilon(x)$ 的特例
 
 ### 例题
 
 - 洛谷 [P2522 [HAOI2011]Problem b](https://www.luogu.com.cn/problem/P2522)
-- 洛谷 [P2257 YY的GCD](https://www.luogu.com.cn/problem/P2257)
+- 洛谷 [P2257 YY 的 GCD](https://www.luogu.com.cn/problem/P2257)

@@ -1,5 +1,5 @@
 ---
-title: '题解 - [POJ 1381 等] Secret Code'
+title: "题解 - [POJ 1381 等] Secret Code"
 categories:
   - 程序设计
   - 题解
@@ -13,6 +13,7 @@ tags:
   - Gauss整数
 date: 2020-07-27 22:58:52
 ---
+
 题目链接
 
 - [POJ 1381](https://vjudge.net/problem/POJ-1381/origin)
@@ -70,7 +71,7 @@ Central Europe 1999
 
 ## 题意简述
 
-给出Gauss整数$X$和$B$, 求是否存在一组数$\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n}$满足
+给出 Gauss 整数$X$和$B$, 求是否存在一组数$\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n}$满足
 
 - $0 \leqslant ai < |B|, i=0,1,...,n$
 - $X = a_0 + a_1B + a_2B^2 + ...+ a_nB^n$

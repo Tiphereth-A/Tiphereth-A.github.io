@@ -1,5 +1,5 @@
 ---
-title: '题解 - [POJ 2568 等] Decode the Tree'
+title: "题解 - [POJ 2568 等] Decode the Tree"
 categories:
   - 程序设计
   - 题解
@@ -14,6 +14,7 @@ tags:
   - Prufer序列
 date: 2020-07-30 22:03:55
 ---
+
 题目链接
 
 - [POJ 2568](https://vjudge.net/problem/POJ-2568/origin)
@@ -75,13 +76,13 @@ Ulm Local 2001
 
 ## 题意简述
 
-给出一个无根树对应的Prufer序列, 随意令一个结点为根, 按先序遍历输出该树
+给出一个无根树对应的 Prufer 序列, 随意令一个结点为根, 按先序遍历输出该树
 
 ## 解题思路
 
 板子题, 没啥好说的
 
-具体参见 [学习笔记 - Prufer序列](../prufer-sequence)
+具体参见 [学习笔记 - Prufer 序列](../prufer-sequence)
 
 ## 代码参考
 

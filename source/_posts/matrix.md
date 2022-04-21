@@ -25,7 +25,7 @@ date: 2021-10-31 21:28:15
 
 - 元素类型 `Tp` 须有接受 1 个整数的构造函数, 否则需手动偏特化 `Matrix::Matrix_helper::Zero` (零元) 与 `Matrix::Matrix_helper::One` (幺元)
 - Gauss-Jordan 消元法有普通版与辗转相除版, 其中普通版推荐用于浮点数, 辗转相除版推荐用于 $\Z_m$, `gauss(a)` 与 `gauss_half(a)` 默认执行普通版, 若需执行辗转相除版需手动偏特化 `namespace Matrix::Matrix_helper::gauss_tag`, 示例见代码末尾的注释
-  
+
   > 当然嫌麻烦也可以直接把 `protected` 里面的那四个函数暴露出来用, 记得同时修改 `det()`, `trans()`, `rank()`, `gauss()`, `gauss_half()`
 
 ## 成员函数&友元函数简介
@@ -54,8 +54,8 @@ date: 2021-10-31 21:28:15
 | `a.transform_binary(b, bin)`                                 | `self&`              | 将 `a` 中的所有元素 `a(i, j)` 改为 `bin(a(i, j), b(i, j))`                                                                             | 是                   |
 | `calc_unary(a, un)`                                          | `self`               | 返回 `un(a)`                                                                                                                           | -                    |
 | `calc_binary(a, b, bin)`                                     | `self`               | 返回 `bin(a, b)`                                                                                                                       | -                    |
-| `gauss(a)`                                                   | `std::ptrdiff_t`     | 对 `a` 应用 Gauss-Jordan 消元法, 将 `a` 化为准对角矩阵, 返回 $\operatorname{rk}(a)\cdot\operatorname{sgn}\det(a)$                                             | 是                   |
-| `gauss_half(a)`                                                   | `std::ptrdiff_t`     | 对 `a` 应用 Gauss-Jordan 消元法, 将 `a` 化为准上三角矩阵, 返回 $\operatorname{rk}(a)\cdot\operatorname{sgn}\det(a)$                                             | 是                   |
+| `gauss(a)`                                                   | `std::ptrdiff_t`     | 对 `a` 应用 Gauss-Jordan 消元法, 将 `a` 化为准对角矩阵, 返回 $\operatorname{rk}(a)\cdot\operatorname{sgn}\det(a)$                      | 是                   |
+| `gauss_half(a)`                                              | `std::ptrdiff_t`     | 对 `a` 应用 Gauss-Jordan 消元法, 将 `a` 化为准上三角矩阵, 返回 $\operatorname{rk}(a)\cdot\operatorname{sgn}\det(a)$                    | 是                   |
 | `a.trans()`                                                  | `self`               | 返回 `a` 的转置矩阵                                                                                                                    | 否                   |
 | `a.rank() const`                                             | `std::size_t`        | 返回 `a` 的秩                                                                                                                          | 否                   |
 | `a.det() const`                                              | `data_t`             | 返回 `a` 的行列式值, 不存在时抛出 `std::runtime_error` 异常                                                                            | 否                   |

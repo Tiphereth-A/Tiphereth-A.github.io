@@ -1,5 +1,5 @@
 ---
-title: '题解 - [AtCoder ARC110D] Binomial Coefficient is Fun'
+title: "题解 - [AtCoder ARC110D] Binomial Coefficient is Fun"
 categories:
   - 程序设计
   - 题解
@@ -11,6 +11,7 @@ tags:
   - 组合数学
 date: 2020-12-06 19:02:01
 ---
+
 [题目链接](https://atcoder.jp/contests/arc110/tasks/arc110_d)
 
 <!-- more -->
@@ -87,10 +88,13 @@ The sum of these is $1+2+3+2=8$
 ## 题意简述
 
 给定正整数$n,m$和$\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n}$, 求
-$$\sum_{\begin{smallmatrix}
+
+$$
+\sum_{\begin{smallmatrix}
   b_1,b_2,...,b_n>0\\\\
   \sum_{i=1}^nb_i\leqslant m
-\end{smallmatrix}}\prod_{i=1}^n\binom{b_i}{a_i}$$
+\end{smallmatrix}}\prod_{i=1}^n\binom{b_i}{a_i}
+$$
 
 ## 解题思路
 

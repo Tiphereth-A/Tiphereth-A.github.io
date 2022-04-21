@@ -7,54 +7,55 @@ tags:
 top: 0
 date: 2020-05-05 23:59:37
 ---
+
 From [Support table - KaTeX](https://katex.org/docs/support_table.html)
 
 <!-- more -->
 
 ## Symbols
 
-| Symbol/Function                                 | Rendered                                                                                        | Source or Comment                                                                               |
-| :---------------------------------------------- | :---------------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------- |
-| \!                                              | $n!$                                                                                            | `n!`                                                                                            |
-| \\\!                                            | $a\!b$                                                                                          | `a\!b`                                                                                          |
-| #                                               | $\def\bar#1{#1^2} \bar{y}$                                                                      | `\def\bar#1{#1^2} \bar{y}`                                                                      |
-| \\#                                             | $\#$                                                                                            |                                                                                                 |
-| %                                               |                                                                                                 | `%this is a comment`                                                                            |
-| \\%                                             | $\%$                                                                                            |                                                                                                 |
-| &                                               | $\begin{matrix} a & b\cr c & d \end{matrix}$                                                    | `\begin{matrix}`<br>&nbsp;&nbsp;&nbsp;`a & b \\`<br>&nbsp;&nbsp;&nbsp;`c & d`<br>`\end{matrix}` |
-| \\&                                             | $\&$                                                                                            |                                                                                                 |
-| '                                               | $'$                                                                                             |                                                                                                 |
-| \\\'                                            | $\text{\'{a}}$                                                                                  | `\text{\'{a}}`                                                                                  |
-| (                                               | $($                                                                                             |                                                                                                 |
-| )                                               | $)$                                                                                             |                                                                                                 |
-| \\\(…\\\)                                       | $\text{\(\frac a b\)}$                                                                          | `\text{\(\frac a b\)}`                                                                          |
-| \\                                              | $a\ b$                                                                                          | `a\ b`                                                                                          |
-| \\"                                             | $\text{\"{a}}$                                                                                  | `\text{\"{a}}`                                                                                  |
-| \\$                                             | $\text{\textdollar}$                                                                            |                                                                                                 |
-| \\,                                             | $a\,\,{b}$                                                                                      | `a\,\,{b}`                                                                                      |
-| \\.                                             | $\text{\.{a}}$                                                                                  | `\text{\.{a}}`                                                                                  |
-| \\:                                             | $a\:\:{b}$                                                                                      | `a\:\:{b}`                                                                                      |
-| \\;                                             | $a\;\;{b}$                                                                                      | a`\;\;{b}`                                                                                      |
-| _                                               | $x_i$                                                                                           | `x_i`                                                                                           |
-| \\_                                             | $\_$                                                                                            |                                                                                                 |
-| \\\`|$\text{\`{a}}$                             | `\text{\\'{a}}`                                                                                 |
-| &#060;                                          | $<$                                                                                             |                                                                                                 |
-| \\=                                             | $\text{\={a}}$                                                                                  | `\text{\\={a}}`                                                                                 |
-| >                                               | $>$                                                                                             |                                                                                                 |
-| \\>                                             | $a\>\>{b}$                                                                                      | `a\>\>{b}`                                                                                      |
-| \[                                              | $[$                                                                                             |                                                                                                 |
-| \]                                              | $]$                                                                                             |                                                                                                 |
-| {                                               | ${a}$                                                                                           | `{a}`                                                                                           |
-| }                                               | ${a}$                                                                                           | `{a}`                                                                                           |
-| \\{                                             | $\{$                                                                                            |                                                                                                 |
-| \\}                                             | $\}$                                                                                            |                                                                                                 |
-| &#124;                                          | $\vert$                                                                                         |                                                                                                 |
-| \\&#124;                                        | $\Vert$                                                                                         |                                                                                                 |
-| ~                                               | $\text{no~no~no~breaks}$                                                                        | `\text{no~no~no~breaks}`                                                                        |
-| \\~                                             | $\text{\~{a}}$                                                                                  | `\text{\\~{a}}`                                                                                 |
-| \\\\|$\begin{matrix} a & b\\ c & d\end{matrix}$ | `\begin{matrix}`<br>&nbsp;&nbsp;&nbsp;`a & b \\`<br>&nbsp;&nbsp;&nbsp;`c & d`<br>`\end{matrix}` |
-| ^                                               | $x^i$                                                                                           | `x^i`                                                                                           |
-| \\^                                             | $\text{\^{a}}$                                                                                  | `\text{\\^{a}}`                                                                                 |
+| Symbol/Function | Rendered                                     | Source or Comment                                                                               |
+| :-------------- | :------------------------------------------- | :---------------------------------------------------------------------------------------------- |
+| \!              | $n!$                                         | `n!`                                                                                            |
+| \\\!            | $a\!b$                                       | `a\!b`                                                                                          |
+| #               | $\def\bar#1{#1^2} \bar{y}$                   | `\def\bar#1{#1^2} \bar{y}`                                                                      |
+| \\#             | $\#$                                         |                                                                                                 |
+| %               |                                              | `%this is a comment`                                                                            |
+| \\%             | $\%$                                         |                                                                                                 |
+| &               | $\begin{matrix} a & b\cr c & d \end{matrix}$ | `\begin{matrix}`<br>&nbsp;&nbsp;&nbsp;`a & b \\`<br>&nbsp;&nbsp;&nbsp;`c & d`<br>`\end{matrix}` |
+| \\&             | $\&$                                         |                                                                                                 |
+| '               | $'$                                          |                                                                                                 |
+| \\\'            | $\text{\'{a}}$                               | `\text{\'{a}}`                                                                                  |
+| (               | $($                                          |                                                                                                 |
+| )               | $)$                                          |                                                                                                 |
+| \\\(…\\\)       | $\text{\(\frac a b\)}$                       | `\text{\(\frac a b\)}`                                                                          |
+| \\              | $a\ b$                                       | `a\ b`                                                                                          |
+| \\"             | $\text{\"{a}}$                               | `\text{\"{a}}`                                                                                  |
+| \\$             | $\text{\textdollar}$                         |                                                                                                 |
+| \\,             | $a\,\,{b}$                                   | `a\,\,{b}`                                                                                      |
+| \\.             | $\text{\.{a}}$                               | `\text{\.{a}}`                                                                                  |
+| \\:             | $a\:\:{b}$                                   | `a\:\:{b}`                                                                                      |
+| \\;             | $a\;\;{b}$                                   | a`\;\;{b}`                                                                                      |
+| \_              | $x_i$                                        | `x_i`                                                                                           |
+| \\\_            | $\_$                                         |                                                                                                 |
+| \\\`            | $\text{\`{a}}$                               | `\text{\\'{a}}`                                                                                 |
+| &#060;          | $<$                                          |                                                                                                 |
+| \\=             | $\text{\={a}}$                               | `\text{\\={a}}`                                                                                 |
+| >               | $>$                                          |                                                                                                 |
+| \\>             | $a\>\>{b}$                                   | `a\>\>{b}`                                                                                      |
+| \[              | $[$                                          |                                                                                                 |
+| \]              | $]$                                          |                                                                                                 |
+| {               | ${a}$                                        | `{a}`                                                                                           |
+| }               | ${a}$                                        | `{a}`                                                                                           |
+| \\{             | $\{$                                         |                                                                                                 |
+| \\}             | $\}$                                         |                                                                                                 |
+| &#124;          | $\vert$                                      |                                                                                                 |
+| \\&#124;        | $\Vert$                                      |                                                                                                 |
+| ~               | $\text{no~no~no~breaks}$                     | `\text{no~no~no~breaks}`                                                                        |
+| \\~             | $\text{\~{a}}$                               | `\text{\\~{a}}`                                                                                 |
+| \\\\            | $\begin{matrix} a & b\\ c & d\end{matrix}$   | `\begin{matrix}`<br>&nbsp;&nbsp;&nbsp;`a & b \\`<br>&nbsp;&nbsp;&nbsp;`c & d`<br>`\end{matrix}` |
+| ^               | $x^i$                                        | `x^i`                                                                                           |
+| \\^             | $\text{\^{a}}$                               | `\text{\\^{a}}`                                                                                 |
 
 ## A
 
@@ -73,9 +74,9 @@ From [Support table - KaTeX](https://katex.org/docs/support_table.html)
 | {align}           | $$\begin{align}a&=b+c\\d+e&=f\end{align}$$                    | `\begin{align}`<br>&nbsp;&nbsp;&nbsp;`a&=b+c \\`<br>&nbsp;&nbsp;&nbsp;`d+e&=f`<br>`\end{align}`                               |
 | {align\*}         | $$\begin{align*}a&=b+c\\d+e&=f\end{align*}$$                  | `\begin{align*}`<br>&nbsp;&nbsp;&nbsp;`a&=b+c \\`<br>&nbsp;&nbsp;&nbsp;`d+e&=f`<br>`\end{align*}`                             |
 | {aligned}         | $\begin{aligned}a&=b+c\\d+e&=f\end{aligned}$                  | `\begin{aligned}`<br>&nbsp;&nbsp;&nbsp;`a&=b+c \\`<br>&nbsp;&nbsp;&nbsp;`d+e&=f`<br>`\end{aligned}`                           |
-| {alignat}         | $$\begin{alignat}{2}10&x+&3&y=2\\3&x+&13&y=4\end{alignat}$$   | `\begin{alignat}{2}`<br>&nbsp;&nbsp;&nbsp;`10&x+ &3&y = 2 \\`<br>&nbsp;&nbsp;&nbsp;`3&x+&13&y = 4`<br>`\end{alignat}`        |
-| {alignat\*}       | $$\begin{alignat*}{2}10&x+&3&y=2\\3&x+&13&y=4\end{alignat*}$$ | `\begin{alignat*}{2}`<br>&nbsp;&nbsp;&nbsp;`10&x+ &3&y = 2 \\`<br>&nbsp;&nbsp;&nbsp;`3&x+&13&y = 4`<br>`\end{alignat*}`      |
-| {alignedat}       | $\begin{alignedat}{2}10&x+&3&y=2\\3&x+&13&y=4\end{alignedat}$ | `\begin{alignedat}{2}`<br>&nbsp;&nbsp;&nbsp;`10&x+ &3&y = 2 \\`<br>&nbsp;&nbsp;&nbsp;`3&x+&13&y = 4`<br>`\end{alignedat}`    |
+| {alignat}         | $$\begin{alignat}{2}10&x+&3&y=2\\3&x+&13&y=4\end{alignat}$$   | `\begin{alignat}{2}`<br>&nbsp;&nbsp;&nbsp;`10&x+ &3&y = 2 \\`<br>&nbsp;&nbsp;&nbsp;`3&x+&13&y = 4`<br>`\end{alignat}`         |
+| {alignat\*}       | $$\begin{alignat*}{2}10&x+&3&y=2\\3&x+&13&y=4\end{alignat*}$$ | `\begin{alignat*}{2}`<br>&nbsp;&nbsp;&nbsp;`10&x+ &3&y = 2 \\`<br>&nbsp;&nbsp;&nbsp;`3&x+&13&y = 4`<br>`\end{alignat*}`       |
+| {alignedat}       | $\begin{alignedat}{2}10&x+&3&y=2\\3&x+&13&y=4\end{alignedat}$ | `\begin{alignedat}{2}`<br>&nbsp;&nbsp;&nbsp;`10&x+ &3&y = 2 \\`<br>&nbsp;&nbsp;&nbsp;`3&x+&13&y = 4`<br>`\end{alignedat}`     |
 | \allowbreak       |                                                               |                                                                                                                               |
 | \Alpha            | $\Alpha$                                                      |                                                                                                                               |
 | \alpha            | $\alpha$                                                      |                                                                                                                               |
@@ -173,9 +174,9 @@ From [Support table - KaTeX](https://katex.org/docs/support_table.html)
 | \blacktriangleright | $\blacktriangleright$                               |                                                                                                          |
 | \bm                 | $\bm{AaBb}$                                         | `\bm{AaBb}`                                                                                              |
 | {Bmatrix}           | $\begin{Bmatrix}a&b\\c&d\end{Bmatrix}$              | `\begin{Bmatrix}`<br>&nbsp;&nbsp;&nbsp;`a & b \\`<br>&nbsp;&nbsp;&nbsp;`c & d`<br>`\end{Bmatrix}`        |
-| {Bmatrix*}          | $\begin{Bmatrix*}[r]0&-1\\-1&0\end{Bmatrix*}$       | `\begin{Bmatrix*}[r]`<br>&nbsp;&nbsp;&nbsp;`0 & -1 \\`<br>&nbsp;&nbsp;&nbsp;`-1 & 0`<br>`\end{Bmatrix*}` |
+| {Bmatrix\*}         | $\begin{Bmatrix*}[r]0&-1\\-1&0\end{Bmatrix*}$       | `\begin{Bmatrix*}[r]`<br>&nbsp;&nbsp;&nbsp;`0 & -1 \\`<br>&nbsp;&nbsp;&nbsp;`-1 & 0`<br>`\end{Bmatrix*}` |
 | {bmatrix}           | $\begin{bmatrix}a&b\\c&d\end{bmatrix}$              | `\begin{bmatrix}`<br>&nbsp;&nbsp;&nbsp;`a & b \\`<br>&nbsp;&nbsp;&nbsp;`c & d`<br>`\end{bmatrix}`        |
-| {bmatrix*}          | $\begin{bmatrix*}[r]0&-1\\-1&0\end{bmatrix*}$       | `\begin{bmatrix*}[r]`<br>&nbsp;&nbsp;&nbsp;`0 & -1 \\`<br>&nbsp;&nbsp;&nbsp;`-1 & 0`<br>`\end{bmatrix*}` |
+| {bmatrix\*}         | $\begin{bmatrix*}[r]0&-1\\-1&0\end{bmatrix*}$       | `\begin{bmatrix*}[r]`<br>&nbsp;&nbsp;&nbsp;`0 & -1 \\`<br>&nbsp;&nbsp;&nbsp;`-1 & 0`<br>`\end{bmatrix*}` |
 | \bmod               | $a \bmod b$                                         | `a \bmod b`                                                                                              |
 | \bold               | $\bold{AaBb123}$                                    | `\bold{AaBb123}`                                                                                         |
 | \boldsymbol         | $\boldsymbol{AaBb}$                                 | `\boldsymbol{AaBb}`                                                                                      |
@@ -202,158 +203,158 @@ From [Support table - KaTeX](https://katex.org/docs/support_table.html)
 
 ## C
 
-| Symbol/Function   | Rendered                                                                                          | Source or Comment                                                                                                           |
-| :---------------- | :------------------------------------------------------------------------------------------------ | :-------------------------------------------------------------------------------------------------------------------------- |
-| \C                | <span style="color:firebrick;">Not supported</span>                                               | [Deprecated](https://en.wikipedia.org/wiki/Help:Displaying_a_formula#Deprecated_syntax)                                     |
-| \cal              | $\cal AaBb123$                                                                                    | `\cal AaBb123`                                                                                                              |
-| \cancel           | $\cancel{5}$                                                                                      | `\cancel{5}`                                                                                                                |
-| \cancelto         | <span style="color:firebrick;">Not supported</span>                                               |                                                                                                                             |
-| \Cap              | $\Cap$                                                                                            |                                                                                                                             |
-| \cap              | $\cap$                                                                                            |                                                                                                                             |
-| {cases}           | $\begin{cases}a&\text{if }b\\c&\text{if }d\end{cases}$                                            | `\begin{cases}`<br>&nbsp;&nbsp;&nbsp;`a &\text{if } b  \\`<br>&nbsp;&nbsp;&nbsp;`c &\text{if } d`<br>`\end{cases}`          |
-| \cases            | <span style="color:firebrick;">Not supported</span>                                               | see `{cases}`                                                                                                               |
-| {CD}              | $$\begin{CD}A @>a>> B \\@VbVV @AAcA\\C @= D\end{CD}$$                                             | `\begin{CD}`<br>&nbsp;&nbsp;&nbsp;`A  @>a>>  B  \\`<br>`@VbVV    @AAcA \\`<br>&nbsp;&nbsp;&nbsp;`C  @=     D`<br>`\end{CD}` |
-| \cdot             | $\cdot$                                                                                           |                                                                                                                             |
-| \cdotp            | $\cdotp$                                                                                          |                                                                                                                             |
-| \cdots            | $\cdots$                                                                                          |                                                                                                                             |
-| \ce               | ${\mathrm{C}{\vphantom{X}}_{\smash[t]{6}}\mathrm{H}{\vphantom{X}}_{\smash[t]{5}}{-}\mathrm{CHO}}$ | `\ce{C6H5-CHO}` Requires an [extension](https://github.com/KaTeX/KaTeX/tree/main/contrib/mhchem/)                           |
-| \cee              | <span style="color:firebrick;">Not supported</span>                                               | Deprecated by mhchem                                                                                                        |
-| \centerdot        | $a\centerdot b$                                                                                   | `a\centerdot b`                                                                                                             |
-| \cf               | <span style="color:firebrick;">Not supported</span>                                               | Deprecated by mhchem;                                                                                                       |
+| Symbol/Function   | Rendered                                                                                          | Source or Comment                                                                                                 |
+| :---------------- | :------------------------------------------------------------------------------------------------ | :---------------------------------------------------------------------------------------------------------------- |
+| \C                | <span style="color:firebrick;">Not supported</span>                                               | [Deprecated](https://en.wikipedia.org/wiki/Help:Displaying_a_formula#Deprecated_syntax)                           |
+| \cal              | $\cal AaBb123$                                                                                    | `\cal AaBb123`                                                                                                    |
+| \cancel           | $\cancel{5}$                                                                                      | `\cancel{5}`                                                                                                      |
+| \cancelto         | <span style="color:firebrick;">Not supported</span>                                               |                                                                                                                   |
+| \Cap              | $\Cap$                                                                                            |                                                                                                                   |
+| \cap              | $\cap$                                                                                            |                                                                                                                   |
+| {cases}           | $\begin{cases}a&\text{if }b\\c&\text{if }d\end{cases}$                                            | `\begin{cases}`<br>&nbsp;&nbsp;&nbsp;`a &\text{if } b \\`<br>&nbsp;&nbsp;&nbsp;`c &\text{if } d`<br>`\end{cases}` |
+| \cases            | <span style="color:firebrick;">Not supported</span>                                               | see `{cases}`                                                                                                     |
+| {CD}              | $$\begin{CD}A @>a>> B \\@VbVV @AAcA\\C @= D\end{CD}$$                                             | `\begin{CD}`<br>&nbsp;&nbsp;&nbsp;`A @>a>> B \\`<br>`@VbVV @AAcA \\`<br>&nbsp;&nbsp;&nbsp;`C @= D`<br>`\end{CD}`  |
+| \cdot             | $\cdot$                                                                                           |                                                                                                                   |
+| \cdotp            | $\cdotp$                                                                                          |                                                                                                                   |
+| \cdots            | $\cdots$                                                                                          |                                                                                                                   |
+| \ce               | ${\mathrm{C}{\vphantom{X}}_{\smash[t]{6}}\mathrm{H}{\vphantom{X}}_{\smash[t]{5}}{-}\mathrm{CHO}}$ | `\ce{C6H5-CHO}` Requires an [extension](https://github.com/KaTeX/KaTeX/tree/main/contrib/mhchem/)                 |
+| \cee              | <span style="color:firebrick;">Not supported</span>                                               | Deprecated by mhchem                                                                                              |
+| \centerdot        | $a\centerdot b$                                                                                   | `a\centerdot b`                                                                                                   |
+| \cf               | <span style="color:firebrick;">Not supported</span>                                               | Deprecated by mhchem;                                                                                             |
 | use `\ce` instead |
-| \cfrac            | $\cfrac{2}{1+\cfrac{2}{1+\cfrac{2}{1}}}$                                                          | `\cfrac{2}{1+\cfrac{2}{1+\cfrac{2}{1}}}`                                                                                    |
-| \char             | $\char"263a$                                                                                      | `\char"263a`                                                                                                                |
-| \check            | $\check{oe}$                                                                                      | `\check{oe}`                                                                                                                |
-| \ch               | $\ch$                                                                                             |                                                                                                                             |
-| \checkmark        | $\checkmark$                                                                                      |                                                                                                                             |
-| \Chi              | $\Chi$                                                                                            |                                                                                                                             |
-| \chi              | $\chi$                                                                                            |                                                                                                                             |
-| \choose           | $\binom{n+1 }{k+2}$                                                                               | `\binom{n+1 }{k+2}`                                                                                                         |
-| \circ             | $\circ$                                                                                           |                                                                                                                             |
-| \circeq           | $\circeq$                                                                                         |                                                                                                                             |
-| \circlearrowleft  | $\circlearrowleft$                                                                                |                                                                                                                             |
-| \circlearrowright | $\circlearrowright$                                                                               |                                                                                                                             |
-| \circledast       | $\circledast$                                                                                     |                                                                                                                             |
-| \circledcirc      | $\circledcirc$                                                                                    |                                                                                                                             |
-| \circleddash      | $\circleddash$                                                                                    |                                                                                                                             |
-| \circledR         | $\circledR$                                                                                       |                                                                                                                             |
-| \circledS         | $\circledS$                                                                                       |                                                                                                                             |
-| \class            | <span style="color:firebrick;">Not supported</span>                                               | A PR is pending.                                                                                                            |
-| \cline            | <span style="color:firebrick;">Not supported</span>                                               | [Issue #269](https://github.com/KaTeX/KaTeX/issues/269)                                                                     |
-| \clubs            | $\clubs$                                                                                          |                                                                                                                             |
-| \clubsuit         | $\clubsuit$                                                                                       |                                                                                                                             |
-| \cnums            | $\cnums$                                                                                          |                                                                                                                             |
-| \colon            | $\colon$                                                                                          |                                                                                                                             |
-| \Colonapprox      | $\Colonapprox$                                                                                    |                                                                                                                             |
-| \colonapprox      | $\colonapprox$                                                                                    |                                                                                                                             |
-| \coloncolon       | $\coloncolon$                                                                                     |                                                                                                                             |
-| \coloncolonapprox | $\coloncolonapprox$                                                                               |                                                                                                                             |
-| \coloncolonequals | $\coloncolonequals$                                                                               |                                                                                                                             |
-| \coloncolonminus  | $\coloncolonminus$                                                                                |                                                                                                                             |
-| \coloncolonsim    | $\coloncolonsim$                                                                                  |                                                                                                                             |
-| \Coloneq          | $\Coloneq$                                                                                        |                                                                                                                             |
-| \coloneq          | $\coloneq$                                                                                        |                                                                                                                             |
-| \colonequals      | $\colonequals$                                                                                    |                                                                                                                             |
-| \Coloneqq         | $\Coloneqq$                                                                                       |                                                                                                                             |
-| \coloneqq         | $\coloneqq$                                                                                       |                                                                                                                             |
-| \colonminus       | $\colonminus$                                                                                     |                                                                                                                             |
-| \Colonsim         | $\Colonsim$                                                                                       |                                                                                                                             |
-| \colonsim         | $\colonsim$                                                                                       |                                                                                                                             |
-| \color            | $\color{#0000FF} AaBb123$                                                                         | `\color{#0000FF} AaBb123`                                                                                                   |
-| \colorbox         | $\colorbox{red}{Black on red}$                                                                    | `\colorbox{red}{Black on red}`                                                                                              |
-| \complement       | $\complement$                                                                                     |                                                                                                                             |
-| \Complex          | $\Complex$                                                                                        |                                                                                                                             |
-| \cong             | $\cong$                                                                                           |                                                                                                                             |
-| \Coppa            | <span style="color:firebrick;">Not supported</span>                                               |                                                                                                                             |
-| \coppa            | <span style="color:firebrick;">Not supported</span>                                               |                                                                                                                             |
-| \coprod           | $\coprod$                                                                                         |                                                                                                                             |
-| \copyright        | $\copyright$                                                                                      |                                                                                                                             |
-| \cos              | $\cos$                                                                                            |                                                                                                                             |
-| \cosec            | $\cosec$                                                                                          |                                                                                                                             |
-| \cosh             | $\cosh$                                                                                           |                                                                                                                             |
-| \cot              | $\cot$                                                                                            |                                                                                                                             |
-| \cotg             | $\cotg$                                                                                           |                                                                                                                             |
-| \coth             | $\coth$                                                                                           |                                                                                                                             |
-| \cr               | $\begin{matrix} a & b\cr c & d \end{matrix}$                                                      | `\begin{matrix}`<br>&nbsp;&nbsp;&nbsp;`a & b \cr`<br>&nbsp;&nbsp;&nbsp;`c & d`<br>`\end{matrix}`                            |
-| \csc              | $\csc$                                                                                            |                                                                                                                             |
-| \cssId            | <span style="color:firebrick;">Not supported</span>                                               | A PR is pending.                                                                                                            |
-| \ctg              | $\ctg$                                                                                            |                                                                                                                             |
-| \cth              | $\cth$                                                                                            |                                                                                                                             |
-| \Cup              | $\Cup$                                                                                            |                                                                                                                             |
-| \cup              | $\cup$                                                                                            |                                                                                                                             |
-| \curlyeqprec      | $\curlyeqprec$                                                                                    |                                                                                                                             |
-| \curlyeqsucc      | $\curlyeqsucc$                                                                                    |                                                                                                                             |
-| \curlyvee         | $\curlyvee$                                                                                       |                                                                                                                             |
-| \curlywedge       | $\curlywedge$                                                                                     |                                                                                                                             |
-| \curvearrowleft   | $\curvearrowleft$                                                                                 |                                                                                                                             |
-| \curvearrowright  | $\curvearrowright$                                                                                |                                                                                                                             |
+| \cfrac            | $\cfrac{2}{1+\cfrac{2}{1+\cfrac{2}{1}}}$                                                          | `\cfrac{2}{1+\cfrac{2}{1+\cfrac{2}{1}}}`                                                                          |
+| \char             | $\char"263a$                                                                                      | `\char"263a`                                                                                                      |
+| \check            | $\check{oe}$                                                                                      | `\check{oe}`                                                                                                      |
+| \ch               | $\ch$                                                                                             |                                                                                                                   |
+| \checkmark        | $\checkmark$                                                                                      |                                                                                                                   |
+| \Chi              | $\Chi$                                                                                            |                                                                                                                   |
+| \chi              | $\chi$                                                                                            |                                                                                                                   |
+| \choose           | $\binom{n+1 }{k+2}$                                                                               | `\binom{n+1 }{k+2}`                                                                                               |
+| \circ             | $\circ$                                                                                           |                                                                                                                   |
+| \circeq           | $\circeq$                                                                                         |                                                                                                                   |
+| \circlearrowleft  | $\circlearrowleft$                                                                                |                                                                                                                   |
+| \circlearrowright | $\circlearrowright$                                                                               |                                                                                                                   |
+| \circledast       | $\circledast$                                                                                     |                                                                                                                   |
+| \circledcirc      | $\circledcirc$                                                                                    |                                                                                                                   |
+| \circleddash      | $\circleddash$                                                                                    |                                                                                                                   |
+| \circledR         | $\circledR$                                                                                       |                                                                                                                   |
+| \circledS         | $\circledS$                                                                                       |                                                                                                                   |
+| \class            | <span style="color:firebrick;">Not supported</span>                                               | A PR is pending.                                                                                                  |
+| \cline            | <span style="color:firebrick;">Not supported</span>                                               | [Issue #269](https://github.com/KaTeX/KaTeX/issues/269)                                                           |
+| \clubs            | $\clubs$                                                                                          |                                                                                                                   |
+| \clubsuit         | $\clubsuit$                                                                                       |                                                                                                                   |
+| \cnums            | $\cnums$                                                                                          |                                                                                                                   |
+| \colon            | $\colon$                                                                                          |                                                                                                                   |
+| \Colonapprox      | $\Colonapprox$                                                                                    |                                                                                                                   |
+| \colonapprox      | $\colonapprox$                                                                                    |                                                                                                                   |
+| \coloncolon       | $\coloncolon$                                                                                     |                                                                                                                   |
+| \coloncolonapprox | $\coloncolonapprox$                                                                               |                                                                                                                   |
+| \coloncolonequals | $\coloncolonequals$                                                                               |                                                                                                                   |
+| \coloncolonminus  | $\coloncolonminus$                                                                                |                                                                                                                   |
+| \coloncolonsim    | $\coloncolonsim$                                                                                  |                                                                                                                   |
+| \Coloneq          | $\Coloneq$                                                                                        |                                                                                                                   |
+| \coloneq          | $\coloneq$                                                                                        |                                                                                                                   |
+| \colonequals      | $\colonequals$                                                                                    |                                                                                                                   |
+| \Coloneqq         | $\Coloneqq$                                                                                       |                                                                                                                   |
+| \coloneqq         | $\coloneqq$                                                                                       |                                                                                                                   |
+| \colonminus       | $\colonminus$                                                                                     |                                                                                                                   |
+| \Colonsim         | $\Colonsim$                                                                                       |                                                                                                                   |
+| \colonsim         | $\colonsim$                                                                                       |                                                                                                                   |
+| \color            | $\color{#0000FF} AaBb123$                                                                         | `\color{#0000FF} AaBb123`                                                                                         |
+| \colorbox         | $\colorbox{red}{Black on red}$                                                                    | `\colorbox{red}{Black on red}`                                                                                    |
+| \complement       | $\complement$                                                                                     |                                                                                                                   |
+| \Complex          | $\Complex$                                                                                        |                                                                                                                   |
+| \cong             | $\cong$                                                                                           |                                                                                                                   |
+| \Coppa            | <span style="color:firebrick;">Not supported</span>                                               |                                                                                                                   |
+| \coppa            | <span style="color:firebrick;">Not supported</span>                                               |                                                                                                                   |
+| \coprod           | $\coprod$                                                                                         |                                                                                                                   |
+| \copyright        | $\copyright$                                                                                      |                                                                                                                   |
+| \cos              | $\cos$                                                                                            |                                                                                                                   |
+| \cosec            | $\cosec$                                                                                          |                                                                                                                   |
+| \cosh             | $\cosh$                                                                                           |                                                                                                                   |
+| \cot              | $\cot$                                                                                            |                                                                                                                   |
+| \cotg             | $\cotg$                                                                                           |                                                                                                                   |
+| \coth             | $\coth$                                                                                           |                                                                                                                   |
+| \cr               | $\begin{matrix} a & b\cr c & d \end{matrix}$                                                      | `\begin{matrix}`<br>&nbsp;&nbsp;&nbsp;`a & b \cr`<br>&nbsp;&nbsp;&nbsp;`c & d`<br>`\end{matrix}`                  |
+| \csc              | $\csc$                                                                                            |                                                                                                                   |
+| \cssId            | <span style="color:firebrick;">Not supported</span>                                               | A PR is pending.                                                                                                  |
+| \ctg              | $\ctg$                                                                                            |                                                                                                                   |
+| \cth              | $\cth$                                                                                            |                                                                                                                   |
+| \Cup              | $\Cup$                                                                                            |                                                                                                                   |
+| \cup              | $\cup$                                                                                            |                                                                                                                   |
+| \curlyeqprec      | $\curlyeqprec$                                                                                    |                                                                                                                   |
+| \curlyeqsucc      | $\curlyeqsucc$                                                                                    |                                                                                                                   |
+| \curlyvee         | $\curlyvee$                                                                                       |                                                                                                                   |
+| \curlywedge       | $\curlywedge$                                                                                     |                                                                                                                   |
+| \curvearrowleft   | $\curvearrowleft$                                                                                 |                                                                                                                   |
+| \curvearrowright  | $\curvearrowright$                                                                                |                                                                                                                   |
 
 ## D
 
-| Symbol/Function      | Rendered                                                   | Source or Comment                                                                                                      |
-| :------------------- | :--------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------- |
-| \dag                 | $\dag$                                                     |                                                                                                                        |
-| \Dagger              | $\Dagger$                                                  |                                                                                                                        |
-| \dagger              | $\dagger$                                                  |                                                                                                                        |
-| \daleth              | $\daleth$                                                  |                                                                                                                        |
-| \Darr                | $\Darr$                                                    |                                                                                                                        |
-| \dArr                | $\dArr$                                                    |                                                                                                                        |
-| \darr                | $\darr$                                                    |                                                                                                                        |
-| {darray}             | $\begin{darray}{cc}a&b\\c&d\end{darray}$                   | `\begin{darray}{cc}`<br>&nbsp;&nbsp;&nbsp;`a & b \\`<br>&nbsp;&nbsp;&nbsp;`c & d`<br>`\end{darray}`                    |
-| \dashleftarrow       | $\dashleftarrow$                                           |                                                                                                                        |
-| \dashrightarrow      | $\dashrightarrow$                                          |                                                                                                                        |
-| \dashv               | $\dashv$                                                   |                                                                                                                        |
-| \dbinom              | $\dbinom n k$                                              | `\dbinom n k`                                                                                                          |
-| \dblcolon            | $\dblcolon$                                                |                                                                                                                        |
-| {dcases}             | $\begin{dcases}a&\text{if }b\\c&\text{if }d\end{dcases}$   | `\begin{dcases}`<br>&nbsp;&nbsp;&nbsp;`a &\text{if } b  \\`<br>&nbsp;&nbsp;&nbsp;`c &\text{if } d`<br>`\end{dcases}`   |
-| \ddag                | $\ddag$                                                    |                                                                                                                        |
-| \ddagger             | $\ddagger$                                                 |                                                                                                                        |
-| \ddddot              | <span style="color:firebrick;">Not supported</span>        |                                                                                                                        |
-| \dddot               | <span style="color:firebrick;">Not supported</span>        |                                                                                                                        |
-| \ddot                | $\ddot x$                                                  | `\ddot x`                                                                                                              |
-| \ddots               | $\ddots$                                                   |                                                                                                                        |
-| \DeclareMathOperator | <span style="color:firebrick;">Not supported</span>        |                                                                                                                        |
-| \def                 | $\def\foo{x^2} \foo + \foo$                                | `\def\foo{x^2} \foo + \foo`                                                                                            |
-| \definecolor         | <span style="color:firebrick;">Not supported</span>        | [Issue #750](https://github.com/KaTeX/KaTeX/issues/750)                                                                |
-| \deg                 | $\deg$                                                     |                                                                                                                        |
-| \degree              | $\degree$                                                  |                                                                                                                        |
-| \delta               | $\delta$                                                   |                                                                                                                        |
-| \Delta               | $\Delta$                                                   |                                                                                                                        |
-| \det                 | $\det$                                                     |                                                                                                                        |
-| \Digamma             | <span style="color:firebrick;">Not supported</span>        |                                                                                                                        |
-| \digamma             | $\digamma$                                                 |                                                                                                                        |
-| \dfrac               | $\dfrac{a-1}{b-1}$                                         | `\dfrac{a-1}{b-1}`                                                                                                     |
-| \diagdown            | $\diagdown$                                                |                                                                                                                        |
-| \diagup              | $\diagup$                                                  |                                                                                                                        |
-| \Diamond             | $\Diamond$                                                 |                                                                                                                        |
-| \diamond             | $\diamond$                                                 |                                                                                                                        |
-| \diamonds            | $\diamonds$                                                |                                                                                                                        |
-| \diamondsuit         | $\diamondsuit$                                             |                                                                                                                        |
-| \dim                 | $\dim$                                                     |                                                                                                                        |
-| \displaylines        | <span style="color:firebrick;">Not supported</span>        |                                                                                                                        |
-| \displaystyle        | $\displaystyle\sum_0^n$                                    | `\displaystyle\sum_0^n`                                                                                                |
-| \div                 | $\div$                                                     |                                                                                                                        |
-| \divideontimes       | $\divideontimes$                                           |                                                                                                                        |
-| \dot                 | $\dot x$                                                   | `\dot x`                                                                                                               |
-| \Doteq               | $\Doteq$                                                   |                                                                                                                        |
-| \doteq               | $\doteq$                                                   |                                                                                                                        |
-| \doteqdot            | $\doteqdot$                                                |                                                                                                                        |
-| \dotplus             | $\dotplus$                                                 |                                                                                                                        |
-| \dots                | $x_1 + \dots + x_n$                                        | `x_1 + \dots + x_n`                                                                                                    |
-| \dotsb               | $x_1 +\dotsb + x_n$                                        | `x_1 +\dotsb + x_n`                                                                                                    |
-| \dotsc               | $x,\dotsc,y$                                               | `x,\dotsc,y`                                                                                                           |
-| \dotsi               | $$\int_{A_1}\int_{A_2}\dotsi$$                             | `\int_{A_1}\int_{A_2}\dotsi`                                                                                           |
-| \dotsm               | $x_1 x_2 \dotsm x_n$                                       | `$x_1 x_2 \dotsm x_n`                                                                                                  |
-| \dotso               | $\dotso$                                                   |                                                                                                                        |
-| \doublebarwedge      | $\doublebarwedge$                                          |                                                                                                                        |
-| \doublecap           | $\doublecap$                                               |                                                                                                                        |
-| \doublecup           | $\doublecup$                                               |                                                                                                                        |
-| \Downarrow           | $\Downarrow$                                               |                                                                                                                        |
-| \downarrow           | $\downarrow$                                               |                                                                                                                        |
-| \downdownarrows      | $\downdownarrows$                                          |                                                                                                                        |
-| \downharpoonleft     | $\downharpoonleft$                                         |                                                                                                                        |
-| \downharpoonright    | $\downharpoonright$                                        |                                                                                                                        |
-| {drcases}            | $\begin{drcases}a&\text{if }b\\c&\text{if }d\end{drcases}$ | `\begin{drcases}`<br>&nbsp;&nbsp;&nbsp;`a &\text{if } b  \\`<br>&nbsp;&nbsp;&nbsp;`c &\text{if } d`<br>`\end{drcases}` |
+| Symbol/Function      | Rendered                                                   | Source or Comment                                                                                                     |
+| :------------------- | :--------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------- |
+| \dag                 | $\dag$                                                     |                                                                                                                       |
+| \Dagger              | $\Dagger$                                                  |                                                                                                                       |
+| \dagger              | $\dagger$                                                  |                                                                                                                       |
+| \daleth              | $\daleth$                                                  |                                                                                                                       |
+| \Darr                | $\Darr$                                                    |                                                                                                                       |
+| \dArr                | $\dArr$                                                    |                                                                                                                       |
+| \darr                | $\darr$                                                    |                                                                                                                       |
+| {darray}             | $\begin{darray}{cc}a&b\\c&d\end{darray}$                   | `\begin{darray}{cc}`<br>&nbsp;&nbsp;&nbsp;`a & b \\`<br>&nbsp;&nbsp;&nbsp;`c & d`<br>`\end{darray}`                   |
+| \dashleftarrow       | $\dashleftarrow$                                           |                                                                                                                       |
+| \dashrightarrow      | $\dashrightarrow$                                          |                                                                                                                       |
+| \dashv               | $\dashv$                                                   |                                                                                                                       |
+| \dbinom              | $\dbinom n k$                                              | `\dbinom n k`                                                                                                         |
+| \dblcolon            | $\dblcolon$                                                |                                                                                                                       |
+| {dcases}             | $\begin{dcases}a&\text{if }b\\c&\text{if }d\end{dcases}$   | `\begin{dcases}`<br>&nbsp;&nbsp;&nbsp;`a &\text{if } b \\`<br>&nbsp;&nbsp;&nbsp;`c &\text{if } d`<br>`\end{dcases}`   |
+| \ddag                | $\ddag$                                                    |                                                                                                                       |
+| \ddagger             | $\ddagger$                                                 |                                                                                                                       |
+| \ddddot              | <span style="color:firebrick;">Not supported</span>        |                                                                                                                       |
+| \dddot               | <span style="color:firebrick;">Not supported</span>        |                                                                                                                       |
+| \ddot                | $\ddot x$                                                  | `\ddot x`                                                                                                             |
+| \ddots               | $\ddots$                                                   |                                                                                                                       |
+| \DeclareMathOperator | <span style="color:firebrick;">Not supported</span>        |                                                                                                                       |
+| \def                 | $\def\foo{x^2} \foo + \foo$                                | `\def\foo{x^2} \foo + \foo`                                                                                           |
+| \definecolor         | <span style="color:firebrick;">Not supported</span>        | [Issue #750](https://github.com/KaTeX/KaTeX/issues/750)                                                               |
+| \deg                 | $\deg$                                                     |                                                                                                                       |
+| \degree              | $\degree$                                                  |                                                                                                                       |
+| \delta               | $\delta$                                                   |                                                                                                                       |
+| \Delta               | $\Delta$                                                   |                                                                                                                       |
+| \det                 | $\det$                                                     |                                                                                                                       |
+| \Digamma             | <span style="color:firebrick;">Not supported</span>        |                                                                                                                       |
+| \digamma             | $\digamma$                                                 |                                                                                                                       |
+| \dfrac               | $\dfrac{a-1}{b-1}$                                         | `\dfrac{a-1}{b-1}`                                                                                                    |
+| \diagdown            | $\diagdown$                                                |                                                                                                                       |
+| \diagup              | $\diagup$                                                  |                                                                                                                       |
+| \Diamond             | $\Diamond$                                                 |                                                                                                                       |
+| \diamond             | $\diamond$                                                 |                                                                                                                       |
+| \diamonds            | $\diamonds$                                                |                                                                                                                       |
+| \diamondsuit         | $\diamondsuit$                                             |                                                                                                                       |
+| \dim                 | $\dim$                                                     |                                                                                                                       |
+| \displaylines        | <span style="color:firebrick;">Not supported</span>        |                                                                                                                       |
+| \displaystyle        | $\displaystyle\sum_0^n$                                    | `\displaystyle\sum_0^n`                                                                                               |
+| \div                 | $\div$                                                     |                                                                                                                       |
+| \divideontimes       | $\divideontimes$                                           |                                                                                                                       |
+| \dot                 | $\dot x$                                                   | `\dot x`                                                                                                              |
+| \Doteq               | $\Doteq$                                                   |                                                                                                                       |
+| \doteq               | $\doteq$                                                   |                                                                                                                       |
+| \doteqdot            | $\doteqdot$                                                |                                                                                                                       |
+| \dotplus             | $\dotplus$                                                 |                                                                                                                       |
+| \dots                | $x_1 + \dots + x_n$                                        | `x_1 + \dots + x_n`                                                                                                   |
+| \dotsb               | $x_1 +\dotsb + x_n$                                        | `x_1 +\dotsb + x_n`                                                                                                   |
+| \dotsc               | $x,\dotsc,y$                                               | `x,\dotsc,y`                                                                                                          |
+| \dotsi               | $$\int_{A_1}\int_{A_2}\dotsi$$                             | `\int_{A_1}\int_{A_2}\dotsi`                                                                                          |
+| \dotsm               | $x_1 x_2 \dotsm x_n$                                       | `$x_1 x_2 \dotsm x_n`                                                                                                 |
+| \dotso               | $\dotso$                                                   |                                                                                                                       |
+| \doublebarwedge      | $\doublebarwedge$                                          |                                                                                                                       |
+| \doublecap           | $\doublecap$                                               |                                                                                                                       |
+| \doublecup           | $\doublecup$                                               |                                                                                                                       |
+| \Downarrow           | $\Downarrow$                                               |                                                                                                                       |
+| \downarrow           | $\downarrow$                                               |                                                                                                                       |
+| \downdownarrows      | $\downdownarrows$                                          |                                                                                                                       |
+| \downharpoonleft     | $\downharpoonleft$                                         |                                                                                                                       |
+| \downharpoonright    | $\downharpoonright$                                        |                                                                                                                       |
+| {drcases}            | $\begin{drcases}a&\text{if }b\\c&\text{if }d\end{drcases}$ | `\begin{drcases}`<br>&nbsp;&nbsp;&nbsp;`a &\text{if } b \\`<br>&nbsp;&nbsp;&nbsp;`c &\text{if } d`<br>`\end{drcases}` |
 
 ## E
 
@@ -378,7 +379,7 @@ From [Support table - KaTeX](https://katex.org/docs/support_table.html)
 | \Eqcolon          | $\Eqcolon$                                          |                                                                                                 |
 | \eqcolon          | $\eqcolon$                                          |                                                                                                 |
 | {equation}        | $$\begin{equation}a = b + c\end{equation}$$         | `\begin{equation}`<br>&nbsp;&nbsp;&nbsp;`a = b + c`<br>`\end{equation}`                         |
-| {equation*}       | $$\begin{equation*}a = b + c\end{equation*}$$       | `\begin{equation*}`<br>&nbsp;&nbsp;&nbsp;`a = b + c`<br>`\end{equation*}`                       |
+| {equation\*}      | $$\begin{equation*}a = b + c\end{equation*}$$       | `\begin{equation*}`<br>&nbsp;&nbsp;&nbsp;`a = b + c`<br>`\end{equation*}`                       |
 | {eqnarray}        | <span style="color:firebrick;">Not supported</span> |                                                                                                 |
 | \Eqqcolon         | $\Eqqcolon$                                         |                                                                                                 |
 | \eqqcolon         | $\eqqcolon$                                         |                                                                                                 |
@@ -417,42 +418,42 @@ From [Support table - KaTeX](https://katex.org/docs/support_table.html)
 
 ## G
 
-| Symbol/Function | Rendered                                            | Source or Comment                                                                                  |
-| :-------------- | :-------------------------------------------------- | :------------------------------------------------------------------------------------------------- |
-| \Game           | $\Game$                                             |                                                                                                    |
-| \Gamma          | $\Gamma$                                            |                                                                                                    |
-| \gamma          | $\gamma$                                            |                                                                                                    |
+| Symbol/Function | Rendered                                            | Source or Comment                                                                                 |
+| :-------------- | :-------------------------------------------------- | :------------------------------------------------------------------------------------------------ |
+| \Game           | $\Game$                                             |                                                                                                   |
+| \Gamma          | $\Gamma$                                            |                                                                                                   |
+| \gamma          | $\gamma$                                            |                                                                                                   |
 | {gather}        | $$\begin{gather}a=b\\e=b+c\end{gather}$$            | `\begin{gather}`<br>&nbsp;&nbsp;&nbsp;`a=b \\`<br>&nbsp;&nbsp;&nbsp;`e=b+c`<br>`\end{gather}`     |
 | {gathered}      | $\begin{gathered}a=b\\e=b+c\end{gathered}$          | `\begin{gathered}`<br>&nbsp;&nbsp;&nbsp;`a=b \\`<br>&nbsp;&nbsp;&nbsp;`e=b+c`<br>`\end{gathered}` |
-| \gcd            | $\gcd$                                              |                                                                                                    |
-| \gdef           | $\gdef\bar#1{#1^2} \bar{y} + \bar{y}$               | `\gdef\bar#1{#1^2} \bar{y} + \bar{y}`                                                              |
-| \ge             | $\ge$                                               |                                                                                                    |
-| \geneuro        | <span style="color:firebrick;">Not supported</span> |                                                                                                    |
-| \geneuronarrow  | <span style="color:firebrick;">Not supported</span> |                                                                                                    |
-| \geneurowide    | <span style="color:firebrick;">Not supported</span> |                                                                                                    |
-| \genfrac        | $\genfrac ( ] {2pt}{0}a{a+1}$                       | `\genfrac ( ] {2pt}{0}a{a+1}`                                                                      |
-| \geq            | $\geq$                                              |                                                                                                    |
-| \geqq           | $\geqq$                                             |                                                                                                    |
-| \geqslant       | $\geqslant$                                         |                                                                                                    |
-| \gets           | $\gets$                                             |                                                                                                    |
-| \gg             | $\gg$                                               |                                                                                                    |
-| \ggg            | $\ggg$                                              |                                                                                                    |
-| \gggtr          | $\gggtr$                                            |                                                                                                    |
-| \gimel          | $\gimel$                                            |                                                                                                    |
-| \global         | $\global\def\add#1#2{#1+#2} \add 2 3$               | `\global\def\add#1#2{#1+#2} \add 2 3`                                                              |
-| \gnapprox       | $\gnapprox$                                         |                                                                                                    |
-| \gneq           | $\gneq$                                             |                                                                                                    |
-| \gneqq          | $\gneqq$                                            |                                                                                                    |
-| \gnsim          | $\gnsim$                                            |                                                                                                    |
-| \grave          | $\grave{eu}$                                        | `\grave{eu}`                                                                                       |
-| \gt             | $a \gt b$                                           | `a \gt b`                                                                                          |
-| \gtrdot         | $\gtrdot$                                           |                                                                                                    |
-| \gtrapprox      | $\gtrapprox$                                        |                                                                                                    |
-| \gtreqless      | $\gtreqless$                                        |                                                                                                    |
-| \gtreqqless     | $\gtreqqless$                                       |                                                                                                    |
-| \gtrless        | $\gtrless$                                          |                                                                                                    |
-| \gtrsim         | $\gtrsim$                                           |                                                                                                    |
-| \gvertneqq      | $\gvertneqq$                                        |                                                                                                    |
+| \gcd            | $\gcd$                                              |                                                                                                   |
+| \gdef           | $\gdef\bar#1{#1^2} \bar{y} + \bar{y}$               | `\gdef\bar#1{#1^2} \bar{y} + \bar{y}`                                                             |
+| \ge             | $\ge$                                               |                                                                                                   |
+| \geneuro        | <span style="color:firebrick;">Not supported</span> |                                                                                                   |
+| \geneuronarrow  | <span style="color:firebrick;">Not supported</span> |                                                                                                   |
+| \geneurowide    | <span style="color:firebrick;">Not supported</span> |                                                                                                   |
+| \genfrac        | $\genfrac ( ] {2pt}{0}a{a+1}$                       | `\genfrac ( ] {2pt}{0}a{a+1}`                                                                     |
+| \geq            | $\geq$                                              |                                                                                                   |
+| \geqq           | $\geqq$                                             |                                                                                                   |
+| \geqslant       | $\geqslant$                                         |                                                                                                   |
+| \gets           | $\gets$                                             |                                                                                                   |
+| \gg             | $\gg$                                               |                                                                                                   |
+| \ggg            | $\ggg$                                              |                                                                                                   |
+| \gggtr          | $\gggtr$                                            |                                                                                                   |
+| \gimel          | $\gimel$                                            |                                                                                                   |
+| \global         | $\global\def\add#1#2{#1+#2} \add 2 3$               | `\global\def\add#1#2{#1+#2} \add 2 3`                                                             |
+| \gnapprox       | $\gnapprox$                                         |                                                                                                   |
+| \gneq           | $\gneq$                                             |                                                                                                   |
+| \gneqq          | $\gneqq$                                            |                                                                                                   |
+| \gnsim          | $\gnsim$                                            |                                                                                                   |
+| \grave          | $\grave{eu}$                                        | `\grave{eu}`                                                                                      |
+| \gt             | $a \gt b$                                           | `a \gt b`                                                                                         |
+| \gtrdot         | $\gtrdot$                                           |                                                                                                   |
+| \gtrapprox      | $\gtrapprox$                                        |                                                                                                   |
+| \gtreqless      | $\gtreqless$                                        |                                                                                                   |
+| \gtreqqless     | $\gtreqqless$                                       |                                                                                                   |
+| \gtrless        | $\gtrless$                                          |                                                                                                   |
+| \gtrsim         | $\gtrsim$                                           |                                                                                                   |
+| \gvertneqq      | $\gvertneqq$                                        |                                                                                                   |
 
 ## H
 
@@ -676,7 +677,7 @@ From [Support table - KaTeX](https://katex.org/docs/support_table.html)
 | \mathtt          | $\mathtt{AaBb123}$                                  | `\mathtt{AaBb123}`                                                                                     |
 | \matrix          | <span style="color:firebrick;">Not supported</span> | See `{matrix}`                                                                                         |
 | {matrix}         | $\begin{matrix}a&b\\c&d\end{matrix}$                | `\begin{matrix}`<br>&nbsp;&nbsp;&nbsp;`a & b \\`<br>&nbsp;&nbsp;&nbsp;`c & d`<br>`\end{matrix}`        |
-| {matrix*}        | $\begin{matrix*}[r]0&-1\\-1&0\end{matrix*}$         | `\begin{matrix*}[r]`<br>&nbsp;&nbsp;&nbsp;`0 & -1 \\`<br>&nbsp;&nbsp;&nbsp;`-1 & 0`<br>`\end{matrix*}` |
+| {matrix\*}       | $\begin{matrix*}[r]0&-1\\-1&0\end{matrix*}$         | `\begin{matrix*}[r]`<br>&nbsp;&nbsp;&nbsp;`0 & -1 \\`<br>&nbsp;&nbsp;&nbsp;`-1 & 0`<br>`\end{matrix*}` |
 | \max             | $\max$                                              |                                                                                                        |
 | \mbox            | <span style="color:firebrick;">Not supported</span> |                                                                                                        |
 | \md              | <span style="color:firebrick;">Not supported</span> |                                                                                                        |
@@ -805,7 +806,7 @@ From [Support table - KaTeX](https://katex.org/docs/support_table.html)
 | \origof                 | $\origof$                                           |                                            |
 | \oslash                 | $\oslash$                                           |                                            |
 | \otimes                 | $\otimes$                                           |                                            |
-| \over                   | $\frac{a+1 }{b+2}+c$                                 | `\frac{a+1 }{b+2}+c`                        |
+| \over                   | $\frac{a+1 }{b+2}+c$                                | `\frac{a+1 }{b+2}+c`                       |
 | \overbrace              | $\overbrace{x+⋯+x}^{n\text{ times}}$                | `\overbrace{x+⋯+x}^{n\text{ times}}`       |
 | \overbracket            | <span style="color:firebrick;">Not supported</span> |                                            |
 | \overgroup              | $\overgroup{AB}$                                    | `\overgroup{AB}`                           |
@@ -845,7 +846,7 @@ From [Support table - KaTeX](https://katex.org/docs/support_table.html)
 | \pm             | $\pm$                                                                                                                                                                 |                                                                                                          |
 | \pmatrix        | <span style="color:firebrick;">Not supported</span>                                                                                                                   | See `{pmatrix}`                                                                                          |
 | {pmatrix}       | $\begin{pmatrix}a&b\\c&d\end{pmatrix}$                                                                                                                                | `\begin{pmatrix}`<br>&nbsp;&nbsp;&nbsp;`a & b \\`<br>&nbsp;&nbsp;&nbsp;`c & d`<br>`\end{pmatrix}`        |
-| {pmatrix*}      | $\begin{pmatrix*}[r]0&-1\\-1&0\end{pmatrix*}$                                                                                                                         | `\begin{pmatrix*}[r]`<br>&nbsp;&nbsp;&nbsp;`0 & -1 \\`<br>&nbsp;&nbsp;&nbsp;`-1 & 0`<br>`\end{pmatrix*}` |
+| {pmatrix\*}     | $\begin{pmatrix*}[r]0&-1\\-1&0\end{pmatrix*}$                                                                                                                         | `\begin{pmatrix*}[r]`<br>&nbsp;&nbsp;&nbsp;`0 & -1 \\`<br>&nbsp;&nbsp;&nbsp;`-1 & 0`<br>`\end{pmatrix*}` |
 | \pmb            | $\pmb{\mu}$                                                                                                                                                           | `\pmb{\mu}`                                                                                              |
 | \pmod           | $x\pmod a$                                                                                                                                                            | `x\pmod a`                                                                                               |
 | \pod            | $x \pod a$                                                                                                                                                            | `x \pod a`                                                                                               |
@@ -870,68 +871,68 @@ From [Support table - KaTeX](https://katex.org/docs/support_table.html)
 
 ## QR
 
-| Symbol/Function    | Rendered                                                 | Source or Comment                                                                                                    |
-| :----------------- | :------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------- |
-| \Q                 | <span style="color:firebrick;">Not supported</span>      | See `\Bbb{Q}`                                                                                                        |
-| \qquad             | $a\qquad\qquad{b}$                                       | `a\qquad\qquad{b}`                                                                                                   |
-| \quad              | $a\quad\quad{b}$                                         | `a\quad\quad{b}`                                                                                                     |
-| \R                 | $\R$                                                     |                                                                                                                      |
-| \r                 | $\text{\r{a}}$                                           | `\text{\r{a}}`                                                                                                       |
-| \raise             | <span style="color:firebrick;">Not supported</span>      | see `\raisebox`                                                                                                      |
-| \raisebox          | $h\raisebox{2pt}{ighe}r$                                 | `h\raisebox{2pt}{$ighe$}r`                                                                                           |
-| \rang              | $\langle A\rang$                                         | `\langle A\rang`                                                                                                     |
-| \rangle            | $\langle A\rangle$                                       | `\langle A\rangle`                                                                                                   |
-| \Rarr              | $\Rarr$                                                  |                                                                                                                      |
-| \rArr              | $\rArr$                                                  |                                                                                                                      |
-| \rarr              | $\rarr$                                                  |                                                                                                                      |
-| \ratio             | $\ratio$                                                 |                                                                                                                      |
-| \rBrace            | $\rBrace$                                                |                                                                                                                      |
-| \rbrace            | $\rbrace$                                                |                                                                                                                      |
-| \rbrack            | $\rbrack$                                                |                                                                                                                      |
-| {rcases}           | $\begin{rcases}a&\text{if }b\\c&\text{if }d\end{rcases}$ | `\begin{rcases}`<br>&nbsp;&nbsp;&nbsp;`a &\text{if } b  \\`<br>&nbsp;&nbsp;&nbsp;`c &\text{if } d`<br>`\end{rcases}` |
-| \rceil             | $\rceil$                                                 |                                                                                                                      |
-| \Re                | $\Re$                                                    |                                                                                                                      |
-| \real              | $\real$                                                  |                                                                                                                      |
-| \Reals             | $\Reals$                                                 |                                                                                                                      |
-| \reals             | $\reals$                                                 |                                                                                                                      |
-| \ref               | <span style="color:firebrick;">Not supported</span>      | [Issue #350](https://github.com/KaTeX/KaTeX/issues/350)                                                              |
-| \relax             |                                                          |                                                                                                                      |
-| \renewcommand      | $\def\hail{Hi!}\renewcommand\hail{\text{Ahoy!}} \hail$   | `\def\hail{Hi!}`<br>`\renewcommand\hail{\text{Ahoy!}}`<br>`\hail`                                                    |
-| \renewenvironment  | <span style="color:firebrick;">Not supported</span>      |                                                                                                                      |
-| \require           | <span style="color:firebrick;">Not supported</span>      |                                                                                                                      |
-| \restriction       | $\restriction$                                           |                                                                                                                      |
-| \rfloor            | $\rfloor$                                                |                                                                                                                      |
-| \rgroup            | $\rgroup$                                                |                                                                                                                      |
-| \rhd               | $\rhd$                                                   |                                                                                                                      |
-| \Rho               | $\Rho$                                                   |                                                                                                                      |
-| \rho               | $\rho$                                                   |                                                                                                                      |
-| \right             | $\left.\dfrac a b\right)$                                | `\left.\dfrac a b\right)`                                                                                            |
-| \Rightarrow        | $\Rightarrow$                                            |                                                                                                                      |
-| \rightarrow        | $\rightarrow$                                            |                                                                                                                      |
-| \rightarrowtail    | $\rightarrowtail$                                        |                                                                                                                      |
-| \rightharpoondown  | $\rightharpoondown$                                      |                                                                                                                      |
-| \rightharpoonup    | $\rightharpoonup$                                        |                                                                                                                      |
-| \rightleftarrows   | $\rightleftarrows$                                       |                                                                                                                      |
-| \rightleftharpoons | $\rightleftharpoons$                                     |                                                                                                                      |
-| \rightrightarrows  | $\rightrightarrows$                                      |                                                                                                                      |
-| \rightsquigarrow   | $\rightsquigarrow$                                       |                                                                                                                      |
-| \rightthreetimes   | $\rightthreetimes$                                       |                                                                                                                      |
-| \risingdotseq      | $\risingdotseq$                                          |                                                                                                                      |
-| \rlap              | $\rlap{\,/}{=}$                                          | `\rlap{\,/}{=}`                                                                                                      |
-| \rm                | $\rm AaBb12$                                             | `\rm AaBb12`                                                                                                         |
-| \rmoustache        | $\rmoustache$                                            |                                                                                                                      |
-| \root              | <span style="color:firebrick;">Not supported</span>      |                                                                                                                      |
-| \rotatebox         | <span style="color:firebrick;">Not supported</span>      | [Issue #681](https://github.com/KaTeX/KaTeX/issues/681)                                                              |
-| \rparen            | $\rparen$                                                |                                                                                                                      |
-| \rq                | $\rq$                                                    |                                                                                                                      |
-| \rrbracket         | $\rrbracket$                                             |                                                                                                                      |
-| \Rrightarrow       | $\Rrightarrow$                                           |                                                                                                                      |
-| \Rsh               | $\Rsh$                                                   |                                                                                                                      |
-| \rtimes            | $\rtimes$                                                |                                                                                                                      |
-| \Rule              | <span style="color:firebrick;">Not supported</span>      | see `\rule`                                                                                                          |
-| \rule              | $x\rule[6pt]{2ex}{1ex}x$                                 | `x\rule[6pt]{2ex}{1ex}x`                                                                                             |
-| \rVert             | $\rVert$                                                 |                                                                                                                      |
-| \rvert             | $\rvert$                                                 |                                                                                                                      |
+| Symbol/Function    | Rendered                                                 | Source or Comment                                                                                                   |
+| :----------------- | :------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------ |
+| \Q                 | <span style="color:firebrick;">Not supported</span>      | See `\Bbb{Q}`                                                                                                       |
+| \qquad             | $a\qquad\qquad{b}$                                       | `a\qquad\qquad{b}`                                                                                                  |
+| \quad              | $a\quad\quad{b}$                                         | `a\quad\quad{b}`                                                                                                    |
+| \R                 | $\R$                                                     |                                                                                                                     |
+| \r                 | $\text{\r{a}}$                                           | `\text{\r{a}}`                                                                                                      |
+| \raise             | <span style="color:firebrick;">Not supported</span>      | see `\raisebox`                                                                                                     |
+| \raisebox          | $h\raisebox{2pt}{ighe}r$                                 | `h\raisebox{2pt}{$ighe$}r`                                                                                          |
+| \rang              | $\langle A\rang$                                         | `\langle A\rang`                                                                                                    |
+| \rangle            | $\langle A\rangle$                                       | `\langle A\rangle`                                                                                                  |
+| \Rarr              | $\Rarr$                                                  |                                                                                                                     |
+| \rArr              | $\rArr$                                                  |                                                                                                                     |
+| \rarr              | $\rarr$                                                  |                                                                                                                     |
+| \ratio             | $\ratio$                                                 |                                                                                                                     |
+| \rBrace            | $\rBrace$                                                |                                                                                                                     |
+| \rbrace            | $\rbrace$                                                |                                                                                                                     |
+| \rbrack            | $\rbrack$                                                |                                                                                                                     |
+| {rcases}           | $\begin{rcases}a&\text{if }b\\c&\text{if }d\end{rcases}$ | `\begin{rcases}`<br>&nbsp;&nbsp;&nbsp;`a &\text{if } b \\`<br>&nbsp;&nbsp;&nbsp;`c &\text{if } d`<br>`\end{rcases}` |
+| \rceil             | $\rceil$                                                 |                                                                                                                     |
+| \Re                | $\Re$                                                    |                                                                                                                     |
+| \real              | $\real$                                                  |                                                                                                                     |
+| \Reals             | $\Reals$                                                 |                                                                                                                     |
+| \reals             | $\reals$                                                 |                                                                                                                     |
+| \ref               | <span style="color:firebrick;">Not supported</span>      | [Issue #350](https://github.com/KaTeX/KaTeX/issues/350)                                                             |
+| \relax             |                                                          |                                                                                                                     |
+| \renewcommand      | $\def\hail{Hi!}\renewcommand\hail{\text{Ahoy!}} \hail$   | `\def\hail{Hi!}`<br>`\renewcommand\hail{\text{Ahoy!}}`<br>`\hail`                                                   |
+| \renewenvironment  | <span style="color:firebrick;">Not supported</span>      |                                                                                                                     |
+| \require           | <span style="color:firebrick;">Not supported</span>      |                                                                                                                     |
+| \restriction       | $\restriction$                                           |                                                                                                                     |
+| \rfloor            | $\rfloor$                                                |                                                                                                                     |
+| \rgroup            | $\rgroup$                                                |                                                                                                                     |
+| \rhd               | $\rhd$                                                   |                                                                                                                     |
+| \Rho               | $\Rho$                                                   |                                                                                                                     |
+| \rho               | $\rho$                                                   |                                                                                                                     |
+| \right             | $\left.\dfrac a b\right)$                                | `\left.\dfrac a b\right)`                                                                                           |
+| \Rightarrow        | $\Rightarrow$                                            |                                                                                                                     |
+| \rightarrow        | $\rightarrow$                                            |                                                                                                                     |
+| \rightarrowtail    | $\rightarrowtail$                                        |                                                                                                                     |
+| \rightharpoondown  | $\rightharpoondown$                                      |                                                                                                                     |
+| \rightharpoonup    | $\rightharpoonup$                                        |                                                                                                                     |
+| \rightleftarrows   | $\rightleftarrows$                                       |                                                                                                                     |
+| \rightleftharpoons | $\rightleftharpoons$                                     |                                                                                                                     |
+| \rightrightarrows  | $\rightrightarrows$                                      |                                                                                                                     |
+| \rightsquigarrow   | $\rightsquigarrow$                                       |                                                                                                                     |
+| \rightthreetimes   | $\rightthreetimes$                                       |                                                                                                                     |
+| \risingdotseq      | $\risingdotseq$                                          |                                                                                                                     |
+| \rlap              | $\rlap{\,/}{=}$                                          | `\rlap{\,/}{=}`                                                                                                     |
+| \rm                | $\rm AaBb12$                                             | `\rm AaBb12`                                                                                                        |
+| \rmoustache        | $\rmoustache$                                            |                                                                                                                     |
+| \root              | <span style="color:firebrick;">Not supported</span>      |                                                                                                                     |
+| \rotatebox         | <span style="color:firebrick;">Not supported</span>      | [Issue #681](https://github.com/KaTeX/KaTeX/issues/681)                                                             |
+| \rparen            | $\rparen$                                                |                                                                                                                     |
+| \rq                | $\rq$                                                    |                                                                                                                     |
+| \rrbracket         | $\rrbracket$                                             |                                                                                                                     |
+| \Rrightarrow       | $\Rrightarrow$                                           |                                                                                                                     |
+| \Rsh               | $\Rsh$                                                   |                                                                                                                     |
+| \rtimes            | $\rtimes$                                                |                                                                                                                     |
+| \Rule              | <span style="color:firebrick;">Not supported</span>      | see `\rule`                                                                                                         |
+| \rule              | $x\rule[6pt]{2ex}{1ex}x$                                 | `x\rule[6pt]{2ex}{1ex}x`                                                                                            |
+| \rVert             | $\rVert$                                                 |                                                                                                                     |
+| \rvert             | $\rvert$                                                 |                                                                                                                     |
 
 ## S
 
@@ -1038,7 +1039,7 @@ From [Support table - KaTeX](https://katex.org/docs/support_table.html)
 | Symbol/Function    | Rendered                                            | Source or Comment                                       |
 | :----------------- | :-------------------------------------------------- | :------------------------------------------------------ |
 | \tag               | $$\tag{3.1c} a^2+b^2=c^2$$                          | `\tag{3.1c} a^2+b^2=c^2`                                |
-| \tag*              | $$\tag*{3.1c} a^2+b^2=c^2$$                         | `\tag*{3.1c} a^2+b^2=c^2`                               |
+| \tag\*             | $$\tag*{3.1c} a^2+b^2=c^2$$                         | `\tag*{3.1c} a^2+b^2=c^2`                               |
 | \tan               | $\tan$                                              |                                                         |
 | \tanh              | $\tanh$                                             |                                                         |
 | \Tau               | $\Tau$                                              |                                                         |
@@ -1210,9 +1211,9 @@ From [Support table - KaTeX](https://katex.org/docs/support_table.html)
 | \vfill            | <span style="color:firebrick;">Not supported</span> |                                                                                                          |
 | \vline            | <span style="color:firebrick;">Not supported</span> | [Issue #269](https://github.com/KaTeX/KaTeX/issues/269)                                                  |
 | {Vmatrix}         | $\begin{Vmatrix}a&b\\c&d\end{Vmatrix}$              | `\begin{Vmatrix}`<br>&nbsp;&nbsp;&nbsp;`a & b \\`<br>&nbsp;&nbsp;&nbsp;`c & d`<br>`\end{Vmatrix}`        |
-| {Vmatrix*}        | $\begin{Vmatrix*}[r]0&-1\\-1&0\end{Vmatrix*}$       | `\begin{Vmatrix*}[r]`<br>&nbsp;&nbsp;&nbsp;`0 & -1 \\`<br>&nbsp;&nbsp;&nbsp;`-1 & 0`<br>`\end{Vmatrix*}` |
+| {Vmatrix\*}       | $\begin{Vmatrix*}[r]0&-1\\-1&0\end{Vmatrix*}$       | `\begin{Vmatrix*}[r]`<br>&nbsp;&nbsp;&nbsp;`0 & -1 \\`<br>&nbsp;&nbsp;&nbsp;`-1 & 0`<br>`\end{Vmatrix*}` |
 | {vmatrix}         | $\begin{vmatrix}a&b\\c&d\end{vmatrix}$              | `\begin{vmatrix}`<br>&nbsp;&nbsp;&nbsp;`a & b \\`<br>&nbsp;&nbsp;&nbsp;`c & d`<br>`\end{vmatrix}`        |
-| {vmatrix*}        | $\begin{vmatrix*}[r]0&-1\\-1&0\end{vmatrix*}$       | `\begin{vmatrix*}[r]`<br>&nbsp;&nbsp;&nbsp;`0 & -1 \\`<br>&nbsp;&nbsp;&nbsp;`-1 & 0`<br>`\end{vmatrix*}` |
+| {vmatrix\*}       | $\begin{vmatrix*}[r]0&-1\\-1&0\end{vmatrix*}$       | `\begin{vmatrix*}[r]`<br>&nbsp;&nbsp;&nbsp;`0 & -1 \\`<br>&nbsp;&nbsp;&nbsp;`-1 & 0`<br>`\end{vmatrix*}` |
 | \vphantom         | $\overline{\vphantom{M}a}$                          | `\overline{\vphantom{M}a}`                                                                               |
 | \Vvdash           | $\Vvdash$                                           |                                                                                                          |
 

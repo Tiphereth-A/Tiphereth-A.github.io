@@ -1,5 +1,5 @@
 ---
-title: '题解 - [POJ 2356 等] Find a multiple'
+title: "题解 - [POJ 2356 等] Find a multiple"
 categories:
   - 程序设计
   - 题解
@@ -14,6 +14,7 @@ tags:
   - 前缀和
 date: 2020-07-31 20:58:31
 ---
+
 题目链接
 
 - [POJ 2356](https://vjudge.net/problem/POJ-2356/origin)
@@ -25,7 +26,7 @@ date: 2020-07-31 20:58:31
 
 ### Description
 
-The input contains N natural (i.e. positive integer) numbers ( N <= 10000 ). Each of that numbers is not greater than 15000. This numbers are not necessarily different (so it may happen that two or more of them will be equal). Your task is to choose a few of given numbers ( 1 <= few <= N ) so that the sum of chosen numbers is multiple for N (i.e. N * k = (sum of chosen numbers) for some natural number k)
+The input contains N natural (i.e. positive integer) numbers ( N <= 10000 ). Each of that numbers is not greater than 15000. This numbers are not necessarily different (so it may happen that two or more of them will be equal). Your task is to choose a few of given numbers ( 1 <= few <= N ) so that the sum of chosen numbers is multiple for N (i.e. N \* k = (sum of chosen numbers) for some natural number k)
 
 ### Input
 

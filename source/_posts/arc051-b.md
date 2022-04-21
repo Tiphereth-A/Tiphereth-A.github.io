@@ -1,5 +1,5 @@
 ---
-title: '题解 - [AtCoder ARC051B] 互除法'
+title: "题解 - [AtCoder ARC051B] 互除法"
 categories:
   - 程序设计
   - 题解
@@ -33,11 +33,11 @@ int gcd(int a, int b) {
 
 ## 解题思路
 
-考虑欧几里得算法的最坏情况, 即a,b为两个相邻的斐波那契数
+考虑欧几里得算法的最坏情况, 即 a,b 为两个相邻的斐波那契数
 
 令$T(a,b)$为对$a,b$求$gcd$递归层数
 
-Fibonacci数列 $F_n:=\begin{cases}
+Fibonacci 数列 $F_n:=\begin{cases}
   1,& n\leqslant 1\\
   F_{n-1}+F_{n-2},& n>1
 \end{cases}$

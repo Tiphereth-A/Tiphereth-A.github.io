@@ -10,7 +10,7 @@ date: 1020-05-06 16:31:03
 
 汉化自[Manual for: mhchem for MathJax, mhchem for KaTeX](https://mhchem.github.io/MathJax-mhchem/)
 
-在将渲染引擎切换为KaTeX之后暂未找到开启mhchem的方式, 所以效果请参照原文
+在将渲染引擎切换为 KaTeX 之后暂未找到开启 mhchem 的方式, 所以效果请参照原文
 
 按笔者习惯调整了顺序
 
@@ -38,11 +38,11 @@ $$\ce{CuS($hP12$)}$$
 
 - 使用`{...}`嵌套
 
-  $\ce{ {Gluconic Acid} + H2O2}$  `\ce{ {Gluconic Acid} + H2O2}`
+  $\ce{ {Gluconic Acid} + H2O2}$ `\ce{ {Gluconic Acid} + H2O2}`
 
 - 使用`-`(不应作为化学键)
 
-  $\ce{ {(+)}_589{-}[Co(en)3]Cl3}$  `\ce{ {(+)}_589{-}[Co(en)3]Cl3}`
+  $\ce{ {(+)}_589{-}[Co(en)3]Cl3}$ `\ce{ {(+)}_589{-}[Co(en)3]Cl3}`
 
 ## 化学方程式(CE)
 
@@ -101,7 +101,7 @@ $$\ce{$n$ H2O}$$
 | $\ce{^{0}_{-1}n^{-}}$ | `\ce{^{0}_{-1}n^{-}}` |
 | $\ce{^0_-1n-}$        | `\ce{^0_-1n-}`        |
 
-上标属于左边还是右边可能是不确定的, mhchem会自动检测  
+上标属于左边还是右边可能是不确定的, mhchem 会自动检测  
 可以用`{}`指定
 
 |                |                |
@@ -126,7 +126,7 @@ $$\ce{A ->[$x$][$x_i$] B}$$
 
 `\ce{A ->[$x$][$x_i$] B`
 
-MathJax无法正确伸长<->, <=>, <=>>和<<=>箭头 [Issue#1491](https://github.com/mathjax/MathJax/issues/1491)
+MathJax 无法正确伸长<->, <=>, <=>>和<<=>箭头 [Issue#1491](https://github.com/mathjax/MathJax/issues/1491)
 
 ## 括号
 
@@ -147,6 +147,7 @@ $$\ce{CH4 + 2 $\left( \ce{O2 + 79/21 N2} \right)$}$$
 | -------------------- | -------------------- |
 | $\ce{H2(aq)}$        | `\ce{H2(aq)}`        |
 | $\ce{CO3^2-_{(aq)}}$ | `\ce{CO3^2-_{(aq)}}` |
+
 $$\ce{NaOH(aq,$\infty$)}$$
 
 `\ce{NaOH(aq,$\infty$)}`
@@ -173,7 +174,7 @@ $$\ce{ZnS(\ca$c$)}$$
 
 ## 希腊字母
 
-MathJax和KaTeX均不支持小写直体希腊字母
+MathJax 和 KaTeX 均不支持小写直体希腊字母
 
 |                              |                              |
 | ---------------------------- | ---------------------------- |
@@ -223,7 +224,7 @@ $\ce{Fe^{II}Fe^{III}2O4}$ `\ce{Fe^{II}Fe^{III}2O4}`
 | $\ce{OCO^{.-}}$   | `\ce{OCO^{.-}}`   |
 | $\ce{NO^{(2.)-}}$ | `\ce{NO^{(2.)-}}` |
 
-## Kröger-Vink表示法
+## Kröger-Vink 表示法
 
 |                  |                  |
 | ---------------- | ---------------- |
@@ -269,7 +270,7 @@ $\ce{A v B (v) -> B ^ B (^)}$
 
 $$\ce{Zn^2+  <=>[+ 2OH-][+ 2H+]  $\underset{\text{amphoteres Hydroxid}}{\ce{Zn(OH)2 v}}$  <=>[+ 2OH-][+ 2H+]  $\underset{\text{Hydroxozikat}}{\ce{[Zn(OH)4]^2-}}$}$$
 
-`\ce{Zn^2+  <=>[+ 2OH-][+ 2H+]  $\underset{\text{amphoteres Hydroxid}}{\ce{Zn(OH)2 v}}$  <=>[+ 2OH-][+ 2H+]  $\underset{\text{Hydroxozikat}}{\ce{[Zn(OH)4]^2-}}$}`
+`\ce{Zn^2+ <=>[+ 2OH-][+ 2H+] $\underset{\text{amphoteres Hydroxid}}{\ce{Zn(OH)2 v}}$ <=>[+ 2OH-][+ 2H+] $\underset{\text{Hydroxozikat}}{\ce{[Zn(OH)4]^2-}}$}`
 
 $$\ce{$K = \frac{[\ce{Hg^2+}][\ce{Hg}]}{[\ce{Hg2^2+}]}$}$$
 
@@ -282,4 +283,4 @@ $$\ce{$K = \ce{\frac{[Hg^2+][Hg]}{[Hg2^2+]}}$}$$
 $$\ce{Hg^2+ ->[I-] $\underset{\mathrm{red}}{\ce{HgI2}}$ ->[I-]
  $\underset{\mathrm{red}}{\ce{[Hg^{II}I4]^2-}}$}$$
 
-`\ce{Hg^2+ ->[I-] $\underset{\mathrm{red}}{\ce{HgI2}}$ ->[I-]  $\underset{\mathrm{red}}{\ce{[Hg^{II}I4]^2-}}$}`
+`\ce{Hg^2+ ->[I-] $\underset{\mathrm{red}}{\ce{HgI2}}$ ->[I-] $\underset{\mathrm{red}}{\ce{[Hg^{II}I4]^2-}}$}`

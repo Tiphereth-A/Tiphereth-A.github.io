@@ -14,6 +14,7 @@ tags:
   - 滚动数组
 date: 2021-04-04 00:04:28
 ---
+
 [比赛链接](https://ac.nowcoder.com/acm/contest/12548)
 
 <!-- more -->
@@ -49,7 +50,7 @@ The $n$ following lines each contain a single integer, the $i+1$-th line contain
 
 The output should contain a single line with a single integer: the maximal score of a routine composed of KKK different exercises
 
-#### 示例1
+#### 示例 1
 
 ##### 输入
 
@@ -94,7 +95,7 @@ $0\leq g_{i}\leq 10\,000$
 
 The popular PefectSharp online group gathers fans of workouts and healthy lifestyle all over the world. Every group member has managed to gain a certain amount of credits for the trendy MV03 online sports platform, giving them access to various workout and relaxation resources
 
-The amount of credits owned may however largely differ from one person to the other. Since PefectSharp  members value sharing and solidarity, they decide to redispatch credits by playing the following game:
+The amount of credits owned may however largely differ from one person to the other. Since PefectSharp members value sharing and solidarity, they decide to redispatch credits by playing the following game:
 
 The $N$ group members are numbered from $1$ to $N$ and the game comprises $k$ rounds, for some integer $k$ such that $1 \leq k \leq N$. During the $i$-th round of the game, all members except member $i$ give $S$ credits to member $i$. The game may end after any round, and its outcome will be the minimum amount of credits held by a member of the group after that round
 
@@ -109,7 +110,7 @@ Each of the $N$ following lines contains a single integer, the $i + 1$-th line c
 
 The output should contain a single integer value $C$ corresponding to the maximum possible game outcome
 
-#### 示例1
+#### 示例 1
 
 ##### 输入
 
@@ -210,7 +211,7 @@ The first line of the input contains two space-separated integers: $N$ the numbe
 
 The output should contain a single line containing a single integer: the minimum amount of time needed to move statues such that each statue is under a different street light and such that the size of statues grows with the street light numbers under which they are
 
-#### 示例1
+#### 示例 1
 
 ##### 输入
 
@@ -231,7 +232,7 @@ The output should contain a single line containing a single integer: the minimum
 
 Because there are as many street lights as there are statues we needto position the statue of size $1$ at street light $1$ (which takes $1\times |3-1|=2$ units of times), leave the statue of size $2$ at street light $2$, and move the statue of size $3$ to the street light $3$(which takes $3\times |1-3|=6$ units of times). In total this takes $8$ units of time
 
-#### 示例2
+#### 示例 2
 
 ##### 输入
 
@@ -266,9 +267,9 @@ for all $1 \leq i\leq K,1\leq S_{i}\leq 1\,000\,000,1\leq P_i \leq N$
 >
 > 我: $5000^2\times2=5\times10^6$
 >
-> 队友A: 应该是T了
+> 队友 A: 应该是 T 了
 >
-> 队友B: 应该是数组越界了
+> 队友 B: 应该是数组越界了
 
 显然 $O(n^2)$ DP
 

@@ -14,20 +14,25 @@ tags:
 date: 2020-10-06 21:45:51
 ---
 
-我们都知道, CRT用于求解的方程组要求其模数必须两两互素, 而exCRT则没有这条限制
+我们都知道, CRT 用于求解的方程组要求其模数必须两两互素, 而 exCRT 则没有这条限制
 
-> CRT的介绍参见 [链接](/article/nt-1/#%E4%B8%AD%E5%9B%BD%E5%89%A9%E4%BD%99%E5%AE%9A%E7%90%86)
+> CRT 的介绍参见 [链接](/article/nt-1/#%E4%B8%AD%E5%9B%BD%E5%89%A9%E4%BD%99%E5%AE%9A%E7%90%86)
 
 <!-- more -->
+
 ## 介绍
 
-为什么CRT要求其模数必须两两互素?
+为什么 CRT 要求其模数必须两两互素?
 
-因为我们在 [证明](article/nt-1/#t-6.1) 过程中即可发现, CRT的关键便是构造这样的方程组
-$$\begin{cases}
+因为我们在 [证明](article/nt-1/#t-6.1) 过程中即可发现, CRT 的关键便是构造这样的方程组
+
+$$
+\begin{cases}
   x\equiv1\pmod{m_i}\\
   x\equiv0\pmod{m_j}~(j\ne i)
-\end{cases}$$
+\end{cases}
+$$
+
 此时的$x=M_iN_i$, $M_i=\prod_{j=1,j\ne i}^km_j$, 而$N_i$是$M_i$关于$m_i$的**逆元**
 
 我们知道, 如果一个整数$a$在模$m$意义下有逆元, 其前提之一便是$(a,m)=1$
@@ -42,19 +47,25 @@ $$\begin{cases}
 
 当然可以!
 
-这就要求我们在构建解的时候绕开CRT的证明, 另辟蹊径
+这就要求我们在构建解的时候绕开 CRT 的证明, 另辟蹊径
 
 我们观察下面的式子
-$$\begin{cases}
+
+$$
+\begin{cases}
     x\equiv b_1\pmod{m_1}\\
     x\equiv b_2\pmod{m_2}
-\end{cases}$$
+\end{cases}
+$$
 
 由同余定义, 我们有
-$$\begin{cases}
+
+$$
+\begin{cases}
     m_1\mid x-b_1\\
     m_2\mid x-b_2
-\end{cases}$$
+\end{cases}
+$$
 
 即存在整数$k_1,k_2$使得
 $$x=m_1k_1+b_1=m_2k_2+b_2$$

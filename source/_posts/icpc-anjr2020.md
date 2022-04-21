@@ -22,6 +22,7 @@ tags:
   - 抽屉原理
 date: 2020-12-20 20:46:33
 ---
+
 [比赛链接](https://ac.nowcoder.com/acm/contest/10272)
 
 <!-- more -->
@@ -31,23 +32,23 @@ date: 2020-12-20 20:46:33
 | 题号[^1] | 标题[^2]                          | 做法         |
 | -------- | --------------------------------- | ------------ |
 | A        | Ah, It's Yesterday Once More      | 构造         |
-| *B       | Baby's First Suffix Array Problem |              |
-| *C       | Certain Scientific Railgun        |              |
-| *D       | Degree of Spanning Tree           |              |
+| \*B      | Baby's First Suffix Array Problem |              |
+| \*C      | Certain Scientific Railgun        |              |
+| \*D      | Degree of Spanning Tree           |              |
 | E        | Evil Coordinate                   | 排序         |
-| F        | Fireworks                         | 三分       |
-| *G       | Go                                |              |
+| F        | Fireworks                         | 三分         |
+| \*G      | Go                                |              |
 | H        | Harmonious Rectangle              | 打表         |
-| *I       | Interested in Skiing              |              |
-| *J       | Just Another Game of Stones       |              |
+| \*I      | Interested in Skiing              |              |
+| \*J      | Just Another Game of Stones       |              |
 | K        | K Co-prime Permutation            | 签到(找规律) |
 | L        | Let's Play Curling                | 签到(找规律) |
-| *M       | Monster Hunter                    | 树形DP       |
-[^1]: 打*的是还没写题解的题
+| \*M      | Monster Hunter                    | 树形 DP      |
+
+[^1]: 打\*的是还没写题解的题
 [^2]: 带超链接的是找到了原题或原型
 
-[官方题解](https://zhuanlan.zhihu.com/p/338249705
-)
+[官方题解](https://zhuanlan.zhihu.com/p/338249705)
 
 {% pdf /article/icpc-anjr2020/problems.pdf 600px %}
 
@@ -55,7 +56,7 @@ date: 2020-12-20 20:46:33
 
 ### 解题思路
 
-我TM直接好家伙
+我 TM 直接好家伙
 
 附[checker](https://github.com/Tiphereth-A/2020-icpc-nanjing-A-checker)
 
@@ -126,6 +127,7 @@ date: 2020-12-20 20:46:33
 - `D`: 从$(x,y)$走到$(x,y-1)$
 - `L`: 从$(x,y)$走到$(x-1,y)$
 - `R`: 从$(x,y)$走到$(x+1,y)$
+
 在$(m_x,m_y)$处有个坑, 机器人走到坑那里就动不了了, 问能否通过改变指令顺序使得机器人避开坑
 
 ### 解题思路
@@ -216,11 +218,11 @@ int main() {
 
 ### 题意简述
 
-Kotori可以花费时间$n$制作一个烟花, 也可以花费时间$m$点燃所有没点燃的烟花, 每个烟花完美绽放的概率为$p$, 如果在某次点燃中有至少一个烟花完美绽放, 则Kotori停止, 问Kotori停止的最小时间期望
+Kotori 可以花费时间$n$制作一个烟花, 也可以花费时间$m$点燃所有没点燃的烟花, 每个烟花完美绽放的概率为$p$, 如果在某次点燃中有至少一个烟花完美绽放, 则 Kotori 停止, 问 Kotori 停止的最小时间期望
 
 ### 解题思路
 
-> 因为把`ld`打成`ll`导致罚时+2, 我是SB
+> 因为把`ld`打成`ll`导致罚时+2, 我是 SB
 
 假设最优解是制作了$k$个烟花, 耗时为$t$, 则有
 $$t=(nk+m)\left(1-(1-p)^k\right)+(t+nk+m)(1-p)^k$$
@@ -298,7 +300,7 @@ int main() {
 
 ### 解题思路
 
-> 沉迷搞A题导致没去打表, 难受
+> 沉迷搞 A 题导致没去打表, 难受
 
 由抽屉原理, 如果$m,n>9$则任意矩阵均满足要求, 结果为$3^{mn}$
 
@@ -627,7 +629,7 @@ $$f(c)=\left|\left\{i\mid\forall j\in[1,m]\cap\N,~|c-a_i|<|c-b_j|\right\}\right|
 
 ### 解题思路
 
-先排序, 如果$c$在$b_i,b_{i+1}$之间, 则$f(c)$最大值即为两数2之间夹的$a$个数
+先排序, 如果$c$在$b_i,b_{i+1}$之间, 则$f(c)$最大值即为两数 2 之间夹的$a$个数
 
 所以$O(m)$跑一遍即可
 

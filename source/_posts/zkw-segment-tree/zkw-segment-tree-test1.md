@@ -12,43 +12,29 @@ comments: false
 
 <!--more-->
 
-> 注意: 因为笔者脑抽并没有调用fread
+> 注意: 因为笔者脑抽并没有调用 fread
 
 ### 递归线段树
 
 ```cpp
-
 #include<cstdio>
-
 #include<fstream>
-
 #include<sys/time.h>
-
 #include<string>
-
 #include<sstream>
 
 #define fp(i,l,r) for(register uint64_t i=(l);i<=(r);++i)
-
 #define fr(a) freopen((a),"r",stdin)
-
 #define fw(a) freopen((a),"w",stdout)
-
 #define fc fclose(stdin),fclose(stdout)
-
 #define il inline
-
 #define ls rt<<1
-
 #define rs rt<<1|1
-
 #define Mid uint64_t m=((r-l)>>1)+l
-
 #define tpn typename
-
 #define MAXN 10000005
-
 #define MAXBUF 140000000
+
 using i64 = int64_t;
 using u64 = uint64_t;
 
@@ -158,37 +144,25 @@ int main() {
 }
 ```
 
-### zkw线段树
+### zkw 线段树
 
 ```cpp
-
 #include<cstdio>
-
 #include<fstream>
-
 #include<sys/time.h>
-
 #include<string>
-
 #include<sstream>
 
 #define fp(i,l,r) for(register uint64_t (i)=(l);(i)<=(r);(i)++)
-
 #define fd(i,l,r) for(register uint64_t i=l;i>=r;--i)
-
 #define fr(a) freopen((a),"r",stdin)
-
 #define fw(a) freopen((a),"w",stdout)
-
 #define fc fclose(stdin),fclose(stdout)
-
 #define il inline
-
 #define tpn typename
-
 #define MAXN 10000005
-
 #define MAXBUF 140000000
+
 using u64 = uint64_t;
 
 il char gc() {
@@ -252,7 +226,7 @@ il u64 query(u64 &s,u64 &t){
         ans+=add[t]*rNum;
     }
     return ans;
-}  
+}
 int main() {
     fp(j,1,16) {
         tmp.clear();
@@ -289,34 +263,22 @@ int main() {
 ### 树状数组
 
 ```cpp
-
 #include<cstdio>
-
 #include<fstream>
-
 #include<sys/time.h>
-
 #include<string>
-
 #include<sstream>
 
 #define fp(i,l,r) for(register uint64_t i=(l);i<=(r);++i)
-
 #define lowbit(x) ((x)&-(x))
-
 #define fr(a) freopen((a),"r",stdin)
-
 #define fw(a) freopen((a),"w",stdout)
-
 #define fc fclose(stdin),fclose(stdout)
-
 #define il inline
-
 #define tpn typename
-
 #define MAXN 10000005
-
 #define MAXBUF 140000000
+
 using u64 = uint64_t;
 
 il char gc() {

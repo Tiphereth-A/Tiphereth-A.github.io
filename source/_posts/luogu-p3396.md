@@ -1,5 +1,5 @@
 ---
-title: '题解 - [Luogu P3396] 哈希冲突'
+title: "题解 - [Luogu P3396] 哈希冲突"
 categories:
   - 程序设计
   - 题解

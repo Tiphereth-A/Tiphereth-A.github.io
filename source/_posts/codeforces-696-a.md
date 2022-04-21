@@ -1,5 +1,5 @@
 ---
-title: '题解 - [CodeForces 696 A] Lorenzo Von Matterhorn'
+title: "题解 - [CodeForces 696 A] Lorenzo Von Matterhorn"
 categories:
   - 程序设计
   - 题解
@@ -11,6 +11,7 @@ tags:
   - 完全二叉树
 date: 2020-07-25 00:48:00
 ---
+
 [题目链接](https://codeforces.com/problemset/problem/696/A)
 
 <!-- more -->
@@ -26,7 +27,7 @@ date: 2020-07-25 00:48:00
 
 ## 解题思路
 
-对于树来说, 实现这两种操作我们自然会想到LCA之类的, 不过这道题有一个巧妙的解法可以绕过这些知识
+对于树来说, 实现这两种操作我们自然会想到 LCA 之类的, 不过这道题有一个巧妙的解法可以绕过这些知识
 
 我们用一个`map`来记录权值的变化, 在更新和查询权值时, 我们从`u`, `v`向上查找, 直到到达了`lca(u, v)`为止
 

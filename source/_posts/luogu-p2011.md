@@ -1,5 +1,5 @@
 ---
-title: '题解 - [Luogu P2011] 计算电压'
+title: "题解 - [Luogu P2011] 计算电压"
 categories:
   - 程序设计
   - 题解
@@ -15,6 +15,7 @@ tags:
   - Gauss消去法
 date: 2021-10-30 00:29:57
 ---
+
 [题目链接](https://www.luogu.com.cn/problem/P2011)
 
 <!-- more -->
@@ -23,7 +24,7 @@ date: 2021-10-30 00:29:57
 
 ### 题目背景
 
-相信不少人轻松灭掉 1,2 两题 (蒟蒻无视此句), 我相信, 大家对物理也是很有兴趣的 (众人: 我们对揍人也是很有兴趣的), 那么, 再奉上 100 分给Physicaler 们
+相信不少人轻松灭掉 1,2 两题 (蒟蒻无视此句), 我相信, 大家对物理也是很有兴趣的 (众人: 我们对揍人也是很有兴趣的), 那么, 再奉上 100 分给 Physicaler 们
 
 ### 题目描述
 
@@ -104,10 +105,12 @@ $q$ 行, 每行一个实数, 保留小数点后两位. (若 $A$ 点电压低于 
 
 则有
 
-$$\begin{cases}
+$$
+\begin{cases}
   \varphi_i=U_i,&i\in\Lambda\\
   \displaystyle\sum_{\lang i,j\rang\in G}{\varphi_i-\varphi_j\over R_{ij}}=0,&i\notin\Lambda
-\end{cases}$$
+\end{cases}
+$$
 
 另外注意两点
 
