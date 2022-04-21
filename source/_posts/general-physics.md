@@ -922,10 +922,12 @@ $$f={1\over2\pi\sqrt{LC}}$$
 ## Ch 13. 电路和磁路
 ### Kirchhoff定律
 #### Kirchhoff第一定律
+
 汇集于同一结点的各支路电流代数和为$0$
 
 - 约定流出结点的电流为正, 流入结点的电流为负
 #### Kirchhoff第二定律
+
 在一个回路中, 电阻电势降代数和等于电源电动势代数和
 
 - 约定
@@ -935,6 +937,7 @@ $$f={1\over2\pi\sqrt{LC}}$$
 ### 交流电和交流电路的基本概念
 #### 物理量
 ##### 阻抗和相位差
+
 $$Z:=\frac{U_0}{I_0}=\frac{U}{I}$$
 
 > 因为相位差, 所以瞬时值不能写成类似关系
@@ -942,6 +945,7 @@ $$Z:=\frac{U_0}{I_0}=\frac{U}{I}$$
 $$\varphi:=\varphi_u-\varphi_i$$
 
 #### 纯电阻
+
 $$Z=R,\varphi=0$$
 
 > 阻抗仅在频率不太高的时候成立 (趋肤效应)
@@ -950,40 +954,52 @@ $$u(t)=U_0\cos\omega t$$
 $$i(t)=I_0\cos\omega t$$
 
 #### 纯电感
+
 $$Z=\omega L,\varphi=\frac{\pi}{2}$$
 
 $$u(t)=U_0\cos\omega t$$
 $$i(t)=I_0\cos(\omega t-\frac{\pi}{2})$$
 
 #### 纯电容
+
 $$Z=\frac{1}{\omega C},\varphi=-\frac{\pi}{2}$$
 
 $$u(t)=U_0\cos\omega t$$
 $$i(t)=I_0\cos(\omega t+\frac{\pi}{2})$$
 
 ### 交流电路的矢量图解法
+
 - RL 串联
 - RC 并联
+
 ### 交流电路的复数解法
+
 $$\tilde{U}=U_0e^{j(\omega t+\varphi_u)}$$
 $$\tilde{I}=I_0e^{j(\omega t+\varphi_i)}$$
 $$\tilde{Z}={\tilde{U}\over\tilde{I}}=Ze^{j\varphi}$$
 
 #### 电阻
+
 $$\tilde{Z}_R=R$$
+
 #### 电感
+
 $$\tilde{Z}_L=j\omega L$$
 #### 电容
+
 $$\tilde{Z}_C=\frac{1}{j\omega C}$$
 
 #### 串联电路
+
 $$\tilde{U}=\sum_i\tilde{U_i}$$
 $$\tilde{Z}=\sum_i\tilde{Z_i}$$
 #### 并联电路
+
 $$\tilde{I}=\sum_i\tilde{I_i}$$
 $${1\over\tilde{Z}}=\sum_i{1\over\tilde{Z_i}}$$
 
 #### Kirchhoff方程组
+
 $$\sum\pm\tilde{I}=0$$
 $$\sum\pm\tilde{I}\tilde{Z}=\sum\pm\tilde{E}$$
 
@@ -994,11 +1010,13 @@ $$\tilde{Z}=R+j\left(\omega L-\frac{1}{\omega C}\right)$$
 
 ### 交流电的功率
 #### 瞬时功率
+
 $$p(t)=u(t)i(t)=\frac{1}{2}U_0I_0(\cos\varphi+\cos(2\omega t-\varphi))=UI(\cos\varphi+\cos(2\omega t-\varphi))$$
 
 > 和差化积: $\cos\varphi+\cos(2\omega t-\varphi)=2\cos\omega t\cos\varphi$
 
 #### 平均功率
+
 $$P=\frac{1}{T}\int_0^Tp(t)\mathrm{d}t=UI\cos\varphi$$
 
 - $\cos\varphi$: 功率因数, 有功功率在视在功率中所占比例
@@ -1026,6 +1044,7 @@ $$S^2=P^2+P_q^2$$
 
 ### 磁路和磁路定律
 #### 磁介质分界面上磁感应线的折射
+
 $$\frac{\tan i}{\tan r}={\mu_{r1}\over\mu_{r2}}$$
 
 #### 磁路
@@ -1035,6 +1054,7 @@ $$\frac{\tan i}{\tan r}={\mu_{r1}\over\mu_{r2}}$$
 - 并联磁路
 
 #### 磁路定律
+
 - 单回路
   $$NI_0=\Phi\sum_i\frac{l_i}{\mu_iS_i}$$
 
@@ -1050,6 +1070,7 @@ $$\frac{\tan i}{\tan r}={\mu_{r1}\over\mu_{r2}}$$
 
 ## Ch 14. 光学
 ### 光波及其相干条件
+
 - 波速$u={1\over\sqrt{\epsilon\mu}}$
 - 折射率$n=\frac{c}{u}=\sqrt{\epsilon_r\mu_r}$
 - 能量密度$w=\frac{1}{2}\epsilon E^2+\frac{1}{2}\mu H^2$

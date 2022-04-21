@@ -3,10 +3,7 @@
     "style": "consistent"
   },
   "MD013": false,
-  "MD022": {
-    "lines_above": 1,
-    "lines_below": 1
-  },
+  "MD022": false,
   "MD024": false,
   "MD026": false,
   "MD033": false,
