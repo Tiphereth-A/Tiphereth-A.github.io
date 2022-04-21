@@ -14,7 +14,7 @@ tags:
 - `hexo@6.1.0`
 - `hexo-theme-next@8.11.0`
 
-{% note info %}
+{% endnote %}
 
 修复 $\KaTeX$ 支持, 自动格式化
 
