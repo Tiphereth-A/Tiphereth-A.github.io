@@ -10,11 +10,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+      - run: npm install markdownlint-cli2 --global
+      - name: Load config
       - name: Run markdownlint
-        uses: articulate/actions-markdownlint@v1
-        with:
-          config: .github/linters/.markdownlint.json
-          files: 'source/**/*.md'
+        run: markdownlint-cli2-config .github/linters/.markdownlint.json 'source/**/*.md'
 
   pages:
     needs: lint-md
