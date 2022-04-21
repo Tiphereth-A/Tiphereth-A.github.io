@@ -986,7 +986,7 @@ for (var j = 0; j < windData.ny; j++) {
 for (var i = 0; i < windData.nx; i++, p++) {
 var vx = windData.data[p][0];
 var vy = windData.data[p][1];
-var mag = Math.sqrt(vx _vx + vy_ vy);
+var mag = Math.sqrt(vx * vx + vy * vy);
 // 数据是一个一维数组
 // [ [经度, 维度, 向量经度方向的值, 向量维度方向的值] ]
 data.push([
