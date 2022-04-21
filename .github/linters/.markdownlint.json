@@ -1,10 +1,14 @@
 {
   "MD013": false,
+  "MD022": false,
   "MD024": false,
+  "MD026": false,
   "MD029": {
     "style": "one_or_ordered"
   },
+  "MD032": false,
   "MD033": false,
   "MD034": false,
+  "MD036": false,
   "MD045": false
 }
