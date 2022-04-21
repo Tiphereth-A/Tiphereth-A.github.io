@@ -1035,7 +1035,7 @@ $$P=\frac{1}{T}\int_0^Tp(t)\mathrm{d}t=UI\cos\varphi$$
 
   单位: $\mathrm{W}$
 
--  无功功率
+- 无功功率
   $$P_q=I^2Z\sin\varphi=I^2\Im\tilde{Z}$$
 
   单位: $\mathrm{Var}$
