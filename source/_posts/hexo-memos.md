@@ -67,7 +67,7 @@ custom_file_path:
 
 如果嫌 commit 时间过长也可以借助 GitHub Action 实现自动格式化并 commit, 这里只列出基于 Git Hooks 的配置步骤
 
-安装 [Husky](https://github.com/typicode/husky) 和 [Prettier](https://github.com/Prettier/Prettier)
+安装 [Husky](https://github.com/typicode/husky) 和 [Prettier](https://github.com/prettier/prettier)
 
 {% note info %}
 
