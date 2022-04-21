@@ -527,7 +527,7 @@ Print, on a single line, the least positive number a such that $a⊗a=N$. If the
 
 ### 解题思路
 
-设$N$的位数为$l$, 则$a$的位数为$k=\lceil{l\over2}\rceil$
+设$N$的位数为$l$, 则$a$的位数为$k=\lceil\frac{l}{2}\rceil$
 
 注意到, $N_i$由$\def\enum#1{a_{ #1}}\enum{0},\enum{1},...,\enum{i}$决定, $i<k$, 故我们有一个简单的想法, 就是对$N_i$枚举可能的$a_i$
 
@@ -800,13 +800,13 @@ Odd
 
 签到题
 
-首先我们不难得出这$N$个数和的通式为 ${N(N+1)\over2}+kN$
+首先我们不难得出这$N$个数和的通式为 $\frac{N(N+1)}{2}+kN$
 
 容易得出:
 
 - 这$N$个数的和保持奇偶不变当且仅当$N$为偶数
-- $2\mid{N(N+1)\over2}\iff N\equiv0\pmod4$
-- $2\nmid{N(N+1)\over2}\iff N\equiv2\pmod4$
+- $2\mid\frac{N(N+1)}{2}\iff N\equiv0\pmod4$
+- $2\nmid\frac{N(N+1)}{2}\iff N\equiv2\pmod4$
 
 ### 代码参考
 
@@ -1154,13 +1154,13 @@ The second sample case represents the third example in the list given earlier wi
 
 求满足条件的总方案数时, 我们这样考虑:
 
-- 首先需要从$365$天中取出$n$个不同的日子, 取法为$\displaystyle{365\choose n}$
+- 首先需要从$365$天中取出$n$个不同的日子, 取法为$\displaystyle\binom{365}{n}$
 - 然后我们需要让等价类与日子一一对应, 这样的总方法数为$\displaystyle{n!\over\prod_{i=1}^n(f_i!)}$
 - 最后我们要让所有等价类中的元素和人一一对应, 这样的总方法数为$\displaystyle{k!\over\prod_{i=1}^k(c_i!)}$
 
 因此由乘法原理, 所求概率为
 
-$${1\over 365^k}{365\choose n}{n!\over\prod_{i=1}^n(f_i!)}{k!\over\prod_{i=1}^k(c_i!)}$$
+$$\frac{1}{365^k}\binom{365}{n}{n!\over\prod_{i=1}^n(f_i!)}{k!\over\prod_{i=1}^k(c_i!)}$$
 
 ### 复杂度
 

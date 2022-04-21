@@ -16,13 +16,13 @@ date: 2020-04-18 22:54:50
 
 ## 阶
 
-对$\gcd(a,m)=1$, $\operatorname{ord}_ma:=\min\{l\in\Bbb{N}^*|a^l\equiv1\pmod m\}$
+对$\gcd(a,m)=1$, $\operatorname{ord}_ma:=\min\{l\in\Bbb{N}^+|a^l\equiv1\pmod m\}$
 
 <!--more-->
 
 ### 性质
 
-1. $\operatorname{ord}_ma=l\implies\operatorname{ord}_ma^t={l\over(l,t)}$
+1. $\operatorname{ord}_ma=l\implies\operatorname{ord}_ma^t=\frac{l}{(l,t)}$
    - $espc.\ l\perp t\implies\operatorname{ord}_ma=\operatorname{ord}_ma^t$
 1. $a^k\equiv1\pmod m\iff\operatorname{ord}_ma\mid k$
    1. $espc.\ \operatorname{ord}_ma\mid\varphi(m)$
@@ -39,7 +39,7 @@ date: 2020-04-18 22:54:50
 
 ### 性质
 
-1. 模$m$具有原根$\iff m\in\{n\in\Bbb{N}^*|(n=p^\alpha)\lor (n=2p^\alpha), p\in\{prime\},\alpha\in\Bbb{N}^*\}$
+1. 模$m$具有原根$\iff m\in\{n\in\Bbb{N}^+|(n=p^\alpha)\lor (n=2p^\alpha), p\in\{prime\},\alpha\in\Bbb{N}^+\}$
 1. $g$是模$m$的原根$\implies\{g^l|1\leqslant l\leqslant\varphi(m),l\perp\varphi(m)\}\implies$模$m$的原根有$\varphi(\varphi(m))$个
 
 ## 指数(离散对数)
@@ -56,8 +56,8 @@ date: 2020-04-18 22:54:50
       1. $\operatorname{ind}_g(a^n)\equiv n\operatorname{ind}_ga\pmod{\varphi(m)}$
    1. 若$g_1$也是模$m$原根, 则$\operatorname{ind}_ga\equiv\operatorname{ind}_{g_1}a\operatorname{ind}_gg_1\pmod{\varphi(m)}$
 1. 与$k$次剩余的关系, 令$d=\gcd(k,\varphi(m))$
-   1. $a$为模$m$的$k$次剩余$\iff d\mid\operatorname{ind}_ga\iff a^{\varphi(m)\over d}\equiv1\pmod m$
+   1. $a$为模$m$的$k$次剩余$\iff d\mid\operatorname{ind}_ga\iff a^\frac{\varphi(m)}{d}\equiv1\pmod m$
    1. $a$为模$m$的$k$次剩余  
 
-      $\implies|\{x|x^k\equiv a\pmod m\}|=d,\{x|x^k\equiv a\pmod m\}=\{\overline{g^{({k\over d})^{-1}{\operatorname{ind}_ga\over d}+i{\varphi(m)\over d}}}|i=0,...,d-1\}$
-   1. 模$m$的$k$次剩余共${\varphi(m)\over d}$个, 分别为$a\equiv g^{di},i=0,...,{\varphi(m)\over d}-1$
+      $\implies|\{x|x^k\equiv a\pmod m\}|=d,\{x|x^k\equiv a\pmod m\}=\{\overline{g^{(\frac{k}{d})^{-1}{\operatorname{ind}_ga\over d}+i\frac{\varphi(m)}{d}}}|i=0,...,d-1\}$
+   1. 模$m$的$k$次剩余共$\frac{\varphi(m)}{d}$个, 分别为$a\equiv g^{di},i=0,...,\frac{\varphi(m)}{d}-1$

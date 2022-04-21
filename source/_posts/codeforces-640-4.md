@@ -167,7 +167,7 @@ int main() {
 当$k\operatorname{mod}(n-1)>0$时
 
 $$
-\def\K{\lfloor{k\over n-1}\rfloor}
+\def\K{\lfloor\frac{k}{n-1}\rfloor}
 \def\arraystretch{1.5}
    \begin{array}{c:c:c:c:c|c}
    \color{green}1 & \color{green}2 & \color{green}... & \color{green}... & \color{green}n-1 & \color{red}n \\ \hdashline
@@ -177,12 +177,12 @@ $$
 \end{array}
 $$
 
-此时的答案为$\lfloor{k\over n-1}\rfloor n+ k\operatorname{mod}(n-1)$
+此时的答案为$\lfloor\frac{k}{n-1}\rfloor n+ k\operatorname{mod}(n-1)$
 
 当$k\operatorname{mod}(n-1)=0$时,
 
 $$
-\def\K{\lfloor{k\over n-1}\rfloor}
+\def\K{\lfloor\frac{k}{n-1}\rfloor}
 \def\arraystretch{1.5}
    \begin{array}{c:c:c:c|c}
    \color{green}1 & \color{green}2 & \color{green}... & \color{green}n-1 & \color{red}n \\ \hdashline
@@ -192,7 +192,7 @@ $$
 \end{array}
 $$
 
-此时的答案为$\lfloor{k\over n-1}\rfloor n-1$
+此时的答案为$\lfloor\frac{k}{n-1}\rfloor n-1$
 
 ### 代码
 

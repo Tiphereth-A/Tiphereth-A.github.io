@@ -86,7 +86,7 @@ iPig 觉得只要符合文献, 每一种 $k|n$ 都是有可能的. 他打算考�
 ## 题意简述
 
 给出$n,g$, 求
-$$g^{\sum_{d\mid n}{n\choose d}}\bmod 999911659$$
+$$g^{\sum_{d\mid n}\binom{n}{d}}\bmod 999911659$$
 
 ## 解题思路
 
@@ -96,7 +96,7 @@ $$g^{\sum_{d\mid n}{n\choose d}}\bmod 999911659$$
 
 之后由Euler定理知
 
-$$g^{\sum_{d\mid n}{n\choose d}}\equiv g^{\sum_{d\mid n} {n\choose d}\bmod\varphi(M)}\pmod{M}$$
+$$g^{\sum_{d\mid n}\binom{n}{d}}\equiv g^{\sum_{d\mid n} \binom{n}{d}\bmod\varphi(M)}\pmod{M}$$
 
 指数部分显然要用Lucas, 不过本题指数部分的模数$\varphi(M)=999911658$较大, 我们可使用中国剩余定理进行优化
 

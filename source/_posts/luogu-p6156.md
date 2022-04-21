@@ -123,9 +123,9 @@ $f$ 函数定义如下:
 
 $$
 \begin{aligned}
-  \sum_{i=1}^n\sum_{j=1}^n(i+j)^k\mu^2((i,j))(i,j)&=\sum_{d=1}^nd^{k+1}\mu^2(d)\sum_{i=1}^{\lfloor{n\over d}\rfloor}\sum_{j=1}^{\lfloor{n\over d}\rfloor}(i+j)^k[(i,j)=1]\\
-  &=\sum_{d=1}^nd^{k+1}\mu^2(d)\sum_{e=1}^{\lfloor{n\over d}\rfloor}e^k\mu(e)\sum_{i=1}^{\lfloor{n\over de}\rfloor}\sum_{j=1}^{\lfloor{n\over de}\rfloor}(i+j)^k\\
-  &\xlongequal[D=de]{S(x)=\sum_{i=1}^x\sum_{j=1}^x(i+j)^k}\sum_{D=1}^nD^kS\left(\left\lfloor{n\over D}\right\rfloor\right)(\mu*\{\operatorname{id}\mu^2\})(D)
+  \sum_{i=1}^n\sum_{j=1}^n(i+j)^k\mu^2((i,j))(i,j)&=\sum_{d=1}^nd^{k+1}\mu^2(d)\sum_{i=1}^{\lfloor\frac{n}{d}\rfloor}\sum_{j=1}^{\lfloor\frac{n}{d}\rfloor}(i+j)^k[(i,j)=1]\\
+  &=\sum_{d=1}^nd^{k+1}\mu^2(d)\sum_{e=1}^{\lfloor\frac{n}{d}\rfloor}e^k\mu(e)\sum_{i=1}^{\lfloor\frac{n}{de}\rfloor}\sum_{j=1}^{\lfloor\frac{n}{de}\rfloor}(i+j)^k\\
+  &\xlongequal[D=de]{S(x)=\sum_{i=1}^x\sum_{j=1}^x(i+j)^k}\sum_{D=1}^nD^kS\left(\left\lfloor\frac{n}{D}\right\rfloor\right)(\mu*\{\operatorname{id}\mu^2\})(D)
 \end{aligned}
 $$
 

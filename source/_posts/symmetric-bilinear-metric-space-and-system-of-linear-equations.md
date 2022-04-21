@@ -242,7 +242,7 @@ $2\iff4:$ 参照$1\iff2$
   $$(\exist\alpha,\beta\in V),~f(\alpha,\beta)\ne0$$
 
   由  
-  $f(\alpha,\beta)=\displaystyle{1\over2}\left(f(\alpha+\beta,\alpha+\beta)-f(\alpha,\alpha)-f(\beta,\beta)\right)$ (这里利用了$f$的对称性)  
+  $f(\alpha,\beta)=\displaystyle\frac{1}{2}\left(f(\alpha+\beta,\alpha+\beta)-f(\alpha,\alpha)-f(\beta,\beta)\right)$ (这里利用了$f$的对称性)  
   可知
 
   $$(\exist\epsilon\in V),~f(\epsilon,\epsilon)\ne0\tag{1.4.1}$$
@@ -254,7 +254,7 @@ $2\iff4:$ 参照$1\iff2$
 
     对$(1.4.1)$中的$\epsilon$, 将其扩充为$V$的一组基底$(\epsilon,\def\enum#1{\eta_{ #1}}\enum{2},...,\enum{n})$
 
-    令$\epsilon_i'=\displaystyle \eta_i-{f(\eta_i,\epsilon)\over f(\epsilon,\epsilon)}\epsilon,\qquad i=2,3,...,n$
+    令$\epsilon_i'=\displaystyle \eta_i-\frac{f(\eta_i,\epsilon)}{f(\epsilon,\epsilon)}\epsilon,\qquad i=2,3,...,n$
 
     则$(\epsilon,\def\enum#1{\epsilon'_{ #1}}\enum{2},...,\enum{n})$为$V$的基底, 且  
     $f(\epsilon,\epsilon_i')=0,\qquad i=2,3,...,n$
@@ -366,7 +366,7 @@ $2\iff4:$ 参照$1\iff2$
 
    取$\zeta\ne\xi'\in V/\{\theta\}$, 由$f$非奇异知$f(\zeta,\xi')=b\ne0$
 
-   令$\xi=\displaystyle{\xi'\over b}$
+   令$\xi=\displaystyle\frac{\xi'}{b}$
    - 若$f(\xi,\xi)=0$, 则命题得证
    - 若$f(\xi,\xi)\ne0$, 考虑$f(\xi+t\zeta,\xi+t\zeta)$
 
@@ -561,11 +561,11 @@ Euclid空间有一个很好的性质, 就是我们可以在其上定义向量的
 >
 > 假设同上, 称$\alpha$为**单位向量**, 若$|\alpha|=1$
 >
-> 如果$\alpha\ne\theta$, 则$\displaystyle{\alpha\over|\alpha|}:={1\over|\alpha|}\alpha$为单位向量
+> 如果$\alpha\ne\theta$, 则$\displaystyle\frac{\alpha}{|\alpha|}:=\frac{1}{|\alpha|}\alpha$为单位向量
 
 ---
 
-在定义夹角之前, 我们需要证明$\displaystyle{|(\alpha,\beta)|\over|\alpha||\beta|}\leqslant1$
+在定义夹角之前, 我们需要证明$\displaystyle\frac{|(\alpha,\beta)|}{|\alpha||\beta|}\leqslant1$
 
 在高中数学中, 这个形式等价于$\displaystyle\left|\sum_{i=1}^na_ib_i\right|\leqslant\sqrt{\sum_{i=1}^na_i^2}\sqrt{\sum_{i=1}^nb_i^2}$, 这就是大名鼎鼎的Cauchy不等式
 
@@ -576,7 +576,7 @@ Euclid空间有一个很好的性质, 就是我们可以在其上定义向量的
 #### <a href="#end-t-3-1" id="t-3-1">定理 - 3-1</a> (Cauchy-Bunjakovski-Schwarz不等式)
 
 令$V$为一Euclid空间, 则对其上任意非零向量$\alpha,\beta$, 均有
-$${|(\alpha,\beta)|\over|\alpha||\beta|}\leqslant1$$
+$$\frac{|(\alpha,\beta)|}{|\alpha||\beta|}\leqslant1$$
 等号成立当且仅当$\alpha,\beta$线性相关
 
 > 若写成$|(\alpha,\beta)|\leqslant|\alpha||\beta|$, 则不需限制$\alpha,\beta$非零
@@ -590,7 +590,7 @@ $$k^2(\beta,\beta)-2k(\alpha,\beta)+(\alpha,\alpha)\leqslant0$$
 此式表明判别式非正, 即$(\alpha,\beta)^2-(\alpha,\alpha)(\beta,\beta)\leqslant0$
 
 亦即
-$${|(\alpha,\beta)|\over|\alpha||\beta|}\leqslant1$$
+$$\frac{|(\alpha,\beta)|}{|\alpha||\beta|}\leqslant1$$
 
 当$\alpha,\beta$线性相关时, 上式等号显然成立  
 反之, 若上式等号成立, 则$(\exist t_0\in\R),~(\alpha-t_0\beta,\alpha-t_0\beta)=0$, 可得$\alpha-t_0\beta=0$, 即$\alpha,\beta$线性相关
@@ -608,7 +608,7 @@ Cauchy-Bunjakovski-Schwarz不等式有两个著名的实例
 
 > **定义** 夹角
 >
-> 令$V$为一Euclid空间, $\alpha,\beta\in V/\{\theta\}$, 称$\displaystyle\arccos{(\alpha,\beta)\over|\alpha||\beta|}\in[0,\pi]$为$\alpha$和$\beta$的**夹角**, 记作$\langle\alpha,\beta\rangle$
+> 令$V$为一Euclid空间, $\alpha,\beta\in V/\{\theta\}$, 称$\displaystyle\arccos\frac{(\alpha,\beta)}{|\alpha||\beta|}\in[0,\pi]$为$\alpha$和$\beta$的**夹角**, 记作$\langle\alpha,\beta\rangle$
 
 接下来我们可以尝试把我们熟知的, 与长度和角度相关的几何定理都推广到Euclid空间了 (其实, 在 <a href="#ifr-3-2">推论 - 3-2</a> 的保障下, 我们可以更大胆些)
 
@@ -656,7 +656,7 @@ $$G[\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{i}]=G[\def\enum#1{\beta
 
 - 令$\beta'_1=\alpha_1$, 则$G[\beta'_1]=G[\alpha_1]$
 - 令$\beta'_2=\alpha_2+k\beta'_1$使得$(\beta'_2,\beta'_1)=0$, 可推知当且仅当
-  $$k=-{(\alpha_2,\beta'_1)\over(\beta'_1,\beta'_1)}$$
+  $$k=-\frac{(\alpha_2,\beta'_1)}{(\beta'_1,\beta'_1)}$$
   时此式成立
 
   由$\beta'_2=\alpha_2+k\beta'_1=\alpha_2+k\alpha_1$可知$\beta'_1,\beta'_2$线性无关, 故$G[\beta'_1,\beta'_2]=G[\alpha_1,\alpha_2]$
@@ -680,7 +680,7 @@ $$G[\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{i}]=G[\def\enum#1{\beta
 
 > 上述过程即Schmidt正交化
 
-又令$\beta_i=\displaystyle{1\over|\beta'_i|}\beta'_i,~i=1,2,...,n$, 命题即得证
+又令$\beta_i=\displaystyle\frac{1}{|\beta'_i|}\beta'_i,~i=1,2,...,n$, 命题即得证
 
 <a href="#p-t-3-3" id="end-t-3-3">$\Box$</a>
 

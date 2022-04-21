@@ -612,13 +612,13 @@ In the sixth minute, nothing else can change so the landslide stops and our answ
 
 由这些, 我们便可以这样生成结果:
 
-- 首先令$a_i=i$, 这样还有$S-{n(n+1)\over2}$个数没有分配
-- 接着把每个$a_i$都加上$\lfloor{S-{n(n+1)\over2}\over n}\rfloor$, 这样还有$(S-{n(n+1)\over2})\bmod n$个数没有分配
-- 最后便把这$(S-{n(n+1)\over2})\bmod n$个数分配给$a_1,...,a_{(S-{n(n+1)\over2})\bmod n}$
+- 首先令$a_i=i$, 这样还有$S-\frac{n(n+1)}{2}$个数没有分配
+- 接着把每个$a_i$都加上$\lfloor{S-\frac{n(n+1)}{2}\over n}\rfloor$, 这样还有$(S-\frac{n(n+1)}{2})\bmod n$个数没有分配
+- 最后便把这$(S-\frac{n(n+1)}{2})\bmod n$个数分配给$a_1,...,a_{(S-\frac{n(n+1)}{2})\bmod n}$
 
 写在一起就是
 
-$$a_i=i+\left\lfloor{S-{n(n+1)\over2}\over n}\right\rfloor+\left[i\leqslant\left(S-{n(n+1)\over2}\right)\bmod n\right],~i=1,2,...,n$$
+$$a_i=i+\left\lfloor{S-\frac{n(n+1)}{2}\over n}\right\rfloor+\left[i\leqslant\left(S-\frac{n(n+1)}{2}\right)\bmod n\right],~i=1,2,...,n$$
 
 ### 代码参考
 

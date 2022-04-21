@@ -31,50 +31,50 @@ date: 2020-10-05 00:52:51
 
 ### <a href="#end-t-1.1" id="t-1.1">定理 - 1.1</a>
 
-$$\forall a,b,c\in\Z,\left\lfloor{a\over bc}\right\rfloor=\left\lfloor{\left\lfloor{a\over b}\right\rfloor\over c}\right\rfloor$$
+$$\forall a,b,c\in\Z,\left\lfloor\frac{a}{bc}\right\rfloor=\left\lfloor{\left\lfloor\frac{a}{b}\right\rfloor\over c}\right\rfloor$$
 
 #### <a href="#t-1.1" id="p-t-1.1">证明</a>
 
 注意到
-$${a\over b}=\left\lfloor{a\over b}\right\rfloor+\left\{ {a\over b}\right\}$$
+$$\frac{a}{b}=\left\lfloor\frac{a}{b}\right\rfloor+\left\{ \frac{a}{b}\right\}$$
 
-其中$\{ {a\over b}\}$是$a\over b$的小数部分
+其中$\{ \frac{a}{b}\}$是$a\over b$的小数部分
 
 故
 $$\begin{aligned}
-  \left\lfloor{a\over bc}\right\rfloor&=\left\lfloor{a\over b}\cdot{1\over c}\right\rfloor\\
-  &=\left\lfloor\left(\left\lfloor{a\over b}\right\rfloor+\left\{ {a\over b}\right\}\right){1\over c}\right\rfloor\\
-  &=\left\lfloor{\left\lfloor{a\over b}\right\rfloor\over c}+\left\{ {a\over b}\right\}{1\over c}\right\rfloor\\
-  &=\left\lfloor{\left\lfloor{a\over b}\right\rfloor\over c}\right\rfloor
+  \left\lfloor\frac{a}{bc}\right\rfloor&=\left\lfloor\frac{a}{b}\cdot\frac{1}{c}\right\rfloor\\
+  &=\left\lfloor\left(\left\lfloor\frac{a}{b}\right\rfloor+\left\{ \frac{a}{b}\right\}\right)\frac{1}{c}\right\rfloor\\
+  &=\left\lfloor{\left\lfloor\frac{a}{b}\right\rfloor\over c}+\left\{ \frac{a}{b}\right\}\frac{1}{c}\right\rfloor\\
+  &=\left\lfloor{\left\lfloor\frac{a}{b}\right\rfloor\over c}\right\rfloor
 \end{aligned}$$
 
 <a href="#p-t-1.1" id="end-t-1.1">$\Box$</a>
 
 ### <a href="#end-t-1.2" id="t-1.2">定理 - 1.2</a>
 
-对任意正整数$n$, $\lfloor{n\over i}\rfloor,~i=1,2,...,n$的取值不超过$\lfloor2\sqrt{n}\rfloor$种
+对任意正整数$n$, $\lfloor\frac{n}{i}\rfloor,~i=1,2,...,n$的取值不超过$\lfloor2\sqrt{n}\rfloor$种
 
 即
-$$\forall n\in\N^*,\left|\left\{\left\lfloor{n\over i}\right\rfloor\big|~i=1,2,...,n\right\}\right|\leqslant\lfloor2\sqrt{n}\rfloor$$
+$$\forall n\in\N^*,\left|\left\{\left\lfloor\frac{n}{i}\right\rfloor\big|~i=1,2,...,n\right\}\right|\leqslant\lfloor2\sqrt{n}\rfloor$$
 
 #### <a href="#t-1.2" id="p-t-1.2">证明</a>
 
-当$i\leqslant\sqrt{n}$时, $\lfloor{n\over i}\rfloor$至多有$\sqrt{n}$种取值
+当$i\leqslant\sqrt{n}$时, $\lfloor\frac{n}{i}\rfloor$至多有$\sqrt{n}$种取值
 
-当$i>\sqrt{n}$时, 有$\lfloor{n\over i}\rfloor\leqslant\sqrt{n}$, 此时$\lfloor{n\over i}\rfloor$也至多有$\sqrt{n}$种取值
+当$i>\sqrt{n}$时, 有$\lfloor\frac{n}{i}\rfloor\leqslant\sqrt{n}$, 此时$\lfloor\frac{n}{i}\rfloor$也至多有$\sqrt{n}$种取值
 
-所以$\lfloor{n\over i}\rfloor,~i=1,2,...,n$至多有$\lfloor2\sqrt{n}\rfloor$种取值
+所以$\lfloor\frac{n}{i}\rfloor,~i=1,2,...,n$至多有$\lfloor2\sqrt{n}\rfloor$种取值
 
 <a href="#p-t-1.2" id="end-t-1.2">$\Box$</a>
 
 ### 用途
 
-整除分块主要是用于快速求$\sum_{i=1}^n\lfloor{n\over i}\rfloor$的算法
+整除分块主要是用于快速求$\sum_{i=1}^n\lfloor\frac{n}{i}\rfloor$的算法
 
 朴素求法的时间复杂度自然是$O(n)$
 
 为了方便叙述, 我们举个例子:  
-令$n=15$, $f(i)=\lfloor{n\over i}\rfloor$ 我们可列出下表
+令$n=15$, $f(i)=\lfloor\frac{n}{i}\rfloor$ 我们可列出下表
 | $f(i)$ | $i$的范围 |
 | ------ | --------- |
 | 15     | $[1,1]$   |
@@ -91,16 +91,16 @@ $$\forall n\in\N^*,\left|\left\{\left\lfloor{n\over i}\right\rfloor\big|~i=1,2,.
 1. 令区间左右端点分别为$l,r$, 答案为$S$
 1. 初始时, $l\leftarrow1,S\leftarrow0$
 1. 计算$r$
-1. $S\leftarrow S+(r-l+1)\lfloor{n\over l}\rfloor$
+1. $S\leftarrow S+(r-l+1)\lfloor\frac{n}{l}\rfloor$
 1. $l\leftarrow r+1$, 若$l\leqslant n$则回到3
 
 关键就在于如何求$r$
 
-令$\lfloor{n\over l}\rfloor=k_l$, 不难发现
+令$\lfloor\frac{n}{l}\rfloor=k_l$, 不难发现
 $$r=\max_{ik_l\leqslant n}\{i\}$$
 
 显然
-$$r=\left\lfloor{n\over k_l}\right\rfloor=\left\lfloor{n\over{\lfloor{n\over l}\rfloor} }\right\rfloor$$
+$$r=\left\lfloor\frac{n}{k_l}\right\rfloor=\left\lfloor{n\over{\lfloor\frac{n}{l}\rfloor} }\right\rfloor$$
 
 <details>
 <summary><font color='orange'>Show code</font></summary>
@@ -124,17 +124,17 @@ int get_sum(int n) {
 
 ### One more thing
 
-- 如何求$\sum_{i=1}^{\min\{m,n\}}\lfloor{n\over i}\rfloor\lfloor{m\over j}\rfloor$
+- 如何求$\sum_{i=1}^{\min\{m,n\}}\lfloor\frac{n}{i}\rfloor\lfloor\frac{m}{j}\rfloor$
 
   只需令
-  $$r=\min\left\{\left\lfloor{n\over{\lfloor{n\over l}\rfloor} }\right\rfloor,\left\lfloor{m\over{\lfloor{m\over l}\rfloor} }\right\rfloor\right\}$$
-- 如何求$\sum_{i=1}^n\lfloor{n\over ai+b}\rfloor$
+  $$r=\min\left\{\left\lfloor{n\over{\lfloor\frac{n}{l}\rfloor} }\right\rfloor,\left\lfloor{m\over{\lfloor\frac{m}{l}\rfloor} }\right\rfloor\right\}$$
+- 如何求$\sum_{i=1}^n\lfloor\frac{n}{ai+b}\rfloor$
 
-  令$\lfloor{n\over al+b}\rfloor=k_l$, 不难发现
+  令$\lfloor\frac{n}{al+b}\rfloor=k_l$, 不难发现
   $$r=\max_{aik_l\leqslant n-bk_l}\{i\}$$
 
   显然
-  $$r=\left\lfloor{n-bk_l\over ak_l}\right\rfloor$$
+  $$r=\left\lfloor\frac{n-bk_l}{ak_l}\right\rfloor$$
 
 ### 例题
 
@@ -163,7 +163,7 @@ int get_sum(int n) {
 ## Dirichlet卷积
 
 对数论函数$f,g$, 定义其Dirichlet卷积为$f*g$, 满足:
-$$(f*g)(n):=\displaystyle\sum_{d\mid n}f(d)g({n\over d})$$
+$$(f*g)(n):=\displaystyle\sum_{d\mid n}f(d)g(\frac{n}{d})$$
 
 如
 $$(f*g)(10)=f(1)g(10)+f(2)g(5)+f(5)g(2)+f(10)g(1)$$
@@ -187,9 +187,9 @@ $$f*(g*h)=(f*g)*h$$
 ##### <a href="#t-3.1" id="p-t-3.1">证明</a>
 
 $$\begin{aligned}
-  (f*(g*h))(n)&=\sum_{a\mid n}f(a)\sum_{b\mid{n\over a}}g(b)h({n\over ab})\\
+  (f*(g*h))(n)&=\sum_{a\mid n}f(a)\sum_{b\mid\frac{n}{a}}g(b)h(\frac{n}{ab})\\
   &=\sum_{abc=n}f(a)g(b)h(c)\\
-  &=\sum_{a\mid n}\left(\sum_{b\mid a}f(b)g({a\over b})\right)h({n\over a})\\
+  &=\sum_{a\mid n}\left(\sum_{b\mid a}f(b)g(\frac{a}{b})\right)h(\frac{n}{a})\\
   &=((f*g)*h)(n)
 \end{aligned}$$
 
@@ -243,11 +243,11 @@ void Dirichlet_sum(int n) {
 
 ## 积性函数
 
-满足$\forall m, n\in\Bbb{N}^*,(m,n)=1\implies f(mn)=f(m)f(n)$的$f(n)$
+满足$\forall m, n\in\Bbb{N}^+,(m,n)=1\implies f(mn)=f(m)f(n)$的$f(n)$
 
 ### 性质
 
-1. $f,g$为积性函数$\implies\ fg,\displaystyle{f\over g},f*g$为积性函数
+1. $f,g$为积性函数$\implies\ fg,\displaystyle\frac{f}{g},f*g$为积性函数
 
    > 即积性函数关于乘法, 除法, 卷积封闭
 
@@ -255,7 +255,7 @@ void Dirichlet_sum(int n) {
 
 #### <a href="#end-t-4.1" id="t-4.1">定理 - 4.1</a> (性质1)
 
-$f,g$为积性函数$\implies\ fg,\displaystyle{f\over g},f*g$为积性函数
+$f,g$为积性函数$\implies\ fg,\displaystyle\frac{f}{g},f*g$为积性函数
 
 ##### <a href="#t-4.1" id="p-t-4.1">证明</a>
 
@@ -264,10 +264,10 @@ $f,g$为积性函数$\implies\ fg,\displaystyle{f\over g},f*g$为积性函数
 令$h=f*g$, $(m,n)=1$, 则
 
 $$\begin{aligned}
-   h(mn)&=\sum_{d\mid mn}f(d)g({mn\over d})\\
-   &=\sum_{d_1\mid m}\sum_{d_2\mid n}f(d_1d_2)g({m\over d_1}{n\over d_2})\\
-   &=\sum_{d_1\mid m}\sum_{d_2\mid n}f(d_1)f(d_2)g({m\over d_1})g({n\over d_2})\\
-   &=\left(\sum_{d_1\mid m}f(d_1)g({m\over d_1})\right)\left(\sum_{d_2\mid n}f(d_2)g({n\over d_2})\right)\\
+   h(mn)&=\sum_{d\mid mn}f(d)g(\frac{mn}{d})\\
+   &=\sum_{d_1\mid m}\sum_{d_2\mid n}f(d_1d_2)g(\frac{m}{d_1}\frac{n}{d_2})\\
+   &=\sum_{d_1\mid m}\sum_{d_2\mid n}f(d_1)f(d_2)g(\frac{m}{d_1})g(\frac{n}{d_2})\\
+   &=\left(\sum_{d_1\mid m}f(d_1)g(\frac{m}{d_1})\right)\left(\sum_{d_2\mid n}f(d_2)g(\frac{n}{d_2})\right)\\
    &=h(m)h(n)
 \end{aligned}$$
 
@@ -309,7 +309,7 @@ $$\sigma(n)=\prod_{i=1}^r{p_i^{\alpha_i+1}-1\over p_i-1}$$
 
 ### 完全积性函数
 
-满足$\forall m, n\in\Bbb{N}^*,f(mn)=f(m)f(n)$的$f(n)$
+满足$\forall m, n\in\Bbb{N}^+,f(mn)=f(m)f(n)$的$f(n)$
 
 ## Euler函数
 
@@ -323,7 +323,7 @@ $$\sigma(n)=\prod_{i=1}^r{p_i^{\alpha_i+1}-1\over p_i-1}$$
 
    特别地, $\varphi(p)=p-1$
 1. (1,3的推论) 设$n=\prod_{i=1}^{\omega(n)}p_i^{\alpha_i}$, 则
-   $$\varphi(n)=\prod_{i=1}^{\omega(n)}p_i^{\alpha_i}\left(1-{1\over p_i}\right)=n\prod_{i=1}^{\omega(n)}{p_i-1\over p_i}$$
+   $$\varphi(n)=\prod_{i=1}^{\omega(n)}p_i^{\alpha_i}\left(1-\frac{1}{p_i}\right)=n\prod_{i=1}^{\omega(n)}\frac{p_i-1}{p_i}$$
 1. 当$n>2$时, $\varphi(n)$为偶数
 
 下面给出性质1的证明
@@ -356,7 +356,7 @@ $$\begin{matrix}
 
 1. 单个数
 
-   按$\varphi(n)=n\prod_{i=1}^{\omega(n)}{p_i-1\over p_i}$计算即可
+   按$\varphi(n)=n\prod_{i=1}^{\omega(n)}\frac{p_i-1}{p_i}$计算即可
 
    <details>
    <summary><font color='orange'>Show code</font></summary>
@@ -469,10 +469,10 @@ $$f(n)=(\mu*\{1\})(n)=\sum_{d\mid n}\mu(d)$$
 令$D_{i}$表示$\def\enum#1{p_{ #1}}\enum{1},\enum{2},...,\enum{r}$中某$i$个数的乘积构成的集合, 则$\forall d\in D_i,~\mu(d)=(-1)^i$
 
 而
-$$|D_i|={r\choose i}={r!\over i!(r-i)!}$$
+$$|D_i|=\binom{r}{i}=\frac{r!}{i!(r-i)!}$$
 
 因此
-$$f(n)=\sum_{i=1}^r{r\choose i}(-1)^i=(1-1)^r=0$$
+$$f(n)=\sum_{i=1}^r\binom{r}{i}(-1)^i=(1-1)^r=0$$
 
 <a href="#p-t-6.2-1" id="end-t-6.2-1">$\Box$</a>
 
@@ -538,7 +538,7 @@ $$\begin{aligned}
 $$f=g*\{1\}\iff g=f*\mu$$
 
 或者写成
-$$\forall n\in\N^*,~f(n)=\sum_{d\mid n}g(d)\iff g(n)=\sum_{d\mid n}f(d)\mu\left({n\over d}\right)$$
+$$\forall n\in\N^*,~f(n)=\sum_{d\mid n}g(d)\iff g(n)=\sum_{d\mid n}f(d)\mu\left(\frac{n}{d}\right)$$
 
 #### <a href="#t-7.1" id="p-t-7.1">证明</a>
 
@@ -549,14 +549,14 @@ $$f=g*\{1\}\iff f*\mu=g*\{1\}*\mu=g*\epsilon=g$$
 
 在这里复述一遍命题
 $$\forall n\in\N^*,~f(n)=\sum_{d\mid n}g(d)\tag{1}$$
-$$\forall n\in\N^*,~g(n)=\sum_{d\mid n}f(d)\mu\left({n\over d}\right)\tag{2}$$
+$$\forall n\in\N^*,~g(n)=\sum_{d\mid n}f(d)\mu\left(\frac{n}{d}\right)\tag{2}$$
 
 我们要证的即为$(1)\iff(2)$
 
 先证$(1)\implies(2)$
 
 若$(1)$成立, 则有
-$$\sum_{d\mid n}f(d)\mu\left({n\over d}\right)=\sum_{d\mid n}\sum_{e\mid d}g(e)\mu\left({n\over d}\right)\tag{3}$$
+$$\sum_{d\mid n}f(d)\mu\left(\frac{n}{d}\right)=\sum_{d\mid n}\sum_{e\mid d}g(e)\mu\left(\frac{n}{d}\right)\tag{3}$$
 
 之后我们交换求和号, 即改变元素的枚举顺序
 
@@ -564,25 +564,25 @@ $$\sum_{d\mid n}f(d)\mu\left({n\over d}\right)=\sum_{d\mid n}\sum_{e\mid d}g(e)\
 我们要改写成先枚举$n$的因子$e$, 再枚举$d$, 此时的$d$是$n$的因子, 同时也是$e$的倍数
 
 从而在交换求和号之后变为
-$$\sum_{e\mid n}\sum_{e\mid d\mid n}g(e)\mu\left({n\over d}\right)=\sum_{e\mid n}g(e)\sum_{e\mid d\mid n}\mu\left({n\over d}\right)\tag{4}$$
+$$\sum_{e\mid n}\sum_{e\mid d\mid n}g(e)\mu\left(\frac{n}{d}\right)=\sum_{e\mid n}g(e)\sum_{e\mid d\mid n}\mu\left(\frac{n}{d}\right)\tag{4}$$
 
 为什么要这么做呢?
 
-这样做是因为$\displaystyle\sum_{e\mid d\mid n}\mu\left({n\over d}\right)$是可以很容易求出来的, 具体操作如下:
+这样做是因为$\displaystyle\sum_{e\mid d\mid n}\mu\left(\frac{n}{d}\right)$是可以很容易求出来的, 具体操作如下:
 
-令$d'={d\over e}$, 则条件$e\mid d\mid n$等价于$d'\mid{n\over e}$
+令$d'=\frac{d}{e}$, 则条件$e\mid d\mid n$等价于$d'\mid\frac{n}{e}$
 
 而
-$${n\over d}={n\over e}\cdot{e\over d}={ {n\over e}\over d'}$$
+$$\frac{n}{d}=\frac{n}{e}\cdot\frac{e}{d}={ \frac{n}{e}\over d'}$$
 
 因此固定$e$, 则有
 $$\begin{aligned}
-  \sum_{e\mid d\mid n}\mu\left({n\over d}\right)&=\sum_{d'\mid{n\over e}}\mu\left({ {n\over e}\over d'}\right)\\
-  &=\sum_{d'\mid{n\over e}}\mu\left(d'\right)\\
+  \sum_{e\mid d\mid n}\mu\left(\frac{n}{d}\right)&=\sum_{d'\mid\frac{n}{e}}\mu\left({ \frac{n}{e}\over d'}\right)\\
+  &=\sum_{d'\mid\frac{n}{e}}\mu\left(d'\right)\\
   &=\epsilon(d')
 \end{aligned}$$
 
-此式表明$\displaystyle\sum_{e\mid d\mid n}\mu\left({n\over d}\right)$只有在$e$取$n$时才为$1$, 其余时为$0$
+此式表明$\displaystyle\sum_{e\mid d\mid n}\mu\left(\frac{n}{d}\right)$只有在$e$取$n$时才为$1$, 其余时为$0$
 
 所以$(4)$式的最终结果即为$g(n)$, 此时命题$(2)$成立
 
@@ -590,21 +590,21 @@ $$\begin{aligned}
 
 若$(1)$成立, 则有
 $$\begin{aligned}
-  \sum_{d\mid n}f(d)\mu\left({n\over d}\right)&=\sum_{d\mid n}\sum_{e\mid d}g(e)\mu\left({n\over d}\right)\\
-  &=\sum_{e\mid n}\sum_{e\mid d\mid n}g(e)\mu\left({n\over d}\right)\\
-  &=\sum_{e\mid n}g(e)\sum_{e\mid d\mid n}\mu\left({n\over d}\right)\\
-  &\xlongequal{d'=d/e}\sum_{e\mid n}g(e)\sum_{d'\mid{n\over e}}\mu\left({ {n\over e}\over d'}\right)\\
-  &=\sum_{e\mid n}g(e)\sum_{d'\mid{n\over e}}\mu(d')\\
+  \sum_{d\mid n}f(d)\mu\left(\frac{n}{d}\right)&=\sum_{d\mid n}\sum_{e\mid d}g(e)\mu\left(\frac{n}{d}\right)\\
+  &=\sum_{e\mid n}\sum_{e\mid d\mid n}g(e)\mu\left(\frac{n}{d}\right)\\
+  &=\sum_{e\mid n}g(e)\sum_{e\mid d\mid n}\mu\left(\frac{n}{d}\right)\\
+  &\xlongequal{d'=d/e}\sum_{e\mid n}g(e)\sum_{d'\mid\frac{n}{e}}\mu\left({ \frac{n}{e}\over d'}\right)\\
+  &=\sum_{e\mid n}g(e)\sum_{d'\mid\frac{n}{e}}\mu(d')\\
   &=\sum_{e\mid n}g(e)\epsilon(d')\\
-  &=\sum_{e\mid n}g(e)\epsilon\left({d\over e}\right)\\
+  &=\sum_{e\mid n}g(e)\epsilon\left(\frac{d}{e}\right)\\
   &=g(n)
 \end{aligned}$$
 
 类似可证$(1)\impliedby(2)$, 简要列出步骤
 $$\begin{aligned}
-  \sum_{d\mid n}g(d)&=\sum_{d\mid n}\sum_{e\mid d}\mu\left({d\over e}\right)f(e)\\
-  &=\sum_{e\mid n}f(e)\sum_{e\mid d\mid n}\mu\left({d\over e}\right)\\
-  &\xlongequal{d'=d/e}\sum_{e\mid n}f(e)\sum_{d'\mid{n\over e}}\mu(d')\\
+  \sum_{d\mid n}g(d)&=\sum_{d\mid n}\sum_{e\mid d}\mu\left(\frac{d}{e}\right)f(e)\\
+  &=\sum_{e\mid n}f(e)\sum_{e\mid d\mid n}\mu\left(\frac{d}{e}\right)\\
+  &\xlongequal{d'=d/e}\sum_{e\mid n}f(e)\sum_{d'\mid\frac{n}{e}}\mu(d')\\
   &=f(n)
 \end{aligned}$$
 
@@ -634,15 +634,15 @@ $$\begin{aligned}
 ### <a href="#end-t-8.1" id="t-8.1">定理 - 8.1</a>
 
 设$f,g$是数论函数, $S(n):=\sum_{i=1}^nf(i)$, 则
-$$g(1)S(n)=\sum_{i=1}^n(f*g)(i)-\sum_{i=2}^ng(i)S\left(\left\lfloor{n\over i}\right\rfloor\right)$$
+$$g(1)S(n)=\sum_{i=1}^n(f*g)(i)-\sum_{i=2}^ng(i)S\left(\left\lfloor\frac{n}{i}\right\rfloor\right)$$
 
 #### <a href="#t-8.1" id="p-t-8.1">证明</a>
 
 $$\begin{aligned}
-  \sum_{i=1}^n(f*g)(i)&=\sum_{i=1}^n\sum_{d\mid i}f(d)g\left({i\over d}\right)\\
-  &=\sum_{d=1}^ng(d)\sum_{i=1}^{\lfloor{n\over d}\rfloor}f(i)\\
-  &=\sum_{d=1}^ng(d)S\left(\left\lfloor{n\over d}\right\rfloor\right)\\
-  &=g(1)S(n)+\sum_{i=2}^ng(i)S\left(\left\lfloor{n\over i}\right\rfloor\right)
+  \sum_{i=1}^n(f*g)(i)&=\sum_{i=1}^n\sum_{d\mid i}f(d)g\left(\frac{i}{d}\right)\\
+  &=\sum_{d=1}^ng(d)\sum_{i=1}^{\lfloor\frac{n}{d}\rfloor}f(i)\\
+  &=\sum_{d=1}^ng(d)S\left(\left\lfloor\frac{n}{d}\right\rfloor\right)\\
+  &=g(1)S(n)+\sum_{i=2}^ng(i)S\left(\left\lfloor\frac{n}{i}\right\rfloor\right)
 \end{aligned}$$
 
 <a href="#p-t-8.1" id="end-t-8.1">$\Box$</a>
@@ -657,8 +657,8 @@ $
   2 & \qquad a \gets \texttt{sum\_of\_f*g}(n) \\
   3 & \qquad l \gets 2\\
   4 & \qquad \textbf{while} ~ l \leqslant n \\
-  5 & \qquad \qquad r \gets \left\lfloor {n \over \left\lfloor {n \over l} \right\rfloor} \right\rfloor\\
-  6 & \qquad \qquad a \gets a-(\texttt{sum\_of\_g}(r)-\texttt{sum\_of\_g}(l-1))\cdot\texttt{sum\_of\_f}(\left\lfloor {n \over l} \right\rfloor)\\
+  5 & \qquad \qquad r \gets \left\lfloor {n \over \left\lfloor \frac{n }{l} \right\rfloor} \right\rfloor\\
+  6 & \qquad \qquad a \gets a-(\texttt{sum\_of\_g}(r)-\texttt{sum\_of\_g}(l-1))\cdot\texttt{sum\_of\_f}(\left\lfloor \frac{n }{l} \right\rfloor)\\
   7 & \qquad \qquad l \gets r+1\\
   8 & \qquad \textbf{end} ~ \textbf{while} \\
   9 & \textbf{return} ~ a \\
@@ -670,24 +670,24 @@ $
 设求出$S(n)$的时间函数为$T(n)$, 则
 
 $$\begin{aligned}
-  O(T(n))&=O\left(\sum_{i=1}^{\sqrt n}\left(O(\sqrt{i})+O\left(\sqrt{n\over i}\right)\right)\right)\\
-  &=O\left(\int_1^{\sqrt{n}}\left(\sqrt{x}+\sqrt{n\over x}\right)\mathrm{d}x\right)\\
-  &=O(n^{3\over 4})
+  O(T(n))&=O\left(\sum_{i=1}^{\sqrt n}\left(O(\sqrt{i})+O\left(\sqrt\frac{n}{i}\right)\right)\right)\\
+  &=O\left(\int_1^{\sqrt{n}}\left(\sqrt{x}+\sqrt\frac{n}{x}\right)\mathrm{d}x\right)\\
+  &=O(n^\frac{3}{4})
 \end{aligned}$$
 
 如果我们能够预处理出$S(i),~i=1,2,...,m$, 设预处理的时间复杂度为$O(W(m))$, 则时间复杂度可变为
 $$\begin{aligned}
-  O(T(n))&=O\left(\sum_{i=1}^{\lfloor{n\over m}\rfloor}O\left(\sqrt{n\over i}\right)+W(m)\right)\\
-  &=O\left(\int_1^{\lfloor{n\over m}\rfloor}\sqrt{n\over x}\mathrm{d}x+W(m)\right)\\
-  &=O\left({n\over\sqrt m}+W(m)\right)
+  O(T(n))&=O\left(\sum_{i=1}^{\lfloor\frac{n}{m}\rfloor}O\left(\sqrt\frac{n}{i}\right)+W(m)\right)\\
+  &=O\left(\int_1^{\lfloor\frac{n}{m}\rfloor}\sqrt\frac{n}{x}\mathrm{d}x+W(m)\right)\\
+  &=O\left(\frac{n}{\sqrt m}+W(m)\right)
 \end{aligned}$$
 
 以线性筛作为预处理方式为例, 此时$O(W(m))=O(m)$  
-由平均值不等式可知, 当$m=({n\over2})^{2\over 3}$时, 其时间复杂度最小, 为$O(n^{2\over 3})$
+由平均值不等式可知, 当$m=(\frac{n}{2})^\frac{2}{3}$时, 其时间复杂度最小, 为$O(n^\frac{2}{3})$
 
-> $\displaystyle{n\over\sqrt m}+m={n\over2\sqrt m}+{n\over2\sqrt m}+m\geqslant\sqrt[3]{ {n\over2\sqrt m}\cdot{n\over2\sqrt m}\cdot m}=\sqrt[3]{n^2\over4}$
+> $\displaystyle\frac{n}{\sqrt m}+m=\frac{n}{2\sqrt m}+\frac{n}{2\sqrt m}+m\geqslant\sqrt[3]{ \frac{n}{2\sqrt m}\cdot\frac{n}{2\sqrt m}\cdot m}=\sqrt[3]\frac{n^2}{4}$
 >
-> 当${n\over2\sqrt m}=m$, 即$m=({n\over2})^{2\over 3}$时取得最小值
+> 当$\frac{n}{2\sqrt m}=m$, 即$m=(\frac{n}{2})^\frac{2}{3}$时取得最小值
 
 ### 例题
 

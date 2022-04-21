@@ -54,7 +54,7 @@ Powerful number 有如下性质
   $$P_n=P_1'\cup P_2',~P_1'\cap P_2'=\varnothing$$
 
   令
-  - $$a=\prod_{(p,\alpha)\in P_1'}p^{\alpha\over2}\prod_{(p,\alpha)\in P_2'}p^{\alpha-3\over2}$$
+  - $$a=\prod_{(p,\alpha)\in P_1'}p^\frac{\alpha}{2}\prod_{(p,\alpha)\in P_2'}p^\frac{\alpha-3}{2}$$
   - $$b=\prod_{(p,\alpha)\in P_2'}p$$
 
   则
@@ -80,7 +80,7 @@ $$|\{m\in\Z_n:m~\text{is}~\text{powerful}~\text{number}\}|=O(\sqrt{n})$$
 <details open="open">
 <summary><font color='orange'>Proof</font></summary>
 
-$$|\{m\in\Z_n:m~\text{is}~\text{powerful}~\text{number}\}|=O\left(\int_1^{\sqrt{n}}\sqrt[3]{n\over x^2}\mathrm{d}x\right)=O(\sqrt{n})$$
+$$|\{m\in\Z_n:m~\text{is}~\text{powerful}~\text{number}\}|=O\left(\int_1^{\sqrt{n}}\sqrt[3]\frac{n}{x^2}\mathrm{d}x\right)=O(\sqrt{n})$$
 
 </details>
 
@@ -97,7 +97,7 @@ $$|\{m\in\Z_n:m~\text{is}~\text{powerful}~\text{number}\}|=O\left(\int_1^{\sqrt{
 
 我们有
 
-$$\sum_{i=1}^nf(i)=\sum_{i=1}^n(h*g)(i)=\sum_{i=1}^nh(i)\sum_{j=1}^{\lfloor{n\over i}\rfloor}g(j)$$
+$$\sum_{i=1}^nf(i)=\sum_{i=1}^n(h*g)(i)=\sum_{i=1}^nh(i)\sum_{j=1}^{\lfloor\frac{n}{i}\rfloor}g(j)$$
 
 所以只需枚举 $O(\sqrt{n})$ 个 Powerful number, 暴力求出对应的 $h$ 值, 并求 $g$ 的前缀和即可求出 $f$ 的前缀和
 

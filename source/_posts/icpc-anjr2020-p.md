@@ -57,7 +57,7 @@ print(s.count('cat')+s.count('dog'))
 
 ### 解题思路
 
-首先我们$1$和大于$\lfloor{n\over2}\rfloor$的素数肯定不会出现在结果里, 之后剩下的数里我们从大到小枚举质数$p$, 统计所有之前没有匹配过的$p$的倍数, 如果是偶数个就把$2p$剔除, 接下来将其匹配就行[^1]
+首先我们$1$和大于$\lfloor\frac{n}{2}\rfloor$的素数肯定不会出现在结果里, 之后剩下的数里我们从大到小枚举质数$p$, 统计所有之前没有匹配过的$p$的倍数, 如果是偶数个就把$2p$剔除, 接下来将其匹配就行[^1]
 
 ### 复杂度
 
@@ -138,7 +138,7 @@ int main() {
 提答题, 判断十个命题的对错
 
 > 1. (线性代数) 向量 $\overrightarrow{v_1}$, $\overrightarrow{v_2}$ 线性相关当且仅当存在标量 $k_1$, $k_2$ 满足$k_1\overrightarrow{v_1}+k_2\overrightarrow{v_2}=\overrightarrow{0}$
-> 1. (微积分) ${y\mathrm{d}x-x\mathrm{d}y\over x^2-y^2}=\mathrm{d}({1\over 2}\ln|{x-y\over x+y}|)$
+> 1. (微积分) ${y\mathrm{d}x-x\mathrm{d}y\over x^2-y^2}=\mathrm{d}(\frac{1}{2}\ln|\frac{x-y}{x+y}|)$
 > 1. (离散数学) $\varnothing\subseteq\{\varnothing\}$
 > 1. (物理) 在可逆绝热过程中, 一摩尔理想气体从$V_0$膨胀到$2V_0$, 如果气体的温度降低$25\%$, 则该气体可能是一种单原子气体
 > 1. (数据结构) Fibonacci堆插入操作的均摊时间复杂度为$O(1)$

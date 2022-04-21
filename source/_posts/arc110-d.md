@@ -25,10 +25,10 @@ Score : 600 points
 
 We have a sequence $A$ of $N$ non-negative integers
 
-Compute the sum of $\prod_{i=1}^N{B_i\choose A_i}$
+Compute the sum of $\prod_{i=1}^N\binom{B_i}{A_i}$
 over all sequences $B$ of $N$ non-negative integers whose sum is at most $M$, and print it modulo ($10^9+7$)
 
-Here, ${B_i\choose A_i}$
+Here, $\binom{B_i}{A_i}$
 , the binomial coefficient, denotes the number of ways to choose $A_i$ objects from $B_i$ objects, and is 0 when $B_i<A_i$
 
 ### Constraints
@@ -46,7 +46,7 @@ $N\ M\\A_1\ A_2\ ...\ A_N$
 
 ### Output
 
-Print the sum of $\prod_{i=1}^N{B_i\choose A_i}$, modulo ($10^9+7$)
+Print the sum of $\prod_{i=1}^N\binom{B_i}{A_i}$, modulo ($10^9+7$)
 
 ### Sample Input 1
 
@@ -62,12 +62,12 @@ Print the sum of $\prod_{i=1}^N{B_i\choose A_i}$, modulo ($10^9+7$)
 ```
 
 There are four sequences B
-such that $\prod_{i=1}^N{B_i\choose A_i}$ is at least 1:
+such that $\prod_{i=1}^N\binom{B_i}{A_i}$ is at least 1:
 
-- $B=\{1,2,1\}$, where $\prod_{i=1}^N{B_i\choose A_i}={1\choose1}×{2\choose2}×{1\choose1}=1$
-- $B=\{2,2,1\}$, where $\prod_{i=1}^N{B_i\choose A_i}={2\choose1}×{2\choose2}×{1\choose1}=2$
-- $B=\{1,3,1\}$, where $\prod_{i=1}^N{B_i\choose A_i}={1\choose1}×{3\choose2}×{1\choose1}=3$
-- $B=\{1,2,2\}$, where $\prod_{i=1}^N{B_i\choose A_i}={1\choose1}×{2\choose2}×{2\choose1}=2$
+- $B=\{1,2,1\}$, where $\prod_{i=1}^N\binom{B_i}{A_i}=\binom{1}{1}×\binom{2}{2}×\binom{1}{1}=1$
+- $B=\{2,2,1\}$, where $\prod_{i=1}^N\binom{B_i}{A_i}=\binom{2}{1}×\binom{2}{2}×\binom{1}{1}=2$
+- $B=\{1,3,1\}$, where $\prod_{i=1}^N\binom{B_i}{A_i}=\binom{1}{1}×\binom{3}{2}×\binom{1}{1}=3$
+- $B=\{1,2,2\}$, where $\prod_{i=1}^N\binom{B_i}{A_i}=\binom{1}{1}×\binom{2}{2}×\binom{2}{1}=2$
 
 The sum of these is $1+2+3+2=8$
 
@@ -90,7 +90,7 @@ The sum of these is $1+2+3+2=8$
 $$\sum_{\begin{smallmatrix}
   b_1,b_2,...,b_n>0\\\\
   \sum_{i=1}^nb_i\leqslant m
-\end{smallmatrix}}\prod_{i=1}^n{b_i\choose a_i}$$
+\end{smallmatrix}}\prod_{i=1}^n\binom{b_i}{a_i}$$
 
 ## 解题思路
 

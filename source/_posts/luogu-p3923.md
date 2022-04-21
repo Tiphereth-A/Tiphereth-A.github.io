@@ -212,7 +212,7 @@ $$\mathbb{E}=\mathbb{F}_p(\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{p
 令 $\mathbb{L}=\{\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{p^m}\}$, 则 $\forall\alpha_i,\alpha_j\in\mathbb{L}$
 
 - $$(\alpha_i-\alpha_j)^{p^m}=\alpha_i-\alpha_j\in\mathbb{L}$$
-- $$\left({\alpha_i\over\alpha_j}\right)^{p^m}={\alpha_i\over\alpha_j}\in\mathbb{L},~(\alpha_j\ne 0)$$
+- $$\left(\frac{\alpha_i}{\alpha_j}\right)^{p^m}=\frac{\alpha_i}{\alpha_j}\in\mathbb{L},~(\alpha_j\ne 0)$$
 
 故 $\mathbb{L}\leqslant\mathbb{E}$
 

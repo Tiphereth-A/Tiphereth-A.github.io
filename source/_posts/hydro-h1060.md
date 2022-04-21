@@ -96,7 +96,7 @@ $$\sum_{(d,r,e,a,m)\in S}\gcd{}^6\{d,r,e,a,m\}$$
 设
 
 - $n=\min\{D,R,E,A,M\}$
-- $\def\f#1{\lfloor{ #1\over x}\rfloor}F(x)=\f{D}\f{R}\f{E}\f{A}\f{M}$
+- $\def\f#1{\lfloor\frac{ #1}{x}\rfloor}F(x)=\f{D}\f{R}\f{E}\f{A}\f{M}$
 
 则所求为
 

@@ -36,12 +36,12 @@ date: 2021-01-23 20:20:40
   - $\bm{v}=v\bm{e_{\tau}}$
   - $\bm{a}=\displaystyle{\mathrm{d}v\over\mathrm{d}t}\bm{e_{\tau}}+v{\mathrm{d}\theta\over\mathrm{d}t}\bm{e_n}=:a_{\tau}\bm{e_{\tau}}+a_n\bm{e_n}$
 
-   设$\rho$为曲率半径, 则$a_n=\displaystyle{v^2\over\rho}$
+   设$\rho$为曲率半径, 则$a_n=\displaystyle\frac{v^2}{\rho}$
 
 ### 万有引力
 
-- $$\bm{F}=-\displaystyle G{m_1m_2\over r^3}\bm{r}$$
-- $$\bm{F}=-\displaystyle G{m_1m_2\over\rho^2}\bm{e_{\rho}}$$
+- $$\bm{F}=-\displaystyle G\frac{m_1m_2}{r^3}\bm{r}$$
+- $$\bm{F}=-\displaystyle G\frac{m_1m_2}{\rho^2}\bm{e_{\rho}}$$
 
 #### <a href="#end-prob-1.1.1" id="prob-1.1.1">例题 - 1.1.1</a>
 
@@ -57,10 +57,10 @@ $$\bm{a}=-G\displaystyle{m_{earth}\over\rho^2}\bm{e_{\rho}}=a_{\rho}\bm{e_{\rho}
 \end{cases}$$
 
 又单位时间扫过面积为
-$$\displaystyle{\mathrm{d}S\over\mathrm{d}t}={1\over2}\rho^2{\mathrm{d}\theta\over\mathrm{d}t}$$
+$$\displaystyle{\mathrm{d}S\over\mathrm{d}t}=\frac{1}{2}\rho^2{\mathrm{d}\theta\over\mathrm{d}t}$$
 而
 
-$$\displaystyle{\mathrm{d}^2S\over\mathrm{d}t^2}={1\over2}\rho\left(2{\mathrm{d}\rho\over\mathrm{d}t}{\mathrm{d}\theta\over\mathrm{d}t}+\rho{\mathrm{d}^2\theta\over\mathrm{d}t^2}\right)=0$$
+$$\displaystyle{\mathrm{d}^2S\over\mathrm{d}t^2}=\frac{1}{2}\rho\left(2{\mathrm{d}\rho\over\mathrm{d}t}{\mathrm{d}\theta\over\mathrm{d}t}+\rho{\mathrm{d}^2\theta\over\mathrm{d}t^2}\right)=0$$
 
 故成立
 
@@ -70,7 +70,7 @@ $$\displaystyle{\mathrm{d}^2S\over\mathrm{d}t^2}={1\over2}\rho\left(2{\mathrm{d}
 
 ### 质心
 
-$$\bm{r}_c={\sum_n m_i\bm{r}_i\over\sum_n m_i}={\sum_n m_ix_i\over\sum_n m_i}\bm{i}+{\sum_n m_iy_i\over\sum_n m_i}\bm{j}+{\sum_n m_iz_i\over\sum_n m_i}\bm{k}$$
+$$\bm{r}_c={\sum_n m_i\bm{r}_i\over\sum_n m_i}=\frac{\sum_n m_ix_i}{\sum_n m_i}\bm{i}+\frac{\sum_n m_iy_i}{\sum_n m_i}\bm{j}+\frac{\sum_n m_iz_i}{\sum_n m_i}\bm{k}$$
 
 若质量连续分布, 则
 
@@ -89,7 +89,7 @@ $$\sum_n\bm{F}_i=m\bm{a}_c$$
 $$v-v_0=u\ln N$$
 
 - $u$: 喷射速度
-- $N$: 质量比 ${m_0\over m}$
+- $N$: 质量比 $\frac{m_0}{m}$
 
 ## Ch 4. 角动量守恒定律
 
@@ -126,7 +126,7 @@ $$\bm{M}_{out}={\mathrm{d}\bm{L}\over\mathrm{d}t}$$
 
 $$J=\int r^2\mathrm{d}m=\int r^2\rho\mathrm{d}V$$
 
-$$E_k={1\over2}J\omega^2$$
+$$E_k=\frac{1}{2}J\omega^2$$
 
 #### 影响因素
 
@@ -151,8 +151,10 @@ $$\alpha\longleftrightarrow a$$
 $$J\longleftrightarrow m$$
 $$\omega\longleftrightarrow v$$
 $$L\longleftrightarrow p$$
+
 ---
-$$E_k={1\over2}J\omega^2$$
+
+$$E_k=\frac{1}{2}J\omega^2$$
 $$\mathrm{d}A=M_z\mathrm{d}\theta$$
 $$P=M_z\omega$$
 $$L_z=J\omega$$
@@ -166,9 +168,9 @@ $$M_z\mathrm{d}t=\mathrm{d}L_z$$
 
 #### 弹性模量和切变模量
 
-$\epsilon_n={\Delta l\over l}$, $\sigma_n={F_n\over S}$
+$\epsilon_n=\frac{\Delta l}{l}$, $\sigma_n=\frac{F_n}{S}$
 
-$\epsilon_t=\tan\psi\sim\psi~(\psi\to0)$ ($\psi:$ 剪切角), $\sigma_t={F_t\over S}$ ($S:$ 横截面)
+$\epsilon_t=\tan\psi\sim\psi~(\psi\to0)$ ($\psi:$ 剪切角), $\sigma_t=\frac{F_t}{S}$ ($S:$ 横截面)
 
 $\sigma_n=E\epsilon_n$
 
@@ -197,13 +199,13 @@ $$\mathrm{d}Q_V=v\mathrm{d}S$$
 
 一般流体: $\rho Sv=\texttt{const}$ (质量)
 
-平均流速: $\bar{v}=\displaystyle{Q_V\over S}$
+平均流速: $\bar{v}=\displaystyle\frac{Q_V}{S}$
 
 ### Bernouli方程
 
-$${1\over2}\rho v^2+\rho gh+p=\texttt{const}$$
+$$\frac{1}{2}\rho v^2+\rho gh+p=\texttt{const}$$
 
-水平流管: $p+{1\over2}\rho v^2=\texttt{const}$
+水平流管: $p+\frac{1}{2}\rho v^2=\texttt{const}$
 
 ### 粘性流体
 
@@ -218,7 +220,7 @@ $$F=\pm\eta\left({\mathrm{d}v\over\mathrm{d}z}\right)_{z_0}\Delta S$$
 
 #### 运动规律
 
-$$p_1+{1\over2}\rho v_1^2+\rho gh_1=p_2+{1\over2}\rho v_2^2+\rho gh_2+w$$
+$$p_1+\frac{1}{2}\rho v_1^2+\rho gh_1=p_2+\frac{1}{2}\rho v_2^2+\rho gh_2+w$$
 
 减小粘性损耗:
 
@@ -227,18 +229,18 @@ $$p_1+{1\over2}\rho v_1^2+\rho gh_1=p_2+{1\over2}\rho v_2^2+\rho gh_2+w$$
 
 #### Poiseuille定律
 
-$$Q_V={\pi\over8\eta}\left({p_1-p_2\over l}\right)r^4$$
+$$Q_V=\frac{\pi}{8\eta}\left(\frac{p_1-p_2}{l}\right)r^4$$
 
 ($l:$ 长度, $r:$ 半径)
 
-水平圆管道: $w=\displaystyle{8\eta l\over r^2}\bar{v}$
+水平圆管道: $w=\displaystyle\frac{8\eta l}{r^2}\bar{v}$
 
 #### 湍流和Reynolds数
 
 - 湍流: $w\propto \bar{v}^2$
-- Reynolds数: $Re=\displaystyle{\rho vr\over\eta}$
+- Reynolds数: $Re=\displaystyle\frac{\rho vr}{\eta}$
 - 临界Reynolds数$Re_c$ (**范围**)
-- 临界流速$v_c=\displaystyle{Re_c\eta\over\rho r}$ (**范围**)
+- 临界流速$v_c=\displaystyle\frac{Re_c\eta}{\rho r}$ (**范围**)
 
 #### Stokes粘性公式
 
@@ -250,7 +252,7 @@ $$F=6\pi\eta rv$$
 
 $$x=A\cos(\omega t+\varphi)$$
 $$v=A\omega\sin(\omega t+\varphi)$$
-$$E={1\over2}kA^2$$
+$$E=\frac{1}{2}kA^2$$
 $$v^2=\omega^2(A^2-x^2)$$
 
 ### 简谐振动的叠加
@@ -258,13 +260,13 @@ $$v^2=\omega^2(A^2-x^2)$$
 #### 同一直线同频率
 
 $$A=\sqrt{A_1^2+A_2^2-2A_1A_2\cos(\varphi_2-\varphi_1)}\in[|A_1-A_2|,A_1+A_2]$$
-$$\varphi={A_1\sin\varphi_1+A_2\sin\varphi_2\over A_1\cos\varphi_1+A_2\cos\varphi_2}$$
+$$\varphi=\frac{A_1\sin\varphi_1+A_2\sin\varphi_2}{A_1\cos\varphi_1+A_2\cos\varphi_2}$$
 
 #### 同一直线频率相近
 
 $$A=\sqrt{A_1^2+A_2^2-2A_1A_2\cos((\omega_2-\omega_1)t+\varphi_2-\varphi_1)}\in[|A_1-A_2|,A_1+A_2]$$
 
-拍频$\nu=2A\cos({\omega_2-\omega_1\over 2}t)=|\nu_2-\nu_1|$
+拍频$\nu=2A\cos(\frac{\omega_2-\omega_1}{2}t)=|\nu_2-\nu_1|$
 
 #### 互相垂直
 
@@ -272,11 +274,11 @@ $$A=\sqrt{A_1^2+A_2^2-2A_1A_2\cos((\omega_2-\omega_1)t+\varphi_2-\varphi_1)}\in[
   
   $x=A\cos(\omega t+\alpha),~y=A\cos(\omega t+\beta)$
 
-  $${x^2\over A^2}+{y^2\over B^2}-{2xy\over AB}\cos(\beta-\alpha)=\sin^2(\beta-\alpha)$$
+  $$\frac{x^2}{A^2}+\frac{y^2}{B^2}-\frac{2xy}{AB}\cos(\beta-\alpha)=\sin^2(\beta-\alpha)$$
 
   椭圆
   - $\beta-\alpha=0~or~\pi$: 两条相交线段
-  - $\beta-\alpha=\pm{\pi\over2}$: 以坐标轴为主轴的椭圆
+  - $\beta-\alpha=\pm\frac{\pi}{2}$: 以坐标轴为主轴的椭圆
 - 频率不同:
   - 有整数比: 李萨如图形
   - 无整数比: 准周期运动
@@ -285,11 +287,11 @@ $$A=\sqrt{A_1^2+A_2^2-2A_1A_2\cos((\omega_2-\omega_1)t+\varphi_2-\varphi_1)}\in[
 
 ### 理想气体的压强和温度
 
-$$p={1\over3}nm_0\bar{v^2}={2\over3}n\bar{\epsilon}_k$$
+$$p=\frac{1}{3}nm_0\bar{v^2}=\frac{2}{3}n\bar{\epsilon}_k$$
 
 $$p=nkT$$
 
-$$\bar{\epsilon}_k={1\over2}m_0\bar{v^2}={3\over2}kT$$
+$$\bar{\epsilon}_k=\frac{1}{2}m_0\bar{v^2}=\frac{3}{2}kT$$
 
 ## Ch 10. 电荷和静磁场
 
@@ -311,7 +313,7 @@ $r\gg l$ 时, 由一对电荷量相等, 符号相反的点电荷组成的系统�
 
 #### 无限长均匀带电细棒在某一点处的电场强度 (P252, 258)
 
-$$\bm{E}={\lambda\over2\pi\epsilon_0 a}\bm{j}$$
+$$\bm{E}=\frac{\lambda}{2\pi\epsilon_0 a}\bm{j}$$
 
 ### Gauss 定理
 
@@ -324,9 +326,9 @@ $$\bm{E}={\lambda\over2\pi\epsilon_0 a}\bm{j}$$
 
 #### Gauss 定理
 
-$$\oint_S\bm{E}\cdot\mathrm{d}\bm{S}={1\over\epsilon_0}\int_V\rho\mathrm{d}V$$
+$$\oint_S\bm{E}\cdot\mathrm{d}\bm{S}=\frac{1}{\epsilon_0}\int_V\rho\mathrm{d}V$$
 或
-$$\nabla\cdot\bm{E}={\rho\over\epsilon_0}$$
+$$\nabla\cdot\bm{E}=\frac{\rho}{\epsilon_0}$$
 
 证明: 由Stokes公式易得
 
@@ -344,13 +346,13 @@ $$\oint_L\bm{E}\cdot\mathrm{d}\bm{l}=0$$
 
 #### 电势, 电势能, 功
 
-$$V_P={W_P\over q_0}=\int_P^{\infty}\bm{E}\cdot\mathrm{d}\bm{l}$$
+$$V_P=\frac{W_P}{q_0}=\int_P^{\infty}\bm{E}\cdot\mathrm{d}\bm{l}$$
 $$A_{PQ}=W_P-W_Q$$
 
 #### 电势的计算
 
 以无穷远点为零电势点
-$$V_p={1\over4\pi\epsilon_0}\int{\mathrm{d}q\over r}$$
+$$V_p=\frac{1}{4\pi\epsilon_0}\int{\mathrm{d}q\over r}$$
 
 #### 电势与电场强度的关系
 
@@ -358,14 +360,14 @@ $$\bm{E}=-\nabla V$$
 
 - 电势梯度: $\nabla V$, 电势面法线方向的电势变化率, 方向沿电势增大方向
 
-  $$\nabla V={\partial V\over\partial n}\bm{e}_n$$
+  $$\nabla V=\frac{\partial V}{\partial n}\bm{e}_n$$
 
 #### 电偶极子 (P267)
 
 $$V={\bm{p}\cdot\bm{r}\over4\pi\epsilon_0r^3}$$
 
-$$E_r={1\over4\pi\epsilon_0}{2p\cos\theta\over r^3}$$
-$$E_{\theta}={1\over4\pi\epsilon_0}{p\sin\theta\over r^3}$$
+$$E_r=\frac{1}{4\pi\epsilon_0}\frac{2p\cos\theta}{r^3}$$
+$$E_{\theta}=\frac{1}{4\pi\epsilon_0}\frac{p\sin\theta}{r^3}$$
 
 ### 静电场中的金属导体
 
@@ -401,14 +403,14 @@ $$E_{\theta}={1\over4\pi\epsilon_0}{p\sin\theta\over r^3}$$
 
 #### 电容的计算 (10-6-3)
 
-- 平行板电容器: $C={\epsilon_0S\over d}$
-- 同心球形电容器: $C={1\over4\pi\epsilon_0}\left({1\over R_A}-{1\over R_B}\right)$
-- 同轴柱形电容器: $C={2\pi\epsilon_0l\over\ln R_B-\ln R_A}$
-- 平行无限长直导线 (单位长度) (P277): $C={\pi\epsilon_0\over\ln d-\ln a}$
+- 平行板电容器: $C=\frac{\epsilon_0S}{d}$
+- 同心球形电容器: $C=\frac{1}{4\pi\epsilon_0}\left(\frac{1}{R_A}-\frac{1}{R_B}\right)$
+- 同轴柱形电容器: $C=\frac{2\pi\epsilon_0l}{\ln R_B-\ln R_A}$
+- 平行无限长直导线 (单位长度) (P277): $C=\frac{\pi\epsilon_0}{\ln d-\ln a}$
 
 #### 电容器的连接
 
-- 串联: ${1\over C}=\sum_n{1\over C_n}$
+- 串联: $\frac{1}{C}=\sum_n\frac{1}{C_n}$
 - 并联: $C=\sum_nC_n$
 
 ### 静电场中的电介质
@@ -461,13 +463,13 @@ $$\nabla\cdot\bm{D}=\rho$$
 
 - **能量定域于场**
 
-- 平行板电容器极板间能量$W_e={Q^2\over2C}={1\over2}QU_{AB}={1\over2}CU_{AB}^2$
-- 平行板电容器中静电能能量密度$w_e={1\over2}DE$
+- 平行板电容器极板间能量$W_e=\frac{Q^2}{2C}=\frac{1}{2}QU_{AB}=\frac{1}{2}CU_{AB}^2$
+- 平行板电容器中静电能能量密度$w_e=\frac{1}{2}DE$
 
-  真空中, $w_e={1\over2}\epsilon_0E^2$
+  真空中, $w_e=\frac{1}{2}\epsilon_0E^2$
 
-- 非匀强电场中, $w_e={1\over2}DE$, $W_e=\int_Vw_e\mathrm{d}V$
-- 各向异性电介质中, $w_e={1\over2}\bm{D}\cdot\bm{E}$, $W_e=\int_Vw_e\mathrm{d}V$
+- 非匀强电场中, $w_e=\frac{1}{2}DE$, $W_e=\int_Vw_e\mathrm{d}V$
+- 各向异性电介质中, $w_e=\frac{1}{2}\bm{D}\cdot\bm{E}$, $W_e=\int_Vw_e\mathrm{d}V$
 
 ## Ch 11. 电流和恒磁场
 
@@ -492,7 +494,7 @@ $$\nabla\cdot\bm{D}=\rho$$
 $$\oint_S\bm{j}\cdot\mathrm{d}\bm{S}=-{\mathrm{d}q\over\mathrm{d}t}=-{\mathrm{d}\over\mathrm{d}t}\int_V\rho\mathrm{d}V$$
 或
 
-$$\nabla\cdot\bm{j}=-{\partial\rho\over\partial t}$$
+$$\nabla\cdot\bm{j}=-\frac{\partial\rho}{\partial t}$$
 
 #### 恒定电流
 
@@ -507,9 +509,9 @@ $$\nabla\cdot\bm{j}=0$$
 
 #### 电阻率
 
-$$\rho:={E\over j}$$
+$$\rho:=\frac{E}{j}$$
 
-- $$R=\rho{l\over S}$$
+- $$R=\rho\frac{l}{S}$$
 - 对于金属材料, 通常温度范围内, $\rho=\rho_0(1+\alpha t)$
 
   - $\rho$: $t\degree\!\mathrm{C}$时的电阻率
@@ -526,21 +528,21 @@ $$\bm{j}=\sigma\bm{E}$$
 
 ### Biot-Savart定律
 
-$$\mathrm{d}\bm{B}={\mu_0\over 4\pi}{I\mathrm{d}\bm{l}\times\bm{r}\over r^3}$$
+$$\mathrm{d}\bm{B}=\frac{\mu_0}{4\pi}{I\mathrm{d}\bm{l}\times\bm{r}\over r^3}$$
 
-整条导线$L$: $\bm{B}={\mu_0\over4\pi}\int_L{I\mathrm{d}\bm{l}\times\bm{r}\over r^3}$
+整条导线$L$: $\bm{B}=\frac{\mu_0}{4\pi}\int_L{I\mathrm{d}\bm{l}\times\bm{r}\over r^3}$
 
 #### 无线长直导线在某一点处产生的磁感应强度 (P306)
 
-$$B={\mu_0I\over 2\pi a}$$
+$$B=\frac{\mu_0I}{2\pi a}$$
 
 #### 环形导线在轴线上某一点处产生的磁感应强度 (P307)
 
-$$B={\mu_0R^2\over2(R^2+a^2)^{3\over2}}$$
+$$B={\mu_0R^2\over2(R^2+a^2)^\frac{3}{2}}$$
 
 #### 沿直线运动的电荷在某瞬间在某一点处产生的磁感应强度 (P307)
 
-$$\bm{B}={\mu_0\over4\pi}{q\bm{v}\times\bm{r}\over r^3}=\mu_0\epsilon_0\bm{v}\times\bm{E}={1\over c^2}\bm{v}\times\bm{E}$$
+$$\bm{B}=\frac{\mu_0}{4\pi}{q\bm{v}\times\bm{r}\over r^3}=\mu_0\epsilon_0\bm{v}\times\bm{E}=\frac{1}{c^2}\bm{v}\times\bm{E}$$
 
 #### 磁矩
 
@@ -591,7 +593,7 @@ $$\bm{F}=\int_LI\mathrm{d}\bm{l}\times\bm{B}$$
 #### 两平行长直导线的相互作用
 
 单位长度所受力
-$$f={\mu_0\over4\pi}{2I_1I_2\over a}$$
+$$f=\frac{\mu_0}{4\pi}\frac{2I_1I_2}{a}$$
 
 电流方向相同则相互吸引
 
@@ -606,7 +608,7 @@ $\alpha:=\lang\bm{B},\bm{m}\rang$
 - 匀强磁场中:
   - $\alpha=0$, $\bm{M}=\bm{0}$, 稳定平衡
   - $\alpha=\pi$, $\bm{M}=\bm{0}$, 不稳定平衡
-  - $\alpha={\pi\over2}$, $\bm{M}$最大
+  - $\alpha=\frac{\pi}{2}$, $\bm{M}$最大
   - 向$\alpha$减小方向转动
 
 在非匀强磁场中, 线圈在转动之外, 还会向磁场较强的方向运动
@@ -616,7 +618,7 @@ $\alpha:=\lang\bm{B},\bm{m}\rang$
 - 磁聚焦
 - Hall效应
   
-  Hall系数 $K_H={1\over nq}$
+  Hall系数 $K_H=\frac{1}{nq}$
 
 ### 磁介质的磁化
 
@@ -718,7 +720,7 @@ $$\nabla\times\bm{H}=\bm{j}_0$$
 ### 电磁感应及其基本规律
 
 - 感应电荷
-  $$q_i=\int_{t_1}^{t_2}I_i\mathrm{d}t=\int_{\Phi_1}^{\Phi_2}-{1\over R}\mathrm{d}\Phi={\Phi_1-\Phi_2\over R}$$
+  $$q_i=\int_{t_1}^{t_2}I_i\mathrm{d}t=\int_{\Phi_1}^{\Phi_2}-\frac{1}{R}\mathrm{d}\Phi=\frac{\Phi_1-\Phi_2}{R}$$
 
 - 动生电动势
   - 不闭合导体
@@ -773,7 +775,7 @@ $$\Phi=LI$$
 
 #### 两嵌套螺线管的互感 (P10)
 
-$$M=\mu_0{N_1N_2\over l}S$$
+$$M=\mu_0\frac{N_1N_2}{l}S$$
 
 #### 螺线管的自感 (P10)
 
@@ -800,26 +802,26 @@ $L_1,L_2,M$
   适用于真空和各向同性的磁介质
 
   - 各向同性的顺磁质和抗磁质
-    $$w_m={1\over2}BH$$
-    $$W_m=\int_Vw_m\mathrm{d}V={1\over2}\int_VBH\mathrm{d}V$$
+    $$w_m=\frac{1}{2}BH$$
+    $$W_m=\int_Vw_m\mathrm{d}V=\frac{1}{2}\int_VBH\mathrm{d}V$$
 
     - 由各向同性的顺磁质或抗磁质作为磁芯的螺线管 (自感磁能)
-      $$W_m={1\over2}LI^2$$
+      $$W_m=\frac{1}{2}LI^2$$
 
 - 电磁场
-  - 能量密度 $w={1\over2}(\bm{E}\cdot\bm{D}+\bm{B}\cdot\bm{H})$
-  - 能量 $\displaystyle W={1\over2}\int_V(\bm{E}\cdot\bm{D}+\bm{B}\cdot\bm{H})\mathrm{d}V$
+  - 能量密度 $w=\frac{1}{2}(\bm{E}\cdot\bm{D}+\bm{B}\cdot\bm{H})$
+  - 能量 $\displaystyle W=\frac{1}{2}\int_V(\bm{E}\cdot\bm{D}+\bm{B}\cdot\bm{H})\mathrm{d}V$
 
 ### 超导体的电磁特性
 
 - 临界温度 $T_C$
 - 临界磁场
-  $$B_C(T)=B_0\left(1-\left({T\over T_C}\right)^2\right)$$
+  $$B_C(T)=B_0\left(1-\left(\frac{T}{T_C}\right)^2\right)$$
 
 - 超导态: $T<T_C$且$B<B_C$
 
 - 临界电流
-  $$I_C(T)=I_0\left(1-\left({T\over T_C}\right)^2\right)$$
+  $$I_C(T)=I_0\left(1-\left(\frac{T}{T_C}\right)^2\right)$$
 
   $I>I_C$时, 超导态变为正常态
 
@@ -909,7 +911,7 @@ $$f={1\over2\pi\sqrt{LC}}$$
   
 #### 偶极振子
 
-- 平均能流密度 $\bar{S}={1\over2}E_0H_0$
+- 平均能流密度 $\bar{S}=\frac{1}{2}E_0H_0$
   - 性质:
 
     - 正比于频率的四次方
@@ -933,7 +935,7 @@ $$f={1\over2\pi\sqrt{LC}}$$
 ### 交流电和交流电路的基本概念
 #### 物理量
 ##### 阻抗和相位差
-$$Z:={U_0\over I_0}={U\over I}$$
+$$Z:=\frac{U_0}{I_0}=\frac{U}{I}$$
 
 > 因为相位差, 所以瞬时值不能写成类似关系
 
@@ -948,16 +950,16 @@ $$u(t)=U_0\cos\omega t$$
 $$i(t)=I_0\cos\omega t$$
 
 #### 纯电感
-$$Z=\omega L,\varphi={\pi\over2}$$
+$$Z=\omega L,\varphi=\frac{\pi}{2}$$
 
 $$u(t)=U_0\cos\omega t$$
-$$i(t)=I_0\cos(\omega t-{\pi\over2})$$
+$$i(t)=I_0\cos(\omega t-\frac{\pi}{2})$$
 
 #### 纯电容
-$$Z={1\over\omega C},\varphi=-{\pi\over2}$$
+$$Z=\frac{1}{\omega C},\varphi=-\frac{\pi}{2}$$
 
 $$u(t)=U_0\cos\omega t$$
-$$i(t)=I_0\cos(\omega t+{\pi\over2})$$
+$$i(t)=I_0\cos(\omega t+\frac{\pi}{2})$$
 
 ### 交流电路的矢量图解法
 - RL 串联
@@ -972,7 +974,7 @@ $$\tilde{Z}_R=R$$
 #### 电感
 $$\tilde{Z}_L=j\omega L$$
 #### 电容
-$$\tilde{Z}_C={1\over j\omega C}$$
+$$\tilde{Z}_C=\frac{1}{j\omega C}$$
 
 #### 串联电路
 $$\tilde{U}=\sum_i\tilde{U_i}$$
@@ -986,18 +988,18 @@ $$\sum\pm\tilde{I}=0$$
 $$\sum\pm\tilde{I}\tilde{Z}=\sum\pm\tilde{E}$$
 
 #### RLC 串联电路
-$$\tilde{Z}=R+j\left(\omega L-{1\over\omega C}\right)$$
+$$\tilde{Z}=R+j\left(\omega L-\frac{1}{\omega C}\right)$$
 
 - $\omega<{1\over\sqrt{LC}}$: 电压落后电流, 表现为容抗性
 
 ### 交流电的功率
 #### 瞬时功率
-$$p(t)=u(t)i(t)={1\over2}U_0I_0(\cos\varphi+\cos(2\omega t-\varphi))=UI(\cos\varphi+\cos(2\omega t-\varphi))$$
+$$p(t)=u(t)i(t)=\frac{1}{2}U_0I_0(\cos\varphi+\cos(2\omega t-\varphi))=UI(\cos\varphi+\cos(2\omega t-\varphi))$$
 
 > 和差化积: $\cos\varphi+\cos(2\omega t-\varphi)=2\cos\omega t\cos\varphi$
 
 #### 平均功率
-$$P={1\over T}\int_0^Tp(t)\mathrm{d}t=UI\cos\varphi$$
+$$P=\frac{1}{T}\int_0^Tp(t)\mathrm{d}t=UI\cos\varphi$$
 
 - $\cos\varphi$: 功率因数, 有功功率在视在功率中所占比例
   - 纯电阻电路: $P=UI$
@@ -1024,7 +1026,7 @@ $$S^2=P^2+P_q^2$$
 
 ### 磁路和磁路定律
 #### 磁介质分界面上磁感应线的折射
-$${\tan i\over\tan r}={\mu_{r1}\over\mu_{r2}}$$
+$$\frac{\tan i}{\tan r}={\mu_{r1}\over\mu_{r2}}$$
 
 #### 磁路
 - 漏磁
@@ -1034,26 +1036,26 @@ $${\tan i\over\tan r}={\mu_{r1}\over\mu_{r2}}$$
 
 #### 磁路定律
 - 单回路
-  $$NI_0=\Phi\sum_i{l_i\over\mu_iS_i}$$
+  $$NI_0=\Phi\sum_i\frac{l_i}{\mu_iS_i}$$
 
   - $NI_0$: 磁通势, $\epsilon_m$
-  - ${l_i\over\mu_iS_i}$: 磁阻, $R_{mi}$
+  - $\frac{l_i}{\mu_iS_i}$: 磁阻, $R_{mi}$
   - $\Phi R_{mi}$: 磁势降落
   
   $$\epsilon_n=\Phi\sum_iR_{mi}$$
   闭合磁路磁通势等于各段磁路上的磁势降落之和
-- 有效磁导率 (与相同空心螺绕环的比值) $\mu_e:={\Phi\over\Phi_0}$
+- 有效磁导率 (与相同空心螺绕环的比值) $\mu_e:=\frac{\Phi}{\Phi_0}$
 
 - 开气隙使磁导率大幅下降, 但能极大改善器件的温度稳定性
 
 ## Ch 14. 光学
 ### 光波及其相干条件
 - 波速$u={1\over\sqrt{\epsilon\mu}}$
-- 折射率$n={c\over u}=\sqrt{\epsilon_r\mu_r}$
-- 能量密度$w={1\over2}\epsilon E^2+{1\over2}\mu H^2$
+- 折射率$n=\frac{c}{u}=\sqrt{\epsilon_r\mu_r}$
+- 能量密度$w=\frac{1}{2}\epsilon E^2+\frac{1}{2}\mu H^2$
 - 能流密度$S=wu=EH$
   - 坡印廷矢量 $\bm{S}=\bm{E}\times\bm{H}$
-- 强度$I=\bar{S}={n\over2\mu c}E_0^2$
+- 强度$I=\bar{S}=\frac{n}{2\mu c}E_0^2$
 - 相对强度$I=E_0^2$
 
 - 沿$r$方向传播的平面电磁波 $\bm{E}=\bm{E}_0\cos(\omega t-\bm{k}\cdot\bm{r}+\varphi_0)$
@@ -1073,28 +1075,28 @@ $l=nx$
 #### 获得相干波的方法
 ##### 分波前法
 - 杨氏双缝干涉
-  - 光程差$\Delta={2a\over D}x$
-  - 亮条纹条件 $2{r_2-r_1\over\lambda}=2k$ (光程差为半波长偶数倍)
+  - 光程差$\Delta=\frac{2a}{D}x$
+  - 亮条纹条件 $2\frac{r_2-r_1}{\lambda}=2k$ (光程差为半波长偶数倍)
 
-    $x={D\over 2a}2k{\lambda\over2}$
-  - 暗条纹条件 $2{r_2-r_1\over\lambda}=2k+1$ (光程差为半波长奇数倍)
+    $x=\frac{D}{2a}2k\frac{\lambda}{2}$
+  - 暗条纹条件 $2\frac{r_2-r_1}{\lambda}=2k+1$ (光程差为半波长奇数倍)
 
-    $x={D\over 2a}(2k+1){\lambda\over2}$
+    $x=\frac{D}{2a}(2k+1)\frac{\lambda}{2}$
 
 ##### 分振幅法
 - 薄膜干涉
   - 等倾干涉
-    - 光程差 $\Delta=2ne\cos r+{\lambda\over 2}$
+    - 光程差 $\Delta=2ne\cos r+\frac{\lambda}{2}$
   - 等厚干涉
-    - 光程差 $\Delta=2ne+{\lambda\over 2}$
+    - 光程差 $\Delta=2ne+\frac{\lambda}{2}$
 
     - 空气劈尖
-      - 厚度 $h={\lambda\over 2l}L$, $l$ 相邻条纹间距
+      - 厚度 $h=\frac{\lambda}{2l}L$, $l$ 相邻条纹间距
     - Newton环
-      - 气隙厚度 $e={r^2\over 2R}$
+      - 气隙厚度 $e=\frac{r^2}{2R}$
       - 暗环半径 $r=\sqrt{kR\lambda}$
 - Michelson干涉
-  - 干涉环移过$m$个条纹, 平移距离 $d=m{\lambda\over 2}$
+  - 干涉环移过$m$个条纹, 平移距离 $d=m\frac{\lambda}{2}$
 ##### 分振动面法
 - 偏振光干涉
 
@@ -1102,19 +1104,19 @@ $l=nx$
 #### Fresnel衍射
 #### Fraunhofer衍射
 - 单缝
-  - 光强$I_P=I_0({\sin\alpha\over\alpha})^2$
-  - $\alpha={\delta\over2}={\pi a\over\lambda}\sin\varphi$
+  - 光强$I_P=I_0(\frac{\sin\alpha}{\alpha})^2$
+  - $\alpha=\frac{\delta}{2}=\frac{\pi a}{\lambda}\sin\varphi$
   
   - $\alpha=0$: 主极大
   - $\alpha=k\pi$: 暗条纹
-    - 第一暗条纹的衍射角$\varphi_0=\arcsin{\lambda\over a}\approx{\lambda\over a}$
-  - 次极大 $A_p=A_0{\sin\alpha\over\alpha}$
+    - 第一暗条纹的衍射角$\varphi_0=\arcsin\frac{\lambda}{a}\approx\frac{\lambda}{a}$
+  - 次极大 $A_p=A_0\frac{\sin\alpha}{\alpha}$
   
   - 明纹条件 ${\mathrm{d}A_p\over\mathrm{d}\alpha}=0\implies\tan\alpha=\alpha$
 - 圆孔
-  - 中央亮斑半角宽度 $1.22{\lambda\over D}$, 半径 $1.22{\lambda f\over D}$
+  - 中央亮斑半角宽度 $1.22\frac{\lambda}{D}$, 半径 $1.22\frac{\lambda f}{D}$
   - Rayleigh判据
-    - 最小分辨角 $\theta_0=1.22{\lambda\over D}$
+    - 最小分辨角 $\theta_0=1.22\frac{\lambda}{D}$
     - 光学系统分辨率 $1\over\theta_0$
 
 ---

@@ -228,7 +228,7 @@ From [Support table - KaTeX](https://katex.org/docs/support_table.html)
 | \checkmark        | $\checkmark$                                                                                      |                                                                                                                             |
 | \Chi              | $\Chi$                                                                                            |                                                                                                                             |
 | \chi              | $\chi$                                                                                            |                                                                                                                             |
-| \choose           | ${n+1 \choose k+2}$                                                                               | `{n+1 \choose k+2}`                                                                                                         |
+| \choose           | $\binom{n+1 }{k+2}$                                                                               | `\binom{n+1 }{k+2}`                                                                                                         |
 | \circ             | $\circ$                                                                                           |                                                                                                                             |
 | \circeq           | $\circeq$                                                                                         |                                                                                                                             |
 | \circlearrowleft  | $\circlearrowleft$                                                                                |                                                                                                                             |
@@ -805,7 +805,7 @@ From [Support table - KaTeX](https://katex.org/docs/support_table.html)
 | \origof                 | $\origof$                                           |                                            |
 | \oslash                 | $\oslash$                                           |                                            |
 | \otimes                 | $\otimes$                                           |                                            |
-| \over                   | ${a+1 \over b+2}+c$                                 | `{a+1 \over b+2}+c`                        |
+| \over                   | $\frac{a+1 }{b+2}+c$                                 | `\frac{a+1 }{b+2}+c`                        |
 | \overbrace              | $\overbrace{x+⋯+x}^{n\text{ times}}$                | `\overbrace{x+⋯+x}^{n\text{ times}}`       |
 | \overbracket            | <span style="color:firebrick;">Not supported</span> |                                            |
 | \overgroup              | $\overgroup{AB}$                                    | `\overgroup{AB}`                           |

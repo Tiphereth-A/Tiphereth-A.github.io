@@ -17,7 +17,7 @@ date: 2020-07-25 00:12:29
 
 ## 简述题意
 
-求$\displaystyle\sum_{i=1}^n\left\lfloor{n\over i}\right\rfloor$
+求$\displaystyle\sum_{i=1}^n\left\lfloor\frac{n}{i}\right\rfloor$
 
 ## 解题思路
 

@@ -392,14 +392,14 @@ $$a_i^2+a_j=x^2\iff a_j=(x+a_i)(x-a_i)$$
 
 所以枚举 $x\in 1..\max_i a_i$ 和其倍数 $y$, 若 $2\mid (y/x-x)$, 且
 
-- $\displaystyle a_i={ {y\over x}-x\over 2}$
+- $\displaystyle a_i={ \frac{y}{x}-x\over 2}$
 - $a_j=y$
 
 则找到了一组解
 
 ### 复杂度二
 
-$\displaystyle O\left(\sum_{i=1}^{\max_i a_i}\left\lfloor {\max_i a_i\over i}\right\rfloor\right)=O\left(\max_i\{a_i\log a_i\}\right)$
+$\displaystyle O\left(\sum_{i=1}^{\max_i a_i}\left\lfloor \frac{\max_i a_i}{i}\right\rfloor\right)=O\left(\max_i\{a_i\log a_i\}\right)$
 
 ### 代码参考二
 
@@ -546,7 +546,7 @@ $$\prod_{i = 1}^Y f_i = X$$
 - $f(x,y)=f(x-1,y)+f(x,y-1)$
 
 由简单的生成函数知识不难得出
-$$f(\alpha,Y)={\alpha+Y-1\choose\alpha}$$
+$$f(\alpha,Y)=\binom{\alpha+Y-1}{\alpha}$$
 
 <details>
 <summary><font color='orange'>推导过程</font></summary>
@@ -559,16 +559,16 @@ $$f(\alpha,Y)={\alpha+Y-1\choose\alpha}$$
     F(x,y)&=x\sum_{n=1}^\infty y^n+y\sum_{m=1}^\infty x^m-xy+\sum_{m=2}^\infty\sum_{n=2}^\infty f(m,n)x^my^n\\
     &=x\sum_{n=1}^\infty y^n+y\sum_{m=1}^\infty x^m-xy+\sum_{m=2}^\infty\sum_{n=2}^\infty(f(m-1,n)+f(m,n-1))x^my^n\\
     &=x\sum_{n=1}^\infty y^n+y\sum_{m=1}^\infty x^m-xy+x\left(F(x,y)-\sum_{m=1}^\infty x^my\right)+y\left(F(x,y)-\sum_{n=1}^\infty xy^n\right)\\
-    &=(x+y)F(x,y)+xy\left({1\over 1-y}+{1\over 1-x}-1-{y\over 1-y}-{x\over 1-x}\right)
+    &=(x+y)F(x,y)+xy\left(\frac{1}{1-y}+\frac{1}{1-x}-1-\frac{y}{1-y}-\frac{x}{1-x}\right)
   \end{aligned}$$
 >
 > 即
 >
-> $$F(x,y)={xy\over 1-x-y}$$
+> $$F(x,y)=\frac{xy}{1-x-y}$$
 >
 > 从而
 >
-> $$f(m,n)=[x^my^n]F(x,y)={m+n-1\choose m}$$
+> $$f(m,n)=[x^my^n]F(x,y)=\binom{m+n-1}{m}$$
 
 </details>
 
@@ -577,7 +577,7 @@ $$X=\prod_{i=1}^{\omega(X)}p_i^{\alpha_i}$$
 
 显然答案为
 
-$$2^{Y-1}\prod_{i=1}^{\omega(X)}{\alpha_i+Y-1\choose\alpha_i}$$
+$$2^{Y-1}\prod_{i=1}^{\omega(X)}\binom{\alpha_i+Y-1}{\alpha_i}$$
 
 ### 复杂度
 

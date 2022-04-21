@@ -274,4 +274,4 @@ $\Theta(n^3+\log m)\implies O(n^3)$
 
 ### 解题思路
 
-显然如果$k\geqslant n$, 答案即为$2$, 否则为$\lceil{2n\over k}\rceil$
+显然如果$k\geqslant n$, 答案即为$2$, 否则为$\lceil\frac{2n}{k}\rceil$

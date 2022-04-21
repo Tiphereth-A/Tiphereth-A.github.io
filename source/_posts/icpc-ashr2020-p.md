@@ -70,8 +70,8 @@ $$
 
 即
 $$\begin{aligned}
-  &{ {(n-2)!\over 2^{\lfloor{n\over2}-1\rfloor}\lfloor{n\over2}-1\rfloor!}\sum_{i=1}^n\varphi(n)\over{n!\over 2^{\lfloor{n\over2}\rfloor}\lfloor{n\over2}\rfloor!}}\\
-  =~&{\lfloor{n\over2}\rfloor\sum_{i=1}^n\varphi(n)\over {n\choose2}}\\
+  &{ {(n-2)!\over 2^{\lfloor\frac{n}{2}-1\rfloor}\lfloor\frac{n}{2}-1\rfloor!}\sum_{i=1}^n\varphi(n)\over{n!\over 2^{\lfloor\frac{n}{2}\rfloor}\lfloor\frac{n}{2}\rfloor!}}\\
+  =~&{\lfloor\frac{n}{2}\rfloor\sum_{i=1}^n\varphi(n)\over \binom{n}{2}}\\
   =~&{\sum_{i=1}^n\varphi(n)\over n-[2\mid n]}
 \end{aligned}$$
 
@@ -160,10 +160,10 @@ $$\max_{\min\{0,k-mn\}\leqslant t\leqslant k}\sum_{i=0}^{k-t}(t+i)$$
 
   令 $l=\min\{x-1,n-x\}$, $L=\max\{x-1,n-x\}$
 
-  则 $l\leqslant\lfloor{n-1\over 2}\rfloor$, $L=n-l-1\geqslant\lceil{n-1\over 2}\rceil$
+  则 $l\leqslant\lfloor\frac{n-1}{2}\rfloor$, $L=n-l-1\geqslant\lceil\frac{n-1}{2}\rceil$
 - 每天只能选择向左走一格, 向右走一格, 不动
 
-此时的最优走法为: 先向短边方向走$t_1$天 $(0\leqslant t_1\leqslant\max\{0,\min\{l,\lfloor{k-L\over 2}\rfloor\}\})$, 然后等$t_2$天 $(0\leqslant t_2\leqslant\max\{k-2l-L,[k>L][2\nmid k-L]\})$, 最后反方向走到端点
+此时的最优走法为: 先向短边方向走$t_1$天 $(0\leqslant t_1\leqslant\max\{0,\min\{l,\lfloor\frac{k-L}{2}\rfloor\}\})$, 然后等$t_2$天 $(0\leqslant t_2\leqslant\max\{k-2l-L,[k>L][2\nmid k-L]\})$, 最后反方向走到端点
 
 ![](B-4.svg)
 
@@ -176,7 +176,7 @@ $$
 
 当
 $$\begin{aligned}
-  t_1&=\max\left\{0,\min\left\{l,\left\lfloor{k-L\over 2}\right\rfloor\right\}\right\}\\
+  t_1&=\max\left\{0,\min\left\{l,\left\lfloor\frac{k-L}{2}\right\rfloor\right\}\right\}\\
   t_2&=\max\{k-2l-L,[k>L][2\nmid k-L]\}
 \end{aligned}$$
 时取得最大值

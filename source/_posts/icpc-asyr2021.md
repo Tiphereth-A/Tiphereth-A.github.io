@@ -497,7 +497,7 @@ int main() {
 ### 题意简述
 
 给定一个在 $\Complex$ 上的函数
-$$f(z)={az+b\over cz+d},~a,b,c,d\in\Complex^{\infty}$$
+$$f(z)=\frac{az+b}{cz+d},~a,b,c,d\in\Complex^{\infty}$$
 
 又给定其上的三个点 $(z_i,w_i)$, $i=1,2,3$, 给出复数 $z_0$, 问 $f(z_0)$ 为多少
 
@@ -509,7 +509,7 @@ $$f(z)={az+b\over cz+d},~a,b,c,d\in\Complex^{\infty}$$
 
 首先我们假设 $c\ne 0$, 此时在分式上下同时除 $c$, 变为
 
-$$f(z)={a'z+b'\over z+d'}$$
+$$f(z)=\frac{a'z+b'}{z+d'}$$
 
 然后把三个点代入, 即有
 
@@ -532,7 +532,7 @@ $$f(z)=a'z+b'$$
 
 分式线性变换保交比, 即
 
-$${(z_0-z_1)(z_3-z_2)\over (z_0-z_2)(z_3-z_1)}={(w_0-w_1)(w_3-w_2)\over (w_0-w_2)(w_3-w_1)}$$
+$$\frac{(z_0-z_1)(z_3-z_2)}{(z_0-z_2)(z_3-z_1)}=\frac{(w_0-w_1)(w_3-w_2)}{(w_0-w_2)(w_3-w_1)}$$
 
 ~~简单的代数知识~~
 
@@ -674,7 +674,7 @@ int main() {
 
 令 $f_n$ 表示 $2n$ 个结点的完美匹配方案数, 则
 
-$$f_n={1\over n!}\prod_{i=1}^n{2i\choose 2}={(2n)!\over 2^nn!}$$
+$$f_n=\frac{1}{n!}\prod_{i=1}^n\binom{2i}{2}=\frac{(2n)!}{2^nn!}$$
 
 不难得出 $f_n=(2n-1)f_{n-1}$
 
@@ -701,11 +701,11 @@ $$g_n(k)=f_{n-k}(h_0(R,k)+h_1(R,k))$$
 $$h_0(r,j)=\begin{cases}
   0,&j<0\\
   1,&j=0\\
-  \displaystyle\sum_{u\in S(r)}\sum_{t=1}^{\lfloor{s(u)\over 2}\rfloor}h(u,t)h_0(r,j-t),&j>0\\
+  \displaystyle\sum_{u\in S(r)}\sum_{t=1}^{\lfloor\frac{s(u)}{2}\rfloor}h(u,t)h_0(r,j-t),&j>0\\
 \end{cases}$$
 $$h_1(r,j)=\begin{cases}
   0,&j\leqslant 0\\
-  \displaystyle\sum_{u\in S(r)}\left(h_0(r,j-1)+\sum_{t=1}^{\lfloor{s(u)\over 2}\rfloor}\left(h(u,t)h_1(r,j-t)+h_0(u,t)h_0(r,j-t-1)\right)\right),&j>0\\
+  \displaystyle\sum_{u\in S(r)}\left(h_0(r,j-1)+\sum_{t=1}^{\lfloor\frac{s(u)}{2}\rfloor}\left(h(u,t)h_1(r,j-t)+h_0(u,t)h_0(r,j-t-1)\right)\right),&j>0\\
 \end{cases}$$
 
 注意转移结束后更新 $s(r)$, 否则复杂度会出错

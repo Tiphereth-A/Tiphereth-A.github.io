@@ -77,9 +77,9 @@ $$\left(\sum_{i=1}^n\sum_{j=1}^n ij \gcd(i,j)\right) \bmod p$$
 
 $$
 \begin{aligned}
-  \sum_{i=1}^n\sum_{j=1}^n ij (i,j)&\equiv\sum_{d=1}^nd^3\sum_{i=1}^{\lfloor{n\over d}\rfloor}\sum_{j=1}^{\lfloor{n\over d}\rfloor} ij [(i,j)=1]\pmod p\\
-  &\equiv\sum_{d=1}^nd^3\sum_{e=1}^{\lfloor{n\over d}\rfloor}e^2\mu(e)\sum_{i=1}^{\lfloor{n\over de}\rfloor}\sum_{j=1}^{\lfloor{n\over de}\rfloor} ij\pmod p\\
-  &\overset{D=de}{\equiv}\sum_{D=1}^n\left({\lfloor{n\over d}\rfloor\left(\lfloor{n\over d}\rfloor+1\right)\over 2}\right)^2D^2\varphi(D)\pmod p\\
+  \sum_{i=1}^n\sum_{j=1}^n ij (i,j)&\equiv\sum_{d=1}^nd^3\sum_{i=1}^{\lfloor\frac{n}{d}\rfloor}\sum_{j=1}^{\lfloor\frac{n}{d}\rfloor} ij [(i,j)=1]\pmod p\\
+  &\equiv\sum_{d=1}^nd^3\sum_{e=1}^{\lfloor\frac{n}{d}\rfloor}e^2\mu(e)\sum_{i=1}^{\lfloor\frac{n}{de}\rfloor}\sum_{j=1}^{\lfloor\frac{n}{de}\rfloor} ij\pmod p\\
+  &\overset{D=de}{\equiv}\sum_{D=1}^n\left({\lfloor\frac{n}{d}\rfloor\left(\lfloor\frac{n}{d}\rfloor+1\right)\over 2}\right)^2D^2\varphi(D)\pmod p\\
 \end{aligned}
 $$
 
@@ -88,8 +88,8 @@ $$
 令 $g(n)=n^2$, 有
 
 $$\begin{aligned}
- S(n)=g(1)S(n)&=\sum_{i=1}^n(f*g)(i)-\sum_{i=2}^ng(i)S\left(\left\lfloor{n\over d}\right\rfloor\right)\\
-  &=\left({n(n+1)\over 2}\right)^2-\sum_{i=2}^ni^2S\left(\left\lfloor{n\over d}\right\rfloor\right)
+ S(n)=g(1)S(n)&=\sum_{i=1}^n(f*g)(i)-\sum_{i=2}^ng(i)S\left(\left\lfloor\frac{n}{d}\right\rfloor\right)\\
+  &=\left(\frac{n(n+1)}{2}\right)^2-\sum_{i=2}^ni^2S\left(\left\lfloor\frac{n}{d}\right\rfloor\right)
 \end{aligned}$$
 
 ## 时间复杂度
@@ -98,9 +98,9 @@ $$\begin{aligned}
 
 则时间复杂度为
 
-$$O\left(O(m)+\int_1^{\sqrt n}O\left({x\over\sqrt m}\right)\mathrm{d}x\right)=O\left(m+{x\over\sqrt m}\right)$$
+$$O\left(O(m)+\int_1^{\sqrt n}O\left(\frac{x}{\sqrt m}\right)\mathrm{d}x\right)=O\left(m+\frac{x}{\sqrt m}\right)$$
 
-选取合适的 $m$ 后即为 $O(n^{2\over 3})$
+选取合适的 $m$ 后即为 $O(n^\frac{2}{3})$
 
 ## 代码参考
 

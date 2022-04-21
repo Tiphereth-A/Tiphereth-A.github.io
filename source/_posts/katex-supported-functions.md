@@ -369,13 +369,13 @@ Direct Input: $+ - / * ⋅ ∘ ∙ ± × ÷ ∓ ∔ ∧ ∨ ∩ ∪ ≀ ⊎ ⊓ 
 |                             |                               |                                                             |
 | :-------------------------- | :---------------------------- | :---------------------------------------------------------- |
 | $\frac{a}{b}$ `\frac{a}{b}` | $\tfrac{a}{b}$ `\tfrac{a}{b}` | $\genfrac ( ] {2pt}{1}a{a+1}$ `\genfrac ( ] {2pt}{1}a{a+1}` |
-| ${a \over b}$ `{a \over b}` | $\dfrac{a}{b}$ `\dfrac{a}{b}` | ${a \above{2pt} b+1}$ `{a \above{2pt} b+1}`                 |
+| $\frac{a }{b}$ `\frac{a }{b}` | $\dfrac{a}{b}$ `\dfrac{a}{b}` | ${a \above{2pt} b+1}$ `{a \above{2pt} b+1}`                 |
 | $a/b$ `a/b`                 |                               | $\cfrac{a}{1 + \cfrac{1}{b}}$ `\cfrac{a}{1 + \cfrac{1}{b}}` |
 
 |                                 |                                 |                             |
 | :------------------------------ | :------------------------------ | :-------------------------- |
 | $\binom{n}{k}$ `\binom{n}{k}`   | $\dbinom{n}{k}$ `\dbinom{n}{k}` | ${n\brace k}$ `{n\brace k}` |
-| ${n \choose k}$ `{n \choose k}` | $\tbinom{n}{k}$ `\tbinom{n}{k}` | ${n\brack k}$ `{n\brack k}` |
+| $\binom{n }{k}$ `\binom{n }{k}` | $\tbinom{n}{k}$ `\tbinom{n}{k}` | ${n\brack k}$ `{n\brack k}` |
 
 ### Math Operators
 

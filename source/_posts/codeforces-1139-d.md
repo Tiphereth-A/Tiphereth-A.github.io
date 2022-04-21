@@ -52,7 +52,7 @@ He performs the following algorithm:
 1. In case it equals to $1$, break
 1. Otherwise, return to step $1$
 
-Find the expected length of $a$. It can be shown that it can be represented as ${P\over Q}$ where $P$ and $Q$ are coprime integers and $Q\ne 0\pmod{10^9+7}$. Print the value of $P\cdot Q^{-1}\pmod{10^9+7}$
+Find the expected length of $a$. It can be shown that it can be represented as $\frac{P}{Q}$ where $P$ and $Q$ are coprime integers and $Q\ne 0\pmod{10^9+7}$. Print the value of $P\cdot Q^{-1}\pmod{10^9+7}$
 
 ### Input
 
@@ -122,10 +122,10 @@ $$\begin{aligned}
   &=\sum_{i=1}^{\infty}P(X\geqslant i)&(3)\\
   &=1+\sum_{i=1}^{\infty}(1-P(X\leqslant i))&(4)\\
   &=1+\sum_{i=1}^{\infty}\left(1-P\left(\gcd_{j=1}^ia_i=1\right)\right)&(5)\\
-  &=1+\sum_{i=1}^{\infty}\left(1-\sum_{d=1}^m\mu(d)\left({\lfloor{m\over d}\rfloor\over m}\right)^i\right)&(6)\\
-  &=1-\sum_{i=1}^{\infty}\sum_{d=2}^m\mu(d)\left({\lfloor{m\over d}\rfloor\over m}\right)^i&(7)\\
-  &=1-\sum_{d=2}^m\mu(d)\sum_{i=1}^{\infty}\left({\lfloor{m\over d}\rfloor\over m}\right)^i&(8)\\
-  &=1-\sum_{d=2}^m\mu(d){\lfloor{m\over d}\rfloor\over m-\lfloor{m\over d}\rfloor}&(9)\\
+  &=1+\sum_{i=1}^{\infty}\left(1-\sum_{d=1}^m\mu(d)\left({\lfloor\frac{m}{d}\rfloor\over m}\right)^i\right)&(6)\\
+  &=1-\sum_{i=1}^{\infty}\sum_{d=2}^m\mu(d)\left({\lfloor\frac{m}{d}\rfloor\over m}\right)^i&(7)\\
+  &=1-\sum_{d=2}^m\mu(d)\sum_{i=1}^{\infty}\left({\lfloor\frac{m}{d}\rfloor\over m}\right)^i&(8)\\
+  &=1-\sum_{d=2}^m\mu(d){\lfloor\frac{m}{d}\rfloor\over m-\lfloor\frac{m}{d}\rfloor}&(9)\\
 \end{aligned}$$
 
 其中:
@@ -133,7 +133,7 @@ $$\begin{aligned}
 - $(1)\to (4)$: 常规操作
 - $(5)$: 由题意立得
 - $(6)$: 容斥/Möbius反演
-- $(7)$: 不难注意到 $d=1$ 时, $\mu(d)\left({\lfloor{m\over d}\rfloor\over m}\right)^i=1$ (结合题意想想为何会这样)
+- $(7)$: 不难注意到 $d=1$ 时, $\mu(d)\left({\lfloor\frac{m}{d}\rfloor\over m}\right)^i=1$ (结合题意想想为何会这样)
 - $(8)$: 交换求和号以处理掉级数
 - $(9)$: 考虑几何级数
 
@@ -151,12 +151,12 @@ $$\begin{aligned}
 假设
 
 - 预先筛出 $\mu(i),~i=1,2,...,n$
-- $f(x)=\lfloor{m\over x}\rfloor$
+- $f(x)=\lfloor\frac{m}{x}\rfloor$
 - 杜教筛求 $\sum_{i=1}^n\mu(i)$ 的时间复杂度为 $\Theta(T(n))$
 
 则时间复杂度为
 
-$$\Theta\left(n+T(n)+\sum_{i\in f([2,m]_{\N})}\log p\right)=O\left(n+{m\over\sqrt n}+\sqrt m\log p\right)$$
+$$\Theta\left(n+T(n)+\sum_{i\in f([2,m]_{\N})}\log p\right)=O\left(n+\frac{m}{\sqrt n}+\sqrt m\log p\right)$$
 
 ## 代码参考
 

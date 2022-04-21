@@ -83,7 +83,7 @@ $X = a_0 + a_1B + a_2B^2 + ...+ a_nB^n\implies B\mid(X-a_0)$
 
 而$|B|$很小, 故可以考虑枚举$a_0$
 
-接下来便可$X\leftarrow\displaystyle{X-a_0\over B}$, 递归枚举$a_1$,..., 直到$X$为$0$或递归层数过深
+接下来便可$X\leftarrow\displaystyle\frac{X-a_0}{B}$, 递归枚举$a_1$,..., 直到$X$为$0$或递归层数过深
 
 ## 代码参考
 

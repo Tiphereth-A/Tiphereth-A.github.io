@@ -82,7 +82,7 @@ date: 2020-05-27 20:37:42
 1. $\mathbb{P}$上的$m\times n$矩阵对于矩阵的加法和$\mathbb{P}$中的数乘
 1. 代数系统$(\mathbb{P}^2,\oplus,\odot,\mathbb{P})$, 其中
    - $(\forall(x_1,x_2),(y_1,y_2)\in\mathbb{P}^2),(x_1,x_2)\oplus(y_1,y_2):=(x_1+y_1,x_2+y_2+x_1y_1)$
-   - $(\forall(x_1,x_2)\in\mathbb{P}^2,k\in\mathbb{P}),k\odot(x_1,x_2):=\left(kx_1,kx_2+{k(k-1)\over2}x_1^2\right)$
+   - $(\forall(x_1,x_2)\in\mathbb{P}^2,k\in\mathbb{P}),k\odot(x_1,x_2):=\left(kx_1,kx_2+\frac{k(k-1)}{2}x_1^2\right)$
   
    (没错这个真的是个线性空间)
 1. 区间$[a,b]$上全体连续函数$C[a,b]$关于连续函数的加法和数与连续函数的数乘
@@ -269,7 +269,7 @@ $\displaystyle\sum_{i=1}^lr_i\alpha_i+\sum_{i=1}^{n_2-l}q_i\gamma_i=\theta\impli
 
 假设$\dim W\geqslant2$, 则$W$中存在两线性无关向量$\alpha=(\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n}),\beta=(\def\enum#1{b_{ #1}}\enum{1},\enum{2},...,\enum{n})$满足
 
-$$(\exist1<i\leqslant n),k:={a_1\over b_1}\ne{a_i\over b_i}$$
+$$(\exist1<i\leqslant n),k:=\frac{a_1}{b_1}\ne\frac{a_i}{b_i}$$
 
 从而$\alpha-k\beta=(0,...,a_i-kb_i,...,a_n-kb_n)\in W, a_i-kb_i\ne0$, 矛盾!
 

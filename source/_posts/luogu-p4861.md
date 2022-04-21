@@ -83,7 +83,7 @@ update: 我们不认为个位为11,21,...为问题的解 (例如, 11在16进制�
 ## 时间复杂度
 
 $$\begin{aligned}
-  \Theta\Bigg(\sqrt{K}+\sum_{d\mid\varphi(K);~d\leqslant\sqrt{\varphi(K)}}\log\varphi(K)\Bigg)&=O\left(\sqrt{K}+{\varphi(K)-\varphi(\varphi(K))\over 2}\log\varphi(K)\right)\\
+  \Theta\Bigg(\sqrt{K}+\sum_{d\mid\varphi(K);~d\leqslant\sqrt{\varphi(K)}}\log\varphi(K)\Bigg)&=O\left(\sqrt{K}+\frac{\varphi(K)-\varphi(\varphi(K))}{2}\log\varphi(K)\right)\\
   &=O\left(\sqrt{K}+\sqrt{\varphi(K)}\log\varphi(K)\right)
 \end{aligned}$$
 

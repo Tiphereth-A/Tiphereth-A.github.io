@@ -321,7 +321,7 @@ double newton(double x0, int n) {
 
 笔者在这里放上解析解 (近似值$x=0.739$) , 详情见参考文献[2] (文献里讲的是$t\sin x=x-m$的解法, 不过笔者太弱了, 实在是看不懂QwQ)
 
-$${\pi\over2}\exp\Bigg({1\over\pi}\int_0^1{\arctan\Big({(\pi x+2)\ln{({\sqrt{1-x^2}+1\over x})}x\over x^2\ln^2({\sqrt{1-x^2}+1\over x})-\pi x-1}\Big)\over x}\mathrm{d}x\Bigg)$$
+$$\frac{\pi}{2}\exp\Bigg(\frac{1}{\pi}\int_0^1{\arctan\Big({(\pi x+2)\ln{({\sqrt{1-x^2}+1\over x})}x\over x^2\ln^2({\sqrt{1-x^2}+1\over x})-\pi x-1}\Big)\over x}\mathrm{d}x\Bigg)$$
 
 ### 快速求${1\over\sqrt{x}}$
 

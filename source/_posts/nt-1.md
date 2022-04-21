@@ -52,7 +52,7 @@ $$a=qb+r,r\in[0,b)\cap\N$$
 
 ##### <a href="#t-1.1" id="p-t-1.1">证明</a>
 
-首先, 取$q=\lfloor{a\over b}\rfloor$, $r=a-qb$, 容易验证此时的$q,r$满足条件
+首先, 取$q=\lfloor\frac{a}{b}\rfloor$, $r=a-qb$, 容易验证此时的$q,r$满足条件
 
 下证唯一性, 假设又有一组整数$q',r'$使得$a=q'b-r',~r'\in[0,b)\cap\N$, 则
 
@@ -104,7 +104,7 @@ $$a=qd+r,~q\in\Z,r\in[0,d)\cap\N$$
 
 ### 例题
 
-- 设$n$是大于1的整数, 证明: $\displaystyle\sum_{i=1}^n{1\over i}$不是整数
+- 设$n$是大于1的整数, 证明: $\displaystyle\sum_{i=1}^n\frac{1}{i}$不是整数
 - 洛谷 [P2651 添加括号III](https://www.luogu.com.cn/problem/P2651)
 
 ## 素数/质数
@@ -144,10 +144,10 @@ $$a=qd+r,~q\in\Z,r\in[0,d)\cap\N$$
 ### 素数分布
 
 如果令$\pi(n)$表示$[1,n]$中的素数个数, 则我们有
-$$\pi(n)\sim{n\over\ln n}~(n\to\infty)$$
+$$\pi(n)\sim\frac{n}{\ln n}~(n\to\infty)$$
 
 或者写成
-$$\lim_{n\to\infty}{\pi(n)\over{n\over\ln n}}=1$$
+$$\lim_{n\to\infty}{\pi(n)\over\frac{n}{\ln n}}=1$$
 
 证明略
 
@@ -223,12 +223,12 @@ void Eratosthenes_sieve(int n) {
 ##### 时间复杂度
 
 易知
-$$T(n)=\sum_{p\in\{prime\}\cap[2,n]}\left\lfloor{n\over i}\right\rfloor$$
+$$T(n)=\sum_{p\in\{prime\}\cap[2,n]}\left\lfloor\frac{n}{i}\right\rfloor$$
 
 而
 $$\begin{aligned}
-  O(T(n))&=O\left(\sum_{p\in\{prime\}\cap[2,n]}\left\lfloor{n\over i}\right\rfloor\right)\\
-  &=O\left(n\sum_{p\in\{prime\}\cap[2,n]}\left\lfloor{1\over p}\right\rfloor\right)\\
+  O(T(n))&=O\left(\sum_{p\in\{prime\}\cap[2,n]}\left\lfloor\frac{n}{i}\right\rfloor\right)\\
+  &=O\left(n\sum_{p\in\{prime\}\cap[2,n]}\left\lfloor\frac{1}{p}\right\rfloor\right)\\
   &=O(n\log\log n)
 \end{aligned}$$
 
@@ -367,7 +367,7 @@ int gcd(int a,int b) { return b == 0 ? a : gcd(b, a % b); }
 > F_{i-1}+F_{i-2},&i>1
 > \end{cases}$$
 > 容易求得
-> $$F_n={\phi^n-(1-\phi)^n\over\sqrt 5},~\phi={1+\sqrt{5}\over2}$$
+> $$F_n=\frac{\phi^n-(1-\phi)^n}{\sqrt 5},~\phi={1+\sqrt{5}\over2}$$
 
 计算$(F_{n+1},F_{n})$需要$n$次迭代, 此时的时间复杂度也为$O(\log n)$
 
@@ -379,7 +379,7 @@ int gcd(int a,int b) { return b == 0 ? a : gcd(b, a % b); }
 
 首先, 由 <a href="#t-3.1">Bézout 定理</a>, 若$(a,b)\nmid c$, 则该方程无解
 
-接下来, 令$d={c\over(a,b)}$, 则求出$ax+by=(a,b)$的一组解$x=x',y=y'$后, 容易得知$x=dx',y=dy'$即为$ax+by=c$的一组解
+接下来, 令$d=\frac{c}{(a,b)}$, 则求出$ax+by=(a,b)$的一组解$x=x',y=y'$后, 容易得知$x=dx',y=dy'$即为$ax+by=c$的一组解
 
 另外, 若$ax+by=c$有一组解$x=x',y=y'$, 则
 $$\begin{cases}
@@ -399,15 +399,15 @@ $$\begin{aligned}
 \end{aligned}$$
 
 注意到
-$$a\bmod b=a-\left\lfloor{a\over b}\right\rfloor b$$
+$$a\bmod b=a-\left\lfloor\frac{a}{b}\right\rfloor b$$
 
 故
-$$ax+by=bx'+(a-\left\lfloor{a\over b}\right\rfloor b)y'$$
+$$ax+by=bx'+(a-\left\lfloor\frac{a}{b}\right\rfloor b)y'$$
 
 可知
 $$\begin{cases}
   x=y'\\
-  y=x'-\left\lfloor{a\over b}\right\rfloor y'
+  y=x'-\left\lfloor\frac{a}{b}\right\rfloor y'
 \end{cases}$$
 
 接下来不断向下迭代即可, 直到$b=0$, 此时显然有$x=1,y=0$
@@ -458,7 +458,7 @@ int exgcd(int a, int b, int& x, int& y) {
 1. $a\equiv b\pmod m\implies b\equiv a\pmod m$
 1. $a\equiv b\pmod m,b\equiv c\pmod m\implies a\equiv c\pmod m$
 1. $a\equiv b\pmod m,c\equiv d\pmod m\implies a\pm c\equiv b\pm d\pmod m,ac\equiv bd\pmod m$
-1. $ac\equiv bc\pmod m\implies a\equiv b\pmod{~{m\over(c,m)}}$, 特别地, 若$(c,m)=1$, 则$a\equiv b\pmod{m}$
+1. $ac\equiv bc\pmod m\implies a\equiv b\pmod{~\frac{m}{(c,m)}}$, 特别地, 若$(c,m)=1$, 则$a\equiv b\pmod{m}$
 1. $a\equiv b\pmod m\implies\forall d\mid m,a\equiv b\pmod d$
 1. $a\equiv b\pmod m\iff ad\equiv bd\pmod{md}$
 1. $a\equiv b\pmod{m_i},i=1,2,...,n\implies a\equiv b\pmod{[\def\enum#1{m_{ #1}}\enum{1},\enum{2},...,\enum{n}]}$
@@ -510,15 +510,15 @@ $$\begin{cases}
 
 #### <a href="#end-t-4.2" id="t-4.2">定理 - 4.2</a> (性质5)
 
-$ac\equiv bc\pmod m\implies a\equiv b\pmod{~{m\over(c,m)}}$, 特别地, 若$(c,m)=1$, 则$a\equiv b\pmod{m}$
+$ac\equiv bc\pmod m\implies a\equiv b\pmod{~\frac{m}{(c,m)}}$, 特别地, 若$(c,m)=1$, 则$a\equiv b\pmod{m}$
 
 ##### <a href="#t-4.2" id="p-t-4.2">证明</a>
 
 由$ac\equiv bc\pmod m$可得$m\mid(a-b)c$, 故有
-$${m\over(c,m)}\bigg|(a-b){c\over(c,m)}$$
+$$\frac{m}{(c,m)}\bigg|(a-b)\frac{c}{(c,m)}$$
 
-而$({m\over(c,m)},{c\over(c,m)})=1$, 故${m\over(c,m)}\mid a-b$, 即
-$$a\equiv b\pmod{~{m\over(c,m)}}$$
+而$(\frac{m}{(c,m)},\frac{c}{(c,m)})=1$, 故$\frac{m}{(c,m)}\mid a-b$, 即
+$$a\equiv b\pmod{~\frac{m}{(c,m)}}$$
 
 <a href="#p-t-4.2" id="end-t-4.2">$\Box$</a>
 
@@ -614,7 +614,7 @@ $$\prod_{i=1}^{\varphi(m)}a_i=\prod_{i=1}^{\varphi(m)}aa_i=a^{\varphi(m)}\prod_{
    $$\begin{aligned}
      ki+j&\equiv0\pmod p\\
      i^{-1}&\equiv-kj^{-1}\pmod p\\
-     i^{-1}&\equiv-\left({p\over i}\right)(p\bmod i)^{-1}\pmod p
+     i^{-1}&\equiv-\left(\frac{p}{i}\right)(p\bmod i)^{-1}\pmod p
    \end{aligned}$$
 
    <details>
@@ -683,7 +683,7 @@ $$\begin{cases}
   x\equiv0\pmod{m_j}~(j\ne i)
 \end{cases}$$
 
-容易发现$x\mid M_i:={M\over m_i}$, 令$x=M_iy$, 则可得到方程
+容易发现$x\mid M_i:=\frac{M}{m_i}$, 令$x=M_iy$, 则可得到方程
 $$M_iy\equiv1\pmod{m_i}$$
 
 显然$y\equiv M_i^{-1}\pmod{m_i}$, 令$N_i=y$, 则$x=M_iN_i$

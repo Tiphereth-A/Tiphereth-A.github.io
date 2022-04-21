@@ -74,9 +74,9 @@ ${\rm CYJian}$已经算出来这个式子的值了. 现在请你帮他验算一�
 
 $$
 \begin{aligned}
-  \prod_{i=1}^n\prod_{j=1}^n {ij\over (i,j)^2}&={(n!)^{2n}\over\prod_{i=1}^n\prod_{j=1}^n(i,j)^2}\\
-  &={(n!)^{2n}\over\prod_{d=1}^nd^{2\sum_{i=1}^{\lfloor{n\over d}\rfloor}\sum_{j=1}^{\lfloor{n\over d}\rfloor}[(i,j)=1]}}\\
-  &={(n!)^{2n}\over\prod_{d=1}^nd^{2\sum_{e=1}^{\lfloor{n\over d}\rfloor}\mu(e)\lfloor{n\over de}\rfloor^2}}\\
+  \prod_{i=1}^n\prod_{j=1}^n \frac{ij}{(i,j)^2}&={(n!)^{2n}\over\prod_{i=1}^n\prod_{j=1}^n(i,j)^2}\\
+  &={(n!)^{2n}\over\prod_{d=1}^nd^{2\sum_{i=1}^{\lfloor\frac{n}{d}\rfloor}\sum_{j=1}^{\lfloor\frac{n}{d}\rfloor}[(i,j)=1]}}\\
+  &={(n!)^{2n}\over\prod_{d=1}^nd^{2\sum_{e=1}^{\lfloor\frac{n}{d}\rfloor}\mu(e)\lfloor\frac{n}{de}\rfloor^2}}\\
 \end{aligned}
 $$
 

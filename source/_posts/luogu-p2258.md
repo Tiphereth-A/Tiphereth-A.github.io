@@ -158,7 +158,7 @@ $$f(i,j,k,l)=\min\left\{f(i',j-1,k',l-1)+\sum_{u\in K}|a_{i',u}-a_{i,u}|+\sum_{v
 
 ## 复杂度
 
-$O\left({n\choose {n\over 2}}m^3\right)$ 或 $O\left({m\choose {m\over 2}}n^3\right)$
+$O\left({n\choose \frac{n}{2}}m^3\right)$ 或 $O\left({m\choose \frac{m}{2}}n^3\right)$
 
 ## 代码参考
 

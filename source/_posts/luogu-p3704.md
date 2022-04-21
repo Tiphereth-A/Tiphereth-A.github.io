@@ -74,14 +74,14 @@ Doris 用老师的超级计算机生成了一个 $n\times m$ 的表格,  第 $i$
 
 $$
 \begin{aligned}
-  \prod_{i=1}^n\prod_{j=1}^mf_{(i,j)}&=\prod_{d=1}^n\prod_{i=1}^{\lfloor{n\over d}\rfloor}\prod_{j=1}^{\lfloor{m\over d}\rfloor}f_d^{[(i,j)=1]}\\
-  &=\prod_{d=1}^nf_d^{\sum_{i=1}^{\lfloor{n\over d}\rfloor}\sum_{j=1}^{\lfloor{m\over d}\rfloor}[(i,j)=1]}\\
-  &=\prod_{d=1}^nf_d^{\sum_{e=1}^{\lfloor{n\over d}\rfloor}\mu(e)\lfloor{n\over de}\rfloor\lfloor{m\over de}\rfloor}\\
-  &\xlongequal{D=de}\prod_{D=1}^n\bigg(\prod_{d\mid D}f_d^{\mu({D\over d})}\bigg)^{\lfloor{n\over D}\rfloor\lfloor{m\over D}\rfloor}
+  \prod_{i=1}^n\prod_{j=1}^mf_{(i,j)}&=\prod_{d=1}^n\prod_{i=1}^{\lfloor\frac{n}{d}\rfloor}\prod_{j=1}^{\lfloor\frac{m}{d}\rfloor}f_d^{[(i,j)=1]}\\
+  &=\prod_{d=1}^nf_d^{\sum_{i=1}^{\lfloor\frac{n}{d}\rfloor}\sum_{j=1}^{\lfloor\frac{m}{d}\rfloor}[(i,j)=1]}\\
+  &=\prod_{d=1}^nf_d^{\sum_{e=1}^{\lfloor\frac{n}{d}\rfloor}\mu(e)\lfloor\frac{n}{de}\rfloor\lfloor\frac{m}{de}\rfloor}\\
+  &\xlongequal{D=de}\prod_{D=1}^n\bigg(\prod_{d\mid D}f_d^{\mu(\frac{D}{d})}\bigg)^{\lfloor\frac{n}{D}\rfloor\lfloor\frac{m}{D}\rfloor}
 \end{aligned}
 $$
 
-其中 $\prod_{d\mid D}f_d^{\mu({D\over d})}$ 部分可以 $O(n\log n)$ 求出, 之后就是整除分块了
+其中 $\prod_{d\mid D}f_d^{\mu(\frac{D}{d})}$ 部分可以 $O(n\log n)$ 求出, 之后就是整除分块了
 
 ## 时间复杂度
 

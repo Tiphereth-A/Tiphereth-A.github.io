@@ -79,7 +79,7 @@ $$f_i=\max\left(1,f_i,\max_{j|i,~1\leqslant j\leqslant i}\{f_j+1\}\right)$$
 
 ### 复杂度
 
-法一: $\displaystyle\Theta\left(\sum_{i=1}^n\left\lfloor{n\over i}\right\rfloor\right)=O(nH_n)=O(n\log n)$
+法一: $\displaystyle\Theta\left(\sum_{i=1}^n\left\lfloor\frac{n}{i}\right\rfloor\right)=O(nH_n)=O(n\log n)$
 
 法二: $\Theta(n\sqrt{n})$
 
@@ -340,7 +340,7 @@ int main() {
 
 ### 题意
 
-定义可重集$\{\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n}\}$的中位数为第$\left\lfloor{n+1\over2}\right\rfloor$小的数
+定义可重集$\{\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n}\}$的中位数为第$\left\lfloor\frac{n+1}{2}\right\rfloor$小的数
 
 例如$\{1,4,4,6,5\}$的中位数为$4$, $\{1,7,5,8\}$的中位数为$5$
 
@@ -440,7 +440,7 @@ int main() {
 
 ### 思路&做法
 
-注意到如果最初有方格是可变色的, 那么经过一段时间之后, 所有的方格都会变为可变色状态(可以证明经过$kmn$个时刻, $k\in[{1\over4},{1\over2}]$)
+注意到如果最初有方格是可变色的, 那么经过一段时间之后, 所有的方格都会变为可变色状态(可以证明经过$kmn$个时刻, $k\in[\frac{1}{4},\frac{1}{2}]$)
 
 例外情况是在一开始所有方格均为不可变色, 此时所有方格无论在哪个时刻都是不变色的
 

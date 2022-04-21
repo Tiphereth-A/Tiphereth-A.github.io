@@ -83,12 +83,12 @@ $$\sum_{i=1}^n\sum_{j=1}^i[(i,j)=1]F(j)$$
 官方题解是容斥定理, 不过我按Möbius反演板子题做的
 $$\begin{aligned}
   \sum_{i=1}^n\sum_{j=1}^i[(i,j)=1]F(j)&=\sum_{i=1}^n\sum_{j=1}^iF(j)\sum_{d\mid(i,j)}\mu(d)\\
-  &=\sum_{d=1}^n\mu(d)\sum_{i=1}^{\lfloor{n\over d}\rfloor}\sum_{j=1}^iF(jd)\\
-  &=\sum_{d=1}^n\mu(d)\sum_{j=1}^{\lfloor{n\over d}\rfloor}(n-j+1)F(jd)\\
-  &=\sum_{d=1}^n\mu(d)\left((n+1)\sum_{j=1}^{\lfloor{n\over d}\rfloor}F(jd)-\sum_{j=1}^{\lfloor{n\over d}\rfloor}jF(jd)\right)\\
+  &=\sum_{d=1}^n\mu(d)\sum_{i=1}^{\lfloor\frac{n}{d}\rfloor}\sum_{j=1}^iF(jd)\\
+  &=\sum_{d=1}^n\mu(d)\sum_{j=1}^{\lfloor\frac{n}{d}\rfloor}(n-j+1)F(jd)\\
+  &=\sum_{d=1}^n\mu(d)\left((n+1)\sum_{j=1}^{\lfloor\frac{n}{d}\rfloor}F(jd)-\sum_{j=1}^{\lfloor\frac{n}{d}\rfloor}jF(jd)\right)\\
 \end{aligned}$$
 
-令$g_n(d)=\sum_{j=1}^{\lfloor{n\over d}\rfloor}F(jd)$, $h_n(d)=\sum_{j=1}^{\lfloor{n\over d}\rfloor}jF(jd)$
+令$g_n(d)=\sum_{j=1}^{\lfloor\frac{n}{d}\rfloor}F(jd)$, $h_n(d)=\sum_{j=1}^{\lfloor\frac{n}{d}\rfloor}jF(jd)$
 
 则答案为$\sum_{d=1}^n\mu(d)((n+1)g_n(d)-h_n(d))$
 
@@ -278,7 +278,7 @@ $$\forall i\in[1,k]\cap\N,~i\mid\overline{a_1a_2...a_i}$$
   设$A_i=\overline{a_1a_2...a_i}$, 则$A_i=10A_{i-1}+a_i$
   
   设$A_i$满足条件, 令$a_i$取值构成的集合为$S_A(i)$, 不难证明
-  $$|S_A(i)|\leqslant\left\lceil{10\over i}\right\rceil$$
+  $$|S_A(i)|\leqslant\left\lceil\frac{10}{i}\right\rceil$$
 
   所以满足条件的$A_i$个数必随着$i$的增加而先增加后减小
 
@@ -373,13 +373,13 @@ int main() {
 - 猛男做法
 
   结合第二类Stirling数和排列数的定义不难推出答案为
-  $$\sum_{i=0}^n\sum_{j=0}^i{i\brace j}{n\choose i}{m\choose j}j!\bmod998244353$$
+  $$\sum_{i=0}^n\sum_{j=0}^i{i\brace j}\binom{n}{i}\binom{m}{j}j!\bmod998244353$$
 
   又
-  $$x^i=\sum_{j=0}^i{i\brace j}{x\choose j}j!$$
+  $$x^i=\sum_{j=0}^i{i\brace j}\binom{x}{j}j!$$
 
   故答案为
-  $$\sum_{i=0}^n{n\choose i}m^i=(1+m)^n$$
+  $$\sum_{i=0}^n\binom{n}{i}m^i=(1+m)^n$$
 
 ## H - Sequence
 
@@ -510,8 +510,8 @@ int main() {
 $$\operatorname{SG}(m,n)=\operatorname{mex}S$$
 
 其中, $S=S_1\cup S_2$
-$$S_1=\bigcup_{i=1+[n=1]}^{\lfloor{m\over 2}\rfloor}\{\operatorname{SG}(i,n)\oplus\operatorname{SG}(m-i,n)\}$$
-$$S_2=\bigcup_{i=1+[m=1]}^{\lfloor{n\over 2}\rfloor}\{\operatorname{SG}(m,i)\oplus\operatorname{SG}(m,n-i)\}$$
+$$S_1=\bigcup_{i=1+[n=1]}^{\lfloor\frac{m}{2}\rfloor}\{\operatorname{SG}(i,n)\oplus\operatorname{SG}(m-i,n)\}$$
+$$S_2=\bigcup_{i=1+[m=1]}^{\lfloor\frac{n}{2}\rfloor}\{\operatorname{SG}(m,i)\oplus\operatorname{SG}(m,n-i)\}$$
 
 ### 代码参考
 

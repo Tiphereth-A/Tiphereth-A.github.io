@@ -30,10 +30,10 @@ $$\sum_{\nu\in\prod_{i=1}^m[1,n_i]_\N}f(\nu)g(\gcd\nu)$$
 
 $$\begin{aligned}
   \sum_{\nu\in\prod_{i=1}^m[1,n_i]_\N}f(\nu)g(\gcd\nu)&=\sum_{d=1}^{n_0}g(d)\sum_{\nu\in\prod_{i=1}^m[1,n_i]_\N}f[\nu](\gcd\nu=d)&(1)\\
-  &=\sum_{d=1}^{n_0}g(d)\sum_{\nu\in\prod_{i=1}^m[1,\lfloor{n_i\over d}\rfloor]_\N}f[d\nu](\gcd\nu=1)&(2)\\
-  &=\sum_{d=1}^{n_0}g(d)\sum_{\nu\in\prod_{i=1}^m[1,\lfloor{n_i\over d}\rfloor]_\N}f(d\nu)\sum_{e\mid\gcd\nu}\mu(e)&(3)\\
-  &=\sum_{d=1}^{n_0}g(d)\sum_{e=1}^{ {g_n\over d}}\mu(e)\sum_{\nu\in\prod_{i=1}^m[1,\lfloor{n_i\over de}\rfloor]_\N}f(de\nu)&(4)\\
-  &\xlongequal[D=de]{F(x)=\sum_{\nu\in\prod_{i=1}^m[1,\lfloor{n_i\over x}\rfloor]_\N}f(x\nu)}\sum_{D=1}^{n_0}F(D)(g*\mu)(D)&(5)\\
+  &=\sum_{d=1}^{n_0}g(d)\sum_{\nu\in\prod_{i=1}^m[1,\lfloor\frac{n_i}{d}\rfloor]_\N}f[d\nu](\gcd\nu=1)&(2)\\
+  &=\sum_{d=1}^{n_0}g(d)\sum_{\nu\in\prod_{i=1}^m[1,\lfloor\frac{n_i}{d}\rfloor]_\N}f(d\nu)\sum_{e\mid\gcd\nu}\mu(e)&(3)\\
+  &=\sum_{d=1}^{n_0}g(d)\sum_{e=1}^{ \frac{g_n}{d}}\mu(e)\sum_{\nu\in\prod_{i=1}^m[1,\lfloor\frac{n_i}{de}\rfloor]_\N}f(de\nu)&(4)\\
+  &\xlongequal[D=de]{F(x)=\sum_{\nu\in\prod_{i=1}^m[1,\lfloor\frac{n_i}{x}\rfloor]_\N}f(x\nu)}\sum_{D=1}^{n_0}F(D)(g*\mu)(D)&(5)\\
 \end{aligned}$$
 
 其中
@@ -75,7 +75,7 @@ $$\sum_{\nu\in\prod_{i=1}^m[1,n_i]_\N}[\gcd\nu\in K=\{\def\enum#1{k_{ #1}}\enum{
 
 $$\begin{aligned}
   \sum_{\nu\in\prod_{i=1}^m[1,n_i]_\N}[\gcd\nu\in K]&=\sum_{k\in K}\sum_{\nu\in\prod_{i=1}^m[1,n_i]_\N}[\gcd\nu=k]\\
-  &=\sum_{D=1}^{n_0}\left(\prod_{i=1}^m\left\lfloor{n_i\over D}\right\rfloor\right)\sum_{k\mid D;~k\in K}\mu\left({D\over k}\right)
+  &=\sum_{D=1}^{n_0}\left(\prod_{i=1}^m\left\lfloor\frac{n_i}{D}\right\rfloor\right)\sum_{k\mid D;~k\in K}\mu\left(\frac{D}{k}\right)
 \end{aligned}$$
 
 > 具体推导看上一节即可, 可看作 $f(x)=1$, $g(x)=\epsilon(x)$ 的特例

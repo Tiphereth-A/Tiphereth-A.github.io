@@ -98,9 +98,9 @@ date: 2021-12-22 20:54:01
   $$l(p)=\operatorname{lcm}\{\def\enum#1{l(p_{ #1}^{\alpha_{ #1}})}\enum{1},\enum{2},...,\enum{\omega(p)}\}$$
 - 对素数 $p$, 有如下定理:
   - $$l(p^n)\mid l(p)p^{n-1}$$
-  - 若 $\left({5\over p}\right)=1$, 即 $p\equiv\pm 1\pmod{5}$, 则
+  - 若 $\left(\frac{5}{p}\right)=1$, 即 $p\equiv\pm 1\pmod{5}$, 则
       $$l(p)\mid p-1$$
-  - 若 $\left({5\over p}\right)=-1$, 即 $p\equiv\pm 2\pmod{5}$, 则
+  - 若 $\left(\frac{5}{p}\right)=-1$, 即 $p\equiv\pm 2\pmod{5}$, 则
       $$l(p)\mid 2(p+1)$$
 
 > 代码里还有一些别的科技, 推荐看一看
