@@ -10,8 +10,6 @@ date: 1020-05-06 16:31:03
 
 汉化自[Manual for: mhchem for MathJax, mhchem for KaTeX](https://mhchem.github.io/MathJax-mhchem/)
 
-在将渲染引擎切换为 KaTeX 之后暂未找到开启 mhchem 的方式, 所以效果请参照原文
-
 按笔者习惯调整了顺序
 
 <!-- more -->
