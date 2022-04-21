@@ -1,7 +1,0 @@
-{
-  "ignore": [
-    "**/*.md"
-  ],
-  "min-tokens": 200,
-  "absolute": true
-}
