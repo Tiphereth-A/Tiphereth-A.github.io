@@ -17,6 +17,8 @@ jobs:
           FILTER_REGEX_INCLUDE: source/.*
           DEFAULT_BRANCH: master
 
+          VALIDATE_CPP: false
+
           MARKDOWN_LINTER_RULES: .markdownlint.json
 
   pages:
