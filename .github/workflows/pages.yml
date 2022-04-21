@@ -25,6 +25,10 @@ jobs:
         uses: nikeee/setup-pandoc@v1
       - name: Install Dependencies
         run: npm install
+      - name: Run markdownlint
+        uses: bewuethr/mdl-action@v1
+        with:
+          style-file: .github/workflows/mdl-styles.rb
       - name: Build
         run: npm run build
       - name: Deploy
