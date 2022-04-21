@@ -7,7 +7,7 @@
     "clean": "hexo clean",
     "deploy": "hexo deploy",
     "server": "hexo server",
-    "check": "remark source -r .remarkrc --quiet"
+    "formatting": "prettier --write source/"
   },
   "hexo": {
     "version": "6.1.0"
@@ -36,9 +36,6 @@
   },
   "devDependencies": {
     "husky": "^7.0.4",
-    "remark-cli": "^10.0.1",
-    "remark-lint-list-item-indent": "^3.1.1",
-    "remark-preset-lint-consistent": "^5.1.1",
-    "remark-preset-lint-recommended": "^6.1.2"
+    "prettier": "^2.6.2"
   }
 }
