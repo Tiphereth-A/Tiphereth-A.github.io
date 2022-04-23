@@ -22,7 +22,7 @@ jobs:
           restore-keys: |
             ${{ runner.OS }}-npm-cache
       - name: Setup Pandoc
-        uses: nikeee/setup-pandoc@v1
+        run: sudo apt install -qq pandoc
       - name: Install Dependencies
         run: npm install
       - name: Build
