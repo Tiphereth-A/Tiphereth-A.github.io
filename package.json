@@ -31,8 +31,7 @@
     "hexo-server": "^3.0.0",
     "hexo-tag-echarts": "^1.0.0",
     "hexo-tag-mmedia": "^1.1.7",
-    "hexo-theme-next": "^8.11.0",
-    "markdown-it-checkbox": "^1.1.0"
+    "hexo-theme-next": "^8.11.0"
   },
   "devDependencies": {
     "husky": "^7.0.4",
