@@ -3,9 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "build": "hexo generate",
-    "clean": "hexo clean",
-    "deploy": "hexo deploy",
+    "build": "hexo generate --debug",
+    "clean": "hexo clean --debug",
+    "deploy": "hexo deploy --debug",
     "server": "hexo server --debug",
     "formatting": "prettier --write source/"
   },
