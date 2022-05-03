@@ -16,6 +16,7 @@
     "hexo": "^6.1.0",
     "hexo-blog-encrypt": "^3.1.6",
     "hexo-deployer-git": "^3.0.0",
+    "hexo-filter-kroki": "^2.1.8",
     "hexo-generator-archive": "^1.0.0",
     "hexo-generator-category": "^1.0.0",
     "hexo-generator-feed": "^3.0.0",
@@ -28,7 +29,6 @@
     "hexo-renderer-pandoc": "^0.3.1",
     "hexo-renderer-stylus": "^2.0.1",
     "hexo-server": "^3.0.0",
-    "hexo-tag-echarts": "^1.0.0",
     "hexo-tag-mmedia": "^1.1.7",
     "hexo-theme-next": "^8.11.1"
   },
