@@ -7,90 +7,86 @@ date: 1000-01-01 00:00:02
 comments: false
 ---
 
-部分示例来自 <https://mermaid-js.github.io/mermaid>
+From <https://github.com/mermaid-js/mermaid/blob/develop/README.md>
 
 <!--more-->
 
-## Flowchart
+### Flowchart [<a href="https://mermaid-js.github.io/mermaid/#/flowchart">docs</a>]
 
-```mermaid
+```code-mermaid
 flowchart LR
-A-->B
-B---C
-C===D
-C--text---E
-id1(A)-->id2((B))
-id1---id3>C]
-id2-.-id4{D}
-A-.text.->id1
-id3==text===id5[(E)]
-```
 
-```mermaid
-flowchart TB
-    c1-->a2
-    subgraph one
-    a1-->a2
-    end
-    subgraph two
-    b1-->b2
-    end
-    subgraph three
-    c1-->c2
-    end
+A[Hard] -->|Text| B(Round)
+B --> C{Decision}
+C -->|One| D[Result 1]
+C -->|Two| E[Result 2]
 ```
 
 ```mermaid
 flowchart LR
-    id1(Start)-->id2(Stop)
-    style id1 fill:#f9f,stroke:#333,stroke-width:4px
-    style id2 fill:#bbf,stroke:#f66,stroke-width:2px,color:#fff,stroke-dasharray: 5, 5
+
+A[Hard] -->|Text| B(Round)
+B --> C{Decision}
+C -->|One| D[Result 1]
+C -->|Two| E[Result 2]
 ```
 
-## Sequence diagram
+### Sequence diagram [<a href="https://mermaid-js.github.io/mermaid/#/sequenceDiagram">docs</a>]
+
+```code-mermaid
+sequenceDiagram
+Alice->>John: Hello John, how are you?
+loop Healthcheck
+    John->>John: Fight against hypochondria
+end
+Note right of John: Rational thoughts!
+John-->>Alice: Great!
+John->>Bob: How about you?
+Bob-->>John: Jolly good!
+```
 
 ```mermaid
 sequenceDiagram
-　　　participant Alice
-　　　participant Bob
-　　　Alice->John:Hello John, how are you?
-　　　loop Healthcheck
-　　　　　John->John:Fight against hypochondria
-　　　end
-　　　Note right of John:Rational thoughts <br/>prevail...
-　　　John-->Alice:Great!
-　　　John->Bob: How about you?
-　　　Bob-->John: Jolly good!
+Alice->>John: Hello John, how are you?
+loop Healthcheck
+    John->>John: Fight against hypochondria
+end
+Note right of John: Rational thoughts!
+John-->>Alice: Great!
+John->>Bob: How about you?
+Bob-->>John: Jolly good!
 ```
 
-## Gantt diagram
+### Gantt chart [<a href="https://mermaid-js.github.io/mermaid/#/gantt">docs</a>]
+
+```code-mermaid
+gantt
+    section Section
+    Completed :done,    des1, 2014-01-06,2014-01-08
+    Active        :active,  des2, 2014-01-07, 3d
+    Parallel 1   :         des3, after des1, 1d
+    Parallel 2   :         des4, after des1, 1d
+    Parallel 3   :         des5, after des3, 1d
+    Parallel 4   :         des6, after des4, 1d
+```
 
 ```mermaid
 gantt
-　　　dateFormat　YYYY-MM-DD
-　　　title Adding GANTT diagram functionality to mermaid
-　　　section A section
-　　　Completed task　　:done, des1, 2014-01-06,2014-01-08
-　　　Active task 　　　　:active, des2, 2014-01-09, 3d
-　　　future task 　　　　:　　　  des3, after des2, 5d
-　　　future task2　　　　:　　　  des4, after des3, 5d
-　　　section Critical tasks
-　　　Completed task in the critical line　:crit, done, 2014-01-06,24h
-　　　Implement parser and json　　　　　　:crit, done, after des1, 2d
-　　　Create tests for parser　　　　　　　:crit, active, 3d
-　　　Future task in critical line　　　　　:crit, 5d
-　　　Create tests for renderer　　　　　　:2d
-　　　Add to ,mermaid　　　　　　　　　　　:1d
+    section Section
+    Completed :done,    des1, 2014-01-06,2014-01-08
+    Active        :active,  des2, 2014-01-07, 3d
+    Parallel 1   :         des3, after des1, 1d
+    Parallel 2   :         des4, after des1, 1d
+    Parallel 3   :         des5, after des3, 1d
+    Parallel 4   :         des6, after des4, 1d
 ```
 
-## Class diagram - experimental
+### Class diagram [<a href="https://mermaid-js.github.io/mermaid/#/classDiagram">docs</a>]
 
-```mermaid
+```code-mermaid
 classDiagram
 Class01 <|-- AveryLongClass : Cool
-Class03 *-- Class04
-Class05 o-- Class06
-Class07 .. Class08
+<<Interface>> Class01
 Class09 --> C2 : Where am i?
 Class09 --* C3
 Class09 --|> Class07
@@ -99,85 +95,94 @@ Class07 : Object[] elementData
 Class01 : size()
 Class01 : int chimp
 Class01 : int gorilla
-Class08 <--> C2: Cool label
-```
-
-## Git graph - experimental
-
-```mermaid
-gitGraph:
-options
-{
-    "nodeSpacing": 150,
-    "nodeRadius": 10
+class Class10 {
+  <<service>>
+  int id
+  size()
 }
-end
-commit
-branch newbranch
-checkout newbranch
-commit
-commit
-checkout master
-commit
-commit
-merge newbranch
-```
-
-## Entity Relationship Diagram - experimental
-
-```mermaid
-erDiagram
-    CUSTOMER ||--o{ ORDER : places
-    ORDER ||--|{ LINE-ITEM : contains
-    CUSTOMER }|..|{ DELIVERY-ADDRESS : uses
-```
-
-## Pie Chart
-
-```mermaid
-pie title What Voldemort doesn't have?
-         "FRIENDS" : 2
-         "FAMILY" : 3
-         "NOSE" : 45
-```
-
-## State Diagram
-
-```mermaid
-stateDiagram
-    [*] --> First
-
-    state First {
-        [*] --> Second
-
-        state Second {
-            [*] --> second
-            second --> Third
-
-            state Third {
-                [*] --> third
-                third --> [*]
-            }
-        }
-    }
 ```
 
 ```mermaid
-stateDiagram
-    [*] --> First
-    First --> Second
-    First --> Third
+classDiagram
+Class01 <|-- AveryLongClass : Cool
+<<Interface>> Class01
+Class09 --> C2 : Where am i?
+Class09 --* C3
+Class09 --|> Class07
+Class07 : equals()
+Class07 : Object[] elementData
+Class01 : size()
+Class01 : int chimp
+Class01 : int gorilla
+class Class10 {
+  <<service>>
+  int id
+  size()
+}
+```
 
-    state First {
-        [*] --> fir
-        fir --> [*]
-    }
-    state Second {
-        [*] --> sec
-        sec --> [*]
-    }
-    state Third {
-        [*] --> thi
-        thi --> [*]
-    }
+### State diagram [<a href="https://mermaid-js.github.io/mermaid/#/stateDiagram">docs</a>]
+
+```code-mermaid
+stateDiagram-v2
+[*] --> Still
+Still --> [*]
+Still --> Moving
+Moving --> Still
+Moving --> Crash
+Crash --> [*]
+```
+
+```mermaid
+stateDiagram-v2
+[*] --> Still
+Still --> [*]
+Still --> Moving
+Moving --> Still
+Moving --> Crash
+Crash --> [*]
+```
+
+### Pie chart [<a href="https://mermaid-js.github.io/mermaid/#/pie">docs</a>]
+
+```code-mermaid
+pie
+"Dogs" : 386
+"Cats" : 85
+"Rats" : 15
+```
+
+```mermaid
+pie
+"Dogs" : 386
+"Cats" : 85
+"Rats" : 15
+```
+
+### Git graph [experimental]
+
+### User Journey diagram [<a href="https://mermaid-js.github.io/mermaid/#/user-journey">docs</a>]
+
+```code-mermaid
+  journey
+    title My working day
+    section Go to work
+      Make tea: 5: Me
+      Go upstairs: 3: Me
+      Do work: 1: Me, Cat
+    section Go home
+      Go downstairs: 5: Me
+      Sit down: 3: Me
+```
+
+```mermaid
+  journey
+    title My working day
+    section Go to work
+      Make tea: 5: Me
+      Go upstairs: 3: Me
+      Do work: 1: Me, Cat
+    section Go home
+      Go downstairs: 5: Me
+      Sit down: 3: Me
 ```
