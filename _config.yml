@@ -47,9 +47,11 @@ relative_link: false
 future: true
 highlight:
   enable: true
-  line_number: true
   auto_detect: false
+  line_number: true
   tab_replace: '    '
+  exclude_languages:
+    - mermaid
   wrap: true
   hljs: false
 prismjs:
@@ -151,7 +153,7 @@ kroki:
   # "inlineBase64": <img src='data:image/svg+xml;base64> 
   # "localLink": <img src="/assert/puml/xxxx.svg">
   # "externalLink": <img src="https://kroki.io/plantuml/svg/xxx">
-  link: "inlineBase64"
+  link: "externalLink"
 
   # common options: svg/png
   outputFormat: "svg"

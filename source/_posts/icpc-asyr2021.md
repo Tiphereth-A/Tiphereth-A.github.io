@@ -245,7 +245,7 @@ int main() {
 画出来大概是这样的
 
 ```mermaid
-graph LR;
+flowchart LR
 v000[0,0,0]
 v001[0,0,1]
 v010[0,1,0]

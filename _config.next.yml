@@ -820,7 +820,7 @@ note:
   icons: true
   # Offset lighter of background in % for modern and flat styles (modern: -12 | 12; flat: -18 | 6).
   # Offset also applied to label tag variables. This option can work with disabled note tag.
-  light_bg_offset: 0
+  light_bg_offset: 6
 
 # Tabs tag
 tabs:
@@ -837,11 +837,11 @@ tabs:
 pdf:
   enable: true
   # Default height
-  height: 1000px
+  height: 800px
 
 # Mermaid tag
 mermaid:
-  enable: false
+  enable: true
   # Available themes: default | dark | forest | neutral
   theme:
     light: default
