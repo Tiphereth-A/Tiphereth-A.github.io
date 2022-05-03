@@ -11,7 +11,7 @@ comments: false
 ## 测试
 
 ```mermaid
-graph LR;
+flowchart LR
 A-->B
 ```
 
