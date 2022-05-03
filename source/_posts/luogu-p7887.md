@@ -100,10 +100,10 @@ $$x_i\left(\sum_{j=1}^ia_j\right)+y_i\left(\sum_{j=i}^na_j\right)\equiv z_i\pmod
 
 令
 
-- $A_n=\sum_{i=1}^na_i$
 - $A_0=0$
-- $Z_i=z_ix_i^{-1}$
+- $A_n=\sum_{i=1}^na_i$
 - $Y_i=-y_ix_i^{-1}$
+- $Z_i=z_ix_i^{-1}$
 
 则原式变为
 

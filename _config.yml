@@ -9,7 +9,7 @@ description: A blog about CP & math
 keywords:
 author: Tifa
 language: zh-CN
-timezone: ''
+timezone: ""
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
@@ -39,7 +39,7 @@ titlecase: false # Transform title into titlecase
 external_link:
   enable: true # Open external links in new tab
   field: site # Apply to the whole site
-  exclude: ''
+  exclude: ""
 filename_case: 0
 render_drafts: false
 post_asset_folder: true
@@ -49,7 +49,7 @@ highlight:
   enable: true
   auto_detect: false
   line_number: true
-  tab_replace: '    '
+  tab_replace: "    "
   exclude_languages:
     - mermaid
     - text
@@ -69,14 +69,14 @@ prismjs:
   enable: false
   preprocess: true
   line_number: true
-  tab_replace: ''
+  tab_replace: ""
 
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
 # per_page: Posts displayed per page. (0 = disable pagination)
 # order_by: Posts order. (Order by date descending by default)
 index_generator:
-  path: ''
+  path: ""
   per_page: 10
   order_by: -date
   pagination_dir: page
@@ -97,7 +97,7 @@ meta_generator: true
 date_format: YYYY-MM-DD
 time_format: HH:mm:ss
 ## updated_option supports 'mtime', 'date', 'empty'
-updated_option: 'mtime'
+updated_option: "mtime"
 
 # Pagination
 ## Set per_page to 0 to disable pagination
@@ -118,7 +118,7 @@ theme: next
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ''
+  type: ""
 
 sidebar:
   # left | right (only for Pisces | Gemini).
@@ -158,10 +158,10 @@ search:
 kroki:
   # the kroki free service server, you may switch to your self-hosted sever.
   server: "https://kroki.io/"
-  # Available values 
+  # Available values
   # "inline": <svg>xxx<svg/>
-  # "inlineUrlEncode": <img src='data:image/svg+xml;> 
-  # "inlineBase64": <img src='data:image/svg+xml;base64> 
+  # "inlineUrlEncode": <img src='data:image/svg+xml;>
+  # "inlineBase64": <img src='data:image/svg+xml;base64>
   # "localLink": <img src="/assert/puml/xxxx.svg">
   # "externalLink": <img src="https://kroki.io/plantuml/svg/xxx">
   link: "inlineBase64"
@@ -169,21 +169,21 @@ kroki:
   # common options: svg/png
   outputFormat: "svg"
   # the generated img will have a default class name.
-  className: 'kroki'
+  className: "kroki"
 
   # append some fragment per diagram, used for the theme or else config
   inserts:
     - diagram: plantuml
       after: 1
       # see https://plantuml.com/en/theme
-      fragment: '!theme sketchy-outline'
+      fragment: "!theme sketchy-outline"
     - diagram: mermaid
       after: 0
       # see https://mermaid-js.github.io/mermaid/#/theming
       fragment: "%%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#ff0000'}}}%%"
 
 sitemap:
-  path: 
+  path:
     - sitemap.xml
     - sitemap.txt
   template: ./source/_data/sitemap_template.xml
@@ -199,7 +199,7 @@ feed:
   hub:
   content:
   content_limit: 140
-  content_limit_delim: ' '
+  content_limit_delim: " "
   order_by: -date
   icon: icon.png
   autodiscovery: true
@@ -217,7 +217,7 @@ neat_html:
 neat_css:
   enable: true
   exclude:
-    - '*.min.css'
+    - "*.min.css"
 
 neat_js:
   enable: true
@@ -225,7 +225,7 @@ neat_js:
   output:
   compress:
   exclude:
-    - '*.min.js'
+    - "*.min.js"
 
 # DOC: https://www.u2sb.top/docs/hexo-tag-mmedia
 mmedia:
@@ -251,8 +251,29 @@ encrypt: # hexo-blog-encrypt
   abstract: Here's something encrypted, password is required to continue reading.
   message: Hey, password is required here.
   tags:
-  - {name: encryptAsDiary, password: passwordA}
-  - {name: encryptAsTips, password: passwordB}
+    - { name: encryptAsDiary, password: passwordA }
+    - { name: encryptAsTips, password: passwordB }
   theme: flip
   wrong_pass_message: Oh, this is an invalid password. Check and try again, please.
   wrong_hash_message: Oh, these decrypted content cannot be verified, but you can still have a look.
+
+icodeweb:
+  types:
+    - name: github
+      website: https://raw.githubusercontent.com
+      prefix:
+      suffix:
+      codehead: "From GitHub"
+    - name: cpa
+      website: https://raw.githubusercontent.com
+      prefix:
+        - Tiphereth-A
+        - CP-archives
+        - main
+        - src
+      suffix:
+      codehead: |
+        /*
+         * @Author: Tifa
+         * @Description: From https://github.com/Tiphereth-A/CP-archives
+         */
