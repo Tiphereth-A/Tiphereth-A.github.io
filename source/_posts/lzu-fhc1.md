@@ -1,6 +1,8 @@
 ---
 title: 题解 - 兰州大学第一届『飞马杯』程序设计竞赛
 author: "Tifa & AgOH(code D)"
+coauthor:
+  - AgOH
 categories:
   - 程序设计
   - 题解

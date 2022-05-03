@@ -576,6 +576,16 @@ quicklink:
   priority: true
 
 
+# Add some descriptions to your co-authors
+coauthors:
+  [AgOH]:
+    # It will display nick
+    nick: AgOH
+    # When your co-authors is click, will jump to there
+    link: https://github.com/StableAgOH
+  # It defines the order of precedence in post meta
+  #post_meta_order: 0
+
 # ---------------------------------------------------------------
 # Comments Settings
 # See: https://theme-next.js.org/docs/third-party-services/comments
