@@ -228,7 +228,6 @@ $O(n\log n)$
 <summary><font color='orange'>Show code</font></summary>
 
 ```cpp
-// from wzx
 int main() {
   read(n);
   _for(i, 1, n) read(a[i]);

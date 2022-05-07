@@ -15,7 +15,6 @@ date: 2020-06-22 09:33:45
 <!-- more -->
 
 ```c
-
 #include <stdio.h>
 int main() {
   int x = 10;
@@ -36,20 +35,14 @@ int main() {
 
 类似的, 我们还可以写出 `while (x ----> 0)` -> `8 6 4 2 0`
 
-我们也可以一定程度上假装用 C 写 Pascal 程序
+我们也可以一定程度上假装用 `C` 写 `Pascal` 程序
 
 ```c
-
 #define upto   ++<
-
 #define downto -->
-
 #define for while(
-
 #define do )
-
 #define begin {
-
 #define end }
 
 #include <stdio.h>
