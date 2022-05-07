@@ -107,7 +107,6 @@ $$\Theta\left(\log m+\sum_{i=1}^q\min\{r_i-l_i+1,\log m\}\right)\implies O(q\log
 
 ## 代码参考
 
-
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
