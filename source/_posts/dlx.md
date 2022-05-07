@@ -1058,13 +1058,8 @@ bool dance(std::size_t* _ans, std::size_t& _len) {
 
   </details>
 
-- 洛谷 [P1074 靶形数独](https://www.luogu.com.cn/problem/P1074)
-
-  [题解](../luogu-p1074)
-
-- 洛谷 [P4205 [NOI2005]智慧珠游戏](https://www.luogu.com.cn/problem/P4205)
-
-  [题解](../luogu-p4205)
+- 洛谷 [P1074 靶形数独](https://www.luogu.com.cn/problem/P1074) -> {% post_link luogu-p1074 题解 %}
+- 洛谷 [P4205 [NOI2005]智慧珠游戏](https://www.luogu.com.cn/problem/P4205) -> {% post_link luogu-p4205 题解 %}
 
 ## 重复覆盖问题
 
