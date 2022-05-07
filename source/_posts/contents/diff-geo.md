@@ -17,10 +17,10 @@ date: 2021-11-26 20:00:02
 
 <!-- more -->
 
-- [微分几何笔记 00 - 基础知识与约定](/article/diff-geo/0000/)
-- [微分几何笔记 01 - 曲线论](/article/diff-geo/0001/)
-- [微分几何笔记 02 - 曲面论](/article/diff-geo/0002/)
-- [微分几何笔记 03 - 测地曲率, 测地线](/article/diff-geo/0003/)
-- [微分几何笔记 04 - 外微分法](/article/diff-geo/0004/)
+- {% post_link diffgeo-00 %}
+- {% post_link diffgeo-01 %}
+- {% post_link diffgeo-02 %}
+- {% post_link diffgeo-03 %}
+- {% post_link diffgeo-04 %}
 
 ## 参考资料

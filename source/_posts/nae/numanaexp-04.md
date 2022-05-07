@@ -122,54 +122,7 @@ $$\int_a^bf(x)\mathrm{d}x\approx\frac{h}{6}\left(f(a)+4\sum_{i=1}^{n-1}f(x_{k+1/
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-```matlab main.m
-% Exp.4
-
-% @Author: Tifa
-% @LastEditTime: 2021-05-06 23:06:44
-
-% Global arguments
-now_type = 2;
-round_digit = 12;
-if now_type == 1
-    now_integral = @integral_with_h;
-    now_arg = 4;
-    get_step = false;
-elseif now_type == 2
-    now_integral = @integral_with_eps;
-    now_arg = 1e-10;
-    get_step = true;
-end
-
-% Data
-syms x
-f = {@(x) sqrt(4 - sin(x).^2), @(x) sin(x) ./ x, @(x) exp(x) ./ (4 + x.^2), @(x) log(1 + x) ./ (1 + x.^2)};
-ranges = [0, 0.25; 0 + eps, 1; 0, 1; 0, 1];
-method_key = ['tpz'; 'sps'; 'rbg'];
-method_name = {'Trapezoid'; 'Simpson'; 'Romberg'};
-
-disp(['Now : ', func2str(now_integral)])
-
-for i = 1:length(method_key)
-    disp(['Method: ', method_name{i}])
-
-    for j = 1:length(f)
-        now_funcstr = regexp(func2str(f{j}), '^@\([a-z,]*[a-z]\)', 'split');
-        fprintf(['\tFunction: ', now_funcstr{end}, '; from %.2f to %.2f\n'], ranges(j, 1), ranges(j, 2))
-
-        if get_step
-            [val, step] = now_integral(f{j}, method_key(i, :), ranges(j, 1), ranges(j, 2), now_arg);
-            now_vals = [val, step];
-        else
-            now_vals = now_integral(f{j}, method_key(i, :), ranges(j, 1), ranges(j, 2), now_arg);
-        end
-
-        fprintf('\tValue: ')
-        disp(vpa(now_vals, round_digit))
-    end
-
-end
-```
+{% include_code lang:matlab numanaexp-04/main.m %}
 
 </details>
 
@@ -178,35 +131,7 @@ end
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-```matlab input_check.m
-function input_check(input_function, integral_type, l, r, h_or_epsi)
-    % Input check of Exp.4
-
-    % @Author: Tifa
-    % @LastEditTime: 2021-05-06 23:06:44
-
-    if ~isnumeric(l) ||~isnumeric(r) ||~isnumeric(h_or_epsi)
-        error('l, r, h and eps should be numerals')
-    end
-
-    if h_or_epsi <= 0
-        error('h and eps should be positive')
-    end
-
-    if ~ischar(integral_type)
-        error('Integral type should be a character array')
-    end
-
-    if ~isa(input_function, 'function_handle')
-        error('Input function should be function handle')
-    end
-
-    if nargin(input_function) ~= 1
-        error('Input function should be only one variant')
-    end
-
-end
-```
+{% include_code lang:matlab numanaexp-04/input_check.m %}
 
 </details>
 
@@ -215,60 +140,7 @@ end
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-```matlab integral_with_h.m
-function output = integral_with_h(input_function, integral_type, l, r, h)
-    input_check(input_function, integral_type, l, r, h)
-
-    % @Author: Tifa
-    % @LastEditTime: 2021-05-06 23:06:44
-
-    if ~isinteger(h) && h ~= round(h)
-        h = round(h);
-        fprintf(2, 'Warning: input h is not integer, using h = %d\n', h)
-    end
-
-    x = linspace(l, r, 2^h + 1);
-
-    if l <= r
-        output = 1;
-    else
-        output = -1;
-        tmp = l; l = r; r = tmp;
-    end
-
-    switch integral_type
-        case 'sps'
-            output = output .* vpa(sum(simpson(input_function, x(1:end - 1), x(2:end))));
-        case 'tpz'
-            output = output .* vpa(sum(trapez(input_function, x(1:end - 1), x(2:end))));
-        case 'rbg'
-            output = output .* vpa(romberg(input_function, l, r, h));
-        otherwise
-            error('Unknown integral type')
-    end
-
-end
-
-function output = romberg(inputf, l, r, h)
-    n = 1; len = r - l;
-    T = zeros(h + 1);
-
-    T(1, 1) = len / 2 * (inputf(l) + inputf(r));
-
-    for k = 2:h + 1
-        len = len / 2;
-        T(k, 1) = T(k - 1, 1) / 2 + len * sum(inputf(l + (2 * (1:n) - 1) .* len));
-
-        for j = 1:k - 1
-            T(k, j + 1) = T(k, j) + (T(k, j) - T(k - 1, j)) / (4^j - 1);
-        end
-
-        n = n * 2;
-    end
-
-    output = T(h + 1, h + 1);
-end
-```
+{% include_code lang:matlab numanaexp-04/integral_with_h.m %}
 
 </details>
 
@@ -277,90 +149,7 @@ end
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-```matlab integral_with_eps.m
-function [val, min_step] = integral_with_eps(input_function, integral_type, l, r, epsi)
-    input_check(input_function, integral_type, l, r, epsi)
-
-    % @Author: Tifa
-    % @LastEditTime: 2021-05-06 23:06:44
-
-    if l <= r
-        flag = 1;
-    else
-        flag = -1;
-        tmp = l; l = r; r = tmp;
-    end
-
-    switch integral_type
-        case 'sps'
-            func = @asr;
-        case 'tpz'
-            func = @atr;
-        case 'rbg'
-            func = @romberg;
-        otherwise
-            error('Unknown integral type')
-    end
-
-    [val, min_step] = func(input_function, l, r, epsi);
-    val = val * flag;
-
-end
-
-function [val, min_step] = asr(inputf, l, r, epsi)
-    [val, min_step] = BASE(inputf, l, r, epsi, @simpson, 15);
-end
-
-function [val, min_step] = atr(inputf, l, r, epsi)
-    [val, min_step] = BASE(inputf, l, r, epsi, @trapez, 3);
-end
-
-function [val, min_step] = BASE(inputf, l, r, epsi, integral_function, C, S)
-    narginchk(5, 7)
-
-    if nargin == 5
-        C = 1;
-        S = integral_function(inputf, l, r);
-    elseif nargin == 6
-        S = integral_function(inputf, l, r);
-    end
-
-    mid = l + (r - l) / 2;
-    Sl = integral_function(inputf, l, mid); Sr = integral_function(inputf, mid, r);
-
-    if abs(Sl + Sr - S) < C * epsi
-        val = vpa(Sl + Sr + (Sl + Sr - S) / C);
-        min_step = r - l;
-    else
-        [vall, stpl] = BASE(inputf, l, mid, epsi / 2, integral_function, C, Sl);
-        [valr, stpr] = BASE(inputf, mid, r, epsi / 2, integral_function, C, Sr);
-        val = vall + valr;
-        min_step = min(stpl, stpr);
-    end
-
-end
-
-function [val, min_step] = romberg(inputf, l, r, epsi)
-    k = 0; len = r - l;
-    T = len * (inputf(l) + inputf(r)) / 2;
-    err = inf;
-
-    while err >= epsi
-        k = k + 1;
-        len = len / 2;
-        T(k + 1, 1) = T(k, 1) / 2 + len * sum(inputf(l + (2 * (1:(2^(k - 1))) - 1) .* len));
-
-        for j = 1:k
-            T(k + 1, j + 1) = T(k + 1, j) + (T(k + 1, j) - T(k, j)) / (4^j - 1);
-        end
-
-        err = abs(T(k + 1, k + 1) - T(k, k));
-    end
-
-    val = vpa(T(k + 1, k + 1));
-    min_step = 1/2^k;
-end
-```
+{% include_code lang:matlab numanaexp-04/integral_with_eps.m %}
 
 </details>
 
@@ -371,15 +160,7 @@ end
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-```matlab trapez.m
-function output = trapez(inputf, l, r)
-
-    % @Author: Tifa
-    % @LastEditTime: 2021-05-06 23:06:44
-
-    output = (inputf(l) + inputf(r)) .* (r - l) / 2;
-end
-```
+{% include_code lang:matlab numanaexp-04/trapez.m %}
 
 </details>
 
@@ -388,15 +169,7 @@ end
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-```matlab simpson.m
-function output = simpson(inputf, l, r)
-
-    % @Author: Tifa
-    % @LastEditTime: 2021-05-06 23:06:44
-
-    output = (inputf(l) + 4 * inputf (l + (r - l) / 2) + inputf(r)) .* (r - l) / 6;
-end
-```
+{% include_code lang:matlab numanaexp-04/simpson.m %}
 
 </details>
 

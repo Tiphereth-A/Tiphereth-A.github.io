@@ -235,53 +235,7 @@ $$
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-```matlab main.m
-% Exp.5
-
-% @Author: Tifa
-% @LastEditTime: 2021-06-09 00:22:44
-
-% Data
-A = {
-[
-    4 2 -3 -1 2 1 0 0 0 0;
-    8 6 -5 -3 6 5 0 1 0 0;
-    4 2 -2 -1 3 2 -1 0 3 1;
-    0 -2 1 5 -1 3 -1 1 9 4;
-    -4 2 6 -1 6 7 -3 3 2 3;
-    8 6 -8 5 7 17 2 6 -3 5;
-    0 2 -1 3 -4 2 5 3 0 1;
-    16 10 -11 -9 17 34 2 -1 2 2;
-    4 6 2 -7 13 9 2 0 12 4;
-    0 0 -1 8 -3 -24 -8 6 3 -1;
-    ], ...
-    [
-    4 2 -4 0 2 4 0 0;
-    2 2 -1 -2 1 3 2 0;
-    -4 -1 14 1 -8 -3 5 6;
-    0 -2 1 6 -1 -4 -3 3;
-    2 1 -8 -1 22 4 -10 -3;
-    4 3 -3 -4 4 11 1 -4;
-    0 2 5 -3 -10 1 14 2;
-    0 0 6 3 -3 -4 2 19;
-    ], ...
-        diag(ones(10, 1) * 4) + diag(-ones(9, 1), 1) + diag(-ones(9, 1), -1)
-    };
-
-b = {
-    [5 12 3 2 3 46 13 38 19 -21]'
-    [0 -6 20 23 9 -22 -15 45]'
-    [7 5 -13 2 6 -12 14 -4 5 -5]'
-    };
-
-now_equ = 1;
-now_method = @gauss_advanced;
-
-now_method(A{now_equ}, b{now_equ})
-
-% LU matrix factorization
-[L, U] = lu(sym(A{now_equ}))
-```
+{% include_code lang:matlab numanaexp-05/main.m %}
 
 </details>
 
@@ -290,25 +244,7 @@ now_method(A{now_equ}, b{now_equ})
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-```matlab input_check.m
-function input_check(A, b)
-    % @Author: Tifa
-    % @LastEditTime: 2021-06-09 00:22:44
-
-    if ~iscolumn(b)
-        error('Error: b should be a column vector!')
-    end
-    if ~ismatrix(A)
-        error('Error: A should be a matrix!')
-    end
-    if size(A, 1) ~= size(A, 2)
-        error('Error: A should be a square matrix!')
-    end
-    if det(A) == 0
-        error('Error: A should be a nonsingular matrix!')
-    end
-end
-```
+{% include_code lang:matlab numanaexp-05/input_check.m %}
 
 </details>
 
@@ -317,28 +253,7 @@ end
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-```matlab gauss_basic.m
-function x = gauss_basic(A, b)
-
-    % @Author: Tifa
-    % @LastEditTime: 2021-06-09 00:22:44
-
-    input_check(A, b)
-
-    A = [A b];
-    len = length(b);
-
-    for i = 1:len - 1
-        A(i + 1:len, i + 1:len + 1) = A(i + 1:len, i + 1:len + 1) - A(i + 1:len, i) * A(i, i + 1:len + 1) / A(i, i);
-    end
-
-    b = A(:, end);
-    x = zeros(len, 1);
-    for i = len:-1:1
-        x(i) = (b(i) - A(i, i + 1:len) * x(i + 1:len)) / A(i, i);
-    end
-end
-```
+{% include_code lang:matlab numanaexp-05/gauss_basic.m %}
 
 </details>
 
@@ -347,33 +262,7 @@ end
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-```matlab gauss_advanced.m
-function x = gauss_advanced(A, b)
-
-    % @Author: Tifa
-    % @LastEditTime: 2021-06-09 00:22:44
-
-    input_check(A, b)
-
-    A = [A b];
-    len = length(b);
-
-    for i = 1:len - 1
-        [~, idxA] = max(abs(A(i:len, i)));
-        idxA = idxA + i - 1;
-        tmp = A(idxA, :);
-        A(idxA, :) = A(i, :);
-        A(i, :) = tmp;
-        A(i + 1:len, i + 1:len + 1) = A(i + 1:len, i + 1:len + 1) - A(i + 1:len, i) * A(i, i + 1:len + 1) / A(i, i);
-    end
-
-    b = A(:, end);
-    x = zeros(len, 1);
-    for i = len:-1:1
-        x(i) = (b(i) - A(i, i + 1:len) * x(i + 1:len)) / A(i, i);
-    end
-end
-```
+{% include_code lang:matlab numanaexp-05/gauss_advanced.m %}
 
 </details>
 
@@ -382,42 +271,7 @@ end
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-```matlab sqrt_basic.m
-function x = sqrt_basic(A, b)
-
-    % @Author: Tifa
-    % @LastEditTime: 2021-06-09 00:22:44
-
-    input_check(A, b)
-
-    len = length(b);
-    for k = 1:len
-        if det(A(1:k, 1:k)) <= 0
-            error('A should be a positive definite matrix')
-        end
-    end
-    if ~issymmetric(A)
-        error('A should be a symmetric matrix')
-    end
-
-    for k = 1:len
-        A(k, k) = sqrt(A(k, k));
-        A(k + 1:len, k) = A(k + 1:len, k) / A(k, k);
-        for j = k + 1:len
-            A(j:len, j) = A(j:len, j) - A(j:len, j) * A(j, k);
-        end
-    end
-    for j = 1:len - 1
-        b(j) = b(j) / A(j, j);
-        b(j + 1:len) = b(j + 1:len) - b(j) * A(j + 1:len, j);
-    end
-    for j = len:-1:2
-        b(j) = b(j) / A(j, j);
-        b(1:j - 1) = b(1:j - 1) - b(j) * A(1:j - 1, j);
-    end
-    x = b;
-end
-```
+{% include_code lang:matlab numanaexp-05/sqrt_basic.m %}
 
 </details>
 
@@ -426,47 +280,7 @@ end
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-```matlab sqrt_advanced.m
-function x = sqrt_advanced(A, b)
-
-    % @Author: Tifa
-    % @LastEditTime: 2021-06-09 00:22:44
-
-    input_check(A, b)
-
-    len = length(b);
-    for k = 1:len
-        if det(A(1:k, 1:k)) <= 0
-            error('A should be a positive definite matrix')
-        end
-    end
-    if ~issymmetric(A)
-        error('A should be a symmetric matrix')
-    end
-
-    L = diag(ones(len, 1));
-    D = zeros(len); D(1, 1) = A(1, 1);
-    S = zeros(len);
-
-    for i = 2:len
-        for j = 1:i - 1
-            S(i, j) = A(i, j) - S(i, 1:j - 1) * L(j, 1:j - 1)';
-        end
-        L(i, 1:i - 1) = S(i, 1:i - 1) / D(1:i - 1, 1:i - 1)';
-        D(i, i) = A(i, i) - S(i, 1:i - 1) * L(i, 1:i - 1)';
-    end
-
-    x = zeros(len, 1);
-    y = zeros(len, 1);
-    for i = 1:len
-        y(i) = (b(i) - L(i, 1:i - 1) * D(1:i - 1, 1:i - 1) * y(1:i - 1)) / D(i, i);
-    end
-    x(len) = y(len);
-    for i = len - 1:-1:1
-        x(i) = y(i) - L(i + 1:len, i)' * x(i + 1:len);
-    end
-end
-```
+{% include_code lang:matlab numanaexp-05/sqrt_advanced.m %}
 
 </details>
 
@@ -475,40 +289,7 @@ end
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-```matlab chase.m
-function x = chase(A, f)
-
-    % @Author: Tifa
-    % @LastEditTime: 2021-06-09 00:22:44
-
-    input_check(A, f);
-
-    if ~isempty(find(A ~= diag(diag(A, -1), -1) + diag(diag(A)) + diag(diag(A, 1), 1), 1))
-        error('A should be a tri-diagonal matrix')
-    end
-
-    a = [0; diag(A, -1)];
-    b = diag(A);
-    c = [diag(A, 1); 0];
-
-    len = length(f);
-    u = zeros(len, 1);
-    d = zeros(len, 1); d(1) = b(1);
-    for i = 1:len - 1
-        u(i) = c(i) / d(i);
-        d(i + 1) = b(i + 1) - a(i + 1) * u(i);
-    end
-
-    y = zeros(len, 1); y(1) = f(1) / d(1);
-    for i = 2:len
-        y(i) = (f(i) - a(i) * y(i - 1)) / d(i);
-    end
-    x = zeros(len, 1); x(len) = y(len);
-    for i = len - 1:-1:1
-        x(i) = y(i) - u(i) * x(i + 1);
-    end
-end
-```
+{% include_code lang:matlab numanaexp-05/chase.m %}
 
 </details>
 

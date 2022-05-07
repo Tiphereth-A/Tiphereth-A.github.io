@@ -17,7 +17,7 @@ date: 2021-04-28 13:15:32
 
 <!-- more -->
 
-- [生成函数 01 - 简介](/article/gfology/0001/)
+- {% post_link gflgy-01 %}
 
 ## 参考资料
 

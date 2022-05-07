@@ -41,7 +41,7 @@ date: 2021-04-22 23:05:47
 
 ## 计算公式
 
-- 最小二乘法原理 (参见 [笔记 - 对称双线性度量空间与线性方程组](/article/symmetric-bilinear-metric-space-and-system-of-linear-equations/#最小二乘法))
+- 最小二乘法原理 (参见  {% post_link symmetric-bilinear-metric-space-and-system-of-linear-equations %})
 
   令 $A=(\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{n}),~\alpha_i\in\R^m,i=1,2,...,n$, 寻找 $AX=B$ 的最小二乘解 $(\def\enum#1{x_{ #1}}\enum{1},\enum{2},...,\enum{n})^T$ 即为寻找一组实数 $\def\enum#1{x_{ #1}}\enum{1},\enum{2},...,\enum{n}$ 使得
   $$\left|B-\sum_{i=1}^nx_i\alpha_i\right|^2=\sum_{i=1}^n\left(b_1-\sum_{j=1}^na_{ij}x_j\right)^2\tag{1}$$
@@ -69,59 +69,7 @@ date: 2021-04-22 23:05:47
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-```matlab main.m
-% Exp.3
-
-% @Author: Tifa
-% @LastEditTime: 2021-04-22 23:05:47
-
-% Data
-data_x = 0:5:55;
-data_y = [0, 1.27, 2.16, 2.86, 3.44, 3.87, 4.15, 4.37, 4.51, 4.58, 4.02, 4.64] * 1e-4;
-plot_x = linspace(0, 60, 1000);
-
-% Calculate $\varphi(t)$ and errors
-syms x
-f1 = lsmfit([x, x^2, x^3], data_x, data_y);
-plot_y = subs(f1, plot_x);
-err1 = data_y - subs(f1, data_x);
-% Print function and errors
-disp('function 1:')
-vpa(f1, 8)
-disp('error:')
-fprintf('%.8f ', err1)
-fprintf('\n\n')
-
-% Calculate $\varphi_2(t)=b_0+b_1t+b_2t^2+b_3t^3$ and errors
-f2 = poly2sym(polyfit(data_x, data_y, 3));
-plot_y2 = subs(f2, plot_x);
-err2 = data_y - subs(f2, data_x);
-% Print function and errors
-disp('function 2:')
-vpa(f2, 8)
-disp('error:')
-fprintf('%.8f ', err2)
-fprintf('\n\n')
-
-% Plot two functions
-subplot(1, 2, 1)
-hold on
-plot(data_x, data_y, 'k*')
-plot(plot_x, plot_y, 'k')
-title('Fig. 1')
-xlabel('t/minutes')
-legend('data', '{f_1}')
-hold off
-
-subplot(1, 2, 2)
-hold on
-plot(data_x, data_y, 'k*')
-plot(plot_x, plot_y2, 'k')
-title('Fig. 2')
-xlabel('t/minutes')
-legend('data', '{f_2}')
-hold off
-```
+{% include_code lang:matlab numanaexp-03/main.m %}
 
 </details>
 
@@ -130,73 +78,7 @@ hold off
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-```matlab lsmfit.m
-function output_function = lsmfit(input_functions, x, y)
-    %lsmfit - Calculating linear least square method fit curve with given data
-    %
-    % Syntax: output_function = lsmfit(input_functions, x, y)
-
-    % @Author: Tifa
-    % @LastEditTime: 2021-04-22 23:05:47
-
-    input_check(input_functions, x, y)
-
-    len_x = length(x);
-    len_funcs = length(input_functions);
-    output_function = 0;
-
-    X = zeros(len_x, len_funcs);
-
-    for i = 1:len_funcs
-        X(:, i) = subs(input_functions(i), x);
-    end
-
-    A = X' * X \ X' * y';
-
-    for i = 1:len_funcs
-        output_function = output_function + A(i) * input_functions(i);
-    end
-
-end
-
-function input_check(input_functions, x, y)
-    % Input check of Exp.2
-
-    % @Author: Tifa
-    % @LastEditTime: 2021-04-22 23:05:47
-
-    if ~isvector(input_functions) ||~isvector(x) ||~isvector(y)
-        error('All arguments should be vectors')
-    end
-
-    if ~isnumeric(x) ||~isnumeric(y)
-        error('Input x and y should be numerals')
-    end
-
-    if ~isa(input_functions, 'sym')
-        error('Input functions should be symbolic expressions')
-    end
-
-    if length(x) ~= length(y)
-        error('The length of x and y should be equal')
-    end
-
-    var1 = symvar(input_functions(1));
-
-    if length(var1) ~= 1
-        error('All the input functions should be only one variant')
-    end
-
-    for now_func = input_functions(2:end)
-
-        if symvar(now_func) ~= var1
-            error('Variant in every input functions should be the same')
-        end
-
-    end
-
-end
-```
+{% include_code lang:matlab numanaexp-03/lsmfit.m %}
 
 </details>
 

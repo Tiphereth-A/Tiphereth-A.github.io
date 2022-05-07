@@ -22,12 +22,12 @@ date: 2021-07-11 12:30:13
 
 <!-- more -->
 
-- [实验 1 - Hamming 级数求和](/article/draft/0011/)
-- [实验 2 - 函数插值方法](/article/draft/0012/)
-- [实验 3 - 函数逼近与曲线拟合](/article/draft/0013/)
-- [实验 4 - 数值积分与数值微分](/article/draft/0015/)
-- [实验 5 - 线性方程组的直接解法](/article/draft/0017/)
-- [实验 6 - 解线性方程组的迭代法](/article/draft/0018/)
+- {% post_link numanaexp-01 %}
+- {% post_link numanaexp-02 %}
+- {% post_link numanaexp-03 %}
+- {% post_link numanaexp-04 %}
+- {% post_link numanaexp-05 %}
+- {% post_link numanaexp-06 %}
 
 ---
 

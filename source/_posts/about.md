@@ -21,11 +21,11 @@ date: 2020-05-04 19:07:23
 如无特殊说明, 除随笔外, 其余所有在目录列表中出现的文章的参考资料均在目录页
 {% endnote %}
 
-- {% post_link 高等代数 advanced-algebra %}
-- {% post_link 随笔 draft %}
-- {% post_link 集合论 set-theory %}
-- {% post_link 生成函数 gfology %}
-- {% post_link 微分几何 diff-geo %}
+- {% post_link advanced-algebra %}
+- {% post_link drafts %}
+- {% post_link set-theory %}
+- {% post_link gfology %}
+- {% post_link diff-geo %}
 
 ## 代码起手式
 

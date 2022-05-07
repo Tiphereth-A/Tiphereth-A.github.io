@@ -27,7 +27,7 @@ date: 2021-06-22 23:03:26
 
 ### 问题提出
 
-对 [实验 5](../0017/) 所列目的和意义的线性方程组, 试分别选用 Jacobi 迭代法, Gauss-Seidol 迭代法和 SOR 方法计算其解
+对 {% post_link numanaexp-05 %} 所列目的和意义的线性方程组, 试分别选用 Jacobi 迭代法, Gauss-Seidol 迭代法和 SOR 方法计算其解
 
 ### 要求
 
@@ -105,61 +105,7 @@ $$x^{(k+1)}=Gx^{(k)}+\omega(D-\omega L)^{-1}b$$
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-```matlab main.m
-% Exp.6
-
-% @Author: Tifa
-% @LastEditTime: 2021-06-22 23:03:26
-
-% Data
-A = {
-[
-    4 2 -3 -1 2 1 0 0 0 0;
-    8 6 -5 -3 6 5 0 1 0 0;
-    4 2 -2 -1 3 2 -1 0 3 1;
-    0 -2 1 5 -1 3 -1 1 9 4;
-    -4 2 6 -1 6 7 -3 3 2 3;
-    8 6 -8 5 7 17 2 6 -3 5;
-    0 2 -1 3 -4 2 5 3 0 1;
-    16 10 -11 -9 17 34 2 -1 2 2;
-    4 6 2 -7 13 9 2 0 12 4;
-    0 0 -1 8 -3 -24 -8 6 3 -1;
-    ], ...
-    [
-    4 2 -4 0 2 4 0 0;
-    2 2 -1 -2 1 3 2 0;
-    -4 -1 14 1 -8 -3 5 6;
-    0 -2 1 6 -1 -4 -3 3;
-    2 1 -8 -1 22 4 -10 -3;
-    4 3 -3 -4 4 11 1 -4;
-    0 2 5 -3 -10 1 14 2;
-    0 0 6 3 -3 -4 2 19;
-    ], ...
-        diag(ones(10, 1) * 4) + diag(-ones(9, 1), 1) + diag(-ones(9, 1), -1)
-    };
-
-b = {
-    [5 12 3 2 3 46 13 38 19 -21]'
-    [0 -6 20 23 9 -22 -15 45]'
-    [7 5 -13 2 6 -12 14 -4 5 -5]'
-    };
-
-now_equ = 2;
-now_method = @jacobi;
-now_epsi = 1e-4;
-
-if isequal(now_method, @sor)
-    omegas=0.8:0.05:1.9;
-    [x, k] = sor(A{now_equ}, b{now_equ}, now_epsi, omegas);
-    x
-    plot(omegas, k)
-    grid on
-    xlabel('{\omega}')
-    ylabel('Steps')
-else
-    [x, k] = now_method(A{now_equ}, b{now_equ}, now_epsi)
-end
-```
+{% include_code lang:matlab numanaexp-06/main.m %}
 
 </details>
 
@@ -168,27 +114,7 @@ end
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-```matlab jacobi.m
-function [x, k] = jacobi(A, b, epsi)
-
-    % @Author: Tifa
-    % @LastEditTime: 2021-06-22 23:03:26
-
-    G = diag(diag(A)) \ -(tril(A, -1) + triu(A, 1));
-    if max(abs(eig(G))) >= 1
-        error('Not convergent!');
-    end
-    k = 1;
-    x_pre = ones(length(b), 1);
-    b = diag(diag(A)) \ b;
-    x = G * x_pre + b;
-    while norm(x - x_pre, inf) > epsi
-        x_pre = x;
-        x = G * x + b;
-        k = k + 1;
-    end
-end
-```
+{% include_code lang:matlab numanaexp-06/jacobi.m %}
 
 </details>
 
@@ -197,27 +123,7 @@ end
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-```matlab gauss_seidol.m
-function [x, k] = gauss_seidol(A, b, epsi)
-
-    % @Author: Tifa
-    % @LastEditTime: 2021-06-22 23:03:26
-
-    G = (diag(diag(A)) + tril(A, -1)) \ -triu(A, 1);
-    if max(abs(eig(G))) >= 1
-      error('Not convergent!');
-    end
-    k = 1;
-    x_pre = ones(length(b), 1);
-    b = (diag(diag(A)) + tril(A, -1)) \ b;
-    x = G * x_pre + b;
-    while norm(x - x_pre, inf) > epsi
-        x_pre = x;
-        x = G * x + b;
-        k = k + 1;
-    end
-end
-```
+{% include_code lang:matlab numanaexp-06/gauss_seidol.m %}
 
 </details>
 
@@ -226,32 +132,7 @@ end
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-```matlab sor.m
-function [x, k] = sor(A, b, epsi, omegas)
-
-    % @Author: Tifa
-    % @LastEditTime: 2021-06-22 23:03:26
-
-    x = zeros(length(b), length(omegas));
-    k = zeros(1, length(omegas));
-    for i = 1:length(omegas)
-        G = (diag(diag(A)) + omegas(i) * tril(A, -1)) \ ((1 - omegas(i)) * diag(diag(A)) - omegas(i) * triu(A, 1));
-        if max(abs(eig(G))) >= 1
-            error('Not convergent!');
-        end
-        k(i) = 1;
-        x_pre = ones(length(b), 1);
-        b1 = omegas(i) * (diag(diag(A)) + omegas(i) * tril(A, -1)) \ b;
-        xx = G * x_pre + b1;
-        while norm(xx - x_pre, inf) > epsi
-            x_pre = xx;
-            xx = G * xx + b1;
-            k(i) = k(i) + 1;
-        end
-        x(:, i) = xx;
-    end
-end
-```
+{% include_code lang:matlab numanaexp-06/sor.m %}
 
 </details>
 

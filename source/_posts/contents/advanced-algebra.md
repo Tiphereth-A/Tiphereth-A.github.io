@@ -33,7 +33,7 @@ date: 2020-07-14 23:05:16
 
 ## 目录
 
-1. [基础知识](/article/advanced-algebra/0001/)
+1. {% post_link advalg-00 %}
 
 ### 名词目录
 

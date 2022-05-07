@@ -16,10 +16,10 @@ date: 2021-03-27 17:14:32
 
 <!-- more -->
 
-- [集合论 01 - 基本概念](/article/set-theory/0001/)
-- [集合论 02 - 关系, Zorn 引理](/article/set-theory/0002/)
-- [集合论 03 - 映射, 基数/势](/article/set-theory/0003/)
-- [集合论 04 - 点集](/article/set-theory/0004/)
+- {% post_link setth-01 %}
+- {% post_link setth-02 %}
+- {% post_link setth-03 %}
+- {% post_link setth-04 %}
 
 ---
 

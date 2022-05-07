@@ -100,44 +100,7 @@ $$
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-```cpp main.cpp
-/*
- * @Author: Tifa
- * @LastEditTime: 2021-04-16 20:30:47
- * @Description: Exp.1
- */
-// -std=c++14
-#include <cmath>
-#include <cstdio>
-
-using num_t = double;
-
-// data
-const int N = 3001;
-const num_t pi = acos(-1.0);
-// iteration
-const int A_3 = 71000;
-// step
-const num_t STEP = 1e-1;
-// inverse of step
-const num_t INV_STEP = 1.0 / STEP;
-
-// result
-num_t psi[N] = {pi * pi / 6};
-
-int main() {
-    // 0 < x < 1
-    for (int i = 1; i < INV_STEP; ++i) {
-        num_t psi_now = 0;
-        for (int j = 1; j <= A_3; ++j) psi_now += 1.0 / (j * (j + 1) * (j + STEP * i));
-        psi[i] = psi_now * (1 - STEP * i) + 1;
-    }
-    // x >= 1
-    for (int i = INV_STEP; i < N; ++i) psi[i] = (1 - INV_STEP / i) * psi[(size_t)(i - INV_STEP)] + INV_STEP * INV_STEP / (i * i);
-    for (int i = 0; i < N; ++i) printf("%6.2f %16.12f\n", STEP * i, psi[i]);
-    return 0;
-}
-```
+{% include_code lang:cpp numanaexp-01/main.cpp %}
 
 </details>
 
@@ -148,15 +111,7 @@ int main() {
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-```matlab main.m
-% Exp.1
-
-% @Author: Tifa
-% @LastEditTime: 2021-04-16 20:30:47
-
-A = [0:0.1:300; calc_fast()'];
-sprintf('%6.2f %16.12f\n', A)
-```
+{% include_code lang:matlab numanaexp-01/main.m %}
 
 </details>
 
@@ -165,46 +120,7 @@ sprintf('%6.2f %16.12f\n', A)
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-```matlab calc_fast.m
-function ret = calc_fast()
-    % Syntax: ret = calc_fast()
-    %
-    % The function about calculating Hamming's series
-
-    % @Author: Tifa
-    % @LastEditTime: 2021-04-16 20:30:47
-
-    % check results when this variable is true
-    check = true;
-
-    ret = zeros(3001, 1);
-    ret(1) = pi^2/6;
-
-    syms k s
-
-    for x = 0.1:0.1:0.9
-        s = 1 / (k * (k + 1) * (k + x));
-        ret(floor(x * 10) + 1) = (1 - x) * vpa(symsum(s, k, 1, 71000)) + 1;
-    end
-
-    for x = 1:0.1:300
-        ret(floor(x * 10) + 1) = (x - 1) * ret(floor(x * 10) - 9) / x + 1 / x / x;
-    end
-
-    if check
-
-        for x = 0:0.1:300
-
-            if error_judge(x, ret(floor(x * 10) + 1))
-                error('Error exceed!')
-            end
-
-        end
-
-    end
-
-end
-```
+{% include_code lang:matlab numanaexp-01/calc_fast.m %}
 
 </details>
 
@@ -213,22 +129,7 @@ end
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-```matlab error_judge.m
-function output = error_judge(x, input_sum)
-    % Syntax: output = error_judge(x, input_sum)
-    %
-    % return true if the input value's error exceeded, otherwise return false
-
-    % @Author: Tifa
-    % @LastEditTime: 2021-04-16 20:30:47
-
-    syms k s
-    s = 1 / (k * (k + x));
-    accurate_sum = symsum(s, k, 1, inf);
-
-    output = abs(input_sum - vpa(accurate_sum)) > 1e-10;
-end
-```
+{% include_code lang:matlab numanaexp-01/error_judge.m %}
 
 </details>
 
