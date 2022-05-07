@@ -227,17 +227,7 @@ $O(n\log n)$
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-```cpp
-// from wzx
-int main() {
-  read(n);
-  _for(i, 1, n) read(a[i]);
-  _repr(i, n, 0) suf[i] = gcd(suf[i + 1], a[i]);
-  _for(i, 1, n) ans = gcd(ans, lcm(a[i], suf[i + 1]));
-  print(ans);
-  return 0;
-}
-```
+{% include_code lang:cpp codeforces-641-2/C3.cpp %}
 
 </details>
 

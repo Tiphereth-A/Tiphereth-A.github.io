@@ -109,16 +109,7 @@ $$r=\left\lfloor\frac{n}{k_l}\right\rfloor=\left\lfloor{n\over{\lfloor\frac{n}{l
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-```cpp
-int get_sum(int n) {
-    int ans = 0;
-    for(int l = 1, r; l <= n; l = r + 1) {
-        r = n / (n / l);
-        ans += n / l * (r - l + 1);
-    }
-    return ans;
-}
-```
+{% include_code lang:cpp nt-2/get_sum.cpp %}
 
 </details>
 
@@ -182,7 +173,9 @@ $$(f*g)(10)=f(1)g(10)+f(2)g(5)+f(5)g(2)+f(10)g(1)$$
 1. 对加法的分配律: $f*(g+h)=f*g+f*h$
 1. 存在单位元: $f*\epsilon=f$
 
-下面对结合律进行证明 [另一篇证明](../draft/0001)
+下面对结合律进行证明
+
+> {% post_link draft-001 另一篇证明 %}
 
 #### <a href="#end-t-3.1" id="t-3.1">定理 - 3.1</a> (结合律)
 
@@ -227,16 +220,7 @@ $$b_i=\sum_{j\mid i}a_j$$
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-```cpp
-int prime[N], cnt_prime;
-int a[N], b[N];
-void Dirichlet_sum(int n) {
-    for (int i = 1; i <= n; ++i) b[i] = a[i];
-    for (int i = 1; i <= cnt_prime; ++i)
-        for (int j = 1; j * prime[i] <= n; ++j)
-            b[j * prime[i]] += b[j];
-}
-```
+{% include_code lang:cpp nt-2/Dirichlet_sum.cpp %}
 
 </details>
 
@@ -374,18 +358,7 @@ $$
    <details>
    <summary><font color='orange'>Show code</font></summary>
 
-   ```cpp
-   int euler_phi(int n) {
-       int ans = n;
-       for (int i = 2; i <= sqrt(n); ++i)
-           if (n % i == 0) {
-               ans = ans / i * (i - 1);
-               while (n % i == 0) n /= i;
-           }
-       if (n > 1) ans = ans / n * (n - 1);
-       return ans;
-   }
-   ```
+   {% include_code lang:cpp nt-2/euler_phi_single.cpp %}
 
    </details>
 
@@ -396,23 +369,7 @@ $$
    <details>
    <summary><font color='orange'>Show code</font></summary>
 
-   ```cpp
-   void Euler_sieve(int n) {
-       phi[1] = 1;
-       for (int i = 2; i <= n; ++i) {
-           if (!vis[i]) {
-               prime[++cnt] = i;
-               phi[i] = i - 1;
-           }
-           for (int j = 1; j <= cnt && i * prime[j] <= n; ++j) {
-               vis[i * prime[j]] = 1;
-               phi[i * prime[j]] = phi[i] * prime[j];
-               if (i % prime[j] == 0) break;
-               phi[i * prime[j]] -= phi[i];
-           }
-       }
-   }
-   ```
+   {% include_code lang:cpp nt-2/euler_phi_seive.cpp %}
 
    </details>
 
@@ -531,23 +488,7 @@ $$
    <details>
    <summary><font color='orange'>Show code</font></summary>
 
-   ```cpp
-   void Euler_sieve(int n) {
-       mu[1] = 1;
-       for (int i = 2; i <= n; ++i) {
-           if (!vis[i]) {
-               prime[++cnt] = i;
-               mu[i] = -1;
-           }
-           for (int j = 1; j <= cnt && i * prime[j] <= n; ++j) {
-               vis[i * prime[j]] = 1;
-               mu[i * prime[j]] = 0;
-               if (i % prime[j] == 0) break;
-               mu[i * prime[j]] = -mu[i];
-           }
-       }
-   }
-   ```
+   {% include_code lang:cpp nt-2/mobius_seive.cpp %}
 
    </details>
 

@@ -48,19 +48,7 @@ date: 2018-08-09 09:06:31
 
 附程序:
 
-```cpp
-double binary_search(double l, double r, double EPS) {
-  double mid;
-  while (r - l > EPS) {
-    mid = l + (r - l) / 2;  //防溢出
-    if (F(mid) * F(l) <= 0)
-      r = mid;
-    else
-      l = mid;
-  }
-  return mid;
-}
-```
+{% include_code lang:cpp approx-number/binary_search.cpp %}
 
 ## 0.618 法\优选法
 
@@ -129,24 +117,7 @@ double binary_search(double l, double r, double EPS) {
 
 附程序:
 
-```cpp
-const double PHI = 0.61803399, mPHI = 0.38196601;
-double gold_search(double l, double r, double EPS) {
-  double mid1 = l + mPHI * (r - l), mid2 = l + PHI * (r - l);
-  while (r - l > EPS) {
-    if (F(mid1) < F(mid2)) {
-      l    = mid1;
-      mid1 = mid2;
-      mid2 = l + PHI * (r - l);
-    } else {
-      r    = mid2;
-      mid2 = mid1;
-      mid1 = l + mPHI * (r - l);
-    }
-  }
-  return (mid1 + mid2) / 2;
-}
-```
+{% include_code lang:cpp approx-number/gold_search.cpp %}
 
 读者们可以在[洛谷 P3382](https://www.luogu.org/problemnew/show/P3382)中测试一下(～ o ￣ 3 ￣)～
 
@@ -304,12 +275,7 @@ $$x_{n+1}=x_n-\frac{f(x_n)}{f^\prime(x_n)}$$
 
 程序:
 
-```cpp
-double newton(double x0, int n) {
-    for(int i=0; i<n; ++i) x0 -= f(x0) / df(x0);
-    return x0;
-}
-```
+{% include_code lang:cpp approx-number/newton.cpp %}
 
 ---
 
@@ -331,61 +297,7 @@ $$\frac{\pi}{2}\exp\Bigg(\frac{1}{\pi}\int_0^1{\arctan\Big({(\pi x+2)\ln{({\sqrt
 
 测试程序:
 
-```cpp
-
-#include <bits/stdc++.h>
-
-float InvSqrt(float x, int it) {
-  float xhalf = 0.5f * x;
-  int   i     = *(int*)&x;
-
-  i = 0x5f3759df - (i >> 1);
-  x = *(float*)&i;
-  for (register int i = 1; i <= it; ++i)
-    x = x * (1.5f - xhalf * x * x);
-  return x;
-}
-float GetRErr(float test, float real) {
-  return fabs((test - real) / real * 100.0);
-}
-int main() {
-  int i = 0;
-  while (1) {
-    float t;
-    scanf("%f", &t);
-    if (t < 0) return 0;
-    float sys   = 1.0 / sqrt(t),
-          invs1 = InvSqrt(t, 1), invs2 = InvSqrt(t, 2),
-          invs3 = InvSqrt(t, 3), invs4 = InvSqrt(t, 4),
-          invs5 = InvSqrt(t, 5), invs6 = InvSqrt(t, 6);
-    printf(
-      "Test#%d n=%f\n"
-      "System:\n%f\nTest:\n"
-      "it#1:%f RelativeErr:%.2f%%\n"
-      "it#2:%f RelativeErr:%.2f%%\n"
-      "it#3:%f RelativeErr:%.2f%%\n"
-      "it#4:%f RelativeErr:%.2f%%\n"
-      "it#5:%f RelativeErr:%.2f%%\n"
-      "it#6:%f RelativeErr:%.2f%%\n\n",
-      ++i,
-      t,
-      sys,
-      invs1,
-      GetRErr(invs1, sys),
-      invs2,
-      GetRErr(invs2, sys),
-      invs3,
-      GetRErr(invs3, sys),
-      invs4,
-      GetRErr(invs4, sys),
-      invs5,
-      GetRErr(invs5, sys),
-      invs6,
-      GetRErr(invs6, sys));
-  }
-  return 0;
-}
-```
+{% include_code lang:cpp approx-number/test.cpp %}
 
 ## 后记
 
@@ -398,9 +310,6 @@ int main() {
 ## 主要参考资料
 
 - [1] 人教版高中数学选修 4-7 优选法与试验设计初步
-
 - [2] Siewert C E, Burniston E E. An exact analytical solution of Kepler's equation[J]. Celestial Mechanics, 1972, 6(3):294-304.
-
 - [3] [Newton's method - Wikipedia](https://en.wikipedia.org/wiki/Newton's_method)
-
 - [4] [Taylor's theorem - Wikipedia](https://en.wikipedia.org/wiki/Taylor%27s_theorem)

@@ -175,25 +175,7 @@ $$\displaystyle\int_a^bf(x)\mathrm{d}x\thickapprox\frac{b-a}{6}[f(a)+4f(\frac{a+
 
 附程序:
 
-```cpp
-double F(double num) {
-  // 按需补充
-}
-double simpson(double a, double b) {
-  // 防溢出
-  double c = a + (b - a) / 2;
-  return (F(a) + 4 * F(c) + F(b)) * (b - a) / 6;
-}
-// adaptive simpson rule
-double asr(double a, double b, double eps, double S) {
-  double c  = a + (b - a) / 2,
-         lS = simpson(a, c), rS = simpson(c, b);
-  if (fabs(lS + rS - S) <= 15 * eps)
-    return lS + rS + (lS + rS - S) / 15.0;
-  // 注意这里eps要除以2
-  return asr(a, c, eps / 2, lS) + asr(c, b, eps / 2, rS);
-}
-```
+{% include_code lang:cpp asr/asr.cpp %}
 
 ## 后记
 
