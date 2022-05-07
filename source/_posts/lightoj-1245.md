@@ -29,30 +29,6 @@ date: 2020-07-25 00:12:29
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-```cpp
-/*
- * @Author: Tifa
- * @LastEditTime: 2020-07-25 00:12:29
- * @Description: LightOJ 1245
- */
-
-#include <cstdio>
-using i64 = int64_t;
-int main() {
-  int kase;
-  scanf("%d", &kase);
-  for (int cnt = 1; cnt <= kase; ++cnt) {
-    i64 n;
-    scanf("%lld", &n);
-    i64 ans = 0;
-    for (i64 l = 1, r = 0; l <= n; l = r + 1) {
-      r = n / (n / l);
-      ans += (r - l + 1) * (n / l);
-    }
-    printf("Case %d: %lld\n", cnt, ans);
-  }
-  return 0;
-}
-```
+{% icodeweb cpa lang:cpp LightOJ/1245/0.cpp %}
 
 </details>

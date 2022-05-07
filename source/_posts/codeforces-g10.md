@@ -100,38 +100,12 @@ In the second test case, you can't perform any operations because there is no va
 
 ### 代码参考
 
-```cpp
-/*
- * @Author: Tifa
- * @LastEditTime: 2020-08-18 14:51:12
- * @Description:
- */
-const int N = 2e5 + 5;
+<details>
+<summary><font color='orange'>Show code</font></summary>
 
-int a[N];
+{% icodeweb cpa lang:cpp CodeForces/1392A/0.cpp %}
 
-int main() {
-  int kase;
-  scanf("%d", &kase);
-  while (kase--) {
-    int n;
-    scanf("%d", &n);
-    int max_a = 0, max_idx = 0;
-    for (int i = 1; i <= n; ++i) {
-      scanf("%d", a + i);
-      if (a[i] > max_a) max_a = a[max_idx = i];
-    }
-    int _ = a[1];
-    for (int i = 2; i <= n; ++i)
-      if (_ != a[i]) {
-        _ = -1;
-        break;
-      }
-    cout << (~_ ? n : 1) << endl;
-  }
-  return 0;
-}
-```
+</details>
 
 ## B - Omkar and Infinity Clock
 
@@ -217,39 +191,7 @@ In the first test case the array changes as follows:
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-```cpp
-/*
- * @Author: Tifa
- * @LastEditTime: 2020-08-18 14:51:12
- * @Description:
- */
-const int N = 2e5 + 5;
-
-i64 a[N];
-int main() {
-  int kase;
-  scanf("%d", &kase);
-  while (kase--) {
-    int n;
-    i64 k;
-    scanf("%d%lld", &n, &k);
-    i64 max_n = LLONG_MIN;
-    for (int i = 1; i <= n; ++i) {
-      scanf("%lld", a + i);
-      max_n = max(max_n, a[i]);
-    }
-    for (int i = 1; i <= n; ++i) a[i] = max_n - a[i];
-    max_n = LLONG_MIN;
-    for (int i = 1; i <= n; ++i) max_n = max(max_n, a[i]);
-    --k;
-    if (k % 2)
-      for (int i = 1; i <= n; ++i) printf("%lld%c", max_n - a[i], " \n"[i == n]);
-    else
-      for (int i = 1; i <= n; ++i) printf("%lld%c", a[i], " \n"[i == n]);
-  }
-  return 0;
-}
-```
+{% icodeweb cpa lang:cpp CodeForces/1392B/0.cpp %}
 
 </details>
 
@@ -369,35 +311,7 @@ In the third test case, the array is already nondecreasing, so Omkar does $0$ op
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-```cpp
-/*
- * @Author: Tifa
- * @LastEditTime: 2020-08-18 14:51:12
- * @Description:
- */
-const int N = 2e5 + 5;
-
-int a[N];
-int main() {
-  int kase;
-  scanf("%d", &kase);
-  while (kase--) {
-    int n;
-    scanf("%d", &n);
-    for (int i = 1; i <= n; ++i) scanf("%d", a + i);
-    a[n + 1] = INT_MAX;
-    int now = a[1];
-    int64_t ans = 0;
-    for (int i = 1; i <= n; ++i)
-      if (a[i] < a[i + 1]) {
-        ans += now - a[i];
-        now = a[i + 1];
-      }
-    printf("%lld\n", ans);
-  }
-  return 0;
-}
-```
+{% icodeweb cpa lang:cpp CodeForces/1392C/0.cpp %}
 
 </details>
 
@@ -497,47 +411,7 @@ $n$个人站成一圈, 编号$0,1,2,...,n-1$, 第$(i+1)\bmod n$个人在第$i$�
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-```cpp
-/*
- * @Author: Tifa
- * @LastEditTime: 2020-08-18 14:51:12
- * @Description:
- */
-int main() {
-#define __(i) s[(i) >= n ? (i)-n : (i) + n] = s[(i)] = (s[(i)] == 'R' ? 'L' : 'R')
-  int kase;
-  cin >> kase;
-  while (kase--) {
-    int    n;
-    string s;
-    cin >> n >> s;
-    s += s;
-    char now = 0;
-    int  cnt = 0, ans = 0;
-    int  st = 0;
-    while (st < n && s[st] == s[st + 1]) ++st;
-    if (st == n) st = 0;
-    for (int i = st; i < s.size(); ++i) {
-      if (s[i] != now) {
-        now = s[i];
-        cnt = 1;
-        continue;
-      }
-      if (++cnt == 3) {
-        if (s[i] == s[i + 1])
-          __(i);
-        else
-          __(i - 1);
-        now = s[i];
-        cnt = 1;
-        ++ans;
-      }
-    }
-    cout << ans << endl;
-  }
-  return 0;
-}
-```
+{% icodeweb cpa lang:cpp CodeForces/1392D/0.cpp %}
 
 </details>
 
@@ -629,24 +503,6 @@ $$a_i=i+\left\lfloor{S-\frac{n(n+1)}{2}\over n}\right\rfloor+\left[i\leqslant\le
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-```cpp
-/*
- * @Author: Tifa
- * @LastEditTime: 2020-08-18 14:51:12
- * @Description:
- */
-int main() {
-  int n;
-  scanf("%d", &n);
-  i64 sum = 0, _;
-  for (int i = 1; i <= n; ++i) {
-    scanf("%lld", &_);
-    sum += _;
-  }
-  _ = sum - n * (n + 1ll) / 2;
-  for (int i = 1; i <= n; ++i) printf("%lld%c", i + _ / n + (i <= _ % n), " \n"[i == n]);
-  return 0;
-}
-```
+{% icodeweb cpa lang:cpp CodeForces/1392F/0.cpp %}
 
 </details>

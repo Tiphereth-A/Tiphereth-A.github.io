@@ -62,63 +62,6 @@ date: 2020-01-27 15:40:12
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-```cpp
-// 注意异或的性质, 本题将a^b==c转为a^c==b
-int n, m, sqrt_n, belongs[N];
-i64 k;
-i64 xor_num[N];
-struct node {
-  int l, r, id;
-  bool operator<(const node& other) const {
-    return (belongs[l] != belongs[other.l]) ? l < other.l : (r > other.r) ^ (belongs[l] & 1);
-  }
-} query[N];
-i64 ans[N];
-namespace MO {
-i64 cnt[M];
-i64 add(int p) {
-  i64 ans = cnt[xor_num[p] ^ k];
-  ++cnt[xor_num[p]];
-  return ans;
-}
-i64 del(int p) {
-  --cnt[xor_num[p]];
-  return cnt[xor_num[p] ^ k];
-}
-}  // namespace MO
-using MO::add;
-using MO::del;
-int main() {
-  read(n, m, k);
-  sqrt_n = sqrt(n);
-  _for(i, 1, n) belongs[i] = (i - 1) / sqrt_n + 1;
-  _for(i, 1, n) {
-    read(xor_num[i]);
-    xor_num[i] ^= xor_num[i - 1];
-  }
-  for (int i = 1, l, r; i <= m; ++i) {
-    read(l, r);
-    query[i] = {l - 1, r, i};
-  }
-  std::sort(query + 1, query + m + 1);
-  int l = 1, r = 0;
-  i64 now_ans = 0;
-  _for(i, 1, m) {
-    int now_l = query[i].l, now_r = query[i].r;
-    while (l < now_l)
-      now_ans -= del(l++);
-    while (l > now_l)
-      now_ans += add(--l);
-    while (r < now_r)
-      now_ans += add(++r);
-    while (r > now_r)
-      now_ans -= del(r--);
-    ans[query[i].id] = now_ans;
-  }
-  _for(i, 1, m) print(ans[i]);
-  FastIO::flush();
-  return 0;
-}
-```
+{% icodeweb cpa lang:cpp Luogu/4462/0.cpp %}
 
 </details>

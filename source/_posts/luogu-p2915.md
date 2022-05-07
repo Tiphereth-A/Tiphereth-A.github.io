@@ -100,34 +100,6 @@ $O(n^2 2^n)$
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-```cpp
-/*
- * @Author: Tifa
- * @LastEditTime: 2020-01-17 10:26:14
- * @Description:
- */
-i64 f[M][N], s[N], n, delta;
-int main() {
-    read(n, delta);
-    _rep(i, 0, n) read(s[i]);
-    _rep(i, 0, n) f[1 << i][i] = 1;
-    _rep(i, 0, 1 << n)
-        _rep(j, 0, n) {
-        if (!(i & (1 << j)))
-            continue;
-        _rep(k, 0, n) {
-            if (i & (1 << k))
-                continue;
-            if (s[j] - s[k] > delta || s[k] - s[j] > delta)
-                f[i | (1 << k)][k] += f[i][j];
-        }
-    }
-    i64 ans = 0;
-    _rep(i, 0, n) ans += f[(1 << n) - 1][i];
-    print(ans);
-    FastIO::flush();
-    return 0;
-}
-```
+{% icodeweb cpa lang:cpp Luogu/2915/0.cpp %}
 
 </details>

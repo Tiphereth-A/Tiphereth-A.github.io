@@ -108,30 +108,6 @@ $$2\sum_{i=1}^n\sum_{j=1}^{i-1}[j\leqslant (i\oplus j)\leqslant i]$$
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-```cpp
-/*
- * @Author: Tifa
- * @LastEditTime: 2021-06-03 14:02:01
- * @Description: Luogu P5177
- */
-#include <bits/stdc++.h>
-using u64 = uint64_t;
-const u64 mod = 1e9 + 7;
-u64 f(u64 n) {
-    n %= mod;
-    return (n + 1) * n / 2 % mod;
-}
-u64 a[64];
-int main() {
-    for (int i = 1; i < 64; ++i) a[i] = (f((1ull << i - 1) - 1) + a[i - 1]) % mod;
-    int t;
-    scanf("%d", &t);
-    while (t--) {
-        u64 n;
-        scanf("%llu", &n);
-        printf("%llu\n", (a[63 - __builtin_clzll(n)] + f(n - (1ull << 63 - __builtin_clzll(n)))) * 2 % mod);
-    }
-}
-```
+{% icodeweb cpa lang:cpp Luogu/5177/0.cpp %}
 
 </details>

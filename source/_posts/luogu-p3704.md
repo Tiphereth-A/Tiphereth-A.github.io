@@ -93,65 +93,6 @@ $O(n\log n)$
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-```cpp
-/*
- * @Author: Tifa
- * @LastEditTime: 2021-06-02 13:24:59
- * @Description: Luogu P3704
- */
-
-#include <bits/stdc++.h>
-using namespace std;
-using i64 = int64_t;
-
-#define _for(i, l, r) for (decltype(l + r) i = (l); i <= (r); ++i)
-const int N = 1e6 + 5, mod = 1e9 + 7;
-i64 qpow(i64 a, i64 b) {
-    i64 res = 1;
-    for (; b; b >>= 1, a = a * a % mod)
-        if (b & 1) res = res * a % mod;
-    return res;
-}
-i64 inv(i64 a) { return qpow(a, mod - 2); }
-
-int prime[N], cnt;
-bool vis[N];
-i64 mu[N], f[N], inv_f[N], F[N];
-void seive(int n = N - 5) {
-    mu[1] = f[1] = inv_f[1] = 1;
-    _for(i, 2, n) {
-        if (!vis[i]) mu[prime[++cnt] = i] = -1;
-        for (int j = 1; j <= cnt && i * prime[j] <= n; ++j) {
-            vis[i * prime[j]] = 1;
-            if (i % prime[j] == 0) break;
-            mu[i * prime[j]] = -mu[i];
-        }
-    }
-    _for(i, 2, n) inv_f[i] = inv(f[i] = (f[i - 1] + f[i - 2]) % mod);
-    _for(i, 1, n) F[i] = 1;
-    _for(i, 1, n) {
-        if (!mu[i]) continue;
-        for (int j = i; j <= n; j += i) (F[j] *= mu[i] == 1 ? f[j / i] : inv_f[j / i]) %= mod;
-    }
-    _for(i, 1, n)(F[i] *= F[i - 1]) %= mod;
-}
-
-int main() {
-    seive();
-    int t;
-    cin >> t;
-    while (t--) {
-        int m, n;
-        cin >> m >> n;
-        if (m > n) swap(m, n);
-        i64 ans = 1;
-        for (int l = 1, r; l <= m; l = r + 1) {
-            r = min(n / (n / l), m / (m / l));
-            (ans *= qpow(F[r] * inv(F[l - 1]) % mod, 1ll * (n / l) * (m / l) % (mod - 1))) %= mod;
-        }
-        cout << ans << endl;
-    }
-}
-```
+{% icodeweb cpa lang:cpp Luogu/3704/0.cpp %}
 
 </details>

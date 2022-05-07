@@ -101,45 +101,6 @@ $O(m+n)$
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-```cpp
-/*
- * @Author: Tifa
- * @LastEditTime: 2020-01-15 10:59:32
- * @Description:
- */
-i64 n, m;
-struct edge {
-    i64 to, next;
-} e[M];
-i64 head[N], cnt;
-void add(i64 u, i64 v) {
-    e[++cnt] = {v, head[u]};
-    head[u] = cnt;
-}
-int in[N], out[N];
-
-i64 f[N];
-i64 dfs(i64 pos) {
-    if (f[pos]) return f[pos];
-    if (in[pos] && !out[pos]) return f[pos] = 1;
-    for (i64 i = head[pos]; i; i = e[i].next) f[pos] += dfs(e[i].to);
-    return f[pos];
-}
-
-int main() {
-    read(n, m);
-    for (i64 i = 1, x, y; i <= m; ++i) {
-        read(x, y);
-        add(x, y);
-        ++in[y];
-        ++out[x];
-    }
-    i64 ans = 0;
-    _for(i, 1, n) if (!in[i]) ans += dfs(i);
-    print(ans);
-    FastIO::flush();
-    return 0;
-}
-```
+{% icodeweb cpa lang:cpp Luogu/3183/0.cpp %}
 
 </details>

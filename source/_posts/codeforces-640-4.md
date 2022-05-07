@@ -37,34 +37,7 @@ date: 2020-05-10 01:03:23
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-```cpp
-/*
- * @Author: Tifa
- * @LastEditTime: 2020-05-10 01:17:42
- * @Description:
- */
-#include <bits/stdc++.h>
-using namespace std;
-
-int main() {
-  int _T_;
-  cin >> _T_;
-  while (_T_--) {
-    int n, _ = 1;
-    cin >> n;
-    vector<int> ans;
-    while (n) {
-      if (n % 10) ans.push_back(n % 10 * _);
-      n /= 10;
-      _ *= 10;
-    }
-    cout << ans.size() << endl;
-    for (int i : ans) cout << i << " ";
-    cout << endl;
-  }
-  return 0;
-}
-```
+{% icodeweb cpa lang:cpp CodeForces/1352A/0.cpp %}
 
 </details>
 
@@ -91,62 +64,7 @@ int main() {
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-```cpp
-/*
- * @Author: Tifa
- * @LastEditTime: 2020-05-09 22:57:28
- * @Description:
- */
-void print_odd(int n,int k) {
-  cout << "YES" << endl;
-  for (int i = 1; i < k; ++i) cout << 1 << " ";
-  cout << n - k + 1 << endl;
-}
-
-void print_even(int n,int k) {
-  cout << "YES" << endl;
-  for (int i = 1; i < k; ++i) cout << 2 << " ";
-  cout << n - 2 * (k - 1) << endl;
-}
-
-int main() {
-  int _T_;
-  cin >> _T_;
-  while (_T_--) {
-    int n, k;
-    cin >> n >> k;
-    if (k > n) {
-      cout << "NO" << endl;
-      continue;
-    }
-
-    if (n == k) {
-      print_odd(n, k);
-      continue;
-    }
-
-    if (n % 2) {
-      if (k % 2 == 0) {
-        cout << "NO" << endl;
-        continue;
-      }
-
-      print_odd(n, k);
-    } else {
-      if (k % 2 && n < k * 2) {
-        cout << "NO" << endl;
-        continue;
-      }
-
-      if (n < k * 2)
-        print_odd(n, k);
-      else
-        print_even(n, k);
-    }
-  }
-  return 0;
-}
-```
+{% icodeweb cpa lang:cpp CodeForces/1352B/0.cpp %}
 
 </details>
 
@@ -199,23 +117,7 @@ $$
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-```cpp
-/*
- * @Author: Tifa
- * @LastEditTime: 2020-05-10 00:48:44
- * @Description:
- */
-int main() {
-  int _T_;
-  cin >> _T_;
-  while (_T_--) {
-    i64 n, k;
-    cin >> n >> k;
-    cout << (k / (n - 1)) * n + k % (n - 1) - (k % (n - 1) == 0)<< endl;
-  }
-  return 0;
-}
-```
+{% icodeweb cpa lang:cpp CodeForces/1352A/0.cpp %}
 
 </details>
 
@@ -240,42 +142,7 @@ Alice 先手吃一块
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-```cpp
-/*
- * @Author: Tifa
- * @LastEditTime: 2020-05-09 23:18:59
- * @Description:
- */
-i64 a[N];
-
-int main() {
-  i64 _T_;
-  cin >> _T_;
-  while (_T_--) {
-    i64 n;
-    cin >> n;
-    i64 alice = 1, bob = n;
-    for (i64 i = 1; i <= n; ++i) cin >> a[i];
-    i64 tot_a = 0, tot_b = 0, now_a = 0, now_b = 0, cnt = 0;
-    bool turn = 0;
-    while (alice <= bob) {
-      if (turn) {
-        while (now_b <= now_a && alice <= bob) now_b += a[bob--];
-        tot_b += now_b;
-        now_a = 0;
-      } else {
-        while (now_a <= now_b && alice <= bob) now_a += a[alice++];
-        tot_a += now_a;
-        now_b = 0;
-      }
-      ++cnt;
-      turn ^= 1;
-    }
-    cout << cnt << " " << tot_a << " " << tot_b << " " << endl;
-  }
-  return 0;
-}
-```
+{% icodeweb cpa lang:cpp CodeForces/1352D/0.cpp %}
 
 </details>
 
@@ -294,38 +161,7 @@ int main() {
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-```cpp
-/*
- * @Author: Tifa
- * @LastEditTime: 2020-05-10 00:56:23
- * @Description:
- */
-int  a[N];
-bool vis[N];
-
-int main() {
-  int _T_;
-  cin >> _T_;
-  while (_T_--) {
-    memset(vis, 0, sizeof(vis));
-    int n;
-    cin >> n;
-    for (int i = 1; i <= n; ++i) cin >> a[i];
-    for (int i = 1, _; i <= n; ++i) {
-      _ = a[i];
-      for (int j = i + 1; j <= n; ++j) {
-        _ += a[j];
-        if (_ > 8000) break;
-        vis[_] = 1;
-      }
-    }
-    int cnt = 0;
-    for (int i = 1; i <= n; ++i) cnt += vis[a[i]];
-    cout << cnt << endl;
-  }
-  return 0;
-}
-```
+{% icodeweb cpa lang:cpp CodeForces/1352E/0.cpp %}
 
 </details>
 
@@ -348,59 +184,7 @@ int main() {
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-```cpp
-/*
- * @Author: Tifa
- * @LastEditTime: 2020-05-09 23:52:40
- * @Description:
- */
-int main() {
-  int _T_;
-  cin >> _T_;
-  while (_T_--) {
-    int n0, n1, n2;
-    cin >> n0 >> n1 >> n2;
-    string str;
-#define _append_10(s) \
-  for (int i = s; i < n1; i += 2) str.append("10")
-#define _append_01(s) \
-  for (int i = s; i < n1; i += 2) str.append("01")
-    if (n0) {
-      str.append(string(n0 + 1, '0'));
-      if (n1) {
-        str.push_back('1');
-        --n1;
-        if (n1 % 2){
-          _append_01(2);
-          if (n2) str.append(n2, '1');
-          str.push_back('0');
-        } else {
-          _append_01(0);
-          if (n2) str.append(n2, '1');
-        }
-      }
-    } else if (n1) {
-      if (n2) {
-        str = string(n2 + 1, '1');
-        if (n1 % 2) {
-          str.push_back('0');
-          --n1;
-          _append_10(0);
-        } else
-          _append_01(0);
-      } else if (n1 % 2)
-        _append_10(0);
-      else {
-        _append_01(0);
-        str.push_back('0');
-      }
-    } else if (n2)
-      str = string(n2 + 1, '1');
-    cout << str << endl;
-  }
-  return 0;
-}
-```
+{% icodeweb cpa lang:cpp CodeForces/1352F/0.cpp %}
 
 </details>
 
@@ -427,36 +211,6 @@ $n<4$时显然无解
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-```cpp
-/*
- * @Author: Tifa
- * @LastEditTime: 2020-05-10 00:00:36
- * @Description:
- */
-int main() {
-  int _T_;
-  cin >> _T_;
-  while (_T_--) {
-    int n;
-    cin >> n;
-    if (n < 4) {
-      cout << -1 << endl;
-      continue;
-    }
-    if (n % 2) {
-      for (int i = n; i >= 1; i -= 2) cout << i << " ";
-      cout << "4 2 ";
-      for (int i = 6; i < n; i += 2) cout << i << " ";
-      cout << endl;
-    } else {
-      for (int i = n - 1; i >= 1; i -= 2) cout << i << " ";
-      cout << "4 2 ";
-      for (int i = 6; i <= n; i += 2) cout << i << " ";
-      cout << endl;
-    }
-  }
-  return 0;
-}
-```
+{% icodeweb cpa lang:cpp CodeForces/1352G/0.cpp %}
 
 </details>

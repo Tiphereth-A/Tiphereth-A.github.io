@@ -35,36 +35,9 @@ date: 2020-07-25 00:48:00
 
 ## 代码
 
-```cpp
-/*
- * @Author: Tifa
- * @LastEditTime: 2020-07-25 00:48:00
- * @Description: CF 696A
- */
-map<i64, i64> m;
+<details>
+<summary><font color='orange'>Show code</font></summary>
 
-int main() {
-  int kase;
-  cin >> kase;
-  i64 op, u, v, w;
-  while (kase--) {
-    cin >> op >> u >> v;
-    if (op == 1) {
-      cin >> w;
-      while (u != v) {
-        if (u > v) u ^= v ^= u ^= v;
-        m[v] += w;
-        v /= 2;
-      }
-    } else {
-      i64 ans = 0;
-      while (u != v) {
-        if (u > v) u ^= v ^= u ^= v;
-        ans += m[v];
-        v /= 2;
-      }
-      cout << ans << endl;
-    }
-  }
-}
-```
+{% icodeweb cpa lang:cpp CodeForces/696A/0.cpp %}
+
+</details>
