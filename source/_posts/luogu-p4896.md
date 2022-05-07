@@ -21,21 +21,21 @@ date: 2018-11-13 22:35:58
 
 大致思路就是**用一个 char 来记录老师是否在机房和学生是否被抓到**（一共需要 3+5=8 位来记录, 正好是一个 char）, 再**用一个 char 记录被抓到的学生的编号**, 就像这样：
 
-```text
+```plaintext
 char in_room, dead;
 //in_room的1～3位记录老师, 4～8位记录学生
 ```
 
 然而为了降低调试难度, 我们可以用两个 char 分别记录老师和学生的状态, 就像这样：
 
-```text
+```plaintext
 char onlineT, onlineS, deadS;
 //按字面意思理解即可
 ```
 
 我们还需要定义一些函数来对它们进行操作, 就像这样（这里以宏定义为例）：
 
-```text
+```plaintext
 #define _teacher_in(i) onlineT |= 1 << i      //老师进机房
 #define _teacher_out(i) onlineT &= ~(1 << i)  //老师出机房
 #define _student_in(i) onlineS |= 1 << i      //学生开始玩游戏

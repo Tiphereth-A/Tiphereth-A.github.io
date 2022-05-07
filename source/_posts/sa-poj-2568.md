@@ -30,7 +30,7 @@ A tree (i.e. a connected graph without cycles) with vertices numbered by the int
 
 Your task is, to reconstruct a tree, given its Prufer code. The tree should be denoted by a word of the language specified by the following grammar:
 
-```text
+```plaintext
 T ::= "(" N S ")"
 
 S ::= " " T S
