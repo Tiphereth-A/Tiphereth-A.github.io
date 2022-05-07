@@ -500,7 +500,7 @@ int main() {
 
 输入就像下面这样：
 
-```text
+```plaintext
 T
 N Q
 A1 A2 A3 ... AN
