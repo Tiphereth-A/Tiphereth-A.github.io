@@ -137,6 +137,6 @@ $s_i$ 的格式如下:
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa lang:cpp Luogu/7075/0.cpp %}
+{% icodeweb cpa lang:cpp Luogu/7075/1.cpp %}
 
 </details>
