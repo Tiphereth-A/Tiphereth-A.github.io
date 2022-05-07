@@ -35,6 +35,15 @@ date: 2020-06-02 23:20:27
 
 如果$n$是偶数, 每次加$2$即可
 
+### 代码
+
+<details>
+<summary><font color='orange'>Show code</font></summary>
+
+{% icodeweb cpa lang:cpp CodeForces/1350A/0.cpp %}
+
+</details>
+
 ## B - Orac and Models
 
 ### 题意
@@ -89,41 +98,7 @@ $$f_i=\max\left(1,f_i,\max_{j|i,~1\leqslant j\leqslant i}\{f_j+1\}\right)$$
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-```cpp
-/*
- * @Author: Tifa
- * @LastEditTime: 2020-06-02 23:56:48
- * @Description:
- */
-int s[N], f[N];
-
-int main() {
-  int kase;
-  cin >> kase;
-  while (kase--) {
-    int n, ans = 1;
-    cin >> n;
-    _for(i, 1, n) f[i] = 1;
-    _for(i, 1, n) cin >> s[i];
-#if 1
-    // O(n*log(n))
-    _fd(i, n / 2, 1) for (int j = i; j <= n; j += i) if (s[j] > s[i]) ans = max(ans, f[i] = max(f[i], f[j] + 1));
-    // 或
-    // _for(i, 2, n / 2) for (int j = i * 2; j <= n; j += i) if (s[j] > s[i]) ans = max(ans, f[j] = max(f[j], f[i] + 1));
-
-#else
-    // O(n*sqrt(n))
-    _for(i, 2, n)
-      for (int j = 1; j <= sqrt(i); ++j)
-        if (i % j == 0) {
-          if (s[i] > s[j]) ans = max(ans, f[i] = max(f[i], f[j] + 1));
-          if (s[i] > s[i / j]) ans = max(ans, f[i] = max(f[i], f[i / j] + 1));
-        }
-#endif
-    cout << ans << endl;
-  }
-}
-```
+{% icodeweb cpa lang:cpp CodeForces/1350B/0.cpp %}
 
 </details>
 
@@ -234,61 +209,7 @@ $O(n\log n)$
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-```cpp
-/*
- * @Author: Tifa
- * @LastEditTime: 2020-06-03 20:49:18
- * @Description:
- */
-int  prime[N], cnt_prime, d[N], idx_p[N];
-bool vis[N];
-priority_queue<int, vector<int>, greater<int>> mins[N];
-
-i64 gcd(i64 a, i64 b) { return b == 0 ? a : gcd(b, a % b); }
-i64 lcm(i64 a, i64 b) { return a / gcd(a, b) * b; }
-
-int main() {
-  _for(i, 2, N) {
-    if (!vis[i])
-      prime[idx_p[i] = ++cnt_prime] = d[i] = i;
-    _for(j, 1, cnt_prime) {
-      if (i * prime[j] >= N) break;
-      vis[i * prime[j]] = 1;
-      d[i * prime[j]] = prime[j];
-      if (i % prime[j] == 0) break;
-    }
-  }
-  int n;
-  cin >> n;
-  if (n == 2) {
-    int a, b;
-    cin >> a >> b;
-    cout << lcm(a, b);
-    return 0;
-  }
-  for (int j = 1, _; j <= n; ++j) {
-    cin >> _;
-    while (_ > 1) {
-      int now_p = d[_], cnt = 0;
-      while (_ % now_p == 0) {
-        ++cnt;
-        _ /= now_p;
-      }
-      mins[now_p].push(cnt);
-    }
-  }
-  i64 ans = 1;
-  for (int i = 1, sec_min = 0; i < N; ++i, sec_min = 0) {
-    if (mins[i].size() == n) {
-      mins[i].pop();
-      sec_min = mins[i].top();
-    } else if (mins[i].size() == n - 1)
-      sec_min = mins[i].top();
-    while (sec_min--) ans *= i;
-  }
-  cout << ans;
-}
-```
+{% icodeweb cpa lang:cpp CodeForces/1350C/0.cpp %}
 
 </details>
 
@@ -297,30 +218,7 @@ int main() {
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-```cpp
-/*
- * @Author: Tifa
- * @LastEditTime: 2020-06-03 09:49:44
- * @Description:
- */
-i64 gcd(i64 a, i64 b) { return b == 0 ? a : gcd(b, a % b); }
-i64 lcm(i64 a, i64 b) { return a / gcd(a, b) * b; }
-
-int a[N], pre[N], suf[N];
-
-int main() {
-  int n;
-  cin >> n;
-  _for(i, 1, n) cin >> a[i];
-  pre[1] = a[1];
-  suf[n] = a[n];
-  _for(i, 2, n) pre[i] = gcd(pre[i - 1], a[i]);
-  _repr(i, n - 1, 1) suf[i] = gcd(suf[i + 1], a[i]);
-  i64 ans = lcm(suf[2], pre[n - 1]);
-  _rep(i, 2, n) ans = lcm(ans, gcd(pre[i - 1], suf[i + 1]));
-  cout << ans;
-}
-```
+{% icodeweb cpa lang:cpp CodeForces/1350C/1.cpp %}
 
 </details>
 
@@ -389,49 +287,7 @@ $\Theta(n)$
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-```cpp
-/*
- * @Author: Tifa
- * @LastEditTime: 2020-06-03 23:21:20
- * @Description:
- */
-int s[N];
-
-int main() {
-  int kase;
-  cin >> kase;
-  while (kase--) {
-    int n, k;
-    cin >> n >> k;
-    bool flag = 0;
-    for (int i = 1; i <= n; ++i) {
-      cin >> s[i];
-      flag |= s[i] == k;
-    }
-    if (!flag) {
-      cout << "no\n";
-      continue;
-    }
-    if (n == 1) {
-      cout << "yes\n";
-      continue;
-    }
-    flag = 0;
-    for (int i = 1; i < n; ++i)
-      if (s[i] >= k && s[i + 1] >= k) {
-        flag = 1;
-        break;
-      }
-    if (!flag)
-      for (int i = 1; i < n - 1; ++i)
-        if (s[i] >= k && s[i + 2] >= k) {
-          flag = 1;
-          break;
-        }
-    cout << (flag ? "yes\n" : "no\n");
-  }
-}
-```
+{% icodeweb cpa lang:cpp CodeForces/1350D/0.cpp %}
 
 </details>
 
@@ -464,86 +320,6 @@ $O(mn)$
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-```cpp
-/*
- * @Author: Tifa
- * @LastEditTime: 2020-06-04 00:15:24
- * @Description:
- */
-int n, m, g[N][N];
-
-struct point {
-  int x, y;
-  point(int _x = 0, int _y = 0) : x(_x), y(_y) {}
-  point operator+(const point& oth) {
-    return point(x + oth.x, y + oth.y);
-  }
-};
-
-const point d[4] = {{0, 1}, {1, 0}, {0, -1}, {-1, 0}};
-
-bool judge(point p) {
-  if (p.x > 1 && !(g[p.x][p.y] ^ g[p.x - 1][p.y])) return 1;
-  if (p.x < n && !(g[p.x][p.y] ^ g[p.x + 1][p.y])) return 1;
-  if (p.y > 1 && !(g[p.x][p.y] ^ g[p.x][p.y - 1])) return 1;
-  if (p.y < m && !(g[p.x][p.y] ^ g[p.x][p.y + 1])) return 1;
-  return 0;
-}
-bool legel(point p) { return p.x >= 1 && p.x <= n && p.y >= 1 && p.y <= m; }
-
-bool extended[N][N];
-i64  len_circ[N][N];
-
-int main() {
-  int t;
-  cin >> n >> m >> t;
-  string str;
-  getline(cin, str);
-  _for(i, 1, n) {
-    getline(cin, str);
-    _for(j, 1, m) g[i][j] = str[j - 1] - '0';
-  }
-
-  queue<point> q;
-  _for(i, 1, n) _for(j, 1, m) {
-    if (judge({i, j})) {
-      q.push({i, j});
-      extended[i][j] = 1;
-      len_circ[i][j] = 0;
-    }
-  }
-
-  if (q.empty()) {
-    int u, v;
-    i64 k;
-    _for(i, 1, t) {
-      cin >> u >> v >> k;
-      cout << g[u][v] << endl;
-    }
-    return 0;
-  }
-
-  while (!q.empty()) {
-    point now_p = q.front();
-    q.pop();
-    for (auto& _d : d) {
-      point tmp_p = now_p + _d;
-      if (legel(tmp_p) && !extended[tmp_p.x][tmp_p.y]) {
-        q.push(tmp_p);
-        extended[tmp_p.x][tmp_p.y] = 1;
-        len_circ[tmp_p.x][tmp_p.y] = len_circ[now_p.x][now_p.y] + 1;
-      }
-    }
-  }
-
-  int u, v;
-  i64 k;
-  _for(i, 1, t) {
-    cin >> u >> v >> k;
-    cout << (k <= len_circ[u][v] ? g[u][v] : g[u][v] ^ ((k - len_circ[u][v]) & 1)) << endl;
-  }
-  return 0;
-}
-```
+{% icodeweb cpa lang:cpp CodeForces/1350E/0.cpp %}
 
 </details>

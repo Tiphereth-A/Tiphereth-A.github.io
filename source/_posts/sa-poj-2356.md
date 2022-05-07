@@ -80,32 +80,6 @@ $O(n)$
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-```cpp
-/*
- * @Author: Tifa
- * @LastEditTime: 2020-07-31 20:58:31
- * @Description: POJ 2356, Ural 1032
- */
-const int N = 1e4 + 5;
-int a[N], s[N], idx[N];
-int main() {
-    int n;
-    scanf("%d", &n);
-    _for(i, 1, n) {
-        scanf("%d", &a[i]);
-        if (!(s[i] = (s[i - 1] + a[i]) %= n)) {
-            printf("%d\n", i);
-            for (int j = 1; j <= i; ++j) printf("%d\n", a[j]);
-            return 0;
-        }
-    }
-    _for(i, 1, n) if (idx[s[i]]) {
-        printf("%d\n", i - idx[s[i]]);
-        _for(j, idx[s[i]] + 1, i) printf("%d\n", a[j]);
-        return 0;
-    }
-    puts("-1");
-}
-```
+{% icodeweb cpa lang:cpp POJ/2356/0.cpp %}
 
 </details>

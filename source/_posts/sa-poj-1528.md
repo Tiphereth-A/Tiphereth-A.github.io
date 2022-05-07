@@ -76,32 +76,6 @@ Mid-Atlantic 1996
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-```cpp
-/*
- * @Author: Tifa
- * @LastEditTime: 2020-07-27 22:55:48
- * @Description: POJ 1528, ZOJ 1284, UVA 382
- */
-const char status[][15] = {"DEFICIENT", "PERFECT", "ABUNDANT"};
-int main() {
-  puts("PERFECTION OUTPUT");
-  int n;
-  while (scanf("%d", &n) && n) {
-    if (n == 1) {
-      puts("    1  DEFICIENT");
-      continue;
-    }
-    int cnt = 1;
-    for (int i = 2; i <= sqrt(n + 0.5); ++i)
-      if (n % i == 0) {
-        cnt += i;
-        if (i != n / i) cnt += n / i;
-      }
-    // look here
-    printf("%5d  %s\n", n, status[(n < cnt) + (n <= cnt)]);
-  }
-  puts("END OF OUTPUT");
-}
-```
+{% icodeweb cpa lang:cpp POJ/1528/0.cpp %}
 
 </details>

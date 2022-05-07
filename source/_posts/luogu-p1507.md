@@ -83,26 +83,6 @@ NASA(美国航空航天局)因为航天飞机的隔热瓦等其他安全技术�
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-```cpp
-/*
- * @Author: Tifa
- * @LastEditTime: 2020-01-15 09:54:49
- * @Description:
- */
-int f[N][N];
-struct Food {
-    int v, m, cal;
-} a[M];
-
-int main() {
-    int v, m, n;
-    read(v, m, n);
-    _for(i, 1, n) read(a[i].v, a[i].m, a[i].cal);
-    _for(i, 1, n) _rfor(j, v, 0) if (j >= a[i].v) _rfor(k, m, 0) if (k >= a[i].m) f[j][k] = max(f[j][k], f[j - a[i].v][k - a[i].m] + a[i].cal);
-    print(f[v][m]);
-    FastIO::flush();
-    return 0;
-}
-```
+{% icodeweb cpa lang:cpp Luogu/1507/0.cpp %}
 
 </details>

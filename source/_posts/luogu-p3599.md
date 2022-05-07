@@ -176,66 +176,6 @@ Taks2：试判断能否构造并构造一个长度为$n$的$1\dots n$的排列, 
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-```cpp
-/*
- * @Author: Tifa
- * @LastEditTime: 2020-08-03 14:23:09
- * @Description:
- */
-const int N = 1e5 + 5;
-i64 qpow(i64 a, i64 b, i64 mod) {
-  i64 res = 1;
-  for (; b; b >>= 1, (a *= a) %= mod)
-    if (b & 1) (res *= a) %= mod;
-  return res;
-}
-bool vis[N];
-int  prime[N], cnt_prime;
-int main() {
-  _for(i, 2, n) {
-    if (!vis[i]) prime[++cnt_prime] = i;
-    for (int j = 1; j <= cnt_prime && i * prime[j] <= n; ++j) {
-      vis[i * prime[j]] = 1;
-      if (i % prime[j] == 0) break;
-    }
-  }
-  int x, kase;
-  cin >> x >> kase;
-  while (kase--) {
-    int n;
-    cin >> n;
-    if (x == 1) {
-      if (n & 1 && n > 1) {
-        cout << "0" << endl;
-        continue;
-      }
-      cout << "2";
-      _for(i, 1, n) cout << " " << (i & 1 ? n + 1 - i : i - 1);
-      cout << endl;
-    } else {
-      if (vis[n] ^ (n == 4)) {
-        cout << "0" << endl;
-        continue;
-      }
-      if (n == 1) {
-        cout << "2 1" << endl;
-        continue;
-      }
-      if (n == 4) {
-        cout << "2 1 3 2 4" << endl;
-        continue;
-      }
-      cout << "2";
-      for (int i = 1, _ = 1, prod = 1; i < n; ++i) {
-        cout << " " << _;
-        _ = qpow(prod, n - 2, n) * (i + 1) % n;
-        prod = 1ll * prod * _ % n;
-      }
-      cout << " " << n << endl;
-    }
-  }
-  return 0;
-}
-```
+{% icodeweb cpa lang:cpp Luogu/3599/0.cpp %}
 
 </details>

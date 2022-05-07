@@ -119,65 +119,6 @@ $$
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-```cpp
-/*
- * @Author: Tifa
- * @LastEditTime: 2020-07-25 22:14:38
- * @Description: POJ 1141, ZOJ 1463, Ural 1183, UVA 1626
- */
-const int N = 205;
-
-int  f[N][N];
-char str[N];
-
-bool match(char a, char b) { return (a == '[' && b == ']') || (a == '(' && b == ')'); }
-
-int dfs(int i, int j) {
-  if (i > j) return f[i][j] = 0;
-  if (i == j) return f[i][j] = 1;
-  if (f[i][j] != 0x3f3f3f3f) return f[i][j];
-  int ans = f[i][j];
-  if (match(str[i], str[j])) ans = min(ans, dfs(i + 1, j - 1));
-  _rep(k, i, j) ans = min(ans, dfs(i, k) + dfs(k + 1, j));
-  return f[i][j] = ans;
-}
-
-void print(int i, int j) {
-  if (i > j) return;
-  if (i == j) {
-    if (str[i] == '(' || str[i] == ')')
-      printf("()");
-    else
-      printf("[]");
-    return;
-  }
-  int _ = f[i][j];
-  if (match(str[i], str[j]) && _ == f[i + 1][j - 1]) {
-    putchar(str[i]);
-    print(i + 1, j - 1);
-    putchar(str[j]);
-    return;
-  }
-  _rep(k, i, j) if (_ == f[i][k] + f[k + 1][j]) {
-      print(i, k);
-      print(k + 1, j);
-      return;
-    }
-}
-
-int main() {
-  while (fgets(str + 1, N - 1, stdin)) {
-    int l_min = 0x3f3f3f3f, len = strlen(str + 1);
-    if (str[len]) {
-      str[len] = '\0';
-      --len;
-    }
-    _set_inf(f);
-    dfs(1, len);
-    print(1, len);
-    putchar('\n');
-  }
-}
-```
+{% icodeweb cpa lang:cpp POJ/1141/0.cpp %}
 
 </details>

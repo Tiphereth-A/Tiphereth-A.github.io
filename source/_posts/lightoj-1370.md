@@ -34,36 +34,6 @@ $$\sum_{i=1}^n(f_i)_{min}$$
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-```cpp
-/*
- * @Author: Tifa
- * @LastEditTime: 2020-07-25 00:39:08
- * @Description: LightOJ 1370
- */
-
-#include <cmath>
-
-#include <cstdio>
-const int N = 1e6 + 5;
-bool vis[N];
-int  main() {
-  for (int i = 2; i * i < N; ++i)
-    if (!vis[i])
-      for (int j = i * i; j < N; j += i) vis[j] = 1;
-  int kase;
-  scanf("%d", &kase);
-  for (int cnt = 1; cnt <= kase; ++cnt) {
-    int n, _;
-    scanf("%d", &n);
-    int64_t tot = 0;
-    while (n--) {
-      scanf("%d", &_);
-      while (vis[++_]);
-      tot += _;
-    }
-    printf("Case %d: %lld Xukha\n", cnt, tot);
-  }
-}
-```
+{% icodeweb cpa lang:cpp LightOJ/1370/0.cpp %}
 
 </details>

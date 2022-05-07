@@ -31,36 +31,6 @@ date: 2020-07-25 00:24:27
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-```cpp
-/*
- * @Author: Tifa
- * @LastEditTime: 2020-07-25 00:24:27
- * @Description: LightOJ 1282
- * @Remark: pay attention of '(int)floor(...)' in line 29
- */
-
-#include <cmath>
-
-#include <cstdio>
-using i64 = int64_t;
-const int MOD = 1000;
-i64 qpow(i64 a, i64 b, i64 mod = MOD) {
-  i64 res = 1;
-  for (; b; b >>= 1, (a *= a) %= mod)
-    if (b & 1) (res *= a) %= mod;
-  return res;
-}
-int main() {
-  double _;
-  int    kase;
-  scanf("%d", &kase);
-  for (int cnt = 1; cnt <= kase; ++cnt) {
-    i64 a, k;
-    scanf("%lld%lld", &a, &k);
-    printf("Case %d: %d %03d\n", cnt, (int)floor(pow(10, modf(log10(a) * k, &_)) * 100), qpow(a, k));
-  }
-  return 0;
-}
-```
+{% icodeweb cpa lang:cpp LightOJ/1282/0.cpp %}
 
 </details>

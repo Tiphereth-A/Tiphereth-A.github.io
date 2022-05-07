@@ -104,28 +104,6 @@ $$
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-```cpp
-/*
- * @Author: Tifa
- * @LastEditTime: 2020-08-12 11:31:46
- * @Description:
- */
-const int MOD = 1e9 + 7;
-int64_t qpow(int64_t a, int64_t b, int64_t mod = MOD) {
-  int64_t res = 1;
-  for (; b; b >>= 1, (a *= a) %= mod)
-    if (b & 1) (res *= a) %= mod;
-  return res;
-}
-
-int main() {
-  int64_t n;
-  scanf("%lld", &n);
-  int64_t _ = qpow(2, (n - 1) % (MOD - 1));
-  n %= MOD;
-  printf("%lld", (n + (_ + 1) * (((_ * 2 - n - 1) % MOD + MOD) % MOD)) % MOD);
-  return 0;
-}
-```
+{% icodeweb cpa lang:cpp Luogu/5627/0.cpp %}
 
 </details>

@@ -95,45 +95,6 @@ $O(n\log(r-l))$, 其中$l,\ r$分别指查询区间左右端点
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-```cpp
-/*
- * @Author: Tifa
- * @LastEditTime: 2020-01-15 09:47:41
- * @Description:
- */
-i64 n, m, a[N];
-bool judge(i64 max) {
-    i64 seg = 0, now_sum = 0;
-    _for(i, 1, n) {
-        if ((now_sum += a[i]) >= max) {
-            ++seg;
-            now_sum = (now_sum > max) ? a[i] : 0;
-        }
-        if (seg > m) return 0;
-    }
-    if (now_sum) ++seg;
-    return seg <= m;
-}
-
-int main() {
-    read(n, m);
-    i64 l = 0, r = 0, mid;
-    _for(i, 1, n) {
-        read(a[i]);
-        r += a[i];
-        l = std::max(l, a[i]);
-    }
-    while (l < r) {
-        mid = l + (r - l) / 2;
-        if (judge(mid))
-            r = mid;
-        else
-            l = mid + 1;
-    }
-    print(r);
-    FastIO::flush();
-    return 0;
-}
-```
+{% icodeweb cpa lang:cpp Luogu/1182/0.cpp %}
 
 </details>

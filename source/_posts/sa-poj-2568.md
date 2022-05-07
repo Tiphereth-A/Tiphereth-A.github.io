@@ -89,68 +89,6 @@ Ulm Local 2001
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-```cpp
-/*
- * @Author: Tifa
- * @LastEditTime: 2020-07-30 22:03:55
- * @Description: POJ 2568, ZOJ 1965
- */
-const int N = 505;
-
-struct Edge {
-  int to, next;
-} e[N];
-int  head[N], cnt_edge;
-void addEdge(int x, int y) {
-  e[++cnt_edge] = {y, head[x]};
-  head[x] = cnt_edge;
-}
-
-int  prufer[N], cnt[N];
-bool vis[N];
-
-void print(int fa, int now) {
-  printf("(%d", now);
-  for (int i = head[now], to; i; i = e[i].next) {
-    to = e[i].to;
-    if (to == fa) continue;
-    putchar(' ');
-    print(now, to);
-  }
-  putchar(')');
-}
-
-int main() {
-  string line;
-  while (getline(cin, line)) {
-    stringstream ss;
-    _set_nul(prufer);
-    _set_nul(vis);
-    _set_nul(head);
-    _set_nul(cnt);
-    cnt_edge = 0;
-    int n = 0, _;
-    ss << line;
-    while (ss >> _) ++cnt[prufer[++n] = _];
-    ++n;
-    priority_queue<int, vector<int>, greater<int>> pq;
-    _for(i, 1, n)
-      if (!cnt[i]) pq.push(i);
-    _rep(i, 1, n) {
-      int now = pq.top();
-      pq.pop();
-      addEdge(prufer[i], now);
-      addEdge(now, prufer[i]);
-      if (!(--cnt[prufer[i]])) pq.push(prufer[i]);
-    }
-    if (n == 1) {
-      puts("(1)");
-      continue;
-    }
-    print(0, prufer[n - 1]);
-    puts("");
-  }
-}
-```
+{% icodeweb cpa lang:cpp POJ/2568/0.cpp %}
 
 </details>

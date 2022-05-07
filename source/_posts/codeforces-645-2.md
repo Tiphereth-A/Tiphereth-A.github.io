@@ -76,44 +76,7 @@ Maria 可以邀请无限次, 问派对最多可以有多少人
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-```cpp
-/*
- * @Author: Tifa
- * @LastEditTime: 2020-05-26 23:07:03
- * @Description:
- */
-int main() {
-  int kase;
-  read(kase);
-  while (kase--) {
-    i64 n, _, maxn;
-    read(n);
-    vector<i64> cnt(n + 1);
-    _for(i, 1, n) {
-      read(_);
-      maxn = max(_, maxn);
-      if (_ > n) continue;
-      ++cnt[_];
-    }
-    // 特判加速, 删去不影响正确性
-    if (maxn <= n) {
-      print(n + 1);
-      continue;
-    }
-
-    i64 ans = 1;
-    _ = 0;
-    _for(i, 1, n) if (cnt[i]) {
-      _ += cnt[i];
-      if (ans + _ > i) {
-        ans += _;
-        _ = 0;
-      }
-    }
-    print(ans);
-  }
-}
-```
+{% icodeweb cpa lang:cpp CodeForces/1358B/0.cpp %}
 
 </details>
 
@@ -222,35 +185,6 @@ $$l_{\sum_{i=1}^{j-1}d_i+k}=k,~j=1,2,...,n;k=1,2,...,d_j$$
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-```cpp
-/*
- * @Author: Tifa
- * @LastEditTime: 2020-05-30 19:50:04
- * @Description:
- */
-i64 d[N], sum[N];
-int main() {
-#define _S(n) ((n) * ((n) + 1) / 2)
-  i64 n, x;
-  cin >> n >> x;
-  _for(i, 1, n) {
-    cin >> d[i];
-    sum[i] = sum[i - 1] + d[i];
-  }
-  _for(i, n + 1, 2 * n) sum[i] = sum[i - 1] + (d[i] = d[i - n]);
-  i64 ans = 0, _ = 0, l = n *= 2, diff = 0;
-  _repr(r, n, n / 2) {
-    while (sum[r] - sum[l - 1] <= x) {
-      _ += _S(d[l]);
-      --l;
-    }
-    diff = sum[r] - sum[l - 1] - x;
-    _ += _S(d[l]) - _S(diff);
-    if (_ > ans) ans = _;
-    _ -= _S(d[r]) + _S(d[l]) - _S(diff);
-  }
-  cout << ans;
-}
-```
+{% icodeweb cpa lang:cpp CodeForces/1358D/0.cpp %}
 
 </details>
