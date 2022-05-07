@@ -321,35 +321,7 @@ ACduck
   <details>
   <summary><font color='orange'>Show code</font></summary>
 
-  ```cpp
-  #include <bits/stdc++.h>
-  using namespace std;
-
-  const int N = 3010;
-  int g[N][N], vis[N];
-
-  int main() {
-      int n, m;
-      scanf("%d%d", &n, &m);
-      for (int i = 1, x, y; i <= m; ++i) {
-          scanf("%d%d", &x, &y);
-          g[x][y] = g[y][x] = 1;
-      }
-      for (int i = 1; i <= n; ++i) {
-          if (vis[i]) continue;
-          for (int j = i + 1; j <= n; ++j) {
-              if (vis[j] || g[i][j]) continue;
-              vis[i] = vis[j] = 1;
-              break;
-          }
-      }
-      for (int i = 1, tot = 0; i <= n && tot < n / 3; ++i) {
-          if (vis[i]) continue;
-          printf("%d%c", i, " \n"[++tot == n / 3]);
-      }
-      return 0;
-  }
-  ```
+  {% icodeweb cpa lang:cpp misc/icpc-cnwp2020/C/0.cpp %}
 
   </details>
 
@@ -357,39 +329,7 @@ ACduck
   <details>
   <summary><font color='orange'>Show code</font></summary>
 
-  ```cpp
-  #include <bits/stdc++.h>
-  using namespace std;
-  const int N = 3e3 + 5;
-
-  bool g[N][N];
-  struct node {
-      int in, id;
-      bool operator<(const node& rhs) const { return in > rhs.in; }
-  } deg[N];
-
-  int ans[N];
-
-  int main() {
-      int n, m;
-      scanf("%d%d", &n, &m);
-      for (int i = 1; i <= n; ++i) deg[i].id = i;
-      for (int i = 1, x, y; i <= m; ++i) {
-          scanf("%d%d", &x, &y);
-          g[x][y] = g[y][x] = 1;
-          ++deg[x].in;
-          ++deg[y].in;
-      }
-      sort(deg + 1, deg + n + 1);
-
-      std::mt19937 g(time(0));
-      shuffle(deg + 1, deg + n / 3 * 2 + 1, g);
-
-      sort(deg + 1, deg + n / 3 + 1, [](const node& a, const node& b) { return a.id < b.id; });
-      for (int i = 1; i <= n / 3; ++i) printf("%d%c", deg[i].id, " \n"[i == n / 3]);
-      return 0;
-  }
-  ```
+  {% icodeweb cpa lang:cpp misc/icpc-cnwp2020/C/1.cpp %}
 
   </details>
 
@@ -609,87 +549,7 @@ $$
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-```cpp
-// from dny
-#include <bits/stdc++.h>
-using namespace std;
-const int N = 2e5 + 5, MOD = 1e9 + 7;
-
-int plu(int u, int v) { return (u + v) % MOD; }
-int dec(int u, int v) { return (u - v + MOD) % MOD; }
-int mul(int u, int v) { return (int)(1LL * u * v % MOD); }
-
-int n, a[N], cnt, b[N];
-
-void dobf() {
-    int _b = (cnt & 1) ? -1 : 1;
-    --n;
-    cnt = (cnt + n) & 1;
-    for (int i = 1; i <= n; ++i) {
-        if (_b == 1)
-            b[i] = plu(a[i], a[i + 1]);
-        else
-            b[i] = dec(a[i], a[i + 1]);
-        _b = -_b;
-    }
-    for (int i = 1; i <= n; ++i) a[i] = b[i];
-}
-
-int sum(int u) { return ((1LL * u * (u + 1) / 2) & 1) ^ 1; }
-
-int fac[N], inv[N];
-int C(int u, int v) { return mul(fac[u], mul(inv[v], inv[u - v])); }
-
-void sip() {
-    --n;
-    cnt = (cnt + sum(n)) & 1;
-    int c[5] = {0, 0, 0};
-    int tim = (n - 1) >> 1;
-    for (int i = 0, xs, ia, ib; i <= tim; ++i) {
-        xs = C(tim, i);
-        ia = (i << 1 | 1);
-        ib = ((i + 1) << 1);
-        c[1] = plu(c[1], mul(xs, a[ia]));
-        c[2] = plu(c[2], mul(xs, a[ib]));
-    }
-    n = 2;
-    a[1] = c[1];
-    a[2] = c[2];
-}
-
-int qpow(int u, int v) {
-    int tmp = 1;
-    while (v > 0) {
-        if (v & 1) tmp = mul(tmp, u);
-        u = mul(u, u);
-        v >>= 1;
-    }
-    return tmp;
-}
-
-void init() {
-    fac[0] = 1;
-    int lmt = 2e5;
-    for (int i = 1; i <= lmt; ++i) fac[i] = mul(fac[i - 1], i);
-    inv[lmt] = qpow(fac[lmt], MOD - 2);
-    for (int i = lmt - 1; ~i; i--) inv[i] = mul(inv[i + 1], i + 1);
-}
-
-int main() {
-    init();
-    scanf("%d", &n);
-    for (int i = 1; i <= n; ++i) scanf("%d", &a[i]);
-    if (n == 1) {
-        printf("%d\n", a[1]);
-        return 0;
-    }
-    if (n & 1) dobf();
-    sip();
-    dobf();
-    printf("%d\n", a[1]);
-    return 0;
-}
-```
+{% icodeweb cpa lang:cpp misc/icpc-cnwp2020/F/1.cpp %}
 
 </details>
 
@@ -1027,15 +887,6 @@ Tate 对魔法非常感兴趣, 他可以通过超自然力量的干预和解释�
 ### 解题思路
 
 $O(n)$直接求
-
-<details>
-<summary><font color='orange'>Show code</font></summary>
-
-```cpp
-
-```
-
-</details>
 
 ## L - 藤本树与树
 
