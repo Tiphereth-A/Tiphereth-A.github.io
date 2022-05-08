@@ -56,12 +56,9 @@ $$
 
 ### 例题
 
-- 洛谷 [P6222 「P6156 简单题」加强版](https://www.luogu.com.cn/problem/P6222)
-  > 题解(P6156) [见此](/article/luogu-p6156)
-- 洛谷 [P5221 Product](https://www.luogu.com.cn/problem/P5221)
-  > 题解 [见此](/article/luogu-p5221)
-- 洛谷 [P3704 [SDOI2017]数字表格](https://www.luogu.com.cn/problem/P3704)
-  > 题解 [见此](/article/luogu-p3704)
+- 洛谷 [P6222 「P6156 简单题」加强版](https://www.luogu.com.cn/problem/P6222) -> {% post_link luogu-p6156 题解(P6156) %}
+- 洛谷 [P5221 Product](https://www.luogu.com.cn/problem/P5221) -> {% post_link luogu-p5221 题解 %}
+- 洛谷 [P3704 [SDOI2017]数字表格](https://www.luogu.com.cn/problem/P3704) -> {% post_link luogu-p3704 题解 %}
 - 洛谷 [P5518 [MtOI2019]幽灵乐团 / 莫比乌斯反演基础练习题](https://www.luogu.com.cn/problem/P5518)
 
 ## 统计 gcd 在某集合内的向量数

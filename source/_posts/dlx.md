@@ -428,7 +428,7 @@ $$
 
 我们发现 X 算法涉及大量的删除/恢复某行&列, 所以如果只是暴力实现, 即使它很高效, 我们也很难接受其巨大的常数
 
-所幸~~真神~~Donald E. Knuth 设计了一个数据结构(双向十字链表)使得上述操作能高效实现, 同时代码还足够简洁 (原文[点此下载](https://www-cs-faculty.stanford.edu/~knuth/fasc5c.ps.gz))
+所幸~~真神~~Donald E. Knuth 设计了一个数据结构(双向十字链表)使得上述操作能高效实现, 同时代码还足够简洁 (原文 [点此下载](https://www-cs-faculty.stanford.edu/~knuth/fasc5c.ps.gz))
 
 因为在双向十字链表上进行删除和恢复操作时可看作是指针在不停跳动, 所以这个数据结构又被称为**舞蹈链**(Dancing links), 用舞蹈链优化的 X 算法就被叫做**DLX 算法**(Dancing Links X algorithm)
 
@@ -539,7 +539,7 @@ $$
 
 - Q: 常数优化是什么
 
-  A: 见[此节内容](#dance)
+  A: 见 [此节内容](#dance)
 
 另外
 

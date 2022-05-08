@@ -414,7 +414,7 @@ $$
 - 洛谷 [P2158 [SDOI2008]仪仗队](https://www.luogu.com.cn/problem/P2158)
 - 洛谷 [P4549 【模板】裴蜀定理](https://www.luogu.com.cn/problem/P4549)
 - 洛谷 [P5656 【模板】二元一次不定方程(exgcd)](https://www.luogu.com.cn/problem/P5656)
-- 洛谷 [P3951 小凯的疑惑 / [蓝桥杯 2013 省]买不到的数目](https://www.luogu.com.cn/problem/P3951) -> [**题解**](../luogu-p3951/#more)
+- 洛谷 [P3951 小凯的疑惑 / [蓝桥杯 2013 省]买不到的数目](https://www.luogu.com.cn/problem/P3951) -> {% post_link luogu-p3951 题解 %}
 
 ## 同余
 
@@ -644,7 +644,7 @@ $$\prod_{i=1}^{\varphi(m)}a_i=\prod_{i=1}^{\varphi(m)}aa_i=a^{\varphi(m)}\prod_{
 - 洛谷 [P1593 因子和](https://www.luogu.com.cn/problem/P1593)
 - 洛谷 [P3811 【模板】乘法逆元](https://www.luogu.com.cn/problem/P3811)
 - 洛谷 [P5431 【模板】乘法逆元 2](https://www.luogu.com.cn/problem/P5431)
-- 洛谷 [P7887 「MCOI-06」Existence of Truth](https://www.luogu.com.cn/problem/P7887) -> [**题解**](../luogu-p7887/#more)
+- 洛谷 [P7887 「MCOI-06」Existence of Truth](https://www.luogu.com.cn/problem/P7887) -> {% post_link luogu-p7887 题解 %}
 - LOJ [161 乘法逆元 2](https://loj.ac/problem/161)
 
 ## 中国剩余定理

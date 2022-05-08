@@ -162,7 +162,7 @@ $$\Theta\left(n+T(n)+\sum_{i\in f([2,m]_{\N})}\log p\right)=O\left(n+\frac{m}{\s
 
 ## 代码参考
 
-> 天梯赛版 [见此](/article/gplt2021-l3-3/#代码参考)
+> 天梯赛版: {% post_link gplt2021-l3-3 %}
 
 <details>
 <summary><font color='orange'>Show code</font></summary>

@@ -92,7 +92,7 @@ In the first and only line of the standard output your program should print $\fr
 
 所以我们自然想到把所有点按度降序排个序然后取前$n\over3$个输出
 
-但是这样是有[反例](https://www.luogu.com.cn/discuss/show/272368)的
+但是这样是有 [反例](https://www.luogu.com.cn/discuss/show/272368) 的
 
 > 我们可以构造这样的图
 >

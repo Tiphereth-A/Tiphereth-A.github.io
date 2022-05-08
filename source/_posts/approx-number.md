@@ -119,7 +119,7 @@ date: 2018-08-09 09:06:31
 
 {% include_code lang:cpp approx-number/gold_search.cpp %}
 
-读者们可以在[洛谷 P3382](https://www.luogu.org/problemnew/show/P3382)中测试一下(～ o ￣ 3 ￣)～
+读者们可以在 [洛谷 P3382](https://www.luogu.org/problemnew/show/P3382) 中测试一下(～ o ￣ 3 ￣)～
 
 关于这个还有一个类似方法: 斐波那契法. 有兴趣的读者可以查阅相关资料~~才不是笔者不想写~~`_(:3」∠)_`
 
@@ -171,7 +171,7 @@ $$\displaystyle\sum_{k=0}^\infty{\frac{f^{(k)}(0)}{k!}}x^k$$
 
 另外注意应用 Maclaurin 级数并且$x$在某个范围之外时, 得到的结果可能是发散的(这个不展开讲, 有兴趣的读者可以去学习无穷级数相关知识)
 
-附上[Wikipedia](https://en.wikipedia.org/wiki/Taylor%27s_theorem)的动图
+附上 [Wikipedia](https://en.wikipedia.org/wiki/Taylor%27s_theorem) 的动图
 
 ![](https://upload.wikimedia.org/wikipedia/commons/3/31/Tayloranimation.gif)
 
@@ -211,17 +211,17 @@ $$x_{n+1}=x_n-\frac{f(x_n)}{f^\prime(x_n)}$$
 
 其中$x_n$代表第$n$次迭代
 
-附上[Wikipedia](https://en.wikipedia.org/wiki/Newton's_method)的动图
+附上 [Wikipedia](https://en.wikipedia.org/wiki/Newton's_method) 的动图
 
 ![](https://upload.wikimedia.org/wikipedia/commons/e/e0/NewtonIteration_Ani.gif)
 
 二次收敛证明: (Wikipedia 上的, 笔者翻译 QwQ)
 
-> 根据[Taylor's theorem](https://en.wikipedia.org/wiki/Taylor%27s_theorem), 任何二阶导数连续的函数$f(x)$ (设$\alpha$是根) 都可以写成
+> 根据 [Taylor's theorem](https://en.wikipedia.org/wiki/Taylor%27s_theorem), 任何二阶导数连续的函数$f(x)$ (设$\alpha$是根) 都可以写成
 >
 > $$f(\alpha)=f(x_n)+f^\prime(x_n)(\alpha-x_n)+R_1\tag{1}$$
 >
-> 由[Lagrange form of the Taylor series expansion remainder](https://en.wikipedia.org/wiki/Lagrange_remainder)得
+> 由 [Lagrange form of the Taylor series expansion remainder](https://en.wikipedia.org/wiki/Lagrange_remainder) 得
 >
 > $$R_1=\frac{1}{2!}f^{\prime\prime}(\xi_n)(\alpha-x_n)^2$$
 >
@@ -293,7 +293,7 @@ $$\frac{\pi}{2}\exp\Bigg(\frac{1}{\pi}\int_0^1{\arctan\Big({(\pi x+2)\ln{({\sqrt
 
 ### 快速求${1\over\sqrt{x}}$
 
-关于这个有一个相当有名的故事: [一个 Sqrt 函数引发的血案](https://diducoder.com/sotry-about-sqrt.html)(这是笔者能找到的最早一篇了 QwQ)
+关于这个有一个相当有名的故事: [一个 Sqrt 函数引发的血案](https://diducoder.com/sotry-about-sqrt.html) (这是笔者能找到的最早一篇了 QwQ)
 
 测试程序:
 

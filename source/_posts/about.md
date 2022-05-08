@@ -38,19 +38,19 @@ date: 2020-05-04 19:07:23
 
 ## 本博客采用的部分非通用记号/名称等
 
-| 记号                      | 含义                                   | 例子                                                                   |
-| ------------------------- | -------------------------------------- | ---------------------------------------------------------------------- |
-| $\exist_1$                | 存在唯一                               | [集合论 01 定义 - 1-4](/article/set-theory/0001/#def-1-4) 中的性质 8   |
-| $[a,b]_A$                 | $\{x\in A:a\leqslant x\leqslant b\}$   | {% post_link jsc2021 %}                                                |
-| $a..b$                    | $[a,b]_\N$                             | [随笔 - Laplace 算子的旋转不变性](/article/draft/0019/)                |
-| $\operatorname{Base}_a^b$ | $(10^b)_a$                             |
-| $\operatorname{And}$      | 按位与                                 | {% post_link luogu-p2915 %}                                            |
-| $\operatorname{Or}$       | 按位或                                 |
-| $\operatorname{Not}$      | 按位取反                               |
-| 算术-几何级数             | Arithmetico-geometric Progression, AGP | [随笔 - Arithmetico-geometric Progression (AGP)](/article/draft/0014/) |
-| $\text{Prime}^+$          | $\{p\in\N/\{1\}:\varphi(p)=p-1\}$      | {% post_link powerful-num %}                                           |
-| $\text{Prime}^-$          | $-1\cdot\text{Prime}^+$                |                                                                        |
-| $\text{Prime}$            | $\text{Prime}^+\cup\text{Prime}^-$     |                                                                        |
+| 记号                      | 含义                                   | 例子                         |
+| ------------------------- | -------------------------------------- | ---------------------------- |
+| $\exist_1$                | 存在唯一                               | {% post_link setth-01 %}     |
+| $[a,b]_A$                 | $\{x\in A:a\leqslant x\leqslant b\}$   | {% post_link jsc2021 %}      |
+| $a..b$                    | $[a,b]_\N$                             | {% post_link draft-013 %}    |
+| $\operatorname{Base}_a^b$ | $(10^b)_a$                             |                              |
+| $\operatorname{And}$      | 按位与                                 | {% post_link luogu-p2915 %}  |
+| $\operatorname{Or}$       | 按位或                                 |                              |
+| $\operatorname{Not}$      | 按位取反                               |                              |
+| 算术-几何级数             | Arithmetico-geometric Progression, AGP | {% post_link draft-012 %}    |
+| $\text{Prime}^+$          | $\{p\in\N/\{1\}:\varphi(p)=p-1\}$      | {% post_link powerful-num %} |
+| $\text{Prime}^-$          | $-1\cdot\text{Prime}^+$                |                              |
+| $\text{Prime}$            | $\text{Prime}^+\cup\text{Prime}^-$     |                              |
 
 ## FAQ
 
