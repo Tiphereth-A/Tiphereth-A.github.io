@@ -490,19 +490,7 @@ $$
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-```cpp
-struct Node {
-    struct Node* up;
-    struct Node* down;
-    struct Node* left;
-    struct Node* right;
-
-    Node(Node* const _up = nullptr,
-         Node* const _down = nullptr,
-         Node* const _left = nullptr,
-         Node* const _right = nullptr) : up(_up), down(_down), left(_left), right(_right) {}
-};
-```
+{% include_code lang:cpp dlx/DLX_nodes.cpp %}`
 
 </details>
 
@@ -511,18 +499,7 @@ struct Node {
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-```cpp
-const std::size_t MAX_SIZE = 1e5 + 5;
-struct Node {
-    std::size_t up, down, left, right;
-
-    Node(std::size_t _up = 0,
-         std::size_t _down = 0,
-         std::size_t _left = 0,
-         std::size_t _right = 0) : up(_up), down(_down), left(_left), right(_right) {}
-} nodes[MAX_SIZE];
-std::size_t cnt_node;
-```
+{% include_code lang:cpp dlx/DLX_nodes_ms.cpp %}`
 
 </details>
 
@@ -531,19 +508,7 @@ std::size_t cnt_node;
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-```cpp
-struct Node {
-    std::size_t up, down, left, right;
-    std::size_t row, col;
-
-    Node(std::size_t _up = 0,
-         std::size_t _down = 0,
-         std::size_t _left = 0,
-         std::size_t _right = 0,
-         std::size_t _row = 0,
-         std::size_t _col = 0) : up(_up), down(_down), left(_left), right(_right), row(_row), col(_col) {}
-};
-```
+{% include_code lang:cpp dlx/DLX_nodes_final.cpp %}`
 
 </details>
 
@@ -558,26 +523,7 @@ struct Node {
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-```cpp
-const std::size_t MAX_SIZE = 1e5 + 5;
-const std::size_t MAX_EDGE = 5e3 + 5;
-
-struct Node {
-    std::size_t up, down, left, right;
-    std::size_t row, col;
-
-    Node(std::size_t _up = 0,
-         std::size_t _down = 0,
-         std::size_t _left = 0,
-         std::size_t _right = 0,
-         std::size_t _row = 0,
-         std::size_t _col = 0) : up(_up), down(_down), left(_left), right(_right), row(_row), col(_col) {}
-} nodes[MAX_SIZE];
-std::size_t cnt_node;
-
-std::size_t width, height;
-std::size_t cnt_col[MAX_EDGE];
-```
+{% include_code lang:cpp dlx/DLX_nodes_final2.cpp %}`
 
 </details>
 
@@ -602,16 +548,7 @@ std::size_t cnt_col[MAX_EDGE];
   <details open>
   <summary><font color='orange'>Show code</font></summary>
 
-  ```cpp
-  #define _l(id) node[id].l
-  #define _r(id) node[id].r
-  #define _u(id) node[id].u
-  #define _d(id) node[id].d
-  #define _row(id) node[id].row
-  #define _col(id) node[id].col
-  // 沿某方向遍历一条链
-  #define _for(i, start, dir) for (std::size_t i = _##dir(start); i != start; i = _##dir(i))
-  ```
+  {% include_code lang:cpp dlx/DLX_macro.cpp %}`
 
   </details>
 
@@ -627,14 +564,7 @@ std::size_t cnt_col[MAX_EDGE];
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-```cpp
-void init(std::size_t _width, std::size_t _height) {
-    width = cnt_node = _width;
-    height = _height;
-    for (std::size_t i = 1; i <= width; ++i) node[i] = {i - 1, i + 1, i, i, 0, i};
-    node[_r(width) = 0] = {width, 1, 0, 0, 0, 0};
-}
-```
+{% include_code lang:cpp dlx/DLX_init.cpp %}`
 
 </details>
 
@@ -652,25 +582,7 @@ void init(std::size_t _width, std::size_t _height) {
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-```cpp
-/**
-  * @param std::size_t  _ln       : i
-  * @param std::size_t* _cols     : R(i)中所有结点的列编号
-  * @param std::size_t  _len_cols : |R(i)|
-  */
-void insert_row(std::size_t _ln, std::size_t* const _cols, std::size_t _len_cols) {
-    for (std::size_t i = 1; i <= _len_cols; ++i) {
-        node[cnt_node + i] = {cnt_node + i - 1, cnt_node + i + 1, _u(_cols[i]), _cols[i], _ln, _cols[i]};
-        _d(_u(_cols[i])) = cnt_node + i;
-        _u(_cols[i]) = cnt_node + i;
-        ++cnt_col[_cols[i]];
-        if (_d(_cols[i]) == _cols[i]) _d(_cols[i]) = cnt_node + i;
-    }
-    _l(cnt_node + 1) = cnt_node + _len_cols;
-    _r(cnt_node + _len_cols) = cnt_node + 1;
-    cnt_node += _len_cols;
-}
-```
+{% include_code lang:cpp dlx/DLX_insert_row.cpp %}
 
 </details>
 
@@ -690,17 +602,7 @@ void insert_row(std::size_t _ln, std::size_t* const _cols, std::size_t _len_cols
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-```cpp
-void remove_col(std::size_t _now_col) {
-    _r(_l(_now_col)) = _r(_now_col);
-    _l(_r(_now_col)) = _l(_now_col);
-    _for(i, _now_col, d) _for(j, i, r) {
-        _u(_d(j)) = _u(j);
-        _d(_u(j)) = _d(j);
-        --cnt_col[_col(j)];
-    }
-}
-```
+{% include_code lang:cpp dlx/DLX_remove_col.cpp %}
 
 </details>
 
@@ -711,15 +613,7 @@ void remove_col(std::size_t _now_col) {
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-```cpp
-void resume_col(std::size_t _now_col) {
-    _r(_l(_now_col)) = _l(_r(_now_col)) = _now_col;
-    _for(i, _now_col, u) _for(j, i, r) {
-        _u(_d(j)) = _d(_u(j)) = j;
-        ++cnt_col[_col(j)];
-    }
-}
-```
+{% include_code lang:cpp dlx/DLX_resume_col.cpp %}
 
 </details>
 
@@ -820,36 +714,7 @@ void resume_col(std::size_t _now_col) {
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-```cpp
-std::size_t find_min_col() {
-    std::size_t res = _r(0);
-    _for(i, 0, r) if (cnt_col[i] < cnt_col[res]) res = i;
-    return res;
-}
-
-/**
-  * @param std::size_t* _ans : 答案
-  * @param std::size_t& _len : 答案长度
-  * @return bool : 是否有解
-  */
-bool dance(std::size_t* _ans, std::size_t& _len) {
-    if (_r(0) == 0) return true;
-    std::size_t now_r = find_min_col();
-    remove_col(now_r);
-    _for(i, now_r, d) {
-        _ans[++_len] = _row(i);
-        _for(j, i, r) remove_col(_col(j));
-        if (dance(_ans, _len)) {
-            _for(j, i, l) resume_col(_col(j));
-            return true;
-        }
-        --_len;
-        _for(j, i, l) resume_col(_col(j));
-    }
-    resume_col(now_r);
-    return false;
-}
-```
+{% include_code lang:cpp dlx/DLX_dance.cpp %}
 
 </details>
 

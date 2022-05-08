@@ -19,15 +19,7 @@ date: 2020-06-17 09:22:53
 
 利用宏实现
 
-```c
-
-#define min(x, y) ({                   \
-    typeof(x) _min_1 = (x);            \
-    typeof(y) _min_2 = (y);            \
-    (void)(&_min_1 == &_min_2);        \
-    _min_1 < _min_2 ? _min_1 : _min_2; \
-  })
-```
+{% include_code lang:c draft-002/1.c %}
 
 其中`(void)(&_min_1 == &_min_2);`利用了不同类型指针做逻辑比较在编译过程会报错来保证两参数类型相同
 
@@ -55,32 +47,7 @@ C11 中添加了`_Generic`关键字, 使得编写泛型函数更方便了
 
 例如[^2]:
 
-```c
-
-#include <math.h>
-
-#include <stdio.h>
-
-#define GENERAL_ABS(x) _Generic((x), \
-    int    : abs,                    \
-    float  : fabsf,                  \
-    double : fabs)(x)
-
-int main(void) {
-  printf("intabs:%d\n", GENERAL_ABS(-12));
-  printf("floatabs:%f\n", GENERAL_ABS(-12.04f));
-  printf("doubleabs:%f\n", GENERAL_ABS(-13.09876));
-
-  int a = 10;
-  int b = 0, c = 0;
-
-  _Generic(a + 0.1f, int : b, float : c, default : b)++;
-  printf("b=%d,c=%d\n", b, c);
-
-  _Generic(a += 1.1f, int : b, float : c, default : b)++;
-  printf("a=%d,b=%d,c=%d\n", a, b, c);
-}
-```
+{% include_code lang:c draft-002/2.c %}
 
 输出:
 

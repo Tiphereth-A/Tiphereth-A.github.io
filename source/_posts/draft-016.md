@@ -26,12 +26,7 @@ date: 2021-11-04 20:21:45
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-```c
-#define _RM4(_1, _2, _3, _4, ...) __VA_ARGS__
-#define RM4(...) _RM4(__VA_ARGS__)
-#define _SEL4(_1, _2, _3, _4, ...) _1, _2, _3, _4
-#define SEL4(...) _SEL4(__VA_ARGS__)
-```
+{% include_code lang:c draft-016/SEL4.c %}`
 
 </details>
 
@@ -46,11 +41,7 @@ date: 2021-11-04 20:21:45
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-```c
-#define _P2_HELPER(a, b, ...) a, b, __VA_ARGS__, b, a, __VA_ARGS__
-#define _P3_HELPER(a, b, c, ...) _P2_HELPER(a, b, c, __VA_ARGS__), _P2_HELPER(b, c, a, __VA_ARGS__), _P2_HELPER(c, a, b, __VA_ARGS__)
-#define P4(a, b, c, d) _P3_HELPER(a, b, c, d), _P3_HELPER(b, c, d, a), _P3_HELPER(c, d, a, b), _P3_HELPER(d, a, b, c)
-```
+{% include_code lang:c draft-016/P4.c %}`
 
 </details>
 
@@ -83,10 +74,7 @@ b, a, d, c, | b, d, a, c, | d, b, a, c
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-```c
-#define P3(a, b, c) _P2_HELPER(a, b, c), _P2_HELPER(b, c, a), _P2_HELPER(c, a, b)
-#define P4_3(a, b, c, d) P3(a, b, c), P3(b, c, d), P3(c, d, a), P3(d, a, b)
-```
+{% include_code lang:c draft-016/P4_3.c %}`
 
 </details>
 
@@ -97,11 +85,7 @@ b, a, d, c, | b, d, a, c, | d, b, a, c
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-```c
-#define _CPROD1_4_HELPER(a, b, c, d, ...) a, __VA_ARGS__, b, __VA_ARGS__, c, __VA_ARGS__, d, __VA_ARGS__
-#define _CPROD2_4_HELPER(a, b, c, d, ...) _CPROD1_4_HELPER(a, b, c, d, a, __VA_ARGS__), _CPROD1_4_HELPER(a, b, c, d, b, __VA_ARGS__), _CPROD1_4_HELPER(a, b, c, d, c, __VA_ARGS__), _CPROD1_4_HELPER(a, b, c, d, d, __VA_ARGS__)
-#define CPROD3_4(a, b, c, d) _CPROD2_4_HELPER(a, b, c, d, a), _CPROD2_4_HELPER(a, b, c, d, b), _CPROD2_4_HELPER(a, b, c, d, c), _CPROD2_4_HELPER(a, b, c, d, d)
-```
+{% include_code lang:c draft-016/CPROD3_4.c %}`
 
 </details>
 
