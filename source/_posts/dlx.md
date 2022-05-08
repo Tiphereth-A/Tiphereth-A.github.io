@@ -954,7 +954,7 @@ bool dance(std::size_t* _ans, std::size_t& _len) {
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp dlx/multi_DLX.cpp %}
+{% include_code lang:cpp dlx/multi_DLX.hpp %}
 
 </details>
 

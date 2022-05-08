@@ -163,14 +163,7 @@ $$\lim_{n\to\infty}{\pi(n)\over\frac{n}{\ln n}}=1$$
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-```cpp
-bool is_prime(int n) {
-    if(n == 1) return false;
-    for(int i = 2; i <= sqrt(n); ++i)
-       if(n % i == 0) return false;
-    return true;
-}
-```
+{% include_code lang:cpp nt-1/is_prime.cpp %}
 
 </details>
 
@@ -182,7 +175,7 @@ bool is_prime(int n) {
 
 因其原理涉及到后面要讲的概念, 故此处略去相关讲解
 
-> Miller-Rabin 算法和用于质因数分解的 Pollard-Rho 算法的模板 [点此](../p-test-mrpr/)
+> Miller-Rabin 算法和用于质因数分解的 Pollard-Rho 算法的模板 -> {% post_link p-test-mrpr %}
 
 [^1]: 可以用 FFT 优化到 $O(k\log^2 n\log\log n\log\log\log n)$ , 参见 [此处](https://en.wikipedia.org/wiki/Miller%E2%80%93Rabin_primality_test#Complexity)
 [^2]: 若广义 Riemann 猜想(GRH)得到证实, 则可将检验的数换为 $2..2\lfloor\log^2 n\rfloor$ 从而使复杂度变为 $O(\log^5n)$, 参见 [此处](https://www.ams.org/mcom/1990-55-191/S0025-5718-1990-1023756-8/S0025-5718-1990-1023756-8.pdf)
@@ -209,15 +202,7 @@ bool is_prime(int n) {
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-```cpp
-void Eratosthenes_sieve(int n) {
-    for (int i = 2; i <= n; ++i)
-        if (!vis[i]) {
-            prime[++cnt] = i;
-            for (int j = i * 2; j <= n; j += i) vis[j] = 1;
-        }
-}
-```
+{% include_code lang:cpp nt-1/Eratosthenes_sieve.cpp %}
 
 </details>
 
@@ -247,21 +232,7 @@ $$
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-```cpp
-void Euler_sieve(int n) {
-    for(int i = 2; i <= n; ++i) {
-        if(!vis[i]) prime[++cnt] = i;
-        for(int j = 1;j <= cnt && i * prime[j] <= n; ++j) {
-            vis[i * prime[j]] = true;
-            // 换言之, i 之前被 prime[j] 筛过了
-            // 由于 prime 里面质数是从小到大的, 所以 i 乘上其他的质数的结果一定也
-            // 是 prime[j] 的倍数 它们都被筛过了, 就不需要再筛了, 所以这里直接
-            // break 掉就好了
-            if(i % prime[j] == 0) break;
-        }
-    }
-}
-```
+{% include_code lang:cpp nt-1/Euler_sieve.cpp %}
 
 </details>
 
@@ -352,9 +323,7 @@ $$a\mid(\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n})=d$$
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-```cpp
-int gcd(int a,int b) { return b == 0 ? a : gcd(b, a % b); }
-```
+{% include_code lang:cpp nt-1/gcd.cpp %}
 
 </details>
 
@@ -433,18 +402,7 @@ $$
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-```cpp
-int exgcd(int a, int b, int& x, int& y) {
-    if (b == 0) {
-        x = 1;
-        y = 0;
-        return a;
-    }
-    int res = exgcd(b, a % b, y, x);
-    y -= a / b * x;
-    return res;
-}
-```
+{% include_code lang:cpp nt-1/exgcd.cpp %}
 
 </details>
 
@@ -653,10 +611,7 @@ $$\prod_{i=1}^{\varphi(m)}a_i=\prod_{i=1}^{\varphi(m)}aa_i=a^{\varphi(m)}\prod_{
    <details>
    <summary><font color='orange'>Show code</font></summary>
 
-   ```cpp
-   inv[1] = 1;
-   for (int i = 2; i <= n; ++i) inv[i] = (int64_t)(p - p / i)  * inv[p % i] % p;
-   ```
+   {% include_code lang:cpp nt-1/inverse_n1.cpp %}
 
    </details>
 
@@ -678,11 +633,7 @@ $$\prod_{i=1}^{\varphi(m)}a_i=\prod_{i=1}^{\varphi(m)}aa_i=a^{\varphi(m)}\prod_{
    <details>
    <summary><font color='orange'>Show code</font></summary>
 
-   ```cpp
-   s[0] = inv[1] = 1;
-   for (int i = 1; i <= n; ++i) s[i] = s[i - 1] * a[i] % p;
-   for (int i = n, v = qpow(s[n], p - 2); i > 1; v = v * a[i--] % p) inv[i] = v * s[i - 1] % p;
-   ```
+   {% include_code lang:cpp nt-1/inverse_n2.cpp %}
 
    </details>
 
@@ -801,58 +752,7 @@ $$x\equiv m_1k_1+b_1\equiv m_2k_2+b_2\pmod{[m_1,m_2]}$$
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-```cpp
-namespace EXCRT {
-using T = int64_t;
-T abs(T a) { return a < 0 ? -a : a; }
-T mod_mul(T a, T b, T mod) {
-    T res = 0;
-    for (; b; b >>= 1, (a += a) %= mod)
-        if (b & 1) (res += a) %= mod;
-    return res;
-}
-T gcd(T a, T b) { return b == 0 ? a : gcd(b, a % b); }
-T exgcd(T a, T b, T& x, T& y) {
-    if (b == 0) {
-        x = 1;
-        y = 0;
-        return a;
-    }
-    T res = exgcd(b, a % b, y, x);
-    y -= a / b * x;
-    return res;
-}
-
-bool solve_2equ(T b1, T b2, T m1, T m2, T& x, T& M) {
-    ((b1 %= m1) += m1) %= m1;
-    ((b2 %= m2) += m2) %= m2;
-    T g = gcd(m1, m2), r = b2 - b1;
-    M = m1 / g * m2;
-    if (abs(r) % g) return false;
-    T k1, k2;
-    exgcd(m1, m2, k1, k2);
-    if (r < 0) k1 = -k1;
-    ((k1 %= M) += M) %= M;
-    k1 = mod_mul(k1, abs(r) / g, M);
-    x = ((mod_mul(k1, m1, M) + b1) % M + M) % M;
-    return true;
-}
-
-bool excrt(T b[], T m[], const int len, T& res) {
-    T pre_b = b[1], pre_m = m[1];
-    T now_b, now_m;
-    for (int i = 2; i <= len; ++i) {
-        now_b = b[i];
-        now_m = m[i];
-        if (!solve_2equ(pre_b, now_b, pre_m, now_m, pre_b, pre_m))
-            return false;
-    }
-    res = pre_b;
-    return true;
-}
-}  // namespace EXCRT
-using EXCRT::excrt;
-```
+{% include_code lang:cpp excrt/EXCRT.hpp %}
 
 </details>
 

@@ -31,6 +31,6 @@ date: 2021-07-28 21:40:03
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp fast-io/FastIO.cpp %}
+{% include_code lang:cpp fast-io/FastIO.hpp %}
 
 </details>

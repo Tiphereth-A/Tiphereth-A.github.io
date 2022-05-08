@@ -19,6 +19,6 @@ date: 2017-10-09 21:41:33
 <details open='open'>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp bfs/BFS.cpp %}
+{% include_code lang:cpp bfs/BFS.hpp %}
 
 </details>

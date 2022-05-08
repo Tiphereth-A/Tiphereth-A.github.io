@@ -85,6 +85,6 @@ $$x\equiv m_1k_1+b_1\equiv m_2k_2+b_2\pmod{[m_1,m_2]}$$
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp excrt/EXCRT.cpp %}
+{% include_code lang:cpp excrt/EXCRT.hpp %}
 
 </details>

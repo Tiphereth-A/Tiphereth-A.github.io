@@ -95,7 +95,7 @@ $$d(A)=\sum_{i=1}^n|D_i(A)|+1=\sum_{i=1}^n p_i(n-i)!+1$$
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp cantor-exp/Cantor_expansion.cpp %}
+{% include_code lang:cpp cantor-exp/Cantor_expansion.hpp %}
 
 </details>
 
@@ -139,7 +139,7 @@ $$p_i=\left\lfloor{d(A)-\sum_{j=1}^{i-1}p_j(n-j)!-1\over (n-i)!}\right\rfloor$$
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp cantor-exp/inverse_Cantor_expansion.cpp %}
+{% include_code lang:cpp cantor-exp/inverse_Cantor_expansion.hpp %}
 
 </details>
 

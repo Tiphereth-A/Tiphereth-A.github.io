@@ -32,6 +32,6 @@ date: 2021-12-21 21:21:01
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp fast-str2uint/dec2uint_mod.cpp %}
+{% include_code lang:cpp fast-str2uint/dec2uint_mod.hpp %}
 
 </details>

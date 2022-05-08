@@ -67,11 +67,7 @@ zkw 线段树则正好反过来, 即**自底向上**
 
 首先是定义变量:
 
-```cpp
-const int MAXN = 2e5 + 5;
-int tree[MAXN<<2]; //tree是线段树数组
-int n, N=1;        //n是原数组实际长度, N下面会解释
-```
+{% include_code lang:cpp from:4 to:6 zkw-segment-tree/seg_zkw_singlem_rangeq.cpp %}
 
 我们以下图为例
 
@@ -93,19 +89,7 @@ int n, N=1;        //n是原数组实际长度, N下面会解释
 
 根据这一点, 我们可以这样建树:
 
-```cpp
-
-#define fp(i,l,r) for(register int i=(l);i<=(r);++i)
-
-#define fd(i,r,l) for(register int i=(r);i>=(l);--i)
-
-void build() {
-  scanf("%d", &n);
-  for(; N <= n+1; N <<= 1);
-  fp(i, N+1, N+n) scanf("%d", tree+i); // 等价于scanf("%d", &tree[i])
-  fd(i, N-1, 1) tree[i] = tree[i << 1] + tree[i << 1 | 1]; // 等价于tree[i] = tree[i*2] + tree[i*2 + 1]
-}
-```
+{% include_code lang:cpp from:8 to:16 zkw-segment-tree/seg_zkw_singlem_rangeq.cpp %}
 
 大家可以和递归版线段树做一下对比
 
@@ -125,11 +109,7 @@ void build() {
 
 实现很简单, 所以直接放代码
 
-```cpp
-void modify(int x, int k) {
-  for(x += N; x; x >>= 1) tree[x] += k;
-}
-```
+{% include_code lang:cpp from:18 to:20 zkw-segment-tree/seg_zkw_singlem_rangeq.cpp %}
 
 完了?Σ(°Д°;
 
@@ -169,24 +149,7 @@ ans=<font color=#b5e61d>[2,2]+[3,3]+[4,4]+[5,5]+[6,6]</font>
 
 下面是代码
 
-```cpp
-il int query(int s, int t) {
-  int ans = 0;
-
-  // 这个for的信息量有点大
-  // 第一个分号前面就是将s和t初始化
-  // s ^ r ^ 1就是判断对应结点的父结点是否相同
-  // 很容易看出来当对应结点互为左右儿子时, s^t = 1, 再^1之后就是0
-  // 而其他情况时, s^t大于1, ^1后当然不是0
-  // 第二个分号后面就是s,t上移
-  for(s = N + s - 1, r = N + r + 1; s ^ r ^ 1; s >>= 1, r >>= 1) {
-    if(~s&1) ans += tree[s^1];
-    if(r&1) ans += tree[r^1];
-    // 这两句的含义对照上面的实现过程看就能明白
-  }
-  return ans;
-}
-```
+{% include_code lang:cpp from:22 to:36 zkw-segment-tree/seg_zkw_singlem_rangeq.cpp %}
 
 上面的那两个疑问现在可以解释了
 
@@ -214,42 +177,12 @@ orz
 
 **单点修改+区间查询**完结, 整理一下代码:
 
-```cpp
-//单点修改+区间查询
+<details>
+<summary><font color='orange'>Show code</font></summary>
 
-#include<cstdio>
+{% include_code lang:cpp zkw-segment-tree/seg_zkw_singlem_rangeq.cpp %}
 
-#define MAXN 200005
-
-#define fp(i,l,r) for(register int i=(l);i<=(r);++i)
-
-#define fd(i,r,l) for(register int i=(r);i>=(l);--i)
-
-int tree[MAXN<<2];
-int n, N=1;
-
-void build() {
-  scanf("%d", &n);
-  for(; N <= n+1; N <<= 1);
-  fp(i, N+1, N+n) scanf("%d", tree+i);
-  fd(i, N-1, 1) tree[i] = tree[i << 1] + tree[i << 1 | 1];
-}
-void modify(int x, int k) {
-  for(x += N; x; x >>= 1) tree[x] += k;
-}
-int query(int s, int t) {
-  int ans = 0;
-  for(s = N + s - 1, r = N + r + 1; s ^ r ^ 1; s >>= 1, r >>= 1) {
-    if(~s&1) ans += tree[s^1];
-    if(r&1) ans += tree[r^1];
-  }
-  return ans;
-}
-
-int main() {
-  // 按需补充吧
-}
-```
+</details>
 
 #### 区间修改+区间查询
 
@@ -265,9 +198,7 @@ int main() {
 
 这里我们采用**标记永久化**的思想(就是**不下推 lazy tag**~~让他彻底 lazy 下去~~)
 
-```cpp
-int add[MAXN<<2]; //这个lazy tag表示当前结点已经更新完, 需要更新子结点
-```
+{% include_code lang:cpp from:6 to:6 zkw-segment-tree/seg_zkw_rangem_rangeq1.cpp %}
 
 我们需要在自底向上时更新结点的值, 所以我们还需要一个变量记录该结点**包含元素的个数**
 
@@ -287,27 +218,7 @@ int add[MAXN<<2]; //这个lazy tag表示当前结点已经更新完, 需要更�
 
 下面是代码
 
-```cpp
-void update(int s, int t, int k) {
-  int lNum=0, rNum=0, nNum=1;
-  //lNum:  s一路走来已经包含了几个数
-  //rNum:  t一路走来已经包含了几个数
-  //nNum:  本层每个结点包含几个数
-  for(s = N+s-1, t = N+t+1; s^t^1; s >>= 1, t >>= 1, nNum <<= 1) {
-    //更新tree
-    tree[s] += k*lNum;
-    tree[t] += k*rNum;
-    //处理add
-    if(~s&1) {add[s^1] += k; tree[s^1] += k*nNum; lNum += nNum;}
-    if(t&1) {add[t^1] += k; tree[t^1] += k*nNum; rNum += nNum;}
-  }
-  //更新上层tree
-  for(; s; s >>= 1, t >>= 1) {
-    tree[s] += k*lNum;
-    tree[t] += k*rNum;
-  }
-}
-```
+{% include_code lang:cpp from:19 to:37 zkw-segment-tree/seg_zkw_rangem_rangeq1.cpp %}
 
 ##### 区间查询
 
@@ -321,81 +232,16 @@ void update(int s, int t, int k) {
 
 同样, 这个也需要上推到根结点
 
-```cpp
-il int query(int s, int t){
-  int lNum=0, rNum=0, nNum=1;
-  int ans=0;
-  for(s = N+s-1, t = N+t+1; s^t^1; s >>= 1, t >>= 1, nNum <<= 1) {
-    //根据标记更新
-    if(add[s]) ans += add[s]*lNum;
-    if(add[t]) ans += add[t]*rNum;
-    //常规求和
-    if(~s&1) {ans += tree[s^1]; lNum += nNum;}
-    if(t&1) {ans += tree[t^1]; rNum += nNum;}
-  }
-  //处理上层标记
-  for(; s; s >>= 1, t >>= 1) {
-    ans += add[s]*lNum;
-    ans += add[t]*rNum;
-  }
-  return ans;
-}
-```
+{% include_code lang:cpp from:39 to:56 zkw-segment-tree/seg_zkw_rangem_rangeq1.cpp %}
 
 区间修改+区间查询告一段落, 整理一下代码:
 
-```cpp
-//区间修改+区间查询1
+<details>
+<summary><font color='orange'>Show code</font></summary>
 
-#include<cstdio>
+{% include_code lang:cpp zkw-segment-tree/seg_zkw_rangem_rangeq1.cpp %}
 
-#define MAXN 200005
-
-#define fp(i,l,r) for(register int i=(l);i<=(r);++i)
-
-#define fd(i,r,l) for(register int i=(r);i>=(l);--i)
-
-int tree[MAXN<<2], add[MAXN<<2];
-int n, N=1;
-
-void build() {
-  scanf("%d", &n);
-  for(; N <= n+1; N <<= 1);
-  fp(i, N+1, N+n) scanf("%d", tree+i);
-  fd(i, N-1, 1) tree[i] = tree[i << 1] + tree[i << 1 | 1];
-}
-void update(int s, int t, int k) {
-  int lNum=0, rNum=0, nNum=1;
-  for(s = N+s-1, t = N+t+1; s^t^1; s >>= 1, t >>= 1, nNum <<= 1) {
-    tree[s] += k*lNum;
-    tree[t] += k*rNum;
-    if(~s&1) {add[s^1] += k; tree[s^1] += k*nNum; lNum += nNum;}
-    if(t&1) {add[t^1] += k; tree[t^1] += k*nNum; rNum += nNum;}
-  }
-  for(; s; s >>= 1, t >>= 1) {
-    tree[s] += k*lNum;
-    tree[t] += k*rNum;
-  }
-}
-int query(int s, int t){
-  int lNum=0, rNum=0, nNum=1;
-  int ans=0;
-  for(s = N+s-1, t = N+t+1; s^t^1; s >>= 1, t >>= 1, nNum <<= 1) {
-    if(add[s]) ans += add[s]*lNum;
-    if(add[t]) ans += add[t]*rNum;
-    if(~s&1) {ans += tree[s^1]; lNum += nNum;}
-    if(t&1) {ans += tree[t^1]; rNum += nNum;}
-  }
-  for(; s; s >>= 1, t >>= 1) {
-    ans += add[s]*lNum;
-    ans += add[t]*rNum;
-  }
-  return ans;
-}
-int main() {
-  // 同上
-}
-```
+</details>
 
 ##### 区间修改+区间查询的空间优化
 
@@ -437,58 +283,11 @@ _~~zkw:狗拿耗子, 猫下岗了~~_
 
 直接放代码
 
-```cpp
-void build() {
-  for (N = 1; N <= n + 1; N <<= 1);
-  fp(i, N + 1, N + n) scanf("%d", tree + i);
-  fd(i, N - 1, 1) {
-    tree[i] = min(tree[i << 1], tree[i << 1 | 1]);
-    tree[i << 1] -= tree[i];
-    tree[i << 1 | 1] -= tree[i];
-  }
-}
-void update(int s, int t, int k) {
-  int tmp;
-  for (s += N - 1, t += N + 1; s ^ t ^ 1; s >>= 1, t >>= 1) {
-    if (~s & 1) tree[s ^ 1] += k;
-    if (t & 1) tree[t ^ 1] += k;
-    tmp = min(tree[s], tree[s ^ 1]);
-    tree[s] -= tmp;
-    tree[s ^ 1] -= tmp;
-    tree[s >> 1] += tmp;
-    tmp = min(tree[t], tree[t ^ 1]);
-    tree[t] -= tmp;
-    tree[t ^ 1] -= tmp;
-    tree[t >> 1] += tmp;
-  }
-  for (; s != 1; s >>= 1) {  //记得要上推到根结点
-    tmp = min(tree[s], tree[s ^ 1]);
-    tree[s] -= tmp;
-    tree[s ^ 1] -= tmp;
-    tree[s >> 1] += tmp;
-  }
-}
-int query(int s, int t) {  //闭区间
-  int sAns = 0, tAns = 0;
-  s += N, t += N;
-  if (s != t) {  //防止查询单点时死循环
-    for (; s ^ t ^ 1; s >>= 1, t >>= 1) {
-      sAns += tree[s];
-      tAns += tree[t];
-      if (~s & 1) sAns = min(sAns, tree[s ^ 1]);
-      if (t & 1) tAns = min(tAns, tree[t ^ 1]);
-    }
-  }
-  int ans = min(sAns + tree[s], tAns + tree[t]);
-  while (s > 1) ans += tree[s >>= 1];
-  return ans;
-}
-
-```
+{% include_code lang:cpp zkw-segment-tree/seg_zkw_rangem_rangeq1.cpp %}
 
 ## 大数据测试
 
-**[测试已更新](zkw-segment-tree-test2/)**
+{% post_link zkw-segment-tree-test2 测试已更新 %}
 
 先来看一看参赛选手:
 
@@ -524,7 +323,7 @@ int query(int s, int t) {  //闭区间
 
 为了~~防止 zkw 线段树被吊打得太惨~~反应算法真实水平以及模拟 NOIp 竞赛环境, 下面就不开 O2 了
 
-在这里先放一下结果, 测试代码和大数据放在[另一篇文章](zkw-segment-tree-test1/)里
+在这里先放一下结果, 测试代码和大数据放在 {% post_link zkw-segment-tree-test1 另一篇文章 %} 里
 
 保证所有输入数据在 unsigned int64_t 范围内, 结果对$2^{64}$取模, 表格中的时间为平均值
 
