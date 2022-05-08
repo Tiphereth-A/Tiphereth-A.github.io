@@ -75,16 +75,7 @@ date: 2021-11-05 01:01:36
    <details>
    <summary><font color='orange'>Show code</font></summary>
 
-   ```c
-   #define _CPROD1_4_HELPER(a, b, c, d, ...) a, __VA_ARGS__, b, __VA_ARGS__, c, __VA_ARGS__, d, __VA_ARGS__
-
-   #define _CPROD2_4_HELPER(a, b, c, d, ...) _CPROD1_4_HELPER(a, b, c, d, a, __VA_ARGS__), _CPROD1_4_HELPER(a, b, c, d, b, __VA_ARGS__), _CPROD1_4_HELPER(a, b, c, d, c, __VA_ARGS__), _CPROD1_4_HELPER(a, b, c, d, d, __VA_ARGS__)
-
-   #define CPROD3_4(a, b, c, d) _CPROD2_4_HELPER(a, b, c, d, a), _CPROD2_4_HELPER(a, b, c, d, b), _CPROD2_4_HELPER(a, b, c, d, c), _CPROD2_4_HELPER(a, b, c, d, d)
-
-   // use this
-   #define OPANDS CPROD3_4(+, -, *, /)
-   ```
+   {% include_code lang:c luogu-p2277/OPANDS.c %}
 
    </details>
 
@@ -93,17 +84,7 @@ date: 2021-11-05 01:01:36
    <details>
    <summary><font color='orange'>Show code</font></summary>
 
-   ```c
-   #define _RM3(_1, _2, _3, ...) __VA_ARGS__
-   #define _SEL3(_1, _2, _3, ...) _1, _2, _3
-
-   // use this
-   // remove first 3 elements
-   #define RM3(...) _RM3(__VA_ARGS__)
-   // use this
-   // select first 3 elements
-   #define SEL3(...) _SEL3(__VA_ARGS__)
-   ```
+   {% include_code lang:c luogu-p2277/RMSEL.c %}
 
    </details>
 
@@ -112,14 +93,7 @@ date: 2021-11-05 01:01:36
    <details>
    <summary><font color='orange'>Show code</font></summary>
 
-   ```c
-   #define _P2_HELPER(a, b, ...) a, b, __VA_ARGS__, b, a, __VA_ARGS__
-
-   #define _P3_HELPER(a, b, c, ...) _P2_HELPER(a, b, c, __VA_ARGS__), _P2_HELPER(b, c, a, __VA_ARGS__), _P2_HELPER(c, a, b, __VA_ARGS__)
-
-   // use this
-   #define P4 _P3_HELPER(a, b, c, d), _P3_HELPER(b, c, d, a), _P3_HELPER(c, d, a, b), _P3_HELPER(d, a, b, c)
-   ```
+   {% include_code lang:c luogu-p2277/P4.c %}
 
    </details>
 
@@ -128,17 +102,7 @@ date: 2021-11-05 01:01:36
    <details>
    <summary><font color='orange'>Show code</font></summary>
 
-   ```c
-   #define _RM4(_1, _2, _3, _4, ...) __VA_ARGS__
-   #define _SEL4(_1, _2, _3, _4, ...) _1, _2, _3, _4
-
-   // use this
-   // remove first 4 elements
-   #define RM4(...) _RM4(__VA_ARGS__)
-   // use this
-   // select first 4 elements
-   #define SEL4(...) _SEL4(__VA_ARGS__)
-   ```
+   {% include_code lang:c luogu-p2277/RMSEL4.c %}
 
    </details>
 
@@ -154,27 +118,12 @@ date: 2021-11-05 01:01:36
 
    这个写成宏定义就很简单
 
-     <details>
-     <summary><font color='orange'>Show code</font></summary>
+   <details>
+   <summary><font color='orange'>Show code</font></summary>
 
-   ```c
-   #define ___CALC0(a, b, c, d, opab, opbc, opcd) Node(0, a, b, c, d, #opab, #opbc, #opcd, ((double(a) opab double(b))opbc double(c))opcd double(d))
+   {% include_code lang:c luogu-p2277/__CALC.c %}
 
-   #define ___CALC1(a, b, c, d, opab, opbc, opcd) Node(1, a, b, c, d, #opab, #opbc, #opcd, (double(a) opab(double(b) opbc double(c)))opcd double(d))
-
-   #define ___CALC2(a, b, c, d, opab, opbc, opcd) Node(2, a, b, c, d, #opab, #opbc, #opcd, double(a) opab((double(b) opbc double(c))opcd double(d)))
-
-   #define ___CALC3(a, b, c, d, opab, opbc, opcd) Node(3, a, b, c, d, #opab, #opbc, #opcd, double(a) opab(double(b) opbc(double(c) opcd double(d))))
-
-   #define ___CALC4(a, b, c, d, opab, opbc, opcd) Node(4, a, b, c, d, #opab, #opbc, #opcd, ((double(a) opab double(b))opbc(double(c) opcd double(d))))
-
-   #define ___CALC(a, b, c, d, opab, opbc, opcd) ___CALC0(a, b, c, d, opab, opbc, opcd), ___CALC1(a, b, c, d, opab, opbc, opcd), ___CALC2(a, b, c, d, opab, opbc, opcd), ___CALC3(a, b, c, d, opab, opbc, opcd), ___CALC4(a, b, c, d, opab, opbc, opcd)
-
-   // use this
-   #define __CALC(...) ___CALC(__VA_ARGS__)
-   ```
-
-     </details>
+   </details>
 
 接下来就是把这三部分拼接起来就好了
 

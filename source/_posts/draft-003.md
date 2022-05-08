@@ -14,14 +14,7 @@ date: 2020-06-22 09:33:45
 
 <!-- more -->
 
-```c
-#include <stdio.h>
-int main() {
-  int x = 10;
-  while (x --> 0) // x goes to 0
-    printf("%d ", x);
-}
-```
+{% include_code lang:c draft-003/1.c %}
 
 这段代码的输出是
 
@@ -37,19 +30,4 @@ int main() {
 
 我们也可以一定程度上假装用 `C` 写 `Pascal` 程序
 
-```c
-#define upto   ++<
-#define downto -->
-#define for while(
-#define do )
-#define begin {
-#define end }
-
-#include <stdio.h>
-int main() {
-  int x = 10;
-  for x downto 0 do begin
-    printf("%d ", x);
-  end
-}
-```
+{% include_code lang:c draft-003/2.c %}
