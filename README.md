@@ -4,6 +4,9 @@
 ![GitHub commit activity (branch)](https://img.shields.io/github/commit-activity/m/Tiphereth-A/Tiphereth-A.github.io/master)
 ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/Tiphereth-A/Tiphereth-A.github.io/master)
 
+![Chromium HSTS preload](https://img.shields.io/hsts/preload/tifa-233.xyz)
+![Security Headers](https://img.shields.io/security-headers?url=https%3A%2F%2Ftifa-233.xyz)
+
 [![license](https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png)](https://creativecommons.org/licenses/by-nc-sa/4.0)
 
 My blog, powered by [Hexo](https://hexo.io/) & [NexT.Gemini](https://theme-next.js.org/)
