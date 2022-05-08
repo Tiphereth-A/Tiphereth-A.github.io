@@ -1,4 +1,4 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 
 #include "ModInteger.hpp"
 
@@ -17,7 +17,7 @@ int main() {
 
     decltype(a) b(a), c = a;
 
-    c = b.transform_unary_raw([](const int64_t& x) { return x + 3; }).transform_binary_raw(a, std::multiplies<int64_t>()).safe_mod().inverse();
+    c = b.transform_unary_raw([](const int64_t &x) { return x + 3; }).transform_binary_raw(a, std::multiplies<int64_t>()).safe_mod().inverse();
 
     cout << c << endl;
 

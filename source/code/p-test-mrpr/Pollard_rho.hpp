@@ -9,7 +9,7 @@ inline constexpr signed_data_t mul_mod(signed_data_t a, signed_data_t b, unsigne
     return ret < 0 ? ret + mod : ret;
 }
 
-inline constexpr data_type pow_mod(unsigned_data_t a, unsigned_data_t b, const unsigned_data_t& mod) {
+inline constexpr data_type pow_mod(unsigned_data_t a, unsigned_data_t b, const unsigned_data_t &mod) {
     data_type res(1);
     a %= mod;
     for (; b; b >>= 1, a = mul_mod(a, a, mod))
@@ -18,10 +18,9 @@ inline constexpr data_type pow_mod(unsigned_data_t a, unsigned_data_t b, const u
 }
 
 inline constexpr unsigned_data_t gcd(unsigned_data_t m, unsigned_data_t n) {
-
 #if __cplusplus >= 201703L
 
-#   return std::gcd(m, n);
+#return std::gcd(m, n);
 
 #else
     return std::__gcd(m, n);
@@ -32,7 +31,7 @@ namespace Primetest_miller_rabin {
 // for int32
 // constexpr unsigned_data_t bases[] = {2, 7, 61};
 
-//for int64
+// for int64
 constexpr unsigned_data_t bases[] = {2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37};
 
 inline constexpr bool is_prime(unsigned_data_t n) {
@@ -76,7 +75,7 @@ inline data_type pollard_rho(const data_type x, const data_type y) {
     }
 }
 
-inline void resolve(data_type x, data_type& ans) {
+inline void resolve(data_type x, data_type &ans) {
     if (!(x ^ 1) || x <= ans) return;
     if (is_prime(x)) {
         if (ans < x) ans = x;

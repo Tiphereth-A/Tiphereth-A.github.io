@@ -10,12 +10,13 @@ class Huffman_tree {
     std::size_t cnt_nodes, max_child_size, leaves;
 
   public:
-    Huffman_tree(std::size_t max_child = 2) : max_child_size(max_child) {
+    Huffman_tree(std::size_t max_child = 2):
+        max_child_size(max_child) {
         if (_clear) memset(nodes, cnt_nodes = leaves = _build = 0, sizeof(nodes));
     }
     void clear() { memset(nodes, cnt_nodes = leaves = max_child_size = _build = 0, sizeof(nodes)); }
 
-    void build(const std::vector<_T>& frenqucy, std::size_t max_child) {
+    void build(const std::vector<_T> &frenqucy, std::size_t max_child) {
         if (_build) return;
         max_child_size = max_child;
         cnt_nodes = frenqucy.size();
@@ -41,7 +42,7 @@ class Huffman_tree {
     }
 
     // encode(frenqucy, char_set)[i] means the Huffman code of frenqucy[i]
-    std::vector<std::string> encode(const std::vector<_T>& frenqucy, const std::string& char_set = "01") {
+    std::vector<std::string> encode(const std::vector<_T> &frenqucy, const std::string &char_set = "01") {
         if (!_build) build(frenqucy, char_set.length());
         std::vector<std::string> ret;
         ret.resize(frenqucy.size());
@@ -50,9 +51,9 @@ class Huffman_tree {
         while (!q.empty()) {
             std::pair<std::size_t, std::string> now = q.front();
             q.pop();
-            const Node& now_node = nodes[now.first];
+            const Node &now_node = nodes[now.first];
             for (std::size_t i = 1; i <= now_node.cnt_child; ++i) {
-                const Node& next_node = nodes[now_node.child[i]];
+                const Node &next_node = nodes[now_node.child[i]];
                 if (next_node.cnt_child == 0) {
                     if (now_node.child[i] <= ret.size()) ret[now_node.child[i] - 1] = now.second + char_set[i - 1];
                     continue;

@@ -21,20 +21,20 @@ const temperature_type initial_T = 10000;
 const temperature_type minimum_T = 1e-3;
 
 //! edit this function, or SA can't work
-inline fit_type fitness(const data_seq_type& seq) { return 0; }
+inline fit_type fitness(const data_seq_type &seq) { return 0; }
 
 //! keep this if the sequence don't need to be checked
-inline constexpr bool is_valid_seq(const data_seq_type& seq) { return true; }
+inline constexpr bool is_valid_seq(const data_seq_type &seq) { return true; }
 
 //! --- config end ---
 
-inline data_seq_type new_seq_shuffle(const data_seq_type& seq) {
+inline data_seq_type new_seq_shuffle(const data_seq_type &seq) {
     data_seq_type ret(seq);
     do { random_shuffle(ret.begin(), ret.end()); } while (!is_valid_seq(ret));
     return ret;
 }
 
-inline data_seq_type new_seq_generate(const data_seq_type&& minimum, const data_seq_type&& maximum) {
+inline data_seq_type new_seq_generate(const data_seq_type &&minimum, const data_seq_type &&maximum) {
     data_seq_type ret;
     do {
         ret.clear();
@@ -43,7 +43,7 @@ inline data_seq_type new_seq_generate(const data_seq_type&& minimum, const data_
     return ret;
 }
 
-inline data_seq_type new_seq_generate_n(const data_type&& minimum, const data_type&& maximum, const index_type&& n) {
+inline data_seq_type new_seq_generate_n(const data_type &&minimum, const data_type &&maximum, const index_type &&n) {
     data_seq_type ret;
     ret.resize(n);
     do {
@@ -52,9 +52,9 @@ inline data_seq_type new_seq_generate_n(const data_type&& minimum, const data_ty
     return ret;
 }
 
-inline void swap_two_elements(data_seq_type& seq, const index_type& x, const index_type& y) { iter_swap(seq.begin() + x, seq.begin() + y); }
+inline void swap_two_elements(data_seq_type &seq, const index_type &x, const index_type &y) { iter_swap(seq.begin() + x, seq.begin() + y); }
 
-inline pair<index_type, index_type> swap_two_elements_randomly(data_seq_type& seq) {
+inline pair<index_type, index_type> swap_two_elements_randomly(data_seq_type &seq) {
     index_type x, y;
     do {
         x = idx_gen(g) % seq.size();
@@ -65,10 +65,10 @@ inline pair<index_type, index_type> swap_two_elements_randomly(data_seq_type& se
 }
 
 //? Metropolis acceptance criteria
-inline bool accept(const fit_type& delta_fitness, const temperature_type& now_T) { return delta_fitness <= 0 || exp(-delta_fitness) / now_T > p_gen(g); }
+inline bool accept(const fit_type &delta_fitness, const temperature_type &now_T) { return delta_fitness <= 0 || exp(-delta_fitness) / now_T > p_gen(g); }
 
 // find minimum for fitness(sequence), which sequence is a permutation of initial_sequence
-fit_type main_seq(data_seq_type& ans_seq) {
+fit_type main_seq(data_seq_type &ans_seq) {
     // data_seq_type now_seq;
     fit_type ans = fitness(ans_seq), now_ans;
     index_type x, y;
@@ -92,7 +92,7 @@ fit_type main_seq(data_seq_type& ans_seq) {
 }
 
 // find minimum for fitness(sequence), which sequence[i] in [minimum[i], maximum[i])
-fit_type main_range(const data_seq_type&& minimum, const data_seq_type&& maximum) {
+fit_type main_range(const data_seq_type &&minimum, const data_seq_type &&maximum) {
     data_seq_type ans_seq(new_seq_generate(move(minimum), move(maximum))), now_seq;
     fit_type ans = fitness(ans_seq), now_ans;
     for (temperature_type T = initial_T; T > minimum_T; T *= delta_T) {
@@ -107,7 +107,7 @@ fit_type main_range(const data_seq_type&& minimum, const data_seq_type&& maximum
 }
 
 // find minimum for fitness(sequence), which sequence[0..n-1] in [minimum, maximum)
-fit_type main_range_n(const data_type&& minimum, const data_type&& maximum, const index_type&& n) {
+fit_type main_range_n(const data_type &&minimum, const data_type &&maximum, const index_type &&n) {
     data_seq_type ans_seq(new_seq_generate_n(move(minimum), move(maximum), move(n))), now_seq;
     fit_type ans = fitness(ans_seq), now_ans;
     for (temperature_type T = initial_T; T > minimum_T; T *= delta_T) {
