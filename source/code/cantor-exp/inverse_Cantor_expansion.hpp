@@ -1,8 +1,8 @@
 /*
-* @Author: Tifa
-* @LastEditTime: 2020-11-14 16:15:29
-* @Description: inverse Cantor expansion, O(nlogn)
-*/
+ * @Author: Tifa
+ * @LastEditTime: 2020-11-14 16:15:29
+ * @Description: inverse Cantor expansion, O(nlogn)
+ */
 namespace inverse_Cantor_expansion {
 using std::size_t;
 const size_t N = 64;

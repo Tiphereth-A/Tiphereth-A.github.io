@@ -8,7 +8,7 @@ T mod_mul(T a, T b, T mod) {
     return res;
 }
 T gcd(T a, T b) { return b == 0 ? a : gcd(b, a % b); }
-T exgcd(T a, T b, T& x, T& y) {
+T exgcd(T a, T b, T &x, T &y) {
     if (b == 0) {
         x = 1;
         y = 0;
@@ -19,7 +19,7 @@ T exgcd(T a, T b, T& x, T& y) {
     return res;
 }
 
-bool solve_2equ(T b1, T b2, T m1, T m2, T& x, T& M) {
+bool solve_2equ(T b1, T b2, T m1, T m2, T &x, T &M) {
     ((b1 %= m1) += m1) %= m1;
     ((b2 %= m2) += m2) %= m2;
     T g = gcd(m1, m2), r = b2 - b1;
@@ -34,7 +34,7 @@ bool solve_2equ(T b1, T b2, T m1, T m2, T& x, T& M) {
     return true;
 }
 
-bool excrt(T b[], T m[], const int len, T& res) {
+bool excrt(T b[], T m[], const int len, T &res) {
     T pre_b = b[1], pre_m = m[1];
     T now_b, now_m;
     for (int i = 2; i <= len; ++i) {

@@ -3,7 +3,7 @@ using namespace std;
 
 int main() {
     string s("hello");
-    transform(s.begin(), s.end(), s.begin(), ::toupper); //! Attention
+    transform(s.begin(), s.end(), s.begin(), ::toupper);  //! Attention
 
     vector<size_t> ordinals;
     transform(s.begin(), s.end(), back_inserter(ordinals), [](unsigned char c) -> size_t { return c; });

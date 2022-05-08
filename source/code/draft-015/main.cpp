@@ -63,7 +63,7 @@ const u64 p = 49999;
 
 u64 s[N];
 
-u64 qpow(u64 a, u64 b, const u64& mod = p) {
+u64 qpow(u64 a, u64 b, const u64 &mod = p) {
     u64 res(1);
     for (; b; b >>= 1, (a *= a) %= mod)
         if (b & 1) (res *= a) %= mod;
@@ -91,15 +91,16 @@ const int N = 3e3 + OFFSET;
 const i64 p = i64(1e18) - 11;
 
 i64 inv[N];
-void init_inv(const i64& n = N - 1) {
+void init_inv(const i64 &n = N - 1) {
     inv[1] = 1;
     _for(i, 2, n) inv[i] = i128(p - p / i) * inv[p % i] % p;
 }
 
 i64 comb[N][N];
-void init_comb(const i64& n = N - 1) {
+void init_comb(const i64 &n = N - 1) {
     _for(i, 0, n) comb[i][0] = comb[i][i] = 1;
-    _for(i, 2, n) _for(j, 1, i - 1) comb[i][j] = (comb[i - 1][j] + comb[i - 1][j - 1]) % p;
+    _for(i, 2, n)
+        _for(j, 1, i - 1) comb[i][j] = (comb[i - 1][j] + comb[i - 1][j - 1]) % p;
 }
 
 i64 s[N];
@@ -151,7 +152,6 @@ void init_pow_k(int k) {
     _for(i, 2, k + 2) pow_k[i] = (pow_k[i] + pow_k[i - 1] > MOD ? pow_k[i] + pow_k[i - 1] - MOD : pow_k[i] + pow_k[i - 1]);
 }
 
-
 i64 pre[N], suc[N];
 i64 fac[N], inv[N];
 
@@ -192,7 +192,7 @@ void main() {
         cout << ans << '\n';
     }
 }
-} // namespace Algo3_k
+}  // namespace Algo3_k
 
 int main() {
     ios::sync_with_stdio(false);

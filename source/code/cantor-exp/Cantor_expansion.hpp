@@ -1,8 +1,8 @@
 /*
-* @Author: Tifa
-* @LastEditTime: 2020-11-14 15:13:13
-* @Description: Cantor expansion, O(nlogn)
-*/
+ * @Author: Tifa
+ * @LastEditTime: 2020-11-14 15:13:13
+ * @Description: Cantor expansion, O(nlogn)
+ */
 namespace Cantor_expansion {
 using std::size_t;
 const size_t N = 1e6 + 5;
