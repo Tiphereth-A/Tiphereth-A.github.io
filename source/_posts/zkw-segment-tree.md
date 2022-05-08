@@ -35,13 +35,13 @@ date: 2018-08-06 19:22:55
 
 众所周知, 普通线段树的常数很大, 经常被卡, 而 zkw 线段树的常数很小
 
-这里用[洛谷 P3372](https://www.luogu.com.cn/problem/P3372)做一个演示(更详细的补充见文末)
+这里用 [洛谷 P3372](https://www.luogu.com.cn/problem/P3372) 做一个演示(更详细的补充见文末)
 
-**普通线段树**[R9389075](https://www.luogu.com.cn/record/9389075)
+**普通线段树** [R9389075](https://www.luogu.com.cn/record/9389075)
 
 ![](seg0_4.png)
 
-**zkw 线段树**[R9388963](https://www.luogu.com.cn/record/9388963)
+**zkw 线段树** [R9388963](https://www.luogu.com.cn/record/9388963)
 
 ![](seg0_5.png)
 
@@ -73,7 +73,7 @@ zkw 线段树则正好反过来, 即**自底向上**
 
 ![](seg1_6.png)
 
-(由[visualgo](https://visualgo.net/zh/segmenttree)生成. 为便于讲解, 笔者做了一些改动)
+(由 [visualgo](https://visualgo.net/zh/segmenttree) 生成. 为便于讲解, 笔者做了一些改动)
 
 下面的黄圈是原数据, 黄圈下面的红色数字是原数组的下标
 
@@ -299,7 +299,7 @@ _~~zkw:狗拿耗子, 猫下岗了~~_
 
 ~~zkw 线段树:说好的我的主场呢?~~
 
-先以[洛谷 P3372](https://www.luogu.com.cn/problem/P3372)做一个热身
+先以 [洛谷 P3372](https://www.luogu.com.cn/problem/P3372) 做一个热身
 
 因为图太多, 所以不贴出来了, 有兴趣的读者可以查看提交记录
 
@@ -365,6 +365,5 @@ _~~zkw:狗拿耗子, 猫下岗了~~_
 
 ## 主要参考资料
 
-- [统计的力量——线段树全接触](https://artofproblemsolving.com/community/c1368h1020439)~~(膜拜 zkw julao)~~
-
+- [统计的力量——线段树全接触](https://artofproblemsolving.com/community/c1368h1020439)
 - [线段树详解 (原理, 实现与应用) - CSDN 博客](https://blog.csdn.net/zearot/article/details/48299459)

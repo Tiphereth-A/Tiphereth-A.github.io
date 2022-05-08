@@ -586,12 +586,9 @@ $$
 - 洛谷 [P6810 「MCOI-02」Convex Hull 凸包](https://www.luogu.com.cn/problem/P6810)
 - 洛谷 [P3327 [SDOI2015]约数个数和](https://www.luogu.com.cn/problem/P3327)
   > 提示: $d(ij)=\sum_{x\mid i}\sum_{y\mid j}[(x,y)=1]$
-- 洛谷 [P6222 「P6156 简单题」加强版](https://www.luogu.com.cn/problem/P6222)
-  > 题解(P6156) [见此](/article/luogu-p6156)
-- 洛谷 [P5221 Product](https://www.luogu.com.cn/problem/P5221)
-  > 题解 [见此](/article/luogu-p5221)
-- 洛谷 [P3704 [SDOI2017]数字表格](https://www.luogu.com.cn/problem/P3704)
-  > 题解 [见此](/article/luogu-p3704)
+- 洛谷 [P6222 「P6156 简单题」加强版](https://www.luogu.com.cn/problem/P6222) -> {% post_link luogu-p6156 题解(P6156) %}
+- 洛谷 [P5221 Product](https://www.luogu.com.cn/problem/P5221) -> {% post_link luogu-p5221 题解 %}
+- 洛谷 [P3704 [SDOI2017]数字表格](https://www.luogu.com.cn/problem/P3704) -> {% post_link luogu-p3704 题解 %}
 - 洛谷 [P5518 [MtOI2019]幽灵乐团 / 莫比乌斯反演基础练习题](https://www.luogu.com.cn/problem/P5518)
 - 洛谷 [P2522 [HAOI2011]Problem b](https://www.luogu.com.cn/problem/P2522)
 - 洛谷 [P2257 YY 的 GCD](https://www.luogu.com.cn/problem/P2257)
@@ -670,8 +667,7 @@ $$
 ### 例题
 
 - 洛谷 [P4213 【模板】杜教筛（Sum）](https://www.luogu.com.cn/problem/P4213)
-- 第六届团体程序设计天梯赛 [L3-3 可怜的简单题](https://pintia.cn/problem-sets/994805046380707840/problems/1386335159927652366)
-  > 题解 [见此](/article/gplt2021-l3-3)
+- 第六届团体程序设计天梯赛 [L3-3 可怜的简单题](https://pintia.cn/problem-sets/994805046380707840/problems/1386335159927652366) -> {% post_link gplt2021-l3-3 题解 %}
 
 ---
 

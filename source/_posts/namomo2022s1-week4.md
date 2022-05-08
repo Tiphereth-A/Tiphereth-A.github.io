@@ -480,7 +480,7 @@ int main() {
 
 ### 解题思路
 
-题解以前写过, 参见 [此处](/article/icpc-ncna2019/#%E8%A7%A3%E9%A2%98%E6%80%9D%E8%B7%AF-5)
+题解以前写过, 参见 {% post_link icpc-ncna2019 %}
 
 ## 405 - 拆拆
 
