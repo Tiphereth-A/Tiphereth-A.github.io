@@ -34,7 +34,7 @@
     "hexo-theme-next": "^8.11.1"
   },
   "devDependencies": {
-    "husky": "^7.0.4",
+    "husky": "^8.0.0",
     "prettier": "^2.6.2"
   }
 }
