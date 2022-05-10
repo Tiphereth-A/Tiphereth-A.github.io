@@ -306,10 +306,6 @@ $1\leq n\leq 3\cdot 10^5$, $0\leq a_i\leq 10^9$
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-```cpp
-
-```
-
 </details>
 
 ## Closest Equals (CF522D)
@@ -389,10 +385,6 @@ $1\leq n\leq 3\cdot 10^5$, $0\leq a_i\leq 10^9$
 
 <details>
 <summary><font color='orange'>Show code</font></summary>
-
-```cpp
-
-```
 
 </details>
 

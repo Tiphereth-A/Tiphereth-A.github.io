@@ -397,10 +397,6 @@ YES
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-```cpp
-
-```
-
 </details>
 
 ## E - 御坂妹妹的芯片
@@ -763,10 +759,6 @@ $(x_1, y_1)$中:
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-```cpp
-
-```
-
 </details>
 
 ## J - 领地扩充
@@ -829,10 +821,6 @@ Eric 喜欢一款游戏, 游戏是在一个长方形的场地上玩. 在游戏�
 
 <details>
 <summary><font color='orange'>Show code</font></summary>
-
-```cpp
-
-```
 
 </details>
 
@@ -978,10 +966,6 @@ $O(n)$直接求
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-```cpp
-
-```
-
 </details>
 
 ## M - 作曲家
@@ -1042,9 +1026,5 @@ Jasmine 是一位作曲家, 最近她录制了两首非常受欢迎的歌曲. �
 
 <details>
 <summary><font color='orange'>Show code</font></summary>
-
-```cpp
-
-```
 
 </details>

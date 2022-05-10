@@ -93,10 +93,6 @@ date: 2021-11-21 19:33:27
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-```cpp
-
-```
-
 </details>
 
 ## B - Bitwise Exclusive-OR Sequence
@@ -120,98 +116,7 @@ $O((m\alpha(n)+n)\log\max w)$
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-```cpp
-#include <bits/stdc++.h>
-using namespace std;
-const int N = 2e5 + 5, M = 4e5 + 5;
-
-struct Edge {
-    int to, next;
-} e[M];
-int head[N], cnt_e;
-
-void addEdge(int u, int v) {
-    e[++cnt_e] = {v, head[u]};
-    head[u] = cnt_e;
-}
-
-#define _for_graph(i, now) for (int i = head[now], v = e[i].to; i; v = e[i = e[i].next].to)
-
-int fa[N];
-int64_t sz[N];
-int find(int x) {
-    if (x == fa[x]) return x;
-    int rt = find(fa[x]);
-    return fa[x] = rt;
-}
-void merge(int u, int v) {
-    int fu = find(u), fv = find(v);
-    if (fu == fv) return;
-    fa[fu] = fv;
-    sz[fv] += sz[fu];
-}
-
-struct Node {
-    int u, v, w;
-} q[N];
-
-bool vis[N];
-int64_t sum[2];
-int endp;
-bool res;
-void dfs(int now, int fa, int idx) {
-    if (vis[now]) {
-        if (now != endp) return;
-        res = !idx;
-        return;
-    }
-    vis[now] = 1;
-    sum[idx] += sz[now];
-    _for_graph(i, now) {
-        if (v == fa) continue;
-        dfs(v, now, idx ^ 1);
-    }
-}
-
-int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    cout.tie(nullptr);
-    int n, m;
-    cin >> n >> m;
-    for (int i = 1; i <= m; ++i) cin >> q[i].u >> q[i].v >> q[i].w;
-    int maxw = 0;
-    for (int i = 1; i <= m; ++i) maxw = max(maxw, q[i].w);
-
-    int64_t ans = 0;
-    for (int dig = 30; dig >= 0; --dig) {
-        int64_t now = 1ll << dig;
-        if (now > maxw) continue;
-        memset(head, 0, sizeof(head[0]) * (n + 1));
-        memset(vis, 0, sizeof(vis[0]) * (n + 1));
-        cnt_e = 0;
-        for (int i = 1; i <= n; ++i) sz[fa[i] = i] = 1;
-        for (int i = 1; i <= m; ++i)
-            if (!(q[i].w & now)) merge(q[i].u, q[i].v);
-        for (int i = 1; i <= m; ++i)
-            if (q[i].w & now) {
-                addEdge(find(q[i].u), find(q[i].v));
-                addEdge(find(q[i].v), find(q[i].u));
-            }
-        for (int i = 1; i <= n; ++i)
-            if (!vis[i]) {
-                res = 1;
-                dfs(endp = i, sum[0] = sum[1] = 0, 0);
-                if (!res) {
-                    cout << "-1";
-                    return 0;
-                }
-                ans += min(sum[0], sum[1]) * now;
-            }
-    }
-    cout << ans;
-}
-```
+{% icodeweb cpa title:B lang:cpp Gym/103427B/0.cpp %}
 
 </details>
 
@@ -275,10 +180,6 @@ v111-->v111 & v112
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-```cpp
-
-```
-
 </details>
 
 ## D - Cross the Maze
@@ -293,10 +194,6 @@ v111-->v111 & v112
 
 <details>
 <summary><font color='orange'>Show code</font></summary>
-
-```cpp
-
-```
 
 </details>
 
@@ -330,42 +227,7 @@ $O(n^2)$
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-```cpp
-#include <bits/stdc++.h>
-using namespace std;
-
-#define _for(i, l, r, vals...) for (decltype(l + r) i = (l), i##end = (r), ##vals; i <= i##end; ++i)
-#define _rfor(i, r, l, vals...) for (make_signed_t<decltype(r - l)> i = (r), i##end = (l), ##vals; i >= i##end; --i)
-
-const int N = 1000 + 7;
-int n, bucket[N], a[N], to[N];
-string str, pre[N];
-void f(const string& s, string& res) {
-    int cnt = 0;
-    _for(i, 'a', 'z') bucket[i] = to[i] = a[i] = 0;
-    n = s.size();
-    _rfor(i, n - 1, 0) if (!bucket[s[i]]) {
-        bucket[s[i]]++;
-        a[s[i]] = cnt++;
-    }
-    _for(i, 'a', 'z') to[i] = 'a' + a[i];
-    res = s;
-    _for(i, 0, n) res[i] = to[s[i]];
-}
-
-int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    cout.tie(nullptr);
-
-    cin >> n >> str;
-    string _;
-    _for(i, 0, n - 1) f(_ += str[i], pre[i]);
-    sort(pre, pre + n, greater<string>());
-    cout << pre[0];
-    return 0;
-}
-```
+{% icodeweb cpa title:F lang:cpp Gym/103427F/0.cpp %}
 
 </details>
 
@@ -381,10 +243,6 @@ int main() {
 
 <details>
 <summary><font color='orange'>Show code</font></summary>
-
-```cpp
-
-```
 
 </details>
 
@@ -416,79 +274,7 @@ $O(n+m)$
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-```cpp
-#include <bits/stdc++.h>
-using namespace std;
-using i64 = int64_t;
-using u64 = uint64_t;
-
-const int N = 1e5 + 5, M = 4e5 + 5;
-struct Edge {
-    int64_t w;
-    int to, next;
-    Edge(int64_t _w = 0, int _to = 0, int _next = 0) : w(_w), to(_to), next(_next) {}
-} e[M];
-int head[N], cnt_edge;
-void addEdge(int x, int y, int64_t w = 1) {
-    e[++cnt_edge] = Edge(w, y, head[x]);
-    head[x] = cnt_edge;
-}
-
-#define _for_graph(head, e, i, now) for (int i = head[now], to = e[i].to; i; to = e[i = e[i].next].to)
-#define _for(i, l, r, vals...) for (decltype(l + r) i = (l), i##end = (r), ##vals; i <= i##end; ++i)
-
-i64 w;
-
-int low[N], dfn[N], cnt_dfs;
-int cnt[N];
-void tarjan(int u, int fa = 0) {
-    low[u] = dfn[u] = ++cnt_dfs;
-    cnt[u] = 0;
-    _for_graph(head, e, i, u) {
-        ++cnt[to];
-        if (to == fa) continue;
-        if (!dfn[to]) {
-            tarjan(to, u);
-            low[u] = min(low[u], low[to]);
-            cnt[u] += cnt[to];
-        } else
-            low[u] = min(low[u], dfn[to]);
-        if (low[to] > dfn[u]) {
-            if (cnt[to] % 2 == 0) w = min(w, e[i].w);
-        } else
-            w = min(w, e[i].w);
-    }
-}
-
-int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    cout.tie(nullptr);
-
-    int n, m;
-    cin >> n >> m;
-    int u, v;
-    i64 sum = 0;
-    if (m % 2 == 0) {
-        _for(i, 1, m) {
-            cin >> u >> v >> w;
-            sum += w;
-        }
-        cout << sum;
-        return 0;
-    }
-    _for(i, 1, m) {
-        cin >> u >> v >> w;
-        addEdge(u, v, w);
-        addEdge(v, u, w);
-        sum += w;
-    }
-    w = INT64_MAX;
-    tarjan(1);
-    cout << sum - w;
-    return 0;
-}
-```
+{% icodeweb cpa title:H lang:cpp Gym/103427H/0.cpp %}
 
 </details>
 
@@ -543,54 +329,7 @@ $$\frac{(z_0-z_1)(z_3-z_2)}{(z_0-z_2)(z_3-z_1)}=\frac{(w_0-w_1)(w_3-w_2)}{(w_0-w
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-```cpp
-#include <bits/stdc++.h>
-using namespace std;
-using ldb = long double;
-using C = complex<ldb>;
-ldb eps = 1e-8;
-
-int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    cout.tie(nullptr);
-
-    int t;
-    cin >> t;
-    cout << fixed << setprecision(12);
-    while (t--) {
-        ldb p, q, r, s;
-        cin >> p >> q >> r >> s;
-        C x1(p, q), w1(r, s);
-        cin >> p >> q >> r >> s;
-        C x2(p, q), w2(r, s);
-        cin >> p >> q >> r >> s;
-        C x3(p, q), w3(r, s);
-        cin >> p >> q;
-        C x0(p, q);
-
-        auto divr = -x1 * (w2 - w3) + x2 * (w1 - w3) - x3 * (w1 - w2);
-        if (abs(divr.real()) >= eps || abs(divr.imag()) >= eps) {
-            C a, b, d;
-            a = -w1 * x1 * (w2 - w3) + w2 * x2 * (w1 - w3) - w3 * x3 * (w1 - w2);
-            d = x1 * (w2 * x2 - w3 * x3) - x2 * (w1 * x1 - w3 * x3) + x3 * (w1 * x1 - w2 * x2);
-            b = x1 * w2 * w3 * (x2 - x3) - x2 * w1 * w3 * (x1 - x3) + x3 * w1 * w2 * (x1 - x2);
-            a /= divr;
-            b /= divr;
-            d /= divr;
-            C w0 = (a * x0 + b) / (x0 + d);
-            cout << w0.real() << ' ' << w0.imag() << '\n';
-        } else {
-            C a, b;
-            divr = x1 - x2;
-            a = (w1 - w2) / divr;
-            b = (x1 * w2 - x2 * w1) / divr;
-            C w0 = a * x0 + b;
-            cout << w0.real() << ' ' << w0.imag() << '\n';
-        }
-    }
-}
-```
+{% icodeweb cpa title:I lang:cpp Gym/103427I/0.cpp %}
 
 </details>
 
@@ -602,8 +341,6 @@ int main() {
 
 ### 解题思路
 
-<!-- VSCode 的代码格式化让我们喜提赛时代码长度第一 -->
-
 首先我们以状态为点, 两相邻状态为边建图, 此时答案即为点 $S$ 到点 $T$ 的最短路长度
 
 我们定义两点间的减法为每一位分别在 $\Z_{10}$ 下做减法
@@ -613,39 +350,6 @@ int main() {
 然后就随便做了
 
 我们也可以把点 `0000` 到所有点的最短路打个表, 因为最短路长度一定不会超过 $20$ (实际上如果你跑一遍 Floyd 就能发现上确界是 $12$), 所以无论是空间还是代码长度都满足要求
-
-### 代码参考
-
-<details>
-<summary><font color='orange'>Show code</font></summary>
-
-```cpp
-#include <bits/stdc++.h>
-using namespace std;
-
-const int _[] = {
-    // shortest distance from 0000 to all vertices
-};
-
-#define __(x) (((x) + 10) % 10)
-
-int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    cout.tie(nullptr);
-
-    int _t;
-    cin >> _t;
-    while (_t--) {
-        int a, b;
-        cin >> a >> b;
-        int idx = 1000 * __(b / 1000 - a / 1000) + 100 * __(b % 1000 / 100 - a % 1000 / 100) + 10 * __(b % 100 / 10 - a % 100 / 10) + __(b % 10 - a % 10);
-        cout << _[idx] << '\n';
-    }
-}
-```
-
-</details>
 
 ## K - Matrix Operations
 
@@ -659,10 +363,6 @@ int main() {
 
 <details>
 <summary><font color='orange'>Show code</font></summary>
-
-```cpp
-
-```
 
 </details>
 
@@ -726,71 +426,7 @@ $O(n^2)$
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-```cpp
-#include <bits/stdc++.h>
-using namespace std;
-using i64 = int64_t;
-
-const int N = 4e3 + 5, M = 1e4 + 5;
-struct Edge {
-    int to, next;
-    Edge(int _to = 0, int _next = 0) : to(_to), next(_next) {}
-} e[M];
-int head[N], cnt_edge;
-void addEdge(int x, int y) {
-    e[++cnt_edge] = Edge(y, head[x]);
-    head[x] = cnt_edge;
-}
-
-#define _for_graph(i, now) for (int i = head[now], to = e[i].to; i; to = e[i = e[i].next].to)
-#define _for(i, l, r, vals...) for (decltype(l + r) i = (l), i##end = (r), ##vals; i <= i##end; ++i)
-#define _rfor(i, r, l, vals...) for (make_signed_t<decltype(r - l)> i = (r), i##end = (l), ##vals; i >= i##end; --i)
-
-const int mod = 998244353;
-
-i64 dp[N][N][2];
-int sz[N];
-void dfs(int now, int fa) {
-    sz[now] = dp[now][0][0] = 1;
-    _for_graph(i, now) {
-        if (to == fa) continue;
-        dfs(to, now);
-        _rfor(j, sz[now] / 2, 0) _for(t, 0, sz[to] / 2) {
-            if (t) {
-                (dp[now][j + t][0] += (dp[to][t][0] + dp[to][t][1]) * dp[now][j][0]) %= mod;
-                (dp[now][j + t][1] += (dp[to][t][0] + dp[to][t][1]) * dp[now][j][1]) %= mod;
-            }
-            (dp[now][j + t + 1][1] += dp[to][t][0] * dp[now][j][0]) %= mod;
-        }
-        sz[now] += sz[to];
-    }
-}
-
-i64 f[N];
-int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    cout.tie(nullptr);
-
-    int n;
-    cin >> n;
-    _for(i, 1, 2 * n - 1, x, y) {
-        cin >> x >> y;
-        addEdge(x, y);
-        addEdge(y, x);
-    }
-    i64 ans = 0;
-    dfs(1, 0);
-    f[0] = 1;
-    _for(i, 1, n) f[i] = f[i - 1] * (2 * i - 1) % mod;
-    _for(i, 0, n, sign = 1) {
-        (ans += sign * (dp[1][i][0] + dp[1][i][1]) * f[n - i]) %= mod;
-        sign *= -1;
-    }
-    cout << (ans + mod) % mod;
-    return 0;
-}
-```
+{% icodeweb cpa title:L lang:cpp Gym/103427L/0.cpp %}
 
 </details>
 
@@ -821,46 +457,6 @@ $O(|s|)$
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-```cpp
-#include <bits/stdc++.h>
-using namespace std;
-const int N = 1e6 + 5;
-#define _for(i, l, r, vals...) for (decltype(l + r) i = (l), i##end = (r), ##vals; i <= i##end; ++i)
-
-int l[N], cnt_l;
-char s[N];
-int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    cout.tie(nullptr);
-
-    cin >> (s + 1);
-    int n = strlen(s + 1);
-
-    // Duval
-    for (int i = 1, j, k; i <= n;) {
-        k = (j = i) + 1;
-        while (k <= n && s[j] >= s[k]) {
-            j = (s[j] == s[k]) ? j + 1 : i;
-            ++k;
-        }
-        while (i <= j) {
-            l[cnt_l++] = i;
-            i += k - j;
-        }
-    }
-
-    l[cnt_l++] = n + 1;
-    l[cnt_l++] = n + 1;
-    _for(i, 1, n, idx = 0) {
-        if (i >= l[idx + 1] && s[i] > s[i - l[idx + 1] + l[idx]]) {
-            while (l[idx + 1] <= i) ++idx;
-            if (s[i] <= s[i - l[idx] + l[idx - 1]]) --idx;
-        }
-        cout << l[idx] << ' ' << i << '\n';
-    }
-    return 0;
-}
-```
+{% icodeweb cpa title:M lang:cpp Gym/103427M/0.cpp %}
 
 </details>

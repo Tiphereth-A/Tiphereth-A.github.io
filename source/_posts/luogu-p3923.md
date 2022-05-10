@@ -265,6 +265,6 @@ $$|\mathbb{F}_p[x]/\lang p(x)\rang|=p^m$$
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa title:Luogu_3923 lang:cpp Luogu/3923/0.py %}
+{% icodeweb cpa title:Luogu_3923 lang:python Luogu/3923/0.py %}
 
 </details>
