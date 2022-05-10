@@ -272,7 +272,7 @@ $1 \leq n, q \leq 5 \times 10^5,1 \leq a_i,b_i \leq n, 1 \leq l_i \leq r_i \leq 
 
 </details>
 
-## Ayoub's function
+## Ayoub's function (CF1301C)
 
 [题目链接](https://oj.daimayuan.top/problem/673)
 
@@ -390,7 +390,7 @@ $1 \leq n, q \leq 5 \times 10^5,1 \leq a_i,b_i \leq n, 1 \leq l_i \leq r_i \leq 
 
 </details>
 
-## 括号序列
+## 括号序列 (51Nod 1791)
 
 [题目链接](https://oj.daimayuan.top/problem/707)
 
