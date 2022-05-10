@@ -9,7 +9,7 @@ tags:
   - 代码源
   - CodeForces
   - CCPC
-  - 51NOD
+  - 51Nod
   - 数学
   - 组合数学
   - 前缀和
