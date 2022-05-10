@@ -174,6 +174,6 @@ K 叉 Huffman 树模板题
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa lang:cpp UOJ/130/0.cpp %}
+{% icodeweb cpa title:UOJ_130 lang:cpp UOJ/130/0.cpp %}
 
 </details>

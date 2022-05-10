@@ -83,6 +83,6 @@ NASA(美国航空航天局)因为航天飞机的隔热瓦等其他安全技术�
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa lang:cpp Luogu/1507/0.cpp %}
+{% icodeweb cpa title:Luogu_1507 lang:cpp Luogu/1507/0.cpp %}
 
 </details>

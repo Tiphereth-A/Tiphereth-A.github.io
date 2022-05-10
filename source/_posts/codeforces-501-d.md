@@ -128,6 +128,6 @@ $O(n\log n)$
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa lang:cpp CodeForces/501D/0.cpp %}
+{% icodeweb cpa title:CodeForces_501D lang:cpp CodeForces/501D/0.cpp %}
 
 </details>

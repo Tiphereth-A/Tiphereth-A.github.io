@@ -81,6 +81,6 @@ $$f(x,y)=\sum_iw_i\sqrt{(x-x_i)^2+(y-y_i)^2}$$
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa lang:cpp Luogu/1337/0.cpp %}
+{% icodeweb cpa title:Luogu_1337 lang:cpp Luogu/1337/0.cpp %}
 
 </details>

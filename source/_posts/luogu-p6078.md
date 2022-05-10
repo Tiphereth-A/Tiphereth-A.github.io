@@ -92,6 +92,6 @@ $O(n2^n)$
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa lang:cpp Luogu/6078/0.cpp %}
+{% icodeweb cpa title:Luogu_6078 lang:cpp Luogu/6078/0.cpp %}
 
 </details>

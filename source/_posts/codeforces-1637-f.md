@@ -122,6 +122,6 @@ $O(n)$
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa lang:cpp CodeForces/1637F/0.cpp %}
+{% icodeweb cpa title:CodeForces_1637F lang:cpp CodeForces/1637F/0.cpp %}
 
 </details>
