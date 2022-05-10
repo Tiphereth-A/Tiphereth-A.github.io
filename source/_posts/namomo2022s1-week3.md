@@ -15,11 +15,11 @@ Namomo Spring Camp 2022 Div1 每日一题记录 (2022.03.12-2022.03.18)
 
 <!-- more -->
 
-## 301 - 连续子序列
+## 连续子序列
 
-[题目链接](https://oj.daimayuan.top/course/10/problem/504)
+[题目链接](https://oj.daimayuan.top/problem/504)
 
-1s, 512MB
+1 s, 512 MB
 
 给定一个长度为 $n$ 的数组 $a_1,a_2,\dots ,a_n$, 问其中最长的连续上升子序列. 也就是说, 我们要找到数组 $p_1,p_2,\dots,p_m$, 满足 $1\leq p_1 < p_2 < \dots < p_m \leq n$ 并且 $a_{p_m} - a_{p_{m-1}} = a_{p_{m-1}} - a_{p_{m-2}} = \dots = a_{p_2} - a_{p_1} = 1$, 要求找出最大的 $m$ 和字典序最小的答案子序列
 
@@ -70,11 +70,11 @@ Namomo Spring Camp 2022 Div1 每日一题记录 (2022.03.12-2022.03.18)
 
 </details>
 
-## 302 - 工作安排
+## 工作安排
 
-[题目链接](https://oj.daimayuan.top/course/10/problem/503)
+[题目链接](https://oj.daimayuan.top/problem/503)
 
-1s, 256MB
+1 s, 256 MB
 
 约翰有太多的工作要做
 
@@ -136,11 +136,11 @@ $0 \leq D_i,P_i \leq 1\times10^9$
 
 </details>
 
-## 303 - 三角果计数
+## 三角果计数
 
-[题目链接](https://oj.daimayuan.top/course/10/problem/505)
+[题目链接](https://oj.daimayuan.top/problem/505)
 
-1s, 1024MB
+1 s, 1024 MB
 
 ### 题目描述
 
@@ -199,11 +199,11 @@ $0 \leq D_i,P_i \leq 1\times10^9$
 
 </details>
 
-## 304 - 整齐的数组 2
+## 整齐的数组 2
 
-[题目链接](https://oj.daimayuan.top/course/10/problem/555)
+[题目链接](https://oj.daimayuan.top/problem/555)
 
-1s, 512MB
+1 s, 512 MB
 
 Polycarp 有一个长度为 $n$ 的数组 $a_1,a_2,...,a_n$ ($n$ 是偶数) . Polycarp 还得到了一个正整数 $k$, 他开始对数组 $a$ 做如下操作：选择一个下标 $i\ (1 \leq i \leq n)$ 使 $a_i$ 减去 $k$
 
@@ -263,11 +263,11 @@ Polycarp 有一个长度为 $n$ 的数组 $a_1,a_2,...,a_n$ ($n$ 是偶数) . Po
 
 </details>
 
-## 305 - 三进制循环
+## 三进制循环
 
-[题目链接](https://oj.daimayuan.top/course/10/problem/556)
+[题目链接](https://oj.daimayuan.top/problem/556)
 
-2s, 256MB
+2 s, 256 MB
 
 在神奇的树の国度, [叽叽](https://space.bilibili.com/1950658) 发现了一棵包含 $n$ 个节点三进制树, 节点的编号是 $1 \sim n$ . 这棵树的任意一个节点的值可能为 $0, 1, 2$ 其中的一个. 她喜欢有规律而不是杂乱无章的序列, 她想在这棵树上找到一个路径, 要满足从路径的一端到另一端, 从第二个节点开始, 每个节点的值都等于上一个节点的值 $ + 1$ 之后对 $3$ 取余的结果
 
@@ -328,11 +328,11 @@ Polycarp 有一个长度为 $n$ 的数组 $a_1,a_2,...,a_n$ ($n$ 是偶数) . Po
 
 </details>
 
-## 306 - 树上逆序对
+## 树上逆序对
 
-[题目链接](https://oj.daimayuan.top/course/10/problem/559)
+[题目链接](https://oj.daimayuan.top/problem/559)
 
-1s, 1024MB
+1 s, 1024 MB
 
 对于一棵有根树, 定义树上的逆序对为满足 $a_i < a_{fa_i}$ 的二元对 $(i,fa_i)$ , 其中 $fa_i$ 表示结点 $i$ 的父亲结点
 
@@ -380,11 +380,11 @@ Polycarp 有一个长度为 $n$ 的数组 $a_1,a_2,...,a_n$ ($n$ 是偶数) . Po
 
 </details>
 
-## 307 - 约分 (CCPC Harbin 2021 D)
+## 约分 (CCPC Harbin 2021 D)
 
-[题目链接](https://oj.daimayuan.top/course/10/problem/560)
+[题目链接](https://oj.daimayuan.top/problem/560)
 
-1s, 1024MB
+1 s, 1024 MB
 
 ### 题目描述
 

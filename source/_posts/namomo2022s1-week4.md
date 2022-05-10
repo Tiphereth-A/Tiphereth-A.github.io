@@ -32,11 +32,11 @@ Namomo Spring Camp 2022 Div1 每日一题记录 (2022.03.19-2022.03.25)
 
 <!-- more -->
 
-## 401 - 蜗蜗的数列 (CF1634F)
+## 蜗蜗的数列 (CF1634F)
 
-[题目链接](https://oj.daimayuan.top/course/10/problem/562)
+[题目链接](https://oj.daimayuan.top/problem/562)
 
-2s, 512MB
+2 s, 512 MB
 
 ### 题目背景
 
@@ -151,62 +151,15 @@ $O(n+q)$
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-```cpp
-const uint32_t N = 1e6 + 5;
-
-int a[N];
-int diff[N], fibo[N];
-int cnt_positive;
-
-auto modify = [](uint32_t pos, uint32_t val, int mod) -> void {
-    cnt_positive -= !!diff[pos];
-    if ((diff[pos] += val) >= mod) diff[pos] -= mod;
-    cnt_positive += !!diff[pos];
-};
-
-int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    cout.tie(nullptr);
-
-    uint32_t n, q, mod;
-    cin >> n >> q >> mod;
-    _for(i, 1, n) cin >> a[i];
-    _for(i, 1, n, x) {
-        cin >> x;
-        if ((a[i] -= x) < 0) a[i] += mod;
-        if (a[i] < 0) a[i] += mod;
-    }
-    diff[1] = a[1];
-    _for(i, 2, n + 2) diff[i] = (a[i] - a[i - 1] + mod * 2 - a[i - 2]) % mod;
-    _for(i, 1, n + 2) cnt_positive += !!diff[i];
-    fibo[1] = 1;
-    _for(i, 2, n + 2) fibo[i] = (fibo[i - 1] + fibo[i - 2]) % mod;
-    char op;
-    _for(i, 1, q, l, r) {
-        cin >> op >> l >> r;
-        if (op == 'A') {
-            modify(l, 1, mod);
-            modify(r + 1, mod - fibo[r - l + 2], mod);
-            modify(r + 2, mod - fibo[r - l + 1], mod);
-        } else {
-            modify(l, mod - 1, mod);
-            modify(r + 1, fibo[r - l + 2], mod);
-            modify(r + 2, fibo[r - l + 1], mod);
-        }
-        cout << (cnt_positive ? "No\n" : "Yes\n");
-    }
-    return 0;
-}
-```
+{% icodeweb cpa title:CodeForces_1634F lang:cpp CodeForces/1634F/0.cpp %}
 
 </details>
 
-## 402 - 最大公约数 (JZOJ4922)
+## 最大公约数 (JZOJ4922)
 
-[题目链接](https://oj.daimayuan.top/course/10/problem/131)
+[题目链接](https://oj.daimayuan.top/problem/131)
 
-1s, 1024MB
+1 s, 1024 MB
 
 ### 题目描述
 
@@ -272,47 +225,15 @@ $O(n\sqrt{\sum_i a_i})$
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-```cpp
-const uint32_t N = 2e3 + 5, M = 2e4 + 5;
-
-int a[N];
-i64 factor[M];
-int cnt_factor;
-i64 ans[N];
-
-int main() {
-    int n;
-    cin >> n;
-    _for(i, 1, n) cin >> a[i];
-    i64 sum_a = 0;
-    _for(i, 1, n) sum_a += a[i];
-    _for(i, 1, (int)sqrt(sum_a)) if (sum_a % i == 0) {
-        factor[++cnt_factor] = i;
-        if (sum_a / i != i) factor[++cnt_factor] = sum_a / i;
-    }
-
-    _for(i, 1, cnt_factor) {
-        i64 now_factor = factor[i];
-        i64 sum = 0;
-        unordered_map<i64, int> cnt_slice;
-        int max_slice = 0;
-        _for(i, 1, n) chkmax(max_slice, ++cnt_slice[sum = (sum + a[i]) % now_factor]);
-        chkmax(ans[max_slice], now_factor);
-    }
-    _rfor(i, n - 1, 1) chkmax(ans[i], ans[i + 1]);
-    _for(i, 1, n) cout << ans[i] << '\n';
-
-    return 0;
-}
-```
+{% icodeweb cpa title:JZOJ_4922 lang:cpp JZOJ/4922/0.cpp %}
 
 </details>
 
-## 403 - 平方计数
+## 平方计数
 
-[题目链接](https://oj.daimayuan.top/course/10/problem/607)
+[题目链接](https://oj.daimayuan.top/problem/607)
 
-1s, 1024MB
+1 s, 1024 MB
 
 ### 题目描述
 
@@ -360,30 +281,7 @@ $O(n\max_{i\ne j}\{\sqrt{a_i^2+a_j}-a_i\})=O(n\max_i\sqrt{a_i})$
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-```cpp
-const uint32_t N = 1e6 + 5;
-
-int a[N];
-int cnt[N];
-
-int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    cout.tie(nullptr);
-
-    int n;
-    cin >> n;
-    _for(i, 1, n) cin >> a[i];
-    _for(i, 1, n)++ cnt[a[i]];
-    int max_a = 0;
-    _for(i, 1, n) chkmax(max_a, a[i]);
-    i64 ans = 0;
-    _for(i, 1, n) for (int j = 1; (2 * a[i] + j) * j <= max_a; ++j) ans += cnt[(2 * a[i] + j) * j];
-    cout << ans;
-
-    return 0;
-}
-```
+{% icodeweb cpa title:Daimayuan_607 lang:cpp Daimayuan/607/0.cpp %}
 
 </details>
 
@@ -408,41 +306,15 @@ $\displaystyle O\left(\sum_{i=1}^{\max_i a_i}\left\lfloor \frac{\max_i a_i}{i}\r
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-```cpp
-const uint32_t N = 1e6 + 5;
-
-int a[N];
-int cnt[N];
-
-int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    cout.tie(nullptr);
-
-    int n;
-    cin >> n;
-    _for(i, 1, n) cin >> a[i];
-    _for(i, 1, n)++ cnt[a[i]];
-    int max_a = 0;
-    _for(i, 1, n) chkmax(max_a, a[i]);
-    i64 ans = 0;
-    _rfor(i, max_a, 1) for (int j = i, d; j <= max_a; j += i) {
-        if((d = abs(j / i - i)) & 1) continue;
-        ans += 1ll * cnt[j] * cnt[d / 2];
-    }
-    cout << ans;
-
-    return 0;
-}
-```
+{% icodeweb cpa title:Daimayuan_607 lang:cpp Daimayuan/607/1.cpp %}
 
 </details>
 
-## 404 - 字典序最小 (ICPC North Central NA 2019 E)
+## 字典序最小 (ICPC North Central NA 2019 E)
 
-[题目链接](https://oj.daimayuan.top/course/10/problem/608)
+[题目链接](https://oj.daimayuan.top/problem/608)
 
-1s, 1024MB
+1 s, 1024 MB
 
 从序列 $M$ 个数中顺序选出 $N$ 个不同的数, 使得这 $N$ 个数的字典序最小
 
@@ -482,11 +354,11 @@ int main() {
 
 题解以前写过, 参见 {% post_link icpc-ncna2019 %}
 
-## 405 - 拆拆
+## 拆拆
 
-[题目链接](https://oj.daimayuan.top/course/10/problem/611)
+[题目链接](https://oj.daimayuan.top/problem/611)
 
-1s, 1024MB
+1 s, 1024 MB
 
 多组数据
 
@@ -592,67 +464,15 @@ $O(X+T\max\omega(X))$
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-```cpp
-const int N = 1e6 + 5;
-const uint32_t MOD = 1e9 + 7;
-
-inline constexpr i64 qpow(i64 a, i64 b = MOD - 2, const i64& mod = MOD) {
-    i64 res(1);
-    for (; b; b >>= 1, (a *= a) %= mod)
-        if (b & 1) (res *= a) %= mod;
-    return res;
-};
-
-i64 fact[N * 2], inv_fact[N];
-auto __STATIC__ = []() {
-    static i64 ffact[N];
-    ffact[0] = fact[0] = inv_fact[0] = fact[1] = inv_fact[1] = 1;
-    _for(i, 2, N * 2 - 1) fact[i] = fact[i - 1] * i % MOD;
-    _for(i, 1, N - 1) ffact[i] = ffact[i - 1] * fact[i] % MOD;
-    i64 _ = qpow(ffact[N - 1]);
-    _rfor(i, N - 1, 2) {
-        inv_fact[i] = _ * ffact[i - 1] % MOD;
-        _ = _ * fact[i] % MOD;
-    }
-    return 0.0;
-}();
-auto m_choose_n = [](int m, int n, i64 mod = MOD) -> i64 { return m < n ? 0 : fact[m] * inv_fact[n] % mod * inv_fact[m - n] % mod; };
-
-auto f = [](int x, int y) -> i64 {
-    i64 ans = 1;
-    _for(i, 2, (int)sqrt(x), cnt) {
-        if (i > x) break;
-        if (x % i) continue;
-        cnt = 0;
-        while (x % i == 0) {
-            ++cnt;
-            x /= i;
-        }
-        ans = (ans * m_choose_n(cnt + y - 1, cnt)) % MOD;
-    }
-    if (x != 1) ans = (ans * y) % MOD;
-    return ans;
-};
-
-int main() {
-    int _t;
-    cin >> _t;
-    while (_t--){
-        int x, y;
-        cin >> x >> y;
-        cout << f(x, y) * qpow(2, y - 1) % MOD << '\n';
-    }
-    return 0;
-}
-```
+{% icodeweb cpa title:Daimayuan_611 lang:cpp Daimayuan/611/0.cpp %}
 
 </details>
 
-## 406 - "Z"型矩阵 (CF628E)
+## "Z"型矩阵 (CF628E)
 
-[题目链接](https://oj.daimayuan.top/course/10/problem/614)
+[题目链接](https://oj.daimayuan.top/problem/614)
 
-5s, 1024MB
+5 s, 1024 MB
 
 对于一个只包含 `.` 和 `z` 的矩阵, 当以下条件满足时:
 
@@ -695,78 +515,15 @@ zzzz
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-```cpp
-const int N = 3e3 + 5;
-
-int tr[N * N];
-int cnt_a;
-void add(int x, int v) { for (; x <= cnt_a; x += x & -x) tr[x] += v; }
-int query(int x) {
-    int res = 0;
-    for (; x; x -= x & -x) res += tr[x];
-    return res;
-}
-
-struct node {
-    int id, num;
-    bool operator<(const node& rhs) const { return num < rhs.num; }
-} a[N * N];
-
-struct note {
-    int pre, suf, id, val;
-    bool operator<(const note& rhs) const { return val < rhs.val; }
-} b[N * N];
-
-int pre[N][N], suf[N][N], diag[N][N], id[N][N];
-bool maps[N][N];
-
-int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    cout.tie(nullptr);
-
-    int n, m;
-    cin >> n >> m;
-    _for(i, 1, n) _for(j, 1, m) {
-        char ch;
-        cin >> ch;
-        maps[i][j] = ch == 'z';
-    }
-    _for(i, 1, n) _for(j, 1, m) if (maps[i][j]) pre[i][j] = pre[i][j - 1] + 1;
-    _for(i, 1, n) _rfor(j, m, 1) if (maps[i][j]) suf[i][j] = suf[i][j + 1] + 1;
-    _rfor(i, n, 1) _for(j, 1, m) if (maps[i][j]) diag[i][j] = diag[i + 1][j - 1] + 1;
-
-    _for(k, 1, m) for (int i = 1, j = k; j >= 1 && i <= n; ++i, --j) a[id[i][j] = ++cnt_a] = {cnt_a, i - suf[i][j] + 1};
-    _for(k, 2, n) for (int i = k, j = m; j >= 1 && i <= n; ++i, --j) a[id[i][j] = ++cnt_a] = {cnt_a, i - suf[i][j] + 1};
-    sort(a + 1, a + 1 + cnt_a);
-
-    int cnt_b = 0;
-    _for(i, 1, n, len) _for(j, 1, m) {
-        if (!(len = min(pre[i][j], diag[i][j]))) continue;
-        b[++cnt_b] = {id[i][j], id[i + len - 1][j - len + 1], cnt_b, i + 1};
-    }
-    sort(b + 1, b + 1 + cnt_b);
-
-    i64 ans = 0;
-    _for(i, 1, cnt_b, k = 1) {
-        while (k <= cnt_a && a[k].num < b[i].val) {
-            add(a[k].id, 1);
-            ++k;
-        }
-        ans += query(b[i].suf) - query(b[i].pre - 1);
-    }
-    cout << ans << '\n';
-    return 0;
-}
-```
+{% icodeweb cpa title:CodeForces_628E lang:cpp CodeForces/628E/0.cpp %}
 
 </details>
 
-## 407 - 好序列 (UVa1608, BZOJ4059)
+## 好序列 (UVa1608, BZOJ4059)
 
-[题目链接](https://oj.daimayuan.top/course/10/problem/613)
+[题目链接](https://oj.daimayuan.top/problem/613)
 
-3s, 1024MB
+3 s, 1024 MB
 
 有一个长为$n$的序列$A_1, A_2, \dots, A_n$. 定义一个序列$\{A\}$是好的, 当且仅当他的每一个子区间$[l,r]$满足, 至少存在一个元素$x$仅出现了一次
 
@@ -777,7 +534,7 @@ int main() {
 第一行有一个整数 T($1\leq T\leq 10000$), 描述数据组数
 
 对于每组数据, 第一行有一个整数$n$, 第二行有$n$个整数$A_i$
-输出格式
+### 输出格式
 
 对于每组数据, 你需要判断给出的序列是不是好的, 如果是好的输出 non-boring, 否则输出 boring
 
@@ -813,58 +570,6 @@ boring
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-```cpp
-int a[N], pre[N], suf[N];
-
-bool dc(int L, int R) {
-    if (L == R) return 1;
-    int k = -1;
-    for (int i = 0; L + i <= R - i; ++i) {
-        if (pre[L + i] < L && suf[L + i] > R) {
-            k = L + i;
-            break;
-        }
-        if (pre[R - i] < L && suf[R - i] > R) {
-            k = R - i;
-            break;
-        }
-    }
-    if (k == -1) return 0;
-    bool f1 = 1, f2 = 1;
-    if (L < k) f1 = dc(L, k - 1);
-    if (k < R) f2 = dc(k + 1, R);
-    return f1 & f2;
-}
-
-int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    cout.tie(nullptr);
-
-    int _t;
-    cin >> _t;
-    while (_t--) {
-        int n;
-        cin >> n;
-        {
-            map<int, int> m;
-            _for(i, 1, n) cin >> a[i];
-            _for(i, 1, n) {
-                pre[i] = m.count(a[i]) ? m[a[i]] : -1;
-                m[a[i]] = i;
-            }
-        }
-        {
-            map<int, int> m;
-            _rfor(i, n, 1) {
-                suf[i] = m.count(a[i]) ? m[a[i]] : n + 1;
-                m[a[i]] = i;
-            }
-        }
-        cout << (dc(1, n) ? "non-boring\n" : "boring\n");
-    }
-    return 0;
-}
-```
+{% icodeweb cpa title:UVA_1608 lang:cpp UVA/1608/0.cpp %}
 
 </details>
