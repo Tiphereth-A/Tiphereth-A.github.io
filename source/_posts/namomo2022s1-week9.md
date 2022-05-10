@@ -249,7 +249,7 @@ $X$坐标轴上有$N$个钥匙和$N$个宝箱, 玩家初始位置为$x = 0$, 每
 
 </details>
 
-## Mouse Hunt
+## Mouse Hunt (CF1027D)
 
 [题目链接](https://oj.daimayuan.top/problem/848)
 
