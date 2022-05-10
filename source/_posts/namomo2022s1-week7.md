@@ -7,6 +7,8 @@ tags:
   - 程序设计
   - 题解
   - 代码源
+  - CodeForces
+  - 贪心
 date: 2022-04-09 16:00:56
 ---
 
@@ -14,7 +16,7 @@ Namomo Spring Camp 2022 Div1 每日一题记录 (2022.04.09-2022.04.15)
 
 <!-- more -->
 
-## 画画
+## 画画 (CF1638D)
 
 [题目链接](https://oj.daimayuan.top/problem/701)
 
@@ -93,14 +95,12 @@ Namomo Spring Camp 2022 Div1 每日一题记录 (2022.04.09-2022.04.15)
 
 对于第二个输入不可能找到一种合适的解决方案
 
-### 解题思路
-
-### 复杂度
-
 ### 代码参考
 
 <details>
 <summary><font color='orange'>Show code</font></summary>
+
+{% icodeweb cpa title:CodeForces_1638D lang:cpp CodeForces/1638D/0.cpp %}
 
 </details>
 
