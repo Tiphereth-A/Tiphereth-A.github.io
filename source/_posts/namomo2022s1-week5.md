@@ -16,11 +16,11 @@ Namomo Spring Camp 2022 Div1 每日一题记录 (2022.03.26-2022.04.01)
 
 <!-- more -->
 
-## 501 - 社交圈 (CF1060D)
+## 社交圈 (CF1060D)
 
-[题目链接](https://oj.daimayuan.top/course/10/problem/606)
+[题目链接](https://oj.daimayuan.top/problem/606)
 
-1s, 256MB
+1 s, 256 MB
 
 现在有 $N$ 个人,每一个人都不想周围的人坐得离他很近,所以在他的左边要放 $L_i$ 张空椅子,右边要放 $R_i$ 张空椅子, 同时每个人自己要坐 $1$ 张椅子
 
@@ -63,35 +63,15 @@ $0 \leq L_i,R_i \leq 1\times10^9$
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-```cpp
-const uint32_t N = 1e5 + 5;
-
-int l[N], r[N];
-
-int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    cout.tie(nullptr);
-
-    int n;
-    cin >> n;
-    _for(i, 1, n) cin >> l[i] >> r[i];
-    sort(l + 1, l + n + 1);
-    sort(r + 1, r + n + 1);
-    i64 ans = n;
-    _for(i, 1, n) ans += max(l[i], r[i]);
-    cout << ans;
-    return 0;
-}
-```
+{% icodeweb cpa title:CodeForces_1060D lang:cpp CodeForces/1060D/0.cpp %}
 
 </details>
 
-## 502 - 区间和
+## 区间和
 
-[题目链接](https://oj.daimayuan.top/course/10/problem/609)
+[题目链接](https://oj.daimayuan.top/problem/609)
 
-1s, 512MB
+1 s, 512 MB
 
 ### 题目描述
 
@@ -145,37 +125,15 @@ $O(n\alpha (n))$
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-```cpp
-const uint32_t N = 1e5 + 5;
-
-int fa[N];
-int find(int x) { return x == fa[x] ? fa[x] : fa[x] = find(fa[x]); }
-void merge(int x, int y) { fa[find(x)] = find(y); }
-
-int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    cout.tie(nullptr);
-
-    int n, q;
-    cin >> n >> q;
-    _for(i, 1, n) fa[i] = i;
-    _for(i, 1, q, x, y) {
-        cin >> x >> y;
-        merge(x - 1, y);
-    }
-    cout << (find(0) == find(n) ? "Yes" : "No");
-    return 0;
-}
-```
+{% icodeweb cpa title:Daimayuan_609 lang:cpp Daimayuan/609/0.cpp %}
 
 </details>
 
-## 503 - 选数 2 ([40th Petrozavodsk Programming Camp, Winter 2021, day 1, M](https://qoj.ac/problem/862))
+## 选数 2 ([40th Petrozavodsk Programming Camp, Winter 2021, day 1, M](https://qoj.ac/problem/862))
 
-[题目链接](https://oj.daimayuan.top/course/10/problem/618)
+[题目链接](https://oj.daimayuan.top/problem/618)
 
-1s, 1024MB
+1 s, 1024 MB
 
 ### 题目描述
 
@@ -198,7 +156,7 @@ int main() {
 第一行输出$M$, 表示不可能被选到的数的个数
 
 接下来一行输出$M$个正整数, 分别表示不可能被选到的数字在原序列中的下标, 并按升序排序. 两个数字之间用空格隔开
-数据范围
+### 数据范围
 
 对于所有数据, 满足$1 \leq n \leq 2 \cdot 10^5$, $0 \leq a_i \leq 10^9$, $1 \leq q < p \leq 1000$
 提示
@@ -252,3 +210,233 @@ int main() {
 2
 4 5
 ```
+
+## 数组划分
+
+[题目链接](https://oj.daimayuan.top/problem/665)
+
+1 s, 256 MB
+
+### 题目描述
+
+给定 $n$ 个整数，将其划分为恰好 $k$ 个子数组，求对每个子数组求和后按与运算的最大值。
+
+### 输入格式
+
+第一行，包含两个整数 $n,k$。
+
+### 输出格式
+
+输出一行，表示求和后与运算的最大值。
+
+### 样例输入
+
+```input1
+3 2
+1 2 3
+```
+
+### 样例输出
+
+```output1
+3
+```
+
+### 说明
+
+只有两种情况：
+
+1. $[1,2],[3]$，答案为 $(1+2)\&3=3$
+1. $[1],[2,3]$，答案为 $1\&(2+3)=1$
+
+所以答案为 $3$
+
+### 数据限制
+
+对于 $100\%$ 的数据，保证 $1\leq k\leq n \leq 100,0\leq a_i\leq 2^{50}$。
+
+### 解题思路
+
+### 复杂度
+
+### 代码参考
+
+<details>
+<summary><font color='orange'>Show code</font></summary>
+
+</details>
+
+## namonamo
+
+[题目链接](https://oj.daimayuan.top/problem/678)
+
+3 s, 512 MB
+
+### 题目描述
+
+dls 桌面上的两个小女孩除了喜欢亲亲以外，还喜欢一起共用一副耳机听歌。
+
+一天，她们正在听她们最喜欢的歌，一首歌的歌词可以看着一个只包含小写字母的字符串，保证字符串的长度为偶数。
+
+不幸的是，她们的 eirpods 是拼夕夕九块九包邮的，发生了一些神奇的故障，使得对于每个字母，恰好只有一个人能够听到。
+
+在一首歌放完后，她们一边抱怨耳机的质量，同时惊奇地发现，她们两个人所听到的字母各自组成的字符串完全相同。
+
+给定一首歌的歌词，判断这种事情是否可能发生。
+
+形式化题意：给定一个长度是偶数，仅有小写字母构成的字符串，判断是否能被分成两个完全相同的子序列。
+
+### 输入格式
+
+第一行一个正整数 $T$，表示数据组数。
+
+接下来每一行一个字符串 $S$，表示歌词。
+
+### 输出格式
+
+输出共 $T$ 行，每行一个字符串 possible 或 impossible，表示该组数据的答案。
+
+### 样例输入
+
+```input1
+5
+aabb
+abba
+namonamo
+arqmpfvvbtltlhufznkldkurrazmgebfxeamrewn
+aacfcfqqsmksimkoioeertbrtbhphnpnggddjjll
+```
+
+### 样例输出
+
+```output1
+possible
+impossible
+possible
+impossible
+possible
+```
+
+### 样例分析&数据范围
+
+对于第一组样例，一种可能的故障情况如下：
+
+- 第一个小女孩听到 a
+- 第二个小女孩听到 a
+- 第一个小女孩听到 b
+- 第二个小女孩听到 b
+
+对于第三组样例，一种可能的故障情况如下：
+
+- 第一个小女孩听到前 $4$ 个字母
+- 第二个小女孩听到后 $4$ 个字母
+
+#### 数据范围
+
+对于 $100\%$ 的数据，$T=21,|N|\le 40$。
+
+### 解题思路
+
+### 复杂度
+
+### 代码参考
+
+<details>
+<summary><font color='orange'>Show code</font></summary>
+
+</details>
+
+## 体育节
+
+[题目链接](https://oj.daimayuan.top/problem/668)
+
+1 s, 256 MB
+
+### 题目描述
+
+学生会正在为体育节的接力赛做准备。学生会由 $n$个成员组成，他们将在比赛中一个一个地跑，第 $i$ 个人的速度是 $s_i$，第 $i$次接力会产生一个差异值 $d_i$，它的值是前 $i$个参与接力赛的人的速度最大值与最小值的差，也就是说，我们假设第 $i$个参与比赛的人的速度是 $a_i$，那么 $d_i = max(a_1, a_2,..., a_i) - min(a_1, a_2,..., a_i)$。现在你可以任意安排参加比赛的人的顺序，一个人只能参与一次，且每个人都必须参与，请你求出 $d_1 + d_2 + ... + d_n$的最小值。
+
+### 输入格式
+
+第一行输入一个正整数 n，第二行输入 $i$个整数代表 $a_i$
+
+### 输出格式
+
+输出一个整数，代表答案
+
+### 样例输入
+
+```input1
+3
+3 1 2
+```
+
+### 样例输出
+
+```output1
+3
+```
+
+### 数据规模
+
+$1 \leq n \leq 2000$, $1 \leq s_i \leq 1e9$
+
+### 解题思路
+
+### 复杂度
+
+### 代码参考
+
+<details>
+<summary><font color='orange'>Show code</font></summary>
+
+</details>
+
+## 测温
+
+[题目链接](https://oj.daimayuan.top/problem/670)
+
+1 s, 1024 MB
+
+### 题目描述
+
+某国进行了连续$n$天的温度测量，测量存在误差，测量结果是第$i$天温度在$[l_i,r_i]$范围内。求温度不下降的最长**连续**天数。
+
+### 输入描述
+
+第一行一个整数$n (1\leq n \leq 10^6)$。
+
+下面$n$行，每行两个数$l_i, r_i (-10^9 \leq l_i\leq r_i\leq 10^9)$。
+
+### 输出描述
+
+一行，表示该段的长度。
+
+### 样例输入
+
+```input1
+6
+6 10
+1 5
+4 8
+2 5
+6 8
+3 5
+```
+
+### 样例输出
+
+```output1
+4
+```
+
+### 解题思路
+
+### 复杂度
+
+### 代码参考
+
+<details>
+<summary><font color='orange'>Show code</font></summary>
+
+</details>

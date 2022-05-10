@@ -23,11 +23,11 @@ Namomo Spring Camp 2022 Div1 每日一题记录 (2022.03.05-2022.03.11)
 
 <!-- more -->
 
-## 201 - 摘桃子
+## 摘桃子
 
 [题目链接](https://oj.daimayuan.top/problem/466)
 
-1s, 1024MB
+1 s, 1024 MB
 
 桃园里面有 $n$ 个人在摘桃子. 现在 $n$ 个人排成一排, 从左到右每个人拥有的桃子数是 $a_i$. 桃园里有一个免费获得桃子的规则, 如果连续 $x$ 个人的桃子总数除以 $k$ 的余数正好是 $x$, 那么这 $x$ 个人就可以免费获得桃子, 并且每天只有一次免费获得桃子的机会. 请聪明的你算出一共有多少种不同的方案可以使今天有人免费获得桃子
 
@@ -77,37 +77,15 @@ $O(n\log n)$ (使用 `map`)
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-```cpp
-const uint32_t N = 2e5 + 5;
-
-map<i64, int> mp;
-i64 a[N], s[N];
-int main() {
-    int n, k;
-    cin >> n >> k;
-    _for(i, 1, n) cin >> a[i];
-    _for(i, 1, n) s[i] = ((s[i - 1] + a[i] - 1) % k + k) % k;
-    i64 ans = 0, l = 0;
-    mp[0] = 1;
-    _for(i, 1, n) {
-        if (l <= i - k) {
-            if (mp[s[l]] > 0) --mp[s[l]];
-            ++l;
-        }
-        ans += mp[s[i]]++;
-    }
-    cout << ans;
-    return 0;
-}
-```
+{% icodeweb cpa title:Daimayuan_466 lang:cpp Daimayuan/466/0.cpp %}
 
 </details>
 
-## 202 - 路径计数 2 (CF559C)
+## 路径计数 2 (CF559C)
 
 [题目链接](https://oj.daimayuan.top/problem/467)
 
-1s, 512MB
+1 s, 512 MB
 
 有一个 $n * n$ 的网格, 有些格子是可以通行的, 还有 $m$ 个格子是障碍
 
@@ -164,62 +142,15 @@ $O(m^2)$
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-```cpp
-const uint32_t N = 1e6 + 5, M = 3e3 + 5;
-const i64 MOD = 1e9 + 7;
-
-inline i64 qpow(i64 a, i64 b = MOD - 2, const i64& mod = MOD) {
-    i64 res(1);
-    for (; b; b >>= 1, (a *= a) %= mod)
-        if (b & 1) (res *= a) %= mod;
-    return res;
-}
-
-i64 frac[N * 2], ffrac[N], inv[N];
-auto __ = []() {
-    ffrac[0] = frac[0] = inv[0] = frac[1] = inv[1] = 1;
-    _for(i, 2, 2 * N - 1) frac[i] = frac[i - 1] * i % MOD;
-    _for(i, 1, N - 1) ffrac[i] = ffrac[i - 1] * frac[i] % MOD;
-    i64 _ = qpow(ffrac[N - 1]);
-    _rfor(i, N - 1, 2) {
-        inv[i] = _ * ffrac[i - 1] % MOD;
-        _ = _ * frac[i] % MOD;
-    }
-    return 0;
-}();
-
-auto m_choose_n(int m, int n) -> i64 { return m < n ? 0 : frac[m] * inv[n] % MOD * inv[m - n] % MOD; }
-
-pii a[M];
-i64 f[N];
-int main() {
-    int n, m;
-    cin >> n >> m;
-    _for(i, 1, m) cin >> a[i].first >> a[i].second;
-    a[m + 1] = {n, n};
-    sort(a + 1, a + m + 1);
-    _for(i, 1, m + 1) {
-        auto& _i = a[i];
-        f[i] = m_choose_n(_i.first + _i.second - 2, _i.first - 1);
-        if (!f[i]) continue;
-        _for(j, 1, i - 1) {
-            auto& _j = a[j];
-            if (_j.first > _i.first || _j.second > _i.second) continue;
-            (((f[i] -= f[j] * m_choose_n(_i.first - _j.first + _i.second - _j.second, _i.first - _j.first) % MOD) %= MOD) += MOD) %= MOD;
-        }
-    }
-    cout << f[m + 1];
-    return 0;
-}
-```
+{% icodeweb cpa title:CodeForces_559C lang:cpp CodeForces/559C/0.cpp %}
 
 </details>
 
-## 203 - 函数求和
+## 函数求和
 
 [题目链接](https://oj.daimayuan.top/problem/468)
 
-1s, 1024MB
+1 s, 1024 MB
 
 给定$n$个整数$a_1, a_2, \dots, a_n$和正整数$k$满足$(0 \leq a_i \leq 2^k - 1)$
 
@@ -299,34 +230,15 @@ $O(nk)$
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-```cpp
-const uint32_t N = 101;
-const uint32_t MOD = 998244353;
-
-i64 a[N];
-int a_cnt;
-int main() {
-    int n, k;
-    cin >> n >> k;
-    _for(i, 1ll, n) cin >> a[i];
-    __int128_t ans = 0;
-    i64 _1 = 0, _1pre = 0;
-    _for(i, 1, n) {
-        _1pre = _1;
-        _1pre ^= _1 |= a[i];
-        ans += (1ll << (k - __builtin_popcountll(_1))) * ((1ll << __builtin_popcountll(_1pre)) - 1) * i;
-    }
-    cout << (i64)(ans % MOD);
-}
-```
+{% icodeweb cpa title:Daimayuan_468 lang:cpp Daimayuan/468/0.cpp %}
 
 </details>
 
-## 204 - XOR Inverse (CF1416C)
+## XOR Inverse (CF1416C)
 
-[题目链接](https://oj.daimayuan.top/course/10/problem/497)
+[题目链接](https://oj.daimayuan.top/problem/497)
 
-2s, 512MB
+2 s, 512 MB
 
 给你一个有 $n$ 个非负整数组成的数组 $a$, 你需要选择一个非负整数 $x$, 对数组 $a$ 的每一个 $a_i$ 与 $x$ 进行异或后形成新的数组 $b$, 要求 $b$ 数组的逆序对个数最小, 如果有多个 $x$ 满足条件, 输出最小的 $x$
 
@@ -387,8 +299,6 @@ $1\leq n\leq 3\cdot 10^5$, $0\leq a_i\leq 10^9$
 
 ### 解题思路
 
->
-
 ### 复杂度
 
 ### 代码参考
@@ -402,11 +312,11 @@ $1\leq n\leq 3\cdot 10^5$, $0\leq a_i\leq 10^9$
 
 </details>
 
-## 205 - Closest Equals (CF522D)
+## Closest Equals (CF522D)
 
-[题目链接](https://oj.daimayuan.top/course/10/problem/469)
+[题目链接](https://oj.daimayuan.top/problem/469)
 
-2s, 512MB
+2 s, 512 MB
 
 给定一个下标从 $1$ ~ $n$ 的序列 $a$, 然后进行 $m$ 次询问
 
@@ -473,8 +383,6 @@ $1\leq n\leq 3\cdot 10^5$, $0\leq a_i\leq 10^9$
 
 ### 解题思路
 
->
-
 ### 复杂度
 
 ### 代码参考
@@ -488,11 +396,11 @@ $1\leq n\leq 3\cdot 10^5$, $0\leq a_i\leq 10^9$
 
 </details>
 
-## 206 - CCPC Harbin 2021 G, Damaged Bicycle
+## CCPC Harbin 2021 G, Damaged Bicycle
 
-[题目链接](https://oj.daimayuan.top/course/10/problem/380)
+[题目链接](https://oj.daimayuan.top/problem/380)
 
-3s, 1024MB
+3 s, 1024 MB
 
 Ring Ring Ring ... The bell rang at half past six in the morning. After turning off the alarm, George went on to sleep again. When he woke up again, it was seven fifty and there were ten minutes left for class!
 
@@ -608,8 +516,6 @@ As given in the input, the only bicycle has $\frac{50}{100}$ probability to be d
 
 ### 解题思路
 
->
-
 ### 复杂度
 
 ### 代码参考
@@ -617,17 +523,13 @@ As given in the input, the only bicycle has $\frac{50}{100}$ probability to be d
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-```cpp
-
-```
-
 </details>
 
-## 207 - 拆方块 (CF573B, 51NOD1550)
+## 拆方块 (CF573B, 51NOD1550)
 
-[题目链接](https://oj.daimayuan.top/course/10/problem/501)
+[题目链接](https://oj.daimayuan.top/problem/501)
 
-1s, 1024MB
+1 s, 1024 MB
 
 有$n$堆方块, 第$i$堆方块由$h_i$个方块堆积而成. 具体可以看样例
 
@@ -668,17 +570,11 @@ As given in the input, the only bicycle has $\frac{50}{100}$ probability to be d
 
 ### 解题思路
 
->
-
 ### 复杂度
 
 ### 代码参考
 
 <details>
 <summary><font color='orange'>Show code</font></summary>
-
-```cpp
-
-```
 
 </details>

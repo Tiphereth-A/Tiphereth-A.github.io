@@ -31,11 +31,11 @@ Namomo Spring Camp 2022 Div1 每日一题记录 (2022.02.26-2022.03.04)
 
 <!-- more -->
 
-## 103 - 子串的最大差 (CF817D)
+## 子串的最大差 (CF817D)
 
 [题目链接](https://oj.daimayuan.top/problem/436)
 
-1s, 1024MB
+1 s, 1024 MB
 
 定义序列的最大差为序列中最大数与最小数的差. 比如 $(3,1,4,5,6)$ 的最大差为 $6 - 1 = 5$, $(2,2)$ 的最大差为 $2 - 2 = 0$
 
@@ -104,63 +104,15 @@ $O(n)$
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-```cpp
-const uint32_t N = 5e5 + 1;
-
-i64 a[N];
-i64 L[N], l[N], R[N], r[N];
-
-int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    int n;
-    cin >> n;
-    _for(i, 1, n) cin >> a[i];
-    {
-        stack<int> s;
-        _for(i, 1, n) {
-            while (!s.empty() && a[s.top()] < a[i]) s.pop();
-            L[i] = s.empty() ? 0 : s.top();
-            s.push(i);
-        }
-    }
-    {
-        stack<int> s;
-        _rfor(i, n, 1) {
-            while (!s.empty() && a[s.top()] <= a[i]) s.pop();
-            R[i] = s.empty() ? n + 1 : s.top();
-            s.push(i);
-        }
-    }
-    {
-        stack<int> s;
-        _for(i, 1, n) {
-            while (!s.empty() && a[s.top()] > a[i]) s.pop();
-            l[i] = s.empty() ? 0 : s.top();
-            s.push(i);
-        }
-    }
-    {
-        stack<int> s;
-        _rfor(i, n, 1) {
-            while (!s.empty() && a[s.top()] >= a[i]) s.pop();
-            r[i] = s.empty() ? n + 1 : s.top();
-            s.push(i);
-        }
-    }
-    i64 ans = 0;
-    _for(i, 1, n) ans += a[i] * ((R[i] - i) * (i - L[i]) - (r[i] - i) * (i - l[i]));
-    cout << ans;
-}
-```
+{% icodeweb cpa title:CodeForces_817D lang:cpp CodeForces/817D/0.cpp %}
 
 </details>
 
-## 104 - no crossing (CF793D)
+## no crossing (CF793D)
 
 [题目链接](https://oj.daimayuan.top/problem/437)
 
-1s, 1024MB
+1 s, 1024 MB
 
 给出一个有向图, 找一条恰好经过 $k$ 个点的最短路径, 要求每次选的边不能跃过之前已经经过的节点. 即对于路径中的边 $x \rightarrow y$, 不存在以前经过的点 $t$ 使得三者的编号满足 $\min(x,y) \leq t \leq \max(x,y)$
 
@@ -249,45 +201,15 @@ $O(n^3k)$
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-```cpp
-const uint32_t N = 102;
-int g[N][N];
-int f[2][N][N];
-
-int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    _set_inf(g);
-    int n, k, m;
-    cin >> n >> k >> m;
-    _for(i, 1, m, x, y, w) {
-        cin >> x >> y >> w;
-        chkmin(g[x][y], w);
-    }
-    _set_inf(f[0]);
-    _for(i, 1, n) f[0][0][i] = f[0][n + 1][i] = 0;
-    _for(cnt, 1, k, now = 0) {
-        now ^= 1;
-        _set_inf(f[now]);
-        _for(l, 0, n - 1, _) _for(r, l + 2, n + 1) _for(to, l + 1, r - 1) {
-            _ = min(f[now ^ 1][r][l] + g[l][to], f[now ^ 1][l][r] + g[r][to]);
-            chkmin(f[now][r][to], _);
-            chkmin(f[now][l][to], _);
-        }
-    }
-    int ans = 0x3f3f3f3f;
-    _for(l, 0, n + 1) _for(r, 0, n + 1) chkmin(ans, min(f[~k & 1][l][r], f[~k & 1][r][l]));
-    cout << (ans == 0x3f3f3f3f ? -1 : ans);
-}
-```
+{% icodeweb cpa title:CodeForces_793D lang:cpp CodeForces/793D/0.cpp %}
 
 </details>
 
-## 105 - Dis
+## Dis
 
 [题目链接](https://oj.daimayuan.top/problem/451)
 
-1s, 512MB
+1 s, 512 MB
 
 给出 $n$ 个点的一棵树, 每个点有各自的点权, 多次询问两个点简单路径所构成点集的异或和
 
@@ -339,11 +261,11 @@ int main() {
 
 LCA 板子题, 略
 
-## 106 - 选数 (POJ2356)
+## 选数 (POJ2356)
 
 [题目链接](https://oj.daimayuan.top/problem/456)
 
-1s, 1024MB
+1 s, 1024 MB
 
 给定$N$个正整数$a_1, a_2, \dots, a_n$ . 要求从其中选出若干数字, 使得这些数字的和 $mod$ $N = 0$ (对于每个下标能且只能选择一次)
 
@@ -391,11 +313,11 @@ $3 + 5 = 8$, $8 \ mod \ 4 = 0$
 
 以前写过题解, 参见 {% post_link sa-poj-2356 %}
 
-## 107 - 序列操作 (CF1198B)
+## 序列操作 (CF1198B)
 
 [题目链接](https://oj.daimayuan.top/problem/452)
 
-1s, 1024MB
+1 s, 1024 MB
 
 给定一个长度为 $n$ 的序列 $a_1,a_2,\dots ,a_n$
 
@@ -454,43 +376,15 @@ $O(n)$
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-```cpp
-const uint32_t N = 1e6 + 5;
-
-int a[N];
-bool vis[N];
-tuple<int, int, int> op[N];
-
-int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    cout.tie(nullptr);
-    int n, q;
-    cin >> n >> q;
-    _for(i, 1, n) cin >> a[i];
-    int now_max = 0;
-    _for(i, 1, q, x, y, z) {
-        cin >> x >> y;
-        if (x == 1) cin >> z;
-        op[i] = {x - 1, y, z};
-    }
-    _rfor(i, q, 1) if (get<0>(op[i])) chkmax(now_max, get<1>(op[i]));
-    else if (!vis[get<1>(op[i])]) {
-        vis[get<1>(op[i])] = 1;
-        a[get<1>(op[i])] = max(now_max, get<2>(op[i]));
-    }
-
-    _for(i, 1, n) cout << (vis[i] ? a[i] : max(now_max, a[i])) << " \n"[i == n];
-}
-```
+{% icodeweb cpa title:CodeForces_1198B lang:cpp CodeForces/1198B/0.cpp %}
 
 </details>
 
-## 108 - 数数 (HDU4417)
+## 数数 (HDU4417)
 
 [题目链接](https://oj.daimayuan.top/problem/464)
 
-1s, 1024MB
+1 s, 1024 MB
 
 在给定 $N$ 长的数组 $\{A\}$ 中进行 $Q$ 次询问 $[L_i, R_i]$ 区间中不大于 $H_i$ 的元素个数
 
@@ -557,72 +451,15 @@ $O((n+q)\log n)$
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-```cpp
-const uint32_t N = 1e5 + 5;
-
-struct ptree {
-    int val, l, r;
-} tree[N * 24];
-int root[N], node_cnt;
-
-#define PRE tree[pre]
-#define PREL tree[L]
-#define PRER tree[R]
-#define NOW tree[now]
-void modify(int pre, int l, int r, int& now, int pos) {
-    tree[now = ++node_cnt] = {PRE.val + 1, PRE.l, PRE.r};
-    if (l == r) return;
-    int mid = _mid(l, r);
-    if (pos <= mid)
-        modify(PRE.l, l, mid, NOW.l, pos);
-    else
-        modify(PRE.r, mid + 1, r, NOW.r, pos);
-}
-int query(int L, int R, int l, int r, int k) {
-    if (l == r) return k >= l ? PRER.val - PREL.val : 0;
-    int mid = _mid(l, r);
-    if (mid > k) return query(PREL.l, PRER.l, l, mid, k);
-    int tmp = tree[PRER.l].val - tree[PREL.l].val;
-    if (mid == k)
-        return tmp;
-    else
-        return tmp + query(PREL.r, PRER.r, mid + 1, r, k);
-}
-
-int a[N], b[N], b_len;
-
-int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    cout.tie(nullptr);
-
-    int _t;
-    cin >> _t;
-    while (_t--) {
-        int n, q;
-        cin >> n >> q;
-        node_cnt = 0;
-        _set_nul_n(root, n + 1);
-        _for(i, 1, n) cin >> a[i];
-        _for(i, 1, n) b[i] = a[i];
-        sort(b + 1, b + n + 1);
-        b_len = unique(b + 1, b + n + 1) - b - 1;
-        _for(i, 1, n) modify(root[i - 1], 1, b_len, root[i], lower_bound(b + 1, b + b_len + 1, a[i]) - b);
-        _for(i, 1, q, l, r, h) {
-            cin >> l >> r >> h;
-            cout << query(root[l - 1], root[r], 1, b_len, upper_bound(b + 1, b + b_len + 1, h) - b - 1) << " \n"[i == q];
-        }
-    }
-}
-```
+{% icodeweb cpa title:HDU_4417 lang:cpp HDU/4417/0.cpp %}
 
 </details>
 
-## 109 - Minimum Or Spanning Tree (CF1624G)
+## Minimum Or Spanning Tree (CF1624G)
 
 [题目链接](https://oj.daimayuan.top/problem/464)
 
-1s, 1024MB
+1 s, 1024 MB
 
 给出$n$个点, $m$条边的无向图, 每条边连接$u,v$两个端点, 边权为$w$, 求图的生成树的最小代价
 
@@ -678,35 +515,6 @@ $O((n+m)\log\max w)$
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-```cpp
-const uint32_t N = 2e5 + 5, M = 4e5 + 5;
-
-int fa[N];
-auto find_fa(int x) -> int { return x == fa[x] ? fa[x] : fa[x] = find_fa(fa[x]); }
-auto merge(int x, int y) -> bool {
-    int fx = find_fa(x), fy = find_fa(y);
-    return fx == fy ? 0 : fa[fx] = fy;
-}
-
-tuple<int, int, int> e[M];
-
-int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    cout.tie(nullptr);
-    int n, m;
-    cin >> n >> m;
-    _for(i, 1, m) cin >> get<0>(e[i]) >> get<1>(e[i]) >> get<2>(e[i]);
-    int ans = (1 << K) - 1;
-    _rfor(i, K - 1, 0) {
-        _for(i, 1, n) fa[i] = i;
-        int _ = n;
-        ans ^= (1 << i);
-        _for(i, 1, m) if ((get<2>(e[i]) | ans) == ans && merge(get<0>(e[i]), get<1>(e[i])))-- _;
-        ans ^= ((int)(_ != 1) << i);
-    }
-    cout << ans << '\n';
-}
-```
+{% icodeweb cpa title:CodeForces_1624G lang:cpp CodeForces/1624G/0.cpp %}
 
 </details>
