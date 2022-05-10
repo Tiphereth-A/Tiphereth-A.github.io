@@ -162,26 +162,7 @@ for all,$1\leq C_i \leq 100\,000\,000$ and $S \times (N-1) \leq C_i$
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-```cpp
-#include <bits/stdc++.h>
-using namespace std;
-int a[100005];
-
-int main() {
-    int n, s;
-    int min_a = INT_MAX, ans = 0;
-    scanf("%d%d", &n, &s);
-    for (int i = 1; i <= n; ++i) {
-        scanf("%d", a + i);
-        min_a = min(min_a, a[i] + n * s);
-    }
-    for (int i = n; i; --i) {
-        ans = max(ans, min_a - i * s);
-        min_a = min(min_a, a[i]);
-    }
-    printf("%d", ans);
-}
-```
+{% icodeweb cpa title:B lang:cpp misc/icpc-akmr2020-p/B/0.cpp %}
 
 </details>
 
@@ -280,24 +261,6 @@ for all $1 \leq i\leq K,1\leq S_{i}\leq 1\,000\,000,1\leq P_i \leq N$
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-```cpp
-#include <bits/stdc++.h>
-using namespace std;
-using i64 = int64_t;
-const int N = 5e3 + 5;
-pair<i64, i64> a[N];
-i64 f[N], g[N];
-int main() {
-    int n, k;
-    scanf("%lld%lld", &n, &k);
-    for (int i = 1; i <= k; ++i) scanf("%lld%lld", &a[i].second, &a[i].first);
-    sort(a + 1, a + 1 + k);
-    for (int i = 1; i <= k; ++i) {
-        for (int j = i; j <= n; ++j) g[j] = f[j - 1] + a[i].first * abs(a[i].second - j);
-        for (int j = i; j <= n; ++j) f[j] = i != j ? min(f[j - 1], g[j]) : g[j];
-    }
-    printf("%lld", f[n]);
-}
-```
+{% icodeweb cpa title:C lang:cpp misc/icpc-akmr2020-p/C/0.cpp %}
 
 </details>

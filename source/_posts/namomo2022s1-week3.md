@@ -64,10 +64,6 @@ Namomo Spring Camp 2022 Div1 每日一题记录 (2022.03.12-2022.03.18)
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-```cpp
-
-```
-
 </details>
 
 ## 工作安排
@@ -130,10 +126,6 @@ $0 \leq D_i,P_i \leq 1\times10^9$
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-```cpp
-
-```
-
 </details>
 
 ## 三角果计数
@@ -192,10 +184,6 @@ $0 \leq D_i,P_i \leq 1\times10^9$
 
 <details>
 <summary><font color='orange'>Show code</font></summary>
-
-```cpp
-
-```
 
 </details>
 
@@ -256,10 +244,6 @@ Polycarp 有一个长度为 $n$ 的数组 $a_1,a_2,...,a_n$ ($n$ 是偶数) . Po
 
 <details>
 <summary><font color='orange'>Show code</font></summary>
-
-```cpp
-
-```
 
 </details>
 
@@ -322,10 +306,6 @@ Polycarp 有一个长度为 $n$ 的数组 $a_1,a_2,...,a_n$ ($n$ 是偶数) . Po
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-```cpp
-
-```
-
 </details>
 
 ## 树上逆序对
@@ -373,10 +353,6 @@ Polycarp 有一个长度为 $n$ 的数组 $a_1,a_2,...,a_n$ ($n$ 是偶数) . Po
 
 <details>
 <summary><font color='orange'>Show code</font></summary>
-
-```cpp
-
-```
 
 </details>
 
@@ -438,9 +414,5 @@ Polycarp 有一个长度为 $n$ 的数组 $a_1,a_2,...,a_n$ ($n$ 是偶数) . Po
 
 <details>
 <summary><font color='orange'>Show code</font></summary>
-
-```cpp
-
-```
 
 </details>

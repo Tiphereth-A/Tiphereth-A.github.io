@@ -107,60 +107,7 @@ $O(n\log n)$
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-```cpp
-/*
-* @Author: Tifa
-* @LastEditTime: 2020-11-15 23:01:18
-* @Description:
-*/
-#include <bits/stdc++.h>
-using namespace std;
-const int N = 1e5 + 5;
-
-bool vis[N];
-int mu[N], prime[N], cnt;
-
-int64_t a[N], b[N], c[N];
-
-int main() {
-    int n;
-    cin >> n;
-    mu[1] = 1;
-    for (int i = 2; i <= n; ++i) {
-        if (!vis[i]) {
-            prime[++cnt] = i;
-            mu[i] = -1;
-        }
-        for (int j = 1; j <= cnt && i * prime[j] <= n; ++j) {
-            vis[i * prime[j]] = 1;
-            mu[i * prime[j]] = 0;
-            if (i % prime[j] == 0) break;
-            mu[i * prime[j]] = -mu[i];
-        }
-    }
-    for (int i = 1, _; i <= n; ++i) {
-        _ = i;
-        while (_) {
-            a[i] += _ % 10;
-            _ /= 10;
-        }
-    }
-    for (int i = 1; i <= n; ++i)
-        for (int j = 1; j <= sqrt(i); ++j)
-            if (i % j == 0) {
-                b[j] += i / j * a[i];
-                c[j] += a[i];
-                if (j != i / j) {
-                    b[i / j] += j * a[i];
-                    c[i / j] += a[i];
-                }
-            }
-    int64_t ans = 0;
-    for (int i = 1; i <= n; ++i) ans += mu[i] * ((n / i + 1) * c[i] - b[i]);
-    cout << ans;
-    return 0;
-}
-```
+{% icodeweb cpa title:A lang:cpp misc/icpc-cjxp2020/A/0.cpp %}
 
 </details>
 
@@ -183,10 +130,6 @@ int main() {
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-```cpp
-
-```
-
 </details>
 
 ## D - Chinese Valentine's Day
@@ -201,10 +144,6 @@ int main() {
 
 <details>
 <summary><font color='orange'>Show code</font></summary>
-
-```cpp
-
-```
 
 </details>
 
@@ -232,31 +171,7 @@ $$f(l,r)=0\iff f(1,l-1)=f(1,r)$$
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-```cpp
-/*
-* @Author: Tifa
-* @LastEditTime: 2020-11-15 23:01:18
-* @Description:
-*/
-#include <bits/stdc++.h>
-using namespace std;
-const int N = 1 << 21;
-
-int cnt[N] = {1};
-
-int main() {
-    int n;
-    cin >> n;
-    int state = 0;
-    int64_t ans = 0;
-    for (int i = 1, _; i <= n; ++i) {
-        cin >> _;
-        ans += cnt[state ^= (1 << _)]++;
-    }
-    cout << ans;
-    return 0;
-}
-```
+{% icodeweb cpa title:E lang:cpp misc/icpc-cjxp2020/E/0.cpp %}
 
 </details>
 
@@ -311,51 +226,7 @@ $$\forall i\in[1,k]\cap\N,~i\mid\overline{a_1a_2...a_i}$$
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-```cpp
-/*
-* @Author: Tifa
-* @LastEditTime: 2020-11-15 23:01:18
-* @Description:
-*/
-#include <bits/stdc++.h>
-using namespace std;
-using i128 = __int128_t;
-const int num_stick[10] = {6, 2, 5, 5, 4, 5, 6, 3, 7, 6};
-
-int n;
-i128 max_ans;
-bool dfs(i128 ans = 0, int sum = 0, int dep = 0) {
-    if (sum > n) return false;
-    if (sum == n) {
-        max_ans = max(max_ans, ans);
-        return true;
-    }
-    bool f = false;
-    for (int i = 0; i < 10; ++i)
-        if ((ans * 10 + i) % (dep + 1) == 0) f |= dfs(ans * 10 + i, sum + num_stick[i], dep + 1);
-    return f;
-}
-
-ostream& operator<<(ostream& os, i128 n) {
-    if (n < 0) {
-        os << '-';
-        n = -n;
-    }
-    if (n > 9) os << (i128)(n / 10);
-    os << (int)(n % 10);
-    return os;
-}
-
-int main() {
-    cin >> n;
-    if (n > 139 || !dfs()) {
-        cout << -1;
-        return 0;
-    }
-    cout << max_ans;
-    return 0;
-}
-```
+{% icodeweb cpa title:F lang:cpp misc/icpc-cjxp2020/F/0.cpp %}
 
 </details>
 
@@ -414,76 +285,7 @@ int main() {
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-```cpp
-/*
-* @Author: Tifa
-* @LastEditTime: 2020-11-15 23:01:18
-* @Description:
-*/
-#include <bits/stdc++.h>
-using namespace std;
-using i64 = int64_t;
-const int N = 1e5 + 5, BLOCK_N = 4e2 + 5;
-
-i64 n, a[N];
-i64 block_len, block_cnt;
-i64 blocks[BLOCK_N], block_id[N];
-
-i64 block_l(i64 b_id) { return max(1ll, b_id * block_len); }
-i64 block_r(i64 b_id) { return min(n, (b_id + 1) * block_len - 1); }
-void init() {
-    block_len = sqrt(n);
-    block_cnt = sqrt(n) + (n != block_len * block_len);
-    for (int i = 0; i < block_cnt; ++i) blocks[i] = INT_MAX;
-    for (int i = 1; i <= n; ++i) blocks[block_id[i] = i / block_len] = min(a[i], blocks[i / block_len]);
-}
-
-void modify(i64 pos, i64 num) {
-    if (a[pos] != blocks[block_id[pos]]) {
-        blocks[block_id[pos]] = min(a[pos] = num, blocks[block_id[pos]]);
-        return;
-    }
-    blocks[block_id[pos]] = a[pos] = num;
-    for (int i = block_l(block_id[pos]); i <= block_r(block_id[pos]); ++i) blocks[block_id[pos]] = min(a[i], blocks[block_id[pos]]);
-}
-i64 query(i64 pos) {
-    i64 l_bid = block_id[pos], r_bid = block_id[pos];
-    while (l_bid && blocks[l_bid] >= a[pos]) --l_bid;
-    if (l_bid < block_id[pos] && blocks[l_bid] < a[pos]) ++l_bid;
-    while (r_bid < n && blocks[r_bid] >= a[pos]) ++r_bid;
-    if (r_bid > block_id[pos] && blocks[r_bid] < a[pos]) --r_bid;
-
-    i64 l = block_l(l_bid), r = block_r(r_bid);
-    if (l_bid == block_id[pos]) l = pos;
-    while (l && a[l] >= a[pos]) --l;
-    if (a[l] < a[pos]) ++l;
-    if (r_bid == block_id[pos]) r = pos;
-    while (r <= n && a[r] >= a[pos]) ++r;
-    if (a[r] < a[pos]) --r;
-    i64 l_len = pos - l + 1, r_len = r - pos + 1;
-    return l_len * r_len;
-}
-
-int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(0);
-    cout.tie(0);
-    int m;
-    cin >> n >> m;
-    for (int i = 1; i <= n; ++i) cin >> a[i];
-    init();
-    i64 op, x, y;
-    for (int i = 1; i <= m; ++i) {
-        cin >> op >> x;
-        if (op == 1) {
-            cin >> y;
-            modify(x, y);
-        } else
-            cout << query(x) << endl;
-    }
-    return 0;
-}
-```
+{% icodeweb cpa title:H lang:cpp misc/icpc-cjxp2020/H/0.cpp %}
 
 </details>
 
@@ -523,42 +325,7 @@ $$S_2=\bigcup_{i=1+[m=1]}^{\lfloor\frac{n}{2}\rfloor}\{\operatorname{SG}(m,i)\op
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-```cpp
-/*
-* @Author: Tifa
-* @LastEditTime: 2020-11-15 23:01:18
-* @Description:
-*/
-#include <bits/stdc++.h>
-using namespace std;
-const int M = 22505, N = 155;
-
-int sg[N][N];
-int f(int m, int n) {
-    if (~sg[m][n]) return sg[m][n];
-    bool vis[M];
-    memset(vis, 0, sizeof(vis));
-    for (int i = 1; i <= m - i; ++i) {
-        if ((i == 1 && n == 1) || (m - i == 1 && n == 1)) continue;
-        vis[f(i, n) ^ f(m - i, n)] = 1;
-    }
-    for (int i = 1; i <= n - i; ++i) {
-        if ((i == 1 && m == 1) || (n - i == 1 && m == 1)) continue;
-        vis[f(m, i) ^ f(m, n - i)] = 1;
-    }
-    for (int i = 0; i < M; ++i)
-        if (!vis[i]) return sg[m][n] = i;
-}
-
-int main() {
-    int m, n;
-    memset(sg, 0xff, sizeof(sg));
-    sg[1][1] = sg[1][2] = sg[2][1] = sg[1][3] = sg[3][1] = 0;
-    while (cin >> m >> n)
-        cout << (f(m, n) ? "Alice" : "Bob") << endl;
-    return 0;
-}
-```
+{% icodeweb cpa title:J lang:cpp misc/icpc-cjxp2020/J/0.cpp %}
 
 </details>
 
@@ -581,77 +348,7 @@ $O(n^3+q\log B\log n)$, 其中$B$表示所有询问中最大的$b$
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-```cpp
-/*
-* @Author: Tifa
-* @LastEditTime: 2020-11-15 23:01:18
-* @Description:
-*/
-#include <bits/stdc++.h>
-using namespace std;
-
-template <const std::size_t N = (std::size_t)1e2 + 5, class graph_t = std::ptrdiff_t>
-class Floyd {
-  private:
-    std::size_t n;
-    graph_t spath[N][N];
-
-  public:
-    Floyd(std::size_t _n = N - 1) : n(_n) {
-        memset(spath, 0x3f, sizeof(spath));
-        for (std::size_t i = 1; i <= n; ++i) spath[i][i] = 0;
-    }
-    void resize(std::size_t _n) { n = _n; }
-    void clear() { memset(spath, 0, sizeof(spath)); }
-    void addedge(std::size_t from, std::size_t to, graph_t w = 1) { spath[from][to] = w; }
-    void get_all_spath() {
-        for (std::size_t k = 1; k <= n; ++k)
-            for (std::size_t i = 1; i <= n; ++i)
-                for (std::size_t j = 1; j <= n; ++j)
-                    if (spath[i][k] + spath[k][j] < spath[i][j]) spath[i][j] = spath[i][k] + spath[k][j];
-    }
-    const graph_t& operator()(std::size_t from, std::size_t to) { return spath[from][to]; }
-};
-Floyd<> f;
-
-bool judge(int64_t k, int64_t l, int64_t b) {
-    if (k > 1)
-        return  l * log(k) <= log(b + 1 - 1.0 * b / k);
-    else if (k == 1)
-        return l <= b;
-    else
-        return b >= 0;
-}
-
-int main() {
-    int m, n;
-    cin >> n >> m;
-    f.resize(n);
-    for (int i = 1, u, v; i <= m; ++i) {
-        cin >> u >> v;
-        f.addedge(u, v);
-        f.addedge(v, u);
-    }
-    f.get_all_spath();
-    int q;
-    cin >> q;
-    for (int i = 1, s, t, b; i <= q; ++i) {
-        cin >> s >> t >> b;
-        int64_t l = f(s, t);
-        int64_t left = 0, right = b, mid, k;
-        while (left <= right) {
-            mid = left + ((right - left) >> 1);
-            if (judge(mid, l, b)) {
-                k = mid;
-                left = mid + 1;
-            } else
-                right = mid - 1;
-        }
-        cout << k << endl;
-    }
-    return 0;
-}
-```
+{% icodeweb cpa title:K lang:cpp misc/icpc-cjxp2020/K/0.cpp %}
 
 </details>
 
@@ -669,10 +366,6 @@ int main() {
 
 <details>
 <summary><font color='orange'>Show code</font></summary>
-
-```cpp
-
-```
 
 </details>
 
