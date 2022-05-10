@@ -56,7 +56,7 @@ date: 2020-05-07 00:07:49
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa lang:cpp CodeForces/1345A/0.cpp %}
+{% icodeweb cpa title:CodeForces_1345A lang:cpp CodeForces/1345A/0.cpp %}
 
 </details>
 
@@ -95,7 +95,7 @@ $$\sum_{i=1}^t\sqrt{n_i}\leqslant\sqrt{\sum_{i=1}^t1\cdot\sum_{i=1}^tn_i}=\sqrt{
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa lang:cpp CodeForces/1345B/0.cpp %}
+{% icodeweb cpa title:CodeForces_1345B lang:cpp CodeForces/1345B/0.cpp %}
 
 </details>
 
@@ -131,7 +131,7 @@ $$\exists x,y\in\Bbb{Z}, x\ne y\ s.t.\ x+a_{x\operatorname{mod}n}=y+a_{y\operato
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa lang:cpp CodeForces/1345C/0.cpp %}
+{% icodeweb cpa title:CodeForces_1345C lang:cpp CodeForces/1345C/0.cpp %}
 
 </details>
 
@@ -166,6 +166,6 @@ $\Theta(nm)$
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa lang:cpp CodeForces/1345D/0.cpp %}
+{% icodeweb cpa title:CodeForces_1345D lang:cpp CodeForces/1345D/0.cpp %}
 
 </details>

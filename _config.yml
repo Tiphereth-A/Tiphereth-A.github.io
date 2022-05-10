@@ -16,7 +16,7 @@ timezone: ""
 url: https://tifa-233.xyz
 root: /
 # permalink: :year/:month/:day/:title/
-permalink: article/:title/
+permalink: archives/:title/
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
@@ -248,13 +248,16 @@ encrypt: # hexo-blog-encrypt
   wrong_hash_message: Oh, these decrypted content cannot be verified, but you can still have a look.
 
 icodeweb:
+  lang_default: plaintext
   types:
     - name: github
+      lang_default: cpp
       website: https://raw.githubusercontent.com
       prefix:
       suffix:
       codehead: "From GitHub"
     - name: cpa
+      lang_default: cpp
       website: https://raw.githubusercontent.com
       prefix:
         - Tiphereth-A

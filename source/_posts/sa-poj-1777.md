@@ -90,6 +90,6 @@ $$M=2^{\sum_{i=1}^sx_i}\iff N=\prod_{i=1}^s(2^{x_i}-1),~2^{x_i}-1~\text{is}~\tex
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa lang:cpp POJ/1777/0.cpp %}
+{% icodeweb cpa title:POJ_1777 lang:cpp POJ/1777/0.cpp %}
 
 </details>

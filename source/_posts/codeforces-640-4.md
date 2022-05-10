@@ -37,7 +37,7 @@ date: 2020-05-10 01:03:23
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa lang:cpp CodeForces/1352A/0.cpp %}
+{% icodeweb cpa title:CodeForces_1352A lang:cpp CodeForces/1352A/0.cpp %}
 
 </details>
 
@@ -64,7 +64,7 @@ date: 2020-05-10 01:03:23
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa lang:cpp CodeForces/1352B/0.cpp %}
+{% icodeweb cpa title:CodeForces_1352B lang:cpp CodeForces/1352B/0.cpp %}
 
 </details>
 
@@ -117,7 +117,7 @@ $$
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa lang:cpp CodeForces/1352A/0.cpp %}
+{% icodeweb cpa title:CodeForces_1352A lang:cpp CodeForces/1352A/0.cpp %}
 
 </details>
 
@@ -142,7 +142,7 @@ Alice 先手吃一块
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa lang:cpp CodeForces/1352D/0.cpp %}
+{% icodeweb cpa title:CodeForces_1352D lang:cpp CodeForces/1352D/0.cpp %}
 
 </details>
 
@@ -161,7 +161,7 @@ Alice 先手吃一块
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa lang:cpp CodeForces/1352E/0.cpp %}
+{% icodeweb cpa title:CodeForces_1352E lang:cpp CodeForces/1352E/0.cpp %}
 
 </details>
 
@@ -184,7 +184,7 @@ Alice 先手吃一块
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa lang:cpp CodeForces/1352F/0.cpp %}
+{% icodeweb cpa title:CodeForces_1352F lang:cpp CodeForces/1352F/0.cpp %}
 
 </details>
 
@@ -211,6 +211,6 @@ $n<4$时显然无解
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa lang:cpp CodeForces/1352G/0.cpp %}
+{% icodeweb cpa title:CodeForces_1352G lang:cpp CodeForces/1352G/0.cpp %}
 
 </details>

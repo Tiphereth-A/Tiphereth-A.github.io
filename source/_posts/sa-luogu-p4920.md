@@ -88,6 +88,6 @@ B 君想了一下，决定用 2047 年的计算机来试着运行这个题目，
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa lang:cpp Luogu/4920/0.cpp %}
+{% icodeweb cpa title:Luogu_4920 lang:cpp Luogu/4920/0.cpp %}
 
 </details>

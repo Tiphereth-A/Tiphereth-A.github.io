@@ -109,6 +109,6 @@ $$O\left(O(m)+\int_1^{\sqrt n}O\left(\frac{x}{\sqrt m}\right)\mathrm{d}x\right)=
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa lang:cpp Luogu/3768/0.cpp %}
+{% icodeweb cpa title:Luogu_3768 lang:cpp Luogu/3768/0.cpp %}
 
 </details>

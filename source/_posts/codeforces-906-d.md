@@ -110,6 +110,6 @@ $$\Theta\left(\log m+\sum_{i=1}^q\min\{r_i-l_i+1,\log m\}\right)\implies O(q\log
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa lang:cpp CodeForces/906D/0.cpp %}
+{% icodeweb cpa title:CodeForces_906D lang:cpp CodeForces/906D/0.cpp %}
 
 </details>

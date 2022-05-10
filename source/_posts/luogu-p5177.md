@@ -108,6 +108,6 @@ $$2\sum_{i=1}^n\sum_{j=1}^{i-1}[j\leqslant (i\oplus j)\leqslant i]$$
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa lang:cpp Luogu/5177/0.cpp %}
+{% icodeweb cpa title:Luogu_5177 lang:cpp Luogu/5177/0.cpp %}
 
 </details>

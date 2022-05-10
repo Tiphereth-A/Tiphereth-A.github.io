@@ -76,7 +76,7 @@ Maria 可以邀请无限次, 问派对最多可以有多少人
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa lang:cpp CodeForces/1358B/0.cpp %}
+{% icodeweb cpa title:CodeForces_1358B lang:cpp CodeForces/1358B/0.cpp %}
 
 </details>
 
@@ -185,6 +185,6 @@ $$l_{\sum_{i=1}^{j-1}d_i+k}=k,~j=1,2,...,n;k=1,2,...,d_j$$
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa lang:cpp CodeForces/1358D/0.cpp %}
+{% icodeweb cpa title:CodeForces_1358D lang:cpp CodeForces/1358D/0.cpp %}
 
 </details>

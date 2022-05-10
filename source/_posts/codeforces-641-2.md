@@ -40,7 +40,7 @@ date: 2020-06-02 23:20:27
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa lang:cpp CodeForces/1350A/0.cpp %}
+{% icodeweb cpa title:CodeForces_1350A lang:cpp CodeForces/1350A/0.cpp %}
 
 </details>
 
@@ -98,7 +98,7 @@ $$f_i=\max\left(1,f_i,\max_{j|i,~1\leqslant j\leqslant i}\{f_j+1\}\right)$$
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa lang:cpp CodeForces/1350B/0.cpp %}
+{% icodeweb cpa title:CodeForces_1350B lang:cpp CodeForces/1350B/0.cpp %}
 
 </details>
 
@@ -209,7 +209,7 @@ $O(n\log n)$
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa lang:cpp CodeForces/1350C/0.cpp %}
+{% icodeweb cpa title:CodeForces_1350C lang:cpp CodeForces/1350C/0.cpp %}
 
 </details>
 
@@ -218,7 +218,7 @@ $O(n\log n)$
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa lang:cpp CodeForces/1350C/1.cpp %}
+{% icodeweb cpa title:CodeForces_1350C lang:cpp CodeForces/1350C/1.cpp %}
 
 </details>
 
@@ -277,7 +277,7 @@ $\Theta(n)$
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa lang:cpp CodeForces/1350D/0.cpp %}
+{% icodeweb cpa title:CodeForces_1350D lang:cpp CodeForces/1350D/0.cpp %}
 
 </details>
 
@@ -310,6 +310,6 @@ $O(mn)$
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa lang:cpp CodeForces/1350E/0.cpp %}
+{% icodeweb cpa title:CodeForces_1350E lang:cpp CodeForces/1350E/0.cpp %}
 
 </details>

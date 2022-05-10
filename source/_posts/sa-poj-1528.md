@@ -76,6 +76,6 @@ Mid-Atlantic 1996
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa lang:cpp POJ/1528/0.cpp %}
+{% icodeweb cpa title:POJ_1528 lang:cpp POJ/1528/0.cpp %}
 
 </details>

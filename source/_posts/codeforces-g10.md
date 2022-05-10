@@ -103,7 +103,7 @@ In the second test case, you can't perform any operations because there is no va
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa lang:cpp CodeForces/1392A/0.cpp %}
+{% icodeweb cpa title:CodeForces_1392A lang:cpp CodeForces/1392A/0.cpp %}
 
 </details>
 
@@ -191,7 +191,7 @@ In the first test case the array changes as follows:
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa lang:cpp CodeForces/1392B/0.cpp %}
+{% icodeweb cpa title:CodeForces_1392B lang:cpp CodeForces/1392B/0.cpp %}
 
 </details>
 
@@ -311,7 +311,7 @@ In the third test case, the array is already nondecreasing, so Omkar does $0$ op
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa lang:cpp CodeForces/1392C/0.cpp %}
+{% icodeweb cpa title:CodeForces_1392C lang:cpp CodeForces/1392C/0.cpp %}
 
 </details>
 
@@ -411,7 +411,7 @@ $n$个人站成一圈, 编号$0,1,2,...,n-1$, 第$(i+1)\bmod n$个人在第$i$�
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa lang:cpp CodeForces/1392D/0.cpp %}
+{% icodeweb cpa title:CodeForces_1392D lang:cpp CodeForces/1392D/0.cpp %}
 
 </details>
 
@@ -503,6 +503,6 @@ $$a_i=i+\left\lfloor{S-\frac{n(n+1)}{2}\over n}\right\rfloor+\left[i\leqslant\le
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa lang:cpp CodeForces/1392F/0.cpp %}
+{% icodeweb cpa title:CodeForces_1392F lang:cpp CodeForces/1392F/0.cpp %}
 
 </details>

@@ -91,6 +91,6 @@ $O(n)$
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa lang:cpp Luogu/5221/0.cpp %}
+{% icodeweb cpa title:Luogu_5221 lang:cpp Luogu/5221/0.cpp %}
 
 </details>
