@@ -251,7 +251,7 @@ Bob
 
 </details>
 
-## 硬币
+## 硬币 (AtCoder abc231_e)
 
 [题目链接](https://oj.daimayuan.top/problem/815)
 
@@ -305,7 +305,7 @@ $1 \leq X \leq 1 \times 10^{9}$
 
 </details>
 
-## 山脉
+## 山脉 (Codeforces Gym 103185B)
 
 [题目链接](https://oj.daimayuan.top/problem/870)
 

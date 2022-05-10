@@ -272,7 +272,7 @@ Alice
 
 </details>
 
-## Fence Painting
+## Fence Painting (CF1481C)
 
 [题目链接](https://oj.daimayuan.top/problem/735)
 

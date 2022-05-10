@@ -14,7 +14,7 @@ Namomo Spring Camp 2022 Div1 每日一题记录 (2022.05.07-2022.05.13)
 
 <!-- more -->
 
-## 与
+## 与 (HihoCoder 1076)
 
 [题目链接](https://oj.daimayuan.top/problem/155)
 
