@@ -253,7 +253,7 @@ Alice
 
 </details>
 
-## Cow and Snacks
+## Cow and Snacks (CF1209D)
 
 [题目链接](https://oj.daimayuan.top/problem/807)
 
