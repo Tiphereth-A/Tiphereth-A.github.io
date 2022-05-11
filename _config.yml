@@ -217,6 +217,11 @@ neat_js:
   exclude:
     - "*.min.js"
 
+nofollow:
+  enable: true
+  field: site
+  exclude:
+
 # DOC: https://www.u2sb.top/docs/hexo-tag-mmedia
 mmedia:
   aplayer:
