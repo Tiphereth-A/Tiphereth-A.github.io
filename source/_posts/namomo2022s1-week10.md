@@ -307,7 +307,7 @@ $1 \leq X \leq 1 \times 10^{9}$
 
 </details>
 
-## 山脉 (Codeforces Gym 103185B)
+## 山脉 (CodeForces Gym 103185B)
 
 [题目链接](https://oj.daimayuan.top/problem/870)
 
