@@ -221,7 +221,6 @@ nofollow:
   enable: true
   field: site
   exclude:
-    - "https://github.com"
 
 # DOC: https://www.u2sb.top/docs/hexo-tag-mmedia
 mmedia:
@@ -246,12 +245,6 @@ mmedia:
 icodeweb:
   lang_default: plaintext
   types:
-    - name: github
-      lang_default: cpp
-      website: https://raw.githubusercontent.com
-      prefix:
-      suffix:
-      codehead: "From GitHub"
     - name: cpa
       lang_default:
       website: https://raw.githubusercontent.com
@@ -275,11 +268,7 @@ icodeweb:
         - main
         - src
       suffix:
-      codehead: |
-        ---
-        Author: Tifa
-        Description: From https://github.com/Tiphereth-A/CP-archives
-        ---
+      codehead:
     - name: cpa_cpp
       lang_default: cpp
       website: https://raw.githubusercontent.com
