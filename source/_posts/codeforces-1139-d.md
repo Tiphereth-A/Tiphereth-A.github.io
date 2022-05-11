@@ -167,6 +167,6 @@ $$\Theta\left(n+T(n)+\sum_{i\in f([2,m]_{\N})}\log p\right)=O\left(n+\frac{m}{\s
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa title:CodeForces_1139D lang:cpp CodeForces/1139D/0.cpp %}
+{% icodeweb cpa_cpp title:CodeForces_1139D CodeForces/1139D/0.cpp %}
 
 </details>

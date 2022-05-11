@@ -86,7 +86,7 @@ $$
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa title:A lang:cpp misc/icpc-ashr2020-p/A/0.cpp %}
+{% icodeweb cpa_cpp title:A misc/icpc-ashr2020-p/A/0.cpp %}
 
 </details>
 
@@ -162,7 +162,7 @@ $$
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa title:B lang:cpp misc/icpc-ashr2020-p/B/0.cpp %}
+{% icodeweb cpa_cpp title:B misc/icpc-ashr2020-p/B/0.cpp %}
 
 </details>
 
@@ -181,6 +181,6 @@ $$
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa title:C lang:cpp misc/icpc-ashr2020-p/C/0.cpp %}
+{% icodeweb cpa_cpp title:C misc/icpc-ashr2020-p/C/0.cpp %}
 
 </details>

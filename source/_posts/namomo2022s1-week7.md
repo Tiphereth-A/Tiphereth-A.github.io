@@ -100,7 +100,7 @@ Namomo Spring Camp 2022 Div1 每日一题记录 (2022.04.09-2022.04.15)
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa title:CodeForces_1638D lang:cpp CodeForces/1638D/0.cpp %}
+{% icodeweb cpa_cpp title:CodeForces_1638D CodeForces/1638D/0.cpp %}
 
 </details>
 

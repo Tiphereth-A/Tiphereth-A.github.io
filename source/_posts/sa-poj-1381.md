@@ -91,6 +91,6 @@ $X = a_0 + a_1B + a_2B^2 + ...+ a_nB^n\implies B\mid(X-a_0)$
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa title:POJ_1381 lang:cpp POJ/1381/0.cpp %}
+{% icodeweb cpa_cpp title:POJ_1381 POJ/1381/0.cpp %}
 
 </details>

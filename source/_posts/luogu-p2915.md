@@ -100,6 +100,6 @@ $O(n^2 2^n)$
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa title:Luogu_2915 lang:cpp Luogu/2915/0.cpp %}
+{% icodeweb cpa_cpp title:Luogu_2915 Luogu/2915/0.cpp %}
 
 </details>

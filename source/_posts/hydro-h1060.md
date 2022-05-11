@@ -117,6 +117,6 @@ $O(N+T\sqrt N)$, 其中 $N=\max\{D,R,E,A,M\}$
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa title:Hydro_H1060 lang:cpp Hydro/H1060/0.cpp %}
+{% icodeweb cpa_cpp title:Hydro_H1060 Hydro/H1060/0.cpp %}
 
 </details>

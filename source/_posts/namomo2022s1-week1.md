@@ -104,7 +104,7 @@ $O(n)$
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa title:CodeForces_817D lang:cpp CodeForces/817D/0.cpp %}
+{% icodeweb cpa_cpp title:CodeForces_817D CodeForces/817D/0.cpp %}
 
 </details>
 
@@ -201,7 +201,7 @@ $O(n^3k)$
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa title:CodeForces_793D lang:cpp CodeForces/793D/0.cpp %}
+{% icodeweb cpa_cpp title:CodeForces_793D CodeForces/793D/0.cpp %}
 
 </details>
 
@@ -376,7 +376,7 @@ $O(n)$
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa title:CodeForces_1198B lang:cpp CodeForces/1198B/0.cpp %}
+{% icodeweb cpa_cpp title:CodeForces_1198B CodeForces/1198B/0.cpp %}
 
 </details>
 
@@ -451,7 +451,7 @@ $O((n+q)\log n)$
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa title:HDU_4417 lang:cpp HDU/4417/0.cpp %}
+{% icodeweb cpa_cpp title:HDU_4417 HDU/4417/0.cpp %}
 
 </details>
 
@@ -515,6 +515,6 @@ $O((n+m)\log\max w)$
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa title:CodeForces_1624G lang:cpp CodeForces/1624G/0.cpp %}
+{% icodeweb cpa_cpp title:CodeForces_1624G CodeForces/1624G/0.cpp %}
 
 </details>

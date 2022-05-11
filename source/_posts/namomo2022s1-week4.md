@@ -151,7 +151,7 @@ $O(n+q)$
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa title:CodeForces_1634F lang:cpp CodeForces/1634F/0.cpp %}
+{% icodeweb cpa_cpp title:CodeForces_1634F CodeForces/1634F/0.cpp %}
 
 </details>
 
@@ -225,7 +225,7 @@ $O(n\sqrt{\sum_i a_i})$
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa title:JZOJ_4922 lang:cpp JZOJ/4922/0.cpp %}
+{% icodeweb cpa_cpp title:JZOJ_4922 JZOJ/4922/0.cpp %}
 
 </details>
 
@@ -281,7 +281,7 @@ $O(n\max_{i\ne j}\{\sqrt{a_i^2+a_j}-a_i\})=O(n\max_i\sqrt{a_i})$
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa title:Daimayuan_607 lang:cpp Daimayuan/607/0.cpp %}
+{% icodeweb cpa_cpp title:Daimayuan_607 Daimayuan/607/0.cpp %}
 
 </details>
 
@@ -306,7 +306,7 @@ $\displaystyle O\left(\sum_{i=1}^{\max_i a_i}\left\lfloor \frac{\max_i a_i}{i}\r
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa title:Daimayuan_607 lang:cpp Daimayuan/607/1.cpp %}
+{% icodeweb cpa_cpp title:Daimayuan_607 Daimayuan/607/1.cpp %}
 
 </details>
 
@@ -464,7 +464,7 @@ $O(X+T\max\omega(X))$
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa title:Daimayuan_611 lang:cpp Daimayuan/611/0.cpp %}
+{% icodeweb cpa_cpp title:Daimayuan_611 Daimayuan/611/0.cpp %}
 
 </details>
 
@@ -515,7 +515,7 @@ zzzz
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa title:CodeForces_628E lang:cpp CodeForces/628E/0.cpp %}
+{% icodeweb cpa_cpp title:CodeForces_628E CodeForces/628E/0.cpp %}
 
 </details>
 
@@ -571,6 +571,6 @@ boring
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa title:UVA_1608 lang:cpp UVA/1608/0.cpp %}
+{% icodeweb cpa_cpp title:UVA_1608 UVA/1608/0.cpp %}
 
 </details>

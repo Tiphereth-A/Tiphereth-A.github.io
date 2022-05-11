@@ -63,7 +63,7 @@ $0 \leq L_i,R_i \leq 1\times10^9$
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa title:CodeForces_1060D lang:cpp CodeForces/1060D/0.cpp %}
+{% icodeweb cpa_cpp title:CodeForces_1060D CodeForces/1060D/0.cpp %}
 
 </details>
 
@@ -125,7 +125,7 @@ $O(n\alpha (n))$
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa title:Daimayuan_609 lang:cpp Daimayuan/609/0.cpp %}
+{% icodeweb cpa_cpp title:Daimayuan_609 Daimayuan/609/0.cpp %}
 
 </details>
 

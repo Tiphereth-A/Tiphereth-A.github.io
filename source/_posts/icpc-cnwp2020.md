@@ -321,7 +321,7 @@ ACduck
   <details>
   <summary><font color='orange'>Show code</font></summary>
 
-  {% icodeweb cpa title:icpc-cnwp2020_C_0 lang:cpp misc/icpc-cnwp2020/C/0.cpp %}
+  {% icodeweb cpa_cpp title:icpc-cnwp2020_C_0 misc/icpc-cnwp2020/C/0.cpp %}
 
   </details>
 
@@ -329,7 +329,7 @@ ACduck
   <details>
   <summary><font color='orange'>Show code</font></summary>
 
-  {% icodeweb cpa title:icpc-cnwp2020_C_1 lang:cpp misc/icpc-cnwp2020/C/1.cpp %}
+  {% icodeweb cpa_cpp title:icpc-cnwp2020_C_1 misc/icpc-cnwp2020/C/1.cpp %}
 
   </details>
 
@@ -545,7 +545,7 @@ $$
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa title:icpc-cnwp2020_F lang:cpp misc/icpc-cnwp2020/F/1.cpp %}
+{% icodeweb cpa_cpp title:icpc-cnwp2020_F misc/icpc-cnwp2020/F/1.cpp %}
 
 </details>
 

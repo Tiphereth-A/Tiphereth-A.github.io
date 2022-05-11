@@ -70,7 +70,7 @@ date: 2021-10-24 20:15:45
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa title:A lang:cpp misc/lzu-fhc1/A/0.cpp %}
+{% icodeweb cpa_cpp title:A misc/lzu-fhc1/A/0.cpp %}
 
 </details>
 
@@ -86,7 +86,7 @@ date: 2021-10-24 20:15:45
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa title:C lang:cpp misc/lzu-fhc1/C/0.cpp %}
+{% icodeweb cpa_cpp title:C misc/lzu-fhc1/C/0.cpp %}
 
 </details>
 
@@ -104,7 +104,7 @@ date: 2021-10-24 20:15:45
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa title:E lang:cpp misc/lzu-fhc1/E/0.cpp %}
+{% icodeweb cpa_cpp title:E misc/lzu-fhc1/E/0.cpp %}
 
 </details>
 
@@ -113,7 +113,7 @@ date: 2021-10-24 20:15:45
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa title:G lang:cpp misc/lzu-fhc1/G/0.cpp %}
+{% icodeweb cpa_cpp title:G misc/lzu-fhc1/G/0.cpp %}
 
 </details>
 
@@ -122,7 +122,7 @@ date: 2021-10-24 20:15:45
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa title:I lang:cpp misc/lzu-fhc1/I/0.cpp %}
+{% icodeweb cpa_cpp title:I misc/lzu-fhc1/I/0.cpp %}
 
 </details>
 
@@ -131,7 +131,7 @@ date: 2021-10-24 20:15:45
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa title:J lang:cpp misc/lzu-fhc1/J/0.cpp %}
+{% icodeweb cpa_cpp title:J misc/lzu-fhc1/J/0.cpp %}
 
 </details>
 

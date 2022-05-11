@@ -52,7 +52,7 @@ date: 2022-05-11 12:07:50
   <details open>
   <summary><font color='orange'>Show code</font></summary>
 
-  {% icodeweb cpa title:Luogu_3865 lang:cpp Luogu/3865/5.cpp %}
+  {% icodeweb cpa_cpp title:Luogu_3865 Luogu/3865/5.cpp %}
 
   </details>
 
@@ -61,6 +61,6 @@ date: 2022-05-11 12:07:50
   <details open>
   <summary><font color='orange'>Show code</font></summary>
 
-  {% icodeweb cpa title:CodeForces_522D lang:cpp CodeForces/522D/0.cpp %}
+  {% icodeweb cpa_cpp title:CodeForces_522D CodeForces/522D/0.cpp %}
 
   </details>
