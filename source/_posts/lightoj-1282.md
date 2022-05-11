@@ -31,6 +31,6 @@ date: 2020-07-25 00:24:27
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa title:LightOJ_1282 lang:cpp LightOJ/1282/0.cpp %}
+{% icodeweb cpa_cpp title:LightOJ_1282 LightOJ/1282/0.cpp %}
 
 </details>

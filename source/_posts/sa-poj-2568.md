@@ -89,6 +89,6 @@ Ulm Local 2001
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa title:POJ_2568 lang:cpp POJ/2568/0.cpp %}
+{% icodeweb cpa_cpp title:POJ_2568 POJ/2568/0.cpp %}
 
 </details>

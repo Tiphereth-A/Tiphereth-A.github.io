@@ -34,6 +34,6 @@ $$\sum_{i=1}^n(f_i)_{min}$$
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa title:LightOJ_1370 lang:cpp LightOJ/1370/0.cpp %}
+{% icodeweb cpa_cpp title:LightOJ_1370 LightOJ/1370/0.cpp %}
 
 </details>

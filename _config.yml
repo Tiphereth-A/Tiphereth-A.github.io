@@ -252,6 +252,20 @@ icodeweb:
       suffix:
       codehead: "From GitHub"
     - name: cpa
+      lang_default:
+      website: https://raw.githubusercontent.com
+      prefix:
+        - Tiphereth-A
+        - CP-archives
+        - main
+        - src
+      suffix:
+      codehead: |
+        ---
+        Author: Tifa
+        Description: From https://github.com/Tiphereth-A/CP-archives
+        ---
+    - name: cpa_cpp
       lang_default: cpp
       website: https://raw.githubusercontent.com
       prefix:
@@ -265,3 +279,17 @@ icodeweb:
          * @Author: Tifa
          * @Description: From https://github.com/Tiphereth-A/CP-archives
          */
+    - name: cpa_py
+      lang_default: python
+      website: https://raw.githubusercontent.com
+      prefix:
+        - Tiphereth-A
+        - CP-archives
+        - main
+        - src
+      suffix:
+      codehead: |
+        """
+        @Author: Tifa
+        @Description: From https://github.com/Tiphereth-A/CP-archives
+        """

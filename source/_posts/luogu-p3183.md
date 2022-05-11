@@ -101,6 +101,6 @@ $O(m+n)$
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa title:Luogu_3183 lang:cpp Luogu/3183/0.cpp %}
+{% icodeweb cpa_cpp title:Luogu_3183 Luogu/3183/0.cpp %}
 
 </details>

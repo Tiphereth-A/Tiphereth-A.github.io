@@ -95,6 +95,6 @@ $O(n\log(r-l))$, 其中$l,\ r$分别指查询区间左右端点
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa title:Luogu_1182 lang:cpp Luogu/1182/0.cpp %}
+{% icodeweb cpa_cpp title:Luogu_1182 Luogu/1182/0.cpp %}
 
 </details>

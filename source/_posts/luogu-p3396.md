@@ -114,6 +114,6 @@ $O((n+m)\sqrt{n})$
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa title:Luogu_3396 lang:cpp Luogu/3396/0.cpp %}
+{% icodeweb cpa_cpp title:Luogu_3396 Luogu/3396/0.cpp %}
 
 </details>

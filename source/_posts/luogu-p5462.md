@@ -36,6 +36,6 @@ date: 2019-07-15 01:29:34
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa title:Luogu_5462 lang:cpp Luogu/5462/0.cpp %}
+{% icodeweb cpa_cpp title:Luogu_5462 Luogu/5462/0.cpp %}
 
 </details>

@@ -38,6 +38,6 @@ date: 2020-07-25 00:48:00
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa title:CodeForces_696A lang:cpp CodeForces/696A/0.cpp %}
+{% icodeweb cpa_cpp title:CodeForces_696A CodeForces/696A/0.cpp %}
 
 </details>

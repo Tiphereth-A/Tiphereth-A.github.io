@@ -127,7 +127,7 @@ date: 2020-12-20 20:46:33
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa title:E lang:cpp Gym/102992E/0.cpp %}
+{% icodeweb cpa_cpp title:E Gym/102992E/0.cpp %}
 
 </details>
 
@@ -152,7 +152,7 @@ $$t=\frac{nk+m}{1-(1-p)^k}$$
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa title:F lang:cpp Gym/102992F/0.cpp %}
+{% icodeweb cpa_cpp title:F Gym/102992F/0.cpp %}
 
 </details>
 
@@ -188,7 +188,7 @@ $$t=\frac{nk+m}{1-(1-p)^k}$$
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa title:H lang:cpp Gym/102992H/0.cpp %}
+{% icodeweb cpa_cpp title:H Gym/102992H/0.cpp %}
 
 </details>
 
@@ -238,7 +238,7 @@ $$(i_k,p_{i_k})=1$$
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa title:K lang:cpp Gym/102992K/0.cpp %}
+{% icodeweb cpa_cpp title:K Gym/102992K/0.cpp %}
 
 </details>
 
@@ -261,7 +261,7 @@ $$f(c)=\left|\left\{i\mid\forall j\in[1,m]\cap\N,~|c-a_i|<|c-b_j|\right\}\right|
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa title:L lang:cpp Gym/102992L/0.cpp %}
+{% icodeweb cpa_cpp title:L Gym/102992L/0.cpp %}
 
 </details>
 

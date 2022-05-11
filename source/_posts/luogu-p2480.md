@@ -116,6 +116,6 @@ $$O\left(\sum_{i=1}^4\bigg(p_i+\sum_{d\mid n}\log_{p_i} d\bigg)\right)=O(\sqrt{n
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa title:Luogu_2480 lang:cpp Luogu/2480/0.cpp %}
+{% icodeweb cpa_cpp title:Luogu_2480 Luogu/2480/0.cpp %}
 
 </details>

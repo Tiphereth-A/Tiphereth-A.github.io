@@ -93,6 +93,6 @@ $O(n\log n)$
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa title:Luogu_3704 lang:cpp Luogu/3704/0.cpp %}
+{% icodeweb cpa_cpp title:Luogu_3704 Luogu/3704/0.cpp %}
 
 </details>

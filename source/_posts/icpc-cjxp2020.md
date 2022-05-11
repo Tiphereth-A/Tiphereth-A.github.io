@@ -107,7 +107,7 @@ $O(n\log n)$
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa title:A lang:cpp misc/icpc-cjxp2020/A/0.cpp %}
+{% icodeweb cpa_cpp title:A misc/icpc-cjxp2020/A/0.cpp %}
 
 </details>
 
@@ -171,7 +171,7 @@ $$f(l,r)=0\iff f(1,l-1)=f(1,r)$$
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa title:E lang:cpp misc/icpc-cjxp2020/E/0.cpp %}
+{% icodeweb cpa_cpp title:E misc/icpc-cjxp2020/E/0.cpp %}
 
 </details>
 
@@ -226,7 +226,7 @@ $$\forall i\in[1,k]\cap\N,~i\mid\overline{a_1a_2...a_i}$$
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa title:F lang:cpp misc/icpc-cjxp2020/F/0.cpp %}
+{% icodeweb cpa_cpp title:F misc/icpc-cjxp2020/F/0.cpp %}
 
 </details>
 
@@ -285,7 +285,7 @@ $$\forall i\in[1,k]\cap\N,~i\mid\overline{a_1a_2...a_i}$$
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa title:H lang:cpp misc/icpc-cjxp2020/H/0.cpp %}
+{% icodeweb cpa_cpp title:H misc/icpc-cjxp2020/H/0.cpp %}
 
 </details>
 
@@ -325,7 +325,7 @@ $$S_2=\bigcup_{i=1+[m=1]}^{\lfloor\frac{n}{2}\rfloor}\{\operatorname{SG}(m,i)\op
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa title:J lang:cpp misc/icpc-cjxp2020/J/0.cpp %}
+{% icodeweb cpa_cpp title:J misc/icpc-cjxp2020/J/0.cpp %}
 
 </details>
 
@@ -348,7 +348,7 @@ $O(n^3+q\log B\log n)$, 其中$B$表示所有询问中最大的$b$
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa title:K lang:cpp misc/icpc-cjxp2020/K/0.cpp %}
+{% icodeweb cpa_cpp title:K misc/icpc-cjxp2020/K/0.cpp %}
 
 </details>
 

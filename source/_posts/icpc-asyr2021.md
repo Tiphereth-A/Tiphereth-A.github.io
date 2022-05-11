@@ -116,7 +116,7 @@ $O((m\alpha(n)+n)\log\max w)$
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa title:B lang:cpp Gym/103427B/0.cpp %}
+{% icodeweb cpa_cpp title:B Gym/103427B/0.cpp %}
 
 </details>
 
@@ -227,7 +227,7 @@ $O(n^2)$
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa title:F lang:cpp Gym/103427F/0.cpp %}
+{% icodeweb cpa_cpp title:F Gym/103427F/0.cpp %}
 
 </details>
 
@@ -274,7 +274,7 @@ $O(n+m)$
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa title:H lang:cpp Gym/103427H/0.cpp %}
+{% icodeweb cpa_cpp title:H Gym/103427H/0.cpp %}
 
 </details>
 
@@ -329,7 +329,7 @@ $$\frac{(z_0-z_1)(z_3-z_2)}{(z_0-z_2)(z_3-z_1)}=\frac{(w_0-w_1)(w_3-w_2)}{(w_0-w
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa title:I lang:cpp Gym/103427I/0.cpp %}
+{% icodeweb cpa_cpp title:I Gym/103427I/0.cpp %}
 
 </details>
 
@@ -426,7 +426,7 @@ $O(n^2)$
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa title:L lang:cpp Gym/103427L/0.cpp %}
+{% icodeweb cpa_cpp title:L Gym/103427L/0.cpp %}
 
 </details>
 
@@ -457,6 +457,6 @@ $O(|s|)$
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa title:M lang:cpp Gym/103427M/0.cpp %}
+{% icodeweb cpa_cpp title:M Gym/103427M/0.cpp %}
 
 </details>

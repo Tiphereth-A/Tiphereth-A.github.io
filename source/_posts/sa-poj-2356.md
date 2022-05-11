@@ -80,6 +80,6 @@ $O(n)$
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa title:POJ_2356 lang:cpp POJ/2356/0.cpp %}
+{% icodeweb cpa_cpp title:POJ_2356 POJ/2356/0.cpp %}
 
 </details>
