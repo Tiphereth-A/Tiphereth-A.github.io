@@ -221,6 +221,7 @@ nofollow:
   enable: true
   field: site
   exclude:
+    - "https://github.com"
 
 # DOC: https://www.u2sb.top/docs/hexo-tag-mmedia
 mmedia:
