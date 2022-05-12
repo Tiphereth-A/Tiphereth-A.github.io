@@ -1,6 +1,6 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-exiftool -k -overwrite_original -all= source/_posts/**[!.md] ||
-exiftool -k -overwrite_original -all= source/images/**[!.md] ||
+exiftool -a -m -k -q -e -F -overwrite_original -all= source/_posts/**[!.md] ||
+exiftool -a -m -k -q -e -F -overwrite_original -all= source/images/**[!.webmanifest] ||
 npm run formatting
