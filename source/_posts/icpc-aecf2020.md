@@ -14,6 +14,8 @@ tags:
   - DP
   - 数学
   - 字符串
+  - 线性代数
+  - Gauss消元
   - 数据结构
   - 图论
   - 最短路
@@ -32,23 +34,21 @@ date: 2022-05-12 19:07:57
 
 ## 题目概览
 
-| 题号[^1] | 标题                   | 做法          |
-| -------- | ---------------------- | ------------- |
-| A        | Namomo Subsequence     | DP            |
-| B        | Rectangle Flip 2       |               |
-| C        | Random Shuffle         |               |
-| D        | City Brain             | 最短路 + 三分 |
-| E        | Tube Master III        |               |
-| F        | Rooks                  | (签到)        |
-| G        | Prof. Pang's sequence  |               |
-| H        | Prof. Pang Earning Aus |               |
-| I        | Plants vs Zombies      | 二分          |
-| J        | Circle                 | 计算几何      |
-| K        | Allin                  | 模拟          |
-| L        | Square                 | 数学 (签到)   |
-| M        | Fillomino              | 构造          |
-
-[^1]: 打\*的是还没写题解的题
+| 题号 | 标题                   | 做法          |
+| ---- | ---------------------- | ------------- |
+| A    | Namomo Subsequence     | DP            |
+| B    | Rectangle Flip 2       |               |
+| C    | Random Shuffle         |               |
+| D    | City Brain             | 最短路 + 三分 |
+| E    | Tube Master III        |               |
+| F    | Rooks                  | (签到)        |
+| G    | Prof. Pang's sequence  |               |
+| H    | Prof. Pang Earning Aus |               |
+| I    | Plants vs Zombies      | 二分          |
+| J    | Circle                 | 计算几何      |
+| K    | Allin                  | 模拟          |
+| L    | Square                 | 数学 (签到)   |
+| M    | Fillomino              | 构造          |
 
 [官方题解](https://www.zhihu.com/question/450271220/answer/1841779678)
 

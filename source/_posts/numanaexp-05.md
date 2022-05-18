@@ -13,7 +13,7 @@ tags:
   - MATLAB
   - 算法
   - 线性方程组
-  - Gauss消去法
+  - Gauss消元
   - Gauss列主元消去法
   - 平方根法
   - 改进平方根法

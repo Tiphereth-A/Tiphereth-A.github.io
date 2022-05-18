@@ -12,7 +12,7 @@ tags:
   - Kirchhoff定律
   - Kirchhoff第一定律(KCL)
   - 线性方程组
-  - Gauss消去法
+  - Gauss消元
 date: 2021-10-30 00:29:57
 ---
 

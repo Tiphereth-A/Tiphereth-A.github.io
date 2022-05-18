@@ -660,7 +660,7 @@ $$
 以线性筛作为预处理方式为例, 此时$O(W(m))=O(m)$  
 由平均值不等式可知, 当$m=(\frac{n}{2})^\frac{2}{3}$时, 其时间复杂度最小, 为$O(n^\frac{2}{3})$
 
-> $\displaystyle\frac{n}{\sqrt m}+m=\frac{n}{2\sqrt m}+\frac{n}{2\sqrt m}+m\geqslant\sqrt[3]{ \frac{n}{2\sqrt m}\cdot\frac{n}{2\sqrt m}\cdot m}=\sqrt[3]\frac{n^2}{4}$
+> $$\frac{n}{\sqrt m}+m=\frac{n}{2\sqrt m}+\frac{n}{2\sqrt m}+m\geqslant\sqrt[3]{\frac{n}{2\sqrt m}\cdot\frac{n}{2\sqrt m}\cdot m}=\sqrt[3]{\frac{n^2}{4}}$$
 >
 > 当$\frac{n}{2\sqrt m}=m$, 即$m=(\frac{n}{2})^\frac{2}{3}$时取得最小值
 
