@@ -11,11 +11,23 @@ tags:
   - CCPC
   - 51Nod
   - 数学
+  - 图论
+  - 数据结构
+  - 期望
+  - 概率
+  - DP
+  - 状压DP
+  - 概率DP
+  - 最短路
   - 组合数学
   - 前缀和
   - 位运算
   - 递推
   - 容斥定理
+  - RMQ
+  - ST表
+  - Trie
+  - 01-Trie
 date: 2022-03-05 21:44:56
 ---
 
@@ -77,7 +89,7 @@ $O(n\log n)$ (使用 `map`)
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa title:Daimayuan_466 lang:cpp Daimayuan/466/0.cpp %}
+{% icodeweb cpa_cpp title:Daimayuan_466 Daimayuan/466/0.cpp %}
 
 </details>
 
@@ -142,7 +154,7 @@ $O(m^2)$
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa title:CodeForces_559C lang:cpp CodeForces/559C/0.cpp %}
+{% icodeweb cpa_cpp title:CodeForces_559C CodeForces/559C/0.cpp %}
 
 </details>
 
@@ -230,7 +242,7 @@ $O(nk)$
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa title:Daimayuan_468 lang:cpp Daimayuan/468/0.cpp %}
+{% icodeweb cpa_cpp title:Daimayuan_468 Daimayuan/468/0.cpp %}
 
 </details>
 
@@ -239,6 +251,8 @@ $O(nk)$
 [题目链接](https://oj.daimayuan.top/problem/497)
 
 2 s, 512 MB
+
+### 题目描述
 
 给你一个有 $n$ 个非负整数组成的数组 $a$, 你需要选择一个非负整数 $x$, 对数组 $a$ 的每一个 $a_i$ 与 $x$ 进行异或后形成新的数组 $b$, 要求 $b$ 数组的逆序对个数最小, 如果有多个 $x$ 满足条件, 输出最小的 $x$
 
@@ -299,12 +313,16 @@ $1\leq n\leq 3\cdot 10^5$, $0\leq a_i\leq 10^9$
 
 ### 解题思路
 
+> 01-trie
+
 ### 复杂度
 
 ### 代码参考
 
 <details>
 <summary><font color='orange'>Show code</font></summary>
+
+{% icodeweb cpa_cpp title:CodeForces_1416C CodeForces/1416C/0.cpp %}
 
 </details>
 
@@ -379,16 +397,40 @@ $1\leq n\leq 3\cdot 10^5$, $0\leq a_i\leq 10^9$
 
 ### 解题思路
 
+> RMQ + 二分
+
+首先我们求出全部两端点值相同的线段 $(l,r)$, 然后删去冗余的线段 (若 $l_1\leq l_2$ 且 $r_1\geq r_2$, 那么 $(l_1,r_1)$ 对答案不会产生贡献, 直接删去即可)
+
+然后就是查询区间最短线段长度
+
+{% note warning %}
+
+`std::lower_bound` 和 `std::upper_bound` 对 `comp` 签名要求不一致, 但作用要求一致 (即 若第一参数先序于第二个则返回 `​true`)
+
+- `std::lower_bound<ForwardIter, T>` 要求的是 `bool comp(const ForwardIter& t1, const T& t2)`
+- `std::upper_bound<ForwardIter, T>` 要求的是 `bool comp(const T& t1, const ForwardIter& t2)`
+
+详情参见 [^1] [^2]
+
+[^1]: <https://en.cppreference.com/mwiki/index.php?title=cpp/algorithm/lower_bound&oldid=139001>
+[^2]: <https://en.cppreference.com/mwiki/index.php?title=cpp/algorithm/upper_bound&oldid=139224>
+
+{% endnote %}
+
 ### 复杂度
+
+$O(n\log n+m)$
 
 ### 代码参考
 
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
+{% icodeweb cpa_cpp title:CodeForces_522D CodeForces/522D/0.cpp %}
+
 </details>
 
-## CCPC Harbin 2021 G, Damaged Bicycle
+## CCPC Harbin 2021 G, Damaged Bicycle (CodeForces Gym 103447G)
 
 [题目链接](https://oj.daimayuan.top/problem/380)
 
@@ -508,12 +550,24 @@ As given in the input, the only bicycle has $\frac{50}{100}$ probability to be d
 
 ### 解题思路
 
+> 状压 DP + 最短路
+
+> 官方题解参见 <https://codeforces.com/gym/103447/attachments/download/14826/2021CCPCHarbinSolution.pdf#Outline0.8>
+
+DP 不会写, 写的记搜
+
+思路和官方题解差不多, 略
+
 ### 复杂度
+
+$O(m+kn\log n+k^22^k)$
 
 ### 代码参考
 
 <details>
 <summary><font color='orange'>Show code</font></summary>
+
+{% icodeweb cpa_cpp title:CodeForces_Gym_103447G Gym/103447G/0.cpp %}
 
 </details>
 
@@ -562,11 +616,28 @@ As given in the input, the only bicycle has $\frac{50}{100}$ probability to be d
 
 ### 解题思路
 
+> DP
+
+设 $f(x)$ 为第 $x$ 堆方块最少需要多少次才能清空, 则
+
+$f(1)=f(n)=1$
+
+$$
+\begin{align}
+  f(x)&=\min\{f(x-1)+1,f(x+1)-1,h(x)\}\\
+      &=\min\{\min\{f(x-1)+1,h(x)\},\min\{f(x+1)+1,h(x)\}\}
+\end{align}
+$$
+
 ### 复杂度
+
+$O(n)$
 
 ### 代码参考
 
 <details>
 <summary><font color='orange'>Show code</font></summary>
+
+{% icodeweb cpa_cpp title:CodeForces_573B CodeForces/573B/0.cpp %}
 
 </details>
