@@ -8,6 +8,8 @@ tags:
   - 题解
   - 代码源
   - USACO
+  - 数学
+  - 初等数论
   - DP
   - 数据结构
   - LCS
@@ -357,7 +359,7 @@ $[1, 2, 3, 4] \times 2$
 
 </details>
 
-## LCM 与 GCD
+## LCM 与 GCD (CF1499D)
 
 [题目链接](https://oj.daimayuan.top/problem/953)
 
@@ -400,11 +402,25 @@ $[1, 2, 3, 4] \times 2$
 
 ### 解题思路
 
+> 简单数论
+
+显然有
+
+$$\alpha (xpq-y)=k$$
+
+其中 $p,q$ 互质
+
+然后枚举 $k$ 的因子之后计算 $p,q$ 的对数即可
+
 ### 复杂度
+
+$\Theta(2K+t\sqrt{2k})$, 其中 $K=10^7$
 
 ### 代码参考
 
 <details>
 <summary><font color='orange'>Show code</font></summary>
+
+{% icodeweb cpa_cpp title:CodeForces_1499D CodeForces/1499D/0.cpp %}
 
 </details>
