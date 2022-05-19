@@ -8,6 +8,8 @@ tags:
   - 题解
   - 代码源
   - HihoCoder
+  - CodeForces
+  - 数学
 date: 2022-05-07 16:00:56
 ---
 
@@ -292,7 +294,7 @@ files
 
 </details>
 
-## 不朴素的数列（Bonus）
+## 不朴素的数列 (Bonus) (CF1254B2)
 
 [题目链接](https://oj.daimayuan.top/problem/883)
 
@@ -385,7 +387,7 @@ $[1, 2, 3, 4, 5, 6] \rightarrow [0, 3, 3, 4, 5, 6] \rightarrow [0, 3, 3, 3, 6, 6
 
 </details>
 
-## 历法
+## 历法 (CF1389E)
 
 [题目链接](https://oj.daimayuan.top/problem/913)
 
@@ -432,12 +434,14 @@ P 国的历法比较特殊, 每一年都有$m$个月 , 每个月有$d$天. 每�
 
 ### 解题思路
 
-### 复杂度
+水题, 略
 
 ### 代码参考
 
 <details>
 <summary><font color='orange'>Show code</font></summary>
+
+{% icodeweb cpa_cpp title:CodeForces_1389E CodeForces/1389E/0.cpp %}
 
 </details>
 

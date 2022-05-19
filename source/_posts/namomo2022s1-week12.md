@@ -7,6 +7,12 @@ tags:
   - 程序设计
   - 题解
   - 代码源
+  - USACO
+  - DP
+  - 数据结构
+  - LCS
+  - 树状数组
+  - 滚动数组
 date: 2022-05-14 16:00:56
 ---
 
@@ -66,7 +72,7 @@ T 行, 每行一个数, 表示答案
 
 </details>
 
-## 最大连边数量
+## 最大连边数量 ([USACO2017FEB Why Did the Cow Cross the Road II](http://www.usaco.org/index.php?page=viewproblem2&cpid=721), 洛谷 P3657)
 
 [题目链接](https://oj.daimayuan.top/problem/916)
 
@@ -122,12 +128,24 @@ $1 \le n \le 10^5$
 
 ### 解题思路
 
+> 树状数组优化 LCS
+
+设 $f(i,j)$ 表示左边 $[1,i]$, 右边 $[1,j]$ 范围内的最大值, 显然是个 LCS 类型的 DP, 有
+
+$$f(i,j)=\max\{f(i,j-1),f(i-1,j),f(i-1,j-1)+[|a_i-b_j|\leq 4]\}$$
+
+然后用树状数组维护前缀最值优化即可
+
 ### 复杂度
+
+$O(n\log n)$
 
 ### 代码参考
 
 <details>
 <summary><font color='orange'>Show code</font></summary>
+
+{% icodeweb cpa_cpp title:Luogu_3657 Luogu/3657/0.cpp %}
 
 </details>
 
@@ -183,7 +201,7 @@ $1 \le n \le 10^5$
 
 </details>
 
-## 选元素（数据加强版）
+## 选元素 (数据加强版)
 
 [题目链接](https://oj.daimayuan.top/problem/875)
 
@@ -264,7 +282,7 @@ $1 \le n \le 10^5$
 
 </details>
 
-## 最长上升子序列计数（Bonus）
+## 最长上升子序列计数 (Bonus)
 
 [题目链接](https://oj.daimayuan.top/problem/884)
 
