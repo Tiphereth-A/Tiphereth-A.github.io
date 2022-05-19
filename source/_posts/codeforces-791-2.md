@@ -9,23 +9,17 @@ tags:
   - CodeForces
   - 图论
   - DP
+  - 二分
+  - 二分答案
   - 数据结构
   - 树状数组
+  - 拓扑排序
 date: 2022-05-18 20:08:38
 ---
 
 [比赛链接](https://codeforces.com/contest/1679)
 
 <!-- more -->
-
-## 题目概览
-
-| 题号 | 做法 |
-| ---- | ---- |
-| A    | 模拟 |
-| B    |      |
-| C    |      |
-| D    |      |
 
 ## A - AvtoBus
 
@@ -158,11 +152,9 @@ Consider array from the example and the result of performing each query:
 1. After performing the fourth query, array equals to $[10, 10, 10, 1, 11]$. The sum of all elements is $42$
 1. After performing the fifth query, array equals to $[1, 1, 1, 1, 1]$. The sum of all elements is $5$
 
-### 题意简述
-
 ### 解题思路
 
-### 复杂度
+$O(n)$ 做法属实是典中典了, 懒得想也可以直接套线段树, 略
 
 ### 代码参考
 
@@ -257,11 +249,9 @@ Chessboard after performing the last two queries:
 
 ![](C-5.png)
 
-### 题意简述
-
 ### 解题思路
 
-### 复杂度
+显然两个树状数组维护一下哪些点有 Rooks 就行
 
 ### 代码参考
 
@@ -377,11 +367,11 @@ In the second example Masha can initially put a coin at vertex $2$. After that s
 
 In the third example Masha won't be able to perform $4$ operations
 
-### 题意简述
-
 ### 解题思路
 
-### 复杂度
+> 面向验题人编程
+
+二分+找 $k$ 长路+判环
 
 ### 代码参考
 
