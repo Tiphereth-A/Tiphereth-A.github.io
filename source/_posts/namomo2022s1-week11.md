@@ -9,6 +9,7 @@ tags:
   - 代码源
   - HihoCoder
   - CodeForces
+  - 数学
 date: 2022-05-07 16:00:56
 ---
 
@@ -433,12 +434,14 @@ P 国的历法比较特殊, 每一年都有$m$个月 , 每个月有$d$天. 每�
 
 ### 解题思路
 
-### 复杂度
+水题, 略
 
 ### 代码参考
 
 <details>
 <summary><font color='orange'>Show code</font></summary>
+
+{% icodeweb cpa_cpp title:CodeForces_1389E CodeForces/1389E/0.cpp %}
 
 </details>
 
