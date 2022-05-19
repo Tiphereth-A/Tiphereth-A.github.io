@@ -8,6 +8,7 @@ tags:
   - 题解
   - 代码源
   - HihoCoder
+  - CodeForces
 date: 2022-05-07 16:00:56
 ---
 
@@ -292,7 +293,7 @@ files
 
 </details>
 
-## 不朴素的数列（Bonus）
+## 不朴素的数列 (Bonus) (CF1254B2)
 
 [题目链接](https://oj.daimayuan.top/problem/883)
 
@@ -385,7 +386,7 @@ $[1, 2, 3, 4, 5, 6] \rightarrow [0, 3, 3, 4, 5, 6] \rightarrow [0, 3, 3, 3, 6, 6
 
 </details>
 
-## 历法
+## 历法 (CF1389E)
 
 [题目链接](https://oj.daimayuan.top/problem/913)
 
