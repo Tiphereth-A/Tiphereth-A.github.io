@@ -8,11 +8,14 @@ tags:
   - 题解
   - 代码源
   - USACO
+  - CodeForces
+  - AtCoder
   - 数学
   - 数论
   - DP
   - 数据结构
   - LCS
+  - Hash
   - 树状数组
   - 滚动数组
 date: 2022-05-14 16:00:56
@@ -422,5 +425,88 @@ $O(2K+t\sqrt{2k})$, 其中 $K=10^7$
 <summary><font color='orange'>Show code</font></summary>
 
 {% icodeweb cpa_cpp title:CodeForces_1499D CodeForces/1499D/0.cpp %}
+
+</details>
+
+## 前缀集 (AtCoder abc250e)
+
+[题目链接](https://oj.daimayuan.top/problem/930)
+
+2 s, 512 MB
+
+### 题目描述
+
+定义序列$a$的前缀集$S(a, i)$为 `a[1]..a[i]` 这 i 个元素构成的集合
+
+给定两个长为$n$的序列$a, b$
+
+$m$次询问, 每次询问两个位置 i, j
+
+请你判断$a$的前缀集$S(a, i)$和$b$的前缀集$S(b, i)$是否相同
+
+### 输入描述
+
+一行一个整数$n(n\leq 5\times 10^5)$
+
+两行, 一行$n$个整数, 分别描述$a, b(1\leq a_i,b_i\leq 10^9)$
+
+一行一个整数$m(m\leq 5\times 10^5)$
+
+$m$行, 每行两个数$i(1\leq i\leq n)$, $j(1\leq j \leq n)$, 表示询问$S(a, i)$和$S(b, j)$
+
+### 输出描述
+
+m 行, 如果相同输出 Y, 否则输出 N
+
+### 样例输入
+
+```input1
+5
+1 2 3 4 5
+1 2 2 4 3
+7
+1 1
+2 2
+2 3
+3 3
+4 4
+4 5
+5 5
+```
+
+### 样例输出
+
+```output1
+Y
+Y
+Y
+N
+N
+Y
+N
+```
+
+### 原题链接
+
+[戳我](https://atcoder.jp/contests/abc250/tasks/abc250_e)
+
+### 解题思路
+
+> Hash / Set
+
+取 $S_A(i)=|\{a_1,a_2,...,a_i\}|$, 那么 $S(a,i)=S(b,j)\implies S_A(i)=S_B(j)$
+
+若 $S_A(i)=S_B(j)$, 只需事先计算出来 $a,b$ 去重后当 $S_A(i)$ 取哪些值时才会相同即可
+
+### 复杂度
+
+$O(n+q)$
+
+### 代码参考
+
+<details>
+<summary><font color='orange'>Show code</font></summary>
+
+{% icodeweb cpa_cpp title:AtCoder_abc250e AtCoder/abc_250e/0.cpp %}
 
 </details>
