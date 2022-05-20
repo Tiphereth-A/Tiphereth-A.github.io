@@ -38,7 +38,7 @@ date: 2022-05-12 19:07:57
 | ---- | ---------------------- | ------------- |
 | A    | Namomo Subsequence     | DP            |
 | B    | Rectangle Flip 2       |               |
-| C    | Random Shuffle         |               |
+| C    | Random Shuffle         | Gauss 消元    |
 | D    | City Brain             | 最短路 + 三分 |
 | E    | Tube Master III        |               |
 | F    | Rooks                  | (签到)        |
