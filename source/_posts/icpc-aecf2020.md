@@ -1,8 +1,8 @@
 ---
-title: 题解 - 2020 ICPC Asia EC-final
-author: "Tifa & FoI"
+title: VP记录 - 2020 ICPC Asia EC-final
+author: "Tifa & Foi"
 coauthor:
-  - FoI
+  - Foi
 categories:
   - 程序设计
   - 题解
@@ -25,7 +25,7 @@ tags:
   - 三分
   - 数论
   - 计算几何
-date: 2022-05-12 19:07:57
+date: 2022-05-10 19:07:57
 ---
 
 [比赛链接](https://codeforces.com/gym/103069)
