@@ -1,5 +1,5 @@
 ---
-title: VP记录 - 2020 ICPC Asia EC-final
+title: VP记录 - 2022 CCPC 黑龙江省赛
 author: "Tifa & Foi"
 coauthor:
   - Foi
