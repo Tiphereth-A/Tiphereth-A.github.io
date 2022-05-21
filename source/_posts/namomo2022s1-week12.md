@@ -507,6 +507,6 @@ $O(n+q)$
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa_cpp title:AtCoder_abc250e AtCoder/abc_250e/0.cpp %}
+{% icodeweb cpa_cpp title:AtCoder_abc250e AtCoder/abc250_e/0.cpp %}
 
 </details>
