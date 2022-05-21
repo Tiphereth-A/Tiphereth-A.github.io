@@ -78,7 +78,7 @@ date: 2021-11-21 19:33:27
 
 [官方题解](official_solutions.pptx)
 
-{% pdf /article/icpc-asyr2021/problems.pdf 600px %}
+{% pdf /archives/icpc-asyr2021/problems.pdf 600px %}
 
 ## A - A Bite of Teyvat
 

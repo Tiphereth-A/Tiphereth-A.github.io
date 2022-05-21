@@ -58,11 +58,11 @@ date: 2022-05-19 22:01:18
 | K    | Monkey Joe                | 树状数组 + 主席树 |
 | L    | Let's Swap                | KMP / Hash        |
 
-{% pdf /article/ccpc-hljp2022/problems.pdf 600px %}
+{% pdf /archives/ccpc-hljp2022/problems.pdf 600px %}
 
 ## 官方题解
 
-{% pdf /article/ccpc-hljp2022/official-solutions.pdf 600px %}
+{% pdf /archives/ccpc-hljp2022/official-solutions.pdf 600px %}
 
 ## A - Bookshelf Filling
 

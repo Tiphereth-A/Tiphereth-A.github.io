@@ -26,7 +26,7 @@ date: 2020-12-19 21:51:29
 
 <!-- [官方题解](official_solutions.zip) -->
 
-{% pdf /article/icpc-anjr2020-p/problems.pdf 600px %}
+{% pdf /archives/icpc-anjr2020-p/problems.pdf 600px %}
 
 ## A - Algorithm Course
 

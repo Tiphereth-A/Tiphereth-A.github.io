@@ -52,7 +52,7 @@ date: 2022-05-10 19:07:57
 
 [官方题解](https://www.zhihu.com/question/450271220/answer/1841779678)
 
-{% pdf /article/icpc-aecf2020/problems.pdf 600px %}
+{% pdf /archives/icpc-aecf2020/problems.pdf 600px %}
 
 ## A - Namomo Subsequence
 

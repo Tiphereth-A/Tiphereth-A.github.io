@@ -50,7 +50,7 @@ date: 2020-12-20 20:46:33
 
 [官方题解](https://zhuanlan.zhihu.com/p/338249705)
 
-{% pdf /article/icpc-anjr2020/problems.pdf 600px %}
+{% pdf /archives/icpc-anjr2020/problems.pdf 600px %}
 
 ## A - Ah, It's Yesterday Once More
 
