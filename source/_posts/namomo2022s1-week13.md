@@ -69,6 +69,14 @@ Namomo Spring Camp 2022 Div1 每日一题记录 (2022.05.21-2022.05.27)
 
 > 概率 DP
 
+设 $f(x,y)$ 表示有 $x$ 个 `a`, 且有 $y$ 个子串 `ab` 时的概率, 则
+
+$$f(x,y)=\frac{p_a}{p_a+p_b}f(x-1,y)+\frac{p_b}{p_a+p_b}f(x,y-x)$$
+
+另外, 若 $x+y>k$, 则期望应为 $\sum_{i=0}^{\infty}(\frac{p_a}{p_a+p_b})^i\frac{p_b}{p_a+p_b}(x+y+i)$
+
+然后倒着推即可
+
 ### 代码参考
 
 <details>
