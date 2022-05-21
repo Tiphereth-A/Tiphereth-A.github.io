@@ -33,7 +33,7 @@ date: 2020-12-12 21:24:04
 
 <!-- [官方题解](official_solutions.zip) -->
 
-{% pdf /article/icpc-ashr2020-p/problems.pdf 600px %}
+{% pdf /archives/icpc-ashr2020-p/problems.pdf 600px %}
 
 ## A - Game
 

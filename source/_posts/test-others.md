@@ -105,7 +105,7 @@ Theme NexT | https://theme-next.js.org/ | Stay Simple. Stay NexT. | /images/appl
 
 ## 插入 PDF
 
-{% pdf /article/test-others/test.pdf 600px %}
+{% pdf /archives/test-others/test.pdf 600px %}
 
 ## 插入视频
 

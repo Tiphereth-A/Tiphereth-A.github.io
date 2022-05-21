@@ -59,11 +59,11 @@ date: 2021-03-07 18:11:53
 
 ### 官方版
 
-{% pdf /article/icpc-ncna2019/NCNA19slides.pdf 600px %}
+{% pdf /archives/icpc-ncna2019/NCNA19slides.pdf 600px %}
 
 ### 兰州大学版
 
-{% pdf /article/icpc-ncna2019/solutions-lzu.pdf 600px %}
+{% pdf /archives/icpc-ncna2019/solutions-lzu.pdf 600px %}
 
 ## A - Weird Flecks, But OK
 

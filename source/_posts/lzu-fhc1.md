@@ -59,11 +59,11 @@ date: 2021-10-24 20:15:45
 | K    | ★★ 快乐苹果树 ★★ | 期望, 树链剖分 |
 | L    | ★★ 星星收集者 ★★ | 博弈论         |
 
-{% pdf /article/lzu-fhc1/problems.pdf 600px %}
+{% pdf /archives/lzu-fhc1/problems.pdf 600px %}
 
 ## 官方题解
 
-{% pdf /article/lzu-fhc1/official_solutions.pdf 600px %}
+{% pdf /archives/lzu-fhc1/official_solutions.pdf 600px %}
 
 ## A - ★★ 比赛新机制 ★★
 

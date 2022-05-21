@@ -68,7 +68,7 @@ date: 2020-11-15 23:01:18
 
 [官方题解](official_solutions.zip)
 
-{% pdf /article/icpc-cjxp2020/problems.pdf 600px %}
+{% pdf /archives/icpc-cjxp2020/problems.pdf 600px %}
 
 ## A - A Simple Math Problem
 
