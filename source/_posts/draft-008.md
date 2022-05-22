@@ -47,10 +47,6 @@ date: 2021-01-26 18:31:47
 
 {% endtabs %}
 
-## 示例
-
-{% iframe https://coliru.stacked-crooked.com/view?id=14713215157d88be 800 600 %}
-
 ### Tips
 
 以下程序和示例程序等价
