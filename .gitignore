@@ -10,3 +10,4 @@ public/
 _multiconfig.yml
 .vscode/
 source/_drafts/
+bin/
