@@ -17,15 +17,7 @@ date: 2020-12-03 01:32:35
 
 例如
 
-```mermaid
-flowchart TD
-1---2;
-2---3;
-2---4;
-1---5;
-4---6;
-2---7;
-```
+![](fig1.svg)
 
 的最小代价为$48$
 
@@ -51,23 +43,7 @@ flowchart TD
 
    以在三棵树间加边为例
 
-   ```mermaid
-   graph TD;
-   subgraph A;
-   1---2;
-   1---3;
-   2---4;
-   2---5;
-   end;
-   subgraph B;
-   6---7;
-   end;
-   subgraph C;
-   8---9;
-   9---10;
-   9---11;
-   end;
-   ```
+   ![](fig2.svg)
 
    我们需要在树$A,B,C$间加边, 设树$A,B,C$之中点权最大的点分别为$a,b,c$
 
@@ -94,14 +70,7 @@ flowchart TD
 
 先考虑三个点的树和点的连接, 以下图为例
 
-```mermaid
-flowchart TD
-subgraph A;
-1---2;
-1---a;
-end;
-b;
-```
+![](fig3.svg)
 
 设树$A$中点权最大的点为$a$, 则最小代价为$f(A)+t_a+t_b$
 
@@ -114,18 +83,7 @@ $$\sum_{i\in M}t_i+\sum_{x,y\in M;x,y~\text{connected}}\max\{t_x,t_y\}-\max_{i\i
 
 而树与树的连接是否也满足该式呢
 
-```mermaid
-flowchart TD
-subgraph A;
-1---2;
-1---a;
-2---4;
-2---5;
-end;
-subgraph B;
-6---b;
-end;
-```
+![](fig4.svg)
 
 设树$A,B$中点权最大的点分别为$a,b$, 新边将$A$中的点$x$和$B$中的点$y$连接起来, 最终的树为$C$
 
