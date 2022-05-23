@@ -492,6 +492,8 @@ There can be other possible answers such as $[1, 2, 4, 3]$
 
 ### 题意简述
 
+给定一段对换序列和一个排列, 要求给出对换序列的一个排列, 使得能够使给定的排列变为升序且此时的对换序列是能使得给定的排列变为升序的最短对换序列
+
 ### 解题思路
 
 ### 复杂度
@@ -500,8 +502,6 @@ There can be other possible answers such as $[1, 2, 4, 3]$
 
 <details>
 <summary><font color='orange'>Show code</font></summary>
-
-{% icodeweb cpa_cpp title:CodeForces_1682E CodeForces/1682E/0.cpp %}
 
 </details>
 
@@ -592,7 +592,5 @@ The maximum flow in the above network is 4 and the minimum cost of such flow is 
 
 <details>
 <summary><font color='orange'>Show code</font></summary>
-
-{% icodeweb cpa_cpp title:CodeForces_1682F CodeForces/1682F/0.cpp %}
 
 </details>
