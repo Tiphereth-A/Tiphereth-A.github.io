@@ -10,3 +10,13 @@
 [![license](https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png)](https://creativecommons.org/licenses/by-nc-sa/4.0)
 
 My blog, powered by [Hexo](https://hexo.io/) & [NexT.Gemini](https://theme-next.js.org/)
+
+## Pagespeed results
+
+### Desktop
+
+![](reports/psresultdesktop.svg)
+
+### Mobile
+
+![](reports/psresultmobile.svg)
