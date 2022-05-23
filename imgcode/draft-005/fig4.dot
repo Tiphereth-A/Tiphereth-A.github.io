@@ -1,0 +1,11 @@
+graph {
+  subgraph "cluster_1" {
+    "1" -- "2";
+    "1" -- "a";
+    "2" -- "4";
+    "2" -- "5";
+  }
+  subgraph "cluster_2" {
+    "6" -- "b";
+  }
+}
