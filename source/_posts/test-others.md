@@ -111,7 +111,7 @@ Theme NexT | https://theme-next.js.org/ | Stay Simple. Stay NexT. | /images/appl
 
 ### manim 示例 - SquareToCircle
 
-{% mmedia "video" ./SquareToCircle.mp4 %}
+{% mmedia "video" "src:/archives/test-others/SquareToCircle.mp4" %}
 
 ### Bilibili 视频 - BV1C4411u7rK
 
