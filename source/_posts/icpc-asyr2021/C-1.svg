@@ -1,1 +1,192 @@
-<svg id="mermaid-1653307049994" width="491.078125" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="326.0555419921875" viewBox="0 0 491.078125 326.0555419921875"><style>#mermaid-1653307049994 {font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;fill:#333;}#mermaid-1653307049994 .error-icon{fill:#552222;}#mermaid-1653307049994 .error-text{fill:#552222;stroke:#552222;}#mermaid-1653307049994 .edge-thickness-normal{stroke-width:2px;}#mermaid-1653307049994 .edge-thickness-thick{stroke-width:3.5px;}#mermaid-1653307049994 .edge-pattern-solid{stroke-dasharray:0;}#mermaid-1653307049994 .edge-pattern-dashed{stroke-dasharray:3;}#mermaid-1653307049994 .edge-pattern-dotted{stroke-dasharray:2;}#mermaid-1653307049994 .marker{fill:#333333;stroke:#333333;}#mermaid-1653307049994 .marker.cross{stroke:#333333;}#mermaid-1653307049994 svg{font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;}#mermaid-1653307049994 .label{font-family:"trebuchet ms",verdana,arial,sans-serif;color:#333;}#mermaid-1653307049994 .cluster-label text{fill:#333;}#mermaid-1653307049994 .cluster-label span{color:#333;}#mermaid-1653307049994 .label text,#mermaid-1653307049994 span{fill:#333;color:#333;}#mermaid-1653307049994 .node rect,#mermaid-1653307049994 .node circle,#mermaid-1653307049994 .node ellipse,#mermaid-1653307049994 .node polygon,#mermaid-1653307049994 .node path{fill:#ECECFF;stroke:#9370DB;stroke-width:1px;}#mermaid-1653307049994 .node .label{text-align:center;}#mermaid-1653307049994 .node.clickable{cursor:pointer;}#mermaid-1653307049994 .arrowheadPath{fill:#333333;}#mermaid-1653307049994 .edgePath .path{stroke:#333333;stroke-width:2.0px;}#mermaid-1653307049994 .flowchart-link{stroke:#333333;fill:none;}#mermaid-1653307049994 .edgeLabel{background-color:#e8e8e8;text-align:center;}#mermaid-1653307049994 .edgeLabel rect{opacity:0.5;background-color:#e8e8e8;fill:#e8e8e8;}#mermaid-1653307049994 .cluster rect{fill:#ffffde;stroke:#aaaa33;stroke-width:1px;}#mermaid-1653307049994 .cluster text{fill:#333;}#mermaid-1653307049994 .cluster span{color:#333;}#mermaid-1653307049994 div.mermaidTooltip{position:absolute;text-align:center;max-width:200px;padding:2px;font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:12px;background:hsl(80, 100%, 96.2745098039%);border:1px solid #aaaa33;border-radius:2px;pointer-events:none;z-index:100;}#mermaid-1653307049994 :root{--mermaid-font-family:"trebuchet ms",verdana,arial,sans-serif;}</style><g transform="translate(0, 0)"><marker id="flowchart-pointEnd" class="marker flowchart" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowMarkerPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"/></marker><marker id="flowchart-pointStart" class="marker flowchart" viewBox="0 0 10 10" refX="0" refY="5" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto"><path d="M 0 5 L 10 10 L 10 0 z" class="arrowMarkerPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"/></marker><marker id="flowchart-circleEnd" class="marker flowchart" viewBox="0 0 10 10" refX="11" refY="5" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto"><circle cx="5" cy="5" r="5" class="arrowMarkerPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"/></marker><marker id="flowchart-circleStart" class="marker flowchart" viewBox="0 0 10 10" refX="-1" refY="5" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto"><circle cx="5" cy="5" r="5" class="arrowMarkerPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"/></marker><marker id="flowchart-crossEnd" class="marker cross flowchart" viewBox="0 0 11 11" refX="12" refY="5.2" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto"><path d="M 1,1 l 9,9 M 10,1 l -9,9" class="arrowMarkerPath" style="stroke-width: 2; stroke-dasharray: 1, 0;"/></marker><marker id="flowchart-crossStart" class="marker cross flowchart" viewBox="0 0 11 11" refX="-1" refY="5.2" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto"><path d="M 1,1 l 9,9 M 10,1 l -9,9" class="arrowMarkerPath" style="stroke-width: 2; stroke-dasharray: 1, 0;"/></marker><g class="root"><g class="clusters"/><g class="edgePaths"><path d="M42.64302047038328,171.5L50.205121225319395,150.83333333333334C57.76722198025552,130.16666666666666,72.89142349012776,88.83333333333333,84.62019091173055,68.16666666666667C96.34895833333333,47.5,104.68229166666667,47.5,108.84895833333333,47.5L113.015625,47.5" id="L-v000-v001-0" class=" edge-thickness-normal edge-pattern-solid flowchart-link LS-v000 LE-v001" style="fill:none;" marker-end="url(#flowchart-pointEnd)"/><path d="M63.015625,172.92612706442495L67.18229166666667,170.18843922035413C71.34895833333333,167.4507513762833,79.68229166666667,161.97537568814164,88.015625,159.23768784407082C96.34895833333333,156.5,104.68229166666667,156.5,108.84895833333333,156.5L113.015625,156.5" id="L-v000-v010-0" class=" edge-thickness-normal edge-pattern-solid flowchart-link LS-v000 LE-v010" style="fill:none;" marker-end="url(#flowchart-pointEnd)"/><path d="M49.25146812080537,210.5L55.71216093400448,219.66666666666666C62.17285374720358,228.83333333333334,75.0942393736018,247.16666666666666,85.72159885346757,256.3333333333333C96.34895833333333,265.5,104.68229166666667,265.5,108.84895833333333,265.5L113.015625,265.5" id="L-v000-v100-0" class=" edge-thickness-normal edge-pattern-solid flowchart-link LS-v000 LE-v100" style="fill:none;" marker-end="url(#flowchart-pointEnd)"/><path d="M159.3106364678899,67L164.9307387232416,72.83333333333333C170.55084097859327,78.66666666666667,181.79104548929664,90.33333333333333,192.3276095892176,100.33333333333333C202.8641736891386,110.33333333333333,212.69709737827716,118.66666666666667,217.61355922284645,122.83333333333333L222.53002106741573,127" id="L-v001-v101-0" class=" edge-thickness-normal edge-pattern-solid flowchart-link LS-v001 LE-v101" style="fill:none;" marker-end="url(#flowchart-pointEnd)"/><path d="M168.03125,37.0223925011159L172.19791666666666,35.43532708426326C176.36458333333334,33.848261667410604,184.69791666666666,30.674130833705302,193.03125,29.88059812527898C201.36458333333334,29.087065416852653,209.69791666666666,30.674130833705302,213.86458333333334,31.46766354213163L218.03125,32.26119625055795" id="L-v001-v011-0" class=" edge-thickness-normal edge-pattern-solid flowchart-link LS-v001 LE-v011" style="fill:none;" marker-end="url(#flowchart-pointEnd)"/><path d="M128.0004255836576,176L125.50295881971466,179.88888888888889C123.00549205577174,183.7777777777778,118.01055852788586,191.55555555555557,115.51309176394294,196.41666666666666C113.015625,201.2777777777778,113.015625,203.2222222222222,117.60026041666667,205.16666666666666C122.18489583333333,207.1111111111111,131.35416666666666,209.05555555555554,140.5234375,209.05555555555557C149.69270833333334,209.05555555555554,158.86197916666666,207.1111111111111,163.44661458333334,205.16666666666663C168.03125,203.2222222222222,168.03125,201.2777777777778,165.53378323605708,196.41666666666666C163.03631647211412,191.55555555555557,158.04138294422827,183.7777777777778,155.54391618028532,179.8888888888889L153.0464494163424,176" id="L-v010-v010-0" class=" edge-thickness-normal edge-pattern-solid flowchart-link LS-v010 LE-v010" style="fill:none;" marker-end="url(#flowchart-pointEnd)"/><path d="M159.3106364678899,176L164.9307387232416,181.83333333333334C170.55084097859327,187.66666666666666,181.79104548929664,199.33333333333334,193.03125,211C204.27145451070336,222.66666666666666,215.5116590214067,234.33333333333334,221.1317612767584,240.16666666666666L226.7518635321101,246" id="L-v010-v110-0" class=" edge-thickness-normal edge-pattern-solid flowchart-link LS-v010 LE-v110" style="fill:none;" marker-end="url(#flowchart-pointEnd)"/><path d="M154.26709312080536,137L160.72778593400446,127.83333333333333C167.18847874720356,118.66666666666667,180.1098643736018,100.33333333333333,191.48701903137018,87C202.8641736891386,73.66666666666667,212.69709737827716,65.33333333333333,217.61355922284645,61.166666666666664L222.53002106741573,57" id="L-v010-v011-0" class=" edge-thickness-normal edge-pattern-solid flowchart-link LS-v010 LE-v011" style="fill:none;" marker-end="url(#flowchart-pointEnd)"/><path d="M128.00042558365757,285L125.50295881971465,288.88888888888886C123.00549205577171,292.77777777777777,118.01055852788586,300.55555555555554,115.51309176394294,305.4166666666667C113.015625,310.27777777777777,113.015625,312.22222222222223,117.60026041666667,314.1666666666667C122.18489583333333,316.11111111111114,131.35416666666666,318.0555555555556,140.5234375,318.0555555555556C149.69270833333334,318.0555555555556,158.86197916666666,316.11111111111114,163.44661458333334,314.1666666666667C168.03125,312.22222222222223,168.03125,310.27777777777777,165.53378323605708,305.4166666666667C163.03631647211412,300.55555555555554,158.04138294422827,292.77777777777777,155.54391618028535,288.88888888888886L153.04644941634243,285" id="L-v100-v100-0" class=" edge-thickness-normal edge-pattern-solid flowchart-link LS-v100 LE-v100" style="fill:none;" marker-end="url(#flowchart-pointEnd)"/><path d="M154.26709312080536,246L160.72778593400446,236.83333333333334C167.18847874720356,227.66666666666666,180.1098643736018,209.33333333333334,191.48701903137018,196C202.8641736891386,182.66666666666666,212.69709737827716,174.33333333333334,217.61355922284645,170.16666666666666L222.53002106741573,166" id="L-v100-v101-0" class=" edge-thickness-normal edge-pattern-solid flowchart-link LS-v100 LE-v101" style="fill:none;" marker-end="url(#flowchart-pointEnd)"/><path d="M168.03125,270.73880374944207L172.19791666666666,271.5323364578684C176.36458333333334,272.3258691662947,184.69791666666666,273.9129345831473,193.03125,273.9129345831473C201.36458333333334,273.9129345831473,209.69791666666666,272.3258691662947,213.86458333333334,271.5323364578684L218.03125,270.73880374944207" id="L-v100-v110-0" class=" edge-thickness-normal edge-pattern-solid flowchart-link LS-v100 LE-v110" style="fill:none;" marker-end="url(#flowchart-pointEnd)"/><path d="M233.01605058365757,57L230.51858381971465,60.888888888888886C228.02111705577173,64.77777777777777,223.02618352788588,72.55555555555556,220.52871676394292,77.41666666666667C218.03125,82.27777777777777,218.03125,84.22222222222223,222.61588541666666,86.16666666666667C227.20052083333334,88.11111111111113,236.36979166666666,90.05555555555556,245.5390625,90.05555555555556C254.70833333333334,90.05555555555556,263.8776041666667,88.11111111111113,268.4622395833333,86.16666666666667C273.046875,84.22222222222223,273.046875,82.27777777777777,270.5494082360571,77.41666666666667C268.05194147211415,72.55555555555556,263.05700794422825,64.77777777777777,260.55954118028535,60.888888888888886L258.0620744163424,57" id="L-v011-v011-0" class=" edge-thickness-normal edge-pattern-solid flowchart-link LS-v011 LE-v011" style="fill:none;" marker-end="url(#flowchart-pointEnd)"/><path d="M268.54810393258424,57L273.4645657771535,61.166666666666664C278.3810276217228,65.33333333333333,288.21395131086143,73.66666666666667,300.3161153247732,92.75C312.418279338685,111.83333333333333,326.78968367737,141.66666666666666,333.9753858467125,156.58333333333334L341.16108801605503,171.5" id="L-v011-v111-0" class=" edge-thickness-normal edge-pattern-solid flowchart-link LS-v011 LE-v111" style="fill:none;" marker-end="url(#flowchart-pointEnd)"/><path d="M233.0160505836576,166L230.51858381971465,169.88888888888889C228.02111705577173,173.7777777777778,223.02618352788588,181.55555555555557,220.52871676394292,186.41666666666666C218.03125,191.2777777777778,218.03125,193.2222222222222,222.61588541666666,195.16666666666666C227.20052083333334,197.1111111111111,236.36979166666666,199.05555555555554,245.5390625,199.05555555555554C254.70833333333334,199.05555555555554,263.8776041666667,197.1111111111111,268.4622395833333,195.16666666666666C273.046875,193.2222222222222,273.046875,191.2777777777778,270.5494082360571,186.41666666666666C268.05194147211415,181.55555555555557,263.05700794422825,173.7777777777778,260.55954118028535,169.88888888888889L258.0620744163424,166" id="L-v101-v101-0" class=" edge-thickness-normal edge-pattern-solid flowchart-link LS-v101 LE-v101" style="fill:none;" marker-end="url(#flowchart-pointEnd)"/><path d="M268.54810393258424,166L273.4645657771535,170.16666666666666C278.3810276217228,174.33333333333334,288.21395131086143,182.66666666666666,297.2970798220974,186.83333333333334C306.3802083333333,191,314.7135416666667,191,318.8802083333333,191L323.046875,191" id="L-v101-v111-0" class=" edge-thickness-normal edge-pattern-solid flowchart-link LS-v101 LE-v111" style="fill:none;" marker-end="url(#flowchart-pointEnd)"/><path d="M254.14328387605042,127L261.46054906337537,110.41666666666667C268.77781425070026,93.83333333333333,283.41234462535016,60.666666666666664,294.89627647934174,44.083333333333336C306.3802083333333,27.5,314.7135416666667,27.5,318.8802083333333,27.5L323.046875,27.5" id="L-v101-v102-0" class=" edge-thickness-normal edge-pattern-solid flowchart-link LS-v101 LE-v102" style="fill:none;" marker-end="url(#flowchart-pointEnd)"/><path d="M233.01605058365757,285L230.51858381971465,288.88888888888886C228.02111705577173,292.77777777777777,223.02618352788588,300.55555555555554,220.52871676394292,305.4166666666667C218.03125,310.27777777777777,218.03125,312.22222222222223,222.61588541666666,314.1666666666667C227.20052083333334,316.11111111111114,236.36979166666666,318.0555555555556,245.5390625,318.0555555555556C254.70833333333334,318.0555555555556,263.8776041666667,316.11111111111114,268.4622395833333,314.1666666666667C273.046875,312.22222222222223,273.046875,310.27777777777777,270.5494082360571,305.4166666666667C268.05194147211415,300.55555555555554,263.05700794422825,292.77777777777777,260.55954118028535,288.88888888888886L258.0620744163424,285" id="L-v110-v110-0" class=" edge-thickness-normal edge-pattern-solid flowchart-link LS-v110 LE-v110" style="fill:none;" marker-end="url(#flowchart-pointEnd)"/><path d="M273.046875,265.5L277.2135416666667,265.5C281.3802083333333,265.5,289.7135416666667,265.5,300.3409011465324,256.3333333333333C310.9682606263982,247.16666666666666,323.8896462527964,228.83333333333334,330.3503390659955,219.66666666666666L336.8110318791946,210.5" id="L-v110-v111-0" class=" edge-thickness-normal edge-pattern-solid flowchart-link LS-v110 LE-v111" style="fill:none;" marker-end="url(#flowchart-pointEnd)"/><path d="M338.0316755836576,210.5L335.53420881971465,214.38888888888889C333.03674205577175,218.2777777777778,328.04180852788585,226.05555555555557,325.5443417639429,230.9166666666667C323.046875,235.7777777777778,323.046875,237.7222222222222,327.6315104166667,239.66666666666666C332.2161458333333,241.6111111111111,341.3854166666667,243.55555555555554,350.5546875,243.55555555555557C359.7239583333333,243.55555555555554,368.8932291666667,241.6111111111111,373.4778645833333,239.66666666666663C378.0625,237.7222222222222,378.0625,235.7777777777778,375.5650332360571,230.91666666666666C373.06756647211415,226.05555555555557,368.07263294422825,218.2777777777778,365.57516618028535,214.38888888888889L363.0776994163424,210.5" id="L-v111-v111-0" class=" edge-thickness-normal edge-pattern-solid flowchart-link LS-v111 LE-v111" style="fill:none;" marker-end="url(#flowchart-pointEnd)"/><path d="M378.0625,191L382.2291666666667,191C386.3958333333333,191,394.7291666666667,191,403.0625,191C411.3958333333333,191,419.7291666666667,191,423.8958333333333,191L428.0625,191" id="L-v111-v112-0" class=" edge-thickness-normal edge-pattern-solid flowchart-link LS-v111 LE-v112" style="fill:none;" marker-end="url(#flowchart-pointEnd)"/></g><g class="edgeLabels"><g class="edgeLabel"><g class="label" transform="translate(0, 0)"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel"><g class="label" transform="translate(0, 0)"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel"><g class="label" transform="translate(0, 0)"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel"><g class="label" transform="translate(0, 0)"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel"><g class="label" transform="translate(0, 0)"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel"><g class="label" transform="translate(0, 0)"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel"><g class="label" transform="translate(0, 0)"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel"><g class="label" transform="translate(0, 0)"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel"><g class="label" transform="translate(0, 0)"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel"><g class="label" transform="translate(0, 0)"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel"><g class="label" transform="translate(0, 0)"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel"><g class="label" transform="translate(0, 0)"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel"><g class="label" transform="translate(0, 0)"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel"><g class="label" transform="translate(0, 0)"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel"><g class="label" transform="translate(0, 0)"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel"><g class="label" transform="translate(0, 0)"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel"><g class="label" transform="translate(0, 0)"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel"><g class="label" transform="translate(0, 0)"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel"><g class="label" transform="translate(0, 0)"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel"><g class="label" transform="translate(0, 0)"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g></g><g class="nodes"><g class="node default default" id="flowchart-v000-38" transform="translate(35.5078125, 191)"><rect class="basic label-container" style="" rx="0" ry="0" x="-27.5078125" y="-19.5" width="55.015625" height="39"/><g class="label" style="" transform="translate(-20.0078125, -12)"><foreignObject width="40.015625" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="nodeLabel">0,0,0</span></div></foreignObject></g></g><g class="node default default" id="flowchart-v001-39" transform="translate(140.5234375, 47.5)"><rect class="basic label-container" style="" rx="0" ry="0" x="-27.5078125" y="-19.5" width="55.015625" height="39"/><g class="label" style="" transform="translate(-20.0078125, -12)"><foreignObject width="40.015625" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="nodeLabel">0,0,1</span></div></foreignObject></g></g><g class="node default default" id="flowchart-v010-40" transform="translate(140.5234375, 156.5)"><rect class="basic label-container" style="" rx="0" ry="0" x="-27.5078125" y="-19.5" width="55.015625" height="39"/><g class="label" style="" transform="translate(-20.0078125, -12)"><foreignObject width="40.015625" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="nodeLabel">0,1,0</span></div></foreignObject></g></g><g class="node default default" id="flowchart-v011-41" transform="translate(245.5390625, 37.5)"><rect class="basic label-container" style="" rx="0" ry="0" x="-27.5078125" y="-19.5" width="55.015625" height="39"/><g class="label" style="" transform="translate(-20.0078125, -12)"><foreignObject width="40.015625" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="nodeLabel">0,1,1</span></div></foreignObject></g></g><g class="node default default" id="flowchart-v100-42" transform="translate(140.5234375, 265.5)"><rect class="basic label-container" style="" rx="0" ry="0" x="-27.5078125" y="-19.5" width="55.015625" height="39"/><g class="label" style="" transform="translate(-20.0078125, -12)"><foreignObject width="40.015625" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="nodeLabel">1,0,0</span></div></foreignObject></g></g><g class="node default default" id="flowchart-v101-43" transform="translate(245.5390625, 146.5)"><rect class="basic label-container" style="" rx="0" ry="0" x="-27.5078125" y="-19.5" width="55.015625" height="39"/><g class="label" style="" transform="translate(-20.0078125, -12)"><foreignObject width="40.015625" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="nodeLabel">1,0,1</span></div></foreignObject></g></g><g class="node default default" id="flowchart-v102-44" transform="translate(350.5546875, 27.5)"><rect class="basic label-container" style="" rx="0" ry="0" x="-27.5078125" y="-19.5" width="55.015625" height="39"/><g class="label" style="" transform="translate(-20.0078125, -12)"><foreignObject width="40.015625" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="nodeLabel">1,0,2</span></div></foreignObject></g></g><g class="node default default" id="flowchart-v110-45" transform="translate(245.5390625, 265.5)"><rect class="basic label-container" style="" rx="0" ry="0" x="-27.5078125" y="-19.5" width="55.015625" height="39"/><g class="label" style="" transform="translate(-20.0078125, -12)"><foreignObject width="40.015625" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="nodeLabel">1,1,0</span></div></foreignObject></g></g><g class="node default default" id="flowchart-v111-46" transform="translate(350.5546875, 191)"><rect class="basic label-container" style="" rx="0" ry="0" x="-27.5078125" y="-19.5" width="55.015625" height="39"/><g class="label" style="" transform="translate(-20.0078125, -12)"><foreignObject width="40.015625" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="nodeLabel">1,1,1</span></div></foreignObject></g></g><g class="node default default" id="flowchart-v112-47" transform="translate(455.5703125, 191)"><rect class="basic label-container" style="" rx="0" ry="0" x="-27.5078125" y="-19.5" width="55.015625" height="39"/><g class="label" style="" transform="translate(-20.0078125, -12)"><foreignObject width="40.015625" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="nodeLabel">1,1,2</span></div></foreignObject></g></g></g></g></g></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generated by graphviz version 2.49.3 (20211027.1534)
+ -->
+<!-- Pages: 1 -->
+<svg width="305pt" height="332pt"
+ viewBox="0.00 0.00 304.89 332.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 328)">
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-328 300.89,-328 300.89,4 -4,4"/>
+<!-- [0,0,0] -->
+<g id="node1" class="node">
+<title>[0,0,0]</title>
+<ellipse fill="none" stroke="black" cx="148.45" cy="-306" rx="34.39" ry="18"/>
+<text text-anchor="middle" x="148.45" y="-302.3" font-family="Times,serif" font-size="14.00">[0,0,0]</text>
+</g>
+<!-- [0,0,1] -->
+<g id="node2" class="node">
+<title>[0,0,1]</title>
+<ellipse fill="none" stroke="black" cx="148.45" cy="-234" rx="34.39" ry="18"/>
+<text text-anchor="middle" x="148.45" y="-230.3" font-family="Times,serif" font-size="14.00">[0,0,1]</text>
+</g>
+<!-- [0,0,0]&#45;&gt;[0,0,1] -->
+<g id="edge1" class="edge">
+<title>[0,0,0]&#45;&gt;[0,0,1]</title>
+<path fill="none" stroke="black" d="M148.45,-287.7C148.45,-279.98 148.45,-270.71 148.45,-262.11"/>
+<polygon fill="black" stroke="black" points="151.95,-262.1 148.45,-252.1 144.95,-262.1 151.95,-262.1"/>
+</g>
+<!-- [0,1,0] -->
+<g id="node3" class="node">
+<title>[0,1,0]</title>
+<ellipse fill="none" stroke="black" cx="235.45" cy="-234" rx="34.39" ry="18"/>
+<text text-anchor="middle" x="235.45" y="-230.3" font-family="Times,serif" font-size="14.00">[0,1,0]</text>
+</g>
+<!-- [0,0,0]&#45;&gt;[0,1,0] -->
+<g id="edge2" class="edge">
+<title>[0,0,0]&#45;&gt;[0,1,0]</title>
+<path fill="none" stroke="black" d="M166.47,-290.5C178.84,-280.55 195.44,-267.19 209.26,-256.07"/>
+<polygon fill="black" stroke="black" points="211.85,-258.48 217.44,-249.49 207.46,-253.03 211.85,-258.48"/>
+</g>
+<!-- [1,0,0] -->
+<g id="node4" class="node">
+<title>[1,0,0]</title>
+<ellipse fill="none" stroke="black" cx="43.45" cy="-234" rx="34.39" ry="18"/>
+<text text-anchor="middle" x="43.45" y="-230.3" font-family="Times,serif" font-size="14.00">[1,0,0]</text>
+</g>
+<!-- [0,0,0]&#45;&gt;[1,0,0] -->
+<g id="edge3" class="edge">
+<title>[0,0,0]&#45;&gt;[1,0,0]</title>
+<path fill="none" stroke="black" d="M127.95,-291.34C112.2,-280.83 90.22,-266.18 72.63,-254.46"/>
+<polygon fill="black" stroke="black" points="74.15,-251.26 63.89,-248.63 70.27,-257.09 74.15,-251.26"/>
+</g>
+<!-- [1,0,1] -->
+<g id="node5" class="node">
+<title>[1,0,1]</title>
+<ellipse fill="none" stroke="black" cx="34.45" cy="-162" rx="34.39" ry="18"/>
+<text text-anchor="middle" x="34.45" y="-158.3" font-family="Times,serif" font-size="14.00">[1,0,1]</text>
+</g>
+<!-- [0,0,1]&#45;&gt;[1,0,1] -->
+<g id="edge4" class="edge">
+<title>[0,0,1]&#45;&gt;[1,0,1]</title>
+<path fill="none" stroke="black" d="M127,-219.83C109.44,-209.05 84.38,-193.66 64.76,-181.62"/>
+<polygon fill="black" stroke="black" points="66.53,-178.6 56.18,-176.35 62.87,-184.56 66.53,-178.6"/>
+</g>
+<!-- [0,1,1] -->
+<g id="node6" class="node">
+<title>[0,1,1]</title>
+<ellipse fill="none" stroke="black" cx="244.45" cy="-162" rx="34.39" ry="18"/>
+<text text-anchor="middle" x="244.45" y="-158.3" font-family="Times,serif" font-size="14.00">[0,1,1]</text>
+</g>
+<!-- [0,0,1]&#45;&gt;[0,1,1] -->
+<g id="edge5" class="edge">
+<title>[0,0,1]&#45;&gt;[0,1,1]</title>
+<path fill="none" stroke="black" d="M167.87,-218.83C181.93,-208.59 201.12,-194.59 216.77,-183.18"/>
+<polygon fill="black" stroke="black" points="219.03,-185.86 225.05,-177.14 214.91,-180.21 219.03,-185.86"/>
+</g>
+<!-- [0,1,0]&#45;&gt;[0,1,0] -->
+<g id="edge6" class="edge">
+<title>[0,1,0]&#45;&gt;[0,1,0]</title>
+<path fill="none" stroke="black" d="M260,-246.71C274.41,-249.42 287.89,-245.18 287.89,-234 287.89,-225.53 280.15,-221.04 270.13,-220.55"/>
+<polygon fill="black" stroke="black" points="269.71,-217.07 260,-221.29 270.23,-224.05 269.71,-217.07"/>
+</g>
+<!-- [0,1,0]&#45;&gt;[0,1,1] -->
+<g id="edge7" class="edge">
+<title>[0,1,0]&#45;&gt;[0,1,1]</title>
+<path fill="none" stroke="black" d="M237.67,-215.7C238.66,-207.98 239.86,-198.71 240.96,-190.11"/>
+<polygon fill="black" stroke="black" points="244.44,-190.47 242.25,-180.1 237.5,-189.58 244.44,-190.47"/>
+</g>
+<!-- [1,1,0] -->
+<g id="node7" class="node">
+<title>[1,1,0]</title>
+<ellipse fill="none" stroke="black" cx="139.45" cy="-162" rx="34.39" ry="18"/>
+<text text-anchor="middle" x="139.45" y="-158.3" font-family="Times,serif" font-size="14.00">[1,1,0]</text>
+</g>
+<!-- [0,1,0]&#45;&gt;[1,1,0] -->
+<g id="edge8" class="edge">
+<title>[0,1,0]&#45;&gt;[1,1,0]</title>
+<path fill="none" stroke="black" d="M216.02,-218.83C201.97,-208.59 182.78,-194.59 167.12,-183.18"/>
+<polygon fill="black" stroke="black" points="168.99,-180.21 158.85,-177.14 164.86,-185.86 168.99,-180.21"/>
+</g>
+<!-- [1,0,0]&#45;&gt;[1,0,0] -->
+<g id="edge9" class="edge">
+<title>[1,0,0]&#45;&gt;[1,0,0]</title>
+<path fill="none" stroke="black" d="M68,-246.71C82.41,-249.42 95.89,-245.18 95.89,-234 95.89,-225.53 88.15,-221.04 78.13,-220.55"/>
+<polygon fill="black" stroke="black" points="77.71,-217.07 68,-221.29 78.23,-224.05 77.71,-217.07"/>
+</g>
+<!-- [1,0,0]&#45;&gt;[1,0,1] -->
+<g id="edge10" class="edge">
+<title>[1,0,0]&#45;&gt;[1,0,1]</title>
+<path fill="none" stroke="black" d="M41.22,-215.7C40.23,-207.98 39.04,-198.71 37.93,-190.11"/>
+<polygon fill="black" stroke="black" points="41.39,-189.58 36.65,-180.1 34.45,-190.47 41.39,-189.58"/>
+</g>
+<!-- [1,0,0]&#45;&gt;[1,1,0] -->
+<g id="edge11" class="edge">
+<title>[1,0,0]&#45;&gt;[1,1,0]</title>
+<path fill="none" stroke="black" d="M62.87,-218.83C76.93,-208.59 96.12,-194.59 111.77,-183.18"/>
+<polygon fill="black" stroke="black" points="114.03,-185.86 120.05,-177.14 109.91,-180.21 114.03,-185.86"/>
+</g>
+<!-- [1,0,1]&#45;&gt;[1,0,1] -->
+<g id="edge14" class="edge">
+<title>[1,0,1]&#45;&gt;[1,0,1]</title>
+<path fill="none" stroke="black" d="M59,-174.71C73.41,-177.42 86.89,-173.18 86.89,-162 86.89,-153.53 79.15,-149.04 69.13,-148.55"/>
+<polygon fill="black" stroke="black" points="68.71,-145.07 59,-149.29 69.23,-152.05 68.71,-145.07"/>
+</g>
+<!-- [1,1,1] -->
+<g id="node8" class="node">
+<title>[1,1,1]</title>
+<ellipse fill="none" stroke="black" cx="139.45" cy="-90" rx="34.39" ry="18"/>
+<text text-anchor="middle" x="139.45" y="-86.3" font-family="Times,serif" font-size="14.00">[1,1,1]</text>
+</g>
+<!-- [1,0,1]&#45;&gt;[1,1,1] -->
+<g id="edge15" class="edge">
+<title>[1,0,1]&#45;&gt;[1,1,1]</title>
+<path fill="none" stroke="black" d="M54.94,-147.34C70.7,-136.83 92.67,-122.18 110.26,-110.46"/>
+<polygon fill="black" stroke="black" points="112.63,-113.09 119,-104.63 108.74,-107.26 112.63,-113.09"/>
+</g>
+<!-- [1,0,2] -->
+<g id="node9" class="node">
+<title>[1,0,2]</title>
+<ellipse fill="none" stroke="black" cx="34.45" cy="-90" rx="34.39" ry="18"/>
+<text text-anchor="middle" x="34.45" y="-86.3" font-family="Times,serif" font-size="14.00">[1,0,2]</text>
+</g>
+<!-- [1,0,1]&#45;&gt;[1,0,2] -->
+<g id="edge16" class="edge">
+<title>[1,0,1]&#45;&gt;[1,0,2]</title>
+<path fill="none" stroke="black" d="M34.45,-143.7C34.45,-135.98 34.45,-126.71 34.45,-118.11"/>
+<polygon fill="black" stroke="black" points="37.95,-118.1 34.45,-108.1 30.95,-118.1 37.95,-118.1"/>
+</g>
+<!-- [0,1,1]&#45;&gt;[0,1,1] -->
+<g id="edge12" class="edge">
+<title>[0,1,1]&#45;&gt;[0,1,1]</title>
+<path fill="none" stroke="black" d="M269,-174.71C283.41,-177.42 296.89,-173.18 296.89,-162 296.89,-153.53 289.15,-149.04 279.13,-148.55"/>
+<polygon fill="black" stroke="black" points="278.71,-145.07 269,-149.29 279.23,-152.05 278.71,-145.07"/>
+</g>
+<!-- [0,1,1]&#45;&gt;[1,1,1] -->
+<g id="edge13" class="edge">
+<title>[0,1,1]&#45;&gt;[1,1,1]</title>
+<path fill="none" stroke="black" d="M223.95,-147.34C208.2,-136.83 186.22,-122.18 168.63,-110.46"/>
+<polygon fill="black" stroke="black" points="170.15,-107.26 159.89,-104.63 166.27,-113.09 170.15,-107.26"/>
+</g>
+<!-- [1,1,0]&#45;&gt;[1,1,0] -->
+<g id="edge17" class="edge">
+<title>[1,1,0]&#45;&gt;[1,1,0]</title>
+<path fill="none" stroke="black" d="M164,-174.71C178.41,-177.42 191.89,-173.18 191.89,-162 191.89,-153.53 184.15,-149.04 174.13,-148.55"/>
+<polygon fill="black" stroke="black" points="173.71,-145.07 164,-149.29 174.23,-152.05 173.71,-145.07"/>
+</g>
+<!-- [1,1,0]&#45;&gt;[1,1,1] -->
+<g id="edge18" class="edge">
+<title>[1,1,0]&#45;&gt;[1,1,1]</title>
+<path fill="none" stroke="black" d="M139.45,-143.7C139.45,-135.98 139.45,-126.71 139.45,-118.11"/>
+<polygon fill="black" stroke="black" points="142.95,-118.1 139.45,-108.1 135.95,-118.1 142.95,-118.1"/>
+</g>
+<!-- [1,1,1]&#45;&gt;[1,1,1] -->
+<g id="edge19" class="edge">
+<title>[1,1,1]&#45;&gt;[1,1,1]</title>
+<path fill="none" stroke="black" d="M164,-102.71C178.41,-105.42 191.89,-101.18 191.89,-90 191.89,-81.53 184.15,-77.04 174.13,-76.55"/>
+<polygon fill="black" stroke="black" points="173.71,-73.07 164,-77.29 174.23,-80.05 173.71,-73.07"/>
+</g>
+<!-- [1,1,2] -->
+<g id="node10" class="node">
+<title>[1,1,2]</title>
+<ellipse fill="none" stroke="black" cx="139.45" cy="-18" rx="34.39" ry="18"/>
+<text text-anchor="middle" x="139.45" y="-14.3" font-family="Times,serif" font-size="14.00">[1,1,2]</text>
+</g>
+<!-- [1,1,1]&#45;&gt;[1,1,2] -->
+<g id="edge20" class="edge">
+<title>[1,1,1]&#45;&gt;[1,1,2]</title>
+<path fill="none" stroke="black" d="M139.45,-71.7C139.45,-63.98 139.45,-54.71 139.45,-46.11"/>
+<polygon fill="black" stroke="black" points="142.95,-46.1 139.45,-36.1 135.95,-46.1 142.95,-46.1"/>
+</g>
+</g>
+</svg>
