@@ -1,6 +1,12 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
+for i in imgcode/*/*; do
+  j=${i/imgcode/'source/_posts'}
+  bin/kroki.exe convert $i -o ${j/.*/.svg}
+done
+
 exiftool -a -m -k -q -e -F -overwrite_original -all= source/_posts/**[!.md] ||
 exiftool -a -m -k -q -e -F -overwrite_original -all= source/images/**[!.webmanifest] ||
+
 npm run formatting
