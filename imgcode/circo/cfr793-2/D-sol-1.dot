@@ -1,0 +1,72 @@
+strict graph "G" {
+  "0" [
+    style = "invis",
+  ];
+  "1" [
+    label = "0",
+    shape = "circle",
+  ];
+  "2" [
+    label = "0",
+    shape = "circle",
+  ];
+  "3" [
+    label = "0",
+    shape = "circle",
+  ];
+  "4" [
+    label = "1",
+    shape = "circle",
+  ];
+  "5" [
+    label = "0",
+    shape = "circle",
+  ];
+  "6" [
+    label = "1",
+    shape = "circle",
+  ];
+  "7" [
+    label = "0",
+    shape = "circle",
+  ];
+  "8" [
+    label = "0",
+    shape = "circle",
+  ];
+  "9" [
+    label = "0",
+    shape = "circle",
+  ];
+  "10" [
+    label = "1",
+    shape = "circle",
+  ];
+  "11" [
+    label = "0",
+    shape = "circle",
+  ];
+  "12" [
+    label = "0",
+    shape = "circle",
+  ];
+  "13" [
+    label = "1",
+    shape = "circle",
+  ];
+  "0" -- {"1" "2" "3" "4" "5" "6" "7" "8" "9" "10" "11" "12" "13"} [
+    style = "invis",
+  ];
+  "1" -- {"2" "5" "8" "11"};
+  "1" -- {"3" "4" "9" "10" "12" "13"} [
+    style = "invis",
+  ];
+  "5" -- "7";
+  "2" -- "3" -- "4";
+  "5" -- "6" [
+    style = "invis",
+  ];
+  "6" -- "7";
+  "8" -- "9" -- "10";
+  "11" -- "12" -- "13";
+}
