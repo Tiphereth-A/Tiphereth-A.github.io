@@ -6,8 +6,7 @@
     "build": "hexo generate --debug",
     "clean": "hexo clean --debug",
     "deploy": "hexo deploy --debug",
-    "server": "hexo server --debug",
-    "formatting": "prettier --write source/"
+    "server": "hexo server --debug"
   },
   "hexo": {
     "version": "6.2.0"
@@ -34,6 +33,7 @@
     "hexo-theme-next": "^8.11.1"
   },
   "devDependencies": {
+    "@prettier/plugin-xml": "^2.2.0",
     "husky": "^8.0.1",
     "prettier": "^2.6.2"
   }
