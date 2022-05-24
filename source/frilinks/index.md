@@ -26,8 +26,6 @@ avatar:
 
 ### 要求
 
-- 有一定数量的原创文章, 建站时间一周以上
-- 支持 HTTPS
 - avatar 要求: 图像长宽比不可超过 1.5, 大小最好不超过 512KB. 若提供点阵图, 则还要求尺寸在 128x128 以上
 
   {% note warning %}
@@ -39,6 +37,10 @@ avatar:
   ![](/images/default-ava/ava.png)
 
 - description 可以为空, 为空时与 name 相同
+- 对于 Blog 类型友链的额外要求:
+  - 有一定数量的原创文章, 建站时间一周以上
+  - 全站支持 HTTPS
+  - Blog 主站需能被 Google, Bing 之中至少一个搜索引擎搜索到
 
 ### 本站友链信息
 
