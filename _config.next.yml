@@ -73,7 +73,7 @@ creative_commons:
 # Open graph settings
 # See: https://hexo.io/docs/helpers#open-graph
 open_graph:
-  enable: true
+  enable: false
   options:
     #twitter_card: <twitter:card>
     #twitter_id: <twitter:creator>
@@ -137,11 +137,11 @@ sidebar:
 # Sidebar Avatar
 avatar:
   # Replace the default image and set the url here.
-  url: #/images/avatar.gif
+  url: /images/ava.png
   # If true, the avatar will be displayed in circle.
-  rounded: false
+  rounded: true
   # If true, the avatar will be rotated with the cursor.
-  rotated: false
+  rotated: true
 
 # Posts / Categories / Tags in sidebar.
 site_state: true
