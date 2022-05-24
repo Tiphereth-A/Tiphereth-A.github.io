@@ -9,7 +9,7 @@ date: 2020-05-04 19:07:23
 
 如果**出现页面加载错误** (如 **评论区丢失**) 请刷新
 
-<div style="text-align: center;"><div>{% button /article/about/#目录汇总 ,目录汇总, th fa-fw %}{% button /frilinks ,友链, th fa-users %}</div></div>
+<div style="text-align: center;"><div>{% button /archives/about/#目录汇总 ,目录汇总, th fa-fw %}{% button /frilinks ,友链, th fa-users %}</div></div>
 
 <!-- more -->
 
