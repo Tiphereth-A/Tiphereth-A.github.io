@@ -9,10 +9,15 @@ tags:
   - 代码源
   - CodeForces
   - BZOJ
+  - POI
   - 数学
   - 图论
   - DP
+  - 搜索
+  - DFS
   - 概率DP
+  - 换根DP
+  - 树
   - 期望
   - 二分图
   - 最小生成树
@@ -199,7 +204,7 @@ $1 \le n \le 10000, 1 \le x, y \le n$
 
 </details>
 
-## 最大化深度和
+## 最大化深度和 (POI2008 STA-Station)
 
 [题目链接](https://oj.daimayuan.top/problem/921)
 
@@ -248,11 +253,26 @@ $1 \leq u, v \leq n$, 保证给出的是一棵树
 
 ### 解题思路
 
->
+> 换根 DP
 
-### 代码参考
+典中典, 设 $f(x)$ 是以 $x$ 为根时的结果, 先随便取个根 $r$ DFS 出结果, 然后
+
+$$f(x)=f(y)-s(x)+n-s(x)$$
+
+其中
+
+- $s(x)$ 代表以 $r$ 为根时 $x$ 的子树大小
+- $y$ 是以 $r$ 为根时 $x$ 的父结点
+
+### 复杂度
+
+$O(n)$
+
+### 代码参考 (洛谷 P3478)
 
 <details>
 <summary><font color='orange'>Show code</font></summary>
+
+{% icodeweb cpa_cpp title:Luogu_3478 Luogu/3478/0.cpp %}
 
 </details>
