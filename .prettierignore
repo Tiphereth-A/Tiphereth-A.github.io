@@ -1,3 +1,7 @@
-source/_draft/
-
-source/_posts/test-echarts.md
+node_modules/
+public/
+.*/
+_multiconfig.yml
+bin/
+scaffolds/
+reports/
