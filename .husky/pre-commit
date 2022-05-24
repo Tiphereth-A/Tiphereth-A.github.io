@@ -1,7 +1,15 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-exiftool -a -m -k -q -e -F -overwrite_original -all= source/_posts/**[!.md] ||
-exiftool -a -m -k -q -e -F -overwrite_original -all= source/images/**[!.webmanifest] ||
+FILES=$(git diff --cached --name-only --diff-filter=ACMR | sed 's| |\\ |g')
+[ -z "$FILES" ] && exit 0
 
-npm run formatting
+# Prettify all selected files
+echo "$FILES" | xargs ./node_modules/.bin/prettier --ignore-unknown --write
+
+echo "$FILES" | xargs exiftool -a -m -u -U -e -F -overwrite_original_in_place -all= ||
+
+# Add back the modified/prettified files to staging
+echo "$FILES" | xargs git add
+
+exit 0
