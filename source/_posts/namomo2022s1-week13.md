@@ -12,12 +12,17 @@ tags:
   - POI
   - 数学
   - 图论
+  - 数据结构
+  - 二分
+  - 双指针
   - DP
   - 搜索
   - DFS
   - 概率DP
   - 换根DP
   - 树
+  - RMQ
+  - ST表
   - 期望
   - 二分图
   - 最小生成树
@@ -274,5 +279,65 @@ $O(n)$
 <summary><font color='orange'>Show code</font></summary>
 
 {% icodeweb cpa_cpp title:Luogu_3478 Luogu/3478/0.cpp %}
+
+</details>
+
+## 稳定数组 (CF1547F)
+
+[题目链接](https://oj.daimayuan.top/problem/923)
+
+2 s, 1024 MB
+
+### 题目描述
+
+给定 $n$ 个正整数 $a_1,a_2,\dots ,a_n$, 每次操作对所有的 $i,1\leq i \leq n$,令 $a_i=gcd(a_i,a_{(i+1)\% n})$, 求最少执行多少次操作, 使得 $a_1=a_2=\dots =a_n$
+
+### 输入格式
+
+第一行一个正整数 $n$
+
+第二行 $n$ 个正整数 $a_1,a_2,\dots ,a_n$
+
+### 输出格式
+
+一个非负整数, 表示最少操作数
+
+### 样例输入
+
+```input1
+4
+16 24 10 5
+```
+
+### 样例输出
+
+```output1
+3
+```
+
+### 数据规模
+
+$2\leq n \leq 10^6$
+
+$1\leq a_i \leq 10^6$
+
+### 解题思路
+
+> RMQ + 二分/双指针
+
+这里写的 ST 表 + 二分, 因为好写
+
+要注意因为成环了所以要开 2 倍空间
+
+### 复杂度
+
+$O(n\log^2 n)$
+
+### 代码参考 (洛谷 P3478)
+
+<details>
+<summary><font color='orange'>Show code</font></summary>
+
+{% icodeweb cpa_cpp title:CodeForces_1547F CodeForces/1547F/0.cpp %}
 
 </details>
