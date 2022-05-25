@@ -333,7 +333,7 @@ $1\leq a_i \leq 10^6$
 
 $O(n\log^2 n)$
 
-### 代码参考 (洛谷 P3478)
+### 代码参考
 
 <details>
 <summary><font color='orange'>Show code</font></summary>
