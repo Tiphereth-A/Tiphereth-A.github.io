@@ -11,7 +11,7 @@ tags:
 date: 2021-07-28 21:40:03
 ---
 
-实现了 有符号算术类型、无符号算术类型、C 风格字符串、`std::string` 的读入和有符号算术类型、无符号算术类型、`char`、`std::string` 的输出
+基于 C++ 14, 实现了 有符号整数、无符号整数、字符、C 风格字符串、`std::string` 的输入输出
 
 <!-- more -->
 
@@ -21,10 +21,7 @@ date: 2021-07-28 21:40:03
 
 {% note warning %}
 
-- 若使用了 `FastIO::print()`, 记得后面跟上 `FastIO::flush();`
-- 为了保证性能, `FastIO::print(char)` 内部没有添加防溢出机制, 若需要频繁调用 `FastIO::print(char)`, 请记得补充
-- `FastIO::print(const std::string&)` 里有 `[[unlikely]]` 注解, 若不使用 C++20 请删除
-  > 讲道理用 C++20 的 `concept` 写模板偏特化更舒服些, 但笔者懒得再写了
+仅在 GCC 下测试过
 
 {% endnote %}
 
