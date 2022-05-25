@@ -30,7 +30,7 @@ class FastIn {
     }
 
     template <typename Tp, typename std::enable_if<type_traits::is_int<Tp>::value>::type * = nullptr>
-    inline self &read(Tp &n) {
+    inline self &read(Tp &n) noexcept {
         bool is_neg = false;
         char ch = this->fetch();
         while (!isdigit(ch)) {
@@ -96,9 +96,12 @@ class FastIn {
     }
 };
 
-template <size_t BUFFER_SIZE>
+template <size_t BUFFER_SIZE, size_t INT_BUFFER_SIZE>
 class FastOut {
-    using self = FastOut<BUFFER_SIZE>;
+    using self = FastOut<BUFFER_SIZE, INT_BUFFER_SIZE>;
+
+  private:
+    char int_buffer_[INT_BUFFER_SIZE], *now_ib_;
 
   protected:
     char buffer_[BUFFER_SIZE], *now_ = buffer_;
@@ -153,10 +156,9 @@ class FastOut {
     }
     template <class Tp, typename std::enable_if<type_traits::is_uint<Tp>::value>::type * = nullptr>
     inline self &write(Tp n) noexcept {
-        static char num[63], *p;
-        p = num + 62;
-        do { *(--p) = char(n % 10) | '0'; } while (n /= 10);
-        this->write(p);
+        this->now_ib_ = this->int_buffer_ + INT_BUFFER_SIZE - 1;
+        do { *(--(this->now_ib_)) = char(n % 10) | '0'; } while (n /= 10);
+        this->write(this->now_ib_);
         return *this;
     }
     inline self &write(const std::string &str) noexcept {
@@ -167,7 +169,7 @@ class FastOut {
 
 const std::size_t BUFFER_SIZE = 1 << 21;
 FastIn<BUFFER_SIZE> fast_in;
-FastOut<BUFFER_SIZE> fast_out;
+FastOut<BUFFER_SIZE, 21> fast_out;
 }  // namespace fast_io
 using fast_io::fast_in;
 using fast_io::fast_out;
