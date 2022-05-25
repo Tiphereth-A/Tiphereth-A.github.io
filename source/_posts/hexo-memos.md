@@ -67,7 +67,7 @@ custom_file_path:
 
 如果嫌 commit 时间过长也可以借助 GitHub Action 实现自动格式化并 commit, 这里只列出基于 Git Hooks 的配置步骤
 
-安装 [Husky](https://github.com/typicode/husky) 和 [Prettier](https://github.com/prettier/prettier)
+安装 [Husky](https://typicode.github.io/husky/) ([repo](https://github.com/typicode/husky)) 和 [Prettier](https://prettier.io/) ([repo](https://github.com/prettier/prettier))
 
 {% note info %}
 
@@ -93,3 +93,29 @@ npx husky add .husky/pre-commit "npm run formatting"
 ```
 
 之后每次 commit 都会格式化 `source` 中的文件了
+
+### 优化
+
+按照上述方式配置之后, 每次 commit 都会全局格式化, 这显然不是什么好设计, 所以可以按 [Prettier 文档](https://prettier.io/docs/en/precommit.html) 修改 `.husky/pre-commit`, 使得 Prettier 每次只会自动格式化修改的文件
+
+```shell .husky/pre-commit
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+FILES=$(git diff --cached --name-only --diff-filter=ACMR | sed 's| |\\ |g')
+[ -z "$FILES" ] && exit 0
+
+echo "$FILES" | xargs ./node_modules/.bin/prettier --ignore-unknown --write
+
+echo "$FILES" | xargs git add
+
+exit 0
+```
+
+之后再执行
+
+```shell
+npx husky add .husky/post-commit "git update-index -g"
+```
+
+即可
