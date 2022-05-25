@@ -1,71 +1,173 @@
-namespace FastIO {
-char buf[1 << 21], buf2[1 << 21], a[20], *p1 = buf, *p2 = buf;
-int p, p3 = -1;
-inline int getc() { return p1 == p2 && (p2 = (p1 = buf) + fread(buf, 1, 1 << 21, stdin), p1 == p2) ? EOF : *p1++; }
-inline void flush() { fwrite(buf2, 1, p3 + 1, stdout), p3 = -1; }
+namespace fast_io {
+namespace type_traits {
+template <class Tp>
+using is_int = typename std::conditional<(std::is_integral<Tp>::value && std::is_signed<Tp>::value) || std::is_same<Tp, __int128_t>::value, std::true_type, std::false_type>::type;
 
-inline void read() {}
-template <class T, typename std::enable_if<is_signed_v<T>>::type * = nullptr>
-inline void read(T &x) {
-    int f = x = 0;
-    char ch = getc();
-    while (!isdigit(ch)) {
-        if (ch == '-') f = 1;
-        ch = getc();
-    }
-    while (isdigit(ch)) { x = x * 10 + ch - '0', ch = getc(); }
-    if (f) x = -x;
-}
-template <class T, typename std::enable_if<is_unsigned_v<T>>::type * = nullptr>
-inline void read(T &x) {
-    x = 0;
-    char ch = getc();
-    while (!isdigit(ch)) ch = getc();
-    while (isdigit(ch)) { x = x * 10 + ch - '0', ch = getc(); }
-}
-inline void read(char *str) {
-    char ch = getc(), *now = str;
-    while (!isprint(ch)) ch = getc();
-    while (isprint(ch)) { *(now++) = ch, ch = getc(); }
-    *(now++) = '\0';
-}
-inline void read(std::string &str) {
-    char ch = getc();
-    while (!isprint(ch)) ch = getc();
-    while (isprint(ch)) { str.push_back(ch), ch = getc(); }
-}
-template <typename T, typename... T2, typename std::enable_if<is_signed_v<T> || is_unsigned_v<T> || is_same_v<T, char *> || is_same_v<T, string &>>::type * = nullptr>
-inline void read(T &x, T2 &...oth) {
-    read(x);
-    read(oth...);
-}
+template <class Tp>
+using is_uint = typename std::conditional<(std::is_integral<Tp>::value && std::is_unsigned<Tp>::value) || std::is_same<Tp, __uint128_t>::value, std::true_type, std::false_type>::type;
 
-inline void print() {}
-inline void print(char a) { buf2[++p3] = a; }
-template <class T, typename std::enable_if<is_signed_v<T>>::type * = nullptr>
-inline void print(T x) {
-    if (x < 0) { buf2[++p3] = '-', x = -x; }
-    do { a[++p] = x % 10 + 48; } while (x /= 10);
-    do { buf2[++p3] = a[p]; } while (--p);
-}
-template <class T, typename std::enable_if<is_unsigned_v<T>>::type * = nullptr>
-inline void print(T x) {
-    do { a[++p] = x % 10 + 48; } while (x /= 10);
-    do { buf2[++p3] = a[p]; } while (--p);
-}
-inline void print(const std::string &str) {
-    for (char ch : str) {
-        if (p3 > 1 << 20) [[unlikely]]
-            flush();
-        print(ch);
+template <class Tp>
+using make_uint = typename std::conditional<std::is_same<Tp, __int128_t>::value, __uint128_t, typename std::conditional<std::is_signed<Tp>::value, std::make_unsigned<Tp>, std::common_type<Tp>>::type>::type;
+}  // namespace type_traits
+
+template <size_t BUFFER_SIZE>
+class FastIn {
+    using self = FastIn<BUFFER_SIZE>;
+
+  protected:
+    char buffer_[BUFFER_SIZE], *now_ = buffer_, *end_ = buffer_;
+    FILE *file_;
+
+  public:
+    explicit FastIn(FILE *file = stdin) noexcept:
+        file_(file) {}
+
+    inline char fetch() noexcept { return this->now_ == this->end_ && (this->end_ = (this->now_ = this->buffer_) + fread(this->buffer_, 1, BUFFER_SIZE, this->file_), this->now_ == this->end_) ? EOF : *(this->now_)++; }
+    inline char visit() noexcept { return this->now_ == this->end_ && (this->end_ = (this->now_ = this->buffer_) + fread(this->buffer_, 1, BUFFER_SIZE, this->file_), this->now_ == this->end_) ? EOF : *(this->now_); }
+    inline void set_file(FILE *file) noexcept {
+        this->file_ = file;
+        now_ = end_ = buffer_;
     }
-}
-template <typename T, typename... T2, typename std::enable_if<is_signed_v<T> || is_unsigned_v<T> || is_same_v<T, char> || is_same_v<T, string &> || is_same_v<T, const string &>>::type * = nullptr>
-inline void print(T x, T2... oth) {
-    if (p3 > 1 << 20) flush();
-    print(x);
-    print(oth...);
-}
-}  // namespace FastIO
-using FastIO::print;
-using FastIO::read;
+
+    template <typename Tp, typename std::enable_if<type_traits::is_int<Tp>::value>::type * = nullptr>
+    inline self &read(Tp &n) {
+        bool is_neg = false;
+        char ch = this->fetch();
+        while (!isdigit(ch)) {
+            is_neg |= ch == '-';
+            ch = this->fetch();
+        }
+        n = 0;
+        while (isdigit(ch)) {
+            (n *= 10) += ch & 0x0f;
+            ch = this->fetch();
+        }
+        if (is_neg) n = -n;
+        return *this;
+    }
+    template <typename Tp, typename std::enable_if<type_traits::is_uint<Tp>::value>::type * = nullptr>
+    inline self &read(Tp &n) noexcept {
+        char ch = this->fetch();
+        while (!isdigit(ch)) ch = this->fetch();
+        n = 0;
+        while (isdigit(ch)) {
+            (n *= 10) += ch & 0x0f;
+            ch = this->fetch();
+        }
+        return *this;
+    }
+    inline self &read(char &n) noexcept {
+        n = this->fetch();
+        return *this;
+    }
+    inline self &read(char *n) noexcept {
+        char *n_ = n;
+        while (!isgraph(*n_ = this->fetch()))
+            ;
+        while (isgraph(*(++n_) = this->fetch()))
+            ;
+        *n_ = '\0';
+        return *this;
+    }
+    inline self &read(std::string &n) noexcept {
+        char n_;
+        while (!isgraph(n_ = this->fetch()))
+            ;
+        n.push_back(n_);
+        while (isgraph(n_ = this->fetch())) n.push_back(n_);
+        return *this;
+    }
+    inline self &getline(char *n) noexcept {
+        char *n_ = n;
+        while (!isprint(*n_ = this->fetch()))
+            ;
+        while (isprint(*(++n_) = this->fetch()))
+            ;
+        *n_ = '\0';
+        return *this;
+    }
+    inline self &getline(std::string &n) noexcept {
+        char n_;
+        while (!isprint(n_ = this->fetch()))
+            ;
+        n.push_back(n_);
+        while (isprint(n_ = this->fetch())) n.push_back(n_);
+        return *this;
+    }
+};
+
+template <size_t BUFFER_SIZE>
+class FastOut {
+    using self = FastOut<BUFFER_SIZE>;
+
+  protected:
+    char buffer_[BUFFER_SIZE], *now_ = buffer_;
+    const char * const end_ = buffer_ + BUFFER_SIZE;
+    FILE *file_;
+
+  public:
+    explicit FastOut(FILE *file = stdout) noexcept:
+        file_(file) {}
+    ~FastOut() noexcept { this->flush(); }
+
+    inline void flush() noexcept { fwrite(this->buffer_, 1, this->now_ - this->buffer_, this->file_), this->now_ = this->buffer_; }
+    inline void set_file(FILE *file) noexcept {
+        this->file_ = file;
+    }
+
+    inline self &linebreak() noexcept {
+        this->write('\n');
+        return *this;
+    }
+    inline self &space() noexcept {
+        this->write(' ');
+        return *this;
+    }
+    inline self &write(const char &n) noexcept {
+        if (this->now_ == this->end_) this->flush();
+        *(this->now_)++ = n;
+        return *this;
+    }
+    inline self &write(const char *n) noexcept {
+        size_t len = strlen(n), l_;
+        const char *n_ = n;
+        while (this->now_ + len >= this->end_) {
+            l_ = this->end_ - this->now_;
+            memcpy(this->now_, n_, l_);
+            this->now_ += l_;
+            n_ += l_;
+            len -= l_;
+            this->flush();
+        }
+        memcpy(this->now_, n_, len);
+        this->now_ += len;
+        return *this;
+    }
+    template <class Tp, typename std::enable_if<type_traits::is_int<Tp>::value>::type * = nullptr>
+    inline self &write(Tp n) noexcept {
+        if (n < 0) {
+            this->write('-');
+            n = -n;
+        }
+        return this->write(static_cast<typename type_traits::make_uint<Tp>::type>(n));
+    }
+    template <class Tp, typename std::enable_if<type_traits::is_uint<Tp>::value>::type * = nullptr>
+    inline self &write(Tp n) noexcept {
+        static char num[63], *p;
+        p = num + 62;
+        do { *(--p) = char(n % 10) | '0'; } while (n /= 10);
+        this->write(p);
+        return *this;
+    }
+    inline self &write(const std::string &str) noexcept {
+        this->write(str.c_str());
+        return *this;
+    }
+};
+
+const std::size_t BUFFER_SIZE = 1 << 21;
+FastIn<BUFFER_SIZE> fast_in;
+FastOut<BUFFER_SIZE> fast_out;
+}  // namespace fast_io
+using fast_io::fast_in;
+using fast_io::fast_out;
