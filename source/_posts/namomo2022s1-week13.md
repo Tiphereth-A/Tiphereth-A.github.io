@@ -27,6 +27,8 @@ tags:
   - 二分图
   - 最小生成树
   - 矩阵树定理
+  - 差分
+  - 前缀和
 date: 2022-05-21 16:00:56
 ---
 
@@ -339,5 +341,55 @@ $O(n\log^2 n)$
 <summary><font color='orange'>Show code</font></summary>
 
 {% icodeweb cpa_cpp title:CodeForces_1547F CodeForces/1547F/0.cpp %}
+
+</details>
+
+## 序列和 (CF1373D)
+
+[题目链接](https://oj.daimayuan.top/problem/970)
+
+1 s, 1024 MB
+
+### 题目描述
+
+给定一个长度为 $n$ 序列 $a_0 , a_1 , \dots , a_{n - 1}$ , 你可以翻转它的一个连续子段(可以为空) , 使得所有偶数下标的数字之和最大
+
+### 输入格式
+
+第一行一个整数 $n$ , 表示序列的长度 $(1 \leq n \leq 2 \times 10^5)$
+
+第二行 $n$ 个整数 $a_0 , a_1 , \dots , a_{n - 1}$ 表示序列 $a$ $( 1 \leq a_i \leq 10^9 )$
+
+### 输出格式
+
+输出一个整数表示偶数下标之和的最大值
+
+### 样例输入
+
+```input1
+8
+1 7 3 4 7 6 2 9
+```
+
+### 样例输出
+
+```output1
+26
+```
+
+### 解题思路
+
+不难发现选择即是将一段偶数下标的和变为奇数下标的和, 所以取一下差值最大区间和即可
+
+### 复杂度
+
+$O(n)$
+
+### 代码参考
+
+<details>
+<summary><font color='orange'>Show code</font></summary>
+
+{% icodeweb cpa_cpp title:CodeForces_1373D CodeForces/1373D/0.cpp %}
 
 </details>
