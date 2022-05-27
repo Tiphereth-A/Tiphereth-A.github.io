@@ -393,3 +393,72 @@ $O(n)$
 {% icodeweb cpa_cpp title:CodeForces_1373D CodeForces/1373D/0.cpp %}
 
 </details>
+
+## 变量
+
+[题目链接](https://oj.daimayuan.top/problem/138)
+
+1 s, 1024 MB
+
+### 题目描述
+
+给定$n$个整数常数$c_1, c_2, \dots, c_n$和一个整数$k$. 现在需要给$2k$个整数变量$x_1, x_2, \dots, x_k, y_1, y_2, \dots, y_k$赋值, 满足
+
+1. 对于所有$1 \leq i \leq k$, 都有$x_i \leq y_i$
+1. 对于所有$1 \leq i \leq n$, 都存在至少一个$j (1 \leq j \leq k)$, 使得$x_j \leq c_i \leq y_j$
+
+求出$S=(y_1 + y_2 + \dots + y_k) - (x_1 + x_2 + \dots + x_k)$的最小值
+
+### 输入格式
+
+第一行两个整数$n, k$
+
+接下来一行, 共$n$个整数$c_1, c_2, \dots, c_n$
+
+### 输出格式
+
+一个整数表示$S$的最小值
+
+### 样例输入 1
+
+```input1
+5 2
+-5 0 10 4 0
+```
+
+### 样例输出 1
+
+```output1
+9
+```
+
+### 样例输入输出 2
+
+见下发文件
+
+### 数据规模
+
+共 10 个测试点
+
+测试点$1, 2$满足$n\leq 5, -5\leq c_i\leq 5$
+
+测试点$3, 4, 5$满足$n\leq 100$
+
+对于所有数据, 满足$1\leq n, k\leq 10^5,-10^9\leq c_i\leq 10^9$
+
+### 解题思路
+
+直接做就行, 没啥值得说的
+
+### 复杂度
+
+$O(n\log n)$
+
+### 代码参考
+
+<details>
+<summary><font color='orange'>Show code</font></summary>
+
+{% icodeweb cpa_cpp title:Daimayuan_138 Daimayuan/138/0.cpp %}
+
+</details>
