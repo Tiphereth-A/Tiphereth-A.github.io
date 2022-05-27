@@ -4,7 +4,6 @@ date: 2020-05-10 20:38:00
 comments: false
 ---
 
-- [Board - XCPCIO](https://board.xcpcio.com/)
 - [C++ Insights](https://cppinsights.io/)
 - [CNN Explainer](https://poloclub.github.io/cnn-explainer/)
 - [cppreference](https://zh.cppreference.com/w/%e9%a6%96%e9%a1%b5)
@@ -23,3 +22,4 @@ comments: false
 - [Shields.io: Quality metadata badges for open source projects](https://shields.io/)
 - [VisuAlgo](https://visualgo.net/zh)
 - [Wolfram|Alpha](https://www.wolframalpha.com/)
+- [XCPC IO](https://xcpcio.com)
