@@ -5,6 +5,7 @@ comments: false
 ---
 
 - [Board - XCPCIO](https://board.xcpcio.com/)
+- [C++ Insights](https://cppinsights.io/)
 - [CNN Explainer](https://poloclub.github.io/cnn-explainer/)
 - [cppreference](https://zh.cppreference.com/w/%e9%a6%96%e9%a1%b5)
 - [Data Structure Visualizations](https://www.cs.usfca.edu/~galles/visualization/Algorithms.html)
