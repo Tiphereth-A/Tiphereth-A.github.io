@@ -645,6 +645,7 @@ gitalk:
   # Available values: en | es-ES | fr | ru | zh-CN | zh-TW
   language:
 
+# See https://github.com/next-theme/hexo-next-giscus
 giscus:
   enable: true
   repo: Tiphereth-A/Tiphereth-A.github.io

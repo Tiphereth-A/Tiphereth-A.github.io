@@ -7,8 +7,6 @@ date: 2020-05-04 19:07:23
 
 一个数学系 ACMer 的小站, 主要记录与数学和算法竞赛相关的内容
 
-如果**出现页面加载错误** (如 **评论区丢失**) 请刷新
-
 <div style="text-align: center;"><div>{% button /archives/about/#目录汇总 ,目录汇总, th fa-fw %}{% button /frilinks ,友链, th fa-users %}</div></div>
 
 <!-- more -->
