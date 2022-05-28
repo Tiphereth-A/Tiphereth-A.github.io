@@ -631,12 +631,12 @@ livere_uid: # <your_uid>
 # Gitalk
 # For more information: https://gitalk.github.io
 gitalk:
-  enable: true
-  github_id: Tiphereth-A
-  repo: blog_comments
-  client_id: 94f5ce5fe1eb15833417
-  client_secret: 38537b9e5e59f5e2aaa390328d9a7163cc8266a3
-  admin_user: Tiphereth-A
+  enable: false
+  github_id:
+  repo:
+  client_id:
+  client_secret:
+  admin_user:
   distraction_free_mode: true # Facebook-like distraction free mode
   # When the official proxy is not available, you can change it to your own proxy address
   proxy: https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token # This is official proxy address
@@ -644,6 +644,29 @@ gitalk:
   # If you want everyone visiting your site to see a uniform language, you can set a force language value
   # Available values: en | es-ES | fr | ru | zh-CN | zh-TW
   language:
+
+giscus:
+  enable: true
+  repo: Tiphereth-A/Tiphereth-A.github.io
+  repo_id: R_kgDOHNEKRA
+  category: General
+  category_id: DIC_kwDOHNEKRM4CPWB8
+  # Available values: pathname | url | title | og:title
+  mapping: pathname
+  # Available values: 0 | 1
+  reactions_enabled: 1
+  # Available values: 0 | 1
+  emit_metadata: 1
+  # Available values: light | dark | dark_high_contrast | transparent_dark | preferred-color-scheme
+  theme: light
+  # Available values: en | zh-C
+  lang: en
+  # Available value: anonymous
+  crossorigin: anonymous
+  # Place the comment box above the comments
+  input_position: bottom
+  # Load the comments lazily
+  loading: lazy
 
 # Utterances
 # For more information: https://utteranc.es
