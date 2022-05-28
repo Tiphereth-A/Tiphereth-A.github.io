@@ -200,6 +200,10 @@ nofollow:
   field: site
   exclude:
 
+autoprefixer:
+  exclude:
+    - "*.min.css"
+
 # DOC: https://www.u2sb.top/docs/hexo-tag-mmedia
 mmedia:
   aplayer:
