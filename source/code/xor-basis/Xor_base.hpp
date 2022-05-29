@@ -1,7 +1,7 @@
-template <std::size_t _N = 64, std::enable_if_t<0 < _N && _N <= 64> * = nullptr>
+template <std::size_t N = 64, std::enable_if_t<0 < N && N <= 64> * = nullptr>
 class Xor_base {
   public:
-    using self = Xor_base<_N>;
+    using self = Xor_base<N>;
     using data_type = std::uint64_t;
     using size_type = std::size_t;
     using reference = self &;
@@ -10,14 +10,14 @@ class Xor_base {
     using reverse_iterator = std::reverse_iterator<iterator>;
     using const_reverse_iterator = std::reverse_iterator<const_iterator>;
 
-    struct Xor_basis_helper {
-        reference basis;
-        bool flag;
-    };
+    static const bool success = true;
+    static const bool failed = false;
+
+  private:
+    bool status;
 
   protected:
-    data_type base[_N];
-    static bool __deleted;
+    data_type base[N];
 
   public:
     constexpr Xor_base() noexcept { this->clear(); }
@@ -29,7 +29,7 @@ class Xor_base {
 
     inline constexpr void clear() noexcept { memset(this->base, 0, sizeof(this->base)); }
 
-    inline constexpr size_type get_len() const noexcept { return _N; }
+    inline constexpr size_type get_len() const noexcept { return N; }
 
     inline constexpr data_type &data(size_type index) noexcept { return this->base[index]; }
     inline constexpr data_type &data(size_type index) const noexcept { return const_cast<self * const>(this)->base[index]; }
@@ -49,7 +49,8 @@ class Xor_base {
     inline reverse_iterator rend() noexcept { return reverse_iterator(this->begin()); }
     inline const_reverse_iterator rend() const noexcept { return const_reverse_iterator(this->begin()); }
 
-    inline constexpr Xor_basis_helper insert(data_type x) noexcept {
+    inline constexpr self &insert(data_type x) noexcept {
+        this->status = false;
         for (size_type i = this->get_len() - 1; ~i; --i) {
             if (!(x & (1ull << i))) continue;
             if (this->data(i))
@@ -60,11 +61,14 @@ class Xor_base {
                 for (size_type j = i + 1; j < this->get_len(); ++j)
                     if (this->data(j) & (1ull << i)) this->data(j) ^= x;
                 this->data(i) = x;
-                return {*this, true};
+                this->status = true;
+                break;
             }
         }
-        return {*this, false};
+        return *this;
     }
+
+    inline constexpr bool get_status() const noexcept { return this->status; }
 
     inline constexpr data_type max_span() const noexcept {
         data_type ret(0);
@@ -78,3 +82,4 @@ class Xor_base {
         return ret;
     }
 };
+using xbase = Xor_base<>;
