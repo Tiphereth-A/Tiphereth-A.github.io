@@ -1,0 +1,38 @@
+graph {
+  "0" [
+    shape = "circle",
+    label = "0",
+    color = "purple",
+  ];
+  "1" [
+    shape = "circle",
+    label = "0",
+    color = "purple",
+  ];
+  "2" [
+    style = "filled",
+    shape = "circle",
+    label = "1",
+    color = "red",
+  ];
+  "3" [
+    shape = "circle",
+    label = "0",
+    color = "purple",
+  ];
+  "4" [
+    shape = "circle",
+    label = "0",
+    color = "purple",
+  ];
+  "5" [
+    shape = "circle",
+    label = "0",
+    color = "purple",
+  ];
+  "6" [
+    shape = "circle",
+    label = "0",
+    color = "purple",
+  ];
+}

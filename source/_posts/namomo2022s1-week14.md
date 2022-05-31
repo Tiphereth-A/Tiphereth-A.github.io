@@ -9,6 +9,7 @@ tags:
   - 代码源
   - CodeForces
   - 数学
+  - 组合数学
   - 字符串
   - DP
   - Hash
@@ -118,7 +119,7 @@ sampleaseinout
 
 > Z 算法 / Hash
 
-板子题
+板子题, 把合并的字符串和当前输入的字符串拼起来跑个 KMP 即可
 
 ### 代码参考
 
@@ -207,7 +208,7 @@ Yuto 想要得分尽可能的小, Platina 想要得分尽可能的大
 
 </details>
 
-## 子串（数据加强版）
+## 子串（数据加强版）([牛客练习赛 98 D](https://ac.nowcoder.com/acm/contest/11188/D))
 
 [题目链接](https://oj.daimayuan.top/problem/922)
 
@@ -250,13 +251,44 @@ $1\leq n\leq 2500$
 
 ### 解题思路
 
->
+> 组合数学
+
+似乎加强版是想让大家写 $O(n^2)$ DP, 然而这题有线性做法
+
+我们从两边向内找一对 $1$ 所在的位置, 设这两个 $1$ 外侧的若干的 $0$ 分别有 $x,y$ 个, 那么一对 $1$ 和这些 $0$ 对答案产生的贡献为
+
+$$\sum_{k=0}^{\min\{x,y\}}\binom{x}{k}\binom{y}{k}$$
+
+然后把这些 $0$ 和 $1$ 删去, 继续直到找不到两个 $1$ 为止, 此时有两种情况:
+
+- 只剩 $1$ 个 $1$
+
+  ![](1403-2.svg)
+
+  设这个 $1$ 左右的 $0$ 分别有 $x,y$ 个, 不难发现这些 $0$ 对答案产生的贡献为
+  $$\sum_{k=0}^{\min\{x,y\}}\binom{x}{k}\binom{y}{k}$$
+
+- 没有 $1$
+
+  ![](1403-3.svg)
+
+  设这些 $0$ 有$x$个, 不难发现这些 $0$ 对答案产生的贡献为 $2^x$
+
+例如, 下图的答案为
+
+$$\left(\sum_{k=0}^{\min\{2,4\}}\binom{x}{k}\binom{y}{k}\right)\left(\sum_{k=0}^{\min\{2,1\}}\binom{x}{k}\binom{y}{k}\right)2^2=1200$$
+
+![](1403-1.svg)
+
+### 复杂度
+
+$O(n)$
 
 ### 代码参考
 
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa_cpp title:CodeForces_Gym_102984D CodeForces/102984D/0.cpp %}
+{% icodeweb cpa_cpp title:Daimayuan_922 Daimayuan/922/1.cpp %}
 
 </details>
