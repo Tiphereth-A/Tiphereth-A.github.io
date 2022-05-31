@@ -70,6 +70,7 @@ class FastIn {
         return *this;
     }
     inline self &read(std::string &n) noexcept {
+        n.clear();
         char n_;
         while (!isgraph(n_ = this->fetch()))
             ;
@@ -113,7 +114,10 @@ class FastOut {
         file_(file) {}
     ~FastOut() noexcept { this->flush(); }
 
-    inline void flush() noexcept { fwrite(this->buffer_, 1, this->now_ - this->buffer_, this->file_), this->now_ = this->buffer_; }
+    inline void flush() noexcept {
+        fwrite(this->buffer_, 1, this->now_ - this->buffer_, this->file_);
+        this->now_ = this->buffer_;
+    }
     inline void set_file(FILE *file) noexcept {
         this->file_ = file;
     }
@@ -126,9 +130,10 @@ class FastOut {
         this->write(' ');
         return *this;
     }
+
     inline self &write(const char &n) noexcept {
         if (this->now_ == this->end_) this->flush();
-        *(this->now_)++ = n;
+        *(this->now_++) = n;
         return *this;
     }
     inline self &write(const char *n) noexcept {
