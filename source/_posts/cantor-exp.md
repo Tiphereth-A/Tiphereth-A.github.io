@@ -147,7 +147,7 @@ $$p_i=\left\lfloor{d(A)-\sum_{j=1}^{i-1}p_j(n-j)!-1\over (n-i)!}\right\rfloor$$
 
 - 洛谷 [P5367 【模板】康托展开](https://www.luogu.com.cn/problem/P5367)
 - 洛谷 [P3014 [USACO11FEB]Cow Line S](https://www.luogu.com.cn/problem/P3014)
-- [CF501D Misha and Permutations Summation](https://codeforces.com/problemset/problem/501/D) -> {% post_link codeforces-501-d 题解 %}
+- [CF501D Misha and Permutations Summation](https://codeforces.com/problemset/problem/501/D) -> {% post_link cf501d 题解 %}
 
 ---
 
