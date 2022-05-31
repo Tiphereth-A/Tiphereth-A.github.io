@@ -23,7 +23,7 @@ date: 2018-07-22 19:12:06
 
 其中`gcd(a, b)`定义如下, `counter`即为递归次数
 
-{% include_code lang:cpp arc051-b/gcd.cpp %}`
+{% include_code lang:cpp arc051b/gcd.cpp %}`
 
 ## 解题思路
 
