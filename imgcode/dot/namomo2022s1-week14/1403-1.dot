@@ -1,0 +1,81 @@
+graph {
+  "0" [
+    shape = "circle",
+    label = "0",
+    color = "purple",
+  ];
+  "1" [
+    shape = "circle",
+    label = "0",
+    color = "purple",
+  ];
+  "2" [
+    style = "filled",
+    shape = "circle",
+    label = "1",
+    color = "red",
+  ];
+  "3" [
+    shape = "circle",
+    label = "0",
+    color = "burlywood",
+  ];
+  "4" [
+    shape = "circle",
+    label = "0",
+    color = "burlywood",
+  ];
+  "5" [
+    style = "filled",
+    shape = "circle",
+    label = "1",
+    color = "greenyellow",
+  ];
+  "6" [
+    shape = "circle",
+    label = "0",
+    color = "brown",
+  ];
+  "7" [
+    shape = "circle",
+    label = "0",
+    color = "brown",
+  ];
+  "8" [
+    style = "filled",
+    shape = "circle",
+    label = "1",
+    color = "greenyellow",
+  ];
+  "9" [
+    shape = "circle",
+    label = "0",
+    color = "burlywood",
+  ];
+  "10" [
+    style = "filled",
+    shape = "circle",
+    label = "1",
+    color = "red",
+  ];
+  "11" [
+    shape = "circle",
+    label = "0",
+    color = "purple",
+  ];
+  "12" [
+    shape = "circle",
+    label = "0",
+    color = "purple",
+  ];
+  "13" [
+    shape = "circle",
+    label = "0",
+    color = "purple",
+  ];
+  "14" [
+    shape = "circle",
+    label = "0",
+    color = "purple",
+  ];
+}
