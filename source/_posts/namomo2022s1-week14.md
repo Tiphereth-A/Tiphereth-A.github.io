@@ -214,7 +214,7 @@ $O(N+Q\log N)$
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa_cpp title:CodeForces_Gym_102984D CodeForces/102984D/0.cpp %}
+{% icodeweb cpa_cpp title:CodeForces_Gym_102984D Gym/102984D/0.cpp %}
 
 </details>
 
