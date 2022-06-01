@@ -14,9 +14,9 @@ class RMQ_ST {
     void clear() { memset(f, 0, sizeof(f)); }
 
     void init(size_t n) {
-        for (size_t i = 1; i <= n; ++i) f[0][i] = ifunc(i);
+        for (size_t i = 0; i <= n; ++i) f[0][i] = ifunc(i);
         for (size_t i = 1; i <= std::log2(n); ++i)
-            for (size_t j = 1; j + (1 << i) - 1 <= n; ++j)
+            for (size_t j = 0; j + (1 << i) - 1 <= n; ++j)
                 f[i][j] = qfunc(f[i - 1][j], f[i - 1][j + (1 << (i - 1))]);
     }
 
