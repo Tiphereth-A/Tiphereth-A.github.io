@@ -299,6 +299,6 @@ $O(n)$
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa_cpp title:Daimayuan_922 Daimayuan/922/1.cpp %}
+{% icodeweb cpa_cpp title:Daimayuan_922 Daimayuan/922/0.cpp %}
 
 </details>
