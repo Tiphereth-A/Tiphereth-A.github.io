@@ -64,3 +64,12 @@ date: 2022-05-11 12:07:50
   {% icodeweb cpa_cpp title:CodeForces_522D CodeForces/522D/0.cpp %}
 
   </details>
+
+- CodeForces [1691D Max GEQ Sum](https://codeforces.com/problemset/problem/1691/D)
+
+  <details open>
+  <summary><font color='orange'>Show code</font></summary>
+
+  {% icodeweb cpa_cpp title:CodeForces_1691D CodeForces/1691D/0.cpp %}
+
+  </details>

@@ -1,4 +1,4 @@
-template <size_t N, typename data_t, typename init_func, typename query_func>
+template <size_t N, typename data_t, typename init_func = std::function<data_t(size_t)>, typename query_func = std::function<data_t(const data_t &, const data_t &)>>
 class RMQ_ST {
   protected:
     init_func ifunc;
@@ -8,7 +8,8 @@ class RMQ_ST {
     size_t log_table[N];
 
   public:
-    RMQ_ST() {}
+    RMQ_ST(init_func ifunc, query_func qfunc):
+        ifunc(ifunc), qfunc(qfunc) {}
 
     void clear() { memset(f, 0, sizeof(f)); }
 
