@@ -14,7 +14,7 @@ tags:
   - hash
   - 排列
   - 全排列
-  - Cartesian积/Descartes积
+  - Cartesian积
 date: 2021-11-05 01:01:36
 ---
 
