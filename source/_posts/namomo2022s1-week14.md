@@ -302,3 +302,191 @@ $O(n)$
 {% icodeweb cpa_cpp title:Daimayuan_922 Daimayuan/922/0.cpp %}
 
 </details>
+
+## 不降子数组游戏 (CodeForces Gym 102984D)
+
+[题目链接](https://oj.daimayuan.top/problem/886)
+
+3 s, 1024 MB
+
+### 题目描述
+
+Yuto 和 Platina 准备玩一个不降子数组游戏
+
+具体的, 给定一个长度为$N$的数组$A$, 和区间限制$L$和$R$
+
+Yuto 首先在$[L, R]$中选择一个数字, 并展示给 Platina 看
+
+随后 Platina 也会选择一个在$[L, R]$中的数字
+
+我们不妨设 Yuto 选择了数字$a$, Platina 选择了数字$b$
+
+这局游戏的得分是$A[min(a,b):max(a,b)]$的不降子数组的个数. ($A[l:r]$表示由数组$A$下标从$l$到$r$这一连续段构成的新数组)
+
+注: 数组$B$的子数组是从$B$的头尾连续删除若干(可以为空)个元素后得到的新数组
+
+Yuto 想要得分尽可能的小, Platina 想要得分尽可能的大
+
+他们将会在一个数组上游戏$Q$次, 对于每次游戏, 请输出最后游戏的得分
+
+### 输入格式
+
+第一行输入一个正整数$N$, 表示数组$A$的长度
+
+接下来一行$N$个正整数, 分别表示$A_1$, $A_2$, ... , $A_N$
+
+第三行输入一个正整数$Q$, 表示游戏进行的次数
+
+接下来$Q$行, 每一行输入两个正整数, 分别表示$L$和$R$
+
+对于所有数据, 满足$1 \leq N, Q \leq 5 \times 10^5$, $1 \leq A_i \leq 10^9$ 且 $1 \leq L \leq R \leq N$
+
+### 输出格式
+
+对于每次游戏, 输出一个正整数, 表示游戏最后的得分
+
+### 样例输入
+
+```input1
+8
+7 10 3 1 9 5 5 2
+5
+1 5
+2 2
+5 8
+1 8
+3 5
+```
+
+### 样例输出
+
+```output1
+4
+1
+4
+7
+3
+```
+
+### 解题思路
+
+> 三分 + 分块
+
+首先将数组分成递增的若干段, 如对于样例分为 `[7 10] [3] [1 9] [5 5] [2]` 五段, 然后每一段都可以很容易地求出得分, 进而用一个前缀和即可方便地求出某一段区间的得分
+
+对于单次查询, 显然无论先手选什么, 后手必选端点, 而且不难发现得分对先手选的点是单峰函数, 所以直接三分即可
+
+### 复杂度
+
+$O(N+Q\log N)$
+
+### 代码参考
+
+<details>
+<summary><font color='orange'>Show code</font></summary>
+
+{% icodeweb cpa_cpp title:CodeForces_Gym_102984D Gym/102984D/0.cpp %}
+
+</details>
+
+## Nearest Opposite Parity (CF1272E)
+
+[题目链接](https://oj.daimayuan.top/problem/1008)
+
+1 s, 128 MB
+
+### 题目描述
+
+给定一个长度为 $n$ 的下标从 $1$ 开始的数组 $a$, 在位置 $i$ 可以移动到位置 $i - a_i(1 \leq i - a_i)$ 或 $i + a_i(i + a_i \leq n)$
+
+现在希望你对于每一个位置 $i$ $(1 \leq i \leq n)$ 求出从这里出发, 抵达任意一个位置 $j$ 使得该位置 $j$ 满足 $a_i \bmod 2 \neq a_j \bmod 2$ 的最小步数, 如果不存在这样的位置 $j$ 则输出 `-1`
+
+### 输入格式
+
+第一行输入一个整数 $n$ $(1 \leq n \leq 2 \times 10^5)$ 为数组长度
+
+第二行输入 $n$ 个整数 $a_i$ $(1 \leq a_i \leq n)$ 为给定的数组
+
+### 输出格式
+
+输出一行, 包含 $n$ 个整数, 第 $j$ 个整数为从位置 $j$ 出发的题目所求
+
+### 输入样例
+
+```input1
+10
+4 5 7 6 7 5 4 4 6 4
+```
+
+### 输出样例
+
+```output1
+1 1 1 2 -1 1 1 3 1 1
+```
+
+### 解题思路
+
+>
+
+### 复杂度
+
+### 代码参考
+
+<details>
+<summary><font color='orange'>Show code</font></summary>
+
+{% icodeweb cpa_cpp title:CodeForces_1272E CodeForces/1272E/0.cpp %}
+
+</details>
+
+## 双端队列 (CF1579E2)
+
+[题目链接](https://oj.daimayuan.top/problem/1004)
+
+1 s, 1024 MB
+
+### 题目描述
+
+给定一个长度为 $n$ 的序列 $a_1,a_2,\dots,a_n$ 和一个空的双端队列
+
+你需要按顺序将序列中的每一个数放进双端队列中, 你可以选择将数插入到双端队列的队首或队尾
+
+你需要最小化最终得到的序列的逆序对数量
+
+### 输入格式
+
+第一行一个整数 $n$, 表示序列的长度. $(1 \leq n \leq 2 \times 10^5)$
+
+第二行 $n$ 个数字 $a_1,a_2,\dots,a_n$, 表示给定的序列. $(-10^9 \leq a_i \leq 10^9)$
+
+### 输出格式
+
+输出一行一个整数, 表示最少的逆序对数
+
+### 样例输入
+
+```input1
+4
+3 7 5 5
+```
+
+### 样例输出
+
+```output1
+2
+```
+
+### 解题思路
+
+>
+
+### 复杂度
+
+### 代码参考
+
+<details>
+<summary><font color='orange'>Show code</font></summary>
+
+{% icodeweb cpa_cpp title:CodeForces_1579E2 CodeForces/1579E2/0.cpp %}
+
+</details>
