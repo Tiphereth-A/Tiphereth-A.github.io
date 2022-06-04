@@ -8,6 +8,7 @@ tags:
   - 题解
   - 代码源
   - CodeForces
+  - AtCoder
   - 数学
   - 组合数学
   - 贪心
@@ -222,7 +223,7 @@ $O(N+Q\log N)$
 
 </details>
 
-## 子串（数据加强版）([牛客练习赛 98 D](https://ac.nowcoder.com/acm/contest/11188/D))
+## 子串 (数据加强版) ([牛客练习赛 98 D](https://ac.nowcoder.com/acm/contest/11188/D))
 
 [题目链接](https://oj.daimayuan.top/problem/922)
 
@@ -479,6 +480,82 @@ $O(N+Q\log N)$
 ```output1
 2
 ```
+
+### 解题思路
+
+> 逆序对
+
+如果我们将插入过程倒过来就会发现插入是没有后效性的, 所以直接贪心插入即可
+
+### 复杂度
+
+$O(n\log n)$
+
+### 代码参考
+
+<details>
+<summary><font color='orange'>Show code</font></summary>
+
+{% icodeweb cpa_cpp title:CodeForces_1579E2 CodeForces/1579E2/0.cpp %}
+
+</details>
+
+## 抽卡 (AtCoder ABC225F)
+
+[题目链接](https://oj.daimayuan.top/problem/968)
+
+1 s, 256 MB
+
+### 题目描述
+
+有$n$张卡片, 每张卡片上有一个字符串$s_i$, 现在要求你从中选出 k 张卡片, 使得在所有选取方案中, 这$k$张卡片连起来的字典序是最小的 (具体详见样例)
+
+### 输入描述
+
+第一行两个整数$n, k(1\leq k\leq n\leq 50)$
+
+接下来 n 行每行一个字符串$s_i(1\leq |s_i|\leq 50)$
+
+### 输出描述
+
+一个字符串, 表示从中选 k 张卡片的所有方案中字典序最小的字符串
+
+### 样例输入 1
+
+```input1
+4 3
+ode
+zaaa
+r
+atc
+```
+
+### 样例输出 1
+
+```output1
+atcoder
+```
+
+### 样例输入 2
+
+```input2
+5 2
+z
+z
+zzz
+z
+zzzzzz
+```
+
+### 样例输出 2
+
+```output2
+zz
+```
+
+### 原题链接
+
+[戳我](https://atcoder.jp/contests/abc225/tasks/abc225_f)
 
 ### 解题思路
 
