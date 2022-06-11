@@ -192,6 +192,27 @@ neat_js:
   exclude:
     - "*.min.js"
 
+broken_links_checker:
+  enable: true
+  head: true
+  frontmatter:
+    - links
+  exclude:
+  timeout: 1000
+  useragent: "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.9999.0 Safari/537.36"
+  parallel: 10
+  tags:
+    a: true
+    img: true
+    source: true
+    iframe: true
+    script: true
+    link: true
+  cache:
+    enable: true
+    lifetime: 1440
+    path: "link-checker.json"
+
 nofollow:
   enable: true
   field: site
