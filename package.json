@@ -3,10 +3,11 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "build": "hexo generate --debug",
-    "clean": "hexo clean --debug",
-    "deploy": "hexo deploy --debug",
-    "server": "hexo server --debug"
+    "build": "npx hexo generate --debug",
+    "chklink": "npx hexo check-links --debug",
+    "clean": "npx hexo clean --debug",
+    "deploy": "npx hexo deploy --debug",
+    "server": "npx hexo server --debug"
   },
   "hexo": {
     "version": "6.2.0"
@@ -37,6 +38,7 @@
   },
   "devDependencies": {
     "@prettier/plugin-xml": "^2.2.0",
+    "hexo-broken-links-checker": "^2.1.0",
     "husky": "^8.0.1",
     "prettier": "^2.6.2"
   }
