@@ -33,6 +33,34 @@ date: 2021-03-07 18:11:53
 
 <!-- more -->
 
+<style>
+.illustration {
+  float: right;
+  padding-left: 20px;
+}
+.description {
+  color: #898992;
+  font-style: italic;
+  font-family: "Merriweather", serif;
+  font-size: 12px;
+  text-align: right;
+  margin-top: 5px;
+}
+.figure {
+  display: block;
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Merriweather", serif;
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+.figure.caption {
+  margin-top: 15px;
+}
+</style>
+
 ## 题目概览
 
 | 题目 | 难度[^1] | 知识点       |
@@ -69,7 +97,7 @@ date: 2021-03-07 18:11:53
 
 ### 原始题面
 
-<div style="width:25.00%" class="kattis_illustration">
+<div style="width:25.00%" class="illustration">
   <img src="A-1.png" alt="">
 </div>
 
@@ -157,7 +185,7 @@ The answer is considered correct if the absolute or relative error is less than 
 
 ### 原始题面
 
-<div style="width:30.00%" class="kattis_illustration">
+<div style="width:30.00%" class="illustration">
   <img src="B-1.png" alt="">
 </div>
 
@@ -253,7 +281,7 @@ teas
 
 ### 原始题面
 
-<div style="width:30.00%" class="kattis_illustration">
+<div style="width:30.00%" class="illustration">
   <img src="C-1.png" alt="">
 </div>
 
@@ -454,10 +482,10 @@ $$...$$
 
 ### 原始题面
 
-<div style="width:50.00%" class="kattis_illustration">
+<div style="width:50.00%" class="illustration">
   <img src="D-1.png" alt="">
-  <div class="kattis_description">
-    kattis_illustration by Larry Pyeatt
+  <div class="description">
+    illustration by Larry Pyeatt
   </div>
 </div>
 
@@ -517,7 +545,7 @@ Odd
 
 ### 原始题面
 
-<div style="width:30.00%" class="kattis_illustration">
+<div style="width:30.00%" class="illustration">
   <img src="E-1.png" alt="">
 </div>
 
@@ -589,8 +617,8 @@ Write out on one line, separated by spaces, the lexicographically smallest subse
 
 ### 原始题面
 
-<div style="width:30.00%" class="kattis_illustration"><img src="F-1.jpg" alt="">
-  <div class="kattis_description">
+<div style="width:30.00%" class="illustration"><img src="F-1.jpg" alt="">
+  <div class="description">
     <a href="https://en.wikipedia.org/wiki/File:American_bison_k5680-1.jpg">Buffalo</a>, <a href="https://commons.wikimedia.org/wiki/File:Water_Vole_(6038169781).jpg">
     vole</a>, and <a href="https://commons.wikimedia.org/wiki/File:Miniature_schnauzer.jpg">schnauzer</a>. Original images from Wikipedia.
   </div>
@@ -678,9 +706,9 @@ $O(\max\{n,A\})$
 
 ### 原始题面
 
-<div style="width:40.00%" class="kattis_illustration">
+<div style="width:40.00%" class="illustration">
   <img src="G-1.png" alt="">
-  <div class="kattis_description">
+  <div class="description">
     The probability of <span class="katex"><span class="mord mathdefault">n</span></span>
     unique birthdays among <span class="katex"><span class="mord mathdefault">n</span></span> people.
   </div>
@@ -775,7 +803,7 @@ $O(k)$
 
 ### 原始题面
 
-<div style="width:30.00%" class="kattis_illustration">
+<div style="width:30.00%" class="illustration">
   <img src="H-1.png" alt="">
 </div>
 
@@ -851,7 +879,7 @@ Output the maximum number of color changes Alice can force Bob to make on his ro
 
 ### 原始题面
 
-<div style="width:30.00%" class="kattis_illustration">
+<div style="width:30.00%" class="illustration">
   <img src="I-1.png" alt="">
 </div>
 
@@ -863,10 +891,10 @@ To reward their loyal listeners, The Full Depth Morning Show is giving away a nu
 
 Each city in Treeland has its own tax on prizes: $t_i$. Let $d_{u,v}$ be the sum of the tolls on each road on the only simple path from city $u$ to $v$. For a trip from city $u$ to city $v$, the cost of that trip is then $(t_u+t_v)d_{u,v}$
 
-<div class="kattis_figure">
+<div class="figure">
   <center>
     <img src="I-2.png" alt="" style="width:70.00%">
-    <div class="kattis_caption">
+    <div class="caption">
       <b>Figure 1</b>: The map of Treeland corresponding to the
       first sample input.
     </div>
@@ -949,7 +977,7 @@ $$b_{u'}=b_u+\left(\sum_{v}t_v-2\sum_{v\in S(u')}t_v\right)d_{u,u'}$$
 
 ### 原始题面
 
-<div style="width:20.00%" class="kattis_illustration">
+<div style="width:20.00%" class="illustration">
   <img src="J-1.png" alt="">
 </div>
 
@@ -1056,7 +1084,7 @@ WBWWBB
 
 ### 原始题面
 
-<div style="width:30.00%" class="kattis_illustration">
+<div style="width:30.00%" class="illustration">
   <img src="K-1.png" alt="">
 </div>
 
