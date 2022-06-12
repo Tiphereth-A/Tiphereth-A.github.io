@@ -164,13 +164,13 @@ $$x^{(k+1)}=Gx^{(k)}+\omega(D-\omega L)^{-1}b$$
   | SOR 方法 ($\omega=0.8$) | 不收敛 | 3207 | 16 |
   | SOR 方法 ($\omega=1.2$) | 不收敛 | 1423 | 13 |
 - SOR 方法中, 方程组 2 的迭代次数与 $\omega$ 的变化图像
-  ![](eq2_1e-3.svg)
-  ![](eq2_1e-4.svg)
-  ![](eq2_1e-5.svg)
+  ![eq2_1e-3](eq2_1e-3.svg)
+  ![eq2_1e-4](eq2_1e-4.svg)
+  ![eq2_1e-5](eq2_1e-5.svg)
 - SOR 方法中, 方程组 3 的迭代次数与 $\omega$ 的变化图像
-  ![](eq3_1e-3.svg)
-  ![](eq3_1e-4.svg)
-  ![](eq3_1e-5.svg)
+  ![eq3_1e-3](eq3_1e-3.svg)
+  ![eq3_1e-4](eq3_1e-4.svg)
+  ![eq3_1e-5](eq3_1e-5.svg)
 
 ### 结论
 

@@ -288,23 +288,23 @@ In the third test case, the array is already nondecreasing, so Omkar does $0$ op
 
 - 当$a$是整体是非上升的时候, 如
 
-  ![](C-sol-1.png)
+  ![C-sol-1](C-sol-1.png)
 
   直接填平就好
 
 - 其他情况, 如
-  ![](C-sol-2.png)
+  ![C-sol-2](C-sol-2.png)
 
   我们可以按如下步骤化为上一种情况
 
   1. 填平  
-     ![](C-sol-3.png)
+     ![C-sol-3](C-sol-3.png)
      得
-     ![](C-sol-4.png)
+     ![C-sol-4](C-sol-4.png)
   1. 填平  
-     ![](C-sol-5.png)
+     ![C-sol-5](C-sol-5.png)
      得
-     ![](C-sol-6.png)
+     ![C-sol-6](C-sol-6.png)
 
 ### 代码参考
 

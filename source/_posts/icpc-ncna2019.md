@@ -1180,19 +1180,19 @@ $$
 
 画个图
 
-![](K-sol-1.png)
+![K-sol-1](K-sol-1.png)
 
 其中<font color="#2d70b2">蓝色</font>图像为$f_1$, <font color="#c74440">红色</font>图像为$f_2$, <font color="#388c46">绿色</font>图像为$f_3$
 
 我们把$f$也加进去
 
-![](K-sol-2.png)
+![K-sol-2](K-sol-2.png)
 
 其中<font color="#6042a6">紫色</font>图像为$f\over3$
 
 放大一些
 
-![](K-sol-3.png)
+![K-sol-3](K-sol-3.png)
 
 可以证明$f$的图像存在"局部周期", 即
 $$\big(\exist a,t\in\R,\forall x\in[a,a+t)\big),~f(x)=f(x+t)$$

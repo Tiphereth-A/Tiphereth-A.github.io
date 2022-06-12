@@ -52,7 +52,7 @@ date: 2021-04-12 19:56:47
 
 </details>
 
-![](fig1.svg)
+![fig1](fig1.svg)
 
 ---
 
