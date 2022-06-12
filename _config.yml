@@ -209,30 +209,10 @@ minify:
         - last 2 versions
         - not dead
 
-# neat_enable: true
-# neat_html:
-#   enable: true
-#   exclude:
-# neat_css:
-#   enable: true
-#   exclude:
-#     - "*.min.css"
-# neat_js:
-#   enable: true
-#   mangle: true
-#   output:
-#   compress:
-#   exclude:
-#     - "*.min.js"
-
 nofollow:
   enable: true
   field: site
   exclude:
-
-# autoprefixer:
-#   exclude:
-#     - "*.min.css"
 
 # DOC: https://www.u2sb.top/docs/hexo-tag-mmedia
 mmedia:
