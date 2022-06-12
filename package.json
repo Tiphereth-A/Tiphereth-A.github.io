@@ -38,7 +38,6 @@
   },
   "devDependencies": {
     "@prettier/plugin-xml": "^2.2.0",
-    "hexo-broken-links-checker": "^2.1.0",
     "husky": "^8.0.1",
     "prettier": "^2.6.2"
   }
