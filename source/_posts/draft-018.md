@@ -1,5 +1,5 @@
 ---
-title: 随笔 - 基于 ScriptEngine 和 Swing 的极简科学计算器
+title: "随笔 - Java: 基于 ScriptEngine 和 Swing 的极简科学计算器"
 date: 2022-06-11 13:43:17
 categories:
   - 随笔
