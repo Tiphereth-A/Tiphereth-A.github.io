@@ -7,7 +7,7 @@ import javax.script.ScriptEngineManager;
 import javax.script.ScriptException;
 import javax.swing.*;
 
-public class Main8 {
+public class Main {
 
   private static final Pattern patternFunc = Pattern.compile("(?<=[^a-zA-Z])([a-z]{3,})(?=[^a-zA-Z])");
 
