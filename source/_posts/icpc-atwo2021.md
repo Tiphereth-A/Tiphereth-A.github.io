@@ -47,6 +47,8 @@ date: 2022-06-17 19:07:57
 | I    | ICPC Kingdom      |                     |
 | J    | JavaScript        | 签到                |
 
+---
+
 [官方题解](https://hackmd.io/@rTbBGGVYR3e0Ee1fJry9fg/r15T-itMF)
 
 <details>
@@ -56,7 +58,11 @@ date: 2022-06-17 19:07:57
 
 </details>
 
+---
+
 {% pdf /archives/icpc-atwo2021/statements.pdf 600px %}
+
+---
 
 <details open>
 <summary><font color='orange'>Announcements</font></summary>
