@@ -2,5 +2,5 @@
   "printWidth": 114514,
   "tabWidth": 2,
   "useTabs": false,
-  "xmlWhitespaceSensitivity": "ignore"
+  "xmlWhitespaceSensitivity": "strict"
 }
