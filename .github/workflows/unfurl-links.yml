@@ -6,7 +6,7 @@ on:
     types: [created, edited]
   pull_request:
     types: [opened, edited]
-  discussion_comment:
+  discussion:
     types: [created, edited]
 jobs:
   run:
