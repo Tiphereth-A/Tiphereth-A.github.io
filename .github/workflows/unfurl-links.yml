@@ -15,3 +15,5 @@ jobs:
       - uses: wow-actions/unfurl-links@v1
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          raw: false
+          header: '<i><a href="{{ url }}">{{ url }}</a></i>'
