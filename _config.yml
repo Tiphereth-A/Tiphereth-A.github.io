@@ -236,7 +236,8 @@ icodeweb:
       codehead: |
         ---
         Author: Tifa
-        Description: From https://github.com/Tiphereth-A/CP-archives
+        Description: From <https://github.com/Tiphereth-A/CP-archives>
+        !!! ATTENEION: All the context below is licensed under a GNU Affero General Public License, Version 3. See <https://www.gnu.org/licenses/agpl-3.0.txt>.
         ---
     - name: cpa_nohead
       lang_default:
@@ -260,7 +261,8 @@ icodeweb:
       codehead: |
         /*
          * @Author: Tifa
-         * @Description: From https://github.com/Tiphereth-A/CP-archives
+         * @Description: From <https://github.com/Tiphereth-A/CP-archives>
+         * !!! ATTENEION: All the context below is licensed under a GNU Affero General Public License, Version 3. See <https://www.gnu.org/licenses/agpl-3.0.txt>.
          */
     - name: cpa_py
       lang_default: python
@@ -274,5 +276,6 @@ icodeweb:
       codehead: |
         """
         @Author: Tifa
-        @Description: From https://github.com/Tiphereth-A/CP-archives
+        @Description: From <https://github.com/Tiphereth-A/CP-archives>
+        !!! ATTENEION: All the context below is licensed under a GNU Affero General Public License, Version 3. See <https://www.gnu.org/licenses/agpl-3.0.txt>.
         """
