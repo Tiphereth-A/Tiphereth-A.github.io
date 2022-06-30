@@ -4,7 +4,7 @@ date: 2020-12-27 19:10:00
 ---
 
 {% linkgrid %}
-不分解的 AgOH 的个人空间\_哔哩哔哩\_Bilibili | https://space.bilibili.com/120174936/ | 准备开始周更的蒟蒻 UP 主 | /images/agoh-bili/ava.webp
+不分解的 AgOH 的个人空间 - Bilibili | https://space.bilibili.com/120174936/ | 准备开始周更的蒟蒻 UP 主 | /images/agoh-bili/ava.webp
 AgOH's Coffeehouse | https://stagoh.com/ | AgOH's Coffeehouse | /images/agoh-blog/ava.png
 Baobaobear's blog | https://baobaobear.github.io/ | 可持久化折腾和研究算法的抱抱熊博客 | /images/baobaobear-blog/avatar.jpg
 {% endlinkgrid %}
