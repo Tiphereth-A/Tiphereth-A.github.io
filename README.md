@@ -8,16 +8,24 @@
 
 <!-- ![Mozilla HTTP Observatory Grade](https://img.shields.io/mozilla-observatory/grade-score/tifa-233.xyz) -->
 
+My blog, powered by [Hexo](https://hexo.io/) & [NexT.Gemini](https://theme-next.js.org/).
+
+## License
+
 [![license](https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png)](https://creativecommons.org/licenses/by-nc-sa/4.0)
 
-My blog, powered by [Hexo](https://hexo.io/) & [NexT.Gemini](https://theme-next.js.org/)
+This work is licensed under a
+Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.
+
+You should have received a copy of the license along with this
+work. If not, see <http://creativecommons.org/licenses/by-nc-sa/4.0/>.
 
 ## Pagespeed results
 
 ### Desktop
 
-![](reports/psresultdesktop.svg)
+![reports/psresultdesktop](reports/psresultdesktop.svg)
 
 ### Mobile
 
-![](reports/psresultmobile.svg)
+![reports/psresultmobile](reports/psresultmobile.svg)
