@@ -6,8 +6,6 @@ on:
     types: [created, edited]
   pull_request:
     types: [opened, edited]
-  discussion_comment:
-    types: [created, edited]
 jobs:
   run:
     runs-on: ubuntu-latest
