@@ -4,8 +4,8 @@ date: 2020-12-27 19:10:00
 ---
 
 {% linkgrid %}
-AgOH 的 B 站空间 | https://space.bilibili.com/120174936/ | 准备开始周更的蒟蒻 UP 主 | /images/agoh-bili/ava.webp
-AgOH 的博客 | https://stagoh.com/ | AgOH 的博客 | /images/agoh-blog/ava.png
+不分解的 AgOH 的个人空间\_哔哩哔哩\_Bilibili | https://space.bilibili.com/120174936/ | 准备开始周更的蒟蒻 UP 主 | /images/agoh-bili/ava.webp
+AgOH's Coffeehouse | https://stagoh.com/ | AgOH's Coffeehouse | /images/agoh-blog/ava.png
 Baobaobear's blog | https://baobaobear.github.io/ | 可持久化折腾和研究算法的抱抱熊博客 | /images/baobaobear-blog/avatar.jpg
 {% endlinkgrid %}
 
@@ -34,7 +34,7 @@ avatar:
 
   avatar 可以为空. avatar 为空, 图床无效或其他技术原因等情况时默认使用
 
-  ![](/images/default-ava/ava.png)
+  ![/images/default-ava/ava](/images/default-ava/ava.png)
 
 - description 可以为空, 为空时与 name 相同
 - 对于 Blog 类型友链的额外要求:
