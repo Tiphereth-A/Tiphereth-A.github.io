@@ -5,8 +5,7 @@
 ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/Tiphereth-A/Tiphereth-A.github.io/master)
 
 ![Chromium HSTS preload](https://img.shields.io/hsts/preload/tifa-233.xyz)
-
-<!-- ![Mozilla HTTP Observatory Grade](https://img.shields.io/mozilla-observatory/grade-score/tifa-233.xyz) -->
+![Mozilla HTTP Observatory Grade](https://img.shields.io/mozilla-observatory/grade-score/tifa-233.xyz)
 
 My blog, powered by [Hexo](https://hexo.io/) & [NexT.Gemini](https://theme-next.js.org/).
 
