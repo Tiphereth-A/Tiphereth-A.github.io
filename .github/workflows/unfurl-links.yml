@@ -14,4 +14,3 @@ jobs:
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           raw: false
-          header: '<i><a href="{{ url }}">{{ url }}</a></i>'
