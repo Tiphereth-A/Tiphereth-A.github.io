@@ -23,7 +23,7 @@ date: 2018-07-22 19:12:06
 
 其中`gcd(a, b)`定义如下, `counter`即为递归次数
 
-{% include_code lang:cpp arc051b/gcd.cpp %}`
+{% include_code lang:cpp arc051b/gcd.cpp %}
 
 ## 解题思路
 
@@ -31,10 +31,14 @@ date: 2018-07-22 19:12:06
 
 令$T(a,b)$为对$a,b$求$gcd$递归层数
 
-Fibonacci 数列 $F_n:=\begin{cases}
+Fibonacci 数列
+
+$$
+F_n:=\begin{cases}
   1,& n\leqslant 1\\
   F_{n-1}+F_{n-2},& n>1
-\end{cases}$
+\end{cases}
+$$
 
 则有
 
