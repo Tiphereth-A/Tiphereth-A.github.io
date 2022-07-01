@@ -3,6 +3,8 @@ Thumbs.db
 db.json
 *.log
 *.code-workspace
+*.aux
+*.synctex.gz
 
 node_modules/
 public/
