@@ -10,13 +10,13 @@
 <title>cluster_1</title>
 <polygon fill="none" stroke="black" points="8,-8 8,-204 150,-204 150,-8 8,-8" />
 </g>
-<g id="clust2" class="cluster">
-<title>cluster_2</title>
-<polygon fill="none" stroke="black" points="158,-80 158,-204 228,-204 228,-80 158,-80" />
-</g>
 <g id="clust3" class="cluster">
 <title>cluster_3</title>
 <polygon fill="none" stroke="black" points="236,-8 236,-204 378,-204 378,-8 236,-8" />
+</g>
+<g id="clust2" class="cluster">
+<title>cluster_2</title>
+<polygon fill="none" stroke="black" points="158,-80 158,-204 228,-204 228,-80 158,-80" />
 </g>
 <!-- 1 -->
 <g id="node1" class="node">

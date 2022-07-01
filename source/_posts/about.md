@@ -23,6 +23,7 @@ date: 2020-05-04 19:07:23
 - {% post_link drafts 随笔 %}
 - {% post_link set-theory 集合论 %}
 - {% post_link gfology 生成函数 %}
+- {% post_link graph-th 图论 %}
 - {% post_link diff-geo 微分几何 %}
 
 ## 代码起手式
