@@ -1,5 +1,5 @@
 ---
-title: 图论笔记01- 基础概念
+title: 图论笔记01 - 基础概念
 date: 2022-07-01 04:00:27
 categories:
   - 笔记
@@ -19,8 +19,10 @@ tags:
   - 局部可数
   - 邻域
   - 补图
+  - 自补图
   - 反图
   - 底图
+  - 线图
   - 握手引理
   - 子图
   - 度矩阵
@@ -29,6 +31,7 @@ tags:
   - 零图
   - 完全图
   - 二分图
+  - 完全二分图
   - 圈图
   - 链图
   - 星图
@@ -182,6 +185,8 @@ tags:
 - $V(\bar G)=V(G)$
 - $e\in E(\bar G)\iff e\notin E(G)$
 
+若一个图和自身的补图同构, 则称其为**自补图**(self-complementary)
+
 {% endnote %}
 
 |          $G$          |       $\bar G$        |
@@ -250,11 +255,22 @@ tags:
 
 {% endnote %}
 
+### 线图
+
+{% note info no-icon %}
+
+**<a id="def-1-15">定义 - 1-15</a>** 简单图 $G$ 的**线图**(line graph) $L(G)$ 是满足如下条件的图:
+
+- $L(G)$ 的点集和 $G$ 的边集同构
+- $L(G)$ 中两点相邻当且仅当 $G$ 中对应的边有公共端点
+
+{% endnote %}
+
 ### 无限图
 
 {% note info no-icon %}
 
-**<a id="def-1-15">定义 - 1-15</a>** **无限图**(infinite graph) 是点集为无限集合或边集为无限集合的图
+**<a id="def-1-16">定义 - 1-16</a>** **无限图**(infinite graph) 是点集为无限集合或边集为无限集合的图
 
 若无限图的点集和边集均可数, 则称其为**可数无限图**(countable graph)
 
@@ -262,7 +278,7 @@ tags:
 
 {% note info no-icon %}
 
-**<a id="def-1-16">定义 - 1-16</a>** 若无限图所有点的度数均有限, 则称该图为**局部有限**(locally finite)的
+**<a id="def-1-17">定义 - 1-17</a>** 若无限图所有点的度数均有限, 则称该图为**局部有限**(locally finite)的
 
 若无限图所有点的度数均可数, 则称该图为**局部可数**(locally countable)的
 
@@ -300,25 +316,35 @@ $$V(G)=\bigcup_{i=0}^{\infty}N_i$$
 
 ### 零图
 
-null graph
+{% note info no-icon %}
 
-$N_n$
+**<a id="def-1-18">定义 - 1-18</a>** **零图**(null graph) $N_n$
 
 边集为空的的图
 
+{% endnote %}
+
 ### 完全图
 
-complete graph
+{% note info no-icon %}
 
-$K_n$
+**<a id="def-1-19">定义 - 1-19</a>** **完全图**(complete graph) $K_n$
 
 任意两点均相邻的简单图
 
+{% endnote %}
+
+完全图和零图互为补图
+
 ### 竞赛图
 
-tournament
+{% note info no-icon %}
+
+**<a id="def-1-20">定义 - 1-20</a>** **竞赛图**(tournament)
 
 底图是完全图的有向图
+
+{% endnote %}
 
 {% note primary no-icon %}
 
@@ -341,13 +367,17 @@ tournament
 
 ### 二分图
 
-bipartitle graph
+{% note info no-icon %}
+
+**<a id="def-1-21">定义 - 1-21</a>** **二分图**(bipartitle graph)
 
 $G=\lang A,B,E(G)\rang$ 满足
 
 - $V(G)=A\cup B$
 - $A\cap B=\varnothing$
 - $E(G)\cap (A^2\cup B^2)=\varnothing$
+
+{% endnote %}
 
 类似地, 可以定义
 
@@ -357,57 +387,75 @@ $G=\lang A,B,E(G)\rang$ 满足
 
 ### 圈图
 
-cycle graph
+{% note info no-icon %}
 
-$C_n$
+**<a id="def-1-22">定义 - 1-22</a>** **圈图**(cycle graph) $C_n$
 
 任意点的度均为 $2$ 的连通图
 
+{% endnote %}
+
 ### 链图
 
-chain graph, path graph
+{% note info no-icon %}
+
+**<a id="def-1-23">定义 - 1-23</a>** **链图**(chain graph, path graph)
 
 $P_n=C_n-e$, $\exist e\in E(C_n)$
 
+{% endnote %}
+
 ### 星图
 
-star graph
+{% note info no-icon %}
 
-$S_n$
+**<a id="def-1-24">定义 - 1-24</a>** **星图**(star graph) $S_n$
 
 $\exist_1 v\in V(S_n)$ 使得
 
 - $\deg(v)=n-1$
 - $\forall v'\in V(S_n)\setminus\{v\},\deg(v')=1$
 
+{% endnote %}
+
 ### 轮图
 
-wheel graph
+{% note info no-icon %}
 
-$W_n$
+**<a id="def-1-25">定义 - 1-25</a>** **轮图**(wheel graph) $W_n$
 
 $\exist_1 v\in V(W_n)$ 使得
 
 - $\deg(v)=n-1$
 - $W_n-v=C_{n-1}$
 
+{% endnote %}
+
 ### 正则图
 
-$k$-regular graph
+{% note info no-icon %}
+
+**<a id="def-1-26">定义 - 1-26</a>** $k$-**正则图**($k$-regular graph)
 
 所有顶点的度均为 $k$ 的图称为 $k$-正则图
 
+{% endnote %}
+
 显然奇正则图的顶点数为偶数
+
+$k$-正则图的线图是 $2k-2$-正则图
 
 ### 立方图
 
-cubic graph
+{% note info no-icon %}
+
+**<a id="def-1-27">定义 - 1-27</a>** **立方图**(cubic graph)
 
 $3$-正则图
 
-### Petersen 图
+{% endnote %}
 
-Petersen graph
+### Petersen 图
 
 ![petersen](petersen.svg)
 
@@ -417,8 +465,6 @@ Petersen graph
 
 ### Platonic 图
 
-Platonic graph
-
 又叫正多面体图, 一共有五种
 
 ![platonic](platonic.svg)
@@ -427,12 +473,14 @@ Platonic graph
 
 ### 超立方体图
 
-$k$-cube graph
+{% note info no-icon %}
 
-$Q_n$
+**<a id="def-1-28">定义 - 1-28</a>** **超立方体图**($k$-cube graph) $Q_n$
 
 - $V(Q_n)=\{\overline{a_1a_2...a_n}:a_i\in\{0,1\},\forall i\in 1..n\}$
 - $E(Q_n)=\{\{\overline{a_1a_2...a_n},\overline{b_1b_2...b_n}\}:\exist_1 i\in 1..n, a_x=b_x\iff x=i \}$
+
+{% endnote %}
 
 不难发现
 
@@ -465,7 +513,7 @@ $Q_n$
 
 {% note info no-icon %}
 
-**<a id="def-1-17">定义 - 1-17</a>** **Ramsey 数** $R(k,m)$ 为最小的正整数 $n$ 满足: 对任意的 $n$ 顶点的简单图 $G$, 要么 $K_k$ 是 $G$ 的子图, 要么 $K_m$ 是 $\bar G$ 的子图
+**<a id="def-1-29">定义 - 1-29</a>** **Ramsey 数** $R(k,m)$ 为最小的正整数 $n$ 满足: 对任意的 $n$ 顶点的简单图 $G$, 要么 $K_k$ 是 $G$ 的子图, 要么 $K_m$ 是 $\bar G$ 的子图
 
 {% endnote %}
 

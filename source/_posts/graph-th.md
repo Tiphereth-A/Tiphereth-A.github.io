@@ -16,6 +16,7 @@ tags:
 <!-- more -->
 
 - {% post_link graphth-01 %}
+- {% post_link graphth-02 %}
 
 ## 参考资料
 
