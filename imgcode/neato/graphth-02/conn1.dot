@@ -1,0 +1,22 @@
+graph {
+  "v" [
+    shape = "circle",
+  ];
+  "w" [
+    shape = "circle",
+  ];
+  "y" [
+    shape = "circle",
+  ];
+  "z" [
+    shape = "circle",
+  ];
+  "x" [
+    shape = "circle",
+  ];
+  "w" -- "y";
+  "y" -- "z";
+  "z" -- "z";
+  "v" -- {"w" "y"};
+  "x" -- {"v" "w" "y" "z"};
+}
