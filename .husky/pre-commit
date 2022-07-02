@@ -34,6 +34,12 @@ regen_figures() {
       continue
     fi
     
+    if [[ $dir =~ ^imgcode\/neato\/.* ]]; then
+      cat $src | neato -Tsvg > $outsrc_svg
+      git add $outsrc_svg
+      continue
+    fi
+    
     if [[ $dir =~ ^imgcode\/drawio\/.* ]]; then
       draw.io -x -f svg -o $output_dir $src --embed-svg-images
       git add $outsrc_svg
