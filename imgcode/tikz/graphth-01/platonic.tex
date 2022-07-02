@@ -1,10 +1,10 @@
 % From <https://www.integral-domain.org/lwilliams/Resources/tikzsnippets.php>
-\documentclass[tikz]{standalone}
+\documentclass[tikz, usenames, dvipsnames]{standalone}
 \usepackage{xstring}
 
-\usepackage[usenames, dvipsnames]{xcolor,colortbl}
+\usepackage{xcolor,colortbl}
 \definecolor{LightGray}{RGB}{240,240,240}
- \definecolor{MLGray}{RGB}{160,160,160}
+\definecolor{MLGray}{RGB}{160,160,160}
 \definecolor{MedGray}{RGB}{120,120,120}
 \definecolor{DarkGray}{RGB}{70,70,70}
 \definecolor{Green}{RGB}{47,123,108}
@@ -13,7 +13,7 @@
 \definecolor{Blue}{RGB}{47,113,123}
 \definecolor{LBlue}{RGB}{70,170,185}
 \definecolor{Warning}{RGB}{185,85,70}
- \usetikzlibrary{decorations.shapes}
+\usetikzlibrary{decorations.shapes}
 \usetikzlibrary{shapes, shapes.arrows, arrows.meta}
 
 \begin{document}
@@ -32,8 +32,8 @@
 	\coordinate (O) at (0, 0, 0);
 
 
-	\draw[thin, dotted, hidden] (1,1,-1)--(-1,1,-1)--(-1,-1,-1);
-	\draw[thin, dotted, hidden] (-1,1,-1)--(-1,1,1);
+	\draw[thin, dotted] (1,1,-1)--(-1,1,-1)--(-1,-1,-1);
+	\draw[thin, dotted] (-1,1,-1)--(-1,1,1);
 
 	  \draw[opacity=0.6,fill=Warning]  (1,1,1)--(1,-1,1)--(-1,-1,1)--(-1,1,1)--cycle; % top
 
@@ -52,8 +52,8 @@
 	\coordinate (O) at (0, 0, 0);
 
 
-	\draw[thin, dotted, hidden] (1,0,0)--(0,1,0)--(-1,0,0);
-	\draw[thin, dotted, hidden] (0,0,1)--(0,1,0)--(0,0,-1);
+	\draw[thin, dotted] (1,0,0)--(0,1,0)--(-1,0,0);
+	\draw[thin, dotted] (0,0,1)--(0,1,0)--(0,0,-1);
 
 	 \draw[opacity=0.5,fill=MedGray] (1,0,0)--(0,-1,0)--(0,0,1)--cycle;
 	 \draw[opacity=0.5,fill=Blue] (1,0,0)--(0,-1,0)--(0,0,-1)--cycle;
@@ -78,11 +78,11 @@
 
 
 
-	\draw[thin, dotted, hidden] (-1,1,1)--(-\rg,\gr,0)--(\rg,\gr,0)--(1,1,1);
-	\draw[thin, dotted, hidden] (-\rg,\gr,0)--(-1,1,-1)--(-\gr,0,-\rg);
-	\draw[thin, dotted, hidden] (0,-\rg,-\gr)--(0,\rg,-\gr)--(-1,1,-1);
-	\draw[thin, dotted, hidden] (0,\rg,-\gr)--(1,1,-1)--(\gr,0,-\rg);
-	\draw[thin, dotted, hidden] (1,1,-1)--(\rg,\gr,0);
+	\draw[thin, dotted] (-1,1,1)--(-\rg,\gr,0)--(\rg,\gr,0)--(1,1,1);
+	\draw[thin, dotted] (-\rg,\gr,0)--(-1,1,-1)--(-\gr,0,-\rg);
+	\draw[thin, dotted] (0,-\rg,-\gr)--(0,\rg,-\gr)--(-1,1,-1);
+	\draw[thin, dotted] (0,\rg,-\gr)--(1,1,-1)--(\gr,0,-\rg);
+	\draw[thin, dotted] (1,1,-1)--(\rg,\gr,0);
   \end{scope}
 \node[inner sep = 0cm,xshift=11.2cm] at (0,-1)   () {Dodecahedron};
 
@@ -104,12 +104,12 @@
 	\draw[opacity=0.4,fill=Blue] (1,\gr,0) --(-1,\gr,0)--(0,1,\gr)--cycle; %top center
 	\draw[opacity=0.3,fill=Green] (1,\gr,0) --(\gr,0,1)--(0,1,\gr)--cycle; %top right
 
-	\draw[thin, dotted, hidden] (0,-1,\gr)--(-\gr,0,1)--(-1,-\gr,0)--(-\gr,0,-1) ;
-	\draw[thin, dotted, hidden] (\gr,0,1) --(0,-1,\gr)--(0,1,\gr);
-	\draw[thin, dotted, hidden] (\gr,0,-1)--(1,-\gr,0)--(0,-1,-\gr);
-	\draw[thin, dotted, hidden] (1,-\gr,0)--(-1,-\gr,0)--(0,-1,-\gr);
-	\draw[thin, dotted, hidden] (1,-\gr,0) --(\gr,0,1);
-	\draw[thin, dotted, hidden] (1,-\gr,0)--(0,-1,\gr)--(-1,-\gr,0);
+	\draw[thin, dotted] (0,-1,\gr)--(-\gr,0,1)--(-1,-\gr,0)--(-\gr,0,-1) ;
+	\draw[thin, dotted] (\gr,0,1) --(0,-1,\gr)--(0,1,\gr);
+	\draw[thin, dotted] (\gr,0,-1)--(1,-\gr,0)--(0,-1,-\gr);
+	\draw[thin, dotted] (1,-\gr,0)--(-1,-\gr,0)--(0,-1,-\gr);
+	\draw[thin, dotted] (1,-\gr,0) --(\gr,0,1);
+	\draw[thin, dotted] (1,-\gr,0)--(0,-1,\gr)--(-1,-\gr,0);
 
   \end{scope}
   \node[inner sep = 0cm,xshift=15cm] at (0,-1)   () {Icosahedron};
