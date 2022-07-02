@@ -13,14 +13,14 @@ regen_figures() {
     output_dir="source/_posts/"${dir#imgcode/*/}
     outsrc_svg=$output_dir${base/%.*/.svg}
     
-    echo "---info start---"
+    echo "---imgcode info start---"
     echo "src: "$src
     echo "base: "$base
     echo "dir: "$dir
     echo "temp_dir: "$temp_dir
     echo "output_dir: "$output_dir
     echo "outsrc_svg: "$outsrc_svg
-    echo "---info end---"
+    echo "---imgcode info end---"
     
     if [[ $dir =~ ^imgcode\/dot\/.* ]]; then
       cat $src | dot -Tsvg > $outsrc_svg
