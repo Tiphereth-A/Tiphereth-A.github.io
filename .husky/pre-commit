@@ -1,8 +1,69 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
+regen_figures() {
+  for src in $@; do
+    if [[ ! $src =~ ^imgcode\/* ]]; then
+      continue
+    fi
+    
+    base=${src##*/}
+    dir=${src%$base}
+    temp_dir="_imgcode_tempout/"${dir#imgcode/}${base%.*}"/"
+    output_dir="source/_posts/"${dir#imgcode/*/}
+    outsrc_svg=$output_dir${base/%.*/.svg}
+    
+    echo "---info start---"
+    echo "src: "$src
+    echo "base: "$base
+    echo "dir: "$dir
+    echo "temp_dir: "$temp_dir
+    echo "output_dir: "$output_dir
+    echo "outsrc_svg: "$outsrc_svg
+    echo "---info end---"
+    
+    if [[ $dir =~ ^imgcode\/dot\/.* ]]; then
+      cat $src | dot -Tsvg > $outsrc_svg
+      git add $outsrc_svg
+      continue
+    fi
+    
+    if [[ $dir =~ ^imgcode\/circo\/.* ]]; then
+      cat $src | circo -Tsvg > $outsrc_svg
+      git add $outsrc_svg
+      continue
+    fi
+    
+    if [[ $dir =~ ^imgcode\/drawio\/.* ]]; then
+      draw.io -x -f svg -o $output_dir $src --embed-svg-images
+      git add $outsrc_svg
+      continue
+    fi
+    
+    if [[ $dir =~ ^imgcode\/tikz\/.* ]]; then
+      xelatex -synctex=1 -interaction=nonstopmode -file-line-error -output-directory=$temp_dir $src
+      ./bin/pdf2svg/pdf2svg.exe $temp_dir${base/%tex/pdf} $outsrc_svg
+      git add $outsrc_svg
+      continue
+    fi
+  done
+}
+
 FILES=$(git diff --cached --name-only --diff-filter=ACMR | sed 's| |\\ |g')
 [ -z "$FILES" ] && exit 0
+
+echo "$FILES" | xargs ./node_modules/.bin/prettier --ignore-unknown --write
+
+echo "$FILES" | xargs git add
+
+FILES=$(git diff --cached --name-only --diff-filter=ACMR | sed 's| |\\ |g')
+[ -z "$FILES" ] && exit 0
+
+regen_figures $FILES
+
+echo "$FILES" | xargs git add
+
+FILES=$(git diff --cached --name-only --diff-filter=ACMR | sed 's| |\\ |g')
 
 echo "$FILES" | xargs sed -i 's/!\[](\([^\.\)]\+\?\)\.\([^\.\)]\+\?\))/![\1](\1.\2)/g'
 
