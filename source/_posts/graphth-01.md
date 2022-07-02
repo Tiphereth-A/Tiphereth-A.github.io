@@ -136,8 +136,6 @@ tags:
 
 **<a id="th-1-1">定理 - 1-1</a>** (**握手引理**) 任意图的顶点度数和均为偶数
 
-{% note %}
-
 <details open>
 <summary>证明</summary>
 
@@ -145,7 +143,6 @@ tags:
 
 </details>
 
-{% endnote %}
 {% endnote %}
 
 由此立得
@@ -290,8 +287,6 @@ tags:
 
 **<a id="th-1-4">定理 - 1-4</a>** 局部可数的连通无限图是可数无限图
 
-{% note %}
-
 <details open>
 <summary>证明</summary>
 
@@ -303,7 +298,6 @@ $$V(G)=\bigcup_{i=0}^{\infty}N_i$$
 
 </details>
 
-{% endnote %}
 {% endnote %}
 
 {% note success no-icon %}
@@ -497,8 +491,6 @@ $3$-正则图
 
 **<a id="th-1-6">定理 - 1-6</a>** (Ramsey 定理) 对任意 $6$ 顶点的图 $G$, $C_3$ 要么是 $G$ 的子图, 要么是 $\bar G$ 的子图
 
-{% note %}
-
 <details open>
 <summary>证明</summary>
 
@@ -508,7 +500,6 @@ $3$-正则图
 
 </details>
 
-{% endnote %}
 {% endnote %}
 
 {% note info no-icon %}

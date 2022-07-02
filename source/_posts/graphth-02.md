@@ -88,8 +88,6 @@ tags:
 
 **<a id="th-2-2">定理 - 2-2</a>** 一个图是二分图当且仅当图中所有的圈都是偶长的
 
-{% note %}
-
 <details open>
 <summary>证明</summary>
 
@@ -98,7 +96,6 @@ tags:
 
 </details>
 
-{% endnote %}
 {% endnote %}
 
 {% note success no-icon %}
@@ -202,14 +199,11 @@ $$|\partial(X)|\equiv|X|\pmod 2,~\forall X\subset V(G)$$
 
 $$\kappa(G)\leq\lambda(G)\leq\delta(G)$$
 
-{% note %}
-
 <details open>
 <summary>证明</summary>
 
 </details>
 
-{% endnote %}
 {% endnote %}
 
 ## Euler 圈, Euler 路
