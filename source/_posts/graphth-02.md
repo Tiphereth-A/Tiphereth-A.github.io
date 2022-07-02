@@ -63,8 +63,6 @@ tags:
 - $v\to w\to x\to y\to z$ 是简单路径
 - $v\to w\to x\to y\to v$ 是圈
 
-{% note success no-icon %}
-
 {% note info no-icon %}
 
 **<a id="def-2-2">定义 - 2-2</a>** 对于图 $G$, 定义
