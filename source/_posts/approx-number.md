@@ -289,7 +289,7 @@ $$x_{n+1}=x_n-\frac{f(x_n)}{f^\prime(x_n)}$$
 
 笔者在这里放上解析解 (近似值$x=0.739$) , 详情见参考文献[2] (文献里讲的是$t\sin x=x-m$的解法, 不过笔者太弱了, 实在是看不懂 QwQ)
 
-$$\frac{\pi}{2}\exp\Bigg(\frac{1}{\pi}\int_0^1{\arctan\Big({(\pi x+2)\ln{({\sqrt{1-x^2}+1\over x})}x\over x^2\ln^2({\sqrt{1-x^2}+1\over x})-\pi x-1}\Big)\over x}\mathrm{d}x\Bigg)$$
+$$\frac{\pi}{2}\exp\left(\frac{1}{\pi}\int_0^1\frac{\arctan\left({(\pi x+2)\log\left(\frac{\sqrt{1-x^2}+1}{x}\right)x\over x^2\log^2\left(\frac{\sqrt{1-x^2}+1}{x}\right)-\pi x-1}\right)}{x}\mathrm{d}x\right)$$
 
 ### 快速求${1\over\sqrt{x}}$
 
