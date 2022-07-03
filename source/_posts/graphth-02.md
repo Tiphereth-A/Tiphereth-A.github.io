@@ -25,6 +25,9 @@ tags:
   - 割点
   - 点连通度
   - Menger定理
+  - 强连通
+  - 弱连通
+  - 可定向
   - Euler圈
   - Euler路
   - Hamilton圈
@@ -202,7 +205,72 @@ $$\kappa(G)\leq\lambda(G)\leq\delta(G)$$
 <details open>
 <summary>证明</summary>
 
+显然, $\lambda(G)\leq\delta(G)$, 接下来考虑证明 $\kappa(G)\leq\lambda(G)$
+
+首先 $G$ 是完全图的情况下结论显然成立, 接下来假设 $G$ 不是完全图
+
+任取极小边割 $F$, 只需证明存在点割 $V_0$ 满足
+
+$$\kappa(G)\leq|V_0|\leq|F|$$
+
+显然 $G-F$ 有两个部件, 设为 $C_1$ 和 $C_2$
+
+1. 若某个部件中有一点 $v$ 不与 $F$ 中所有的边均相关联, 不妨假设在 $C_1$ 中
+
+   设 $V_0$ 是 $C_1$ 中所有与 $F$ 中某条边相关联的点组成的集合, 显然这个集合就是我们要找的点割
+
+   ![th-2-8-case1](th-2-8-case1.svg)
+
+1. 若 $C_1$, $C_2$ 中所有的点均与 $F$ 中的边相关联, 则存在一点 $v$ 使得其不与所有点相邻, 则 $N(v)$ 即是我们要找的点割
+
+   ![th-2-8-case2](th-2-8-case2.svg)
+
 </details>
+
+{% endnote %}
+
+### 有向图的情况
+
+有向图情况下的路径, 迹, 简单路径, 圈的定义类似, 在此不再赘述
+
+有向图的连通性略有不同:
+
+\{% note info no-icon %}
+
+**<a id="def-2-5">定义 - 2-5</a>**
+
+- 若有向图的底图是连通的, 则称其为**弱连通**的(weakly connected)
+- 若有向图中任意两个不同的点之间均有有向路径, 则称其为**强连通**的(strongly connected)
+
+{% endnote %}
+
+{% note info no-icon %}
+
+**<a id="def-2-6">定义 - 2-6</a>** 对一个图 $G$, 若对其所有边存在一种定向方案, 使得得到的有向图是强连通的, 则称该图是**可定向的**(orientable), 称得到的有向图是**定向**(orientation)
+
+{% endnote %}
+
+{% note success no-icon %}
+
+**<a id="th-2-9">定理 - 2-9</a>** 一个连通图 $G$ 是可定向的当且仅当图上任意一条边均在图上的至少一个圈上 (即图是 $2$-边连通的)
+
+<details open>
+<summary>证明</summary>
+
+- $\implies$: 显然
+- $\impliedby$: 我们随意取一个圈 $C$, 然后按某个顺序定向
+
+  若 $E(G)\setminus E(C)=\varnothing$, 则命题得证, 否则取与 $C$ 相关联的边, 由假设知其在某个圈上, 所以我们可以继续以同样的方式定向, 不难发现这样不断进行下去后得到的图是强连通的
+
+  ![th-2-9-fig1](th-2-9-fig1.svg)
+
+</details>
+
+{% endnote %}
+
+{% note success no-icon %}
+
+**<a id="coll-2-10">推论 - 2-10</a>** 对任意一个图, 其中的一条边 $e$ 是桥当且仅当其不属于任何一个圈
 
 {% endnote %}
 
