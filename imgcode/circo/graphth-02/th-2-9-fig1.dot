@@ -1,0 +1,41 @@
+digraph {
+  "1" [
+    shape = "circle",
+  ];
+  "2" [
+    shape = "circle",
+  ];
+  "3" [
+    shape = "circle",
+  ];
+  "4" [
+    shape = "circle",
+  ];
+  "5" [
+    shape = "circle",
+  ];
+  "6" [
+    shape = "circle",
+  ];
+  "1" -> "2" -> "3" -> "4" -> "1" [
+    color = "blue",
+  ];
+  "1" -> "5" [
+    label = "e",
+    style = "dotted",
+    color = "red",
+  ];
+  "5" -> "3" [
+    style = "dotted",
+    color = "red",
+  ];
+  "1" -> "6" -> "5" -> "2" [
+    style = "dotted",
+  ];
+  "2" -> "6" -> "4" -> "2" [
+    style = "dotted",
+  ];
+  "1" -> "2" -> "3" -> "4" -> "5" -> "6" -> "1" [
+    style = "invis",
+  ];
+}
