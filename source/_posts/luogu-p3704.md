@@ -77,6 +77,7 @@ $$
 \begin{aligned}
   \prod_{i=1}^n\prod_{j=1}^mf_{(i,j)}&=\prod_{d=1}^n\prod_{i=1}^{\lfloor\frac{n}{d}\rfloor}\prod_{j=1}^{\lfloor\frac{m}{d}\rfloor}f_d^{[(i,j)=1]}\\
   &=\prod_{d=1}^nf_d^{\sum_{i=1}^{\lfloor\frac{n}{d}\rfloor}\sum_{j=1}^{\lfloor\frac{m}{d}\rfloor}[(i,j)=1]}\\
+  &=\prod_{d=1}^nf_d^{\sum_{i=1}^{\lfloor\frac{n}{d}\rfloor}\sum_{j=1}^{\lfloor\frac{m}{d}\rfloor}\sum_{e\mid (i,j)}\mu(e)}\\
   &=\prod_{d=1}^nf_d^{\sum_{e=1}^{\lfloor\frac{n}{d}\rfloor}\mu(e)\lfloor\frac{n}{de}\rfloor\lfloor\frac{m}{de}\rfloor}\\
   &\xlongequal{D=de}\prod_{D=1}^n\bigg(\prod_{d\mid D}f_d^{\mu(\frac{D}{d})}\bigg)^{\lfloor\frac{n}{D}\rfloor\lfloor\frac{m}{D}\rfloor}
 \end{aligned}
