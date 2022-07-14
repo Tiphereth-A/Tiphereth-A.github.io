@@ -30,8 +30,8 @@ $$\sum_{\nu\in\prod_{i=1}^m[1,n_i]_\N}f(\nu)g(\gcd\nu)$$
 
 $$
 \begin{aligned}
-  \sum_{\nu\in\prod_{i=1}^m[1,n_i]_\N}f(\nu)g(\gcd\nu)&=\sum_{d=1}^{n_0}g(d)\sum_{\nu\in\prod_{i=1}^m[1,n_i]_\N}f[\nu](\gcd\nu=d)&(1)\\
-  &=\sum_{d=1}^{n_0}g(d)\sum_{\nu\in\prod_{i=1}^m[1,\lfloor\frac{n_i}{d}\rfloor]_\N}f[d\nu](\gcd\nu=1)&(2)\\
+  \sum_{\nu\in\prod_{i=1}^m[1,n_i]_\N}f(\nu)g(\gcd\nu)&=\sum_{d=1}^{n_0}g(d)\sum_{\nu\in\prod_{i=1}^m[1,n_i]_\N}f(\nu)[\gcd\nu=d]&(1)\\
+  &=\sum_{d=1}^{n_0}g(d)\sum_{\nu\in\prod_{i=1}^m[1,\lfloor\frac{n_i}{d}\rfloor]_\N}f(d\nu)[\gcd\nu=1]&(2)\\
   &=\sum_{d=1}^{n_0}g(d)\sum_{\nu\in\prod_{i=1}^m[1,\lfloor\frac{n_i}{d}\rfloor]_\N}f(d\nu)\sum_{e\mid\gcd\nu}\mu(e)&(3)\\
   &=\sum_{d=1}^{n_0}g(d)\sum_{e=1}^{ \frac{g_n}{d}}\mu(e)\sum_{\nu\in\prod_{i=1}^m[1,\lfloor\frac{n_i}{de}\rfloor]_\N}f(de\nu)&(4)\\
   &\xlongequal[D=de]{F(x)=\sum_{\nu\in\prod_{i=1}^m[1,\lfloor\frac{n_i}{x}\rfloor]_\N}f(x\nu)}\sum_{D=1}^{n_0}F(D)(g*\mu)(D)&(5)\\
