@@ -104,6 +104,6 @@ $$
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa_cpp title:Luogu_5627 Luogu/5627/0.cpp %}
+{% icodeweb cpa_cpp title:Luogu_P5627 Luogu/P5627/0.cpp %}
 
 </details>

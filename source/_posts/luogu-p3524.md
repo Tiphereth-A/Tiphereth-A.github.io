@@ -154,6 +154,6 @@ In the first and only line of the standard output your program should print $\fr
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa_cpp title:Luogu_3524 Luogu/3524/0.cpp %}
+{% icodeweb cpa_cpp title:Luogu_P3524 Luogu/P3524/0.cpp %}
 
 </details>

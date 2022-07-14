@@ -280,7 +280,7 @@ $O(n)$
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa_cpp title:Luogu_3478 Luogu/3478/0.cpp %}
+{% icodeweb cpa_cpp title:Luogu_P3478 Luogu/P3478/0.cpp %}
 
 </details>
 

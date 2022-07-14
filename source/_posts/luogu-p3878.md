@@ -96,6 +96,6 @@ $O(n2^\frac{n}{2})$
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa_cpp title:Luogu_3878 Luogu/3878/0.cpp %}
+{% icodeweb cpa_cpp title:Luogu_P3878 Luogu/P3878/0.cpp %}
 
 </details>

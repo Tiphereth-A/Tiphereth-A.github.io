@@ -126,6 +126,6 @@ $O(n^3+m+q)$
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa_cpp title:Luogu_2011 Luogu/2011/0.cpp %}
+{% icodeweb cpa_cpp title:Luogu_P2011 Luogu/P2011/0.cpp %}
 
 </details>

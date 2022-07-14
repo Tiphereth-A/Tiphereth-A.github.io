@@ -87,6 +87,6 @@ $$
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa_cpp title:Luogu_1829 Luogu/1829/0.cpp %}
+{% icodeweb cpa_cpp title:Luogu_P1829 Luogu/P1829/0.cpp %}
 
 </details>
