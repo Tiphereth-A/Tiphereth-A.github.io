@@ -136,6 +136,6 @@ date: 2021-11-18 17:48:03
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa_cpp title:Luogu_5285 Luogu/5285/0.cpp %}
+{% icodeweb cpa_cpp title:Luogu_P5285 Luogu/P5285/0.cpp %}
 
 </details>

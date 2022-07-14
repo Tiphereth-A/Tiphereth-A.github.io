@@ -62,6 +62,6 @@ date: 2020-01-27 15:40:12
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa_cpp title:Luogu_4462 Luogu/4462/0.cpp %}
+{% icodeweb cpa_cpp title:Luogu_P4462 Luogu/P4462/0.cpp %}
 
 </details>

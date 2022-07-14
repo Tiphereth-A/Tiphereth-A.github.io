@@ -115,6 +115,6 @@ $O(\max\{\lg n,\sqrt p\})$
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa_cpp title:Luogu_4000 Luogu/4000/0.cpp %}
+{% icodeweb cpa_cpp title:Luogu_P4000 Luogu/P4000/0.cpp %}
 
 </details>
