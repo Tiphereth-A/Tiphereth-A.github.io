@@ -23,7 +23,7 @@ tags:
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:java draft-018/Main.java %}`
+{% include_code lang:java draft-018/Main.java %}
 
 </details>
 
