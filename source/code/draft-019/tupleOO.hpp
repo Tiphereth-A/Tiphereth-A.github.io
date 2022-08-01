@@ -25,17 +25,22 @@ constexpr auto apply2(BinOp &&f, Tuple &&lhs, Tuple &&rhs) {
         return apply2([](auto &&l, auto &&r) { return l oper r; }, lhs, rhs);                  \
     }
 
+#define OO_TUPLE_EQ_(op)   \
+    OO_TUPLE_(op)          \
+    template <class... Ts> \
+    constexpr auto operator oper##=(std::tuple<Ts...> &lhs, const std::tuple<Ts...> &rhs) { return lhs = lhs oper rhs; }
 
-OO_TUPLE_(+)
-OO_TUPLE_(-)
-OO_TUPLE_(*)
-OO_TUPLE_(/)
-OO_TUPLE_(%)
-OO_TUPLE_(&)
-OO_TUPLE_(|)
-OO_TUPLE_(^)
-OO_TUPLE_(<<)
-OO_TUPLE_(>>)
+
+OO_TUPLE_EQ_(+)
+OO_TUPLE_EQ_(-)
+OO_TUPLE_EQ_(*)
+OO_TUPLE_EQ_(/)
+OO_TUPLE_EQ_(%)
+OO_TUPLE_EQ_(&)
+OO_TUPLE_EQ_(|)
+OO_TUPLE_EQ_(^)
+OO_TUPLE_EQ_(<<)
+OO_TUPLE_EQ_(>>)
 OO_TUPLE_(&&)
 OO_TUPLE_(||)
 OO_TUPLE_(==)
@@ -46,6 +51,7 @@ OO_TUPLE_(>)
 OO_TUPLE_(>=)
 
 
+#undef OO_TUPLE_EQ_
 #undef OO_TUPLE_
 #undef TPL_SIZE_
 
