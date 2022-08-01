@@ -100,7 +100,7 @@ menu:
   frilinks: /frilinks/ || fa fa-users
   RSS: /atom.xml || fa fa-rss
   favlinks: /favlinks/ || fa fa-book
-  rand: /random/ || fa fa-dice
+  rand: /random || fa fa-dice
   # notfound: /404/ || fa fa-heart
 
 # Enable / Disable menu icons / item badges.
