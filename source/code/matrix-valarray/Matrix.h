@@ -61,8 +61,6 @@ class matrix {
     friend inline self operator>>(self lhs, const self &rhs);
 
 
-    friend inline matrix<bool> operator&&(const self &lhs, const Tp &val);
-    friend inline matrix<bool> operator||(const self &lhs, const Tp &val);
     friend inline matrix<bool> operator==(const self &lhs, const Tp &val);
     friend inline matrix<bool> operator==(const self &lhs, const Tp &val);
     friend inline matrix<bool> operator<(const self &lhs, const Tp &val);
@@ -70,8 +68,6 @@ class matrix {
     friend inline matrix<bool> operator>(const self &lhs, const Tp &val);
     friend inline matrix<bool> operator>=(const self &lhs, const Tp &val);
 
-    friend inline matrix<bool> operator&&(const self &lhs, const self &rhs);
-    friend inline matrix<bool> operator||(const self &lhs, const self &rhs);
     friend inline matrix<bool> operator==(const self &lhs, const self &rhs);
     friend inline matrix<bool> operator==(const self &lhs, const self &rhs);
     friend inline matrix<bool> operator<(const self &lhs, const self &rhs);

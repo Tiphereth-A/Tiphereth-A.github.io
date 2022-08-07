@@ -123,8 +123,6 @@ class matrix {
         return matrix<bool>(lhs.row_size(), lhs.col_size(), lhs.data op rhs.data);                                                                   \
     }
 
-    OPB__(&&)
-    OPB__(||)
     OPB__(==)
     OPB__(!=)
     OPB__(<)
