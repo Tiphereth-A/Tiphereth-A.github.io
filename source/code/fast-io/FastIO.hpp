@@ -28,6 +28,7 @@ class FastIn {
         file_ = file;
         now_ = end_ = buffer_;
     }
+    inline bool iseof() { return visit() == EOF; }
 
     template <class Tp, std::enable_if_t<type_traits::is_int_v<Tp>> * = nullptr>
     inline self &read(Tp &n) {
