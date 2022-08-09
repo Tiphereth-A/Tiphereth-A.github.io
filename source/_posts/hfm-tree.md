@@ -1,10 +1,10 @@
 ---
 title: 笔记 - Huffman 树与 Huffman 编码
 categories:
-  - 程序设计
+  - 算法竞赛
   - 笔记
 tags:
-  - 程序设计
+  - 算法竞赛
   - 笔记
   - 模板
   - 算法

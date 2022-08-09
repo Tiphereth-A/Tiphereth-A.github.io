@@ -1,11 +1,11 @@
 ---
 title: 笔记 - Simpson法与自适应Simpson法
 categories:
-  - 程序设计
+  - 算法竞赛
   - 笔记
 tags:
   - 数学
-  - 程序设计
+  - 算法竞赛
   - 算法
   - 模板
   - 数值积分

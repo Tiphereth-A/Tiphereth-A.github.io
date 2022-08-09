@@ -1,10 +1,10 @@
 ---
 title: 笔记 - Powerful number 与 Powerful number 筛
 categories:
-  - 程序设计
+  - 算法竞赛
   - 笔记
 tags:
-  - 程序设计
+  - 算法竞赛
   - 数学
   - 算法
   - 模板

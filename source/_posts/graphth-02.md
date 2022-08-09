@@ -235,7 +235,7 @@ $$\kappa(G)\leq|V_0|\leq|F|$$
 
 有向图的连通性略有不同:
 
-\{% note info no-icon %}
+{% note info no-icon %}
 
 **<a id="def-2-5">定义 - 2-5</a>**
 

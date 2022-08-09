@@ -1,10 +1,10 @@
 ---
 title: 笔记 - Cantor展开与逆Cantor展开
 categories:
-  - 程序设计
+  - 算法竞赛
   - 笔记
 tags:
-  - 程序设计
+  - 算法竞赛
   - 算法
   - 笔记
   - 模板

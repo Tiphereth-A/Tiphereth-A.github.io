@@ -1,10 +1,10 @@
 ---
 title: "题解 - [LightOJ 1282] Leading and Trailing"
 categories:
-  - 程序设计
+  - 算法竞赛
   - 题解
 tags:
-  - 程序设计
+  - 算法竞赛
   - 题解
   - LightOJ
   - 数学

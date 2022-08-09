@@ -1,11 +1,11 @@
 ---
 title: 题解 - ICPC North Central NA Regional Contest 2019
 categories:
-  - 程序设计
+  - 算法竞赛
   - 题解
   - ICPC
 tags:
-  - 程序设计
+  - 算法竞赛
   - 题解
   - ICPC
   - Kattis

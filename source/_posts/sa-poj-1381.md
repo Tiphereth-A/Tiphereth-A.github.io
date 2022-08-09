@@ -1,10 +1,10 @@
 ---
 title: "题解 - [POJ 1381 等] Secret Code"
 categories:
-  - 程序设计
+  - 算法竞赛
   - 题解
 tags:
-  - 程序设计
+  - 算法竞赛
   - 题解
   - POJ
   - ZOJ

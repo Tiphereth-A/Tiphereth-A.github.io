@@ -1,10 +1,10 @@
 ---
 title: 模板 - 基于 fread / fwrite 的快读快写
 categories:
-  - 程序设计
+  - 算法竞赛
   - 模板
 tags:
-  - 程序设计
+  - 算法竞赛
   - 模板
   - C++
   - 常数优化

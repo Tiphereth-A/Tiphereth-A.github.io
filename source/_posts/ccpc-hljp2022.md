@@ -4,11 +4,11 @@ author: "Tifa & Foi"
 coauthor:
   - Foi
 categories:
-  - 程序设计
+  - 算法竞赛
   - 题解
   - CCPC
 tags:
-  - 程序设计
+  - 算法竞赛
   - 题解
   - CCPC
   - 算法

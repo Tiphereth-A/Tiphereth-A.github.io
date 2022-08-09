@@ -1,11 +1,11 @@
 ---
 title: 题解 - ICPC 西北区域省赛 2020
 categories:
-  - 程序设计
+  - 算法竞赛
   - 题解
   - ICPC
 tags:
-  - 程序设计
+  - 算法竞赛
   - 题解
   - ICPC
   - 数学

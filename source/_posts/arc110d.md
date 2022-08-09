@@ -1,10 +1,10 @@
 ---
 title: "题解 - [AtCoder ARC110D] Binomial Coefficient is Fun"
 categories:
-  - 程序设计
+  - 算法竞赛
   - 题解
 tags:
-  - 程序设计
+  - 算法竞赛
   - 题解
   - AtCoder
   - 数学

@@ -4,10 +4,10 @@ author: "Tifa & AgOH(code D)"
 coauthor:
   - AgOH
 categories:
-  - 程序设计
+  - 算法竞赛
   - 题解
 tags:
-  - 程序设计
+  - 算法竞赛
   - 题解
   - 校赛
   - 数学

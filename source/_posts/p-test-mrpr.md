@@ -1,10 +1,10 @@
 ---
 title: 模板 - Miller-Rabin 素性检验与 Pollard-Rho 算法
 categories:
-  - 程序设计
+  - 算法竞赛
   - 模板
 tags:
-  - 程序设计
+  - 算法竞赛
   - 模板
   - C++
   - 数学

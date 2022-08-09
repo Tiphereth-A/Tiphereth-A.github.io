@@ -1,10 +1,10 @@
 ---
 title: "题解 - [Codeforces Global Round 10](A - D & F)"
 categories:
-  - 程序设计
+  - 算法竞赛
   - 题解
 tags:
-  - 程序设计
+  - 算法竞赛
   - 题解
   - CodeForces
   - 数学

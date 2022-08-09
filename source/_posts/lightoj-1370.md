@@ -1,10 +1,10 @@
 ---
 title: "题解 - [LightOJ 1370] Bi-shoe and Phi-shoe"
 categories:
-  - 程序设计
+  - 算法竞赛
   - 题解
 tags:
-  - 程序设计
+  - 算法竞赛
   - 题解
   - LightOJ
   - 数学

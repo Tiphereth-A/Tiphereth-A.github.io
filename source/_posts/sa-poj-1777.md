@@ -1,10 +1,10 @@
 ---
 title: "题解 - [POJ 1777 等] Vivian's Problem"
 categories:
-  - 程序设计
+  - 算法竞赛
   - 题解
 tags:
-  - 程序设计
+  - 算法竞赛
   - 题解
   - POJ
   - UVa

@@ -1,10 +1,10 @@
 ---
 title: "题解 - [Luogu P1182] 数列分段 Section II"
 categories:
-  - 程序设计
+  - 算法竞赛
   - 题解
 tags:
-  - 程序设计
+  - 算法竞赛
   - 题解
   - 洛谷
   - 二分

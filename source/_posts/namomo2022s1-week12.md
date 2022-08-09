@@ -1,10 +1,10 @@
 ---
 title: Namomo Spring Camp 2022 Div1 每日一题记录 (Week 12)
 categories:
-  - 程序设计
+  - 算法竞赛
   - 题解
 tags:
-  - 程序设计
+  - 算法竞赛
   - 题解
   - 代码源
   - USACO
