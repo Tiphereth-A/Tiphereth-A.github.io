@@ -24,7 +24,7 @@ date: 2020-04-19 11:02:38
 
 ## 性质
 
-1. 来自[数论笔记-原根与指数(离散对数)](../primitive-root-and-discrete-logarithm)中 3.1.2 的特化
+1. 来自 {% post_link primitive-root-and-discrete-logarithm %} 中 3.1.2 的特化
 
    1. $a$为模$m$的二次剩余$\iff 2\mid\operatorname{ind}_ga\iff a^\frac{m-1}{2}\equiv1\pmod m$
    1. $a$为模$m$的二次剩余
