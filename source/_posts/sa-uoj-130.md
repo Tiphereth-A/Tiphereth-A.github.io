@@ -1,10 +1,10 @@
 ---
 title: "题解 - [UOJ 130 等] 【NOI2015】荷马史诗"
 categories:
-  - 程序设计
+  - 算法竞赛
   - 题解
 tags:
-  - 程序设计
+  - 算法竞赛
   - 题解
   - UOJ
   - BZOJ

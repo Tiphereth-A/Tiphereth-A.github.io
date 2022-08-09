@@ -1,10 +1,10 @@
 ---
 title: "题解 - [Luogu P2915] [USACO08NOV]奶牛混合起来Mixed Up Cows"
 categories:
-  - 程序设计
+  - 算法竞赛
   - 题解
 tags:
-  - 程序设计
+  - 算法竞赛
   - 题解
   - 洛谷
   - USACO

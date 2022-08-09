@@ -1,11 +1,11 @@
 ---
 title: "笔记 - 整除分块, Dirichlet卷积, Dirichlet前缀和, 积性函数, Möbius反演, 杜教筛"
 categories:
-  - 程序设计
+  - 算法竞赛
   - 数学
 tags:
   - 数学
-  - 程序设计
+  - 算法竞赛
   - 笔记
   - 模板
   - 数论

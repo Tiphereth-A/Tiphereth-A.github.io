@@ -1,10 +1,10 @@
 ---
 title: "题解 - [Luogu P5025] [SNOI2017]炸弹"
 categories:
-  - 程序设计
+  - 算法竞赛
   - 题解
 tags:
-  - 程序设计
+  - 算法竞赛
   - 题解
   - 省选
   - SNOI

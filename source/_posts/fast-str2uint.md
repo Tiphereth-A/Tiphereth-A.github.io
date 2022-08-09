@@ -1,10 +1,10 @@
 ---
 title: 模板 - string 转 uint 的一种快速算法
 categories:
-  - 程序设计
+  - 算法竞赛
   - 模板
 tags:
-  - 程序设计
+  - 算法竞赛
   - 模板
   - C++
   - 算法

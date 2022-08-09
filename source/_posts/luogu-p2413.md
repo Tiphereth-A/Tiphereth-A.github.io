@@ -1,10 +1,10 @@
 ---
 title: "题解 - [Luogu P2413] yyy loves physics IV"
 categories:
-  - 程序设计
+  - 算法竞赛
   - 题解
 tags:
-  - 程序设计
+  - 算法竞赛
   - 题解
   - 洛谷
   - 数学

@@ -1,10 +1,10 @@
 ---
 title: "题解 - [POJ 2568 等] Decode the Tree"
 categories:
-  - 程序设计
+  - 算法竞赛
   - 题解
 tags:
-  - 程序设计
+  - 算法竞赛
   - 题解
   - POJ
   - ZOJ

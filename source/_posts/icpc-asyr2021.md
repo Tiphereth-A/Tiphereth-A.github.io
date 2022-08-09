@@ -1,11 +1,11 @@
 ---
 title: 题解 - 2021 ICPC 亚洲区域赛(沈阳)
 categories:
-  - 程序设计
+  - 算法竞赛
   - 题解
   - ICPC
 tags:
-  - 程序设计
+  - 算法竞赛
   - 题解
   - ICPC
   - 算法

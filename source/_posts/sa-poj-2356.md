@@ -1,10 +1,10 @@
 ---
 title: "题解 - [POJ 2356 等] Find a multiple"
 categories:
-  - 程序设计
+  - 算法竞赛
   - 题解
 tags:
-  - 程序设计
+  - 算法竞赛
   - 题解
   - POJ
   - Ural
