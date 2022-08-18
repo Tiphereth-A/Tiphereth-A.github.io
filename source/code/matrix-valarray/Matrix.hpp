@@ -74,14 +74,14 @@ class matrix {
     matrix(
         size_t row,
         size_t col,
-        const Tp &val = Tp{},
-        Iszero_t iszero_func = [](const Tp &x) { return x == Tp{}; }
+        Iszero_t iszero_func,
+        const Tp &val = Tp{}
     ): r_sz(row), c_sz(col), iszero(iszero_func), data(val, row * col) { ASSERT_(row > 0 && col > 0); }
     matrix(
         size_t row,
         size_t col,
-        const std::valarray<Tp> &data_,
-        Iszero_t iszero_func = [](const Tp &x) { return x == Tp{}; }
+        Iszero_t iszero_func,
+        const std::valarray<Tp> &data_
     ): r_sz(row), c_sz(col), iszero(iszero_func), data(data_) { ASSERT_(row > 0 && col > 0); }
 
     constexpr size_t row_size() const { return r_sz; }
@@ -101,8 +101,7 @@ class matrix {
         return os;
     }
 
-
-#define INVOKES_SLICE__(name, para1_t, para1, ...) inline std::valarray<Tp> name(para1_t para1) const __VA_ARGS__ inline std::slice_array<Tp> name(para1_t para1) __VA_ARGS__
+#define INVOKES_SLICE__(name, para1_t, para1, ...) inline std::valarray<Tp> name(para1_t para1) const __VA_ARGS__ inline std::slice_array<Tp> name(para1_t para1) __VA_ARGS__ inline std::valarray<Tp> name##_varray(para1_t para1) const __VA_ARGS__
 
     INVOKES_SLICE__(row, size_t, r, { return data[std::slice(r * col_size(), col_size(), 1)]; })
     INVOKES_SLICE__(col, size_t, c, { return data[std::slice(c, row_size(), col_size())]; })
@@ -164,7 +163,7 @@ class matrix {
     friend inline self operator op(const self &lhs, const self &rhs) __VA_ARGS__ inline self &operator op##=(const self &rhs) { return *this = *this op rhs; }
     OPF__(*, {
         ASSERT_(lhs.col_size() == rhs.row_size());
-        self ret(lhs.row_size(), rhs.col_size(), Tp{}, lhs.iszero);
+        self ret(lhs.row_size(), rhs.col_size(), lhs.iszero, Tp{});
         for (size_t i = 0; i < ret.row_size(); ++i) {
             auto &&r_ = lhs.row(i);
             for (size_t j = 0; j < ret.col_size(); ++j) ret(i, j) = (r_ * rhs.col(j)).sum();
@@ -205,14 +204,14 @@ class matrix {
     inline ptrdiff_t do_gauss(bool clear_all = true) { return USE_EUCLIDIAN ? do_gauss_euclidian_(clear_all) : do_gauss_default_(clear_all); }
 
     inline self transpose() const {
-        self ret(col_size(), row_size(), 0, iszero);
+        self ret(col_size(), row_size(), iszero, Tp{});
         for (size_t i = 0; i < row_size(); ++i) ret.col(i) = row(i);
         return ret;
     }
 
     inline self inverse() const {
         ASSERT_(row_size() == col_size());
-        self ret(row_size(), col_size(), 0, iszero);
+        self ret(row_size(), col_size(), iszero, Tp{});
         ret.diag(0) = 1;
         ASSERTT_(std::abs((ret = merge_lr(*this, ret)).do_gauss()) == row_size(), "Inverse not exist");
         for (size_t i = 0; i < row_size(); ++i) ret.data[std::slice((i * 2 + 1) * col_size(), col_size(), 1)] /= std::valarray<Tp>(ret(i, i), col_size());
@@ -221,7 +220,7 @@ class matrix {
     }
 
     inline Tp trace() const { return diag(0).sum(); }
-
+    
     inline size_t rank() const { return std::abs(self(*this).do_gauss(false)); }
 
     inline Tp det() const {
@@ -234,6 +233,13 @@ class matrix {
         return rk_ < 0 ? -ret : ret;
     }
 
+    friend self pow(self mat, size_t b) {
+        self res(mat.row_size(), mat.col_size(), mat.iszero, Tp{});
+        res.diag(0) = 1;
+        for (; b; b >>= 1, mat *= mat)
+            if (b & 1) res *= mat;
+        return res;
+    }
 #undef ASSERT_
 #undef ASSERTT_
 };
