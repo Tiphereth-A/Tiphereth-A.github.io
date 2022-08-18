@@ -7,7 +7,7 @@ using std::cin, std::cout, std::endl;
 int main() {
     int n;
     cin >> n;
-    matrix<double> a(n, n, 0, [](double x) { return std::abs(x) <= 1e-8; });
+    matrix<double> a(n, n, [](double x) { return std::abs(x) <= 1e-8; }, 0);
     cin >> a;
     cout << a << endl
          << a.transpose() << endl

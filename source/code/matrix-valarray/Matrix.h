@@ -8,13 +8,13 @@ class matrix {
     matrix(
         size_t row,
         size_t col,
-        const Tp &val = Tp{},
-        Iszero_t iszero_func = [](const Tp &x) { return x == Tp{}; });
+        Iszero_t iszero_func,
+        const Tp &val);
     matrix(
         size_t row,
         size_t col,
-        const std::valarray<Tp> &data_,
-        Iszero_t iszero_func = [](const Tp &x) { return x == Tp{}; });
+        Iszero_t iszero_func,
+        const std::valarray<Tp> &data_);
 
     constexpr size_t row_size() const;
     constexpr size_t col_size() const;
@@ -30,10 +30,13 @@ class matrix {
     inline std::valarray<Tp> row(size_t r) const;
     inline std::valarray<Tp> col(size_t c) const;
     inline std::valarray<Tp> diag(ptrdiff_t d) const;
-    inline self submatrix(size_t row_l, size_t row_r, size_t col_l, size_t col_r) const;
     inline std::slice_array<Tp> row(size_t r);
     inline std::slice_array<Tp> col(size_t c);
     inline std::slice_array<Tp> diag(ptrdiff_t d);
+    inline std::valarray<Tp> row_varray(size_t r) const;
+    inline std::valarray<Tp> col_varray(size_t c) const;
+    inline std::valarray<Tp> diag_varray(ptrdiff_t d) const;
+    inline self submatrix(size_t row_l, size_t row_r, size_t col_l, size_t col_r) const;
     inline std::gslice_array<Tp> submatrix_raw(size_t row_l, size_t row_r, size_t col_l, size_t col_r);
 
 
@@ -111,6 +114,7 @@ class matrix {
     inline Tp trace() const;
     inline size_t rank() const;
     inline Tp det() const;
+    friend self pow(self mat, size_t b);
 
   protected:
     size_t r_sz, c_sz;
