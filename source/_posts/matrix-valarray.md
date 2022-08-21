@@ -24,7 +24,7 @@ date: 2022-08-02 10:28:15
 ## 使用说明
 
 - 元素类型 `Tp` 须有接受 1 个整数的构造函数, `Tp{0}` 需为零元, `Tp{1}` 需为幺元
-- Gauss-Jordan 消元法有普通版与辗转相除版, 其中普通版推荐用于浮点数, 辗转相除版推荐用于 $\Z_m$, 默认情况下只在 `std::is_integral_v<Tp>` 为真时才启用辗转相除版, 可通过模板参数 `USE_EUCLIDIAN` 手动设置是否启用
+- Gauss-Jordan 消元法有普通版, 辗转相除版与异或版, 其中普通版推荐用于浮点数, 辗转相除版推荐用于整数, 异或版推荐用于 `bool`, 这三种实现分别位于 `Matrix::matrix`, `Matrix::matrix_int`, `Matrix::matrix_bool` 中
 
 ## 成员函数&友元函数列表
 
@@ -40,6 +40,15 @@ date: 2022-08-02 10:28:15
 </details>
 
 ## 示例
+
+- 洛谷 P2447 [[SDOI2010] 外星千足虫](https://www.luogu.com.cn/problem/P2447)
+
+  <details>
+  <summary><font color='orange'>Show code</font></summary>
+
+  {% icodeweb cpa_cpp title:Luogu_P2447 Luogu/P2447/0.cpp %}
+
+  </details>
 
 <details open>
 <summary><font color='orange'>Show code</font></summary>

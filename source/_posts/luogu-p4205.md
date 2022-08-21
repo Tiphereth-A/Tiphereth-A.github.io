@@ -135,6 +135,6 @@ ELLLLIFFFF
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa_cpp title:Luogu_P1182 Luogu/P4205/0.cpp %}
+{% icodeweb cpa_cpp title:Luogu_P4205 Luogu/P4205/0.cpp %}
 
 </details>
