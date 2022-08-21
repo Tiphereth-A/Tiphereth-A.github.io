@@ -50,20 +50,9 @@ class matrix {
                 neg ^= true;
             }
             for (size_t j = clear_all ? 0 : rk + 1; j < row_size(); ++j) {
-                if ((*this)(j, i) > (*this)(i, i)) {
-                    std::valarray<Tp> tmp_ = row(j);
-                    row(j) = row(i);
-                    row(i) = tmp_;
-                    neg ^= true;
-                }
-                while (iszero(!(*this)(i, i))) {
-                    Tp _ = (*this)(j, i) / (*this)(i, i);
-                    std::valarray<Tp> tmp_ = row(i);
-                    row(j) -= tmp_ * _;
-                    row(i) = row(j);
-                    row(j) = tmp_;
-                    neg ^= true;
-                }
+                if (j == rk || iszero((*this)(j, i))) continue;
+                Tp lcm_ = std::lcm((*this)(j, i), (*this)(i, i)), j_ = lcm_ / (*this)(j, i), i_ = lcm_ / (*this)(i, i);
+                row(j) = j_ * row_varray(j) - i_ * row_varray(i);
             }
             ++rk;
         }
@@ -220,7 +209,7 @@ class matrix {
     }
 
     inline Tp trace() const { return diag(0).sum(); }
-    
+
     inline size_t rank() const { return std::abs(self(*this).do_gauss(false)); }
 
     inline Tp det() const {
