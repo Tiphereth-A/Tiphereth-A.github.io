@@ -126,7 +126,7 @@ class matrix {
 };
 
 template <class Tp>
-class matrix_int: public matrix<int> {
+class matrix_int: public matrix<Tp> {
   public:
     matrix_int(
         size_t row,

@@ -225,11 +225,11 @@ class matrix {
 };
 
 template <class Tp>
-class matrix_int: public matrix<int> {
+class matrix_int: public matrix<Tp> {
     static_assert(std::is_integral<Tp>::value);
 
     using self = matrix_int<Tp>;
-    using base = matrix<int>;
+    using base = matrix<Tp>;
 
   private:
     constexpr static auto isz__ = [](Tp const &x) { return x == 0; };
