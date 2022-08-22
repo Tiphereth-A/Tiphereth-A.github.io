@@ -47,9 +47,9 @@ std::optional<data_type> quad_residue(const data_type &n, const unsigned_data_t 
         constexpr _gsint(const _gsint &) = default;
 
         constexpr self &operator*=(const self &rhs) {
-            const data_type _ = (mul_mod(real, rhs.real, mod) + mul_mod(imag, rhs.imag, mod)) % mod;
-            real = (mul_mod(real, rhs.real, mod) + mul_mod(mul_mod(i_sqr, imag, mod), rhs.imag, mod)) % mod;
-            imag = _;
+            const data_t _r = real, _i = imag;
+            real = (mul_mod(_r, rhs.real, mod) + mul_mod(mul_mod(i_sqr, _i, mod), rhs.imag, mod)) % mod;
+            imag = (mul_mod(_i, rhs.real, mod) + mul_mod(_r, rhs.imag, mod)) % mod;
             return *this;
         }
     };
