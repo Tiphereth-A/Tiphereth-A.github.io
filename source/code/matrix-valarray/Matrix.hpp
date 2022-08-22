@@ -165,7 +165,7 @@ class matrix {
         diag_cycle(d2) = __;
     }
 
-    inline virtual ptrdiff_t do_gauss_range(size_t row_start, size_t row_end, bool clear_all = true) {
+    inline virtual int64_t do_gauss_range(size_t row_start, size_t row_end, bool clear_all = true) {
         assert(row_start < row_end && row_end <= row_size());
         size_t rk = 0;
         bool neg = false;
@@ -173,7 +173,7 @@ class matrix {
             neg ^= gauss_swapr__(now_row, rk, i, row_end);
             if (iszero((*this)(rk, i))) continue;
             std::valarray<Tp> tmp_ = data[std::slice(rk * col_size() + i + 1, col_size() - i - 1, 1)];
-            for (size_t j = clear_all ? 0 : rk + 1; j < row_end; ++j) {
+            for (int64_t j = clear_all ? 0 : rk + 1; j < (int64_t)row_end; ++j) {
                 if (j == rk || iszero((*this)(j, i))) continue;
                 Tp &&_ = (*this)(j, i) / (*this)(rk, i);
                 (*this)(j, i) = 0;
@@ -181,7 +181,7 @@ class matrix {
             }
             ++rk;
         }
-        return neg ? -ptrdiff_t(rk) : ptrdiff_t(rk);
+        return neg ? -rk : rk;
     }
     inline ptrdiff_t do_gauss(bool clear_all = true) { return do_gauss_range(0, std::min(row_size(), col_size()), clear_all); }
 
@@ -225,11 +225,11 @@ class matrix {
 };
 
 template <class Tp>
-class matrix_int: public matrix<int> {
+class matrix_int: public matrix<Tp> {
     static_assert(std::is_integral<Tp>::value);
 
     using self = matrix_int<Tp>;
-    using base = matrix<int>;
+    using base = matrix<Tp>;
 
   private:
     constexpr static auto isz__ = [](Tp const &x) { return x == 0; };
@@ -238,22 +238,22 @@ class matrix_int: public matrix<int> {
     matrix_int(size_t row, size_t col, const Tp &val = Tp{}): base(row, col, isz__, val) {}
     matrix_int(size_t row, size_t col, const std::valarray<Tp> &data_): base(row, col, isz__, data_) {}
 
-    inline ptrdiff_t do_gauss_range(size_t row_start, size_t row_end, bool clear_all = true) override {
-        assert(row_start < row_end && row_end <= row_size());
-        size_t rk = 0;
+    inline int64_t do_gauss_range(size_t row_start, size_t row_end, bool clear_all = true) override {
+        assert(row_start < row_end && row_end <= this->row_size());
+        int64_t rk = 0;
         bool neg = false;
-        for (size_t i = row_start, now_row; i < std::min(row_end, col_size()); ++i) {
-            neg ^= gauss_swapr__(now_row, rk, i, row_end);
-            if (iszero((*this)(rk, i))) continue;
-            std::valarray<Tp> tmp_ = row(rk);
-            for (size_t j = clear_all ? 0 : rk; j < row_end; ++j) {
-                if (j == rk || iszero((*this)(j, i))) continue;
+        for (size_t i = row_start, now_row; i < std::min(row_end, this->col_size()); ++i) {
+            neg ^= this->gauss_swapr__(now_row, rk, i, row_end);
+            if (this->iszero((*this)(rk, i))) continue;
+            std::valarray<Tp> tmp_ = this->row(rk);
+            for (int64_t j = clear_all ? 0 : rk; j < (int64_t)row_end; ++j) {
+                if (j == rk || this->iszero((*this)(j, i))) continue;
                 Tp lcm_ = std::lcm((*this)(j, i), (*this)(rk, i)), j_ = lcm_ / (*this)(j, i), i_ = lcm_ / (*this)(rk, i);
-                row(j) = j_ * row_varray(j) - i_ * tmp_;
+                this->row(j) = j_ * this->row_varray(j) - i_ * tmp_;
             }
             ++rk;
         }
-        return neg ? -ptrdiff_t(rk) : ptrdiff_t(rk);
+        return neg ? -rk : rk;
     }
 };
 
@@ -268,22 +268,22 @@ class matrix_bool: public matrix<bool> {
     matrix_bool(size_t row, size_t col, bool val = false): base(row, col, isz__, val) {}
     matrix_bool(size_t row, size_t col, const std::valarray<bool> &data_): base(row, col, isz__, data_) {}
 
-    inline ptrdiff_t do_gauss_range(size_t row_start, size_t row_end, bool clear_all = true) override {
-        assert(row_start < row_end && row_end <= row_size());
+    inline int64_t do_gauss_range(size_t row_start, size_t row_end, bool clear_all = true) override {
+        assert(row_start < row_end && row_end <= this->row_size());
         size_t rk = 0;
         bool neg = false;
-        for (size_t i = row_start, now_row; i < std::min(row_end, col_size()); ++i) {
-            neg ^= gauss_swapr__(now_row, rk, i, row_end);
-            if (iszero((*this)(rk, i))) continue;
-            std::valarray<bool> tmp_ = data[std::slice(rk * col_size() + i + 1, col_size() - i - 1, 1)];
-            for (size_t j = clear_all ? 0 : rk + 1; j < row_end; ++j) {
-                if (j == rk || iszero((*this)(j, i))) continue;
+        for (size_t i = row_start, now_row; i < std::min(row_end, this->col_size()); ++i) {
+            neg ^= this->gauss_swapr__(now_row, rk, i, row_end);
+            if (this->iszero((*this)(rk, i))) continue;
+            std::valarray<bool> tmp_ = data[std::slice(rk * this->col_size() + i + 1, this->col_size() - i - 1, 1)];
+            for (int64_t j = clear_all ? 0 : rk + 1; j < (int64_t)row_end; ++j) {
+                if (j == rk || this->iszero((*this)(j, i))) continue;
                 (*this)(j, i) = false;
-                data[std::slice(j * col_size() + i + 1, col_size() - i - 1, 1)] ^= tmp_;
+                data[std::slice(j * this->col_size() + i + 1, this->col_size() - i - 1, 1)] ^= tmp_;
             }
             ++rk;
         }
-        return neg ? -ptrdiff_t(rk) : ptrdiff_t(rk);
+        return neg ? -rk : rk;
     }
 };
 }  // namespace Matrix

@@ -279,3 +279,17 @@ icodeweb:
         @Description: From <https://github.com/Tiphereth-A/CP-archives>
         !!! ATTENEION: All the context below is licensed under a GNU Affero General Public License, Version 3. See <https://www.gnu.org/licenses/agpl-3.0.txt>.
         """
+    - name: cpw_cpp
+      lang_default: cpp
+      website: https://raw.githubusercontent.com
+      prefix:
+        - Tiphereth-A
+        - CP-workspace
+        - main
+      suffix:
+      codehead: |
+        /*
+         * @Author: Tifa
+         * @Description: From <https://github.com/Tiphereth-A/CP-workspace>
+         * !!! ATTENEION: All the context below is licensed under a GNU General Public License, Version 3. See <https://www.gnu.org/licenses/gpl-3.0.txt>.
+         */

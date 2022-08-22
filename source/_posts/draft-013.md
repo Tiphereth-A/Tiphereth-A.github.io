@@ -35,7 +35,7 @@ $$\Delta_x=\Delta_y$$
 - $$\Delta_x:=\sum_{i=1}^n\frac{\partial^2}{\partial x_i^2}$$
 - $$\Delta_y:=\sum_{i=1}^n\frac{\partial^2}{\partial y_i^2}$$
 
-{% note %}
+---
 
 **Proof** 显然
 
@@ -60,5 +60,4 @@ $$
 \end{aligned}
 $$
 
-{% endnote %}
 {% endnote %}

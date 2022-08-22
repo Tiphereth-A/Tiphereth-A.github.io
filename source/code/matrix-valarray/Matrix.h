@@ -110,7 +110,7 @@ class matrix {
     constexpr void swap_col(size_t c1, size_t c2);
     constexpr void swap_diag_cycle(size_t d1, size_t d2);
 
-    inline virtual ptrdiff_t do_gauss_range(size_t row_start, size_t row_end, bool clear_all = true);
+    inline virtual int64_t do_gauss_range(size_t row_start, size_t row_end, bool clear_all = true);
     inline ptrdiff_t do_gauss(bool clear_all = true);
     inline self transpose() const;
     inline self inverse() const;
@@ -126,7 +126,7 @@ class matrix {
 };
 
 template <class Tp>
-class matrix_int: public matrix<int> {
+class matrix_int: public matrix<Tp> {
   public:
     matrix_int(
         size_t row,
@@ -137,7 +137,7 @@ class matrix_int: public matrix<int> {
         size_t col,
         const std::valarray<Tp> &data_);
 
-    inline ptrdiff_t do_gauss_range(size_t row_start, size_t row_end, bool clear_all = true) override;
+    inline int64_t do_gauss_range(size_t row_start, size_t row_end, bool clear_all = true) override;
 };
 
 class matrix_bool: public matrix<bool> {
@@ -151,5 +151,5 @@ class matrix_bool: public matrix<bool> {
         size_t col,
         const std::valarray<bool> &data_);
 
-    inline ptrdiff_t do_gauss_range(size_t row_start, size_t row_end, bool clear_all = true) override;
+    inline int64_t do_gauss_range(size_t row_start, size_t row_end, bool clear_all = true) override;
 };
