@@ -37,10 +37,8 @@ $$\Delta_x=\Delta_y$$
 
 {% note %}
 
-<details>
-<summary><font color='orange'>Proof</font></summary>
+**Proof** 显然
 
-显然
 $$y_i=\sum_{j=1}^no_{ij}x_j,\ \forall i=1..n$$
 
 故我们有
@@ -61,8 +59,6 @@ $$
   &=\Delta_y
 \end{aligned}
 $$
-
-</details>
 
 {% endnote %}
 {% endnote %}
