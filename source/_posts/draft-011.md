@@ -24,6 +24,10 @@ date: 2021-05-07 14:05:47
   \end{cases}
   $$
 
+## 关于数论函数
+
+- $$\varphi(xy)=\varphi(x)\varphi(y)\frac{\gcd\{x,y\}}{\varphi(\gcd\{x,y\})}$$
+
 ## 莫反相关结论
 
 - $$\sum_{i=1}^n\sum_{j=1}^m(i,j)^k=\sum_{D=1}^{\min\{n,m\}}\left\lfloor\frac{n}{D}\right\rfloor\left\lfloor\frac{m}{D}\right\rfloor\{\operatorname{id}_k*\mu\}(D)$$
