@@ -11,6 +11,7 @@ tags:
   - SDOI
   - 数学
   - 数论
+  - Iverson括号
   - Möbius反演
 date: 2021-06-02 13:24:59
 ---
