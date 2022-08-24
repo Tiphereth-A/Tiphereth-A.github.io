@@ -16,7 +16,7 @@ tags:
 date: 2021-10-29 03:09:51
 ---
 
-[题目链接](https://www.luogu.com.cn/problem/P2258)
+[题目链接](https://www.luogu.com.cn/problem/P2508)
 
 <!-- more -->
 
