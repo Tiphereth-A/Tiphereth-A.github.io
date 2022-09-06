@@ -130,7 +130,7 @@ $$(\vec u,\vec v)=|\vec u||\vec v|(\cos\alpha-\sin\alpha\cot\beta)$$
 
 $$(\vec e_i,\vec e_j)=[i=j]$$
 
-其中 $[]$ 为 Iverson 括号
+其中 $[\cdot]$ 为 Iverson 括号
 
 我们称满足上述性质的基为 **单位正交基**
 
@@ -139,6 +139,8 @@ $$(\vec e_i,\vec e_j)=[i=j]$$
 若 $(\vec a,\vec b)=0$, 则称两向量 **正交**, 记作 $\vec a\perp\vec b$
 
 不难发现, 若两向量正交, 则按角度的定义, 两向量的角度为 $90\degree$, 这样我们的目的便达成了
+
+联系我们在 [引入](#引入) 中提到的两个坐标系下内积的差异, 我们发现, 单位正交基下的内积运算往往非常简洁, 之后我们会利用这一点
 
 ### 结语
 
@@ -343,8 +345,6 @@ $$u(x)v(x)=\sum_{k=0}^{\infty}\left(\textcolor{3700cc}{\sum_{j=0}^k\xi_j\rho_{k-
 > $\psi_k=(u(x),e^{ikx}), \mu_k=(v(x),e^{ikx})\implies \psi_k\mu_k=(u(x)v(x),e^{ikx})$ (按 $B_p$ 下的系数拆分 $u,v$ 再合并)
 
 我们注意到计算 <font color="3700cc">靛蓝色</font> 部分的时间复杂度为 $O(k)$, 而计算 <font color="a50040">枣红色</font> 部分的时间复杂度为 $O(1)$
-
-联系我们在 [引入](#引入) 中提到的两个坐标系下内积的差异, 我们很容易便可以发现正交基的巨大优势
 
 回到本节, 将 $B_p$ 下的系数变为 $B_f$ 下的系数即为 **Fourier 变换**, 反之即为 **Fourier 逆变换**
 
