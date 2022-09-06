@@ -200,11 +200,13 @@ $$(\cdot,\cdot):V\times V\to\Bbb{P}$$
 满足
 
 - (正定性) $(x,x)\geq 0,~\forall x\in V$, $(x,x)=0\iff x=\vec 0$
-- (共轭对称性[^1]) $(x,y)=\overline{(y,x)},~\forall x,y\in V$
+- (共轭对称性) $(x,y)=\overline{(y,x)},~\forall x,y\in V$
+
+  > 实际上本条要求是多余的
+  >
+  > 若 $q$ 是 $(\cdot,\cdot)$ 诱导的二次型, 则 $q(x)\in\R,~\forall x\in V\iff(x,y)=\overline{(y,x)},~\forall x,y\in V$
 
 则称其是一个 **内积**, 有内积的线性空间称为 **内积空间**
-
-[^1]: 实际上本条要求是多余的. 若 $q$ 是 $(\cdot,\cdot)$ 诱导的二次型, 则 $q(x)\in\R,~\forall x\in V\iff(x,y)=\overline{(y,x)},~\forall x,y\in V$
 
 {% endnote %}
 
@@ -226,10 +228,12 @@ $$(\cdot,\cdot):V\times V\to\Bbb{P}$$
 
 {% note success no-icon %}
 
-**<a id="th-2-1">定理 - 2-1</a>** (Jordan-von Neumann 定理) 在完备的赋范线性空间[^1] $(V,\lVert\cdot\rVert)$ 中, 若可在 $V$ 上引入内积 $(\cdot,\cdot)$ 满足对任意 $x\in V$ 均有 $(x,x)^{\frac{1}{2}}=\lVert x\rVert$, 范数 $\lVert\cdot\rVert$ 必须且仅须满
+**<a id="th-2-1">定理 - 2-1</a>** (Jordan-von Neumann 定理) 在完备的赋范线性空间 $(V,\lVert\cdot\rVert)$ 中, 若可在 $V$ 上引入内积 $(\cdot,\cdot)$ 满足对任意 $x\in V$ 均有 $(x,x)^{\frac{1}{2}}=\lVert x\rVert$, 范数 $\lVert\cdot\rVert$ 必须且仅须满
 足如下的平行四边形等式:
 
 $$\lVert x+y\rVert^2+\lVert x-y\rVert^2=2(\lVert x\rVert^2+\lVert y\rVert^2),~\forall x,y\in V$$
+
+> 完备的赋范线性空间即 Banach 空间, 为简化理解, 本篇文章不介绍完备性的概念, 本文章中保证提到的所有具体的内积空间和赋范线性空间都是完备的. 另外, 完备的内积空间也叫 Hilbert 空间
 
 <details open>
 <summary>证明</summary>
@@ -243,12 +247,9 @@ $$
 \end{cases}
 $$
 
-具体过程略[^2]
+具体过程略
 
 </details>
-
-[^1]: 即 Banach 空间, 为简化理解, 本篇文章不介绍完备性的概念, 本文章中保证提到的所有具体的内积空间和赋范线性空间都是完备的. 另外, 完备的内积空间也叫 Hilbert 空间
-[^2]: 只需验证是否满足内积定义和是否完备即可
 
 {% endnote %}
 
