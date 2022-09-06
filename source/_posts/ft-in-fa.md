@@ -202,11 +202,11 @@ $$(\cdot,\cdot):V\times V\to\Bbb{P}$$
 - (正定性) $(x,x)\geq 0,~\forall x\in V$, $(x,x)=0\iff x=\vec 0$
 - (共轭对称性[^2]) $(x,y)=\overline{(y,x)},~\forall x,y\in V$
 
-[^2]: 实际上本条要求是多余的. 若 $q$ 是 $(\cdot,\cdot)$ 诱导的二次型, 则 $q(x)\in\R,~\forall x\in V\iff(x,y)=\overline{(y,x)},~\forall x,y\in V$
-
 则称其是一个 **内积**, 有内积的线性空间称为 **内积空间**
 
 {% endnote %}
+
+[^2]: 实际上本条要求是多余的. 若 $q$ 是 $(\cdot,\cdot)$ 诱导的二次型, 则 $q(x)\in\R,~\forall x\in V\iff(x,y)=\overline{(y,x)},~\forall x,y\in V$
 
 {% note info no-icon %}
 
@@ -231,8 +231,6 @@ $$(\cdot,\cdot):V\times V\to\Bbb{P}$$
 
 $$\lVert x+y\rVert^2+\lVert x-y\rVert^2=2(\lVert x\rVert^2+\lVert y\rVert^2),~\forall x,y\in V$$
 
-[^3]: 即 Banach 空间, 为简化理解, 本篇文章不介绍完备性的概念, 本文章中保证提到的所有具体的内积空间和赋范线性空间都是完备的. 另外, 完备的内积空间也叫 Hilbert 空间
-
 <details open>
 <summary>证明</summary>
 
@@ -247,11 +245,12 @@ $$
 
 具体过程略[^4]
 
-[^4]: 只需验证是否满足内积定义和是否完备即可
-
 </details>
 
 {% endnote %}
+
+[^3]: 即 Banach 空间, 为简化理解, 本篇文章不介绍完备性的概念, 本文章中保证提到的所有具体的内积空间和赋范线性空间都是完备的. 另外, 完备的内积空间也叫 Hilbert 空间
+[^4]: 只需验证是否满足内积定义和是否完备即可
 
 ### 再探基与正交
 
@@ -338,7 +337,7 @@ $$v(x)=\sum_{k=0}^{\infty}\rho_kx^k=\sum_{k=0}^{\infty}\mu_k e^{ikx}$$
 
 之后我们考虑 $uv$ 在$B_p$ 和 $B_f$ 的系数, 可以得到
 
-$$u(x)v(x)=\sum_{k=0}^{\infty}\left(\textcolor{3700cc}{\sum_{j=0}^k\xi_j\rho_{k-j}}\right)x^k=\sum_{k=0}^{\infty}\textcolor{a50040}{\mu_k\psi_k} e^{ikx}$$
+$$u(x)v(x)=\sum_{k=0}^{\infty}\left(\textcolor{3700cc}{\sum_{j=0}^k\xi_j\rho_{k-j}}\right)x^k=\sum_{k=0}^{\infty}\textcolor{a50040}{\psi_k\mu_k} e^{ikx}$$
 
 > $\psi_k=(u(x),e^{ikx}), \mu_k=(v(x),e^{ikx})\implies \psi_k\mu_k=(u(x)v(x),e^{ikx})$ (按 $B_p$ 下的系数拆分 $u,v$ 再合并)
 
