@@ -1,4 +1,4 @@
-name: Pages
+name: Pages build test
 
 on:
   workflow_dispatch:
