@@ -1,5 +1,5 @@
 ---
-title: 笔记 - 线性基
+title: 笔记 - 异或线性基
 categories:
   - 算法竞赛
   - 笔记
@@ -14,12 +14,13 @@ tags:
   - 高等代数
   - 线性空间
   - 线性基
+  - 异或线性基
   - 位运算
   - 异或
 date: 2021-11-12 17:59:15
 ---
 
-令 $V\subseteq\Z_2^n$, 线性基即为线性空间 $V$ 上满足一定条件的一组"基底" $(\def\enum#1{\epsilon_{ #1}}\enum{1},\enum{2},...,\enum{n})$
+令 $V\subseteq\Z_2^n$, 异或线性基即为线性空间 $V$ 上满足一定条件的一组 Hamel 基 $(\def\enum#1{\epsilon_{ #1}}\enum{1},\enum{2},...,\enum{n})$
 
 <!-- more -->
 

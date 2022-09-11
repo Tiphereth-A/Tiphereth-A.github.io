@@ -82,7 +82,7 @@ Ulm Local 2001
 
 板子题, 没啥好说的
 
-具体参见 {% post_link prufer-sequence %}
+<!-- 具体参见 {% post_link prufer-sequence %} -->
 
 ## 代码参考
 
