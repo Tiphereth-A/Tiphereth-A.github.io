@@ -122,14 +122,14 @@
 		<svg class="guage-div guage-perf guage-green"
 				viewBox="0 0 200 200" width="200" height="200" x="0" y="0">
 		<circle class="gauge-base" r="56" cx="100" cy="60" stroke-width="8"></circle>
-		<circle class="gauge-arc guage-arc-1" r="56" cx="100" cy="60" stroke-width="8" style="stroke-dasharray: 337.78368, 351.858;"></circle>
-		<text class="guage-text" x="100px" y="60px" alignment-baseline="central" dominant-baseline="central" text-anchor="middle">96</text>
+		<circle class="gauge-arc guage-arc-1" r="56" cx="100" cy="60" stroke-width="8" style="stroke-dasharray: 334.2651, 351.858;"></circle>
+		<text class="guage-text" x="100px" y="60px" alignment-baseline="central" dominant-baseline="central" text-anchor="middle">95</text>
 		<text class="guage-title" x="100px" y="160px" alignment-baseline="central" dominant-baseline="central" text-anchor="middle">Performance</text>
-	</svg>,<svg class="guage-div guage-perf guage-undefined"
+	</svg>,<svg class="guage-div guage-perf guage-orange"
 				viewBox="0 0 200 200" width="200" height="200" x="200" y="0">
 		<circle class="gauge-base" r="56" cx="100" cy="60" stroke-width="8"></circle>
-		<circle class="gauge-arc guage-arc-1" r="56" cx="100" cy="60" stroke-width="8" style="stroke-dasharray: 351.858, 351.858;"></circle>
-		<text class="guage-text" x="100px" y="60px" alignment-baseline="central" dominant-baseline="central" text-anchor="middle">NA</text>
+		<circle class="gauge-arc guage-arc-1" r="56" cx="100" cy="60" stroke-width="8" style="stroke-dasharray: 306.11646, 351.858;"></circle>
+		<text class="guage-text" x="100px" y="60px" alignment-baseline="central" dominant-baseline="central" text-anchor="middle">87</text>
 		<text class="guage-title" x="100px" y="160px" alignment-baseline="central" dominant-baseline="central" text-anchor="middle">Accessibility</text>
 	</svg>,<svg class="guage-div guage-perf guage-orange"
 				viewBox="0 0 200 200" width="200" height="200" x="400" y="0">
@@ -189,7 +189,7 @@
 					<use href="#lh-gauge--pwa__installable-badge-0"></use>
 				</g>
 				<!-- Fast and reliable and installable. -->
-				<g class="lh-gauge--pwa__component lh-gauge--pwa__fast-reliable-installable-badges lh-gauge--pwa__invisible">
+				<g class="lh-gauge--pwa__component lh-gauge--pwa__fast-reliable-installable-badges lh-gauge--pwa__visible">
 					<g transform="translate(8, 29)">						<!-- fast and reliable -->
 						<path fill="url(#lh-gauge--pwa__fast-reliable__shadow-gradient-0)" d="M16.321 30.463L3 17.143 17.142 3l22.365 22.365A29.864 29.864 0 0 1 22 31c-1.942 0-3.84-.184-5.679-.537z"></path>
 						<use href="#lh-gauge--pwa__fast-reliable-badge-0"></use>
