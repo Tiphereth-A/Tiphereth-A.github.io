@@ -203,3 +203,10 @@ $$v=\sum_i k_i a_i,~k_i\in\Bbb{P},i=1,2,\dots$$
 ### 实数线性基
 
 实数线性基的构造可通过 Gauss 消元法构造出准上三角矩阵, 然后去除所有零向量即可
+
+---
+
+## 参考资料
+
+- 高等代数教程. 郭聿琦, 岑嘉评, 王正攀.
+- [Hamel Basis -- from Wolfram MathWorld](https://mathworld.wolfram.com/HamelBasis.html)
