@@ -208,5 +208,5 @@ $$v=\sum_i k_i a_i,~k_i\in\Bbb{P},i=1,2,\dots$$
 
 ## 参考资料
 
-- 高等代数教程. 郭聿琦, 岑嘉评, 王正攀.
+- 高等代数（下）. 丘维声.
 - [Hamel Basis -- from Wolfram MathWorld](https://mathworld.wolfram.com/HamelBasis.html)
