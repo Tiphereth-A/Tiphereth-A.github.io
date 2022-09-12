@@ -24,8 +24,8 @@ class XorBasis {
 
     constexpr size_t size() const { return N; }
 
-    constexpr vector_t operator[](size_t index) { return this->base[index]; }
-    constexpr vector_t operator[](size_t index) const { return const_cast<self * const>(this)->base[index]; }
+    constexpr vector_t &operator[](size_t index) { return this->base[index]; }
+    constexpr vector_t &operator[](size_t index) const { return const_cast<self * const>(this)->base[index]; }
 
     constexpr iterator begin() { return this->base; }
     constexpr const_iterator begin() const { return const_cast<vector_t * const>(this->base); }
@@ -71,8 +71,8 @@ class XorBasis {
     }
 
     // @return std::nullopt if x is linear independent with current basis, else return the solution
-    constexpr std::optional<std::bitset<N>> coordinate(vector_t x) {
-        std::bitset<N> res;
+    constexpr std::optional<vector_t> coordinate(vector_t x) {
+        vector_t res;
         for (size_t i = size() - 1; ~i; --i) {
             if (x[i] && !base[i][i]) return std::nullopt;
             if (x[i] && base[i][i]) {
