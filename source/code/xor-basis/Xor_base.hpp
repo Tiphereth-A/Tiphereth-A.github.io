@@ -1,6 +1,6 @@
 template <std::size_t N = 64>
-class Xor_basis {
-    using self = Xor_basis<N>;
+class XorBasis {
+    using self = XorBasis<N>;
     using field_t = bool;
     using vector_t = std::bitset<N>;
     using reference = self &;
@@ -13,8 +13,8 @@ class Xor_basis {
     vector_t base[N];
 
   public:
-    constexpr Xor_basis() { this->clear(); }
-    constexpr Xor_basis(std::initializer_list<vector_t> _list): Xor_basis() {
+    constexpr XorBasis() { this->clear(); }
+    constexpr XorBasis(std::initializer_list<vector_t> _list): XorBasis() {
         for (auto &&i : _list) this->insert(i);
     }
 
