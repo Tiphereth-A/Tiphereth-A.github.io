@@ -68,4 +68,17 @@ class Xor_basis {
         for (size_t i = 0; i < size(); ++i) res += base[i][i];
         return res;
     }
+
+    // @return std::nullopt if x is linear independent with current basis, else return the solution
+    constexpr std::optional<std::bitset<N>> coordinate(vector_t x) {
+        std::bitset<N> res;
+        for (size_t i = size() - 1; ~i; --i) {
+            if (x[i] && !base[i][i]) return std::nullopt;
+            if (x[i] && base[i][i]) {
+                res.set(i);
+                x ^= base[i];
+            }
+        }
+        return res;
+    }
 };
