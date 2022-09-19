@@ -12,6 +12,19 @@ From [Supported functions - KaTeX](https://katex.org/docs/supported.html)
 
 <!-- more -->
 
+This is a list of TeX functions supported by KaTeX. It is sorted into logical groups.
+
+There is a similar {% post_link katex-support-table "Support Table" %}, sorted alphabetically, that lists both supported and un-supported functions.
+
+<style>
+table tr,
+table td {
+    vertical-align: middle;
+}
+</style>
+
+<div class="katex-hopscotch">
+
 ## Accents
 
 |                               |                                                       |                                                 |
@@ -31,11 +44,11 @@ From [Supported functions - KaTeX](https://katex.org/docs/supported.html)
 
 **_Accent functions inside \\text{…}_**
 
-|                                        |                        |                        |                        |
-| :------------------------------------- | :--------------------- | :--------------------- | :--------------------- |
-| $\text{\'{a}}$ `\'{a}`                 | $\text{\~{a}}$ `\~{a}` | $\text{\.{a}}$ `\.{a}` | $\text{\H{a}}$ `\H{a}` |
-| $\text{\`{a}}$ <code>\\&#60;{a}</code> | $\text{\={a}}$ `\={a}` | $\text{\"{a}}$ `\"{a}` | $\text{\v{a}}$ `\v{a}` |
-| $\text{\^{a}}$ `\^{a}`                 | $\text{\u{a}}$ `\u{a}` | $\text{\r{a}}$ `\r{a}` |
+|                                    |                        |                        |                        |
+| :--------------------------------- | :--------------------- | :--------------------- | :--------------------- |
+| $\text{\'{a}}$ `\'{a}`             | $\text{\~{a}}$ `\~{a}` | $\text{\.{a}}$ `\.{a}` | $\text{\H{a}}$ `\H{a}` |
+| $\text{\`{a}}$ <code>\\`{a}</code> | $\text{\={a}}$ `\={a}` | $\text{\"{a}}$ `\"{a}` | $\text{\v{a}}$ `\v{a}` |
+| $\text{\^{a}}$ `\^{a}`             | $\text{\u{a}}$ `\u{a}` | $\text{\r{a}}$ `\r{a}` |
 
 See also [letters and unicode](#letters-and-unicode).
 
@@ -65,7 +78,11 @@ $( \big( \Big( \bigg( \Bigg($ `( \big( \Big( \bigg( \Bigg(`
 | `\right`  | `\bigg` | `\biggl` | `\biggm` | `\biggr` |
 |           | `\Bigg` | `\Biggl` | `\Biggm` | `\Biggr` |
 
+</div>
+
 ## Environments
+
+<div class="katex-cards" id="environments">
 
 |                                                                    |                                                                                                                       |                                                                                                                |                                                                                                                                                                                                                                         |
 | :----------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -82,14 +99,15 @@ The auto-render extension will render the following environments even if they ar
   #env + table tr td:nth-child(1) { min-width: 11em }
   #env + table tr td:nth-child(3) { min-width: 13em }
 </style>
+<div id="env"></div>
 
 |                                                                          |                                                                                                                                                        |                                                             |                                                                                                                 |
 | :----------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------- | :---------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------- |
 | $$\begin{equation}\begin{split}a &=b+c\\&=e+f\end{split}\end{equation}$$ | `\begin{equation}`<br>`\begin{split}`&nbsp;&nbsp;&nbsp;`a &=b+c\\`<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`&=e+f`<br>`\end{split}`<br>`\end{equation}` | $$\begin{align} a&=b+c \\ d+e&=f \end{align}$$              | `\begin{align}`<br>&nbsp;&nbsp;&nbsp;`a&=b+c \\`<br>&nbsp;&nbsp;&nbsp;`d+e&=f`<br>`\end{align}`                 |
-| $$\begin{gather} a=b \\ e=b+c \end{gather}$$                             | `\begin{gather}`<br>&nbsp;&nbsp;&nbsp;`a=b \\`<br>&nbsp;&nbsp;&nbsp;`e=b+c`<br>`\end{gather}`                                                          | $$\begin{alignat}{2}10&x+&3&y=2\\3&x+&13&y=4\end{alignat}$$ | `\begin{alignat}{2}`<br>&nbsp;&nbsp;&nbsp;`10&x+&3&y=2\\`<br>&nbsp;&nbsp;&nbsp;`3&x+&13&y=4`<br>`\end{alignat}` |
+| $$\begin{gather} a=b \\ e=b+c \end{gather}$$                             | `\begin{gather}`<br>&nbsp;&nbsp;&nbsp;`a=b \\ `<br>&nbsp;&nbsp;&nbsp;`e=b+c`<br>`\end{gather}`                                                         | $$\begin{alignat}{2}10&x+&3&y=2\\3&x+&13&y=4\end{alignat}$$ | `\begin{alignat}{2}`<br>&nbsp;&nbsp;&nbsp;`10&x+&3&y=2\\`<br>&nbsp;&nbsp;&nbsp;`3&x+&13&y=4`<br>`\end{alignat}` |
 | $$\begin{CD}A @>a>> B \\@VbVV @AAcA\\C @= D\end{CD}$$                    | `\begin{CD}`<br>&nbsp;&nbsp;&nbsp;`A @>a>> B \\`<br>`@VbVV @AAcA \\`<br>&nbsp;&nbsp;&nbsp;`C @= D`<br>`\end{CD}`                                       |
 
-### Other KaTeX Environments
+#### Other KaTeX Environments
 
 | Environments                                                            | How they differ from those shown above                                                                                                                                   |
 | :---------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -97,6 +115,8 @@ The auto-render extension will render the following environments even if they ar
 | `matrix*`, `pmatrix*`, `bmatrix*`<br>`Bmatrix*`, `vmatrix*`, `Vmatrix*` | … take an optional argument to set column<br>alignment, as in `\begin{matrix*}[r]`                                                                                       |
 | `equation*`, `gather*`<br>`align*`, `alignat*`                          | … have no automatic numbering. Alternatively, you can use `\nonumber` or `\notag` to omit the numbering for a specific row of the equation.                              |
 | `gathered`, `aligned`, `alignedat`                                      | … do not need to be in display mode.<br> … have no automatic numbering.<br> … must be inside math delimiters in<br>order to be rendered by the auto-render<br>extension. |
+
+</div>
 
 Acceptable line separators include: `\\`, `\cr`, `\\[distance]`, and `\cr[distance]`. _Distance_ can be written with any of the [KaTeX units](#units).
 
@@ -106,6 +126,8 @@ The `{array}` environment does not yet support `\cline` or `\multicolumn`.
 
 `\tag` can be applied to individual rows of top-level environments
 (`align`, `align*`, `alignat`, `alignat*`, `gather`, `gather*`).
+
+<div class="katex-hopscotch">
 
 ## HTML
 
@@ -134,11 +156,8 @@ HTML extension (`\html`-prefixed) commands are non-standard, so loosening `stric
 
 **Greek Letters**
 
-Direct Input:
-
-$Α Β Γ Δ Ε Ζ Η Θ Ι Κ Λ Μ Ν Ξ Ο Π Ρ Σ Τ Υ Φ Χ Ψ Ω$
-
-$α β γ δ ϵ ζ η θ ι κ λ μ ν ξ o π ρ σ τ υ ϕ χ ψ ω ε ϑ ϖ ϱ ς φ ϝ$
+Direct Input: $Α Β Γ Δ Ε Ζ Η Θ Ι \allowbreak Κ Λ Μ Ν Ξ Ο Π Ρ Σ Τ Υ Φ Χ Ψ Ω$
+$\allowbreak α β γ δ ϵ ζ η θ ι κ λ μ ν ξ o π \allowbreak ρ σ τ υ ϕ χ ψ ω ε ϑ ϖ ϱ ς φ ϝ$
 
 |                             |                         |                         |                             |
 | --------------------------- | ----------------------- | ----------------------- | --------------------------- |
@@ -159,7 +178,8 @@ $α β γ δ ϵ ζ η θ ι κ λ μ ν ξ o π ρ σ τ υ ϕ χ ψ ω ε ϑ ϖ
 | $\phi$ `\phi`               | $\chi$ `\chi`           | $\psi$ `\psi`           | $\omega$ `\omega`           |
 | $\varepsilon$ `\varepsilon` | $\varkappa$ `\varkappa` | $\vartheta$ `\vartheta` | $\thetasym$ `\thetasym`     |
 | $\varpi$ `\varpi`           | $\varrho$ `\varrho`     | $\varsigma$ `\varsigma` | $\varphi$ `\varphi`         |
-| $\digamma $ `\digamma`      |
+
+| $\digamma $ `\digamma`
 
 **Other Letters**
 
@@ -175,11 +195,14 @@ $α β γ δ ϵ ζ η θ ι κ λ μ ν ξ o π ρ σ τ υ ϕ χ ψ ω ε ϑ ϖ
 | $\daleth$ `\daleth`   | $\hbar$ `\hbar`       | $\real$ `\real`       | $\text{\AE}$ `\text{\AE}` |
 | $\eth$ `\eth`         | $\hslash$ `\hslash`   | $\reals$ `\reals`     | $\text{\oe}$ `\text{\oe}` |
 
-Direct Input:
+Direct Input: $∂ ∇ ℑ Ⅎ ℵ ℶ ℷ ℸ ⅁ ℏ ð − ∗$
+ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖÙÚÛÜÝÞßàáâãäåçèéêëìíîïðñòóôöùúûüýþÿ
+₊₋₌₍₎₀₁₂₃₄₅₆₇₈₉ₐₑₕᵢⱼₖₗₘₙₒₚᵣₛₜᵤᵥₓᵦᵧᵨᵩᵪ⁺⁻⁼⁽⁾⁰¹²³⁴⁵⁶⁷⁸⁹ᵃᵇᶜᵈᵉᵍʰⁱʲᵏˡᵐⁿᵒᵖʳˢᵗᵘʷˣʸᶻᵛᵝᵞᵟᵠᵡ
 
-$∂ ∇ ℑ Ⅎ ℵ ℶ ℷ ℸ ⅁ ℏ ð − ∗$
+Math-mode Unicode (sub|super)script characters will render as if you had written regular characters in a subscript or superscript. For instance, `A²⁺³` will render the same as `A^{2+3}`.
 
-$ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖÙÚÛÜÝÞßàáâãäåçèéêëìíîïðñòóôöùúûüýþÿ$
+</div>
+<div class="katex-cards" id="math-alpha">
 
 **Unicode Mathematical Alphanumeric Symbols**
 
@@ -190,6 +213,9 @@ $ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖÙÚÛÜÝÞßàáâãäåçèé�
 | Bold Italic | $\text{𝑨-𝒁 𝒂-𝒛}$        | Sans serif bold   | $\text{𝗔-𝗭 𝗮-𝘇 𝟬-𝟵}$ |
 | Script      | $\text{𝒜-𝒵}$            | Sans serif italic | $\text{𝘈-𝘡 𝘢-𝘻}$     |
 | Fractur     | $\text{𝔄-}ℨ\text{ 𝔞-𝔷}$ | Monospace         | $\text{𝙰-𝚉 𝚊-𝚣 𝟶-𝟿}$ |
+
+</div>
+<div class="katex-hopscotch">
 
 **Unicode**
 
@@ -235,12 +261,12 @@ In display math, KaTeX does not insert automatic line breaks. It ignores display
 
 ### Vertical Layout
 
-|               |                                     |                                                                                                    |
-| :------------ | :---------------------------------- | :------------------------------------------------------------------------------------------------- |
-| $x_n$ `x_n`   | $\stackrel{!}{=}$ `\stackrel{!}{=}` | $a \atop b$ `a \atop b`                                                                            |
-| $e^x$ `e^x`   | $\overset{!}{=}$ `\overset{!}{=}`   | $a\raisebox{0.25em}{$b$}c$ `a\raisebox{0.25em}{$b$}c`                                              |
-| $_u^o$ `_u^o` | $\underset{!}{=}$ `\underset{!}{=}` | $a+\left(\vcenter{\frac{\frac a b}c}\right)$ `a+\left(\vcenter{\hbox{$\frac{\frac a b}c$}}\right)` |
-|               |                                     | $$\sum_{\substack{0<i<m\\0<j<n}}$$ `\sum_{\substack{0<i<m\\0<j<n}}`                                |
+|                  |                                     |                                                                                                    |
+| :--------------- | :---------------------------------- | :------------------------------------------------------------------------------------------------- |
+| $x_n$ `x_n`      | $\stackrel{!}{=}$ `\stackrel{!}{=}` | $a \atop b$ `a \atop b`                                                                            |
+| $e^x$ `e^x`      | $\overset{!}{=}$ `\overset{!}{=}`   | $a\raisebox{0.25em}{$b$}c$ `a\raisebox{0.25em}{$b$}c`                                              |
+| $\_u^o $ `_u^o ` | $\underset{!}{=}$ `\underset{!}{=}` | $a+\left(\vcenter{\frac{\frac a b}c}\right)$ `a+\left(\vcenter{\hbox{$\frac{\frac a b}c$}}\right)` |
+|                  |                                     | $$\sum_{\substack{0<i<m\\0<j<n}}$$ `\sum_{\substack{0<i<m\\0<j<n}}`                                |
 
 `\raisebox` and `\hbox` put their argument into text mode. To raise math, nest `$…$` delimiters inside the argument as shown above.
 
@@ -251,11 +277,14 @@ In display math, KaTeX does not insert automatic line breaks. It ignores display
 |                                         |                                                           |
 | :-------------------------------------- | :-------------------------------------------------------- |
 | ${=}\mathllap{/\,}$ `{=}\mathllap{/\,}` | $\left(x^{\smash{2}}\right)$ `\left(x^{\smash{2}}\right)` |
-| $\mathrlap{\,/}{=}$ `\mathrlap{\,/}{=}` | $\sqrt{\smash[b]{y}}$ `\sqrt{\smash[b]{y}}`               |
+| $\mathrlap{\,/}{=}$ `\mathrlap{\,/}{=}` | $\sqrt{\smash[b]{y}}$ `\sqrt{\smash[b]{y}} `              |
 
 $\displaystyle\sum_{\mathclap{1\le i\le j\le n}} x_{ij}$ `\sum_{\mathclap{1\le i\le j\le n}} x_{ij}`
 
 KaTeX also supports `\llap`, `\rlap`, and `\clap`, but they will take only text, not math, as arguments.
+
+</div>
+<div class="katex-cards" id="spacing-tbl">
 
 **Spacing**
 
@@ -276,6 +305,8 @@ KaTeX also supports `\llap`, `\rlap`, and `\clap`, but they will take only text,
 | `\nobreakspace` | non-breaking space | `\negthickspace`     | – ⁵∕₁₈ em space                       |
 | `\space`        | space              | `\mathstrut`         | `\vphantom{(}`                        |
 
+</div>
+
 **Notes:**
 
 `distance` will accept any of the [KaTeX units](#units).
@@ -284,17 +315,22 @@ KaTeX also supports `\llap`, `\rlap`, and `\clap`, but they will take only text,
 
 `\mkern` and `\mskip` will not work in text mode and both will write a console warning for any unit except `mu`.
 
+<div class="katex-hopscotch">
+
 ## Logic and Set Theory
 
-|                       |                             |                                     |                             |
-| :-------------------- | :-------------------------- | :---------------------------------- | :-------------------------- |
-| $\forall$ `\forall`   | $\complement$ `\complement` | $\therefore$ `\therefore`           | $\emptyset$ `\emptyset`     |
-| $\exists$ `\exists`   | $\subset$ `\subset`         | $\because$ `\because`               | $\empty$ `\empty`           |
-| $\exist$ `\exist`     | $\supset$ `\supset`         | $\mapsto$ `\mapsto`                 | $\varnothing$ `\varnothing` |
-| $\nexists$ `\nexists` | $\mid$ `\mid`               | $\to$ `\to`                         | $\implies$ `\implies`       |
-| $\in$ `\in`           | $\land$ `\land`             | $\gets$ `\gets`                     | $\impliedby$ `\impliedby`   |
-| $\isin$ `\isin`       | $\lor$ `\lor`               | $\leftrightarrow$ `\leftrightarrow` | $\iff$ `\iff`               |
-| $\notin$ `\notin`     | $\ni$ `\ni`                 | $\notni$ `\notni`                   | $\neg$ `\neg` or `\lnot`    |
+$\gdef\VERT{|}$
+
+|                       |                                                                            |                                                     |                             |
+| :-------------------- | :------------------------------------------------------------------------- | :-------------------------------------------------- | :-------------------------- |
+| $\forall$ `\forall`   | $\complement$ `\complement`                                                | $\therefore$ `\therefore`                           | $\emptyset$ `\emptyset`     |
+| $\exists$ `\exists`   | $\subset$ `\subset`                                                        | $\because$ `\because`                               | $\empty$ `\empty`           |
+| $\exist$ `\exist`     | $\supset$ `\supset`                                                        | $\mapsto$ `\mapsto`                                 | $\varnothing$ `\varnothing` |
+| $\nexists$ `\nexists` | $\mid$ `\mid`                                                              | $\to$ `\to`                                         | $\implies$ `\implies`       |
+| $\in$ `\in`           | $\land$ `\land`                                                            | $\gets$ `\gets`                                     | $\impliedby$ `\impliedby`   |
+| $\isin$ `\isin`       | $\lor$ `\lor`                                                              | $\leftrightarrow$ `\leftrightarrow`                 | $\iff$ `\iff`               |
+| $\notin$ `\notin`     | $\ni$ `\ni`                                                                | $\notni$ `\notni`                                   | $\neg$ `\neg` or `\lnot`    |
+|                       | $\Set{ x \VERT x<\frac 1 2 }$<br><code>\Set{ x &#124; x<\frac 1 2 }</code> | $\set{x\VERT x<5}$<br><code>\set{x&#124;x<5}</code> |                             |
 
 Direct Input: $∀ ∴ ∁ ∵ ∃ ∣ ∈ ∉ ∋ ⊂ ⊃ ∧ ∨ ↦ → ← ↔ ¬$ ℂ ℍ ℕ ℙ ℚ ℝ
 
@@ -316,6 +352,10 @@ Direct Input: $∀ ∴ ∁ ∵ ∃ ∣ ∈ ∉ ∋ ⊂ ⊃ ∧ ∨ ↦ → ← �
 Macros can also be defined in the KaTeX [rendering options](options.md).
 
 Macros accept up to nine arguments: #1, #2, etc.
+
+</div>
+
+<div id="gdef">
 
 Macros defined by `\gdef`, `\xdef`, `\global\def`, `\global\edef`, `\global\let`, and `\global\futurelet` will persist between math expressions. (Exception: macro persistence may be disabled. There are legitimate security reasons for that.)
 
@@ -339,7 +379,7 @@ Available functions include:
 | $\iiint$ `\iiint` | $\smallint$ `\smallint` | $\biguplus$ `\biguplus`   | $\bigcup$ `\bigcup`     |
 | $\oint$ `\oint`   | $\oiint$ `\oiint`       | $\oiiint$ `\oiiint`       | $\bigsqcup$ `\bigsqcup` |
 
-Direct Input: $∫ ∬ ∭ ∮ ∏ ∐ ∑ ⋀ ⋁ ⋂ ⋃ ⨀ ⨁ ⨂ ⨄ ⨆$ ∯ ∰$
+Direct Input: $∫ ∬ ∭ ∮ ∏ ∐ ∑ ⋀ ⋁ ⋂ ⋃ ⨀ ⨁ ⨂ ⨄ ⨆$ ∯ ∰
 
 ### Binary Operators
 
@@ -367,16 +407,16 @@ Direct Input: $+ - / * ⋅ ∘ ∙ ± × ÷ ∓ ∔ ∧ ∨ ∩ ∪ ≀ ⊎ ⊓ 
 
 ### Fractions and Binomials
 
-|                               |                               |                                                             |
-| :---------------------------- | :---------------------------- | :---------------------------------------------------------- |
-| $\frac{a}{b}$ `\frac{a}{b}`   | $\tfrac{a}{b}$ `\tfrac{a}{b}` | $\genfrac ( ] {2pt}{1}a{a+1}$ `\genfrac ( ] {2pt}{1}a{a+1}` |
-| $\frac{a }{b}$ `\frac{a }{b}` | $\dfrac{a}{b}$ `\dfrac{a}{b}` | ${a \above{2pt} b+1}$ `{a \above{2pt} b+1}`                 |
-| $a/b$ `a/b`                   |                               | $\cfrac{a}{1 + \cfrac{1}{b}}$ `\cfrac{a}{1 + \cfrac{1}{b}}` |
+|                             |                               |                                                             |
+| :-------------------------- | :---------------------------- | :---------------------------------------------------------- |
+| $\frac{a}{b}$ `\frac{a}{b}` | $\tfrac{a}{b}$ `\tfrac{a}{b}` | $\genfrac ( ] {2pt}{1}a{a+1}$ `\genfrac ( ] {2pt}{1}a{a+1}` |
+| ${a \over b}$ `{a \over b}` | $\dfrac{a}{b}$ `\dfrac{a}{b}` | ${a \above{2pt} b+1}$ `{a \above{2pt} b+1}`                 |
+| $a/b$ `a/b`                 |                               | $\cfrac{a}{1 + \cfrac{1}{b}}$ `\cfrac{a}{1 + \cfrac{1}{b}}` |
 
 |                                 |                                 |                             |
 | :------------------------------ | :------------------------------ | :-------------------------- |
 | $\binom{n}{k}$ `\binom{n}{k}`   | $\dbinom{n}{k}$ `\dbinom{n}{k}` | ${n\brace k}$ `{n\brace k}` |
-| $\binom{n }{k}$ `\binom{n }{k}` | $\tbinom{n}{k}$ `\tbinom{n}{k}` | ${n\brack k}$ `{n\brack k}` |
+| ${n \choose k}$ `{n \choose k}` | $\tbinom{n}{k}$ `\tbinom{n}{k}` | ${n\brack k}$ `{n\brack k}` |
 
 ### Math Operators
 
@@ -522,7 +562,8 @@ Direct Input: $← ↑ → ↓ ↔ ↕ ↖ ↗ ↘ ↙ ↚ ↛ ↞ ↠ ↢ ↣ �
 | $\xleftharpoondown{abc}$ `\xleftharpoondown{abc}`     | $\xrightharpoondown{abc}$ `\xrightharpoondown{abc}`     |
 | $\xleftrightharpoons{abc}$ `\xleftrightharpoons{abc}` | $\xrightleftharpoons{abc}$ `\xrightleftharpoons{abc}`   |
 | $\xtofrom{abc}$ `\xtofrom{abc}`                       | $\xmapsto{abc}$ `\xmapsto{abc}`                         |
-| $\xlongequal{abc}$ `\xlongequal{abc}`                 |
+
+|$\xlongequal{abc}$ `\xlongequal{abc}`
 
 Extensible arrows all can take an optional argument in the same manner<br>as `\xrightarrow[under]{over}`.
 
@@ -530,10 +571,10 @@ Extensible arrows all can take an optional argument in the same manner<br>as `\x
 
 **Bra-ket Notation**
 
-|                           |                           |                                                   |
-| :------------------------ | :------------------------ | :------------------------------------------------ |
-| $\bra{\phi}$ `\bra{\phi}` | $\ket{\psi}$ `\ket{\psi}` | $\braket{\phi\vert\psi}$ `\braket{\phi\vert\psi}` |
-| $\Bra{\phi}$ `\Bra{\phi}` | $\Ket{\psi}$ `\Ket{\psi}` |                                                   |
+|                           |                           |                                                                                                            |
+| :------------------------ | :------------------------ | :--------------------------------------------------------------------------------------------------------- |
+| $\bra{\phi}$ `\bra{\phi}` | $\ket{\psi}$ `\ket{\psi}` | $\braket{\phi\VERT\psi}$ <code>\braket{\phi&#124;\psi}</code>                                              |
+| $\Bra{\phi}$ `\Bra{\phi}` | $\Ket{\psi}$ `\Ket{\psi}` | $\Braket{ ϕ \VERT \frac{∂^2}{∂ t^2} \VERT ψ }$ <code>\Braket{ ϕ &#124; \frac{∂^2}{∂ t^2} &#124; ψ }</code> |
 
 ## Style, Color, Size, and Font
 
@@ -589,15 +630,16 @@ In cases where KaTeX fonts do not have a bold glyph, `\pmb` can simulate one. Fo
 
 **Style**
 
-|                                                                                                                         |
-| :---------------------------------------------------------------------------------------------------------------------- |
-| $\displaystyle\sum_{i=1}^n$ `\displaystyle\sum_{i=1}^n`                                                                 |
-| $\textstyle\sum_{i=1}^n$ `\textstyle\sum_{i=1}^n`                                                                       |
-| $\scriptstyle x$ `\scriptstyle x` &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(The size of a first sub/superscript) |
-| $\scriptscriptstyle x$ `\scriptscriptstyle x` (The size of subsequent sub/superscripts)                                 |
-| $\lim\limits_x$ `\lim\limits_x`                                                                                         |
-| $\lim\nolimits_x$ `\lim\nolimits_x`                                                                                     |
-| $\verb!x^2!$ `\verb!x^2!`                                                                                               |
+|     |
+| :-- |
+
+|$\displaystyle\sum_{i=1}^n$ `\displaystyle\sum_{i=1}^n`
+|$\textstyle\sum_{i=1}^n$ `\textstyle\sum_{i=1}^n`
+|$\scriptstyle x$ `\scriptstyle x` &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(The size of a first sub/superscript)
+|$\scriptscriptstyle x$ `\scriptscriptstyle x` (The size of subsequent sub/superscripts)
+|$\lim\limits_x$ `\lim\limits_x`
+|$\lim\nolimits_x$ `\lim\nolimits_x`
+|$\verb!x^2!$ `\verb!x^2!`
 
 `\text{…}` will accept nested `$…$` fragments and render them in math mode.
 
@@ -651,6 +693,9 @@ Direct Input: § ¶ $ £ ¥ ∇ ∞ · ∠ ∡ ∢ ♠ ♡ ♢ ♣ ♭ ♮ ♯ �
 In KaTeX, units are proportioned as they are in TeX.<br>
 KaTeX units are different than CSS units.
 
+</div>
+<div class="katex-cards" id="unit-tbl">
+
 | KaTeX Unit | Value                | KaTeX Unit | Value               |
 | :--------- | :------------------- | :--------- | :------------------ |
 | em         | CSS em               | bp         | 1/72​ inch × F × G  |
@@ -661,16 +706,26 @@ KaTeX units are different than CSS units.
 | cm         | 1 cm × F × G         | nc         | 1370/107​ KaTeX pt  |
 | in         | 1 inch × F × G       | sp         | 1/65536 KaTeX pt    |
 
+</div>
+
 where:
+
+<div style="margin-left: 1.5em;">
 
 F = (font size of surrounding HTML text)/(10 pt)
 
 G = 1.21 by default, because KaTeX font-size is normally 1.21 × the surrounding font size. This value [can be overridden](font.md#font-size-and-lengths) by the CSS of an HTML page.
 
+</div>
+
 The effect of style and size:
+
+<div class="katex-cards" id="unit-blocks">
 
 |   Unit   |      textstyle      |             scriptscript              |           huge           |
 | :------: | :-----------------: | :-----------------------------------: | :----------------------: |
 | em or ex |  $\rule{1em}{1em}$  |  $\scriptscriptstyle\rule{1em}{1em}$  |  $\huge\rule{1em}{1em}$  |
 |    mu    | $\rule{18mu}{18mu}$ | $\scriptscriptstyle\rule{18mu}{18mu}$ | $\huge\rule{18mu}{18mu}$ |
 |  others  | $\rule{10pt}{10pt}$ | $\scriptscriptstyle\rule{10pt}{10pt}$ | $\huge\rule{10pt}{10pt}$ |
+
+</div>

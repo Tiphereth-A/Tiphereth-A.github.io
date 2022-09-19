@@ -12,7 +12,20 @@ From [Support table - KaTeX](https://katex.org/docs/support_table.html)
 
 <!-- more -->
 
+This is a list of TeX functions, sorted alphabetically. This list includes functions that KaTeX supports and some that it doesn't support. There is a similar page, with functions {% post_link katex-support-functions "sorted by type" %}.
+
+If you know the shape of a character, but not its name, [Detexify](https://detexify.kirelabs.org/classify.html) can help.
+
+<style>
+table tr,
+table td {
+    vertical-align: middle;
+}
+</style>
+
 ## Symbols
+
+$\gdef\VERT{|}$
 
 | Symbol/Function | Rendered                                     | Source or Comment                                                                               |
 | :-------------- | :------------------------------------------- | :---------------------------------------------------------------------------------------------- |
@@ -74,9 +87,9 @@ From [Support table - KaTeX](https://katex.org/docs/support_table.html)
 | {align}           | $$\begin{align}a&=b+c\\d+e&=f\end{align}$$                    | `\begin{align}`<br>&nbsp;&nbsp;&nbsp;`a&=b+c \\`<br>&nbsp;&nbsp;&nbsp;`d+e&=f`<br>`\end{align}`                               |
 | {align\*}         | $$\begin{align*}a&=b+c\\d+e&=f\end{align*}$$                  | `\begin{align*}`<br>&nbsp;&nbsp;&nbsp;`a&=b+c \\`<br>&nbsp;&nbsp;&nbsp;`d+e&=f`<br>`\end{align*}`                             |
 | {aligned}         | $\begin{aligned}a&=b+c\\d+e&=f\end{aligned}$                  | `\begin{aligned}`<br>&nbsp;&nbsp;&nbsp;`a&=b+c \\`<br>&nbsp;&nbsp;&nbsp;`d+e&=f`<br>`\end{aligned}`                           |
-| {alignat}         | $$\begin{alignat}{2}10&x+&3&y=2\\3&x+&13&y=4\end{alignat}$$   | `\begin{alignat}{2}`<br>&nbsp;&nbsp;&nbsp;`10&x+ &3&y = 2 \\`<br>&nbsp;&nbsp;&nbsp;`3&x+&13&y = 4`<br>`\end{alignat}`         |
-| {alignat\*}       | $$\begin{alignat*}{2}10&x+&3&y=2\\3&x+&13&y=4\end{alignat*}$$ | `\begin{alignat*}{2}`<br>&nbsp;&nbsp;&nbsp;`10&x+ &3&y = 2 \\`<br>&nbsp;&nbsp;&nbsp;`3&x+&13&y = 4`<br>`\end{alignat*}`       |
-| {alignedat}       | $\begin{alignedat}{2}10&x+&3&y=2\\3&x+&13&y=4\end{alignedat}$ | `\begin{alignedat}{2}`<br>&nbsp;&nbsp;&nbsp;`10&x+ &3&y = 2 \\`<br>&nbsp;&nbsp;&nbsp;`3&x+&13&y = 4`<br>`\end{alignedat}`     |
+| {alignat}         | $$\begin{alignat}{2}10&x+&3&y=2\\3&x+&13&y=4\end{alignat}$$   | `\begin{alignat}{2}`<br>&nbsp;&nbsp;&nbsp;`10&x+ &3&y = 2 \\`<br>&nbsp;&nbsp;&nbsp;` 3&x+&13&y = 4`<br>`\end{alignat}`        |
+| {alignat\*}       | $$\begin{alignat*}{2}10&x+&3&y=2\\3&x+&13&y=4\end{alignat*}$$ | `\begin{alignat*}{2}`<br>&nbsp;&nbsp;&nbsp;`10&x+ &3&y = 2 \\`<br>&nbsp;&nbsp;&nbsp;` 3&x+&13&y = 4`<br>`\end{alignat*}`      |
+| {alignedat}       | $\begin{alignedat}{2}10&x+&3&y=2\\3&x+&13&y=4\end{alignedat}$ | `\begin{alignedat}{2}`<br>&nbsp;&nbsp;&nbsp;`10&x+ &3&y = 2 \\`<br>&nbsp;&nbsp;&nbsp;` 3&x+&13&y = 4`<br>`\end{alignedat}`    |
 | \allowbreak       |                                                               |                                                                                                                               |
 | \Alpha            | $\Alpha$                                                      |                                                                                                                               |
 | \alpha            | $\alpha$                                                      |                                                                                                                               |
@@ -190,7 +203,8 @@ From [Support table - KaTeX](https://katex.org/docs/support_table.html)
 | \boxtimes           | $\boxtimes$                                         |                                                                                                          |
 | \Bra                | $\Bra{\psi}$                                        | `\Bra{\psi}`                                                                                             |
 | \bra                | $\bra{\psi}$                                        | `\bra{\psi}`                                                                                             |
-| \braket             | $\braket{\phi\vert\psi}$                            | `\braket{\phi\vert\psi}`                                                                                 |
+| \braket             | $\braket{\phi\VERT\psi}$                            | <code>\braket{\phi&#124;\psi}</code>                                                                     |
+| \Braket             | $\Braket{ ϕ \VERT \frac{∂^2}{∂ t^2} \VERT ψ }$      | <code>\Braket{ ϕ &#124; \frac{∂^2}{∂ t^2} &#124; ψ }</code>                                              |
 | \brace              | ${n\brace k}$                                       | `{n\brace k}`                                                                                            |
 | \bracevert          | <span style="color:firebrick;">Not supported</span> |                                                                                                          |
 | \brack              | ${n\brack k}$                                       | `{n\brack k}`                                                                                            |
@@ -229,7 +243,7 @@ From [Support table - KaTeX](https://katex.org/docs/support_table.html)
 | \checkmark        | $\checkmark$                                                                                      |                                                                                                                   |
 | \Chi              | $\Chi$                                                                                            |                                                                                                                   |
 | \chi              | $\chi$                                                                                            |                                                                                                                   |
-| \choose           | $\binom{n+1 }{k+2}$                                                                               | `\binom{n+1 }{k+2}`                                                                                               |
+| \choose           | ${n+1 \choose k+2}$                                                                               | `{n+1 \choose k+2}`                                                                                               |
 | \circ             | $\circ$                                                                                           |                                                                                                                   |
 | \circeq           | $\circeq$                                                                                         |                                                                                                                   |
 | \circlearrowleft  | $\circlearrowleft$                                                                                |                                                                                                                   |
@@ -418,42 +432,42 @@ From [Support table - KaTeX](https://katex.org/docs/support_table.html)
 
 ## G
 
-| Symbol/Function | Rendered                                            | Source or Comment                                                                                 |
-| :-------------- | :-------------------------------------------------- | :------------------------------------------------------------------------------------------------ |
-| \Game           | $\Game$                                             |                                                                                                   |
-| \Gamma          | $\Gamma$                                            |                                                                                                   |
-| \gamma          | $\gamma$                                            |                                                                                                   |
-| {gather}        | $$\begin{gather}a=b\\e=b+c\end{gather}$$            | `\begin{gather}`<br>&nbsp;&nbsp;&nbsp;`a=b \\`<br>&nbsp;&nbsp;&nbsp;`e=b+c`<br>`\end{gather}`     |
-| {gathered}      | $\begin{gathered}a=b\\e=b+c\end{gathered}$          | `\begin{gathered}`<br>&nbsp;&nbsp;&nbsp;`a=b \\`<br>&nbsp;&nbsp;&nbsp;`e=b+c`<br>`\end{gathered}` |
-| \gcd            | $\gcd$                                              |                                                                                                   |
-| \gdef           | $\gdef\bar#1{#1^2} \bar{y} + \bar{y}$               | `\gdef\bar#1{#1^2} \bar{y} + \bar{y}`                                                             |
-| \ge             | $\ge$                                               |                                                                                                   |
-| \geneuro        | <span style="color:firebrick;">Not supported</span> |                                                                                                   |
-| \geneuronarrow  | <span style="color:firebrick;">Not supported</span> |                                                                                                   |
-| \geneurowide    | <span style="color:firebrick;">Not supported</span> |                                                                                                   |
-| \genfrac        | $\genfrac ( ] {2pt}{0}a{a+1}$                       | `\genfrac ( ] {2pt}{0}a{a+1}`                                                                     |
-| \geq            | $\geq$                                              |                                                                                                   |
-| \geqq           | $\geqq$                                             |                                                                                                   |
-| \geqslant       | $\geqslant$                                         |                                                                                                   |
-| \gets           | $\gets$                                             |                                                                                                   |
-| \gg             | $\gg$                                               |                                                                                                   |
-| \ggg            | $\ggg$                                              |                                                                                                   |
-| \gggtr          | $\gggtr$                                            |                                                                                                   |
-| \gimel          | $\gimel$                                            |                                                                                                   |
-| \global         | $\global\def\add#1#2{#1+#2} \add 2 3$               | `\global\def\add#1#2{#1+#2} \add 2 3`                                                             |
-| \gnapprox       | $\gnapprox$                                         |                                                                                                   |
-| \gneq           | $\gneq$                                             |                                                                                                   |
-| \gneqq          | $\gneqq$                                            |                                                                                                   |
-| \gnsim          | $\gnsim$                                            |                                                                                                   |
-| \grave          | $\grave{eu}$                                        | `\grave{eu}`                                                                                      |
-| \gt             | $a \gt b$                                           | `a \gt b`                                                                                         |
-| \gtrdot         | $\gtrdot$                                           |                                                                                                   |
-| \gtrapprox      | $\gtrapprox$                                        |                                                                                                   |
-| \gtreqless      | $\gtreqless$                                        |                                                                                                   |
-| \gtreqqless     | $\gtreqqless$                                       |                                                                                                   |
-| \gtrless        | $\gtrless$                                          |                                                                                                   |
-| \gtrsim         | $\gtrsim$                                           |                                                                                                   |
-| \gvertneqq      | $\gvertneqq$                                        |                                                                                                   |
+| Symbol/Function | Rendered                                            | Source or Comment                                                                                  |
+| :-------------- | :-------------------------------------------------- | :------------------------------------------------------------------------------------------------- |
+| \Game           | $\Game$                                             |                                                                                                    |
+| \Gamma          | $\Gamma$                                            |                                                                                                    |
+| \gamma          | $\gamma$                                            |                                                                                                    |
+| {gather}        | $$\begin{gather}a=b\\e=b+c\end{gather}$$            | `\begin{gather}`<br>&nbsp;&nbsp;&nbsp;`a=b \\ `<br>&nbsp;&nbsp;&nbsp;`e=b+c`<br>`\end{gather}`     |
+| {gathered}      | $\begin{gathered}a=b\\e=b+c\end{gathered}$          | `\begin{gathered}`<br>&nbsp;&nbsp;&nbsp;`a=b \\ `<br>&nbsp;&nbsp;&nbsp;`e=b+c`<br>`\end{gathered}` |
+| \gcd            | $\gcd$                                              |                                                                                                    |
+| \gdef           | $\gdef\bar#1{#1^2} \bar{y} + \bar{y}$               | `\gdef\bar#1{#1^2} \bar{y} + \bar{y}`                                                              |
+| \ge             | $\ge$                                               |                                                                                                    |
+| \geneuro        | <span style="color:firebrick;">Not supported</span> |                                                                                                    |
+| \geneuronarrow  | <span style="color:firebrick;">Not supported</span> |                                                                                                    |
+| \geneurowide    | <span style="color:firebrick;">Not supported</span> |                                                                                                    |
+| \genfrac        | $\genfrac ( ] {2pt}{0}a{a+1}$                       | `\genfrac ( ] {2pt}{0}a{a+1}`                                                                      |
+| \geq            | $\geq$                                              |                                                                                                    |
+| \geqq           | $\geqq$                                             |                                                                                                    |
+| \geqslant       | $\geqslant$                                         |                                                                                                    |
+| \gets           | $\gets$                                             |                                                                                                    |
+| \gg             | $\gg$                                               |                                                                                                    |
+| \ggg            | $\ggg$                                              |                                                                                                    |
+| \gggtr          | $\gggtr$                                            |                                                                                                    |
+| \gimel          | $\gimel$                                            |                                                                                                    |
+| \global         | $\global\def\add#1#2{#1+#2} \add 2 3$               | `\global\def\add#1#2{#1+#2} \add 2 3`                                                              |
+| \gnapprox       | $\gnapprox$                                         |                                                                                                    |
+| \gneq           | $\gneq$                                             |                                                                                                    |
+| \gneqq          | $\gneqq$                                            |                                                                                                    |
+| \gnsim          | $\gnsim$                                            |                                                                                                    |
+| \grave          | $\grave{eu}$                                        | `\grave{eu}`                                                                                       |
+| \gt             | $a \gt b$                                           | `a \gt b`                                                                                          |
+| \gtrdot         | $\gtrdot$                                           |                                                                                                    |
+| \gtrapprox      | $\gtrapprox$                                        |                                                                                                    |
+| \gtreqless      | $\gtreqless$                                        |                                                                                                    |
+| \gtreqqless     | $\gtreqqless$                                       |                                                                                                    |
+| \gtrless        | $\gtrless$                                          |                                                                                                    |
+| \gtrsim         | $\gtrsim$                                           |                                                                                                    |
+| \gvertneqq      | $\gvertneqq$                                        |                                                                                                    |
 
 ## H
 
@@ -571,7 +585,7 @@ From [Support table - KaTeX](https://katex.org/docs/support_table.html)
 | \leftarrow           | $\leftarrow$                                        |                                  |
 | \Leftarrow           | $\Leftarrow$                                        |                                  |
 | \LeftArrow           | <span style="color:firebrick;">Not supported</span> | Non standard                     |
-| \leftarrowtail       | <span style="color:firebrick;">Not supported</span> |                                  |
+| \leftarrowtail       | $\leftarrowtail$                                    |                                  |
 | \leftharpoondown     | $\leftharpoondown$                                  |                                  |
 | \leftharpoonup       | $\leftharpoonup$                                    |                                  |
 | \leftleftarrows      | $\leftleftarrows$                                   |                                  |
@@ -806,7 +820,7 @@ From [Support table - KaTeX](https://katex.org/docs/support_table.html)
 | \origof                 | $\origof$                                           |                                            |
 | \oslash                 | $\oslash$                                           |                                            |
 | \otimes                 | $\otimes$                                           |                                            |
-| \over                   | $\frac{a+1 }{b+2}+c$                                | `\frac{a+1 }{b+2}+c`                       |
+| \over                   | ${a+1 \over b+2}+c$                                 | `{a+1 \over b+2}+c`                        |
 | \overbrace              | $\overbrace{x+⋯+x}^{n\text{ times}}$                | `\overbrace{x+⋯+x}^{n\text{ times}}`       |
 | \overbracket            | <span style="color:firebrick;">Not supported</span> |                                            |
 | \overgroup              | $\overgroup{AB}$                                    | `\overgroup{AB}`                           |
@@ -951,6 +965,8 @@ From [Support table - KaTeX](https://katex.org/docs/support_table.html)
 | \searrow           | $\searrow$                                                               |                                                                                                                                                            |
 | \sec               | $\sec$                                                                   |                                                                                                                                                            |
 | \sect              | $\text{\sect}$                                                           | `\text{\sect}`                                                                                                                                             |
+| \set               | $\set{x\VERT x<5}$                                                       | <code>\set{x&#124;x<5}</code>                                                                                                                              |
+| \Set               | $\Set{ x \VERT x<\frac 1 2 }$                                            | <code>\Set{ x &#124; x<\frac 1 2}</code>                                                                                                                   |
 | \setlength         | <span style="color:firebrick;">Not supported</span>                      | [Issue #687](https://github.com/KaTeX/KaTeX/issues/687)                                                                                                    |
 | \setminus          | $\setminus$                                                              |                                                                                                                                                            |
 | \sf                | $\sf AaBb123$                                                            | `\sf AaBb123`                                                                                                                                              |
