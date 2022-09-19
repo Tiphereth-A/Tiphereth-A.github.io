@@ -12,7 +12,7 @@ From [Support table - KaTeX](https://katex.org/docs/support_table.html)
 
 <!-- more -->
 
-This is a list of TeX functions, sorted alphabetically. This list includes functions that KaTeX supports and some that it doesn't support. There is a similar page, with functions {% post_link katex-support-functions "sorted by type" %}.
+This is a list of TeX functions, sorted alphabetically. This list includes functions that KaTeX supports and some that it doesn't support. There is a similar page, with functions {% post_link katex-supported-functions "sorted by type" %}.
 
 If you know the shape of a character, but not its name, [Detexify](https://detexify.kirelabs.org/classify.html) can help.
 
