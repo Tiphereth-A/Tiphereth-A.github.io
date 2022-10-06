@@ -20,6 +20,12 @@ tags:
 
 > Nashorn JavaScript Engine 已于 Java 15 移除, 于 Java 11 废弃[^1]
 
+## 界面
+
+![screenshot](screenshot.png)
+
+## 代码
+
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
