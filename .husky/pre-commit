@@ -55,10 +55,39 @@ regen_figures() {
   done
 }
 
+
+lint_code() {
+  for src in $@; do
+    if [[ ! $src =~ ^source\/code\/* ]]; then
+      continue
+    fi
+
+    clangformatconf="lint-conf/.clang-format"
+
+    echo "---lint_code info start---"
+    echo "src: "$src
+    echo "clang-format config: "$clangformatconf
+    echo "---lint_code info end---"
+
+    case $src in
+      *.c|*.cpp|*.h|*.hpp|*.java)
+        clang-format -style=file:$clangformatconf -i $src
+      ;;
+    esac
+
+    # if [ -z ${src##*.c} ] || [ -z ${src##*.cpp} ] || [ -z ${src##*.h} ] || [ -z ${src##*.hpp} ] || [ -z ${src##*.java} ]; then
+    #   clang-format -style=file:$clangformatconf -i $src
+    #   continue
+    # fi
+  done
+}
+
+
 FILES=$(git diff --cached --name-only --diff-filter=ACMR | sed 's| |\\ |g')
 [ -z "$FILES" ] && exit 0
 
 echo "$FILES" | xargs ./node_modules/.bin/prettier --ignore-unknown --write
+lint_code $FILES
 
 echo "$FILES" | xargs git add
 
