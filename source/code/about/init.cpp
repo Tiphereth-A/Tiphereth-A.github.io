@@ -21,42 +21,42 @@ using pii = pair<int, int>;
 #define _set_nul_n(a, n) memset(a, 0, sizeof(a[0]) * (n))
 #define _set_inf_n(a, n) memset(a, 0x3f, sizeof(a[0]) * (n))
 #define _fin goto FINISHED
-#define _divb(l, r, n, expressions)                   \
-    for (decltype(n) l = 2, r; l <= (n); l = r + 1) { \
-        r = (n) / ((n) / l);                          \
-        expressions;                                  \
-    }
+#define _divb(l, r, n, expressions)                 \
+  for (decltype(n) l = 2, r; l <= (n); l = r + 1) { \
+    r = (n) / ((n) / l);                            \
+    expressions;                                    \
+  }
 #define _run_exit(expressions) _run_return(expressions, 0)
 #define _run_return(expressions, val) return (expressions), val
 #define _run_return_void(expressions) \
-    {                                 \
-        expressions;                  \
-        return;                       \
-    }
+  {                                   \
+    expressions;                      \
+    return;                           \
+  }
 #define _run_fin(expressions) \
-    {                         \
-        expressions;          \
-        _fin;                 \
-    }
+  {                           \
+    expressions;              \
+    _fin;                     \
+  }
 #define _run_break(expressions) \
-    {                           \
-        expressions;            \
-        break;                  \
-    }
+  {                             \
+    expressions;                \
+    break;                      \
+  }
 #define _run_continue(expressions) \
-    {                              \
-        expressions;               \
-        continue;                  \
-    }
+  {                                \
+    expressions;                   \
+    continue;                      \
+  }
 #define _mid(l, r) ((l) + (((r) - (l)) >> 1))
 #define _len(l, r) ((r) - (l) + 1)
 #define _lowbit(x) (1 << __builtin_ctz(x))
 #define _lowbit_64(x) (1 << __builtin_ctzll(x))
-#define _debug                                              \
-    {                                                       \
-        fprintf(stderr, "%d %s\n", __LINE__, __FUNCTION__); \
-        fflush(stderr);                                     \
-    }
+#define _debug                                          \
+  {                                                     \
+    fprintf(stderr, "%d %s\n", __LINE__, __FUNCTION__); \
+    fflush(stderr);                                     \
+  }
 
 template <class T>
 bool chkmin(T &a, T b) { return b < a ? a = b, true : false; }
@@ -82,23 +82,23 @@ void solve() {
 
 int main() {
 #ifndef ONLINE_JUDGE
-    clock_t _CLOCK_ST = clock();
+  clock_t _CLOCK_ST = clock();
 #endif
-    //======================================
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    cout.tie(nullptr);
+  //======================================
+  ios::sync_with_stdio(false);
+  cin.tie(nullptr);
+  cout.tie(nullptr);
 #ifdef MULTI_CASES
-    int _t;
-    cin >> _t;
-    while (_t--)
+  int _t;
+  cin >> _t;
+  while (_t--)
 #endif
-        solve();
-    //======================================
+    solve();
+  //======================================
 FINISHED:
 #ifndef ONLINE_JUDGE
-    std::cerr << "\n---\n"
-              << "Time used: " << clock() - _CLOCK_ST << std::endl;
+  std::cerr << "\n---\n"
+            << "Time used: " << clock() - _CLOCK_ST << std::endl;
 #endif
-    return 0;
+  return 0;
 }
