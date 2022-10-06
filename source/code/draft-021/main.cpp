@@ -10,26 +10,26 @@ deque<int> a;
 vector<int> s;
 
 int main() {
-    int _;
-    while (cin >> _) a.push_back(_);
-    if (a.empty()) {
-        cout << 0 << endl;
-        return 0;
-    }
-    s.push_back(a.front());
-    a.pop_front();
-    for (int num : a) {
-        if (num < s.back())
-            s.push_back(num);
-        else
-            *lower_bound(s.begin(), s.end(), num, greater<int>()) = num;
-        // print s
-        // for (int num : s) clog << num << " ";
-        // clog << endl;
-    }
-
-    cout << s.size() << endl;
+  int _;
+  while (cin >> _) a.push_back(_);
+  if (a.empty()) {
+    cout << 0 << endl;
     return 0;
+  }
+  s.push_back(a.front());
+  a.pop_front();
+  for (int num : a) {
+    if (num < s.back())
+      s.push_back(num);
+    else
+      *lower_bound(s.begin(), s.end(), num, greater<int>()) = num;
+    // print s
+    // for (int num : s) clog << num << " ";
+    // clog << endl;
+  }
+
+  cout << s.size() << endl;
+  return 0;
 }
 
 /* input:
