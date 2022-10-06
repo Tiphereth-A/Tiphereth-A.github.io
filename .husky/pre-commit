@@ -21,36 +21,48 @@ regen_figures() {
     echo "output_dir: "$output_dir
     echo "outsrc_svg: "$outsrc_svg
     echo "---imgcode info end---"
-    
-    if [[ $dir =~ ^imgcode\/dot\/.* ]]; then
-      cat $src | dot -Tsvg > $outsrc_svg
+
+    result=0
+
+    case $dir in
+      imgcode/dot/*)
+        echo "Proceed as dot"
+        cat $src | dot -Tsvg > $outsrc_svg
+        result=1
+      ;;
+
+      imgcode/circo/*)
+        echo "Proceed as circo"
+        cat $src | circo -Tsvg > $outsrc_svg
+        result=1
+      ;;
+
+      imgcode/neato/*)
+        echo "Proceed as neato"
+        cat $src | neato -Tsvg > $outsrc_svg
+        result=1
+      ;;
+
+      imgcode/drawio/*)
+        echo "Proceed as drawio"
+        draw.io -x -f svg -o $output_dir $src --embed-svg-images
+        result=1
+      ;;
+
+      imgcode/tikz/*)
+        echo "Proceed as TikZ"
+        xelatex -synctex=1 -interaction=nonstopmode -file-line-error -output-directory=$temp_dir $src
+        ./bin/pdf2svg/pdf2svg.exe $temp_dir${base/%tex/pdf} $outsrc_svg
+        result=1
+      ;;
+
+      *)
+        echo "Unknown imagecode type"
+      ;;
+    esac
+
+    if [ $result ]; then
       git add $outsrc_svg
-      continue
-    fi
-    
-    if [[ $dir =~ ^imgcode\/circo\/.* ]]; then
-      cat $src | circo -Tsvg > $outsrc_svg
-      git add $outsrc_svg
-      continue
-    fi
-    
-    if [[ $dir =~ ^imgcode\/neato\/.* ]]; then
-      cat $src | neato -Tsvg > $outsrc_svg
-      git add $outsrc_svg
-      continue
-    fi
-    
-    if [[ $dir =~ ^imgcode\/drawio\/.* ]]; then
-      draw.io -x -f svg -o $output_dir $src --embed-svg-images
-      git add $outsrc_svg
-      continue
-    fi
-    
-    if [[ $dir =~ ^imgcode\/tikz\/.* ]]; then
-      xelatex -synctex=1 -interaction=nonstopmode -file-line-error -output-directory=$temp_dir $src
-      ./bin/pdf2svg/pdf2svg.exe $temp_dir${base/%tex/pdf} $outsrc_svg
-      git add $outsrc_svg
-      continue
     fi
   done
 }
@@ -69,16 +81,19 @@ lint_code() {
     echo "clang-format config: "$clangformatconf
     echo "---lint_code info end---"
 
+    result=0
+
     case $src in
       *.c|*.cpp|*.h|*.hpp|*.java)
+        echo "Using Clang-format"
         clang-format -style=file:$clangformatconf -i $src
+        result=1
+      ;;
+
+      *)
+        echo "Unknown code type"
       ;;
     esac
-
-    # if [ -z ${src##*.c} ] || [ -z ${src##*.cpp} ] || [ -z ${src##*.h} ] || [ -z ${src##*.hpp} ] || [ -z ${src##*.java} ]; then
-    #   clang-format -style=file:$clangformatconf -i $src
-    #   continue
-    # fi
   done
 }
 
