@@ -395,7 +395,7 @@ $G=\lang A,B,E(G)\rang$ 满足
 
 **<a id="def-1-23">定义 - 1-23</a>** **链图**(chain graph, path graph)
 
-$P_n=C_n-e$, $\exist e\in E(C_n)$
+$P_n=C_n-e$, $\exists e\in E(C_n)$
 
 {% endnote %}
 
@@ -405,7 +405,7 @@ $P_n=C_n-e$, $\exist e\in E(C_n)$
 
 **<a id="def-1-24">定义 - 1-24</a>** **星图**(star graph) $S_n$
 
-$\exist_1 v\in V(S_n)$ 使得
+$\exists_1 v\in V(S_n)$ 使得
 
 - $\deg(v)=n-1$
 - $\forall v'\in V(S_n)\setminus\{v\},\deg(v')=1$
@@ -418,7 +418,7 @@ $\exist_1 v\in V(S_n)$ 使得
 
 **<a id="def-1-25">定义 - 1-25</a>** **轮图**(wheel graph) $W_n$
 
-$\exist_1 v\in V(W_n)$ 使得
+$\exists_1 v\in V(W_n)$ 使得
 
 - $\deg(v)=n-1$
 - $W_n-v=C_{n-1}$
@@ -472,7 +472,7 @@ $3$-正则图
 **<a id="def-1-28">定义 - 1-28</a>** **超立方体图**($k$-cube graph) $Q_n$
 
 - $V(Q_n)=\{\overline{a_1a_2...a_n}:a_i\in\{0,1\},\forall i\in 1..n\}$
-- $E(Q_n)=\{\{\overline{a_1a_2...a_n},\overline{b_1b_2...b_n}\}:\exist_1 i\in 1..n, a_x=b_x\iff x=i \}$
+- $E(Q_n)=\{\{\overline{a_1a_2...a_n},\overline{b_1b_2...b_n}\}:\exists_1 i\in 1..n, a_x=b_x\iff x=i \}$
 
 {% endnote %}
 

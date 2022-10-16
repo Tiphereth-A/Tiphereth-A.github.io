@@ -28,7 +28,7 @@ date: 2021-10-31 21:28:15
 ## 使用说明
 
 - 元素类型 `Tp` 须有接受 1 个整数的构造函数, 否则需手动偏特化 `Matrix::Matrix_helper::Zero` (零元) 与 `Matrix::Matrix_helper::One` (幺元)
-- Gauss-Jordan 消元法有普通版与辗转相除版, 其中普通版推荐用于浮点数, 辗转相除版推荐用于 $\Z_m$, `gauss(a)` 与 `gauss_half(a)` 默认执行普通版, 若需执行辗转相除版需手动偏特化 `namespace Matrix::Matrix_helper::gauss_tag`, 示例见代码末尾的注释
+- Gauss-Jordan 消元法有普通版与辗转相除版, 其中普通版推荐用于浮点数, 辗转相除版推荐用于 $\mathbb{Z}_m$, `gauss(a)` 与 `gauss_half(a)` 默认执行普通版, 若需执行辗转相除版需手动偏特化 `namespace Matrix::Matrix_helper::gauss_tag`, 示例见代码末尾的注释
 
   > 当然嫌麻烦也可以直接把 `protected` 里面的那四个函数暴露出来用, 记得同时修改 `det()`, `trans()`, `rank()`, `gauss()`, `gauss_half()`
 

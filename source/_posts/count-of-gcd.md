@@ -21,21 +21,21 @@ date: 2021-06-08 13:18:28
 ## 直接求和
 
 即形如
-$$\sum_{\nu\in\prod_{i=1}^m[1,n_i]_\N}f(\nu)g(\gcd\nu)$$
+$$\sum_{\nu\in\prod_{i=1}^m[1,n_i]_\mathbb{N}}f(\nu)g(\gcd\nu)$$
 的和式, 其中
 
-- $\nu=(\def\enum#1{v_{ #1}}\enum{1},\enum{2},...,\enum{m})\in\prod_{i=1}^m[1,n_i]_\N$
+- $\nu=(\def\enum#1{v_{ #1}}\enum{1},\enum{2},...,\enum{m})\in\prod_{i=1}^m[1,n_i]_\mathbb{N}$
 - $\gcd\nu:=\gcd_{i=1}^m v_i$
 
 令 $n_0=\min_{i=1}^mn_i$, $g_n=\gcd_{i=1}^mn_i$, 则我们可以按如下方法处理
 
 $$
 \begin{aligned}
-  \sum_{\nu\in\prod_{i=1}^m[1,n_i]_\N}f(\nu)g(\gcd\nu)&=\sum_{d=1}^{n_0}g(d)\sum_{\nu\in\prod_{i=1}^m[1,n_i]_\N}f(\nu)[\gcd\nu=d]&(1)\\
-  &=\sum_{d=1}^{n_0}g(d)\sum_{\nu\in\prod_{i=1}^m[1,\lfloor\frac{n_i}{d}\rfloor]_\N}f(d\nu)[\gcd\nu=1]&(2)\\
-  &=\sum_{d=1}^{n_0}g(d)\sum_{\nu\in\prod_{i=1}^m[1,\lfloor\frac{n_i}{d}\rfloor]_\N}f(d\nu)\sum_{e\mid\gcd\nu}\mu(e)&(3)\\
-  &=\sum_{d=1}^{n_0}g(d)\sum_{e=1}^{ \frac{g_n}{d}}\mu(e)\sum_{\nu\in\prod_{i=1}^m[1,\lfloor\frac{n_i}{de}\rfloor]_\N}f(de\nu)&(4)\\
-  &\xlongequal[D=de]{F(x)=\sum_{\nu\in\prod_{i=1}^m[1,\lfloor\frac{n_i}{x}\rfloor]_\N}f(x\nu)}\sum_{D=1}^{n_0}F(D)(g*\mu)(D)&(5)\\
+  \sum_{\nu\in\prod_{i=1}^m[1,n_i]_\mathbb{N}}f(\nu)g(\gcd\nu)&=\sum_{d=1}^{n_0}g(d)\sum_{\nu\in\prod_{i=1}^m[1,n_i]_\mathbb{N}}f(\nu)[\gcd\nu=d]&(1)\\
+  &=\sum_{d=1}^{n_0}g(d)\sum_{\nu\in\prod_{i=1}^m[1,\lfloor\frac{n_i}{d}\rfloor]_\mathbb{N}}f(d\nu)[\gcd\nu=1]&(2)\\
+  &=\sum_{d=1}^{n_0}g(d)\sum_{\nu\in\prod_{i=1}^m[1,\lfloor\frac{n_i}{d}\rfloor]_\mathbb{N}}f(d\nu)\sum_{e\mid\gcd\nu}\mu(e)&(3)\\
+  &=\sum_{d=1}^{n_0}g(d)\sum_{e=1}^{ \frac{g_n}{d}}\mu(e)\sum_{\nu\in\prod_{i=1}^m[1,\lfloor\frac{n_i}{de}\rfloor]_\mathbb{N}}f(de\nu)&(4)\\
+  &\xlongequal[D=de]{F(x)=\sum_{\nu\in\prod_{i=1}^m[1,\lfloor\frac{n_i}{x}\rfloor]_\mathbb{N}}f(x\nu)}\sum_{D=1}^{n_0}F(D)(g*\mu)(D)&(5)\\
 \end{aligned}
 $$
 
@@ -65,17 +65,17 @@ $$
 ## 统计 gcd 在某集合内的向量数
 
 即形如
-$$\sum_{\nu\in\prod_{i=1}^m[1,n_i]_\N}[\gcd\nu\in K=\{\def\enum#1{k_{ #1}}\enum{1},\enum{2},...,\enum{s}\}]$$
+$$\sum_{\nu\in\prod_{i=1}^m[1,n_i]_\mathbb{N}}[\gcd\nu\in K=\{\def\enum#1{k_{ #1}}\enum{1},\enum{2},...,\enum{s}\}]$$
 的和式, 其中
 
-- $\nu=(\def\enum#1{v_{ #1}}\enum{1},\enum{2},...,\enum{m})\in\prod_{i=1}^m[1,n_i]_\N$
+- $\nu=(\def\enum#1{v_{ #1}}\enum{1},\enum{2},...,\enum{m})\in\prod_{i=1}^m[1,n_i]_\mathbb{N}$
 - $\gcd v:=\gcd_{i=1}^m v_i$
 
 令 $n_0=\min_{i=1}^mn_i$, $g_n=\gcd_{i=1}^mn_i$, 则我们可以按如下方法处理
 
 $$
 \begin{aligned}
-  \sum_{\nu\in\prod_{i=1}^m[1,n_i]_\N}[\gcd\nu\in K]&=\sum_{k\in K}\sum_{\nu\in\prod_{i=1}^m[1,n_i]_\N}[\gcd\nu=k]\\
+  \sum_{\nu\in\prod_{i=1}^m[1,n_i]_\mathbb{N}}[\gcd\nu\in K]&=\sum_{k\in K}\sum_{\nu\in\prod_{i=1}^m[1,n_i]_\mathbb{N}}[\gcd\nu=k]\\
   &=\sum_{D=1}^{n_0}\left(\prod_{i=1}^m\left\lfloor\frac{n_i}{D}\right\rfloor\right)\sum_{k\mid D;~k\in K}\mu\left(\frac{D}{k}\right)
 \end{aligned}
 $$

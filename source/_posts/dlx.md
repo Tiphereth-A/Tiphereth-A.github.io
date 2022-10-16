@@ -30,7 +30,7 @@ DLX(Dancing Links X)是一种用于解决精确覆盖问题的优美算法
 
 > **定义** 精确覆盖问题
 >
-> 对有限集$S=\{a_i|i\in[1,n]\cap\N\}$, 给定集合$T=\{T_i\subseteq S|i\in[1,m]\cap\N\}$, 设$T^*:=\{T_i^*|i\in[1,l]\cap\N,l\leqslant m\}\subseteq 2^T$满足
+> 对有限集$S=\{a_i|i\in[1,n]\cap\mathbb{N}\}$, 给定集合$T=\{T_i\subseteq S|i\in[1,m]\cap\mathbb{N}\}$, 设$T^*:=\{T_i^*|i\in[1,l]\cap\mathbb{N},l\leqslant m\}\subseteq 2^T$满足
 >
 > - $\displaystyle\bigcup_{T_i^*\in T^*} T_i^*=S$
 > - $\forall A,B\in T^*,A\cap B\ne\varnothing\iff A=B$
@@ -781,7 +781,7 @@ $$
 
 > **定义** 重复覆盖问题
 >
-> 对有限集$S=\{a_i|i\in[1,n]\cap\N\}$, 给定集合$T=\{T_i\subseteq S|i\in[1,m]\cap\N\}$, 设$T^*:=\{T_i^*|i\in[1,l]\cap\N,l\leqslant m\}\subseteq 2^T$满足
+> 对有限集$S=\{a_i|i\in[1,n]\cap\mathbb{N}\}$, 给定集合$T=\{T_i\subseteq S|i\in[1,m]\cap\mathbb{N}\}$, 设$T^*:=\{T_i^*|i\in[1,l]\cap\mathbb{N},l\leqslant m\}\subseteq 2^T$满足
 >
 > - $\displaystyle\bigcup_{T_i^*\in T^*} T_i^*=S$
 > - $\displaystyle|T^*|=\min_{T'\in 2^T}\{|T'|\}$

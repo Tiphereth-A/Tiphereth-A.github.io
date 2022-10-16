@@ -309,7 +309,7 @@ $$
 
 {% note danger no-icon %}
 
-**<a id="lm-4-1">引理 - 4-1</a>** 对任意的正则曲线 $\textbf{r}(s):D\to\R^3$ ($s$ 为弧长参数) 和任意的刚体运动 $\mathcal{T}:\R^3\to\R^3;\mathcal{T}(X)=XT+P$, 考虑 $\tilde\textbf{r}(s):=\mathcal{T}(\textbf{r}(s))$, 有
+**<a id="lm-4-1">引理 - 4-1</a>** 对任意的正则曲线 $\textbf{r}(s):D\to\mathbb{R}^3$ ($s$ 为弧长参数) 和任意的刚体运动 $\mathcal{T}:\mathbb{R}^3\to\mathbb{R}^3;\mathcal{T}(X)=XT+P$, 考虑 $\tilde\textbf{r}(s):=\mathcal{T}(\textbf{r}(s))$, 有
 
 - $s$ 为 $\tilde\textbf{r}(s)$ 的弧长参数
 - $\tilde\textbf{r}(s)$ 的曲率和挠率与 $\textbf{r}(s)$ 相同
@@ -340,7 +340,7 @@ $${\mathrm{d}\tilde\textbf{r}\over\mathrm{d}s}={\mathrm{d}\textbf{r}\over\mathrm
 
 **<a id="th-4-1">定理 - 4-1</a>** (**曲线论基本定理**)
 
-对任意函数 $\kappa(s):D\to\R^+$, $\tau(S):D\to\R$ 且 $\kappa,\tau\in C^{\infty}(D)$, 给定等价关系 $\sim:\textbf{x}\sim\textbf{y}\iff\textbf{x}=\mathcal{T}(\textbf{y})$, 其中 $\mathcal{T}$
+对任意函数 $\kappa(s):D\to\mathbb{R}^+$, $\tau(S):D\to\mathbb{R}$ 且 $\kappa,\tau\in C^{\infty}(D)$, 给定等价关系 $\sim:\textbf{x}\sim\textbf{y}\iff\textbf{x}=\mathcal{T}(\textbf{y})$, 其中 $\mathcal{T}$
 为刚体运动, 则
 
 - (存在性) 存在曲线 $\textbf{r}(s)$ 使得

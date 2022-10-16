@@ -48,13 +48,13 @@ $$\frac{d}{e}\mid \frac{n}{e}\iff e\mid d\mid n$$
 
   一方面, $\displaystyle\frac{d}{e}\mid \frac{n}{e}\implies (e\cdot\frac{d}{e})\mid (e\cdot\frac{n}{e})\implies d\mid n$
 
-  另一方面, $\frac{d}{e}\in\Z\implies e\mid d$
+  另一方面, $\frac{d}{e}\in\mathbb{Z}\implies e\mid d$
 
   故$e\mid d\mid n$
 
 - $\impliedby$
 
-  由$e\mid d\mid n$可知$\displaystyle\frac{n}{e},\frac{n}{d},\frac{d}{e}\in\Z$
+  由$e\mid d\mid n$可知$\displaystyle\frac{n}{e},\frac{n}{d},\frac{d}{e}\in\mathbb{Z}$
 
   又$\displaystyle\frac{n}{e}=\frac{n}{d}\cdot\frac{d}{e}$
 

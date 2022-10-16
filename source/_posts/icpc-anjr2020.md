@@ -247,8 +247,8 @@ $$(i_k,p_{i_k})=1$$
 ### 题意简述
 
 给定整数$\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n}$和$\def\enum#1{b_{ #1}}\enum{1},\enum{2},...,\enum{m}$, 令
-$$f(c)=\left|\left\{i\mid\forall j\in[1,m]\cap\N,~|c-a_i|<|c-b_j|\right\}\right|$$
-求 $\displaystyle\max_{c\in\R} f(c)$
+$$f(c)=\left|\left\{i\mid\forall j\in[1,m]\cap\mathbb{N},~|c-a_i|<|c-b_j|\right\}\right|$$
+求 $\displaystyle\max_{c\in\mathbb{R}} f(c)$
 
 ### 解题思路
 

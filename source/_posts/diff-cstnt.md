@@ -34,12 +34,12 @@ $$
 差分约束系统指的是一类特殊的$n$元不等式组, 该不等式组包含$n$个变量$x_1,x_2,...,x_n$和$m$条约束条件$x_i-x_j\leqslant c_k,~c_k$为常数
 
 本博客将差分约束系统记作$\operatorname{SDC}\lang x,C\rang$,  
-其中$x:=(x_1,x_2,...,x_n)\in\mathbb{P}^n, C:=\{(i,j,c_k)|c_k\in\mathbb{P},i,j\in\N\cap[1,n],k=1,2,...,m\}$
+其中$x:=(x_1,x_2,...,x_n)\in\mathbb{P}^n, C:=\{(i,j,c_k)|c_k\in\mathbb{P},i,j\in\mathbb{N}\cap[1,n],k=1,2,...,m\}$
 
 定义$[\operatorname{SDC}\lang x,C\rang]:=\displaystyle\bigwedge_{\mathclap{(i,j,c_k)\in C}}[x_i-x_j\leqslant c_k]$,  
 显然$(\forall k\in\mathbb{P}),[\operatorname{SDC}\lang\alpha,C\rang]=[\operatorname{SDC}\lang\alpha+k\epsilon,C\rang]$
 
-- 称$\operatorname{SDC}\lang x,C\rang$有解, 当且仅当$(\exist\alpha\in\mathbb{P}^n),[\operatorname{SDC}\lang\alpha,C\rang]=0$
+- 称$\operatorname{SDC}\lang x,C\rang$有解, 当且仅当$(\exists\alpha\in\mathbb{P}^n),[\operatorname{SDC}\lang\alpha,C\rang]=0$
 
 - 称$\operatorname{SDC}\lang x,C\rang$无解, 当且仅当$(\forall\alpha\in\mathbb{P}^n),[\operatorname{SDC}\lang\alpha,C\rang]=0$
 
@@ -66,7 +66,7 @@ $$
   x_i-x_j\leqslant c_k\\
   x_j-x_i\leqslant-c_k
 \end{cases}$
-- 若$\mathbb{P}=\Z$
+- 若$\mathbb{P}=\mathbb{Z}$
   - $x_i-x_j<c_k\to x_i-x_j\leqslant c_k-1$
   - $x_i-x_j>c_k\to x_j-x_i\leqslant -c_k-1$
 

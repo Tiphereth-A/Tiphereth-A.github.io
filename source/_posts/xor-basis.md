@@ -20,7 +20,7 @@ tags:
 date: 2021-11-12 17:59:15
 ---
 
-令 $V\subseteq\Z_2^n$, 异或线性基即为线性空间 $V$ 上满足一定条件的一组 Hamel 基 $(\def\enum#1{\epsilon_{ #1}}\enum{1},\enum{2},...,\enum{n})$
+令 $V\subseteq\mathbb{Z}_2^n$, 异或线性基即为线性空间 $V$ 上满足一定条件的一组 Hamel 基 $(\def\enum#1{\epsilon_{ #1}}\enum{1},\enum{2},...,\enum{n})$
 
 <!-- more -->
 
@@ -28,7 +28,7 @@ date: 2021-11-12 17:59:15
 
 ### 定义
 
-令 $V\subseteq\Z_2^n$, 线性基即为线性空间 $V$ 上满足如下条件的一组"基底" $(\def\enum#1{\epsilon_{ #1}}\enum{1},\enum{2},...,\enum{n})$
+令 $V\subseteq\mathbb{Z}_2^n$, 线性基即为线性空间 $V$ 上满足如下条件的一组"基底" $(\def\enum#1{\epsilon_{ #1}}\enum{1},\enum{2},...,\enum{n})$
 
 1. 排除 $\def\enum#1{\epsilon_{ #1}}\enum{1},\enum{2},...,\enum{n}$ 中所有零向量后的向量组线性无关
 1. $\epsilon_i(i+1..n)=0$
@@ -106,7 +106,7 @@ $\begin{array}{r|l:l}
 
 ## 代码
 
-众所周知, $\Z_2$ 上的加法即为异或, 故代码实现时可以将 $V$ 中元素写为无符号整形或 `std::bitset`, 加法即为异或
+众所周知, $\mathbb{Z}_2$ 上的加法即为异或, 故代码实现时可以将 $V$ 中元素写为无符号整形或 `std::bitset`, 加法即为异或
 
 <details open>
 <summary><font color='orange'>Show code</font></summary>

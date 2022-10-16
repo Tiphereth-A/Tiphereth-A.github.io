@@ -65,7 +65,7 @@ Asia Guangzhou 2003
 
 ## 题意简述
 
-给出一组数$\def\enum#1{p_{ #1}}\enum{1},\enum{2},...,\enum{k}$, 设$N=\prod_{i=1}^kp_i^{e_i}$, 其中$0\leqslant e_i\leqslant 10,i=1,2,...,k,~\sum_{i=1}^ke_i\geqslant 1$, $M$为$N$的因子和, 问是否有一组数$\def\enum#1{e_{ #1}}\enum{1},\enum{2},...,\enum{k}$使得$\log_2M\in\N$, 如果有, 输出可能的$x$中的最大值
+给出一组数$\def\enum#1{p_{ #1}}\enum{1},\enum{2},...,\enum{k}$, 设$N=\prod_{i=1}^kp_i^{e_i}$, 其中$0\leqslant e_i\leqslant 10,i=1,2,...,k,~\sum_{i=1}^ke_i\geqslant 1$, $M$为$N$的因子和, 问是否有一组数$\def\enum#1{e_{ #1}}\enum{1},\enum{2},...,\enum{k}$使得$\log_2M\in\mathbb{N}$, 如果有, 输出可能的$x$中的最大值
 
 ## 解题思路
 

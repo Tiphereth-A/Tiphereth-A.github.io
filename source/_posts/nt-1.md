@@ -36,32 +36,32 @@ date: 2020-10-04 01:14:43
 
 ## 整除
 
-对于整数$a,b$, 若$\exist k~s.t.~a=kb$, 则称$b$整除$a$, 记作$b\mid a$, 否则称$b$不整除$a$, 记作$b\nmid a$
+对于整数$a,b$, 若$\exists k~s.t.~a=kb$, 则称$b$整除$a$, 记作$b\mid a$, 否则称$b$不整除$a$, 记作$b\nmid a$
 
 ### 性质
 
 1. $a\mid b,b\mid c\implies a\mid c$
 1. $a\mid b,b\mid a\implies a=\pm b$
-1. $a\mid b,a\mid c\implies\forall x,y\in\Z,~a\mid bx+cy$
+1. $a\mid b,a\mid c\implies\forall x,y\in\mathbb{Z},~a\mid bx+cy$
 
 ### 带余除法
 
 #### <a href="#end-t-1.1" id="t-1.1">定理 - 1.1</a> (带余除法)
 
-设$a,b\in\Z$, 且$b\geqslant1$, 则存在唯一的整数$q,r$使得
-$$a=qb+r,r\in[0,b)\cap\N$$
+设$a,b\in\mathbb{Z}$, 且$b\geqslant1$, 则存在唯一的整数$q,r$使得
+$$a=qb+r,r\in[0,b)\cap\mathbb{N}$$
 
 ##### <a href="#t-1.1" id="p-t-1.1">证明</a>
 
 首先, 取$q=\lfloor\frac{a}{b}\rfloor$, $r=a-qb$, 容易验证此时的$q,r$满足条件
 
-下证唯一性, 假设又有一组整数$q',r'$使得$a=q'b-r',~r'\in[0,b)\cap\N$, 则
+下证唯一性, 假设又有一组整数$q',r'$使得$a=q'b-r',~r'\in[0,b)\cap\mathbb{N}$, 则
 
 $$0=a-a=(q-q')b+(r-r')$$
 
 因此$b\mid r-r'$
 
-而$|r-r'|\in[0,b)\cap\N$, 故只能有$r-r'=0$, 即$r=r'$
+而$|r-r'|\in[0,b)\cap\mathbb{N}$, 故只能有$r-r'=0$, 即$r=r'$
 
 此时$a-qb=a-q'b$, 有$q=q'$
 
@@ -75,13 +75,13 @@ $$0=a-a=(q-q')b+(r-r')$$
 
 - 若$a,b\in S$, 则$a\pm b\in S$
 
-则存在唯一自然数$d$使得$S=d\Z:=\{da|a\in\Z\}$
+则存在唯一自然数$d$使得$S=d\mathbb{Z}:=\{da|a\in\mathbb{Z}\}$
 
 > 条件中隐含了一点:
 >
-> - 若$a\in S$, 则$\forall c\in\Z,~ac\in S$
+> - 若$a\in S$, 则$\forall c\in\mathbb{Z},~ac\in S$
 
-一般的, 若 $S$ 为主理想环, 则 $\exist_1 d\in\Z~s.t.~S=\lang d\rang$
+一般的, 若 $S$ 为主理想环, 则 $\exists_1 d\in\mathbb{Z}~s.t.~S=\lang d\rang$
 
 ##### <a href="#t-1.2" id="p-t-1.2">证明</a>
 
@@ -89,17 +89,17 @@ $$0=a-a=(q-q')b+(r-r')$$
 
 设$0\ne a\in S$, 则$0=a-a\in S,-a=(-1)\times a\in S$, 故此时$S$中必有正整数
 
-由良序公理可知$S$中的所有正整数中必有最小值, 令$d$为$S$中的最小正整数, 下证$S=d\Z$
+由良序公理可知$S$中的所有正整数中必有最小值, 令$d$为$S$中的最小正整数, 下证$S=d\mathbb{Z}$
 
-首先易得$d\Z\subseteq S$
+首先易得$d\mathbb{Z}\subseteq S$
 
 之后我们在$S$中任取整数$a$做带余除法
-$$a=qd+r,~q\in\Z,r\in[0,d)\cap\N$$
+$$a=qd+r,~q\in\mathbb{Z},r\in[0,d)\cap\mathbb{N}$$
 可知$r=a-qd\in S$, 而$d$为$S$中的最小正整数, 故必有$r=0$
 
-这表明$a=qd\in d\Z$, 因此$S\subseteq d\Z$
+这表明$a=qd\in d\mathbb{Z}$, 因此$S\subseteq d\mathbb{Z}$
 
-最后, 注意到$d$为$S$中的最小正整数, 则满足$S=d\Z$的$d$一定是唯一的
+最后, 注意到$d$为$S$中的最小正整数, 则满足$S=d\mathbb{Z}$的$d$一定是唯一的
 
 <a href="#p-t-1.2" id="end-t-1.2">$\Box$</a>
 
@@ -156,7 +156,7 @@ $$\lim_{n\to\infty}{\pi(n)\over\frac{n}{\ln n}}=1$$
 
 这里给出一个简单的做法
 
-首先, 我们不难证明: 若$n$是合数, 则其必有一个因子$d\in(1,\sqrt n]\cap\N$
+首先, 我们不难证明: 若$n$是合数, 则其必有一个因子$d\in(1,\sqrt n]\cap\mathbb{N}$
 
 所以对于要判定的整数`n`, 我们只需在`2..sqrt(n)`中枚举整数`i`验证即可
 
@@ -256,13 +256,13 @@ $$
 
 写成式子就是
 
-$$(a,b):=\max\{d\in\N^*|d\mid a,d\mid b\}$$
-$$[a,b]:=\min\{d\in\N^*|a\mid d,b\mid d\}$$
+$$(a,b):=\max\{d\in\mathbb{N}^*|d\mid a,d\mid b\}$$
+$$[a,b]:=\min\{d\in\mathbb{N}^*|a\mid d,b\mid d\}$$
 
 这一组概念自然可以推广到多个整数之间
 
-$$(\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n}):=\max\{d\in\N^*|d\mid a_i,~i=1,2,...,n\}$$
-$$[\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n}]:=\min\{d\in\N^*|a_i\mid d,~i=1,2,...,n\}$$
+$$(\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n}):=\max\{d\in\mathbb{N}^*|d\mid a_i,~i=1,2,...,n\}$$
+$$[\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n}]:=\min\{d\in\mathbb{N}^*|a_i\mid d,~i=1,2,...,n\}$$
 
 ### 性质
 
@@ -273,13 +273,13 @@ $$[\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n}]:=\min\{d\in\N^*|a_i\mid d
 1. $(a,b)=(b,a)=(|a|,b)=(|a|,|b|)$
 1. 当$a\ne 0$时, $(a,a)=|a|$
 1. 若$a_1\ne 0$, 则$(\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n})=((\enum{1},\enum{2}),\enum{3},...,\enum{n})$
-1. $\forall l\in\Z,~(a,b)=(a,b+la)$
-1. $\forall m\in\N^*,~m(\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n})=(\def\enum#1{ma_{ #1}}\enum{1},\enum{2},...,\enum{n})$
+1. $\forall l\in\mathbb{Z},~(a,b)=(a,b+la)$
+1. $\forall m\in\mathbb{N}^*,~m(\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n})=(\def\enum#1{ma_{ #1}}\enum{1},\enum{2},...,\enum{n})$
 1. 若$(\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n})=d$, 则$(\def\enum#1{ {a_{ #1}\over d}}\enum{1},\enum{2},...,\enum{n})=1$
 1. 对于整数$m$, 若$(a_i,m)=1,~i=1,2,...,n$, 则$(\prod_{i=1}^na_i,m)=1$
 1. 设$\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n}$是不全为零的整数, $(\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n})=d$, 则
-   $$\left\{\sum_{i=1}^na_ix_i\bigg|x_i\in\Z,i=1,2,...,n\right\}=d\Z$$
-1. 设$c\in\Z/\{0\},a,b\in\Z$, 若$c\mid ab,(c,b)=1$, 则$c\mid a$
+   $$\left\{\sum_{i=1}^na_ix_i\bigg|x_i\in\mathbb{Z},i=1,2,...,n\right\}=d\mathbb{Z}$$
+1. 设$c\in\mathbb{Z}/\{0\},a,b\in\mathbb{Z}$, 若$c\mid ab,(c,b)=1$, 则$c\mid a$
    - 特别地, 若$p$为素数, $p\mid ab$, 则$p\mid a$或$p\mid b$
 
 下面对性质 8 给出证明
@@ -287,11 +287,11 @@ $$[\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n}]:=\min\{d\in\N^*|a_i\mid d
 ##### <a href="#end-t-3.1" id="t-3.1">定理 - 3.1</a>(性质 8, Bézout 定理)
 
 设$\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n}$是不全为零的整数, $(\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n})=d$, 则
-$$S:=\left\{\sum_{i=1}^na_ix_i\bigg|x_i\in\Z,i=1,2,...,n\right\}=d\Z$$
+$$S:=\left\{\sum_{i=1}^na_ix_i\bigg|x_i\in\mathbb{Z},i=1,2,...,n\right\}=d\mathbb{Z}$$
 
 ###### <a href="#t-3.1" id="p-t-3.1">证明</a>
 
-由 <a href="#t-1.2">定理 - 1.2</a> 可知, 存在正整数$a$使得$S=a\Z$, 接下来只需证$a=d$
+由 <a href="#t-1.2">定理 - 1.2</a> 可知, 存在正整数$a$使得$S=a\mathbb{Z}$, 接下来只需证$a=d$
 
 一方面, $d$是$S$中所有数的因子, 而$a\in S$, 故$d\mid a$
 
@@ -305,14 +305,14 @@ $$a\mid(\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n})=d$$
 #### 最小公倍数
 
 1. $[\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n}]=[[\enum{1},\enum{2}],\enum{3},...,\enum{n}]$
-1. $\forall m\in\N^*,~[\def\enum#1{ma_{ #1}}\enum{1},\enum{2},...,\enum{n}]=m[\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n}]$
+1. $\forall m\in\mathbb{N}^*,~[\def\enum#1{ma_{ #1}}\enum{1},\enum{2},...,\enum{n}]=m[\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n}]$
 1. 若$\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n}$两两互素, 则$[\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n}]=|\prod_{i=1}^na_i|$
 
 ### 求法
 
 求最小公倍数只需求出最大公约数即可
 
-而由于$\forall l\in\Z,~(a,b)=(a,b+la)$, 我们可推出:
+而由于$\forall l\in\mathbb{Z},~(a,b)=(a,b+la)$, 我们可推出:
 
 - 若$b\ne 0$, 则$(a,b)=(b,a\bmod b)$
 
@@ -364,7 +364,7 @@ $$
 \begin{cases}
   x=x'-bt\\
   y=y'+at
-\end{cases}(t\in\Z)
+\end{cases}(t\in\mathbb{Z})
 $$
 
 也为该方程的解, 所以方程$ax+by=c$若有解, 则必有无数组解
@@ -422,13 +422,13 @@ $$
 
 若$t\nmid a-b$, 则称$a$与$b$模$t$不同余, 记作$a{\equiv}\llap{/\,} b\pmod t$
 
-我们称 $\Z_m:=\{\def\enum#1{\overline{ #1}}\enum{0},\enum{1},...,\enum{m-1}\}$ 为模 $m$ 剩余类
+我们称 $\mathbb{Z}_m:=\{\def\enum#1{\overline{ #1}}\enum{0},\enum{1},...,\enum{m-1}\}$ 为模 $m$ 剩余类
 
 显然, 同余关系是一种等价关系, 剩余类即为其截面
 
 ### 性质
 
-设$a,b,c,d\in\Z$, $m\in\N^*$, $p$为素数
+设$a,b,c,d\in\mathbb{Z}$, $m\in\mathbb{N}^*$, $p$为素数
 
 1. $a\equiv a\pmod m$
 1. $a\equiv b\pmod m\implies b\equiv a\pmod m$
@@ -438,7 +438,7 @@ $$
 1. $a\equiv b\pmod m\implies\forall d\mid m,a\equiv b\pmod d$
 1. $a\equiv b\pmod m\iff ad\equiv bd\pmod{md}$
 1. $a\equiv b\pmod{m_i},i=1,2,...,n\implies a\equiv b\pmod{[\def\enum#1{m_{ #1}}\enum{1},\enum{2},...,\enum{n}]}$
-1. 令$f(x)=\sum_{i=0}^na_ix^i,~a_1\in\Z,i=0,1,...,n$, 则若$a\equiv b\pmod m$, 则$f(a)\equiv f(b)\pmod m$
+1. 令$f(x)=\sum_{i=0}^na_ix^i,~a_1\in\mathbb{Z},i=0,1,...,n$, 则若$a\equiv b\pmod m$, 则$f(a)\equiv f(b)\pmod m$
 
 另外在这里列出三条重要定理
 
@@ -520,11 +520,11 @@ $$(p-1)!\equiv-1\pmod p$$
 
 ##### <a href="#t-4.3" id="p-t-4.3">证明</a>
 
-当$p=2$时, 定理显然成立, 以下设$p\geqslant 3$, 令$\Z_p:=\{\def\enum#1{\overline{ #1}}\enum{0},\enum{1},...,\enum{p-1}\}$即证$\Z_p/\{0\}$中所有元素之积为$\overline{-1}$
+当$p=2$时, 定理显然成立, 以下设$p\geqslant 3$, 令$\mathbb{Z}_p:=\{\def\enum#1{\overline{ #1}}\enum{0},\enum{1},...,\enum{p-1}\}$即证$\mathbb{Z}_p/\{0\}$中所有元素之积为$\overline{-1}$
 
-我们知道, $\Z_p/\{0\}$中每个元素都是可逆的, 即$\forall a\in\Z_p/\{0\},~a^{-1}\in\Z_p/\{0\}$, 显然$a^{-1}$的逆元为$a$
+我们知道, $\mathbb{Z}_p/\{0\}$中每个元素都是可逆的, 即$\forall a\in\mathbb{Z}_p/\{0\},~a^{-1}\in\mathbb{Z}_p/\{0\}$, 显然$a^{-1}$的逆元为$a$
 
-而$aa^{-1}=\overline{1}$, 故$\Z_p/\{0\}$中彼此互逆的元素每对乘积为$1$
+而$aa^{-1}=\overline{1}$, 故$\mathbb{Z}_p/\{0\}$中彼此互逆的元素每对乘积为$1$
 
 之后考虑$a=a^{-1}$的情况, 此时有$a^2=\overline{1}$, 即$a=\overline{1}$或$a=\overline{-1}$
 
@@ -541,11 +541,11 @@ $$a^{\varphi(m)}\equiv1\pmod m$$
 
 ##### <a href="#t-4.4" id="p-t-4.4">证明</a>
 
-设$\Z_m^*:=\{a\in\Z_m|(a,m)=1\}=\{\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{\varphi(m)}\}$
+设$\mathbb{Z}_m^*:=\{a\in\mathbb{Z}_m|(a,m)=1\}=\{\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{\varphi(m)}\}$
 
-由$(a,m)=1$可知$\overline{a}\in\Z_m^*$, 从而$\Z_m^*=\{\def\enum#1{aa_{ #1}}\enum{1},\enum{2},...,\enum{\varphi(m)}\}$
+由$(a,m)=1$可知$\overline{a}\in\mathbb{Z}_m^*$, 从而$\mathbb{Z}_m^*=\{\def\enum#1{aa_{ #1}}\enum{1},\enum{2},...,\enum{\varphi(m)}\}$
 
-从而在群$\Z_m^*$中
+从而在群$\mathbb{Z}_m^*$中
 $$\prod_{i=1}^{\varphi(m)}a_i=\prod_{i=1}^{\varphi(m)}aa_i=a^{\varphi(m)}\prod_{i=1}^{\varphi(m)}a_i$$
 
 两边约去$\prod_{i=1}^{\varphi(m)}a_i$, 即得$a^{\varphi(m)}\equiv1\pmod m$
@@ -598,7 +598,7 @@ $$\prod_{i=1}^{\varphi(m)}a_i=\prod_{i=1}^{\varphi(m)}aa_i=a^{\varphi(m)}\prod_{
 
    首先, $1$的逆元是$1$
 
-   然后考虑$p$对$i$做带余除法$p=ki+j,j\in[0,i)\cap\N$, 在模$p$意义下即有
+   然后考虑$p$对$i$做带余除法$p=ki+j,j\in[0,i)\cap\mathbb{N}$, 在模$p$意义下即有
 
    $$
    \begin{aligned}
