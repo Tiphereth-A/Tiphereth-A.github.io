@@ -13,6 +13,7 @@ tags:
   - 数学
   - 数论
   - Bézout定理
+  - Chicken McNugget定理
   - 构造
 date: 2020-10-04 12:27:01
 ---
@@ -76,9 +77,17 @@ $$\nexists x,y\in\N,~s.t.~ax+by=n\tag{1}$$
 
 ## 解题思路
 
-由 Bézout 定理, 我们知道, 如果$x,y$是在整数范围内的, 那么这个$n$是不存在的
+实际上, 我们有如下定理:
 
-但这题将$x,y$限制在了正整数范围内, Bézout 定理就不能用了
+{% note success no-icon %}
+
+**<a id="th-1-1">定理 - 1-1</a>** (Chicken McNugget 定理) 对任意两个互素的正整数 $a,b$, 满足
+
+$$\nexists x,y\in\N,~s.t.~ax+by=n$$
+
+的最大正整数 $n$ 是 $ab-a-b$
+
+{% endnote %}
 
 我们这样考虑:
 
