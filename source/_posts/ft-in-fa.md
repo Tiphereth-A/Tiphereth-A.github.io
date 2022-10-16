@@ -91,16 +91,16 @@ $$(\vec u,\vec v)=|\vec u||\vec v|(\cos\alpha-\sin\alpha\cot\beta)$$
 
 {% note info no-icon %}
 
-**<a id="def-1-1">定义 - 1-1</a>** "三维空间"定义为元组 $(V,\R,+,\cdot)$, 其中
+**<a id="def-1-1">定义 - 1-1</a>** "三维空间"定义为元组 $(V,\mathbb{R},+,\cdot)$, 其中
 
-- $V:=\{(x,y,z)|x,y,z\in\R\}$
+- $V:=\{(x,y,z)|x,y,z\in\mathbb{R}\}$
 - $+$ 为加法, 满足
 
   $$+:V\times V\to V;((x_1,y_1,z_1),(x_2,y_2,z_2))\mapsto (x_1+x_2,y_1+y_2,z_1+z_2)$$
 
 - $\cdot$ 为数乘, 满足
 
-  $$\cdot:\R\times V\to V;(k,(x,y,z))\mapsto (kx,ky,kz)$$
+  $$\cdot:\mathbb{R}\times V\to V;(k,(x,y,z))\mapsto (kx,ky,kz)$$
 
 在不引起歧义的情况下简记为 $V$
 
@@ -150,12 +150,12 @@ $$(\vec e_i,\vec e_j)=[i=j]$$
 
 又如空间的基础是集合和运算, 而集合完全可以不是实数集, 我们可以在很多"奇奇怪怪"的集合上建立空间, 比如:
 
-- 矩阵 $\R^{m\times n}$ 组成的集合与矩阵的加法和数乘构成线性空间
+- 矩阵 $\mathbb{R}^{m\times n}$ 组成的集合与矩阵的加法和数乘构成线性空间
 - 区间 $[a,b]$ 上的全体连续函数组成的集合 (记作 $C[a,b]$) 与函数的加法和数乘构成线性空间
 
 ## 函数与空间
 
-以下内容默认线性空间 $(V,\Bbb{P},+,\cdot)$ 中的数域 $\Bbb{P}$ 只能是实数域 $\R$ 或复数域 $\Complex$
+以下内容默认线性空间 $(V,\Bbb{P},+,\cdot)$ 中的数域 $\Bbb{P}$ 只能是实数域 $\mathbb{R}$ 或复数域 $\mathbb{C}$
 
 ### 内积与范数
 
@@ -206,7 +206,7 @@ $$(\cdot,\cdot):V\times V\to\Bbb{P}$$
 
   > 实际上本条要求是多余的
   >
-  > 若 $q$ 是 $(\cdot,\cdot)$ 诱导的二次型, 则 $q(x)\in\R,~\forall x\in V\iff(x,y)=\overline{(y,x)},~\forall x,y\in V$
+  > 若 $q$ 是 $(\cdot,\cdot)$ 诱导的二次型, 则 $q(x)\in\mathbb{R},~\forall x\in V\iff(x,y)=\overline{(y,x)},~\forall x,y\in V$
 
 则称其是一个 **内积**, 有内积的线性空间称为 **内积空间**
 
@@ -214,7 +214,7 @@ $$(\cdot,\cdot):V\times V\to\Bbb{P}$$
 
 {% note info no-icon %}
 
-**<a id="def-2-4">定义 - 2-4</a>** (范数/模) 若线性空间 $(V,\Bbb{P},+,\cdot)$ 上的函数 $\lVert\cdot\rVert:V\to\R$ 满足:
+**<a id="def-2-4">定义 - 2-4</a>** (范数/模) 若线性空间 $(V,\Bbb{P},+,\cdot)$ 上的函数 $\lVert\cdot\rVert:V\to\mathbb{R}$ 满足:
 
 - (正定性) $\lVert x\rVert\geq 0,~\forall x\in V$, $\lVert x\rVert=0\iff x=\vec 0$
 - (齐次性) $\lVert ax\rVert=|a|\lVert x\rVert,~\forall x\in V,\forall a\in\Bbb{P}$
@@ -244,8 +244,8 @@ $$\lVert x+y\rVert^2+\lVert x-y\rVert^2=2(\lVert x\rVert^2+\lVert y\rVert^2),~\f
 
 $$
 (x,y)=\begin{cases}
-  \frac{1}{4}\left(\lVert x+y\rVert^2-\lVert x-y\rVert^2\right),&\Bbb{P}=\R\\
-  \frac{1}{4}\left(\lVert x+y\rVert^2-\lVert x-y\rVert^2+i\lVert x+iy\rVert^2-i\lVert x-iy\rVert^2\right),&\Bbb{P}=\Complex
+  \frac{1}{4}\left(\lVert x+y\rVert^2-\lVert x-y\rVert^2\right),&\Bbb{P}=\mathbb{R}\\
+  \frac{1}{4}\left(\lVert x+y\rVert^2-\lVert x-y\rVert^2+i\lVert x+iy\rVert^2-i\lVert x-iy\rVert^2\right),&\Bbb{P}=\mathbb{C}
 \end{cases}
 $$
 
@@ -263,7 +263,7 @@ $$
 
 **<a id="def-2-5">定义 - 2-5</a>** 在线性空间 $V$ 中, 若集合 $B:=\{\vec b_1,\vec b_2,...\}\subseteq V\setminus\{\vec 0\}$ 满足
 
-- $\forall v\in V,\exist_1 \alpha_1,\alpha_2,... \in\Bbb{P},~s.t.~\sum_{i}\alpha_i\vec b_i=v$
+- $\forall v\in V,\exists_1 \alpha_1,\alpha_2,... \in\Bbb{P},~s.t.~\sum_{i}\alpha_i\vec b_i=v$
 
 则称 $B$ 为 $V$ 的一组 **线性基**/**Hamel 基**, $B$ 的大小(势)称为 $V$ 的 **维度**
 
@@ -306,9 +306,9 @@ $$x=\sum_{\alpha}(x,m_\alpha)m_\alpha$$
 
 接下来让我们进入正题
 
-考虑函数 $u:[0,2\pi]\to\Complex_{\infty}$ 我们要求 $|u(x)|^2$ 在 $[0,2\pi]$ 上可积, 令 $u$ 组成的集合为 $L^2([0,2\pi];\Complex)$
+考虑函数 $u:[0,2\pi]\to\mathbb{C}_{\infty}$ 我们要求 $|u(x)|^2$ 在 $[0,2\pi]$ 上可积, 令 $u$ 组成的集合为 $L^2([0,2\pi];\mathbb{C})$
 
-在 $L^2([0,2\pi];\Complex)$ 上定义内积
+在 $L^2([0,2\pi];\mathbb{C})$ 上定义内积
 
 $$(u,v):=\int_0^{2\pi}u(x)\overline{v(x)}\mathrm{d}x$$
 
@@ -320,19 +320,19 @@ $$\lVert u\rVert:=(u,u)^{\frac{1}{2}}$$
 
 我们考虑这个空间的基, 由 Taylor 公式,
 
-$$\{x^i:i\in\N\}$$
+$$\{x^i:i\in\mathbb{N}\}$$
 
 是一个基, 但不是 Hilbert 基, 令其为 $B_p$
 
 而
 
-$$\{e^{ikx}|k\in\N\}$$
+$$\{e^{ikx}|k\in\mathbb{N}\}$$
 
 是一个 Hilbert 基, 令其为 $B_f$
 
 ## Fourier 变换
 
-对于任意两个 $L^2([0,2\pi];\Complex)$ 中的函数 $u,v$, 我们考虑其在$B_p$ 和 $B_f$ 的系数
+对于任意两个 $L^2([0,2\pi];\mathbb{C})$ 中的函数 $u,v$, 我们考虑其在$B_p$ 和 $B_f$ 的系数
 
 设
 $$u(x)=\sum_{k=0}^{\infty}\xi_kx^k=\sum_{k=0}^{\infty}\psi_k e^{ikx}$$

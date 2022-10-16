@@ -243,7 +243,7 @@ ACduck
 
 设数组`vis[1..n]`, 其中`vis[i]`表示点`i`是否被标记
 
-1. 令`vis[i]=0`, $\forall i\in[1,n]\cap\N$
+1. 令`vis[i]=0`, $\forall i\in[1,n]\cap\mathbb{N}$
 1. 从`1`到`n`枚举`i`
    1. 如果`vis[i]==0`, 则
       1. 从`i+1`到`n`枚举`j`
@@ -608,7 +608,7 @@ $$
 
 ### 解题思路
 
-设$(c_i,d_i)=\sum_{j=1}^n([a_j=i],[b_j=i])\in\Z^2,~i=1,2,3,4,5$
+设$(c_i,d_i)=\sum_{j=1}^n([a_j=i],[b_j=i])\in\mathbb{Z}^2,~i=1,2,3,4,5$
 
 如果$2\nmid c_i+d_i,~i=1,2,3,4,5$, 则一定无解
 

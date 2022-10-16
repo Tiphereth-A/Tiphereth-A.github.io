@@ -19,8 +19,8 @@ date: 2021-05-07 14:05:47
 
 - $$
   \lfloor x\rfloor=\begin{cases}
-    \displaystyle x+\frac{\arctan\cot\pi x}{\pi}-\frac{1}{2},&x\notin\Z\\
-    x,&x\in\Z
+    \displaystyle x+\frac{\arctan\cot\pi x}{\pi}-\frac{1}{2},&x\notin\mathbb{Z}\\
+    x,&x\in\mathbb{Z}
   \end{cases}
   $$
 

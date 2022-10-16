@@ -108,7 +108,7 @@ $$
 3. $\implies$ 4. 注意到 $f(A)\cap f(B\setminus A)=\varnothing$, 故 $f(B\setminus A)=f(B)\setminus f(A)$
 4. $\implies$ 1. 反证
 
-   若 $(\exist x_1,x_2\in X,x_1\ne x_2),~f(x_1)=f(x_2)$
+   若 $(\exists x_1,x_2\in X,x_1\ne x_2),~f(x_1)=f(x_2)$
 
    令 $A=\{x_1\},B=\{x_1,x_2\}$, 则 $\{f(x_2)\}=f(B\setminus A)=f(B)\setminus f(A)=\{f(x_1)\}$, 矛盾
 
@@ -121,7 +121,7 @@ $$
 
 #### <a id="asm-1-2">题 - 1-2</a> (单调映射的不动点)
 
-设 $X$ 为一非空集合, $f:\mathscr{P}(X)\to\mathscr{P}(X)$, 若 $(\forall A,B\in\mathscr{P}(X),A\subseteq B),~f(A)\subseteq f(B)$, 则 $\exist T\in\mathscr{P}(X),f(T)=T$
+设 $X$ 为一非空集合, $f:\mathscr{P}(X)\to\mathscr{P}(X)$, 若 $(\forall A,B\in\mathscr{P}(X),A\subseteq B),~f(A)\subseteq f(B)$, 则 $\exists T\in\mathscr{P}(X),f(T)=T$
 
 {% note %}
 
@@ -154,7 +154,7 @@ $$T=\bigcup_{A\in\mathscr{P}(X);A\subseteq f(A)}A\subseteq f(T)$$
 <details>
 <summary><font color='orange'>Proof</font></summary>
 
-$\forall x\in X,g(f(x))=x\implies\forall x\in X,\exist y=f(x)\in Y,g(y)=x\implies g$ 为满射
+$\forall x\in X,g(f(x))=x\implies\forall x\in X,\exists y=f(x)\in Y,g(y)=x\implies g$ 为满射
 
 又 $(\forall x_1,x_2\in X, f(x_1)=f(x_2)),~x_1=g(f(x_1))=g(f(x_2))=x_2$
 
@@ -185,7 +185,7 @@ $\forall x\in X,g(f(x))=x\implies\forall x\in X,\exist y=f(x)\in Y,g(y)=x\implie
 
 {% note primary no-icon %}
 
-**<a id="eg-2-1">例 - 2-1</a>** $(\N^+)^2\sim\N^+$, 考虑整数的唯一分解定理, 我们可以取 $f(i,j)=2^{i-1}(2j-1),~i,j\in\N^+$
+**<a id="eg-2-1">例 - 2-1</a>** $(\mathbb{N}^+)^2\sim\mathbb{N}^+$, 考虑整数的唯一分解定理, 我们可以取 $f(i,j)=2^{i-1}(2j-1),~i,j\in\mathbb{N}^+$
 
 {% endnote %}
 
@@ -238,7 +238,7 @@ $$A'=g(Y\setminus f(A))$$
 
 - $A\cup A'=X$
 
-  若 $\exist x_0\in X,~s.t.~x\notin A\cup A'$, 令 $A_0=A\cup\{x_0\}$, 则 $B\subseteq f(A_0),B'\supseteq Y\setminus f(A_0)$, 从而有
+  若 $\exists x_0\in X,~s.t.~x\notin A\cup A'$, 令 $A_0=A\cup\{x_0\}$, 则 $B\subseteq f(A_0),B'\supseteq Y\setminus f(A_0)$, 从而有
 
   $$g(Y\setminus f(A_0))\subseteq A'\implies A_0\cap g(Y\setminus f(A_0))=\varnothing$$
   这与 $A$ 为 $\Gamma$ 中的最大元矛盾
@@ -261,7 +261,7 @@ $$A'=g(Y\setminus f(A))$$
 
 题设换句话说就是:
 
-> 若 $\exist f:X\to Y, g:Y\to X$ 为单射, 则 $X\sim Y$
+> 若 $\exists f:X\to Y, g:Y\to X$ 为单射, 则 $X\sim Y$
 
 根据 <a href="#lm-2-1">引理 - 2-1</a> 知, 存在分解
 $$X=A\cup A',Y=B\cup B'$$
@@ -317,13 +317,13 @@ $$(-1,1)\subset[-1,1]\subset\reals$$
 
 **<a id="def-2-2">定义 - 2-2</a>** 我们记
 
-$$|\N|=\alef_0$$
+$$|\mathbb{N}|=\alef_0$$
 
-其中 $\alef$ 为希伯来字母 Alef, 下标 $0$ 是因为 $\N$ 是基数最小的无限集
+其中 $\alef$ 为希伯来字母 Alef, 下标 $0$ 是因为 $\mathbb{N}$ 是基数最小的无限集
 
 {% endnote %}
 
-下面的定理证明了 $\N$ 是基数最小的无限集
+下面的定理证明了 $\mathbb{N}$ 是基数最小的无限集
 
 {% note success no-icon %}
 
@@ -343,7 +343,7 @@ $$\{e_n\}\subseteq E$$
 {% endnote %}
 {% endnote %}
 
-下面列举几条可列集基数的相关性质 (真命题), 因为可列集和 $\N$ 对等, 故下文一些地方会以 $\N$ 指代可列集
+下面列举几条可列集基数的相关性质 (真命题), 因为可列集和 $\mathbb{N}$ 对等, 故下文一些地方会以 $\mathbb{N}$ 指代可列集
 
 {% note primary no-icon %}
 
@@ -355,11 +355,11 @@ $$\{e_n\}\subseteq E$$
 
 **<a id="pb-2-2">命题 - 2-2</a>**
 
-$$\N^n\sim\N$$
+$$\mathbb{N}^n\sim\mathbb{N}$$
 
 > 只需找 $n$ 个不等素数 $\def\enum#1{p_{ #1}}\enum{1},\enum{2},...,\enum{n}$, 建立映射
 >
-> $$f:\N^n\to\N;(\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{n})\mapsto\prod_{i=1}^np_i^{\alpha_i}$$
+> $$f:\mathbb{N}^n\to\mathbb{N};(\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{n})\mapsto\prod_{i=1}^np_i^{\alpha_i}$$
 >
 > 即可
 
@@ -368,7 +368,7 @@ $$\N^n\sim\N$$
 {% note primary no-icon %}
 
 **<a id="pb-2-3">命题 - 2-3</a>**
-$$\bigcup_{n=1}^{\infty}\N^n\sim\N$$
+$$\bigcup_{n=1}^{\infty}\mathbb{N}^n\sim\mathbb{N}$$
 
 {% endnote %}
 
@@ -376,14 +376,14 @@ $$\bigcup_{n=1}^{\infty}\N^n\sim\N$$
 
 **<a id="pb-2-4">命题 - 2-4</a>**
 
-$$|\Bbb{Q}|=|\Z|=|\N|=\alef_0$$
+$$|\Bbb{Q}|=|\mathbb{Z}|=|\mathbb{N}|=\alef_0$$
 
 {% endnote %}
 
 {% note primary no-icon %}
 
 **<a id="pb-2-6">命题 - 2-6</a>**
-$$|\R|\ne|\N|$$
+$$|\mathbb{R}|\ne|\mathbb{N}|$$
 
 {% endnote %}
 
@@ -403,7 +403,7 @@ $$|\R|\ne|\N|$$
 
 {% note primary no-icon %}
 
-**<a id="eg-2-4">例 - 2-4</a>** $\R$ 中互不相交的开区间族为可数集
+**<a id="eg-2-4">例 - 2-4</a>** $\mathbb{R}$ 中互不相交的开区间族为可数集
 
 > 因为任一开区间里均可找到一个有理数
 
@@ -411,7 +411,7 @@ $$|\R|\ne|\N|$$
 
 {% note primary no-icon %}
 
-**<a id="eg-2-5">例 - 2-5</a>** $\R$ 上单调函数的不连续点集为可数集
+**<a id="eg-2-5">例 - 2-5</a>** $\mathbb{R}$ 上单调函数的不连续点集为可数集
 
 > 以单调递增函数 $f(x)$ 为例, 对任意不连续点 $x_i$, 均有
 >
@@ -423,12 +423,12 @@ $$|\R|\ne|\N|$$
 
 {% note primary no-icon %}
 
-**<a id="eg-2-6">例 - 2-6</a>** 设 $f(x)$ 是定义在 $\R$ 上的实值函数, 则
-$$\{x\in\R:\lim_{y\to x}f(y)=+\infty\}$$
+**<a id="eg-2-6">例 - 2-6</a>** 设 $f(x)$ 是定义在 $\mathbb{R}$ 上的实值函数, 则
+$$\{x\in\mathbb{R}:\lim_{y\to x}f(y)=+\infty\}$$
 是可数集
 
 > 令 $g(x)=\arctan f(x)$, 则原点集变为
-> $$\left\{x\in\R:\lim_{y\to x}g(y)=\frac{\pi}{2}\right\}$$
+> $$\left\{x\in\mathbb{R}:\lim_{y\to x}g(y)=\frac{\pi}{2}\right\}$$
 
 {% endnote %}
 
@@ -447,7 +447,7 @@ $$f(x)=\sum_{r_n<x}c_n$$
 易知
 
 - $f(x)$ 递增
-- $f(x)$ 在 $(a,b)_{\R\setminus\Bbb{Q}}$ 上连续
+- $f(x)$ 在 $(a,b)_{\mathbb{R}\setminus\Bbb{Q}}$ 上连续
 - $f(x)$ 在 $(a,b)_{\Bbb{Q}}$ 上不连续, 且
   $$f(r_n+0)-f(r_n-0)=c_n,~n=1,2,...$$
 
@@ -457,8 +457,8 @@ $$f(x)=\sum_{r_n<x}c_n$$
 
 {% note success no-icon %}
 
-**<a id="th-2-3">定理 - 2-3</a>** 设 $E\subset\R$ 为可列集, 则
-$$\exist x_0\in\R,E\cap(E+x_0)=\varnothing$$
+**<a id="th-2-3">定理 - 2-3</a>** 设 $E\subset\mathbb{R}$ 为可列集, 则
+$$\exists x_0\in\mathbb{R},E\cap(E+x_0)=\varnothing$$
 
 {% note %}
 
@@ -466,11 +466,11 @@ $$\exist x_0\in\R,E\cap(E+x_0)=\varnothing$$
 <summary><font color='orange'>Proof</font></summary>
 
 若 $x'\in E\cap(E+x_0)$, 则
-$$\exist x''\in E,|x'-x''|=x_0$$
+$$\exists x''\in E,|x'-x''|=x_0$$
 
 即
 
-$$(\forall x_0\in\R,\exist x',x''\in E),~x_0=x'-x''$$
+$$(\forall x_0\in\mathbb{R},\exists x',x''\in E),~x_0=x'-x''$$
 
 该命题显然错误
 
@@ -590,7 +590,7 @@ $$|A|<2^{|A|}$$
 $$B=\{x\in A:x\notin f(x)\}$$
 
 则
-$$\exist y\in A,~s.t.~f(y)=B\in\mathscr{P}(A)$$
+$$\exists y\in A,~s.t.~f(y)=B\in\mathscr{P}(A)$$
 
 而
 
@@ -616,7 +616,7 @@ $$\exist y\in A,~s.t.~f(y)=B\in\mathscr{P}(A)$$
 
 在 <a href="#pb-2-6">命题 - 2-6</a> 中, 我们提到实数集和自然数集不对等, 实际上
 
-$$|\reals|=2^{|\N|}=2^{\alef_0}$$
+$$|\reals|=2^{|\mathbb{N}|}=2^{\alef_0}$$
 
 我们会在下一篇中给出证明
 
@@ -660,7 +660,7 @@ $$c=\alef_1$$
 {% note primary no-icon %}
 
 **<a id="pb-2-8">命题 - 2-8</a>** (广义连续统假设)
-$$\alef_i=2^{\alef_{i-1}},~\forall i\in\N^+$$
+$$\alef_i=2^{\alef_{i-1}},~\forall i\in\mathbb{N}^+$$
 
 {% endnote %}
 
@@ -745,7 +745,7 @@ $$\alef_i=2^{\alef_{i-1}},~\forall i\in\N^+$$
 
 #### <a id="asm-2-4">题 - 2-4</a>
 
-设 不可数集 $E\subseteq\R^2$, 证明 $\exist x_0\in E,~s.t.~\forall B(x_0,r),E\cap B(x_0,r)$ 不可数
+设 不可数集 $E\subseteq\mathbb{R}^2$, 证明 $\exists x_0\in E,~s.t.~\forall B(x_0,r),E\cap B(x_0,r)$ 不可数
 
 其中 $B(x_0,r)$ 指圆心为 $x_0$, 半径为 $r$ 的开球
 
@@ -754,7 +754,7 @@ $$\alef_i=2^{\alef_{i-1}},~\forall i\in\N^+$$
 <details>
 <summary><font color='orange'>Proof</font></summary>
 
-若 $\exist x_0\in E,~s.t.~\forall B(x_0,r),E\cap B(x_0,r)$ 可数
+若 $\exists x_0\in E,~s.t.~\forall B(x_0,r),E\cap B(x_0,r)$ 可数
 
 则取正有理数半径 $r_x$, 有
 $$E=\bigcup_{r_x\in\Bbb{Q}^+}(E\cap B(x_0,r_x))$$
@@ -768,12 +768,12 @@ $$E=\bigcup_{r_x\in\Bbb{Q}^+}(E\cap B(x_0,r_x))$$
 
 ## 常见数系的基数
 
-| 数系      | 基数      | 数系       | 基数 |
-| --------- | --------- | ---------- | ---- |
-| $\N$      | $\alef_0$ | $\R$       | $c$  |
-| $\Z$      | $\alef_0$ | $\R^n$     | $c$  |
-| $\Bbb{Q}$ | $\alef_0$ | $\Complex$ | $c$  |
-| $\N^n$    | $\alef_0$ | 超越数集   | $c$  |
-| 代数数集  | $\alef_0$ |            |
+| 数系           | 基数      | 数系           | 基数 |
+| -------------- | --------- | -------------- | ---- |
+| $\mathbb{N}$   | $\alef_0$ | $\mathbb{R}$   | $c$  |
+| $\mathbb{Z}$   | $\alef_0$ | $\mathbb{R}^n$ | $c$  |
+| $\Bbb{Q}$      | $\alef_0$ | $\mathbb{C}$   | $c$  |
+| $\mathbb{N}^n$ | $\alef_0$ | 超越数集       | $c$  |
+| 代数数集       | $\alef_0$ |                |
 
 [^1]: <https://mathcs.clarku.edu/~djoyce/hilbert/problems.html>

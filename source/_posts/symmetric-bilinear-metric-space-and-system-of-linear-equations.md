@@ -170,7 +170,7 @@ $$B=T^TAT$$
 > **定义** 非奇异双线性函数
 >
 > 称$f$是**非奇异的**, 若
-> $$(\forall\alpha\in V/\{\theta\},~\exist\beta\in V),~f(\alpha,\beta)\ne0$$
+> $$(\forall\alpha\in V/\{\theta\},~\exists\beta\in V),~f(\alpha,\beta)\ne0$$
 
 #### <a href="#end-t-1-2" id="t-1-2">定理 - 1-2</a>
 
@@ -179,7 +179,7 @@ $$B=T^TAT$$
 1. $f$是非奇异的
 1. $f$在$V$**任意**基底下的度量矩阵是非奇异的
 1. $f$在$V$**某一**基底下的度量矩阵是非奇异的
-1. $(\forall\alpha\in V/\{\theta\},~\exist\beta\in V),~f(\beta,\alpha)\ne0$ (**对称性**)
+1. $(\forall\alpha\in V/\{\theta\},~\exists\beta\in V),~f(\beta,\alpha)\ne0$ (**对称性**)
 
 ##### <a href="#t-1-2" id="p-t-1-2">证明</a>
 
@@ -258,13 +258,13 @@ $2\iff4:$ 参照$1\iff2$
 
 - 若$f$是零函数, 则$V$上任意基底均为所求
 - 若$f$是非零函数, 即
-  $$(\exist\alpha,\beta\in V),~f(\alpha,\beta)\ne0$$
+  $$(\exists\alpha,\beta\in V),~f(\alpha,\beta)\ne0$$
 
   由  
   $f(\alpha,\beta)=\displaystyle\frac{1}{2}\left(f(\alpha+\beta,\alpha+\beta)-f(\alpha,\alpha)-f(\beta,\beta)\right)$ (这里利用了$f$的对称性)  
   可知
 
-  $$(\exist\epsilon\in V),~f(\epsilon,\epsilon)\ne0\tag{1.4.1}$$
+  $$(\exists\epsilon\in V),~f(\epsilon,\epsilon)\ne0\tag{1.4.1}$$
 
   接下来对$\dim V$应用第二数学归纳法
 
@@ -292,13 +292,13 @@ $2\iff4:$ 参照$1\iff2$
 
 #### <a href="#end-ifr-1-4-1" id="ifr-1-4-1">推论 - 1-4-1</a>
 
-- 令$V$为$\Complex$上一$n$维线性空间, $f$为$V$上一对称双线性函数, 则存在正交基底$(\def\enum#1{\epsilon_{ #1}}\enum{1},\enum{2},...,\enum{n})$使得对$V$上的任意向量$\alpha=\sum_{i=1}^nx_i\epsilon_i,\beta=\sum_{i=1}^ny_i\epsilon_i$均有
+- 令$V$为$\mathbb{C}$上一$n$维线性空间, $f$为$V$上一对称双线性函数, 则存在正交基底$(\def\enum#1{\epsilon_{ #1}}\enum{1},\enum{2},...,\enum{n})$使得对$V$上的任意向量$\alpha=\sum_{i=1}^nx_i\epsilon_i,\beta=\sum_{i=1}^ny_i\epsilon_i$均有
 
   $$f(\alpha,\beta)=\sum_{i=1}^rx_iy_i$$
 
   其中$r=\operatorname{rk}f$
 
-- 若$V$为$\R$上一$n$维线性空间, 其余同上, 则
+- 若$V$为$\mathbb{R}$上一$n$维线性空间, 其余同上, 则
 
   $$f(\alpha,\beta)=\sum_{i=1}^px_iy_i-\sum_{i=p+1}^rx_iy_i$$
 
@@ -309,7 +309,7 @@ $2\iff4:$ 参照$1\iff2$
 
 ##### <a href="#ifr-1-4-1" id="p-ifr-1-4-1">证明</a>
 
-若$V$为$\R$上一$n$维线性空间, 则由 <a href="#t-1-4">定理 - 1-4</a> 可知,  
+若$V$为$\mathbb{R}$上一$n$维线性空间, 则由 <a href="#t-1-4">定理 - 1-4</a> 可知,  
 存在正交基底$(\def\enum#1{\epsilon_{ #1}}\enum{1},\enum{2},...,\enum{n})$, 使得$f$的度量矩阵为$\operatorname{diag}\{\def\enum#1{d_{ #1}}\enum{1},\enum{2},...,\enum{p},\def\enum#1{-d_{ #1}}\enum{p+1},\enum{p+2},...,\enum{r},0,...,0\}$, 其中$\def\enum#1{d_{ #1}}\enum{1},\enum{2},...,\enum{r}>0,~0\leqslant p\leqslant r\leqslant n$
 
 考虑$f(\epsilon_i,\epsilon_i)=(-1)^{[i>p]}d_i,~1\leqslant i\leqslant r$
@@ -320,7 +320,7 @@ $2\iff4:$ 参照$1\iff2$
 
 故在正交基底$(\def\enum#1{\epsilon'_{ #1}}\enum{1},\enum{2},...,\enum{r},\def\enum#1{\epsilon_{ #1}}\enum{r+1},\enum{r+2},...,\enum{n})$下, $f$的度量矩阵为$\operatorname{diag}\{\underbrace{1,...,1}_{p},\underbrace{-1,...,-1}_{\operatorname{rk}f-p},0,...,0\}$
 
-我们可以注意到负号产生的原因是$\sqrt{\phantom{-}}$要求被开方数非负, 而在$\Complex$上没有这个限制, 故在$\Complex$上即为$\operatorname{diag}\{\underbrace{1,...,1}_{\operatorname{rk}f},0,...,0\}$
+我们可以注意到负号产生的原因是$\sqrt{\phantom{-}}$要求被开方数非负, 而在$\mathbb{C}$上没有这个限制, 故在$\mathbb{C}$上即为$\operatorname{diag}\{\underbrace{1,...,1}_{\operatorname{rk}f},0,...,0\}$
 
 <a href="#p-ifr-1-4-1" id="end-ifr-1-4-1">$\Box$</a>
 
@@ -369,7 +369,7 @@ $2\iff4:$ 参照$1\iff2$
 
 令$V$是复线性空间, $\dim V\geqslant 2$, $f$为$V$上一对称双线性函数, 证明:
 
-1. $$(\exist\theta\ne\zeta\in V),~f(\zeta,\zeta)=0$$
+1. $$(\exists\theta\ne\zeta\in V),~f(\zeta,\zeta)=0$$
 1. 若$f$非奇异, 则存在线性无关向量$\zeta,\eta$使得
    $$f(\zeta,\eta)=1,f(\zeta,\zeta)=f(\eta,\eta)=0$$
 
@@ -384,7 +384,7 @@ $2\iff4:$ 参照$1\iff2$
      $$f(\alpha+t\beta,\alpha+t\beta)=f(\alpha,\alpha)+2tf(\alpha,\beta)+t^2f(\beta,\beta)$$
      此时$t$有根$t_1$, 故令$\zeta=\alpha+t_1\beta$, 则$f(\zeta,\zeta)=0$
 
-1. 由 1 知, $(\exist\theta\ne\zeta\in V),~f(\zeta,\zeta)=0$
+1. 由 1 知, $(\exists\theta\ne\zeta\in V),~f(\zeta,\zeta)=0$
 
    取$\zeta\ne\xi'\in V/\{\theta\}$, 由$f$非奇异知$f(\zeta,\xi')=b\ne0$
 
@@ -409,7 +409,7 @@ $2\iff4:$ 参照$1\iff2$
 
 就是有**非奇异对称双线性函数**的线性空间
 
-特别的, 当$\mathbb{P}=\R$时即称其为**伪 Euclidean 空间**
+特别的, 当$\mathbb{P}=\mathbb{R}$时即称其为**伪 Euclidean 空间**
 
 显然, 这个非奇异对称双线性函数是**满秩**的, 即
 
@@ -489,7 +489,7 @@ $$X^TA(\def\enum#1{B_{ #1}}\enum{1},\enum{2},...,\enum{r})=\theta$$
 
 未必有$V_1\cap V_1^\perp=\{\theta\}$, 即未必有$V=V_1\oplus V_1^\perp$
 
-如在$\Complex^2$上引入$f((x_1,y_1),(x_2,y_2))=x_1x_2+y_1y_2$, 显然可构成对称双线性度量空间, 而取$V_1=G[(1,i)]$, 显然$V_1=V_1^\perp$
+如在$\mathbb{C}^2$上引入$f((x_1,y_1),(x_2,y_2))=x_1x_2+y_1y_2$, 显然可构成对称双线性度量空间, 而取$V_1=G[(1,i)]$, 显然$V_1=V_1^\perp$
 
 <a href="#atten-2-1-1" id="end-atten-2-1-1">$\Box$</a>
 
@@ -544,7 +544,7 @@ $$f_E([\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n}]^T,[\def\enum#1{b_{ #1
 #### <a href="#end-prob-2-1" id="prob-2-1">习题 - 2-1</a>
 
 令$V$为$\mathbb{P}$上一$n$维线性空间, $V_1<V,\zeta\notin V_1$, $f$为$V$上一对称双线性函数, 证明:
-$$(\exist0\ne\eta\in V_1+G[\zeta]),(\forall\alpha\in V_1),~f(\eta,\alpha)=0$$
+$$(\exists0\ne\eta\in V_1+G[\zeta]),(\forall\alpha\in V_1),~f(\eta,\alpha)=0$$
 
 ##### <a href="#prob-2-1" id="p-prob-2-1">解</a>
 
@@ -609,7 +609,7 @@ $$\frac{|(\alpha,\beta)|}{|\alpha||\beta|}\leqslant1$$
 
 ##### <a href="#t-3-1" id="p-t-3-1">证明</a>
 
-考察$\alpha-k\beta,~k\in\R$, 由内积的正定性可得
+考察$\alpha-k\beta,~k\in\mathbb{R}$, 由内积的正定性可得
 
 $$k^2(\beta,\beta)-2k(\alpha,\beta)+(\alpha,\alpha)\leqslant0$$
 
@@ -619,7 +619,7 @@ $$k^2(\beta,\beta)-2k(\alpha,\beta)+(\alpha,\alpha)\leqslant0$$
 $$\frac{|(\alpha,\beta)|}{|\alpha||\beta|}\leqslant1$$
 
 当$\alpha,\beta$线性相关时, 上式等号显然成立  
-反之, 若上式等号成立, 则$(\exist t_0\in\R),~(\alpha-t_0\beta,\alpha-t_0\beta)=0$, 可得$\alpha-t_0\beta=0$, 即$\alpha,\beta$线性相关
+反之, 若上式等号成立, 则$(\exists t_0\in\mathbb{R}),~(\alpha-t_0\beta,\alpha-t_0\beta)=0$, 可得$\alpha-t_0\beta=0$, 即$\alpha,\beta$线性相关
 
 <a href="#p-t-3-1" id="end-t-3-1">$\Box$</a>
 
@@ -779,13 +779,13 @@ $\implies$: 显然
 
 $\impliedby$:
 
-只需证$n$维 Euclidean 空间$V$同构于$\R^n$
+只需证$n$维 Euclidean 空间$V$同构于$\mathbb{R}^n$
 
 令$(\def\enum#1{\epsilon_{ #1}}\enum{1},\enum{2},...,\enum{n})$为$V$的一组标准正交基, 建立映射
 
-$$f_{\{\epsilon_i\}_{i=1}^n}:\alpha\mapsto(\def\enum#1{x_{ #1}}\enum{1},\enum{2},...,\enum{n})^T\in\R^n,~\alpha=\sum_{i=1}^nx_i\epsilon_i\in V$$
+$$f_{\{\epsilon_i\}_{i=1}^n}:\alpha\mapsto(\def\enum#1{x_{ #1}}\enum{1},\enum{2},...,\enum{n})^T\in\mathbb{R}^n,~\alpha=\sum_{i=1}^nx_i\epsilon_i\in V$$
 
-易知$f_{\{\epsilon_i\}_{i=1}^n}$是$V$到$\R^n$的线性同构映射
+易知$f_{\{\epsilon_i\}_{i=1}^n}$是$V$到$\mathbb{R}^n$的线性同构映射
 
 任取$\alpha=\sum_{i=1}^nx_i\epsilon_i,\beta=\sum_{i=1}^ny_i\epsilon_i$, 均有
 
@@ -823,7 +823,7 @@ $$
 
 1. 若$\alpha_i\ne\theta,~(\alpha_i,\alpha_j)=0,~i,j=1,2,...,m,~i\ne j$, 则$m\leqslant n$
 1. 若$(\alpha_i,\alpha_j)<0,~i,j=1,2,...,m,~i\ne j$, 则$m\leqslant n+1$
-1. 若$(\alpha_i,\alpha_j)>0,~i,j=1,2,...,m,~i\ne j$, 则不存在映射$f:\Z^+\to\Z^+$满足$m\leqslant f(n)$
+1. 若$(\alpha_i,\alpha_j)>0,~i,j=1,2,...,m,~i\ne j$, 则不存在映射$f:\mathbb{Z}^+\to\mathbb{Z}^+$满足$m\leqslant f(n)$
 
 又在线性相关的角度, 我们可以注意到更深刻的事实
 
@@ -832,7 +832,7 @@ $$
 
 ##### <a href="#t-3-6" id="p-t-3-6">证明</a>
 
-1. 设$\exist k_i\in\R,~i=1,2,...,m,~s.t.~\displaystyle\sum_{i=1}^mk_i\alpha_i=\theta$
+1. 设$\exists k_i\in\mathbb{R},~i=1,2,...,m,~s.t.~\displaystyle\sum_{i=1}^mk_i\alpha_i=\theta$
 
    则
    $$k_j(\alpha_j,\alpha_j)=-(\alpha_j,\sum_{i=1,~i\ne j}^mk_i\alpha_i)=0,~j=1,2,...,m$$
@@ -846,7 +846,7 @@ $$
 1. 不妨设$m=n+2$
 
    则
-   $$\exist k_i\in\R,~i=1,2,...,n+1,\sum_{i=1}^{n+1}k_i^2\ne0,~s.t.~\sum_{i=1}^{n+1}k_i\alpha_i=\theta$$
+   $$\exists k_i\in\mathbb{R},~i=1,2,...,n+1,\sum_{i=1}^{n+1}k_i^2\ne0,~s.t.~\sum_{i=1}^{n+1}k_i\alpha_i=\theta$$
 
    此时$(\alpha_{n+2},\sum_{i=1}^{n+1}k_i\alpha_i)=0$
 
@@ -863,7 +863,7 @@ $$
 
    只需证$\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{m-1}$线性无关
 
-   设$\exist k_i\in\R,~i=1,2,...,m-1,~s.t.~\displaystyle\sum_{i=1}^{m-1}k_i\alpha_i=\theta$
+   设$\exists k_i\in\mathbb{R},~i=1,2,...,m-1,~s.t.~\displaystyle\sum_{i=1}^{m-1}k_i\alpha_i=\theta$
 
    此时$(\alpha_m,\sum_{i=1}^{m-1}k_i\alpha_i)=0$
 
@@ -887,7 +887,7 @@ $$
    - 当$n=1$时, $\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{m}$中任意两个向量均线性相关, 不妨设  
      $\alpha_i=k_i\alpha_1,~i=1,2,3,...m$, 显然$k_1=1$
 
-     假设$f(1)\in\Z^+$, 令$m=f(1)$, $k\in\Z^+/\{\def\enum#1{k_{ #1}}\enum{1},\enum{2},...,\enum{m}\}$, $\beta=k\alpha_1$
+     假设$f(1)\in\mathbb{Z}^+$, 令$m=f(1)$, $k\in\mathbb{Z}^+/\{\def\enum#1{k_{ #1}}\enum{1},\enum{2},...,\enum{m}\}$, $\beta=k\alpha_1$
 
      则$(\beta,\alpha_i)=kk_i(\alpha_1,\alpha_1)>0,~i=1,2,...,m$
 
@@ -897,7 +897,7 @@ $$
 
    - 当$n\geqslant2$时, $\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{m}$中存在两向量线性无关, 设其为$\alpha'_1,\alpha'_2$
 
-     假设$f(n)\in\Z^+$, 令$m=f(n)$
+     假设$f(n)\in\mathbb{Z}^+$, 令$m=f(n)$
 
      令$\beta_k=\alpha'_1+k\alpha'_2,~k=1,2,...,m$, 则其中必有一向量$\beta_{k'}$满足$\beta_{k'}\ne\alpha_i,~i=1,2,...,m$
 
@@ -1035,7 +1035,7 @@ $\alpha-\beta=(\alpha-\alpha_1)+(\alpha_1-\beta),~\alpha_1-\beta\in V_1,\alpha-\
 
 #### <a href="#end-t-4-3" id="t-4-3">定理 - 4-3</a>
 
-令$V$为一$n$维 Euclidean 空间, $V_1=G[\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{m}]\leqslant V$, $\alpha\in V$, $X=(\def\enum#1{x_{ #1}}\enum{1},\enum{2},...,\enum{m})^T\in\R^m$
+令$V$为一$n$维 Euclidean 空间, $V_1=G[\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{m}]\leqslant V$, $\alpha\in V$, $X=(\def\enum#1{x_{ #1}}\enum{1},\enum{2},...,\enum{m})^T\in\mathbb{R}^m$
 
 则
 $$\gamma=(\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{m})X=\sum_{i=1}^mx_i\alpha_i\tag{4-3.1}$$
@@ -1067,17 +1067,17 @@ $$
 
 这是个很有用的理论, 不过放到这有点突兀, 姑且当作前面内容的应用吧
 
-在实际应用中, 线性方程组$AX=B,~A\in\R^{m\times n}$由于测量精度等原因往往无解, 即
+在实际应用中, 线性方程组$AX=B,~A\in\mathbb{R}^{m\times n}$由于测量精度等原因往往无解, 即
 $$\sum_{i=1}^n(b_1-\sum_{j=1}^na_{ij}x_j)^2\ne0\tag{4.1}$$
 此时, 我们则需要寻找一组实数$\def\enum#1{x_{ #1}}\enum{1},\enum{2},...,\enum{n}$使得式$(4.1)$左端的值最小  
 这样的$\def\enum#1{x_{ #1}}\enum{1},\enum{2},...,\enum{n}$即为$AX=B$的**最小二乘解**
 
 下面我们将在$m$维 Euclidean 空间讨论该问题
 
-将$A$按列分块, $A=(\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{n}),~\alpha_i\in\R^m,i=1,2,...,n$
+将$A$按列分块, $A=(\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{n}),~\alpha_i\in\mathbb{R}^m,i=1,2,...,n$
 
 有
-$$AX=\sum_{i=1}^nx_i\alpha_i\in G[\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{n}]\leqslant\R^m$$
+$$AX=\sum_{i=1}^nx_i\alpha_i\in G[\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{n}]\leqslant\mathbb{R}^m$$
 
 而式$(4.1)$左端用内积的语言描述即为
 $$(B-\sum_{i=1}^nx_i\alpha_i,B-\sum_{i=1}^nx_i\alpha_i)=|B-\sum_{i=1}^nx_i\alpha_i|^2\tag{4.2}$$
@@ -1100,7 +1100,7 @@ $$A^TAX=A^TB\tag{4.4}$$
 由正射影的存在性可知该方程一定可解, 其解为$X=(A^TA)^{-1}A^TB$
 
 $(4.4)$的可解性也可通过$\operatorname{rk}(A^TA)=\operatorname{rk}((A^TA,A^TB))$推得  
-(注意到$\forall A\in\R^{m\times n},AX=0$与$A^TAX=0$同解)
+(注意到$\forall A\in\mathbb{R}^{m\times n},AX=0$与$A^TAX=0$同解)
 
 ### 习题
 

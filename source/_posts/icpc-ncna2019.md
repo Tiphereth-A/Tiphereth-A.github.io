@@ -387,7 +387,7 @@ Print, on a single line, the least positive number a such that $a⊗a=N$. If the
 注意到
 
 $$
-\exist a_0~s.t.~a_0^2\equiv N_0\pmod{10}\iff\begin{cases}
+\exists a_0~s.t.~a_0^2\equiv N_0\pmod{10}\iff\begin{cases}
   N_0{\equiv}\llap{/\,}\pm 2\pmod{5}\\
   a_0\in\begin{cases}
     \{0\},&N_0=0\\
@@ -1196,7 +1196,7 @@ $$
 ![K-sol-3](K-sol-3.png)
 
 可以证明$f$的图像存在"局部周期", 即
-$$\big(\exist a,t\in\R,\forall x\in[a,a+t)\big),~f(x)=f(x+t)$$
+$$\big(\exists a,t\in\mathbb{R},\forall x\in[a,a+t)\big),~f(x)=f(x+t)$$
 而且在不考虑$f\equiv0$的那些情况下, 只有有限组$a,t$
 
 因此我们没有必要枚举所有的$d_i$, 只需要取遍其所有函数值不恒为$0$的"局部周期"即可, 我们可以通过选择$f_i$的一部分进行加和来完成该操作

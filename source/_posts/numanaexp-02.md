@@ -56,7 +56,7 @@ date: 2021-04-16 20:49:47
   $$L(x)=\sum_{k=0}^ny_k\prod_{i=0;~i\ne k}^n\frac{x-x_i}{x_k-x_i}\tag{1}$$
 - Neville 插值
 
-  令 $N\in\R^{(n+1)\times (n+1)}[x]$ 满足
+  令 $N\in\mathbb{R}^{(n+1)\times (n+1)}[x]$ 满足
 
   - $$N_{i,1}(x)=y_{i-1}$$
   - $$N_{i,j}(x)={(x-x_{i-1})N_{i-1,j-1}(x)+(x_{i-j}-x)N(i,j-1)\over x_{i-j}-x_{i-1}}$$

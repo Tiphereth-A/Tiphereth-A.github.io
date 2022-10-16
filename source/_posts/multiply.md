@@ -35,11 +35,11 @@ date: 2020-04-27 13:48:01
    1. 乘方: $\phi^n(a):=\begin{cases}
      e(a),&n=0\\
      \phi^{n-1}\phi(a),&n>0
-   \end{cases}(n\in\N)$
+   \end{cases}(n\in\mathbb{N})$
    1. $\phi_k:=\phi^{2^k}$
 
 1. 对二元运算$\tau$
-   1. 对$l,r\in\N,l\leqslant r$, 定义$\tau[l,r]:=\begin{cases}
+   1. 对$l,r\in\mathbb{N},l\leqslant r$, 定义$\tau[l,r]:=\begin{cases}
   \tau(l,l),&l=r\\
   \tau(l,\tau[l+1,r]),&otherwise
 \end{cases}$
@@ -54,8 +54,8 @@ date: 2020-04-27 13:48:01
 
 注意到
 
-- $\phi_{n+1}=\phi_n\phi_n,\forall n\in\N$
-- $\phi^n=\displaystyle\sum_{i=0}^{\lfloor\log_2n\rfloor}b_i\phi_i,\forall n=\overline{b_{\lfloor\log_2n\rfloor}...b_1b_0}_{(2)}\in\N^+$
+- $\phi_{n+1}=\phi_n\phi_n,\forall n\in\mathbb{N}$
+- $\phi^n=\displaystyle\sum_{i=0}^{\lfloor\log_2n\rfloor}b_i\phi_i,\forall n=\overline{b_{\lfloor\log_2n\rfloor}...b_1b_0}_{(2)}\in\mathbb{N}^+$
 
 故我们可以先$O(\log n)$预处理出$\phi_k$, 便可以$O(\log n)$的复杂度算出$\phi^n$
 

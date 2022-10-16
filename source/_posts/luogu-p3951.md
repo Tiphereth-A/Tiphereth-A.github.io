@@ -73,7 +73,7 @@ $15 = 3 \times 5 + 7 \times 0$
 ## 题意简述
 
 对于给定的正整数$a,b,(a,b)=1$, 找到最大的正整数$n$满足
-$$\nexists x,y\in\N,~s.t.~ax+by=n\tag{1}$$
+$$\nexists x,y\in\mathbb{N},~s.t.~ax+by=n\tag{1}$$
 
 ## 解题思路
 
@@ -83,7 +83,7 @@ $$\nexists x,y\in\N,~s.t.~ax+by=n\tag{1}$$
 
 **<a id="th-1-1">定理 - 1-1</a>** (Chicken McNugget 定理) 对任意两个互素的正整数 $a,b$, 满足
 
-$$\nexists x,y\in\N,~s.t.~ax+by=n$$
+$$\nexists x,y\in\mathbb{N},~s.t.~ax+by=n$$
 
 的最大正整数 $n$ 是 $ab-a-b$
 

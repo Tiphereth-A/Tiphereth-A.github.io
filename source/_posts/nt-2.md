@@ -33,7 +33,7 @@ date: 2020-10-05 00:52:51
 
 ### <a href="#end-t-1.1" id="t-1.1">定理 - 1.1</a>
 
-$$\forall a,b,c\in\Z,\left\lfloor\frac{a}{bc}\right\rfloor=\left\lfloor{\left\lfloor\frac{a}{b}\right\rfloor\over c}\right\rfloor$$
+$$\forall a,b,c\in\mathbb{Z},\left\lfloor\frac{a}{bc}\right\rfloor=\left\lfloor{\left\lfloor\frac{a}{b}\right\rfloor\over c}\right\rfloor$$
 
 #### <a href="#t-1.1" id="p-t-1.1">证明</a>
 
@@ -60,7 +60,7 @@ $$
 对任意正整数$n$, $\lfloor\frac{n}{i}\rfloor,~i=1,2,...,n$的取值不超过$\lfloor2\sqrt{n}\rfloor$种
 
 即
-$$\forall n\in\N^*,\left|\left\{\left\lfloor\frac{n}{i}\right\rfloor\big|~i=1,2,...,n\right\}\right|\leqslant\lfloor2\sqrt{n}\rfloor$$
+$$\forall n\in\mathbb{N}^*,\left|\left\{\left\lfloor\frac{n}{i}\right\rfloor\big|~i=1,2,...,n\right\}\right|\leqslant\lfloor2\sqrt{n}\rfloor$$
 
 #### <a href="#t-1.2" id="p-t-1.2">证明</a>
 
@@ -140,7 +140,7 @@ $$r=\left\lfloor\frac{n}{k_l}\right\rfloor=\left\lfloor{n\over{\lfloor\frac{n}{l
 
 ## 数论函数
 
-定义$A$为对其上元素定义了加法, 减法和乘法的非空集(或$A$是交换环), 则称函数$f:\N\to A$为数论函数
+定义$A$为对其上元素定义了加法, 减法和乘法的非空集(或$A$是交换环), 则称函数$f:\mathbb{N}\to A$为数论函数
 
 通俗来说就是满足如下要求的函数:
 
@@ -386,7 +386,7 @@ $$
 
 $$
 \mu(n)=\begin{cases}
-  0,&\exist i\in[1,\omega(n)],~s.t.~\alpha_i>1\\
+  0,&\exists i\in[1,\omega(n)],~s.t.~\alpha_i>1\\
   (-1)^{\omega(n)},&otherwise
 \end{cases}
 $$
@@ -395,7 +395,7 @@ $$
 
 1. 若$n$中有平方因子, 则$\mu(n)=0$
 
-   平方因子即满足$\exist a\in\Z^*, a^2\mid n$的因子
+   平方因子即满足$\exists a\in\mathbb{Z}^*, a^2\mid n$的因子
 
    显然, $n$中有平方因子等价于$n$中有平方素因子
 
@@ -413,7 +413,7 @@ $$
 
 #### <a href="#end-t-6.1" id="t-6.1">定理 - 6.1</a> (性质 1)
 
-$\forall m,n\in\N^*,~(m,n)=1\implies\mu(mn)=\mu(m)\mu(n)$
+$\forall m,n\in\mathbb{N}^*,~(m,n)=1\implies\mu(mn)=\mu(m)\mu(n)$
 
 ##### <a href="#t-6.1" id="p-t-6.1">证明</a>
 
@@ -459,7 +459,7 @@ $$f(n)=\sum_{i=1}^r\binom{r}{i}(-1)^i=(1-1)^r=0$$
 另一方面, $\epsilon$也为积性函数
 
 因此, 我们只需证
-$$\forall p\in\text{Prime}^+,\forall\alpha\in\N^*,~f(p^{\alpha})=\epsilon(p^{\alpha})$$
+$$\forall p\in\text{Prime}^+,\forall\alpha\in\mathbb{N}^*,~f(p^{\alpha})=\epsilon(p^{\alpha})$$
 
 对上述的$p$和$\alpha$, 一方面, $\epsilon(p^{\alpha})=0$
 
@@ -502,7 +502,7 @@ $$
 $$f=g*\{1\}\iff g=f*\mu$$
 
 或者写成
-$$\forall n\in\N^*,~f(n)=\sum_{d\mid n}g(d)\iff g(n)=\sum_{d\mid n}f(d)\mu\left(\frac{n}{d}\right)$$
+$$\forall n\in\mathbb{N}^*,~f(n)=\sum_{d\mid n}g(d)\iff g(n)=\sum_{d\mid n}f(d)\mu\left(\frac{n}{d}\right)$$
 
 #### <a href="#t-7.1" id="p-t-7.1">证明</a>
 
@@ -512,8 +512,8 @@ $$f=g*\{1\}\iff f*\mu=g*\{1\}*\mu=g*\epsilon=g$$
 但这里我们给出不使用卷积运算法则的证明方法, 因为这是交换求和次序的绝佳练习, 交换求和次序也是应用 Möbius 反演解题的重要操作
 
 在这里复述一遍命题
-$$\forall n\in\N^*,~f(n)=\sum_{d\mid n}g(d)\tag{1}$$
-$$\forall n\in\N^*,~g(n)=\sum_{d\mid n}f(d)\mu\left(\frac{n}{d}\right)\tag{2}$$
+$$\forall n\in\mathbb{N}^*,~f(n)=\sum_{d\mid n}g(d)\tag{1}$$
+$$\forall n\in\mathbb{N}^*,~g(n)=\sum_{d\mid n}f(d)\mu\left(\frac{n}{d}\right)\tag{2}$$
 
 我们要证的即为$(1)\iff(2)$
 

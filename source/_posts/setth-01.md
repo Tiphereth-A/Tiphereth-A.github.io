@@ -40,7 +40,7 @@ $$\{A_{\alpha}:\alpha\in I\}$$
 
 其中 $I$ 称为 **指标集**
 
-当 $I=\N^+$ 时, 集合族也称作 **集合列**, 可简记为 $\{A_k\}$
+当 $I=\mathbb{N}^+$ 时, 集合族也称作 **集合列**, 可简记为 $\{A_k\}$
 
 {% endnote %}
 
@@ -89,7 +89,7 @@ $$(A\setminus B)\cup(B\setminus A)$$
 1. $A\cap(B\triangle C)=(A\cap B)\triangle (A\cap C)$
 1. $A^c\triangle B^c=A\triangle B$
 1. $A\triangle B=A\iff B=\varnothing$
-1. $(\forall A,B),\exist_1 E~s.t.~E\triangle A=B$ ($E=A\triangle B$)
+1. $(\forall A,B),\exists_1 E~s.t.~E\triangle A=B$ ($E=A\triangle B$)
 
 ### 集合列的极限
 
@@ -100,23 +100,23 @@ $$(A\setminus B)\cup(B\setminus A)$$
 **<a id="def-1-5">定义 - 1-5</a>**
 
 - 设集合列 $\{A_k\}$ 满足
-  $$A_k\subseteq A_{k+1},~\forall k\in\N^+$$
+  $$A_k\subseteq A_{k+1},~\forall k\in\mathbb{N}^+$$
   则称其为 **递增集合列**, 定义 $\displaystyle\bigcup_{k=1}^{\infty}A_k$ 为该集合列的 **极限集**
 - 设集合列 $\{A_k\}$ 满足
-  $$A_k\supseteq A_{k+1},~\forall k\in\N^+$$
+  $$A_k\supseteq A_{k+1},~\forall k\in\mathbb{N}^+$$
   则称其为 **递减集合列**, 定义 $\displaystyle\bigcap_{k=1}^{\infty}A_k$ 为该集合列的 **极限集**
 
 {% endnote %}
 
 {% note primary no-icon %}
 
-**<a id="eg-1-1">例 - 1-1</a>** 设在 $\R$ 上有一函数列满足
+**<a id="eg-1-1">例 - 1-1</a>** 设在 $\mathbb{R}$ 上有一函数列满足
 
-- $$f_i(x)\leqslant f_{i+1}(x),~i\in\N^+$$
+- $$f_i(x)\leqslant f_{i+1}(x),~i\in\mathbb{N}^+$$
 - $$\lim_{n\to\infty}f_n(x)=f(x)$$
 
 对给定实数 $t$, 作集合列
-$$E_n=\{x:f_n(x)>t\},~n\in\N^+$$
+$$E_n=\{x:f_n(x)>t\},~n\in\mathbb{N}^+$$
 
 显然集合列 $\{E_n\}$ 递增, 且
 $$\lim_{n\to\infty}E_n=\{x:f(x)>t\}$$
@@ -147,7 +147,7 @@ $$
 A_n=\begin{cases}
   E,&2\mid n\\
   F,&2\nmid n
-\end{cases},~n\in\N^+
+\end{cases},~n\in\mathbb{N}^+
 $$
 
 则
@@ -170,8 +170,8 @@ $\displaystyle\limsup_{n\to\infty}A_n=E\cup F,~\liminf_{n\to\infty}A_n=E\cap F$
 
 **<a id="th-1-1">定理 - 1-1</a>** 若 $\{A_k\}$ 为一集合列, 则
 
-1. $$\limsup_{n\to\infty}A_n=\{x:(\forall j\in\N^+,\exist k\geqslant j),~x\in A_k\}$$
-1. $$\liminf_{n\to\infty}A_n=\{x:(\exist j\in\N^+,\forall k\geqslant j),~x\in A_k\}$$
+1. $$\limsup_{n\to\infty}A_n=\{x:(\forall j\in\mathbb{N}^+,\exists k\geqslant j),~x\in A_k\}$$
+1. $$\liminf_{n\to\infty}A_n=\{x:(\exists j\in\mathbb{N}^+,\forall k\geqslant j),~x\in A_k\}$$
 
 即
 
@@ -185,15 +185,15 @@ $\displaystyle\limsup_{n\to\infty}A_n=E\cup F,~\liminf_{n\to\infty}A_n=E\cap F$
 
 $$
 \begin{aligned}
-  x\in\limsup_{n\to\infty}A_n&\iff\forall j\in\N^+,~s.t.~x\in\bigcup_{k=j}^{\infty}A_k\\
-  &\iff\forall j\in\N^+,\exist k\geqslant j,~x\in A_k
+  x\in\limsup_{n\to\infty}A_n&\iff\forall j\in\mathbb{N}^+,~s.t.~x\in\bigcup_{k=j}^{\infty}A_k\\
+  &\iff\forall j\in\mathbb{N}^+,\exists k\geqslant j,~x\in A_k
 \end{aligned}
 $$
 
 $$
 \begin{aligned}
-  x\in\liminf_{n\to\infty}A_n&\iff\exist j\in\N^+,~s.t.~x\in\bigcap_{k=j}^{\infty}A_k\\
-  &\iff\exist j\in\N^+,\forall k\geqslant j,~x\in A_k
+  x\in\liminf_{n\to\infty}A_n&\iff\exists j\in\mathbb{N}^+,~s.t.~x\in\bigcap_{k=j}^{\infty}A_k\\
+  &\iff\exists j\in\mathbb{N}^+,\forall k\geqslant j,~x\in A_k
 \end{aligned}
 $$
 
@@ -225,7 +225,7 @@ $X\times X$ 也可记作 $X^2$
 
 ### <a id="asm-1-1">题 - 1-1</a>
 
-设 $\{f_n(x)\}$ 以及 $f(x)$ 为 $\Reals$ 上的函数
+设 $\{f_n(x)\}$ 以及 $f(x)$ 为 $\mathbb{R}$ 上的函数
 
 证明: 使 $f_n(x)$ 不收敛到 $f(x)$ 的一切点 $x$ 组成的集合为
 $$D=\bigcup_{k=1}^{\infty}\bigcap_{N=1}^{\infty}\bigcup_{n=N}^{\infty}\left\{x:|f_n(x)-f(x)|\geqslant\frac{1}{k}\right\}$$
@@ -236,11 +236,11 @@ $$D=\bigcup_{k=1}^{\infty}\bigcap_{N=1}^{\infty}\bigcup_{n=N}^{\infty}\left\{x:|
 <summary><font color='orange'>Proof</font></summary>
 
 若 $f_n(x_0)$ 不收敛到 $f(x_0)$, 则
-$$\exist k\in\N^+,\forall N\in\N^+,\exist n\geqslant N,~s.t.~|f_n(x_0)-f(x_0)|\geqslant\frac{1}{k}$$
+$$\exists k\in\mathbb{N}^+,\forall N\in\mathbb{N}^+,\exists n\geqslant N,~s.t.~|f_n(x_0)-f(x_0)|\geqslant\frac{1}{k}$$
 
 令 $E_{n,k}=\left\{x:|f_n(x)-f(x)|\geqslant\frac{1}{k}\right\}$, 则
-$$\exist k\in\N^+,x_0\in\limsup_{n\to\infty}E_{n,k}$$
-反之, $\forall k\in\N^+,x\in\limsup_{n\to\infty}E_{n,k}$ 显然不是收敛点
+$$\exists k\in\mathbb{N}^+,x_0\in\limsup_{n\to\infty}E_{n,k}$$
+反之, $\forall k\in\mathbb{N}^+,x\in\limsup_{n\to\infty}E_{n,k}$ 显然不是收敛点
 
 从而
 $$x_0\in\bigcup_{k=1}^{\infty}\limsup_{n\to\infty}E_{n,k}=\bigcup_{k=1}^{\infty}\bigcap_{N=1}^{\infty}\bigcup_{n=N}^{\infty}\left\{x:|f_n(x)-f(x)|\geqslant\frac{1}{k}\right\}=D$$
@@ -254,10 +254,10 @@ $$x_0\in\bigcup_{k=1}^{\infty}\limsup_{n\to\infty}E_{n,k}=\bigcup_{k=1}^{\infty}
 
 ### <a id="asm-1-2">题 - 1-2</a>
 
-设 $\{f_n(x)\}$ 以及 $f(x)$ 为 $\Reals$ 上的函数, 且 $\lim_{n\to\infty}f_n(x)=f(x)$
+设 $\{f_n(x)\}$ 以及 $f(x)$ 为 $\mathbb{R}$ 上的函数, 且 $\lim_{n\to\infty}f_n(x)=f(x)$
 
 证明:
-$$\forall t\in\Reals,\{x:f(x)\leqslant t\}=\bigcap_{k=1}^{\infty}\bigcup_{N=1}^{\infty}\bigcap_{n=N}^{\infty}\left\{x:f_n(x)<t+\frac{1}{k}\right\}$$
+$$\forall t\in\mathbb{R},\{x:f(x)\leqslant t\}=\bigcap_{k=1}^{\infty}\bigcup_{N=1}^{\infty}\bigcap_{n=N}^{\infty}\left\{x:f_n(x)<t+\frac{1}{k}\right\}$$
 
 {% note %}
 
@@ -269,8 +269,8 @@ $$\forall t\in\Reals,\{x:f(x)\leqslant t\}=\bigcap_{k=1}^{\infty}\bigcup_{N=1}^{
 $$
 \begin{aligned}
   x_0\in\{x:f(x)\leqslant t\}\iff&\lim_{n\to\infty}f_n(x_0)=f(x_0)\leqslant t\\
-  \iff&\forall k\in\N^+,\exist N\in\N^+,\forall n\geqslant N,~f_n(x_0)<t+\frac{1}{k}\\
-  \iff&\forall k\in\N^+,x_0\in\liminf_{n\to\infty}E_{n,k}\\
+  \iff&\forall k\in\mathbb{N}^+,\exists N\in\mathbb{N}^+,\forall n\geqslant N,~f_n(x_0)<t+\frac{1}{k}\\
+  \iff&\forall k\in\mathbb{N}^+,x_0\in\liminf_{n\to\infty}E_{n,k}\\
   \iff&x_0\in\bigcap_{k=1}^{\infty}\liminf_{n\to\infty}E_{n,k}=\bigcap_{k=1}^{\infty}\bigcup_{N=1}^{\infty}\bigcap_{n=N}^{\infty}\left\{x:f_n(x)<t+\frac{1}{k}\right\}
 \end{aligned}
 $$
@@ -299,7 +299,7 @@ $$\bigcap_{k=1}^{\infty}\bigcup_{N=1}^{\infty}\bigcap_{n=N}^{\infty}\left(a_n-\f
 $$
 \begin{aligned}
   a_0\in\bigcap_{k=1}^{\infty}\bigcup_{N=1}^{\infty}\bigcap_{n=N}^{\infty}\left(a_n-\frac{1}{k},a_n+\frac{1}{k}\right)=\bigcap_{k=1}^{\infty}\liminf_{n\to\infty}E_{n,k}
-  \iff&\forall k\in\N^+,a_0\in\liminf_{n\to\infty}E_{n,k}\\
+  \iff&\forall k\in\mathbb{N}^+,a_0\in\liminf_{n\to\infty}E_{n,k}\\
   \iff&a\leqslant a_0\leqslant a\\
   \iff&a_0=a
 \end{aligned}

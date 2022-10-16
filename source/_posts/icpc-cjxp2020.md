@@ -75,7 +75,7 @@ date: 2020-11-15 23:01:18
 
 ### 题意简述
 
-$\forall x=\sum_{i=0}^la_i\cdot 10^i,~a_0,a_1,...,a_l\in[0,9]\cap\N$, 定义$F(x)=\sum_{i=0}^la_i$, 求
+$\forall x=\sum_{i=0}^la_i\cdot 10^i,~a_0,a_1,...,a_l\in[0,9]\cap\mathbb{N}$, 定义$F(x)=\sum_{i=0}^la_i$, 求
 $$\sum_{i=1}^n\sum_{j=1}^i[(i,j)=1]F(j)$$
 
 ### 解题思路
@@ -182,8 +182,8 @@ $$f(l,r)=0\iff f(1,l-1)=f(1,r)$$
 
 能否恰好用$n$根火柴棍摆出满足如下条件的数$s$, 如果可以, 输出最大的数
 
-令$s=\overline{a_1a_2...a_k}$, 其中$a_1,a_2,...,a_k\in[0,9]\cap\N$, **可以有前导零**, 要求
-$$\forall i\in[1,k]\cap\N,~i\mid\overline{a_1a_2...a_i}$$
+令$s=\overline{a_1a_2...a_k}$, 其中$a_1,a_2,...,a_k\in[0,9]\cap\mathbb{N}$, **可以有前导零**, 要求
+$$\forall i\in[1,k]\cap\mathbb{N},~i\mid\overline{a_1a_2...a_i}$$
 
 ### 解题思路
 

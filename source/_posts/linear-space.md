@@ -34,15 +34,15 @@ date: 2020-05-27 20:37:42
    1. $(\forall\alpha\in V,k\in\mathbb{P}),k\alpha\in V$
 1. 加法交换律: $(\forall\alpha,\beta\in V),\alpha+\beta=\beta+\alpha$
 1. 加法结合律: $(\forall\alpha,\beta,\gamma\in V),(\alpha+\beta)+\gamma=\alpha+(\beta+\gamma)$
-1. "零元": $(\exist\theta\in V,\forall\alpha\in V),\alpha+\theta=\alpha$
-1. "逆元": $(\forall\alpha\in V,\exist-\alpha\in V),\alpha+(-\alpha)=\theta$
+1. "零元": $(\exists\theta\in V,\forall\alpha\in V),\alpha+\theta=\alpha$
+1. "逆元": $(\forall\alpha\in V,\exists-\alpha\in V),\alpha+(-\alpha)=\theta$
 1. 数乘与加法的分配律(2 条):
    1. 左:  
       $(\forall\alpha,\beta\in V,k\in\mathbb{P}),k\cdot(\alpha+\beta)=k\cdot\alpha+k\cdot\beta$
    1. 右:  
       $(\forall\alpha\in V,k,l\in\mathbb{P}),(k+l)\cdot\alpha=k\cdot\alpha+l\cdot\alpha$
 1. 数乘结合律: $(\forall\alpha\in V,k,l\in\mathbb{P}),(kl)\cdot\alpha=k\cdot(l\cdot\alpha)$
-1. "幺元": $(\exist 1\in\mathbb{P},\forall\alpha\in V),1\cdot\alpha=\alpha$
+1. "幺元": $(\exists 1\in\mathbb{P},\forall\alpha\in V),1\cdot\alpha=\alpha$
 
 在不引起混淆的情况下可简记为$V$
 
@@ -50,7 +50,7 @@ date: 2020-05-27 20:37:42
 
 1. $\theta$唯一, 称其为零向量
 1. $\forall\alpha\in V,-\alpha$唯一, 称其为$\alpha$的负向量
-1. $(\exist0\in\mathbb{P},\forall\alpha\in V),0\alpha=\theta$
+1. $(\exists0\in\mathbb{P},\forall\alpha\in V),0\alpha=\theta$
 1. $(\forall k\in\mathbb{P}),k\theta=\theta$
 1. $(\forall\alpha\in V),(-1)\alpha=-\alpha$
 1. 无零因子: $(\forall\alpha\in V,k\in\mathbb{P}),k\alpha=\theta\implies k=0\lor\alpha=\theta$
@@ -188,7 +188,7 @@ $$\theta\ne\beta_1-\gamma_1=\gamma_2-\beta_2\in V_1\cap V_2$$
 ### (有限)生成集与维数
 
 令$V$为$\mathbb{P}$上一线性空间, $\varnothing\ne S\subseteq V$, 称$S$为$V$的生成集, 如果
-$$(\forall\alpha\in V,\exist n\in\N^+,\def\enum#1{\alpha_#1}\enum{1},\enum{2},...,\enum{n}\in S,\def\enum#1{k_#1}\enum{1},\enum{2},...,\enum{n}\in\mathbb{P}),\alpha=\displaystyle\sum_{i=1}^nk_i\alpha_i$$
+$$(\forall\alpha\in V,\exists n\in\mathbb{N}^+,\def\enum#1{\alpha_#1}\enum{1},\enum{2},...,\enum{n}\in S,\def\enum#1{k_#1}\enum{1},\enum{2},...,\enum{n}\in\mathbb{P}),\alpha=\displaystyle\sum_{i=1}^nk_i\alpha_i$$
 
 (就是能线性表出$V$中任意向量的一组向量)
 
@@ -202,7 +202,7 @@ $\operatorname{rk}S$即为$V$的维数, 记作$\dim V$
 
 令$V$为$\mathbb{P}$上一线性空间, $\def\enum#1{\epsilon_#1}\enum{1},\enum{2},...,\enum{n}$为$V$的一组极大线性无关组, 则
 
-$$(\forall\alpha\in V,\exist\def\enum#1{k_#1}\enum{1},\enum{2},...,\enum{n}\in\mathbb{P}),\alpha=\displaystyle\sum_{i=1}^nk_i\epsilon_i$$
+$$(\forall\alpha\in V,\exists\def\enum#1{k_#1}\enum{1},\enum{2},...,\enum{n}\in\mathbb{P}),\alpha=\displaystyle\sum_{i=1}^nk_i\epsilon_i$$
 
 则称有序向量组$(\def\enum#1{\epsilon_#1}\enum{1},\enum{2},...,\enum{n})$为$V$的一组基底
 
@@ -273,7 +273,7 @@ $\displaystyle\sum_{i=1}^lr_i\alpha_i+\sum_{i=1}^{n_2-l}q_i\gamma_i=\theta\impli
 
 假设$\dim W\geqslant2$, 则$W$中存在两线性无关向量$\alpha=(\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n}),\beta=(\def\enum#1{b_{ #1}}\enum{1},\enum{2},...,\enum{n})$满足
 
-$$(\exist1<i\leqslant n),k:=\frac{a_1}{b_1}\ne\frac{a_i}{b_i}$$
+$$(\exists1<i\leqslant n),k:=\frac{a_1}{b_1}\ne\frac{a_i}{b_i}$$
 
 从而$\alpha-k\beta=(0,...,a_i-kb_i,...,a_n-kb_n)\in W, a_i-kb_i\ne0$, 矛盾!
 
@@ -284,12 +284,12 @@ $$(\exist1<i\leqslant n),k:=\frac{a_1}{b_1}\ne\frac{a_i}{b_i}$$
 #### <a href="#end-prob-3-2" id="prob-3-2">习题 - 3-2</a>
 
 证明:  
-$W=\{f(x)\in\R[x]|f(1)=0;\partial f(x)\leqslant n~or~f(x)=0\}$
-为$\R$上线性空间, 并求出其一组基底
+$W=\{f(x)\in\mathbb{R}[x]|f(1)=0;\partial f(x)\leqslant n~or~f(x)=0\}$
+为$\mathbb{R}$上线性空间, 并求出其一组基底
 
 ##### <a href="#prob-3-2" id="p-prob-3-2">解</a>
 
-容易验证$W$为$\R$上线性空间
+容易验证$W$为$\mathbb{R}$上线性空间
 
 $(\forall f(x)=\displaystyle\sum_{i=0}^na_ix^i\in W),f(1)=0\implies a_0=-\sum_{i=1}^na_i\implies f(x)=\sum_{i=1}^na_i(x^i-1)$
 
@@ -329,7 +329,7 @@ $$
 
 ### 过渡矩阵
 
-设$(\def\enum#1{\epsilon_{ #1}}\enum{1},\enum{2},...,\enum{n})$和$(\def\enum#1{\epsilon'_{ #1}}\enum{1},\enum{2},...,\enum{n})$是$V$的两组基底, 则$\exist T\in\mathbb{P}^{n\times n}$使得
+设$(\def\enum#1{\epsilon_{ #1}}\enum{1},\enum{2},...,\enum{n})$和$(\def\enum#1{\epsilon'_{ #1}}\enum{1},\enum{2},...,\enum{n})$是$V$的两组基底, 则$\exists T\in\mathbb{P}^{n\times n}$使得
 
 $$(\def\enum#1{\epsilon'_{ #1}}\enum{1},\enum{2},...,\enum{n})=(\def\enum#1{\epsilon_{ #1}}\enum{1},\enum{2},...,\enum{n})T\tag{1}$$
 
@@ -425,7 +425,7 @@ $\mathbb{P}$上线性空间$V_1,V_2$同构$\iff\dim V_1=\dim V_2$
 
 注意到 $\mathbb{P}^n$中形如
 
-$$(1,a,a^2,...,a^{n-1}),a\in\N^*$$
+$$(1,a,a^2,...,a^{n-1}),a\in\mathbb{N}^*$$
 
 的向量有无限个
 
@@ -445,7 +445,7 @@ $$(1,a,a^2,...,a^{n-1}),a\in\N^*$$
 ##### <a href="#prob-5-2" id="p-prob-5-2-1">解 - 1</a>(数学归纳法)
 
 - 当$m=1$时, 命题显然成立
-- 当$m=2$时, 取$\alpha\in V/V_1$, 若$\alpha\notin V_2$, 则命题成立, 否则$\exist\beta\in V/V_2$
+- 当$m=2$时, 取$\alpha\in V/V_1$, 若$\alpha\notin V_2$, 则命题成立, 否则$\exists\beta\in V/V_2$
 
   可知$k\alpha+\beta\notin V_2,\forall k\in\mathbb{P}$, 否则可推出$(k\alpha+\beta)-k\alpha=\beta\in V_2$
 
@@ -456,7 +456,7 @@ $$(1,a,a^2,...,a^{n-1}),a\in\N^*$$
 
   因此当$m=2$时命题成立
 
-- 假设$m-1$时命题成立, 则$(\exist\alpha\in V),\alpha\notin V_i,i=1,2,...,m-1$, 若$\alpha\notin V_m$, 则命题成立, 否则$\exist\beta\in V/V_m$
+- 假设$m-1$时命题成立, 则$(\exists\alpha\in V),\alpha\notin V_i,i=1,2,...,m-1$, 若$\alpha\notin V_m$, 则命题成立, 否则$\exists\beta\in V/V_m$
 
   可知$k\alpha+\beta\notin V_m,\forall k\in\mathbb{P}$, 否则可推出$(k\alpha+\beta)-k\alpha=\beta\in V_m$
 
@@ -465,7 +465,7 @@ $$(1,a,a^2,...,a^{n-1}),a\in\N^*$$
   则$k_1\alpha+\beta\in V_i$和$k_2\alpha+\beta\in V_i$不同时成立, $(i=1,2,...,m-1)$, 否则可推出$(k_1\alpha+\beta)-(k_2\alpha+\beta)=(k_1-k_2)\alpha\in V_i$
 
   此时取$m$个不相等的数$k_1,k_2,...,k_m$, 可知  
-   $(\exist k\in\{k_1,k_2,...,k_m\}),k\alpha+\beta\notin V_i,i=1,2,...,m-1$, 又由$k\alpha+\beta\notin V_m$可知该向量即为所求
+   $(\exists k\in\{k_1,k_2,...,k_m\}),k\alpha+\beta\notin V_i,i=1,2,...,m-1$, 又由$k\alpha+\beta\notin V_m$可知该向量即为所求
 
 <a href="#p-prob-5-2-1" id="end-prob-5-2-1">$\Box$</a>
 
@@ -473,7 +473,7 @@ $$(1,a,a^2,...,a^{n-1}),a\in\N^*$$
 
 注意到 $\mathbb{P}^n$中形如
 
-$$(1,a,a^2,...,a^{n-1}),a\in\N^*$$
+$$(1,a,a^2,...,a^{n-1}),a\in\mathbb{N}^*$$
 
 的向量有无限个
 
@@ -562,7 +562,7 @@ $$
 
   故$V_1,V_2\leqslant V$
 
-- 又由$(f(x),g(x)=1$知$\exist u(x),v(x)\in\mathbb{P}[x]$使得$f(A)u(A)+g(A)v(A)=E$
+- 又由$(f(x),g(x)=1$知$\exists u(x),v(x)\in\mathbb{P}[x]$使得$f(A)u(A)+g(A)v(A)=E$
 
   则$\forall\alpha\in V,\alpha=f(A)u(A)\alpha+g(A)v(A)\alpha\xlongequal[\alpha_2=g(A)v(A)\alpha]{\alpha_1=f(A)u(A)\alpha}\alpha_1+\alpha_2$
 

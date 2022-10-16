@@ -17,7 +17,7 @@ date: 2022-08-22 19:00:54
 
 {% note info no-icon %}
 
-**<a id="def">定义</a>** Gauss 整数: $\Z[\sqrt{-k}]:=\{a+b\sqrt{-k}|a,b\in\Bbb{Z}\}$, $k>0$
+**<a id="def">定义</a>** Gauss 整数: $\mathbb{Z}[\sqrt{-k}]:=\{a+b\sqrt{-k}|a,b\in\Bbb{Z}\}$, $k>0$
 
 {% endnote %}
 

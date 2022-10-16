@@ -30,7 +30,7 @@ tags:
 date: 2021-03-27 17:38:32
 ---
 
-本篇主要介绍 $\R^n$ 上点集的相关概念, 并会介绍 $\R^n$ 上的一些特殊点集
+本篇主要介绍 $\mathbb{R}^n$ 上点集的相关概念, 并会介绍 $\mathbb{R}^n$ 上的一些特殊点集
 
 <!-- more -->
 
@@ -42,7 +42,7 @@ date: 2021-03-27 17:38:32
 
 {% note info no-icon %}
 
-**<a id="def-1-1">定义 - 1-1</a>** 设 $E\subseteq\R^n$, 称
+**<a id="def-1-1">定义 - 1-1</a>** 设 $E\subseteq\mathbb{R}^n$, 称
 $$\operatorname{diam}(E):=\sup\{|x-y|:x,y\in E\}$$
 为 $E$ 的**直径**
 
@@ -54,23 +54,23 @@ $$\operatorname{diam}(E):=\sup\{|x-y|:x,y\in E\}$$
 
 **<a id="def-1-2">定义 - 1-2</a>** 设
 
-- $x_0\in\R^n$
-- $\delta\in\R^+$
+- $x_0\in\mathbb{R}^n$
+- $\delta\in\mathbb{R}^+$
 
 则
 
 - 称点集
-  $$\{x\in\R^n:|x-x_0|<\delta\}$$
+  $$\{x\in\mathbb{R}^n:|x-x_0|<\delta\}$$
 
   为以 $x_0$ 为中心, $\delta$ 为半径的**开球** (或 $x_0$ 的**邻域**), 记为 $B(x_0,\delta)$
 
 - 称点集
-  $$\{x\in\R^n:|x-x_0|\leqslant\delta\}$$
+  $$\{x\in\mathbb{R}^n:|x-x_0|\leqslant\delta\}$$
 
   为以 $x_0$ 为中心, $\delta$ 为半径的**闭球**, 记为 $C(x_0,\delta)$
 
 - 称点集
-  $$\{x\in\R^n:|x-x_0|=\delta\}$$
+  $$\{x\in\mathbb{R}^n:|x-x_0|=\delta\}$$
 
   为以 $x_0$ 为中心, $\delta$ 为半径的**球面**
 
@@ -80,17 +80,17 @@ $$\operatorname{diam}(E):=\sup\{|x-y|:x,y\in E\}$$
 
 **<a id="def-1-3">定义 - 1-3</a>** 设
 
-- $a_i,b_i\in\R,~i=1,2,...,n$
+- $a_i,b_i\in\mathbb{R},~i=1,2,...,n$
 - $a_i<b_i,~i=1,2,...,n$
 
 则
 
 - 称点集
   $$\prod_{i=1}^n(a_i,b_i)$$
-  为 $\R^n$ 上的**开矩体**
+  为 $\mathbb{R}^n$ 上的**开矩体**
 - 称点集
   $$\prod_{i=1}^n[a_i,b_i]$$
-  为 $\R^n$ 上的**闭矩体**
+  为 $\mathbb{R}^n$ 上的**闭矩体**
 
 另外, 称 $b_i-a_i$ 为矩体的**边长**, 若矩体各边长相等, 则称该矩体为**方体**
 
@@ -105,29 +105,29 @@ $$\operatorname{diam}(E):=\sup\{|x-y|:x,y\in E\}$$
 
 {% note info no-icon %}
 
-**<a id="def-1-4">定义 - 1-4</a>** 设 $x_k\in\R^n,~k=1,2,...$, 若
-$$\exist x\in\R^n,~s.t.~\lim_{k\to\infty}|x_k-x|=0$$
+**<a id="def-1-4">定义 - 1-4</a>** 设 $x_k\in\mathbb{R}^n,~k=1,2,...$, 若
+$$\exists x\in\mathbb{R}^n,~s.t.~\lim_{k\to\infty}|x_k-x|=0$$
 
-则称点列 $\{x_k\}$ 为 $\R^n$ 中的**收敛点列**, 称 $x$ 为其**极限**, 简记为
+则称点列 $\{x_k\}$ 为 $\mathbb{R}^n$ 中的**收敛点列**, 称 $x$ 为其**极限**, 简记为
 $$\lim_{k\to\infty}x_k=x$$
 
 {% endnote %}
 
-不难证明 $\R^n$ 上的 Cauchy 收敛定理, 故此处省略
+不难证明 $\mathbb{R}^n$ 上的 Cauchy 收敛定理, 故此处省略
 
 {% note info no-icon %}
 
-**<a id="def-1-5">定义 - 1-5</a>** 设 $E\subseteq\R^n$
+**<a id="def-1-5">定义 - 1-5</a>** 设 $E\subseteq\mathbb{R}^n$
 
 - 若
-  $$\exist x\in\R^n,\exist \{x_k\}\subseteq E,~s.t.~\lim_{k\to\infty}x_k=x$$
+  $$\exists x\in\mathbb{R}^n,\exists \{x_k\}\subseteq E,~s.t.~\lim_{k\to\infty}x_k=x$$
 
   则称 $x$ 为 $E$ 的**聚点** (或**极限点**)
 
   $E$ 上的全体聚点称为 $E$ 的**导集**, 记为 $E'$
 
 - 若
-  $$\exist x\in E,\forall \{x_k\}\subseteq E,~s.t.~\lim_{k\to\infty}x_k\ne x$$
+  $$\exists x\in E,\forall \{x_k\}\subseteq E,~s.t.~\lim_{k\to\infty}x_k\ne x$$
 
   则称 $x$ 为 $E$ 的**孤立点**, 显然 $x\in E\setminus E'$
 
@@ -135,9 +135,9 @@ $$\lim_{k\to\infty}x_k=x$$
 
 {% note primary no-icon %}
 
-**<a id="eg-1-1">例 - 1-1</a>** 设 $E=\{\sqrt{m}-\sqrt{n}:m,n\in\N\}$, 则 $E'=\R$
+**<a id="eg-1-1">例 - 1-1</a>** 设 $E=\{\sqrt{m}-\sqrt{n}:m,n\in\mathbb{N}\}$, 则 $E'=\mathbb{R}$
 
-注意到 $\forall x\in\R$, 令
+注意到 $\forall x\in\mathbb{R}$, 令
 $$x_n=\sqrt{\lfloor (x+n)^2\rfloor}-\sqrt{n^2}$$
 
 则
@@ -150,7 +150,7 @@ $$\lim_{n\to\infty}x_n=x$$
 
 {% note success no-icon %}
 
-**<a id="th-1-1">定理 - 1-1</a>** 设 $E\subseteq\R^n$, 则
+**<a id="th-1-1">定理 - 1-1</a>** 设 $E\subseteq\mathbb{R}^n$, 则
 $$x\in E'\iff\forall\delta>0,~(B(x,\delta)\setminus\{x\})\cap E\ne\varnothing$$
 
 证明略
@@ -159,7 +159,7 @@ $$x\in E'\iff\forall\delta>0,~(B(x,\delta)\setminus\{x\})\cap E\ne\varnothing$$
 
 {% note success no-icon %}
 
-**<a id="th-1-2">定理 - 1-2</a>** 设 $E_1,E_2\subseteq\R^n$, 则
+**<a id="th-1-2">定理 - 1-2</a>** 设 $E_1,E_2\subseteq\mathbb{R}^n$, 则
 
 $$(E_1\cup E_2)'=E_1'\cup E_2'$$
 
@@ -171,14 +171,14 @@ $$(E_1\cup E_2)'=E_1'\cup E_2'$$
 
 **<a id="th-1-3">定理 - 1-3</a>** (Bolzano-Weierstrass 定理)
 
-$\R^n$ 中任一有界无限点集均至少有一个聚点
+$\mathbb{R}^n$ 中任一有界无限点集均至少有一个聚点
 
 {% note %}
 
 <details open>
 <summary><font color='orange'>Proof</font></summary>
 
-对 $\R$ 上的 Bolzano-Weierstrass 定理用数学归纳法即可
+对 $\mathbb{R}$ 上的 Bolzano-Weierstrass 定理用数学归纳法即可
 
 </details>
 
@@ -191,7 +191,7 @@ $\R^n$ 中任一有界无限点集均至少有一个聚点
 
 #### <a id="asm-1-1">题 - 1-1</a>
 
-证明: 设 $\{a_n\}$ 为 $\R$ 中的有界点列, 且
+证明: 设 $\{a_n\}$ 为 $\mathbb{R}$ 中的有界点列, 且
 $$|a_{n+1}-a_n|\geqslant 1,~n=1,2,...$$
 则 $\{a_n\}$ 可能有无穷多个聚点
 

@@ -141,7 +141,7 @@ upd2:正解文件比较大, 洛谷可能会一直 judging...
 **<a id="th-1">定理 - 1</a>** 任意一个域 $\mathbb{F}$ 都含且仅含一个素域
 
 - 当 $\operatorname{char}(\mathbb{F})=0$ 时, $\mathbb{F}$ 的素域与 $\mathbb{Q}$ 同构
-- 当 $\operatorname{char}(\mathbb{F})=p$ 时, $\mathbb{F}$ 的素域与 $\Z_p$ 同构
+- 当 $\operatorname{char}(\mathbb{F})=p$ 时, $\mathbb{F}$ 的素域与 $\mathbb{Z}_p$ 同构
 
 进一步, 两个域的特征相同当且仅当其素域同构
 
@@ -163,7 +163,7 @@ $$\{\mathbb{F}_i|\mathbb{F}_i\leqslant \mathbb{F},i\in I\}$$
 
 $$
 \begin{aligned}
-  \varphi:\Z&\to\mathbb{P}\\
+  \varphi:\mathbb{Z}&\to\mathbb{P}\\
   m&\mapsto me
 \end{aligned}
 $$
@@ -171,9 +171,9 @@ $$
 其中 $e$ 为 $\mathbb{F}$ 的幺元, 显然 $\varphi$ 为同态映射
 
 - 若 $\operatorname{char}(\mathbb{F})=0$, 则 $\ker\varphi=\{0\}$, 令
-  $$R_e:=\{me|m\in\Z\}$$
+  $$R_e:=\{me|m\in\mathbb{Z}\}$$
 
-  由同态基本定理, $R_e\cong\Z$, $R_e$ 为一整环, 从而其分式域 $\mathbb{F}_e\cong\mathbb{Q}$
+  由同态基本定理, $R_e\cong\mathbb{Z}$, $R_e$ 为一整环, 从而其分式域 $\mathbb{F}_e\cong\mathbb{Q}$
 
   显然
 
@@ -185,7 +185,7 @@ $$
 - 若 $\operatorname{char}(\mathbb{F})=p$, 则 $\ker\varphi=\{p\}$, 令
   $$R_e:=\{0,e,2e,...,(p-1)e\}$$
 
-  由同态基本定理, $R_e\cong\Z_p$, 而 $\Z_p$ 显然为素域, 故 $R_e$ 即为 $\mathbb{F}$ 同构于 $\Z_p$ 的素域
+  由同态基本定理, $R_e\cong\mathbb{Z}_p$, 而 $\mathbb{Z}_p$ 显然为素域, 故 $R_e$ 即为 $\mathbb{F}$ 同构于 $\mathbb{Z}_p$ 的素域
 
 </details>
 
@@ -198,7 +198,7 @@ $$
 
 {% note success no-icon %}
 
-**<a id="th-2">定理 - 2</a>** $\forall p\in\text{Prime}^+,m\in\N^+$, $p^m$ 阶有限域必存在且在 $\mathbb{F}_p$-同构意义下是唯一的
+**<a id="th-2">定理 - 2</a>** $\forall p\in\text{Prime}^+,m\in\mathbb{N}^+$, $p^m$ 阶有限域必存在且在 $\mathbb{F}_p$-同构意义下是唯一的
 
 {% note %}
 
@@ -231,7 +231,7 @@ $$\mathbb{E}=\mathbb{F}_p(\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{p
 
 故其他数据点均可以构造
 
-首先, 我们知道, $\forall p\in\text{Prime}^+$, $(\Z_p,+,\cdot)$ 为一个域
+首先, 我们知道, $\forall p\in\text{Prime}^+$, $(\mathbb{Z}_p,+,\cdot)$ 为一个域
 
 接下来我们尝试构造素数幂次阶的有限域
 
