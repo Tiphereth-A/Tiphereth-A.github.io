@@ -59,7 +59,7 @@ tags:
 
 例如, 对于下图
 
-![conn1](conn1.svg)
+![](conn1.svg)
 
 - $v\to w\to x\to y\to z\to z\to x$ 是迹
 - $v\to w\to x\to y\to z\to x\to v$ 是闭迹
@@ -219,11 +219,11 @@ $$\kappa(G)\leq|V_0|\leq|F|$$
 
    设 $V_0$ 是 $C_1$ 中所有与 $F$ 中某条边相关联的点组成的集合, 显然这个集合就是我们要找的点割
 
-   ![th-2-8-case1](th-2-8-case1.svg)
+   ![](th-2-8-case1.svg)
 
 1. 若 $C_1$, $C_2$ 中所有的点均与 $F$ 中的边相关联, 则存在一点 $v$ 使得其不与所有点相邻, 则 $N(v)$ 即是我们要找的点割
 
-   ![th-2-8-case2](th-2-8-case2.svg)
+   ![](th-2-8-case2.svg)
 
 </details>
 
@@ -262,7 +262,7 @@ $$\kappa(G)\leq|V_0|\leq|F|$$
 
   若 $E(G)\setminus E(C)=\varnothing$, 则命题得证, 否则取与 $C$ 相关联的边, 由假设知其在某个圈上, 所以我们可以继续以同样的方式定向, 不难发现这样不断进行下去后得到的图是强连通的
 
-  ![th-2-9-fig1](th-2-9-fig1.svg)
+  ![](th-2-9-fig1.svg)
 
 </details>
 

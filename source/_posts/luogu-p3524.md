@@ -128,7 +128,7 @@ In the first and only line of the standard output your program should print $\fr
 
 画出来是这样的:
 
-![1](1.svg)
+![](1.svg)
 
 我们发现$1$和$9$的度是$7$, $7$和$8$的度是$2$, 其余点的度是 $6$
 按这样的做法就会输出

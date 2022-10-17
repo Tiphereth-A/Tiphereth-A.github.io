@@ -116,7 +116,7 @@ FILES=$(git diff --cached --name-only --diff-filter=ACMR | sed 's| |\\ |g')
 [ -z "$FILES" ] && exit 0
 
 echo "$FILES" | xargs ./node_modules/.bin/prettier --ignore-unknown --write
-add_intro_md $FILES
+# add_intro_md $FILES
 lint_code $FILES
 
 echo "$FILES" | xargs git add

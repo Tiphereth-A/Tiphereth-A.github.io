@@ -102,7 +102,7 @@ $$
 
 画成图就是这样
 
-![B-1](B-1.svg)
+![](B-1.svg)
 
 其中横轴为天, 纵轴为某天获得的积分, 显然无论如何走, 结果都会落在该三角形内
 
@@ -111,9 +111,9 @@ $$
 
 > 以下图中未画出等待时的积分收益
 
-![B-2](B-2.svg)
+![](B-2.svg)
 
-![B-3](B-3.svg)
+![](B-3.svg)
 
 该走法对应的最大积分为
 $$\max_{\min\{0,k-mn\}\leqslant t\leqslant k}\sum_{i=0}^{k-t}(t+i)$$
@@ -135,7 +135,7 @@ $$\max_{\min\{0,k-mn\}\leqslant t\leqslant k}\sum_{i=0}^{k-t}(t+i)$$
 
 此时的最优走法为: 先向短边方向走$t_1$天 $(0\leqslant t_1\leqslant\max\{0,\min\{l,\lfloor\frac{k-L}{2}\rfloor\}\})$, 然后等$t_2$天 $(0\leqslant t_2\leqslant\max\{k-2l-L,[k>L][2\nmid k-L]\})$, 最后反方向走到端点
 
-![B-4](B-4.svg)
+![](B-4.svg)
 
 该走法对应的最大积分为
 
