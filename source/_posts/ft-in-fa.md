@@ -332,13 +332,13 @@ $$\{e^{ikx}|k\in\mathbb{N}\}$$
 
 ## Fourier 变换
 
-对于任意两个 $L^2([0,2\pi];\mathbb{C})$ 中的函数 $u,v$, 我们考虑其在$B_p$ 和 $B_f$ 的系数
+对于任意两个 $L^2([0,2\pi];\mathbb{C})$ 中的函数 $u,v$, 我们考虑其在 $B_p$ 和 $B_f$ 的系数
 
 设
 $$u(x)=\sum_{k=0}^{\infty}\xi_kx^k=\sum_{k=0}^{\infty}\psi_k e^{ikx}$$
 $$v(x)=\sum_{k=0}^{\infty}\rho_kx^k=\sum_{k=0}^{\infty}\mu_k e^{ikx}$$
 
-之后我们考虑 $uv$ 在$B_p$ 和 $B_f$ 的系数, 可以得到
+之后我们考虑 $uv$ 在 $B_p$ 和 $B_f$ 的系数, 可以得到
 
 $$u(x)v(x)=\sum_{k=0}^{\infty}\left(\textcolor{3700cc}{\sum_{j=0}^k\xi_j\rho_{k-j}}\right)x^k=\sum_{k=0}^{\infty}\textcolor{a50040}{\psi_k\mu_k} e^{ikx}$$
 

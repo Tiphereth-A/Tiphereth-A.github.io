@@ -30,7 +30,7 @@ $$
 
 $$\sum_{e\mid n}\sum_{d'\mid\frac{n}{e}}\xrightarrow[(1)]{d'\to\frac{d}{e}}\sum_{e\mid n}\sum_{\frac{d}{e}\mid\frac{n}{e}}\xrightarrow[(2)]{}\sum_{e\mid n}\sum_{e\mid d\mid n}\xrightarrow[(3)]{\text{交换求和号}}\sum_{d\mid n}\sum_{e\mid d}$$
 
-> $\displaystyle\sum_{\frac{d}{e}\mid\frac{n}{e}}$的下标用`\frac{d }{e} \mid \frac{n }{e}`会出 bug, 要用`\frac{d}{e} \mid \frac{n}{e}`, 不知道为什么
+> $\displaystyle\sum_{\frac{d}{e}\mid\frac{n}{e}}$ 的下标用`\frac{d }{e} \mid \frac{n }{e}`会出 bug, 要用`\frac{d}{e} \mid \frac{n}{e}`, 不知道为什么
 
 其中:
 
@@ -50,20 +50,20 @@ $$\frac{d}{e}\mid \frac{n}{e}\iff e\mid d\mid n$$
 
   另一方面, $\frac{d}{e}\in\mathbb{Z}\implies e\mid d$
 
-  故$e\mid d\mid n$
+  故 $e\mid d\mid n$
 
 - $\impliedby$
 
-  由$e\mid d\mid n$可知$\displaystyle\frac{n}{e},\frac{n}{d},\frac{d}{e}\in\mathbb{Z}$
+  由 $e\mid d\mid n$ 可知 $\displaystyle\frac{n}{e},\frac{n}{d},\frac{d}{e}\in\mathbb{Z}$
 
-  又$\displaystyle\frac{n}{e}=\frac{n}{d}\cdot\frac{d}{e}$
+  又 $\displaystyle\frac{n}{e}=\frac{n}{d}\cdot\frac{d}{e}$
 
-  故$\displaystyle\frac{d}{e}\mid \frac{n}{e}$
+  故 $\displaystyle\frac{d}{e}\mid \frac{n}{e}$
 
   <a href="#p-t-1" id="end-t-1">$\Box$</a>
 
-- (3) 即是交换枚举顺序, 即 先枚举$e$后枚举$d\longrightarrow$先枚举$d$后枚举$e$
+- (3) 即是交换枚举顺序, 即 先枚举 $e$ 后枚举 $d\longrightarrow$ 先枚举 $d$ 后枚举 $e$
 
-  交换前即为先枚举$n$的因子$e$, 再枚举$d$满足既是$n$的**因子**也是$e$的**倍数**
+  交换前即为先枚举 $n$ 的因子 $e$, 再枚举 $d$ 满足既是 $n$ 的**因子**也是 $e$ 的**倍数**
 
-  交换后即为先枚举$n$的因子$d$, 再枚举$e$满足既是$n$的**因子**也是$d$的**因子**, 即枚举$d$的因子$e$
+  交换后即为先枚举 $n$ 的因子 $d$, 再枚举 $e$ 满足既是 $n$ 的**因子**也是 $d$ 的**因子**, 即枚举 $d$ 的因子 $e$

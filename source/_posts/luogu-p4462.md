@@ -53,7 +53,7 @@ date: 2020-01-27 15:40:12
 
      用一个桶`cnt[x]`记录当前区间内`s[i]=x`的个数
 
-     则当前区间的结果为$\displaystyle\sum_{i=l}^r\mathrm{cnt}_{s_i\oplus k}$
+     则当前区间的结果为 $\displaystyle\sum_{i=l}^r\mathrm{cnt}_{s_i\oplus k}$
 
 1. $\Rightarrow O(n\min\{m,\sqrt n\})$: 奇偶化排序优化
 
