@@ -27,21 +27,13 @@ void dfs(int u, int father) {
     dfs(v, u);
     if (f[v][1][0] <= a[u] && f[v][0][0] <= a[u]) fa = 0;
     int t = n + 1;
-    if (f[v][1][0] > a[u]) {
-      t = min(f[v][1][1], t);
-    }
-    if (f[v][0][0] > a[u]) {
-      t = min(f[v][0][1], t);
-    }
+    if (f[v][1][0] > a[u]) { t = min(f[v][1][1], t); }
+    if (f[v][0][0] > a[u]) { t = min(f[v][0][1], t); }
     f[u][0][1] = max(f[u][0][1], t);
     t = 0;
     if (f[v][0][1] >= a[u] && f[v][1][1] >= a[u]) fb = 0;
-    if (f[v][0][1] < a[u]) {
-      t = max(f[v][0][0], t);
-    }
-    if (f[v][1][1] < a[u]) {
-      t = max(f[v][1][0], t);
-    }
+    if (f[v][0][1] < a[u]) { t = max(f[v][0][0], t); }
+    if (f[v][1][1] < a[u]) { t = max(f[v][1][0], t); }
     f[u][1][0] = min(f[u][1][0], t);
   }
   if (!sz) {
@@ -62,9 +54,7 @@ void dfs(int u, int father) {
 }
 int main() {
   scanf("%d", &n);
-  for (int i = 1; i <= n; ++i) {
-    scanf("%d", &a[i]);
-  }
+  for (int i = 1; i <= n; ++i) { scanf("%d", &a[i]); }
   for (int i = 1; i < n; ++i) {
     int x, y;
     scanf("%d%d", &x, &y);

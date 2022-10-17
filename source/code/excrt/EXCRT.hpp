@@ -40,8 +40,7 @@ bool excrt(T b[], T m[], const int len, T &res) {
   for (int i = 2; i <= len; ++i) {
     now_b = b[i];
     now_m = m[i];
-    if (!solve_2equ(pre_b, now_b, pre_m, now_m, pre_b, pre_m))
-      return false;
+    if (!solve_2equ(pre_b, now_b, pre_m, now_m, pre_b, pre_m)) return false;
   }
   res = pre_b;
   return true;

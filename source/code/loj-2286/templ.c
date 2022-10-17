@@ -17,9 +17,7 @@ inline u32 next_integer(u32 x) {
 }
 
 bool output_arr(void *a, u32 size) {
-  if (size % 4) {
-    return puts("-1"), 0;
-  }
+  if (size % 4) { return puts("-1"), 0; }
 
   u32 blocks = size / 4;
   u32 *A = (u32 *)a;
@@ -70,9 +68,7 @@ void Game_main() {
 
   int i;
 
-  for (i = 0; i < q; i++) {
-    scanf("%d%d%d", q_x + i, q_y + i, q_len + i);
-  }
+  for (i = 0; i < q; i++) { scanf("%d%d%d", q_x + i, q_y + i, q_len + i); }
 
   // solve(n, q, s1, s2, q_x, q_y, q_len, anss);
 
@@ -97,15 +93,9 @@ int main() {
   scanf("%d", &task_id);
 
   switch (task_id) {
-    case 1:
-      Sorting_main();
-      break;
-    case 2:
-      Game_main();
-      break;
-    case 3:
-      Parentheses_main();
-      break;
+    case 1: Sorting_main(); break;
+    case 2: Game_main(); break;
+    case 3: Parentheses_main(); break;
   }
 
   return 0;

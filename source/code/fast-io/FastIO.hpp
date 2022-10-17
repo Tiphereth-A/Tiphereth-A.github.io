@@ -1,13 +1,24 @@
 namespace fast_io {
 namespace type_traits {
 template <class Tp>
-inline constexpr bool is_char_v = std::is_same_v<Tp, char> || std::is_same_v<Tp, signed char> || std::is_same_v<Tp, unsigned char>;
+inline constexpr bool is_char_v =
+  std::is_same_v<Tp, char> || std::is_same_v<Tp, signed char> ||
+  std::is_same_v<Tp, unsigned char>;
 template <class Tp>
-inline constexpr bool is_int_v = (std::is_integral_v<Tp> && std::is_signed_v<Tp> && !is_char_v<Tp>) || std::is_same_v<Tp, __int128_t>;
+inline constexpr bool is_int_v =
+  (std::is_integral_v<Tp> && std::is_signed_v<Tp> && !is_char_v<Tp>) ||
+  std::is_same_v<Tp, __int128_t>;
 template <class Tp>
-inline constexpr bool is_uint_v = (std::is_integral_v<Tp> && std::is_unsigned_v<Tp> && !is_char_v<Tp>) || std::is_same_v<Tp, __uint128_t>;
+inline constexpr bool is_uint_v =
+  (std::is_integral_v<Tp> && std::is_unsigned_v<Tp> && !is_char_v<Tp>) ||
+  std::is_same_v<Tp, __uint128_t>;
 template <class Tp>
-using make_uint_t = typename std::conditional_t<(std::is_same_v<Tp, __int128_t> || std::is_same_v<Tp, __uint128_t>), std::common_type<__uint128_t>, typename std::conditional_t<std::is_signed_v<Tp>, std::make_unsigned<Tp>, std::common_type<Tp>>>::type;
+using make_uint_t = typename std::conditional_t<
+  (std::is_same_v<Tp, __int128_t> || std::is_same_v<Tp, __uint128_t>),
+  std::common_type<__uint128_t>,
+  typename std::conditional_t<std::is_signed_v<Tp>,
+                              std::make_unsigned<Tp>,
+                              std::common_type<Tp>>>::type;
 }  // namespace type_traits
 
 //! Will enter a dead loop if EOF occured during reading
@@ -22,8 +33,20 @@ protected:
 public:
   explicit FastIn(FILE *file = stdin): file_(file) {}
 
-  inline char fetch() { return now_ == end_ && (end_ = (now_ = buffer_) + fread(buffer_, 1, BUFFER_SIZE, file_), now_ == end_) ? EOF : *(now_)++; }
-  inline char visit() { return now_ == end_ && (end_ = (now_ = buffer_) + fread(buffer_, 1, BUFFER_SIZE, file_), now_ == end_) ? EOF : *(now_); }
+  inline char fetch() {
+    return now_ == end_ &&
+               (end_ = (now_ = buffer_) + fread(buffer_, 1, BUFFER_SIZE, file_),
+                now_ == end_) ?
+             EOF :
+             *(now_)++;
+  }
+  inline char visit() {
+    return now_ == end_ &&
+               (end_ = (now_ = buffer_) + fread(buffer_, 1, BUFFER_SIZE, file_),
+                now_ == end_) ?
+             EOF :
+             *(now_);
+  }
   inline void set_file(FILE *file) {
     file_ = file;
     now_ = end_ = buffer_;
@@ -83,7 +106,9 @@ public:
     return *this;
   }
   template <class Tp, class Up>
-  inline self &read(std::pair<Tp, Up> &p) { return read(p.first).read(p.second); }
+  inline self &read(std::pair<Tp, Up> &p) {
+    return read(p.first).read(p.second);
+  }
   template <typename... Ts>
   inline self &read(std::tuple<Ts...> &p) {
     std::apply([&](Ts &...targs) { ((read(targs)), ...); }, p);
@@ -116,7 +141,9 @@ public:
   }
 
   template <class Tp>
-  self &operator>>(Tp &val) { return read(val); }
+  self &operator>>(Tp &val) {
+    return read(val);
+  }
 };
 
 template <size_t BUFFER_SIZE, size_t INT_BUFFER_SIZE>
@@ -187,7 +214,9 @@ public:
   }
   inline self &write(const std::string &str) { return write(str.c_str()); }
   template <class Tp, class Up>
-  inline self &write(const std::pair<Tp, Up> &p) { return write(p.first).space().write(p.second); }
+  inline self &write(const std::pair<Tp, Up> &p) {
+    return write(p.first).space().write(p.second);
+  }
   template <typename... Ts>
   inline self &write(const std::tuple<Ts...> &p) {
     std::apply(
@@ -205,7 +234,9 @@ public:
   inline self &space_if(bool flag) { return flag ? space() : *this; }
 
   template <class Tp>
-  self &operator<<(const Tp &val) { return write(val); }
+  self &operator<<(const Tp &val) {
+    return write(val);
+  }
 };
 
 const std::size_t BUFFER_SIZE = (1 << 21) + 5;

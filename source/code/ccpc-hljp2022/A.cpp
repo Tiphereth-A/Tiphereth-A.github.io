@@ -3,9 +3,7 @@
 #define int long long
 using namespace std;
 int a, b, c, d, n, m, h;
-int Pd(int x) {
-  return (h - b) * ((d + m - x) / b) + c >= x ? 1 : 0;
-}
+int Pd(int x) { return (h - b) * ((d + m - x) / b) + c >= x ? 1 : 0; }
 signed main() {
   ios::sync_with_stdio(false);
   cin.tie(nullptr), cout.tie(nullptr);

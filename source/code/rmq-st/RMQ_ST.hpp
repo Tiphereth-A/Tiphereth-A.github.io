@@ -1,4 +1,8 @@
-template <size_t N, typename data_t, typename init_func = std::function<data_t(size_t)>, typename query_func = std::function<data_t(const data_t &, const data_t &)>>
+template <size_t N,
+          typename data_t,
+          typename init_func = std::function<data_t(size_t)>,
+          typename query_func =
+            std::function<data_t(const data_t &, const data_t &)>>
 class RMQ_ST {
 protected:
   init_func ifunc;

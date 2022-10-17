@@ -9,7 +9,14 @@ int n, q;
 int A[N];
 struct Node {
   int l, r, ll, rl, w, flag, Sz;
-  Node(int _l = 0, int _r = 0, int _ll = 0, int _rl = 0, int _w = 0, int _flag = 0, int _Sz = 0): l(_l), r(_r), ll(_ll), rl(_rl), w(_w), flag(_flag), Sz(_Sz) {}
+  Node(int _l = 0,
+       int _r = 0,
+       int _ll = 0,
+       int _rl = 0,
+       int _w = 0,
+       int _flag = 0,
+       int _Sz = 0)
+    : l(_l), r(_r), ll(_ll), rl(_rl), w(_w), flag(_flag), Sz(_Sz) {}
   friend Node operator+(const Node &A, const Node &B) {
     if (A.Sz == 0) return B;
     if (B.Sz == 0) return A;

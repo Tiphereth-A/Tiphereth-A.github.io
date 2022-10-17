@@ -65,9 +65,7 @@ void add(int v, int l, int r, int x, int y) {
   cnt[v] = cnt[v << 1] + cnt[v << 1 | 1];
 }
 ll query(int v, int l, int r, int x, int y) {
-  if (x <= l && r <= y) {
-    return sum[v];
-  }
+  if (x <= l && r <= y) { return sum[v]; }
   int mid = l + r >> 1;
   pushdown(v, l, r);
   ll res = 0;
@@ -97,8 +95,6 @@ int main() {
       ++j;
     }
   }
-  for (int i = 1; i <= m; ++i) {
-    printf("%lld\n", ans[i]);
-  }
+  for (int i = 1; i <= m; ++i) { printf("%lld\n", ans[i]); }
   return 0;
 }

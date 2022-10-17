@@ -21,14 +21,15 @@ using u64 = uint64_t;
 
 il char gc() {
   static char buf[MAXBUF], *p1 = buf, *p2 = buf;
-  return p1 == p2 && (p2 = (p1 = buf) + fread(buf, 1, MAXBUF, stdin), p1 == p2) ? EOF : *p1++;
+  return p1 == p2 &&
+             (p2 = (p1 = buf) + fread(buf, 1, MAXBUF, stdin), p1 == p2) ?
+           EOF :
+           *p1++;
 }
 template <tpn A>
 il void read(A &x) {
   char c;
-  do {
-    c = getchar();
-  } while (c < '0' || c > '9');
+  do { c = getchar(); } while (c < '0' || c > '9');
   x = 0;
   do {
     x = (x << 3) + (x << 1) + (c ^ 48);
@@ -51,9 +52,7 @@ std::string str2;
 std::ofstream fout("test1.txt");
 struct timeval start, end;
 
-il void PushUp(const u64 &rt) {
-  sum[rt] = sum[ls] + sum[rs];
-}
+il void PushUp(const u64 &rt) { sum[rt] = sum[ls] + sum[rs]; }
 il void PushDown(const u64 &rt, const u64 &ln, const u64 &rn) {
   add[ls] += add[rt];
   sum[ls] += add[rt] * ln;
@@ -71,7 +70,12 @@ void Build(const u64 &l, const u64 &r, const u64 &rt) {
   Build(m + 1, r, rs);
   PushUp(rt);
 }
-void Update(const u64 &L, const u64 &R, const u64 &c, const u64 &l, const u64 &r, const u64 &rt) {
+void Update(const u64 &L,
+            const u64 &R,
+            const u64 &c,
+            const u64 &l,
+            const u64 &r,
+            const u64 &rt) {
   if (L <= l && r <= R) {
     sum[rt] += c * (r - l + 1);
     add[rt] += c;
@@ -79,22 +83,18 @@ void Update(const u64 &L, const u64 &R, const u64 &c, const u64 &l, const u64 &r
   }
   Mid;
   PushDown(rt, m - l + 1, r - m);
-  if (L <= m)
-    Update(L, R, c, l, m, ls);
-  if (R > m)
-    Update(L, R, c, m + 1, r, rs);
+  if (L <= m) Update(L, R, c, l, m, ls);
+  if (R > m) Update(L, R, c, m + 1, r, rs);
   PushUp(rt);
 }
-u64 Query(const u64 &L, const u64 &R, const u64 &l, const u64 &r, const u64 &rt) {
+u64 Query(
+  const u64 &L, const u64 &R, const u64 &l, const u64 &r, const u64 &rt) {
   u64 ans = 0;
-  if (L <= l && r <= R)
-    return sum[rt];
+  if (L <= l && r <= R) return sum[rt];
   Mid;
   PushDown(rt, m - l + 1, r - m);
-  if (L <= m)
-    ans += Query(L, R, l, m, ls);
-  if (R > m)
-    ans += Query(L, R, m + 1, r, rs);
+  if (L <= m) ans += Query(L, R, l, m, ls);
+  if (R > m) ans += Query(L, R, m + 1, r, rs);
   return ans;
 }
 int main() {

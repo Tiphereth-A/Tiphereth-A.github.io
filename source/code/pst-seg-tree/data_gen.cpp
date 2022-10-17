@@ -9,7 +9,10 @@ int main() {
   cout << n << ' ' << m << '\n';
   for (int i = 1; i <= n; ++i) cout << (int)rd() % inf << ' ';
   cout << '\n';
-  for (int i = 1; i <= 999990; ++i) cout << i - 1 << ' ' << 1 << ' ' << rd() % n + 1 << ' ' << (int)rd() % inf << '\n';
-  for (int i = 1; i <= 10; ++i) cout << 999990 << ' ' << 2 << ' ' << rd() % n + 1 << '\n';
+  for (int i = 1; i <= 999990; ++i)
+    cout << i - 1 << ' ' << 1 << ' ' << rd() % n + 1 << ' ' << (int)rd() % inf
+         << '\n';
+  for (int i = 1; i <= 10; ++i)
+    cout << 999990 << ' ' << 2 << ' ' << rd() % n + 1 << '\n';
   return 0;
 }

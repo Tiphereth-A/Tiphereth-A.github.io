@@ -149,7 +149,9 @@ void init_pow_k(int k) {
       if (i % pri[j] == 0) break;
     }
   }
-  _for(i, 2, k + 2) pow_k[i] = (pow_k[i] + pow_k[i - 1] > MOD ? pow_k[i] + pow_k[i - 1] - MOD : pow_k[i] + pow_k[i - 1]);
+  _for(i, 2, k + 2)
+    pow_k[i] = (pow_k[i] + pow_k[i - 1] > MOD ? pow_k[i] + pow_k[i - 1] - MOD :
+                                                pow_k[i] + pow_k[i - 1]);
 }
 
 i64 pre[N], suc[N];
@@ -186,7 +188,8 @@ void main() {
     _rfor(i, k + 2, 1) suc[i] = mul_mod(suc[i + 1], n - i, MOD);
     _for(i, 1, k + 2) {
       i64 a = mul_mod(pre[i - 1], suc[i + 1], MOD);
-      i64 b = mul_mod(inv[i - 1], (k - i) % 2 ? (MOD - inv[k + 2 - i]) : inv[k + 2 - i], MOD);
+      i64 b = mul_mod(
+        inv[i - 1], (k - i) % 2 ? (MOD - inv[k + 2 - i]) : inv[k + 2 - i], MOD);
       ans = (ans + mul_mod(mul_mod(pow_k[i], a, MOD), b, MOD)) % MOD;
     }
     cout << ans << '\n';

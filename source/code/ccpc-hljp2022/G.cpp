@@ -11,8 +11,7 @@ int main() {
   scanf("%d", &n);
   Rep(i, 1, n) scanf("%d", A + i);
   Dp[0] = 1;
-  Rep(i, 1, n) if (A[i])
-    rep(j, n, A[i])(Dp[j] += Dp[j - A[i]]) %= Mod;
+  Rep(i, 1, n) if (A[i]) rep(j, n, A[i])(Dp[j] += Dp[j - A[i]]) %= Mod;
   int Ans = n;
   while (!Dp[Ans]) dec(Ans);
   printf("%d %d", Ans, Dp[Ans]);

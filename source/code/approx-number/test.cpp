@@ -6,8 +6,7 @@ float InvSqrt(float x, int it) {
 
   i = 0x5f3759df - (i >> 1);
   x = *(float *)&i;
-  for (register int i = 1; i <= it; ++i)
-    x = x * (1.5f - xhalf * x * x);
+  for (register int i = 1; i <= it; ++i) x = x * (1.5f - xhalf * x * x);
   return x;
 }
 float GetRErr(float test, float real) {
@@ -19,10 +18,9 @@ int main() {
     float t;
     scanf("%f", &t);
     if (t < 0) return 0;
-    float sys = 1.0 / sqrt(t),
-          invs1 = InvSqrt(t, 1), invs2 = InvSqrt(t, 2),
-          invs3 = InvSqrt(t, 3), invs4 = InvSqrt(t, 4),
-          invs5 = InvSqrt(t, 5), invs6 = InvSqrt(t, 6);
+    float sys = 1.0 / sqrt(t), invs1 = InvSqrt(t, 1), invs2 = InvSqrt(t, 2),
+          invs3 = InvSqrt(t, 3), invs4 = InvSqrt(t, 4), invs5 = InvSqrt(t, 5),
+          invs6 = InvSqrt(t, 6);
     printf(
       "Test#%d n=%f\n"
       "System:\n%f\nTest:\n"

@@ -26,7 +26,8 @@ constexpr Tp mul_mod(Tp a, Tp b, const Up &mod) {
 
 std::default_random_engine e(time(nullptr));
 
-std::optional<data_type> quad_residue(const data_type &n, const unsigned_data_t &p) {
+std::optional<data_type> quad_residue(const data_type &n,
+                                      const unsigned_data_t &p) {
   if (n == 0 || n == 1 || n == p - 1) return n;
   if (legendre_symbol(n, p) != 1) return std::nullopt;
 
@@ -41,25 +42,30 @@ std::optional<data_type> quad_residue(const data_type &n, const unsigned_data_t 
     const data_type i_sqr;
     const unsigned_data_t mod;
 
-    explicit constexpr _gsint(const data_type &_r = data_type(), const data_type &_i = data_type(), const data_type &_ii = data_type(), const unsigned_data_t &_p = unsigned_data_t(1)): real(_r), imag(_i), i_sqr(_ii), mod(_p) {}
+    explicit constexpr _gsint(const data_type &_r = data_type(),
+                              const data_type &_i = data_type(),
+                              const data_type &_ii = data_type(),
+                              const unsigned_data_t &_p = unsigned_data_t(1))
+      : real(_r), imag(_i), i_sqr(_ii), mod(_p) {}
 
     constexpr _gsint(const _gsint &) = default;
 
     constexpr self &operator*=(const self &rhs) {
       const data_t _r = real, _i = imag;
-      real = (mul_mod(_r, rhs.real, mod) + mul_mod(mul_mod(i_sqr, _i, mod), rhs.imag, mod)) % mod;
+      real = (mul_mod(_r, rhs.real, mod) +
+              mul_mod(mul_mod(i_sqr, _i, mod), rhs.imag, mod)) %
+             mod;
       imag = (mul_mod(_i, rhs.real, mod) + mul_mod(_r, rhs.imag, mod)) % mod;
       return *this;
     }
   };
 
-  return
-    [](_gsint a, unsigned_data_t b) {
-      _gsint res{1, 0, a.i_sqr, a.mod};
-      for (; b; b >>= 1, a *= a)
-        if (b & 1) res *= a;
-      return res.real;
-    }(_gsint{a, 1, (mul_mod(a, a, p) + (p - n)) % p, p}, (p + 1) / 2);
+  return [](_gsint a, unsigned_data_t b) {
+    _gsint res{1, 0, a.i_sqr, a.mod};
+    for (; b; b >>= 1, a *= a)
+      if (b & 1) res *= a;
+    return res.real;
+  }(_gsint{a, 1, (mul_mod(a, a, p) + (p - n)) % p, p}, (p + 1) / 2);
 }
 }  // namespace quad_r
 using quad_r::quad_residue;

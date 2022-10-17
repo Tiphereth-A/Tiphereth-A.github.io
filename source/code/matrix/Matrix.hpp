@@ -1,5 +1,6 @@
 namespace Matrix {
-#define _TRAITS(expression, __...) std::enable_if_t<expression, ##__> * = nullptr
+#define _TRAITS(expression, __...) \
+  std::enable_if_t<expression, ##__> * = nullptr
 #define _CONVERTIBLE(Tp, Up) std::is_convertible<Tp, Up>::value
 
 namespace Matrix_helper {
@@ -30,14 +31,16 @@ using namespace Matrix_helper;
 
 template <class Tp, class Equal = std::equal_to<Tp>>
 class matrix {
-#define _for(i, begin, end, vals...) for (std::size_t i = (begin), ##vals; i < (end); ++i)
+#define _for(i, begin, end, vals...) \
+  for (std::size_t i = (begin), ##vals; i < (end); ++i)
 #define _for_row(i, vals...) _for(i, 0, this->get_row(), ##vals)
 #define _for_col(i, vals...) _for(i, 0, this->get_col(), ##vals)
 #define _for_each(i, j) \
   _for_row(i)           \
     _for_col(j)
-#define _square_matrix_needed \
-  if (this->get_row() != this->get_col()) throw std::runtime_error("The matrix is not square matrix")
+#define _square_matrix_needed             \
+  if (this->get_row() != this->get_col()) \
+  throw std::runtime_error("The matrix is not square matrix")
 
 public:
   using self = matrix<Tp, Equal>;
@@ -50,7 +53,8 @@ protected:
     _for(i, 0, std::min(now.get_row(), now.get_col()), now_row = 0) {
       now_row = rk;
       _for(j, now_row + 1, now.get_row())
-        if (std::abs(now.data(j, i)) > std::abs(now.data(now_row, i))) now_row = j;
+        if (std::abs(now.data(j, i)) > std::abs(now.data(now_row, i)))
+          now_row = j;
       if (now.equ(now.data(now_row, i), now.get_zero())) continue;
       if (now_row != rk) {
         std::swap(now.mat[now_row], now.mat[rk]);
@@ -73,7 +77,8 @@ protected:
     _for(i, 0, std::min(now.get_row(), now.get_col()), now_row = 0) {
       now_row = rk;
       _for(j, now_row + 1, now.get_row())
-        if (std::abs(now.data(j, i)) > std::abs(now.data(now_row, i))) now_row = j;
+        if (std::abs(now.data(j, i)) > std::abs(now.data(now_row, i)))
+          now_row = j;
       if (now.equ(now.data(now_row, i), now.get_zero())) continue;
       if (now_row != rk) {
         std::swap(now.mat[now_row], now.mat[rk]);
@@ -95,7 +100,8 @@ protected:
     _for(i, 0, std::min(now.get_row(), now.get_col()), now_row = 0) {
       now_row = rk;
       _for(j, now_row + 1, now.get_row())
-        if (std::abs(now.data(j, i)) > std::abs(now.data(now_row, i))) now_row = j;
+        if (std::abs(now.data(j, i)) > std::abs(now.data(now_row, i)))
+          now_row = j;
       if (now.equ(now.data(now_row, i), now.get_zero())) continue;
       if (now_row != rk) {
         std::swap(now.mat[now_row], now.mat[rk]);
@@ -108,7 +114,8 @@ protected:
         }
         while (!now.equ(now.data(i, i), now.get_zero())) {
           std::ptrdiff_t _ = now.data(j, i) / now.data(i, i);
-          _for(k, i, now.get_row()) now.data(j, k) -= now.data(i, k) * data_t(_);
+          _for(k, i, now.get_row())
+            now.data(j, k) -= now.data(i, k) * data_t(_);
           std::swap(now.mat[j], now.mat[i]);
           neg ^= true;
         }
@@ -124,7 +131,8 @@ protected:
     _for(i, 0, std::min(now.get_row(), now.get_col()), now_row = 0) {
       now_row = rk;
       _for(j, now_row + 1, now.get_row())
-        if (std::abs(now.data(j, i)) > std::abs(now.data(now_row, i))) now_row = j;
+        if (std::abs(now.data(j, i)) > std::abs(now.data(now_row, i)))
+          now_row = j;
       if (now.equ(now.data(now_row, i), now.get_zero())) continue;
       if (now_row != rk) {
         std::swap(now.mat[now_row], now.mat[rk]);
@@ -137,7 +145,8 @@ protected:
         }
         while (!now.equ(now.data(i, i), now.get_zero())) {
           std::ptrdiff_t _ = now.data(j, i) / now.data(i, i);
-          _for(k, i, now.get_row()) now.data(j, k) -= now.data(i, k) * data_t(_);
+          _for(k, i, now.get_row())
+            now.data(j, k) -= now.data(i, k) * data_t(_);
           std::swap(now.mat[j], now.mat[i]);
           neg ^= true;
         }
@@ -148,17 +157,28 @@ protected:
   }
 
 public:
-  matrix(const std::size_t &_row, const std::size_t &_col, const Equal &_equal = Equal()): row(_row), col(_col), mat(_row, std::vector<data_t>(_col)), equ(_equal) {
+  matrix(const std::size_t &_row,
+         const std::size_t &_col,
+         const Equal &_equal = Equal())
+    : row(_row), col(_col), mat(_row, std::vector<data_t>(_col)), equ(_equal) {
     if (_row == 0 || _col == 0) throw std::logic_error("invalid parameters");
   }
 
   template <typename Up, _TRAITS(_CONVERTIBLE(Up, data_t))>
-  matrix(const std::size_t &_row, const std::size_t &_col, Up &&scalar, const Equal &_equal = Equal()): row(_row), col(_col), mat(_row, std::vector<data_t>(_col, scalar)), equ(_equal) {
+  matrix(const std::size_t &_row,
+         const std::size_t &_col,
+         Up &&scalar,
+         const Equal &_equal = Equal())
+    : row(_row), col(_col), mat(_row, std::vector<data_t>(_col, scalar)),
+      equ(_equal) {
     if (_row == 0 || _col == 0) throw std::logic_error("invalid parameters");
   }
 
   template <typename Up, _TRAITS(_CONVERTIBLE(Up, self &))>
-  matrix(Up &&rhs): row(std::forward<self>(rhs).get_row()), col(std::forward<self>(rhs).get_col()), mat(row), equ(std::forward<self>(rhs).equ) {
+  matrix(Up &&rhs)
+    : row(std::forward<self>(rhs).get_row()),
+      col(std::forward<self>(rhs).get_col()), mat(row),
+      equ(std::forward<self>(rhs).equ) {
     _for_row(i) this->mat[i] = std::forward<self>(rhs).mat[i];
   }
 
@@ -178,9 +198,15 @@ public:
   inline constexpr const data_t &get_zero() const { return this->zero; }
   inline constexpr const data_t &get_one() const { return this->one; }
 
-  inline constexpr data_t &data(const size_t &r, const size_t &c) const { return const_cast<self * const>(this)->mat[r][c]; }
-  inline constexpr data_t &data(const size_t &r, const size_t &c) { return this->mat[r][c]; }
-  data_t &operator()(const std::size_t &r, const std::size_t &c) { return this->data(r, c); }
+  inline constexpr data_t &data(const size_t &r, const size_t &c) const {
+    return const_cast<self * const>(this)->mat[r][c];
+  }
+  inline constexpr data_t &data(const size_t &r, const size_t &c) {
+    return this->mat[r][c];
+  }
+  data_t &operator()(const std::size_t &r, const std::size_t &c) {
+    return this->data(r, c);
+  }
 
   template <typename Unary>
   inline constexpr self &transform_unary(Unary &&op) {
@@ -188,7 +214,9 @@ public:
     return *this;
   }
   template <typename Unary>
-  friend inline constexpr self calc_unary(const self &lhs, Unary &&op) { return self(lhs).transform_unary(op); }
+  friend inline constexpr self calc_unary(const self &lhs, Unary &&op) {
+    return self(lhs).transform_unary(op);
+  }
 
   template <typename Binary>
   inline constexpr self &transform_binary(const self &rhs, Binary &&op) {
@@ -196,13 +224,24 @@ public:
     return *this;
   }
   template <typename Binary>
-  friend inline constexpr self calc_binary(const self &lhs, const self &rhs, Binary &&op) { return self(lhs).transform_binary(rhs, op); }
+  friend inline constexpr self
+  calc_binary(const self &lhs, const self &rhs, Binary &&op) {
+    return self(lhs).transform_binary(rhs, op);
+  }
 
-  inline constexpr friend std::ptrdiff_t gauss(self &now, normal_tag) { return _gauss(now); }
-  inline constexpr friend std::ptrdiff_t gauss(self &now, euclid_tag) { return _gauss_euclid(now); }
+  inline constexpr friend std::ptrdiff_t gauss(self &now, normal_tag) {
+    return _gauss(now);
+  }
+  inline constexpr friend std::ptrdiff_t gauss(self &now, euclid_tag) {
+    return _gauss_euclid(now);
+  }
 
-  inline constexpr friend std::ptrdiff_t gauss_half(self &now, normal_tag) { return _gauss_half(now); }
-  inline constexpr friend std::ptrdiff_t gauss_half(self &now, euclid_tag) { return _gauss_half_euclid(now); }
+  inline constexpr friend std::ptrdiff_t gauss_half(self &now, normal_tag) {
+    return _gauss_half(now);
+  }
+  inline constexpr friend std::ptrdiff_t gauss_half(self &now, euclid_tag) {
+    return _gauss_half_euclid(now);
+  }
 
   inline constexpr self trans() {
     self ret(this->get_col(), this->get_row(), this->equ);
@@ -220,7 +259,8 @@ public:
 
     self _ = self(*this);
     std::ptrdiff_t rk = gauss_half(_, typename gauss_tag<data_t>::type());
-    if (static_cast<std::size_t>(std::abs(rk)) != this->get_row()) return this->get_zero();
+    if (static_cast<std::size_t>(std::abs(rk)) != this->get_row())
+      return this->get_zero();
 
     data_t ans(rk > 0 ? this->get_one() : -(this->get_one()));
     _for_row(i) ans *= this->data(i, i);
@@ -247,39 +287,74 @@ public:
     return ret;
   }
 
-  inline constexpr self &add(const self &rhs) { return this->transform_binary(rhs, std::plus<data_t>()); }
-  inline constexpr self &minus(const self &rhs) { return this->transform_binary(rhs, std::minus<data_t>()); }
-  inline constexpr self &multiply(const self &rhs) { return this->transform_binary(rhs, std::multiplies<data_t>()); }
-  inline constexpr self &divide(const self &rhs) { return this->transform_binary(rhs, std::divides<data_t>()); }
+  inline constexpr self &add(const self &rhs) {
+    return this->transform_binary(rhs, std::plus<data_t>());
+  }
+  inline constexpr self &minus(const self &rhs) {
+    return this->transform_binary(rhs, std::minus<data_t>());
+  }
+  inline constexpr self &multiply(const self &rhs) {
+    return this->transform_binary(rhs, std::multiplies<data_t>());
+  }
+  inline constexpr self &divide(const self &rhs) {
+    return this->transform_binary(rhs, std::divides<data_t>());
+  }
   inline constexpr self &add(const data_t &scalar) {
-    return this->transform_unary([&](const data_t &x) { return std::plus<data_t>()(x, scalar); });
+    return this->transform_unary(
+      [&](const data_t &x) { return std::plus<data_t>()(x, scalar); });
   }
   inline constexpr self &minus(const data_t &scalar) {
-    return this->transform_unary([&](const data_t &x) { return std::minus<data_t>()(x, scalar); });
+    return this->transform_unary(
+      [&](const data_t &x) { return std::minus<data_t>()(x, scalar); });
   }
   inline constexpr self &multiply(const data_t &scalar) {
-    return this->transform_unary([&](const data_t &x) { return std::multiplies<data_t>()(x, scalar); });
+    return this->transform_unary(
+      [&](const data_t &x) { return std::multiplies<data_t>()(x, scalar); });
   }
   inline constexpr self &divide(const data_t &scalar) {
-    return this->transform_unary([&](const data_t &x) { return std::divides<data_t>()(x, scalar); });
+    return this->transform_unary(
+      [&](const data_t &x) { return std::divides<data_t>()(x, scalar); });
   }
 
-  friend inline constexpr self &add(const self &lhs, const self &rhs) { return self(lhs).add(rhs); }
-  friend inline constexpr self &minus(const self &lhs, const self &rhs) { return self(lhs).minus(rhs); }
-  friend inline constexpr self &multiply(const self &lhs, const self &rhs) { return self(lhs).multiply(rhs); }
-  friend inline constexpr self &divide(const self &lhs, const self &rhs) { return self(lhs).divide(rhs); }
-  friend inline constexpr self &add(const self &lhs, const data_t &scalar) { return self(lhs).add(scalar); }
-  friend inline constexpr self &minus(const self &lhs, const data_t &scalar) { return self(lhs).minus(scalar); }
-  friend inline constexpr self &multiply(const self &lhs, const data_t &scalar) { return self(lhs).multiply(scalar); }
-  friend inline constexpr self &divide(const self &lhs, const data_t &scalar) { return self(lhs).divide(scalar); }
+  friend inline constexpr self &add(const self &lhs, const self &rhs) {
+    return self(lhs).add(rhs);
+  }
+  friend inline constexpr self &minus(const self &lhs, const self &rhs) {
+    return self(lhs).minus(rhs);
+  }
+  friend inline constexpr self &multiply(const self &lhs, const self &rhs) {
+    return self(lhs).multiply(rhs);
+  }
+  friend inline constexpr self &divide(const self &lhs, const self &rhs) {
+    return self(lhs).divide(rhs);
+  }
+  friend inline constexpr self &add(const self &lhs, const data_t &scalar) {
+    return self(lhs).add(scalar);
+  }
+  friend inline constexpr self &minus(const self &lhs, const data_t &scalar) {
+    return self(lhs).minus(scalar);
+  }
+  friend inline constexpr self &multiply(const self &lhs,
+                                         const data_t &scalar) {
+    return self(lhs).multiply(scalar);
+  }
+  friend inline constexpr self &divide(const self &lhs, const data_t &scalar) {
+    return self(lhs).divide(scalar);
+  }
 
   self operator*(const self &rhs) {
-    if (this->get_col() != rhs.get_row()) throw std::logic_error("you can not multiple (" + std::to_string(this->get_row()) + "x" + std::to_string(this->get_col()) + ") matrix and (" + std::to_string(rhs.get_row()) + "x" + std::to_string(rhs.get_col()) + ") matrix");
+    if (this->get_col() != rhs.get_row())
+      throw std::logic_error("you can not multiple (" +
+                             std::to_string(this->get_row()) + "x" +
+                             std::to_string(this->get_col()) +
+                             ") matrix and (" + std::to_string(rhs.get_row()) +
+                             "x" + std::to_string(rhs.get_col()) + ") matrix");
 
     self ret(this->get_row(), rhs.get_col(), 0, this->equ);
     _for_row(i)
       _for_col(k)
-        _for(j, 0, rhs.get_col()) ret.data(i, j) += this->data(i, k) * rhs.data(k, j);
+        _for(j, 0, rhs.get_col())
+          ret.data(i, j) += this->data(i, k) * rhs.data(k, j);
     return ret;
   }
 
@@ -311,7 +386,8 @@ public:
     _for(i, 0, x.get_row())
       _for(j, 0, x.get_col()) {
         os << x.data(i, j);
-        if (i + 1 < x.get_row() || j + 1 < x.get_col()) os << (j + 1 == x.get_col() ? '\n' : ' ');
+        if (i + 1 < x.get_row() || j + 1 < x.get_col())
+          os << (j + 1 == x.get_col() ? '\n' : ' ');
       }
     return os;
   }
@@ -335,4 +411,5 @@ protected:
 using Matrix::matrix;
 
 // example
-// template <> struct Matrix::Matrix_helper::gauss_tag<int64_t> { using type = Matrix::Matrix_helper::euclid_tag; };
+// template <> struct Matrix::Matrix_helper::gauss_tag<int64_t> { using type =
+// Matrix::Matrix_helper::euclid_tag; };

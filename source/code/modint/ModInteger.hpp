@@ -1,6 +1,7 @@
 namespace ModInteger {
 
-#define _TRAITS(expression, __...) std::enable_if_t<expression, ##__> * = nullptr
+#define _TRAITS(expression, __...) \
+  std::enable_if_t<expression, ##__> * = nullptr
 
 template <typename Tp>
 class mod_integer {
@@ -27,10 +28,15 @@ private:
   }
 
 public:
-  mod_integer(const data_t &_num, const mod_t &_mod) noexcept: num(_num), mod(_mod) { this->safe_mod(); }
+  mod_integer(const data_t &_num, const mod_t &_mod) noexcept
+    : num(_num), mod(_mod) {
+    this->safe_mod();
+  }
 
   template <typename Up, _TRAITS(std::is_convertible<Up, self &>::value)>
-  mod_integer(Up &&rhs) noexcept: num(std::forward<self>(rhs).data()), mod(std::forward<self>(rhs).get_mod()) {}
+  mod_integer(Up &&rhs) noexcept
+    : num(std::forward<self>(rhs).data()),
+      mod(std::forward<self>(rhs).get_mod()) {}
 
   inline self &operator=(const data_t &num) noexcept {
     this->data() = num;
@@ -56,7 +62,9 @@ public:
   }
 
   inline constexpr data_t &data() noexcept { return this->num; }
-  inline constexpr data_t &data() const noexcept { return const_cast<self * const>(this)->num; }
+  inline constexpr data_t &data() const noexcept {
+    return const_cast<self * const>(this)->num;
+  }
 
   inline constexpr mod_t get_mod() const noexcept { return mod; }
 
@@ -66,27 +74,42 @@ public:
     return *this;
   }
   template <typename Unary>
-  inline constexpr self &transform_unary(Unary &&op) { return this->transform_unary_raw(std::move(op)).safe_mod(); }
+  inline constexpr self &transform_unary(Unary &&op) {
+    return this->transform_unary_raw(std::move(op)).safe_mod();
+  }
   template <typename Binary>
   inline constexpr self &transform_binary_raw(const self &rhs, Binary &&op) {
     this->data() = op(this->data(), rhs.data());
     return *this;
   }
   template <typename Binary>
-  inline constexpr self &transform_binary(const self &rhs, Binary &&op) { return this->transform_binary_raw(rhs, std::move(op)).safe_mod(); }
+  inline constexpr self &transform_binary(const self &rhs, Binary &&op) {
+    return this->transform_binary_raw(rhs, std::move(op)).safe_mod();
+  }
 
   template <typename Unary>
-  friend inline constexpr self calc_unary_raw(const self &lhs, Unary &&op) { return self(lhs).transform_unary_raw(op); }
+  friend inline constexpr self calc_unary_raw(const self &lhs, Unary &&op) {
+    return self(lhs).transform_unary_raw(op);
+  }
   template <typename Unary>
-  friend inline constexpr self calc_unary(const self &lhs, Unary &&op) { return calc_unary_raw(lhs, std::move(op)).safe_mod(); }
+  friend inline constexpr self calc_unary(const self &lhs, Unary &&op) {
+    return calc_unary_raw(lhs, std::move(op)).safe_mod();
+  }
 
   template <typename Binary>
-  friend inline constexpr self calc_binary_raw(const self &lhs, const self &rhs, Binary &&op) { return self(lhs).transform_binary_raw(rhs, op); }
+  friend inline constexpr self
+  calc_binary_raw(const self &lhs, const self &rhs, Binary &&op) {
+    return self(lhs).transform_binary_raw(rhs, op);
+  }
   template <typename Binary>
-  friend inline constexpr self calc_binary(const self &lhs, const self &rhs, Binary &&op) { return calc_binary_raw(lhs, rhs, std::move(op)).safe_mod(); }
+  friend inline constexpr self
+  calc_binary(const self &lhs, const self &rhs, Binary &&op) {
+    return calc_binary_raw(lhs, rhs, std::move(op)).safe_mod();
+  }
 
   inline constexpr self inverse() const {
-    if (this->gcd(this->data(), this->get_mod()) != 1) throw std::runtime_error("inverse not exist");
+    if (this->gcd(this->data(), this->get_mod()) != 1)
+      throw std::runtime_error("inverse not exist");
 
     signed_common_t a = this->data(), b = this->get_mod();
     signed_common_t m0 = 0;
@@ -129,24 +152,54 @@ public:
   }
 
   self operator+() { return *this; }
-  self operator-() { return self(this->get_mod() - this->data(), this->get_mod()); }
+  self operator-() {
+    return self(this->get_mod() - this->data(), this->get_mod());
+  }
 
-  self &operator+=(const self &rhs) { return this->transform_binary(rhs, std::plus<data_t>()); }
-  self &operator-=(const self &rhs) { return this->transform_binary(rhs, std::minus<data_t>()); }
-  self &operator*=(const self &rhs) { return this->transform_binary(rhs, std::multiplies<data_t>()); }
-  self &operator/=(const self &rhs) { return this->transform_binary(rhs.inverse(), std::multiplies<data_t>()); }
+  self &operator+=(const self &rhs) {
+    return this->transform_binary(rhs, std::plus<data_t>());
+  }
+  self &operator-=(const self &rhs) {
+    return this->transform_binary(rhs, std::minus<data_t>());
+  }
+  self &operator*=(const self &rhs) {
+    return this->transform_binary(rhs, std::multiplies<data_t>());
+  }
+  self &operator/=(const self &rhs) {
+    return this->transform_binary(rhs.inverse(), std::multiplies<data_t>());
+  }
 
-  friend self operator+(const self &lhs, const self &rhs) { return self(lhs) += rhs; }
-  friend self operator-(const self &lhs, const self &rhs) { return self(lhs) -= rhs; }
-  friend self operator*(const self &lhs, const self &rhs) { return self(lhs) *= rhs; }
-  friend self operator/(const self &lhs, const self &rhs) { return self(lhs) /= rhs; }
+  friend self operator+(const self &lhs, const self &rhs) {
+    return self(lhs) += rhs;
+  }
+  friend self operator-(const self &lhs, const self &rhs) {
+    return self(lhs) -= rhs;
+  }
+  friend self operator*(const self &lhs, const self &rhs) {
+    return self(lhs) *= rhs;
+  }
+  friend self operator/(const self &lhs, const self &rhs) {
+    return self(lhs) /= rhs;
+  }
 
-  friend bool operator==(const self &lhs, const self &rhs) { return lhs.data() == rhs.data(); }
-  friend bool operator!=(const self &lhs, const self &rhs) { return lhs.data() != rhs.data(); }
-  friend bool operator<(const self &lhs, const self &rhs) { return lhs.data() < rhs.data(); }
-  friend bool operator>(const self &lhs, const self &rhs) { return lhs.data() > rhs.data(); }
-  friend bool operator<=(const self &lhs, const self &rhs) { return lhs.data() <= rhs.data(); }
-  friend bool operator>=(const self &lhs, const self &rhs) { return lhs.data() >= rhs.data(); }
+  friend bool operator==(const self &lhs, const self &rhs) {
+    return lhs.data() == rhs.data();
+  }
+  friend bool operator!=(const self &lhs, const self &rhs) {
+    return lhs.data() != rhs.data();
+  }
+  friend bool operator<(const self &lhs, const self &rhs) {
+    return lhs.data() < rhs.data();
+  }
+  friend bool operator>(const self &lhs, const self &rhs) {
+    return lhs.data() > rhs.data();
+  }
+  friend bool operator<=(const self &lhs, const self &rhs) {
+    return lhs.data() <= rhs.data();
+  }
+  friend bool operator>=(const self &lhs, const self &rhs) {
+    return lhs.data() >= rhs.data();
+  }
 
   friend std::istream &operator>>(std::istream &is, self &x) {
     is >> x.data();

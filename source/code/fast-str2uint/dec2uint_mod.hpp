@@ -1,6 +1,7 @@
 //! only works properly on little-endian CPU, such as Intel CPU
 //! works better on 64-bit CPU
-inline constexpr uint64_t dec2uint_mod(const char * const num, const uint64_t mod) {
+inline constexpr uint64_t dec2uint_mod(const char * const num,
+                                       const uint64_t mod) {
   size_t len = strlen(num);
   if (len == 0) return 0;
   __uint128_t ans = 0;
@@ -11,6 +12,7 @@ inline constexpr uint64_t dec2uint_mod(const char * const num, const uint64_t mo
     res = (res & 0x0000FFFF0000FFFF) * 42949672960001 >> 32;
     ans = (ans * 100000000 + res) % mod;
   }
-  for (auto pch = num + (len / 8 * 8); pch < num + len;) ans = (ans * 10 + (*(pch++) & '\x0f')) % mod;
+  for (auto pch = num + (len / 8 * 8); pch < num + len;)
+    ans = (ans * 10 + (*(pch++) & '\x0f')) % mod;
   return ans;
 }

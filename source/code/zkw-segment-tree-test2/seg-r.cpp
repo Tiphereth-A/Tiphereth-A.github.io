@@ -26,9 +26,7 @@ template <typename T>
 inline void read(T &x) {
   x = 0;
   char ch = getc();
-  while (!isdigit(ch)) {
-    ch = getc();
-  }
+  while (!isdigit(ch)) { ch = getc(); }
   while (isdigit(ch)) {
     x = x * 10 + ch - 48;
     ch = getc();
@@ -44,14 +42,9 @@ inline void flush() {
 }
 template <typename T>
 inline void print(T x) {
-  if (now_print > 1 << 20)
-    flush();
-  do {
-    a[++p] = x % 10 + 48;
-  } while (x /= 10);
-  do {
-    buf_print[++now_print] = a[p];
-  } while (--p);
+  if (now_print > 1 << 20) flush();
+  do { a[++p] = x % 10 + 48; } while (x /= 10);
+  do { buf_print[++now_print] = a[p]; } while (--p);
   buf_print[++now_print] = '\n';
 }
 }  // namespace FastIO
@@ -78,9 +71,7 @@ struct node {
   }
 } tree[N << 2];
 
-FINLINE void push_up(u32 p) {
-  _now.sum = _lch.sum + _rch.sum;
-}
+FINLINE void push_up(u32 p) { _now.sum = _lch.sum + _rch.sum; }
 FINLINE void push_down(u32 p, u32 ln, u32 rn) {
   _lch += {_now.lazy * ln, _now.lazy};
   _rch += {_now.lazy * rn, _now.lazy};
@@ -103,22 +94,17 @@ void update(u32 L, u32 R, u64 c, u32 l = 1, u32 r = n, u32 p = 1) {
   }
   _mid;
   push_down(p, m - l + 1, r - m);
-  if (L <= m)
-    update(L, R, c, l, m, _ls(p));
-  if (R > m)
-    update(L, R, c, m + 1, r, _rs(p));
+  if (L <= m) update(L, R, c, l, m, _ls(p));
+  if (R > m) update(L, R, c, m + 1, r, _rs(p));
   push_up(p);
 }
 u64 query(u32 L, u32 R, u32 l = 1, u32 r = n, u32 p = 1) {
-  if (L <= l && r <= R)
-    return _now.sum;
+  if (L <= l && r <= R) return _now.sum;
   _mid;
   u64 ans = 0;
   push_down(p, m - l + 1, r - m);
-  if (L <= m)
-    ans += query(L, R, l, m, _ls(p));
-  if (R > m)
-    ans += query(L, R, m + 1, r, _rs(p));
+  if (L <= m) ans += query(L, R, l, m, _ls(p));
+  if (R > m) ans += query(L, R, m + 1, r, _rs(p));
   return ans;
 }
 }  // namespace Segtree
@@ -149,8 +135,7 @@ int main(int argc, char *argv[]) {
     if (o & 1) {
       read(k);
       update(x, y, k);
-    } else
-      print(query(x, y));
+    } else print(query(x, y));
   }
   FastIO::flush();
   //================================================================

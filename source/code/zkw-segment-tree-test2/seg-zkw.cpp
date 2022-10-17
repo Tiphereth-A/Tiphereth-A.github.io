@@ -16,15 +16,17 @@ char buf_read[MAX_BUFFER_SIZE], buf_print[MAX_BUFFER_SIZE], a[30];
 char *p_read = buf_read, *p_print = buf_read;
 int p, now_print = -1;
 FINLINE int getc() {
-  return p_read == p_print && (p_print = (p_read = buf_read) + fread(buf_read, 1, 1 << 21, stdin), p_read == p_print) ? EOF : *p_read++;
+  return p_read == p_print && (p_print = (p_read = buf_read) +
+                                         fread(buf_read, 1, 1 << 21, stdin),
+                               p_read == p_print) ?
+           EOF :
+           *p_read++;
 }
 template <typename T>
 inline void read(T &x) {
   x = 0;
   char ch = getc();
-  while (!isdigit(ch)) {
-    ch = getc();
-  }
+  while (!isdigit(ch)) { ch = getc(); }
   while (isdigit(ch)) {
     x = x * 10 + ch - 48;
     ch = getc();
@@ -40,14 +42,9 @@ inline void flush() {
 }
 template <typename T>
 inline void print(T x) {
-  if (now_print > MAX_BUFFER_SIZE / 2)
-    flush();
-  do {
-    a[++p] = x % 10 + 48;
-  } while (x /= 10);
-  do {
-    buf_print[++now_print] = a[p];
-  } while (--p);
+  if (now_print > MAX_BUFFER_SIZE / 2) flush();
+  do { a[++p] = x % 10 + 48; } while (x /= 10);
+  do { buf_print[++now_print] = a[p]; } while (--p);
   buf_print[++now_print] = '\n';
 }
 }  // namespace FastIO
@@ -78,10 +75,8 @@ u32 N = 1;
 FINLINE void init() {
   for (; N <= n + 1; N <<= 1)
     ;
-  for (u32 i = N + 1; i <= N + n; ++i)
-    read(_now(i).sum);
-  for (u32 i = N - 1; i; --i)
-    _now(i).sum = _lch(i).sum + _rch(i).sum;
+  for (u32 i = N + 1; i <= N + n; ++i) read(_now(i).sum);
+  for (u32 i = N - 1; i; --i) _now(i).sum = _lch(i).sum + _rch(i).sum;
 }
 void update(u32 &s, u32 &t, u64 &k) {
   u64 lNum = 0, rNum = 0, nNum = 1;
@@ -106,10 +101,8 @@ u64 query(u32 &s, u32 &t) {
   u64 lNum = 0, rNum = 0, nNum = 1;
   u64 ans = 0;
   for (s = N + s - 1, t = N + t + 1; s ^ t ^ 1; s >>= 1, t >>= 1, nNum <<= 1) {
-    if (_now(s).lazy)
-      ans += _now(s).lazy * lNum;
-    if (_now(t).lazy)
-      ans += _now(t).lazy * rNum;
+    if (_now(s).lazy) ans += _now(s).lazy * lNum;
+    if (_now(t).lazy) ans += _now(t).lazy * rNum;
     if (~s & 1) {
       ans += _now(s ^ 1).sum;
       lNum += nNum;
@@ -119,8 +112,7 @@ u64 query(u32 &s, u32 &t) {
       rNum += nNum;
     }
   }
-  for (; s; s >>= 1, t >>= 1)
-    ans += _now(s).lazy * lNum + _now(t).lazy * rNum;
+  for (; s; s >>= 1, t >>= 1) ans += _now(s).lazy * lNum + _now(t).lazy * rNum;
   return ans;
 }
 }  // namespace zkwSegtree
@@ -151,8 +143,7 @@ int main(int argc, char *argv[]) {
     if (c & 1) {
       read(k);
       update(x, y, k);
-    } else
-      print(query(x, y));
+    } else print(query(x, y));
   }
   FastIO::flush();
   //================================================================

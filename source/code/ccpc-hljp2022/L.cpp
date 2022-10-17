@@ -44,10 +44,12 @@ inline auto solve() -> void {
   if (s == t) _run_return_void(cout << "yes\n");
   if (l1 == l2) _run_return_void(cout << (_rev(s, l1) == t ? "yes\n" : "no\n"));
   if (l1 > l2) swap(l1, l2);
-  string _1 = _rev(s, l1), _2 = _rev(s, l2), _12 = _rev(_1, l2), _21 = _rev(_2, l1);
+  string _1 = _rev(s, l1), _2 = _rev(s, l2), _12 = _rev(_1, l2),
+         _21 = _rev(_2, l1);
   t += t;
   KMP::l = gcd(l2 - l1, (int)s.size());
-  cout << (kmp(_1, t) || kmp(_2, t) || kmp(_12, t) || kmp(_21, t) ? "yes\n" : "no\n");
+  cout << (kmp(_1, t) || kmp(_2, t) || kmp(_12, t) || kmp(_21, t) ? "yes\n" :
+                                                                    "no\n");
 }
 int main() {
 #ifdef _LOCAL_
@@ -64,7 +66,11 @@ int main() {
     solve();
 #ifdef _LOCAL_
   std::clog << "\n---\n"
-            << "Time used: " << std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::steady_clock::now() - _CLOCK_ST).count() << " ms" << std::endl;
+            << "Time used: "
+            << std::chrono::duration_cast<std::chrono::milliseconds>(
+                 std::chrono::steady_clock::now() - _CLOCK_ST)
+                 .count()
+            << " ms" << std::endl;
 #endif
   return 0;
 }

@@ -10,7 +10,8 @@ const size_t MOD = ULLONG_MAX;
 
 size_t n, p[N];
 
-template <const std::size_t N = (std::size_t)1e6 + 5, typename T = std::ptrdiff_t>
+template <const std::size_t N = (std::size_t)1e6 + 5,
+          typename T = std::ptrdiff_t>
 class BIT {
 private:
   T tree[N];
@@ -27,7 +28,8 @@ public:
   }
   T query(std::size_t pos) {
     T ret = 0;
-    for (std::size_t i = pos; i; i = (std::ptrdiff_t)i - lowbit(i)) ret += tree[i];
+    for (std::size_t i = pos; i; i = (std::ptrdiff_t)i - lowbit(i))
+      ret += tree[i];
     return ret;
   }
 };

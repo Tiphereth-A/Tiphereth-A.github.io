@@ -5,4 +5,5 @@
 #define _row(id) node[id].row
 #define _col(id) node[id].col
 // 沿某方向遍历一条链
-#define _for(i, start, dir) for (std::size_t i = _##dir(start); i != start; i = _##dir(i))
+#define _for(i, start, dir) \
+  for (std::size_t i = _##dir(start); i != start; i = _##dir(i))
