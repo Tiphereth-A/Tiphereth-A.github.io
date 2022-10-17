@@ -71,7 +71,7 @@ Central Europe 1999
 
 ## 题意简述
 
-给出 Gauss 整数$X$和$B$, 求是否存在一组数$\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n}$满足
+给出 Gauss 整数 $X$ 和 $B$, 求是否存在一组数 $\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n}$ 满足
 
 - $0 \leqslant ai < |B|, i=0,1,...,n$
 - $X = a_0 + a_1B + a_2B^2 + ...+ a_nB^n$
@@ -82,9 +82,9 @@ Central Europe 1999
 
 $X = a_0 + a_1B + a_2B^2 + ...+ a_nB^n\implies B\mid(X-a_0)$
 
-而$|B|$很小, 故可以考虑枚举$a_0$
+而 $|B|$ 很小, 故可以考虑枚举 $a_0$
 
-接下来便可$X\leftarrow\displaystyle\frac{X-a_0}{B}$, 递归枚举$a_1$,..., 直到$X$为$0$或递归层数过深
+接下来便可 $X\leftarrow\displaystyle\frac{X-a_0}{B}$, 递归枚举 $a_1$,..., 直到 $X$ 为 $0$ 或递归层数过深
 
 ## 代码参考
 

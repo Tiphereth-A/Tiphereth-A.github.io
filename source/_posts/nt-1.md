@@ -36,7 +36,7 @@ date: 2020-10-04 01:14:43
 
 ## 整除
 
-对于整数$a,b$, 若$\exists k~s.t.~a=kb$, 则称$b$整除$a$, 记作$b\mid a$, 否则称$b$不整除$a$, 记作$b\nmid a$
+对于整数 $a,b$, 若 $\exists k~s.t.~a=kb$, 则称 $b$ 整除 $a$, 记作 $b\mid a$, 否则称 $b$ 不整除 $a$, 记作 $b\nmid a$
 
 ### 性质
 
@@ -48,22 +48,22 @@ date: 2020-10-04 01:14:43
 
 #### <a href="#end-t-1.1" id="t-1.1">定理 - 1.1</a> (带余除法)
 
-设$a,b\in\mathbb{Z}$, 且$b\geqslant1$, 则存在唯一的整数$q,r$使得
+设 $a,b\in\mathbb{Z}$, 且 $b\geqslant1$, 则存在唯一的整数 $q,r$ 使得
 $$a=qb+r,r\in[0,b)\cap\mathbb{N}$$
 
 ##### <a href="#t-1.1" id="p-t-1.1">证明</a>
 
-首先, 取$q=\lfloor\frac{a}{b}\rfloor$, $r=a-qb$, 容易验证此时的$q,r$满足条件
+首先, 取 $q=\lfloor\frac{a}{b}\rfloor$, $r=a-qb$, 容易验证此时的 $q,r$ 满足条件
 
-下证唯一性, 假设又有一组整数$q',r'$使得$a=q'b-r',~r'\in[0,b)\cap\mathbb{N}$, 则
+下证唯一性, 假设又有一组整数 $q',r'$ 使得 $a=q'b-r',~r'\in[0,b)\cap\mathbb{N}$, 则
 
 $$0=a-a=(q-q')b+(r-r')$$
 
-因此$b\mid r-r'$
+因此 $b\mid r-r'$
 
-而$|r-r'|\in[0,b)\cap\mathbb{N}$, 故只能有$r-r'=0$, 即$r=r'$
+而 $|r-r'|\in[0,b)\cap\mathbb{N}$, 故只能有 $r-r'=0$, 即 $r=r'$
 
-此时$a-qb=a-q'b$, 有$q=q'$
+此时 $a-qb=a-q'b$, 有 $q=q'$
 
 <a href="#p-t-1.1" id="end-t-1.1">$\Box$</a>
 
@@ -71,41 +71,41 @@ $$0=a-a=(q-q')b+(r-r')$$
 
 #### <a href="#end-t-1.2" id="t-1.2">定理 - 1.2</a>
 
-设$S$为非空整数集, 若$S$关于整数的加减法封闭, 即
+设 $S$ 为非空整数集, 若 $S$ 关于整数的加减法封闭, 即
 
-- 若$a,b\in S$, 则$a\pm b\in S$
+- 若 $a,b\in S$, 则 $a\pm b\in S$
 
-则存在唯一自然数$d$使得$S=d\mathbb{Z}:=\{da|a\in\mathbb{Z}\}$
+则存在唯一自然数 $d$ 使得 $S=d\mathbb{Z}:=\{da|a\in\mathbb{Z}\}$
 
 > 条件中隐含了一点:
 >
-> - 若$a\in S$, 则$\forall c\in\mathbb{Z},~ac\in S$
+> - 若 $a\in S$, 则 $\forall c\in\mathbb{Z},~ac\in S$
 
 一般的, 若 $S$ 为主理想环, 则 $\exists_1 d\in\mathbb{Z}~s.t.~S=\lang d\rang$
 
 ##### <a href="#t-1.2" id="p-t-1.2">证明</a>
 
-若$S=\{0\}$, 则只能取$d=0$
+若 $S=\{0\}$, 则只能取 $d=0$
 
-设$0\ne a\in S$, 则$0=a-a\in S,-a=(-1)\times a\in S$, 故此时$S$中必有正整数
+设 $0\ne a\in S$, 则 $0=a-a\in S,-a=(-1)\times a\in S$, 故此时 $S$ 中必有正整数
 
-由良序公理可知$S$中的所有正整数中必有最小值, 令$d$为$S$中的最小正整数, 下证$S=d\mathbb{Z}$
+由良序公理可知 $S$ 中的所有正整数中必有最小值, 令 $d$ 为 $S$ 中的最小正整数, 下证 $S=d\mathbb{Z}$
 
-首先易得$d\mathbb{Z}\subseteq S$
+首先易得 $d\mathbb{Z}\subseteq S$
 
-之后我们在$S$中任取整数$a$做带余除法
+之后我们在 $S$ 中任取整数 $a$ 做带余除法
 $$a=qd+r,~q\in\mathbb{Z},r\in[0,d)\cap\mathbb{N}$$
-可知$r=a-qd\in S$, 而$d$为$S$中的最小正整数, 故必有$r=0$
+可知 $r=a-qd\in S$, 而 $d$ 为 $S$ 中的最小正整数, 故必有 $r=0$
 
-这表明$a=qd\in d\mathbb{Z}$, 因此$S\subseteq d\mathbb{Z}$
+这表明 $a=qd\in d\mathbb{Z}$, 因此 $S\subseteq d\mathbb{Z}$
 
-最后, 注意到$d$为$S$中的最小正整数, 则满足$S=d\mathbb{Z}$的$d$一定是唯一的
+最后, 注意到 $d$ 为 $S$ 中的最小正整数, 则满足 $S=d\mathbb{Z}$ 的 $d$ 一定是唯一的
 
 <a href="#p-t-1.2" id="end-t-1.2">$\Box$</a>
 
 ### 例题
 
-- 设$n$是大于 1 的整数, 证明: $\displaystyle\sum_{i=1}^n\frac{1}{i}$不是整数
+- 设 $n$ 是大于 1 的整数, 证明: $\displaystyle\sum_{i=1}^n\frac{1}{i}$ 不是整数
 - 洛谷 [P2651 添加括号 III](https://www.luogu.com.cn/problem/P2651)
 
 ## 素数/质数
@@ -122,13 +122,13 @@ $$a=qd+r,~q\in\mathbb{Z},r\in[0,d)\cap\mathbb{N}$$
 
 #### <a href="#t-2.1" id="p-t-2.1">证明</a> (Euclid)
 
-假设素数只有有限个, 记作$\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n}$
+假设素数只有有限个, 记作 $\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n}$
 
-考虑$N=\prod_{i=1}^np_i+1$, 显然$N>2$
+考虑 $N=\prod_{i=1}^np_i+1$, 显然 $N>2$
 
-由于$N\ne p_i,i=1,2,...,n$, 故必有$N$必有素因子$p$
+由于 $N\ne p_i,i=1,2,...,n$, 故必有 $N$ 必有素因子 $p$
 
-但$p_i\nmid N,i=1,2,...,n$, 故$p$是$\def\enum#1{p_{ #1}}\enum{1},\enum{2},...,\enum{n}$以外的素数, 这与假设矛盾
+但 $p_i\nmid N,i=1,2,...,n$, 故 $p$ 是 $\def\enum#1{p_{ #1}}\enum{1},\enum{2},...,\enum{n}$ 以外的素数, 这与假设矛盾
 
 <a href="#p-t-2.1" id="end-t-2.1">$\Box$</a>
 
@@ -144,7 +144,7 @@ $$a=qd+r,~q\in\mathbb{Z},r\in[0,d)\cap\mathbb{N}$$
 
 ### 素数分布
 
-如果令$\pi(n)$表示$[1,n]$中的素数个数, 则我们有
+如果令 $\pi(n)$ 表示 $[1,n]$ 中的素数个数, 则我们有
 $$\pi(n)\sim\frac{n}{\ln n}~(n\to\infty)$$
 
 或者写成
@@ -156,7 +156,7 @@ $$\lim_{n\to\infty}{\pi(n)\over\frac{n}{\ln n}}=1$$
 
 这里给出一个简单的做法
 
-首先, 我们不难证明: 若$n$是合数, 则其必有一个因子$d\in(1,\sqrt n]\cap\mathbb{N}$
+首先, 我们不难证明: 若 $n$ 是合数, 则其必有一个因子 $d\in(1,\sqrt n]\cap\mathbb{N}$
 
 所以对于要判定的整数`n`, 我们只需在`2..sqrt(n)`中枚举整数`i`验证即可
 
@@ -182,7 +182,7 @@ $$\lim_{n\to\infty}{\pi(n)\over\frac{n}{\ln n}}=1$$
 
 ### 素数筛法
 
-如何求出$[1,n]$中的所有素数?
+如何求出 $[1,n]$ 中的所有素数?
 
 最朴素的做法就是对 `1..n` 中的每个数分别应用上述素数判定法, 时间复杂度: $O(n\sqrt n)$
 
@@ -192,7 +192,7 @@ $$\lim_{n\to\infty}{\pi(n)\over\frac{n}{\ln n}}=1$$
 
 又称埃氏筛
 
-我们注意到这样的事实: 合数$x$的倍数也是合数
+我们注意到这样的事实: 合数 $x$ 的倍数也是合数
 
 所以我们可以这样操作:
 
@@ -221,7 +221,7 @@ $$
 \end{aligned}
 $$
 
-故时间复杂度为$O(n\log\log n)$
+故时间复杂度为 $O(n\log\log n)$
 
 #### Euler 筛法
 
@@ -238,7 +238,7 @@ $$
 
 ##### 时间复杂度
 
-因为每个数只被标记一次, 所以时间复杂度显然为$O(n)$
+因为每个数只被标记一次, 所以时间复杂度显然为 $O(n)$
 
 ### 例题
 
@@ -250,9 +250,9 @@ $$
 
 对于两个**不全为零**的**整数**$a,b$
 
-最大公约数即为$a,b$中最大的正公因数, 记作$(a,b)$, 或者$\gcd(a,b)$
+最大公约数即为 $a,b$ 中最大的正公因数, 记作 $(a,b)$, 或者 $\gcd(a,b)$
 
-最小公倍数即为$a,b$中最小的正公倍数, 记作$[a,b]$, 或者$\operatorname{lcm}(a,b)$
+最小公倍数即为 $a,b$ 中最小的正公倍数, 记作 $[a,b]$, 或者 $\operatorname{lcm}(a,b)$
 
 写成式子就是
 
@@ -271,34 +271,34 @@ $$[\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n}]:=\min\{d\in\mathbb{N}^*|a
 #### 最大公约数
 
 1. $(a,b)=(b,a)=(|a|,b)=(|a|,|b|)$
-1. 当$a\ne 0$时, $(a,a)=|a|$
-1. 若$a_1\ne 0$, 则$(\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n})=((\enum{1},\enum{2}),\enum{3},...,\enum{n})$
+1. 当 $a\ne 0$ 时, $(a,a)=|a|$
+1. 若 $a_1\ne 0$, 则 $(\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n})=((\enum{1},\enum{2}),\enum{3},...,\enum{n})$
 1. $\forall l\in\mathbb{Z},~(a,b)=(a,b+la)$
 1. $\forall m\in\mathbb{N}^*,~m(\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n})=(\def\enum#1{ma_{ #1}}\enum{1},\enum{2},...,\enum{n})$
-1. 若$(\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n})=d$, 则$(\def\enum#1{ {a_{ #1}\over d}}\enum{1},\enum{2},...,\enum{n})=1$
-1. 对于整数$m$, 若$(a_i,m)=1,~i=1,2,...,n$, 则$(\prod_{i=1}^na_i,m)=1$
-1. 设$\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n}$是不全为零的整数, $(\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n})=d$, 则
+1. 若 $(\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n})=d$, 则 $(\def\enum#1{ {a_{ #1}\over d}}\enum{1},\enum{2},...,\enum{n})=1$
+1. 对于整数 $m$, 若 $(a_i,m)=1,~i=1,2,...,n$, 则 $(\prod_{i=1}^na_i,m)=1$
+1. 设 $\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n}$ 是不全为零的整数, $(\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n})=d$, 则
    $$\left\{\sum_{i=1}^na_ix_i\bigg|x_i\in\mathbb{Z},i=1,2,...,n\right\}=d\mathbb{Z}$$
-1. 设$c\in\mathbb{Z}/\{0\},a,b\in\mathbb{Z}$, 若$c\mid ab,(c,b)=1$, 则$c\mid a$
-   - 特别地, 若$p$为素数, $p\mid ab$, 则$p\mid a$或$p\mid b$
+1. 设 $c\in\mathbb{Z}/\{0\},a,b\in\mathbb{Z}$, 若 $c\mid ab,(c,b)=1$, 则 $c\mid a$
+   - 特别地, 若 $p$ 为素数, $p\mid ab$, 则 $p\mid a$ 或 $p\mid b$
 
 下面对性质 8 给出证明
 
 ##### <a href="#end-t-3.1" id="t-3.1">定理 - 3.1</a>(性质 8, Bézout 定理)
 
-设$\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n}$是不全为零的整数, $(\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n})=d$, 则
+设 $\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n}$ 是不全为零的整数, $(\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n})=d$, 则
 $$S:=\left\{\sum_{i=1}^na_ix_i\bigg|x_i\in\mathbb{Z},i=1,2,...,n\right\}=d\mathbb{Z}$$
 
 ###### <a href="#t-3.1" id="p-t-3.1">证明</a>
 
-由 <a href="#t-1.2">定理 - 1.2</a> 可知, 存在正整数$a$使得$S=a\mathbb{Z}$, 接下来只需证$a=d$
+由 <a href="#t-1.2">定理 - 1.2</a> 可知, 存在正整数 $a$ 使得 $S=a\mathbb{Z}$, 接下来只需证 $a=d$
 
-一方面, $d$是$S$中所有数的因子, 而$a\in S$, 故$d\mid a$
+一方面, $d$ 是 $S$ 中所有数的因子, 而 $a\in S$, 故 $d\mid a$
 
-另一方面, 注意到$\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n}\in S$, 故$a$是$\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n}$的公因子, 即有
+另一方面, 注意到 $\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n}\in S$, 故 $a$ 是 $\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n}$ 的公因子, 即有
 $$a\mid(\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n})=d$$
 
-因此$a=d$
+因此 $a=d$
 
 <a href="#p-t-3.1" id="end-t-3.1">$\Box$</a>
 
@@ -306,17 +306,17 @@ $$a\mid(\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n})=d$$
 
 1. $[\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n}]=[[\enum{1},\enum{2}],\enum{3},...,\enum{n}]$
 1. $\forall m\in\mathbb{N}^*,~[\def\enum#1{ma_{ #1}}\enum{1},\enum{2},...,\enum{n}]=m[\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n}]$
-1. 若$\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n}$两两互素, 则$[\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n}]=|\prod_{i=1}^na_i|$
+1. 若 $\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n}$ 两两互素, 则 $[\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n}]=|\prod_{i=1}^na_i|$
 
 ### 求法
 
 求最小公倍数只需求出最大公约数即可
 
-而由于$\forall l\in\mathbb{Z},~(a,b)=(a,b+la)$, 我们可推出:
+而由于 $\forall l\in\mathbb{Z},~(a,b)=(a,b+la)$, 我们可推出:
 
-- 若$b\ne 0$, 则$(a,b)=(b,a\bmod b)$
+- 若 $b\ne 0$, 则 $(a,b)=(b,a\bmod b)$
 
-之后我们便可递归下去, 当$b=0$时, 答案即为$a$
+之后我们便可递归下去, 当 $b=0$ 时, 答案即为 $a$
 
 这就是**辗转相除法**
 
@@ -329,7 +329,7 @@ $$a\mid(\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n})=d$$
 
 #### 时间复杂度
 
-我们知道, $b\to a \bmod b$这个过程中, $b$的值大致可认为是减半, 所以时间复杂度为$O(\log n)$
+我们知道, $b\to a \bmod b$ 这个过程中, $b$ 的值大致可认为是减半, 所以时间复杂度为 $O(\log n)$
 
 最坏情况即为对两相邻的 Fibonacci 数求最大公约数
 
@@ -346,19 +346,19 @@ $$a\mid(\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n})=d$$
 > 容易求得
 > $$F_n=\frac{\phi^n-(1-\phi)^n}{\sqrt 5},~\phi={1+\sqrt{5}\over2}$$
 
-计算$(F_{n+1},F_{n})$需要$n$次迭代, 此时的时间复杂度也为$O(\log n)$
+计算 $(F_{n+1},F_{n})$ 需要 $n$ 次迭代, 此时的时间复杂度也为 $O(\log n)$
 
-> 实际上求 gcd 是有$O(1)$算法的, 此次略去
+> 实际上求 gcd 是有 $O(1)$ 算法的, 此次略去
 
 ### 扩展 Euclid (exgcd)
 
-用于对给定的$a,b,c$, 寻找$ax+by=c$的一组可行解
+用于对给定的 $a,b,c$, 寻找 $ax+by=c$ 的一组可行解
 
-首先, 由 <a href="#t-3.1">Bézout 定理</a>, 若$(a,b)\nmid c$, 则该方程无解
+首先, 由 <a href="#t-3.1">Bézout 定理</a>, 若 $(a,b)\nmid c$, 则该方程无解
 
-接下来, 令$d=\frac{c}{(a,b)}$, 则求出$ax+by=(a,b)$的一组解$x=x',y=y'$后, 容易得知$x=dx',y=dy'$即为$ax+by=c$的一组解
+接下来, 令 $d=\frac{c}{(a,b)}$, 则求出 $ax+by=(a,b)$ 的一组解 $x=x',y=y'$ 后, 容易得知 $x=dx',y=dy'$ 即为 $ax+by=c$ 的一组解
 
-另外, 若$ax+by=c$有一组解$x=x',y=y'$, 则
+另外, 若 $ax+by=c$ 有一组解 $x=x',y=y'$, 则
 
 $$
 \begin{cases}
@@ -367,9 +367,9 @@ $$
 \end{cases}(t\in\mathbb{Z})
 $$
 
-也为该方程的解, 所以方程$ax+by=c$若有解, 则必有无数组解
+也为该方程的解, 所以方程 $ax+by=c$ 若有解, 则必有无数组解
 
-经过如下分析, 我们发现: 求出方程$ax+by=(a,b)$的一组解是关键, 下面给出求法
+经过如下分析, 我们发现: 求出方程 $ax+by=(a,b)$ 的一组解是关键, 下面给出求法
 
 #### 求法
 
@@ -397,7 +397,7 @@ $$
 \end{cases}
 $$
 
-接下来不断向下迭代即可, 直到$b=0$, 此时显然有$x=1,y=0$
+接下来不断向下迭代即可, 直到 $b=0$, 此时显然有 $x=1,y=0$
 
 <details>
 <summary><font color='orange'>Show code</font></summary>
@@ -406,7 +406,7 @@ $$
 
 </details>
 
-时间复杂度仍为$O(\log n)$
+时间复杂度仍为 $O(\log n)$
 
 ### 例题
 
@@ -418,9 +418,9 @@ $$
 
 ## 同余
 
-若$t\mid a-b$, 则称$a$与$b$模$t$同余, 记作$a\equiv b\pmod t$
+若 $t\mid a-b$, 则称 $a$ 与 $b$ 模 $t$ 同余, 记作 $a\equiv b\pmod t$
 
-若$t\nmid a-b$, 则称$a$与$b$模$t$不同余, 记作$a{\equiv}\llap{/\,} b\pmod t$
+若 $t\nmid a-b$, 则称 $a$ 与 $b$ 模 $t$ 不同余, 记作 $a{\equiv}\llap{/\,} b\pmod t$
 
 我们称 $\mathbb{Z}_m:=\{\def\enum#1{\overline{ #1}}\enum{0},\enum{1},...,\enum{m-1}\}$ 为模 $m$ 剩余类
 
@@ -428,37 +428,37 @@ $$
 
 ### 性质
 
-设$a,b,c,d\in\mathbb{Z}$, $m\in\mathbb{N}^*$, $p$为素数
+设 $a,b,c,d\in\mathbb{Z}$, $m\in\mathbb{N}^*$, $p$ 为素数
 
 1. $a\equiv a\pmod m$
 1. $a\equiv b\pmod m\implies b\equiv a\pmod m$
 1. $a\equiv b\pmod m,b\equiv c\pmod m\implies a\equiv c\pmod m$
 1. $a\equiv b\pmod m,c\equiv d\pmod m\implies a\pm c\equiv b\pm d\pmod m,ac\equiv bd\pmod m$
-1. $ac\equiv bc\pmod m\implies a\equiv b\pmod{~\frac{m}{(c,m)}}$, 特别地, 若$(c,m)=1$, 则$a\equiv b\pmod{m}$
+1. $ac\equiv bc\pmod m\implies a\equiv b\pmod{~\frac{m}{(c,m)}}$, 特别地, 若 $(c,m)=1$, 则 $a\equiv b\pmod{m}$
 1. $a\equiv b\pmod m\implies\forall d\mid m,a\equiv b\pmod d$
 1. $a\equiv b\pmod m\iff ad\equiv bd\pmod{md}$
 1. $a\equiv b\pmod{m_i},i=1,2,...,n\implies a\equiv b\pmod{[\def\enum#1{m_{ #1}}\enum{1},\enum{2},...,\enum{n}]}$
-1. 令$f(x)=\sum_{i=0}^na_ix^i,~a_1\in\mathbb{Z},i=0,1,...,n$, 则若$a\equiv b\pmod m$, 则$f(a)\equiv f(b)\pmod m$
+1. 令 $f(x)=\sum_{i=0}^na_ix^i,~a_1\in\mathbb{Z},i=0,1,...,n$, 则若 $a\equiv b\pmod m$, 则 $f(a)\equiv f(b)\pmod m$
 
 另外在这里列出三条重要定理
 
 1. **Wilson 定理**:
    $$(p-1)!\equiv-1\pmod p$$
 
-1. **Fermat 小定理**: 若$(a,p)=1$, 则
+1. **Fermat 小定理**: 若 $(a,p)=1$, 则
    $$a^{p-1}\equiv1\pmod p$$
 
-1. **Euler 定理**: 若$(a,m)=1$, 则
+1. **Euler 定理**: 若 $(a,m)=1$, 则
    $$a^{\varphi(m)}\equiv1\pmod m$$
-   其中$\varphi(n)$为 Euler 函数, 指的是$[1,n]$中所有与$n$互素的数的个数
+   其中 $\varphi(n)$ 为 Euler 函数, 指的是 $[1,n]$ 中所有与 $n$ 互素的数的个数
 
    > 这里简单写写 Euler 函数的性质
    >
-   > - 若$p$为素数, $a$为自然数, 则$\varphi(p^a)=p^a-p^{a-1}$
+   > - 若 $p$ 为素数, $a$ 为自然数, 则 $\varphi(p^a)=p^a-p^{a-1}$
    >
    >   特别地, $\varphi(p)=p-1$
    >
-   > - 若$(m,n)=1$, 则$\varphi(mn)=\varphi(m)\varphi(n)$
+   > - 若 $(m,n)=1$, 则 $\varphi(mn)=\varphi(m)\varphi(n)$
 
    不难发现: Euler 定理 即为 Fermat 定理 的推广
 
@@ -472,7 +472,7 @@ $a\equiv b\pmod m,c\equiv d\pmod m\implies a\pm c\equiv b\pm d\pmod m,ac\equiv b
 
 ##### <a href="#t-4.1" id="p-t-4.1">证明</a>
 
-由$a\equiv b\pmod m,c\equiv d\pmod m$可得$m\mid a-b$及$m\mid c-d$
+由 $a\equiv b\pmod m,c\equiv d\pmod m$ 可得 $m\mid a-b$ 及 $m\mid c-d$
 
 于是
 
@@ -496,14 +496,14 @@ $$
 
 #### <a href="#end-t-4.2" id="t-4.2">定理 - 4.2</a> (性质 5)
 
-$ac\equiv bc\pmod m\implies a\equiv b\pmod{~\frac{m}{(c,m)}}$, 特别地, 若$(c,m)=1$, 则$a\equiv b\pmod{m}$
+$ac\equiv bc\pmod m\implies a\equiv b\pmod{~\frac{m}{(c,m)}}$, 特别地, 若 $(c,m)=1$, 则 $a\equiv b\pmod{m}$
 
 ##### <a href="#t-4.2" id="p-t-4.2">证明</a>
 
-由$ac\equiv bc\pmod m$可得$m\mid(a-b)c$, 故有
+由 $ac\equiv bc\pmod m$ 可得 $m\mid(a-b)c$, 故有
 $$\frac{m}{(c,m)}\bigg|(a-b)\frac{c}{(c,m)}$$
 
-而$(\frac{m}{(c,m)},\frac{c}{(c,m)})=1$, 故$\frac{m}{(c,m)}\mid a-b$, 即
+而 $(\frac{m}{(c,m)},\frac{c}{(c,m)})=1$, 故 $\frac{m}{(c,m)}\mid a-b$, 即
 $$a\equiv b\pmod{~\frac{m}{(c,m)}}$$
 
 <a href="#p-t-4.2" id="end-t-4.2">$\Box$</a>
@@ -520,15 +520,15 @@ $$(p-1)!\equiv-1\pmod p$$
 
 ##### <a href="#t-4.3" id="p-t-4.3">证明</a>
 
-当$p=2$时, 定理显然成立, 以下设$p\geqslant 3$, 令$\mathbb{Z}_p:=\{\def\enum#1{\overline{ #1}}\enum{0},\enum{1},...,\enum{p-1}\}$即证$\mathbb{Z}_p/\{0\}$中所有元素之积为$\overline{-1}$
+当 $p=2$ 时, 定理显然成立, 以下设 $p\geqslant 3$, 令 $\mathbb{Z}_p:=\{\def\enum#1{\overline{ #1}}\enum{0},\enum{1},...,\enum{p-1}\}$ 即证 $\mathbb{Z}_p/\{0\}$ 中所有元素之积为 $\overline{-1}$
 
-我们知道, $\mathbb{Z}_p/\{0\}$中每个元素都是可逆的, 即$\forall a\in\mathbb{Z}_p/\{0\},~a^{-1}\in\mathbb{Z}_p/\{0\}$, 显然$a^{-1}$的逆元为$a$
+我们知道, $\mathbb{Z}_p/\{0\}$ 中每个元素都是可逆的, 即 $\forall a\in\mathbb{Z}_p/\{0\},~a^{-1}\in\mathbb{Z}_p/\{0\}$, 显然 $a^{-1}$ 的逆元为 $a$
 
-而$aa^{-1}=\overline{1}$, 故$\mathbb{Z}_p/\{0\}$中彼此互逆的元素每对乘积为$1$
+而 $aa^{-1}=\overline{1}$, 故 $\mathbb{Z}_p/\{0\}$ 中彼此互逆的元素每对乘积为 $1$
 
-之后考虑$a=a^{-1}$的情况, 此时有$a^2=\overline{1}$, 即$a=\overline{1}$或$a=\overline{-1}$
+之后考虑 $a=a^{-1}$ 的情况, 此时有 $a^2=\overline{1}$, 即 $a=\overline{1}$ 或 $a=\overline{-1}$
 
-故$(p-1)!\equiv-1\pmod p$
+故 $(p-1)!\equiv-1\pmod p$
 
 <a href="#p-t-4.3" id="end-t-4.3">$\Box$</a>
 
@@ -536,19 +536,19 @@ $$(p-1)!\equiv-1\pmod p$$
 
 #### <a href="#end-t-4.4" id="t-4.4">定理 - 4.4</a> (Euler 定理)
 
-若$(a,m)=1$, 则
+若 $(a,m)=1$, 则
 $$a^{\varphi(m)}\equiv1\pmod m$$
 
 ##### <a href="#t-4.4" id="p-t-4.4">证明</a>
 
-设$\mathbb{Z}_m^*:=\{a\in\mathbb{Z}_m|(a,m)=1\}=\{\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{\varphi(m)}\}$
+设 $\mathbb{Z}_m^*:=\{a\in\mathbb{Z}_m|(a,m)=1\}=\{\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{\varphi(m)}\}$
 
-由$(a,m)=1$可知$\overline{a}\in\mathbb{Z}_m^*$, 从而$\mathbb{Z}_m^*=\{\def\enum#1{aa_{ #1}}\enum{1},\enum{2},...,\enum{\varphi(m)}\}$
+由 $(a,m)=1$ 可知 $\overline{a}\in\mathbb{Z}_m^*$, 从而 $\mathbb{Z}_m^*=\{\def\enum#1{aa_{ #1}}\enum{1},\enum{2},...,\enum{\varphi(m)}\}$
 
-从而在群$\mathbb{Z}_m^*$中
+从而在群 $\mathbb{Z}_m^*$ 中
 $$\prod_{i=1}^{\varphi(m)}a_i=\prod_{i=1}^{\varphi(m)}aa_i=a^{\varphi(m)}\prod_{i=1}^{\varphi(m)}a_i$$
 
-两边约去$\prod_{i=1}^{\varphi(m)}a_i$, 即得$a^{\varphi(m)}\equiv1\pmod m$
+两边约去 $\prod_{i=1}^{\varphi(m)}a_i$, 即得 $a^{\varphi(m)}\equiv1\pmod m$
 
 <a href="#p-t-4.4" id="end-t-4.4">$\Box$</a>
 
@@ -559,46 +559,46 @@ $$\prod_{i=1}^{\varphi(m)}a_i=\prod_{i=1}^{\varphi(m)}aa_i=a^{\varphi(m)}\prod_{
 
 ## 逆元
 
-设$m$为正整数, $(a,m)=1$, 称$a$的逆元为方程$ax\equiv 1\pmod m$的解, 记作$a^{-1}$
+设 $m$ 为正整数, $(a,m)=1$, 称 $a$ 的逆元为方程 $ax\equiv 1\pmod m$ 的解, 记作 $a^{-1}$
 
 可以看出, 模剩余类下的逆元就像是有理数意义下一个数的倒数
 
 ### 性质
 
-1. 若$(a,m)=(b,m)=1$, 则$a\equiv b\pmod m\iff a^{-1}\equiv b^{-1}\pmod m$
+1. 若 $(a,m)=(b,m)=1$, 则 $a\equiv b\pmod m\iff a^{-1}\equiv b^{-1}\pmod m$
 
    > 这条性质等价于:
    >
    > - 对一个数求逆元, 其结果唯一
-   > - 方程$ax\equiv 1\pmod m,~(a,m)=1$的解唯一
+   > - 方程 $ax\equiv 1\pmod m,~(a,m)=1$ 的解唯一
 
 ### 求法
 
 1. exgcd
 
-   扩欧求的是$ax+by=c$的解, 此时我们令$b=m$, $c=(a,m)=1$, 则有
+   扩欧求的是 $ax+by=c$ 的解, 此时我们令 $b=m$, $c=(a,m)=1$, 则有
    $$ax+my=1$$
    即
    $$ax\equiv 1\pmod m$$
-   这个$x$就是$a$的逆元
+   这个 $x$ 就是 $a$ 的逆元
 
    时间复杂度:$O(\log m)$
 
 1. Fermat 小定理 / Euler 定理
 
-   由$a^{\varphi(m)}\equiv 1\pmod m$可知$a^{\varphi(m)-1}\equiv a^{-1}\pmod m$, 故所求逆元即为$a^{\varphi(m)-1}$
+   由 $a^{\varphi(m)}\equiv 1\pmod m$ 可知 $a^{\varphi(m)-1}\equiv a^{-1}\pmod m$, 故所求逆元即为 $a^{\varphi(m)-1}$
 
    时间复杂度:$O(\log m)$
 
-   一般来说更推荐用扩欧求逆元, 因为计算$\varphi(m)$相对麻烦一些
+   一般来说更推荐用扩欧求逆元, 因为计算 $\varphi(m)$ 相对麻烦一些
 
 1. 筛法
 
-   用于求$[1,n]$模$p$逆元的方法
+   用于求 $[1,n]$ 模 $p$ 逆元的方法
 
-   首先, $1$的逆元是$1$
+   首先, $1$ 的逆元是 $1$
 
-   然后考虑$p$对$i$做带余除法$p=ki+j,j\in[0,i)\cap\mathbb{N}$, 在模$p$意义下即有
+   然后考虑 $p$ 对 $i$ 做带余除法 $p=ki+j,j\in[0,i)\cap\mathbb{N}$, 在模 $p$ 意义下即有
 
    $$
    \begin{aligned}
@@ -615,12 +615,12 @@ $$\prod_{i=1}^{\varphi(m)}a_i=\prod_{i=1}^{\varphi(m)}aa_i=a^{\varphi(m)}\prod_{
 
    </details>
 
-1. 求任意$n$个数模$p$的逆元
+1. 求任意 $n$ 个数模 $p$ 的逆元
 
-   对于任意$n$个数$\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n}$, 我们可以这样求出其逆元
+   对于任意 $n$ 个数 $\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n}$, 我们可以这样求出其逆元
 
-   1. 令$s_i=\prod_{j=1}^ia_j$
-   1. 求出$s_n$的逆元, 记作$v_n$
+   1. 令 $s_i=\prod_{j=1}^ia_j$
+   1. 求出 $s_n$ 的逆元, 记作 $v_n$
    1. 注意到
       $$
       \begin{cases}
@@ -628,7 +628,7 @@ $$\prod_{i=1}^{\varphi(m)}a_i=\prod_{i=1}^{\varphi(m)}aa_i=a^{\varphi(m)}\prod_{
         a_i^{-1}&=v_is_{i-1}
       \end{cases},i=1,2,...,n-1
       $$
-      故此时$\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n}$的逆元便可求得
+      故此时 $\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n}$ 的逆元便可求得
 
    <details>
    <summary><font color='orange'>Show code</font></summary>
@@ -653,7 +653,7 @@ $$\prod_{i=1}^{\varphi(m)}a_i=\prod_{i=1}^{\varphi(m)}aa_i=a^{\varphi(m)}\prod_{
 
 ### <a href="#end-t-6.1" id="t-6.1">定理 - 6.1</a> (中国剩余定理)
 
-设$\def\enum#1{m_{ #1}}\enum{1},\enum{2},...,\enum{k}$是两两互素的正整数, 则对任意整数$\def\enum#1{b_{ #1}}\enum{1},\enum{2},...,\enum{k}$, 方程组
+设 $\def\enum#1{m_{ #1}}\enum{1},\enum{2},...,\enum{k}$ 是两两互素的正整数, 则对任意整数 $\def\enum#1{b_{ #1}}\enum{1},\enum{2},...,\enum{k}$, 方程组
 
 $$
 \begin{cases}
@@ -662,11 +662,11 @@ $$
 \end{cases}\tag{6.1-1}
 $$
 
-必有解, 且其全部解模$\prod_{i=1}^k m_i$同余
+必有解, 且其全部解模 $\prod_{i=1}^k m_i$ 同余
 
 #### <a href="#t-6.1" id="p-t-6.1">证明</a>
 
-令$M=\prod_{i=1}^km_i$
+令 $M=\prod_{i=1}^km_i$
 
 证明是构造性的, 我们首先尝试求解方程组
 
@@ -677,19 +677,19 @@ $$
 \end{cases}
 $$
 
-容易发现$x\mid M_i:=\frac{M}{m_i}$, 令$x=M_iy$, 则可得到方程
+容易发现 $x\mid M_i:=\frac{M}{m_i}$, 令 $x=M_iy$, 则可得到方程
 $$M_iy\equiv1\pmod{m_i}$$
 
-显然$y\equiv M_i^{-1}\pmod{m_i}$, 令$N_i=y$, 则$x=M_iN_i$
+显然 $y\equiv M_i^{-1}\pmod{m_i}$, 令 $N_i=y$, 则 $x=M_iN_i$
 
 此时我们进行大胆猜想: 最后结果可能是
 $$x\equiv\sum_{i=1}^kb_iM_iN_i\pmod M$$
 
-容易验证其确实是方程组$(6.1-1)$的解, 令其为$A$
+容易验证其确实是方程组 $(6.1-1)$ 的解, 令其为 $A$
 
-假设$x\equiv B\pmod M$也是方程组$(6.1-1)$的解, 则有
+假设 $x\equiv B\pmod M$ 也是方程组 $(6.1-1)$ 的解, 则有
 $$A-B\equiv0\pmod{m_i},~i=1,2,...,k$$
-这说明方程组$(6.1-1)$的全部解模$M$同余
+这说明方程组 $(6.1-1)$ 的全部解模 $M$ 同余
 
 <a href="#p-t-6.1" id="end-t-6.1">$\Box$</a>
 
@@ -706,13 +706,13 @@ $$
 \end{cases}
 $$
 
-此时的$x=M_iN_i$, $M_i=\prod_{j=1,j\ne i}^km_j$, 而$N_i$是$M_i$关于$m_i$的**逆元**
+此时的 $x=M_iN_i$, $M_i=\prod_{j=1,j\ne i}^km_j$, 而 $N_i$ 是 $M_i$ 关于 $m_i$ 的**逆元**
 
-我们知道, 如果一个整数$a$在模$m$意义下有逆元, 其前提之一便是$(a,m)=1$
+我们知道, 如果一个整数 $a$ 在模 $m$ 意义下有逆元, 其前提之一便是 $(a,m)=1$
 
-在此处便是$(M_i,m_i)=1$
+在此处便是 $(M_i,m_i)=1$
 
-故由最大公约数的性质, 此处的$k$个模数$\def\enum#1{m_{ #1}}\enum{1},\enum{2},...,\enum{k}$必须两两互素
+故由最大公约数的性质, 此处的 $k$ 个模数 $\def\enum#1{m_{ #1}}\enum{1},\enum{2},...,\enum{k}$ 必须两两互素
 
 那么我们能不能摆脱这个限制条件呢?
 
@@ -738,15 +738,15 @@ $$
 \end{cases}
 $$
 
-即存在整数$k_1,k_2$使得
+即存在整数 $k_1,k_2$ 使得
 $$x=m_1k_1+b_1=m_2k_2+b_2$$
 整理一下, 便有
 $$m_1k_1-m_2k_2=b_2-b_1\tag{*}$$
-此时我们便可以通过扩欧去解决$(*)$式的可解性和一组可行解
+此时我们便可以通过扩欧去解决 $(*)$ 式的可解性和一组可行解
 
-更重要的是: 此时不需要$(m_1,m_2)=1$
+更重要的是: 此时不需要 $(m_1,m_2)=1$
 
-求出$k_1,k_2$之后便可得到
+求出 $k_1,k_2$ 之后便可得到
 $$x\equiv m_1k_1+b_1\equiv m_2k_2+b_2\pmod{[m_1,m_2]}$$
 
 <details>

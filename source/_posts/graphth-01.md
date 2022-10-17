@@ -98,13 +98,13 @@ tags:
 
 {% note info no-icon %}
 
-**<a id="def-1-4">定义 - 1-4</a>** 若两图$G_1,G_2$的点集不交, 则称 $G_1\cup G_2:=\lang V(G_1)\cup V(G_2), E(G_1)\cup E(G_2)\rang$ 为两图的**并**(union)
+**<a id="def-1-4">定义 - 1-4</a>** 若两图 $G_1,G_2$ 的点集不交, 则称 $G_1\cup G_2:=\lang V(G_1)\cup V(G_2), E(G_1)\cup E(G_2)\rang$ 为两图的**并**(union)
 
 {% endnote %}
 
 {% note info no-icon %}
 
-**<a id="def-1-5">定义 - 1-5</a>** 称图$G$是**连通**的(connected), 若$G$不能表示称两个图的并, 否则称其为**不连通**的(disconnected), 若 $G$ 可以表示成若干个连通图的并, 则称这些连通图为 $G$ 的**部件**(components)
+**<a id="def-1-5">定义 - 1-5</a>** 称图 $G$ 是**连通**的(connected), 若 $G$ 不能表示称两个图的并, 否则称其为**不连通**的(disconnected), 若 $G$ 可以表示成若干个连通图的并, 则称这些连通图为 $G$ 的**部件**(components)
 
 {% endnote %}
 
@@ -112,7 +112,7 @@ tags:
 
 {% note info no-icon %}
 
-**<a id="def-1-6">定义 - 1-6</a>** 若图 $G$有边 $uv$ 此时称, 顶点 $u,v$**相邻**(adjacent), 顶点 $u,v$ 均与 $e$**相关联**(incident)
+**<a id="def-1-6">定义 - 1-6</a>** 若图 $G$ 有边 $uv$ 此时称, 顶点 $u,v$**相邻**(adjacent), 顶点 $u,v$ 均与 $e$**相关联**(incident)
 
 与点 $v$ 相邻的所有点构成点 $v$ 的**邻域**(neighborhood), 记作 $N(v)$
 
