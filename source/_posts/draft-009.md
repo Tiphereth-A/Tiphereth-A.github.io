@@ -70,7 +70,7 @@ date: 2021-04-12 19:24:47
 
 </details>
 
-![fig1](fig1.svg)
+![](fig1.svg)
 
 ### 问题 2
 
@@ -81,7 +81,7 @@ date: 2021-04-12 19:24:47
 
 </details>
 
-![fig2](fig2.svg)
+![](fig2.svg)
 
 ---
 

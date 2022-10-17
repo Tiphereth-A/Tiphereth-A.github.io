@@ -86,11 +86,11 @@ tags:
 
 如
 
-![iso1](iso1.svg)
+![](iso1.svg)
 
 和
 
-![iso2](iso2.svg)
+![](iso2.svg)
 
 是同构的
 
@@ -169,9 +169,9 @@ tags:
 
 {% endnote %}
 
-|          $G$          |          $G-e$          |          $G-v$          |     $G\setminus e$      |
-| :-------------------: | :---------------------: | :---------------------: | :---------------------: |
-| ![subgh1](subgh1.svg) | ![subgh1e](subgh1e.svg) | ![subgh1v](subgh1v.svg) | ![subgh1s](subgh1s.svg) |
+|       $G$       |      $G-e$       |      $G-v$       |  $G\setminus e$  |
+| :-------------: | :--------------: | :--------------: | :--------------: |
+| ![](subgh1.svg) | ![](subgh1e.svg) | ![](subgh1v.svg) | ![](subgh1s.svg) |
 
 ### 简单图的补图
 
@@ -186,9 +186,9 @@ tags:
 
 {% endnote %}
 
-|          $G$          |       $\bar G$        |
-| :-------------------: | :-------------------: |
-| ![compl1](compl1.svg) | ![compl2](compl2.svg) |
+|       $G$       |    $\bar G$     |
+| :-------------: | :-------------: |
+| ![](compl1.svg) | ![](compl2.svg) |
 
 ### 度矩阵, 邻接矩阵与关联矩阵
 
@@ -451,7 +451,7 @@ $3$-正则图
 
 ### Petersen 图
 
-![petersen](petersen.svg)
+![](petersen.svg)
 
 > From https://www.integral-domain.org/lwilliams/Resources/tikzsnippets.php, 给出的这三个图同构
 
@@ -461,7 +461,7 @@ $3$-正则图
 
 又叫正多面体图, 一共有五种
 
-![platonic](platonic.svg)
+![](platonic.svg)
 
 > From https://www.integral-domain.org/lwilliams/Resources/tikzsnippets.php
 
@@ -481,7 +481,7 @@ $3$-正则图
 - $Q_n$ 可以和 $n$ 维超立方体一一对应
 - $Q_n$ 是二分图
 
-![cube4](cube4.svg)
+![](cube4.svg)
 
 > $Q_4$, From https://www.integral-domain.org/lwilliams/Resources/tikzsnippets.php
 

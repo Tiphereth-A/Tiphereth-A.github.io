@@ -304,7 +304,7 @@ $$\forall i\in[1,k]\cap\mathbb{N},~i\mid\overline{a_1a_2...a_i}$$
 
 ### 解题思路
 
-![J-1](J-1.jpg)
+![](J-1.jpg)
 
 原型是一道经典的博弈论题
 

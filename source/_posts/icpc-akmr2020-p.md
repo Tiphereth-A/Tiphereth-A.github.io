@@ -35,7 +35,7 @@ date: 2021-04-04 00:04:28
 
 #### 题目描述
 
-![A-1](A-1.png)
+![](A-1.png)
 
 Luna had a stressful day and she wants to do a meditation routine that relaxes her well. Luna's routines are more or less relaxing and to determine how relaxing a routine is, Luna computes its score: the higher the score, the more relaxing it is!
 
@@ -91,7 +91,7 @@ $0\leq g_{i}\leq 10\,000$
 
 #### 题目描述
 
-![B-1](B-1.png)
+![](B-1.png)
 
 The popular PefectSharp online group gathers fans of workouts and healthy lifestyle all over the world. Every group member has managed to gain a certain amount of credits for the trendy MV03 online sports platform, giving them access to various workout and relaxation resources
 
@@ -174,7 +174,7 @@ for all,$1\leq C_i \leq 100\,000\,000$ and $S \times (N-1) \leq C_i$
 
 #### 题目描述
 
-![C-1](C-1.jpg)
+![](C-1.jpg)
 
 To escape the loneliness of working remotely everyday, Erika decided to try on a new hobby: sculpture. She already has a large collection of statues and the municipality has allowed her to show her art outside
 

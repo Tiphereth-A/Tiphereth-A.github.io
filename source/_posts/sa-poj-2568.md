@@ -52,7 +52,7 @@ The input contains several test cases. Each test case specifies the Prufer code 
 
 For each test case generate a single line containing the corresponding tree, denoted as described above. Note that, in general, there are many ways to denote such a tree: choose your favourite one
 
-![1](1.bmp)
+![](1.bmp)
 
 ### Sample Input
 

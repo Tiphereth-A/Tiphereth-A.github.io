@@ -211,8 +211,8 @@ $$
 
 ### 种群数量随时间的变化
 
-![amount](amount.svg)
+![](amount.svg)
 
 ### 相空间图
 
-![phase-space](phase-space.svg)
+![](phase-space.svg)

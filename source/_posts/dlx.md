@@ -434,11 +434,11 @@ $$
 
 对于舞蹈链中的一个结点, 其连接方式如下
 
-![DLX_part](DLX_part.svg)
+![](DLX_part.svg)
 
 其删除与恢复自然和双向链表一致
 
-![DLX_change](DLX_change.svg)
+![](DLX_change.svg)
 
 我们看看对下例建立的舞蹈链是什么样子的
 
@@ -475,7 +475,7 @@ $$
 
 对应的舞蹈链就是这样的
 
-![DLX](DLX.svg)
+![](DLX.svg)
 
 代码具体如何实现呢
 
@@ -597,7 +597,7 @@ $$
 
 结合该图我们不难写出代码
 
-![DLX_change](DLX_change.svg)
+![](DLX_change.svg)
 
 <details open>
 <summary><font color='orange'>Show code</font></summary>
@@ -645,65 +645,65 @@ $$
 <summary><font color='orange' id="eg-3.1">Show / Hide</font></summary>
 <a href="#end-eg-3.1">Go to the end</a>
 
-![DLX](DLX.svg)
+![](DLX.svg)
 
 我们不考虑常数优化, 每次只选取`node[head].r`删除, 则一共会执行$13$次`remove`操作和$6$次`resume`操作
 
 1. `remove 1`
 
-   ![DLX_1](DLX_1.svg)
+   ![](DLX_1.svg)
 
 1. `remove 4` & `remove 7`
 
-   ![DLX_2](DLX_2.svg)
+   ![](DLX_2.svg)
 
 1. `remove 2`
 
-   ![DLX_3](DLX_3.svg)
+   ![](DLX_3.svg)
 
 1. `remove 3` & `remove 5`
 
-   ![DLX_4](DLX_4.svg)
+   ![](DLX_4.svg)
 
 1. `remove 6`
 
-   ![DLX_5](DLX_5.svg)
+   ![](DLX_5.svg)
 
 1. `resume 6`
 
-   ![DLX_4](DLX_4.svg)
+   ![](DLX_4.svg)
 
 1. `resume 5` & `resume 3`
 
-   ![DLX_3](DLX_3.svg)
+   ![](DLX_3.svg)
 
 1. `resume 2`
 
-   ![DLX_2](DLX_2.svg)
+   ![](DLX_2.svg)
 
 1. `resume 7` & `resume 4`
 
-   ![DLX_1](DLX_1.svg)
+   ![](DLX_1.svg)
 
 1. `remove 4`
 
-   ![DLX_6](DLX_6.svg)
+   ![](DLX_6.svg)
 
 1. `remove 2`
 
-   ![DLX_7](DLX_7.svg)
+   ![](DLX_7.svg)
 
 1. `remove 7`
 
-   ![DLX_8](DLX_8.svg)
+   ![](DLX_8.svg)
 
 1. `remove 3`
 
-   ![DLX_9](DLX_9.svg)
+   ![](DLX_9.svg)
 
 1. `remove 5` & `remove 6`
 
-   ![DLX_10](DLX_10.svg)
+   ![](DLX_10.svg)
 
 <a href="#eg-3.1" id="end-eg-3.1">Go back</a>
 
@@ -724,23 +724,23 @@ $$
 
 以下图为例
 
-![DLX_del_1](DLX_del_1.svg)
+![](DLX_del_1.svg)
 
 首先我们先删除
 
-|    操作    |            结果             |
-| :--------: | :-------------------------: |
-| `remove 1` | ![DLX_del_2](DLX_del_2.svg) |
-| `remove 3` | ![DLX_del_3](DLX_del_3.svg) |
-| `remove 4` | ![DLX_del_4](DLX_del_4.svg) |
+|    操作    |        结果        |
+| :--------: | :----------------: |
+| `remove 1` | ![](DLX_del_2.svg) |
+| `remove 3` | ![](DLX_del_3.svg) |
+| `remove 4` | ![](DLX_del_4.svg) |
 
 之后我们恢复
 
-|                方向相反[^1]                 |               方向相同[^2]                |
-| :-----------------------------------------: | :---------------------------------------: |
-|  `resume 4`<br>![DLX_del_8](DLX_del_8.svg)  | `resume 1`<br>![DLX_del_5](DLX_del_5.svg) |
-|  `resume 3`<br>![DLX_del_9](DLX_del_9.svg)  | `resume 3`<br>![DLX_del_6](DLX_del_6.svg) |
-| `resume 1`<br>![DLX_del_10](DLX_del_10.svg) | `resume 4`<br>![DLX_del_7](DLX_del_7.svg) |
+|           方向相反[^1]            |           方向相同[^2]           |
+| :-------------------------------: | :------------------------------: |
+| `resume 4`<br>![](DLX_del_8.svg)  | `resume 1`<br>![](DLX_del_5.svg) |
+| `resume 3`<br>![](DLX_del_9.svg)  | `resume 3`<br>![](DLX_del_6.svg) |
+| `resume 1`<br>![](DLX_del_10.svg) | `resume 4`<br>![](DLX_del_7.svg) |
 
 [^1]: <font color="e1d5e7">淡紫色</font>的结点是重复恢复的结点, <font color="3700cc">靛蓝色</font>的指针是重复赋值的指针
 [^2]: <font color="e1d5e7">淡紫色</font>的结点是重复恢复一次的结点, <font color="b266ff">浅紫色</font>的结点是重复恢复两次的结点, <font color="3700cc">靛蓝色</font>的指针是重复赋值一次的指针, <font color="a50040">枣红色</font>的指针是重复赋值两次的指针
