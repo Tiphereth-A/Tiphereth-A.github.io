@@ -1137,9 +1137,11 @@ On a single line output the maximum distance the spacecraft can travel. Your ans
 ### 题意简述
 
 给出$n$组数对$(T_i,s_i,a_i)$, 其中$0\leqslant a_i< 2\pi,i=1,2,...,n$, 令
+
 $$f_i(a)=\max\{0,T_i-s_i|a_i-a|,T_i-s_i|2\pi-|a_i-a||\},~i=1,2,...,n$$
 
 $$f(a)=\sum_{i=1}^nf_i(a)$$
+
 求$f_{max}$
 
 ### 解题思路
