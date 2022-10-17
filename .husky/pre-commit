@@ -1,6 +1,7 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
+
 regen_figures() {
   for src in $@; do
     if [[ ! $src =~ ^imgcode\/* ]]; then
@@ -67,6 +68,7 @@ regen_figures() {
   done
 }
 
+
 lint_code() {
   for src in $@; do
     if [[ ! $src =~ ^source\/code\/* ]]; then
@@ -96,6 +98,7 @@ lint_code() {
   done
 }
 
+
 add_intro_md() {
   for src in $@; do
     if [ -n ${src##*.md} ]; then
@@ -112,11 +115,28 @@ add_intro_md() {
 }
 
 
+add_space_formula() {
+  for src in $@; do
+    if [ -n ${src##*.md} ]; then
+      continue
+    fi
+
+    echo "---add_space_formula info start---"
+    echo "src: "$src
+    echo "---add_space_formula info end---"
+
+    xargs perl -i -CSD -Mutf8 -pe 's/(\p{Han})\$/$1 \$/g' $src
+    xargs perl -i -CSD -Mutf8 -pe 's/\$(\p{Han})/\$ $1/g' $src
+  done
+}
+
+
 FILES=$(git diff --cached --name-only --diff-filter=ACMR | sed 's| |\\ |g')
 [ -z "$FILES" ] && exit 0
 
 echo "$FILES" | xargs ./node_modules/.bin/prettier --ignore-unknown --write
 # add_intro_md $FILES
+add_space_formula $FILES
 lint_code $FILES
 
 echo "$FILES" | xargs git add
