@@ -19,8 +19,7 @@ int main() {
     if (op & 1) {
       cin >> value;
       tree.modify(v, loc, value);
-    } else
-      cout << tree.query(v, loc) << '\n';
+    } else cout << tree.query(v, loc) << '\n';
   }
   return 0;
 }

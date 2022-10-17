@@ -14,6 +14,10 @@
  *
  *  @p unary_op must not alter its argument.
  */
-template <typename _InputIterator, typename _OutputIterator, typename _UnaryOperation>
-_OutputIterator
-transform(_InputIterator __first, _InputIterator __last, _OutputIterator __result, _UnaryOperation __unary_op);
+template <typename _InputIterator,
+          typename _OutputIterator,
+          typename _UnaryOperation>
+_OutputIterator transform(_InputIterator __first,
+                          _InputIterator __last,
+                          _OutputIterator __result,
+                          _UnaryOperation __unary_op);

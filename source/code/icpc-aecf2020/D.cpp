@@ -26,7 +26,8 @@ void BFS(int S) {
   }
 }
 double f(int k, int b) {
-  return b ? 1.0 * (k % b) / (k / b + 2.0) + 1.0 * (b - k % b) / (k / b + 1.0) : 0.0;
+  return b ? 1.0 * (k % b) / (k / b + 2.0) + 1.0 * (b - k % b) / (k / b + 1.0) :
+             0.0;
 }
 double sanfen(int a, int b) {
   int l = 0, r = k;
@@ -51,15 +52,15 @@ int main() {
   int s1, s2, t1, t2;
   cin >> s1 >> t1 >> s2 >> t2;
   double Ans = sanfen(0, Dis[s1][t1] + Dis[s2][t2]);
-  Rep(i, 1, n)
-    Rep(j, 1, n) {
+  Rep(i, 1, n) Rep(j, 1, n) {
     if (~Dis[i][j] && ~Dis[s1][i] && ~Dis[s2][i] && ~Dis[j][t1] && ~Dis[j][t2])
-      Min[Dis[i][j]] = min(Min[Dis[i][j]], Dis[s1][i] + Dis[s2][i] + Dis[j][t1] + Dis[j][t2]);
+      Min[Dis[i][j]] =
+        min(Min[Dis[i][j]], Dis[s1][i] + Dis[s2][i] + Dis[j][t1] + Dis[j][t2]);
     if (~Dis[i][j] && ~Dis[s1][i] && ~Dis[s2][j] && ~Dis[j][t1] && ~Dis[i][t2])
-      Min[Dis[i][j]] = min(Min[Dis[i][j]], Dis[s1][i] + Dis[s2][j] + Dis[j][t1] + Dis[i][t2]);
+      Min[Dis[i][j]] =
+        min(Min[Dis[i][j]], Dis[s1][i] + Dis[s2][j] + Dis[j][t1] + Dis[i][t2]);
   }
-  Rep(i, 0, n) if (Min[i] != 2147483647)
-    Ans = min(Ans, sanfen(i, Min[i]));
+  Rep(i, 0, n) if (Min[i] != 2147483647) Ans = min(Ans, sanfen(i, Min[i]));
   cout << fixed << setprecision(10) << Ans;
   return 0;
 }

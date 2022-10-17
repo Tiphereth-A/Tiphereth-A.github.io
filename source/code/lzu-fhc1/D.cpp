@@ -21,7 +21,8 @@ Mat<row, row2> operator*(const Mat<row, col> &m1, const Mat<col, row2> &m2) {
   for (int i = 0; i < row; i++)
     for (int k = 0; k < col; k++)
       for (int j = 0; j < row2; j++)
-        matt.ele[i][j] = (matt.ele[i][j] + (int64_t)m1.ele[i][k] * m2.ele[k][j] % mod) % mod;
+        matt.ele[i][j] =
+          (matt.ele[i][j] + (int64_t)m1.ele[i][k] * m2.ele[k][j] % mod) % mod;
   return matt;
 }
 
@@ -36,7 +37,8 @@ Mat<6, 6> ident = {{
 Mat<6, 6> M[] = {ident, ident, ident, ident, ident, ident, ident};
 char dict[130];
 auto ___ = []() {
-  M[1].ele[0][5] = M[2].ele[1][0] = M[3].ele[2][1] = M[4].ele[3][2] = M[5].ele[4][3] = 1;
+  M[1].ele[0][5] = M[2].ele[1][0] = M[3].ele[2][1] = M[4].ele[3][2] =
+    M[5].ele[4][3] = 1;
   fill(begin(dict), end(dict), 6);
   dict['F'] = 1;
   dict['e'] = 2;
@@ -62,8 +64,7 @@ inline void push_down(int k) {
   int f = sgt[k].f;
   sgt[k].f = 0;
   sgt[ls(k)].f = sgt[rs(k)].f = f;
-  if (f == 6)
-    sgt[ls(k)].val = sgt[rs(k)].val = ident;
+  if (f == 6) sgt[ls(k)].val = sgt[rs(k)].val = ident;
   else {
     sgt[ls(k)].val = mpow[f][sgt[ls(k)].r - sgt[ls(k)].l + 1];
     sgt[rs(k)].val = mpow[f][sgt[rs(k)].r - sgt[rs(k)].l + 1];
@@ -71,8 +72,7 @@ inline void push_down(int k) {
 }
 void build(int l, int r, int k = 1) {
   sgt[k].l = l, sgt[k].r = r, sgt[k].f = 0;
-  if (l == r)
-    sgt[k].val = M[(int)dict[(int)s[l - 1]]];
+  if (l == r) sgt[k].val = M[(int)dict[(int)s[l - 1]]];
   else {
     int m = (l + r) >> 1;
     build(l, m, ls(k));
@@ -84,10 +84,8 @@ void modify(int x, int y, int z, int k = 1) {
   int l = sgt[k].l, r = sgt[k].r;
   if (x <= l && y >= r) {
     sgt[k].f = z;
-    if (z == 6)
-      sgt[k].val = ident;
-    else
-      sgt[k].val = mpow[z][r - l + 1];
+    if (z == 6) sgt[k].val = ident;
+    else sgt[k].val = mpow[z][r - l + 1];
     return;
   }
   if (sgt[k].f) push_down(k);

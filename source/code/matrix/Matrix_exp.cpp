@@ -4,9 +4,12 @@
 
 using namespace std;
 
-// template <> struct Matrix::Matrix_helper::gauss_tag<int> { using type = Matrix::Matrix_helper::normal_tag; };
+// template <> struct Matrix::Matrix_helper::gauss_tag<int> { using type =
+// Matrix::Matrix_helper::normal_tag; };
 
-auto _ = [](const double &x, const double &y) { return std::abs(x - y) <= 1e-8; };
+auto _ = [](const double &x, const double &y) {
+  return std::abs(x - y) <= 1e-8;
+};
 
 int main() {
   int n;

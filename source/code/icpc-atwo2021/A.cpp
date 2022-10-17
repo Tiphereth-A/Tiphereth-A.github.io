@@ -6,7 +6,10 @@ struct node {
   int b[3];
   string country;
 } a[N];
-inline bool operator<(node x, node y) { return x.b[0] > y.b[0] || (x.b[0] == y.b[0] && x.b[1] > y.b[1]) || (x.b[0] == y.b[0] && x.b[1] == y.b[1] && x.b[2] > y.b[2]); }
+inline bool operator<(node x, node y) {
+  return x.b[0] > y.b[0] || (x.b[0] == y.b[0] && x.b[1] > y.b[1]) ||
+         (x.b[0] == y.b[0] && x.b[1] == y.b[1] && x.b[2] > y.b[2]);
+}
 string s;
 int main() {
   cin >> n;

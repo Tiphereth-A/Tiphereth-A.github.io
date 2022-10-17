@@ -21,9 +21,7 @@ struct node {
   int x;
   ll f1, f2;
 } a[N];
-inline bool operator<(node x, node y) {
-  return x.x < y.x;
-}
+inline bool operator<(node x, node y) { return x.x < y.x; }
 void dfs(int x, int fa, int c) {
   f[x][0] = 1ll;
   f[x][1] = 1ll;
@@ -55,15 +53,9 @@ void dfs(int x, int fa, int c) {
       }
     }
     ll res = 0;
-    for (int i = 1; i <= m; ++i) {
-      res += g[i][0] + g[i][1];
-    }
-    for (int i = 2; i <= m; ++i) {
-      g[i][1] += g[i - 1][1];
-    }
-    for (int i = 2; i <= m; ++i) {
-      res += g[i - 1][1] * g[i][0];
-    }
+    for (int i = 1; i <= m; ++i) { res += g[i][0] + g[i][1]; }
+    for (int i = 2; i <= m; ++i) { g[i][1] += g[i - 1][1]; }
+    for (int i = 2; i <= m; ++i) { res += g[i - 1][1] * g[i][0]; }
     ans += res;
   }
 }

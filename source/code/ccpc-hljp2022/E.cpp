@@ -1,9 +1,12 @@
 #include <bits/stdc++.h>
 using namespace std;
 using i64 = int64_t;
-#define _for(i, l, r, vals...) for (i64 i = (l), i##end = (r), ##vals; i <= i##end; ++i)
+#define _for(i, l, r, vals...) \
+  for (i64 i = (l), i##end = (r), ##vals; i <= i##end; ++i)
 template <class T>
-bool chkmax(T &a, T b) { return a < b ? a = b, true : false; }
+bool chkmax(T &a, T b) {
+  return a < b ? a = b, true : false;
+}
 const i64 MOD = 1e9 + 7, INV2 = 5e8 + 4;
 inline constexpr i64 qpow(i64 a, i64 b = MOD - 2, const i64 &mod = MOD) {
   i64 res(1);
@@ -56,7 +59,8 @@ inline auto solve() -> void {
     ++a[x * y];
   }
   _for(i, 1, max_num)
-    for (i64 j = 1; i * j <= max_num; ++j) (g[i] += i * j % MOD * a[i * j] % MOD) %= MOD;
+    for (i64 j = 1; i * j <= max_num; ++j)
+      (g[i] += i * j % MOD * a[i * j] % MOD) %= MOD;
   _for(i, 1, max_num) g[i] = g[i] * g[i] % MOD;
   i64 ans = 0;
   _for(i, 1, max_num) (ans += f[i] * g[i] % MOD) %= MOD;
@@ -78,7 +82,11 @@ int main() {
     solve();
 #ifdef _LOCAL_
   std::clog << "\n---\n"
-            << "Time used: " << std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::steady_clock::now() - _CLOCK_ST).count() << " ms" << std::endl;
+            << "Time used: "
+            << std::chrono::duration_cast<std::chrono::milliseconds>(
+                 std::chrono::steady_clock::now() - _CLOCK_ST)
+                 .count()
+            << " ms" << std::endl;
 #endif
   return 0;
 }

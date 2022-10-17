@@ -18,14 +18,15 @@ using u64 = uint64_t;
 
 il char gc() {
   static char buf[MAXBUF], *p1 = buf, *p2 = buf;
-  return p1 == p2 && (p2 = (p1 = buf) + fread(buf, 1, MAXBUF, stdin), p1 == p2) ? EOF : *p1++;
+  return p1 == p2 &&
+             (p2 = (p1 = buf) + fread(buf, 1, MAXBUF, stdin), p1 == p2) ?
+           EOF :
+           *p1++;
 }
 template <tpn A>
 il void read(A &x) {
   char c;
-  do {
-    c = getchar();
-  } while (c < '0' || c > '9');
+  do { c = getchar(); } while (c < '0' || c > '9');
   x = 0;
   do {
     x = (x << 3) + (x << 1) + (c ^ 48);

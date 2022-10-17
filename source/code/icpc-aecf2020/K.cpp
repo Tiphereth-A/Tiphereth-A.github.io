@@ -15,23 +15,12 @@ int main() {
         if (op != str[1]) f = 0;
       }
       switch (str[0]) {
-        case 'A':
-          a[i] = 1;
-          break;
-        case 'T':
-          a[i] = 10;
-          break;
-        case 'J':
-          a[i] = 11;
-          break;
-        case 'Q':
-          a[i] = 12;
-          break;
-        case 'K':
-          a[i] = 13;
-          break;
-        default:
-          a[i] = str[0] - '0';
+        case 'A': a[i] = 1; break;
+        case 'T': a[i] = 10; break;
+        case 'J': a[i] = 11; break;
+        case 'Q': a[i] = 12; break;
+        case 'K': a[i] = 13; break;
+        default: a[i] = str[0] - '0';
       }
       b[i] = a[i];
     }

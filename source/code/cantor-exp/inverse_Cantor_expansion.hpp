@@ -22,17 +22,16 @@ class BT {
   }
   std::size_t sum(std::size_t pos) {
     std::size_t ret = 0;
-    for (std::size_t i = pos; i; i = (std::ptrdiff_t)i - lowbit(i)) ret += tree[i];
+    for (std::size_t i = pos; i; i = (std::ptrdiff_t)i - lowbit(i))
+      ret += tree[i];
     return ret;
   }
   std::size_t query_rk(std::size_t pos) {
     std::size_t idx = 0;
     for (std::size_t i = LOG_N; ~i; --i) {
       idx += 1 << i;
-      if (idx >= N || tree[idx] >= pos)
-        idx -= 1 << i;
-      else
-        pos -= tree[idx];
+      if (idx >= N || tree[idx] >= pos) idx -= 1 << i;
+      else pos -= tree[idx];
     }
     return idx + 1;
   }

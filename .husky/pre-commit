@@ -70,12 +70,12 @@ regen_figures() {
 
 
 lint_code() {
+  clangformatconf="lint-conf/.clang-format"
+  
   for src in $@; do
     if [[ ! $src =~ ^source\/code\/* ]]; then
       continue
     fi
-
-    clangformatconf="lint-conf/.clang-format"
 
     echo "---lint_code info start---"
     echo "src: "$src

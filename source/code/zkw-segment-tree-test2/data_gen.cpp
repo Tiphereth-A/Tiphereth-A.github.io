@@ -25,8 +25,7 @@ int main() {
       out.open(filename);
       int n = u_mn(e), m = u_mn(e);
       out << n << " " << m << endl;
-      for (register int i = 1; i < n; ++i)
-        out << u_data(e) << " ";
+      for (register int i = 1; i < n; ++i) out << u_data(e) << " ";
       out << u_data(e) << endl;
       uniform_int_distribution<unsigned> u_range(1, n);
       for (register int i = 0; i < m; ++i) {
@@ -35,8 +34,7 @@ int main() {
         if (op & 1)
           out << op << " " << min(x, y) << " " << max(x, y) << " " << u_data(e)
               << endl;
-        else
-          out << op << " " << min(x, y) << " " << max(x, y) << endl;
+        else out << op << " " << min(x, y) << " " << max(x, y) << endl;
       }
       out.close();
     }

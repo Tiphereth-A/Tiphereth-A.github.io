@@ -10,7 +10,8 @@ struct Node {
        std::size_t _left = 0,
        std::size_t _right = 0,
        std::size_t _row = 0,
-       std::size_t _col = 0): up(_up), down(_down), left(_left), right(_right), row(_row), col(_col) {}
+       std::size_t _col = 0)
+    : up(_up), down(_down), left(_left), right(_right), row(_row), col(_col) {}
 } nodes[MAX_SIZE];
 std::size_t cnt_node;
 

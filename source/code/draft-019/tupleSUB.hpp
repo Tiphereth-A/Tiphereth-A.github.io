@@ -13,7 +13,9 @@ constexpr auto subtuple_impl_(Tuple &&t, std::index_sequence<Is...>) {
 
 template <std::size_t Begin, std::size_t Len, class Tuple>
 constexpr auto subtuple(Tuple &&t) {
-  static_assert(Begin <= TPL_SIZE_(Tuple) && Len <= TPL_SIZE_(Tuple) && Begin + Len <= TPL_SIZE_(Tuple), "Out of range");
+  static_assert(Begin <= TPL_SIZE_(Tuple) && Len <= TPL_SIZE_(Tuple) &&
+                  Begin + Len <= TPL_SIZE_(Tuple),
+                "Out of range");
 
   return subtuple_impl_<Begin>(t, std::make_index_sequence<Len>());
 }
@@ -22,7 +24,9 @@ template <std::size_t Pos, class Tp, class Tuple>
 constexpr auto tuple_push(Tp &&v, Tuple &&t) {
   static_assert(TPL_SIZE_(Tuple) > 0, "Pop from empty tuple");
 
-  return std::tuple_cat(subtuple<0, Pos>(t), std::make_tuple(v), subtuple<Pos, TPL_SIZE_(Tuple) - Pos>(t));
+  return std::tuple_cat(subtuple<0, Pos>(t),
+                        std::make_tuple(v),
+                        subtuple<Pos, TPL_SIZE_(Tuple) - Pos>(t));
 }
 
 template <class Tp, class Tuple>
@@ -39,7 +43,8 @@ template <std::size_t Pos, class Tuple>
 constexpr auto tuple_pop(Tuple &&t) {
   static_assert(TPL_SIZE_(Tuple) > 0, "Pop from empty tuple");
 
-  return std::tuple_cat(subtuple<0, Pos>(t), subtuple<Pos + 1, TPL_SIZE_(Tuple) - Pos - 1>(t));
+  return std::tuple_cat(subtuple<0, Pos>(t),
+                        subtuple<Pos + 1, TPL_SIZE_(Tuple) - Pos - 1>(t));
 }
 
 template <class Tuple>

@@ -7,11 +7,7 @@
 
 template <typename... Ts>
 std::istream &operator>>(std::istream &is, std::tuple<Ts...> &p) {
-  std::apply(
-    [&](Ts &...args) {
-      ((is >> args), ...);
-    },
-    p);
+  std::apply([&](Ts &...args) { ((is >> args), ...); }, p);
   return is;
 }
 

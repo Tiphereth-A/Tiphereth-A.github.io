@@ -12,8 +12,10 @@ void build() {
   scanf("%d", &n);
   for (; N <= n + 1; N <<= 1)
     ;
-  fp(i, N + 1, N + n) scanf("%d", tree + i);                  // 等价于scanf("%d", &tree[i])
-  fd(i, N - 1, 1) tree[i] = tree[i << 1] + tree[i << 1 | 1];  // 等价于tree[i] = tree[i*2] + tree[i*2 + 1]
+  fp(i, N + 1, N + n) scanf("%d", tree + i);  // 等价于scanf("%d", &tree[i])
+  fd(i, N - 1, 1) tree[i] =
+    tree[i << 1] +
+    tree[i << 1 | 1];  // 等价于tree[i] = tree[i*2] + tree[i*2 + 1]
 }
 
 void modify(int x, int k) {

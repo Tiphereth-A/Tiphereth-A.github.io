@@ -39,7 +39,8 @@ int main() {
   string s;
   cin >> s;
   i64 ans = calc(s);
-  transform(s.begin(), s.end(), s.begin(), [](char c) -> char { return c ^ 1; });
+  transform(
+    s.begin(), s.end(), s.begin(), [](char c) -> char { return c ^ 1; });
   reverse(s.begin(), s.end());
   cout << ans * calc(s) % MOD << endl;
   return 0;

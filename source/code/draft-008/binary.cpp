@@ -17,6 +17,12 @@
  *
  *  @p binary_op must not alter either of its arguments.
  */
-template <typename _InputIterator1, typename _InputIterator2, typename _OutputIterator, typename _BinaryOperation>
-_OutputIterator
-transform(_InputIterator1 __first1, _InputIterator1 __last1, _InputIterator2 __first2, _OutputIterator __result, _BinaryOperation __binary_op);
+template <typename _InputIterator1,
+          typename _InputIterator2,
+          typename _OutputIterator,
+          typename _BinaryOperation>
+_OutputIterator transform(_InputIterator1 __first1,
+                          _InputIterator1 __last1,
+                          _InputIterator2 __first2,
+                          _OutputIterator __result,
+                          _BinaryOperation __binary_op);

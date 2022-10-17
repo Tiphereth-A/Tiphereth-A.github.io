@@ -4,12 +4,14 @@ using data_type = uint64_t;
 using signed_data_t = make_signed_t<data_type>;
 using unsigned_data_t = make_unsigned_t<data_type>;
 
-inline constexpr signed_data_t mul_mod(signed_data_t a, signed_data_t b, unsigned_data_t mod) {
+inline constexpr signed_data_t
+mul_mod(signed_data_t a, signed_data_t b, unsigned_data_t mod) {
   signed_data_t d = floor(1.0l * a * b / mod + 0.5l), ret = a * b - d * mod;
   return ret < 0 ? ret + mod : ret;
 }
 
-inline constexpr data_type pow_mod(unsigned_data_t a, unsigned_data_t b, const unsigned_data_t &mod) {
+inline constexpr data_type
+pow_mod(unsigned_data_t a, unsigned_data_t b, const unsigned_data_t &mod) {
   data_type res(1);
   a %= mod;
   for (; b; b >>= 1, a = mul_mod(a, a, mod))
@@ -32,7 +34,8 @@ namespace Primetest_miller_rabin {
 // constexpr unsigned_data_t bases[] = {2, 7, 61};
 
 // for int64
-constexpr unsigned_data_t bases[] = {2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37};
+constexpr unsigned_data_t bases[] = {
+  2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37};
 
 inline constexpr bool is_prime(unsigned_data_t n) {
   if (n <= 1) return false;

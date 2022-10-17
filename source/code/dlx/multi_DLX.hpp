@@ -7,7 +7,8 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-template <const std::size_t _Edge_len = 500 + 5, const std::size_t _Node_size = 7000 + 5>
+template <const std::size_t _Edge_len = 500 + 5,
+          const std::size_t _Node_size = 7000 + 5>
 class multi_DLX {
 private:
   struct Node {
@@ -25,7 +26,8 @@ private:
 #define _d(id) node[id].d
 #define _row(id) node[id].row
 #define _col(id) node[id].col
-#define _for(i, start, dir) for (std::size_t i = _##dir(start); i != start; i = _##dir(i))
+#define _for(i, start, dir) \
+  for (std::size_t i = _##dir(start); i != start; i = _##dir(i))
 
   void remove_col(std::size_t _now_col) {
     _for(i, _now_col, d) {
@@ -59,7 +61,10 @@ private:
     return ret;
   }
 
-  bool dance(std::size_t *_ans, std::size_t &_ans_len, std::size_t max_depth, std::size_t now_depth = 1) {
+  bool dance(std::size_t *_ans,
+             std::size_t &_ans_len,
+             std::size_t max_depth,
+             std::size_t now_depth = 1) {
     if (now_depth > max_depth) return false;
     if (_r(0) == 0) return true;
     std::size_t now_col = find_min_col();
@@ -90,13 +95,21 @@ public:
   void init(std::size_t _width, std::size_t _height) {
     width = cnt_node = _width;
     height = _height;
-    for (std::size_t i = 1; i <= width; ++i) node[i] = {i - 1, i + 1, i, i, 0, i};
+    for (std::size_t i = 1; i <= width; ++i)
+      node[i] = {i - 1, i + 1, i, i, 0, i};
     node[_r(width) = 0] = {width, 1, 0, 0, 0, 0};
   }
 
-  void insert_row(std::size_t _ln, std::size_t * const _cols, std::size_t _len_cols) {
+  void insert_row(std::size_t _ln,
+                  std::size_t * const _cols,
+                  std::size_t _len_cols) {
     for (std::size_t i = 1; i <= _len_cols; ++i) {
-      node[cnt_node + i] = {cnt_node + i - 1, cnt_node + i + 1, _u(_cols[i]), _cols[i], _ln, _cols[i]};
+      node[cnt_node + i] = {cnt_node + i - 1,
+                            cnt_node + i + 1,
+                            _u(_cols[i]),
+                            _cols[i],
+                            _ln,
+                            _cols[i]};
       _d(_u(_cols[i])) = cnt_node + i;
       _u(_cols[i]) = cnt_node + i;
       ++cnt_col[_cols[i]];
@@ -106,7 +119,10 @@ public:
     _r(cnt_node + _len_cols) = cnt_node + 1;
     cnt_node += _len_cols;
   }
-  void insert_map(bool ** const _map, std::size_t _width, std::size_t _height, std::size_t _height_phy = _Edge_len) {
+  void insert_map(bool ** const _map,
+                  std::size_t _width,
+                  std::size_t _height,
+                  std::size_t _height_phy = _Edge_len) {
     std::size_t *_ = (std::size_t *)malloc(sizeof(std::size_t) * (_width + 1));
     for (std::size_t _ln = 1, len; _ln <= _height; ++_ln) {
       len = 0;
@@ -126,8 +142,7 @@ public:
       if (dance(ans, _, mid)) {
         len = _;
         r = _ - 1;
-      } else
-        l = mid + 1;
+      } else l = mid + 1;
     }
     return len;
   }
@@ -147,8 +162,7 @@ int n, m;
 bool maps[N][N];
 std::size_t ans[N];
 
-void test() {
-}
+void test() {}
 
 int main() {
   ios::sync_with_stdio(false);
@@ -162,7 +176,6 @@ int main() {
   size_t len_ans = 0;
   if ((len_ans = a((std::size_t *)ans)) > 0)
     for (size_t i = 1; i <= len_ans; ++i) cout << ans[i] << " ";
-  else
-    cout << "No Solution!";
+  else cout << "No Solution!";
   return 0;
 }

@@ -12,12 +12,14 @@ int main() {
   cin >> a;
   cout << a << endl;
   a = a.inverse();
-  cout << +a << endl
-       << -a << endl;
+  cout << +a << endl << -a << endl;
 
   decltype(a) b(a), c = a;
 
-  c = b.transform_unary_raw([](const int64_t &x) { return x + 3; }).transform_binary_raw(a, std::multiplies<int64_t>()).safe_mod().inverse();
+  c = b.transform_unary_raw([](const int64_t &x) { return x + 3; })
+        .transform_binary_raw(a, std::multiplies<int64_t>())
+        .safe_mod()
+        .inverse();
 
   cout << c << endl;
 

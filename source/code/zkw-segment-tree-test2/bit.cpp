@@ -16,15 +16,17 @@ char buf_read[1 << 21], buf_print[1 << 21], a[30];
 char *p_read = buf_read, *p_print = buf_read;
 int p, now_print = -1;
 FINLINE int getc() {
-  return p_read == p_print && (p_print = (p_read = buf_read) + fread(buf_read, 1, 1 << 21, stdin), p_read == p_print) ? EOF : *p_read++;
+  return p_read == p_print && (p_print = (p_read = buf_read) +
+                                         fread(buf_read, 1, 1 << 21, stdin),
+                               p_read == p_print) ?
+           EOF :
+           *p_read++;
 }
 template <typename T>
 inline void read(T &x) {
   x = 0;
   char ch = getc();
-  while (!isdigit(ch)) {
-    ch = getc();
-  }
+  while (!isdigit(ch)) { ch = getc(); }
   while (isdigit(ch)) {
     x = x * 10 + ch - 48;
     ch = getc();
@@ -40,14 +42,9 @@ inline void flush() {
 }
 template <typename T>
 inline void print(T x) {
-  if (now_print > 1 << 20)
-    flush();
-  do {
-    a[++p] = x % 10 + 48;
-  } while (x /= 10);
-  do {
-    buf_print[++now_print] = a[p];
-  } while (--p);
+  if (now_print > 1 << 20) flush();
+  do { a[++p] = x % 10 + 48; } while (x /= 10);
+  do { buf_print[++now_print] = a[p]; } while (--p);
   buf_print[++now_print] = '\n';
 }
 }  // namespace FastIO
@@ -60,13 +57,11 @@ u64 n, m;
 namespace bit {
 u64 c1[N], c2[N], num[N];
 FINLINE void _add(u64 *r, u32 pos, const u64 &v) {
-  for (; pos <= n; pos += _lowbit(pos))
-    r[pos] += v;
+  for (; pos <= n; pos += _lowbit(pos)) r[pos] += v;
 }
 FINLINE u64 _query(u64 *r, u32 pos) {
   u64 ans(0);
-  for (; pos; pos -= _lowbit(pos))
-    ans += r[pos];
+  for (; pos; pos -= _lowbit(pos)) ans += r[pos];
   return ans;
 }
 FINLINE void init() {
@@ -113,8 +108,7 @@ int main(int argc, char *argv[]) {
     if (op & 1) {
       read(k);
       update(x, y, k);
-    } else
-      print(query(x, y));
+    } else print(query(x, y));
   }
   FastIO::flush();
   //================================================================

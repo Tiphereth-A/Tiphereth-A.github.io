@@ -16,5 +16,7 @@ public:
   Tp &&get_base() { return std::move(base); }
   uint32_t &&get_mod() { return std::move(mod); }
 
-  Tp operator()(std::make_unsigned_t<Tp> &&exponent) { return block1[exponent & 65535] * block2[exponent >> 16] % mod; }
+  Tp operator()(std::make_unsigned_t<Tp> &&exponent) {
+    return block1[exponent & 65535] * block2[exponent >> 16] % mod;
+  }
 };

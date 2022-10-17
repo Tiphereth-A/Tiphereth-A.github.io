@@ -37,7 +37,10 @@ struct Point {
   _state_t get_state() const { return __state[x][y]; }
   _map_t get_map() const { return __map[x][y]; }
   //!
-  bool valid() const { return x > 0 && y > 0 && x <= n && y <= m && this->get_state() != __forbidden__; }
+  bool valid() const {
+    return x > 0 && y > 0 && x <= n && y <= m &&
+           this->get_state() != __forbidden__;
+  }
   void set_state(_state_t state) const { __state[x][y] = state; }
   void set_map(_map_t val) const { __map[x][y] = val; }
 };

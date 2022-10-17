@@ -3,16 +3,11 @@ class matrix {
   using self = matrix<Tp, Iszero_t>;
 
 public:
-  matrix(
-    size_t row,
-    size_t col,
-    Iszero_t iszero_func,
-    const Tp &val);
-  matrix(
-    size_t row,
-    size_t col,
-    Iszero_t iszero_func,
-    const std::valarray<Tp> &data_);
+  matrix(size_t row, size_t col, Iszero_t iszero_func, const Tp &val);
+  matrix(size_t row,
+         size_t col,
+         Iszero_t iszero_func,
+         const std::valarray<Tp> &data_);
 
   constexpr size_t row_size() const;
   constexpr size_t col_size() const;
@@ -33,8 +28,10 @@ public:
   inline std::valarray<Tp> row_varray(size_t r) const;
   inline std::valarray<Tp> col_varray(size_t c) const;
   inline std::valarray<Tp> diag_cycle_varray(ptrdiff_t d) const;
-  inline self submatrix(size_t row_l, size_t row_r, size_t col_l, size_t col_r) const;
-  inline std::gslice_array<Tp> submatrix_raw(size_t row_l, size_t row_r, size_t col_l, size_t col_r);
+  inline self
+  submatrix(size_t row_l, size_t row_r, size_t col_l, size_t col_r) const;
+  inline std::gslice_array<Tp>
+  submatrix_raw(size_t row_l, size_t row_r, size_t col_l, size_t col_r);
 
   friend inline self operator+(self lhs, const Tp &val);
   friend inline self operator-(self lhs, const Tp &val);
@@ -53,7 +50,7 @@ public:
   friend inline self operator/(const self &lhs, const self &rhs);
   friend inline self operator%(self lhs, const self &rhs);
   friend inline self operator&(self lhs, const self &rhs);
-  // using guass method to calc lhs^{-1}*rhs
+  // using gauss method to calc lhs^{-1}*rhs
   friend inline self operator|(const self &lhs, const self &rhs);
   friend inline self operator^(self lhs, const self &rhs);
   friend inline self operator<<(self lhs, const self &rhs);
@@ -90,7 +87,7 @@ public:
   inline self &operator/=(const self &rhs);
   inline self &operator%=(const self &rhs);
   inline self &operator&=(const self &rhs);
-  // using guass method to calc lhs^{-1}*rhs
+  // using gauss method to calc lhs^{-1}*rhs
   inline self &operator|=(const self &rhs);
   inline self &operator^=(const self &rhs);
   inline self &operator<<=(const self &rhs);
@@ -105,7 +102,8 @@ public:
   constexpr void swap_col(size_t c1, size_t c2);
   constexpr void swap_diag_cycle(size_t d1, size_t d2);
 
-  inline virtual int64_t do_gauss_range(size_t row_start, size_t row_end, bool clear_all = true);
+  inline virtual int64_t
+  do_gauss_range(size_t row_start, size_t row_end, bool clear_all = true);
   inline ptrdiff_t do_gauss(bool clear_all = true);
   inline self transpose() const;
   inline self inverse() const;
@@ -123,28 +121,20 @@ protected:
 template <class Tp>
 class matrix_int: public matrix<Tp> {
 public:
-  matrix_int(
-    size_t row,
-    size_t col,
-    const Tp &val = Tp{});
-  matrix_int(
-    size_t row,
-    size_t col,
-    const std::valarray<Tp> &data_);
+  matrix_int(size_t row, size_t col, const Tp &val = Tp{});
+  matrix_int(size_t row, size_t col, const std::valarray<Tp> &data_);
 
-  inline int64_t do_gauss_range(size_t row_start, size_t row_end, bool clear_all = true) override;
+  inline int64_t do_gauss_range(size_t row_start,
+                                size_t row_end,
+                                bool clear_all = true) override;
 };
 
 class matrix_bool: public matrix<bool> {
 public:
-  matrix_bool(
-    size_t row,
-    size_t col,
-    bool val = false);
-  matrix_bool(
-    size_t row,
-    size_t col,
-    const std::valarray<bool> &data_);
+  matrix_bool(size_t row, size_t col, bool val = false);
+  matrix_bool(size_t row, size_t col, const std::valarray<bool> &data_);
 
-  inline int64_t do_gauss_range(size_t row_start, size_t row_end, bool clear_all = true) override;
+  inline int64_t do_gauss_range(size_t row_start,
+                                size_t row_end,
+                                bool clear_all = true) override;
 };

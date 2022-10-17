@@ -19,10 +19,7 @@ signed main() {
   cout.tie(nullptr);
   cin >> n >> m;
   int Ans = n * (n + 1) * m * (m + 1) / 4, x, y;
-  Rep(i, 1, n)
-    Rep(j, 1, m)
-      Up[i][j] = 0,
-      Down[i][j] = n + 1;
+  Rep(i, 1, n) Rep(j, 1, m) Up[i][j] = 0, Down[i][j] = n + 1;
   while (cin >> x >> y) {
     int u = 0, d = n + 1;
     for (int j = y; j >= 1 && !Book[x][j]; dec(j)) {
@@ -34,10 +31,8 @@ signed main() {
       }
     }
     Rep(i, x + 1, n) if (!Book[i][y]) Up[i][y] = x;
-    else break;
-    rep(i, x - 1, 1) if (!Book[i][y]) Down[i][y] = x;
-    else break;
-    cout << Ans << '\n';
+    else break; rep(i, x - 1, 1) if (!Book[i][y]) Down[i][y] = x;
+    else break; cout << Ans << '\n';
     Book[x][y] = 1;
   }
   return 0;

@@ -1,7 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
 using u32 = std::uint32_t;
-#define for_(i, l, r, vars...) for (decltype(l + r) i = (l), i##end = (r), ##vars; i <= i##end; ++i)
+#define for_(i, l, r, vars...) \
+  for (decltype(l + r) i = (l), i##end = (r), ##vars; i <= i##end; ++i)
 #define read_var_(type, name) \
   type name;                  \
   std::cin >> name
@@ -26,8 +27,9 @@ inline auto solve(int t_) -> void {
   read_var_(int, n);
   for_(i, 1, n, x) {
     cin >> x;
-    cout << (x == divsum[x] ? "perfect" : x > divsum[x] ? "deficient" :
-                                                          "abundant")
+    cout << (x == divsum[x] ? "perfect" :
+             x > divsum[x]  ? "deficient" :
+                              "abundant")
          << '\n';
   }
 }
