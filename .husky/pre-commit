@@ -138,4 +138,6 @@ echo "$FILES" | xargs ./node_modules/.bin/prettier --ignore-unknown --write
 
 echo "$FILES" | xargs git add
 
+rm -rf _imgcode_tempout/*
+
 exit 0
