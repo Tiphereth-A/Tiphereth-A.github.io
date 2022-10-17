@@ -164,7 +164,7 @@ public:
   })
 
   OPF__(/, { return lhs * rhs.inverse(); })
-  // using guass method to calc lhs^{-1}*rhs
+  // using gauss method to calc lhs^{-1}*rhs
   OPF__(|, {
     ASSERT_(lhs.row_size() == lhs.col_size() &&
             rhs.row_size() == lhs.row_size());

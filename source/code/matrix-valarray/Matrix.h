@@ -50,7 +50,7 @@ public:
   friend inline self operator/(const self &lhs, const self &rhs);
   friend inline self operator%(self lhs, const self &rhs);
   friend inline self operator&(self lhs, const self &rhs);
-  // using guass method to calc lhs^{-1}*rhs
+  // using gauss method to calc lhs^{-1}*rhs
   friend inline self operator|(const self &lhs, const self &rhs);
   friend inline self operator^(self lhs, const self &rhs);
   friend inline self operator<<(self lhs, const self &rhs);
@@ -87,7 +87,7 @@ public:
   inline self &operator/=(const self &rhs);
   inline self &operator%=(const self &rhs);
   inline self &operator&=(const self &rhs);
-  // using guass method to calc lhs^{-1}*rhs
+  // using gauss method to calc lhs^{-1}*rhs
   inline self &operator|=(const self &rhs);
   inline self &operator^=(const self &rhs);
   inline self &operator<<=(const self &rhs);
