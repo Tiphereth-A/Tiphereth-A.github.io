@@ -405,7 +405,7 @@ $O(n)$
 
 > 树状数组 / 主席树 询问区间大于给定数的个数
 
-相当于对给定数组做 $O(n\log n)$ 次询问, 每次询问某段区间上小于给定数的个数, 可以参照 {% post_link namomo2022s1-week1#数数-hdu4417 数数 %}
+相当于对给定数组做 $O(n\log n)$ 次询问, 每次询问某段区间上小于给定数的个数, 可以参照 [数数](../namomo2022s1-week1/#数数-hdu4417)
 
 ### 复杂度
 
@@ -415,8 +415,6 @@ $O(n\log^2 n)$
 
 <details>
 <summary><font color='orange'>Show code</font></summary>
-
-<!-- {% icodeweb cpa_cpp title:Daimayuan_559 Daimayuan/559/0.cpp %} -->
 
 </details>
 
