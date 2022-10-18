@@ -8,6 +8,18 @@ tags:
   - 题解
   - 代码源
   - CCPC
+  - DP
+  - 树形DP
+  - 贪心
+  - 数据结构
+  - 堆
+  - 树状数组
+  - 可持久化线段树/主席树
+  - 图论
+  - 树
+  - DFS
+  - 数学
+  - 数论
 date: 2022-03-12 23:59:56
 ---
 
@@ -15,7 +27,7 @@ Namomo Spring Camp 2022 Div1 每日一题记录 (2022.03.12-2022.03.18)
 
 <!-- more -->
 
-## 连续子序列
+## 连续子序列 (CF977F)
 
 [题目链接](https://oj.daimayuan.top/problem/504)
 
@@ -55,14 +67,22 @@ Namomo Spring Camp 2022 Div1 每日一题记录 (2022.03.12-2022.03.18)
 
 ### 解题思路
 
->
+> 一维线性 DP
+
+设 $f(x)$ 为以 $x$ 结尾的最长连续子序列长度, 则
+
+$$f(x)=f(x-1)+1$$
 
 ### 复杂度
 
-### 代码参考
+$O(n\log n)$
+
+### 代码参考 (CF977F)
 
 <details>
 <summary><font color='orange'>Show code</font></summary>
+
+{% icodeweb cpa_cpp title:CodeForces_977F CodeForces/977F/0.cpp %}
 
 </details>
 
@@ -117,14 +137,24 @@ $0 \leq D_i,P_i \leq 1\times10^9$
 
 ### 解题思路
 
->
+> 堆 + 贪心
+
+首先按时间升序排序, 时间相同的按价值降序排序
+
+一个显然的贪心策略是尽量选截止时间短的, 要是当前的工作已经截止了就看插队的收益是否更优
+
+这个操作显然可以用小根堆实现
 
 ### 复杂度
+
+$O(n\log n)$
 
 ### 代码参考
 
 <details>
 <summary><font color='orange'>Show code</font></summary>
+
+{% icodeweb cpa_cpp title:Daimayuan_503 Daimayuan/503/0.cpp %}
 
 </details>
 
@@ -176,14 +206,24 @@ $0 \leq D_i,P_i \leq 1\times10^9$
 
 ### 解题思路
 
->
+> 树上 DFS
+
+显然三个结点构成三角果当且仅当任意一个结点均不在另外两个结点的最短路上
+
+所以我们只需枚举这三个点的 LCA 然后根据其各子树大小计算即可
+
+这里有一个枚举技巧: 我们可以让这三个点分别位于 "刚刚搜索过的子树", "之前搜索过的所有子树", "未搜索的所有子树" 这三部分中
 
 ### 复杂度
+
+$O(n)$
 
 ### 代码参考
 
 <details>
 <summary><font color='orange'>Show code</font></summary>
+
+{% icodeweb cpa_cpp title:Daimayuan_505 Daimayuan/505/0.cpp %}
 
 </details>
 
@@ -236,14 +276,26 @@ Polycarp 有一个长度为 $n$ 的数组 $a_1,a_2,...,a_n$ ($n$ 是偶数) . Po
 
 ### 解题思路
 
->
+> 数学
+
+建议先看 [弱化版](https://oj.daimayuan.top/problem/554)
+
+弱化版的做法就是求一下所有数与最小数差的 gcd
+
+本题思路类似: 我们枚举最小数, 记录所有大于和等于该数的 `a` 的个数
+
+若和当前枚举的最小数相等的数已经过半, 则直接输出 `-1`, 否则我们枚举差的所有因子并计数, 若某个因子出现次数+和最小数相等的数过半了, 则说明这个因子是可能的答案, 最后取个最大值即可
 
 ### 复杂度
+
+$O(n^2\max\{\sqrt{a_i}\log{a_i}\})$
 
 ### 代码参考
 
 <details>
 <summary><font color='orange'>Show code</font></summary>
+
+{% icodeweb cpa_cpp title:Daimayuan_555 Daimayuan/555/0.cpp %}
 
 </details>
 
@@ -257,7 +309,7 @@ Polycarp 有一个长度为 $n$ 的数组 $a_1,a_2,...,a_n$ ($n$ 是偶数) . Po
 
 换言之, 把路径化为一个长度为 $len$ 的序列 $G$, 对于序列的第 $2 \leq i \leq len$ 项, 要满足 $G_i = (G_{i - 1} + 1) \bmod 3$. 例如: $2, 0, 1, 2, 0$
 
-现在, 给出这棵三进制树, 你能帮她找到最长的满足条件的路径吗, 输出最长的路径长度
+现在, 给出这棵三进制树, 你能帮她找到最长的满足条件的路径吗, 输出最长的路径长度。
 
 ### 输入格式
 
@@ -297,14 +349,20 @@ Polycarp 有一个长度为 $n$ 的数组 $a_1,a_2,...,a_n$ ($n$ 是偶数) . Po
 
 ### 解题思路
 
->
+> 树形 DP
+
+思路挺显然的, 就是树形 DP 找一下前缀和后缀然后一拼就是了
 
 ### 复杂度
+
+$O(n)$
 
 ### 代码参考
 
 <details>
 <summary><font color='orange'>Show code</font></summary>
+
+{% icodeweb cpa_cpp title:Daimayuan_556 Daimayuan/556/0.cpp %}
 
 </details>
 
@@ -345,14 +403,20 @@ Polycarp 有一个长度为 $n$ 的数组 $a_1,a_2,...,a_n$ ($n$ 是偶数) . Po
 
 ### 解题思路
 
->
+> 树状数组 / 主席树 询问区间大于给定数的个数
+
+相当于对给定数组做 $O(n\log n)$ 次询问, 每次询问某段区间上小于给定数的个数, 可以参照 {% post_link namomo2022s1-week1#数数-hdu4417 数数 %}
 
 ### 复杂度
+
+$O(n\log^2 n)$
 
 ### 代码参考
 
 <details>
 <summary><font color='orange'>Show code</font></summary>
+
+<!-- {% icodeweb cpa_cpp title:Daimayuan_559 Daimayuan/559/0.cpp %} -->
 
 </details>
 
