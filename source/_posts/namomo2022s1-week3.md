@@ -416,8 +416,6 @@ $O(n\log^2 n)$
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-<!-- {% icodeweb cpa_cpp title:Daimayuan_559 Daimayuan/559/0.cpp %} -->
-
 </details>
 
 ## 约分 (CCPC Harbin 2021 D)
