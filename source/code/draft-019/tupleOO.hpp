@@ -19,19 +19,16 @@ constexpr auto apply2(BinOp &&f, Tuple &&lhs, Tuple &&rhs) {
     f, lhs, rhs, std::make_index_sequence<TPL_SIZE_(Tuple)>());
 }
 
-#define OO_TUPLE_(oper)                                                   \
-  template <class... Ts>                                                  \
-  constexpr auto operator oper(std::tuple<Ts...> const &lhs,              \
-                               std::tuple<Ts...> const &rhs) {            \
-    return apply2([](auto &&l, auto &&r) { return l oper r; }, lhs, rhs); \
-  }
-
-#define OO_TUPLE_EQ_(op)                                          \
-  OO_TUPLE_(op)                                                   \
-  template <class... Ts>                                          \
-  constexpr auto operator oper##=(std::tuple<Ts...> &lhs,         \
-                                  const std::tuple<Ts...> &rhs) { \
-    return lhs = lhs oper rhs;                                    \
+#define OO_TUPLE_EQ_(op)                                                \
+  template <class... Ts>                                                \
+  constexpr auto operator op(std::tuple<Ts...> const &lhs,              \
+                             std::tuple<Ts...> const &rhs) {            \
+    return apply2([](auto &&l, auto &&r) { return l op r; }, lhs, rhs); \
+  }                                                                     \
+  template <class... Ts>                                                \
+  constexpr auto operator oper##=(std::tuple<Ts...> &lhs,               \
+                                  const std::tuple<Ts...> &rhs) {       \
+    return lhs = lhs oper rhs;                                          \
   }
 
 OO_TUPLE_EQ_(+)
@@ -44,15 +41,8 @@ OO_TUPLE_EQ_(|)
 OO_TUPLE_EQ_(^)
 OO_TUPLE_EQ_(<<)
 OO_TUPLE_EQ_(>>)
-OO_TUPLE_(==)
-OO_TUPLE_(!=)
-OO_TUPLE_(<)
-OO_TUPLE_(<=)
-OO_TUPLE_(>)
-OO_TUPLE_(>=)
 
 #undef OO_TUPLE_EQ_
-#undef OO_TUPLE_
 #undef TPL_SIZE_
 
 #endif
