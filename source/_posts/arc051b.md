@@ -8,6 +8,7 @@ tags:
   - 题解
   - AtCoder
   - 数学
+  - 数论
   - 最大公约数
   - Fibonacci数列
 date: 2018-07-22 19:12:06
