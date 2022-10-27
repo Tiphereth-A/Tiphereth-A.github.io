@@ -96,8 +96,6 @@ date: 2021-03-07 18:11:53
 
 ## A - Weird Flecks, But OK
 
-### 原始题面
-
 <div style="width:25.00%" class="illustration">
   <img src="A-1.png" alt="">
 </div>
@@ -108,19 +106,19 @@ He wants to drill out the portion of the cube containing the flaws so that he ca
 
 Given the $(x,y,z)$ positions of the flaws, and treating the size of the flaws as negligible, what is the smallest diameter drill bit that can be used to remove the flaws in one operation??
 
-#### Input
+### Input
 
 The first line of input contains an integer $N$ denoting the number of flaws. $3≤N≤5000$
 
 This is followed by $N$ lines of input, each containing three real numbers in the range $-1000.0…1000.0$, denoting the $(x,y,z)$ coordinates of a single flaw. Each number contains at most $6$ digits following a decimal point. The decimal point may be omitted if all succeeding digits are zero
 
-#### Output
+### Output
 
 Print the diameter of the smallest drill bit that would remove all the flaws
 
 The answer is considered correct if the absolute or relative error is less than $10^{-4}$
 
-#### Sample Input 1
+### Sample Input 1
 
 ```input1
 3
@@ -129,13 +127,13 @@ The answer is considered correct if the absolute or relative error is less than 
 0.0 1.0 -0.2
 ```
 
-#### Sample Output 1
+### Sample Output 1
 
 ```output1
 2.0000000000
 ```
 
-#### Sample Input 2
+### Sample Input 2
 
 ```input2
 5
@@ -146,13 +144,13 @@ The answer is considered correct if the absolute or relative error is less than 
 0.2 0.5 0.5
 ```
 
-#### Sample Output 2
+### Sample Output 2
 
 ```output2
 2.0000000000
 ```
 
-#### Sample Input 3
+### Sample Input 3
 
 ```input3
 8
@@ -166,7 +164,7 @@ The answer is considered correct if the absolute or relative error is less than 
 456.05 -499.715 -561.329
 ```
 
-#### Sample Output 3
+### Sample Output 3
 
 ```output3
 49.9998293198
@@ -184,23 +182,21 @@ The answer is considered correct if the absolute or relative error is less than 
 
 ## B - Code Names
 
-### 原始题面
-
 <div style="width:30.00%" class="illustration">
   <img src="B-1.png" alt="">
 </div>
 
 You are given $W$, a set of $N$ words that are anagrams of each other. There are no duplicate letters in any word. A set of words $S⊆W$ is called "swap-free" if there is no way to turn a word $x∈S$ into another word $y∈S$ by swapping only a single pair of (not necessarily adjacent) letters in $x$. Find the size of the largest swap-free set $S$ chosen from the given set $W$
 
-#### Input
+### Input
 
 The first line of input contains an integer $N (1≤N≤500)$. Following that are $N$ lines each with a single word. Every word contains only lowercase English letters and no duplicate letters. All $N$ words are unique, have at least one letter, and every word is an anagram of every other word
 
-#### Output
+### Output
 
 Output the size of the largest swap-free set
 
-#### Sample Input 1
+### Sample Input 1
 
 ```input1
 6
@@ -212,13 +208,13 @@ bac
 bca
 ```
 
-#### Sample Output 1
+### Sample Output 1
 
 ```output1
 3
 ```
 
-#### Sample Input 2
+### Sample Input 2
 
 ```input2
 11
@@ -235,13 +231,13 @@ stelar
 talers
 ```
 
-#### Sample Output 2
+### Sample Output 2
 
 ```output2
 8
 ```
 
-#### Sample Input 3
+### Sample Input 3
 
 ```input3
 6
@@ -253,7 +249,7 @@ sate
 teas
 ```
 
-#### Sample Output 3
+### Sample Output 3
 
 ```output3
 4
@@ -280,8 +276,6 @@ teas
 
 ## C - New Maths
 
-### 原始题面
-
 <div style="width:30.00%" class="illustration">
   <img src="C-1.png" alt="">
 </div>
@@ -301,57 +295,57 @@ where any $a_i$ or $b_j$ is considered zero if $i>m$ or $j>n$. For example, $9�
 
 Given $N$, find the smallest positive integer $a$ such that $a⊗a=N$
 
-#### Input
+### Input
 
 The input consists of a single line with a positive integer $N$, with at most $25$ digits and no leading zeros
 
-#### Output
+### Output
 
 Print, on a single line, the least positive number a such that $a⊗a=N$. If there is no such $a$, print `-1` instead
 
-#### Sample Input 1
+### Sample Input 1
 
 ```input1
 6
 ```
 
-#### Sample Output 1
+### Sample Output 1
 
 ```output1
 4
 ```
 
-#### Sample Input 2
+### Sample Input 2
 
 ```input2
 149
 ```
 
-#### Sample Output 2
+### Sample Output 2
 
 ```output2
 17
 ```
 
-#### Sample Input 3
+### Sample Input 3
 
 ```input3
 123476544
 ```
 
-#### Sample Output 3
+### Sample Output 3
 
 ```output3
 11112
 ```
 
-#### Sample Input 4
+### Sample Input 4
 
 ```input4
 15
 ```
 
-#### Sample Output 4
+### Sample Output 4
 
 ```output4
 -1
@@ -481,8 +475,6 @@ $$...$$
 
 ## D - Some Sum
 
-### 原始题面
-
 <div style="width:50.00%" class="illustration">
   <img src="D-1.png" alt="">
   <div class="description">
@@ -494,33 +486,33 @@ Your friend has secretly picked $N$ consecutive positive integers between $1$ an
 
 If the sum must be even, output `Even`. If the sum must be odd, output `Odd`. If the sum could be even or could be odd, output `Either`
 
-#### Input
+### Input
 
 The input is a single integer $N$ with $1≤N≤10$
 
-#### Output
+### Output
 
 Output a single word. The word should be `Even`, `Odd`, or `Either`, according to the rules given earlier
 
-#### Sample Input 1
+### Sample Input 1
 
 ```input1
 1
 ```
 
-#### Sample Output 1
+### Sample Output 1
 
 ```output1
 Either
 ```
 
-#### Sample Input 2
+### Sample Input 2
 
 ```input2
 2
 ```
 
-#### Sample Output 2
+### Sample Output 2
 
 ```output2
 Odd
@@ -544,8 +536,6 @@ Odd
 
 ## E - Early Orders
 
-### 原始题面
-
 <div style="width:30.00%" class="illustration">
   <img src="E-1.png" alt="">
 </div>
@@ -554,15 +544,15 @@ You are given a list of integers $x_1,x_2,…,x_n$ and a number $k$. It is guara
 
 Find the lexicographically smallest subsequence of $x$ that contains each integer from $1$ to $k$ exactly once
 
-#### Input
+### Input
 
 The first line contains two integers $n$ and $k$, with $1≤k≤n≤200000$. The following $n$ lines each contain an integer $x_i$ with $1≤x_i≤k$
 
-#### Output
+### Output
 
 Write out on one line, separated by spaces, the lexicographically smallest subsequence of $x$ that has each integer from $1$ to $k$ exactly once
 
-#### Sample Input 1
+### Sample Input 1
 
 ```input1
 6 3
@@ -574,13 +564,13 @@ Write out on one line, separated by spaces, the lexicographically smallest subse
 3
 ```
 
-#### Sample Output 1
+### Sample Output 1
 
 ```output1
 2 1 3
 ```
 
-#### Sample Input 2
+### Sample Input 2
 
 ```input2
 10 5
@@ -596,7 +586,7 @@ Write out on one line, separated by spaces, the lexicographically smallest subse
 5
 ```
 
-#### Sample Output 2
+### Sample Output 2
 
 ```output2
 3 2 1 4 5
@@ -616,8 +606,6 @@ Write out on one line, separated by spaces, the lexicographically smallest subse
 
 ## F - Pulling Their Weight
 
-### 原始题面
-
 <div style="width:30.00%" class="illustration"><img src="F-1.jpg" alt="">
   <div class="description">
     <a href="https://en.wikipedia.org/wiki/File:American_bison_k5680-1.jpg">Buffalo</a>, <a href="https://commons.wikimedia.org/wiki/File:Water_Vole_(6038169781).jpg">
@@ -631,15 +619,15 @@ Last week he had $2$ buffalo, $37$ voles and a schnauzer. Unfortunately, both bu
 
 To prevent such accidents in the future, Santa needs to divide the animals for a given trip into two groups such that the sum of the weights of all animals in one group equals the sum of the weights of all animals in the other. To make the hitching process efficient, Santa is seeking an integer target weight $t$ such that all animals that are lighter than $t$ go in one group and those heavier than $t$ go into the other. If there are multiple such $t$, he wants the smallest one. There's one small wrinkle: what should be done if there some animals have weight exactly equal to $t$? Santa solves the problem this way: if there are an even number of such animals, he divides them equally among the two groups (thus distributing the weight evenly). But if there are an odd number of such animals, then one of those animals is sent to work with the elves to make toys (it is not put in either group), and the remaining (now an even number) are divided evenly among the two groups
 
-#### Input
+### Input
 
 Input describes a list of animals' weights. The first line contains an integer $m (2≤m≤10^5$), indicating the number of animals. The next $m$ lines each have a positive integer. These are the weights of the animals (in ounces). Animals weighing more than $20000$ ounces are too big to pull the sleigh so no given weight exceeds this maximum
 
-#### Output
+### Output
 
 Output the smallest integer target weight $t$, as described above. It's guaranteed that it is possible to find such an integer
 
-#### Sample Input 1
+### Sample Input 1
 
 ```input1
 4
@@ -649,13 +637,13 @@ Output the smallest integer target weight $t$, as described above. It's guarante
 2
 ```
 
-#### Sample Output 1
+### Sample Output 1
 
 ```output1
 4
 ```
 
-#### Sample Input 2
+### Sample Input 2
 
 ```input2
 4
@@ -665,13 +653,13 @@ Output the smallest integer target weight $t$, as described above. It's guarante
 10
 ```
 
-#### Sample Output 2
+### Sample Output 2
 
 ```output2
 10
 ```
 
-#### Sample Input 3
+### Sample Input 3
 
 ```input3
 2
@@ -679,7 +667,7 @@ Output the smallest integer target weight $t$, as described above. It's guarante
 99
 ```
 
-#### Sample Output 3
+### Sample Output 3
 
 ```output3
 99
@@ -705,8 +693,6 @@ $O(\max\{n,A\})$
 
 ## G - Birthday Paradox
 
-### 原始题面
-
 <div style="width:40.00%" class="illustration">
   <img src="G-1.png" alt="">
   <div class="description">
@@ -727,41 +713,41 @@ Of course, these distributions have different probabilities of occurring
 
 Your job is to calculate this probability for a given distribution of people sharing birthdays. That is, if there are $P$ people in a group, how probable is the given distribution of shared birthdays (among all possible distributions for $P$ people chosen uniformly at random)?
 
-#### Input
+### Input
 
 The first line gives a number $n$ where $1≤n≤365$. The second line contain integers $c_1$ through $c_n$, where $1≤c_i≤100$ for all $c_i$. The value $c_i$ represents the number of people who share a certain birthday (and whose birthday is distinct from the birthdays of everyone else in the group)
 
-#### Output
+### Output
 
 Compute the probability $b$ of observing a group of people with the given distribution of shared birthdays. Since b may be quite small, output instead $\log_{10}(b)$. Your submission's answer is considered correct if it has an absolute or relative error of at most $10^{-6}$ from the judge's answer
 
-#### Explanations
+### Explanations
 
 The first sample case shows $P=2$ people with distinct birthdays. The probability of this occurring is $b=364/365≈0.9972602740$, and $\log_{10}(b)≈-0.001191480807419$
 
 The second sample case represents the third example in the list given earlier with $P=10$ people. In this case, the probability is $b≈0.0000489086$, and $\log_{10}(b)≈-4.310614508857128$
 
-#### Sample Input 1
+### Sample Input 1
 
 ```input1
 2
 1 1
 ```
 
-#### Sample Output 1
+### Sample Output 1
 
 ```output1
 -0.001191480807419
 ```
 
-#### Sample Input 2
+### Sample Input 2
 
 ```input2
 7
 1 1 2 1 3 1 1
 ```
 
-#### Sample Output 2
+### Sample Output 2
 
 ```output2
 -4.310614508857128
@@ -802,8 +788,6 @@ $O(k)$
 
 ## H - On Average They're Purple
 
-### 原始题面
-
 <div style="width:30.00%" class="illustration">
   <img src="H-1.png" alt="">
 </div>
@@ -816,18 +800,18 @@ A path is a sequence of edges where each pair of consecutive edges have a node i
 
 After Alice colors the graph, Bob chooses a path that begins at node $1$ and ends at node $N$. He can choose any path on the graph, but he wants to minimize the number of color changes in the path. Alice wants to choose an edge coloring to maximize the number of color changes Bob must make. What is the maximum number of color changes she can force Bob to make, regardless of which path he chooses?
 
-#### Input
+### Input
 
 The first line contains two integer values $N$
 and $M$ with $2≤N≤100000$ and $1≤M≤100000$. The next $M$ lines contain two integers $a_i$ and $b_i$ indicating an undirected edge between nodes $a_i$ and $b_i$ ($1≤a_i,b_i≤N, ai≠bi$)
 
 All edges in the graph are unique
 
-#### Output
+### Output
 
 Output the maximum number of color changes Alice can force Bob to make on his route from node $1$ to node $N$
 
-#### Sample Input 1
+### Sample Input 1
 
 ```input1
 3 3
@@ -836,13 +820,13 @@ Output the maximum number of color changes Alice can force Bob to make on his ro
 2 3
 ```
 
-#### Sample Output 1
+### Sample Output 1
 
 ```output1
 0
 ```
 
-#### Sample Input 2
+### Sample Input 2
 
 ```input2
 7 8
@@ -856,7 +840,7 @@ Output the maximum number of color changes Alice can force Bob to make on his ro
 6 7
 ```
 
-#### Sample Output 2
+### Sample Output 2
 
 ```output2
 3
@@ -877,8 +861,6 @@ Output the maximum number of color changes Alice can force Bob to make on his ro
 直接用 BFS 求最短路就行, 下面给出的是用 Dijkstra 求的
 
 ## I - Full Depth Morning Show
-
-### 原始题面
 
 <div style="width:30.00%" class="illustration">
   <img src="I-1.png" alt="">
@@ -904,15 +886,15 @@ Each city in Treeland has its own tax on prizes: $t_i$. Let $d_{u,v}$ be the sum
 
 The shock jocks haven't quite thought through how much their prize is worth. They need to prepare a report to the radio executives, to summarize the expected costs. For each city that could win the prize, what is the total cost of purchasing all the tickets?
 
-#### Input
+### Input
 
 The first line of input is a single integer $n$ $(1≤n≤100000)$. The next line has $n$ space-separated integers $t_i$ $(1≤t_i≤1000)$, the tax in each city. The following $n-1$ lines each have $3$ integers, $u_i$,$v_i$,$w_i$, meaning the $i$th road connects cities $u_i$ and $v_i$ $(1≤u_i,v_i≤n)$, with a toll of $w_i$ $(1≤w_i≤1000)$
 
-#### Output
+### Output
 
 Output $n$ lines. On the $i$th line, output a single integer: the cost of purchasing tickets if city $i$ wins the contest
 
-#### Sample Input 1
+### Sample Input 1
 
 ```input1
 5
@@ -923,7 +905,7 @@ Output $n$ lines. On the $i$th line, output a single integer: the cost of purcha
 5 2 6
 ```
 
-#### Sample Output 1
+### Sample Output 1
 
 ```output1
 130
@@ -933,7 +915,7 @@ Output $n$ lines. On the $i$th line, output a single integer: the cost of purcha
 171
 ```
 
-#### Sample Input 2
+### Sample Input 2
 
 ```input2
 6
@@ -945,7 +927,7 @@ Output $n$ lines. On the $i$th line, output a single integer: the cost of purcha
 6 4 2
 ```
 
-#### Sample Output 2
+### Sample Output 2
 
 ```output2
 209
@@ -976,8 +958,6 @@ $$b_{u'}=b_u+\left(\sum_{v}t_v-2\sum_{v\in S(u')}t_v\right)d_{u,u'}$$
 
 ## J - This Ain't Your Grandpa's Checkerboard
 
-### 原始题面
-
 <div style="width:20.00%" class="illustration">
   <img src="J-1.png" alt="">
 </div>
@@ -990,16 +970,16 @@ You are given an $n$-by-$n$ grid where each square is colored either black or wh
 
 Given a grid, determine whether it is correct
 
-#### Input
+### Input
 
 The first line contains an integer $n$
 ($2≤n≤24$; $n$ is even). Each of the next $n$ lines contains a string of length $n$ consisting solely of the characters `B` and `W`, representing the colors of the grid squares
 
-#### Output
+### Output
 
 If the grid is correct, print the number $1$ on a single line. Otherwise, print the number $0$ on a single line
 
-#### Sample Input 1
+### Sample Input 1
 
 ```input1
 4
@@ -1009,13 +989,13 @@ BWWB
 BWBW
 ```
 
-#### Sample Output 1
+### Sample Output 1
 
 ```output1
 1
 ```
 
-#### Sample Input 2
+### Sample Input 2
 
 ```input2
 4
@@ -1025,13 +1005,13 @@ WBBW
 WBWW
 ```
 
-#### Sample Output 2
+### Sample Output 2
 
 ```output2
 0
 ```
 
-#### Sample Input 3
+### Sample Input 3
 
 ```input3
 6
@@ -1043,13 +1023,13 @@ BWWBBW
 WWBWBB
 ```
 
-#### Sample Output 3
+### Sample Output 3
 
 ```output3
 0
 ```
 
-#### Sample Input 4
+### Sample Input 4
 
 ```input4
 6
@@ -1061,7 +1041,7 @@ BWBBWW
 WBWWBB
 ```
 
-#### Sample Output 4
+### Sample Output 4
 
 ```output4
 1
@@ -1083,8 +1063,6 @@ WBWWBB
 
 ## K - Solar Energy
 
-### 原始题面
-
 <div style="width:30.00%" class="illustration">
   <img src="K-1.png" alt="">
 </div>
@@ -1096,15 +1074,15 @@ $$\max(0,T_i-s_i⋅\operatorname{dist}(a_i,a))$$
 
 from star $i$, where $\operatorname{dist}(a,b)$ is the minimum radians needed to go from angle $a$ to $b$. The distance that the spaceship can travel is simply the sum of the distances that each star contributes. Find the maximum distance $T$ that the starship can travel
 
-#### Input
+### Input
 
 The first line contains the value $N$, $1≤N≤10^5$. Following this are $N$ lines each containing three real numbers $T_i$, $s_i$, and $a_i$, with $0<Ti≤1000$, $0≤s_i≤100$, and $0≤a_i<2π$. All real numbers in the input have at most $6$ digits after the decimal point
 
-#### Output
+### Output
 
 On a single line output the maximum distance the spacecraft can travel. Your answer is considered correct if it has an absolute or relative error of at most $10^{-6}$
 
-#### Sample Input 1
+### Sample Input 1
 
 ```input1
 2
@@ -1112,13 +1090,13 @@ On a single line output the maximum distance the spacecraft can travel. Your ans
 100 1 1.5
 ```
 
-#### Sample Output 1
+### Sample Output 1
 
 ```output1
 199.500000
 ```
 
-#### Sample Input 2
+### Sample Input 2
 
 ```input2
 4
@@ -1128,7 +1106,7 @@ On a single line output the maximum distance the spacecraft can travel. Your ans
 10 2 3
 ```
 
-#### Sample Output 2
+### Sample Output 2
 
 ```output2
 405.500000

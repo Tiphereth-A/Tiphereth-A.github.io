@@ -62,9 +62,7 @@ MD 绝了
 
 ## A - 披荆斩棘
 
-### 原始题面
-
-#### Description
+### Description
 
 早安, ACMer
 
@@ -80,19 +78,19 @@ MD 绝了
 
 你已经是一名成熟的 ACMer, 在算法比赛中披荆斩棘, 留下属于你的足迹吧！
 
-#### Input
+### Input
 
 无
 
-#### Output
+### Output
 
 ACduck
 
-#### Sample Input 1
+### Sample Input 1
 
 无
 
-#### Sample Output 1
+### Sample Output 1
 
 ```output1
 ACduck
@@ -100,35 +98,33 @@ ACduck
 
 ## B - 帅的研究
 
-### 原始题面
-
-#### Description
+### Description
 
 帅最近在研究统计, 嗯, 主要就是看看室友们的消费金额他把室友们每天的消费金额如实的统计在小本本上, 现在他看着室友们的消费记录, 他决定来整个活. 他将室友的消费记录分成很多段, 使得每段恰好有 $k$ 天($k>0$),如果这个室友消费记录统计的天数不是 $k$ 的倍数, 最后一块时间长度小于 $k$ 的时间段就被丢弃了. 帅想知道, 选择什么数字 $k$ 可以得到最多的不同的段. 注意这里的段是可以反转的, 即, 子串 `1,2,3` 和 `3,2,1` 被认为是一样的
 
-#### Input
+### Input
 
 第一行一个正整数 $n$, 表示时间的天数. 第二行 $n$ 个空格隔开的正整数 $a_1,a_2,...a_n$, 描述每天的消费金额
 
-#### Output
+### Output
 
 第一行两个空格隔开的正整数, 第一个表示能获得的最大不同的段的个数, 第二个表示能获得最大值的 $k$ 的个数. 第二行若干空格隔开的正整数 $k$, 表示所有能够取得最大值的 $k$, 请将 $k$ 按照从小到大的顺序输出
 
-#### Sample Input 1
+### Sample Input 1
 
 ```input1
 21
 1 1 1 2 2 2 3 3 3 1 2 3 3 1 2 2 1 3 3 2 1
 ```
 
-#### Sample Output 1
+### Sample Output 1
 
 ```output1
 6 1
 2
 ```
 
-#### Hint
+### Hint
 
 对于 $100\%$ 的数据, $1\leq n\leq 2*10^5$, 且对于所有的 $1\leq i \leq n$, 有 $1 \leq a_i \leq n$
 
@@ -179,23 +175,21 @@ ACduck
 
 ## C - 聚会
 
-### 原始题面
-
-#### Description
+### Description
 
 帅打算举行一次聚会. 他自然想要这次聚会成功进行. 此外, 帅确信只要邀请的嘉宾都互相认识就可以了. 他目前在试着写一份邀请名单. 帅有 $n$ 个朋友, 这里 $n$ 可以被 $3$ 整除. 幸运的是, 帅的朋友大部分都互相认识. 并且帅想起了一次他参加的聚会, 那次聚会有 $\frac{2}{3}n$​ 个他的朋友参加, 并且他们都互相认识. 不幸的是, 关于那次聚会的具体细节他不记得了... 总的来说, 他忘了是他的哪些朋友参加了. 帅认为他没有义务举办一个大型聚会, 但他想邀请至少 $\frac{n}{3}$​ 个他的朋友. 他不知道邀请谁, 所以请你帮他
 
-#### Input
+### Input
 
 输入的第一行包含两个整数 $n, m$, 表示帅的朋友数和互相认识的朋友对数
 
 接下来 $m$ 行, 每行两个整数 $a_j,b_j$, 表示朋友 $a_j,b_j$​ 互相认识. 每一对数最多在输入中出现一次
 
-#### Output
+### Output
 
 按编号升序, 输出一行 $\frac{n}{3}$​​ 个数, 表示帅要邀请的朋友编号. 如果有多组解, 输出任意一组均可
 
-#### Sample Input 1
+### Sample Input 1
 
 ```input1
 6 10
@@ -211,13 +205,13 @@ ACduck
 3 6
 ```
 
-#### Sample Output 1
+### Sample Output 1
 
 ```output1
 2 4
 ```
 
-#### Hint
+### Hint
 
 对于全部数据, $3\leq n\leq 3000,~{ \frac{2}{3}n(\frac{2}{3}n-1)\over2}\leq m\leq\frac{n(n-1)}{2},~1\leq a_i<b_i\leq n$
 
@@ -336,23 +330,21 @@ ACduck
 
 ## D - 初春饰利与完美图
 
-### 原始题面
-
-#### Description
+### Description
 
 初春饰利喜欢画画. 作为学园都市的最强黑客, 她的数据结构学的很好. 她经常画大量的有向图和无向图. 最近她定义了一个新的图类型——完美图. 如果一个无向图的所有点都只被 $1$ 个环经过且只被经过 $1$ 遍, 那么这个图就可以被称为完美图
 
 她已经画了图的点和部分边. 但是这并没有结束. 怎么通过添加边使这个图变成完美图才是最重要的. 初春非常严格, 她不仅要求你的答案是数量最少, 并且是字典序最小的边集
 
-#### Input
+### Input
 
 第一行包含两个整数 $n$ 和 $m$($1 \leq n \leq 50, 0 \leq m \leq 2500$), 代表总共的点和初春已经画的边数. 接下来 $m$ 行, 每行有两个整数 $x_i$​ 和 $y_i$($1 \leq x_i,y_i \leq n$), 代表初春已经画的边. 初春的初始图可能包括重边和自环
 
-#### Output
+### Output
 
 第一行输出`YES`或者`NO`: 代表能不能构建一个完美图. 如果能输出`YES`, 并且在接下来一行输出一个整数 $k$, 代表了需要添加的边的数量. 再在接下来 $k$ 行, 每行输出两个整数 $x_j$​ 和 $y_j$​, 代表这些边. 结果可能包含重边和自环, $k$ 可能等于 $0$
 
-#### Sample Input 1
+### Sample Input 1
 
 ```input1
 3 2
@@ -360,7 +352,7 @@ ACduck
 2 3
 ```
 
-#### Sample Output 1
+### Sample Output 1
 
 ```output1
 YES
@@ -368,13 +360,13 @@ YES
 1 3
 ```
 
-#### Sample Input 2
+### Sample Input 2
 
 ```input2
 2 0
 ```
 
-#### Sample Output 2
+### Sample Output 2
 
 ```output2
 YES
@@ -383,7 +375,7 @@ YES
 1 2
 ```
 
-#### Hint
+### Hint
 
 边集 $\def\enum#1{(x_{ #1},y_{ #1})}\enum{1},\enum{2},...,\enum{n},~x_i\leq y_i$ 字典序小于边集 $\def\enum#1{(u_{ #1},v_{ #1})}\enum{1},\enum{2},...,\enum{n},~u_i\leq v_i$​ 的条件是序列 $\def\enum#1{x_{ #1},y_{ #1}}\enum{1},\enum{2},...,\enum{n}$ 字典序小于序列 $\def\enum#1{u_{ #1},v_{ #1}}\enum{1},\enum{2},...,\enum{n}$
 
@@ -402,16 +394,14 @@ YES
 
 ## E - 御坂妹妹的芯片
 
-### 原始题面
-
-#### Description
+### Description
 
 一方通行把许多御坂美琴的克隆人杀了并且获得许多芯片(数量为 $n$). 一方通行把芯片编号从 $1$ 到 $n$. 摧毁每个芯片需要花 $v_i$​ 的资源. 一方想要考考你, 他会问以下两类问题:
 
 1. 他会告诉你两个整数, $l$ 和 $r$($1 \leq l \leq r \leq n$). 你必须告诉他 $\sum_{i=l}^r v_i$
 1. 让 $u_i$​ 成为第 $i$ 少花费资源的芯片(指在非降序的排序下, 第 $i$ 个芯片). 这次他依然告诉你两个整数, $l$ 和 $r$($1 \leq l \leq r \leq n$). 你必须告诉他 $\sum_{i=1}^r u_i$​​
 
-#### Input
+### Input
 
 第一行包含一个整数 $n(1 \leq n \leq 10^5)$
 
@@ -419,11 +409,11 @@ YES
 
 第三行包含一个整数 $m(1 \leq m \leq 10^5)$, 代表一方的问题个数. 接下来 $m$ 行, 每行包含三个整数 $\textrm{type}$, $l$ 和 $r$($1\leq l\leq r\leq n;~1\leq \textrm{type}\leq 2$), 如果 $\textrm{type}=1$ 你需要回复第一个问题, 如果 $\textrm{type}=2$ 你需要回复第二个问题
 
-#### Output
+### Output
 
 输出 $m$ 行. 每行包含一个整数, 代表对一方问题的答案
 
-#### Sample Input 1
+### Sample Input 1
 
 ```input1
 6
@@ -434,7 +424,7 @@ YES
 1 1 6
 ```
 
-#### Sample Output 1
+### Sample Output 1
 
 ```output1
 24
@@ -455,9 +445,7 @@ YES
 
 ## F - 上条当麻与考试
 
-### 原始题面
-
-#### Description
+### Description
 
 上条当麻今天很早就来到学校, 因为他有一场数学考试, 没错学园都市也得学数学
 
@@ -473,43 +461,43 @@ YES
 
 请你计算正确答案给当麻参考参考, 这个数字会很大, 所以最后结果请模 $10^9+7$
 
-#### Input
+### Input
 
 第一行输入一个整数 $n(1 \leq n \leq 200000)$, 代表题目第一行的数字个数
 
 接下来一行输入 $n$ 个整数 $a_1,a_2,a_3,...,a_n$($1 \leq a_i \leq 10^9$)
 
-#### Output
+### Output
 
 输出结果模 $10^9+7$ 的答案(非负余数)
 
-#### Sample Input 1
+### Sample Input 1
 
 ```input1
 5
 3 6 9 12 15
 ```
 
-#### Sample Output 1
+### Sample Output 1
 
 ```output1
 36
 ```
 
-#### Sample Input 2
+### Sample Input 2
 
 ```input2
 4
 3 7 5 2
 ```
 
-#### Sample Output 2
+### Sample Output 2
 
 ```output2
 1000000006
 ```
 
-#### Hint
+### Hint
 
 $$
 \global\def\add#1#2{\textcolor{00ff00}{\overset{\sf\bf{ #1+#2}}{\sf\bf{+}}}}
@@ -552,9 +540,7 @@ $$
 
 ## G - 常盘台中学
 
-### 原始题面
-
-#### Description
+### Description
 
 在学园都市常盘台高中, 学生有五种超能力等级从 $1$ 到 $5$, 学生权力被等级所量化
 
@@ -566,7 +552,7 @@ $$
 
 请问校长至少要多少枚炮姐硬币才能平衡 $\texttt{science}$ 侧和 $\texttt{magic}$ 侧？
 
-#### Input
+### Input
 
 第一行输入一个整数 $n(1 \leq n \leq 100)$, 代表了两侧的学生个数
 
@@ -574,11 +560,11 @@ $$
 
 第三行输入一串数字 $b_1,b_2,b_3...,b_n$($1 \leq b_i \leq 5$), 代表 $\texttt{magic}$ 侧的每位超能力等级
 
-#### Output
+### Output
 
 如果校长能平衡, 输出校长最少花费的炮姐硬币数量. 如果不能, 请输出 $-1$
 
-#### Sample Input 1
+### Sample Input 1
 
 ```input1
 4
@@ -586,13 +572,13 @@ $$
 5 5 4 5
 ```
 
-#### Sample Output 1
+### Sample Output 1
 
 ```output1
 1
 ```
 
-#### Sample Input 2
+### Sample Input 2
 
 ```input2
 1
@@ -600,7 +586,7 @@ $$
 3
 ```
 
-#### Sample Output 2
+### Sample Output 2
 
 ```output2
 -1
@@ -616,9 +602,7 @@ $$
 
 ## H - Run
 
-### 原始题面
-
-#### Description
+### Description
 
 Sports are definitely an integral part of the students' lives. In response to the school's call, the students decided to run in the morning. However, for various reasons, it was not practical to get up early to run every day, so Eric decided to run once a day. In other words, if Eric woke up early one day to go running, he would take $a-1$ day off, and then continue to run on day $a$, and so on
 
@@ -626,51 +610,51 @@ Eric's good friends, Delia and Agnes, were so inspired by Eric's commitment to e
 
 One morning, Eric, Delia and Agnes met during their early morning run, and they were very excited and encouraged each other to complete a perfect morning run together. For ease of presentation, let's count the day the three students met as day $0$. Assuming that the three students run the same route and time period each time, they want to know how many days will pass before they meet on the next run. Since none of them can count, they want you to tell them the answer
 
-#### Input
+### Input
 
 Enter a line containing three positive integers $a,b,c$, which means Eric runs every $a$, Delia runs every $b$ and Agnes runs every $c$ morning
 
-#### Output
+### Output
 
 The output consists of one line with a positive integer $x$, indicating that the three students will meet on day $x$ next time
 
-#### Sample Input 1
+### Sample Input 1
 
 ```input1
 2 3 5
 ```
 
-#### Sample Output 1
+### Sample Output 1
 
 ```output1
 30
 ```
 
-#### Sample Input 2
+### Sample Input 2
 
 ```input2
 3 4 6
 ```
 
-#### Sample Output 2
+### Sample Output 2
 
 ```output2
 12
 ```
 
-#### Sample Input 3
+### Sample Input 3
 
 ```input3
 10 100 1000
 ```
 
-#### Sample Output 3
+### Sample Output 3
 
 ```output3
 1000
 ```
 
-#### Hint
+### Hint
 
 $1\leq a,b,c\leq 100000$
 
@@ -692,9 +676,7 @@ $1\leq a,b,c\leq 100000$
 
 ## I - 小 P 的烦恼
 
-### 原始题面
-
-#### Description
+### Description
 
 小 P 在 A 城的首都拥有一家商店. 最近在首都的犯罪活动有所增加, 因此小 P 正在考虑在其商店的仓库中建立更好的安全性
 
@@ -712,30 +694,30 @@ $(x_1, y_1)$ 中:
 
 小 P 想知道合适计划的数量. 由于它可能非常大, 因此必须模 $10^7$ 输出
 
-#### Input
+### Input
 
 第一行包含两个数字 $n$ 和 $m$——仓库的长度和宽度($1 \leq n, m \leq250, 1\leq nm\leq 250$)
 
 接着是 $n$ 行, 第 $i$ 行包含一个由 $m$ 个字符组成的字符串——代表仓库的矩阵的第 $i$ 行. 每个字符要么是 `.` , 要么是 `x`
 
-#### Output
+### Output
 
 对于每组测试数据, 一行输出一个整数代表答案
 
-#### Sample Input 1
+### Sample Input 1
 
 ```input1
 1 3
 .x.
 ```
 
-#### Sample Output 1
+### Sample Output 1
 
 ```output1
 3
 ```
 
-#### Sample Input 2
+### Sample Input 2
 
 ```input2
 2 2
@@ -743,7 +725,7 @@ $(x_1, y_1)$ 中:
 ..
 ```
 
-#### Sample Output 2
+### Sample Output 2
 
 ```output2
 10
@@ -764,45 +746,43 @@ $(x_1, y_1)$ 中:
 
 ## J - 领地扩充
 
-### 原始题面
-
-#### Description
+### Description
 
 Eric 喜欢一款游戏, 游戏是在一个长方形的场地上玩. 在游戏过程中, Eric 可以扩充他的领地, 每一次(个)扩充都会将其中一个领地的大小扩大一定的倍数. 形式上, 有 $n$ 次(个)扩充, 其中第 $i$ 次(个)扩充将宽度或长度(由 Eric 选择)乘以 $a_i$​. 每从次(个)扩充不能使用一次以上, 扩充可以以任何顺序使用
 
 现在 Eric 的领地的大小为 $h\times w$. 他想把它放大, 以便可以在上面放置一个大小为 $a\times b$ 的矩形(沿宽或沿长, 边与场边平行). 求达到 Eric 的目标所需的最小扩充数
 
-#### Input
+### Input
 
 第一行包含五个整数 $a,b,h,w$ 和 $n$($1\leq a,b,h,w,n\leq 100000$)——需要放置的矩形的大小, 领地的初始大小和可扩充次数
 
 第二行包含 $n$ 个整数 $a_1, a_2, ..., a_n$($2\leq a_i\leq 100000$), 其中 $a_i$​ 等于应用第 $i$ 次扩充时 $a$ 面乘以的整数
 
-#### Output
+### Output
 
 打印达到 Eric 目标所需的最小扩充数. 如果不可能将矩形放置在所有延长线的区域上, 则打印 $-1$; 如果可以将矩形放置在初始区域上, 则打印 $0$
 
-#### Sample Input 1
+### Sample Input 1
 
 ```input1
 3 3 2 4 4
 2 5 4 10
 ```
 
-#### Sample Output 1
+### Sample Output 1
 
 ```output1
 1
 ```
 
-#### Sample Input 2
+### Sample Input 2
 
 ```input2
 3 4 1 1 3
 2 3 2
 ```
 
-#### Sample Output 2
+### Sample Output 2
 
 ```output2
 3
@@ -827,41 +807,39 @@ Eric 喜欢一款游戏, 游戏是在一个长方形的场地上玩. 在游戏�
 
 ## K - Tate 的魔法
 
-### 原始题面
-
-#### Description
+### Description
 
 Tate 对魔法非常感兴趣, 他可以通过超自然力量的干预和解释了任何奇怪而怪异的现象. 但是谁能想到, 即使按固定的数字排列, Tate 也能看到美丽而神奇的东西. Tate 偶然拿到了一块纸, 上面写着一系列数字. 他立即发现这组数字不是随机的. 经过一系列研究的结果, Tate 得出了一个奇妙的属性, 这个神奇的数组应该具有这个性质: 如果这个数组中的最大值和最小值一样的, 则说明这组子数组是有魔力的. Tate 决定与你分享这个杰出的发现, 但他请求你的帮助. 所以你必须完成他的工作. 你所要做的就是数写在纸上的原始数字数组有多少个神奇的子数组. 子数组定义为连续元素的非空序列
 
-#### Input
+### Input
 
 输入数据的第一行包含一个整数 $n$($1 \leq n \leq 10^5$). 第二行 $n$ 个数代表原始数组中的值 $a_1,a_2,....a_n$($-10^9 \leq a_i \leq 10^9$)
 
-#### Output
+### Output
 
 输出为一行: 有多少个有魔力的子数组
 
-#### Sample Input 1
+### Sample Input 1
 
 ```input1
 4
 2 1 1 4
 ```
 
-#### Sample Output 1
+### Sample Output 1
 
 ```output1
 5
 ```
 
-#### Sample Input 2
+### Sample Input 2
 
 ```input2
 5
 -2 -2 -2 0 1
 ```
 
-#### Sample Output 2
+### Sample Output 2
 
 ```output2
 8
@@ -879,9 +857,7 @@ $O(n)$ 直接求
 
 ## L - 藤本树与树
 
-### 原始题面
-
-#### Description
+### Description
 
 镰池和马和藤本树受够了学校无聊的时光, 于是他们决定玩一场游戏
 
@@ -891,7 +867,7 @@ $O(n)$ 直接求
 
 很快这个游戏又变得无聊起来, 于是他们又想了个新玩法, 对于所有可能的 $u$ 和 $v$, 计算它们的所有函数 $f$ 的期望值. 让这个值以一个不可约分数 $P\over Q$​ 来表示. 为了更有趣一点, 计算 $PQ^{-1}\pmod{10^9+7}$ 的值
 
-#### Input
+### Input
 
 第一行包含一个整数 $n$($2 \leq n \leq 2\times 10^5$), 代表树的点数
 
@@ -899,11 +875,11 @@ $O(n)$ 直接求
 
 接下来 $n-1$ 行包含 $2$ 个整数 $x$ 和 $y$($1\leq x,y\leq n$), 代表这颗树的连边
 
-#### Output
+### Output
 
 输出一个值等于 $PQ^{-1}\pmod{10^9+7}$
 
-#### Sample Input 1
+### Sample Input 1
 
 ```input1
 3
@@ -912,13 +888,13 @@ $O(n)$ 直接求
 2 3
 ```
 
-#### Sample Output 1
+### Sample Output 1
 
 ```output1
 333333338
 ```
 
-#### Sample Input 2
+### Sample Input 2
 
 ```input2
 5
@@ -929,13 +905,13 @@ $O(n)$ 直接求
 2 5
 ```
 
-#### Sample Output 2
+### Sample Output 2
 
 ```output2
 8
 ```
 
-#### Hint
+### Hint
 
 欧拉函数是小于或等于的正整数中与互质的数的数目
 
@@ -971,9 +947,7 @@ $O(n)$ 直接求
 
 ## M - 作曲家
 
-### 原始题面
-
-#### Description
+### Description
 
 Jasmine 是一位作曲家, 最近她录制了两首非常受欢迎的歌曲. 现在她有很多粉丝在等着她的新歌. 这次 Jasmine 想为她的歌曲组成四个旋律. Jasmine 有一张纸, 上面写着 $n$ 个数. 她想取 $4$ 个这样的非空无交集的子序列使得它们都能组成旋律且长度之和是最大的
 
@@ -983,35 +957,35 @@ Jasmine 是一位作曲家, 最近她录制了两首非常受欢迎的歌曲. �
 
 你应该写一个程序, 计算四个非空的不相交的子序列的最大长度之和, 使它们全部形成一个旋律
 
-#### Input
+### Input
 
 第一行包含一个整数 $n$($4 \leq n \leq 3000$)第二行包含 $n$ 个整数 $a_1,a_2,....a_n$​($1 \leq a_i \leq 10^5$)——写在纸上的笔记
 
-#### Output
+### Output
 
 输出这四个非空, 非相交的子序列的最大长度和, 使它们全部组成旋律
 
-#### Sample Input 1
+### Sample Input 1
 
 ```input1
 4
 1 3 5 7
 ```
 
-#### Sample Output 1
+### Sample Output 1
 
 ```output1
 4
 ```
 
-#### Sample Input 2
+### Sample Input 2
 
 ```input2
 4
 1 1 1 1
 ```
 
-#### Sample Output 2
+### Sample Output 2
 
 ```output2
 4

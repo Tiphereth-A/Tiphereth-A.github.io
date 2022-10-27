@@ -31,8 +31,6 @@ date: 2020-08-18 14:51:12
 
 ## A - Omkar and Password
 
-### 原始题面
-
 Lord Omkar has permitted you to enter the Holy Church of Omkar! To test your worthiness, Omkar gives you a password which you must interpret!
 
 A password is an array $a$ of $n$ positive integers. You apply the following operation to the array: pick any two adjacent numbers that are not equal to each other and replace them with their sum. Formally, choose an index $i$ such that $1≤i<n$ and $a_i≠a_i+1$, delete both $a_i$ and $a_i+1$ from the array and put $a_i+a_i+1$ in their place
@@ -41,7 +39,7 @@ For example, for array $[7,4,3,7]$ you can choose $i=2$ and the array will becom
 
 Notice that one operation will decrease the size of the password by $1$. What is the shortest possible length of the password after some number (possibly $0$) of operations?
 
-#### Input
+### Input
 
 Each test contains multiple test cases. The first line contains the number of test cases $t$($1≤t≤100$). Description of the test cases follows
 
@@ -51,13 +49,13 @@ The second line of each test case contains $n$ integers $a_1,a_2,…,a_n$ ($1≤
 
 The sum of $n$ over all test cases will not exceed $2⋅10^5$
 
-#### Output
+### Output
 
 For each password, print one integer: the shortest possible length of the password after some number of operations
 
-#### Example
+### Example
 
-##### Input
+#### Input
 
 ```input1
 2
@@ -67,14 +65,14 @@ For each password, print one integer: the shortest possible length of the passwo
 420 420
 ```
 
-##### Output
+#### Output
 
 ```output1
 1
 2
 ```
 
-#### Note
+### Note
 
 In the first test case, you can do the following to achieve a length of $1$:
 
@@ -109,8 +107,6 @@ In the second test case, you can't perform any operations because there is no va
 
 ## B - Omkar and Infinity Clock
 
-### 原始题面
-
 Being stuck at home, Ray became extremely bored. To pass time, he asks Lord Omkar to use his time bending power: Infinity Clock! However, Lord Omkar will only listen to mortals who can solve the following problem:
 
 You are given an array $a$ of $n$ integers. You are also given an integer $k$. Lord Omkar wants you to do $k$ operations with this array
@@ -124,7 +120,7 @@ The goal is to predict the contents in the array after $k$
 
 operations. Please help Ray determine what the final sequence will look like!
 
-#### Input
+### Input
 
 Each test contains multiple test cases. The first line contains the number of cases $t$($1≤t≤100$). Description of the test cases follows
 
@@ -135,14 +131,14 @@ The second line of each test case contains $n$ integers $a_1,a_2,...,a_n$ ($-10^
 
 It is guaranteed that the sum of $n$ over all test cases does not exceed $2⋅10^5$
 
-#### Output
+### Output
 
 For each case, print the final version of array $a$
 after $k$ operations described above
 
-#### Example
+### Example
 
-##### Input
+#### Input
 
 ```input1
 3
@@ -154,7 +150,7 @@ after $k$ operations described above
 69
 ```
 
-##### Output
+#### Output
 
 ```output1
 391 0
@@ -162,7 +158,7 @@ after $k$ operations described above
 0
 ```
 
-#### Note
+### Note
 
 In the first test case the array changes as follows:
 
@@ -197,8 +193,6 @@ In the first test case the array changes as follows:
 
 ## C - Omkar and Waterslide
 
-### 原始题面
-
 Omkar is building a waterslide in his water park, and he needs your help to ensure that he does it as efficiently as possible
 
 Omkar currently has $n$ supports arranged in a line, the $i$-th of which has height $a_i$. Omkar wants to build his waterslide from the right to the left, so his supports must be nondecreasing in height in order to support the waterslide. In $1$ operation, Omkar can do the following: take any **contiguous subsegment** of supports which is **nondecreasing by heights** and add $1$ to each of their heights
@@ -209,7 +203,7 @@ An array $b$ is a subsegment of an array $c$ if $b$ can be obtained from $c$ by 
 
 An array $b_1,b_2,…,b_n$ is called nondecreasing if $b_i≤b_{i+1}$ for every $i$ from $1$ to $n-1$
 
-#### Input
+### Input
 
 Each test contains multiple test cases. The first line contains the number of test cases $t$
 ($1≤t≤100$). Description of the test cases follows
@@ -222,13 +216,13 @@ integers $a_1,a_2,...,a_n$ ($0≤ai≤10^9$) - the heights of the supports
 
 It is guaranteed that the sum of $n$ over all test cases does not exceed $2⋅10^5$
 
-#### Output
+### Output
 
 For each test case, output a single integer - the minimum number of operations Omkar needs to perform to make his supports able to support his waterslide
 
-#### Example
+### Example
 
-##### Input
+#### Input
 
 ```input1
 3
@@ -240,7 +234,7 @@ For each test case, output a single integer - the minimum number of operations O
 1 1 1
 ```
 
-##### Output
+#### Output
 
 ```output1
 3
@@ -248,7 +242,7 @@ For each test case, output a single integer - the minimum number of operations O
 0
 ```
 
-#### Note
+### Note
 
 The subarray with which Omkar performs the operation is bolded
 
@@ -317,8 +311,6 @@ In the third test case, the array is already nondecreasing, so Omkar does $0$ op
 
 ## D - Omkar and Bed Wars
 
-### 原始题面
-
 Omkar is playing his favorite pixelated video game, Bed Wars! In Bed Wars, there are $n$ players arranged in a circle, so that for all $j$ such that $2≤j≤n$, player $j-1$ is to the left of the player $j$, and player $j$ is to the right of player $j-1$. Additionally, player $n$ is to the left of player 1, and player $1$ is to the right of player $n$
 
 Currently, each player is attacking either the player to their left or the player to their right. This means that each player is currently being attacked by either $0$, $1$, or $2$ other players. A key element of Bed Wars strategy is that if a player is being attacked by exactly $1$ other player, then they should logically attack that player in response. If instead a player is being attacked by $0$ or $2$ other players, then Bed Wars strategy says that the player can logically attack either of the adjacent players
@@ -329,7 +321,7 @@ players in the game to make them instead attack another player - i. e. if they a
 
 Omkar would like all players to be acting logically. Calculate the minimum amount of players that Omkar needs to talk to so that after all players he talked to (if any) have changed which player they are attacking, all players are acting logically according to Bed Wars strategy
 
-#### Input
+### Input
 
 Each test contains multiple test cases. The first line contains the number of test cases $t$($1≤t≤104$). The descriptions of the test cases follows
 
@@ -340,15 +332,15 @@ of length $n$. The $j$-th character of $s$ is equal to `L` if the $j$-th player 
 
 It is guaranteed that the sum of $n$ over all test cases does not exceed $2⋅10^5$
 
-#### Output
+### Output
 
 For each test case, output one integer: the minimum number of players Omkar needs to talk to to make it so that all players are acting logically according to Bed Wars strategy
 
 It can be proven that it is always possible for Omkar to achieve this under the given constraints
 
-#### Example
+### Example
 
-##### Input
+#### Input
 
 ```input1
 5
@@ -364,7 +356,7 @@ LLLLRRLRRRLL
 RRRRR
 ```
 
-##### Output
+#### Output
 
 ```output1
 0
@@ -374,7 +366,7 @@ RRRRR
 2
 ```
 
-#### Note
+### Note
 
 In the first test case, players $1$ and $2$ are attacking each other, and players $3$ and $4$ are attacking each other. Each player is being attacked by exactly $1$ other player, and each player is attacking the player that is attacking them, so all players are already being logical according to Bed Wars strategy and Omkar does not need to talk to any of them, making the answer $0$
 
@@ -417,8 +409,6 @@ $n$ 个人站成一圈, 编号 $0,1,2,...,n-1$, 第 $(i+1)\bmod n$ 个人在第 
 
 ## F - Omkar and Landslide
 
-### 原始题面
-
 Omkar is standing at the foot of Celeste mountain. The summit is $n$ meters away from him, and he can see all of the mountains up to the summit, so for all $1≤j≤n$ he knows that the height of the mountain at the point $j$ meters away from himself is $h_j$ meters. It turns out that for all $j$ satisfying $1≤j≤n-1, h_j<h_{j+1}$(meaning that heights are strictly increasing)
 
 Suddenly, a landslide occurs! While the landslide is occurring, the following occurs: every minute, if $h_j+2≤h_{j+1}$
@@ -430,33 +420,33 @@ will be after the landslide ends. It can be proven that under the given constrai
 
 Note that because of the large amount of input, it is recommended that your code uses fast IO
 
-#### Input
+### Input
 
 The first line contains a single integer $n$
 ($1≤n≤10^6$)
 
 The second line contains $n$ integers $h_1,h_2,…,h_n$ satisfying $0≤h_1<h_2<⋯<h_n≤10^{12}$ - the heights
 
-#### Output
+### Output
 
 Output $n$ integers, where the $j$-th integer is the value of $h_j$ after the landslide has stopped
 
-#### Example
+### Example
 
-##### Input
+#### Input
 
 ```input1
 4
 2 6 7 8
 ```
 
-##### Output
+#### Output
 
 ```output1
 5 5 6 7
 ```
 
-#### Note
+### Note
 
 Initially, the mountain has heights $2,6,7,8$
 

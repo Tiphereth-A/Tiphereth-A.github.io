@@ -29,11 +29,9 @@ date: 2021-04-04 00:04:28
 
 ## A - Meditation
 
-### 原始题面
-
 1000ms / 256 MB
 
-#### 题目描述
+### 题目描述
 
 ![](A-1.png)
 
@@ -41,18 +39,18 @@ Luna had a stressful day and she wants to do a meditation routine that relaxes h
 
 Luna has graded each of the $n$ exercises with a positive integer and the score of a routine is simply the sum of the grades of its individual exercises. She gives you her list of graded exercises and asks you what is the maximal grade of a routine composed of $k$ different exercises
 
-#### 输入描述
+### 输入描述
 
 The first line of the input contains two space-separated integers:$n$ and $k$
 The $n$ following lines each contain a single integer, the $i+1$-th line containing the grade $g_i$ of the $i$-th exercise
 
-#### 输出描述
+### 输出描述
 
 The output should contain a single line with a single integer: the maximal score of a routine composed of KKK different exercises
 
-#### 示例 1
+### 示例 1
 
-##### 输入
+#### 输入
 
 ```input1
 5 3
@@ -63,17 +61,17 @@ The output should contain a single line with a single integer: the maximal score
 10
 ```
 
-##### 输出
+#### 输出
 
 ```output1
 42
 ```
 
-##### 说明
+#### 说明
 
 We select the exercises 1, 2 and 5 which gives a total score of $10+22+10=42$
 
-#### 备注
+### 备注
 
 $1\leq k \leq n \leq 100\,000$
 
@@ -85,11 +83,9 @@ $0\leq g_{i}\leq 10\,000$
 
 ## B - Rounds
 
-### 原始题面
-
 1000ms / 256 MB
 
-#### 题目描述
+### 题目描述
 
 ![](B-1.png)
 
@@ -101,18 +97,18 @@ The $N$ group members are numbered from $1$ to $N$ and the game comprises $k$ ro
 
 Your task is to figure out the maximum possible game outcome, across all possible game endings
 
-#### 输入描述
+### 输入描述
 
 The first line of the input contains two integers $N$ and $S$.
 Each of the $N$ following lines contains a single integer, the $i + 1$-th line containing the amount of credits Ciinitially owned by member $i$
 
-#### 输出描述
+### 输出描述
 
 The output should contain a single integer value $C$ corresponding to the maximum possible game outcome
 
-#### 示例 1
+### 示例 1
 
-##### 输入
+#### 输入
 
 ```input1
 3 10
@@ -121,13 +117,13 @@ The output should contain a single integer value $C$ corresponding to the maximu
 38
 ```
 
-##### 输出
+#### 输出
 
 ```output1
 28
 ```
 
-##### 说明
+#### 说明
 
 The game proceeds as follows:
 
@@ -139,7 +135,7 @@ After round $3$ the amounts of credits held are $24, 42, 38$ and the minimum is 
 
 The best possible outcome is therefore $28$, which corresponds to ending the game after round $1$
 
-#### 备注
+### 备注
 
 $1\leq N \leq 100\,000$
 
@@ -168,11 +164,9 @@ for all,$1\leq C_i \leq 100\,000\,000$ and $S \times (N-1) \leq C_i$
 
 ## C - Statues
 
-### 原始题面
-
 1000ms / 256 MB
 
-#### 题目描述
+### 题目描述
 
 ![](C-1.jpg)
 
@@ -184,17 +178,17 @@ Erika placed her statues but she forgot to place them in increasing size and now
 
 The street has $N$ evenly spaced street lights numbered from $1$ at the beginning of the street to $N$ at the end of the street. You estimate the time required to move a statue of size $s$ from the street light $i$ to the light $j$ as taking Erika $s \times |i - j|$ units of time. You ask yourself, how much time does it take to reposition all statues knowing that she will use the fastest way possible? Note that she may put statues under street lights that do not have statues at the moment
 
-#### 输入描述
+### 输入描述
 
 The first line of the input contains two space-separated integers: $N$ the number of street lights and $K$ the number of statues. The $K$ following lines each contains two space-separated integers, the $i + 1$-th line containing the integers $P_i$ and $S_i$ describing the $i$-th statue. $P_i$ gives the number of the street light under which the statue is and $S_i$ gives its size
 
-#### 输出描述
+### 输出描述
 
 The output should contain a single line containing a single integer: the minimum amount of time needed to move statues such that each statue is under a different street light and such that the size of statues grows with the street light numbers under which they are
 
-#### 示例 1
+### 示例 1
 
-##### 输入
+#### 输入
 
 ```input1
 3 3
@@ -203,19 +197,19 @@ The output should contain a single line containing a single integer: the minimum
 3 1
 ```
 
-##### 输出
+#### 输出
 
 ```output1
 8
 ```
 
-##### 说明
+#### 说明
 
 Because there are as many street lights as there are statues we needto position the statue of size $1$ at street light $1$ (which takes $1\times |3-1|=2$ units of times), leave the statue of size $2$ at street light $2$, and move the statue of size $3$ to the street light $3$(which takes $3\times |1-3|=6$ units of times). In total this takes $8$ units of time
 
-#### 示例 2
+### 示例 2
 
-##### 输入
+#### 输入
 
 ```input1
 4 3
@@ -224,17 +218,17 @@ Because there are as many street lights as there are statues we needto position 
 4 1
 ```
 
-##### 输出
+#### 输出
 
 ```output1
 3
 ```
 
-##### 说明
+#### 说明
 
 The fastest way of fixing the ordering of statues is to move the statue of size 1 to the street light 1 for a total time of $1\times|4-1|=3$
 
-#### 备注
+### 备注
 
 $1 \leq K \leq N \leq 5\,000$
 
