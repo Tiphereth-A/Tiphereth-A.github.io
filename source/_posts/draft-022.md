@@ -13,6 +13,10 @@ tags:
 date: 2022-10-16 22:17:45
 ---
 
+两个整数的正线性组合所不能表示的最大数是多少?
+
+<!-- more -->
+
 {% note success no-icon %}
 
 **<a id="th-1-1">定理 - 1-1</a>** (Chicken McNugget 定理) 对任意两个 **互素** 的正整数 $a,b$, 令
@@ -24,8 +28,6 @@ $$A=\mathbb{Z}\setminus\{ax+by:x,y\in\mathbb{N}\}$$
 $$\max A=ab-a-b$$
 
 {% endnote %}
-
-<!-- more -->
 
 ## 直观理解
 
