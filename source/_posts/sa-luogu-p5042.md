@@ -6,7 +6,6 @@ categories:
 tags:
   - 算法竞赛
   - 题解
-  - 算法
   - 洛谷
   - UOJ
   - OEIS

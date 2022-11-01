@@ -6,7 +6,6 @@ categories:
 tags:
   - 数学
   - 算法竞赛
-  - 算法
   - 模板
   - 数值积分
   - Simpson积分

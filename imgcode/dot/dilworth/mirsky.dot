@@ -1,0 +1,23 @@
+digraph {
+  0 [label = "∅";color = red;];
+  1 [label = "{x}";color = green;];
+  2 [label = "{y}";color = green;];
+  3 [label = "{z}";color = green;];
+  4 [label = "{x,y}";color = purple;];
+  5 [label = "{y,z}";color = purple;];
+  6 [label = "{x,z}";color = purple;];
+  7 [label = "{x,y,z}";color = blue;];
+  
+  0 -> 1 [style = bold; color = maroon;];
+  0 -> 2;
+  0 -> 3;
+  1 -> 4 [style = bold; color = maroon;];
+  1 -> 6;
+  2 -> 4;
+  2 -> 5;
+  3 -> 5;
+  3 -> 6;
+  4 -> 7 [style = bold; color = maroon;];
+  5 -> 7;
+  6 -> 7;
+}
