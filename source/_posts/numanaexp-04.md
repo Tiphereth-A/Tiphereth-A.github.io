@@ -11,7 +11,6 @@ tags:
   - 数值分析
   - 实验报告
   - MATLAB
-  - 算法
   - 数值积分
   - Simpson积分
   - 复化Simpson积分

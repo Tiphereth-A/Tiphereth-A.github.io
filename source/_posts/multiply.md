@@ -5,7 +5,6 @@ categories:
   - 笔记
 tags:
   - 算法竞赛
-  - 算法
   - 倍增
   - 快速幂
   - RMQ

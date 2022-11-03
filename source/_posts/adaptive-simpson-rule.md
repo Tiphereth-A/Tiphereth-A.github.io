@@ -6,7 +6,6 @@ categories:
 tags:
   - 数学
   - 算法竞赛
-  - 算法
   - 洛谷日报
   - 数值积分
   - 自适应Simpson积分

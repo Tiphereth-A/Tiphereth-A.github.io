@@ -6,7 +6,6 @@ categories:
 tags:
   - 数学
   - 随笔
-  - 算法
   - 数列
   - MATLAB
   - 周期数列

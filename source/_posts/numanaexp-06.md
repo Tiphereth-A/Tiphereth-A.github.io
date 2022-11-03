@@ -11,7 +11,6 @@ tags:
   - 数值分析
   - 实验报告
   - MATLAB
-  - 算法
   - 线性方程组
   - Jacobi迭代法
   - Gauss-Seidol迭代法
