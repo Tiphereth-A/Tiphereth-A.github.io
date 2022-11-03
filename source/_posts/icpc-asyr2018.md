@@ -65,7 +65,7 @@ date: 2022-11-03 20:33:27
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp icpc-asyr2018/A.cpp %}
+{% include_code lang:cpp icpc-asyr2018/B.cpp %}
 
 </details>
 
