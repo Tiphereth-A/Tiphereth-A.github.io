@@ -18,7 +18,7 @@ tags:
   - 组合数学
   - Josephus问题
   - 计算几何
-date: 2022-11-03 20:33:27
+date: 2022-11-02 20:33:27
 ---
 
 [比赛链接](https://codeforces.com/gym/101955)
