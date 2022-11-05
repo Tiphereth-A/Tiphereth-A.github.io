@@ -41,7 +41,7 @@ date: 2022-11-05 18:24:04
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:php title:A misc/icpc-asyr2022-p/A.php %}
+{% include_code lang:php icpc-asyr2022-p/A.php %}
 
 </details>
 
@@ -58,7 +58,7 @@ $$\frac{(n!)^2}{n^n}$$
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:py title:B misc/icpc-asyr2022-p/B.py %}
+{% include_code lang:py icpc-asyr2022-p/B.py %}
 
 </details>
 
@@ -73,7 +73,7 @@ $$\frac{(n!)^2}{n^n}$$
 <details>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp title:C icpc-asyr2022-p/C.cpp %}
+{% include_code lang:cpp icpc-asyr2022-p/C.cpp %}
 
 </details>
 
