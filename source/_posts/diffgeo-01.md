@@ -315,8 +315,6 @@ $$
 - $\tilde\textbf{r}(s)$ 的曲率和挠率与 $\textbf{r}(s)$ 相同
 - $\tilde\textbf{r}(s)$ 的 Frenet 标架为 $\{\tilde\textbf{r}(s);\textbf{t}(s)T,\textbf{n}(s)T,\textbf{b}(s)T\}$
 
-{% note %}
-
 <details open>
 <summary>证明</summary>
 
@@ -334,7 +332,6 @@ $${\mathrm{d}\tilde\textbf{r}\over\mathrm{d}s}={\mathrm{d}\textbf{r}\over\mathrm
 </details>
 
 {% endnote %}
-{% endnote %}
 
 {% note success no-icon %}
 
@@ -348,8 +345,6 @@ $${\mathrm{d}\tilde\textbf{r}\over\mathrm{d}s}={\mathrm{d}\textbf{r}\over\mathrm
   - $\kappa(s)$ 为 $\textbf{r}(s)$ 的曲率
   - $\tau(s)$ 为 $\textbf{r}(s)$ 的挠率
 - (唯一性) $\textbf{r}_1(s)$ 与 $\textbf{r}_2(s)$ 均满足上条当且仅当 $\textbf{r}_1\sim\textbf{r}_2$
-
-{% note %}
 
 <details open>
 <summary>证明</summary>
@@ -397,7 +392,6 @@ $$\textbf{r}(s)=\int_{s_0}^s\textbf{t}(v)\mathrm{d}v+\textbf{r}(s_0)$$
 
 </details>
 
-{% endnote %}
 {% endnote %}
 
 ---

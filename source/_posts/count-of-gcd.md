@@ -24,7 +24,7 @@ date: 2021-06-08 13:18:28
 $$\sum_{\nu\in\prod_{i=1}^m[1,n_i]_\mathbb{N}}f(\nu)g(\gcd\nu)$$
 的和式, 其中
 
-- $\nu=(\def\enum#1{v_{ #1}}\enum{1},\enum{2},...,\enum{m})\in\prod_{i=1}^m[1,n_i]_\mathbb{N}$
+- $\nu=(v_1,v_2,\dots,v_m)\in\prod_{i=1}^m[1,n_i]_\mathbb{N}$
 - $\gcd\nu:=\gcd_{i=1}^m v_i$
 
 令 $n_0=\min_{i=1}^mn_i$, $g_n=\gcd_{i=1}^mn_i$, 则我们可以按如下方法处理
@@ -65,10 +65,10 @@ $$
 ## 统计 gcd 在某集合内的向量数
 
 即形如
-$$\sum_{\nu\in\prod_{i=1}^m[1,n_i]_\mathbb{N}}[\gcd\nu\in K=\{\def\enum#1{k_{ #1}}\enum{1},\enum{2},...,\enum{s}\}]$$
+$$\sum_{\nu\in\prod_{i=1}^m[1,n_i]_\mathbb{N}}[\gcd\nu\in K=\{k_1,k_2,\dots,k_s\}]$$
 的和式, 其中
 
-- $\nu=(\def\enum#1{v_{ #1}}\enum{1},\enum{2},...,\enum{m})\in\prod_{i=1}^m[1,n_i]_\mathbb{N}$
+- $\nu=(v_1,v_2,\dots,v_m)\in\prod_{i=1}^m[1,n_i]_\mathbb{N}$
 - $\gcd v:=\gcd_{i=1}^m v_i$
 
 令 $n_0=\min_{i=1}^mn_i$, $g_n=\gcd_{i=1}^mn_i$, 则我们可以按如下方法处理

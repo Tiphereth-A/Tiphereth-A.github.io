@@ -64,15 +64,17 @@ date: 2020-06-20 16:08:42
 
 > **定义** 表示向量
 >
-> 令 $(\def\enum#1{\epsilon_{ #1}}\enum{1},\enum{2},...,\enum{n})$ 为 $V$ 的一组基, 称
-> $$(\def\enum#1{f(\epsilon_{ #1})}\enum{1},\enum{2},...,\enum{n})$$
-> 为 $f$ 在 $(\def\enum#1{\epsilon_{ #1}}\enum{1},\enum{2},...,\enum{n})$ 下的**表示向量**
+> 令 $(\epsilon_0,\epsilon_1,\dots,\epsilon_n)$ 为 $V$ 的一组基, 称
+>
+> $$(f(\epsilon_1),f(\epsilon_2),...,f(\epsilon_n))$$
+>
+> 为 $f$ 在 $(\epsilon_0,\epsilon_1,\dots,\epsilon_n)$ 下的**表示向量**
 
 我们有如下定理
 
 #### <a href="#end-t-1-1-1" id="t-1-1-1">定理 - 1-1-1</a>
 
-$\eta:L(V,\mathbb{P})\to\mathbb{P}^n;~f\mapsto(\def\enum#1{f(\epsilon_{ #1})}\enum{1},\enum{2},...,\enum{n})$ 为双射
+$\eta:L(V,\mathbb{P})\to\mathbb{P}^n;~f\mapsto(f(\epsilon_1),f(\epsilon_2),...,f(\epsilon_n))$ 为双射
 
 即所有线性函数的集合 $L(V,\mathbb{P})$ 与 $\mathbb{P}^n$ 同构
 
@@ -83,9 +85,9 @@ $\eta:L(V,\mathbb{P})\to\mathbb{P}^n;~f\mapsto(\def\enum#1{f(\epsilon_{ #1})}\en
 
 > **定义** 表示矩阵/度量矩阵
 >
-> 令 $(\def\enum#1{\epsilon_{ #1}}\enum{1},\enum{2},...,\enum{n})$ 为 $V$ 的一组基, 称
+> 令 $(\epsilon_0,\epsilon_1,\dots,\epsilon_n)$ 为 $V$ 的一组基, 称
 > $$(f(\epsilon_i,\epsilon_j))_{n\times n}$$
-> 为 $f$ 在 $(\def\enum#1{\epsilon_{ #1}}\enum{1},\enum{2},...,\enum{n})$ 下的**表示矩阵**
+> 为 $f$ 在 $(\epsilon_0,\epsilon_1,\dots,\epsilon_n)$ 下的**表示矩阵**
 
 我们有如下定理
 
@@ -104,7 +106,7 @@ $\zeta:BL(V,\mathbb{P})\to\mathbb{P}^{n\times n};~f\mapsto(f(\epsilon_i,\epsilon
 证明很简单, 读者可尝试自行补充
 
 我们发现  
-$\forall\alpha=\displaystyle\sum_{i=1}^nx_i\epsilon_i=(\def\enum#1{\epsilon_{ #1}}\enum{1},\enum{2},...,\enum{n})X,\beta=\sum_{i=1}^ny_i\epsilon_i=(\def\enum#1{\epsilon_{ #1}}\enum{1},\enum{2},...,\enum{n})Y\in V$  
+$\forall\alpha=\displaystyle\sum_{i=1}^nx_i\epsilon_i=(\epsilon_0,\epsilon_1,\dots,\epsilon_n)X,\beta=\sum_{i=1}^ny_i\epsilon_i=(\epsilon_0,\epsilon_1,\dots,\epsilon_n)Y\in V$  
 都有
 $$f(\alpha,\beta)=X^TAY$$
 这样就将双线性函数的计算转换成了矩阵乘法, 这个形式很重要
@@ -134,24 +136,24 @@ $$f(\alpha,\beta)=X^TAY$$
 
 ### 基底间的过渡
 
-设 $(\def\enum#1{\epsilon_{ #1}}\enum{1},\enum{2},...,\enum{n})$ 和 $(\def\enum#1{\eta_{ #1}}\enum{1},\enum{2},...,\enum{n})$ 是 $V$ 的两组基底, 过渡矩阵 $T$ 使得
+设 $(\epsilon_0,\epsilon_1,\dots,\epsilon_n)$ 和 $(\eta_0,\eta_1,\dots,\eta_n)$ 是 $V$ 的两组基底, 过渡矩阵 $T$ 使得
 
-$$(\def\enum#1{\eta_{ #1}}\enum{1},\enum{2},...,\enum{n})=(\def\enum#1{\epsilon_{ #1}}\enum{1},\enum{2},...,\enum{n})T$$
+$$(\eta_0,\eta_1,\dots,\eta_n)=(\epsilon_0,\epsilon_1,\dots,\epsilon_n)T$$
 
 {% tabs define-1-trans,1 %}
 
 <!-- tab 线性函数 -->
 
-若线性函数 $f$ 在 $(\def\enum#1{\epsilon_{ #1}}\enum{1},\enum{2},...,\enum{n})$ 和 $(\def\enum#1{\eta_{ #1}}\enum{1},\enum{2},...,\enum{n})$ 下的表示向量分别为 $(\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n})$ 和 $(\def\enum#1{b_{ #1}}\enum{1},\enum{2},...,\enum{n})$, 则
+若线性函数 $f$ 在 $(\epsilon_0,\epsilon_1,\dots,\epsilon_n)$ 和 $(\eta_0,\eta_1,\dots,\eta_n)$ 下的表示向量分别为 $(a_1,a_2,\dots,a_n)$ 和 $(b_1,b_2,\dots,b_n)$, 则
 
-$$(\def\enum#1{b_{ #1}}\enum{1},\enum{2},...,\enum{n})=(\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n})T$$
+$$(b_1,b_2,\dots,b_n)=(a_1,a_2,\dots,a_n)T$$
 
 因此 $T$ 非奇异
 
 <!-- endtab -->
 <!-- tab 双线性函数 -->
 
-若双线性函数 $f$ 在 $(\def\enum#1{\epsilon_{ #1}}\enum{1},\enum{2},...,\enum{n})$ 和 $(\def\enum#1{\eta_{ #1}}\enum{1},\enum{2},...,\enum{n})$ 下的表示矩阵分别为 $A$ 和 $B$, 则
+若双线性函数 $f$ 在 $(\epsilon_0,\epsilon_1,\dots,\epsilon_n)$ 和 $(\eta_0,\eta_1,\dots,\eta_n)$ 下的表示矩阵分别为 $A$ 和 $B$, 则
 
 $$B=T^TAT$$
 
@@ -247,7 +249,7 @@ $2\iff4:$ 参照 $1\iff2$
 
 > **定义** 正交基底
 >
-> 一组基底 $(\def\enum#1{\epsilon_{ #1}}\enum{1},\enum{2},...,\enum{n})$ 称作**正交基底**, 若 $(\forall 1\leqslant i,j\leqslant n,i\ne j), f(\epsilon_i,\epsilon_j)=0$
+> 一组基底 $(\epsilon_0,\epsilon_1,\dots,\epsilon_n)$ 称作**正交基底**, 若 $(\forall 1\leqslant i,j\leqslant n,i\ne j), f(\epsilon_i,\epsilon_j)=0$
 
 #### <a href="#end-t-1-4" id="t-1-4">定理 - 1-4</a>
 
@@ -271,28 +273,28 @@ $2\iff4:$ 参照 $1\iff2$
   - 当 $\dim V=1$ 时, 任意基底均为所求
   - 若对 $1\leqslant\dim V\leqslant n-1$ 的情况命题都成立, 考察 $\dim V=n$ 的情形
 
-    对 $(1.4.1)$ 中的 $\epsilon$, 将其扩充为 $V$ 的一组基底 $(\epsilon,\def\enum#1{\eta_{ #1}}\enum{2},...,\enum{n})$
+    对 $(1.4.1)$ 中的 $\epsilon$, 将其扩充为 $V$ 的一组基底 $(\epsilon,\eta_{2},...,\eta_{n})$
 
     令 $\epsilon_i'=\displaystyle \eta_i-\frac{f(\eta_i,\epsilon)}{f(\epsilon,\epsilon)}\epsilon,\qquad i=2,3,...,n$
 
-    则 $(\epsilon,\def\enum#1{\epsilon'_{ #1}}\enum{2},...,\enum{n})$ 为 $V$ 的基底, 且  
+    则 $(\epsilon,\epsilon'_{2},...,\epsilon'_{n})$ 为 $V$ 的基底, 且  
     $f(\epsilon,\epsilon_i')=0,\qquad i=2,3,...,n$
 
     因此
 
-    $$(\forall\alpha\in G[\def\enum#1{\epsilon'_{ #1}}\enum{2},...,\enum{n}]),~f(\epsilon,\alpha)=0\tag{1.4.2}$$
+    $$(\forall\alpha\in G[\epsilon'_{2},...,\epsilon'_{n}]),~f(\epsilon,\alpha)=0\tag{1.4.2}$$
 
-    又显然 $V=G[\epsilon]\oplus G[\def\enum#1{\epsilon'_{ #1}}\enum{2},...,\enum{n}]$
+    又显然 $V=G[\epsilon]\oplus G[\epsilon'_{2},...,\epsilon'_{n}]$
 
-    考虑 $f|_{G[\def\enum#1{\epsilon'_{ #1}}\enum{2},...,\enum{n}]}$, 由归纳假设, $G[\def\enum#1{\epsilon'_{ #1}}\enum{2},...,\enum{n}]$ 中有正交基底 $(\def\enum#1{\epsilon_{ #1}}\enum{2},...,\enum{n})$
+    考虑 $f|_{G[\epsilon'_{2},...,\epsilon'_{n}]}$, 由归纳假设, $G[\epsilon'_{2},...,\epsilon'_{n}]$ 中有正交基底 $(\epsilon_{2},...,\epsilon_{n})$
 
-    故由 $(1.4.2)$ 式可得 $(\epsilon,\def\enum#1{\epsilon_{ #1}}\enum{2},...,\enum{n})$ 为 $V$ 的一组正交基底
+    故由 $(1.4.2)$ 式可得 $(\epsilon,\epsilon_{2},...,\epsilon_{n})$ 为 $V$ 的一组正交基底
 
 <a href="#p-t-1-4" id="end-t-1-4">$\Box$</a>
 
 #### <a href="#end-ifr-1-4-1" id="ifr-1-4-1">推论 - 1-4-1</a>
 
-- 令 $V$ 为 $\mathbb{C}$ 上一 $n$ 维线性空间, $f$ 为 $V$ 上一对称双线性函数, 则存在正交基底 $(\def\enum#1{\epsilon_{ #1}}\enum{1},\enum{2},...,\enum{n})$ 使得对 $V$ 上的任意向量 $\alpha=\sum_{i=1}^nx_i\epsilon_i,\beta=\sum_{i=1}^ny_i\epsilon_i$ 均有
+- 令 $V$ 为 $\mathbb{C}$ 上一 $n$ 维线性空间, $f$ 为 $V$ 上一对称双线性函数, 则存在正交基底 $(\epsilon_0,\epsilon_1,\dots,\epsilon_n)$ 使得对 $V$ 上的任意向量 $\alpha=\sum_{i=1}^nx_i\epsilon_i,\beta=\sum_{i=1}^ny_i\epsilon_i$ 均有
 
   $$f(\alpha,\beta)=\sum_{i=1}^rx_iy_i$$
 
@@ -310,15 +312,15 @@ $2\iff4:$ 参照 $1\iff2$
 ##### <a href="#ifr-1-4-1" id="p-ifr-1-4-1">证明</a>
 
 若 $V$ 为 $\mathbb{R}$ 上一 $n$ 维线性空间, 则由 <a href="#t-1-4">定理 - 1-4</a> 可知,  
-存在正交基底 $(\def\enum#1{\epsilon_{ #1}}\enum{1},\enum{2},...,\enum{n})$, 使得 $f$ 的度量矩阵为 $\operatorname{diag}\{\def\enum#1{d_{ #1}}\enum{1},\enum{2},...,\enum{p},\def\enum#1{-d_{ #1}}\enum{p+1},\enum{p+2},...,\enum{r},0,...,0\}$, 其中 $\def\enum#1{d_{ #1}}\enum{1},\enum{2},...,\enum{r}>0,~0\leqslant p\leqslant r\leqslant n$
+存在正交基底 $(\epsilon_0,\epsilon_1,\dots,\epsilon_n)$, 使得 $f$ 的度量矩阵为 $\operatorname{diag}\{d_1,d_2,\dots,d_p,-d_{p+1},-d_{p+2},...,-d_{r},0,...,0\}$, 其中 $d_1,d_2,\dots,d_r>0,~0\leqslant p\leqslant r\leqslant n$
 
 考虑 $f(\epsilon_i,\epsilon_i)=(-1)^{[i>p]}d_i,~1\leqslant i\leqslant r$
 
 令 $\displaystyle\epsilon'_i={\epsilon_i\over\sqrt{d_i}}$, 则 $f(\epsilon'_i,\epsilon'_i)=(-1)^{[i>p]}$
 
-容易验证 $(\def\enum#1{\epsilon'_{ #1}}\enum{1},\enum{2},...,\enum{r},\def\enum#1{\epsilon_{ #1}}\enum{r+1},\enum{r+2},...,\enum{n})$ 为正交基底
+容易验证 $(\epsilon'_0,\epsilon'_1,\dots,\epsilon'_r,\epsilon_{r+1},\epsilon_{r+2},...,\epsilon_{n})$ 为正交基底
 
-故在正交基底 $(\def\enum#1{\epsilon'_{ #1}}\enum{1},\enum{2},...,\enum{r},\def\enum#1{\epsilon_{ #1}}\enum{r+1},\enum{r+2},...,\enum{n})$ 下, $f$ 的度量矩阵为 $\operatorname{diag}\{\underbrace{1,...,1}_{p},\underbrace{-1,...,-1}_{\operatorname{rk}f-p},0,...,0\}$
+故在正交基底 $(\epsilon'_0,\epsilon'_1,\dots,\epsilon'_r,\epsilon_{r+1},\epsilon_{r+2},...,\epsilon_{n})$ 下, $f$ 的度量矩阵为 $\operatorname{diag}\{\underbrace{1,...,1}_{p},\underbrace{-1,...,-1}_{\operatorname{rk}f-p},0,...,0\}$
 
 我们可以注意到负号产生的原因是 $\sqrt{\phantom{-}}$ 要求被开方数非负, 而在 $\mathbb{C}$ 上没有这个限制, 故在 $\mathbb{C}$ 上即为 $\operatorname{diag}\{\underbrace{1,...,1}_{\operatorname{rk}f},0,...,0\}$
 
@@ -330,11 +332,11 @@ $2\iff4:$ 参照 $1\iff2$
 
 #### <a href="#end-prob-1-1" id="prob-1-1">习题 - 1-1</a>
 
-令 $V$ 为 $\mathbb{P}$ 上一 $n$ 维线性空间, $\def\enum#1{f_{ #1}}\enum{1},\enum{2},...,\enum{k}$ 为 $V$ 上 $k$ 个线性函数, 证明:
+令 $V$ 为 $\mathbb{P}$ 上一 $n$ 维线性空间, $f_1,f_2,\dots,f_k$ 为 $V$ 上 $k$ 个线性函数, 证明:
 
 1. $$W=\{\alpha\in V|f_i(\alpha)=0\}\leqslant V$$
-   称 $W$ 为 $\def\enum#1{f_{ #1}}\enum{1},\enum{2},...,\enum{k}$ 的**零化子空间**
-1. 若 $W\leqslant V$, 则存在 $V$ 上 $k$ 个线性函数 $\def\enum#1{f_{ #1}}\enum{1},\enum{2},...,\enum{k}$ 使得 $W$ 为 $\def\enum#1{f_{ #1}}\enum{1},\enum{2},...,\enum{k}$ 的零化子空间
+   称 $W$ 为 $f_1,f_2,\dots,f_k$ 的**零化子空间**
+1. 若 $W\leqslant V$, 则存在 $V$ 上 $k$ 个线性函数 $f_1,f_2,\dots,f_k$ 使得 $W$ 为 $f_1,f_2,\dots,f_k$ 的零化子空间
 
 ##### <a href="#prob-1-1" id="p-prob-1-1">解</a>
 
@@ -349,11 +351,11 @@ $2\iff4:$ 参照 $1\iff2$
 
    - 若 $W=V$, 则令 $f(\alpha)=0,~\forall\alpha\in V$, $W$ 为 $f$ 的零化子空间
    - 若 $W=\{\theta\}$, 则 $W$ 为 $L(V,\mathbb{P})$ 的零化子空间
-   - 若 $\dim W=r\in[1,n)$, 取 $W$ 的一组基 $\def\enum#1{\epsilon_{ #1}}\enum{1},\enum{2},...,\enum{r}$, $V$ 的一组基 $\def\enum#1{\epsilon_{ #1}}\enum{1},\enum{2},...,\enum{n}$
+   - 若 $\dim W=r\in[1,n)$, 取 $W$ 的一组基 $\epsilon_0,\epsilon_1,\dots,\epsilon_r$, $V$ 的一组基 $\epsilon_0,\epsilon_1,\dots,\epsilon_n$
 
      令 $f_i(\epsilon_j)=\delta_{ij},~i,j=1,2,...,n$
 
-     取 $\def\enum#1{f_{ #1}}\enum{r+1},\enum{r+2},...,\enum{n}$ 构成的零化子空间 $M$
+     取 $f_{r+1},f_{r+2},...,f_{n}$ 构成的零化子空间 $M$
 
      则 $(\forall\alpha\in W),~\alpha\in M$, 即 $W\subseteq M$
 
@@ -361,7 +363,7 @@ $2\iff4:$ 参照 $1\iff2$
 
      故 $\alpha\in W$, 即 $M\subseteq W$
 
-     因此 $W$ 是 $\def\enum#1{f_{ #1}}\enum{r+1},\enum{r+2},...,\enum{n}$ 的零化子空间
+     因此 $W$ 是 $f_{r+1},f_{r+2},...,f_{n}$ 的零化子空间
 
 <a href="#p-prob-1-1" id="end-prob-1-1">$\Box$</a>
 
@@ -415,7 +417,7 @@ $2\iff4:$ 参照 $1\iff2$
 
 #### <a href="#end-prop-2-1" id="prop-2-1">命题 - 2-1</a>
 
-$n$ 维对称双线性度量空间 $V$ 存在正交基底 $(\def\enum#1{\epsilon_{ #1}}\enum{1},\enum{2},...,\enum{n})$, 使得 $V$ 上的非奇异对称双线性函数 $f$ 有
+$n$ 维对称双线性度量空间 $V$ 存在正交基底 $(\epsilon_0,\epsilon_1,\dots,\epsilon_n)$, 使得 $V$ 上的非奇异对称双线性函数 $f$ 有
 
 - $f(\epsilon_i,\epsilon_i)\ne0,~i=1,2,...,n$
 - $f(\epsilon_i,\epsilon_j)=0,~1\leqslant i,j\leqslant n,i\ne j$
@@ -439,16 +441,16 @@ $n$ 维对称双线性度量空间 $V$ 存在正交基底 $(\def\enum#1{\epsilon
 #### <a href="#end-prop-2-2" id="prop-2-2">命题 - 2-2</a>
 
 - 若 $\dim V_1=0$, 则 $V_1^\perp=V$
-- 若 $\dim V_1=r\geqslant1$, 且 $(\def\enum#1{\beta_{ #1}}\enum{1},\enum{2},...,\enum{r})$ 为 $V_1$ 的一组基, 则
+- 若 $\dim V_1=r\geqslant1$, 且 $(\beta_0,\beta_1,\dots,\beta_r)$ 为 $V_1$ 的一组基, 则
   $$V_1^\perp=\{\alpha\in V|f(\alpha,\beta_i)=0,~i=1,2,...,r\}$$
 
   即 $V_1^\perp$ 为 $\begin{cases}
     f(\alpha,\beta_i)=0\\i=1,2,...,r
   \end{cases}$ 的解集
 
-若令 $f$ 在基底 $(\def\enum#1{\epsilon_{ #1}}\enum{1},\enum{2},...,\enum{n})$ 下的表示矩阵为 $A$, $\def\enum#1{\beta_{ #1}}\enum{1},\enum{2},...,\enum{r}$ 的坐标分别为 $\def\enum#1{B_{ #1}}\enum{1},\enum{2},...,\enum{r},~\alpha$ 的坐标为 $X$, 则上述方程组可表示为
+若令 $f$ 在基底 $(\epsilon_0,\epsilon_1,\dots,\epsilon_n)$ 下的表示矩阵为 $A$, $\beta_0,\beta_1,\dots,\beta_r$ 的坐标分别为 $B_1,B_2,\dots,B_r,~\alpha$ 的坐标为 $X$, 则上述方程组可表示为
 
-$$X^TA(\def\enum#1{B_{ #1}}\enum{1},\enum{2},...,\enum{r})=\theta$$
+$$X^TA(B_1,B_2,\dots,B_r)=\theta$$
 
 另外, $V_1^\perp$ 与上式的解空间 $S$ 同构
 
@@ -469,9 +471,9 @@ $$X^TA(\def\enum#1{B_{ #1}}\enum{1},\enum{2},...,\enum{r})=\theta$$
 
 1. 只需证 $\dim S=n-r$
 
-   $S$ 即为 $(\def\enum#1{B_{ #1}}\enum{1},\enum{2},...,\enum{r})^TAX=\theta$ 的解空间 (等式两边取转置)
+   $S$ 即为 $(B_1,B_2,\dots,B_r)^TAX=\theta$ 的解空间 (等式两边取转置)
 
-   令 $B=(\def\enum#1{B_{ #1}}\enum{1},\enum{2},...,\enum{r})^T$, 则 $\dim S=n-r\iff\operatorname{rk} BA=r$
+   令 $B=(B_1,B_2,\dots,B_r)^T$, 则 $\dim S=n-r\iff\operatorname{rk} BA=r$
 
    而 $\operatorname{rk}B=r$, 由 $A$ 可逆知 $\operatorname{rk}BA=\operatorname{rk}B=r$
 
@@ -504,7 +506,7 @@ $$AX=B\tag{2.3.2}$$
 
 其中 $\mathbb{P}^n(E)$ 表示 $\mathbb{P}^n$ 连同在自然基底下度量矩阵为 $E$ 的双线性函数 $f_E$ 所构成的对称双线性度量空间, 显然有
 
-$$f_E([\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n}]^T,[\def\enum#1{b_{ #1}}\enum{1},\enum{2},...,\enum{n}]^T)=\sum_{i=1}^na_ib_i$$
+$$f_E([a_1,a_2,\dots,a_n]^T,[b_1,b_2,\dots,b_n]^T)=\sum_{i=1}^na_ib_i$$
 
 - 齐次线性方程组 $(2.3.1)$ 可记作
 
@@ -515,21 +517,21 @@ $$f_E([\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n}]^T,[\def\enum#1{b_{ #1
   \end{cases}
   $$
 
-  其中 $A_i=(\def\enum#1{a_{i #1}}\enum{1},\enum{2},...,\enum{n}),~i=1,2,...,m$
+  其中 $A_i=(a_{i1},a_{i2},...,a_{in}),~i=1,2,...,m$
 
-  令 $V_1=G[\def\enum#1{A_{ #1}^T}\enum{1},\enum{2},...,\enum{m}]$, 则上述齐次线性方程组的解空间恰为 $V_1^\perp$
+  令 $V_1=G[A_1^T,A_2^T,...,A_m^T]$, 则上述齐次线性方程组的解空间恰为 $V_1^\perp$
 
-- 非齐次线性方程组 $(2.3.2)$ 有解 $\iff\operatorname{rk}(\def\enum#1{A^{ #1}}\enum{1},\enum{2},...,\enum{n})=\operatorname{rk}(\def\enum#1{A^{ #1}}\enum{1},\enum{2},...,\enum{n},B)\iff B\in G[\def\enum#1{A^{ #1}}\enum{1},\enum{2},...,\enum{n}]$
+- 非齐次线性方程组 $(2.3.2)$ 有解 $\iff\operatorname{rk}(A^1,A^2,...,A^n)=\operatorname{rk}(A^1,A^2,...,A^n,B)\iff B\in G[A^1,A^2,...,A^n]$
 
-  其中 $A^i=(\def\enum#1{a_{ #1i}}\enum{1},\enum{2},...,\enum{m})^T,~i=1,2,...,n$
+  其中 $A^i=(a_{1i},a_{2i},...,a_{mi})^T,~i=1,2,...,n$
 
   考虑 $(2.3.2)$ 的转置齐次线性方程组
 
   $$A^TY=\theta\tag{2.3.3}$$
 
-  由上一部分的讨论可知, $(2.3.3)$ 的解空间为 $G[\def\enum#1{A^{ #1}}\enum{1},\enum{2},...,\enum{n}]^\perp$
+  由上一部分的讨论可知, $(2.3.3)$ 的解空间为 $G[A^1,A^2,...,A^n]^\perp$
 
-  故 $B\in G[\def\enum#1{A^{ #1}}\enum{1},\enum{2},...,\enum{n}]\iff B$ 与 $(2.3.3)$ 的解空间正交
+  故 $B\in G[A^1,A^2,...,A^n]\iff B$ 与 $(2.3.3)$ 的解空间正交
 
   这可以作为一个定理
 
@@ -661,7 +663,7 @@ Cauchy-Bunjakovski-Schwarz 不等式有两个著名的实例
 
 > **定义** 标准正交基底
 >
-> 称 $n$ 维 Euclidean 空间上的一组基 $(\def\enum#1{\epsilon_{ #1}}\enum{1},\enum{2},...,\enum{n})$ 是**标准正交**的, 若
+> 称 $n$ 维 Euclidean 空间上的一组基 $(\epsilon_0,\epsilon_1,\dots,\epsilon_n)$ 是**标准正交**的, 若
 >
 > - $|\epsilon_i|=1,~i=1,2,...,n$
 > - $(\epsilon_i,\epsilon_j)=0,~i,j=1,2,...,n,i\ne j$
@@ -670,9 +672,9 @@ Cauchy-Bunjakovski-Schwarz 不等式有两个著名的实例
 
 #### <a href="#end-t-3-3" id="t-3-3">定理 - 3-3</a> (标准正交化)
 
-若 $(\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{n})$ 为 $n$ 维 Euclidean 空间上的一组基, 则其上存在标准正交基 $(\def\enum#1{\beta_{ #1}}\enum{1},\enum{2},...,\enum{n})$ 使得
+若 $(\alpha_0,\alpha_1,\dots,\alpha_n)$ 为 $n$ 维 Euclidean 空间上的一组基, 则其上存在标准正交基 $(\beta_0,\beta_1,\dots,\beta_n)$ 使得
 
-$$G[\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{i}]=G[\def\enum#1{\beta_{ #1}}\enum{1},\enum{2},...,\enum{i}],~i=1,2,...,n$$
+$$G[\alpha_0,\alpha_1,\dots,\alpha_i]=G[\beta_0,\beta_1,\dots,\beta_i],~i=1,2,...,n$$
 
 ##### <a href="#t-3-3" id="p-t-3-3">证明</a>
 
@@ -687,7 +689,7 @@ $$G[\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{i}]=G[\def\enum#1{\beta
 
   由 $\beta'_2=\alpha_2+k\beta'_1=\alpha_2+k\alpha_1$ 可知 $\beta'_1,\beta'_2$ 线性无关, 故 $G[\beta'_1,\beta'_2]=G[\alpha_1,\alpha_2]$
 
-- 假设已找到 $m<n$ 个两两正交的向量 $\def\enum#1{\beta'_{ #1}}\enum{1},\enum{2},...,\enum{m}$ 满足条件
+- 假设已找到 $m<n$ 个两两正交的向量 $\beta'_0,\beta'_1,\dots,\beta'_m$ 满足条件
 
   令
   $$\beta'_{m+1}=\alpha_{m+1}+\sum_{i=1}^mk_i\beta'_i$$
@@ -698,12 +700,12 @@ $$G[\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{i}]=G[\def\enum#1{\beta
   上式成立当且仅当
   $$k_i=-{(\alpha_{m+1},\beta'_i)\over(\beta'_i,\beta'_i)},~i=1,2,...,m$$
 
-  又可知 $\beta'_{m+1}$ 是 $\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{m+1}$ 的线性组合, $\beta'_{m+1}\ne\theta$
+  又可知 $\beta'_{m+1}$ 是 $\alpha_0,\alpha_1,\dots,\alpha_{m+1}$ 的线性组合, $\beta'_{m+1}\ne\theta$
 
-  因此 $G[\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{m+1}]=G[\def\enum#1{\beta'_{ #1}}\enum{1},\enum{2},...,\enum{m+1}]$
+  因此 $G[\alpha_0,\alpha_1,\dots,\alpha_{m+1}]=G[\beta'_0,\beta'_1,\dots,\beta'_{m+1}]$
 
-因此我们可以找到一组正交基 $(\def\enum#1{\beta'_{ #1}}\enum{1},\enum{2},...,\enum{n})$ 满足  
-$$G[\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{i}]=G[\def\enum#1{\beta'_{ #1}}\enum{1},\enum{2},...,\enum{i}],~i=1,2,...,n$$
+因此我们可以找到一组正交基 $(\beta'_0,\beta'_1,\dots,\beta'_n)$ 满足  
+$$G[\alpha_0,\alpha_1,\dots,\alpha_i]=G[\beta'_0,\beta'_1,\dots,\beta'_i],~i=1,2,...,n$$
 
 > 上述过程即 Schmidt 正交化
 
@@ -717,10 +719,10 @@ $$G[\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{i}]=G[\def\enum#1{\beta
 
 #### <a href="#end-ifr-3-1" id="ifr-3-1">推论 - 3-1</a>
 
-令 $(\def\enum#1{\epsilon_{ #1}}\enum{1},\enum{2},...,\enum{n})$ 为 $n$ 维 Euclidean 空间 $V$ 的一组标准正交基, 则
+令 $(\epsilon_0,\epsilon_1,\dots,\epsilon_n)$ 为 $n$ 维 Euclidean 空间 $V$ 的一组标准正交基, 则
 
 - $V$ 的内积的度量矩阵为 $E$
-- 若 $\alpha,~\beta\in V$ 在其上的坐标分别为 $A=(\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n})^T,~B=(\def\enum#1{b_{ #1}}\enum{1},\enum{2},...,\enum{n})^T$, 则
+- 若 $\alpha,~\beta\in V$ 在其上的坐标分别为 $A=(a_1,a_2,\dots,a_n)^T,~B=(b_1,b_2,\dots,b_n)^T$, 则
   $$(\alpha,\beta)=\sum_{i=1}^na_ib_i=A^TB$$
 
 <a href="#ifr-3-1" id="end-ifr-3-1">$\Box$</a>
@@ -741,19 +743,19 @@ $1\implies2:$
 
 可知 $V$ 连同 $f$ 构成 Euclidean 空间
 
-故由 <a href="#ifr-3-1">推论 - 3-1</a> 可知, 存在标准正交基 $(\def\enum#1{\epsilon_{ #1}}\enum{1},\enum{2},...,\enum{n})$ 使得 $f$ 的度量矩阵为 $E$
+故由 <a href="#ifr-3-1">推论 - 3-1</a> 可知, 存在标准正交基 $(\epsilon_0,\epsilon_1,\dots,\epsilon_n)$ 使得 $f$ 的度量矩阵为 $E$
 
-任取 $V$ 上一组基底 $(\def\enum#1{\eta_{ #1}}\enum{1},\enum{2},...,\enum{n})=(\def\enum#1{\epsilon_{ #1}}\enum{1},\enum{2},...,\enum{n})Q$, 易知 $Q$ 可逆, 则 $f$ 在该基底下的度量矩阵 $A=Q^TEQ=Q^TQ$
+任取 $V$ 上一组基底 $(\eta_0,\eta_1,\dots,\eta_n)=(\epsilon_0,\epsilon_1,\dots,\epsilon_n)Q$, 易知 $Q$ 可逆, 则 $f$ 在该基底下的度量矩阵 $A=Q^TEQ=Q^TQ$
 
 $2\implies3:$ 显然
 
 $3\implies1:$
 
-不妨设该基底为 $(\def\enum#1{\eta_{ #1}}\enum{1},\enum{2},...,\enum{n})$
+不妨设该基底为 $(\eta_0,\eta_1,\dots,\eta_n)$
 
 假设 $f$ 在该基底下的度量矩阵为 $A=Q^TQ=Q^TEQ$, 则 $E=(Q^{-1})^TAQ^{-1}$
 
-故存在基底 $(\def\enum#1{\epsilon_{ #1}}\enum{1},\enum{2},...,\enum{n})=(\def\enum#1{\eta_{ #1}}\enum{1},\enum{2},...,\enum{n})Q^{-1}$ 使得 $f$ 的度量矩阵为 $E$
+故存在基底 $(\epsilon_0,\epsilon_1,\dots,\epsilon_n)=(\eta_0,\eta_1,\dots,\eta_n)Q^{-1}$ 使得 $f$ 的度量矩阵为 $E$
 
 显然 $f$ 是对称正定双线性函数, 即 $f$ 为 $V$ 上的内积
 
@@ -781,9 +783,9 @@ $\impliedby$:
 
 只需证 $n$ 维 Euclidean 空间 $V$ 同构于 $\mathbb{R}^n$
 
-令 $(\def\enum#1{\epsilon_{ #1}}\enum{1},\enum{2},...,\enum{n})$ 为 $V$ 的一组标准正交基, 建立映射
+令 $(\epsilon_0,\epsilon_1,\dots,\epsilon_n)$ 为 $V$ 的一组标准正交基, 建立映射
 
-$$f_{\{\epsilon_i\}_{i=1}^n}:\alpha\mapsto(\def\enum#1{x_{ #1}}\enum{1},\enum{2},...,\enum{n})^T\in\mathbb{R}^n,~\alpha=\sum_{i=1}^nx_i\epsilon_i\in V$$
+$$f_{\{\epsilon_i\}_{i=1}^n}:\alpha\mapsto(x_1,x_2,\dots,x_n)^T\in\mathbb{R}^n,~\alpha=\sum_{i=1}^nx_i\epsilon_i\in V$$
 
 易知 $f_{\{\epsilon_i\}_{i=1}^n}$ 是 $V$ 到 $\mathbb{R}^n$ 的线性同构映射
 
@@ -792,7 +794,7 @@ $$f_{\{\epsilon_i\}_{i=1}^n}:\alpha\mapsto(\def\enum#1{x_{ #1}}\enum{1},\enum{2}
 $$
 \begin{aligned}
   (\alpha,\beta)&=\sum_{i=1}^nx_iy_i\\
-  &=((\def\enum#1{x_{ #1}}\enum{1},\enum{2},...,\enum{n})^T,(\def\enum#1{y_{ #1}}\enum{1},\enum{2},...,\enum{n})^T)\\
+  &=((x_1,x_2,\dots,x_n)^T,(y_1,y_2,\dots,y_n)^T)\\
   &=(f_{\{\epsilon_i\}_{i=1}^n}(\alpha),f_{\{\epsilon_i\}_{i=1}^n}(\beta))
 \end{aligned}
 $$
@@ -819,7 +821,7 @@ $$
 
 #### <a href="#end-t-3-6" id="t-3-6">定理 - 3-6</a>
 
-令 $V$ 为一 $n$ 维 Euclidean 空间, $\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{m}\in V$, 则有如下平行的事实
+令 $V$ 为一 $n$ 维 Euclidean 空间, $\alpha_0,\alpha_1,\dots,\alpha_m\in V$, 则有如下平行的事实
 
 1. 若 $\alpha_i\ne\theta,~(\alpha_i,\alpha_j)=0,~i,j=1,2,...,m,~i\ne j$, 则 $m\leqslant n$
 1. 若 $(\alpha_i,\alpha_j)<0,~i,j=1,2,...,m,~i\ne j$, 则 $m\leqslant n+1$
@@ -827,8 +829,8 @@ $$
 
 又在线性相关的角度, 我们可以注意到更深刻的事实
 
-1. 条件蕴含 $\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{m}$ 线性无关
-1. 条件蕴含 $\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{m}$ 的任意真子组线性无关
+1. 条件蕴含 $\alpha_0,\alpha_1,\dots,\alpha_m$ 线性无关
+1. 条件蕴含 $\alpha_0,\alpha_1,\dots,\alpha_m$ 的任意真子组线性无关
 
 ##### <a href="#t-3-6" id="p-t-3-6">证明</a>
 
@@ -839,7 +841,7 @@ $$
 
    而 $(\alpha_j,\alpha_j)>0$, 故 $k_j=0,~j=1,2,...,m$
 
-   因此 $\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{m}$ 线性无关
+   因此 $\alpha_0,\alpha_1,\dots,\alpha_m$ 线性无关
 
    因此 $m\leqslant n$
 
@@ -850,7 +852,7 @@ $$
 
    此时 $(\alpha_{n+2},\sum_{i=1}^{n+1}k_i\alpha_i)=0$
 
-   此式说明 $\def\enum#1{k_{ #1}}\enum{1},\enum{2},...,\enum{n+1}$ 中有正有负, 不妨设
+   此式说明 $k_0,k_1,\dots,k_{n+1}$ 中有正有负, 不妨设
    $$k_i>0,k_j<0,~i=1,2,...,s,~j=s+1,s+2,...,t,~1\leqslant s<t\leqslant n+1$$
    则 $\sum_{i=1}^sk_i\alpha_i=-\sum_{i=s+1}^tk_i\alpha_i$
 
@@ -859,15 +861,15 @@ $$
 
    这与点积的正定性矛盾, 故 $m\leqslant n+1$
 
-   类似地, 我们可证明 $\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{m}$ 的任意真子组线性无关
+   类似地, 我们可证明 $\alpha_0,\alpha_1,\dots,\alpha_m$ 的任意真子组线性无关
 
-   只需证 $\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{m-1}$ 线性无关
+   只需证 $\alpha_0,\alpha_1,\dots,\alpha_{m-1}$ 线性无关
 
    设 $\exists k_i\in\mathbb{R},~i=1,2,...,m-1,~s.t.~\displaystyle\sum_{i=1}^{m-1}k_i\alpha_i=\theta$
 
    此时 $(\alpha_m,\sum_{i=1}^{m-1}k_i\alpha_i)=0$
 
-   此式说明要么 $\def\enum#1{k_{ #1}}\enum{1},\enum{2},...,\enum{m-1}$ 中有正有负, 要么 $\def\enum#1{k_{ #1}}\enum{1},\enum{2},...,\enum{m-1}$ 均为 $0$
+   此式说明要么 $k_0,k_1,\dots,k_{m-1}$ 中有正有负, 要么 $k_0,k_1,\dots,k_{m-1}$ 均为 $0$
 
    - 若情况为后者, 则命题得证
    - 若情况为前者, 不妨设
@@ -884,10 +886,10 @@ $$
 
    假设 $f$ 存在
 
-   - 当 $n=1$ 时, $\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{m}$ 中任意两个向量均线性相关, 不妨设  
+   - 当 $n=1$ 时, $\alpha_0,\alpha_1,\dots,\alpha_m$ 中任意两个向量均线性相关, 不妨设  
      $\alpha_i=k_i\alpha_1,~i=1,2,3,...m$, 显然 $k_1=1$
 
-     假设 $f(1)\in\mathbb{Z}^+$, 令 $m=f(1)$, $k\in\mathbb{Z}^+/\{\def\enum#1{k_{ #1}}\enum{1},\enum{2},...,\enum{m}\}$, $\beta=k\alpha_1$
+     假设 $f(1)\in\mathbb{Z}^+$, 令 $m=f(1)$, $k\in\mathbb{Z}^+/\{k_1,k_2,\dots,k_m\}$, $\beta=k\alpha_1$
 
      则 $(\beta,\alpha_i)=kk_i(\alpha_1,\alpha_1)>0,~i=1,2,...,m$
 
@@ -895,7 +897,7 @@ $$
 
      因此 $1\notin D(f)$
 
-   - 当 $n\geqslant2$ 时, $\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{m}$ 中存在两向量线性无关, 设其为 $\alpha'_1,\alpha'_2$
+   - 当 $n\geqslant2$ 时, $\alpha_0,\alpha_1,\dots,\alpha_m$ 中存在两向量线性无关, 设其为 $\alpha'_1,\alpha'_2$
 
      假设 $f(n)\in\mathbb{Z}^+$, 令 $m=f(n)$
 
@@ -925,7 +927,7 @@ $$
 
 1. 显然
 1. 若 $f=g$, 则 $(f-g)(\alpha-\beta)=(\alpha-\beta,\alpha-\beta)=0$, 矛盾
-1. 任取 $V$ 上一组基 $\def\enum#1{\epsilon_{ #1}}\enum{1},\enum{2},...,\enum{n}$, 设 $f(\epsilon_i)=t_i,~i=1,2,...,n$
+1. 任取 $V$ 上一组基 $\epsilon_0,\epsilon_1,\dots,\epsilon_n$, 设 $f(\epsilon_i)=t_i,~i=1,2,...,n$
 
    考虑方程组
 
@@ -1027,20 +1029,20 @@ $\alpha-\beta=(\alpha-\alpha_1)+(\alpha_1-\beta),~\alpha_1-\beta\in V_1,\alpha-\
 
 > **定义** Gram 矩阵
 >
-> 令 $V$ 为一 $n$ 维 Euclidean 空间, $\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{m}\in V$, 称
+> 令 $V$ 为一 $n$ 维 Euclidean 空间, $\alpha_0,\alpha_1,\dots,\alpha_m\in V$, 称
 > $$((\alpha_i,\alpha_j))_{m\times m}$$
-> 为 $\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{m}$ 的**Gram 矩阵**, 记作 $G(\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{m})$
+> 为 $\alpha_0,\alpha_1,\dots,\alpha_m$ 的**Gram 矩阵**, 记作 $G(\alpha_0,\alpha_1,\dots,\alpha_m)$
 
 接下来我们就可以给出做法了
 
 #### <a href="#end-t-4-3" id="t-4-3">定理 - 4-3</a>
 
-令 $V$ 为一 $n$ 维 Euclidean 空间, $V_1=G[\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{m}]\leqslant V$, $\alpha\in V$, $X=(\def\enum#1{x_{ #1}}\enum{1},\enum{2},...,\enum{m})^T\in\mathbb{R}^m$
+令 $V$ 为一 $n$ 维 Euclidean 空间, $V_1=G[\alpha_0,\alpha_1,\dots,\alpha_m]\leqslant V$, $\alpha\in V$, $X=(x_1,x_2,\dots,x_m)^T\in\mathbb{R}^m$
 
 则
-$$\gamma=(\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{m})X=\sum_{i=1}^mx_i\alpha_i\tag{4-3.1}$$
+$$\gamma=(\alpha_0,\alpha_1,\dots,\alpha_m)X=\sum_{i=1}^mx_i\alpha_i\tag{4-3.1}$$
 为 $\alpha$ 在 $V_1$ 上的正射影当且仅当  
-$$G(\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{m})X=(\def\enum#1{(\alpha,\alpha_{ #1})}\enum{1},\enum{2},...,\enum{m})^T\tag{4-3.2}$$
+$$G(\alpha_0,\alpha_1,\dots,\alpha_m)X=((\alpha,\alpha_0),(\alpha,\alpha_1),\dots,(\alpha,\alpha_m))^T\tag{4-3.2}$$
 
 ##### <a href="#t-4-3" id="p-t-4-3">证明</a>
 
@@ -1050,18 +1052,18 @@ $$
 \begin{aligned}
   (\text{4-3.1})&\iff \left(\alpha-\sum_{i=1}^mx_i\alpha_i\right)\in V_1^\perp\\
   &\iff 0=(\alpha_j,\alpha-\sum_{i=1}^mx_i\alpha_i)=(\alpha,\alpha_j)-\sum_{i=1}^mx_i(\alpha_j,\alpha_i),~j=1,2,...,m\\
-  &\iff G(\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{m})X=(\def\enum#1{(\alpha,\alpha_{ #1})}\enum{1},\enum{2},...,\enum{m})^T
+  &\iff G(\alpha_0,\alpha_1,\dots,\alpha_m)X=((\alpha,\alpha_0),(\alpha,\alpha_1),\dots,(\alpha,\alpha_m))^T
 \end{aligned}
 $$
 
 <a href="#p-t-4-3" id="end-t-4-3">$\Box$</a>
 
-这里补充一点, <a href="#t-4-3">定理 - 4-3</a> 条件里并未限制 $\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{m}$ 线性无关
+这里补充一点, <a href="#t-4-3">定理 - 4-3</a> 条件里并未限制 $\alpha_0,\alpha_1,\dots,\alpha_m$ 线性无关
 
-- 若 $\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{m}$ 线性无关, 则 $G(\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{m})$ 即为内积在 $V_1$ 的度量矩阵, 则 $G(\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{m})$ 是正交矩阵, $|G(\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{m})|\ne0$, 因此方程 $(\text{4-3.2})$ 的解唯一
-  - 若 $\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{m}$ 是一组标准正交基, 则 $G(\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{m})=E$, 此时
-    $$X=(\def\enum#1{(\alpha,\alpha_{ #1})}\enum{1},\enum{2},...,\enum{m})^T$$
-- 若 $\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{m}$ 线性相关, 则 $X$ 的解显然不唯一
+- 若 $\alpha_0,\alpha_1,\dots,\alpha_m$ 线性无关, 则 $G(\alpha_0,\alpha_1,\dots,\alpha_m)$ 即为内积在 $V_1$ 的度量矩阵, 则 $G(\alpha_0,\alpha_1,\dots,\alpha_m)$ 是正交矩阵, $|G(\alpha_0,\alpha_1,\dots,\alpha_m)|\ne0$, 因此方程 $(\text{4-3.2})$ 的解唯一
+  - 若 $\alpha_0,\alpha_1,\dots,\alpha_m$ 是一组标准正交基, 则 $G(\alpha_0,\alpha_1,\dots,\alpha_m)=E$, 此时
+    $$X=((\alpha,\alpha_0),(\alpha,\alpha_1),\dots,(\alpha,\alpha_m))^T$$
+- 若 $\alpha_0,\alpha_1,\dots,\alpha_m$ 线性相关, 则 $X$ 的解显然不唯一
 
 ### 最小二乘法
 
@@ -1069,30 +1071,30 @@ $$
 
 在实际应用中, 线性方程组 $AX=B,~A\in\mathbb{R}^{m\times n}$ 由于测量精度等原因往往无解, 即
 $$\sum_{i=1}^n(b_1-\sum_{j=1}^na_{ij}x_j)^2\ne0\tag{4.1}$$
-此时, 我们则需要寻找一组实数 $\def\enum#1{x_{ #1}}\enum{1},\enum{2},...,\enum{n}$ 使得式 $(4.1)$ 左端的值最小  
-这样的 $\def\enum#1{x_{ #1}}\enum{1},\enum{2},...,\enum{n}$ 即为 $AX=B$ 的**最小二乘解**
+此时, 我们则需要寻找一组实数 $x_1,x_2,\dots,x_n$ 使得式 $(4.1)$ 左端的值最小  
+这样的 $x_1,x_2,\dots,x_n$ 即为 $AX=B$ 的**最小二乘解**
 
 下面我们将在 $m$ 维 Euclidean 空间讨论该问题
 
-将 $A$ 按列分块, $A=(\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{n}),~\alpha_i\in\mathbb{R}^m,i=1,2,...,n$
+将 $A$ 按列分块, $A=(\alpha_0,\alpha_1,\dots,\alpha_n),~\alpha_i\in\mathbb{R}^m,i=1,2,...,n$
 
 有
-$$AX=\sum_{i=1}^nx_i\alpha_i\in G[\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{n}]\leqslant\mathbb{R}^m$$
+$$AX=\sum_{i=1}^nx_i\alpha_i\in G[\alpha_0,\alpha_1,\dots,\alpha_n]\leqslant\mathbb{R}^m$$
 
 而式 $(4.1)$ 左端用内积的语言描述即为
 $$(B-\sum_{i=1}^nx_i\alpha_i,B-\sum_{i=1}^nx_i\alpha_i)=|B-\sum_{i=1}^nx_i\alpha_i|^2\tag{4.2}$$
 
 要使式 $(4.2)$ 的值最小, 只需 $d(B,\sum_{i=1}^nx_i\alpha_i)$ 最小
 
-此时取的 $\def\enum#1{x_{ #1}}\enum{1},\enum{2},...,\enum{n}$ 即要使 $\sum_{i=1}^nx_i\alpha_i$ 为 $B$ 在 $G[\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{n}]$ 的正射影
+此时取的 $x_1,x_2,\dots,x_n$ 即要使 $\sum_{i=1}^nx_i\alpha_i$ 为 $B$ 在 $G[\alpha_0,\alpha_1,\dots,\alpha_n]$ 的正射影
 
-这样的 $\def\enum#1{x_{ #1}}\enum{1},\enum{2},...,\enum{n}$ 是且仅是
-$$G(\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{n})X=(\def\enum#1{(B,\alpha_{ #1})}\enum{1},\enum{2},...,\enum{n})^T\tag{4.3}$$
+这样的 $x_1,x_2,\dots,x_n$ 是且仅是
+$$G(\alpha_0,\alpha_1,\dots,\alpha_n)X=((B,\alpha_0),(B,\alpha_1),\dots,(B,\alpha_n))^T\tag{4.3}$$
 的解
 
 又
-$$G(\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{n})=A^TA$$
-$$(\def\enum#1{(B,\alpha_{ #1})}\enum{1},\enum{2},...,\enum{n})^T=A^TB$$
+$$G(\alpha_0,\alpha_1,\dots,\alpha_n)=A^TA$$
+$$((B,\alpha_0),(B,\alpha_1),\dots,(B,\alpha_n))^T=A^TB$$
 
 因此式 $(4.3)$ 即为
 $$A^TAX=A^TB\tag{4.4}$$
@@ -1106,8 +1108,8 @@ $(4.4)$ 的可解性也可通过 $\operatorname{rk}(A^TA)=\operatorname{rk}((A^T
 
 #### <a href="#end-prob-4-1" id="prob-4-1">习题 - 4-1</a>
 
-令 $V$ 为一 $n$ 维 Euclidean 空间, $\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{m}\in V$, 证明:  
-$\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{m}$ 线性无关当且仅当 $|G(\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{m})|\ne0$
+令 $V$ 为一 $n$ 维 Euclidean 空间, $\alpha_0,\alpha_1,\dots,\alpha_m\in V$, 证明:  
+$\alpha_0,\alpha_1,\dots,\alpha_m$ 线性无关当且仅当 $|G(\alpha_0,\alpha_1,\dots,\alpha_m)|\ne0$
 
 ##### <a href="#prob-4-1" id="p-prob-4-1">解</a>
 
@@ -1118,15 +1120,15 @@ $\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{m}$ 线性无关当且仅�
   则 $\displaystyle\sum_{i=1}^nk_i(\alpha_j,\alpha_i)=0,~j=1,2,...,n$
 
   即
-  $$G(\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{n})(\def\enum#1{k_{ #1}}\enum{1},\enum{2},...,\enum{n})^T=O\tag{4-1.1}$$
+  $$G(\alpha_0,\alpha_1,\dots,\alpha_n)(k_1,k_2,\dots,k_n)^T=O\tag{4-1.1}$$
 
-  由 $|G(\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{m})|\ne0$ 知该方程只有零解
+  由 $|G(\alpha_0,\alpha_1,\dots,\alpha_m)|\ne0$ 知该方程只有零解
 
-  故 $\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{m}$ 线性无关
+  故 $\alpha_0,\alpha_1,\dots,\alpha_m$ 线性无关
 
 - $\implies$:
 
-  假设 $|G(\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{m})|=0$, 则方程 $(\text{4-1.1})$ 有非零解
+  假设 $|G(\alpha_0,\alpha_1,\dots,\alpha_m)|=0$, 则方程 $(\text{4-1.1})$ 有非零解
 
   即 $(\sum_{i=1}^nk_i\alpha_i,\alpha_j)=0,~j=1,2,...,n$
 

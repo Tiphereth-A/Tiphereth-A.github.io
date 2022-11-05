@@ -38,12 +38,14 @@ date: 2018-08-09 09:06:31
 
 对于**在区间 $[l,r]$ 内单调、连续且有 $f(l)\cdot f(r)<0$ 成立的 $f(x)$**, 做如下操作:
 
-1. 计算 $mid=\displaystyle\frac{l+r}{2}$
-1. 若 $f(l)f(mid)<0$, 则令 $r=mid$, 否则令 $l=mid$
+1. 计算 $m=\frac{l+r}{2}$
+1. 若 $f(l)f(m)<0$, 则令 $r=m$, 否则令 $l=m$
 1. 如果达到预定精度, 跳转到 4, 否则跳转到 1
 1. 结束
 
-循环次数: $\displaystyle\lceil\log_2 {\frac{r-l}{\epsilon}}\rceil$
+循环次数:
+
+$$\left\lceil\log_2 {\frac{r-l}{\epsilon}}\right\rceil$$
 
 附程序:
 
@@ -107,10 +109,10 @@ date: 2018-08-09 09:06:31
 
 流程如下
 
-1. 计算 $mid_1=l\varphi+r(1-\varphi)$, $mid_2=l(1-\varphi)+r\varphi$
-1. 若 $f(l) f(mid_1)>0$
-   1. 则令 $l=mid_1,mid_1=mid_2,mid_2=l(1-\varphi)+r\varphi$
-   1. 否则令 $r=mid_2,mid_2=mid_1,mid_1=l\varphi+r(1-\varphi)$
+1. 计算 $m_1=l\varphi+r(1-\varphi)$, $m_2=l(1-\varphi)+r\varphi$
+1. 若 $f(l) f(m_1)>0$
+   1. 则令 $l=m_1,m_1=m_2,m_2=l(1-\varphi)+r\varphi$
+   1. 否则令 $r=m_2,m_2=m_1,m_1=l\varphi+r(1-\varphi)$
 1. 如果达到预定精度, 跳转到 4, 否则跳转到 2 **(注意这里跳转到 2)**
 1. 结束
 
@@ -286,7 +288,7 @@ $$x_{n+1}=x_n-\frac{f(x_n)}{f^\prime(x_n)}$$
 
 对于 PhOer 来说, $\cos x=x$ 这个方程应该是相当熟悉了 QwQ
 
-笔者在这里放上解析解 (近似值 $x=0.739$) , 详情见参考文献[2] (文献里讲的是 $t\sin x=x-m$ 的解法, 不过笔者太弱了, 实在是看不懂 QwQ)
+笔者在这里放上解析解 (近似值 $x=0.739$) , 详情见参考文献[^1] (文献里讲的是 $t\sin x=x-m$ 的解法, 不过笔者太弱了, 实在是看不懂 QwQ)
 
 $$\frac{\pi}{2}\exp\left(\frac{1}{\pi}\int_0^1\frac{\arctan\left({(\pi x+2)\log\left(\frac{\sqrt{1-x^2}+1}{x}\right)x\over x^2\log^2\left(\frac{\sqrt{1-x^2}+1}{x}\right)-\pi x-1}\right)}{x}\mathrm{d}x\right)$$
 
@@ -308,7 +310,8 @@ $$\frac{\pi}{2}\exp\left(\frac{1}{\pi}\int_0^1\frac{\arctan\left({(\pi x+2)\log\
 
 ## 主要参考资料
 
-- [1] 人教版高中数学选修 4-7 优选法与试验设计初步
-- [2] Siewert C E, Burniston E E. An exact analytical solution of Kepler's equation[J]. Celestial Mechanics, 1972, 6(3):294-304.
-- [3] [Newton's method - Wikipedia](https://en.wikipedia.org/wiki/Newton's_method)
-- [4] [Taylor's theorem - Wikipedia](https://en.wikipedia.org/wiki/Taylor%27s_theorem)
+- 人教版高中数学选修 4-7 优选法与试验设计初步
+- [Newton's method - Wikipedia](https://en.wikipedia.org/wiki/Newton's_method)
+- [Taylor's theorem - Wikipedia](https://en.wikipedia.org/wiki/Taylor%27s_theorem)
+
+[^1]: Siewert C E, Burniston E E. An exact analytical solution of Kepler's equation[J]. Celestial Mechanics, 1972, 6(3):294-304.

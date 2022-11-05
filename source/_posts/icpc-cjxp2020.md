@@ -261,12 +261,12 @@ $$\forall i\in[1,k]\cap\mathbb{N},~i\mid\overline{a_1a_2...a_i}$$
 
 ### 题意简述
 
-维护序列 $\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n}$, 对其进行 $m$ 次操作, 共两种:
+维护序列 $a_1,a_2,\dots,a_n$, 对其进行 $m$ 次操作, 共两种:
 
 1. `1 x y`: 将 $a_x$ 修改为 $y$
 1. `2 x`: 询问以 $a_x$ 为最小值的子串数
 
-保证任意时刻 $\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n}$ 两两不同
+保证任意时刻 $a_1,a_2,\dots,a_n$ 两两不同
 
 ### 解题思路
 

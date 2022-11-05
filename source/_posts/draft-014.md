@@ -14,7 +14,7 @@ tags:
 date: 2021-10-21 00:43:45
 ---
 
-对于给定的一个序列 $[\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{m}]$, 如何构造数列 $\{f_n\}$ 满足 $\{f_n\}$ 为周期为 $m$ 的数列且 $f_i=a_i,~\forall i\in 1..m$
+对于给定的一个序列 $[a_1,a_2,\dots,a_m]$, 如何构造数列 $\{f_n\}$ 满足 $\{f_n\}$ 为周期为 $m$ 的数列且 $f_i=a_i,~\forall i\in 1..m$
 
 例如数列
 $$\color{brown}f_n=\frac{2}{3}\left(-\sqrt{3}\sin\frac{\pi n}{3}-\cos\frac{\pi n}{3}+\sqrt{3}\sin\frac{2\pi n}{3}+2\cos\frac{2\pi n}{3}+\cos\pi n+4\right)$$

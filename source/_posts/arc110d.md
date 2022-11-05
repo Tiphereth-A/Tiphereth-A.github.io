@@ -87,7 +87,7 @@ The sum of these is $1+2+3+2=8$
 
 ## 题意简述
 
-给定正整数 $n,m$ 和 $\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n}$, 求
+给定正整数 $n,m$ 和 $a_1,a_2,\dots,a_n$, 求
 
 $$
 \sum_{\begin{smallmatrix}

@@ -178,8 +178,6 @@ $\displaystyle\limsup_{n\to\infty}A_n=E\cup F,~\liminf_{n\to\infty}A_n=E\cap F$
 - $\{A_k\}$ 的上限集是由属于 $\{A_k\}$ 中无限多集合的元素构成
 - $\{A_k\}$ 的下限集是由不属于 $\{A_k\}$ 中有限多集合的元素构成
 
-{% note %}
-
 <details open>
 <summary><font color='orange'>Proof</font></summary>
 
@@ -199,7 +197,6 @@ $$
 
 </details>
 
-{% endnote %}
 {% endnote %}
 
 {% note success no-icon %}
@@ -230,8 +227,6 @@ $X\times X$ 也可记作 $X^2$
 证明: 使 $f_n(x)$ 不收敛到 $f(x)$ 的一切点 $x$ 组成的集合为
 $$D=\bigcup_{k=1}^{\infty}\bigcap_{N=1}^{\infty}\bigcup_{n=N}^{\infty}\left\{x:|f_n(x)-f(x)|\geqslant\frac{1}{k}\right\}$$
 
-{% note %}
-
 <details>
 <summary><font color='orange'>Proof</font></summary>
 
@@ -248,7 +243,6 @@ $$x_0\in\bigcup_{k=1}^{\infty}\limsup_{n\to\infty}E_{n,k}=\bigcup_{k=1}^{\infty}
 </details>
 
 {% endnote %}
-{% endnote %}
 
 {% note primary no-icon %}
 
@@ -258,8 +252,6 @@ $$x_0\in\bigcup_{k=1}^{\infty}\limsup_{n\to\infty}E_{n,k}=\bigcup_{k=1}^{\infty}
 
 证明:
 $$\forall t\in\mathbb{R},\{x:f(x)\leqslant t\}=\bigcap_{k=1}^{\infty}\bigcup_{N=1}^{\infty}\bigcap_{n=N}^{\infty}\left\{x:f_n(x)<t+\frac{1}{k}\right\}$$
-
-{% note %}
 
 <details>
 <summary><font color='orange'>Proof</font></summary>
@@ -278,7 +270,6 @@ $$
 </details>
 
 {% endnote %}
-{% endnote %}
 
 {% note primary no-icon %}
 
@@ -288,8 +279,6 @@ $$
 
 证明:
 $$\bigcap_{k=1}^{\infty}\bigcup_{N=1}^{\infty}\bigcap_{n=N}^{\infty}\left(a_n-\frac{1}{k},a_n+\frac{1}{k}\right)=a$$
-
-{% note %}
 
 <details>
 <summary><font color='orange'>Proof</font></summary>
@@ -307,5 +296,4 @@ $$
 
 </details>
 
-{% endnote %}
 {% endnote %}

@@ -145,8 +145,6 @@ upd2:正解文件比较大, 洛谷可能会一直 judging...
 
 进一步, 两个域的特征相同当且仅当其素域同构
 
-{% note %}
-
 <details open>
 <summary>证明</summary>
 
@@ -190,7 +188,6 @@ $$
 </details>
 
 {% endnote %}
-{% endnote %}
 
 令 $n$ 元有限域为 $\mathbb{E}_n$, 显然其特征必为素数, 故 $n=6$ 和 $n=143$ 的情况直接输出 `-1` 即可
 
@@ -200,20 +197,18 @@ $$
 
 **<a id="th-2">定理 - 2</a>** $\forall p\in\text{Prime}^+,m\in\mathbb{N}^+$, $p^m$ 阶有限域必存在且在 $\mathbb{F}_p$-同构意义下是唯一的
 
-{% note %}
-
 <details open>
 <summary>证明</summary>
 
 令 $f(x)=x^{p^m}-x\in\mathbb{F}_p[x]$, 作 $\mathbb{F}_p$ 关于 $f(x)$ 的分裂域
 
-$$\mathbb{E}=\mathbb{F}_p(\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{p^m})$$
+$$\mathbb{E}=\mathbb{F}_p(\alpha_0,\alpha_1,\dots,\alpha_{p^m})$$
 
-其中 $\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{p^m}$ 为 $f(x)$ 在 $\mathbb{E}$ 中的根
+其中 $\alpha_0,\alpha_1,\dots,\alpha_{p^m}$ 为 $f(x)$ 在 $\mathbb{E}$ 中的根
 
 又由 $\operatorname{char}(\mathbb{F}_p)=p$ 知, $f'(x)=-1$, 从而 $(f(x),f'(x))=1$, 即 $f(x)$ 无重根
 
-令 $\mathbb{L}=\{\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{p^m}\}$, 则 $\forall\alpha_i,\alpha_j\in\mathbb{L}$
+令 $\mathbb{L}=\{\alpha_0,\alpha_1,\dots,\alpha_{p^m}\}$, 则 $\forall\alpha_i,\alpha_j\in\mathbb{L}$
 
 - $$(\alpha_i-\alpha_j)^{p^m}=\alpha_i-\alpha_j\in\mathbb{L}$$
 - $$\left(\frac{\alpha_i}{\alpha_j}\right)^{p^m}=\frac{\alpha_i}{\alpha_j}\in\mathbb{L},~(\alpha_j\ne 0)$$
@@ -226,7 +221,6 @@ $$\mathbb{E}=\mathbb{F}_p(\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{p
 
 </details>
 
-{% endnote %}
 {% endnote %}
 
 故其他数据点均可以构造
@@ -243,8 +237,6 @@ $$\mathbb{F}_p[x]/\lang p(x)\rang=\left\{\sum_{i=0}^{m-1}a_ix^i+\lang p(x)\rang\
 
 为一阶为 $p^m$ 的有限域
 
-{% note %}
-
 <details open>
 <summary>证明</summary>
 
@@ -255,7 +247,6 @@ $$|\mathbb{F}_p[x]/\lang p(x)\rang|=p^m$$
 
 </details>
 
-{% endnote %}
 {% endnote %}
 
 我们将 $\mathbb{F}_p[x]/\lang p(x)\rang$ 中的多项式看作 $p$ 进制数, 不难发现这个操作是同构映射, 故这题我们就做完了

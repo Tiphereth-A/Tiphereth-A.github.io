@@ -28,9 +28,9 @@ Cantor 展开是用于求排列字典序的算法, 逆 Cantor 展开即根据字
 
   在不引起歧义的情况下, 可将 $\mathbb{Z}_a^b$ 简记为 $a..b$
 
-- $f_n:=((n-1)!,(n-2)!,...,1!,0!)\in\mathbb{N}^n$
-- $1..n$ 的排列: 称 $A:=(\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n})\in(\mathbb{Z}_1^n)^n$ 为 $1..n$ 的排列, 若
-  $$\{\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n}\}=\{1,2,...,n\}$$
+- $f_n:=\left((n-1)!,(n-2)!,...,1!,0!\right)\in\mathbb{N}^n$
+- $1..n$ 的排列: 称 $A:=(a_1,a_2,\dots,a_n)\in(\mathbb{Z}_1^n)^n$ 为 $1..n$ 的排列, 若
+  $$\{a_1,a_2,\dots,a_n\}=\{1,2,...,n\}$$
 
   为了方便下文叙述, 我们定义
 
@@ -38,12 +38,12 @@ Cantor 展开是用于求排列字典序的算法, 逆 Cantor 展开即根据字
 
     显然 $|S_n|=n!$
 
-  - 对 $1..n$ 的排列 $A=(\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n})$,
+  - 对 $1..n$ 的排列 $A=(a_1,a_2,\dots,a_n)$,
     $$D_i(A):=\{(d_1,d_2,...,d_n)\in S_n~|~d_i<a_i;~\forall j\in \mathbb{Z}_1^{i-1}, d_j=a_j\}$$
 
     在不引起歧义的情况下, 可将 $D_i(A)$ 简记为 $D_i$
 
-- $1..n$ 排列的字典序: 对 $1..n$ 的排列 $A=(\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n})$, 定义其序号为
+- $1..n$ 排列的字典序: 对 $1..n$ 的排列 $A=(a_1,a_2,\dots,a_n)$, 定义其序号为
   $$d(A)=\left|\bigcup_{i=1}^nD_i(A)\right|+1=\sum_{i=1}^n|D_i(A)|+1$$
 
   显然
@@ -51,7 +51,7 @@ Cantor 展开是用于求排列字典序的算法, 逆 Cantor 展开即根据字
   - $d(1,2,...,n)=1$
   - $d(n,n-1,...,1)=n!$
 
-- 对 $1..n$ 的排列 $A=(\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n})$, 定义 $P_A:=(\def\enum#1{p_{ #1}}\enum{1},\enum{2},...,\enum{n})$, 其中 $p_i=|\{a_j~|~a_j<a_i,\forall j\in\mathbb{Z}_i^n\}|,~i=1,2,...,n$
+- 对 $1..n$ 的排列 $A=(a_1,a_2,\dots,a_n)$, 定义 $P_A:=(p_1,p_2,\dots,p_n)$, 其中 $p_i=|\{a_j:a_j<a_i,\forall j\in\mathbb{Z}_i^n\}|,~i=1,2,...,n$
 
   如 $P_{(3,2,1,4)}=(2,1,0,0)$
 

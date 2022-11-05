@@ -71,7 +71,7 @@ Central Europe 1999
 
 ## 题意简述
 
-给出 Gauss 整数 $X$ 和 $B$, 求是否存在一组数 $\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n}$ 满足
+给出 Gauss 整数 $X$ 和 $B$, 求是否存在一组数 $a_1,a_2,\dots,a_n$ 满足
 
 - $0 \leqslant ai < |B|, i=0,1,...,n$
 - $X = a_0 + a_1B + a_2B^2 + ...+ a_nB^n$

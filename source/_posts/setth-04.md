@@ -173,8 +173,6 @@ $$(E_1\cup E_2)'=E_1'\cup E_2'$$
 
 $\mathbb{R}^n$ 中任一有界无限点集均至少有一个聚点
 
-{% note %}
-
 <details open>
 <summary><font color='orange'>Proof</font></summary>
 
@@ -182,7 +180,6 @@ $\mathbb{R}^n$ 中任一有界无限点集均至少有一个聚点
 
 </details>
 
-{% endnote %}
 {% endnote %}
 
 ### 习题
@@ -194,8 +191,6 @@ $\mathbb{R}^n$ 中任一有界无限点集均至少有一个聚点
 证明: 设 $\{a_n\}$ 为 $\mathbb{R}$ 中的有界点列, 且
 $$|a_{n+1}-a_n|\geqslant 1,~n=1,2,...$$
 则 $\{a_n\}$ 可能有无穷多个聚点
-
-{% note %}
 
 <details>
 <summary><font color='orange'>Proof</font></summary>
@@ -220,7 +215,6 @@ $$(1,1)\to(1,2)\to(2,1)\to(3,1)\to(2,2)\to(1,3)\to(1,4)\to...$$
 
 </details>
 
-{% endnote %}
 {% endnote %}
 
 ## 一些基本点集

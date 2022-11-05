@@ -76,7 +76,7 @@ date: 2020-05-27 20:37:42
 >
 > 故任意向量均存在负向量
 
-另外一些零碎的定义, 如 $G[\def\enum#1{\alpha_#1}\enum{1},\enum{2},...,\enum{n}]$ 就略去了
+另外一些零碎的定义, 如 $G[\alpha_0,\alpha_1,\dots,\alpha_n]$ 就略去了
 
 ### 例子
 
@@ -138,8 +138,8 @@ date: 2020-05-27 20:37:42
 1. $\theta$ 拆分为 $V_1$ 和 $V_2$ 中的向量和的方式唯一
 1. $V_1\cap V_2=\{\theta\}$
 1. $\dim V_1+\dim V_2=\dim(V_1+V_2)$
-1. 若 $(\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{m})$ 是 $V_1$ 的一组基, $(\def\enum#1{\beta_{ #1}}\enum{1},\enum{2},...,\enum{n})$ 是 $V_2$ 的一组基,  
-   则 $(\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{m},\def\enum#1{\beta_{ #1}}\enum{1},\enum{2},...,\enum{n})$ 是 $V_1+V_2$ 的一组基
+1. 若 $(\alpha_0,\alpha_1,\dots,\alpha_m)$ 是 $V_1$ 的一组基, $(\beta_0,\beta_1,\dots,\beta_n)$ 是 $V_2$ 的一组基,  
+   则 $(\alpha_0,\alpha_1,\dots,\alpha_m,\beta_0,\beta_1,\dots,\beta_n)$ 是 $V_1+V_2$ 的一组基
 
 #### <a href="#t-2-2" id="p-t-2-2">证明</a>
 
@@ -188,7 +188,7 @@ $$\theta\ne\beta_1-\gamma_1=\gamma_2-\beta_2\in V_1\cap V_2$$
 ### (有限)生成集与维数
 
 令 $V$ 为 $\mathbb{P}$ 上一线性空间, $\varnothing\ne S\subseteq V$, 称 $S$ 为 $V$ 的生成集, 如果
-$$(\forall\alpha\in V,\exists n\in\mathbb{N}^+,\def\enum#1{\alpha_#1}\enum{1},\enum{2},...,\enum{n}\in S,\def\enum#1{k_#1}\enum{1},\enum{2},...,\enum{n}\in\mathbb{P}),\alpha=\displaystyle\sum_{i=1}^nk_i\alpha_i$$
+$$(\forall\alpha\in V,\exists n\in\mathbb{N}^+,\alpha_0,\alpha_1,\dots,\alpha_n\in S,k_0,k_1,\dots,k_n\in\mathbb{P}),\alpha=\displaystyle\sum_{i=1}^nk_i\alpha_i$$
 
 (就是能线性表出 $V$ 中任意向量的一组向量)
 
@@ -200,13 +200,13 @@ $\operatorname{rk}S$ 即为 $V$ 的维数, 记作 $\dim V$
 
 ### 基底与坐标
 
-令 $V$ 为 $\mathbb{P}$ 上一线性空间, $\def\enum#1{\epsilon_#1}\enum{1},\enum{2},...,\enum{n}$ 为 $V$ 的一组极大线性无关组, 则
+令 $V$ 为 $\mathbb{P}$ 上一线性空间, $\epsilon_0,\epsilon_1,\dots,\epsilon_n$ 为 $V$ 的一组极大线性无关组, 则
 
-$$(\forall\alpha\in V,\exists\def\enum#1{k_#1}\enum{1},\enum{2},...,\enum{n}\in\mathbb{P}),\alpha=\displaystyle\sum_{i=1}^nk_i\epsilon_i$$
+$$(\forall\alpha\in V,\existsk_0,k_1,\dots,k_n\in\mathbb{P}),\alpha=\displaystyle\sum_{i=1}^nk_i\epsilon_i$$
 
-则称有序向量组 $(\def\enum#1{\epsilon_#1}\enum{1},\enum{2},...,\enum{n})$ 为 $V$ 的一组基底
+则称有序向量组 $(\epsilon_0,\epsilon_1,\dots,\epsilon_n)$ 为 $V$ 的一组基底
 
-$(\def\enum#1{k_#1}\enum{1},\enum{2},...,\enum{n})\in\mathbb{P}^n$ 为 $\alpha$ 在该基底下的坐标
+$(k_0,k_1,\dots,k_n)\in\mathbb{P}^n$ 为 $\alpha$ 在该基底下的坐标
 
 显然基底有无穷多组
 
@@ -218,11 +218,11 @@ $(\def\enum#1{k_#1}\enum{1},\enum{2},...,\enum{n})\in\mathbb{P}^n$ 为 $\alpha$ 
 1. $\{\theta\}$ 为 0 维的, 称作**平凡线性空间**
 1. 对于 $n$ 维线性空间 $\mathbb{P}_n[x]$ 中向量 $\alpha=f(x)=\displaystyle\sum_{i=0}^{n-1}a_ix^i$
 
-   显然 $(1,\def\enum#1{x^{ #1}}\enum{1},\enum{2},...,\enum{n-1})$ 为一组基底, 对应的坐标为 $(a_0,\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n-1})$
+   显然 $(1,x^1,x^2,...,x^{n-1})$ 为一组基底, 对应的坐标为 $(a_0,a_0,a_1,\dots,a_{n-1})$
 
    又由 Taylor 公式可得 $f(x)=\displaystyle\sum_{i=0}^{n-1}{f^{(i)}(a)\over i!}(x-a)^i$
 
-   故 $\left(1,x-a,\def\enum#1{(x-a)^{ #1}}\enum{2},...,\enum{n-1}\right)$ 为一组基底, 对应的坐标为 $(f(a),f'(a),...,{f^{(n-1)}(a)\over(n-1)!})$, 当 $a=0$ 时, 即为前述情况
+   故 $\left(1,x-a,(x-a)^2,...,(x-a)^{n-1}\right)$ 为一组基底, 对应的坐标为 $(f(a),f'(a),...,{f^{(n-1)}(a)\over(n-1)!})$, 当 $a=0$ 时, 即为前述情况
 
 ### <a href="#end-t-3-1" id="t-3-1">定理 - 3-1</a>**(维数公式)**
 
@@ -234,14 +234,14 @@ $$\dim(V_1+V_2)+\dim(V_1\cap V_2)=\dim V_1+\dim V_2$$
 
 令 $\dim V_1=n_1,\dim V_2=n_2,\dim(V_1\cap V_2)=l$, 只需证 $\dim(V_1+V_2)=n_1+n_2-l$
 
-取 $V_1\cap V_2$ 中一组基 $(\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{l})$, 其可在 $V_1,V_2$ 中分别扩充为  
-$(\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{l},\def\enum#1{\beta_{ #1}}\enum{1},\enum{2},...,\enum{n_1-l}),(\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{l},\def\enum#1{\gamma_{ #1}}\enum{1},\enum{2},...,\enum{n_2-l})$
+取 $V_1\cap V_2$ 中一组基 $(\alpha_0,\alpha_1,\dots,\alpha_l)$, 其可在 $V_1,V_2$ 中分别扩充为  
+$(\alpha_0,\alpha_1,\dots,\alpha_l,\beta_0,\beta_1,\dots,\beta_{n_1-l}),(\alpha_0,\alpha_1,\dots,\alpha_l,\gamma_0,\gamma_1,\dots,\gamma_{n_2-l})$
 
-如果 $(\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{l},\def\enum#1{\beta_{ #1}}\enum{1},\enum{2},...,\enum{n_1-l},\def\enum#1{\gamma_{ #1}}\enum{1},\enum{2},...,\enum{n_2-l})$ 为 $V_1+V_2$ 的一组基, 则命题得证
+如果 $(\alpha_0,\alpha_1,\dots,\alpha_l,\beta_0,\beta_1,\dots,\beta_{n_1-l},\gamma_0,\gamma_1,\dots,\gamma_{n_2-l})$ 为 $V_1+V_2$ 的一组基, 则命题得证
 
-显然 $V_1+V_2=G[\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{l},\def\enum#1{\beta_{ #1}}\enum{1},\enum{2},...,\enum{n_1-l},\def\enum#1{\gamma_{ #1}}\enum{1},\enum{2},...,\enum{n_2-l}]$
+显然 $V_1+V_2=G[\alpha_0,\alpha_1,\dots,\alpha_l,\beta_0,\beta_1,\dots,\beta_{n_1-l},\gamma_0,\gamma_1,\dots,\gamma_{n_2-l}]$
 
-则只需证明 $\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{l},\def\enum#1{\beta_{ #1}}\enum{1},\enum{2},...,\enum{n_1-l},\def\enum#1{\gamma_{ #1}}\enum{1},\enum{2},...,\enum{n_2-l}$ 线性无关即可
+则只需证明 $\alpha_0,\alpha_1,\dots,\alpha_l,\beta_0,\beta_1,\dots,\beta_{n_1-l},\gamma_0,\gamma_1,\dots,\gamma_{n_2-l}$ 线性无关即可
 
 考虑 $\displaystyle\sum_{i=1}^lk_i\alpha_i+\sum_{i=1}^{n_1-l}p_i\beta_i+\sum_{i=1}^{n_2-l}q_i\gamma_i=\theta$
 
@@ -256,7 +256,7 @@ $\displaystyle\sum_{i=1}^lr_i\alpha_i+\sum_{i=1}^{n_2-l}q_i\gamma_i=\theta\impli
 
 此式说明 $\alpha=\theta$, 故 $k_i=p_j=0,~i=1,2,...,l;j=1,2,...,n_1-l$
 
-因此 $\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{l},\def\enum#1{\beta_{ #1}}\enum{1},\enum{2},...,\enum{n_1-l},\def\enum#1{\gamma_{ #1}}\enum{1},\enum{2},...,\enum{n_2-l}$ 线性无关
+因此 $\alpha_0,\alpha_1,\dots,\alpha_l,\beta_0,\beta_1,\dots,\beta_{n_1-l},\gamma_0,\gamma_1,\dots,\gamma_{n_2-l}$ 线性无关
 
 <a href="#p-t-3-1" id="end-t-3-1">$\Box$</a>
 
@@ -267,11 +267,11 @@ $\displaystyle\sum_{i=1}^lr_i\alpha_i+\sum_{i=1}^{n_2-l}q_i\gamma_i=\theta\impli
 #### <a href="#end-prob-3-1" id="prob-3-1">习题 - 3-1</a>
 
 令 $W$ 是 $\mathbb{P}$ 上的 $n$ 维线性空间 $\mathbb{P}^n$ 的非平凡子空间, 证明:  
-若关于 $W$ 的每个向量 $(\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{n})$ 均或者 $\def\enum#1{\alpha_{ #1}}\enum{1}=\enum{2}=...=\enum{n}=0$, 或者 $\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{n}\ne0$, 则 $\dim W=1$
+若关于 $W$ 的每个向量 $(\alpha_0,\alpha_1,\dots,\alpha_n)$ 均或者 $\alpha_{1}=\alpha_{2}=...=\alpha_{n}=0$, 或者 $\alpha_0,\alpha_1,\dots,\alpha_n\ne 0$, 则 $\dim W=1$
 
 ##### <a href="#prob-3-1" id="p-prob-3-1">解</a>
 
-假设 $\dim W\geqslant2$, 则 $W$ 中存在两线性无关向量 $\alpha=(\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n}),\beta=(\def\enum#1{b_{ #1}}\enum{1},\enum{2},...,\enum{n})$ 满足
+假设 $\dim W\geqslant2$, 则 $W$ 中存在两线性无关向量 $\alpha=(a_1,a_2,\dots,a_n),\beta=(b_1,b_2,\dots,b_n)$ 满足
 
 $$(\exists1<i\leqslant n),k:=\frac{a_1}{b_1}\ne\frac{a_i}{b_i}$$
 
@@ -295,7 +295,7 @@ $(\forall f(x)=\displaystyle\sum_{i=0}^na_ix^i\in W),f(1)=0\implies a_0=-\sum_{i
 
 又 $\displaystyle\sum_{i=1}^nk_i(x^i-1)=0\implies k_1=k_2=...=k_n=0$
 
-故 $(x-1,\def\enum#1{x^{ #1}-1}\enum{2},...,\enum{n})$ 即为 $W$ 上的一组基底
+故 $(x-1,x^{2}-1,...,x^{n}-1)$ 即为 $W$ 上的一组基底
 
 <a href="#p-prob-3-2" id="end-prob-3-2">$\Box$</a>
 
@@ -305,53 +305,53 @@ $(\forall f(x)=\displaystyle\sum_{i=0}^na_ix^i\in W),f(1)=0\implies a_0=-\sum_{i
 
 ### 类矩阵
 
-$V$ 的一组基底 $(\def\enum#1{\epsilon_{ #1}}\enum{1},\enum{2},...,\enum{n})$ 被称作**类矩阵**, 因为其一些性质与矩阵类似
+$V$ 的一组基底 $(\epsilon_0,\epsilon_1,\dots,\epsilon_n)$ 被称作**类矩阵**, 因为其一些性质与矩阵类似
 
 1. 分配律:
    1. 左:  
-      $(\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{n})A+(\def\enum#1{\beta_{ #1}}\enum{1},\enum{2},...,\enum{n})A=(\def\enum#1{\alpha_{ #1}+\beta_{ #1}}\enum{1},\enum{2},...,\enum{n})A$
+      $(\alpha_0,\alpha_1,\dots,\alpha_n)A+(\beta_0,\beta_1,\dots,\beta_n)A=(\alpha_1+\beta_1,\alpha_2+\beta_2,...,\alpha_n+\beta_n)A$
    1. 右:  
-      $(\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{n})A+(\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{n})B=(\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{n})(A+B)$
-1. 数乘的交换律: $k(\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{n})A=(\def\enum#1{k\alpha_{ #1}}\enum{1},\enum{2},...,\enum{n})A=(\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{n})(kA)$
-1. 矩阵乘法的结合律: $[(\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{n})A]B=(\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{n})AB$
+      $(\alpha_0,\alpha_1,\dots,\alpha_n)A+(\alpha_0,\alpha_1,\dots,\alpha_n)B=(\alpha_0,\alpha_1,\dots,\alpha_n)(A+B)$
+1. 数乘的交换律: $k(\alpha_0,\alpha_1,\dots,\alpha_n)A=(k\alpha_0,k\alpha_1,\dots,k\alpha_n)A=(\alpha_0,\alpha_1,\dots,\alpha_n)(kA)$
+1. 矩阵乘法的结合律: $[(\alpha_0,\alpha_1,\dots,\alpha_n)A]B=(\alpha_0,\alpha_1,\dots,\alpha_n)AB$
 
 但由于线性空间的向量不一定是列向量, 故类矩阵不一定能看作矩阵分块
 
 有了类矩阵的概念, 我们就可以得到向量的另一种记法
 
-设向量 $\alpha$ 在 $(\def\enum#1{\epsilon_{ #1}}\enum{1},\enum{2},...,\enum{n})$ 下的坐标为 $(\def\enum#1{x_{ #1}}\enum{1},\enum{2},...,\enum{n})$, 则 $\alpha$ 可记作
+设向量 $\alpha$ 在 $(\epsilon_0,\epsilon_1,\dots,\epsilon_n)$ 下的坐标为 $(x_1,x_2,\dots,x_n)$, 则 $\alpha$ 可记作
 
 $$
-\alpha=(\def\enum#1{\epsilon_{ #1}}\enum{1},\enum{2},...,\enum{n})\begin{bmatrix}
+\alpha=(\epsilon_0,\epsilon_1,\dots,\epsilon_n)\begin{bmatrix}
    x_1\\x_2\\\vdots\\x_n
 \end{bmatrix}
 $$
 
 ### 过渡矩阵
 
-设 $(\def\enum#1{\epsilon_{ #1}}\enum{1},\enum{2},...,\enum{n})$ 和 $(\def\enum#1{\epsilon'_{ #1}}\enum{1},\enum{2},...,\enum{n})$ 是 $V$ 的两组基底, 则 $\exists T\in\mathbb{P}^{n\times n}$ 使得
+设 $(\epsilon_0,\epsilon_1,\dots,\epsilon_n)$ 和 $(\epsilon'_0,\epsilon'_1,\dots,\epsilon'_n)$ 是 $V$ 的两组基底, 则 $\exists T\in\mathbb{P}^{n\times n}$ 使得
 
-$$(\def\enum#1{\epsilon'_{ #1}}\enum{1},\enum{2},...,\enum{n})=(\def\enum#1{\epsilon_{ #1}}\enum{1},\enum{2},...,\enum{n})T\tag{1}$$
+$$(\epsilon'_0,\epsilon'_1,\dots,\epsilon'_n)=(\epsilon_0,\epsilon_1,\dots,\epsilon_n)T\tag{1}$$
 
-则称 $T$ 为 $(\def\enum#1{\epsilon_{ #1}}\enum{1},\enum{2},...,\enum{n})$ 到 $(\def\enum#1{\epsilon'_{ #1}}\enum{1},\enum{2},...,\enum{n})$ 的过渡矩阵
+则称 $T$ 为 $(\epsilon_0,\epsilon_1,\dots,\epsilon_n)$ 到 $(\epsilon'_0,\epsilon'_1,\dots,\epsilon'_n)$ 的过渡矩阵
 
-显然, $T$ 是可逆的, 否则 $(\def\enum#1{\epsilon'_{ #1}}\enum{1},\enum{2},...,\enum{n})$ 线性相关
+显然, $T$ 是可逆的, 否则 $(\epsilon'_0,\epsilon'_1,\dots,\epsilon'_n)$ 线性相关
 
 ### 坐标变换
 
-设向量 $\alpha$ 在 $(\def\enum#1{\epsilon_{ #1}}\enum{1},\enum{2},...,\enum{n}),(\def\enum#1{\epsilon'_{ #1}}\enum{1},\enum{2},...,\enum{n})$ 下的坐标分别为 $(\def\enum#1{x_{ #1}}\enum{1},\enum{2},...,\enum{n}),(\def\enum#1{x'_{ #1}}\enum{1},\enum{2},...,\enum{n})$, 则
+设向量 $\alpha$ 在 $(\epsilon_0,\epsilon_1,\dots,\epsilon_n),(\epsilon'_0,\epsilon'_1,\dots,\epsilon'_n)$ 下的坐标分别为 $(x_1,x_2,\dots,x_n),(x'_0,x'_1,\dots,x'_n)$, 则
 
 $$
 \begin{aligned}
-   \alpha=(\def\enum#1{\epsilon_{ #1}}\enum{1},\enum{2},...,\enum{n})\begin{bmatrix}
+   \alpha=(\epsilon_0,\epsilon_1,\dots,\epsilon_n)\begin{bmatrix}
       x_1\\x_2\\\vdots\\x_n
-   \end{bmatrix}&=(\def\enum#1{\epsilon'_{ #1}}\enum{1},\enum{2},...,\enum{n})\begin{bmatrix}
+   \end{bmatrix}&=(\epsilon'_0,\epsilon'_1,\dots,\epsilon'_n)\begin{bmatrix}
       x'_1\\x'_2\\\vdots\\x'_n
    \end{bmatrix}\\
-   &=(\def\enum#1{\epsilon_{ #1}}\enum{1},\enum{2},...,\enum{n})T\begin{bmatrix}
+   &=(\epsilon_0,\epsilon_1,\dots,\epsilon_n)T\begin{bmatrix}
       x'_1\\x'_2\\\vdots\\x'_n
    \end{bmatrix}\\
-   &=(\def\enum#1{\epsilon_{ #1}}\enum{1},\enum{2},...,\enum{n})(T\begin{bmatrix}
+   &=(\epsilon_0,\epsilon_1,\dots,\epsilon_n)(T\begin{bmatrix}
       x'_1\\x'_2\\\vdots\\x'_n
    \end{bmatrix})
 \end{aligned}
@@ -375,7 +375,7 @@ $$
 
 1. 定义
 1. 若线性空间为 $\mathbb{P}^n$, 则类矩阵即为矩阵, 式(1)即为 $B=AT$, 则 $T=A^{-1}B$
-1. 若已知 $n$ 个线性无关向量 $\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{n}$ 在两基底下的坐标, 则求法同上
+1. 若已知 $n$ 个线性无关向量 $\alpha_0,\alpha_1,\dots,\alpha_n$ 在两基底下的坐标, 则求法同上
 
 ## (线性)同构
 
@@ -479,7 +479,7 @@ $$(1,a,a^2,...,a^{n-1}),a\in\mathbb{N}^*$$
 
 这些向量中的任意 $n$ 个均可构成非 0 的 Vandermonde 行列式, 故这些向量线性无关
 
-而 $\def\enum#1{V_{ #1}}\enum{1},\enum{2},...,\enum{s}$ 最多只需使用其中 $m(n-1)$ 个向量张成, 故在 $V$ 中总能找到满足要求的向量
+而 $V_1,V_2,\dots,V_s$ 最多只需使用其中 $m(n-1)$ 个向量张成, 故在 $V$ 中总能找到满足要求的向量
 
 <a href="#p-prob-5-2-2" id="end-prob-5-2-2">$\Box$</a>
 
@@ -506,7 +506,7 @@ $$(1,a,a^2,...,a^{n-1}),a\in\mathbb{N}^*$$
 
 现讨论 $0<t=\dim S_0<n$ 的情况
 
-取 $S_0$ 的一组基底 $(\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{t}),~\alpha_i=(\def\enum#1{a_{i{ #1}}}\enum{1},\enum{2},...,\enum{n}),~i=1,2,...,t$
+取 $S_0$ 的一组基底 $(\alpha_0,\alpha_1,\dots,\alpha_t),~\alpha_i=(a_{i1},a_{i2},...,a_{in}),~i=1,2,...,t$
 
 则 $\operatorname{rk}(a_{ij})_{t\times n}=t$
 
@@ -518,7 +518,7 @@ $$
 \end{bmatrix}=\theta
 $$
 
-有 $n-t$ 个解 $\beta_i=(\def\enum#1{b_{i{ #1}}}\enum{1},\enum{2},...,\enum{n})^T,~i=1,2,...,n-t$ 张成解空间
+有 $n-t$ 个解 $\beta_i=(b_{i1},b_{i2},...,b_{in})^T,~i=1,2,...,n-t$ 张成解空间
 
 故齐次线性方程组
 
@@ -528,7 +528,7 @@ $$
 \end{bmatrix}=\theta
 $$
 
-有 $t$ 个解 $\alpha_i=(\def\enum#1{a_{i{ #1}}}\enum{1},\enum{2},...,\enum{n}),~i=1,2,...,t$ 张成解空间
+有 $t$ 个解 $\alpha_i=(a_{i1},a_{i2},...,a_{in}),~i=1,2,...,t$ 张成解空间
 
 <a href="#p-t-6-1" id="end-t-6-1">$\Box$</a>
 
@@ -553,7 +553,7 @@ $$
 #### <a href="#end-prob-6-2" id="prob-6-2">习题 - 6-2</a>
 
 令 $f(x),g(x)\in\mathbb{P}[x],(f(x),g(x))=1,A\in\mathbb{P}^{n\times n}$, 证明:  
-齐次线性方程组 $f(A)g(A)X=0$ 的解空间 $V$ 是 $f(A)X=0,g(A)X=0$ 的解空间 $V_1,V_2$ 的直和, 其中 $X=(\def\enum#1{x_{ #1}}\enum{1},\enum{2},...,\enum{n})^T$
+齐次线性方程组 $f(A)g(A)X=0$ 的解空间 $V$ 是 $f(A)X=0,g(A)X=0$ 的解空间 $V_1,V_2$ 的直和, 其中 $X=(x_1,x_2,\dots,x_n)^T$
 
 ##### <a href="#prob-6-2" id="p-prob-6-2">解</a>
 

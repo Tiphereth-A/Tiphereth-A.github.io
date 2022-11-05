@@ -93,7 +93,7 @@ date: 2021-12-22 20:54:01
 
   令 $l(p)$ 为 $F_n$ 模 $p$ 的循环节, 则
 
-  $$l(p)=\operatorname{lcm}\{\def\enum#1{l(p_{ #1}^{\alpha_{ #1}})}\enum{1},\enum{2},...,\enum{\omega(p)}\}$$
+  $$l(p)=\operatorname{lcm}\{l(p_1^{\alpha_1}),l(p_2^{\alpha_2}),...,l(p_{\omega(p)}^{\alpha_{\omega(p)}})\}$$
 
 - 对素数 $p$, 有如下定理:
   - $$l(p^n)\mid l(p)p^{n-1}$$

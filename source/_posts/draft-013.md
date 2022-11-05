@@ -24,8 +24,8 @@ date: 2021-09-23 00:08:45
 令
 
 - $O=(o_{ij})_{n\times n}\in\mathbb{R}^{n\times n}$ 是正交矩阵
-- $x=(\def\enum#1{x_{ #1}}\enum{1},\enum{2},...,\enum{n})^T\in\mathbb{R}^n$
-- $y=Ox=(\def\enum#1{y_{ #1}}\enum{1},\enum{2},...,\enum{n})^T\in\mathbb{R}^n$
+- $x=(x_1,x_2,\dots,x_n)^T\in\mathbb{R}^n$
+- $y=Ox=(y_1,y_2,\dots,y_n)^T\in\mathbb{R}^n$
 
 则
 $$\Delta_x=\Delta_y$$
