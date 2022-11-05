@@ -79,4 +79,6 @@ $$\frac{(n!)^2}{n^n}$$
 
 ## D - A Bite of Teyvat
 
+### 解题思路
+
 参见 {% post_link icpc-asyr2021 %} 的 A
