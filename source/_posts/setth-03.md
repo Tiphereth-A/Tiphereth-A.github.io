@@ -98,8 +98,6 @@ $$
 1. $(\forall A,B\subseteq X,A\cap B=\varnothing),~f(A)\cap f(B)=\varnothing$
 1. $\forall A\subseteq B\subseteq X,~f(B\setminus A)=f(B)\setminus f(A)$
 
-{% note %}
-
 <details>
 <summary><font color='orange'>Proof</font></summary>
 
@@ -115,15 +113,12 @@ $$
 </details>
 
 {% endnote %}
-{% endnote %}
 
 {% note primary no-icon %}
 
 #### <a id="asm-1-2">题 - 1-2</a> (单调映射的不动点)
 
 设 $X$ 为一非空集合, $f:\mathscr{P}(X)\to\mathscr{P}(X)$, 若 $(\forall A,B\in\mathscr{P}(X),A\subseteq B),~f(A)\subseteq f(B)$, 则 $\exists T\in\mathscr{P}(X),f(T)=T$
-
-{% note %}
 
 <details>
 <summary><font color='orange'>Proof</font></summary>
@@ -141,15 +136,12 @@ $$T=\bigcup_{A\in\mathscr{P}(X);A\subseteq f(A)}A\subseteq f(T)$$
 </details>
 
 {% endnote %}
-{% endnote %}
 
 {% note primary no-icon %}
 
 #### <a id="asm-1-3">题 - 1-3</a>
 
 设 $f:X\to Y$, $g:Y\to X$, 若 $\forall x\in X,g(f(x))=x$, 则 $f$ 是单射, $g$ 是满射
-
-{% note %}
 
 <details>
 <summary><font color='orange'>Proof</font></summary>
@@ -162,7 +154,6 @@ $\forall x\in X,g(f(x))=x\implies\forall x\in X,\exists y=f(x)\in Y,g(y)=x\impli
 
 </details>
 
-{% endnote %}
 {% endnote %}
 
 ## 集合的基数/势
@@ -210,9 +201,7 @@ $$X=A\cup A',Y=B\cup B'$$
 - $f(A)=B$
 - $g(B')=A'$
 
-{% note %}
-
-<details open="open">
+<details open>
 <summary><font color='orange'>Proof</font></summary>
 
 我们把 $f(A)=B,Y\setminus B=B',g(B')=A'$ 合起来, 得到
@@ -246,7 +235,6 @@ $$A'=g(Y\setminus f(A))$$
 </details>
 
 {% endnote %}
-{% endnote %}
 
 {% note success no-icon %}
 
@@ -254,9 +242,7 @@ $$A'=g(Y\setminus f(A))$$
 
 若 $X$ 与 $Y$ 的某个真子集对等, $Y$ 与 $X$ 的某个真子集对等, 则 $X\sim Y$
 
-{% note %}
-
-<details open="open">
+<details open>
 <summary><font color='orange'>Proof (Banach)</font></summary>
 
 题设换句话说就是:
@@ -284,7 +270,6 @@ $$
 
 </details>
 
-{% endnote %}
 {% endnote %}
 
 {% note success no-icon %}
@@ -329,8 +314,6 @@ $$|\mathbb{N}|=\alef_0$$
 
 **<a id="th-2-2">定理 - 2-2</a>** 任一无限集必包含可列子集
 
-{% note %}
-
 <details open>
 <summary><font color='orange'>Proof</font></summary>
 
@@ -340,7 +323,6 @@ $$\{e_n\}\subseteq E$$
 
 </details>
 
-{% endnote %}
 {% endnote %}
 
 下面列举几条可列集基数的相关性质 (真命题), 因为可列集和 $\mathbb{N}$ 对等, 故下文一些地方会以 $\mathbb{N}$ 指代可列集
@@ -460,8 +442,6 @@ $$f(x)=\sum_{r_n<x}c_n$$
 **<a id="th-2-3">定理 - 2-3</a>** 设 $E\subset\mathbb{R}$ 为可列集, 则
 $$\exists x_0\in\mathbb{R},E\cap(E+x_0)=\varnothing$$
 
-{% note %}
-
 <details open>
 <summary><font color='orange'>Proof</font></summary>
 
@@ -477,13 +457,10 @@ $$(\forall x_0\in\mathbb{R},\exists x',x''\in E),~x_0=x'-x''$$
 </details>
 
 {% endnote %}
-{% endnote %}
 
 {% note success no-icon %}
 
 **<a id="th-2-4">定理 - 2-4</a>** 若 $A$ 是基数为 $\alpha$ 的无限集, $B$ 是可数集, 则 $A\cup B$ 的基数仍为 $\alpha$
-
-{% note %}
 
 <details open>
 <summary><font color='orange'>Proof</font></summary>
@@ -506,13 +483,10 @@ $$(\forall x_0\in\mathbb{R},\exists x',x''\in E),~x_0=x'-x''$$
 </details>
 
 {% endnote %}
-{% endnote %}
 
 {% note success no-icon %}
 
 **<a id="th-2-5">定理 - 2-5</a>** $A$ 为无限集的充要条件为 $A$ 与其某真子集对等
-
-{% note %}
 
 <details open>
 <summary><font color='orange'>Proof</font></summary>
@@ -525,13 +499,10 @@ $$A\sim(A\setminus B)$$
 </details>
 
 {% endnote %}
-{% endnote %}
 
 {% note primary no-icon %}
 
 **<a id="eg-2-8">例 - 2-8</a>** $(a,b)$ 上的凸函数 $f(x)$ 所有不可导点构成的点集是可数集
-
-{% note %}
 
 <details>
 <summary><font color='orange'>Proof</font></summary>
@@ -561,7 +532,6 @@ $$-\infty<f'_-(x)\leqslant f'_+(x)<+\infty$$
 </details>
 
 {% endnote %}
-{% endnote %}
 
 #### 实数集的基数
 
@@ -578,8 +548,6 @@ $$-\infty<f'_-(x)\leqslant f'_+(x)<+\infty$$
 进一步, 我们记 $|\mathscr{P}(A)|=2^{|A|}$, 则
 
 $$|A|<2^{|A|}$$
-
-{% note %}
 
 <details open>
 <summary><font color='orange'>Proof</font></summary>
@@ -601,7 +569,6 @@ $$\exists y\in A,~s.t.~f(y)=B\in\mathscr{P}(A)$$
 
 </details>
 
-{% endnote %}
 {% endnote %}
 
 我们可以自然地得出一个推论
@@ -672,8 +639,6 @@ $$\alef_i=2^{\alef_{i-1}},~\forall i\in\mathbb{N}^+$$
 
 若 $A\subseteq B$ 且 $A\sim(A\cup C)$, 证明 $B\sim(B\cup C)$
 
-{% note %}
-
 <details>
 <summary><font color='orange'>Proof</font></summary>
 
@@ -688,15 +653,12 @@ $$\alef_i=2^{\alef_{i-1}},~\forall i\in\mathbb{N}^+$$
 </details>
 
 {% endnote %}
-{% endnote %}
 
 {% note primary no-icon %}
 
 #### <a id="asm-2-2">题 - 2-2</a>
 
 设 $f(x)$ 在 $(a,b)$ 可导, 且 $(a,b)\setminus\{x:f'(x)=0\}$ 为可数集, 证明 $f(x)$ 为常数
-
-{% note %}
 
 <details>
 <summary><font color='orange'>Proof</font></summary>
@@ -717,15 +679,12 @@ $$\alef_i=2^{\alef_{i-1}},~\forall i\in\mathbb{N}^+$$
 </details>
 
 {% endnote %}
-{% endnote %}
 
 {% note primary no-icon %}
 
 #### <a id="asm-2-3">题 - 2-3</a>
 
 设无限集 $E\subseteq(0,1)$, 若在 $E$ 中任取不同的数组成的无穷正项级数总是收敛的, 证明 $E$ 是可数集
-
-{% note %}
 
 <details>
 <summary><font color='orange'>Proof</font></summary>
@@ -739,7 +698,6 @@ $$\alef_i=2^{\alef_{i-1}},~\forall i\in\mathbb{N}^+$$
 </details>
 
 {% endnote %}
-{% endnote %}
 
 {% note primary no-icon %}
 
@@ -748,8 +706,6 @@ $$\alef_i=2^{\alef_{i-1}},~\forall i\in\mathbb{N}^+$$
 设 不可数集 $E\subseteq\mathbb{R}^2$, 证明 $\exists x_0\in E,~s.t.~\forall B(x_0,r),E\cap B(x_0,r)$ 不可数
 
 其中 $B(x_0,r)$ 指圆心为 $x_0$, 半径为 $r$ 的开球
-
-{% note %}
 
 <details>
 <summary><font color='orange'>Proof</font></summary>
@@ -763,7 +719,6 @@ $$E=\bigcup_{r_x\in\Bbb{Q}^+}(E\cap B(x_0,r_x))$$
 
 </details>
 
-{% endnote %}
 {% endnote %}
 
 ## 常见数系的基数

@@ -36,9 +36,7 @@ Powerful number 有如下性质
 
 **<a id="th-1-1">定理 - 1-1</a>** $n$ 为 Powerful number $\iff~\exists a,b\in\mathbb{Z}, n=a^2b^3$
 
-{% note %}
-
-<details open="open">
+<details open>
 <summary><font color='orange'>Proof</font></summary>
 
 令 $P_n:=\{(p_i,\alpha_i):p_i\in\text{Prime}^+,~p_i^{\alpha_i}\mid n,~p_i^{\alpha_i+1}\nmid n\}$
@@ -70,23 +68,19 @@ Powerful number 有如下性质
 </details>
 
 {% endnote %}
-{% endnote %}
 
 {% note success no-icon %}
 
 **<a id="th-1-2">定理 - 1-2</a>**
 $$|\{m\in\mathbb{Z}_n:m~\text{is}~\text{powerful}~\text{number}\}|=O(\sqrt{n})$$
 
-{% note %}
-
-<details open="open">
+<details open>
 <summary><font color='orange'>Proof</font></summary>
 
 $$|\{m\in\mathbb{Z}_n:m~\text{is}~\text{powerful}~\text{number}\}|=O\left(\int_1^{\sqrt{n}}\sqrt[3]\frac{n}{x^2}\mathrm{d}x\right)=O(\sqrt{n})$$
 
 </details>
 
-{% endnote %}
 {% endnote %}
 
 ## Powerful number 筛
