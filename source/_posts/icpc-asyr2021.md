@@ -18,6 +18,7 @@ tags:
   - 模拟
   - 图论
   - 计算几何
+  - 动态半平面交
   - 组合数学
   - 线性代数
   - 概率
@@ -59,7 +60,7 @@ date: 2021-11-21 19:33:27
 
 | 题号[^1] | 标题                             | 做法                         |
 | -------- | -------------------------------- | ---------------------------- |
-| \*A      | A Bite of Teyvat                 |                              |
+| \*A      | A Bite of Teyvat                 | 动态半平面交                 |
 | B        | Bitwise Exclusive-OR Sequence    | 图论 + 并查集                |
 | \*C      | Cards of Magic                   | 概率 DP                      |
 | \*D      | Cross the Maze                   |                              |
