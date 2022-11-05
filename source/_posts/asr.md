@@ -60,7 +60,7 @@ Simpson 法是一种常见的数值积分算法, 其思想是用几段抛物线�
 
 - Q: 此法误差如何
 
-  A: 为 $-\frac{1}{90}(\frac{b-a}{2})^5f^{(4)}(\xi),~\xi\in[a,b]$, 证明略
+  A: 为 $-\frac{1}{90}(\frac{b-a}{2})^5f^{(4)}(\xi)$, $\xi\in[a,b]$, 证明略
 
 ## 复化 Simpson 法
 
@@ -77,14 +77,14 @@ Simpson 法是一种常见的数值积分算法, 其思想是用几段抛物线�
 令
 
 - $h=\frac{b-a}{n}$
-- $x_i=a+ih,~i=0,1,...,n$
+- $x_i=a+ih$, $i=0,1,...,n$
 - $f_i=f(x_i)$
 
 然后就有
 
 $$\int_a^bf(x)\mathrm{d}x\approx\frac{h}{3}\sum_{i=1}^\frac{n}{2}(f_{2i-2}+4f_{2i-1}+f_{2i})$$
 
-误差为 $-\frac{h^4}{180}(b-a)f^{(4)}(\xi),~\xi\in[a,b]$
+误差为 $-\frac{h^4}{180}(b-a)f^{(4)}(\xi)$, $\xi\in[a,b]$
 
 ## 自适应 Simpson 法
 

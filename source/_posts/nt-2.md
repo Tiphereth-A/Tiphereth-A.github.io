@@ -208,7 +208,7 @@ $$
 ### Dirichlet 前缀和
 
 用于解决如下问题:
-给出 $\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n}$, 求 $\def\enum#1{b_{ #1}}\enum{1},\enum{2},...,\enum{n}$, 其中
+给出 $a_1,a_2,\dots,a_n$, 求 $b_1,b_2,\dots,b_n$, 其中
 $$b_i=\sum_{j\mid i}a_j$$
 
 #### 算法流程
@@ -421,7 +421,7 @@ $\forall m,n\in\mathbb{N}^*,~(m,n)=1\implies\mu(mn)=\mu(m)\mu(n)$
 
 否则, 设
 $$m=\prod_{i=1}^rp_i,n=\prod_{i=1}^sq_i$$
-其中 $\def\enum#1{p_{ #1}}\enum{1},\enum{2},...,\enum{r},\def\enum#1{q_{ #1}}\enum{1},\enum{2},...,\enum{s}$ 是两两不同的素数
+其中 $p_1,p_2,\dots,p_r,q_1,q_2,\dots,q_s$ 是两两不同的素数
 
 从而 $mn=(\prod_{i=1}^rp_i)(\prod_{i=1}^sq_i)$ 是 $r+s$ 个不同素数的乘积, 有
 $$\mu(mn)=(-1)^{r+s}=(-1)^r(-1)^s=\mu(m)\mu(n)$$
@@ -440,9 +440,9 @@ $$f(n)=(\mu*\{1\})(n)=\sum_{d\mid n}\mu(d)$$
 
 ##### <a href="#t-6.2" id="p-t-6.2-1">证明 - 1</a> (直接证)
 
-对于大于 $1$ 的整数 $n$ 做标准分解 $n=\prod_{i=1}^rp_i^{\alpha_i}$, 则 $f(n)$ 是 $\mu(d)$ 的和, 其中 $d$ 是 $\def\enum#1{p_{ #1}}\enum{1},\enum{2},...,\enum{r}$ 中一部分素数的乘积
+对于大于 $1$ 的整数 $n$ 做标准分解 $n=\prod_{i=1}^rp_i^{\alpha_i}$, 则 $f(n)$ 是 $\mu(d)$ 的和, 其中 $d$ 是 $p_1,p_2,\dots,p_r$ 中一部分素数的乘积
 
-令 $D_{i}$ 表示 $\def\enum#1{p_{ #1}}\enum{1},\enum{2},...,\enum{r}$ 中某 $i$ 个数的乘积构成的集合, 则 $\forall d\in D_i,~\mu(d)=(-1)^i$
+令 $D_{i}$ 表示 $p_1,p_2,\dots,p_r$ 中某 $i$ 个数的乘积构成的集合, 则 $\forall d\in D_i,~\mu(d)=(-1)^i$
 
 而
 $$|D_i|=\binom{r}{i}=\frac{r!}{i!(r-i)!}$$

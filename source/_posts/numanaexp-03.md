@@ -42,19 +42,21 @@ date: 2021-04-22 23:05:47
 
 - 最小二乘法原理 (参见 {% post_link symmetric-bilinear-metric-space-and-system-of-linear-equations %})
 
-  令 $A=(\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{n}),~\alpha_i\in\mathbb{R}^m,i=1,2,...,n$, 寻找 $AX=B$ 的最小二乘解 $(\def\enum#1{x_{ #1}}\enum{1},\enum{2},...,\enum{n})^T$ 即为寻找一组实数 $\def\enum#1{x_{ #1}}\enum{1},\enum{2},...,\enum{n}$ 使得
+  令 $A=(\alpha_0,\alpha_1,\dots,\alpha_n),~\alpha_i\in\mathbb{R}^m,i=1,2,...,n$, 寻找 $AX=B$ 的最小二乘解 $(x_1,x_2,\dots,x_n)^T$ 即为寻找一组实数 $x_1,x_2,\dots,x_n$ 使得
   $$\left|B-\sum_{i=1}^nx_i\alpha_i\right|^2=\sum_{i=1}^n\left(b_1-\sum_{j=1}^na_{ij}x_j\right)^2\tag{1}$$
   的值最小
 
-  此时取的 $\def\enum#1{x_{ #1}}\enum{1},\enum{2},...,\enum{n}$ 只需使 $\sum_{i=1}^nx_i\alpha_i$ 为 $B$ 在 $G[\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{n}]$ 的正射影
+  此时取的 $x_1,x_2,\dots,x_n$ 只需使 $\sum_{i=1}^nx_i\alpha_i$ 为 $B$ 在 $G[\alpha_0,\alpha_1,\dots,\alpha_n]$ 的正射影
 
-  这样的 $\def\enum#1{x_{ #1}}\enum{1},\enum{2},...,\enum{n}$ 是且仅是
-  $$G(\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{n})X=(\def\enum#1{(B,\alpha_{ #1})}\enum{1},\enum{2},...,\enum{n})^T\tag{2}$$
-  的解, 其中 $G(\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{n})$ 为 $\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{n}$ 的 Gram 矩阵
+  这样的 $x_1,x_2,\dots,x_n$ 是且仅是
+
+  $$G(\alpha_0,\alpha_1,\dots,\alpha_n)X=((B,\alpha_0),(B,\alpha_1),\dots,(B,\alpha_n))^T\tag{2}$$
+
+  的解, 其中 $G(\alpha_0,\alpha_1,\dots,\alpha_n)$ 为 $\alpha_0,\alpha_1,\dots,\alpha_n$ 的 Gram 矩阵
 
   又
-  $$G(\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{n})=A^TA$$
-  $$(\def\enum#1{(B,\alpha_{ #1})}\enum{1},\enum{2},...,\enum{n})^T=A^TB$$
+  $$G(\alpha_0,\alpha_1,\dots,\alpha_n)=A^TA$$
+  $$((B,\alpha_0),(B,\alpha_1),\dots,(B,\alpha_n))^T=A^TB$$
 
   因此式 $(2)$ 即为
   $$A^TAX=A^TB\tag{3}$$

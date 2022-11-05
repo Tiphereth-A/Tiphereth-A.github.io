@@ -19,7 +19,7 @@ tags:
 date: 2021-11-12 17:59:15
 ---
 
-令 $V\subseteq\mathbb{Z}_2^n$, 异或线性基即为线性空间 $V$ 上满足一定条件的一组 Hamel 基 $(\def\enum#1{\epsilon_{ #1}}\enum{1},\enum{2},...,\enum{n})$
+令 $V\subseteq\mathbb{Z}_2^n$, 异或线性基即为线性空间 $V$ 上满足一定条件的一组 Hamel 基 $(\epsilon_0,\epsilon_1,\dots,\epsilon_n)$
 
 <!-- more -->
 
@@ -27,9 +27,9 @@ date: 2021-11-12 17:59:15
 
 ### 定义
 
-令 $V\subseteq\mathbb{Z}_2^n$, 线性基即为线性空间 $V$ 上满足如下条件的一组"基底" $(\def\enum#1{\epsilon_{ #1}}\enum{1},\enum{2},...,\enum{n})$
+令 $V\subseteq\mathbb{Z}_2^n$, 线性基即为线性空间 $V$ 上满足如下条件的一组"基底" $(\epsilon_0,\epsilon_1,\dots,\epsilon_n)$
 
-1. 排除 $\def\enum#1{\epsilon_{ #1}}\enum{1},\enum{2},...,\enum{n}$ 中所有零向量后的向量组线性无关
+1. 排除 $\epsilon_0,\epsilon_1,\dots,\epsilon_n$ 中所有零向量后的向量组线性无关
 1. $\epsilon_i(i+1..n)=0$
 1. 若 $\epsilon_i(i)=1$, 则 $\forall j,~\epsilon_j(i)=\delta_{ij}$
 
@@ -40,7 +40,7 @@ date: 2021-11-12 17:59:15
 比如这样
 
 $$
-(\def\enum#1{\epsilon_{ #1}}\enum{1},\enum{2},...,\enum{6})=\begin{bmatrix}
+(\epsilon_0,\epsilon_1,\dots,\epsilon_6)=\begin{bmatrix}
    & & & & &1\\
    & & & &1& \\
    & & &0&1&1\\
@@ -52,7 +52,7 @@ $$
 
 ### 性质
 
-- $\operatorname{span}(\def\enum#1{\epsilon_{ #1}}\enum{1},\enum{2},...,\enum{n})=\operatorname{span}(V)$
+- $\operatorname{span}(\epsilon_0,\epsilon_1,\dots,\epsilon_n)=\operatorname{span}(V)$
 - 令 $\alpha[x]=\sum_{i=1}^n\alpha(i)x^{i-1}$, 则
   $$\left[\sum_{i=1}^n\epsilon_i\right](2)=\max_{\alpha\in\operatorname{span}(V)}\alpha[2]$$
 
@@ -62,7 +62,7 @@ $$
 
 我们以插入元素的方法构造
 
-对前设的 $V$, 设当前我们已完成构建的线性空间为 $V'\subseteq V$, 对应的线性基为 $(\def\enum#1{\epsilon'_{ #1}}\enum{1},\enum{2},...,\enum{n})$, 接下来我们在 $V\setminus V'$ 中选取一个向量 $\alpha$, 进行如下操作直到 $|V'|=|V|$ 为止
+对前设的 $V$, 设当前我们已完成构建的线性空间为 $V'\subseteq V$, 对应的线性基为 $(\epsilon'_0,\epsilon'_1,\dots,\epsilon'_n)$, 接下来我们在 $V\setminus V'$ 中选取一个向量 $\alpha$, 进行如下操作直到 $|V'|=|V|$ 为止
 
 $\begin{array}{r|l:l}
   1 & \textbf{for}~ i \gets n ~\textbf{downto}~ 1 ~\textbf{do} \\
@@ -89,8 +89,8 @@ $\begin{array}{r|l:l}
 
 - $V'=\varnothing$ 与 $|V'|=1$ 时显然满足条件
 - 当 $|V'|>1$ 时
-  - 我们尝试插入 $\alpha$ 时, 如果满足第 $3$ 行的条件, 为了保持条件 $2$, 我们需要把对应维反转, 如果 $\alpha$ 被转成 $0$ 了, 说明 $\alpha$ 与 $(\def\enum#1{\epsilon'_{ #1}}\enum{1},\enum{2},...,\enum{n})$ 线性相关, 不能插入
-  - 如果执行到第 $4$ 行, 说明 $\alpha$ 与 $(\def\enum#1{\epsilon'_{ #1}}\enum{1},\enum{2},...,\enum{n})$ 线性无关, 此时应做一些处理来维持线性基的条件, 之后替换掉 $\epsilon'_i$ 即可 (此时的 $\epsilon'_i=0$)
+  - 我们尝试插入 $\alpha$ 时, 如果满足第 $3$ 行的条件, 为了保持条件 $2$, 我们需要把对应维反转, 如果 $\alpha$ 被转成 $0$ 了, 说明 $\alpha$ 与 $(\epsilon'_0,\epsilon'_1,\dots,\epsilon'_n)$ 线性相关, 不能插入
+  - 如果执行到第 $4$ 行, 说明 $\alpha$ 与 $(\epsilon'_0,\epsilon'_1,\dots,\epsilon'_n)$ 线性无关, 此时应做一些处理来维持线性基的条件, 之后替换掉 $\epsilon'_i$ 即可 (此时的 $\epsilon'_i=0$)
     - $5\sim 7$ 行是消除 $\alpha$ 中低维的不满足条件 $3$ 的 $1$
     - $8\sim 10$ 行是消除 $\epsilon'_j$ 中第 $i$ 维的 $1$, 同样是为了满足条件 $3$
   - 经过这样的处理之后, 插入 $\alpha$ 后的 "基底" 仍满足条件 $3$

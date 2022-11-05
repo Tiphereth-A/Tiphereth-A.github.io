@@ -65,7 +65,7 @@ Asia Guangzhou 2003
 
 ## 题意简述
 
-给出一组数 $\def\enum#1{p_{ #1}}\enum{1},\enum{2},...,\enum{k}$, 设 $N=\prod_{i=1}^kp_i^{e_i}$, 其中 $0\leqslant e_i\leqslant 10,i=1,2,...,k,~\sum_{i=1}^ke_i\geqslant 1$, $M$ 为 $N$ 的因子和, 问是否有一组数 $\def\enum#1{e_{ #1}}\enum{1},\enum{2},...,\enum{k}$ 使得 $\log_2M\in\mathbb{N}$, 如果有, 输出可能的 $x$ 中的最大值
+给出一组数 $p_1,p_2,\dots,p_k$, 设 $N=\prod_{i=1}^kp_i^{e_i}$, 其中 $0\leqslant e_i\leqslant 10,i=1,2,...,k,~\sum_{i=1}^ke_i\geqslant 1$, $M$ 为 $N$ 的因子和, 问是否有一组数 $e_1,e_2,\dots,e_k$ 使得 $\log_2M\in\mathbb{N}$, 如果有, 输出可能的 $x$ 中的最大值
 
 ## 解题思路
 
@@ -79,9 +79,9 @@ $$M=2^{\sum_{i=1}^sx_i}\iff N=\prod_{i=1}^s(2^{x_i}-1),~2^{x_i}-1~\text{is}~\tex
 
 其正确性是显然的
 
-由这条定理, 我们只需判断能否选取一组数 $\def\enum#1{e_{ #1}}\enum{1},\enum{2},...,\enum{k}\in\{0,1\}$ 使得 $N$ 为几个不同的 Mersenne 素数的乘积, 即在 $\def\enum#1{p_{ #1}}\enum{1},\enum{2},...,\enum{k}$ 中选取一些数使得 $N$ 为几个不同的 Mersenne 素数的乘积
+由这条定理, 我们只需判断能否选取一组数 $e_1,e_2,\dots,e_k\in\{0,1\}$ 使得 $N$ 为几个不同的 Mersenne 素数的乘积, 即在 $p_1,p_2,\dots,p_k$ 中选取一些数使得 $N$ 为几个不同的 Mersenne 素数的乘积
 
-我们注意到在 $[1,2^{31}]$ 中只有 $8$ 个 Mersenne 素数, 分别为 $\def\enum#1{2^{ #1}-1}\enum{2},\enum{3},\enum{5},\enum{7},\enum{13},\enum{17},\enum{19},\enum{31}$
+我们注意到在 $[1,2^{31}]$ 中只有 $8$ 个 Mersenne 素数, 分别为 $2^{2}-1,2^{3}-1,2^{5}-1,2^{7}-1,2^{13}-1,2^{17}-1,2^{19}-1,2^{31}-1$
 
 因为 $N$ 与这些 Mersenne 素数之间的整除关系的状态种数较少, 所以这里我们可以考虑使用状压 DP
 

@@ -359,10 +359,10 @@ Print, on a single line, the least positive number a such that $a⊗a=N$. If the
 
   如: $37⊕48=75$, 而不是 $85$
 
-- $\otimes$: 设 $a=\overline{\def\enum#1{a_{ #1}}\enum{n}...\enum{1}\enum{0}},~b=\overline{\def\enum#1{b_{ #1}}\enum{m}...\enum{1}\enum{0}},~a\otimes b=c$, 其中 $~c=\overline{\def\enum#1{c_{ #1}}\enum{l}...\enum{1}\enum{0}},~l=m+n$
+- $\otimes$: 设 $a=\overline{a_{n}...a_{1}a_{0}},~b=\overline{b_{m}...b_{1}b_{0}},~a\otimes b=c$, 其中 $~c=\overline{c_{l}...c_{1}c_{0}},~l=m+n$
 
   则
-  $$c_k=\sum_{i=0}^ka_ib_{k-i}\bmod10,~\forall k=\def\enum#1{ { #1}}\enum{0},\enum{1},...,\enum{m+n}$$
+  $$c_k=\sum_{i=0}^ka_ib_{k-i}\bmod{10},~\forall k=0,1,...,m+n$$
 
   其中 $\forall i>n,a_i=0;~\forall j>m,b_j=0$
 
@@ -372,7 +372,7 @@ Print, on a single line, the least positive number a such that $a⊗a=N$. If the
 
 设 $N$ 的位数为 $l$, 则 $a$ 的位数为 $k=\lceil\frac{l}{2}\rceil$
 
-注意到, $N_i$ 由 $\def\enum#1{a_{ #1}}\enum{0},\enum{1},...,\enum{i}$ 决定, $i<k$, 故我们有一个简单的想法, 就是对 $N_i$ 枚举可能的 $a_i$
+注意到, $N_i$ 由 $a_0,a_1,\dots,a_i$ 决定, $i<k$, 故我们有一个简单的想法, 就是对 $N_i$ 枚举可能的 $a_i$
 
 但是我们肯定不能去无脑 DFS
 
@@ -675,7 +675,7 @@ Output the smallest integer target weight $t$, as described above. It's guarante
 
 ### 题意简述
 
-给出 $n$ 个数 $\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n}$, 问如何选取最小的 $t$ 使得 $\sum_{a_i<t}a_i=\sum_{a_i>t}a_i$, 保证有解
+给出 $n$ 个数 $a_1,a_2,\dots,a_n$, 问如何选取最小的 $t$ 使得 $\sum_{a_i<t}a_i=\sum_{a_i>t}a_i$, 保证有解
 
 ### 解题思路
 
@@ -757,7 +757,7 @@ The second sample case represents the third example in the list given earlier wi
 
 对任意 $k$ 个人来说, 他们可按照生日划分成若干等价类, 设一共有 $n$ 个, 第 $i$ 个等价类内元素个数为 $c_i$, 一年按 $365$ 天记
 
-给出 $n$ 和 $\def\enum#1{c_{ #1}}\enum{1},\enum{2},...,\enum{n}$, 问满足该限制条件的概率, 最后结果以 $10$ 为底取对数
+给出 $n$ 和 $c_1,c_2,\dots,c_n$, 问满足该限制条件的概率, 最后结果以 $10$ 为底取对数
 
 ### 解题思路
 
@@ -1132,7 +1132,7 @@ $$\max_{x\in D}f(x)$$
 
 接下来我们只需考虑如何快速求 $f(a)$ 分界点的函数值了
 
-令 $D=\{\def\enum#1{d_{ #1}}\enum{1},\enum{2},...,\enum{m}\}$, $k_i$ 为 $f|_{x\in[d_i,d_{i+1}]}$ 的斜率
+令 $D=\{d_1,d_2,\dots,d_m\}$, $k_i$ 为 $f|_{x\in[d_i,d_{i+1}]}$ 的斜率
 
 则 $f(d_{i+1})=f(d_i)+k_i(d_{i+1}-d_i)$
 

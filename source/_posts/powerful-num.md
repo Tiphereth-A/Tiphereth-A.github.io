@@ -77,7 +77,7 @@ $$|\{m\in\mathbb{Z}_n:m~\text{is}~\text{powerful}~\text{number}\}|=O(\sqrt{n})$$
 <details open>
 <summary><font color='orange'>Proof</font></summary>
 
-$$|\{m\in\mathbb{Z}_n:m~\text{is}~\text{powerful}~\text{number}\}|=O\left(\int_1^{\sqrt{n}}\sqrt[3]\frac{n}{x^2}\mathrm{d}x\right)=O(\sqrt{n})$$
+$$|\{m\in\mathbb{Z}_n:m~\text{is}~\text{powerful}~\text{number}\}|=O\left(\int_1^{\sqrt{n}}\sqrt[3]{\frac{n}{x^2}}\mathrm{d}x\right)=O(\sqrt{n})$$
 
 </details>
 

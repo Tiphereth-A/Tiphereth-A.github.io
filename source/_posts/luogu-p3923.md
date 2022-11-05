@@ -202,13 +202,13 @@ $$
 
 令 $f(x)=x^{p^m}-x\in\mathbb{F}_p[x]$, 作 $\mathbb{F}_p$ 关于 $f(x)$ 的分裂域
 
-$$\mathbb{E}=\mathbb{F}_p(\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{p^m})$$
+$$\mathbb{E}=\mathbb{F}_p(\alpha_0,\alpha_1,\dots,\alpha_{p^m})$$
 
-其中 $\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{p^m}$ 为 $f(x)$ 在 $\mathbb{E}$ 中的根
+其中 $\alpha_0,\alpha_1,\dots,\alpha_{p^m}$ 为 $f(x)$ 在 $\mathbb{E}$ 中的根
 
 又由 $\operatorname{char}(\mathbb{F}_p)=p$ 知, $f'(x)=-1$, 从而 $(f(x),f'(x))=1$, 即 $f(x)$ 无重根
 
-令 $\mathbb{L}=\{\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{p^m}\}$, 则 $\forall\alpha_i,\alpha_j\in\mathbb{L}$
+令 $\mathbb{L}=\{\alpha_0,\alpha_1,\dots,\alpha_{p^m}\}$, 则 $\forall\alpha_i,\alpha_j\in\mathbb{L}$
 
 - $$(\alpha_i-\alpha_j)^{p^m}=\alpha_i-\alpha_j\in\mathbb{L}$$
 - $$\left(\frac{\alpha_i}{\alpha_j}\right)^{p^m}=\frac{\alpha_i}{\alpha_j}\in\mathbb{L},~(\alpha_j\ne 0)$$

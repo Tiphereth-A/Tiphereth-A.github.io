@@ -31,8 +31,8 @@ date: 2020-07-14 23:29:59
 >
 > 1. 封闭性: $\forall a,b\in G,a\cdot b\in G$
 > 2. 结合律: $\forall a,b,c\in G,(a\cdot b)\cdot c=a\cdot(b\cdot c)$
-> 3. 单位元: $\exists e\in G,\forall a\in G,~s.t.~e\cdot a = a\cdot e = a$
-> 4. 逆元: $\forall a\in G,\exists b\in G,~s.t.~a\cdot b = b\cdot a = e$, 此处 $e$ 为单位元
+> 3. 单位元: $\exists e\in G,\forall a\in G$, $s.t.~e\cdot a = a\cdot e = a$
+> 4. 逆元: $\forall a\in G,\exists b\in G$, $s.t.~a\cdot b = b\cdot a = e$, 此处 $e$ 为单位元
 >
 > 其中 $G$ 为非空集合, $\cdot$ 为 $G$ 上一二元运算
 

@@ -122,13 +122,13 @@ $$a=qd+r,~q\in\mathbb{Z},r\in[0,d)\cap\mathbb{N}$$
 
 #### <a href="#t-2.1" id="p-t-2.1">证明</a> (Euclid)
 
-假设素数只有有限个, 记作 $\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n}$
+假设素数只有有限个, 记作 $a_1,a_2,\dots,a_n$
 
 考虑 $N=\prod_{i=1}^np_i+1$, 显然 $N>2$
 
 由于 $N\ne p_i,i=1,2,...,n$, 故必有 $N$ 必有素因子 $p$
 
-但 $p_i\nmid N,i=1,2,...,n$, 故 $p$ 是 $\def\enum#1{p_{ #1}}\enum{1},\enum{2},...,\enum{n}$ 以外的素数, 这与假设矛盾
+但 $p_i\nmid N,i=1,2,...,n$, 故 $p$ 是 $p_1,p_2,\dots,p_n$ 以外的素数, 这与假设矛盾
 
 <a href="#p-t-2.1" id="end-t-2.1">$\Box$</a>
 
@@ -261,8 +261,8 @@ $$[a,b]:=\min\{d\in\mathbb{N}^*|a\mid d,b\mid d\}$$
 
 这一组概念自然可以推广到多个整数之间
 
-$$(\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n}):=\max\{d\in\mathbb{N}^*|d\mid a_i,~i=1,2,...,n\}$$
-$$[\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n}]:=\min\{d\in\mathbb{N}^*|a_i\mid d,~i=1,2,...,n\}$$
+$$(a_1,a_2,\dots,a_n):=\max\{d\in\mathbb{N}^*|d\mid a_i,~i=1,2,...,n\}$$
+$$[a_1,a_2,\dots,a_n]:=\min\{d\in\mathbb{N}^*|a_i\mid d,~i=1,2,...,n\}$$
 
 ### 性质
 
@@ -272,12 +272,12 @@ $$[\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n}]:=\min\{d\in\mathbb{N}^*|a
 
 1. $(a,b)=(b,a)=(|a|,b)=(|a|,|b|)$
 1. 当 $a\ne 0$ 时, $(a,a)=|a|$
-1. 若 $a_1\ne 0$, 则 $(\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n})=((\enum{1},\enum{2}),\enum{3},...,\enum{n})$
+1. 若 $a_1\ne 0$, 则 $(a_1,a_2,\dots,a_n)=((a_{1},a_{2}),a_{3},...,a_{n})$
 1. $\forall l\in\mathbb{Z},~(a,b)=(a,b+la)$
-1. $\forall m\in\mathbb{N}^*,~m(\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n})=(\def\enum#1{ma_{ #1}}\enum{1},\enum{2},...,\enum{n})$
-1. 若 $(\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n})=d$, 则 $(\def\enum#1{ {a_{ #1}\over d}}\enum{1},\enum{2},...,\enum{n})=1$
+1. $\forall m\in\mathbb{N}^*,~m(a_1,a_2,\dots,a_n)=(ma_1,ma_2,\dots,ma_n)$
+1. 若 $(a_1,a_2,\dots,a_n)=d$, 则 $(\frac{a_1}{d},\frac{a_2}{d},...,\frac{a_n}{d})=1$
 1. 对于整数 $m$, 若 $(a_i,m)=1,~i=1,2,...,n$, 则 $(\prod_{i=1}^na_i,m)=1$
-1. 设 $\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n}$ 是不全为零的整数, $(\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n})=d$, 则
+1. 设 $a_1,a_2,\dots,a_n$ 是不全为零的整数, $(a_1,a_2,\dots,a_n)=d$, 则
    $$\left\{\sum_{i=1}^na_ix_i\bigg|x_i\in\mathbb{Z},i=1,2,...,n\right\}=d\mathbb{Z}$$
 1. 设 $c\in\mathbb{Z}/\{0\},a,b\in\mathbb{Z}$, 若 $c\mid ab,(c,b)=1$, 则 $c\mid a$
    - 特别地, 若 $p$ 为素数, $p\mid ab$, 则 $p\mid a$ 或 $p\mid b$
@@ -286,7 +286,7 @@ $$[\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n}]:=\min\{d\in\mathbb{N}^*|a
 
 ##### <a href="#end-t-3.1" id="t-3.1">定理 - 3.1</a>(性质 8, Bézout 定理)
 
-设 $\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n}$ 是不全为零的整数, $(\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n})=d$, 则
+设 $a_1,a_2,\dots,a_n$ 是不全为零的整数, $(a_1,a_2,\dots,a_n)=d$, 则
 $$S:=\left\{\sum_{i=1}^na_ix_i\bigg|x_i\in\mathbb{Z},i=1,2,...,n\right\}=d\mathbb{Z}$$
 
 ###### <a href="#t-3.1" id="p-t-3.1">证明</a>
@@ -295,8 +295,8 @@ $$S:=\left\{\sum_{i=1}^na_ix_i\bigg|x_i\in\mathbb{Z},i=1,2,...,n\right\}=d\mathb
 
 一方面, $d$ 是 $S$ 中所有数的因子, 而 $a\in S$, 故 $d\mid a$
 
-另一方面, 注意到 $\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n}\in S$, 故 $a$ 是 $\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n}$ 的公因子, 即有
-$$a\mid(\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n})=d$$
+另一方面, 注意到 $a_1,a_2,\dots,a_n\in S$, 故 $a$ 是 $a_1,a_2,\dots,a_n$ 的公因子, 即有
+$$a\mid(a_1,a_2,\dots,a_n)=d$$
 
 因此 $a=d$
 
@@ -304,9 +304,9 @@ $$a\mid(\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n})=d$$
 
 #### 最小公倍数
 
-1. $[\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n}]=[[\enum{1},\enum{2}],\enum{3},...,\enum{n}]$
-1. $\forall m\in\mathbb{N}^*,~[\def\enum#1{ma_{ #1}}\enum{1},\enum{2},...,\enum{n}]=m[\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n}]$
-1. 若 $\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n}$ 两两互素, 则 $[\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n}]=|\prod_{i=1}^na_i|$
+1. $[a_1,a_2,\dots,a_n]=[[a_1,a_2],a_3,...,a_n]$
+1. $\forall m\in\mathbb{N}^*,~[ma_1,ma_2,\dots,ma_n]=m[a_1,a_2,\dots,a_n]$
+1. 若 $a_1,a_2,\dots,a_n$ 两两互素, 则 $[a_1,a_2,\dots,a_n]=|\prod_{i=1}^na_i|$
 
 ### 求法
 
@@ -422,7 +422,7 @@ $$
 
 若 $t\nmid a-b$, 则称 $a$ 与 $b$ 模 $t$ 不同余, 记作 $a{\equiv}\llap{/\,} b\pmod t$
 
-我们称 $\mathbb{Z}_m:=\{\def\enum#1{\overline{ #1}}\enum{0},\enum{1},...,\enum{m-1}\}$ 为模 $m$ 剩余类
+我们称 $\mathbb{Z}_m:=\{\overline{0},\overline{1},...,\overline{m-1}\}$ 为模 $m$ 剩余类
 
 显然, 同余关系是一种等价关系, 剩余类即为其截面
 
@@ -437,7 +437,7 @@ $$
 1. $ac\equiv bc\pmod m\implies a\equiv b\pmod{~\frac{m}{(c,m)}}$, 特别地, 若 $(c,m)=1$, 则 $a\equiv b\pmod{m}$
 1. $a\equiv b\pmod m\implies\forall d\mid m,a\equiv b\pmod d$
 1. $a\equiv b\pmod m\iff ad\equiv bd\pmod{md}$
-1. $a\equiv b\pmod{m_i},i=1,2,...,n\implies a\equiv b\pmod{[\def\enum#1{m_{ #1}}\enum{1},\enum{2},...,\enum{n}]}$
+1. $a\equiv b\pmod{m_i},i=1,2,...,n\implies a\equiv b\pmod{[m_1,m_2,\dots,m_n]}$
 1. 令 $f(x)=\sum_{i=0}^na_ix^i,~a_1\in\mathbb{Z},i=0,1,...,n$, 则若 $a\equiv b\pmod m$, 则 $f(a)\equiv f(b)\pmod m$
 
 另外在这里列出三条重要定理
@@ -520,7 +520,7 @@ $$(p-1)!\equiv-1\pmod p$$
 
 ##### <a href="#t-4.3" id="p-t-4.3">证明</a>
 
-当 $p=2$ 时, 定理显然成立, 以下设 $p\geqslant 3$, 令 $\mathbb{Z}_p:=\{\def\enum#1{\overline{ #1}}\enum{0},\enum{1},...,\enum{p-1}\}$ 即证 $\mathbb{Z}_p/\{0\}$ 中所有元素之积为 $\overline{-1}$
+当 $p=2$ 时, 定理显然成立, 以下设 $p\geqslant 3$, 令 $\mathbb{Z}_p:=\{\overline{0},\overline{1},...,\overline{p-1}\}$ 即证 $\mathbb{Z}_p/\{0\}$ 中所有元素之积为 $\overline{-1}$
 
 我们知道, $\mathbb{Z}_p/\{0\}$ 中每个元素都是可逆的, 即 $\forall a\in\mathbb{Z}_p/\{0\},~a^{-1}\in\mathbb{Z}_p/\{0\}$, 显然 $a^{-1}$ 的逆元为 $a$
 
@@ -541,9 +541,9 @@ $$a^{\varphi(m)}\equiv1\pmod m$$
 
 ##### <a href="#t-4.4" id="p-t-4.4">证明</a>
 
-设 $\mathbb{Z}_m^*:=\{a\in\mathbb{Z}_m|(a,m)=1\}=\{\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{\varphi(m)}\}$
+设 $\mathbb{Z}_m^*:=\{a\in\mathbb{Z}_m|(a,m)=1\}=\{a_0,a_1,\dots,a_{\varphi(m)}\}$
 
-由 $(a,m)=1$ 可知 $\overline{a}\in\mathbb{Z}_m^*$, 从而 $\mathbb{Z}_m^*=\{\def\enum#1{aa_{ #1}}\enum{1},\enum{2},...,\enum{\varphi(m)}\}$
+由 $(a,m)=1$ 可知 $\overline{a}\in\mathbb{Z}_m^*$, 从而 $\mathbb{Z}_m^*=\{aa_0,aa_1,\dots,aa_{\varphi(m)}\}$
 
 从而在群 $\mathbb{Z}_m^*$ 中
 $$\prod_{i=1}^{\varphi(m)}a_i=\prod_{i=1}^{\varphi(m)}aa_i=a^{\varphi(m)}\prod_{i=1}^{\varphi(m)}a_i$$
@@ -617,7 +617,7 @@ $$\prod_{i=1}^{\varphi(m)}a_i=\prod_{i=1}^{\varphi(m)}aa_i=a^{\varphi(m)}\prod_{
 
 1. 求任意 $n$ 个数模 $p$ 的逆元
 
-   对于任意 $n$ 个数 $\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n}$, 我们可以这样求出其逆元
+   对于任意 $n$ 个数 $a_1,a_2,\dots,a_n$, 我们可以这样求出其逆元
 
    1. 令 $s_i=\prod_{j=1}^ia_j$
    1. 求出 $s_n$ 的逆元, 记作 $v_n$
@@ -628,7 +628,7 @@ $$\prod_{i=1}^{\varphi(m)}a_i=\prod_{i=1}^{\varphi(m)}aa_i=a^{\varphi(m)}\prod_{
         a_i^{-1}&=v_is_{i-1}
       \end{cases},i=1,2,...,n-1
       $$
-      故此时 $\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n}$ 的逆元便可求得
+      故此时 $a_1,a_2,\dots,a_n$ 的逆元便可求得
 
    <details>
    <summary><font color='orange'>Show code</font></summary>
@@ -653,7 +653,7 @@ $$\prod_{i=1}^{\varphi(m)}a_i=\prod_{i=1}^{\varphi(m)}aa_i=a^{\varphi(m)}\prod_{
 
 ### <a href="#end-t-6.1" id="t-6.1">定理 - 6.1</a> (中国剩余定理)
 
-设 $\def\enum#1{m_{ #1}}\enum{1},\enum{2},...,\enum{k}$ 是两两互素的正整数, 则对任意整数 $\def\enum#1{b_{ #1}}\enum{1},\enum{2},...,\enum{k}$, 方程组
+设 $m_1,m_2,\dots,m_k$ 是两两互素的正整数, 则对任意整数 $b_1,b_2,\dots,b_k$, 方程组
 
 $$
 \begin{cases}
@@ -712,7 +712,7 @@ $$
 
 在此处便是 $(M_i,m_i)=1$
 
-故由最大公约数的性质, 此处的 $k$ 个模数 $\def\enum#1{m_{ #1}}\enum{1},\enum{2},...,\enum{k}$ 必须两两互素
+故由最大公约数的性质, 此处的 $k$ 个模数 $m_1,m_2,\dots,m_k$ 必须两两互素
 
 那么我们能不能摆脱这个限制条件呢?
 

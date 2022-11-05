@@ -226,7 +226,7 @@ $$t=\frac{nk+m}{1-(1-p)^k}$$
 
 ### 题意简述
 
-找到 $1..n$ 的一个排列 $\def\enum#1{p_{ #1}}\enum{1},\enum{2},...,\enum{n}$ 满足恰有 $k$ 个数 $\def\enum#1{i_{ #1}}\enum{1},\enum{2},...,\enum{k}$ 满足
+找到 $1..n$ 的一个排列 $p_1,p_2,\dots,p_n$ 满足恰有 $k$ 个数 $i_1,i_2,\dots,i_k$ 满足
 $$(i_k,p_{i_k})=1$$
 
 ### 解题思路
@@ -246,7 +246,7 @@ $$(i_k,p_{i_k})=1$$
 
 ### 题意简述
 
-给定整数 $\def\enum#1{a_{ #1}}\enum{1},\enum{2},...,\enum{n}$ 和 $\def\enum#1{b_{ #1}}\enum{1},\enum{2},...,\enum{m}$, 令
+给定整数 $a_1,a_2,\dots,a_n$ 和 $b_1,b_2,\dots,b_m$, 令
 $$f(c)=\left|\left\{i\mid\forall j\in[1,m]\cap\mathbb{N},~|c-a_i|<|c-b_j|\right\}\right|$$
 求 $\displaystyle\max_{c\in\mathbb{R}} f(c)$
 

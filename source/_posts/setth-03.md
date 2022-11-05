@@ -339,9 +339,9 @@ $$\{e_n\}\subseteq E$$
 
 $$\mathbb{N}^n\sim\mathbb{N}$$
 
-> 只需找 $n$ 个不等素数 $\def\enum#1{p_{ #1}}\enum{1},\enum{2},...,\enum{n}$, 建立映射
+> 只需找 $n$ 个不等素数 $p_1,p_2,\dots,p_n$, 建立映射
 >
-> $$f:\mathbb{N}^n\to\mathbb{N};(\def\enum#1{\alpha_{ #1}}\enum{1},\enum{2},...,\enum{n})\mapsto\prod_{i=1}^np_i^{\alpha_i}$$
+> $$f:\mathbb{N}^n\to\mathbb{N};(\alpha_0,\alpha_1,\dots,\alpha_n)\mapsto\prod_{i=1}^np_i^{\alpha_i}$$
 >
 > 即可
 
