@@ -34,6 +34,8 @@ date: 2022-11-05 18:24:04
 
 ![From [东北大学章程网](https://www.neu.edu.cn/constitution/)](https://www.neu.edu.cn/_upload/article/images/79/50/8e18ed5a474dbe9d8832be585c16/c49f2c5a-f6f7-43c6-839a-467587e9f809.jpg)
 
+> [Archived](https://web.archive.org/web/20220814200414/https://www.neu.edu.cn/constitution/)
+
 ### 代码参考
 
 <details>
