@@ -83,11 +83,11 @@ date: 2022-10-22 23:02:15
 
 【数据范围】
 
-<table style="undefined;table-layout: fixed; width: 454px">
+<table style="undefined;table-layout: fixed; width: 370px">
 <colgroup>
 <col style="width: 70px">
 <col style="width: 100px">
-<col style="width: 150px">
+<col style="width: 200px">
 </colgroup>
 <thead>
   <tr>
