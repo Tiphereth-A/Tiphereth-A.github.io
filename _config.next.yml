@@ -252,12 +252,13 @@ post_meta:
 # Post wordcount display settings
 # Dependencies: https://github.com/next-theme/hexo-word-counter
 symbols_count_time:
+  separated_meta: true
+  item_text_total: false
   symbols: true
   time: true
   total_symbols: true
   total_time: true
-  exclude_codeblock: true
-  awl: 4
+  exclude_codeblock: false
   wpm: 275
   suffix: "mins."
 
