@@ -83,9 +83,57 @@ date: 2022-10-22 23:02:15
 
 【数据范围】
 
-![](1.png)
-
-**勘误:** $0 < p \le 10^9$
+<table style="undefined;table-layout: fixed; width: 454px">
+<colgroup>
+<col style="width: 70px">
+<col style="width: 100px">
+<col style="width: 150px">
+</colgroup>
+<thead>
+  <tr>
+    <th>测试点编号</th>
+    <th>n 的规模</th>
+    <th>约定</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>1</td>
+    <td rowspan="3">2 ≤ n ≤ 30<br></td>
+    <td rowspan="10">0 &lt; p ≤ 1,000,000,000</td>
+  </tr>
+  <tr>
+    <td>2</td>
+  </tr>
+  <tr>
+    <td>3</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td rowspan="2">2 ≤ n ≤ 100</td>
+  </tr>
+  <tr>
+    <td>5</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td rowspan="2">2 ≤ n ≤ 200</td>
+  </tr>
+  <tr>
+    <td>7</td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td rowspan="3">2 ≤ n ≤ 500</td>
+  </tr>
+  <tr>
+    <td>9</td>
+  </tr>
+  <tr>
+    <td>10</td>
+  </tr>
+</tbody>
+</table>
 
 ## 解题思路
 
