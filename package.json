@@ -33,12 +33,12 @@
     "hexo-server": "^3.0.0",
     "hexo-tag-icodeweb": "^1.1.1",
     "hexo-tag-mmedia": "^1.1.7",
-    "hexo-theme-next": "^8.13.1",
+    "hexo-theme-next": "^8.13.2",
     "hexo-word-counter": "^0.1.0"
   },
   "devDependencies": {
     "@prettier/plugin-xml": "^2.2.0",
-    "husky": "^8.0.1",
+    "husky": "^8.0.2",
     "prettier": "^2.7.1",
     "prettier-plugin-java": "^1.6.2"
   }
