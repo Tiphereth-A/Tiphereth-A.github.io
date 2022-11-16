@@ -33,7 +33,7 @@ date: 2019-07-15 01:29:34
 
 例如`(3,4),(4,2),(2,1)`删除之后会产生数对`(3,1)`
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% icodeweb cpa_cpp title:Luogu_P5462 Luogu/P5462/0.cpp %}

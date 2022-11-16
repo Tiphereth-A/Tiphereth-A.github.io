@@ -90,7 +90,7 @@ date: 2021-11-21 19:33:27
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 </details>
@@ -113,7 +113,7 @@ $O((m\alpha(n)+n)\log\max w)$
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% icodeweb cpa_cpp title:B Gym/103427B/0.cpp %}
@@ -157,7 +157,7 @@ $O((m\alpha(n)+n)\log\max w)$
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 </details>
@@ -172,7 +172,7 @@ $O((m\alpha(n)+n)\log\max w)$
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 </details>
@@ -204,7 +204,7 @@ $O(n^2)$
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% icodeweb cpa_cpp title:F Gym/103427F/0.cpp %}
@@ -221,7 +221,7 @@ $O(n^2)$
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 </details>
@@ -251,7 +251,7 @@ $O(n+m)$
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% icodeweb cpa_cpp title:H Gym/103427H/0.cpp %}
@@ -304,7 +304,7 @@ $$\frac{(z_0-z_1)(z_3-z_2)}{(z_0-z_2)(z_3-z_1)}=\frac{(w_0-w_1)(w_3-w_2)}{(w_0-w
 
 ### 代码参考 (法一)
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% icodeweb cpa_cpp title:I Gym/103427I/0.cpp %}
@@ -339,7 +339,7 @@ $$\frac{(z_0-z_1)(z_3-z_2)}{(z_0-z_2)(z_3-z_1)}=\frac{(w_0-w_1)(w_3-w_2)}{(w_0-w
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 </details>
@@ -401,7 +401,7 @@ $O(n^2)$
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% icodeweb cpa_cpp title:L Gym/103427L/0.cpp %}
@@ -432,7 +432,7 @@ $O(|s|)$
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% icodeweb cpa_cpp title:M Gym/103427M/0.cpp %}

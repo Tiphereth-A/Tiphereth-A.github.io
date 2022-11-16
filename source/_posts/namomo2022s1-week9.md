@@ -7,7 +7,7 @@ tags:
   - 算法竞赛
   - 题解
   - 代码源
-  - CodeForces
+  - Codeforces
   - 51Nod
 date: 2022-04-23 16:00:56
 ---
@@ -61,7 +61,7 @@ $n$ - $1$ 个点, 从 $2$ 到 $n$, 点 $a$ 与点 $b$ 的边权为 $lcm(a,b)$,�
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 </details>
@@ -123,7 +123,7 @@ $n$ - $1$ 个点, 从 $2$ 到 $n$, 点 $a$ 与点 $b$ 的边权为 $lcm(a,b)$,�
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 </details>
@@ -194,7 +194,7 @@ $X$ 坐标轴上有 $N$ 个钥匙和 $N$ 个宝箱, 玩家初始位置为 $x = 0
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 </details>
@@ -246,7 +246,7 @@ $X$ 坐标轴上有 $N$ 个钥匙和 $N$ 个宝箱, 玩家初始位置为 $x = 0
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 </details>
@@ -345,7 +345,7 @@ $X$ 坐标轴上有 $N$ 个钥匙和 $N$ 个宝箱, 玩家初始位置为 $x = 0
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 </details>
@@ -414,7 +414,7 @@ $X$ 坐标轴上有 $N$ 个钥匙和 $N$ 个宝箱, 玩家初始位置为 $x = 0
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 </details>
@@ -477,7 +477,7 @@ $X$ 坐标轴上有 $N$ 个钥匙和 $N$ 个宝箱, 玩家初始位置为 $x = 0
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 </details>

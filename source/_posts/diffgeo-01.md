@@ -271,7 +271,7 @@ $$
 - $$\kappa(t)={|\textbf{r}'(t)\wedge\textbf{r}''(t)|\over|\textbf{r}'(t)|^3}$$
 - $$\tau(t)={(\textbf{r}'(t),\textbf{r}''(t),\textbf{r}'''(t))\over|\textbf{r}'(t)\wedge\textbf{r}''(t)|^2}$$
 
-<details>
+<details open>
 <summary><font color='orange'>Show/Hide</font></summary>
 
 - $$\textbf{t}(t)={(x',y',z')\over\sqrt{x'^2+y'^2+z'^2}}$$

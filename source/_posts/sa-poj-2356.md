@@ -77,7 +77,7 @@ $O(n)$
 
 ## 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% icodeweb cpa_cpp title:POJ_2356 POJ/2356/0.cpp %}

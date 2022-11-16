@@ -161,7 +161,7 @@ $$\lim_{n\to\infty}{\pi(n)\over\frac{n}{\ln n}}=1$$
 
 所以对于要判定的整数`n`, 我们只需在`2..sqrt(n)`中枚举整数`i`验证即可
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% include_code lang:cpp nt-1/is_prime.cpp %}
@@ -200,7 +200,7 @@ $$\lim_{n\to\infty}{\pi(n)\over\frac{n}{\ln n}}=1$$
 - `2..n`从小到大枚举, 如果当前枚举的数没被标记为合数, 我们就认为这个数是素数
   - 如果这个数是素数, 我们将其倍数标记为合数
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% include_code lang:cpp nt-1/Eratosthenes_sieve.cpp %}
@@ -230,7 +230,7 @@ $$
 
 当然可以!
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% include_code lang:cpp nt-1/Euler_sieve.cpp %}
@@ -321,7 +321,7 @@ $$a\mid(a_1,a_2,\dots,a_n)=d$$
 
 这就是**辗转相除法**
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% include_code lang:cpp nt-1/gcd.cpp %}
@@ -400,7 +400,7 @@ $$
 
 接下来不断向下迭代即可, 直到 $b=0$, 此时显然有 $x=1,y=0$
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% include_code lang:cpp nt-1/exgcd.cpp %}
@@ -609,7 +609,7 @@ $$\prod_{i=1}^{\varphi(m)}a_i=\prod_{i=1}^{\varphi(m)}aa_i=a^{\varphi(m)}\prod_{
    \end{aligned}
    $$
 
-   <details>
+   <details open>
    <summary><font color='orange'>Show code</font></summary>
 
    {% include_code lang:cpp nt-1/inverse_n1.cpp %}
@@ -631,7 +631,7 @@ $$\prod_{i=1}^{\varphi(m)}a_i=\prod_{i=1}^{\varphi(m)}aa_i=a^{\varphi(m)}\prod_{
       $$
       故此时 $a_1,a_2,\dots,a_n$ 的逆元便可求得
 
-   <details>
+   <details open>
    <summary><font color='orange'>Show code</font></summary>
 
    {% include_code lang:cpp nt-1/inverse_n2.cpp %}
@@ -750,7 +750,7 @@ $$m_1k_1-m_2k_2=b_2-b_1\tag{*}$$
 求出 $k_1,k_2$ 之后便可得到
 $$x\equiv m_1k_1+b_1\equiv m_2k_2+b_2\pmod{[m_1,m_2]}$$
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% include_code lang:cpp excrt/EXCRT.hpp %}

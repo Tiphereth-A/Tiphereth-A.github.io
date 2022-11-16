@@ -7,7 +7,7 @@ tags:
   - 算法竞赛
   - 题解
   - 代码源
-  - CodeForces
+  - Codeforces
   - 贪心
 date: 2022-04-09 16:00:56
 ---
@@ -97,7 +97,7 @@ Namomo Spring Camp 2022 Div1 每日一题记录 (2022.04.09-2022.04.15)
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% icodeweb cpa_cpp title:CodeForces_1638D CodeForces/1638D/0.cpp %}
@@ -161,7 +161,7 @@ $1\leq q,x,y\leq 5 \times 10^5$
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 </details>
@@ -218,7 +218,7 @@ Alice
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 </details>
@@ -267,7 +267,7 @@ Alice
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 </details>
@@ -361,7 +361,7 @@ NO
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 </details>
@@ -406,7 +406,7 @@ NO
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 </details>
@@ -454,7 +454,7 @@ NO
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 </details>

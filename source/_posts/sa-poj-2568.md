@@ -84,7 +84,7 @@ Ulm Local 2001
 
 ## 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% icodeweb cpa_cpp title:POJ_2568 POJ/2568/0.cpp %}

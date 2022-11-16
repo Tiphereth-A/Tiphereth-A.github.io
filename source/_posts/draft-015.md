@@ -60,7 +60,7 @@ $$\sum_{i=1}^n i^k\equiv\frac{1}{k+1}\left((n+1)^{k+1}-1-\sum_{t=0}^{k-1}{ \bino
 
 ## 代码
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% include_code lang:cpp draft-015/main.cpp %}

@@ -37,7 +37,7 @@ comments: false
 
 1. 递归线段树:
 
-   <details>
+   <details open>
    <summary><font color='orange'>Show code</font></summary>
 
    {% include_code lang:cpp zkw-segment-tree-test2/seg-r.cpp %}
@@ -46,7 +46,7 @@ comments: false
 
 2. zkw 线段树:
 
-   <details>
+   <details open>
    <summary><font color='orange'>Show code</font></summary>
 
    {% include_code lang:cpp zkw-segment-tree-test2/seg-zkw.cpp %}
@@ -55,7 +55,7 @@ comments: false
 
 3. 树状数组:
 
-   <details>
+   <details open>
    <summary><font color='orange'>Show code</font></summary>
 
    {% include_code lang:cpp zkw-segment-tree-test2/bit.cpp %}
@@ -64,7 +64,7 @@ comments: false
 
 4. 数据生成器:
 
-   <details>
+   <details open>
    <summary><font color='orange'>Show code</font></summary>
 
    {% include_code lang:cpp zkw-segment-tree-test2/data_gen.cpp %}

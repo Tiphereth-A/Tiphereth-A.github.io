@@ -7,7 +7,7 @@ tags:
   - 算法竞赛
   - 题解
   - 代码源
-  - CodeForces
+  - Codeforces
   - POJ
   - HDU
   - 贪心
@@ -101,7 +101,7 @@ $O(n)$
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% icodeweb cpa_cpp title:CodeForces_817D CodeForces/817D/0.cpp %}
@@ -198,7 +198,7 @@ $O(n^3k)$
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% icodeweb cpa_cpp title:CodeForces_793D CodeForces/793D/0.cpp %}
@@ -373,7 +373,7 @@ $O(n)$
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% icodeweb cpa_cpp title:CodeForces_1198B CodeForces/1198B/0.cpp %}
@@ -448,7 +448,7 @@ $O((n+q)\log n)$
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% icodeweb cpa_cpp title:HDU_4417 HDU/4417/0.cpp %}
@@ -512,7 +512,7 @@ $O((n+m)\log\max w)$
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% icodeweb cpa_cpp title:CodeForces_1624G CodeForces/1624G/0.cpp %}

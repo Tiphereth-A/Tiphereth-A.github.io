@@ -7,7 +7,7 @@ tags:
   - 算法竞赛
   - 题解
   - 代码源
-  - CodeForces
+  - Codeforces
 date: 2022-04-16 16:00:56
 ---
 
@@ -66,7 +66,7 @@ NO
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 </details>
@@ -118,7 +118,7 @@ NO
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 </details>
@@ -194,7 +194,7 @@ No
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 </details>
@@ -249,7 +249,7 @@ Alice
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 </details>
@@ -327,7 +327,7 @@ Alice
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 </details>
@@ -390,7 +390,7 @@ Alice
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 </details>
@@ -464,7 +464,7 @@ Alice
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 </details>

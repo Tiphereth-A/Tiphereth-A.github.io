@@ -101,7 +101,7 @@ $$x^{(k+1)}=Gx^{(k)}+\omega(D-\omega L)^{-1}b$$
 
 ### 主程序
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% include_code lang:matlab numanaexp-06/main.m %}
@@ -110,7 +110,7 @@ $$x^{(k+1)}=Gx^{(k)}+\omega(D-\omega L)^{-1}b$$
 
 ### Jacobi 迭代法
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% include_code lang:matlab numanaexp-06/jacobi.m %}
@@ -119,7 +119,7 @@ $$x^{(k+1)}=Gx^{(k)}+\omega(D-\omega L)^{-1}b$$
 
 ### Gauss-Seidol 迭代法
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% include_code lang:matlab numanaexp-06/gauss_seidol.m %}
@@ -128,7 +128,7 @@ $$x^{(k+1)}=Gx^{(k)}+\omega(D-\omega L)^{-1}b$$
 
 ### SOR 方法
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% include_code lang:matlab numanaexp-06/sor.m %}

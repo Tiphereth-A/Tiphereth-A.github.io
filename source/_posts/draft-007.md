@@ -168,7 +168,7 @@ $$
 ## MATLAB 程序实现
 
 - 主程序
-  <details>
+  <details open>
   <summary><font color='orange'>Show code</font></summary>
 
   {% include_code lang:matlab draft-007/main.m %}
@@ -176,7 +176,7 @@ $$
   </details>
 
 - Euler 方法
-  <details>
+  <details open>
   <summary><font color='orange'>Show code</font></summary>
 
   {% include_code lang:matlab draft-007/euler_solve.m %}
@@ -184,7 +184,7 @@ $$
   </details>
 
 - 四阶 Runge-Kutta 方法
-  <details>
+  <details open>
   <summary><font color='orange'>Show code</font></summary>
 
   {% include_code lang:matlab draft-007/rk4_solve.m %}

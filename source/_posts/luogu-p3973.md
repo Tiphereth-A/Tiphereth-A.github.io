@@ -92,7 +92,7 @@ $$\max_{a_i\in\{0,1\}}\left\{\sum_i\sum_j a_ia_jb_{ij}-\sum_i a_ic_i\right\}$$
 
 ## 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% icodeweb cpa_cpp title:Luogu_P3973 Luogu/P3973/0.cpp %}

@@ -63,7 +63,7 @@ $O(n\log n)$
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% icodeweb cpa_cpp title:B misc/icpc-anjr2020-p/B/0.cpp %}

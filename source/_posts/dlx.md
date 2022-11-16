@@ -758,7 +758,7 @@ $$
 
 - 洛谷 [P4929 【模板】舞蹈链（DLX）](https://www.luogu.com.cn/problem/P4929)
 
-  <details>
+  <details open>
   <summary><font color='orange'>Show code</font></summary>
 
   {% icodeweb cpa_cpp title:Luogu_P4929 Luogu/P4929/0.cpp %}
@@ -815,7 +815,7 @@ $$
 
 附模板, 输入方式与 洛谷 [P4929 【模板】舞蹈链（DLX）](https://www.luogu.com.cn/problem/P4929) 相同
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% include_code lang:cpp dlx/multi_DLX.hpp %}

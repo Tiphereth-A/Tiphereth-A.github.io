@@ -171,7 +171,7 @@ K 叉 Huffman 树模板题
 
 ## 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% icodeweb cpa_cpp title:UOJ_130 UOJ/130/0.cpp %}

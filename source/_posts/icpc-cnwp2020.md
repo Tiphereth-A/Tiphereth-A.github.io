@@ -254,7 +254,7 @@ ACduck
 
 我们可以构造这样的图
 
-<details>
+<details open>
 <summary><font color='orange'>Show sample</font></summary>
 
 ```input1
@@ -313,7 +313,7 @@ ACduck
 ### 代码参考
 
 - 正解
-  <details>
+  <details open>
   <summary><font color='orange'>Show code</font></summary>
 
   {% icodeweb cpa_cpp title:icpc-cnwp2020_C_0 misc/icpc-cnwp2020/C/0.cpp %}
@@ -321,7 +321,7 @@ ACduck
   </details>
 
 - 乱搞
-  <details>
+  <details open>
   <summary><font color='orange'>Show code</font></summary>
 
   {% icodeweb cpa_cpp title:icpc-cnwp2020_C_1 misc/icpc-cnwp2020/C/1.cpp %}
@@ -387,7 +387,7 @@ YES
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 </details>
@@ -531,7 +531,7 @@ $$
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% icodeweb cpa_cpp title:icpc-cnwp2020_F misc/icpc-cnwp2020/F/1.cpp %}
@@ -739,7 +739,7 @@ $(x_1, y_1)$ 中:
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 </details>
@@ -800,7 +800,7 @@ Eric 喜欢一款游戏, 游戏是在一个长方形的场地上玩. 在游戏�
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 </details>
@@ -940,7 +940,7 @@ $O(n)$ 直接求
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 </details>
@@ -999,7 +999,7 @@ Jasmine 是一位作曲家, 最近她录制了两首非常受欢迎的歌曲. �
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 </details>

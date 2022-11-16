@@ -70,7 +70,7 @@ date: 2020-12-20 20:46:33
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 </details>
@@ -85,7 +85,7 @@ date: 2020-12-20 20:46:33
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 </details>
@@ -100,7 +100,7 @@ date: 2020-12-20 20:46:33
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 </details>
@@ -124,7 +124,7 @@ date: 2020-12-20 20:46:33
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% icodeweb cpa_cpp title:E Gym/102992E/0.cpp %}
@@ -149,7 +149,7 @@ $$t=\frac{nk+m}{1-(1-p)^k}$$
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% icodeweb cpa_cpp title:F Gym/102992F/0.cpp %}
@@ -166,7 +166,7 @@ $$t=\frac{nk+m}{1-(1-p)^k}$$
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 </details>
@@ -185,7 +185,7 @@ $$t=\frac{nk+m}{1-(1-p)^k}$$
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% icodeweb cpa_cpp title:H Gym/102992H/0.cpp %}
@@ -202,7 +202,7 @@ $$t=\frac{nk+m}{1-(1-p)^k}$$
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 </details>
@@ -217,7 +217,7 @@ $$t=\frac{nk+m}{1-(1-p)^k}$$
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 </details>
@@ -235,7 +235,7 @@ $$(i_k,p_{i_k})=1$$
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% icodeweb cpa_cpp title:K Gym/102992K/0.cpp %}
@@ -258,7 +258,7 @@ $$f(c)=\left|\left\{i\mid\forall j\in[1,m]\cap\mathbb{N},~|c-a_i|<|c-b_j|\right\
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% icodeweb cpa_cpp title:L Gym/102992L/0.cpp %}
@@ -275,7 +275,7 @@ $$f(c)=\left|\left\{i\mid\forall j\in[1,m]\cap\mathbb{N},~|c-a_i|<|c-b_j|\right\
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 </details>

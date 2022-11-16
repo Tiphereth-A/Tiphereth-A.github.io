@@ -8,7 +8,7 @@ tags:
   - 题解
   - 代码源
   - AtCoder
-  - CodeForces
+  - Codeforces
 date: 2022-04-30 16:00:56
 ---
 
@@ -69,7 +69,7 @@ $T$ 行, 每行一个整数
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 </details>
@@ -125,7 +125,7 @@ $T$ 行, 每行一个整数
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 </details>
@@ -196,7 +196,7 @@ No
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 </details>
@@ -248,7 +248,7 @@ Bob
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 </details>
@@ -302,7 +302,7 @@ $1 \leq X \leq 1 \times 10^{9}$
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 </details>
@@ -353,7 +353,7 @@ $1 \leq X \leq 1 \times 10^{9}$
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 </details>
@@ -397,7 +397,7 @@ T 行, 每行一个整数 $n(n\leq 2000)$
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 </details>

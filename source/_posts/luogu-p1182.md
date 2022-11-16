@@ -92,7 +92,7 @@ $O(n\log(r-l))$, 其中 $l,\ r$ 分别指查询区间左右端点
 
 ## 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% icodeweb cpa_cpp title:Luogu_P1182 Luogu/P1182/0.cpp %}

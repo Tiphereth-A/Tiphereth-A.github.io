@@ -109,7 +109,7 @@ $$r=\max_{ik_l\leqslant n}\{i\}$$
 显然
 $$r=\left\lfloor\frac{n}{k_l}\right\rfloor=\left\lfloor{n\over{\lfloor\frac{n}{l}\rfloor} }\right\rfloor$$
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% include_code lang:cpp nt-2/get_sum.cpp %}
@@ -220,7 +220,7 @@ $$b_i=\sum_{j\mid i}a_j$$
 
 预先筛出 $[1,n]$ 中的素数即可更快地处理
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% include_code lang:cpp nt-2/Dirichlet_sum.cpp %}
@@ -358,7 +358,7 @@ $$
 
    按 $\varphi(n)=n\prod_{i=1}^{\omega(n)}\frac{p_i-1}{p_i}$ 计算即可
 
-   <details>
+   <details open>
    <summary><font color='orange'>Show code</font></summary>
 
    {% include_code lang:cpp nt-2/euler_phi_single.cpp %}
@@ -369,7 +369,7 @@ $$
 
    依据积性和 $\varphi(p^a)=p^a-p^{a-1}$ 计算
 
-   <details>
+   <details open>
    <summary><font color='orange'>Show code</font></summary>
 
    {% include_code lang:cpp nt-2/euler_phi_seive.cpp %}
@@ -488,7 +488,7 @@ $$
 
    基于积性和定义
 
-   <details>
+   <details open>
    <summary><font color='orange'>Show code</font></summary>
 
    {% include_code lang:cpp nt-2/mobius_seive.cpp %}

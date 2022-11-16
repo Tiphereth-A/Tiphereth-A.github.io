@@ -6,7 +6,7 @@ categories:
 tags:
   - 算法竞赛
   - 题解
-  - CodeForces
+  - Codeforces
   - 数学
   - 贪心
   - 模拟
@@ -98,7 +98,7 @@ In the second test case, you can't perform any operations because there is no va
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% icodeweb cpa_cpp title:CodeForces_1392A CodeForces/1392A/0.cpp %}
@@ -184,7 +184,7 @@ In the first test case the array changes as follows:
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% icodeweb cpa_cpp title:CodeForces_1392B CodeForces/1392B/0.cpp %}
@@ -302,7 +302,7 @@ In the third test case, the array is already nondecreasing, so Omkar does $0$ op
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% icodeweb cpa_cpp title:CodeForces_1392C CodeForces/1392C/0.cpp %}
@@ -400,7 +400,7 @@ $n$ 个人站成一圈, 编号 $0,1,2,...,n-1$, 第 $(i+1)\bmod n$ 个人在第 
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% icodeweb cpa_cpp title:CodeForces_1392D CodeForces/1392D/0.cpp %}
@@ -490,7 +490,7 @@ $$a_i=i+\left\lfloor{S-\frac{n(n+1)}{2}\over n}\right\rfloor+\left[i\leqslant\le
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% icodeweb cpa_cpp title:CodeForces_1392F CodeForces/1392F/0.cpp %}

@@ -231,7 +231,7 @@ $$
 
 ### 主程序
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% include_code lang:matlab numanaexp-05/main.m %}
@@ -240,7 +240,7 @@ $$
 
 ### 输入数据检查
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% include_code lang:matlab numanaexp-05/input_check.m %}
@@ -249,7 +249,7 @@ $$
 
 ### Gauss 顺序消去法
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% include_code lang:matlab numanaexp-05/gauss_basic.m %}
@@ -258,7 +258,7 @@ $$
 
 ### Gauss 列主元消去法
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% include_code lang:matlab numanaexp-05/gauss_advanced.m %}
@@ -267,7 +267,7 @@ $$
 
 ### 平方根法
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% include_code lang:matlab numanaexp-05/sqrt_basic.m %}
@@ -276,7 +276,7 @@ $$
 
 ### 改进平方根法
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% include_code lang:matlab numanaexp-05/sqrt_advanced.m %}
@@ -285,7 +285,7 @@ $$
 
 ### 追赶法
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% include_code lang:matlab numanaexp-05/chase.m %}

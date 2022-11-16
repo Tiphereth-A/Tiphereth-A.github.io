@@ -118,7 +118,7 @@ $$\int_a^bf(x)\mathrm{d}x\approx\frac{h}{6}\left(f(a)+4\sum_{i=1}^{n-1}f(x_{k+1/
 
 ### 主程序
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% include_code lang:matlab numanaexp-04/main.m %}
@@ -127,7 +127,7 @@ $$\int_a^bf(x)\mathrm{d}x\approx\frac{h}{6}\left(f(a)+4\sum_{i=1}^{n-1}f(x_{k+1/
 
 ### 输入数据检查
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% include_code lang:matlab numanaexp-04/input_check.m %}
@@ -136,7 +136,7 @@ $$\int_a^bf(x)\mathrm{d}x\approx\frac{h}{6}\left(f(a)+4\sum_{i=1}^{n-1}f(x_{k+1/
 
 ### 按步长积分 (复化积分)
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% include_code lang:matlab numanaexp-04/integral_with_h.m %}
@@ -145,7 +145,7 @@ $$\int_a^bf(x)\mathrm{d}x\approx\frac{h}{6}\left(f(a)+4\sum_{i=1}^{n-1}f(x_{k+1/
 
 ### 按精度积分 (自适应积分)
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% include_code lang:matlab numanaexp-04/integral_with_eps.m %}
@@ -156,7 +156,7 @@ $$\int_a^bf(x)\mathrm{d}x\approx\frac{h}{6}\left(f(a)+4\sum_{i=1}^{n-1}f(x_{k+1/
 
 #### 梯形积分
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% include_code lang:matlab numanaexp-04/trapez.m %}
@@ -165,7 +165,7 @@ $$\int_a^bf(x)\mathrm{d}x\approx\frac{h}{6}\left(f(a)+4\sum_{i=1}^{n-1}f(x_{k+1/
 
 #### Simpson 积分
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% include_code lang:matlab numanaexp-04/simpson.m %}

@@ -8,7 +8,7 @@ tags:
   - 题解
   - 代码源
   - HihoCoder
-  - CodeForces
+  - Codeforces
   - 数学
 date: 2022-05-07 16:00:56
 ---
@@ -83,7 +83,7 @@ Namomo Spring Camp 2022 Div1 每日一题记录 (2022.05.07-2022.05.13)
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 </details>
@@ -138,7 +138,7 @@ Namomo Spring Camp 2022 Div1 每日一题记录 (2022.05.07-2022.05.13)
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 </details>
@@ -195,7 +195,7 @@ $2 < n , m \leq 2500$
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 </details>
@@ -289,7 +289,7 @@ files
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 </details>
@@ -382,7 +382,7 @@ $[1, 2, 3, 4, 5, 6] \rightarrow [0, 3, 3, 4, 5, 6] \rightarrow [0, 3, 3, 3, 6, 6
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 </details>
@@ -438,7 +438,7 @@ P 国的历法比较特殊, 每一年都有 $m$ 个月 , 每个月有 $d$ 天. �
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% icodeweb cpa_cpp title:CodeForces_1389E CodeForces/1389E/0.cpp %}
@@ -493,7 +493,7 @@ P 国的历法比较特殊, 每一年都有 $m$ 个月 , 每个月有 $d$ 天. �
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 </details>

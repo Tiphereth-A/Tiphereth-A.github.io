@@ -132,7 +132,7 @@ date: 2021-11-18 17:48:03
 
 ## 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% icodeweb cpa_cpp title:Luogu_P5285 Luogu/P5285/0.cpp %}

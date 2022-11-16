@@ -134,7 +134,7 @@ $$\sum_{k=A}^B[x^k]\left(\sum_{i=0}^{X-1}\frac{1}{X}x^i\right)^Y$$
 
 ## 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% icodeweb cpa_cpp title:Luogu_P3779 Luogu/P3779/1.cpp %}

@@ -163,7 +163,7 @@ $O\left({n\choose \frac{n}{2}}m^3\right)$ 或 $O\left({m\choose \frac{m}{2}}n^3\
 
 ## 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% icodeweb cpa_cpp title:Luogu_P2258 Luogu/P2258/0.cpp %}

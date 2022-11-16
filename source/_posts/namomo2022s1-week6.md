@@ -7,7 +7,7 @@ tags:
   - 算法竞赛
   - 题解
   - 代码源
-  - CodeForces
+  - Codeforces
   - 51Nod
 date: 2022-04-02 16:00:56
 ---
@@ -65,7 +65,7 @@ Namomo Spring Camp 2022 Div1 每日一题记录 (2022.04.02-2022.04.08)
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 </details>
@@ -147,7 +147,7 @@ $1 \leq n, q \leq 5 \times 10^5,1 \leq a_i,b_i \leq n, 1 \leq l_i \leq r_i \leq 
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 </details>
@@ -218,7 +218,7 @@ $1 \leq n, q \leq 5 \times 10^5,1 \leq a_i,b_i \leq n, 1 \leq l_i \leq r_i \leq 
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 </details>
@@ -269,7 +269,7 @@ $1 \leq n, q \leq 5 \times 10^5,1 \leq a_i,b_i \leq n, 1 \leq l_i \leq r_i \leq 
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 </details>
@@ -337,7 +337,7 @@ $1 \leq n, q \leq 5 \times 10^5,1 \leq a_i,b_i \leq n, 1 \leq l_i \leq r_i \leq 
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 </details>
@@ -387,7 +387,7 @@ $1 \leq n, q \leq 5 \times 10^5,1 \leq a_i,b_i \leq n, 1 \leq l_i \leq r_i \leq 
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 </details>
@@ -452,7 +452,7 @@ $1 \leq |S| \leq 10^6$
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 </details>

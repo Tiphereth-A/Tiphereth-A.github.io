@@ -51,7 +51,7 @@ date: 2022-06-17 19:07:57
 
 [官方题解](https://hackmd.io/@rTbBGGVYR3e0Ee1fJry9fg/r15T-itMF)
 
-<details>
+<details open>
 <summary><font color='orange'>Show backup</font></summary>
 
 {% pdf /archives/icpc-atwo2021/tutorial.pdf 600px %}
@@ -80,7 +80,7 @@ date: 2022-06-17 19:07:57
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% include_code lang:cpp icpc-atwo2021/A.cpp %}
@@ -91,7 +91,7 @@ date: 2022-06-17 19:07:57
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% include_code lang:cpp icpc-atwo2021/B.cpp %}
@@ -102,7 +102,7 @@ date: 2022-06-17 19:07:57
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% include_code lang:cpp icpc-atwo2021/C.cpp %}
@@ -113,7 +113,7 @@ date: 2022-06-17 19:07:57
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% include_code lang:cpp icpc-atwo2021/D.cpp %}
@@ -124,7 +124,7 @@ date: 2022-06-17 19:07:57
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% include_code lang:python icpc-atwo2021/E.py %}
@@ -135,7 +135,7 @@ date: 2022-06-17 19:07:57
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% include_code lang:cpp icpc-atwo2021/F.cpp %}
@@ -146,7 +146,7 @@ date: 2022-06-17 19:07:57
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% include_code lang:cpp icpc-atwo2021/G.cpp %}
@@ -157,7 +157,7 @@ date: 2022-06-17 19:07:57
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% include_code lang:cpp icpc-atwo2021/H.cpp %}
@@ -168,7 +168,7 @@ date: 2022-06-17 19:07:57
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% include_code lang:cpp icpc-atwo2021/I.cpp %}
@@ -179,7 +179,7 @@ date: 2022-06-17 19:07:57
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% include_code lang:cpp icpc-atwo2021/J.cpp %}

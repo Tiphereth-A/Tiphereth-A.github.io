@@ -84,7 +84,7 @@ B 君想了一下，决定用 2047 年的计算机来试着运行这个题目，
 
 ## 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% icodeweb cpa_cpp title:Luogu_P4920 Luogu/P4920/0.cpp %}

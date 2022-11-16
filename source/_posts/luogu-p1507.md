@@ -80,7 +80,7 @@ NASA(美国航空航天局)因为航天飞机的隔热瓦等其他安全技术�
 
 ## 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% icodeweb cpa_cpp title:Luogu_P1507 Luogu/P1507/0.cpp %}

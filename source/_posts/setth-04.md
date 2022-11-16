@@ -192,7 +192,7 @@ $\mathbb{R}^n$ 中任一有界无限点集均至少有一个聚点
 $$|a_{n+1}-a_n|\geqslant 1,~n=1,2,...$$
 则 $\{a_n\}$ 可能有无穷多个聚点
 
-<details>
+<details open>
 <summary><font color='orange'>Proof</font></summary>
 
 令

@@ -97,7 +97,7 @@ $$
 
 ### C++ 程序
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% include_code lang:cpp numanaexp-01/main.cpp %}
@@ -108,7 +108,7 @@ $$
 
 #### 主程序
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% include_code lang:matlab numanaexp-01/main.m %}
@@ -117,7 +117,7 @@ $$
 
 #### 计算函数
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% include_code lang:matlab numanaexp-01/calc_fast.m %}
@@ -126,7 +126,7 @@ $$
 
 #### 误差检验函数
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% include_code lang:matlab numanaexp-01/error_judge.m %}

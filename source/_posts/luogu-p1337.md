@@ -78,7 +78,7 @@ $$f(x,y)=\sum_iw_i\sqrt{(x-x_i)^2+(y-y_i)^2}$$
 
 ## 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% icodeweb cpa_cpp title:Luogu_P1337 Luogu/P1337/0.cpp %}

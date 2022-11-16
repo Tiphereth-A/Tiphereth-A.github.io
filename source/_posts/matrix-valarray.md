@@ -43,7 +43,7 @@ date: 2022-08-02 10:28:15
 
 - 洛谷 P2447 [[SDOI2010] 外星千足虫](https://www.luogu.com.cn/problem/P2447)
 
-  <details>
+  <details open>
   <summary><font color='orange'>Show code</font></summary>
 
   {% icodeweb cpa_cpp title:Luogu_P2447 Luogu/P2447/0.cpp %}
