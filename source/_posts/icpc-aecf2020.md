@@ -66,7 +66,7 @@ date: 2022-05-10 19:07:57
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% include_code lang:cpp icpc-aecf2020/A.cpp %}
@@ -85,7 +85,7 @@ date: 2022-05-10 19:07:57
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% include_code lang:cpp icpc-aecf2020/B.cpp %}
@@ -104,7 +104,7 @@ date: 2022-05-10 19:07:57
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% include_code lang:cpp icpc-aecf2020/C.cpp %}
@@ -123,7 +123,7 @@ date: 2022-05-10 19:07:57
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% include_code lang:cpp icpc-aecf2020/D.cpp %}
@@ -142,7 +142,7 @@ Slitherlink, 连边时有代价, 问最小代价
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% include_code lang:cpp icpc-aecf2020/E.cpp %}
@@ -167,7 +167,7 @@ Slitherlink, 连边时有代价, 问最小代价
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% include_code lang:cpp icpc-aecf2020/F.cpp %}
@@ -186,7 +186,7 @@ Slitherlink, 连边时有代价, 问最小代价
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% include_code lang:cpp icpc-aecf2020/G.cpp %}
@@ -205,7 +205,7 @@ Slitherlink, 连边时有代价, 问最小代价
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% include_code lang:cpp icpc-aecf2020/H.cpp %}
@@ -224,7 +224,7 @@ Slitherlink, 连边时有代价, 问最小代价
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% include_code lang:cpp icpc-aecf2020/I.cpp %}
@@ -245,7 +245,7 @@ Slitherlink, 连边时有代价, 问最小代价
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% include_code lang:cpp icpc-aecf2020/J.cpp %}
@@ -260,7 +260,7 @@ Slitherlink, 连边时有代价, 问最小代价
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% include_code lang:cpp icpc-aecf2020/K.cpp %}
@@ -287,7 +287,7 @@ $O(n\log^2{m})$, 其中 $m$ 为 $\{a_n\}$ 的最大值
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% include_code lang:cpp icpc-aecf2020/L.cpp %}
@@ -306,7 +306,7 @@ $O(n\log^2{m})$, 其中 $m$ 为 $\{a_n\}$ 的最大值
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% include_code lang:cpp icpc-aecf2020/M.cpp %}

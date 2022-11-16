@@ -28,7 +28,7 @@ date: 2021-12-21 21:21:01
 
 参见 [Fast numeric string to int – Johnny Lee – Improving stuff one bit at a time](https://johnnylee-sde.github.io/Fast-numeric-string-to-int/)
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% include_code lang:cpp fast-str2uint/dec2uint_mod.hpp %}

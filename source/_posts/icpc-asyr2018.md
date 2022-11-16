@@ -51,7 +51,7 @@ date: 2022-11-02 20:33:27
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% include_code lang:cpp icpc-asyr2018/A.cpp %}
@@ -62,7 +62,7 @@ date: 2022-11-02 20:33:27
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% include_code lang:cpp icpc-asyr2018/B.cpp %}
@@ -73,7 +73,7 @@ date: 2022-11-02 20:33:27
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% include_code lang:cpp icpc-asyr2018/C.cpp %}
@@ -84,7 +84,7 @@ date: 2022-11-02 20:33:27
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% include_code lang:cpp icpc-asyr2018/D.cpp %}
@@ -95,7 +95,7 @@ date: 2022-11-02 20:33:27
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% include_code lang:cpp icpc-asyr2018/E.cpp %}
@@ -106,7 +106,7 @@ date: 2022-11-02 20:33:27
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% include_code lang:cpp icpc-asyr2018/F.cpp %}
@@ -117,7 +117,7 @@ date: 2022-11-02 20:33:27
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% include_code lang:cpp icpc-asyr2018/G.cpp %}
@@ -128,7 +128,7 @@ date: 2022-11-02 20:33:27
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% include_code lang:cpp icpc-asyr2018/H.cpp %}
@@ -139,7 +139,7 @@ date: 2022-11-02 20:33:27
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% include_code lang:cpp icpc-asyr2018/I.cpp %}
@@ -150,7 +150,7 @@ date: 2022-11-02 20:33:27
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% include_code lang:cpp icpc-asyr2018/J.cpp %}
@@ -161,7 +161,7 @@ date: 2022-11-02 20:33:27
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% include_code lang:cpp icpc-asyr2018/K.cpp %}
@@ -172,7 +172,7 @@ date: 2022-11-02 20:33:27
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% include_code lang:cpp icpc-asyr2018/L.cpp %}
@@ -183,7 +183,7 @@ date: 2022-11-02 20:33:27
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% include_code lang:cpp icpc-asyr2018/M.cpp %}

@@ -38,7 +38,7 @@ date: 2022-11-05 18:24:04
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% include_code lang:php icpc-asyr2022-p/A.php %}
@@ -55,7 +55,7 @@ $$\frac{(n!)^2}{n^n}$$
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% include_code lang:py icpc-asyr2022-p/B.py %}
@@ -70,7 +70,7 @@ $$\frac{(n!)^2}{n^n}$$
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% include_code lang:cpp icpc-asyr2022-p/C.cpp %}

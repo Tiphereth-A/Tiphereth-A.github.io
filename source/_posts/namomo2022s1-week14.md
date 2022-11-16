@@ -78,7 +78,7 @@ Namomo Spring Camp 2022 Div1 每日一题记录 (2022.05.28-2022.06.03)
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% icodeweb cpa_cpp title:CodeForces_1268B CodeForces/1268B/0.cpp %}
@@ -132,7 +132,7 @@ sampleaseinout
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% icodeweb cpa_cpp title:CodeForces_1200E CodeForces/1200E/0.cpp %}
@@ -218,7 +218,7 @@ $O(N+Q\log N)$
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% icodeweb cpa_cpp title:CodeForces_Gym_102984D Gym/102984D/0.cpp %}
@@ -303,7 +303,7 @@ $O(n)$
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% icodeweb cpa_cpp title:Daimayuan_922 Daimayuan/922/0.cpp %}
@@ -389,7 +389,7 @@ $O(N+Q\log N)$
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% icodeweb cpa_cpp title:CodeForces_Gym_102984D Gym/102984D/0.cpp %}
@@ -441,7 +441,7 @@ $O(N+Q\log N)$
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% icodeweb cpa_cpp title:CodeForces_1272E CodeForces/1272E/0.cpp %}
@@ -497,7 +497,7 @@ $O(n\log n)$
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% icodeweb cpa_cpp title:CodeForces_1579E2 CodeForces/1579E2/0.cpp %}
@@ -573,7 +573,7 @@ $O(n\log n)$
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% icodeweb cpa_cpp title:CodeForces_1579E2 CodeForces/1579E2/0.cpp %}

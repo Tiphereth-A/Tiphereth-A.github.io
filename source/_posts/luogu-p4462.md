@@ -59,7 +59,7 @@ date: 2020-01-27 15:40:12
 
 ## 代码
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% icodeweb cpa_cpp title:Luogu_P4462 Luogu/P4462/0.cpp %}

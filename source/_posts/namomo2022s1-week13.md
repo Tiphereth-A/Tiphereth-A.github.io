@@ -96,7 +96,7 @@ $$f(x,y)=\frac{p_a}{p_a+p_b}f(x-1,y)+\frac{p_b}{p_a+p_b}f(x,y-x)$$
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% icodeweb cpa_cpp title:CodeForces_908D CodeForces/908D/0.cpp %}
@@ -150,7 +150,7 @@ $1 \le n \le 10000, 1 \le x, y \le n$
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 </details>
@@ -204,7 +204,7 @@ $1 \le n \le 10000, 1 \le x, y \le n$
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% icodeweb cpa_cpp title:BZOJ_4766 BZOJ/4766/0.cpp %}
@@ -277,7 +277,7 @@ $O(n)$
 
 ### 代码参考 (洛谷 P3478)
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% icodeweb cpa_cpp title:Luogu_P3478 Luogu/P3478/0.cpp %}
@@ -337,7 +337,7 @@ $O(n\log^2 n)$
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% icodeweb cpa_cpp title:CodeForces_1547F CodeForces/1547F/0.cpp %}
@@ -387,7 +387,7 @@ $O(n)$
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% icodeweb cpa_cpp title:CodeForces_1373D CodeForces/1373D/0.cpp %}
@@ -456,7 +456,7 @@ $O(n\log n)$
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% icodeweb cpa_cpp title:Daimayuan_138 Daimayuan/138/0.cpp %}

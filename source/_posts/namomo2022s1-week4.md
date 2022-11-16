@@ -148,7 +148,7 @@ $O(n+q)$
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% icodeweb cpa_cpp title:CodeForces_1634F CodeForces/1634F/0.cpp %}
@@ -222,7 +222,7 @@ $O(n\sqrt{\sum_i a_i})$
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% icodeweb cpa_cpp title:JZOJ_4922 JZOJ/4922/0.cpp %}
@@ -278,7 +278,7 @@ $O(n\max_{i\ne j}\{\sqrt{a_i^2+a_j}-a_i\})=O(n\max_i\sqrt{a_i})$
 
 ### 代码参考一
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% icodeweb cpa_cpp title:Daimayuan_607 Daimayuan/607/0.cpp %}
@@ -303,7 +303,7 @@ $\displaystyle O\left(\sum_{i=1}^{\max_i a_i}\left\lfloor \frac{\max_i a_i}{i}\r
 
 ### 代码参考二
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% icodeweb cpa_cpp title:Daimayuan_607 Daimayuan/607/1.cpp %}
@@ -422,7 +422,7 @@ $$\prod_{i = 1}^Y f_i = X$$
 由简单的生成函数知识不难得出
 $$f(\alpha,Y)=\binom{\alpha+Y-1}{\alpha}$$
 
-<details>
+<details open>
 <summary><font color='orange'>推导过程</font></summary>
 
 > 考虑二元 OGF
@@ -461,7 +461,7 @@ $O(X+T\max\omega(X))$
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% icodeweb cpa_cpp title:Daimayuan_611 Daimayuan/611/0.cpp %}
@@ -512,7 +512,7 @@ zzzz
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% icodeweb cpa_cpp title:CodeForces_628E CodeForces/628E/0.cpp %}
@@ -568,7 +568,7 @@ boring
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% icodeweb cpa_cpp title:UVA_1608 UVA/1608/0.cpp %}

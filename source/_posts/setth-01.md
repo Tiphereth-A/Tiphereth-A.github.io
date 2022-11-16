@@ -227,7 +227,7 @@ $X\times X$ 也可记作 $X^2$
 证明: 使 $f_n(x)$ 不收敛到 $f(x)$ 的一切点 $x$ 组成的集合为
 $$D=\bigcup_{k=1}^{\infty}\bigcap_{N=1}^{\infty}\bigcup_{n=N}^{\infty}\left\{x:|f_n(x)-f(x)|\geqslant\frac{1}{k}\right\}$$
 
-<details>
+<details open>
 <summary><font color='orange'>Proof</font></summary>
 
 若 $f_n(x_0)$ 不收敛到 $f(x_0)$, 则
@@ -253,7 +253,7 @@ $$x_0\in\bigcup_{k=1}^{\infty}\limsup_{n\to\infty}E_{n,k}=\bigcup_{k=1}^{\infty}
 证明:
 $$\forall t\in\mathbb{R},\{x:f(x)\leqslant t\}=\bigcap_{k=1}^{\infty}\bigcup_{N=1}^{\infty}\bigcap_{n=N}^{\infty}\left\{x:f_n(x)<t+\frac{1}{k}\right\}$$
 
-<details>
+<details open>
 <summary><font color='orange'>Proof</font></summary>
 
 令 $E_{n,k}=\left\{x:f_n(x)<t+\frac{1}{k}\right\}$, 则
@@ -280,7 +280,7 @@ $$
 证明:
 $$\bigcap_{k=1}^{\infty}\bigcup_{N=1}^{\infty}\bigcap_{n=N}^{\infty}\left(a_n-\frac{1}{k},a_n+\frac{1}{k}\right)=a$$
 
-<details>
+<details open>
 <summary><font color='orange'>Proof</font></summary>
 
 令 $E_{n,k}=\left(a_n-\frac{1}{k},a_n+\frac{1}{k}\right)$, 则

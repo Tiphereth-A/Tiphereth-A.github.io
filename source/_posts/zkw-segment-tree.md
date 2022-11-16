@@ -177,7 +177,7 @@ orz
 
 **单点修改+区间查询**完结, 整理一下代码:
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% include_code lang:cpp zkw-segment-tree/seg_zkw_singlem_rangeq.cpp %}
@@ -236,7 +236,7 @@ orz
 
 区间修改+区间查询告一段落, 整理一下代码:
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% include_code lang:cpp zkw-segment-tree/seg_zkw_rangem_rangeq1.cpp %}

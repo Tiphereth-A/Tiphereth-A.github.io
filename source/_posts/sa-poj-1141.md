@@ -116,7 +116,7 @@ $$
 
 ## 代码
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% icodeweb cpa_cpp title:POJ_1141 POJ/1141/0.cpp %}

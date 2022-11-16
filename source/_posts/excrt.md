@@ -76,7 +76,7 @@ $$x\equiv m_1k_1+b_1\equiv m_2k_2+b_2\pmod{[m_1,m_2]}$$
 
 ## 代码
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% include_code lang:cpp excrt/EXCRT.hpp %}

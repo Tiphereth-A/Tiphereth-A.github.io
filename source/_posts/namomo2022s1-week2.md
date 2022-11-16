@@ -86,7 +86,7 @@ $O(n\log n)$ (使用 `map`)
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% icodeweb cpa_cpp title:Daimayuan_466 Daimayuan/466/0.cpp %}
@@ -151,7 +151,7 @@ $O(m^2)$
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% icodeweb cpa_cpp title:CodeForces_559C CodeForces/559C/0.cpp %}
@@ -239,7 +239,7 @@ $O(nk)$
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% icodeweb cpa_cpp title:Daimayuan_468 Daimayuan/468/0.cpp %}
@@ -323,7 +323,7 @@ $O(n\log n)$
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% icodeweb cpa_cpp title:CodeForces_1416C CodeForces/1416C/0.cpp %}
@@ -427,7 +427,7 @@ $O(n\log n+m)$
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% icodeweb cpa_cpp title:CodeForces_522D CodeForces/522D/0.cpp %}
@@ -568,7 +568,7 @@ $O(m+kn\log n+k^22^k)$
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% icodeweb cpa_cpp title:CodeForces_Gym_103447G Gym/103447G/0.cpp %}
@@ -639,7 +639,7 @@ $O(n)$
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% icodeweb cpa_cpp title:CodeForces_573B CodeForces/573B/0.cpp %}

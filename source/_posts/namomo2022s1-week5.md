@@ -60,7 +60,7 @@ $0 \leq L_i,R_i \leq 1\times10^9$
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% icodeweb cpa_cpp title:CodeForces_1060D CodeForces/1060D/0.cpp %}
@@ -122,7 +122,7 @@ $O(n\alpha (n))$
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% icodeweb cpa_cpp title:Daimayuan_609 Daimayuan/609/0.cpp %}
@@ -262,7 +262,7 @@ $O(n\alpha (n))$
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 </details>
@@ -342,7 +342,7 @@ possible
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 </details>
@@ -388,7 +388,7 @@ $1 \leq n \leq 2000$, $1 \leq s_i \leq 1e9$
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 </details>
@@ -437,7 +437,7 @@ $1 \leq n \leq 2000$, $1 \leq s_i \leq 1e9$
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 </details>

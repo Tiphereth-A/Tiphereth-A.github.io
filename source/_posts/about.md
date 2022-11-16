@@ -30,7 +30,7 @@ date: 2020-05-04 19:07:23
 
 好几年前的老版本了, 新版的在 {% post_link cppisc %}
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% include_code lang:cpp about/init.cpp %}

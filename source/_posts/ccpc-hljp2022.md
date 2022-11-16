@@ -67,7 +67,7 @@ date: 2022-05-19 22:01:18
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% include_code lang:cpp ccpc-hljp2022/A.cpp %}
@@ -78,7 +78,7 @@ date: 2022-05-19 22:01:18
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% include_code lang:cpp ccpc-hljp2022/B.cpp %}
@@ -89,7 +89,7 @@ date: 2022-05-19 22:01:18
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% include_code lang:cpp ccpc-hljp2022/C.cpp %}
@@ -100,7 +100,7 @@ date: 2022-05-19 22:01:18
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% include_code lang:cpp ccpc-hljp2022/D.cpp %}
@@ -134,7 +134,7 @@ $O(n\log n)$
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% include_code lang:cpp ccpc-hljp2022/E.cpp %}
@@ -145,7 +145,7 @@ $O(n\log n)$
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% include_code lang:cpp ccpc-hljp2022/F.cpp %}
@@ -156,7 +156,7 @@ $O(n\log n)$
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% include_code lang:cpp ccpc-hljp2022/G.cpp %}
@@ -167,7 +167,7 @@ $O(n\log n)$
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% include_code lang:cpp ccpc-hljp2022/H.cpp %}
@@ -178,7 +178,7 @@ $O(n\log n)$
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% include_code lang:cpp ccpc-hljp2022/I.cpp %}
@@ -189,7 +189,7 @@ $O(n\log n)$
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% include_code lang:cpp ccpc-hljp2022/J.cpp %}
@@ -200,7 +200,7 @@ $O(n\log n)$
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% include_code lang:cpp ccpc-hljp2022/K.cpp %}
@@ -211,7 +211,7 @@ $O(n\log n)$
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% include_code lang:cpp ccpc-hljp2022/L.cpp %}

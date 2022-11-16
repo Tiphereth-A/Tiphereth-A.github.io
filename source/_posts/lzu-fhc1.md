@@ -66,7 +66,7 @@ date: 2021-10-24 20:15:45
 
 ## A - ★★ 比赛新机制 ★★
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% icodeweb cpa_cpp title:A misc/lzu-fhc1/A/0.cpp %}
@@ -75,14 +75,14 @@ date: 2021-10-24 20:15:45
 
 ## B - ★★ 体育课排队 ★★
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 </details>
 
 ## C - ★★ 生命的游戏 ★★
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% icodeweb cpa_cpp title:C misc/lzu-fhc1/C/0.cpp %}
@@ -91,7 +91,7 @@ date: 2021-10-24 20:15:45
 
 ## D - ★★ 飞马祝福语 ★★
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% include_code lang:cpp lzu-fhc1/D.cpp %}
@@ -100,7 +100,7 @@ date: 2021-10-24 20:15:45
 
 ## E - ★★ 序列大团结 ★★
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% icodeweb cpa_cpp title:E misc/lzu-fhc1/E/0.cpp %}
@@ -109,7 +109,7 @@ date: 2021-10-24 20:15:45
 
 ## G - ★★ 糖果魔法阵 ★★
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% icodeweb cpa_cpp title:G misc/lzu-fhc1/G/0.cpp %}
@@ -118,7 +118,7 @@ date: 2021-10-24 20:15:45
 
 ## I - ★★ 平形四边行 ★★
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% icodeweb cpa_cpp title:I misc/lzu-fhc1/I/0.cpp %}
@@ -127,7 +127,7 @@ date: 2021-10-24 20:15:45
 
 ## J - ★★ 翻滚吧硬币 ★★
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% icodeweb cpa_cpp title:J misc/lzu-fhc1/J/0.cpp %}
@@ -136,14 +136,14 @@ date: 2021-10-24 20:15:45
 
 ## K - ★★ 快乐苹果树 ★★
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 </details>
 
 ## L - ★★ 星星收集者 ★★
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 </details>

@@ -151,7 +151,7 @@ In the first and only line of the standard output your program should print $\fr
 
 ## 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% icodeweb cpa_cpp title:Luogu_P3524 Luogu/P3524/0.cpp %}

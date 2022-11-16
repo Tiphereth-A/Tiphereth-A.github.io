@@ -45,7 +45,7 @@ date: 2021-11-01 15:18:10
 
   > 附大数据的生成器 (from <https://www.luogu.com.cn/discuss/354067>)
 
-  <details>
+  <details open>
   <summary><font color='orange'>Show code</font></summary>
 
   {% include_code lang:cpp pst-seg-tree/data_gen.cpp %}

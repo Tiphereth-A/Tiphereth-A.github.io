@@ -72,7 +72,7 @@ T 行, 每行一个数, 表示答案
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 </details>
@@ -147,7 +147,7 @@ $O(n\log n)$
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% icodeweb cpa_cpp title:Luogu_P3657 Luogu/P3657/0.cpp %}
@@ -201,7 +201,7 @@ $O(n\log n)$
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 </details>
@@ -282,7 +282,7 @@ $O(n\log n)$
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 </details>
@@ -357,7 +357,7 @@ $[1, 2, 3, 4] \times 2$
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 </details>
@@ -421,7 +421,7 @@ $O(2K+t\sqrt{2k})$, 其中 $K=10^7$
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% icodeweb cpa_cpp title:CodeForces_1499D CodeForces/1499D/0.cpp %}
@@ -504,7 +504,7 @@ $O(n+q)$
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% icodeweb cpa_cpp title:AtCoder_abc250e AtCoder/abc250_e/0.cpp %}

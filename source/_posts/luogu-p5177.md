@@ -105,7 +105,7 @@ $$2\sum_{i=1}^n\sum_{j=1}^{i-1}[j\leqslant (i\oplus j)\leqslant i]$$
 
 ## 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% icodeweb cpa_cpp title:Luogu_P5177 Luogu/P5177/0.cpp %}

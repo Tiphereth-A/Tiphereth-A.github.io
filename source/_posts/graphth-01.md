@@ -344,7 +344,7 @@ $$V(G)=\bigcup_{i=0}^{\infty}N_i$$
 
 **<a id="pb-1-2">命题 - 1-2</a>** 竞赛图的入度平方和等于出度平方和
 
-<details>
+<details open>
 <summary><font color='orange'>Hint</font></summary>
 
 考虑 $\sum_v\operatorname{indeg}^2(v)-\sum_v\operatorname{outdeg}^2(v)$

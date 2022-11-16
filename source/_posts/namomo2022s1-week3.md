@@ -79,7 +79,7 @@ $O(n\log n)$
 
 ### 代码参考 (CF977F)
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% icodeweb cpa_cpp title:CodeForces_977F CodeForces/977F/0.cpp %}
@@ -151,7 +151,7 @@ $O(n\log n)$
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% icodeweb cpa_cpp title:Daimayuan_503 Daimayuan/503/0.cpp %}
@@ -220,7 +220,7 @@ $O(n)$
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% icodeweb cpa_cpp title:Daimayuan_505 Daimayuan/505/0.cpp %}
@@ -292,7 +292,7 @@ $O(n^2\max\{\sqrt{a_i}\log{a_i}\})$
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% icodeweb cpa_cpp title:Daimayuan_555 Daimayuan/555/0.cpp %}
@@ -359,7 +359,7 @@ $O(n)$
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% icodeweb cpa_cpp title:Daimayuan_556 Daimayuan/556/0.cpp %}
@@ -413,7 +413,7 @@ $O(n\log^2 n)$
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 </details>
@@ -474,7 +474,7 @@ $O(n\log^2 n)$
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 </details>

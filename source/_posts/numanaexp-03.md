@@ -67,7 +67,7 @@ date: 2021-04-22 23:05:47
 
 ### 主程序
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% include_code lang:matlab numanaexp-03/main.m %}
@@ -76,7 +76,7 @@ date: 2021-04-22 23:05:47
 
 ### 最小二乘法函数文件
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% include_code lang:matlab numanaexp-03/lsmfit.m %}

@@ -97,7 +97,7 @@ $O(n^2 2^n)$
 
 ## 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% icodeweb cpa_cpp title:Luogu_P2915 Luogu/P2915/0.cpp %}

@@ -73,7 +73,7 @@ Mid-Atlantic 1996
 
 ## 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% icodeweb cpa_cpp title:POJ_1528 POJ/1528/0.cpp %}

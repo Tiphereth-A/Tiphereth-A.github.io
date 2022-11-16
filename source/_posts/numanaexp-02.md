@@ -120,7 +120,7 @@ date: 2021-04-16 20:49:47
 
 ### 主程序
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% include_code lang:matlab numanaexp-02/main.m %}
@@ -129,7 +129,7 @@ date: 2021-04-16 20:49:47
 
 ### 输入数据检查
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% include_code lang:matlab numanaexp-02/input_check.m %}
@@ -138,7 +138,7 @@ date: 2021-04-16 20:49:47
 
 ### Lagrange 插值
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% include_code lang:matlab numanaexp-02/calc_lagrange.m %}
@@ -147,7 +147,7 @@ date: 2021-04-16 20:49:47
 
 ### Neville 插值
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% include_code lang:matlab numanaexp-02/calc_neville.m %}
@@ -156,7 +156,7 @@ date: 2021-04-16 20:49:47
 
 ### Newton 插值
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% include_code lang:matlab numanaexp-02/calc_newton.m %}
@@ -165,7 +165,7 @@ date: 2021-04-16 20:49:47
 
 ### 三次样条插值
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% include_code lang:matlab numanaexp-02/calc_spline3.m %}
@@ -263,7 +263,7 @@ $$L_{l,r}(x)=L_{l,m}(x)\prod_{i=m+1}^r(x-x_i)+L_{m+1,r}(x)\prod_{i=l}^m(x-x_i)$$
 
 ### MATLAB 程序实现
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% include_code lang:matlab numanaexp-02/calc_lagrange_fast.m %}

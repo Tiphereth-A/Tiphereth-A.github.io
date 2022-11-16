@@ -68,7 +68,7 @@ date: 2022-11-16 12:46:33
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% include_code lang:cpp ccpc-gzr2022/A.cpp %}
@@ -83,7 +83,7 @@ date: 2022-11-16 12:46:33
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% include_code lang:cpp ccpc-gzr2022/B.cpp %}
@@ -106,7 +106,7 @@ date: 2022-11-16 12:46:33
 
 要做到这一点, 若有弧 $u\to v$, 我们只需令 $w_v=b_{s_v}-b_{s_u}$ 即可
 
-有一个小技巧: 我们可以将判环和 BFS 合起来, 我们记录一下缩点后的图的每个点的入度 $\operatorname{deg}_{in}(s_i)$, 若 $\operatorname{deg}_{in}(s_1)>0$, 则显然不满足要求, 之后我们 BFS 时遍历到一个点时将这个点的入度减 $1$ (相当于删去刚刚走过的这条弧), 若这个点入度为 $0$ 了则入队, 这样图中没有环当且仅当每个点都被恰好遍历一次
+有一个小技巧: 我们可以将判环和 BFS 合起来, 我们记录一下缩点后的图的每个点的入度 $\deg_{in}(s_i)$, 若 $\deg_{in}(s_1)>0$, 则显然不满足要求, 之后我们 BFS 时遍历到一个点时将这个点的入度减 $1$ (相当于删去刚刚走过的这条弧), 若这个点入度为 $0$ 了则入队, 这样图中没有环当且仅当每个点都被恰好遍历一次
 
 ### 复杂度
 
@@ -114,7 +114,7 @@ $O(m\alpha(n)+n)$
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% include_code lang:cpp ccpc-gzr2022/C.cpp %}
@@ -129,7 +129,7 @@ $O(m\alpha(n)+n)$
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% include_code lang:cpp ccpc-gzr2022/D.cpp %}
@@ -140,7 +140,7 @@ $O(m\alpha(n)+n)$
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% include_code lang:cpp ccpc-gzr2022/E.cpp %}
@@ -155,7 +155,7 @@ $O(m\alpha(n)+n)$
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% include_code lang:cpp ccpc-gzr2022/F.cpp %}
@@ -170,7 +170,7 @@ $O(m\alpha(n)+n)$
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% include_code lang:cpp ccpc-gzr2022/G.cpp %}
@@ -181,7 +181,7 @@ $O(m\alpha(n)+n)$
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% include_code lang:cpp ccpc-gzr2022/H.cpp %}
@@ -196,7 +196,7 @@ $O(m\alpha(n)+n)$
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% include_code lang:cpp ccpc-gzr2022/I.cpp %}
@@ -211,7 +211,7 @@ $O(m\alpha(n)+n)$
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% include_code lang:cpp ccpc-gzr2022/J.cpp %}
@@ -228,7 +228,7 @@ $O(m\alpha(n)+n)$
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% include_code lang:cpp ccpc-gzr2022/K.cpp %}
@@ -239,7 +239,7 @@ $O(m\alpha(n)+n)$
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% include_code lang:cpp ccpc-gzr2022/L.cpp %}
@@ -254,7 +254,7 @@ $O(m\alpha(n)+n)$
 
 ### 代码参考
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% include_code lang:cpp ccpc-gzr2022/M.cpp %}

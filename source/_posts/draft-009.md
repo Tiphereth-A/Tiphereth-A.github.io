@@ -63,7 +63,7 @@ date: 2021-04-12 19:24:47
 
 ### 问题 1
 
-<details>
+<details open>
 <summary><font color='orange'>Show code 1</font></summary>
 
 {% include_code lang:matlab draft-009/q1.m %}
@@ -74,7 +74,7 @@ date: 2021-04-12 19:24:47
 
 ### 问题 2
 
-<details>
+<details open>
 <summary><font color='orange'>Show code 2</font></summary>
 
 {% include_code lang:matlab draft-009/q1.m %}

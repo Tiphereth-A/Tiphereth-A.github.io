@@ -98,7 +98,7 @@ $$
 1. $(\forall A,B\subseteq X,A\cap B=\varnothing),~f(A)\cap f(B)=\varnothing$
 1. $\forall A\subseteq B\subseteq X,~f(B\setminus A)=f(B)\setminus f(A)$
 
-<details>
+<details open>
 <summary><font color='orange'>Proof</font></summary>
 
 1. $\implies$ 2. 显然
@@ -120,7 +120,7 @@ $$
 
 设 $X$ 为一非空集合, $f:\mathscr{P}(X)\to\mathscr{P}(X)$, 若 $(\forall A,B\in\mathscr{P}(X),A\subseteq B),~f(A)\subseteq f(B)$, 则 $\exists T\in\mathscr{P}(X),f(T)=T$
 
-<details>
+<details open>
 <summary><font color='orange'>Proof</font></summary>
 
 令
@@ -143,7 +143,7 @@ $$T=\bigcup_{A\in\mathscr{P}(X);A\subseteq f(A)}A\subseteq f(T)$$
 
 设 $f:X\to Y$, $g:Y\to X$, 若 $\forall x\in X,g(f(x))=x$, 则 $f$ 是单射, $g$ 是满射
 
-<details>
+<details open>
 <summary><font color='orange'>Proof</font></summary>
 
 $\forall x\in X,g(f(x))=x\implies\forall x\in X,\exists y=f(x)\in Y,g(y)=x\implies g$ 为满射
@@ -504,7 +504,7 @@ $$A\sim(A\setminus B)$$
 
 **<a id="eg-2-8">例 - 2-8</a>** $(a,b)$ 上的凸函数 $f(x)$ 所有不可导点构成的点集是可数集
 
-<details>
+<details open>
 <summary><font color='orange'>Proof</font></summary>
 
 由 $f(x)$ 是 $(a,b)$ 上的凸函数知
@@ -639,7 +639,7 @@ $$\alef_i=2^{\alef_{i-1}},~\forall i\in\mathbb{N}^+$$
 
 若 $A\subseteq B$ 且 $A\sim(A\cup C)$, 证明 $B\sim(B\cup C)$
 
-<details>
+<details open>
 <summary><font color='orange'>Proof</font></summary>
 
 由题设知, 存在双射 $f:A\to A\cup C$
@@ -660,7 +660,7 @@ $$\alef_i=2^{\alef_{i-1}},~\forall i\in\mathbb{N}^+$$
 
 设 $f(x)$ 在 $(a,b)$ 可导, 且 $(a,b)\setminus\{x:f'(x)=0\}$ 为可数集, 证明 $f(x)$ 为常数
 
-<details>
+<details open>
 <summary><font color='orange'>Proof</font></summary>
 
 令
@@ -686,7 +686,7 @@ $$\alef_i=2^{\alef_{i-1}},~\forall i\in\mathbb{N}^+$$
 
 设无限集 $E\subseteq(0,1)$, 若在 $E$ 中任取不同的数组成的无穷正项级数总是收敛的, 证明 $E$ 是可数集
 
-<details>
+<details open>
 <summary><font color='orange'>Proof</font></summary>
 
 取 $E_n=\{x\in E:x\geqslant\frac{1}{n}\},~n=2,3,...$, 则 $E=\bigcup_{n=2}^{\infty}E_n$
@@ -707,7 +707,7 @@ $$\alef_i=2^{\alef_{i-1}},~\forall i\in\mathbb{N}^+$$
 
 其中 $B(x_0,r)$ 指圆心为 $x_0$, 半径为 $r$ 的开球
 
-<details>
+<details open>
 <summary><font color='orange'>Proof</font></summary>
 
 若 $\exists x_0\in E,~s.t.~\forall B(x_0,r),E\cap B(x_0,r)$ 可数

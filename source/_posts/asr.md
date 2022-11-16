@@ -112,7 +112,7 @@ $$\int_a^bf(x)\mathrm{d}x\approx\frac{h}{3}\sum_{i=1}^\frac{n}{2}(f_{2i-2}+4f_{2
 
 ### 代码
 
-<details>
+<details open>
 <summary><font color='orange'>Show code</font></summary>
 
 {% include_code lang:cpp asr/asr.cpp %}
