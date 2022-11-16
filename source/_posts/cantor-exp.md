@@ -1,8 +1,8 @@
 ---
 title: 笔记 - Cantor展开与逆Cantor展开
 categories:
-  - 算法竞赛
   - 笔记
+  - 算法竞赛
 tags:
   - 算法竞赛
   - 笔记

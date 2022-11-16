@@ -1,8 +1,8 @@
 ---
 title: 笔记 - Simpson法与自适应Simpson法
 categories:
-  - 算法竞赛
   - 笔记
+  - 算法竞赛
 tags:
   - 数学
   - 算法竞赛

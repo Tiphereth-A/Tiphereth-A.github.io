@@ -2,7 +2,6 @@
 title: "【洛谷日报#46】浅谈自适应Simpson法"
 categories:
   - 算法竞赛
-  - 算法
 tags:
   - 数学
   - 算法竞赛

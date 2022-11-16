@@ -1,8 +1,8 @@
 ---
 title: 笔记 - Powerful number 与 Powerful number 筛
 categories:
-  - 算法竞赛
   - 笔记
+  - 算法竞赛
 tags:
   - 算法竞赛
   - 数学

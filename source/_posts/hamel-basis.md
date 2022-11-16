@@ -1,8 +1,8 @@
 ---
 title: 笔记 - 线性基 (Hamel 基)
 categories:
-  - 算法竞赛
   - 笔记
+  - 算法竞赛
 tags:
   - 算法竞赛
   - 模板

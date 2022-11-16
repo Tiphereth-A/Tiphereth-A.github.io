@@ -2,7 +2,6 @@
 title: 学习笔记 - 差分约束
 categories:
   - 算法竞赛
-  - 算法
 tags:
   - 算法竞赛
   - 笔记
