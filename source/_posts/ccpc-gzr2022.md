@@ -58,7 +58,7 @@ date: 2022-11-16 12:46:33
 
 [官方题解](official_solutions.pptx)
 
-{% pdf /article/ccpc-gzr2022/problems.pdf 600px %}
+{% pdf /archives/ccpc-gzr2022/problems.pdf 600px %}
 
 ## A - Alice and Her Lost Cat
 
