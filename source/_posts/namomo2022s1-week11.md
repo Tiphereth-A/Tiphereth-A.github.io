@@ -8,7 +8,7 @@ tags:
   - 题解
   - 代码源
   - HihoCoder
-  - CodeForces
+  - Codeforces
   - 数学
 date: 2022-05-07 16:00:56
 ---

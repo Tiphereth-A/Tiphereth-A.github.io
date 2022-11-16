@@ -7,7 +7,7 @@ tags:
   - 算法竞赛
   - 题解
   - 代码源
-  - CodeForces
+  - Codeforces
   - AtCoder
   - 数学
   - 组合数学

@@ -8,7 +8,7 @@ tags:
   - 题解
   - 代码源
   - USACO
-  - CodeForces
+  - Codeforces
   - AtCoder
   - 数学
   - 数论

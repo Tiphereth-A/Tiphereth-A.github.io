@@ -8,7 +8,7 @@ tags:
   - 题解
   - 代码源
   - AtCoder
-  - CodeForces
+  - Codeforces
 date: 2022-04-30 16:00:56
 ---
 

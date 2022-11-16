@@ -7,7 +7,7 @@ tags:
   - 算法竞赛
   - 题解
   - 代码源
-  - CodeForces
+  - Codeforces
   - 贪心
 date: 2022-03-26 16:00:57
 ---

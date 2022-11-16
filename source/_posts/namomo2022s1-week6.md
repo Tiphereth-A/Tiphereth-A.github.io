@@ -7,7 +7,7 @@ tags:
   - 算法竞赛
   - 题解
   - 代码源
-  - CodeForces
+  - Codeforces
   - 51Nod
 date: 2022-04-02 16:00:56
 ---

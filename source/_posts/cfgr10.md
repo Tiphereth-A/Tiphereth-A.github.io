@@ -6,7 +6,7 @@ categories:
 tags:
   - 算法竞赛
   - 题解
-  - CodeForces
+  - Codeforces
   - 数学
   - 贪心
   - 模拟

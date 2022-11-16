@@ -56,7 +56,7 @@ date: 2022-05-11 12:07:50
 
   </details>
 
-- CodeForces [522D Closest Equals](https://codeforces.com/problemset/problem/522/D)
+- Codeforces [522D Closest Equals](https://codeforces.com/problemset/problem/522/D)
 
   <details open>
   <summary><font color='orange'>Show code</font></summary>
@@ -65,7 +65,7 @@ date: 2022-05-11 12:07:50
 
   </details>
 
-- CodeForces [1691D Max GEQ Sum](https://codeforces.com/problemset/problem/1691/D)
+- Codeforces [1691D Max GEQ Sum](https://codeforces.com/problemset/problem/1691/D)
 
   <details open>
   <summary><font color='orange'>Show code</font></summary>
