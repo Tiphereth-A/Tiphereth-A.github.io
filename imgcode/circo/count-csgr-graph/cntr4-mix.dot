@@ -1,0 +1,6 @@
+digraph G {
+  u -> v;
+  u -> x;
+  v -> w [dir = none; color = brown;];
+  x -> w [dir = none; color = brown;];
+}
