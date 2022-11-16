@@ -1,6 +1,7 @@
 ---
 title: "笔记 - 整除, 素数, gcd & lcm, 同余, 逆元, CRT, exCRT"
 categories:
+  - 笔记
   - 算法竞赛
   - 数学
 tags:

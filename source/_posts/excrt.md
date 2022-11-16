@@ -1,8 +1,8 @@
 ---
 title: 笔记 - 扩展中国剩余定理(exCRT)
 categories:
-  - 算法竞赛
   - 笔记
+  - 算法竞赛
 tags:
   - 算法竞赛
   - 笔记
