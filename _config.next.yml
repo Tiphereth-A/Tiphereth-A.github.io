@@ -321,7 +321,7 @@ post_navigation: left
 tagcloud:
   min: 12 # Minimum font size in px
   max: 30 # Maximum font size in px
-  amount: 800 # Total amount of tags
+  amount: 1024 # Total amount of tags
   orderby: name # Order of tags
   order: 1 # Sort order
 
