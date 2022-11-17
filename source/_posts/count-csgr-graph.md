@@ -1,5 +1,5 @@
 ---
-title: 笔记 - 简单无向图连通子图 & 环计数
+title: 笔记 - 无向图连通子图 & 环计数
 categories:
   - 笔记
   - 算法竞赛
@@ -86,7 +86,13 @@ $$\frac{1}{2}\sum_{v\in V(G)}\sum_{S\subseteq V(G);\min S=v}\sum_{x\in S\setminu
 
 ### 时间复杂度
 
-$O(2^n)$
+$$
+\begin{aligned}
+  \Theta\left(\sum_{i=1}^{2^n-1}(\operatorname{popcount}(i)-1)^2\right)&=\Theta\left(\sum_{i=0}^n(i-1)^2\binom{n}{i}\right)\\
+  &=\Theta\left(2^{n-2}(n^2-3n+4)\right)\\
+  &\implies O\left(n^22^n\right)
+\end{aligned}
+$$
 
 ### 参考代码
 

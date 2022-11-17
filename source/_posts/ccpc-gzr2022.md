@@ -15,6 +15,8 @@ tags:
   - 博弈论
   - 图论
   - DAG
+  - 差分约束
+  - 拓扑排序
   - 构造
   - 缩点
   - 贪心
@@ -37,21 +39,21 @@ date: 2022-11-16 12:46:33
 
 ## 题目概览
 
-| 题号[^1] | 标题[^2]                                            | 做法                            |
-| -------- | --------------------------------------------------- | ------------------------------- |
-| \*A      | Alice and Her Lost Cat                              |                                 |
-| \*B      | Ayano and sequences                                 |                                 |
-| C        | Customs Controls 2                                  | 图论, 构造, 缩点, 并查集        |
-| \*D      | Digits                                              |                                 |
-| E        | Elevator                                            | 签到 (前缀和)                   |
-| \*F      | Equations                                           |                                 |
-| \*G      | Game                                                |                                 |
-| H        | GameX                                               | 签到 (博弈论)                   |
-| I        | Infection                                           | 树上背包, 概率 DP               |
-| J        | [Math Exam](https://www.luogu.com.cn/problem/P3266) | 容斥, 前缀和, 折线计数          |
-| K        | Middle Point Graph                                  | 图论 -> 无向图三元环&四元环计数 |
-| L        | Station of Fate                                     | 签到 (组合数学)                 |
-| \*M      | XOR Sum                                             |                                 |
+| 题号[^1] | 标题[^2]                                            | 做法                                |
+| -------- | --------------------------------------------------- | ----------------------------------- |
+| \*A      | Alice and Her Lost Cat                              |                                     |
+| \*B      | Ayano and sequences                                 |                                     |
+| C        | Customs Controls 2                                  | 图论, 构造, 缩点, 并查集 / 差分约束 |
+| \*D      | Digits                                              |                                     |
+| E        | Elevator                                            | 签到 (前缀和)                       |
+| \*F      | Equations                                           |                                     |
+| \*G      | Game                                                |                                     |
+| H        | GameX                                               | 签到 (博弈论)                       |
+| I        | Infection                                           | 树上背包, 概率 DP                   |
+| J        | [Math Exam](https://www.luogu.com.cn/problem/P3266) | 容斥, 前缀和, 折线计数              |
+| K        | Middle Point Graph                                  | 图论 -> 无向图三元环&四元环计数     |
+| L        | Station of Fate                                     | 签到 (组合数学)                     |
+| \*M      | XOR Sum                                             |                                     |
 
 [^1]: 打\*的是还没写题解的题
 [^2]: 带超链接的是找到了原题或原型
@@ -100,7 +102,7 @@ date: 2022-11-16 12:46:33
 
 我们用并查集将 $d$ 相同的点缩成一个点, 因为点权是正的, 所以缩点后的图应该也是个 DAG, 否则不满足要求
 
-设点 $i$ 在缩点后的图中对应的点编号为 $s_i$, 之后我们对缩点后的图跑一遍 BFS 求一下每个点的 BFS 序 $b_{s_i}$
+设点 $i$ 在缩点后的图中对应的点编号为 $s_i$, 之后我们对缩点后的图跑一遍 BFS 求一下每个点的拓扑序 $b_{s_i}$
 
 最后我们只需让所有路径的点权和为 $b_{s_n}$ 即可
 
@@ -223,6 +225,8 @@ $O(m\alpha(n)+n)$
 ### 解题思路
 
 带讨论, 具体可以参照题解
+
+三元环和四元环的求法可参照 {% post_link count-csgr-graph %} 相关章节
 
 ### 复杂度
 
