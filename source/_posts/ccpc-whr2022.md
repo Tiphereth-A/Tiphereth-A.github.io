@@ -14,10 +14,21 @@ tags:
   - DP
   - 状压DP
   - 贪心
+  - 二分
   - 数学
+  - 数论
+  - Möbius反演
   - 计算几何
   - 前缀和
   - 博弈论
+  - 模拟
+  - 搜索
+  - BFS
+  - 图论
+  - 最短路
+  - 数据结构
+  - 平衡树
+  - 构造
 date: 2022-11-17 22:00:18
 ---
 
@@ -33,21 +44,21 @@ date: 2022-11-17 22:00:18
 
 ## 题目概览
 
-| 题号[^1] | 标题                           | 做法         |
-| -------- | ------------------------------ | ------------ |
-| A        | Dunai                          | 签到         |
-| \*B      | Recruitment                    |              |
-| C        | Grass                          | 计算几何     |
-| D        | Sternhalma                     | 状压 DP      |
-| E        | Python Will be Faster than C++ | 签到         |
-| \*F      | Mooncake Delivery              |              |
-| G        | Grade 2                        | 签到(找规律) |
-| \*H      | Party Animals                  |              |
-| I        | Dragon Bloodline               | 贪心         |
-| J        | Eat, Sleep, Repeat             | 贪心         |
-| \*K      | I Wanna Maker                  |              |
-| \*L      | Novice Magician                |              |
-| \*M      | String Master                  |              |
+| 题号[^1] | 标题                           | 做法                       |
+| -------- | ------------------------------ | -------------------------- |
+| A        | Dunai                          | 签到                       |
+| \*B      | Recruitment                    | BFS                        |
+| C        | Grass                          | 计算几何                   |
+| D        | Sternhalma                     | 状压 DP                    |
+| E        | Python Will be Faster than C++ | 签到                       |
+| \*F      | Mooncake Delivery              | 最短路                     |
+| G        | Grade 2                        | 签到(找规律) / Möbius 反演 |
+| \*H      | Party Animals                  | 平衡树                     |
+| I        | Dragon Bloodline               | 贪心, 二分                 |
+| J        | Eat, Sleep, Repeat             | 贪心                       |
+| \*K      | I Wanna Maker                  |                            |
+| \*L      | Novice Magician                | 构造                       |
+| \*M      | String Master                  |                            |
 
 [^1]: 打\*的是还没写题解的题
 
