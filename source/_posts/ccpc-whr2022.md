@@ -61,6 +61,8 @@ date: 2022-11-17 22:00:18
 
 ### 视频
 
+> [link](https://bilibili.com/video/BV1R14y1V7gH)
+
 {% mmedia "bilibili" "bvid:1R14y1V7gH" "quality:high" "danmaku" "allowfullscreen" %}
 
 ## A - Dunai
