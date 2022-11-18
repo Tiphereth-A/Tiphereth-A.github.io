@@ -98,6 +98,8 @@ ForEachMacros:
   - foreach_rref_
   - foreach_val_
   - for_graph_
+  - Rep
+  - rep
 IfMacros:
   - KJ_IF_MAYBE
 IncludeBlocks: Preserve
