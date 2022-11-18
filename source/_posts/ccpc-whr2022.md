@@ -25,7 +25,7 @@ date: 2022-11-17 22:00:18
 
 进度: 7 / 13
 
-怎么一堆福瑞啊 :thinking:
+怎么一堆福瑞啊 🤔
 
 难度相对较低的一场, 官方题解很详细, 孩子很喜欢
 
@@ -33,21 +33,21 @@ date: 2022-11-17 22:00:18
 
 ## 题目概览
 
-| 题号[^1] | 标题                           | 做法           |
-| -------- | ------------------------------ | -------------- |
-| A        | Dunai                          | 签到           |
-| \*B      | Recruitment                    |                |
-| C        | Grass                          | 计算几何       |
-| D        | Sternhalma                     | 状压 DP        |
-| E        | Python Will be Faster than C++ | 签到           |
-| \*F      | Mooncake Delivery              |                |
-| G        | Grade 2                        | 找规律, 前缀和 |
-| \*H      | Party Animals                  |                |
-| I        | Dragon Bloodline               | 贪心           |
-| J        | Eat, Sleep, Repeat             | 贪心           |
-| \*K      | I Wanna Maker                  |                |
-| \*L      | Novice Magician                |                |
-| \*M      | String Master                  |                |
+| 题号[^1] | 标题                           | 做法         |
+| -------- | ------------------------------ | ------------ |
+| A        | Dunai                          | 签到         |
+| \*B      | Recruitment                    |              |
+| C        | Grass                          | 计算几何     |
+| D        | Sternhalma                     | 状压 DP      |
+| E        | Python Will be Faster than C++ | 签到         |
+| \*F      | Mooncake Delivery              |              |
+| G        | Grade 2                        | 签到(找规律) |
+| \*H      | Party Animals                  |              |
+| I        | Dragon Bloodline               | 贪心         |
+| J        | Eat, Sleep, Repeat             | 贪心         |
+| \*K      | I Wanna Maker                  |              |
+| \*L      | Novice Magician                |              |
+| \*M      | String Master                  |              |
 
 [^1]: 打\*的是还没写题解的题
 
