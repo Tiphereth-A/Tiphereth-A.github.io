@@ -29,6 +29,7 @@ tags:
   - 图论
   - 最短路
   - 长链剖分
+  - 悬线法
 date: 2022-11-18 19:07:55
 ---
 
@@ -52,7 +53,7 @@ date: 2022-11-18 19:07:55
 | \*H      | Delivery Route           | 最短路                      |
 | I        | Base62                   | 签到                        |
 | \*J      | Toad’s Travel            |                             |
-| \*K      | Largest Common Submatrix | 单调栈                      |
+| \*K      | Largest Common Submatrix | 单调栈 / 悬线法             |
 | \*L      | Xian Xiang               | 状压 DP                     |
 | \*M      | Crazy Cake               | 生成函数, DP                |
 | N        | Fibonacci Sequence       | 签到                        |

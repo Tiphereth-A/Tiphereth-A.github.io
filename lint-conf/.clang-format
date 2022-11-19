@@ -98,6 +98,8 @@ ForEachMacros:
   - foreach_rref_
   - foreach_val_
   - for_graph_
+  - rforit_
+  - rforitr_
   - Rep
   - rep
 IfMacros:
