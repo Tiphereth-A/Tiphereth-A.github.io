@@ -47,15 +47,17 @@ ll Dp[N], n;
 vector<int> E, A;
 ll DP(int State) {
   if (Dp[State] != MIN) return Dp[State];
-  Rep(i, 0, n - 1) if ((State >> i) & 1) {
-    int to = State ^ (1 << i);
-    Dp[State] = max(Dp[State], DP(to));
-    Rep(j, 0, 5) if (~GO[i][j] && ((State >> GO[i][j]) & 1) &&
-                     ((State >> GO2[i][j]) & 1) == 0) {
-      to = State ^ (1 << GO[i][j]) ^ (1 << GO2[i][j]) ^ (1 << i);
-      Dp[State] = max(Dp[State], DP(to) + E[GO[i][j]]);
+  Rep(i, 0, n - 1)
+    if ((State >> i) & 1) {
+      int to = State ^ (1 << i);
+      Dp[State] = max(Dp[State], DP(to));
+      Rep(j, 0, 5)
+        if (~GO[i][j] && ((State >> GO[i][j]) & 1) &&
+            ((State >> GO2[i][j]) & 1) == 0) {
+          to = State ^ (1 << GO[i][j]) ^ (1 << GO2[i][j]) ^ (1 << i);
+          Dp[State] = max(Dp[State], DP(to) + E[GO[i][j]]);
+        }
     }
-  }
   return Dp[State];
 }
 signed main() {

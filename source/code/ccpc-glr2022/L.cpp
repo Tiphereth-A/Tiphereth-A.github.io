@@ -9,21 +9,23 @@ int main() {
   if (n <= 2 * m) {
     int ans = m, flag = 0;
     Rep(i, 1, n) {
-      Rep(j, 1, m) if (j == ans && flag < 2) {
-        cout << "1 ", inc(flag);
-        if (flag == 2) dec(ans);
-      }
-      else cout << "0 "; cout << '\n';
+      Rep(j, 1, m)
+        if (j == ans && flag < 2) {
+          cout << "1 ", inc(flag);
+          if (flag == 2) dec(ans);
+        } else cout << "0 ";
+      cout << '\n';
       if (flag == 2) flag = 0;
     }
   } else {
     int ans = m, flag = 0;
     Rep(i, 1, 2 * m) {
-      Rep(j, 1, m) if (j == ans && flag < 2) {
-        cout << "1 ", inc(flag);
-        if (flag == 2) dec(ans);
-      }
-      else cout << "0 "; cout << '\n';
+      Rep(j, 1, m)
+        if (j == ans && flag < 2) {
+          cout << "1 ", inc(flag);
+          if (flag == 2) dec(ans);
+        } else cout << "0 ";
+      cout << '\n';
       if (flag == 2) flag = 0;
     }
     Rep(i, 2 * m + 1, n) {
