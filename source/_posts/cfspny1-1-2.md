@@ -1,0 +1,685 @@
+---
+title: "比赛记录 - Pinely Round 1 (Div. 1 + Div. 2)"
+date: 2022-11-21 02:10:31
+categories:
+  - 算法竞赛
+tags:
+  - 算法竞赛
+  - Codeforces
+  - 暴力
+  - 构造
+  - 贪心
+  - 模拟
+  - 排序
+  - 图论
+  - 数学
+  - 组合数学
+  - 代数
+  - Hasse图
+  - DP
+  - 数据结构
+  - 并查集
+  - 概率
+  - 树
+  - 位运算
+---
+
+[比赛链接](https://codeforces.com/contest/1761)
+
+进度: 5 / 8
+
+被二次元猫娘骗了
+
+还以为这场是二次元场, 结果全场的二次元成分只在 Announcement 有
+
+Upd: 之后发现这个猫娘是出题组的二次元形象
+
+<!-- more -->
+
+## A - Two Permutations
+
+You are given three integers $n$, $a$, and $b$. Determine if there exist two permutations $p$ and $q$ of length $n$, for which the following conditions hold:
+
+- The length of the longest common prefix of $p$ and $q$ is $a$
+- The length of the longest common suffix of $p$ and $q$ is $b$
+
+A permutation of length $n$ is an array containing each integer from $1$ to $n$ exactly once. For example, $[2,3,1,5,4]$ is a permutation, but $[1,2,2]$ is not a permutation ($2$ appears twice in the array), and $[1,3,4]$ is also not a permutation ($n=3$ but there is $4$ in the array)
+
+### Input
+
+Each test contains multiple test cases. The first line contains a single integer $t$ ($1\leq t\leq 10^4$) — the number of test cases. The description of test cases follows
+
+The only line of each test case contains three integers $n$, $a$, and $b$ ($1\leq a,b\leq n\leq 100$)
+
+### Output
+
+For each test case, if such a pair of permutations exists, output "`Yes`"; otherwise, output "`No`". You can output each letter in any case (upper or lower)
+
+### Example
+
+#### input
+
+```input1
+4
+1 1 1
+2 1 2
+3 1 1
+4 1 1
+```
+
+#### output
+
+```output1
+Yes
+No
+No
+Yes
+```
+
+### Note
+
+In the first test case, $[1]$ and $[1]$ form a valid pair
+
+In the second test case and the third case, we can show that such a pair of permutations doesn't exist
+
+In the fourth test case, $[1,2,3,4]$ and $[1,3,2,4]$ form a valid pair
+
+### 代码参考
+
+<details open>
+<summary><font color='orange'>Show code</font></summary>
+
+{% icodeweb cpa_cpp title:CodeForces_1761A CodeForces/1761A/0.cpp %}
+
+</details>
+
+## B - Elimination of a Ring
+
+Define a cyclic sequence of size $n$ as an array $s$ of length $n$, in which $s_n$ is adjacent to $s_1$
+
+Muxii has a ring represented by a cyclic sequence $a$ of size $n$
+
+However, the ring itself hates equal adjacent elements. So if two adjacent elements in the sequence are equal at any time, **one of them** will be erased **immediately**. The sequence doesn't contain equal adjacent elements initially
+
+Muxii can perform the following operation until the sequence becomes empty:
+
+- Choose an element in $a$ and erase it
+
+For example, if ring is $[1, 2, 4, 2, 3, 2]$, and Muxii erases element $4$, then ring would erase one of the elements equal to $2$, and the ring will become $[1, 2, 3, 2]$
+
+Muxii wants to find the **maximum** number of operations he could perform
+
+**Note that in a ring of size** $1$, **its only element isn't considered adjacent to itself (so it's not immediately erased)**
+
+### Input
+
+Each test contains multiple test cases. The first line contains a single integer $t$ ($1\leq t\leq 100$) — the number of test cases. The description of test cases follows
+
+The first line of each test case contains a single integer $n$ ($1\leq n\leq 100$) — the size of the cyclic sequence
+
+The second line of each test case contains $n$ integers $a_1,a_2,\ldots,a_n$ ($1\leq a_i\leq n$) — the sequence itself
+
+It's guaranteed that $a_i\ne a_{i+1}$ for $1\leq i<n$
+
+It's guaranteed that $a_n\ne a_1$ when $n>1$
+
+### Output
+
+For each test case, output a single integer — the maximum number of operations Muxii can perform
+
+### Example
+
+#### input
+
+```input1
+3
+4
+1 2 3 2
+4
+1 2 1 2
+1
+1
+```
+
+#### output
+
+```output1
+4
+3
+1
+```
+
+### Note
+
+In the first test case, you can erase the second element first, then erase the remaining elements one by one in any order. In total, you can perform the operation $4$ times. Note that if you erase the first element first, then the sequence will be turned into $[2,3,2]$ and then immediately become $[2,3]$
+
+In the second test case, you can erase the first element first, then the sequence becomes $[2,1]$. Then you can erase all remaining elements one by one in any order
+
+### 代码参考
+
+<details open>
+<summary><font color='orange'>Show code</font></summary>
+
+{% icodeweb cpa_cpp title:CodeForces_1761B CodeForces/1761B/0.cpp %}
+
+</details>
+
+## C - Set Construction
+
+You are given a binary matrix $b$ (all elements of the matrix are $0$ or $1$) of $n$ rows and $n$ columns
+
+You need to construct a $n$ sets $A_1, A_2, \ldots, A_n$, for which the following conditions are satisfied:
+
+- Each set is nonempty and consists of distinct integers between $1$ and $n$ inclusive
+- All sets are distinct
+- For all pairs $(i,j)$ satisfying $1\leq i, j\leq n$, $b_{i,j}=1$ if and only if $A_i\subsetneq A_j$. In other words, $b_{i, j}$ is $1$ if $A_i$ is a proper subset of $A_j$ and $0$ otherwise
+
+Set $X$ is a proper subset of set $Y$, if $X$ is a nonempty subset of $Y$, and $X \neq Y$
+
+It's guaranteed that for all test cases in this problem, such $n$ sets exist. **Note that it doesn't mean that such** $n$ **sets exist for all possible inputs**
+
+If there are multiple solutions, you can output any of them
+
+### Input
+
+Each test contains multiple test cases. The first line contains a single integer $t$ ($1\le t\le 1000$) — the number of test cases. The description of test cases follows
+
+The first line contains a single integer $n$ ($1\le n\le 100$)
+
+The following $n$ lines contain a binary matrix $b$, the $j$-th character of $i$-th line denotes $b_{i,j}$
+
+It is guaranteed that the sum of $n$ over all test cases does not exceed $1000$
+
+It's guaranteed that for all test cases in this problem, such $n$ sets exist
+
+### Output
+
+For each test case, output $n$ lines
+
+For the $i$-th line, first output $s_i$ $(1 \le s_i \le n)$ — the size of the set $A_i$. Then, output $s_i$ distinct integers from $1$ to $n$ — the elements of the set $A_i$
+
+If there are multiple solutions, you can output any of them
+
+It's guaranteed that for all test cases in this problem, such $n$ sets exist
+
+### Example
+
+#### input
+
+```input1
+2
+4
+0001
+1001
+0001
+0000
+3
+011
+001
+000
+```
+
+#### output
+
+```output1
+3 1 2 3
+2 1 3
+2 2 4
+4 1 2 3 4
+1 1
+2 1 2
+3 1 2 3
+```
+
+### Note
+
+In the first test case, we have $A_1 = \{1, 2, 3\}, A_2 = \{1, 3\}, A_3 = \{2, 4\}, A_4 = \{1, 2, 3, 4\}$. Sets $A_1, A_2, A_3$ are proper subsets of $A_4$, and also set $A_2$ is a proper subset of $A_1$. No other set is a proper subset of any other set
+
+In the second test case, we have $A_1 = \{1\}, A_2 = \{1, 2\}, A_3 = \{1, 2, 3\}$. $A_1$ is a proper subset of $A_2$ and $A_3$, and $A_2$ is a proper subset of $A_3$
+
+### 代码参考
+
+<details open>
+<summary><font color='orange'>Show code</font></summary>
+
+{% icodeweb cpa_cpp title:CodeForces_1761C CodeForces/1761C/0.cpp %}
+
+</details>
+
+## D - Carry Bit
+
+Let $f(x,y)$ be the number of carries of $x+y$ in binary (i. e. $f(x,y)=g(x)+g(y)-g(x+y)$, where $g(x)$ is the number of ones in the binary representation of $x$)
+
+Given two integers $n$ and $k$, find the number of ordered pairs $(a,b)$ such that $0 \leq a,b < 2^n$, and $f(a,b)$ equals $k$. Note that for $a\ne b$, $(a,b)$ and $(b,a)$ are considered as two different pairs
+
+As this number may be large, output it modulo $10^9+7$
+
+### Input
+
+The only line of each test contains two integers $n$ and $k$ ($0\leq k<n\leq 10^6$)
+
+### Output
+
+Output a single integer — the answer modulo $10^9+7$
+
+### Examples
+
+#### input
+
+```input1
+3 1
+```
+
+#### output
+
+```output1
+15
+```
+
+#### input
+
+```input2
+3 0
+```
+
+#### output
+
+```output2
+27
+```
+
+#### input
+
+```input3
+998 244
+```
+
+#### output
+
+```output3
+573035660
+```
+
+### Note
+
+Here are some examples for understanding carries:
+
+$$
+\begin{aligned}
+  & \begin{array}{r}
+    1{\ \ }1{\ \ }1\\
+    +\ _{1}1_{\ \ }0{\ \ }0\\
+    \hline
+    \ 1{\ \ }0{\ \ }1{\ \ }1
+  \end{array}
+  & \begin{array}{r}
+    \ 1{\ \ }0{\ \ }1\\
+    +\ _{\ \ }0_{\ \ }0{}_{1}1\\
+    \hline
+    \ 0{\ \ }1{\ \ }1{\ \ }0
+  \end{array}
+  & &\begin{array}{r}
+    \ 1{\ \ }0{\ \ }1\\
+    +\ _{1}0_{1}1{}_{1}1\\
+    \hline
+    \ 1{\ \ }0{\ \ }0{\ \ }0
+  \end{array}
+\end{aligned}
+$$
+
+So $f(7,4)=1$, $f(5,1)=1$ and $f(5,3)=3$
+
+In the first test case, all the pairs meeting the constraints are
+
+$$
+\begin{array}{lllll}
+  (1,1)&(1,5)&(2,2)&(2,3)&(3,2)\\
+  (4,4)&(4,5)&(4,6)&(4,7)&(5,1)\\
+  (5,4)&(5,6)&(6,4)&(6,5)&(7,4)
+\end{array}
+$$
+
+### 代码参考
+
+<details open>
+<summary><font color='orange'>Show code</font></summary>
+
+{% icodeweb cpa_cpp title:CodeForces_1761D CodeForces/1761D/0.cpp %}
+
+</details>
+
+## E - Make It Connected
+
+You are given a simple undirected graph consisting of $n$ vertices. The graph doesn't contain self-loops, there is at most one edge between each pair of vertices. Your task is simple: make the graph connected
+
+You can do the following operation any number of times (possibly zero):
+
+- Choose a vertex $u$ arbitrarily
+- For each vertex $v$ satisfying $v\ne u$ in the graph individually, if $v$ is adjacent to $u$, remove the edge between $u$ and $v$, otherwise add an edge between $u$ and $v$
+
+Find the minimum number of operations required to make the graph connected. Also, find any sequence of operations with the minimum length that makes the graph connected
+
+### Input
+
+Each test contains multiple test cases. The first line contains a single integer $t$ ($1\leq t\leq 800$) — the number of test cases. The description of test cases follows
+
+The first line of each test case contains a single integer $n$ ($2\leq n\leq 4000$) — the number of vertices in the graph
+
+Then $n$ lines follow. The $i$-th row contains a binary string $s_i$ of length $n$, where $s_{i,j}$ is '1' if there is an edge between vertex $i$ and $j$ initially, otherwise $s_{i,j}$ is '0'
+
+It is guaranteed that $s_{i,i}$ is always '0' and $s_{i,j}=s_{j,i}$ for $1\leq i,j\leq n$
+
+It is guaranteed that the sum of $n$ over all test cases does not exceed $4000$
+
+### Output
+
+For each test case, in the first line, output an integer $m$ — the minimum number of operations required
+
+If $m$ is greater than zero, then print an extra line consisting of $m$ integers — the vertices chosen in the operations in your solution. If there are multiple solutions with the minimum number of operations, print any
+
+### Example
+
+#### input
+
+```input1
+4
+3
+011
+100
+100
+3
+000
+001
+010
+4
+0100
+1000
+0001
+0010
+6
+001100
+000011
+100100
+101000
+010001
+010010
+```
+
+#### output
+
+```output1
+0
+1
+1
+2
+3 4
+3
+2 5 6
+```
+
+### Note
+
+In the first test case, the graph is connected at the beginning, so the answer is $0$
+
+In the second test case, if we do the operation with vertex $1$, we will get the following graph represented by an adjacency matrix:
+
+$$
+\begin{bmatrix}
+  0&1&1\\
+  1&0&1\\
+  1&1&0
+\end{bmatrix}
+$$
+
+It's obvious that the graph above is connected
+
+In the third test case, if we do the operation with vertex $3$ and $4$, we will get the following graph represented by an adjacency matrix:
+
+$$
+\begin{bmatrix}
+  0&1&1&1\\
+  1&0&1&1\\
+  1&1&0&1\\
+  1&1&1&0
+\end{bmatrix}
+$$
+
+It's obvious that the graph above is connected, and it can be proven that we can't perform less than $2$ operations to make the graph connected
+
+### 代码参考
+
+<details open>
+<summary><font color='orange'>Show code</font></summary>
+
+{% icodeweb cpa_cpp title:CodeForces_1761E CodeForces/1761E/0.cpp %}
+
+</details>
+
+## F1 - Anti-median (Easy Version)
+
+**This is the easy version of the problem. The only difference between the two versions is the constraint on** $n$. **You can make hacks only if all versions of the problem are solved**
+
+Let's call an array $a$ of odd length $2m+1$ (with $m \ge 1$) **bad**, if element $a_{m+1}$ is equal to the median of this array. In other words, the array is bad if, after sorting it, the element at $m+1$-st position remains the same
+
+Let's call a permutation $p$ of integers from $1$ to $n$ **anti-median**, if every its subarray of odd length $\ge 3$ is not bad
+
+You are already given values of some elements of the permutation. Find the number of ways to set unknown values to obtain an **anti-median** permutation. As this number can be very large, find it modulo $10^9+7$
+
+### Input
+
+The first line contains a single integer $t$ ($1 \le t \le 10^4$) — the number of test cases. The description of test cases follows
+
+The first line of each test case contains a single integer $n$ $(2 \le n \le 1000)$ — the length of the permutation
+
+The second line of each test case contains $n$ integers $p_1, p_2, \ldots, p_n$ ($1 \le p_i \le n$, or $p_i = -1$) — the elements of the permutation. If $p_i \neq -1$, it's given, else it's unknown. It's guaranteed that if for some $i \neq j$ holds $p_i \neq -1, p_j \neq -1$, then $p_i \neq p_j$
+
+It is guaranteed that the sum of $n^2$ over all test cases does not exceed $10^6$
+
+### Output
+
+For each test case, output a single integer — the number of ways to set unknown values to obtain an anti-median permutation, modulo $10^9+7$
+
+### Example
+
+#### input
+
+```input1
+5
+2
+-1 -1
+3
+-1 -1 -1
+4
+1 2 3 4
+6
+-1 -1 3 4 -1 -1
+8
+-1 -1 -1 -1 -1 -1 -1 -1
+```
+
+#### output
+
+```output1
+2
+4
+0
+1
+316
+```
+
+### Note
+
+In the first test case, both $[1, 2]$ and $[2, 1]$ are anti-median
+
+In the second test case, permutations $[1, 3, 2], [2, 1, 3], [2, 3, 1], [3, 1, 2]$ are anti-median. The remaining two permutations, $[1, 2, 3]$, $[3, 2, 1]$, are bad arrays on their own, as their median, $2$, is in their middle
+
+In the third test case, $[1, 2, 3, 4]$ isn't anti-median, as it contains bad subarray $[1, 2, 3]$
+
+In the fourth test case, the only anti-median array you can get is $[5, 6, 3, 4, 1, 2]$
+
+### 代码参考
+
+<details open>
+<summary><font color='orange'>Show code</font></summary>
+
+</details>
+
+## F2 - Anti-median (Hard Version)
+
+**This is the hard version of the problem. The only difference between the two versions is the constraint on** $n$. **You can make hacks only if all versions of the problem are solved**
+
+Let's call an array $a$ of odd length $2m+1$ (with $m \ge 1$) **bad**, if element $a_{m+1}$ is equal to the median of this array. In other words, the array is bad if, after sorting it, the element at $m+1$-st position remains the same
+
+Let's call a permutation $p$ of integers from $1$ to $n$ **anti-median**, if every its subarray of odd length $\ge 3$ is not bad
+
+You are already given values of some elements of the permutation. Find the number of ways to set unknown values to obtain an **anti-median** permutation. As this number can be very large, find it modulo $10^9+7$
+
+### Input
+
+The first line contains a single integer $t$ ($1 \le t \le 10^4$) — the number of test cases. The description of test cases follows
+
+The first line of each test case contains a single integer $n$ $(2 \le n \le 10^6)$ — the length of the permutation
+
+The second line of each test case contains $n$ integers $p_1, p_2, \ldots, p_n$ ($1 \le p_i \le n$, or $p_i = -1$) — the elements of the permutation. If $p_i \neq -1$, it's given, else it's unknown. It's guaranteed that if for some $i \neq j$ holds $p_i \neq -1, p_j \neq -1$, then $p_i \neq p_j$
+
+It is guaranteed that the sum of $n$ over all test cases does not exceed $10^6$
+
+### Output
+
+For each test case, output a single integer — the number of ways to set unknown values to obtain an anti-median permutation, modulo $10^9+7$
+
+### Example
+
+#### input
+
+```input1
+5
+2
+-1 -1
+3
+-1 -1 -1
+4
+1 2 3 4
+6
+-1 -1 3 4 -1 -1
+8
+-1 -1 -1 -1 -1 -1 -1 -1
+```
+
+#### output
+
+```output1
+2
+4
+0
+1
+316
+```
+
+### Note
+
+In the first test case, both $[1, 2]$ and $[2, 1]$ are anti-median
+
+In the second test case, permutations $[1, 3, 2], [2, 1, 3], [2, 3, 1], [3, 1, 2]$ are anti-median. The remaining two permutations, $[1, 2, 3]$, $[3, 2, 1]$, are bad arrays on their own, as their median, $2$, is in their middle
+
+In the third test case, $[1, 2, 3, 4]$ isn't anti-median, as it contains bad subarray $[1, 2, 3]$
+
+In the fourth test case, the only anti-median array you can get is $[5, 6, 3, 4, 1, 2]$
+
+### 代码参考
+
+<details open>
+<summary><font color='orange'>Show code</font></summary>
+
+</details>
+
+## G - Centroid Guess
+
+**This in an interactive problem**
+
+There is an unknown tree consisting of $n$ nodes, which has **exactly one** centroid. You only know $n$ at first, and your task is to find the centroid of the tree
+
+You can ask the distance between any two vertices for at most $2\cdot10^5$ times
+
+Note that the interactor is **not** adaptive. That is, the tree is fixed in each test beforehand and does not depend on your queries
+
+A vertex is called a centroid if its removal splits the tree into subtrees with at most $\lfloor\frac{n}{2}\rfloor$ vertices each
+
+### Input
+
+The only line of the input contains an integer $n$ ($3\le n\le 7.5\cdot10^4$) — the number of nodes in the tree
+
+Interaction
+Start interaction by reading $n$
+
+To ask a query about the distance between two nodes $u, v$ ($1 \le u, v \le n$), output "? u v"
+
+If you determine that the centroid of the tree is $x$, use "! x" to report
+
+After printing a query, do not forget to output the end of a line and flush the output. Otherwise, you will get Idleness limit exceeded. To do this, use:
+
+- `fflush(stdout)` or `cout.flush()` in C++;
+- `System.out.flush()` in Java;
+- `flush(output)` in Pascal;
+- `stdout.flush()` in Python;
+- see documentation for other languages
+
+**Hacks are disabled in this problem**
+
+**It's guaranteed that there are at most** $500$ **tests in this problem**
+
+### Example
+
+#### input
+
+```input1
+5
+
+2
+
+1
+
+2
+
+3
+
+1
+
+1
+
+1
+```
+
+#### output
+
+```output1
+
+? 1 2
+
+? 1 3
+
+? 1 4
+
+? 1 5
+
+? 2 3
+
+? 3 4
+
+? 4 5
+
+! 3
+```
+
+### Note
+
+Here is an image of the tree from the sample
+
+![](G-1.png)
+
+### 代码参考
+
+<details open>
+<summary><font color='orange'>Show code</font></summary>
+
+</details>
