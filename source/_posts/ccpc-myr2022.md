@@ -15,6 +15,7 @@ tags:
   - 模拟
   - 构造
   - DP
+  - 双指针
   - 三分
   - 概率
   - 思维
@@ -61,8 +62,6 @@ date: 2022-11-21 12:46:33
 {% pdf /archives/ccpc-myr2022/problems.pdf 600px %}
 
 ## 官方题解
-
-### Sildes
 
 {% pdf /archives/ccpc-myr2022/tutorial.pdf 600px %}
 
