@@ -1,5 +1,8 @@
 ---
-title: 题解 - 2022 CCPC 广州站
+title: VP记录 - 2022 CCPC 广州站
+author: "Tifa & Foi"
+coauthor:
+  - Foi
 categories:
   - 算法竞赛
   - 题解
