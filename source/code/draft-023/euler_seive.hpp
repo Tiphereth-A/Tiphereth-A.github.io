@@ -12,10 +12,6 @@ struct null_tag: tag_base__ {};
 struct min_pfactor_tag: tag_base__ {};
 struct euler_phi_tag: tag_base__ {};
 struct mobius_tag: tag_base__ {};
-template <class Tag>
-struct tag_traits {
-  using tag = Tag;
-};
 }  // namespace type_traits__
 using namespace type_traits__;
 
@@ -57,11 +53,7 @@ constexpr auto seive_impl_(Tp n, Fp f_p, Fij f_ij, Mulf mulf)
 
 template <class Tp>
 constexpr auto seive_helper(Tp n, null_tag) {
-  return seive_impl_<Tp, true>(
-    n,
-    [](size_t p) { return 0; },
-    [] PARAMS_(v, i, j) { return 0; },
-    [] PARAMS_(v, i, j) { return v[i] * v[j]; });
+  return seive_impl_<Tp, true>(n, nullptr, nullptr, nullptr);
 }
 template <class Tp>
 auto seive_helper(Tp n, min_pfactor_tag) {
