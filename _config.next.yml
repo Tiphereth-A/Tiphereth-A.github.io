@@ -489,15 +489,15 @@ exturl_icon: true
 
 # Google Webmaster tools verification.
 # See: https://developers.google.com/search
-google_site_verification: 3sbNGdKDUBWVH0z3FlqFmWj9yrWU5Xe7ls36ufvmytU
+google_site_verification: UU77Am-5A5V2Om-L4kF1nfzPHm3Tag8H4BnHCWW73VI
 
 # Bing Webmaster tools verification.
 # See: https://www.bing.com/webmasters
-bing_site_verification: 745935745217C9E77615594CBDF801AF
+bing_site_verification: 6F5C454D09EBF342E20DBD02A159EAEE
 
 # Yandex Webmaster tools verification.
 # See: https://webmaster.yandex.ru
-yandex_site_verification: 169a2213c7f6e426
+yandex_site_verification:
 
 # Baidu Webmaster tools verification.
 # See: https://ziyuan.baidu.com/site
