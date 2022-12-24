@@ -9,7 +9,7 @@ on:
 jobs:
   getpsresults:
     env:
-      HOST: https://tifa-233.xyz
+      HOST: https://blog.tifa-233.com
       PSURL: https://pagespeed-insights.herokuapp.com
       PSRDESKTOP: psresultdesktop
       PSRMOBILE: psresultmobile
