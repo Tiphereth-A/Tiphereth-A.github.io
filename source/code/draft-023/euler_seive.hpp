@@ -45,8 +45,7 @@ constexpr auto seive_impl_(Tp n, Fp f_p, Fij f_ij, Mulf mulf)
       } else if constexpr (!IsNull) ret[ij] = mulf(ret, i, j);
     }
   }
-  if constexpr (!IsNull) return {prime, ret};
-  else return {prime, std::vector<Tp>{}};
+  return {prime, ret};
 }
 
 #define PARAMS_(v, i, j) (std::vector<Tp> const &v, Tp i, Tp j)
