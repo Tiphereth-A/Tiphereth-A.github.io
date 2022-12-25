@@ -96,11 +96,11 @@ div.text-center {
 ## Link Grid
 
 {% linkgrid %}
-Tifa's Blog | https://tifa-233.xyz/ | Computer & Math. | /images/apple-touch-icon.png
-Tifa's Blog | https://tifa-233.xyz/ | Computer & Math. | /images/apple-touch-icon.png
-Tifa's Blog | https://tifa-233.xyz/ | Computer & Math. | /images/apple-touch-icon.png
-Tifa's Blog | https://tifa-233.xyz/ | Computer & Math. | /images/apple-touch-icon.png
-% Tifa's Blog | https://tifa-233.xyz/ | Computer & Math. | /images/apple-touch-icon.png
+Tifa's Blog | https://blog.tifa-233.com/ | Computer & Math. | /images/apple-touch-icon.png
+Tifa's Blog | https://blog.tifa-233.com/ | Computer & Math. | /images/apple-touch-icon.png
+Tifa's Blog | https://blog.tifa-233.com/ | Computer & Math. | /images/apple-touch-icon.png
+Tifa's Blog | https://blog.tifa-233.com/ | Computer & Math. | /images/apple-touch-icon.png
+% Tifa's Blog | https://blog.tifa-233.com/ | Computer & Math. | /images/apple-touch-icon.png
 {% endlinkgrid %}
 
 ## 插入 PDF

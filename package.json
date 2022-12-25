@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "build": "npx hexo generate --debug",
-    "clean": "rm -rf _imgcode_tempout/* && npx hexo clean --debug",
+    "clean": "npx hexo clean --debug && rm -rf _imgcode_tempout/*",
     "deploy": "npx hexo deploy --debug",
     "server": "npx hexo server --debug"
   },
