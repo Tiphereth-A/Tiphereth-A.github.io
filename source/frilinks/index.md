@@ -48,5 +48,5 @@ avatar:
 name: Tifa's Blog
 description: 一个数学系 ACMer 的小站
 link: https://blog.tifa-233.com
-avatar: https://tifa-233.xyz/images/ava.png
+avatar: https://blog.tifa-233.com/images/ava.png
 ```
