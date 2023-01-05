@@ -1,20 +1,15 @@
 #include "euler_seive.hpp"
 #include <iostream>
+#include <iterator>
 #include <tuple>
 
-template <
-  class Ch,
-  class Tr,
-  class Ct,
-  std::enable_if_t<std::is_same<decltype(std::declval<Ct>().begin()),
-                                typename Ct::iterator>::value &&
-                   std::is_same<decltype(std::declval<Ct>().end()),
-                                typename Ct::iterator>::value> * = nullptr>
+template <class Ch, class Tr, class Ct>
+requires std::random_access_iterator<typename Ct::iterator>
 std::basic_ostream<Ch, Tr> &operator<<(std::basic_ostream<Ch, Tr> &os,
-                                       const Ct &x) {
+                                       Ct const &x) {
   if (x.begin() == x.end()) return os;
   for (auto it = x.begin(); it != x.end() - 1; ++it) os << *it << ' ';
-  os << x.back();
+  os << *(x.back() - 1);
   return os;
 }
 
@@ -23,11 +18,11 @@ int main() {
 
 #define SINGLE_TEST__(tag, n)                                    \
   std::tie(x, y) = euler_seive::seive<int, euler_seive::tag>(n); \
-  std::cout << "tag: " << #tag << endl                           \
-            << "n: " << n << endl                                \
-            << "x: " << x << endl                                \
-            << "y: " << y << endl                                \
-            << endl
+  std::cout << "tag: " << #tag << std::endl                      \
+            << "n: " << n << std::endl                           \
+            << "x: " << x << std::endl                           \
+            << "y: " << y << std::endl                           \
+            << std::endl
 
   SINGLE_TEST__(null_tag, 100);
   SINGLE_TEST__(min_pfactor_tag, 100);
