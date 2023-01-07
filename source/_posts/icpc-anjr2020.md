@@ -58,8 +58,6 @@ date: 2020-12-20 20:46:33
 
 我 TM 直接好家伙
 
-附 [checker](https://github.com/Tiphereth-A/2020-icpc-nanjing-A-checker)
-
 ## B - Baby's First Suffix Array Problem
 
 ### 题意简述
