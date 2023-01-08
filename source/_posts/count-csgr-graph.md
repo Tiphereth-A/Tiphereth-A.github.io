@@ -78,11 +78,15 @@ The example graph is a clique and contains four cycles of length $3$ and three c
 
 则
 
-$$f(V(G'),x)=\sum_{v\in V(G)}f(V(G')\setminus\{x\},y)g(y,x)$$
+$$
+f(V(G'),x)=\sum_{v\in V(G)}f(V(G')\setminus\{x\},y)g(y,x)
+$$
 
 因为是无向图, 我们只需要枚举一下这个最小点然后考虑所有与其关联的边即可, 最后答案即为
 
-$$\frac{1}{2}\sum_{v\in V(G)}\sum_{S\subseteq V(G);\min S=v}\sum_{x\in S\setminus\{v\}}f(S,x)g(v,x)$$
+$$
+\frac{1}{2}\sum_{v\in V(G)}\sum_{S\subseteq V(G);\min S=v}\sum_{x\in S\setminus\{v\}}f(S,x)g(v,x)
+$$
 
 ### 时间复杂度
 

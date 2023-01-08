@@ -24,10 +24,16 @@ Walsh 变换是离散 Fourier 变换的一种替代方案
 设函数 $f(n)$ 的定义域为 $\{0,1,...,N-1\}$, 且 $N=2^k,k\in\mathbb{N}^+$ 则我们定义 Walsh 变换与 Walsh 逆变换如下
 
 - Walsh 变换
-  $$\text{WT}(f):=F(m)=\sum_{n=0}^{N-1}f(n)W_N(m,n)$$
+
+  $$
+  \text{WT}(f):=F(m)=\sum_{n=0}^{N-1}f(n)W_N(m,n)
+  $$
 
 - Walsh 逆变换
-  $$\text{IWT}(F):=F(n)={1\over N}\sum_{m=0}^{N-1}f(m)W_N(n,m)$$
+
+  $$
+  \text{IWT}(F):=F(n)={1\over N}\sum_{m=0}^{N-1}f(m)W_N(n,m)
+  $$
 
 其中 $W_N$ 为 $N$ 阶 Walsh 矩阵, $W_N(m,n)$ 为其第 $m$ 行第 $n$ 列, $W_N$ 的构造方法如下:
 
@@ -88,23 +94,37 @@ $$
 
 Walsh 矩阵与 Walsh 变换有如下性质
 
-1. $$W_NW_N^T=N$$
+1. $$
+   W_NW_N^T=N
+   $$
 
    即 $N^{-{1\over 2}}W_N$ 是正交矩阵
 
 1. $W_N$ 的偶数列偶对称, 奇数列奇对称 (从 $0$ 到 $N-1$)
-1. $$\text{WT}(af+bg)=a\text{WT}(f)+b\text{WT}(g)$$
+1. $$
+   \text{WT}(af+bg)=a\text{WT}(f)+b\text{WT}(g)
+   $$
 
    其中 $a,b$ 为常数
 
-1. $$W_N[l,m]W_N[n,m]=W_N[l\oplus n,m]$$
+1. $$
+   W_N[l,m]W_N[n,m]=W_N[l\oplus n,m]
+   $$
 
    其中 $\oplus$ 表示异或
 
-1. $$f(n\oplus k)=W_N(k,m)\text{WT}(f)(m)$$
-1. $$W_N(k,n)f(n)=\text{WT}(f)(m\oplus k)$$
-1. $$\sum_{n=0}^{N-1}f^2(n)={1\over N}\sum_{m=0}^{N-1}F^2(m)$$
-1. $$\text{WT}\left(\sum_{l=0}^{N-1}f(l)g(n\otimes_k l)\right)=\text{WT}(f)\text{WT}(g)$$
+1. $$
+   f(n\oplus k)=W_N(k,m)\text{WT}(f)(m)
+   $$
+1. $$
+   W_N(k,n)f(n)=\text{WT}(f)(m\oplus k)
+   $$
+1. $$
+   \sum_{n=0}^{N-1}f^2(n)={1\over N}\sum_{m=0}^{N-1}F^2(m)
+   $$
+1. $$
+    \text{WT}\left(\sum_{l=0}^{N-1}f(l)g(n\otimes_k l)\right)=\text{WT}(f)\text{WT}(g)
+   $$
 
    其中 $\otimes_k$ 为 $k$ 位按位卷积
 

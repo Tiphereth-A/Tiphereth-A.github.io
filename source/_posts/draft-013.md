@@ -28,25 +28,39 @@ date: 2021-09-23 00:08:45
 - $y=Ox=(y_1,y_2,\dots,y_n)^T\in\mathbb{R}^n$
 
 则
-$$\Delta_x=\Delta_y$$
+
+$$
+\Delta_x=\Delta_y
+$$
 
 其中
 
-- $$\Delta_x:=\sum_{i=1}^n\frac{\partial^2}{\partial x_i^2}$$
-- $$\Delta_y:=\sum_{i=1}^n\frac{\partial^2}{\partial y_i^2}$$
+- $$
+  \Delta_x:=\sum_{i=1}^n\frac{\partial^2}{\partial x_i^2}
+  $$
+- $$
+  \Delta_y:=\sum_{i=1}^n\frac{\partial^2}{\partial y_i^2}
+  $$
 
 ---
 
 **Proof** 显然
 
-$$y_i=\sum_{j=1}^no_{ij}x_j,\ \forall i=1..n$$
+$$
+y_i=\sum_{j=1}^no_{ij}x_j,\ \forall i=1..n
+$$
 
 故我们有
-$$\frac{\partial}{\partial x_i}=\sum_{j=1}^n\frac{\partial}{\partial y_j}\frac{\partial y_j}{\partial x_i}=\sum_{j=1}^no_{ji}\frac{\partial}{\partial y_j}$$
+
+$$
+\frac{\partial}{\partial x_i}=\sum_{j=1}^n\frac{\partial}{\partial y_j}\frac{\partial y_j}{\partial x_i}=\sum_{j=1}^no_{ji}\frac{\partial}{\partial y_j}
+$$
 
 考虑 Hessian 矩阵
 
-$$\nabla^2_x=\left(\frac{\partial^2}{\partial x_j\partial x_i}\right)_{n\times n}=\left(\sum_{l=1}^n\sum_{k=1}^no_{lj}o_{ki}\frac{\partial^2}{\partial y_l\partial y_k}\right)_{n\times n}$$
+$$
+\nabla^2_x=\left(\frac{\partial^2}{\partial x_j\partial x_i}\right)_{n\times n}=\left(\sum_{l=1}^n\sum_{k=1}^no_{lj}o_{ki}\frac{\partial^2}{\partial y_l\partial y_k}\right)_{n\times n}
+$$
 
 则
 

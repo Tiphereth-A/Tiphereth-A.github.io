@@ -288,7 +288,10 @@ $O(n\max_{i\ne j}\{\sqrt{a_i^2+a_j}-a_i\})=O(n\max_i\sqrt{a_i})$
 ### 解题思路二
 
 不难发现
-$$a_i^2+a_j=x^2\iff a_j=(x+a_i)(x-a_i)$$
+
+$$
+a_i^2+a_j=x^2\iff a_j=(x+a_i)(x-a_i)
+$$
 
 所以枚举 $x\in 1..\max_i a_i$ 和其倍数 $y$, 若 $2\mid (y/x-x)$, 且
 
@@ -364,7 +367,9 @@ $\displaystyle O\left(\sum_{i=1}^{\max_i a_i}\left\lfloor \frac{\max_i a_i}{i}\r
 
 每组给定两个数 $X, Y$, 问有多少个长度为 $Y$ 的整数序列之乘积为 $X$, 即
 
-$$\prod_{i = 1}^Y f_i = X$$
+$$
+\prod_{i = 1}^Y f_i = X
+$$
 
 注意: 两序列不同, 当且仅当至少有一个下标相同的位置不同. 如 $(1, 2), (2, 1)$ 被视作不同的序列
 
@@ -420,40 +425,56 @@ $$\prod_{i = 1}^Y f_i = X$$
 - $f(x,y)=f(x-1,y)+f(x,y-1)$
 
 由简单的生成函数知识不难得出
-$$f(\alpha,Y)=\binom{\alpha+Y-1}{\alpha}$$
+
+$$
+f(\alpha,Y)=\binom{\alpha+Y-1}{\alpha}
+$$
 
 <details open>
 <summary><font color='orange'>推导过程</font></summary>
 
 > 考虑二元 OGF
-> $$F(x,y)=\sum_{m=1}^\infty\sum_{n=1}^\infty f(m,n)x^my^n$$
+>
+> $$
+> F(x,y)=\sum_{m=1}^\infty\sum_{n=1}^\infty f(m,n)x^my^n
+> $$
 >
 > 整理一下
-> $$\begin{aligned}
-
-    F(x,y)&=x\sum_{n=1}^\infty y^n+y\sum_{m=1}^\infty x^m-xy+\sum_{m=2}^\infty\sum_{n=2}^\infty f(m,n)x^my^n\\
-    &=x\sum_{n=1}^\infty y^n+y\sum_{m=1}^\infty x^m-xy+\sum_{m=2}^\infty\sum_{n=2}^\infty(f(m-1,n)+f(m,n-1))x^my^n\\
-    &=x\sum_{n=1}^\infty y^n+y\sum_{m=1}^\infty x^m-xy+x\left(F(x,y)-\sum_{m=1}^\infty x^my\right)+y\left(F(x,y)-\sum_{n=1}^\infty xy^n\right)\\
-    &=(x+y)F(x,y)+xy\left(\frac{1}{1-y}+\frac{1}{1-x}-1-\frac{y}{1-y}-\frac{x}{1-x}\right)
-
-\end{aligned}$$
-
+>
+> $$
+> \begin{aligned}
+> F(x,y)&=x\sum_{n=1}^\infty y^n+y\sum_{m=1}^\infty x^m-xy+\sum_{m=2}^\infty\sum_{n=2}^\infty f(m,n)x^my^n\\
+> &=x\sum_{n=1}^\infty y^n+y\sum_{m=1}^\infty x^m-xy+\sum_{m=2}^\infty\sum_{n=2}^\infty(f(m-1,n)+f(m,n-1))x^my^n\\
+> &=x\sum_{n=1}^\infty y^n+y\sum_{m=1}^\infty x^m-xy+x\left(F(x,y)-\sum_{m=1}^\infty x^my\right)+y\left(F(x,y)-\sum_{n=1}^\infty xy^n\right)\\
+> &=(x+y)F(x,y)+xy\left(\frac{1}{1-y}+\frac{1}{1-x}-1-\frac{y}{1-y}-\frac{x}{1-x}\right)
+> \end{aligned}
+> $$
+>
 > 即
 >
-> $$F(x,y)=\frac{xy}{1-x-y}$$
+> $$
+> F(x,y)=\frac{xy}{1-x-y}
+> $$
 >
 > 从而
 >
-> $$f(m,n)=[x^my^n]F(x,y)=\binom{m+n-1}{m}$$
+> $$
+> f(m,n)=[x^my^n]F(x,y)=\binom{m+n-1}{m}
+> $$
 
 </details>
 
 最后对于一般情况, 设 $X$ 的唯一分解式为
-$$X=\prod_{i=1}^{\omega(X)}p_i^{\alpha_i}$$
+
+$$
+X=\prod_{i=1}^{\omega(X)}p_i^{\alpha_i}
+$$
 
 显然答案为
 
-$$2^{Y-1}\prod_{i=1}^{\omega(X)}\binom{\alpha_i+Y-1}{\alpha_i}$$
+$$
+2^{Y-1}\prod_{i=1}^{\omega(X)}\binom{\alpha_i+Y-1}{\alpha_i}
+$$
 
 ### 复杂度
 

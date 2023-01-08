@@ -132,7 +132,11 @@ $$
 ## 微分方程数值解法
 
 求微分方程
-$${\mathrm{d}y\over\mathrm{d}x}=f(x,y)$$
+
+$$
+{\mathrm{d}y\over\mathrm{d}x}=f(x,y)
+$$
+
 数值解的基本思想如下:
 
 考虑 $y_{n+1}$ 在 $(x_n,y_n)$ 处的 Taylor 展开
@@ -146,9 +150,13 @@ $$
 根据 $k^*$ 选取方式的不同, 我们有如下数值算法:
 
 - Euler 方法: 取
-  $$k^*=f(x_n,y_n)$$
+  $$
+  k^*=f(x_n,y_n)
+  $$
 - 改进的 Euler 方法: 取
-  $$k^*={f(x_n,y_n)+f(x_{n+1},y_n+hf(x_n,y_n))\over2}$$
+  $$
+  k^*={f(x_n,y_n)+f(x_{n+1},y_n+hf(x_n,y_n))\over2}
+  $$
 - Runge-Kutta 方法: 在区间 $(x_n,x_{n+1})$ 中取若干个点, 将其斜率的加权平均和作为 $k^*$
 
   一般最常用的算法是四阶 Runge-Kutta 方法, 即:

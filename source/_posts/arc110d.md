@@ -107,4 +107,7 @@ $$
 将 $m-\sum_{i=1}^na_i$ 个相同的球放入 $n+\sum_{i=1}^na_i$ 个有编号盒子(允许盒子为空)的方案数 (考虑插空法易得)
 
 所以最终答案即为
-$${m+n\choose m-\sum_{i=1}^na_i}={m+n\choose\sum_{i=1}^na_i+n}$$
+
+$$
+{m+n\choose m-\sum_{i=1}^na_i}={m+n\choose\sum_{i=1}^na_i+n}
+$$

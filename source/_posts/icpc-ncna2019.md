@@ -289,7 +289,10 @@ Carryless addition, denoted by $⊕$, is the same as normal addition, except any
 Carryless multiplication, denoted by $⊗$, is performed using the schoolboy algorithm for multiplication, column by column, but the intermediate additions are calculated using carryless addition. More formally, Let $a_ma_{m-1}…a_1a_0$ be the digits of $a$, where $a_0$ is its least significant digit. Similarly define $b_nb_{n-1}…b_1b_0$ be the digits of $b$. The digits of $c=a⊗b$
 
 are given by the following equation:
-$$c_k=(a_0b_k⊕a_1b_{k-1}⊕⋯⊕a_{k-1}b_1⊕a_kb_0)\bmod10$$
+
+$$
+c_k=(a_0b_k⊕a_1b_{k-1}⊕⋯⊕a_{k-1}b_1⊕a_kb_0)\bmod10
+$$
 
 where any $a_i$ or $b_j$ is considered zero if $i>m$ or $j>n$. For example, $9⊗1234$ is $9876$, $90⊗1234$ is $98760$, and $99⊗1234$ is $97536$
 
@@ -362,7 +365,10 @@ Print, on a single line, the least positive number a such that $a⊗a=N$. If the
 - $\otimes$: 设 $a=\overline{a_{n}...a_{1}a_{0}},~b=\overline{b_{m}...b_{1}b_{0}},~a\otimes b=c$, 其中 $~c=\overline{c_{l}...c_{1}c_{0}},~l=m+n$
 
   则
-  $$c_k=\sum_{i=0}^ka_ib_{k-i}\bmod{10},~\forall k=0,1,...,m+n$$
+
+  $$
+  c_k=\sum_{i=0}^ka_ib_{k-i}\bmod{10},~\forall k=0,1,...,m+n
+  $$
 
   其中 $\forall i>n,a_i=0;~\forall j>m,b_j=0$
 
@@ -394,9 +400,17 @@ $$
 \end{cases}
 $$
 
-$$2a_0a_1\equiv N_1\pmod{10}$$
-$$2a_0a_2+a_1^2\equiv N_2\pmod{10}$$
-$$...$$
+$$
+2a_0a_1\equiv N_1\pmod{10}
+$$
+
+$$
+2a_0a_2+a_1^2\equiv N_2\pmod{10}
+$$
+
+$$
+...
+$$
 
 令 $M_s=\sum_{i=1}^{s-1}a_ia_{s-i}\bmod10$, 则我们可以根据 $2a_0$ 和 $M_s$ 的值来确定 $a_s$ 的值, 具体如下表:
 
@@ -682,7 +696,11 @@ Output the smallest integer target weight $t$, as described above. It's guarante
 考虑应用前缀和
 
 设 $\operatorname{sum}(x)=\sum_{a_i\leqslant x}a_i$, $A=\max_{1\leqslant i\leqslant n}\{a_i\}$, 则所求即为满足
-$$\operatorname{sum}(x-1)=\operatorname{sum}(A)-\operatorname{sum}(x)$$
+
+$$
+\operatorname{sum}(x-1)=\operatorname{sum}(A)-\operatorname{sum}(x)
+$$
+
 的 $x$ 的最小值
 
 预处理出 $\operatorname{sum}(1)..\operatorname{sum}(A)$, 之后由低到高枚举 $x$ 验证即可
@@ -764,9 +782,13 @@ The second sample case represents the third example in the list given earlier wi
 我们知道
 
 - 如果 $n$ 个元素可划分为 $k$ 个等价类, 第 $i$ 个等价类内元素个数为 $n_i$, 则这 $n$ 个元素的全排列个数为
-  $${n!\over\prod_{i=1}^k(n_i!)}$$
+  $$
+  {n!\over\prod_{i=1}^k(n_i!)}
+  $$
 - 将 $n$ 个互异元素划分为 $k$ 组, 第 $i$ 组内元素个数为 $n_i$, 则总划分数为
-  $${n!\over\prod_{i=1}^k(n_i!)}$$
+  $$
+  {n!\over\prod_{i=1}^k(n_i!)}
+  $$
 
 所求概率即为: 满足条件的总方案数除以 $365^k$
 
@@ -780,7 +802,9 @@ The second sample case represents the third example in the list given earlier wi
 
 因此由乘法原理, 所求概率为
 
-$$\frac{1}{365^k}\binom{365}{n}{n!\over\prod_{i=1}^n(f_i!)}{k!\over\prod_{i=1}^k(c_i!)}$$
+$$
+\frac{1}{365^k}\binom{365}{n}{n!\over\prod_{i=1}^n(f_i!)}{k!\over\prod_{i=1}^k(c_i!)}
+$$
 
 ### 复杂度
 
@@ -941,20 +965,34 @@ Output $n$ lines. On the $i$th line, output a single integer: the cost of purcha
 ### 题意简述
 
 给出一个有 $n$ 个结点的树, 每个点 $v$ 有点权 $t_v$, 每个边有边权, 设为点 $u$ 到点 $v$ 经过的所有边的边权和, $d_{u,u}=0$, 对所有的结点 $u$, 求
-$$\sum_{v}(t_u+t_v)d_{u,v}$$
+
+$$
+\sum_{v}(t_u+t_v)d_{u,v}
+$$
 
 ### 解题思路
 
 设该树的根结点为 $u$, 则
-$$a_u=\sum_{v}d_{u,v}$$
-$$b_u=\sum_{v}t_vd_{u,v}$$
+
+$$
+a_u=\sum_{v}d_{u,v}
+$$
+
+$$
+b_u=\sum_{v}t_vd_{u,v}
+$$
 
 则对于结点 $u$, 答案即为 $t_ua_u+b_u$
 
 考虑与 $u$ 相邻的结点 $u'$, 设以 $u'$ 为根结点的子树结点集(包括自身)为 $S(u')$, 我们有
 
-$$a_{u'}=a_u+(n-2|S(u')|)d_{u,u'}$$
-$$b_{u'}=b_u+\left(\sum_{v}t_v-2\sum_{v\in S(u')}t_v\right)d_{u,u'}$$
+$$
+a_{u'}=a_u+(n-2|S(u')|)d_{u,u'}
+$$
+
+$$
+b_{u'}=b_u+\left(\sum_{v}t_v-2\sum_{v\in S(u')}t_v\right)d_{u,u'}
+$$
 
 ## J - This Ain't Your Grandpa's Checkerboard
 
@@ -1070,7 +1108,10 @@ WBWWBB
 You are planning to travel in interstellar space in the hope of finding habitable planets. You have already identified $N$ stars that can recharge your spaceship via its solar panels. The only work left is to decide the orientation of the spaceship that maximizes the distance it can travel
 
 Space is modeled as a $2$D plane, with the Earth at the origin. The spaceship can be launched from the Earth in a straight line, in any direction. Star $i$ can provide enough energy to travel $T_i$ distance if the spaceship is launched at an angle of $a_i$ with the $x$-axis. If the angle is not perfectly aligned, then the spaceship gets less energy. Specifically, if the launch direction makes an angle of a with the $x$-axis, then it gets enough energy to travel distance of
-$$\max(0,T_i-s_i⋅\operatorname{dist}(a_i,a))$$
+
+$$
+\max(0,T_i-s_i⋅\operatorname{dist}(a_i,a))
+$$
 
 from star $i$, where $\operatorname{dist}(a,b)$ is the minimum radians needed to go from angle $a$ to $b$. The distance that the spaceship can travel is simply the sum of the distances that each star contributes. Find the maximum distance $T$ that the starship can travel
 
@@ -1116,9 +1157,13 @@ On a single line output the maximum distance the spacecraft can travel. Your ans
 
 给出 $n$ 组数对 $(T_i,s_i,a_i)$, 其中 $0\leqslant a_i< 2\pi,i=1,2,...,n$, 令
 
-$$f_i(a)=\max\{0,T_i-s_i|a_i-a|,T_i-s_i|2\pi-|a_i-a||\},~i=1,2,...,n$$
+$$
+f_i(a)=\max\{0,T_i-s_i|a_i-a|,T_i-s_i|2\pi-|a_i-a||\},~i=1,2,...,n
+$$
 
-$$f(a)=\sum_{i=1}^nf_i(a)$$
+$$
+f(a)=\sum_{i=1}^nf_i(a)
+$$
 
 求 $f_{max}$
 
@@ -1128,7 +1173,9 @@ $$f(a)=\sum_{i=1}^nf_i(a)$$
 
 显然答案为
 
-$$\max_{x\in D}f(x)$$
+$$
+\max_{x\in D}f(x)
+$$
 
 接下来我们只需考虑如何快速求 $f(a)$ 分界点的函数值了
 
@@ -1176,7 +1223,11 @@ $$
 ![](K-sol-3.png)
 
 可以证明 $f$ 的图像存在"局部周期", 即
-$$\big(\exists a,t\in\mathbb{R},\forall x\in[a,a+t)\big),~f(x)=f(x+t)$$
+
+$$
+\big(\exists a,t\in\mathbb{R},\forall x\in[a,a+t)\big),~f(x)=f(x+t)
+$$
+
 而且在不考虑 $f\equiv0$ 的那些情况下, 只有有限组 $a,t$
 
 因此我们没有必要枚举所有的 $d_i$, 只需要取遍其所有函数值不恒为 $0$ 的"局部周期"即可, 我们可以通过选择 $f_i$ 的一部分进行加和来完成该操作

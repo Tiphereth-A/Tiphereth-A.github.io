@@ -56,13 +56,17 @@ $r\leq 2000 000 000$
 
 显然我们只需要考虑第一象限的情况, 设
 
-$$r^2=2^{2\alpha_2}\prod_{p\in\{x\in\text{Prime}^+|x=4k+3\}}p^{2\alpha_p}\prod_{q=\in\{x\in\text{Prime}^+|x=4k+1\}}q^{2\alpha_q}$$
+$$
+r^2=2^{2\alpha_2}\prod_{p\in\{x\in\text{Prime}^+|x=4k+3\}}p^{2\alpha_p}\prod_{q=\in\{x\in\text{Prime}^+|x=4k+1\}}q^{2\alpha_q}
+$$
 
 我们知道任意素数都能分解为一对共轭的 Gauss 整数的乘积, 且由 [Fermat 二平方和定理](https://en.wikipedia.org/wiki/Fermat's_theorem_on_sums_of_two_squares), 只有 $q$ ($4k+1$ 型素数) 能分解为两正整数的平方和
 
 不难发现答案即为
 
-$$\prod_{q=\in\{x\in\text{Prime}^+|x=4k+1\}}(2\alpha_q+1)$$
+$$
+\prod_{q=\in\{x\in\text{Prime}^+|x=4k+1\}}(2\alpha_q+1)
+$$
 
 最后乘 4 即为所求
 

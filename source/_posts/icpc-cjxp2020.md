@@ -75,7 +75,10 @@ date: 2020-11-15 23:01:18
 ### 题意简述
 
 $\forall x=\sum_{i=0}^la_i\cdot 10^i,~a_0,a_1,...,a_l\in[0,9]\cap\mathbb{N}$, 定义 $F(x)=\sum_{i=0}^la_i$, 求
-$$\sum_{i=1}^n\sum_{j=1}^i[(i,j)=1]F(j)$$
+
+$$
+\sum_{i=1}^n\sum_{j=1}^i[(i,j)=1]F(j)
+$$
 
 ### 解题思路
 
@@ -162,7 +165,10 @@ $O(n\log n)$
 可知若串 $[l,r]$ 满足条件, 则 $f(l,r)=0$
 
 又由异或的性质, 有 $f(l,r)=f(1,l-1)\oplus f(1,r)$, 则
-$$f(l,r)=0\iff f(1,l-1)=f(1,r)$$
+
+$$
+f(l,r)=0\iff f(1,l-1)=f(1,r)
+$$
 
 所以我们可以对输入求前缀异或和, 若在求到某处时的结果不为 $0$ 且 之前得出的结果中有 $k$ 个和当前结果相等, 则答案直接加 $k$ 即可, 若结果为 $0$ 则需加 $k+1$
 
@@ -182,7 +188,10 @@ $$f(l,r)=0\iff f(1,l-1)=f(1,r)$$
 能否恰好用 $n$ 根火柴棍摆出满足如下条件的数 $s$, 如果可以, 输出最大的数
 
 令 $s=\overline{a_1a_2...a_k}$, 其中 $a_1,a_2,...,a_k\in[0,9]\cap\mathbb{N}$, **可以有前导零**, 要求
-$$\forall i\in[1,k]\cap\mathbb{N},~i\mid\overline{a_1a_2...a_i}$$
+
+$$
+\forall i\in[1,k]\cap\mathbb{N},~i\mid\overline{a_1a_2...a_i}
+$$
 
 ### 解题思路
 
@@ -197,7 +206,10 @@ $$\forall i\in[1,k]\cap\mathbb{N},~i\mid\overline{a_1a_2...a_i}$$
   设 $A_i=\overline{a_1a_2...a_i}$, 则 $A_i=10A_{i-1}+a_i$
 
   设 $A_i$ 满足条件, 令 $a_i$ 取值构成的集合为 $S_A(i)$, 不难证明
-  $$|S_A(i)|\leqslant\left\lceil\frac{10}{i}\right\rceil$$
+
+  $$
+  |S_A(i)|\leqslant\left\lceil\frac{10}{i}\right\rceil
+  $$
 
   所以满足条件的 $A_i$ 个数必随着 $i$ 的增加而先增加后减小
 
@@ -249,13 +261,22 @@ $$\forall i\in[1,k]\cap\mathbb{N},~i\mid\overline{a_1a_2...a_i}$$
 - 猛男做法
 
   结合第二类 Stirling 数和排列数的定义不难推出答案为
-  $$\sum_{i=0}^n\sum_{j=0}^i{i\brace j}\binom{n}{i}\binom{m}{j}j!\bmod998244353$$
+
+  $$
+  \sum_{i=0}^n\sum_{j=0}^i{i\brace j}\binom{n}{i}\binom{m}{j}j!\bmod998244353
+  $$
 
   又
-  $$x^i=\sum_{j=0}^i{i\brace j}\binom{x}{j}j!$$
+
+  $$
+  x^i=\sum_{j=0}^i{i\brace j}\binom{x}{j}j!
+  $$
 
   故答案为
-  $$\sum_{i=0}^n\binom{n}{i}m^i=(1+m)^n$$
+
+  $$
+  \sum_{i=0}^n\binom{n}{i}m^i=(1+m)^n
+  $$
 
 ## H - Sequence
 
@@ -314,11 +335,20 @@ $$\forall i\in[1,k]\cap\mathbb{N},~i\mid\overline{a_1a_2...a_i}$$
 显然 $1\times 1$, $1\times 2$, $2\times 1$, $3\times 1$, $1\times 3$ 的纸片是必败局面
 
 另外
-$$\operatorname{SG}(m,n)=\operatorname{mex}S$$
+
+$$
+\operatorname{SG}(m,n)=\operatorname{mex}S
+$$
 
 其中, $S=S_1\cup S_2$
-$$S_1=\bigcup_{i=1+[n=1]}^{\lfloor\frac{m}{2}\rfloor}\{\operatorname{SG}(i,n)\oplus\operatorname{SG}(m-i,n)\}$$
-$$S_2=\bigcup_{i=1+[m=1]}^{\lfloor\frac{n}{2}\rfloor}\{\operatorname{SG}(m,i)\oplus\operatorname{SG}(m,n-i)\}$$
+
+$$
+S_1=\bigcup_{i=1+[n=1]}^{\lfloor\frac{m}{2}\rfloor}\{\operatorname{SG}(i,n)\oplus\operatorname{SG}(m-i,n)\}
+$$
+
+$$
+S_2=\bigcup_{i=1+[m=1]}^{\lfloor\frac{n}{2}\rfloor}\{\operatorname{SG}(m,i)\oplus\operatorname{SG}(m,n-i)\}
+$$
 
 ### 代码参考
 

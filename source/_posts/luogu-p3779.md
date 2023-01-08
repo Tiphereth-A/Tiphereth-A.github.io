@@ -122,7 +122,9 @@ date: 2022-08-24 18:38:23
 
 对于单次询问, 答案显然是
 
-$$\sum_{k=A}^B[x^k]\left(\sum_{i=0}^{X-1}\frac{1}{X}x^i\right)^Y$$
+$$
+\sum_{k=A}^B[x^k]\left(\sum_{i=0}^{X-1}\frac{1}{X}x^i\right)^Y
+$$
 
 这个时间复杂度是 $O(XY\log(XY))$, 对于大数据来说不能接受
 

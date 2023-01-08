@@ -25,7 +25,9 @@ date: 2021-12-01 18:38:35
 
 给定 $D,R,E,A,M$ 求:
 
-$$\newcommand{\lcm}{\operatorname{lcm}}\sum_{d=1}^D\sum_{r=1}^R\sum_{e=1}^E\sum_{a=1}^A\sum_{m=1}^M\frac{\begin{matrix}\gcd(d,r,e)\gcd(d,r,a)\gcd(d,r,m)\gcd(d,e,a)\gcd(d,e,m)\\\gcd(d,a,m)\gcd(r,e,a)\gcd(r,e,m)\gcd(r,a,m)\gcd(e,a,m)\end{matrix}}{\begin{matrix}\gcd(\lcm(d,r),\lcm(d,e),\lcm(d,a),\lcm(d,m),\\\lcm(r,e),\lcm(r,a),\lcm(r,m),\lcm(e,a),\lcm(e,m),\\\lcm(a,m))^3\gcd(\lcm(d,r,e),\lcm(d,r,a),\lcm(d,r,m),\\\lcm(d,e,a),\lcm(d,e,m),\lcm(d,a,m),\lcm(r,e,a),\\\lcm(r,e,m),\lcm(r,a,m),\lcm(e,a,m))\end{matrix}}$$
+$$
+\newcommand{\lcm}{\operatorname{lcm}}\sum_{d=1}^D\sum_{r=1}^R\sum_{e=1}^E\sum_{a=1}^A\sum_{m=1}^M\frac{\begin{matrix}\gcd(d,r,e)\gcd(d,r,a)\gcd(d,r,m)\gcd(d,e,a)\gcd(d,e,m)\\\gcd(d,a,m)\gcd(r,e,a)\gcd(r,e,m)\gcd(r,a,m)\gcd(e,a,m)\end{matrix}}{\begin{matrix}\gcd(\lcm(d,r),\lcm(d,e),\lcm(d,a),\lcm(d,m),\\\lcm(r,e),\lcm(r,a),\lcm(r,m),\lcm(e,a),\lcm(e,m),\\\lcm(a,m))^3\gcd(\lcm(d,r,e),\lcm(d,r,a),\lcm(d,r,m),\\\lcm(d,e,a),\lcm(d,e,m),\lcm(d,a,m),\lcm(r,e,a),\\\lcm(r,e,m),\lcm(r,a,m),\lcm(e,a,m))\end{matrix}}
+$$
 
 答案对 $10^9+7$ 取模
 
@@ -78,7 +80,9 @@ Subtask 3 (57 pts): 没有特殊限制
 
 求
 
-$$\sum_{(d,r,e,a,m)\in S}{\prod_{c}(\alpha,\beta)\over\gcd_{c}{}^3\{[\alpha,\beta]\}\gcd_{c}\{[\alpha,\beta,\gamma]\}}$$
+$$
+\sum_{(d,r,e,a,m)\in S}{\prod_{c}(\alpha,\beta)\over\gcd_{c}{}^3\{[\alpha,\beta]\}\gcd_{c}\{[\alpha,\beta,\gamma]\}}
+$$
 
 其中
 
@@ -89,7 +93,9 @@ $$\sum_{(d,r,e,a,m)\in S}{\prod_{c}(\alpha,\beta)\over\gcd_{c}{}^3\{[\alpha,\bet
 
 原题式子是真的丑, 用唯一分解定理算算就能得出是
 
-$$\sum_{(d,r,e,a,m)\in S}\gcd{}^6\{d,r,e,a,m\}$$
+$$
+\sum_{(d,r,e,a,m)\in S}\gcd{}^6\{d,r,e,a,m\}
+$$
 
 然后就是经典套路变形
 
@@ -100,7 +106,9 @@ $$\sum_{(d,r,e,a,m)\in S}\gcd{}^6\{d,r,e,a,m\}$$
 
 则所求为
 
-$$\sum_{d=1}^nF(d)(\{n^6\}*\mu)(d)$$
+$$
+\sum_{d=1}^nF(d)(\{n^6\}*\mu)(d)
+$$
 
 然后大力数论分块搞搞就行了
 

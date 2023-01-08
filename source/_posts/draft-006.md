@@ -50,7 +50,10 @@ $$
 其中 $\left\lang f(x)\mid g(x)\right\rang :=\int_D\mathrm{d}(xf(x)g(x))$
 
 把所有层级的差异累加, 即为该多层级系统的结构复杂度 $C$, 即:
-$$C:=\sum_{\lambda}C_{\lambda}\tag{2}$$
+
+$$
+C:=\sum_{\lambda}C_{\lambda}\tag{2}
+$$
 
 ## 一些例子
 
@@ -59,15 +62,31 @@ $$C:=\sum_{\lambda}C_{\lambda}\tag{2}$$
 假设图像的是 $L\times L$ 的图像. 如果是 RGB 图像, 则模式 (像素) 即为 $[-1,1]^3$ 内的向量 $(x,y,z)$, 其中 $x,y,z$ 分别表示红色, 绿色, 蓝色对该像素的贡献, $-1$ 表示没有贡献, $1$ 表示贡献达到其最大值. 我们选用最简单的缩放作为重整化方式:
 
 > 令 $\bold{s}_{i,j}(k)$ 为第 $k$ 次迭代时在位置 $(i,j)$ 处的像素, 此时迭代前图像被分成 $\Lambda\times\Lambda$ 个小块, 则:
-> $$\bold{s}_{i,j}(k):=\frac{1}{\Lambda^2}\sum_l\sum_m \bold{s}_{\Lambda i+l,\Lambda j+m}(k-1)$$
+>
+> $$
+> \bold{s}_{i,j}(k):=\frac{1}{\Lambda^2}\sum_l\sum_m \bold{s}_{\Lambda i+l,\Lambda j+m}(k-1)
+> $$
+>
 > 其中 $l,m$ 表示对其对应位置进行的枚举
 
 令
-$$\bold{O}_{k,k-1}:={1\over L_{k-1}^2}\left(\sum_{i=1}^{L_k}\sum_{j=1}^{L_k}\bold{s}_{i,j}(k)\right)\left(\sum_{l=1}^{\Lambda}\sum_{m=1}^{\Lambda}\bold{s}_{\Lambda i+l,\Lambda j+m}(k-1)\right)\tag{3}$$
+
+$$
+\bold{O}_{k,k-1}:={1\over L_{k-1}^2}\left(\sum_{i=1}^{L_k}\sum_{j=1}^{L_k}\bold{s}_{i,j}(k)\right)\left(\sum_{l=1}^{\Lambda}\sum_{m=1}^{\Lambda}\bold{s}_{\Lambda i+l,\Lambda j+m}(k-1)\right)\tag{3}
+$$
+
 对本例有
-$$\bold{O}_{k,k-1}={\Lambda^2\over L_{k-1}^2}L_k^2\bold{O}_{k,k}=\bold{O}_{k,k}\tag{4}$$
+
+$$
+\bold{O}_{k,k-1}={\Lambda^2\over L_{k-1}^2}L_k^2\bold{O}_{k,k}=\bold{O}_{k,k}\tag{4}
+$$
+
 所以在给定参数 $N,L,\Lambda$ 时, 图像的结构复杂度为:
-$$C=\sum_{k=0}^{N-1}C_k=\sum_{k=0}^{N-1}\left|\bold{O}_{k+1,k}-\frac{1}{2}(\bold{O}_{k,k}+\bold{O}_{k+1,k+1})\right|=\frac{1}{2}\sum_{k=0}^{N-1}|\bold{O}_{k+1,k+1}-\bold{O}_{k,k}|\tag{5}$$
+
+$$
+C=\sum_{k=0}^{N-1}C_k=\sum_{k=0}^{N-1}\left|\bold{O}_{k+1,k}-\frac{1}{2}(\bold{O}_{k,k}+\bold{O}_{k+1,k+1})\right|=\frac{1}{2}\sum_{k=0}^{N-1}|\bold{O}_{k+1,k+1}-\bold{O}_{k,k}|\tag{5}
+$$
+
 其中:
 
 - $N$ 为迭代次数
@@ -95,7 +114,9 @@ $$C=\sum_{k=0}^{N-1}C_k=\sum_{k=0}^{N-1}\left|\bold{O}_{k+1,k}-\frac{1}{2}(\bold
 
 我们尝试基于 3.1 的方法判断相变边界. 考虑在 2D 和 3D 晶格上具有近邻铁磁交换相互作用的经典 Ising 模型
 
-$$H=-J\sum_{nn'}S_n^zS_{n'}^z,~J>0\tag{5}$$
+$$
+H=-J\sum_{nn'}S_n^zS_{n'}^z,~J>0\tag{5}
+$$
 
 和顺磁-铁磁相变, 以及在边界处复杂度的变化
 

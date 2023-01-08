@@ -138,8 +138,13 @@ Dilworth 定理和 Mirsky 定理的形式"对偶", 让我们先从比较容易�
 
 我们考虑如下两个集合:
 
-$$S^+:=\{x\in S:x\geq a,~\exists a\in A\}$$
-$$S^-:=\{x\in S:x\leq a,~\exists a\in A\}$$
+$$
+S^+:=\{x\in S:x\geq a,~\exists a\in A\}
+$$
+
+$$
+S^-:=\{x\in S:x\leq a,~\exists a\in A\}
+$$
 
 我们不难发现如下性质:
 

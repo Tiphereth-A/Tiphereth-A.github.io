@@ -44,14 +44,18 @@ date: 2022-09-12 00:54:15
 1. 称 $a_1,a_2,\dots,a_n\in V$ 为 $V$ 的一个 **向量组**
 1. 对于 $k_1,k_2,\dots,k_n\in\Bbb{P}$, 称
 
-   $$\sum_{i=1}^nk_ia_i$$
+   $$
+   \sum_{i=1}^nk_ia_i
+   $$
 
    为向量组 $a_1,a_2,\dots,a_n$ 的一个 **线性组合**
 
 1. 若向量 $\beta\in V$ 可以表示为向量组 $a_1,a_2,\dots,a_n$ 的一个线性组合, 则称 $\beta$ 能被向量组 $a_1,a_2,\dots,a_n$ **线性表出**
 1. 对于 $k_1,k_2,\dots,k_n\in\Bbb{P}$, 若向量组 $a_1,a_2,\dots,a_n$ 满足
 
-   $$\sum_{i=1}^nk_ia_i=\theta\iff k_i=0, i=1,2,\dots,n$$
+   $$
+   \sum_{i=1}^nk_ia_i=\theta\iff k_i=0, i=1,2,\dots,n
+   $$
 
    则称向量组 $a_1,a_2,\dots,a_n$ **线性无关**, 否则称向量组 $a_1,a_2,\dots,a_n$ **线性相关**
 
@@ -83,7 +87,9 @@ date: 2022-09-12 00:54:15
    - 向量组 $a_1,a_2,\dots,a_n$ 线性无关
    - $\forall\beta\in\{b_1,b_2,\dots,b_m\}\setminus\{a_1,a_2,\dots,a_n\}$, 向量组
 
-     $$a_1,a_2,\dots,a_n,\beta$$
+     $$
+     a_1,a_2,\dots,a_n,\beta
+     $$
 
      线性相关
 
@@ -96,11 +102,15 @@ date: 2022-09-12 00:54:15
 1. 若向量组 $a_1,a_2,\dots,a_n$ 能线性表出向量组 $b_1,b_2,\dots,b_m$ 中的所有向量, 称向量组 $b_1,b_2,\dots,b_m$ 能被向量组 $a_1,a_2,\dots,a_n$ 线性表出
 1. 若向量组 $a_1,a_2,\dots,a_n$ 能被向量组 $b_1,b_2,\dots,b_m$ 线性表出, 且向量组 $b_1,b_2,\dots,b_m$ 能被向量组 $a_1,a_2,\dots,a_n$ 线性表出, 则称两向量组 **等价**, 记作
 
-   $$\{a_1,a_2,\dots,a_n\}\cong\{b_1,b_2,\dots,b_m\}$$
+   $$
+   \{a_1,a_2,\dots,a_n\}\cong\{b_1,b_2,\dots,b_m\}
+   $$
 
 1. 称
 
-   $$\left\{v=\sum_{i=1}^nk_ia_i:a_i\in V,k_i\in\Bbb{P},i=1,2,\dots,n\right\}$$
+   $$
+   \left\{v=\sum_{i=1}^nk_ia_i:a_i\in V,k_i\in\Bbb{P},i=1,2,\dots,n\right\}
+   $$
 
    为由向量组 $a_1,a_2,\dots,a_n$ 张成的线性空间, 记作 $\operatorname{span}\{a_1,a_2,\dots,a_n\}$
 
@@ -152,7 +162,9 @@ date: 2022-09-12 00:54:15
 
 另外, 由 <a href="#pb-1-1">性质 - 1-1</a>, 在线性空间 $V$ 中, 任取一组基 $A=\{a_i\}$, 则任意向量 $v$ 均可被其线性表示, 且表示方式唯一, 设
 
-$$v=\sum_i k_i a_i,~k_i\in\Bbb{P},i=1,2,\dots$$
+$$
+v=\sum_i k_i a_i,~k_i\in\Bbb{P},i=1,2,\dots
+$$
 
 称有序组 $(k_1,k_2,\dots)$ 为 $v$ 在基 $A$ 下的 **坐标**
 
@@ -175,7 +187,9 @@ $$v=\sum_i k_i a_i,~k_i\in\Bbb{P},i=1,2,\dots$$
 
    任取 $V$ 中的一组基 $b_1,b_2,\dots,b_n$, 由已知条件, 向量组 $b_1,b_2,\dots,b_n$ 可被 $a_1,a_2,\dots,a_n$ 线性表出, 故
 
-   $$n=\operatorname{rank}\{b_1,b_2,\dots,b_n\}\leq\operatorname{rank}\{a_1,a_2,\dots,a_n\}\leq n$$
+   $$
+   n=\operatorname{rank}\{b_1,b_2,\dots,b_n\}\leq\operatorname{rank}\{a_1,a_2,\dots,a_n\}\leq n
+   $$
 
    因此 $\operatorname{rank}\{a_1,a_2,\dots,a_n\}=n$
 

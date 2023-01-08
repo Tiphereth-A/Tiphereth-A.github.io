@@ -39,12 +39,22 @@ Simpson 法是一种常见的数值积分算法, 其思想是用几段抛物线�
 1. 令 $P(a)=f(a), P(m)=f(m), P(b)=f(b)$, 显然我们可以解出 $A,B,C$
 
    > 实际上, 我们有
-   > $$P(x)=f(a)\frac{(x-m)(x-b)}{(a-m)(a-b)}+f(m)\frac{(x-a)(x-b)}{(m-a)(m-b)}+f(b)\frac{(x-a)(x-m)}{(b-a)(b-m)}$$
+   >
+   > $$
+   > P(x)=f(a)\frac{(x-m)(x-b)}{(a-m)(a-b)}+f(m)\frac{(x-a)(x-b)}{(m-a)(m-b)}+f(b)\frac{(x-a)(x-m)}{(b-a)(b-m)}
+   > $$
 
 1. 此时便可假定
-   $$\int_a^bf(x)\mathrm{d}x\approx\int_a^bP(x)\mathrm{d}x=\frac{b-a}{6}(f(a)+4f(m)+f(b))$$
+
+   $$
+   \int_a^bf(x)\mathrm{d}x\approx\int_a^bP(x)\mathrm{d}x=\frac{b-a}{6}(f(a)+4f(m)+f(b))
+   $$
+
    令 $h=\frac{b-a}{2}$, 则有
-   $$\int_a^bf(x)\approx\frac{h}{3}(f(a)+4f(m)+f(b))$$
+
+   $$
+   \int_a^bf(x)\approx\frac{h}{3}(f(a)+4f(m)+f(b))
+   $$
 
 ### Q&A
 
@@ -54,7 +64,9 @@ Simpson 法是一种常见的数值积分算法, 其思想是用几段抛物线�
 
   还有一个数值积分法叫 Simpson 3/8 法, 同样也是 Newton-Cotes 积分法的特例, 式子是这样的:
 
-  $$\int_a^bf(x)\approx\frac{h}{8}(f(a)+3f(m_1)+3f(m_2)+f(b))$$
+  $$
+  \int_a^bf(x)\approx\frac{h}{8}(f(a)+3f(m_1)+3f(m_2)+f(b))
+  $$
 
   其中 $h=\frac{b-a}{3}$, $m_1,m_2$ 是 $a,b$ 的三等分点
 
@@ -82,7 +94,9 @@ Simpson 法是一种常见的数值积分算法, 其思想是用几段抛物线�
 
 然后就有
 
-$$\int_a^bf(x)\mathrm{d}x\approx\frac{h}{3}\sum_{i=1}^\frac{n}{2}(f_{2i-2}+4f_{2i-1}+f_{2i})$$
+$$
+\int_a^bf(x)\mathrm{d}x\approx\frac{h}{3}\sum_{i=1}^\frac{n}{2}(f_{2i-2}+4f_{2i-1}+f_{2i})
+$$
 
 误差为 $-\frac{h^4}{180}(b-a)f^{(4)}(\xi)$, $\xi\in[a,b]$
 

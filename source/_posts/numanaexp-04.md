@@ -58,7 +58,10 @@ date: 2021-05-06 23:06:44
 
 ### 梯形积分
 
-$$\int_a^bf(x)\mathrm{d}x\approx\frac{h}{2}\left(f(a)+2\sum_{i=1}^{n-1}f(x_k)+f(b)\right)$$
+$$
+\int_a^bf(x)\mathrm{d}x\approx\frac{h}{2}\left(f(a)+2\sum_{i=1}^{n-1}f(x_k)+f(b)\right)
+$$
+
 其中
 
 - 步长 $h=\frac{b-a}{n}$
@@ -66,7 +69,10 @@ $$\int_a^bf(x)\mathrm{d}x\approx\frac{h}{2}\left(f(a)+2\sum_{i=1}^{n-1}f(x_k)+f(
 
 ### Simpson 积分
 
-$$\int_a^bf(x)\mathrm{d}x\approx\frac{h}{6}\left(f(a)+4\sum_{i=1}^{n-1}f(x_{k+1/2})+2\sum_{i=1}^{n-1}f(x_k)+f(b)\right)$$
+$$
+\int_a^bf(x)\mathrm{d}x\approx\frac{h}{6}\left(f(a)+4\sum_{i=1}^{n-1}f(x_{k+1/2})+2\sum_{i=1}^{n-1}f(x_k)+f(b)\right)
+$$
+
 其中
 
 - 步长 $h=\frac{b-a}{n}$
@@ -78,19 +84,33 @@ $$\int_a^bf(x)\mathrm{d}x\approx\frac{h}{6}\left(f(a)+4\sum_{i=1}^{n-1}f(x_{k+1/
 - Richardson 外推法
 
   对于
-  $$T_n=\frac{h}{2}\left(f(a)+2\sum_{i=1}^{n-1}f(x_k)+f(b)\right)\tag{1}$$
+
+  $$
+  T_n=\frac{h}{2}\left(f(a)+2\sum_{i=1}^{n-1}f(x_k)+f(b)\right)\tag{1}
+  $$
+
   有
-  $$T_n=I+\tau_1h^2+\tau_2h^4+O(h^6)$$
+
+  $$
+  T_n=I+\tau_1h^2+\tau_2h^4+O(h^6)
+  $$
+
   其中
 
   - $I=\displaystyle\int_a^bf(x)\mathrm{d}x$
   - $\tau_1,\tau_2$ 为与 $h$ 无关的常数
 
   注意到
-  $$T_{2n}=I+\tau_1\left(\frac{h}{2}\right)^2+\tau_2\left(\frac{h}{2}\right)^4+O(h^6)\tag{2}$$
+
+  $$
+  T_{2n}=I+\tau_1\left(\frac{h}{2}\right)^2+\tau_2\left(\frac{h}{2}\right)^4+O(h^6)\tag{2}
+  $$
 
   $(1)-4\times (2)$, 得
-  $$S_n:={4T_{2n}-T_n\over3}=I-\frac{\tau_2}{4}h^4+O(h^6)$$
+
+  $$
+  S_n:={4T_{2n}-T_n\over3}=I-\frac{\tau_2}{4}h^4+O(h^6)
+  $$
 
 - Romberg 算法
 

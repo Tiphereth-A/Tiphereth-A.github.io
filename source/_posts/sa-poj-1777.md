@@ -73,7 +73,9 @@ Asia Guangzhou 2003
 
 ### <a href="#end-t-1" id="t-1">定理 - 1</a>
 
-$$M=2^{\sum_{i=1}^sx_i}\iff N=\prod_{i=1}^s(2^{x_i}-1),~2^{x_i}-1~\text{is}~\text{mersenne}~\text{prime}, i=1,2,...,s$$
+$$
+M=2^{\sum_{i=1}^sx_i}\iff N=\prod_{i=1}^s(2^{x_i}-1),~2^{x_i}-1~\text{is}~\text{mersenne}~\text{prime}, i=1,2,...,s
+$$
 
 <a href="#t-1" id="end-t-1">$\Box$</a>
 

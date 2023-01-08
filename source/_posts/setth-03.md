@@ -124,12 +124,22 @@ $$
 <summary><font color='orange'>Proof</font></summary>
 
 令
-$$T=\bigcup_{A\in\mathscr{P}(X);A\subseteq f(A)}A$$
+
+$$
+T=\bigcup_{A\in\mathscr{P}(X);A\subseteq f(A)}A
+$$
+
 则
-$$f(T)=T$$
+
+$$
+f(T)=T
+$$
 
 一方面, 由 $A\subseteq T$ 知 $A\subseteq f(A)\subseteq f(T)$, 进而
-$$T=\bigcup_{A\in\mathscr{P}(X);A\subseteq f(A)}A\subseteq f(T)$$
+
+$$
+T=\bigcup_{A\in\mathscr{P}(X);A\subseteq f(A)}A\subseteq f(T)
+$$
 
 另一方面, 由 $T\subseteq f(T)$ 知 $f(T)\subseteq f(f(T))$, 进而 $f(T)\subseteq T$
 
@@ -183,7 +193,10 @@ $\forall x\in X,g(f(x))=x\implies\forall x\in X,\exists y=f(x)\in Y,g(y)=x\impli
 {% note primary no-icon %}
 
 **<a id="eg-2-2">例 - 2-2</a>** $(-1,1)\sim\reals$, 可以取
-$$f=\frac{x}{1-x^2},~x\in(-1,1)$$
+
+$$
+f=\frac{x}{1-x^2},~x\in(-1,1)
+$$
 
 {% endnote %}
 
@@ -194,7 +207,11 @@ $$f=\frac{x}{1-x^2},~x\in(-1,1)$$
 **<a id="lm-2-1">引理 - 2-1</a>** (映射分解定理, Banach)
 
 若有 $f:X\to Y$, $g:Y\to X$, 则存在分解
-$$X=A\cup A',Y=B\cup B'$$
+
+$$
+X=A\cup A',Y=B\cup B'
+$$
+
 满足
 
 - $A\cap A'=\varnothing=B\cap B'$
@@ -205,7 +222,10 @@ $$X=A\cup A',Y=B\cup B'$$
 <summary><font color='orange'>Proof</font></summary>
 
 我们把 $f(A)=B,Y\setminus B=B',g(B')=A'$ 合起来, 得到
-$$A'=g(Y\setminus f(A))$$
+
+$$
+A'=g(Y\setminus f(A))
+$$
 
 而 $A\cap A'=\varnothing\iff A\cap g(Y\setminus f(A))=\varnothing$
 
@@ -223,13 +243,19 @@ $$A'=g(Y\setminus f(A))$$
 - $A\in\Gamma$, 即 $A$ 为 $\Gamma$ 中的最大元
 
   $\forall E\in\Gamma$, 由于 $E\subseteq A$, 则
-  $$E\cap g(Y\setminus f(E))=\varnothing\implies E\cap g(Y\setminus f(A))=\varnothing\implies A\cap g(Y\setminus f(A))=\varnothing$$
+
+  $$
+  E\cap g(Y\setminus f(E))=\varnothing\implies E\cap g(Y\setminus f(A))=\varnothing\implies A\cap g(Y\setminus f(A))=\varnothing
+  $$
 
 - $A\cup A'=X$
 
   若 $\exists x_0\in X,~s.t.~x\notin A\cup A'$, 令 $A_0=A\cup\{x_0\}$, 则 $B\subseteq f(A_0),B'\supseteq Y\setminus f(A_0)$, 从而有
 
-  $$g(Y\setminus f(A_0))\subseteq A'\implies A_0\cap g(Y\setminus f(A_0))=\varnothing$$
+  $$
+  g(Y\setminus f(A_0))\subseteq A'\implies A_0\cap g(Y\setminus f(A_0))=\varnothing
+  $$
+
   这与 $A$ 为 $\Gamma$ 中的最大元矛盾
 
 </details>
@@ -250,7 +276,11 @@ $$A'=g(Y\setminus f(A))$$
 > 若 $\exists f:X\to Y, g:Y\to X$ 为单射, 则 $X\sim Y$
 
 根据 <a href="#lm-2-1">引理 - 2-1</a> 知, 存在分解
-$$X=A\cup A',Y=B\cup B'$$
+
+$$
+X=A\cup A',Y=B\cup B'
+$$
+
 满足
 
 - $A\cap A'=\varnothing=B\cap B'$
@@ -276,7 +306,10 @@ $$
 
 **<a id="ifr-2-1">推论 - 2-1</a>** 设集合 $A,B,C$ 满足
 
-$$C\subset B\subset A$$
+$$
+C\subset B\subset A
+$$
+
 则 $B\sim C\implies B\sim A$
 
 {% endnote %}
@@ -286,7 +319,10 @@ $$C\subset B\subset A$$
 **<a id="eg-2-3">例 - 2-3</a>** $[-1,1]\sim\reals$
 
 注意到
-$$(-1,1)\subset[-1,1]\subset\reals$$
+
+$$
+(-1,1)\subset[-1,1]\subset\reals
+$$
 
 由 <a href="#eg-2-2">例 - 2-2</a> 立得 $[-1,1]\sim\reals$
 
@@ -302,7 +338,9 @@ $$(-1,1)\subset[-1,1]\subset\reals$$
 
 **<a id="def-2-2">定义 - 2-2</a>** 我们记
 
-$$|\mathbb{N}|=\alef_0$$
+$$
+|\mathbb{N}|=\alef_0
+$$
 
 其中 $\alef$ 为希伯来字母 Alef, 下标 $0$ 是因为 $\mathbb{N}$ 是基数最小的无限集
 
@@ -319,7 +357,9 @@ $$|\mathbb{N}|=\alef_0$$
 
 在无限集 $E$ 中任取一元素 $e_1$, 接着在无限集 $E\setminus\{e_1\}$ 中任取一元素 $e_2$, 一直这样取下去, 便可得到
 
-$$\{e_n\}\subseteq E$$
+$$
+\{e_n\}\subseteq E
+$$
 
 </details>
 
@@ -337,11 +377,15 @@ $$\{e_n\}\subseteq E$$
 
 **<a id="pb-2-2">命题 - 2-2</a>**
 
-$$\mathbb{N}^n\sim\mathbb{N}$$
+$$
+\mathbb{N}^n\sim\mathbb{N}
+$$
 
 > 只需找 $n$ 个不等素数 $p_1,p_2,\dots,p_n$, 建立映射
 >
-> $$f:\mathbb{N}^n\to\mathbb{N};(\alpha_0,\alpha_1,\dots,\alpha_n)\mapsto\prod_{i=1}^np_i^{\alpha_i}$$
+> $$
+> f:\mathbb{N}^n\to\mathbb{N};(\alpha_0,\alpha_1,\dots,\alpha_n)\mapsto\prod_{i=1}^np_i^{\alpha_i}
+> $$
 >
 > 即可
 
@@ -350,7 +394,10 @@ $$\mathbb{N}^n\sim\mathbb{N}$$
 {% note primary no-icon %}
 
 **<a id="pb-2-3">命题 - 2-3</a>**
-$$\bigcup_{n=1}^{\infty}\mathbb{N}^n\sim\mathbb{N}$$
+
+$$
+\bigcup_{n=1}^{\infty}\mathbb{N}^n\sim\mathbb{N}
+$$
 
 {% endnote %}
 
@@ -358,14 +405,19 @@ $$\bigcup_{n=1}^{\infty}\mathbb{N}^n\sim\mathbb{N}$$
 
 **<a id="pb-2-4">命题 - 2-4</a>**
 
-$$|\Bbb{Q}|=|\mathbb{Z}|=|\mathbb{N}|=\alef_0$$
+$$
+|\Bbb{Q}|=|\mathbb{Z}|=|\mathbb{N}|=\alef_0
+$$
 
 {% endnote %}
 
 {% note primary no-icon %}
 
 **<a id="pb-2-6">命题 - 2-6</a>**
-$$|\mathbb{R}|\ne|\mathbb{N}|$$
+
+$$
+|\mathbb{R}|\ne|\mathbb{N}|
+$$
 
 {% endnote %}
 
@@ -397,7 +449,9 @@ $$|\mathbb{R}|\ne|\mathbb{N}|$$
 
 > 以单调递增函数 $f(x)$ 为例, 对任意不连续点 $x_i$, 均有
 >
-> $$f(x_i-0)<f(x_i+0)$$
+> $$
+> f(x_i-0)<f(x_i+0)
+> $$
 >
 > 则 $x_i$ 对应开区间 $(f(x_i-0),f(x_i+0))$, 显然开区间列 $\{(f(x_i-0),f(x_i+0))\}$ 内的元素两两不交
 
@@ -406,11 +460,18 @@ $$|\mathbb{R}|\ne|\mathbb{N}|$$
 {% note primary no-icon %}
 
 **<a id="eg-2-6">例 - 2-6</a>** 设 $f(x)$ 是定义在 $\mathbb{R}$ 上的实值函数, 则
-$$\{x\in\mathbb{R}:\lim_{y\to x}f(y)=+\infty\}$$
+
+$$
+\{x\in\mathbb{R}:\lim_{y\to x}f(y)=+\infty\}
+$$
+
 是可数集
 
 > 令 $g(x)=\arctan f(x)$, 则原点集变为
-> $$\left\{x\in\mathbb{R}:\lim_{y\to x}g(y)=\frac{\pi}{2}\right\}$$
+>
+> $$
+> \left\{x\in\mathbb{R}:\lim_{y\to x}g(y)=\frac{\pi}{2}\right\}
+> $$
 
 {% endnote %}
 
@@ -424,14 +485,19 @@ $$\{x\in\mathbb{R}:\lim_{y\to x}f(y)=+\infty\}$$
 - $\sum_{i=1}^{\infty}c_i<+\infty$
 
 作函数
-$$f(x)=\sum_{r_n<x}c_n$$
+
+$$
+f(x)=\sum_{r_n<x}c_n
+$$
 
 易知
 
 - $f(x)$ 递增
 - $f(x)$ 在 $(a,b)_{\mathbb{R}\setminus\Bbb{Q}}$ 上连续
 - $f(x)$ 在 $(a,b)_{\Bbb{Q}}$ 上不连续, 且
-  $$f(r_n+0)-f(r_n-0)=c_n,~n=1,2,...$$
+  $$
+  f(r_n+0)-f(r_n-0)=c_n,~n=1,2,...
+  $$
 
 {% endnote %}
 
@@ -440,17 +506,25 @@ $$f(x)=\sum_{r_n<x}c_n$$
 {% note success no-icon %}
 
 **<a id="th-2-3">定理 - 2-3</a>** 设 $E\subset\mathbb{R}$ 为可列集, 则
-$$\exists x_0\in\mathbb{R},E\cap(E+x_0)=\varnothing$$
+
+$$
+\exists x_0\in\mathbb{R},E\cap(E+x_0)=\varnothing
+$$
 
 <details open>
 <summary><font color='orange'>Proof</font></summary>
 
 若 $x'\in E\cap(E+x_0)$, 则
-$$\exists x''\in E,|x'-x''|=x_0$$
+
+$$
+\exists x''\in E,|x'-x''|=x_0
+$$
 
 即
 
-$$(\forall x_0\in\mathbb{R},\exists x',x''\in E),~x_0=x'-x''$$
+$$
+(\forall x_0\in\mathbb{R},\exists x',x''\in E),~x_0=x'-x''
+$$
 
 该命题显然错误
 
@@ -494,7 +568,10 @@ $$(\forall x_0\in\mathbb{R},\exists x',x''\in E),~x_0=x'-x''$$
 充分性显然
 
 必要性: 任取 $A$ 中的非空有限子集 $B$, 由 <a href="#th-2-4">定理 - 2-4</a> 知
-$$A\sim(A\setminus B)$$
+
+$$
+A\sim(A\setminus B)
+$$
 
 </details>
 
@@ -509,23 +586,33 @@ $$A\sim(A\setminus B)$$
 
 由 $f(x)$ 是 $(a,b)$ 上的凸函数知
 
-$$\forall x\in(x_1,x_2)\subseteq(a,b),~f(x)\leqslant\frac{(x_2-x)f(x_1)-(x-x_1)f(x_2)}{x_2-x_1}$$
+$$
+\forall x\in(x_1,x_2)\subseteq(a,b),~f(x)\leqslant\frac{(x_2-x)f(x_1)-(x-x_1)f(x_2)}{x_2-x_1}
+$$
 
 即
 
-$$\frac{f(x)-f(x_1)}{x-x_1}\leqslant\frac{f(x_2)-f(x)}{x_2-x}$$
+$$
+\frac{f(x)-f(x_1)}{x-x_1}\leqslant\frac{f(x_2)-f(x)}{x_2-x}
+$$
 
 又
 
-$$\forall x'\in(x,x_2),~\frac{f(x')-f(x)}{x'-x}\leqslant\frac{f(x_2)-f(x)}{x_2-x}$$
+$$
+\forall x'\in(x,x_2),~\frac{f(x')-f(x)}{x'-x}\leqslant\frac{f(x_2)-f(x)}{x_2-x}
+$$
 
 故
 
-$$\lim_{x'\to x^+}\frac{f(x')-f(x)}{x'-x}=f'_+(x)<+\infty$$
+$$
+\lim_{x'\to x^+}\frac{f(x')-f(x)}{x'-x}=f'_+(x)<+\infty
+$$
 
 同理, $-\infty<f'_-(x)$, 进而
 
-$$-\infty<f'_-(x)\leqslant f'_+(x)<+\infty$$
+$$
+-\infty<f'_-(x)\leqslant f'_+(x)<+\infty
+$$
 
 由 <a href="#eg-2-4">例 - 2-4</a> 知命题成立
 
@@ -547,7 +634,9 @@ $$-\infty<f'_-(x)\leqslant f'_+(x)<+\infty$$
 
 进一步, 我们记 $|\mathscr{P}(A)|=2^{|A|}$, 则
 
-$$|A|<2^{|A|}$$
+$$
+|A|<2^{|A|}
+$$
 
 <details open>
 <summary><font color='orange'>Proof</font></summary>
@@ -555,10 +644,16 @@ $$|A|<2^{|A|}$$
 假设 $A\sim\mathscr{P}(A)$, 则存在双射 $f:A\to\mathscr{P}(A)$
 
 取集合
-$$B=\{x\in A:x\notin f(x)\}$$
+
+$$
+B=\{x\in A:x\notin f(x)\}
+$$
 
 则
-$$\exists y\in A,~s.t.~f(y)=B\in\mathscr{P}(A)$$
+
+$$
+\exists y\in A,~s.t.~f(y)=B\in\mathscr{P}(A)
+$$
 
 而
 
@@ -583,7 +678,9 @@ $$\exists y\in A,~s.t.~f(y)=B\in\mathscr{P}(A)$$
 
 在 <a href="#pb-2-6">命题 - 2-6</a> 中, 我们提到实数集和自然数集不对等, 实际上
 
-$$|\reals|=2^{|\mathbb{N}|}=2^{\alef_0}$$
+$$
+|\reals|=2^{|\mathbb{N}|}=2^{\alef_0}
+$$
 
 我们会在下一篇中给出证明
 
@@ -610,7 +707,10 @@ $$|\reals|=2^{|\mathbb{N}|}=2^{\alef_0}$$
 {% note primary no-icon %}
 
 **<a id="pb-2-7">命题 - 2-7</a>** (连续统假设)
-$$c=\alef_1$$
+
+$$
+c=\alef_1
+$$
 
 {% endnote %}
 
@@ -627,7 +727,10 @@ $$c=\alef_1$$
 {% note primary no-icon %}
 
 **<a id="pb-2-8">命题 - 2-8</a>** (广义连续统假设)
-$$\alef_i=2^{\alef_{i-1}},~\forall i\in\mathbb{N}^+$$
+
+$$
+\alef_i=2^{\alef_{i-1}},~\forall i\in\mathbb{N}^+
+$$
 
 {% endnote %}
 
@@ -713,7 +816,10 @@ $$\alef_i=2^{\alef_{i-1}},~\forall i\in\mathbb{N}^+$$
 若 $\exists x_0\in E,~s.t.~\forall B(x_0,r),E\cap B(x_0,r)$ 可数
 
 则取正有理数半径 $r_x$, 有
-$$E=\bigcup_{r_x\in\Bbb{Q}^+}(E\cap B(x_0,r_x))$$
+
+$$
+E=\bigcup_{r_x\in\Bbb{Q}^+}(E\cap B(x_0,r_x))
+$$
 
 该式说明 $E$ 可数, 与题设矛盾
 

@@ -30,7 +30,10 @@ Cantor 展开是用于求排列字典序的算法, 逆 Cantor 展开即根据字
 
 - $f_n:=\left((n-1)!,(n-2)!,...,1!,0!\right)\in\mathbb{N}^n$
 - $1..n$ 的排列: 称 $A:=(a_1,a_2,\dots,a_n)\in(\mathbb{Z}_1^n)^n$ 为 $1..n$ 的排列, 若
-  $$\{a_1,a_2,\dots,a_n\}=\{1,2,...,n\}$$
+
+  $$
+  \{a_1,a_2,\dots,a_n\}=\{1,2,...,n\}
+  $$
 
   为了方便下文叙述, 我们定义
 
@@ -39,12 +42,18 @@ Cantor 展开是用于求排列字典序的算法, 逆 Cantor 展开即根据字
     显然 $|S_n|=n!$
 
   - 对 $1..n$ 的排列 $A=(a_1,a_2,\dots,a_n)$,
-    $$D_i(A):=\{(d_1,d_2,...,d_n)\in S_n~|~d_i<a_i;~\forall j\in \mathbb{Z}_1^{i-1}, d_j=a_j\}$$
+
+    $$
+    D_i(A):=\{(d_1,d_2,...,d_n)\in S_n~|~d_i<a_i;~\forall j\in \mathbb{Z}_1^{i-1}, d_j=a_j\}
+    $$
 
     在不引起歧义的情况下, 可将 $D_i(A)$ 简记为 $D_i$
 
 - $1..n$ 排列的字典序: 对 $1..n$ 的排列 $A=(a_1,a_2,\dots,a_n)$, 定义其序号为
-  $$d(A)=\left|\bigcup_{i=1}^nD_i(A)\right|+1=\sum_{i=1}^n|D_i(A)|+1$$
+
+  $$
+  d(A)=\left|\bigcup_{i=1}^nD_i(A)\right|+1=\sum_{i=1}^n|D_i(A)|+1
+  $$
 
   显然
 
@@ -81,7 +90,9 @@ Cantor 展开即对 $1..n$ 的排列 $A$ 求 $d(A)$ 的算法
 
 #### <a href="#ifr-1" id="p-ifr-1">证明</a>
 
-$$d(A)=\sum_{i=1}^n|D_i(A)|+1=\sum_{i=1}^n p_i(n-i)!+1$$
+$$
+d(A)=\sum_{i=1}^n|D_i(A)|+1=\sum_{i=1}^n p_i(n-i)!+1
+$$
 
 <a href="#p-ifr-1" id="end-ifr-1">$\Box$</a>
 
@@ -106,7 +117,9 @@ $$d(A)=\sum_{i=1}^n|D_i(A)|+1=\sum_{i=1}^n p_i(n-i)!+1$$
 
 ### <a href="#end-t-2" id="t-2">定理 - 2</a>
 
-$$\forall n\in\mathbb{N}^+,~n!=\sum_{i=0}^{n-1}i\cdot i!$$
+$$
+\forall n\in\mathbb{N}^+,~n!=\sum_{i=0}^{n-1}i\cdot i!
+$$
 
 #### <a href="#t-2" id="p-t-2">证明</a>
 
@@ -124,8 +137,11 @@ $$
 
 也就是说, $n!=\sum_{i=1}^n(n-i)\cdot (n-i)!\geqslant\sum_{i=1}^np_i(n-i)!$
 
-此式说明, 对于给定的 $d(A)$
-$$p_i=\left\lfloor{d(A)-\sum_{j=1}^{i-1}p_j(n-j)!-1\over (n-i)!}\right\rfloor$$
+此式说明, 对于给定的 $d(A)$,
+
+$$
+p_i=\left\lfloor{d(A)-\sum_{j=1}^{i-1}p_j(n-j)!-1\over (n-i)!}\right\rfloor
+$$
 
 显然 $P_A$ 可以 $O(n)$ 求得
 

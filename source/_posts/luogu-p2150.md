@@ -149,12 +149,18 @@ date: 2022-10-22 23:02:15
 
 则转移方式如下:
 
-- $$f_i(S_1\cup p_i,S_2)\leftarrow f_i(S_1\cup p_i,S_2)+f_{i-1}(S_1,S_2)~(p_i\cap S_2=\varnothing)$$
-- $$f_i(S_1,S_2\cup p_i)\leftarrow f_i(S_1,S_2\cup p_i)+f_{i-1}(S_1,S_2)~(p_i\cap S_1=\varnothing)$$
+- $$
+  f_i(S_1\cup p_i,S_2)\leftarrow f_i(S_1\cup p_i,S_2)+f_{i-1}(S_1,S_2)~(p_i\cap S_2=\varnothing)
+  $$
+- $$
+  f_i(S_1,S_2\cup p_i)\leftarrow f_i(S_1,S_2\cup p_i)+f_{i-1}(S_1,S_2)~(p_i\cap S_1=\varnothing)
+  $$
 
 答案为
 
-$$\sum_{S_1,S_2\in P; S_1\cap S_2=\varnothing}f_n(S_1,S_2)$$
+$$
+\sum_{S_1,S_2\in P; S_1\cap S_2=\varnothing}f_n(S_1,S_2)
+$$
 
 这个 $f$ 可以滚动数组优化, 时间复杂度为 $O(n4^{\pi(n)})$
 
@@ -178,18 +184,30 @@ $$\sum_{S_1,S_2\in P; S_1\cap S_2=\varnothing}f_n(S_1,S_2)$$
 
 则转移方式如下:
 
-- $$g_i(S_1\cup p_i,S_2)\leftarrow g_i(S_1\cup p_i,S_2)+g_{i-1}(S_1,S_2)~(p_i\cap S_2=\varnothing)$$
-- $$h_i(S_1,S_2\cup p_i)\leftarrow h_i(S_1,S_2\cup p_i)+h_{i-1}(S_1,S_2)~(p_i\cap S_1=\varnothing)$$
+- $$
+  g_i(S_1\cup p_i,S_2)\leftarrow g_i(S_1\cup p_i,S_2)+g_{i-1}(S_1,S_2)~(p_i\cap S_2=\varnothing)
+  $$
+- $$
+  h_i(S_1,S_2\cup p_i)\leftarrow h_i(S_1,S_2\cup p_i)+h_{i-1}(S_1,S_2)~(p_i\cap S_1=\varnothing)
+  $$
 
 在 $b_i$ 变动或到最后一个数时做如下转移
 
-- $$f_i(S_1,S_2)\leftarrow g_i(S_1,S_2)+h_i(S_1,S_2)-f_i(S_1,S_2)~(S_1\cap S_2=\varnothing)$$
-- $$g_i(S_1S_2)\leftarrow g_i(S_1,S_2)+f_i(S_1,S_2)$$
-- $$h_i(S_1,S_2)\leftarrow h_i(S_1,S_2)+f_i(S_1,S_2)$$
+- $$
+  f_i(S_1,S_2)\leftarrow g_i(S_1,S_2)+h_i(S_1,S_2)-f_i(S_1,S_2)~(S_1\cap S_2=\varnothing)
+  $$
+- $$
+  g_i(S_1S_2)\leftarrow g_i(S_1,S_2)+f_i(S_1,S_2)
+  $$
+- $$
+  h_i(S_1,S_2)\leftarrow h_i(S_1,S_2)+f_i(S_1,S_2)
+  $$
 
 答案为
 
-$$\sum_{S_1,S_2\in P; S_1\cap S_2=\varnothing}f_n(S_1,S_2)$$
+$$
+\sum_{S_1,S_2\in P; S_1\cap S_2=\varnothing}f_n(S_1,S_2)
+$$
 
 ## 复杂度
 

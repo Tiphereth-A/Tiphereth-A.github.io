@@ -44,17 +44,23 @@ date: 2022-01-19 14:20:59
 
 本章主要研究的是曲线的"形状", 所以为了方便起见, 我们最好找一个新参数, 使得曲线随该参数的变化幅度恒定, 也就是说, 对曲线 $\textbf{r}(t)$, 我们要找到 $s=s(t)$ 使得
 
-$$|\textbf{r}'(s)|=C$$
+$$
+|\textbf{r}'(s)|=C
+$$
 
 其中 $C$ 为常数, 不妨令其为 $1$
 
 不难得出
 
-$$|\textbf{r}_t|=|\textbf{r}_s|s_t$$
+$$
+|\textbf{r}_t|=|\textbf{r}_s|s_t
+$$
 
 从而
 
-$$s(t)=\int_{t_0}^t |\textbf{r}_t|\mathrm{d}t$$
+$$
+s(t)=\int_{t_0}^t |\textbf{r}_t|\mathrm{d}t
+$$
 
 也就是说, 我们要找的参数 $s$ 就是曲线相对于某定点的弧长
 
@@ -62,7 +68,9 @@ $$s(t)=\int_{t_0}^t |\textbf{r}_t|\mathrm{d}t$$
 
 **<a id="def-1-1">定义 - 1-1</a>** 曲线的**弧长参数** 对曲线 $\textbf{r}(t)$ 和一定点 $t_0$, 称
 
-$$s(t)=\int_{t_0}^t |\textbf{r}_t|\mathrm{d}t$$
+$$
+s(t)=\int_{t_0}^t |\textbf{r}_t|\mathrm{d}t
+$$
 
 为该曲线的 **弧长参数**
 
@@ -76,8 +84,12 @@ $$s(t)=\int_{t_0}^t |\textbf{r}_t|\mathrm{d}t$$
 
 我们令 $\textbf{r}'(s)=:\textbf{t}(s)$, 称其为 $r$ 的**单位切向量**, 接着按右手系的取法取 $\textbf{n}(s)$ 满足
 
-- $$\lang\textbf{n}(s),\textbf{n}(s)\rang=1$$
-- $$\lang\textbf{n}(s),\textbf{t}(s)\rang=0$$
+- $$
+  \lang\textbf{n}(s),\textbf{n}(s)\rang=1
+  $$
+- $$
+  \lang\textbf{n}(s),\textbf{t}(s)\rang=0
+  $$
 
 称其为**单位法向量**
 
@@ -152,9 +164,15 @@ $$
 
 不难得出, 对于 $\textbf{r}(t)=(x(t),y(t))$,
 
-- $$\textbf{t}(t)={\textbf{r}'(t)\over |\textbf{r}'(t)|}=\left({x'\over\sqrt{x'^2+y'^2}},{y'\over\sqrt{x'^2+y'^2}}\right)$$
-- $$\textbf{n}(t)={\textbf{r}''(t)\over |\textbf{r}''(t)|}=\left(-{y'\over\sqrt{x'^2+y'^2}},{x'\over\sqrt{x'^2+y'^2}}\right)$$
-- $$\kappa(t)={|\textbf{r}'(t)\wedge\textbf{r}''(t)|\over|\textbf{r}'(t)|^3}={x'y''-x''y'\over(x'^2+y'^2)^\frac{3}{2}}$$
+- $$
+  \textbf{t}(t)={\textbf{r}'(t)\over |\textbf{r}'(t)|}=\left({x'\over\sqrt{x'^2+y'^2}},{y'\over\sqrt{x'^2+y'^2}}\right)
+  $$
+- $$
+  \textbf{n}(t)={\textbf{r}''(t)\over |\textbf{r}''(t)|}=\left(-{y'\over\sqrt{x'^2+y'^2}},{x'\over\sqrt{x'^2+y'^2}}\right)
+  $$
+- $$
+  \kappa(t)={|\textbf{r}'(t)\wedge\textbf{r}''(t)|\over|\textbf{r}'(t)|^3}={x'y''-x''y'\over(x'^2+y'^2)^\frac{3}{2}}
+  $$
 
 最后我们考察一下曲率的物理意义以及常曲率曲线
 
@@ -265,20 +283,40 @@ $$
 
 不难得出, 对于 $\textbf{r}(t)=(x(t),y(t),z(t))$,
 
-- $$\textbf{t}(t)={\textbf{r}'(t)\over |\textbf{r}'(t)|}$$
-- $$\textbf{n}(t)={\textbf{r}''(t)\over |\textbf{r}''(t)|}$$
-- $$\textbf{b}(t)={\textbf{r}'(t)\wedge\textbf{r}''(t)\over |\textbf{r}'(t)\wedge\textbf{r}''(t)|}$$
-- $$\kappa(t)={|\textbf{r}'(t)\wedge\textbf{r}''(t)|\over|\textbf{r}'(t)|^3}$$
-- $$\tau(t)={(\textbf{r}'(t),\textbf{r}''(t),\textbf{r}'''(t))\over|\textbf{r}'(t)\wedge\textbf{r}''(t)|^2}$$
+- $$
+  \textbf{t}(t)={\textbf{r}'(t)\over |\textbf{r}'(t)|}
+  $$
+- $$
+  \textbf{n}(t)={\textbf{r}''(t)\over |\textbf{r}''(t)|}
+  $$
+- $$
+  \textbf{b}(t)={\textbf{r}'(t)\wedge\textbf{r}''(t)\over |\textbf{r}'(t)\wedge\textbf{r}''(t)|}
+  $$
+- $$
+  \kappa(t)={|\textbf{r}'(t)\wedge\textbf{r}''(t)|\over|\textbf{r}'(t)|^3}
+  $$
+- $$
+  \tau(t)={(\textbf{r}'(t),\textbf{r}''(t),\textbf{r}'''(t))\over|\textbf{r}'(t)\wedge\textbf{r}''(t)|^2}
+  $$
 
 <details open>
 <summary><font color='orange'>Show/Hide</font></summary>
 
-- $$\textbf{t}(t)={(x',y',z')\over\sqrt{x'^2+y'^2+z'^2}}$$
-- $$\textbf{n}(t)={(x'',y'',z'')\over\sqrt{x''^2+y''^2+z''^2}}$$
-- $$\textbf{b}(t)={({y'z''-y''z'},{z'x''-x'z''},{x'y''-y'x''})\over\sqrt{(y'z''-y''z')^2+(z'x''-x'z'')^2+(x'y''-y'x'')^2}}$$
-- $$\kappa(t)={\sqrt{(y'z''-y''z')^2+(z'x''-x'z'')^2+(x'y''-y'x'')^2}\over(x'^2+y'^2+z'^2)^\frac{3}{2}}$$
-- $$\tau(t)=\frac{x'''(y'z''-y''z')+y'''(z'x''-x'z'')+z'''(x'y''-y'x'')}{(y'z''-y''z')^2+(z'x''-x'z'')^2+(x'y''-y'x'')^2}$$
+- $$
+  \textbf{t}(t)={(x',y',z')\over\sqrt{x'^2+y'^2+z'^2}}
+  $$
+- $$
+  \textbf{n}(t)={(x'',y'',z'')\over\sqrt{x''^2+y''^2+z''^2}}
+  $$
+- $$
+  \textbf{b}(t)={({y'z''-y''z'},{z'x''-x'z''},{x'y''-y'x''})\over\sqrt{(y'z''-y''z')^2+(z'x''-x'z'')^2+(x'y''-y'x'')^2}}
+  $$
+- $$
+  \kappa(t)={\sqrt{(y'z''-y''z')^2+(z'x''-x'z'')^2+(x'y''-y'x'')^2}\over(x'^2+y'^2+z'^2)^\frac{3}{2}}
+  $$
+- $$
+  \tau(t)=\frac{x'''(y'z''-y''z')+y'''(z'x''-x'z'')+z'''(x'y''-y'x'')}{(y'z''-y''z')^2+(z'x''-x'z'')^2+(x'y''-y'x'')^2}
+  $$
 
 </details>
 
@@ -292,8 +330,12 @@ $$
 - 若 $\kappa(s)\equiv k\ne 0$
   - 若 $\tau(s)\equiv 0$, 则 $\textbf{r}(s)$ 是圆, 且圆的半径为 $\frac{1}{|k|}$
   - 若 $\tau(s)\equiv \tau\ne 0$, 则 $\textbf{r}(s)$ 是圆柱螺线, 且 对于圆柱螺线 $\textbf{r}(t)=(a\cos t,a\sin t,bt)$ 有
-    - $$k=\frac{a}{a^2+b^2}$$
-    - $$\tau=\frac{b}{a^2+b^2}$$
+    - $$
+      k=\frac{a}{a^2+b^2}
+      $$
+    - $$
+      \tau=\frac{b}{a^2+b^2}
+      $$
 
 直线和圆的证明过程和 <a href="#th-2-1">定理 - 2-1</a> 一致, 圆柱螺线的若按同样的思路证明则要繁琐亿些, 所以推荐用下一节的 <a href="#th-4-1">曲线论基本定理</a> 来证明
 
@@ -318,16 +360,26 @@ $$
 <details open>
 <summary>证明</summary>
 
-$${\mathrm{d}\tilde\textbf{r}\over\mathrm{d}s}={\mathrm{d}\textbf{r}\over\mathrm{d}s}T\implies\left\lang{\mathrm{d}\tilde\textbf{r}\over\mathrm{d}s},{\mathrm{d}\tilde\textbf{r}\over\mathrm{d}s}\right\rang={\mathrm{d}\textbf{r}\over\mathrm{d}s}T\left({\mathrm{d}\textbf{r}\over\mathrm{d}s}T\right)^T=1$$
+$$
+{\mathrm{d}\tilde\textbf{r}\over\mathrm{d}s}={\mathrm{d}\textbf{r}\over\mathrm{d}s}T\implies\left\lang{\mathrm{d}\tilde\textbf{r}\over\mathrm{d}s},{\mathrm{d}\tilde\textbf{r}\over\mathrm{d}s}\right\rang={\mathrm{d}\textbf{r}\over\mathrm{d}s}T\left({\mathrm{d}\textbf{r}\over\mathrm{d}s}T\right)^T=1
+$$
 
 故 $s$ 为 $\tilde\textbf{r}(s)$ 的弧长参数
 
 考虑 $\tilde\textbf{r}(s)$ 的 Frenet 标架 $\{\tilde\textbf{r}(s);\tilde\textbf{t}(s),\tilde\textbf{n}(s),\tilde\textbf{b}(s)\}$, 其中 $\tilde\textbf{t}(s)=\textbf{t}(s)T$, 则
 
-- $$\tilde\kappa(s)=\left|{\mathrm{d}\tilde\textbf{t}\over\mathrm{d}s}(s)\right|=\left|{\mathrm{d}\textbf{t}\over\mathrm{d}s}(s)\right|=\kappa(s)$$
-- $$\tilde\textbf{n}(s)=\frac{1}{\tilde\kappa(s)}{\mathrm{d}\tilde\textbf{t}\over\mathrm{d}s}(s)=\textbf{n}(s)T$$
-- $$\tilde\textbf{b}(s)=\tilde\textbf{t}(s)\wedge\tilde\textbf{n}(s)=\det T(\textbf{t}(s)\wedge\textbf{n}(s))T=\textbf{b}(s)T$$
-- $$\tilde\tau(s)=\left\lang{\mathrm{d}\tilde\textbf{n}\over\mathrm{d}s}(s),\tilde\textbf{b}(s)\right\rang=\tau(s)$$
+- $$
+  \tilde\kappa(s)=\left|{\mathrm{d}\tilde\textbf{t}\over\mathrm{d}s}(s)\right|=\left|{\mathrm{d}\textbf{t}\over\mathrm{d}s}(s)\right|=\kappa(s)
+  $$
+- $$
+  \tilde\textbf{n}(s)=\frac{1}{\tilde\kappa(s)}{\mathrm{d}\tilde\textbf{t}\over\mathrm{d}s}(s)=\textbf{n}(s)T
+  $$
+- $$
+  \tilde\textbf{b}(s)=\tilde\textbf{t}(s)\wedge\tilde\textbf{n}(s)=\det T(\textbf{t}(s)\wedge\textbf{n}(s))T=\textbf{b}(s)T
+  $$
+- $$
+  \tilde\tau(s)=\left\lang{\mathrm{d}\tilde\textbf{n}\over\mathrm{d}s}(s),\tilde\textbf{b}(s)\right\rang=\tau(s)
+  $$
 
 </details>
 
@@ -369,11 +421,15 @@ $$
 
 注意到
 
-$${\mathrm{d}\over\mathrm{d}s}(FF^T)={\mathrm{d}F\over\mathrm{d}s}F^T+{\mathrm{d}F^T\over\mathrm{d}s}F=0$$
+$$
+{\mathrm{d}\over\mathrm{d}s}(FF^T)={\mathrm{d}F\over\mathrm{d}s}F^T+{\mathrm{d}F^T\over\mathrm{d}s}F=0
+$$
 
 从而
 
-$$FF^T=F(s_0)F^T(s_0)\implies F\in\textrm{O}(3)$$
+$$
+FF^T=F(s_0)F^T(s_0)\implies F\in\textrm{O}(3)
+$$
 
 进而由连续性得 $\det F=\det F(s_0)=1$, 即 $F\in\textrm{SO}(3)$
 
@@ -386,7 +442,10 @@ F(s)=\begin{bmatrix}
 $$
 
 则曲线
-$$\textbf{r}(s)=\int_{s_0}^s\textbf{t}(v)\mathrm{d}v+\textbf{r}(s_0)$$
+
+$$
+\textbf{r}(s)=\int_{s_0}^s\textbf{t}(v)\mathrm{d}v+\textbf{r}(s_0)
+$$
 
 即是我们要找的, 其中 $\textbf{r}(s_0)$ 为选定的初始值
 

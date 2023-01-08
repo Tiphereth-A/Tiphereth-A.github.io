@@ -116,7 +116,10 @@ $$
 ![](B-3.svg)
 
 该走法对应的最大积分为
-$$\max_{\min\{0,k-mn\}\leqslant t\leqslant k}\sum_{i=0}^{k-t}(t+i)$$
+
+$$
+\max_{\min\{0,k-mn\}\leqslant t\leqslant k}\sum_{i=0}^{k-t}(t+i)
+$$
 
 当 $t=\min\{0,k-mn\}$ 时最优
 

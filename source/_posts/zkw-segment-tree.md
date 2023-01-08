@@ -267,7 +267,9 @@ _~~zkw:狗拿耗子, 猫下岗了~~_
 >
 > > 或者数学一点
 > >
-> > $$\sum_{\text{j}=0}^{\lfloor\log_2\text{i}\rfloor}\mathrm{tree}_{i\cdot2^j}$$
+> > $$
+> > \sum_{\text{j}=0}^{\lfloor\log_2\text{i}\rfloor}\mathrm{tree}_{i\cdot2^j}
+> > $$
 >
 > (修改时的`s,t`)遇到结点`x`, 则
 >

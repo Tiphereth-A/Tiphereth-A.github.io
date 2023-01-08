@@ -150,7 +150,9 @@ upd2:正解文件比较大, 洛谷可能会一直 judging...
 
 令
 
-$$\{\mathbb{F}_i|\mathbb{F}_i\leqslant \mathbb{F},i\in I\}$$
+$$
+\{\mathbb{F}_i|\mathbb{F}_i\leqslant \mathbb{F},i\in I\}
+$$
 
 为 $\mathbb{F}$ 全体子域构成的集合, 显然其交集 $\mathbb{P}$ 非空,且
 
@@ -169,7 +171,10 @@ $$
 其中 $e$ 为 $\mathbb{F}$ 的幺元, 显然 $\varphi$ 为同态映射
 
 - 若 $\operatorname{char}(\mathbb{F})=0$, 则 $\ker\varphi=\{0\}$, 令
-  $$R_e:=\{me|m\in\mathbb{Z}\}$$
+
+  $$
+  R_e:=\{me|m\in\mathbb{Z}\}
+  $$
 
   由同态基本定理, $R_e\cong\mathbb{Z}$, $R_e$ 为一整环, 从而其分式域 $\mathbb{F}_e\cong\mathbb{Q}$
 
@@ -181,7 +186,10 @@ $$
   故 $\mathbb{F}_e$ 即为 $\mathbb{F}$ 同构于 $\mathbb{Q}$ 的素域
 
 - 若 $\operatorname{char}(\mathbb{F})=p$, 则 $\ker\varphi=\{p\}$, 令
-  $$R_e:=\{0,e,2e,...,(p-1)e\}$$
+
+  $$
+  R_e:=\{0,e,2e,...,(p-1)e\}
+  $$
 
   由同态基本定理, $R_e\cong\mathbb{Z}_p$, 而 $\mathbb{Z}_p$ 显然为素域, 故 $R_e$ 即为 $\mathbb{F}$ 同构于 $\mathbb{Z}_p$ 的素域
 
@@ -202,7 +210,9 @@ $$
 
 令 $f(x)=x^{p^m}-x\in\mathbb{F}_p[x]$, 作 $\mathbb{F}_p$ 关于 $f(x)$ 的分裂域
 
-$$\mathbb{E}=\mathbb{F}_p(\alpha_0,\alpha_1,\dots,\alpha_{p^m})$$
+$$
+\mathbb{E}=\mathbb{F}_p(\alpha_0,\alpha_1,\dots,\alpha_{p^m})
+$$
 
 其中 $\alpha_0,\alpha_1,\dots,\alpha_{p^m}$ 为 $f(x)$ 在 $\mathbb{E}$ 中的根
 
@@ -210,8 +220,12 @@ $$\mathbb{E}=\mathbb{F}_p(\alpha_0,\alpha_1,\dots,\alpha_{p^m})$$
 
 令 $\mathbb{L}=\{\alpha_0,\alpha_1,\dots,\alpha_{p^m}\}$, 则 $\forall\alpha_i,\alpha_j\in\mathbb{L}$
 
-- $$(\alpha_i-\alpha_j)^{p^m}=\alpha_i-\alpha_j\in\mathbb{L}$$
-- $$\left(\frac{\alpha_i}{\alpha_j}\right)^{p^m}=\frac{\alpha_i}{\alpha_j}\in\mathbb{L},~(\alpha_j\ne 0)$$
+- $$
+  (\alpha_i-\alpha_j)^{p^m}=\alpha_i-\alpha_j\in\mathbb{L}
+  $$
+- $$
+  \left(\frac{\alpha_i}{\alpha_j}\right)^{p^m}=\frac{\alpha_i}{\alpha_j}\in\mathbb{L},~(\alpha_j\ne 0)
+  $$
 
 故 $\mathbb{L}\leqslant\mathbb{E}$
 
@@ -233,7 +247,9 @@ $$\mathbb{E}=\mathbb{F}_p(\alpha_0,\alpha_1,\dots,\alpha_{p^m})$$
 
 **<a id="th-3">定理 - 3</a>** 令 $p(x)$ 为 $\mathbb{F}_p[x]$ 中一 $m$ 次首 1 不可约多项式 ($m\geqslant 1$), 则
 
-$$\mathbb{F}_p[x]/\lang p(x)\rang=\left\{\sum_{i=0}^{m-1}a_ix^i+\lang p(x)\rang\bigg|a_i\in\mathbb{F}_p,~i=0,1,...m-1\right\}$$
+$$
+\mathbb{F}_p[x]/\lang p(x)\rang=\left\{\sum_{i=0}^{m-1}a_ix^i+\lang p(x)\rang\bigg|a_i\in\mathbb{F}_p,~i=0,1,...m-1\right\}
+$$
 
 为一阶为 $p^m$ 的有限域
 
@@ -243,7 +259,10 @@ $$\mathbb{F}_p[x]/\lang p(x)\rang=\left\{\sum_{i=0}^{m-1}a_ix^i+\lang p(x)\rang\
 易得 $\lang p(x)\rang$ 为 $\mathbb{F}_p[x]$ 的极大理想, 从而 $\mathbb{F}_p[x]/\lang p(x)\rang$ 为一域
 
 由 $\mathbb{F}_p$ 为阶为 $p$ 的素域, 易得
-$$|\mathbb{F}_p[x]/\lang p(x)\rang|=p^m$$
+
+$$
+|\mathbb{F}_p[x]/\lang p(x)\rang|=p^m
+$$
 
 </details>
 

@@ -84,12 +84,24 @@ The 2 possible Mixed Up arrangements are:
 令 $f(n,m)$ 表示以 $m$ 结尾, 状态为 $n$ 时的方案数. 若 $n\ \mathrm{And}\ 2^{i-1} \neq 0$, 则说明 $i$ 在队伍中
 
 - 初始状态
-  $$f(2^{i-1},i)=1$$
+
+  $$
+  f(2^{i-1},i)=1
+  $$
+
 - 状态转移方程
-  $$f(i,j)=\displaystyle\sum_{k} f(i\oplus\ 2^{k-1},k)$$
+
+  $$
+  f(i,j)=\displaystyle\sum_{k} f(i\oplus\ 2^{k-1},k)
+  $$
+
   其中 $1\leqslant k\leqslant n,\ i\ \mathrm{And}\ 2^{k-1}=0$
+
 - 最终结果:
-  $$\sum_{i=1}^n f(2^n-1,i)$$
+
+  $$
+  \sum_{i=1}^n f(2^n-1,i)
+  $$
 
 ## 时间复杂度
 

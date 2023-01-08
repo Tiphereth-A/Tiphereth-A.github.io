@@ -88,7 +88,9 @@ Namomo Spring Camp 2022 Div1 每日一题记录 (2022.05.21-2022.05.27)
 
 设 $f(x,y)$ 表示有 $x$ 个 `a`, 且有 $y$ 个子串 `ab` 时的概率, 则
 
-$$f(x,y)=\frac{p_a}{p_a+p_b}f(x-1,y)+\frac{p_b}{p_a+p_b}f(x,y-x)$$
+$$
+f(x,y)=\frac{p_a}{p_a+p_b}f(x-1,y)+\frac{p_b}{p_a+p_b}f(x,y-x)
+$$
 
 另外, 若 $x+y>k$, 则期望应为 $\sum_{i=0}^{\infty}(\frac{p_a}{p_a+p_b})^i\frac{p_b}{p_a+p_b}(x+y+i)$
 
@@ -264,7 +266,9 @@ $1 \leq u, v \leq n$, 保证给出的是一棵树
 
 典中典, 设 $f(x)$ 是以 $x$ 为根时的结果, 先随便取个根 $r$ DFS 出结果, 然后
 
-$$f(x)=f(y)-s(x)+n-s(x)$$
+$$
+f(x)=f(y)-s(x)+n-s(x)
+$$
 
 其中
 

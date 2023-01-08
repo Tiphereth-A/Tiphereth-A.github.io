@@ -27,7 +27,11 @@ ${\rm CYJian}$: "听说 $gcd$ 和 $\sum$ 套起来比较好玩？？那我就...
 ### 题目描述
 
 ${\rm CYJian}$ 最近闲的玩起了 $gcd$. 他想到了一个非常简单而有意思的式子:
-$$\prod_{i=1}^N\prod_{j=1}^N\frac{lcm(i,j)}{gcd(i,j)}\ (\bmod\ 104857601)$$
+
+$$
+\prod_{i=1}^N\prod_{j=1}^N\frac{lcm(i,j)}{gcd(i,j)}\ (\bmod\ 104857601)
+$$
+
 ${\rm CYJian}$ 已经算出来这个式子的值了. 现在请你帮他验算一下吧. ${\rm CYJian}$ 只给你 $0.2s$ 的时间哦
 
 ### 输入输出格式

@@ -157,7 +157,10 @@ ACduck
    我们也可以加个剪枝: 记录最大种数 $S$, 如果当前 $k$ 对应的种数小于 $S$, 则后面所有的 $k$ 对应的种数都必然小于 $S$
 
    时间复杂度为
-   $$\Theta\left(n+\sum_{i=1}^n\left\lfloor\frac{n}{i}\right\rfloor \right)=O(n\log n)$$
+
+   $$
+   \Theta\left(n+\sum_{i=1}^n\left\lfloor\frac{n}{i}\right\rfloor \right)=O(n\log n)
+   $$
 
 1. 三分, 爬山...
 

@@ -28,7 +28,9 @@ $$
 
 其中第二个等号与第三个等号的转化值得注意, 它分为如下过程:
 
-$$\sum_{e\mid n}\sum_{d'\mid\frac{n}{e}}\xrightarrow[(1)]{d'\to\frac{d}{e}}\sum_{e\mid n}\sum_{\frac{d}{e}\mid\frac{n}{e}}\xrightarrow[(2)]{}\sum_{e\mid n}\sum_{e\mid d\mid n}\xrightarrow[(3)]{\text{交换求和号}}\sum_{d\mid n}\sum_{e\mid d}$$
+$$
+\sum_{e\mid n}\sum_{d'\mid\frac{n}{e}}\xrightarrow[(1)]{d'\to\frac{d}{e}}\sum_{e\mid n}\sum_{\frac{d}{e}\mid\frac{n}{e}}\xrightarrow[(2)]{}\sum_{e\mid n}\sum_{e\mid d\mid n}\xrightarrow[(3)]{\text{交换求和号}}\sum_{d\mid n}\sum_{e\mid d}
+$$
 
 > $\displaystyle\sum_{\frac{d}{e}\mid\frac{n}{e}}$ 的下标用`\frac{d }{e} \mid \frac{n }{e}`会出 bug, 要用`\frac{d}{e} \mid \frac{n}{e}`, 不知道为什么
 
@@ -40,7 +42,9 @@ $$\sum_{e\mid n}\sum_{d'\mid\frac{n}{e}}\xrightarrow[(1)]{d'\to\frac{d}{e}}\sum_
 
 ### <a href="#end-t-1" id="t-1">定理 - 1</a>
 
-$$\frac{d}{e}\mid \frac{n}{e}\iff e\mid d\mid n$$
+$$
+\frac{d}{e}\mid \frac{n}{e}\iff e\mid d\mid n
+$$
 
 #### <a href="#t-1" id="p-t-1">证明</a>
 

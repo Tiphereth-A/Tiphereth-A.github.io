@@ -54,7 +54,10 @@ $$
 
 - $\operatorname{span}(\epsilon_0,\epsilon_1,\dots,\epsilon_n)=\operatorname{span}(V)$
 - 令 $\alpha[x]=\sum_{i=1}^n\alpha(i)x^{i-1}$, 则
-  $$\left[\sum_{i=1}^n\epsilon_i\right](2)=\max_{\alpha\in\operatorname{span}(V)}\alpha[2]$$
+
+  $$
+  \left[\sum_{i=1}^n\epsilon_i\right](2)=\max_{\alpha\in\operatorname{span}(V)}\alpha[2]
+  $$
 
   > 在后面的代码实现中可以看到, 这条性质说的是将所有线性基异或起来的值即为 $V$ 的最大子集异或和
 

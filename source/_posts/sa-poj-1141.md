@@ -92,7 +92,10 @@ Northeastern Europe 2001
 1. 如果 $s_i$ 和 $s_j$ 能够配对的话, $f(i,j)=f(i+1,j-1)$
 
 而一般情况下的 $f(i,j)$, 我们可以将其拆分成两个子串分别计算再求和, 从而可以得出
-$$f(i,j)=\min_{i\leqslant k\leqslant j}\{f(i,k)+f(k+1,j)\}$$
+
+$$
+f(i,j)=\min_{i\leqslant k\leqslant j}\{f(i,k)+f(k+1,j)\}
+$$
 
 总结一下就是
 

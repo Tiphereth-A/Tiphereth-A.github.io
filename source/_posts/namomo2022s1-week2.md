@@ -143,7 +143,9 @@ $O(n\log n)$ (使用 `map`)
 
 显然
 
-$$f_i=\binom{x_i+y_i-2}{x_i-1}-\sum_{x_i\geq x_j; y_i\geq y_j}\binom{x_i+y_i-x_j-y_j}{x_i-x_j}f_j$$
+$$
+f_i=\binom{x_i+y_i-2}{x_i-1}-\sum_{x_i\geq x_j; y_i\geq y_j}\binom{x_i+y_i-x_j-y_j}{x_i-x_j}f_j
+$$
 
 ### 复杂度
 

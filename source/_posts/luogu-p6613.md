@@ -31,7 +31,10 @@ date: 2022-08-25 11:25:11
 
 已知多项式 $F(x),A(x),B(x)$, 满足:
 
-$$\frac{\text dF(x)}{\text dx} \equiv A(x)\text e^{F(x)-1}+B(x) \pmod{x^n}$$
+$$
+\frac{\text dF(x)}{\text dx} \equiv A(x)\text e^{F(x)-1}+B(x) \pmod{x^n}
+$$
+
 且 $F(0)=1$
 
 给定 $A(x),B(x)$, 请求出 $F(x)$ 的前 $n$ 次项系数
@@ -79,25 +82,35 @@ $$\frac{\text dF(x)}{\text dx} \equiv A(x)\text e^{F(x)-1}+B(x) \pmod{x^n}$$
 
 为简化公式, 在不引起歧义的情况下省略自变量, 所解方程为
 
-$$F'=A\exp(F-1)+B\tag{1}$$
+$$
+F'=A\exp(F-1)+B\tag{1}
+$$
 
 一个容易想到的尝试是令 $u=\exp(F-1)$, 则 $u'=\exp(F-1)F'$, 进而方程 $(1)$ 变为
 
-$$u'=(Au+B)u\tag{2}$$
+$$
+u'=(Au+B)u\tag{2}
+$$
 
 整理一下, 有
 
-$$u'-Bu=Au^2\tag{2'}$$
+$$
+u'-Bu=Au^2\tag{2'}
+$$
 
 此为 [Bernoulli 微分方程](https://en.wikipedia.org/wiki/Bernoulli_differential_equation) ($n=2$), 解法如下:
 
 首先两边同除 $u^n=u^2$, 即
 
-$$u^{-2}u'-Bu^{-1}=A$$
+$$
+u^{-2}u'-Bu^{-1}=A
+$$
 
 之后令 $v=u^{1-n}=u^{-1}$, 则 $v'=-u^nu'$, 即
 
-$$v'+Bv=-A\tag{3}$$
+$$
+v'+Bv=-A\tag{3}
+$$
 
 这样只需解一个简单的一阶线性 ODE 即可
 
@@ -105,11 +118,15 @@ $$v'+Bv=-A\tag{3}$$
 
 $(3)$ 式两边同乘 $\mu$ 后代入, 得
 
-$$\mu v'+\mu' v=-\mu A\tag{4}$$
+$$
+\mu v'+\mu' v=-\mu A\tag{4}
+$$
 
 注意到 $(4)$ 式左边为 $(\mu v)'$, 进而
 
-$$v=-\mu^{-1}\left(\int\mu A\mathrm{d}x+C\right)\tag{5}$$
+$$
+v=-\mu^{-1}\left(\int\mu A\mathrm{d}x+C\right)\tag{5}
+$$
 
 其中 $C$ 为常数, 由 $F$ 初值确定
 
@@ -117,7 +134,9 @@ $$v=-\mu^{-1}\left(\int\mu A\mathrm{d}x+C\right)\tag{5}$$
 
 最后我们将 $v=\exp^{-1}(F-1)$ 和 $\mu$ 代入 $(5)$ 式, 最终结果即为
 
-$$F=1+B-\ln\left(C-\int \left(\exp\int B(s)\mathrm{d}s\right)A\mathrm{d}x\right)\tag{6}$$
+$$
+F=1+B-\ln\left(C-\int \left(\exp\int B(s)\mathrm{d}s\right)A\mathrm{d}x\right)\tag{6}
+$$
 
 将 $F(0)=1$ 代入, 有 $C=1$
 

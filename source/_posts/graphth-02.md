@@ -105,7 +105,9 @@ tags:
 
 **<a id="th-2-3">定理 - 2-3</a>** 若简单图 $G$ 有 $n$ 个顶点, $m$ 条边, $k$ 个部件, 则
 
-$$n-k\leq m\leq \frac{(n-k)(n-k+1)}{2}$$
+$$
+n-k\leq m\leq \frac{(n-k)(n-k+1)}{2}
+$$
 
 {% endnote %}
 
@@ -132,7 +134,10 @@ $$n-k\leq m\leq \frac{(n-k)(n-k+1)}{2}$$
 - $\partial(X):=E(X,V(G)\setminus X)$, 显然 $\parallel(X)$ 是边割
 
   不难得出
-  $$|\partial(X)|=\sum_{v\in V(G)}\deg(v)-2e(X)$$
+
+  $$
+  |\partial(X)|=\sum_{v\in V(G)}\deg(v)-2e(X)
+  $$
 
 - **平凡边割**: 对于无自环图 $G$, 任取一点 $v$, 称 $\partial(v)$ 是平凡边割, 显然 $|\partial(v)|=\deg(v)$
 
@@ -155,7 +160,9 @@ $$n-k\leq m\leq \frac{(n-k)(n-k+1)}{2}$$
 
 **<a id="th-2-6">定理 - 2-6</a>** 称所有点的度均为奇数的图 $G$ 为奇图, 则
 
-$$|\partial(X)|\equiv|X|\pmod 2,~\forall X\subset V(G)$$
+$$
+|\partial(X)|\equiv|X|\pmod 2,~\forall X\subset V(G)
+$$
 
 {% endnote %}
 
@@ -200,7 +207,9 @@ $$|\partial(X)|\equiv|X|\pmod 2,~\forall X\subset V(G)$$
 
 **<a id="th-2-8">定理 - 2-8</a>** 对任意连通图 $G$,
 
-$$\kappa(G)\leq\lambda(G)\leq\delta(G)$$
+$$
+\kappa(G)\leq\lambda(G)\leq\delta(G)
+$$
 
 <details open>
 <summary>证明</summary>
@@ -211,7 +220,9 @@ $$\kappa(G)\leq\lambda(G)\leq\delta(G)$$
 
 任取极小边割 $F$, 只需证明存在点割 $V_0$ 满足
 
-$$\kappa(G)\leq|V_0|\leq|F|$$
+$$
+\kappa(G)\leq|V_0|\leq|F|
+$$
 
 显然 $G-F$ 有两个部件, 设为 $C_1$ 和 $C_2$
 

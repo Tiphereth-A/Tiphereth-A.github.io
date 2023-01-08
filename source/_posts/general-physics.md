@@ -44,8 +44,12 @@ date: 2021-01-23 20:20:40
 
 ### 万有引力
 
-- $$\bm{F}=-\displaystyle G\frac{m_1m_2}{r^3}\bm{r}$$
-- $$\bm{F}=-\displaystyle G\frac{m_1m_2}{\rho^2}\bm{e_{\rho}}$$
+- $$
+  \bm{F}=-G\frac{m_1m_2}{r^3}\bm{r}
+  $$
+- $$
+  \bm{F}=-G\frac{m_1m_2}{\rho^2}\bm{e_{\rho}}
+  $$
 
 #### <a href="#end-prob-1.1.1" id="prob-1.1.1">例题 - 1.1.1</a>
 
@@ -53,7 +57,9 @@ date: 2021-01-23 20:20:40
 
 ##### <a href="#prob-1.1.1" id="p-prob-1.1.1">解</a>
 
-$$\bm{F}=-\displaystyle G{m_{earth}m\over\rho^2}\bm{e_{\rho}}$$
+$$
+\bm{F}=-\displaystyle G{m_{earth}m\over\rho^2}\bm{e_{\rho}}
+$$
 
 $$
 \bm{a}=-G\displaystyle{m_{earth}\over\rho^2}\bm{e_{\rho}}=a_{\rho}\bm{e_{\rho}}+a_{\theta}\bm{e_{\theta}}\implies\begin{cases}
@@ -63,10 +69,16 @@ $$
 $$
 
 又单位时间扫过面积为
-$$\displaystyle{\mathrm{d}S\over\mathrm{d}t}=\frac{1}{2}\rho^2{\mathrm{d}\theta\over\mathrm{d}t}$$
+
+$$
+{\mathrm{d}S\over\mathrm{d}t}=\frac{1}{2}\rho^2{\mathrm{d}\theta\over\mathrm{d}t}
+$$
+
 而
 
-$$\displaystyle{\mathrm{d}^2S\over\mathrm{d}t^2}=\frac{1}{2}\rho\left(2{\mathrm{d}\rho\over\mathrm{d}t}{\mathrm{d}\theta\over\mathrm{d}t}+\rho{\mathrm{d}^2\theta\over\mathrm{d}t^2}\right)=0$$
+$$
+{\mathrm{d}^2S\over\mathrm{d}t^2}=\frac{1}{2}\rho\left(2{\mathrm{d}\rho\over\mathrm{d}t}{\mathrm{d}\theta\over\mathrm{d}t}+\rho{\mathrm{d}^2\theta\over\mathrm{d}t^2}\right)=0
+$$
 
 故成立
 
@@ -76,15 +88,21 @@ $$\displaystyle{\mathrm{d}^2S\over\mathrm{d}t^2}=\frac{1}{2}\rho\left(2{\mathrm{
 
 ### 质心
 
-$$\bm{r}_c={\sum_n m_i\bm{r}_i\over\sum_n m_i}=\frac{\sum_n m_ix_i}{\sum_n m_i}\bm{i}+\frac{\sum_n m_iy_i}{\sum_n m_i}\bm{j}+\frac{\sum_n m_iz_i}{\sum_n m_i}\bm{k}$$
+$$
+\bm{r}_c={\sum_n m_i\bm{r}_i\over\sum_n m_i}=\frac{\sum_n m_ix_i}{\sum_n m_i}\bm{i}+\frac{\sum_n m_iy_i}{\sum_n m_i}\bm{j}+\frac{\sum_n m_iz_i}{\sum_n m_i}\bm{k}
+$$
 
 若质量连续分布, 则
 
-$$\bm{r}_c={\int x\mathrm{d}m\over\int\mathrm{d}m}\bm{i}+{\int y\mathrm{d}m\over\int\mathrm{d}m}\bm{j}+{\int z\mathrm{d}m\over\int\mathrm{d}m}\bm{k}$$
+$$
+\bm{r}_c={\int x\mathrm{d}m\over\int\mathrm{d}m}\bm{i}+{\int y\mathrm{d}m\over\int\mathrm{d}m}\bm{j}+{\int z\mathrm{d}m\over\int\mathrm{d}m}\bm{k}
+$$
 
 ### 质心运动定理
 
-$$\sum_n\bm{F}_i=m\bm{a}_c$$
+$$
+\sum_n\bm{F}_i=m\bm{a}_c
+$$
 
 {% note info %}
 电磁场具有动量 (p71)
@@ -92,7 +110,9 @@ $$\sum_n\bm{F}_i=m\bm{a}_c$$
 
 ### 变质量系统 (发射火箭)
 
-$$v-v_0=u\ln N$$
+$$
+v-v_0=u\ln N
+$$
 
 - $u$: 喷射速度
 - $N$: 质量比 $\frac{m_0}{m}$
@@ -116,25 +136,35 @@ $$
 
 ### 角动量
 
-$$\bm{l}:=\bm{r}\times m\bm{v}$$
+$$
+\bm{l}:=\bm{r}\times m\bm{v}
+$$
 
 ### 角动量定理
 
-$$\bm{M}={\mathrm{d}\bm{l}\over\mathrm{d}t}$$
+$$
+\bm{M}={\mathrm{d}\bm{l}\over\mathrm{d}t}
+$$
 
 质点对力心的角动量守恒
 
 ### 质点系角动量守恒定律
 
-$$\bm{M}_{out}={\mathrm{d}\bm{L}\over\mathrm{d}t}$$
+$$
+\bm{M}_{out}={\mathrm{d}\bm{L}\over\mathrm{d}t}
+$$
 
 ## Ch 5. 刚体力学
 
 ### 刚体的转动惯量
 
-$$J=\int r^2\mathrm{d}m=\int r^2\rho\mathrm{d}V$$
+$$
+J=\int r^2\mathrm{d}m=\int r^2\rho\mathrm{d}V
+$$
 
-$$E_k=\frac{1}{2}J\omega^2$$
+$$
+E_k=\frac{1}{2}J\omega^2
+$$
 
 #### 影响因素
 
@@ -146,27 +176,59 @@ $$E_k=\frac{1}{2}J\omega^2$$
 
 - 平行轴定理
 
-  $$J_d=J_c+md^2$$
+  $$
+  J_d=J_c+md^2
+  $$
 
 - 垂直轴定理
 
-  $$J_x=J_y+J_z+\iiint_Vr^2\mathrm{d}m$$
+  $$
+  J_x=J_y+J_z+\iiint_Vr^2\mathrm{d}m
+  $$
 
 ### 转动量与平动量关系
 
-$$M\longleftrightarrow F$$
-$$\alpha\longleftrightarrow a$$
-$$J\longleftrightarrow m$$
-$$\omega\longleftrightarrow v$$
-$$L\longleftrightarrow p$$
+$$
+M\longleftrightarrow F
+$$
+
+$$
+\alpha\longleftrightarrow a
+$$
+
+$$
+J\longleftrightarrow m
+$$
+
+$$
+\omega\longleftrightarrow v
+$$
+
+$$
+L\longleftrightarrow p
+$$
 
 ---
 
-$$E_k=\frac{1}{2}J\omega^2$$
-$$\mathrm{d}A=M_z\mathrm{d}\theta$$
-$$P=M_z\omega$$
-$$L_z=J\omega$$
-$$M_z\mathrm{d}t=\mathrm{d}L_z$$
+$$
+E_k=\frac{1}{2}J\omega^2
+$$
+
+$$
+\mathrm{d}A=M_z\mathrm{d}\theta
+$$
+
+$$
+P=M_z\omega
+$$
+
+$$
+L_z=J\omega
+$$
+
+$$
+M_z\mathrm{d}t=\mathrm{d}L_z
+$$
 
 ### 固体的形变和弹性
 
@@ -197,7 +259,9 @@ $\sigma_t=G\epsilon_t$
 
 #### 连续性方程
 
-$$\mathrm{d}Q_V=v\mathrm{d}S$$
+$$
+\mathrm{d}Q_V=v\mathrm{d}S
+$$
 
 {% note warning %}
 流量的量纲为 $L^3$
@@ -211,7 +275,9 @@ $$\mathrm{d}Q_V=v\mathrm{d}S$$
 
 ### Bernouli 方程
 
-$$\frac{1}{2}\rho v^2+\rho gh+p=\texttt{const}$$
+$$
+\frac{1}{2}\rho v^2+\rho gh+p=\texttt{const}
+$$
 
 水平流管: $p+\frac{1}{2}\rho v^2=\texttt{const}$
 
@@ -224,11 +290,15 @@ $$\frac{1}{2}\rho v^2+\rho gh+p=\texttt{const}$$
     - 液体: 负相关
     - 气体: 正相关
 
-$$F=\pm\eta\left({\mathrm{d}v\over\mathrm{d}z}\right)_{z_0}\Delta S$$
+$$
+F=\pm\eta\left({\mathrm{d}v\over\mathrm{d}z}\right)_{z_0}\Delta S
+$$
 
 #### 运动规律
 
-$$p_1+\frac{1}{2}\rho v_1^2+\rho gh_1=p_2+\frac{1}{2}\rho v_2^2+\rho gh_2+w$$
+$$
+p_1+\frac{1}{2}\rho v_1^2+\rho gh_1=p_2+\frac{1}{2}\rho v_2^2+\rho gh_2+w
+$$
 
 减小粘性损耗:
 
@@ -237,7 +307,9 @@ $$p_1+\frac{1}{2}\rho v_1^2+\rho gh_1=p_2+\frac{1}{2}\rho v_2^2+\rho gh_2+w$$
 
 #### Poiseuille 定律
 
-$$Q_V=\frac{\pi}{8\eta}\left(\frac{p_1-p_2}{l}\right)r^4$$
+$$
+Q_V=\frac{\pi}{8\eta}\left(\frac{p_1-p_2}{l}\right)r^4
+$$
 
 ($l:$ 长度, $r:$ 半径)
 
@@ -252,27 +324,47 @@ $$Q_V=\frac{\pi}{8\eta}\left(\frac{p_1-p_2}{l}\right)r^4$$
 
 #### Stokes 粘性公式
 
-$$F=6\pi\eta rv$$
+$$
+F=6\pi\eta rv
+$$
 
 ## Ch 7. 振动和波动
 
 ### 简谐振动
 
-$$x=A\cos(\omega t+\varphi)$$
-$$v=A\omega\sin(\omega t+\varphi)$$
-$$E=\frac{1}{2}kA^2$$
-$$v^2=\omega^2(A^2-x^2)$$
+$$
+x=A\cos(\omega t+\varphi)
+$$
+
+$$
+v=A\omega\sin(\omega t+\varphi)
+$$
+
+$$
+E=\frac{1}{2}kA^2
+$$
+
+$$
+v^2=\omega^2(A^2-x^2)
+$$
 
 ### 简谐振动的叠加
 
 #### 同一直线同频率
 
-$$A=\sqrt{A_1^2+A_2^2-2A_1A_2\cos(\varphi_2-\varphi_1)}\in[|A_1-A_2|,A_1+A_2]$$
-$$\varphi=\frac{A_1\sin\varphi_1+A_2\sin\varphi_2}{A_1\cos\varphi_1+A_2\cos\varphi_2}$$
+$$
+A=\sqrt{A_1^2+A_2^2-2A_1A_2\cos(\varphi_2-\varphi_1)}\in[|A_1-A_2|,A_1+A_2]
+$$
+
+$$
+\varphi=\frac{A_1\sin\varphi_1+A_2\sin\varphi_2}{A_1\cos\varphi_1+A_2\cos\varphi_2}
+$$
 
 #### 同一直线频率相近
 
-$$A=\sqrt{A_1^2+A_2^2-2A_1A_2\cos((\omega_2-\omega_1)t+\varphi_2-\varphi_1)}\in[|A_1-A_2|,A_1+A_2]$$
+$$
+A=\sqrt{A_1^2+A_2^2-2A_1A_2\cos((\omega_2-\omega_1)t+\varphi_2-\varphi_1)}\in[|A_1-A_2|,A_1+A_2]
+$$
 
 拍频 $\nu=2A\cos(\frac{\omega_2-\omega_1}{2}t)=|\nu_2-\nu_1|$
 
@@ -282,7 +374,9 @@ $$A=\sqrt{A_1^2+A_2^2-2A_1A_2\cos((\omega_2-\omega_1)t+\varphi_2-\varphi_1)}\in[
 
   $x=A\cos(\omega t+\alpha),~y=A\cos(\omega t+\beta)$
 
-  $$\frac{x^2}{A^2}+\frac{y^2}{B^2}-\frac{2xy}{AB}\cos(\beta-\alpha)=\sin^2(\beta-\alpha)$$
+  $$
+  \frac{x^2}{A^2}+\frac{y^2}{B^2}-\frac{2xy}{AB}\cos(\beta-\alpha)=\sin^2(\beta-\alpha)
+  $$
 
   椭圆
 
@@ -297,11 +391,17 @@ $$A=\sqrt{A_1^2+A_2^2-2A_1A_2\cos((\omega_2-\omega_1)t+\varphi_2-\varphi_1)}\in[
 
 ### 理想气体的压强和温度
 
-$$p=\frac{1}{3}nm_0\bar{v^2}=\frac{2}{3}n\bar{\epsilon}_k$$
+$$
+p=\frac{1}{3}nm_0\bar{v^2}=\frac{2}{3}n\bar{\epsilon}_k
+$$
 
-$$p=nkT$$
+$$
+p=nkT
+$$
 
-$$\bar{\epsilon}_k=\frac{1}{2}m_0\bar{v^2}=\frac{3}{2}kT$$
+$$
+\bar{\epsilon}_k=\frac{1}{2}m_0\bar{v^2}=\frac{3}{2}kT
+$$
 
 ## Ch 10. 电荷和静磁场
 
@@ -323,7 +423,9 @@ $r\gg l$ 时, 由一对电荷量相等, 符号相反的点电荷组成的系统�
 
 #### 无限长均匀带电细棒在某一点处的电场强度 (P252, 258)
 
-$$\bm{E}=\frac{\lambda}{2\pi\epsilon_0 a}\bm{j}$$
+$$
+\bm{E}=\frac{\lambda}{2\pi\epsilon_0 a}\bm{j}
+$$
 
 ### Gauss 定理
 
@@ -336,9 +438,15 @@ $$\bm{E}=\frac{\lambda}{2\pi\epsilon_0 a}\bm{j}$$
 
 #### Gauss 定理
 
-$$\oint_S\bm{E}\cdot\mathrm{d}\bm{S}=\frac{1}{\epsilon_0}\int_V\rho\mathrm{d}V$$
+$$
+\oint_S\bm{E}\cdot\mathrm{d}\bm{S}=\frac{1}{\epsilon_0}\int_V\rho\mathrm{d}V
+$$
+
 或
-$$\nabla\cdot\bm{E}=\frac{\rho}{\epsilon_0}$$
+
+$$
+\nabla\cdot\bm{E}=\frac{\rho}{\epsilon_0}
+$$
 
 证明: 由 Stokes 公式易得
 
@@ -350,34 +458,55 @@ $$\nabla\cdot\bm{E}=\frac{\rho}{\epsilon_0}$$
 
 #### 静电场的环路定理 (P261)
 
-$$\oint_L\bm{E}\cdot\mathrm{d}\bm{l}=0$$
+$$
+\oint_L\bm{E}\cdot\mathrm{d}\bm{l}=0
+$$
 
 > 保守场 $\implies\atop{\Longleftarrow}\llap{/\thickspamathrm}$ 无旋场 (<https://dxwl.bnu.edu.cn/CN/Y1985/V1/I2/48>)
 
 #### 电势, 电势能, 功
 
-$$V_P=\frac{W_P}{q_0}=\int_P^{\infty}\bm{E}\cdot\mathrm{d}\bm{l}$$
-$$A_{PQ}=W_P-W_Q$$
+$$
+V_P=\frac{W_P}{q_0}=\int_P^{\infty}\bm{E}\cdot\mathrm{d}\bm{l}
+$$
+
+$$
+A_{PQ}=W_P-W_Q
+$$
 
 #### 电势的计算
 
 以无穷远点为零电势点
-$$V_p=\frac{1}{4\pi\epsilon_0}\int{\mathrm{d}q\over r}$$
+
+$$
+V_p=\frac{1}{4\pi\epsilon_0}\int{\mathrm{d}q\over r}
+$$
 
 #### 电势与电场强度的关系
 
-$$\bm{E}=-\nabla V$$
+$$
+\bm{E}=-\nabla V
+$$
 
 - 电势梯度: $\nabla V$, 电势面法线方向的电势变化率, 方向沿电势增大方向
 
-  $$\nabla V=\frac{\partial V}{\partial n}\bm{e}_n$$
+  $$
+  \nabla V=\frac{\partial V}{\partial n}\bm{e}_n
+  $$
 
 #### 电偶极子 (P267)
 
-$$V={\bm{p}\cdot\bm{r}\over4\pi\epsilon_0r^3}$$
+$$
+V={\bm{p}\cdot\bm{r}\over4\pi\epsilon_0r^3}
+$$
 
-$$E_r=\frac{1}{4\pi\epsilon_0}\frac{2p\cos\theta}{r^3}$$
-$$E_{\theta}=\frac{1}{4\pi\epsilon_0}\frac{p\sin\theta}{r^3}$$
+$$
+E_r=\frac{1}{4\pi\epsilon_0}\frac{2p\cos\theta}{r^3}
+$$
+
+$$
+E_{\theta}=\frac{1}{4\pi\epsilon_0}\frac{p\sin\theta}{r^3}
+$$
 
 ### 静电场中的金属导体
 
@@ -433,14 +562,21 @@ $$E_{\theta}=\frac{1}{4\pi\epsilon_0}\frac{p\sin\theta}{r^3}$$
 
 #### 极化强度矢量 (P279)
 
-$$\bm{P}:={\sum\bm{p}\over\Delta\tau}$$
+$$
+\bm{P}:={\sum\bm{p}\over\Delta\tau}
+$$
 
 单位: $\mathrm{C\cdot m^{-2}}$
 
 - 均匀极化
 
-$$\sigma'=\bm{P}\cdot\bm{e}_n$$
-$$\oint_S\bm{P}\cdot\mathrm{d}\bm{S}=-\int_V\mathrm{d}q$$
+$$
+\sigma'=\bm{P}\cdot\bm{e}_n
+$$
+
+$$
+\oint_S\bm{P}\cdot\mathrm{d}\bm{S}=-\int_V\mathrm{d}q
+$$
 
 - 退极化场
 
@@ -457,8 +593,13 @@ $$\oint_S\bm{P}\cdot\mathrm{d}\bm{S}=-\int_V\mathrm{d}q$$
 
 #### 电介质存在时的 Gauss 定理
 
-$$\oint_S\bm{D}\cdot\mathrm{d}\bm{S}=\int_V\rho\mathrm{d}V$$
-$$\nabla\cdot\bm{D}=\rho$$
+$$
+\oint_S\bm{D}\cdot\mathrm{d}\bm{S}=\int_V\rho\mathrm{d}V
+$$
+
+$$
+\nabla\cdot\bm{D}=\rho
+$$
 
 - 电位移 $\bm{D}:=\epsilon_0\bm{E}+\bm{P}$
 
@@ -486,11 +627,16 @@ $$\nabla\cdot\bm{D}=\rho$$
 ### 恒定电流条件和导电规律
 
 - 电流密度
-  $$\bm{j}={\mathrm{d}I\over\mathrm{d}S}\bm{e}_n$$
+
+  $$
+  \bm{j}={\mathrm{d}I\over\mathrm{d}S}\bm{e}_n
+  $$
 
   单位: $\mathrm{A\cdot m^{-2}}$
 
-- $$I=\int_S\bm{j}\cdot\mathrm{d}\bm{S}$$
+- $$
+  I=\int_S\bm{j}\cdot\mathrm{d}\bm{S}
+  $$
 
   电流就是电流密度通量
 
@@ -501,17 +647,28 @@ $$\nabla\cdot\bm{D}=\rho$$
 #### 电流连续性方程
 
 单位时间内流出闭合曲面 $S$ 的电荷量等于同一时间内 $S$ 所包围的电荷量的减少, 即
-$$\oint_S\bm{j}\cdot\mathrm{d}\bm{S}=-{\mathrm{d}q\over\mathrm{d}t}=-{\mathrm{d}\over\mathrm{d}t}\int_V\rho\mathrm{d}V$$
+
+$$
+\oint_S\bm{j}\cdot\mathrm{d}\bm{S}=-{\mathrm{d}q\over\mathrm{d}t}=-{\mathrm{d}\over\mathrm{d}t}\int_V\rho\mathrm{d}V
+$$
+
 或
 
-$$\nabla\cdot\bm{j}=-\frac{\partial\rho}{\partial t}$$
+$$
+\nabla\cdot\bm{j}=-\frac{\partial\rho}{\partial t}
+$$
 
 #### 恒定电流
 
 电流场不随时间变化的电流
 
-$$\oint_S\bm{j}\cdot\mathrm{d}\bm{S}=0$$
-$$\nabla\cdot\bm{j}=0$$
+$$
+\oint_S\bm{j}\cdot\mathrm{d}\bm{S}=0
+$$
+
+$$
+\nabla\cdot\bm{j}=0
+$$
 
 - Coulomb 电场: 恒定电场与静电场
 
@@ -519,9 +676,13 @@ $$\nabla\cdot\bm{j}=0$$
 
 #### 电阻率
 
-$$\rho:=\frac{E}{j}$$
+$$
+\rho:=\frac{E}{j}
+$$
 
-- $$R=\rho\frac{l}{S}$$
+- $$
+  R=\rho\frac{l}{S}
+  $$
 - 对于金属材料, 通常温度范围内, $\rho=\rho_0(1+\alpha t)$
 
   - $\rho$: $t\degree\!\mathrm{C}$ 时的电阻率
@@ -532,27 +693,37 @@ $$\rho:=\frac{E}{j}$$
 
 #### Ohm 定律的微分形式
 
-$$\bm{j}=\sigma\bm{E}$$
+$$
+\bm{j}=\sigma\bm{E}
+$$
 
 - 在变化的电流场中依然成立
 
 ### Biot-Savart 定律
 
-$$\mathrm{d}\bm{B}=\frac{\mu_0}{4\pi}{I\mathrm{d}\bm{l}\times\bm{r}\over r^3}$$
+$$
+\mathrm{d}\bm{B}=\frac{\mu_0}{4\pi}{I\mathrm{d}\bm{l}\times\bm{r}\over r^3}
+$$
 
 整条导线 $L$: $\bm{B}=\frac{\mu_0}{4\pi}\int_L{I\mathrm{d}\bm{l}\times\bm{r}\over r^3}$
 
 #### 无线长直导线在某一点处产生的磁感应强度 (P306)
 
-$$B=\frac{\mu_0I}{2\pi a}$$
+$$
+B=\frac{\mu_0I}{2\pi a}
+$$
 
 #### 环形导线在轴线上某一点处产生的磁感应强度 (P307)
 
-$$B={\mu_0R^2\over2(R^2+a^2)^\frac{3}{2}}$$
+$$
+B={\mu_0R^2\over2(R^2+a^2)^\frac{3}{2}}
+$$
 
 #### 沿直线运动的电荷在某瞬间在某一点处产生的磁感应强度 (P307)
 
-$$\bm{B}=\frac{\mu_0}{4\pi}{q\bm{v}\times\bm{r}\over r^3}=\mu_0\epsilon_0\bm{v}\times\bm{E}=\frac{1}{c^2}\bm{v}\times\bm{E}$$
+$$
+\bm{B}=\frac{\mu_0}{4\pi}{q\bm{v}\times\bm{r}\over r^3}=\mu_0\epsilon_0\bm{v}\times\bm{E}=\frac{1}{c^2}\bm{v}\times\bm{E}
+$$
 
 #### 磁矩
 
@@ -564,32 +735,53 @@ $$\bm{B}=\frac{\mu_0}{4\pi}{q\bm{v}\times\bm{r}\over r^3}=\mu_0\epsilon_0\bm{v}\
 
 #### 恒定电流磁场的 Gauss 定理
 
-$$\oint_S\bm{B}\cdot\mathrm{d}\bm{S}=0$$
-$$\nabla\cdot\bm{B}=0$$
+$$
+\oint_S\bm{B}\cdot\mathrm{d}\bm{S}=0
+$$
+
+$$
+\nabla\cdot\bm{B}=0
+$$
 
 #### Ampère 环路定理
 
-$$\oint_L\bm{B}\cdot\mathrm{d}\bm{l}=\bm{\mu}_0\sum_{i}I_i$$
+$$
+\oint_L\bm{B}\cdot\mathrm{d}\bm{l}=\bm{\mu}_0\sum_{i}I_i
+$$
+
 积分方向与电流方向满足右螺旋时取正值, 满足左螺旋时取负值
 
 又由
-$$\oint_L\bm{B}\cdot\mathrm{d}\bm{l}=\int_S(\nabla\times\bm{B})\cdot\mathrm{d}\bm{S}$$
-$$\sum_iI_i=\int_S\bm{j}\cdot\mathrm{d}\bm{S}$$
+
+$$
+\oint_L\bm{B}\cdot\mathrm{d}\bm{l}=\int_S(\nabla\times\bm{B})\cdot\mathrm{d}\bm{S}
+$$
+
+$$
+\sum_iI_i=\int_S\bm{j}\cdot\mathrm{d}\bm{S}
+$$
 
 则有微分形式
-$$\nabla\times\bm{B}=\mu_0\bm{j}$$
+
+$$
+\nabla\times\bm{B}=\mu_0\bm{j}
+$$
 
 - 磁场不是保守场
 
 #### 螺线管内一点的磁感应强度 (P310)
 
-$$B=\mu_0nI$$
+$$
+B=\mu_0nI
+$$
 
 - 只适用于真空中或非铁磁材料中
 
 #### 螺绕环内的磁感应强度 (P311)
 
-$$B=\mu_0nI$$
+$$
+B=\mu_0nI
+$$
 
 - 只适用于真空中或非铁磁材料中
 
@@ -597,13 +789,21 @@ $$B=\mu_0nI$$
 
 #### Ampère 定律
 
-$$\mathrm{d}\bm{F}=I\mathrm{d}\bm{l}\times\bm{B}$$
-$$\bm{F}=\int_LI\mathrm{d}\bm{l}\times\bm{B}$$
+$$
+\mathrm{d}\bm{F}=I\mathrm{d}\bm{l}\times\bm{B}
+$$
+
+$$
+\bm{F}=\int_LI\mathrm{d}\bm{l}\times\bm{B}
+$$
 
 #### 两平行长直导线的相互作用
 
 单位长度所受力
-$$f=\frac{\mu_0}{4\pi}\frac{2I_1I_2}{a}$$
+
+$$
+f=\frac{\mu_0}{4\pi}\frac{2I_1I_2}{a}
+$$
 
 电流方向相同则相互吸引
 
@@ -611,7 +811,9 @@ $$f=\frac{\mu_0}{4\pi}\frac{2I_1I_2}{a}$$
 
 规定线圈平面法向于电流方向满足右螺旋关系
 
-$$\bm{M}=\bm{m}\times\bm{B}$$
+$$
+\bm{M}=\bm{m}\times\bm{B}
+$$
 
 $\alpha:=\lang\bm{B},\bm{m}\rang$
 
@@ -641,7 +843,9 @@ $\alpha:=\lang\bm{B},\bm{m}\rang$
 - 磁化
 - 磁化强度: 单位体积内分子磁矩矢量和
 
-  $$\bm{M}:={\sum\bm{m}\over\Delta\tau}$$
+  $$
+  \bm{M}:={\sum\bm{m}\over\Delta\tau}
+  $$
 
 - 均匀磁化
 
@@ -651,12 +855,18 @@ $i'$
 
 螺线管内部:
 
-- $$M=i'$$
-- $$\bm{B}=\bm{B}_0+\mu_0\bm{M}$$
+- $$
+  M=i'
+  $$
+- $$
+  \bm{B}=\bm{B}_0+\mu_0\bm{M}
+  $$
 
 #### 磁化强度与磁化电流的关系
 
-$$\oint_L\bm{M}\cdot\mathrm{d}\bm{l}=\sum_{\text{In}~L}I'$$
+$$
+\oint_L\bm{M}\cdot\mathrm{d}\bm{l}=\sum_{\text{In}~L}I'
+$$
 
 - 介质表面: $\bm{M}\times\bm{e}_n=\bm{i}'$
 
@@ -665,18 +875,30 @@ $$\oint_L\bm{M}\cdot\mathrm{d}\bm{l}=\sum_{\text{In}~L}I'$$
 #### 有磁介质的 Ampère 环路定理
 
 - 磁场强度
-  $$\bm{H}:={\bm{B}\over\mu_0}-\bm{M}$$
+  $$
+  \bm{H}:={\bm{B}\over\mu_0}-\bm{M}
+  $$
 
-$$\oint_L\bm{H}\cdot\mathrm{d}\bm{l}=\int_V\bm{j}_0\cdot\mathrm{d}\bm{S}$$
+$$
+\oint_L\bm{H}\cdot\mathrm{d}\bm{l}=\int_V\bm{j}_0\cdot\mathrm{d}\bm{S}
+$$
+
 其中 $\bm{j}_0$ 为传导密度, $S$ 是以 $L$ 为边界的曲面
-$$\nabla\times\bm{H}=\bm{j}_0$$
+
+$$
+\nabla\times\bm{H}=\bm{j}_0
+$$
 
 - 对于各向同性的顺磁质和抗磁质
 
   - 磁化率 $\chi_m$
-    $$\bm{M}=\chi_m\bm{H}$$
+    $$
+    \bm{M}=\chi_m\bm{H}
+    $$
   - 相对磁导率 $\mu_r:=1+\chi_m$
-    $$\bm{B}=\mu_0\mu_r\bm{H}$$
+    $$
+    \bm{B}=\mu_0\mu_r\bm{H}
+    $$
   - 绝对磁导率 $\mu:=\mu_0\mu_r$
 
   - 顺磁质: $\chi_m>0,\mu_r\gtrapprox 1$
@@ -733,7 +955,10 @@ $$\nabla\times\bm{H}=\bm{j}_0$$
 ### 电磁感应及其基本规律
 
 - 感应电荷
-  $$q_i=\int_{t_1}^{t_2}I_i\mathrm{d}t=\int_{\Phi_1}^{\Phi_2}-\frac{1}{R}\mathrm{d}\Phi=\frac{\Phi_1-\Phi_2}{R}$$
+
+  $$
+  q_i=\int_{t_1}^{t_2}I_i\mathrm{d}t=\int_{\Phi_1}^{\Phi_2}-\frac{1}{R}\mathrm{d}\Phi=\frac{\Phi_1-\Phi_2}{R}
+  $$
 
 - 动生电动势
   - 不闭合导体
@@ -749,8 +974,13 @@ $$\nabla\times\bm{H}=\bm{j}_0$$
 
 - 全电场 $\bm{E}=\bm{E}_C+\bm{E}_W$
 
-  $$\oint_L\bm{E}\cdot\mathrm{d}\bm{l}=-\int_S{\partial\bm{B}\over\partial t}\cdot\mathrm{d}\bm{S}$$
-  $$\nabla\times\bm{E}=-{\partial\bm{B}\over\partial t}$$
+  $$
+  \oint_L\bm{E}\cdot\mathrm{d}\bm{l}=-\int_S{\partial\bm{B}\over\partial t}\cdot\mathrm{d}\bm{S}
+  $$
+
+  $$
+  \nabla\times\bm{E}=-{\partial\bm{B}\over\partial t}
+  $$
 
 - 感生电场与磁场变化率成**左螺旋**关系
 
@@ -758,12 +988,21 @@ $$\nabla\times\bm{H}=\bm{j}_0$$
 
 #### 互感
 
-$$\Phi_{12}=M_{12}I_1$$
+$$
+\Phi_{12}=M_{12}I_1
+$$
 
 - 互感电动势
-  $$\epsilon_2=-{\mathrm{d}\over\mathrm{d}t}(M_{12}I_1)$$
+
+  $$
+  \epsilon_2=-{\mathrm{d}\over\mathrm{d}t}(M_{12}I_1)
+  $$
+
   线圈的**形状**, **大小**和**相对位置**保持不变时
-  $$\epsilon_2=-M_{12}{\mathrm{d}I_1\over\mathrm{d}t}$$
+
+  $$
+  \epsilon_2=-M_{12}{\mathrm{d}I_1\over\mathrm{d}t}
+  $$
 
 - $M_{12}=M_{21}$
 - 当线圈内或周围空间没有**铁磁质**时, $M$ 仅由线圈**几何形状**, **大小**, **匝数**和**相对位置**决定
@@ -776,23 +1015,33 @@ $$\Phi_{12}=M_{12}I_1$$
 
 #### 自感
 
-$$\Phi=LI$$
+$$
+\Phi=LI
+$$
 
 - 自感电动势
-  $$\epsilon=-{\mathrm{d}\over\mathrm{d}t}(LI)$$
+  $$
+  \epsilon=-{\mathrm{d}\over\mathrm{d}t}(LI)
+  $$
   线圈的**形状**, **大小**保持不变, 且不存在**铁磁质**时
-  $$\epsilon=-L{\mathrm{d}I\over\mathrm{d}t}$$
+  $$
+  \epsilon=-L{\mathrm{d}I\over\mathrm{d}t}
+  $$
 - 单位: $\mathrm{H}$, $1\mathrm{ H}=1\mathrm{ Wb\cdot A^{-1}}=1\mathrm{ V\cdot s\cdot A^{-1}}$
 
 - 自感电弧
 
 #### 两嵌套螺线管的互感 (P10)
 
-$$M=\mu_0\frac{N_1N_2}{l}S$$
+$$
+M=\mu_0\frac{N_1N_2}{l}S
+$$
 
 #### 螺线管的自感 (P10)
 
-$$L=\mu n^2V$$
+$$
+L=\mu n^2V
+$$
 
 #### 两线圈串联后的自感
 
@@ -810,16 +1059,28 @@ $L_1,L_2,M$
 ### 磁场的能量
 
 - 磁场能量密度 $w_m$
-  $$w_m=\int_0^BH\mathrm{d}B$$
+
+  $$
+  w_m=\int_0^BH\mathrm{d}B
+  $$
 
   适用于真空和各向同性的磁介质
 
   - 各向同性的顺磁质和抗磁质
-    $$w_m=\frac{1}{2}BH$$
-    $$W_m=\int_Vw_m\mathrm{d}V=\frac{1}{2}\int_VBH\mathrm{d}V$$
+
+    $$
+    w_m=\frac{1}{2}BH
+    $$
+
+    $$
+    W_m=\int_Vw_m\mathrm{d}V=\frac{1}{2}\int_VBH\mathrm{d}V
+    $$
 
     - 由各向同性的顺磁质或抗磁质作为磁芯的螺线管 (自感磁能)
-      $$W_m=\frac{1}{2}LI^2$$
+
+      $$
+      W_m=\frac{1}{2}LI^2
+      $$
 
 - 电磁场
   - 能量密度 $w=\frac{1}{2}(\bm{E}\cdot\bm{D}+\bm{B}\cdot\bm{H})$
@@ -829,12 +1090,18 @@ $L_1,L_2,M$
 
 - 临界温度 $T_C$
 - 临界磁场
-  $$B_C(T)=B_0\left(1-\left(\frac{T}{T_C}\right)^2\right)$$
+
+  $$
+  B_C(T)=B_0\left(1-\left(\frac{T}{T_C}\right)^2\right)
+  $$
 
 - 超导态: $T<T_C$ 且 $B<B_C$
 
 - 临界电流
-  $$I_C(T)=I_0\left(1-\left(\frac{T}{T_C}\right)^2\right)$$
+
+  $$
+  I_C(T)=I_0\left(1-\left(\frac{T}{T_C}\right)^2\right)
+  $$
 
   $I>I_C$ 时, 超导态变为正常态
 
@@ -852,7 +1119,9 @@ $L_1,L_2,M$
 
 #### 位移电流
 
-$$\bm{j}_d:={\partial\bm{D}\over\partial t}=\epsilon{\partial\bm{E}\over\partial t}+{\partial\bm{P}\over\partial t}$$
+$$
+\bm{j}_d:={\partial\bm{D}\over\partial t}=\epsilon{\partial\bm{E}\over\partial t}+{\partial\bm{P}\over\partial t}
+$$
 
 - 全电流密度 $\bm{j}:=\bm{j}_0+\bm{j}_d$
 
@@ -861,13 +1130,28 @@ $$\bm{j}_d:={\partial\bm{D}\over\partial t}=\epsilon{\partial\bm{E}\over\partial
 适用于恒静和变化的电磁场
 
 - Gauss 定理
-  $$\oint_S\bm{D}\cdot\mathrm{d}\bm{S}=\int_V\rho_0\mathrm{d}V$$
+
+  $$
+  \oint_S\bm{D}\cdot\mathrm{d}\bm{S}=\int_V\rho_0\mathrm{d}V
+  $$
+
 - 电场环路定理
-  $$\oint_L\bm{E}\cdot\mathrm{d}\bm{l}=-\int_S{\partial\bm{B}\over\partial t}\cdot\mathrm{d}\bm{S}$$
+
+  $$
+  \oint_L\bm{E}\cdot\mathrm{d}\bm{l}=-\int_S{\partial\bm{B}\over\partial t}\cdot\mathrm{d}\bm{S}
+  $$
+
 - 磁场的 Gauss 定理
-  $$\oint_S\bm{B}\cdot\mathrm{d}S=0$$
+
+  $$
+  \oint_S\bm{B}\cdot\mathrm{d}S=0
+  $$
+
 - Ampère 环路定理
-  $$\oint_L\bm{H}\cdot\mathrm{d}\bm{l}=\int_S\left(\bm{j}_0+{\partial\bm{D}\over\partial t}\right)\cdot\mathrm{d}\bm{S}$$
+
+  $$
+  \oint_L\bm{H}\cdot\mathrm{d}\bm{l}=\int_S\left(\bm{j}_0+{\partial\bm{D}\over\partial t}\right)\cdot\mathrm{d}\bm{S}
+  $$
 
 ##### 积分形式
 
@@ -918,7 +1202,9 @@ $$
 
 #### LC 振荡电路
 
-$$f={1\over2\pi\sqrt{LC}}$$
+$$
+f={1\over2\pi\sqrt{LC}}
+$$
 
 - 发射电磁波的条件
   - 频率高
@@ -960,34 +1246,59 @@ $$f={1\over2\pi\sqrt{LC}}$$
 
 ##### 阻抗和相位差
 
-$$Z:=\frac{U_0}{I_0}=\frac{U}{I}$$
+$$
+Z:=\frac{U_0}{I_0}=\frac{U}{I}
+$$
 
 > 因为相位差, 所以瞬时值不能写成类似关系
 
-$$\varphi:=\varphi_u-\varphi_i$$
+$$
+\varphi:=\varphi_u-\varphi_i
+$$
 
 #### 纯电阻
 
-$$Z=R,\varphi=0$$
+$$
+Z=R,\varphi=0
+$$
 
 > 阻抗仅在频率不太高的时候成立 (趋肤效应)
 
-$$u(t)=U_0\cos\omega t$$
-$$i(t)=I_0\cos\omega t$$
+$$
+u(t)=U_0\cos\omega t
+$$
+
+$$
+i(t)=I_0\cos\omega t
+$$
 
 #### 纯电感
 
-$$Z=\omega L,\varphi=\frac{\pi}{2}$$
+$$
+Z=\omega L,\varphi=\frac{\pi}{2}
+$$
 
-$$u(t)=U_0\cos\omega t$$
-$$i(t)=I_0\cos(\omega t-\frac{\pi}{2})$$
+$$
+u(t)=U_0\cos\omega t
+$$
+
+$$
+i(t)=I_0\cos(\omega t-\frac{\pi}{2})
+$$
 
 #### 纯电容
 
-$$Z=\frac{1}{\omega C},\varphi=-\frac{\pi}{2}$$
+$$
+Z=\frac{1}{\omega C},\varphi=-\frac{\pi}{2}
+$$
 
-$$u(t)=U_0\cos\omega t$$
-$$i(t)=I_0\cos(\omega t+\frac{\pi}{2})$$
+$$
+u(t)=U_0\cos\omega t
+$$
+
+$$
+i(t)=I_0\cos(\omega t+\frac{\pi}{2})
+$$
 
 ### 交流电路的矢量图解法
 
@@ -996,40 +1307,71 @@ $$i(t)=I_0\cos(\omega t+\frac{\pi}{2})$$
 
 ### 交流电路的复数解法
 
-$$\tilde{U}=U_0e^{j(\omega t+\varphi_u)}$$
-$$\tilde{I}=I_0e^{j(\omega t+\varphi_i)}$$
-$$\tilde{Z}={\tilde{U}\over\tilde{I}}=Ze^{j\varphi}$$
+$$
+\tilde{U}=U_0e^{j(\omega t+\varphi_u)}
+$$
+
+$$
+\tilde{I}=I_0e^{j(\omega t+\varphi_i)}
+$$
+
+$$
+\tilde{Z}={\tilde{U}\over\tilde{I}}=Ze^{j\varphi}
+$$
 
 #### 电阻
 
-$$\tilde{Z}_R=R$$
+$$
+\tilde{Z}_R=R
+$$
 
 #### 电感
 
-$$\tilde{Z}_L=j\omega L$$
+$$
+\tilde{Z}_L=j\omega L
+$$
 
 #### 电容
 
-$$\tilde{Z}_C=\frac{1}{j\omega C}$$
+$$
+\tilde{Z}_C=\frac{1}{j\omega C}
+$$
 
 #### 串联电路
 
-$$\tilde{U}=\sum_i\tilde{U_i}$$
-$$\tilde{Z}=\sum_i\tilde{Z_i}$$
+$$
+\tilde{U}=\sum_i\tilde{U_i}
+$$
+
+$$
+\tilde{Z}=\sum_i\tilde{Z_i}
+$$
 
 #### 并联电路
 
-$$\tilde{I}=\sum_i\tilde{I_i}$$
-$${1\over\tilde{Z}}=\sum_i{1\over\tilde{Z_i}}$$
+$$
+\tilde{I}=\sum_i\tilde{I_i}
+$$
+
+$$
+{1\over\tilde{Z}}=\sum_i{1\over\tilde{Z_i}}
+$$
 
 #### Kirchhoff 方程组
 
-$$\sum\pm\tilde{I}=0$$
-$$\sum\pm\tilde{I}\tilde{Z}=\sum\pm\tilde{E}$$
+$$
+\sum\pm\tilde{I}=0
+$$
+
+$$
+\sum\pm\tilde{I}\tilde{Z}=\sum\pm\tilde{E}
+$$
 
 #### RLC 串联电路
 
-$$\tilde{Z}=R+j\left(\omega L-\frac{1}{\omega C}\right)$$
+$$
+\tilde{Z}=R+j\left(\omega L-\frac{1}{\omega C}\right)
+$$
 
 - $\omega<{1\over\sqrt{LC}}$: 电压落后电流, 表现为容抗性
 
@@ -1037,13 +1379,17 @@ $$\tilde{Z}=R+j\left(\omega L-\frac{1}{\omega C}\right)$$
 
 #### 瞬时功率
 
-$$p(t)=u(t)i(t)=\frac{1}{2}U_0I_0(\cos\varphi+\cos(2\omega t-\varphi))=UI(\cos\varphi+\cos(2\omega t-\varphi))$$
+$$
+p(t)=u(t)i(t)=\frac{1}{2}U_0I_0(\cos\varphi+\cos(2\omega t-\varphi))=UI(\cos\varphi+\cos(2\omega t-\varphi))
+$$
 
 > 和差化积: $\cos\varphi+\cos(2\omega t-\varphi)=2\cos\omega t\cos\varphi$
 
 #### 平均功率
 
-$$P=\frac{1}{T}\int_0^Tp(t)\mathrm{d}t=UI\cos\varphi$$
+$$
+P=\frac{1}{T}\int_0^Tp(t)\mathrm{d}t=UI\cos\varphi
+$$
 
 - $\cos\varphi$: 功率因数, 有功功率在视在功率中所占比例
 
@@ -1051,29 +1397,42 @@ $$P=\frac{1}{T}\int_0^Tp(t)\mathrm{d}t=UI\cos\varphi$$
   - 纯电感/纯电容电路: $P=0$, 正值功率等于负值功率
 
 - 视在功率
-  $$S=UI$$
+
+  $$
+  S=UI
+  $$
 
   单位: $\mathrm{V\cdot A}$
 
   - 额定视在功率 (容量)
 
 - 有功功率
-  $$P=I^2Z\cos\varphi=I^2\Re\tilde{Z}$$
+
+  $$
+  P=I^2Z\cos\varphi=I^2\Re\tilde{Z}
+  $$
 
   单位: $\mathrm{W}$
 
 - 无功功率
-  $$P_q=I^2Z\sin\varphi=I^2\Im\tilde{Z}$$
+
+  $$
+  P_q=I^2Z\sin\varphi=I^2\Im\tilde{Z}
+  $$
 
   单位: $\mathrm{Var}$
 
-$$S^2=P^2+P_q^2$$
+$$
+S^2=P^2+P_q^2
+$$
 
 ### 磁路和磁路定律
 
 #### 磁介质分界面上磁感应线的折射
 
-$$\frac{\tan i}{\tan r}={\mu_{r1}\over\mu_{r2}}$$
+$$
+\frac{\tan i}{\tan r}={\mu_{r1}\over\mu_{r2}}
+$$
 
 #### 磁路
 
@@ -1085,13 +1444,19 @@ $$\frac{\tan i}{\tan r}={\mu_{r1}\over\mu_{r2}}$$
 #### 磁路定律
 
 - 单回路
-  $$NI_0=\Phi\sum_i\frac{l_i}{\mu_iS_i}$$
+
+  $$
+  NI_0=\Phi\sum_i\frac{l_i}{\mu_iS_i}
+  $$
 
   - $NI_0$: 磁通势, $\epsilon_m$
   - $\frac{l_i}{\mu_iS_i}$: 磁阻, $R_{mi}$
   - $\Phi R_{mi}$: 磁势降落
 
-  $$\epsilon_n=\Phi\sum_iR_{mi}$$
+  $$
+  \epsilon_n=\Phi\sum_iR_{mi}
+  $$
+
   闭合磁路磁通势等于各段磁路上的磁势降落之和
 
 - 有效磁导率 (与相同空心螺绕环的比值) $\mu_e:=\frac{\Phi}{\Phi_0}$

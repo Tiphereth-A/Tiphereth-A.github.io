@@ -39,17 +39,26 @@ date: 2020-01-27 15:40:12
 1. $\Rightarrow O(n^2m)$: 前缀和 (计算异或和: $O(n)\Rightarrow O(1)$)
 
    令
-   $$s_i:=\bigoplus_{i=1}^x a_i$$
+
+   $$
+   s_i:=\bigoplus_{i=1}^x a_i
+   $$
 
    则
-   $$\bigoplus_{i=l}^r a_i=s_{l-1}\oplus s_r$$
+
+   $$
+   \bigoplus_{i=l}^r a_i=s_{l-1}\oplus s_r
+   $$
 
 1. $\Rightarrow O(nm)$: 莫队
 
    - 转换思路
 
      注意到
-     $$a\oplus b=c\iff a\oplus c=b$$
+
+     $$
+     a\oplus b=c\iff a\oplus c=b
+     $$
 
      用一个桶`cnt[x]`记录当前区间内`s[i]=x`的个数
 

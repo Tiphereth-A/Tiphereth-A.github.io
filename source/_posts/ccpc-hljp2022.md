@@ -113,7 +113,9 @@ date: 2022-05-19 22:01:18
 
 不妨设 $b_i$ 无平方因子, 则所求即为
 
-$$\sum_{i=1}^m\sum_{j=1}^mf(i,j)\frac{ij}{(i,j)^2}$$
+$$
+\sum_{i=1}^m\sum_{j=1}^mf(i,j)\frac{ij}{(i,j)^2}
+$$
 
 其中
 
@@ -122,11 +124,15 @@ $$\sum_{i=1}^m\sum_{j=1}^mf(i,j)\frac{ij}{(i,j)^2}$$
 
 然后就是经典莫反, 可化为
 
-$$\sum_{d=1}^mF(d)(\mu*\{n^{-2}\})(d)$$
+$$
+\sum_{d=1}^mF(d)(\mu*\{n^{-2}\})(d)
+$$
 
 其中
 
-$$F(d)=\left(\sum_{i=1}^n b_i[d|b_i]\right)^2$$
+$$
+F(d)=\left(\sum_{i=1}^n b_i[d|b_i]\right)^2
+$$
 
 ### 复杂度
 

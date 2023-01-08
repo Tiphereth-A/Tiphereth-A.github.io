@@ -277,7 +277,9 @@ Slitherlink, 连边时有代价, 问最小代价
 
 考虑单个素因子 $p$, 设 $p^{\alpha_i}\mid a_i$, $p^{\alpha_i+1}\mid a_i$, 则答案显然为
 
-$$p^{\min\left\{n-\sum_{i=1}^n(\alpha_i\bmod 2),\sum_{i=1}^n(\alpha_i\bmod 2)\right\}}$$
+$$
+p^{\min\left\{n-\sum_{i=1}^n(\alpha_i\bmod 2),\sum_{i=1}^n(\alpha_i\bmod 2)\right\}}
+$$
 
 然后对每个素因子的答案乘起来就行了
 

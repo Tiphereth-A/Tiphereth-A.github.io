@@ -33,7 +33,10 @@ date: 2020-12-03 01:32:35
 1. 若只有三点 $a,b,c$, 且 $t_a\geqslant t_b\geqslant t_c$, 我们只有两种加边顺序
 
    1. 若最终的树为 `a-b-c` 或 `a-c-b`, 则最小代价为
-      $$\min\{(t_a+t_b)+(t_b+t_c),(t_a+t_b)+(t_a+t_c)\}=t_a+2t_b+t_c$$
+
+      $$
+      \min\{(t_a+t_b)+(t_b+t_c),(t_a+t_b)+(t_a+t_c)\}=t_a+2t_b+t_c
+      $$
 
       对应的策略为先在 $b,c$ 间加边, 即先在点权较小的点之间加边
 
@@ -79,7 +82,10 @@ date: 2020-12-03 01:32:35
 继续一个点一个点的加下去, 我们不难总结出下式:
 
 构成树 $M$ 的最小代价为
-$$\sum_{i\in M}t_i+\sum_{x,y\in M;x,y~\text{connected}}\max\{t_x,t_y\}-\max_{i\in M}\{t_i\}$$
+
+$$
+\sum_{i\in M}t_i+\sum_{x,y\in M;x,y~\text{connected}}\max\{t_x,t_y\}-\max_{i\in M}\{t_i\}
+$$
 
 而树与树的连接是否也满足该式呢
 
@@ -90,12 +96,25 @@ $$\sum_{i\in M}t_i+\sum_{x,y\in M;x,y~\text{connected}}\max\{t_x,t_y\}-\max_{i\i
 则最小代价为 $f(A)+f(B)+t_a+t_b$
 
 将 $f(A)$ 和 $f(B)$ 代入, 又注意到
-$$t_a=\max_{i\in A}\{t_i\}$$
-$$t_b=\max_{i\in B}\{t_i\}$$
+
+$$
+t_a=\max_{i\in A}\{t_i\}
+$$
+
+$$
+t_b=\max_{i\in B}\{t_i\}
+$$
+
 故最小代价为
-$$\sum_{i\in C}t_i+\sum_{u,v\in C;u,v~\text{connected}}\max\{t_u,t_v\}-\max\{t_x,t_y\}$$
+
+$$
+\sum_{i\in C}t_i+\sum_{u,v\in C;u,v~\text{connected}}\max\{t_u,t_v\}-\max\{t_x,t_y\}
+$$
 
 此时我们回想一下断开边的过程, 我们惊奇地发现: $x$ 就是 $a$, $y$ 就是 $b$
 
 所以最小代价即为
-$$\sum_{i\in C}t_i+\sum_{u,v\in C;u,v~\text{connected}}\max\{t_u,t_v\}-\max_{i\in C}\{t_i\}$$
+
+$$
+\sum_{i\in C}t_i+\sum_{u,v\in C;u,v~\text{connected}}\max\{t_u,t_v\}-\max_{i\in C}\{t_i\}
+$$

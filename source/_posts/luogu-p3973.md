@@ -68,7 +68,9 @@ date: 2022-10-31 21:38:14
 
 式子不难写出来, 即求:
 
-$$\max_{a_i\in\{0,1\}}\left\{\sum_i\sum_j a_ia_jb_{ij}-\sum_i a_ic_i\right\}$$
+$$
+\max_{a_i\in\{0,1\}}\left\{\sum_i\sum_j a_ia_jb_{ij}-\sum_i a_ic_i\right\}
+$$
 
 注意到如果 $a_i$ 为 $1$ 则答案会减 $c_i$, 而如果答案包含 $b_{ij}$ 的话则需选 $a_i$ 和 $a_j$
 

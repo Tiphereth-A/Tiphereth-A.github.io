@@ -34,12 +34,17 @@ date: 2020-10-05 00:52:51
 
 ### <a href="#end-t-1.1" id="t-1.1">定理 - 1.1</a>
 
-$$\forall a,b,c\in\mathbb{Z},\left\lfloor\frac{a}{bc}\right\rfloor=\left\lfloor{\left\lfloor\frac{a}{b}\right\rfloor\over c}\right\rfloor$$
+$$
+\forall a,b,c\in\mathbb{Z},\left\lfloor\frac{a}{bc}\right\rfloor=\left\lfloor{\left\lfloor\frac{a}{b}\right\rfloor\over c}\right\rfloor
+$$
 
 #### <a href="#t-1.1" id="p-t-1.1">证明</a>
 
 注意到
-$$\frac{a}{b}=\left\lfloor\frac{a}{b}\right\rfloor+\left\{ \frac{a}{b}\right\}$$
+
+$$
+\frac{a}{b}=\left\lfloor\frac{a}{b}\right\rfloor+\left\{ \frac{a}{b}\right\}
+$$
 
 其中 $\{ \frac{a}{b}\}$ 是 $a\over b$ 的小数部分
 
@@ -61,7 +66,10 @@ $$
 对任意正整数 $n$, $\lfloor\frac{n}{i}\rfloor,~i=1,2,...,n$ 的取值不超过 $\lfloor2\sqrt{n}\rfloor$ 种
 
 即
-$$\forall n\in\mathbb{N}^*,\left|\left\{\left\lfloor\frac{n}{i}\right\rfloor\big|~i=1,2,...,n\right\}\right|\leqslant\lfloor2\sqrt{n}\rfloor$$
+
+$$
+\forall n\in\mathbb{N}^*,\left|\left\{\left\lfloor\frac{n}{i}\right\rfloor\big|~i=1,2,...,n\right\}\right|\leqslant\lfloor2\sqrt{n}\rfloor
+$$
 
 #### <a href="#t-1.2" id="p-t-1.2">证明</a>
 
@@ -104,10 +112,16 @@ $$\forall n\in\mathbb{N}^*,\left|\left\{\left\lfloor\frac{n}{i}\right\rfloor\big
 关键就在于如何求 $r$
 
 令 $\lfloor\frac{n}{l}\rfloor=k_l$, 不难发现
-$$r=\max_{ik_l\leqslant n}\{i\}$$
+
+$$
+r=\max_{ik_l\leqslant n}\{i\}
+$$
 
 显然
-$$r=\left\lfloor\frac{n}{k_l}\right\rfloor=\left\lfloor{n\over{\lfloor\frac{n}{l}\rfloor} }\right\rfloor$$
+
+$$
+r=\left\lfloor\frac{n}{k_l}\right\rfloor=\left\lfloor{n\over{\lfloor\frac{n}{l}\rfloor} }\right\rfloor
+$$
 
 <details open>
 <summary><font color='orange'>Show code</font></summary>
@@ -125,15 +139,24 @@ $$r=\left\lfloor\frac{n}{k_l}\right\rfloor=\left\lfloor{n\over{\lfloor\frac{n}{l
 - 如何求 $\sum_{i=1}^{\min\{m,n\}}\lfloor\frac{n}{i}\rfloor\lfloor\frac{m}{j}\rfloor$
 
   只需令
-  $$r=\min\left\{\left\lfloor{n\over{\lfloor\frac{n}{l}\rfloor} }\right\rfloor,\left\lfloor{m\over{\lfloor\frac{m}{l}\rfloor} }\right\rfloor\right\}$$
+
+  $$
+  r=\min\left\{\left\lfloor{n\over{\lfloor\frac{n}{l}\rfloor} }\right\rfloor,\left\lfloor{m\over{\lfloor\frac{m}{l}\rfloor} }\right\rfloor\right\}
+  $$
 
 - 如何求 $\sum_{i=1}^n\lfloor\frac{n}{ai+b}\rfloor$
 
   令 $\lfloor\frac{n}{al+b}\rfloor=k_l$, 不难发现
-  $$r=\max_{aik_l\leqslant n-bk_l}\{i\}$$
+
+  $$
+  r=\max_{aik_l\leqslant n-bk_l}\{i\}
+  $$
 
   显然
-  $$r=\left\lfloor\frac{n-bk_l}{ak_l}\right\rfloor$$
+
+  $$
+  r=\left\lfloor\frac{n-bk_l}{ak_l}\right\rfloor
+  $$
 
 ### 例题
 
@@ -162,10 +185,16 @@ $$r=\left\lfloor\frac{n}{k_l}\right\rfloor=\left\lfloor{n\over{\lfloor\frac{n}{l
 ## Dirichlet 卷积
 
 对数论函数 $f,g$, 定义其 Dirichlet 卷积为 $f*g$, 满足:
-$$(f*g)(n):=\displaystyle\sum_{d\mid n}f(d)g(\frac{n}{d})$$
+
+$$
+(f*g)(n):=\displaystyle\sum_{d\mid n}f(d)g(\frac{n}{d})
+$$
 
 如
-$$(f*g)(10)=f(1)g(10)+f(2)g(5)+f(5)g(2)+f(10)g(1)$$
+
+$$
+(f*g)(10)=f(1)g(10)+f(2)g(5)+f(5)g(2)+f(10)g(1)
+$$
 
 ### 性质
 
@@ -183,7 +212,10 @@ $$(f*g)(10)=f(1)g(10)+f(2)g(5)+f(5)g(2)+f(10)g(1)$$
 #### <a href="#end-t-3.1" id="t-3.1">定理 - 3.1</a> (结合律)
 
 令 $f,g,h$ 是数论函数, 则
-$$f*(g*h)=(f*g)*h$$
+
+$$
+f*(g*h)=(f*g)*h
+$$
 
 ##### <a href="#t-3.1" id="p-t-3.1">证明</a>
 
@@ -210,7 +242,10 @@ $$
 
 用于解决如下问题:
 给出 $a_1,a_2,\dots,a_n$, 求 $b_1,b_2,\dots,b_n$, 其中
-$$b_i=\sum_{j\mid i}a_j$$
+
+$$
+b_i=\sum_{j\mid i}a_j
+$$
 
 #### 算法流程
 
@@ -290,16 +325,28 @@ $\tau(n)$ 和 $\sigma(n)$ 是积性函数
 ##### <a href="#t-4.2" id="p-t-4.2">证明</a>
 
 令 $m,n$ 为两互素正整数, 则
-$$\tau(mn)=\sum_{d_1\mid m}\sum_{d_2\mid n}1=\left(\sum_{d_1\mid m}1\right)\left(\sum_{d_2\mid n}1\right)=\tau(m)\tau(n)$$
-$$\sigma(mn)=\sum_{d_1\mid m}\sum_{d_2\mid n}d_1d_2=\left(\sum_{d_1\mid m}d_1\right)\left(\sum_{d_2\mid n}d_2\right)=\sigma(m)\sigma(n)$$
+
+$$
+\tau(mn)=\sum_{d_1\mid m}\sum_{d_2\mid n}1=\left(\sum_{d_1\mid m}1\right)\left(\sum_{d_2\mid n}1\right)=\tau(m)\tau(n)
+$$
+
+$$
+\sigma(mn)=\sum_{d_1\mid m}\sum_{d_2\mid n}d_1d_2=\left(\sum_{d_1\mid m}d_1\right)\left(\sum_{d_2\mid n}d_2\right)=\sigma(m)\sigma(n)
+$$
 
 <a href="#p-t-4.2" id="end-t-4.2">$\Box$</a>
 
 #### <a href="#end-ifr-4.3" id="ifr-4.3">推论 - 4.3</a>
 
 设 $n$ 的标准分解式为 $n=\prod_{i=1}^rp_i^{\alpha_i}$, 则
-$$\tau(n)=\prod_{i=1}^r(\alpha_i+1)$$
-$$\sigma(n)=\prod_{i=1}^r{p_i^{\alpha_i+1}-1\over p_i-1}$$
+
+$$
+\tau(n)=\prod_{i=1}^r(\alpha_i+1)
+$$
+
+$$
+\sigma(n)=\prod_{i=1}^r{p_i^{\alpha_i+1}-1\over p_i-1}
+$$
 
 <a href="#ifr-4.3" id="end-ifr-4.3">$\Box$</a>
 
@@ -320,7 +367,11 @@ $$\sigma(n)=\prod_{i=1}^r{p_i^{\alpha_i+1}-1\over p_i-1}$$
    特别地, $\varphi(p)=p-1$
 
 1. (1,3 的推论) 设 $n=\prod_{i=1}^{\omega(n)}p_i^{\alpha_i}$, 则
-   $$\varphi(n)=\prod_{i=1}^{\omega(n)}p_i^{\alpha_i}\left(1-\frac{1}{p_i}\right)=n\prod_{i=1}^{\omega(n)}\frac{p_i-1}{p_i}$$
+
+   $$
+   \varphi(n)=\prod_{i=1}^{\omega(n)}p_i^{\alpha_i}\left(1-\frac{1}{p_i}\right)=n\prod_{i=1}^{\omega(n)}\frac{p_i-1}{p_i}
+   $$
+
 1. 当 $n>2$ 时, $\varphi(n)$ 为偶数
 
 下面给出性质 1 的证明
@@ -405,9 +456,16 @@ $$
 ### 性质
 
 1. $\mu$ 是积性函数
-1. $$\sum_{d\mid n}\mu(d)=\epsilon(n)$$
+1. $$
+   \sum_{d\mid n}\mu(d)=\epsilon(n)
+   $$
+
    即
-   $$\mu*\{1\}=\epsilon$$
+
+   $$
+   \mu*\{1\}=\epsilon
+   $$
+
 1. (2 的推论) $\displaystyle[(x,y)=1]=\sum_{d\mid (x,y)}\mu(d)$
 
 下面给出性质 1 和性质 2 的证明
@@ -421,20 +479,33 @@ $\forall m,n\in\mathbb{N}^*,~(m,n)=1\implies\mu(mn)=\mu(m)\mu(n)$
 设 $n,m$ 是互素的正整数, 若 $m$ 或 $n$ 有平方因子, 则 $\mu(mn)=0=\mu(m)\mu(n)$
 
 否则, 设
-$$m=\prod_{i=1}^rp_i,n=\prod_{i=1}^sq_i$$
+
+$$
+m=\prod_{i=1}^rp_i,n=\prod_{i=1}^sq_i
+$$
+
 其中 $p_1,p_2,\dots,p_r,q_1,q_2,\dots,q_s$ 是两两不同的素数
 
 从而 $mn=(\prod_{i=1}^rp_i)(\prod_{i=1}^sq_i)$ 是 $r+s$ 个不同素数的乘积, 有
-$$\mu(mn)=(-1)^{r+s}=(-1)^r(-1)^s=\mu(m)\mu(n)$$
+
+$$
+\mu(mn)=(-1)^{r+s}=(-1)^r(-1)^s=\mu(m)\mu(n)
+$$
 
 <a href="#p-t-6.1" id="end-t-6.1">$\Box$</a>
 
 #### <a href="#end-t-6.2-2" id="t-6.2">定理 - 6.2</a> (性质 2)
 
-$$\mu*\{1\}=\epsilon$$
+$$
+\mu*\{1\}=\epsilon
+$$
 
 令
-$$f(n)=(\mu*\{1\})(n)=\sum_{d\mid n}\mu(d)$$
+
+$$
+f(n)=(\mu*\{1\})(n)=\sum_{d\mid n}\mu(d)
+$$
+
 易得 $f(1)=\mu(1)=1$
 
 接下来不妨令 $n$ 为大于 $1$ 的整数, 下面给出两种证法
@@ -446,10 +517,16 @@ $$f(n)=(\mu*\{1\})(n)=\sum_{d\mid n}\mu(d)$$
 令 $D_{i}$ 表示 $p_1,p_2,\dots,p_r$ 中某 $i$ 个数的乘积构成的集合, 则 $\forall d\in D_i,~\mu(d)=(-1)^i$
 
 而
-$$|D_i|=\binom{r}{i}=\frac{r!}{i!(r-i)!}$$
+
+$$
+|D_i|=\binom{r}{i}=\frac{r!}{i!(r-i)!}
+$$
 
 因此
-$$f(n)=\sum_{i=1}^r\binom{r}{i}(-1)^i=(1-1)^r=0$$
+
+$$
+f(n)=\sum_{i=1}^r\binom{r}{i}(-1)^i=(1-1)^r=0
+$$
 
 <a href="#p-t-6.2-1" id="end-t-6.2-1">$\Box$</a>
 
@@ -460,7 +537,10 @@ $$f(n)=\sum_{i=1}^r\binom{r}{i}(-1)^i=(1-1)^r=0$$
 另一方面, $\epsilon$ 也为积性函数
 
 因此, 我们只需证
-$$\forall p\in\text{Prime}^+,\forall\alpha\in\mathbb{N}^*,~f(p^{\alpha})=\epsilon(p^{\alpha})$$
+
+$$
+\forall p\in\text{Prime}^+,\forall\alpha\in\mathbb{N}^*,~f(p^{\alpha})=\epsilon(p^{\alpha})
+$$
 
 对上述的 $p$ 和 $\alpha$, 一方面, $\epsilon(p^{\alpha})=0$
 
@@ -500,28 +580,46 @@ $$
 ### <a href="#end-t-7.1" id="t-7.1">定理 - 7.1</a>
 
 对于数论函数 $f,g$, 有
-$$f=g*\{1\}\iff g=f*\mu$$
+
+$$
+f=g*\{1\}\iff g=f*\mu
+$$
 
 或者写成
-$$\forall n\in\mathbb{N}^*,~f(n)=\sum_{d\mid n}g(d)\iff g(n)=\sum_{d\mid n}f(d)\mu\left(\frac{n}{d}\right)$$
+
+$$
+\forall n\in\mathbb{N}^*,~f(n)=\sum_{d\mid n}g(d)\iff g(n)=\sum_{d\mid n}f(d)\mu\left(\frac{n}{d}\right)
+$$
 
 #### <a href="#t-7.1" id="p-t-7.1">证明</a>
 
 如果用卷积证明的话十分简洁
-$$f=g*\{1\}\iff f*\mu=g*\{1\}*\mu=g*\epsilon=g$$
+
+$$
+f=g*\{1\}\iff f*\mu=g*\{1\}*\mu=g*\epsilon=g
+$$
 
 但这里我们给出不使用卷积运算法则的证明方法, 因为这是交换求和次序的绝佳练习, 交换求和次序也是应用 Möbius 反演解题的重要操作
 
 在这里复述一遍命题
-$$\forall n\in\mathbb{N}^*,~f(n)=\sum_{d\mid n}g(d)\tag{1}$$
-$$\forall n\in\mathbb{N}^*,~g(n)=\sum_{d\mid n}f(d)\mu\left(\frac{n}{d}\right)\tag{2}$$
+
+$$
+\forall n\in\mathbb{N}^*,~f(n)=\sum_{d\mid n}g(d)\tag{1}
+$$
+
+$$
+\forall n\in\mathbb{N}^*,~g(n)=\sum_{d\mid n}f(d)\mu\left(\frac{n}{d}\right)\tag{2}
+$$
 
 我们要证的即为 $(1)\iff(2)$
 
 先证 $(1)\implies(2)$
 
 若 $(1)$ 成立, 则有
-$$\sum_{d\mid n}f(d)\mu\left(\frac{n}{d}\right)=\sum_{d\mid n}\sum_{e\mid d}g(e)\mu\left(\frac{n}{d}\right)\tag{3}$$
+
+$$
+\sum_{d\mid n}f(d)\mu\left(\frac{n}{d}\right)=\sum_{d\mid n}\sum_{e\mid d}g(e)\mu\left(\frac{n}{d}\right)\tag{3}
+$$
 
 之后我们交换求和号, 即改变元素的枚举顺序
 
@@ -529,7 +627,10 @@ $$\sum_{d\mid n}f(d)\mu\left(\frac{n}{d}\right)=\sum_{d\mid n}\sum_{e\mid d}g(e)
 我们要改写成先枚举 $n$ 的因子 $e$, 再枚举 $d$, 此时的 $d$ 是 $n$ 的因子, 同时也是 $e$ 的倍数
 
 从而在交换求和号之后变为
-$$\sum_{e\mid n}\sum_{e\mid d\mid n}g(e)\mu\left(\frac{n}{d}\right)=\sum_{e\mid n}g(e)\sum_{e\mid d\mid n}\mu\left(\frac{n}{d}\right)\tag{4}$$
+
+$$
+\sum_{e\mid n}\sum_{e\mid d\mid n}g(e)\mu\left(\frac{n}{d}\right)=\sum_{e\mid n}g(e)\sum_{e\mid d\mid n}\mu\left(\frac{n}{d}\right)\tag{4}
+$$
 
 为什么要这么做呢?
 
@@ -538,7 +639,10 @@ $$\sum_{e\mid n}\sum_{e\mid d\mid n}g(e)\mu\left(\frac{n}{d}\right)=\sum_{e\mid 
 令 $d'=\frac{d}{e}$, 则条件 $e\mid d\mid n$ 等价于 $d'\mid\frac{n}{e}$
 
 而
-$$\frac{n}{d}=\frac{n}{e}\cdot\frac{e}{d}={ \frac{n}{e}\over d'}$$
+
+$$
+\frac{n}{d}=\frac{n}{e}\cdot\frac{e}{d}={ \frac{n}{e}\over d'}
+$$
 
 因此固定 $e$, 则有
 
@@ -605,7 +709,10 @@ $$
 ### <a href="#end-t-8.1" id="t-8.1">定理 - 8.1</a>
 
 设 $f,g$ 是数论函数, $S(n):=\sum_{i=1}^nf(i)$, 则
-$$g(1)S(n)=\sum_{i=1}^n(f*g)(i)-\sum_{i=2}^ng(i)S\left(\left\lfloor\frac{n}{i}\right\rfloor\right)$$
+
+$$
+g(1)S(n)=\sum_{i=1}^n(f*g)(i)-\sum_{i=2}^ng(i)S\left(\left\lfloor\frac{n}{i}\right\rfloor\right)
+$$
 
 #### <a href="#t-8.1" id="p-t-8.1">证明</a>
 
@@ -663,7 +770,9 @@ $$
 以线性筛作为预处理方式为例, 此时 $O(W(m))=O(m)$  
 由平均值不等式可知, 当 $m=(\frac{n}{2})^\frac{2}{3}$ 时, 其时间复杂度最小, 为 $O(n^\frac{2}{3})$
 
-> $$\frac{n}{\sqrt m}+m=\frac{n}{2\sqrt m}+\frac{n}{2\sqrt m}+m\geqslant\sqrt[3]{\frac{n}{2\sqrt m}\cdot\frac{n}{2\sqrt m}\cdot m}=\sqrt[3]{\frac{n^2}{4}}$$
+> $$
+> \frac{n}{\sqrt m}+m=\frac{n}{2\sqrt m}+\frac{n}{2\sqrt m}+m\geqslant\sqrt[3]{\frac{n}{2\sqrt m}\cdot\frac{n}{2\sqrt m}\cdot m}=\sqrt[3]{\frac{n^2}{4}}
+> $$
 >
 > 当 $\frac{n}{2\sqrt m}=m$, 即 $m=(\frac{n}{2})^\frac{2}{3}$ 时取得最小值
 

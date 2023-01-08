@@ -95,11 +95,15 @@ i=10 j=3 i^j=9
 
 首先规范一些记号, 题目要求的是
 
-$$\sum_{i=1}^n\sum_{j=1}^n[\min\{i,j\}\leqslant (i\oplus j)\leqslant \max\{i,j\}]$$
+$$
+\sum_{i=1}^n\sum_{j=1}^n[\min\{i,j\}\leqslant (i\oplus j)\leqslant \max\{i,j\}]
+$$
 
 显然, 上式等价于
 
-$$2\sum_{i=1}^n\sum_{j=1}^{i-1}[j\leqslant (i\oplus j)\leqslant i]$$
+$$
+2\sum_{i=1}^n\sum_{j=1}^{i-1}[j\leqslant (i\oplus j)\leqslant i]
+$$
 
 固定 $i$, 则 $j$ 能产生贡献当且仅当 $j$ 二进制最高位为 $i$ 二进制次高位
 

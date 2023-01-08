@@ -127,7 +127,11 @@ Taks2：试判断能否构造并构造一个长度为 $n$ 的 $1\dots n$ 的排�
   用自然语言描述就是: 奇数项从 $n$ 递减, 步长为 $2$; 偶数项从 $1$ 递增, 步长为 $2$
 
   此时有
-  $$S_x:=\sum_{i=1}^xa_i\equiv(-1)^x\left\lfloor\frac{x}{2}\right\rfloor\pmod n,~\forall x\in[1,n]\cap\mathbb{N}$$
+
+  $$
+  S_x:=\sum_{i=1}^xa_i\equiv(-1)^x\left\lfloor\frac{x}{2}\right\rfloor\pmod n,~\forall x\in[1,n]\cap\mathbb{N}
+  $$
+
   换种写法就是 $S_1=\overline{0},~S_2=\overline{1}~,S_3=\overline{-1},...,S_{n-1}=\overline\frac{n}{2}~,S_n=\overline{-\frac{n}{2}}$
 
 - 对于 Task2:

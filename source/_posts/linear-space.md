@@ -149,7 +149,9 @@ $2\implies3$,
 
 令 $\beta=\beta_1+\beta_2,\beta_1\in V_1,\beta_2\in V_2$, 若 $\theta=\alpha_1+\alpha_2,~\alpha_1\ne\theta,\alpha_1\in V_1,\alpha_2\in V_2$, 则
 
-$$\beta=\beta+\theta=(\beta_1+\alpha_1)+(\beta_2+\alpha_2)$$
+$$
+\beta=\beta+\theta=(\beta_1+\alpha_1)+(\beta_2+\alpha_2)
+$$
 
 而 $\beta_1\ne\beta_1+\alpha_1$, 与条件矛盾
 
@@ -164,7 +166,9 @@ $4\implies1$,
 
 则
 
-$$\theta\ne\beta_1-\gamma_1=\gamma_2-\beta_2\in V_1\cap V_2$$
+$$
+\theta\ne\beta_1-\gamma_1=\gamma_2-\beta_2\in V_1\cap V_2
+$$
 
 与条件矛盾
 
@@ -188,7 +192,10 @@ $$\theta\ne\beta_1-\gamma_1=\gamma_2-\beta_2\in V_1\cap V_2$$
 ### (有限)生成集与维数
 
 令 $V$ 为 $\mathbb{P}$ 上一线性空间, $\varnothing\ne S\subseteq V$, 称 $S$ 为 $V$ 的生成集, 如果
-$$(\forall\alpha\in V,\exists n\in\mathbb{N}^+,\alpha_0,\alpha_1,\dots,\alpha_n\in S,k_0,k_1,\dots,k_n\in\mathbb{P}),\alpha=\displaystyle\sum_{i=1}^nk_i\alpha_i$$
+
+$$
+(\forall\alpha\in V,\exists n\in\mathbb{N}^+,\alpha_0,\alpha_1,\dots,\alpha_n\in S,k_0,k_1,\dots,k_n\in\mathbb{P}),\alpha=\displaystyle\sum_{i=1}^nk_i\alpha_i
+$$
 
 (就是能线性表出 $V$ 中任意向量的一组向量)
 
@@ -202,7 +209,9 @@ $\operatorname{rk}S$ 即为 $V$ 的维数, 记作 $\dim V$
 
 令 $V$ 为 $\mathbb{P}$ 上一线性空间, $\epsilon_0,\epsilon_1,\dots,\epsilon_n$ 为 $V$ 的一组极大线性无关组, 则
 
-$$(\forall\alpha\in V,\existsk_0,k_1,\dots,k_n\in\mathbb{P}),\alpha=\displaystyle\sum_{i=1}^nk_i\epsilon_i$$
+$$
+(\forall\alpha\in V,\existsk_0,k_1,\dots,k_n\in\mathbb{P}),\alpha=\displaystyle\sum_{i=1}^nk_i\epsilon_i
+$$
 
 则称有序向量组 $(\epsilon_0,\epsilon_1,\dots,\epsilon_n)$ 为 $V$ 的一组基底
 
@@ -228,7 +237,9 @@ $(k_0,k_1,\dots,k_n)\in\mathbb{P}^n$ 为 $\alpha$ 在该基底下的坐标
 
 令 $V$ 为有限维线性空间, $V_1,V_2\leqslant V$, 则
 
-$$\dim(V_1+V_2)+\dim(V_1\cap V_2)=\dim V_1+\dim V_2$$
+$$
+\dim(V_1+V_2)+\dim(V_1\cap V_2)=\dim V_1+\dim V_2
+$$
 
 #### <a href="#t-3-1" id="p-t-3-1">证明</a>
 
@@ -273,7 +284,9 @@ $\displaystyle\sum_{i=1}^lr_i\alpha_i+\sum_{i=1}^{n_2-l}q_i\gamma_i=\theta\impli
 
 假设 $\dim W\geqslant2$, 则 $W$ 中存在两线性无关向量 $\alpha=(a_1,a_2,\dots,a_n),\beta=(b_1,b_2,\dots,b_n)$ 满足
 
-$$(\exists1<i\leqslant n),k:=\frac{a_1}{b_1}\ne\frac{a_i}{b_i}$$
+$$
+(\exists1<i\leqslant n),k:=\frac{a_1}{b_1}\ne\frac{a_i}{b_i}
+$$
 
 从而 $\alpha-k\beta=(0,...,a_i-kb_i,...,a_n-kb_n)\in W, a_i-kb_i\ne0$, 矛盾!
 
@@ -331,7 +344,9 @@ $$
 
 设 $(\epsilon_0,\epsilon_1,\dots,\epsilon_n)$ 和 $(\epsilon'_0,\epsilon'_1,\dots,\epsilon'_n)$ 是 $V$ 的两组基底, 则 $\exists T\in\mathbb{P}^{n\times n}$ 使得
 
-$$(\epsilon'_0,\epsilon'_1,\dots,\epsilon'_n)=(\epsilon_0,\epsilon_1,\dots,\epsilon_n)T\tag{1}$$
+$$
+(\epsilon'_0,\epsilon'_1,\dots,\epsilon'_n)=(\epsilon_0,\epsilon_1,\dots,\epsilon_n)T\tag{1}
+$$
 
 则称 $T$ 为 $(\epsilon_0,\epsilon_1,\dots,\epsilon_n)$ 到 $(\epsilon'_0,\epsilon'_1,\dots,\epsilon'_n)$ 的过渡矩阵
 
@@ -425,7 +440,9 @@ $\mathbb{P}$ 上线性空间 $V_1,V_2$ 同构 $\iff\dim V_1=\dim V_2$
 
 注意到 $\mathbb{P}^n$ 中形如
 
-$$(1,a,a^2,...,a^{n-1}),a\in\mathbb{N}^*$$
+$$
+(1,a,a^2,...,a^{n-1}),a\in\mathbb{N}^*
+$$
 
 的向量有无限个
 
@@ -473,7 +490,9 @@ $$(1,a,a^2,...,a^{n-1}),a\in\mathbb{N}^*$$
 
 注意到 $\mathbb{P}^n$ 中形如
 
-$$(1,a,a^2,...,a^{n-1}),a\in\mathbb{N}^*$$
+$$
+(1,a,a^2,...,a^{n-1}),a\in\mathbb{N}^*
+$$
 
 的向量有无限个
 

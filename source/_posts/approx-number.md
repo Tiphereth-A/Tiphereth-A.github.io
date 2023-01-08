@@ -44,7 +44,9 @@ date: 2018-08-09 09:06:31
 
 循环次数:
 
-$$\left\lceil\log_2 {\frac{r-l}{\epsilon}}\right\rceil$$
+$$
+\left\lceil\log_2 {\frac{r-l}{\epsilon}}\right\rceil
+$$
 
 附程序:
 
@@ -72,35 +74,51 @@ $$\left\lceil\log_2 {\frac{r-l}{\epsilon}}\right\rceil$$
 >
 > 点 $x_3$ 应在点 $x_2$ 左侧, 因为如果点 $x_3$ 在点 $x_2$ 的右侧, 那么当 $x_3$ 是好点, $x_2$ 是差点时, 要舍去区间 $[a,x_2]$, 而它的长度与上次舍去的区间 $(x_1,b]$ 的长度相同, 违背成比例舍去的原则. 于是, 不论点 $x_3$ (或点 $x_2$) 是好点还是差点, 被舍去的区间长度都等于 $x_1-x_2$, 按成比例舍去的原则, 我们有等式
 >
-> $$\frac{b-x_1}{b-a}=\frac{x_1-x_2}{x_1-a}\tag{1}$$
+> $$
+> \frac{b-x_1}{b-a}=\frac{x_1-x_2}{x_1-a}\tag{1}
+> $$
 >
 > 其中, 左边是第一次舍去的比例数, 右边是第二次舍去的比例数, 对式(1)变形, 得
 >
-> $$1-\frac{b-x_1}{b-a}=1-\frac{x_1-x_2}{x_1-a}$$
+> $$
+> 1-\frac{b-x_1}{b-a}=1-\frac{x_1-x_2}{x_1-a}
+> $$
 >
 > 即
 >
-> $$\frac{x_1-a}{b-a}=\frac{x_2-a}{x_1-a}\tag{2}$$
+> $$
+> \frac{x_1-a}{b-a}=\frac{x_2-a}{x_1-a}\tag{2}
+> $$
 >
 > 式(2)两边分别是两次舍弁后的存优范围占舍弃前全区间的比例数, 设每次舍弃后的存优范围占舍弃前全区间的比例数为 $t$, 即
 >
-> $$\frac{x_1-a}{b-a}=t\tag{3}$$
+> $$
+> \frac{x_1-a}{b-a}=t\tag{3}
+> $$
 >
 > 则由 $b-x_2=x_1-a$ 可得
 >
-> $$\frac{x_2-a}{b-a}=1-t\tag{4}$$
+> $$
+> \frac{x_2-a}{b-a}=1-t\tag{4}
+> $$
 >
 > 由式(2)得
 >
-> $$\frac{x_1-a}{b-a}=\frac{\frac{x_2-a}{b-a}}{\frac{x_1-a}{b-a}}$$
+> $$
+> \frac{x_1-a}{b-a}=\frac{\frac{x_2-a}{b-a}}{\frac{x_1-a}{b-a}}
+> $$
 >
 > 把(3)与(4)代入(5), 得
 >
-> $$t=\frac{1-t}{t}$$
+> $$
+> t=\frac{1-t}{t}
+> $$
 >
 > 即
 >
-> $$t^2+t-1=0$$
+> $$
+> t^2+t-1=0
+> $$
 >
 > 解得 $t_1=\displaystyle\frac{-1+\sqrt{5}}{2}, t_2=\frac{-1-\sqrt{5}}{2}$, 其中 $t_1$ 为对本问题有意义的根, 这就是**黄金分割常数**, 用 $\varphi$ 表示 (注: 原文用 $\omega$ 表示)
 
@@ -146,10 +164,16 @@ $$
 $$
 
 因为
-$$g^{(m)}(x)=\sum_{k=m}^n{\frac{k!}{(k-m)!}a_kx^{k-m}}$$
+
+$$
+g^{(m)}(x)=\sum_{k=m}^n{\frac{k!}{(k-m)!}a_kx^{k-m}}
+$$
 
 于是便有
-$$g(x)=\sum_{k=0}^n{\frac{f^{(k)}(x_0)}{k!}(x-x_0)^k}$$
+
+$$
+g(x)=\sum_{k=0}^n{\frac{f^{(k)}(x_0)}{k!}(x-x_0)^k}
+$$
 
 当 $n\rightarrow\infty$ 时, 我们可以认为 $f(x)=g(x)$
 
@@ -157,17 +181,23 @@ $$g(x)=\sum_{k=0}^n{\frac{f^{(k)}(x_0)}{k!}(x-x_0)^k}$$
 
 其中 $R_n(x)$ 是余项, 它有好几种不同的写法, 比如 Lagrange 余项
 
-$$R_k(x)=\frac{f^{(k+1)}(\xi_L)}{(k+1)!}(x-x_0)^{k+1}$$
+$$
+R_k(x)=\frac{f^{(k+1)}(\xi_L)}{(k+1)!}(x-x_0)^{k+1}
+$$
 
 其中 $\xi_L$ 在 $x$ 和 $x_0$ 之间
 
 当 $n\rightarrow\infty$ 时, 有(Taylor 级数)
 
-$$\displaystyle\sum_{k=0}^\infty{\frac{f^{(k)}(x_0)}{k!}(x-x_0)^k}$$
+$$
+\sum_{k=0}^\infty{\frac{f^{(k)}(x_0)}{k!}(x-x_0)^k}
+$$
 
 特别地, 当 $x_0=0$ 时, 有(Maclaurin 级数)
 
-$$\displaystyle\sum_{k=0}^\infty{\frac{f^{(k)}(0)}{k!}}x^k$$
+$$
+\sum_{k=0}^\infty{\frac{f^{(k)}(0)}{k!}}x^k
+$$
 
 另外注意应用 Maclaurin 级数并且 $x$ 在某个范围之外时, 得到的结果可能是发散的(这个不展开讲, 有兴趣的读者可以去学习无穷级数相关知识)
 
@@ -179,19 +209,31 @@ $$\displaystyle\sum_{k=0}^\infty{\frac{f^{(k)}(0)}{k!}}x^k$$
 
 下面给出几个常见的 Taylor 级数
 
-$$e^x=\displaystyle\sum_{k=0}^\infty{\frac{x^k}{k!}}$$
+$$
+e^x=\sum_{k=0}^\infty{\frac{x^k}{k!}}
+$$
 
-$$\sin x=\displaystyle\sum_{k=0}^\infty{(-1)^k\frac{x^{2k+1}}{(2k+1)!}}$$
+$$
+\sin x=\sum_{k=0}^\infty{(-1)^k\frac{x^{2k+1}}{(2k+1)!}}
+$$
 
-$$\cos x=\displaystyle\sum_{k=0}^\infty{(-1)^k\frac{x^{2k}}{(2k)!}}$$
+$$
+\cos x=\sum_{k=0}^\infty{(-1)^k\frac{x^{2k}}{(2k)!}}
+$$
 
 (有上面三个式子就可以证明欧拉公式之 $e^{i\theta}=\cos\theta+i\sin\theta$ 了)
 
-$$\ln{(1+x)}=\displaystyle\sum_{k=1}^\infty{(-1)^{k+1}\frac{x^k}{k}}$$
+$$
+\ln{(1+x)}=\sum_{k=1}^\infty{(-1)^{k+1}\frac{x^k}{k}}
+$$
 
-$$\frac{1}{1-x}=\displaystyle\sum_{k=0}^\infty{x^k}$$
+$$
+\frac{1}{1-x}=\sum_{k=0}^\infty{x^k}
+$$
 
-$$(1+x)^m=\displaystyle\sum_{k=0}^\infty{\binom{m}{k}x^k}$$
+$$
+(1+x)^m=\sum_{k=0}^\infty{\binom{m}{k}x^k}
+$$
 
 ## Newton 迭代法
 
@@ -203,11 +245,15 @@ $$(1+x)^m=\displaystyle\sum_{k=0}^\infty{\binom{m}{k}x^k}$$
 
 稍加计算便得到了
 
-$$x_1=x_0-\frac{f(x_0)}{f^\prime(x_0)}$$
+$$
+x_1=x_0-\frac{f(x_0)}{f^\prime(x_0)}
+$$
 
 既然是迭代, 那么自然就有
 
-$$x_{n+1}=x_n-\frac{f(x_n)}{f^\prime(x_n)}$$
+$$
+x_{n+1}=x_n-\frac{f(x_n)}{f^\prime(x_n)}
+$$
 
 其中 $x_n$ 代表第 $n$ 次迭代
 
@@ -219,37 +265,53 @@ $$x_{n+1}=x_n-\frac{f(x_n)}{f^\prime(x_n)}$$
 
 > 根据 [Taylor's theorem](https://en.wikipedia.org/wiki/Taylor%27s_theorem), 任何二阶导数连续的函数 $f(x)$ (设 $\alpha$ 是根) 都可以写成
 >
-> $$f(\alpha)=f(x_n)+f^\prime(x_n)(\alpha-x_n)+R_1\tag{1}$$
+> $$
+> f(\alpha)=f(x_n)+f^\prime(x_n)(\alpha-x_n)+R_1\tag{1}
+> $$
 >
 > 由 [Lagrange form of the Taylor series expansion remainder](https://en.wikipedia.org/wiki/Lagrange_remainder) 得
 >
-> $$R_1=\frac{1}{2!}f^{\prime\prime}(\xi_n)(\alpha-x_n)^2$$
+> $$
+> R_1=\frac{1}{2!}f^{\prime\prime}(\xi_n)(\alpha-x_n)^2
+> $$
 >
 > 其中 $\xi_n$ 在 $x_n$ 和 $\alpha$ 之间
 >
 > 由于 $\alpha$ 是根, 所以(1)式变为
 >
-> $$0=f(\alpha)=f(x_n)+f^\prime(x_n)(\alpha-x_n)+\frac{1}{2}f^{\prime\prime}(\xi_n)(\alpha-x_n)^2\tag{2}$$
+> $$
+> 0=f(\alpha)=f(x_n)+f^\prime(x_n)(\alpha-x_n)+\frac{1}{2}f^{\prime\prime}(\xi_n)(\alpha-x_n)^2\tag{2}
+> $$
 >
 > (2)式两边同时除以 $f^\prime(x_n)$, 整理得
 >
-> $$\frac{f(x_n)}{f^\prime(x_n)}+(\alpha-x_n)=\frac{-f^{\prime\prime}(\xi_n)}{2f^\prime(x_n)}(\alpha-x_n)^2\tag{3}$$
+> $$
+> \frac{f(x_n)}{f^\prime(x_n)}+(\alpha-x_n)=\frac{-f^{\prime\prime}(\xi_n)}{2f^\prime(x_n)}(\alpha-x_n)^2\tag{3}
+> $$
 >
 > 由于
 >
-> $$x_{n+1}=x_n-\frac{f(x_n)}{f^\prime(x_n)}\tag{4}$$
+> $$
+> x_{n+1}=x_n-\frac{f(x_n)}{f^\prime(x_n)}\tag{4}
+> $$
 >
 > 代入(3)式, 有
 >
-> $$\underbrace{\alpha-x_{n+1}}_{\epsilon_{n+1}}=\frac{-f^{\prime\prime}(\xi_n)}{2f^\prime(x_n)}(\underbrace{\alpha-x_n}_{\epsilon_n})^2$$
+> $$
+> \underbrace{\alpha-x_{n+1}}_{\epsilon_{n+1}}=\frac{-f^{\prime\prime}(\xi_n)}{2f^\prime(x_n)}(\underbrace{\alpha-x_n}_{\epsilon_n})^2
+> $$
 >
 > 即
 >
-> $$\epsilon_{n+1}=\frac{-f^{\prime\prime}(\xi_n)}{2f^\prime(x_n)}\epsilon_n^2\tag{5}$$
+> $$
+> \epsilon_{n+1}=\frac{-f^{\prime\prime}(\xi_n)}{2f^\prime(x_n)}\epsilon_n^2\tag{5}
+> $$
 >
 > 两边取绝对值, 有
 >
-> $$|\epsilon_{n+1}|=\frac{|f^{\prime\prime}(\xi_n)|}{2|f^\prime(x_n)|}\epsilon_n^2\tag{6}$$
+> $$
+> |\epsilon_{n+1}|=\frac{|f^{\prime\prime}(\xi_n)|}{2|f^\prime(x_n)|}\epsilon_n^2\tag{6}
+> $$
 >
 > (6)式表明, 如果函数满足以下条件, 其为二次收敛
 >
@@ -265,11 +327,15 @@ $$x_{n+1}=x_n-\frac{f(x_n)}{f^\prime(x_n)}$$
 >
 > 当满足上述条件时, (6)式可以写为:
 >
-> $$|\epsilon_{n+1}|\leq M\epsilon_n^2$$
+> $$
+> |\epsilon_{n+1}|\leq M\epsilon_n^2
+> $$
 >
 > 其中
 >
-> $$M=\displaystyle\sup_{x\in I}{\frac{1}{2}\bigg|\frac{f^{\prime\prime}(x)}{f^\prime(x)}\bigg|}$$
+> $$
+> M=\sup_{x\in I}{\frac{1}{2}\bigg|\frac{f^{\prime\prime}(x)}{f^\prime(x)}\bigg|}
+> $$
 >
 > 由条件 3 得 $M|\epsilon_0|<1$
 
@@ -289,7 +355,9 @@ $$x_{n+1}=x_n-\frac{f(x_n)}{f^\prime(x_n)}$$
 
 笔者在这里放上解析解 (近似值 $x=0.739$) , 详情见参考文献[^1] (文献里讲的是 $t\sin x=x-m$ 的解法, 不过笔者太弱了, 实在是看不懂 QwQ)
 
-$$\frac{\pi}{2}\exp\left(\frac{1}{\pi}\int_0^1\frac{\arctan\left({(\pi x+2)\log\left(\frac{\sqrt{1-x^2}+1}{x}\right)x\over x^2\log^2\left(\frac{\sqrt{1-x^2}+1}{x}\right)-\pi x-1}\right)}{x}\mathrm{d}x\right)$$
+$$
+\frac{\pi}{2}\exp\left(\frac{1}{\pi}\int_0^1\frac{\arctan\left({(\pi x+2)\log\left(\frac{\sqrt{1-x^2}+1}{x}\right)x\over x^2\log^2\left(\frac{\sqrt{1-x^2}+1}{x}\right)-\pi x-1}\right)}{x}\mathrm{d}x\right)
+$$
 
 ### 快速求 ${1\over\sqrt{x}}$
 

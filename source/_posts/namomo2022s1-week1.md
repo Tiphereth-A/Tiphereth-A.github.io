@@ -75,14 +75,25 @@ Namomo Spring Camp 2022 Div1 每日一题记录 (2022.02.26-2022.03.04)
 > DP + 单调栈
 
 即求
-$$\sum_{i=1}^n\sum_{j=1}^i\left(\max_{x\in i..j}\{a_x\}-\min_{x\in i..j}\{a_x\}\right)$$
+
+$$
+\sum_{i=1}^n\sum_{j=1}^i\left(\max_{x\in i..j}\{a_x\}-\min_{x\in i..j}\{a_x\}\right)
+$$
 
 令
 
-- $$L_i=\max(\{0\}\cup\{x<i\mid a_x>a_i\})$$
-- $$R_i=\min(\{n+1\}\cup\{x>i\mid a_x>a_i\})$$
-- $$l_i=\max(\{0\}\cup\{x<i\mid a_x<a_i\})$$
-- $$r_i=\min(\{n+1\}\cup\{x>i\mid a_x<a_i\})$$
+- $$
+  L_i=\max(\{0\}\cup\{x<i\mid a_x>a_i\})
+  $$
+- $$
+  R_i=\min(\{n+1\}\cup\{x>i\mid a_x>a_i\})
+  $$
+- $$
+  l_i=\max(\{0\}\cup\{x<i\mid a_x<a_i\})
+  $$
+- $$
+  r_i=\min(\{n+1\}\cup\{x>i\mid a_x<a_i\})
+  $$
 
 则
 

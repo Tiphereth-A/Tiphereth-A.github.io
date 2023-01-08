@@ -66,7 +66,9 @@ date: 2020-06-20 16:08:42
 >
 > 令 $(\epsilon_0,\epsilon_1,\dots,\epsilon_n)$ 为 $V$ 的一组基, 称
 >
-> $$(f(\epsilon_1),f(\epsilon_2),...,f(\epsilon_n))$$
+> $$
+> (f(\epsilon_1),f(\epsilon_2),...,f(\epsilon_n))
+> $$
 >
 > 为 $f$ 在 $(\epsilon_0,\epsilon_1,\dots,\epsilon_n)$ 下的**表示向量**
 
@@ -86,7 +88,11 @@ $\eta:L(V,\mathbb{P})\to\mathbb{P}^n;~f\mapsto(f(\epsilon_1),f(\epsilon_2),...,f
 > **定义** 表示矩阵/度量矩阵
 >
 > 令 $(\epsilon_0,\epsilon_1,\dots,\epsilon_n)$ 为 $V$ 的一组基, 称
-> $$(f(\epsilon_i,\epsilon_j))_{n\times n}$$
+>
+> $$
+> (f(\epsilon_i,\epsilon_j))_{n\times n}
+> $$
+>
 > 为 $f$ 在 $(\epsilon_0,\epsilon_1,\dots,\epsilon_n)$ 下的**表示矩阵**
 
 我们有如下定理
@@ -108,7 +114,11 @@ $\zeta:BL(V,\mathbb{P})\to\mathbb{P}^{n\times n};~f\mapsto(f(\epsilon_i,\epsilon
 我们发现  
 $\forall\alpha=\displaystyle\sum_{i=1}^nx_i\epsilon_i=(\epsilon_0,\epsilon_1,\dots,\epsilon_n)X,\beta=\sum_{i=1}^ny_i\epsilon_i=(\epsilon_0,\epsilon_1,\dots,\epsilon_n)Y\in V$  
 都有
-$$f(\alpha,\beta)=X^TAY$$
+
+$$
+f(\alpha,\beta)=X^TAY
+$$
+
 这样就将双线性函数的计算转换成了矩阵乘法, 这个形式很重要
 
 ### 零元
@@ -138,7 +148,9 @@ $$f(\alpha,\beta)=X^TAY$$
 
 设 $(\epsilon_0,\epsilon_1,\dots,\epsilon_n)$ 和 $(\eta_0,\eta_1,\dots,\eta_n)$ 是 $V$ 的两组基底, 过渡矩阵 $T$ 使得
 
-$$(\eta_0,\eta_1,\dots,\eta_n)=(\epsilon_0,\epsilon_1,\dots,\epsilon_n)T$$
+$$
+(\eta_0,\eta_1,\dots,\eta_n)=(\epsilon_0,\epsilon_1,\dots,\epsilon_n)T
+$$
 
 {% tabs define-1-trans,1 %}
 
@@ -146,7 +158,9 @@ $$(\eta_0,\eta_1,\dots,\eta_n)=(\epsilon_0,\epsilon_1,\dots,\epsilon_n)T$$
 
 若线性函数 $f$ 在 $(\epsilon_0,\epsilon_1,\dots,\epsilon_n)$ 和 $(\eta_0,\eta_1,\dots,\eta_n)$ 下的表示向量分别为 $(a_1,a_2,\dots,a_n)$ 和 $(b_1,b_2,\dots,b_n)$, 则
 
-$$(b_1,b_2,\dots,b_n)=(a_1,a_2,\dots,a_n)T$$
+$$
+(b_1,b_2,\dots,b_n)=(a_1,a_2,\dots,a_n)T
+$$
 
 因此 $T$ 非奇异
 
@@ -155,7 +169,9 @@ $$(b_1,b_2,\dots,b_n)=(a_1,a_2,\dots,a_n)T$$
 
 若双线性函数 $f$ 在 $(\epsilon_0,\epsilon_1,\dots,\epsilon_n)$ 和 $(\eta_0,\eta_1,\dots,\eta_n)$ 下的表示矩阵分别为 $A$ 和 $B$, 则
 
-$$B=T^TAT$$
+$$
+B=T^TAT
+$$
 
 因此 $T$ 非奇异, **称 $\operatorname{rk}A$ 为 $f$ 的秩**
 
@@ -172,7 +188,10 @@ $$B=T^TAT$$
 > **定义** 非奇异双线性函数
 >
 > 称 $f$ 是**非奇异的**, 若
-> $$(\forall\alpha\in V/\{\theta\},~\exists\beta\in V),~f(\alpha,\beta)\ne0$$
+>
+> $$
+> (\forall\alpha\in V/\{\theta\},~\exists\beta\in V),~f(\alpha,\beta)\ne0
+> $$
 
 #### <a href="#end-t-1-2" id="t-1-2">定理 - 1-2</a>
 
@@ -205,7 +224,10 @@ $2\iff4:$ 参照 $1\iff2$
 > **定义** 对称双线性函数
 >
 > 称 $f$ 是**对称的**, 若
-> $$(\forall\alpha,\beta\in V),~f(\alpha,\beta)=f(\beta,\alpha)$$
+>
+> $$
+> (\forall\alpha,\beta\in V),~f(\alpha,\beta)=f(\beta,\alpha)
+> $$
 
 #### <a href="#end-t-1-3" id="t-1-3">定理 - 1-3</a>
 
@@ -224,14 +246,20 @@ $2\iff4:$ 参照 $1\iff2$
 > **定义** 斜对称双线性函数
 >
 > 称 $f$ 是**斜对称的**, 若
-> $$(\forall\alpha,\beta\in V),~f(\alpha,\beta)=-f(\beta,\alpha)$$
+>
+> $$
+> (\forall\alpha,\beta\in V),~f(\alpha,\beta)=-f(\beta,\alpha)
+> $$
 
 ### 正定双线性函数
 
 > **定义** 正定双线性函数
 >
 > 称 $f$ 是**正定的**, 若
-> $$(\forall\alpha\in V/\{\theta\}),~f(\alpha,\alpha)>0$$
+>
+> $$
+> (\forall\alpha\in V/\{\theta\}),~f(\alpha,\alpha)>0
+> $$
 
 我们将在 [Euclidean 空间](#euclidean空间) 见到它
 
@@ -260,13 +288,18 @@ $2\iff4:$ 参照 $1\iff2$
 
 - 若 $f$ 是零函数, 则 $V$ 上任意基底均为所求
 - 若 $f$ 是非零函数, 即
-  $$(\exists\alpha,\beta\in V),~f(\alpha,\beta)\ne0$$
+
+  $$
+  (\exists\alpha,\beta\in V),~f(\alpha,\beta)\ne0
+  $$
 
   由  
   $f(\alpha,\beta)=\displaystyle\frac{1}{2}\left(f(\alpha+\beta,\alpha+\beta)-f(\alpha,\alpha)-f(\beta,\beta)\right)$ (这里利用了 $f$ 的对称性)  
   可知
 
-  $$(\exists\epsilon\in V),~f(\epsilon,\epsilon)\ne0\tag{1.4.1}$$
+  $$
+  (\exists\epsilon\in V),~f(\epsilon,\epsilon)\ne0\tag{1.4.1}
+  $$
 
   接下来对 $\dim V$ 应用第二数学归纳法
 
@@ -282,7 +315,9 @@ $2\iff4:$ 参照 $1\iff2$
 
     因此
 
-    $$(\forall\alpha\in G[\epsilon'_{2},...,\epsilon'_{n}]),~f(\epsilon,\alpha)=0\tag{1.4.2}$$
+    $$
+    (\forall\alpha\in G[\epsilon'_{2},...,\epsilon'_{n}]),~f(\epsilon,\alpha)=0\tag{1.4.2}
+    $$
 
     又显然 $V=G[\epsilon]\oplus G[\epsilon'_{2},...,\epsilon'_{n}]$
 
@@ -296,13 +331,17 @@ $2\iff4:$ 参照 $1\iff2$
 
 - 令 $V$ 为 $\mathbb{C}$ 上一 $n$ 维线性空间, $f$ 为 $V$ 上一对称双线性函数, 则存在正交基底 $(\epsilon_0,\epsilon_1,\dots,\epsilon_n)$ 使得对 $V$ 上的任意向量 $\alpha=\sum_{i=1}^nx_i\epsilon_i,\beta=\sum_{i=1}^ny_i\epsilon_i$ 均有
 
-  $$f(\alpha,\beta)=\sum_{i=1}^rx_iy_i$$
+  $$
+  f(\alpha,\beta)=\sum_{i=1}^rx_iy_i
+  $$
 
   其中 $r=\operatorname{rk}f$
 
 - 若 $V$ 为 $\mathbb{R}$ 上一 $n$ 维线性空间, 其余同上, 则
 
-  $$f(\alpha,\beta)=\sum_{i=1}^px_iy_i-\sum_{i=p+1}^rx_iy_i$$
+  $$
+  f(\alpha,\beta)=\sum_{i=1}^px_iy_i-\sum_{i=p+1}^rx_iy_i
+  $$
 
 另一种写法:
 
@@ -334,8 +373,12 @@ $2\iff4:$ 参照 $1\iff2$
 
 令 $V$ 为 $\mathbb{P}$ 上一 $n$ 维线性空间, $f_1,f_2,\dots,f_k$ 为 $V$ 上 $k$ 个线性函数, 证明:
 
-1. $$W=\{\alpha\in V|f_i(\alpha)=0\}\leqslant V$$
+1. $$
+   W=\{\alpha\in V|f_i(\alpha)=0\}\leqslant V
+   $$
+
    称 $W$ 为 $f_1,f_2,\dots,f_k$ 的**零化子空间**
+
 1. 若 $W\leqslant V$, 则存在 $V$ 上 $k$ 个线性函数 $f_1,f_2,\dots,f_k$ 使得 $W$ 为 $f_1,f_2,\dots,f_k$ 的零化子空间
 
 ##### <a href="#prob-1-1" id="p-prob-1-1">解</a>
@@ -371,9 +414,14 @@ $2\iff4:$ 参照 $1\iff2$
 
 令 $V$ 是复线性空间, $\dim V\geqslant 2$, $f$ 为 $V$ 上一对称双线性函数, 证明:
 
-1. $$(\exists\theta\ne\zeta\in V),~f(\zeta,\zeta)=0$$
+1. $$
+   (\exists\theta\ne\zeta\in V),~f(\zeta,\zeta)=0
+   $$
 1. 若 $f$ 非奇异, 则存在线性无关向量 $\zeta,\eta$ 使得
-   $$f(\zeta,\eta)=1,f(\zeta,\zeta)=f(\eta,\eta)=0$$
+
+   $$
+   f(\zeta,\eta)=1,f(\zeta,\zeta)=f(\eta,\eta)=0
+   $$
 
 ##### <a href="#prob-1-2" id="p-prob-1-2">解</a>
 
@@ -383,7 +431,9 @@ $2\iff4:$ 参照 $1\iff2$
 
    - 若 $a=0$ 或 $b=0$, 则命题得证
    - 若 $a,b$ 均不为 $0$, 考虑
-     $$f(\alpha+t\beta,\alpha+t\beta)=f(\alpha,\alpha)+2tf(\alpha,\beta)+t^2f(\beta,\beta)$$
+     $$
+     f(\alpha+t\beta,\alpha+t\beta)=f(\alpha,\alpha)+2tf(\alpha,\beta)+t^2f(\beta,\beta)
+     $$
      此时 $t$ 有根 $t_1$, 故令 $\zeta=\alpha+t_1\beta$, 则 $f(\zeta,\zeta)=0$
 
 1. 由 1 知, $(\exists\theta\ne\zeta\in V),~f(\zeta,\zeta)=0$
@@ -431,7 +481,11 @@ $n$ 维对称双线性度量空间 $V$ 存在正交基底 $(\epsilon_0,\epsilon_
 > **定义** 正交补(空间)
 >
 > 对 $n$ 维对称双线性度量空间 $V=(V,+,\cdot,\mathbb{P},f)$ 和 $V_1\leqslant V$, 称
-> $$\{\alpha\in V|(\forall\beta\in V_1),~f(\alpha,\beta)=0\}$$
+>
+> $$
+> \{\alpha\in V|(\forall\beta\in V_1),~f(\alpha,\beta)=0\}
+> $$
+>
 > 为 $V_1$ 的正交补(空间), 记作 $V_1^\perp$
 >
 > 显然 $V_1^\perp\leqslant V$
@@ -442,7 +496,10 @@ $n$ 维对称双线性度量空间 $V$ 存在正交基底 $(\epsilon_0,\epsilon_
 
 - 若 $\dim V_1=0$, 则 $V_1^\perp=V$
 - 若 $\dim V_1=r\geqslant1$, 且 $(\beta_0,\beta_1,\dots,\beta_r)$ 为 $V_1$ 的一组基, 则
-  $$V_1^\perp=\{\alpha\in V|f(\alpha,\beta_i)=0,~i=1,2,...,r\}$$
+
+  $$
+  V_1^\perp=\{\alpha\in V|f(\alpha,\beta_i)=0,~i=1,2,...,r\}
+  $$
 
   即 $V_1^\perp$ 为 $\begin{cases}
     f(\alpha,\beta_i)=0\\i=1,2,...,r
@@ -450,7 +507,9 @@ $n$ 维对称双线性度量空间 $V$ 存在正交基底 $(\epsilon_0,\epsilon_
 
 若令 $f$ 在基底 $(\epsilon_0,\epsilon_1,\dots,\epsilon_n)$ 下的表示矩阵为 $A$, $\beta_0,\beta_1,\dots,\beta_r$ 的坐标分别为 $B_1,B_2,\dots,B_r,~\alpha$ 的坐标为 $X$, 则上述方程组可表示为
 
-$$X^TA(B_1,B_2,\dots,B_r)=\theta$$
+$$
+X^TA(B_1,B_2,\dots,B_r)=\theta
+$$
 
 另外, $V_1^\perp$ 与上式的解空间 $S$ 同构
 
@@ -500,13 +559,22 @@ $$X^TA(B_1,B_2,\dots,B_r)=\theta$$
 进入正题
 
 本节将在 $n$ 维对称双线性度量空间 $\mathbb{P}^n(E)$ 中讨论
-$$AX=\theta\tag{2.3.1}$$
+
+$$
+AX=\theta\tag{2.3.1}
+$$
+
 和
-$$AX=B\tag{2.3.2}$$
+
+$$
+AX=B\tag{2.3.2}
+$$
 
 其中 $\mathbb{P}^n(E)$ 表示 $\mathbb{P}^n$ 连同在自然基底下度量矩阵为 $E$ 的双线性函数 $f_E$ 所构成的对称双线性度量空间, 显然有
 
-$$f_E([a_1,a_2,\dots,a_n]^T,[b_1,b_2,\dots,b_n]^T)=\sum_{i=1}^na_ib_i$$
+$$
+f_E([a_1,a_2,\dots,a_n]^T,[b_1,b_2,\dots,b_n]^T)=\sum_{i=1}^na_ib_i
+$$
 
 - 齐次线性方程组 $(2.3.1)$ 可记作
 
@@ -527,7 +595,9 @@ $$f_E([a_1,a_2,\dots,a_n]^T,[b_1,b_2,\dots,b_n]^T)=\sum_{i=1}^na_ib_i$$
 
   考虑 $(2.3.2)$ 的转置齐次线性方程组
 
-  $$A^TY=\theta\tag{2.3.3}$$
+  $$
+  A^TY=\theta\tag{2.3.3}
+  $$
 
   由上一部分的讨论可知, $(2.3.3)$ 的解空间为 $G[A^1,A^2,...,A^n]^\perp$
 
@@ -546,7 +616,10 @@ $$f_E([a_1,a_2,\dots,a_n]^T,[b_1,b_2,\dots,b_n]^T)=\sum_{i=1}^na_ib_i$$
 #### <a href="#end-prob-2-1" id="prob-2-1">习题 - 2-1</a>
 
 令 $V$ 为 $\mathbb{P}$ 上一 $n$ 维线性空间, $V_1<V,\zeta\notin V_1$, $f$ 为 $V$ 上一对称双线性函数, 证明:
-$$(\exists0\ne\eta\in V_1+G[\zeta]),(\forall\alpha\in V_1),~f(\eta,\alpha)=0$$
+
+$$
+(\exists0\ne\eta\in V_1+G[\zeta]),(\forall\alpha\in V_1),~f(\eta,\alpha)=0
+$$
 
 ##### <a href="#prob-2-1" id="p-prob-2-1">解</a>
 
@@ -571,7 +644,11 @@ $$(\exists0\ne\eta\in V_1+G[\zeta]),(\forall\alpha\in V_1),~f(\eta,\alpha)=0$$
 > **例 - 1**
 >
 > 定义 $f$ 如下:
-> $$f(g(x),h(x))=\int_a^bf(x)g(x)\mathrm{d}x$$
+>
+> $$
+> f(g(x),h(x))=\int_a^bf(x)g(x)\mathrm{d}x
+> $$
+>
 > 易证 $f$ 是内积, $C[a,b]$ 连同 $f$ 构成 Euclidean 空间
 
 ### 向量的长度与夹角 (度量)
@@ -604,7 +681,11 @@ Euclidean 空间有一个很好的性质, 就是我们可以在其上定义向�
 #### <a href="#end-t-3-1" id="t-3-1">定理 - 3-1</a> (Cauchy-Bunjakovski-Schwarz 不等式)
 
 令 $V$ 为一 Euclidean 空间, 则对其上任意非零向量 $\alpha,\beta$, 均有
-$$\frac{|(\alpha,\beta)|}{|\alpha||\beta|}\leqslant1$$
+
+$$
+\frac{|(\alpha,\beta)|}{|\alpha||\beta|}\leqslant1
+$$
+
 等号成立当且仅当 $\alpha,\beta$ 线性相关
 
 > 若写成 $|(\alpha,\beta)|\leqslant|\alpha||\beta|$, 则不需限制 $\alpha,\beta$ 非零
@@ -613,12 +694,17 @@ $$\frac{|(\alpha,\beta)|}{|\alpha||\beta|}\leqslant1$$
 
 考察 $\alpha-k\beta,~k\in\mathbb{R}$, 由内积的正定性可得
 
-$$k^2(\beta,\beta)-2k(\alpha,\beta)+(\alpha,\alpha)\leqslant0$$
+$$
+k^2(\beta,\beta)-2k(\alpha,\beta)+(\alpha,\alpha)\leqslant0
+$$
 
 此式表明判别式非正, 即 $(\alpha,\beta)^2-(\alpha,\alpha)(\beta,\beta)\leqslant0$
 
 亦即
-$$\frac{|(\alpha,\beta)|}{|\alpha||\beta|}\leqslant1$$
+
+$$
+\frac{|(\alpha,\beta)|}{|\alpha||\beta|}\leqslant1
+$$
 
 当 $\alpha,\beta$ 线性相关时, 上式等号显然成立  
 反之, 若上式等号成立, 则 $(\exists t_0\in\mathbb{R}),~(\alpha-t_0\beta,\alpha-t_0\beta)=0$, 可得 $\alpha-t_0\beta=0$, 即 $\alpha,\beta$ 线性相关
@@ -627,8 +713,12 @@ $$\frac{|(\alpha,\beta)|}{|\alpha||\beta|}\leqslant1$$
 
 Cauchy-Bunjakovski-Schwarz 不等式有两个著名的实例
 
-- $$\left|\sum_{i=1}^na_ib_i\right|\leqslant\sqrt{\sum_{i=1}^na_i^2}\sqrt{\sum_{i=1}^nb_i^2}$$
-- $$\left|\int_a^bf(x)g(x)\mathrm{d}x\right|\leqslant\sqrt{\int_a^bf^2(x)\mathrm{d}x}\sqrt{\int_a^bg^2(x)\mathrm{d}x}$$
+- $$
+  \left|\sum_{i=1}^na_ib_i\right|\leqslant\sqrt{\sum_{i=1}^na_i^2}\sqrt{\sum_{i=1}^nb_i^2}
+  $$
+- $$
+  \left|\int_a^bf(x)g(x)\mathrm{d}x\right|\leqslant\sqrt{\int_a^bf^2(x)\mathrm{d}x}\sqrt{\int_a^bg^2(x)\mathrm{d}x}
+  $$
 
 ---
 
@@ -647,13 +737,20 @@ Cauchy-Bunjakovski-Schwarz 不等式有两个著名的实例
 1. $|\alpha+\beta|\leqslant|\alpha|+|\beta|$ (三角不等式)
 1. $(\alpha,\beta)=0\implies|\alpha+\beta|^2=|\alpha|^2+|\beta|^2$ (勾股定理)
    > 可推广为
-   > $$((\forall1\leqslant i,j\leqslant m,i\ne j),~(\alpha_i,\alpha_j)\ne0),~\left|\sum_{i=1}^ma_i\right|^2=\sum_{i=1}^m|\alpha_i|^2$$
+   >
+   > $$
+   > ((\forall1\leqslant i,j\leqslant m,i\ne j),~(\alpha_i,\alpha_j)\ne0),~\left|\sum_{i=1}^ma_i\right|^2=\sum_{i=1}^m|\alpha_i|^2
+   > $$
 
 ##### <a href="#t-3-2" id="p-t-3-2">证明</a>
 
 1. 由 <a href="#t-3-1">定理 - 3-1</a>,
-   $$|\alpha+\beta|^2=(\alpha,\alpha)+2(\alpha,\beta)+(\beta,\beta)\leqslant|\alpha|^2+2|\alpha||\beta|+|\beta|^2=(|\alpha|+|\beta|)^2$$
-1. $$|\alpha+\beta|^2=(\alpha,\alpha)+(\beta,\beta)=|\alpha|^2+|\beta|^2$$
+   $$
+   |\alpha+\beta|^2=(\alpha,\alpha)+2(\alpha,\beta)+(\beta,\beta)\leqslant|\alpha|^2+2|\alpha||\beta|+|\beta|^2=(|\alpha|+|\beta|)^2
+   $$
+1. $$
+   |\alpha+\beta|^2=(\alpha,\alpha)+(\beta,\beta)=|\alpha|^2+|\beta|^2
+   $$
 
 <a href="#p-t-3-2" id="end-t-3-2">$\Box$</a>
 
@@ -674,7 +771,9 @@ Cauchy-Bunjakovski-Schwarz 不等式有两个著名的实例
 
 若 $(\alpha_0,\alpha_1,\dots,\alpha_n)$ 为 $n$ 维 Euclidean 空间上的一组基, 则其上存在标准正交基 $(\beta_0,\beta_1,\dots,\beta_n)$ 使得
 
-$$G[\alpha_0,\alpha_1,\dots,\alpha_i]=G[\beta_0,\beta_1,\dots,\beta_i],~i=1,2,...,n$$
+$$
+G[\alpha_0,\alpha_1,\dots,\alpha_i]=G[\beta_0,\beta_1,\dots,\beta_i],~i=1,2,...,n
+$$
 
 ##### <a href="#t-3-3" id="p-t-3-3">证明</a>
 
@@ -684,7 +783,11 @@ $$G[\alpha_0,\alpha_1,\dots,\alpha_i]=G[\beta_0,\beta_1,\dots,\beta_i],~i=1,2,..
 
 - 令 $\beta'_1=\alpha_1$, 则 $G[\beta'_1]=G[\alpha_1]$
 - 令 $\beta'_2=\alpha_2+k\beta'_1$ 使得 $(\beta'_2,\beta'_1)=0$, 可推知当且仅当
-  $$k=-\frac{(\alpha_2,\beta'_1)}{(\beta'_1,\beta'_1)}$$
+
+  $$
+  k=-\frac{(\alpha_2,\beta'_1)}{(\beta'_1,\beta'_1)}
+  $$
+
   时此式成立
 
   由 $\beta'_2=\alpha_2+k\beta'_1=\alpha_2+k\alpha_1$ 可知 $\beta'_1,\beta'_2$ 线性无关, 故 $G[\beta'_1,\beta'_2]=G[\alpha_1,\alpha_2]$
@@ -692,20 +795,38 @@ $$G[\alpha_0,\alpha_1,\dots,\alpha_i]=G[\beta_0,\beta_1,\dots,\beta_i],~i=1,2,..
 - 假设已找到 $m<n$ 个两两正交的向量 $\beta'_0,\beta'_1,\dots,\beta'_m$ 满足条件
 
   令
-  $$\beta'_{m+1}=\alpha_{m+1}+\sum_{i=1}^mk_i\beta'_i$$
+
+  $$
+  \beta'_{m+1}=\alpha_{m+1}+\sum_{i=1}^mk_i\beta'_i
+  $$
+
   使得
-  $$(\beta'_{m+1},\beta'_i)=0,~i=1,2,...,m$$
+
+  $$
+  (\beta'_{m+1},\beta'_i)=0,~i=1,2,...,m
+  $$
+
   即
-  $$(\alpha_{m+1},\beta'_i)+k_i(\beta'_i,\beta'_i)=0,~i=1,2,...,m$$
+
+  $$
+  (\alpha_{m+1},\beta'_i)+k_i(\beta'_i,\beta'_i)=0,~i=1,2,...,m
+  $$
+
   上式成立当且仅当
-  $$k_i=-{(\alpha_{m+1},\beta'_i)\over(\beta'_i,\beta'_i)},~i=1,2,...,m$$
+
+  $$
+  k_i=-{(\alpha_{m+1},\beta'_i)\over(\beta'_i,\beta'_i)},~i=1,2,...,m
+  $$
 
   又可知 $\beta'_{m+1}$ 是 $\alpha_0,\alpha_1,\dots,\alpha_{m+1}$ 的线性组合, $\beta'_{m+1}\ne\theta$
 
   因此 $G[\alpha_0,\alpha_1,\dots,\alpha_{m+1}]=G[\beta'_0,\beta'_1,\dots,\beta'_{m+1}]$
 
-因此我们可以找到一组正交基 $(\beta'_0,\beta'_1,\dots,\beta'_n)$ 满足  
-$$G[\alpha_0,\alpha_1,\dots,\alpha_i]=G[\beta'_0,\beta'_1,\dots,\beta'_i],~i=1,2,...,n$$
+因此我们可以找到一组正交基 $(\beta'_0,\beta'_1,\dots,\beta'_n)$ 满足
+
+$$
+G[\alpha_0,\alpha_1,\dots,\alpha_i]=G[\beta'_0,\beta'_1,\dots,\beta'_i],~i=1,2,...,n
+$$
 
 > 上述过程即 Schmidt 正交化
 
@@ -723,7 +844,9 @@ $$G[\alpha_0,\alpha_1,\dots,\alpha_i]=G[\beta'_0,\beta'_1,\dots,\beta'_i],~i=1,2
 
 - $V$ 的内积的度量矩阵为 $E$
 - 若 $\alpha,~\beta\in V$ 在其上的坐标分别为 $A=(a_1,a_2,\dots,a_n)^T,~B=(b_1,b_2,\dots,b_n)^T$, 则
-  $$(\alpha,\beta)=\sum_{i=1}^na_ib_i=A^TB$$
+  $$
+  (\alpha,\beta)=\sum_{i=1}^na_ib_i=A^TB
+  $$
 
 <a href="#ifr-3-1" id="end-ifr-3-1">$\Box$</a>
 
@@ -766,7 +889,11 @@ $3\implies1:$
 > **定义** Euclidean 空间同构映射
 >
 > 令 $V,V'$ 为两个 Euclidean 空间, 称 $V$ 到 $V'$ 的同构映射 $f$ 是 $V$ 到 $V'$ 的**Euclidean 空间同构映射**, 若
-> $$(\forall\alpha,\beta\in V),~(f(\alpha),f(\beta))=(\alpha,\beta)$$
+>
+> $$
+> (\forall\alpha,\beta\in V),~(f(\alpha),f(\beta))=(\alpha,\beta)
+> $$
+>
 > 此时, 称 $V$ 与 $V'$ 是同构的
 
 显然这个同构也是等价关系
@@ -785,7 +912,9 @@ $\impliedby$:
 
 令 $(\epsilon_0,\epsilon_1,\dots,\epsilon_n)$ 为 $V$ 的一组标准正交基, 建立映射
 
-$$f_{\{\epsilon_i\}_{i=1}^n}:\alpha\mapsto(x_1,x_2,\dots,x_n)^T\in\mathbb{R}^n,~\alpha=\sum_{i=1}^nx_i\epsilon_i\in V$$
+$$
+f_{\{\epsilon_i\}_{i=1}^n}:\alpha\mapsto(x_1,x_2,\dots,x_n)^T\in\mathbb{R}^n,~\alpha=\sum_{i=1}^nx_i\epsilon_i\in V
+$$
 
 易知 $f_{\{\epsilon_i\}_{i=1}^n}$ 是 $V$ 到 $\mathbb{R}^n$ 的线性同构映射
 
@@ -837,7 +966,10 @@ $$
 1. 设 $\exists k_i\in\mathbb{R},~i=1,2,...,m,~s.t.~\displaystyle\sum_{i=1}^mk_i\alpha_i=\theta$
 
    则
-   $$k_j(\alpha_j,\alpha_j)=-(\alpha_j,\sum_{i=1,~i\ne j}^mk_i\alpha_i)=0,~j=1,2,...,m$$
+
+   $$
+   k_j(\alpha_j,\alpha_j)=-(\alpha_j,\sum_{i=1,~i\ne j}^mk_i\alpha_i)=0,~j=1,2,...,m
+   $$
 
    而 $(\alpha_j,\alpha_j)>0$, 故 $k_j=0,~j=1,2,...,m$
 
@@ -848,16 +980,26 @@ $$
 1. 不妨设 $m=n+2$
 
    则
-   $$\exists k_i\in\mathbb{R},~i=1,2,...,n+1,\sum_{i=1}^{n+1}k_i^2\ne0,~s.t.~\sum_{i=1}^{n+1}k_i\alpha_i=\theta$$
+
+   $$
+   \exists k_i\in\mathbb{R},~i=1,2,...,n+1,\sum_{i=1}^{n+1}k_i^2\ne0,~s.t.~\sum_{i=1}^{n+1}k_i\alpha_i=\theta
+   $$
 
    此时 $(\alpha_{n+2},\sum_{i=1}^{n+1}k_i\alpha_i)=0$
 
    此式说明 $k_0,k_1,\dots,k_{n+1}$ 中有正有负, 不妨设
-   $$k_i>0,k_j<0,~i=1,2,...,s,~j=s+1,s+2,...,t,~1\leqslant s<t\leqslant n+1$$
+
+   $$
+   k_i>0,k_j<0,~i=1,2,...,s,~j=s+1,s+2,...,t,~1\leqslant s<t\leqslant n+1
+   $$
+
    则 $\sum_{i=1}^sk_i\alpha_i=-\sum_{i=s+1}^tk_i\alpha_i$
 
    而
-   $$(\sum_{i=1}^sk_i\alpha_i,-\sum_{i=s+1}^tk_i\alpha_i)=-\sum_{i=1}^s\sum_{j=s+1}^t(k_i\alpha_i,k_j\alpha_j)<0$$
+
+   $$
+   (\sum_{i=1}^sk_i\alpha_i,-\sum_{i=s+1}^tk_i\alpha_i)=-\sum_{i=1}^s\sum_{j=s+1}^t(k_i\alpha_i,k_j\alpha_j)<0
+   $$
 
    这与点积的正定性矛盾, 故 $m\leqslant n+1$
 
@@ -874,11 +1016,17 @@ $$
    - 若情况为后者, 则命题得证
    - 若情况为前者, 不妨设
 
-     $$k_i>0,k_j<0,~i=1,2,...,s,~j=s+1,s+2,...,t,~1\leqslant s<t\leqslant m-1$$
+     $$
+     k_i>0,k_j<0,~i=1,2,...,s,~j=s+1,s+2,...,t,~1\leqslant s<t\leqslant m-1
+     $$
+
      则 $\sum_{i=1}^sk_i\alpha_i=-\sum_{i=s+1}^tk_i\alpha_i$
 
      而
-     $$(\sum_{i=1}^sk_i\alpha_i,-\sum_{i=s+1}^tk_i\alpha_i)=-\sum_{i=1}^s\sum_{j=s+1}^t(k_i\alpha_i,k_j\alpha_j)<0$$
+
+     $$
+     (\sum_{i=1}^sk_i\alpha_i,-\sum_{i=s+1}^tk_i\alpha_i)=-\sum_{i=1}^s\sum_{j=s+1}^t(k_i\alpha_i,k_j\alpha_j)<0
+     $$
 
      这与点积的正定性矛盾, 故情况只能为后者
 
@@ -963,7 +1111,10 @@ $$
 #### <a href="#end-t-4-1" id="t-4-1">定理 - 4-1</a>
 
 令 $V$ 为一 $n$ 维 Euclidean 空间, 则 $\forall V_1\leqslant V$, 均有
-$$V=V_1\oplus V_1^\perp$$
+
+$$
+V=V_1\oplus V_1^\perp
+$$
 
 ##### <a href="#t-4-1" id="p-t-4-1">证明</a>
 
@@ -980,7 +1131,11 @@ $$V=V_1\oplus V_1^\perp$$
 > **定义** 正射影
 >
 > 令 $V$ 为一 $n$ 维 Euclidean 空间, $V_1\leqslant V$, 则 $\forall\alpha\in V_1,~\alpha$ 均有唯一分解
-> $$\alpha=\alpha_1+\alpha_2,~\alpha_1\in V_1,\alpha_2\in V_1^\perp$$
+>
+> $$
+> \alpha=\alpha_1+\alpha_2,~\alpha_1\in V_1,\alpha_2\in V_1^\perp
+> $$
+>
 > 称 $\alpha_1$ 为 $\alpha$ 在 $V_1$ 上的**正射影**
 
 ### 向量到子空间的距离
@@ -1000,7 +1155,10 @@ $$V=V_1\oplus V_1^\perp$$
 #### <a href="#end-t-4-2" id="t-4-2">定理 - 4-2</a>
 
 令 $V$ 为一 $n$ 维 Euclidean 空间, $V_1\leqslant V,\alpha\in V$, $\alpha_1\in V_1$ 为 $\alpha$ 在 $V_1$ 上的正射影, 则
-$$(\forall\beta\in V_1,\beta\ne\alpha_1),~d(\alpha,\alpha_1)<d(\alpha,\beta)$$
+
+$$
+(\forall\beta\in V_1,\beta\ne\alpha_1),~d(\alpha,\alpha_1)<d(\alpha,\beta)
+$$
 
 ##### <a href="#t-4-2" id="p-t-4-2">证明</a>
 
@@ -1030,7 +1188,11 @@ $\alpha-\beta=(\alpha-\alpha_1)+(\alpha_1-\beta),~\alpha_1-\beta\in V_1,\alpha-\
 > **定义** Gram 矩阵
 >
 > 令 $V$ 为一 $n$ 维 Euclidean 空间, $\alpha_0,\alpha_1,\dots,\alpha_m\in V$, 称
-> $$((\alpha_i,\alpha_j))_{m\times m}$$
+>
+> $$
+> ((\alpha_i,\alpha_j))_{m\times m}
+> $$
+>
 > 为 $\alpha_0,\alpha_1,\dots,\alpha_m$ 的**Gram 矩阵**, 记作 $G(\alpha_0,\alpha_1,\dots,\alpha_m)$
 
 接下来我们就可以给出做法了
@@ -1040,9 +1202,16 @@ $\alpha-\beta=(\alpha-\alpha_1)+(\alpha_1-\beta),~\alpha_1-\beta\in V_1,\alpha-\
 令 $V$ 为一 $n$ 维 Euclidean 空间, $V_1=G[\alpha_0,\alpha_1,\dots,\alpha_m]\leqslant V$, $\alpha\in V$, $X=(x_1,x_2,\dots,x_m)^T\in\mathbb{R}^m$
 
 则
-$$\gamma=(\alpha_0,\alpha_1,\dots,\alpha_m)X=\sum_{i=1}^mx_i\alpha_i\tag{4-3.1}$$
-为 $\alpha$ 在 $V_1$ 上的正射影当且仅当  
-$$G(\alpha_0,\alpha_1,\dots,\alpha_m)X=((\alpha,\alpha_0),(\alpha,\alpha_1),\dots,(\alpha,\alpha_m))^T\tag{4-3.2}$$
+
+$$
+\gamma=(\alpha_0,\alpha_1,\dots,\alpha_m)X=\sum_{i=1}^mx_i\alpha_i\tag{4-3.1}
+$$
+
+为 $\alpha$ 在 $V_1$ 上的正射影当且仅当
+
+$$
+G(\alpha_0,\alpha_1,\dots,\alpha_m)X=((\alpha,\alpha_0),(\alpha,\alpha_1),\dots,(\alpha,\alpha_m))^T\tag{4-3.2}
+$$
 
 ##### <a href="#t-4-3" id="p-t-4-3">证明</a>
 
@@ -1062,7 +1231,9 @@ $$
 
 - 若 $\alpha_0,\alpha_1,\dots,\alpha_m$ 线性无关, 则 $G(\alpha_0,\alpha_1,\dots,\alpha_m)$ 即为内积在 $V_1$ 的度量矩阵, 则 $G(\alpha_0,\alpha_1,\dots,\alpha_m)$ 是正交矩阵, $|G(\alpha_0,\alpha_1,\dots,\alpha_m)|\ne0$, 因此方程 $(\text{4-3.2})$ 的解唯一
   - 若 $\alpha_0,\alpha_1,\dots,\alpha_m$ 是一组标准正交基, 则 $G(\alpha_0,\alpha_1,\dots,\alpha_m)=E$, 此时
-    $$X=((\alpha,\alpha_0),(\alpha,\alpha_1),\dots,(\alpha,\alpha_m))^T$$
+    $$
+    X=((\alpha,\alpha_0),(\alpha,\alpha_1),\dots,(\alpha,\alpha_m))^T
+    $$
 - 若 $\alpha_0,\alpha_1,\dots,\alpha_m$ 线性相关, 则 $X$ 的解显然不唯一
 
 ### 最小二乘法
@@ -1070,7 +1241,11 @@ $$
 这是个很有用的理论, 不过放到这有点突兀, 姑且当作前面内容的应用吧
 
 在实际应用中, 线性方程组 $AX=B,~A\in\mathbb{R}^{m\times n}$ 由于测量精度等原因往往无解, 即
-$$\sum_{i=1}^n(b_1-\sum_{j=1}^na_{ij}x_j)^2\ne0\tag{4.1}$$
+
+$$
+\sum_{i=1}^n(b_1-\sum_{j=1}^na_{ij}x_j)^2\ne0\tag{4.1}
+$$
+
 此时, 我们则需要寻找一组实数 $x_1,x_2,\dots,x_n$ 使得式 $(4.1)$ 左端的值最小  
 这样的 $x_1,x_2,\dots,x_n$ 即为 $AX=B$ 的**最小二乘解**
 
@@ -1079,25 +1254,44 @@ $$\sum_{i=1}^n(b_1-\sum_{j=1}^na_{ij}x_j)^2\ne0\tag{4.1}$$
 将 $A$ 按列分块, $A=(\alpha_0,\alpha_1,\dots,\alpha_n),~\alpha_i\in\mathbb{R}^m,i=1,2,...,n$
 
 有
-$$AX=\sum_{i=1}^nx_i\alpha_i\in G[\alpha_0,\alpha_1,\dots,\alpha_n]\leqslant\mathbb{R}^m$$
+
+$$
+AX=\sum_{i=1}^nx_i\alpha_i\in G[\alpha_0,\alpha_1,\dots,\alpha_n]\leqslant\mathbb{R}^m
+$$
 
 而式 $(4.1)$ 左端用内积的语言描述即为
-$$(B-\sum_{i=1}^nx_i\alpha_i,B-\sum_{i=1}^nx_i\alpha_i)=|B-\sum_{i=1}^nx_i\alpha_i|^2\tag{4.2}$$
+
+$$
+(B-\sum_{i=1}^nx_i\alpha_i,B-\sum_{i=1}^nx_i\alpha_i)=|B-\sum_{i=1}^nx_i\alpha_i|^2\tag{4.2}
+$$
 
 要使式 $(4.2)$ 的值最小, 只需 $d(B,\sum_{i=1}^nx_i\alpha_i)$ 最小
 
 此时取的 $x_1,x_2,\dots,x_n$ 即要使 $\sum_{i=1}^nx_i\alpha_i$ 为 $B$ 在 $G[\alpha_0,\alpha_1,\dots,\alpha_n]$ 的正射影
 
 这样的 $x_1,x_2,\dots,x_n$ 是且仅是
-$$G(\alpha_0,\alpha_1,\dots,\alpha_n)X=((B,\alpha_0),(B,\alpha_1),\dots,(B,\alpha_n))^T\tag{4.3}$$
+
+$$
+G(\alpha_0,\alpha_1,\dots,\alpha_n)X=((B,\alpha_0),(B,\alpha_1),\dots,(B,\alpha_n))^T\tag{4.3}
+$$
+
 的解
 
 又
-$$G(\alpha_0,\alpha_1,\dots,\alpha_n)=A^TA$$
-$$((B,\alpha_0),(B,\alpha_1),\dots,(B,\alpha_n))^T=A^TB$$
+
+$$
+G(\alpha_0,\alpha_1,\dots,\alpha_n)=A^TA
+$$
+
+$$
+((B,\alpha_0),(B,\alpha_1),\dots,(B,\alpha_n))^T=A^TB
+$$
 
 因此式 $(4.3)$ 即为
-$$A^TAX=A^TB\tag{4.4}$$
+
+$$
+A^TAX=A^TB\tag{4.4}
+$$
 
 由正射影的存在性可知该方程一定可解, 其解为 $X=(A^TA)^{-1}A^TB$
 
@@ -1120,7 +1314,10 @@ $\alpha_0,\alpha_1,\dots,\alpha_m$ 线性无关当且仅当 $|G(\alpha_0,\alpha_
   则 $\displaystyle\sum_{i=1}^nk_i(\alpha_j,\alpha_i)=0,~j=1,2,...,n$
 
   即
-  $$G(\alpha_0,\alpha_1,\dots,\alpha_n)(k_1,k_2,\dots,k_n)^T=O\tag{4-1.1}$$
+
+  $$
+  G(\alpha_0,\alpha_1,\dots,\alpha_n)(k_1,k_2,\dots,k_n)^T=O\tag{4-1.1}
+  $$
 
   由 $|G(\alpha_0,\alpha_1,\dots,\alpha_m)|\ne0$ 知该方程只有零解
 

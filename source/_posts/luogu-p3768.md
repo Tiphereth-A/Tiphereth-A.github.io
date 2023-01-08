@@ -30,7 +30,9 @@ date: 2021-11-08 18:38:23
 
 输入一个整数 $n$ 和一个整数 $p$, 你需要求出:
 
-$$\left(\sum_{i=1}^n\sum_{j=1}^n ij \gcd(i,j)\right) \bmod p$$
+$$
+\left(\sum_{i=1}^n\sum_{j=1}^n ij \gcd(i,j)\right) \bmod p
+$$
 
 其中 $\gcd(a,b)$ 表示 $a$ 与 $b$ 的最大公约数
 
@@ -101,7 +103,9 @@ $$
 
 则时间复杂度为
 
-$$O\left(O(m)+\int_1^{\sqrt n}O\left(\frac{x}{\sqrt m}\right)\mathrm{d}x\right)=O\left(m+\frac{x}{\sqrt m}\right)$$
+$$
+O\left(O(m)+\int_1^{\sqrt n}O\left(\frac{x}{\sqrt m}\right)\mathrm{d}x\right)=O\left(m+\frac{x}{\sqrt m}\right)
+$$
 
 选取合适的 $m$ 后即为 $O(n^\frac{2}{3})$
 

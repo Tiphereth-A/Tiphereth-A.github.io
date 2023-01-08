@@ -87,7 +87,10 @@ iPig 觉得只要符合文献, 每一种 $k|n$ 都是有可能的. 他打算考�
 ## 题意简述
 
 给出 $n,g$, 求
-$$g^{\sum_{d\mid n}\binom{n}{d}}\bmod 999911659$$
+
+$$
+g^{\sum_{d\mid n}\binom{n}{d}}\bmod 999911659
+$$
 
 ## 解题思路
 
@@ -97,17 +100,25 @@ $$g^{\sum_{d\mid n}\binom{n}{d}}\bmod 999911659$$
 
 之后由 Euler 定理知
 
-$$g^{\sum_{d\mid n}\binom{n}{d}}\equiv g^{\sum_{d\mid n} \binom{n}{d}\bmod\varphi(M)}\pmod{M}$$
+$$
+g^{\sum_{d\mid n}\binom{n}{d}}\equiv g^{\sum_{d\mid n} \binom{n}{d}\bmod\varphi(M)}\pmod{M}
+$$
 
 指数部分显然要用 Lucas, 不过本题指数部分的模数 $\varphi(M)=999911658$ 较大, 我们可使用中国剩余定理进行优化
 
 > 对 $\varphi(M)$ 做质因数分解
-> $$\varphi(M)=999911658=2\times 3\times 4679\times 35617$$
+>
+> $$
+> \varphi(M)=999911658=2\times 3\times 4679\times 35617
+> $$
 
 ## 复杂度
 
 使用 CRT 优化后:
-$$O\left(\sum_{i=1}^4\bigg(p_i+\sum_{d\mid n}\log_{p_i} d\bigg)\right)=O(\sqrt{n}\log n)$$
+
+$$
+O\left(\sum_{i=1}^4\bigg(p_i+\sum_{d\mid n}\log_{p_i} d\bigg)\right)=O(\sqrt{n}\log n)
+$$
 
 其中 $p_1=2,~p_2=3,~p_3=4679,~p_4=35617$
 

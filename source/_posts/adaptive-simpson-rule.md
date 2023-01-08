@@ -56,14 +56,21 @@ Simpson 法是一种经典的数值积分方法, 一个重要应用就是求不�
 
 那么
 
-$$\int_a^bf(x)\mathrm{d}x\thickapprox\Delta x_i\sum_{i=1}^{n-1}{f((i+\frac{1}{2})\Delta x_i)}$$
+$$
+\int_a^bf(x)\mathrm{d}x\thickapprox\Delta x_i\sum_{i=1}^{n-1}{f((i+\frac{1}{2})\Delta x_i)}
+$$
 
 为了方便, 我们让每一段的长度相等, 即对于每一段, 均有
 
-$$\Delta x=\frac{b-a}{n}$$
+$$
+\Delta x=\frac{b-a}{n}
+$$
+
 那么
 
-$$\int_a^bf(x)\mathrm{d}x\thickapprox\Delta x\sum_{i=1}^{n-1}{f((i+\frac{1}{2})\Delta x)}$$
+$$
+\int_a^bf(x)\mathrm{d}x\thickapprox\Delta x\sum_{i=1}^{n-1}{f((i+\frac{1}{2})\Delta x)}
+$$
 
 ### 用梯形去近似
 
@@ -83,15 +90,21 @@ $$\int_a^bf(x)\mathrm{d}x\thickapprox\Delta x\sum_{i=1}^{n-1}{f((i+\frac{1}{2})\
 
 那么
 
-$$\int_a^bf(x)\mathrm{d}x\thickapprox\Delta x_i(\sum_{i=1}^{n-1}{f(i\Delta x_i)}+\frac{f(a)+f(b)}{2})$$
+$$
+\int_a^bf(x)\mathrm{d}x\thickapprox\Delta x_i(\sum_{i=1}^{n-1}{f(i\Delta x_i)}+\frac{f(a)+f(b)}{2})
+$$
 
 为了方便, 我们让每一段的长度相等, 即对于每一段, 均有
 
-$$\Delta x=\frac{b-a}{n}$$
+$$
+\Delta x=\frac{b-a}{n}
+$$
 
 则
 
-$$\int_a^bf(x)\mathrm{d}x\thickapprox\Delta x(\sum_{i=1}^{n-1}{f(i\Delta x)}+\frac{f(a)+f(b)}{2})$$
+$$
+\int_a^bf(x)\mathrm{d}x\thickapprox\Delta x(\sum_{i=1}^{n-1}{f(i\Delta x)}+\frac{f(a)+f(b)}{2})
+$$
 
 ### Simpson 法
 
@@ -111,7 +124,9 @@ Simpson 法是先将原曲线近似成一段段抛物线, 然后再用 Newton-Le
 
 为了方便, 我们让每一段的长度相等, 即对于每一段, 均有
 
-$$\Delta x=\frac{b-a}{n}$$
+$$
+\Delta x=\frac{b-a}{n}
+$$
 
 对于每一段区间, 我们如下处理:
 
@@ -141,11 +156,15 @@ $$
 
 故
 
-$$\int_a^bf(x)\mathrm{d}x\thickapprox\frac{\Delta x}{3}\sum_{i=0}^{2n-2}[f(x_{2i})+4f(x_{2i+1})+f(x_{2i+2})]$$
+$$
+\int_a^bf(x)\mathrm{d}x\thickapprox\frac{\Delta x}{3}\sum_{i=0}^{2n-2}[f(x_{2i})+4f(x_{2i+1})+f(x_{2i+2})]
+$$
 
 一部分资料认为 Simpson 法只用一段抛物线替代, 即
 
-$$\displaystyle\int_a^bf(x)\mathrm{d}x\thickapprox\frac{b-a}{6}[f(a)+4f(\frac{a+b}{2})+f(b)]$$
+$$
+\int_a^bf(x)\mathrm{d}x\thickapprox\frac{b-a}{6}[f(a)+4f(\frac{a+b}{2})+f(b)]
+$$
 
 下称此情况为三点 Simpson 法
 

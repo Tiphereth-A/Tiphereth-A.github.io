@@ -26,7 +26,9 @@ date: 2021-10-05 23:23:44
 
 给定 $x_1,x_2,\dots,x_n$, $y_1,y_2,\dots,y_n$, $z_1,z_2,\dots,z_n$, 已知对于 $1\le i\le n$ 满足:
 
-$$x_i\left(\sum_{j=1}^ia_j\right)+y_i\left(\sum_{j=i}^na_j\right)\equiv z_i\pmod{10^9+7}$$
+$$
+x_i\left(\sum_{j=1}^ia_j\right)+y_i\left(\sum_{j=i}^na_j\right)\equiv z_i\pmod{10^9+7}
+$$
 
 求 $a_1,a_2,\dots,a_n$
 
@@ -107,14 +109,21 @@ $$x_i\left(\sum_{j=1}^ia_j\right)+y_i\left(\sum_{j=i}^na_j\right)\equiv z_i\pmod
 
 则原式变为
 
-$$x_iA_i+y_i(A_n-A_{i-1})\equiv z_i\pmod{10^9+7}$$
+$$
+x_iA_i+y_i(A_n-A_{i-1})\equiv z_i\pmod{10^9+7}
+$$
 
 有
 
-$$A_i\equiv Z_i+Y_i(A_n-A_{i-1})\pmod{10^9+7}$$
+$$
+A_i\equiv Z_i+Y_i(A_n-A_{i-1})\pmod{10^9+7}
+$$
 
 不难观察出 $\exists \{Z'_n\},\{Y'_n\}$ 使得
-$$A_i=Z'_i+Y'_iA_n$$
+
+$$
+A_i=Z'_i+Y'_iA_n
+$$
 
 顺次递推求出 $\{Z'_n\}$, $\{Y'_n\}$ 之后求出 $\{A_n\}$, $\{a_n\}$ 即可
 

@@ -72,7 +72,10 @@ $15 = 3 \times 5 + 7 \times 0$
 ## 题意简述
 
 对于给定的正整数 $a,b,(a,b)=1$, 找到最大的正整数 $n$ 满足
-$$\nexists x,y\in\mathbb{N},~s.t.~ax+by=n$$
+
+$$
+\nexists x,y\in\mathbb{N},~s.t.~ax+by=n
+$$
 
 ## 解题思路
 

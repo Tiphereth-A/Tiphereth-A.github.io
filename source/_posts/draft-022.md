@@ -21,11 +21,15 @@ date: 2022-10-16 22:17:45
 
 **<a id="th-1-1">定理 - 1-1</a>** (Chicken McNugget 定理) 对任意两个 **互素** 的正整数 $a,b$, 令
 
-$$A=\mathbb{Z}\setminus\{ax+by:x,y\in\mathbb{N}\}$$
+$$
+A=\mathbb{Z}\setminus\{ax+by:x,y\in\mathbb{N}\}
+$$
 
 则
 
-$$\max A=ab-a-b$$
+$$
+\max A=ab-a-b
+$$
 
 {% endnote %}
 
@@ -63,13 +67,17 @@ $$
 
 即
 
-$$y'-a<0\implies y'<a$$
+$$
+y'-a<0\implies y'<a
+$$
 
 由于 $y'$ 是整数, 所以 $y'$ 最大只能取 $a-1$
 
 此时对应的 $n$ 即为
 
-$$a\times(-1)+b(a-1)=ab-a-b$$
+$$
+a\times(-1)+b(a-1)=ab-a-b
+$$
 
 如果假设 $y=-1$, 也可推得相似结论
 
@@ -106,18 +114,24 @@ $$
 
 **<a id="th-1-2">定理 - 1-2</a>** 对任意两个正整数 $a,b$, 令
 
-$$A=\mathbb{Z}\setminus\{ax+by:x,y\in\mathbb{N}\}$$
+$$
+A=\mathbb{Z}\setminus\{ax+by:x,y\in\mathbb{N}\}
+$$
 
 则
 
-$$\max A=\operatorname{lcm}\{a,b\}-a-b$$
+$$
+\max A=\operatorname{lcm}\{a,b\}-a-b
+$$
 
 <details open>
 <summary>证明</summary>
 
 注意到
 
-$$ax+by=\gcd\{a,b\}\left(x\frac{a}{\gcd\{a,b\}}+y\frac{b}{\gcd\{a,b\}}\right)$$
+$$
+ax+by=\gcd\{a,b\}\left(x\frac{a}{\gcd\{a,b\}}+y\frac{b}{\gcd\{a,b\}}\right)
+$$
 
 对括号内的部分应用 <a href="#th-1-1">定理 - 1-1</a>, 则
 

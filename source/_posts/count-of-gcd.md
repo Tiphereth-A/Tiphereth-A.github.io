@@ -21,7 +21,11 @@ date: 2021-06-08 13:18:28
 ## 直接求和
 
 即形如
-$$\sum_{\nu\in\prod_{i=1}^m[1,n_i]_\mathbb{N}}f(\nu)g(\gcd\nu)$$
+
+$$
+\sum_{\nu\in\prod_{i=1}^m[1,n_i]_\mathbb{N}}f(\nu)g(\gcd\nu)
+$$
+
 的和式, 其中
 
 - $\nu=(v_1,v_2,\dots,v_m)\in\prod_{i=1}^m[1,n_i]_\mathbb{N}$
@@ -43,7 +47,11 @@ $$
 
 - $(1)$: 枚举因子 $d$
 - $(2)$: 将 $[\gcd\nu=d]$ 化为 $[\gcd\nu=1]$, 以便于使用等式
-  $$\mu*\{1\}=\epsilon$$
+
+  $$
+  \mu*\{1\}=\epsilon
+  $$
+
 - $(3)$: 使用上述等式
 - $(4)$: 交换求和号顺序
 - $(5)$: 变量代换
@@ -65,7 +73,11 @@ $$
 ## 统计 gcd 在某集合内的向量数
 
 即形如
-$$\sum_{\nu\in\prod_{i=1}^m[1,n_i]_\mathbb{N}}[\gcd\nu\in K=\{k_1,k_2,\dots,k_s\}]$$
+
+$$
+\sum_{\nu\in\prod_{i=1}^m[1,n_i]_\mathbb{N}}[\gcd\nu\in K=\{k_1,k_2,\dots,k_s\}]
+$$
+
 的和式, 其中
 
 - $\nu=(v_1,v_2,\dots,v_m)\in\prod_{i=1}^m[1,n_i]_\mathbb{N}$

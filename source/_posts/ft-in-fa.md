@@ -48,7 +48,9 @@ tags:
 
 如图, 向量 $\vec u$, $\vec v$ 的内积为 $\vec v$ 的模长乘 $\vec u$ 在 $\vec v$ 上投影的模长, 即
 
-$$(\vec u,\vec v)=|\vec u||\vec v|\cos\alpha$$
+$$
+(\vec u,\vec v)=|\vec u||\vec v|\cos\alpha
+$$
 
 相信大家对此再熟悉不过了
 
@@ -58,17 +60,23 @@ $$(\vec u,\vec v)=|\vec u||\vec v|\cos\alpha$$
 
 实际上, 内积的计算方法并没有改变, 只不过此时 $\vec u$ 在 $\vec v$ 上投影的模长变成了下图的 $\vec x$, 从而答案变为
 
-$$(\vec u,\vec v)=|\vec x||\vec v|$$
+$$
+(\vec u,\vec v)=|\vec x||\vec v|
+$$
 
 ![横纵轴不垂直的"二维空间"下的内积](2d-general-ans.svg)
 
 经过一些简单的计算, 不难得出
 
-$$\vec x=(\cos\alpha-\sin\alpha\cot\beta)\vec v$$
+$$
+\vec x=(\cos\alpha-\sin\alpha\cot\beta)\vec v
+$$
 
 最终
 
-$$(\vec u,\vec v)=|\vec u||\vec v|(\cos\alpha-\sin\alpha\cot\beta)$$
+$$
+(\vec u,\vec v)=|\vec u||\vec v|(\cos\alpha-\sin\alpha\cot\beta)
+$$
 
 我们注意到这个内积的形式要比横纵轴垂直时的内积复杂许多
 
@@ -96,11 +104,15 @@ $$(\vec u,\vec v)=|\vec u||\vec v|(\cos\alpha-\sin\alpha\cot\beta)$$
 - $V:=\{(x,y,z)|x,y,z\in\mathbb{R}\}$
 - $+$ 为加法, 满足
 
-  $$+:V\times V\to V;((x_1,y_1,z_1),(x_2,y_2,z_2))\mapsto (x_1+x_2,y_1+y_2,z_1+z_2)$$
+  $$
+  +:V\times V\to V;((x_1,y_1,z_1),(x_2,y_2,z_2))\mapsto (x_1+x_2,y_1+y_2,z_1+z_2)
+  $$
 
 - $\cdot$ 为数乘, 满足
 
-  $$\cdot:\mathbb{R}\times V\to V;(k,(x,y,z))\mapsto (kx,ky,kz)$$
+  $$
+  \cdot:\mathbb{R}\times V\to V;(k,(x,y,z))\mapsto (kx,ky,kz)
+  $$
 
 在不引起歧义的情况下简记为 $V$
 
@@ -128,7 +140,9 @@ $$(\vec u,\vec v)=|\vec u||\vec v|(\cos\alpha-\sin\alpha\cot\beta)$$
 
 用内积表示即为
 
-$$(\vec e_i,\vec e_j)=[i=j]$$
+$$
+(\vec e_i,\vec e_j)=[i=j]
+$$
 
 其中 $[\cdot]$ 为 Iverson 括号
 
@@ -167,7 +181,9 @@ $$(\vec e_i,\vec e_j)=[i=j]$$
 
 **<a id="def-2-1">定义 - 2-1</a>** (双线性函数) 若线性空间 $(V,\Bbb{P},+,\cdot)$ 上的函数
 
-$$f:V\times V\to\Bbb{P}$$
+$$
+f:V\times V\to\Bbb{P}
+$$
 
 满足
 
@@ -182,7 +198,9 @@ $$f:V\times V\to\Bbb{P}$$
 
 **<a id="def-2-2">定义 - 2-2</a>** (共轭双线性函数) 若线性空间 $(V,\Bbb{P},+,\cdot)$ 上的函数
 
-$$f:V\times V\to\Bbb{P}$$
+$$
+f:V\times V\to\Bbb{P}
+$$
 
 满足
 
@@ -197,7 +215,9 @@ $$f:V\times V\to\Bbb{P}$$
 
 **<a id="def-2-3">定义 - 2-3</a>** (内积) 若线性空间 $(V,\Bbb{P},+,\cdot)$ 上的共轭双线性函数
 
-$$(\cdot,\cdot):V\times V\to\Bbb{P}$$
+$$
+(\cdot,\cdot):V\times V\to\Bbb{P}
+$$
 
 满足
 
@@ -233,7 +253,9 @@ $$(\cdot,\cdot):V\times V\to\Bbb{P}$$
 **<a id="th-2-1">定理 - 2-1</a>** (Jordan-von Neumann 定理) 在完备的赋范线性空间 $(V,\lVert\cdot\rVert)$ 中, 若可在 $V$ 上引入内积 $(\cdot,\cdot)$ 满足对任意 $x\in V$ 均有 $(x,x)^{\frac{1}{2}}=\lVert x\rVert$, 范数 $\lVert\cdot\rVert$ 必须且仅须满
 足如下的平行四边形等式:
 
-$$\lVert x+y\rVert^2+\lVert x-y\rVert^2=2(\lVert x\rVert^2+\lVert y\rVert^2),~\forall x,y\in V$$
+$$
+\lVert x+y\rVert^2+\lVert x-y\rVert^2=2(\lVert x\rVert^2+\lVert y\rVert^2),~\forall x,y\in V
+$$
 
 > 完备的赋范线性空间即 Banach 空间, 为简化理解, 本篇文章不介绍完备性的概念, 本文章中保证提到的所有具体的内积空间和赋范线性空间都是完备的. 另外, 完备的内积空间也叫 Hilbert 空间
 
@@ -277,10 +299,15 @@ $$
 
 - 令 $M\subseteq B$, 若 $x\in B$ 满足 $x\perp m,\forall m\in M$, 则称 $x$ 与 $M$ 正交, 记作 $x\perp M$
 - 令 $M\subseteq B$, 称
-  $$\{x\in B|x\perp M\}$$
+  $$
+  \{x\in B|x\perp M\}
+  $$
   为 $M$ 的 **正交补**, 记作 $M^{\perp}$
 - 令 $M=\{m_\alpha\}\subseteq B\setminus\{0\}$, 若
-  $$m_\alpha\perp m_\beta,\forall \alpha\ne\beta$$
+
+  $$
+  m_\alpha\perp m_\beta,\forall \alpha\ne\beta
+  $$
 
   则称 $M$ 为 **正交集**
 
@@ -296,7 +323,9 @@ $$
 
 **<a id="def-2-7">定义 - 2-7</a>** (Hilbert 基) 对于内积空间 $B$, 取其中的一个正交规范集 $M=\{m_\alpha\}$, 若 $\forall x\in B$ 都有如下表示:
 
-$$x=\sum_{\alpha}(x,m_\alpha)m_\alpha$$
+$$
+x=\sum_{\alpha}(x,m_\alpha)m_\alpha
+$$
 
 则称 $M$ 为 **Hilbert 基**, 称 $\{(x,m_\alpha)|m_\alpha\in M\}$ 为 **Fourier 系数**
 
@@ -310,23 +339,31 @@ $$x=\sum_{\alpha}(x,m_\alpha)m_\alpha$$
 
 在 $L^2([0,2\pi];\mathbb{C})$ 上定义内积
 
-$$(u,v):=\int_0^{2\pi}u(x)\overline{v(x)}\mathrm{d}x$$
+$$
+(u,v):=\int_0^{2\pi}u(x)\overline{v(x)}\mathrm{d}x
+$$
 
 定义范数
 
-$$\lVert u\rVert:=(u,u)^{\frac{1}{2}}$$
+$$
+\lVert u\rVert:=(u,u)^{\frac{1}{2}}
+$$
 
 则其构成一个完备的赋范线性空间 (Hilbert 空间)
 
 我们考虑这个空间的基, 由 Taylor 公式,
 
-$$\{x^i:i\in\mathbb{N}\}$$
+$$
+\{x^i:i\in\mathbb{N}\}
+$$
 
 是一个基, 但不是 Hilbert 基, 令其为 $B_p$
 
 而
 
-$$\{e^{ikx}|k\in\mathbb{N}\}$$
+$$
+\{e^{ikx}|k\in\mathbb{N}\}
+$$
 
 是一个 Hilbert 基, 令其为 $B_f$
 
@@ -335,12 +372,20 @@ $$\{e^{ikx}|k\in\mathbb{N}\}$$
 对于任意两个 $L^2([0,2\pi];\mathbb{C})$ 中的函数 $u,v$, 我们考虑其在 $B_p$ 和 $B_f$ 的系数
 
 设
-$$u(x)=\sum_{k=0}^{\infty}\xi_kx^k=\sum_{k=0}^{\infty}\psi_k e^{ikx}$$
-$$v(x)=\sum_{k=0}^{\infty}\rho_kx^k=\sum_{k=0}^{\infty}\mu_k e^{ikx}$$
+
+$$
+u(x)=\sum_{k=0}^{\infty}\xi_kx^k=\sum_{k=0}^{\infty}\psi_k e^{ikx}
+$$
+
+$$
+v(x)=\sum_{k=0}^{\infty}\rho_kx^k=\sum_{k=0}^{\infty}\mu_k e^{ikx}
+$$
 
 之后我们考虑 $uv$ 在 $B_p$ 和 $B_f$ 的系数, 可以得到
 
-$$u(x)v(x)=\sum_{k=0}^{\infty}\left(\textcolor{3700cc}{\sum_{j=0}^k\xi_j\rho_{k-j}}\right)x^k=\sum_{k=0}^{\infty}\textcolor{a50040}{\psi_k\mu_k} e^{ikx}$$
+$$
+u(x)v(x)=\sum_{k=0}^{\infty}\left(\textcolor{3700cc}{\sum_{j=0}^k\xi_j\rho_{k-j}}\right)x^k=\sum_{k=0}^{\infty}\textcolor{a50040}{\psi_k\mu_k} e^{ikx}
+$$
 
 > $\psi_k=(u(x),e^{ikx}), \mu_k=(v(x),e^{ikx})\implies \psi_k\mu_k=(u(x)v(x),e^{ikx})$ (按 $B_p$ 下的系数拆分 $u,v$ 再合并)
 

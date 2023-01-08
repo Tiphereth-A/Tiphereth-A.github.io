@@ -118,7 +118,11 @@ date: 2021-06-09 00:22:44
 设方程组为 $Ax=b$
 
 对系数矩阵 $A$ 做分解
-$$A=LL^T$$
+
+$$
+A=LL^T
+$$
+
 其中 $L=(l_{ij})$ 为下三角矩阵,
 
 $$
@@ -146,10 +150,20 @@ $$
 设方程组为 $Ax=b$
 
 对系数矩阵 $A$ 做分解
-$$A=LDL^T$$
+
+$$
+A=LDL^T
+$$
+
 其中 $L=(l_{ij})$ 为下三角矩阵, $D=(d_{i})$ 为对角矩阵, 令 $t_{ij}=l_{ij}d_j$, 有
-$$t_{ij}=a_{ij}-\sum_{k=1}^{j-1}t_{ik}l_{jk}$$
-$$d_{i}=a_{ii}-\sum_{k=1}^{i-1}t_{ik}l_{ik}$$
+
+$$
+t_{ij}=a_{ij}-\sum_{k=1}^{j-1}t_{ik}l_{jk}
+$$
+
+$$
+d_{i}=a_{ii}-\sum_{k=1}^{i-1}t_{ik}l_{ik}
+$$
 
 接下来计算
 
@@ -194,9 +208,17 @@ $$
 
 有
 
-$$\alpha_i=b_i-a_i\beta_{i-1}$$
-$$\beta_i=\frac{c_i}{\alpha_i}$$
-$$\gamma_i=a_i$$
+$$
+\alpha_i=b_i-a_i\beta_{i-1}
+$$
+
+$$
+\beta_i=\frac{c_i}{\alpha_i}
+$$
+
+$$
+\gamma_i=a_i
+$$
 
 令
 

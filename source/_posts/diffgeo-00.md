@@ -44,7 +44,10 @@ date: 2022-01-19 14:19:59
 - 向量函数
 
   - 参数曲线
-    $$\textbf{r}(t):=(x(t),y(t),z(t))$$
+
+    $$
+    \textbf{r}(t):=(x(t),y(t),z(t))
+    $$
 
     在本系列中, 我们要求其满足:
 
@@ -53,7 +56,10 @@ date: 2022-01-19 14:19:59
     此时的参数曲线可被称为 **正则参数曲线**
 
   - 参数曲面
-    $$\textbf{r}(u,v):=(x(u,v),y(u,v),z(u,v))$$
+
+    $$
+    \textbf{r}(u,v):=(x(u,v),y(u,v),z(u,v))
+    $$
 
     在本系列中, 我们要求其满足:
 
@@ -86,22 +92,34 @@ date: 2022-01-19 14:19:59
 
   进一步, 对于置换 $\sigma\in S^3$, 我们有
 
-  $$(v_{\sigma(1)},v_{\sigma(2)},v_{\sigma(3)})=(-1)^{\pi(\sigma)}(v_1,v_2,v_3)$$
+  $$
+  (v_{\sigma(1)},v_{\sigma(2)},v_{\sigma(3)})=(-1)^{\pi(\sigma)}(v_1,v_2,v_3)
+  $$
 
 证明略
 
 ## 微分运算规则
 
-- $$\mathrm{d}(\lambda\textbf{u}):=(\mathrm{d}\lambda)\textbf{u}+\lambda\mathrm{d}\textbf{u}$$
-- $$\mathrm{d}\lang \textbf{u},\textbf{v}\rang:=\lang\mathrm{d}\textbf{u},\textbf{v}\rang+\lang \textbf{u},\mathrm{d}\textbf{v}\rang$$
-- $$\mathrm{d}(\textbf{u}\wedge \textbf{v}):=\mathrm{d}\textbf{u}\wedge \textbf{v}+\textbf{u}\wedge\mathrm{d}\textbf{v}$$
-- $$\mathrm{d}(\textbf{u},\textbf{v},\textbf{w}):=(\mathrm{d}\textbf{u},\textbf{v},\textbf{w})+(\textbf{u},\mathrm{d}\textbf{v},\textbf{w})+(\textbf{u},\textbf{v},\mathrm{d}\textbf{w})$$
+- $$
+  \mathrm{d}(\lambda\textbf{u}):=(\mathrm{d}\lambda)\textbf{u}+\lambda\mathrm{d}\textbf{u}
+  $$
+- $$
+  \mathrm{d}\lang \textbf{u},\textbf{v}\rang:=\lang\mathrm{d}\textbf{u},\textbf{v}\rang+\lang \textbf{u},\mathrm{d}\textbf{v}\rang
+  $$
+- $$
+  \mathrm{d}(\textbf{u}\wedge \textbf{v}):=\mathrm{d}\textbf{u}\wedge \textbf{v}+\textbf{u}\wedge\mathrm{d}\textbf{v}
+  $$
+- $$
+  \mathrm{d}(\textbf{u},\textbf{v},\textbf{w}):=(\mathrm{d}\textbf{u},\textbf{v},\textbf{w})+(\textbf{u},\mathrm{d}\textbf{v},\textbf{w})+(\textbf{u},\textbf{v},\mathrm{d}\textbf{w})
+  $$
 
 ## 合同变换, 刚体运动, 反向刚体运动
 
 我们知道, $E^3$ 上的任意合同变换 $\mathcal{T}$ 均满足
 
-$$\mathcal{T}(x)=xT+P$$
+$$
+\mathcal{T}(x)=xT+P
+$$
 
 其中 $T$ 为 3 阶正交矩阵, $P\in E^3$
 

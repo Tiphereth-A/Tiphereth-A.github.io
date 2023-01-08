@@ -76,7 +76,9 @@ date: 2021-11-03 17:56:45
 
 求
 
-$$H_{n-1}\bmod p={ \binom{2n}{n}\over n+1}\bmod p$$
+$$
+H_{n-1}\bmod p={ \binom{2n}{n}\over n+1}\bmod p
+$$
 
 ## 解题思路
 

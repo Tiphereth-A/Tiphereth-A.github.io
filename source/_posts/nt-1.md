@@ -50,7 +50,10 @@ date: 2020-10-04 01:14:43
 #### <a href="#end-t-1.1" id="t-1.1">定理 - 1.1</a> (带余除法)
 
 设 $a,b\in\mathbb{Z}$, 且 $b\geqslant1$, 则存在唯一的整数 $q,r$ 使得
-$$a=qb+r,r\in[0,b)\cap\mathbb{N}$$
+
+$$
+a=qb+r,r\in[0,b)\cap\mathbb{N}
+$$
 
 ##### <a href="#t-1.1" id="p-t-1.1">证明</a>
 
@@ -58,7 +61,9 @@ $$a=qb+r,r\in[0,b)\cap\mathbb{N}$$
 
 下证唯一性, 假设又有一组整数 $q',r'$ 使得 $a=q'b-r',~r'\in[0,b)\cap\mathbb{N}$, 则
 
-$$0=a-a=(q-q')b+(r-r')$$
+$$
+0=a-a=(q-q')b+(r-r')
+$$
 
 因此 $b\mid r-r'$
 
@@ -95,7 +100,11 @@ $$0=a-a=(q-q')b+(r-r')$$
 首先易得 $d\mathbb{Z}\subseteq S$
 
 之后我们在 $S$ 中任取整数 $a$ 做带余除法
-$$a=qd+r,~q\in\mathbb{Z},r\in[0,d)\cap\mathbb{N}$$
+
+$$
+a=qd+r,~q\in\mathbb{Z},r\in[0,d)\cap\mathbb{N}
+$$
+
 可知 $r=a-qd\in S$, 而 $d$ 为 $S$ 中的最小正整数, 故必有 $r=0$
 
 这表明 $a=qd\in d\mathbb{Z}$, 因此 $S\subseteq d\mathbb{Z}$
@@ -146,10 +155,16 @@ $$a=qd+r,~q\in\mathbb{Z},r\in[0,d)\cap\mathbb{N}$$
 ### 素数分布
 
 如果令 $\pi(n)$ 表示 $[1,n]$ 中的素数个数, 则我们有
-$$\pi(n)\sim\frac{n}{\ln n}~(n\to\infty)$$
+
+$$
+\pi(n)\sim\frac{n}{\ln n}~(n\to\infty)
+$$
 
 或者写成
-$$\lim_{n\to\infty}{\pi(n)\over\frac{n}{\ln n}}=1$$
+
+$$
+\lim_{n\to\infty}{\pi(n)\over\frac{n}{\ln n}}=1
+$$
 
 证明略
 
@@ -210,7 +225,10 @@ $$\lim_{n\to\infty}{\pi(n)\over\frac{n}{\ln n}}=1$$
 ##### 时间复杂度
 
 易知
-$$T(n)=\sum_{p\in\{prime\}\cap[2,n]}\left\lfloor\frac{n}{i}\right\rfloor$$
+
+$$
+T(n)=\sum_{p\in\{prime\}\cap[2,n]}\left\lfloor\frac{n}{i}\right\rfloor
+$$
 
 而
 
@@ -257,13 +275,23 @@ $$
 
 写成式子就是
 
-$$(a,b):=\max\{d\in\mathbb{N}^*|d\mid a,d\mid b\}$$
-$$[a,b]:=\min\{d\in\mathbb{N}^*|a\mid d,b\mid d\}$$
+$$
+(a,b):=\max\{d\in\mathbb{N}^*|d\mid a,d\mid b\}
+$$
+
+$$
+[a,b]:=\min\{d\in\mathbb{N}^*|a\mid d,b\mid d\}
+$$
 
 这一组概念自然可以推广到多个整数之间
 
-$$(a_1,a_2,\dots,a_n):=\max\{d\in\mathbb{N}^*|d\mid a_i,~i=1,2,...,n\}$$
-$$[a_1,a_2,\dots,a_n]:=\min\{d\in\mathbb{N}^*|a_i\mid d,~i=1,2,...,n\}$$
+$$
+(a_1,a_2,\dots,a_n):=\max\{d\in\mathbb{N}^*|d\mid a_i,~i=1,2,...,n\}
+$$
+
+$$
+[a_1,a_2,\dots,a_n]:=\min\{d\in\mathbb{N}^*|a_i\mid d,~i=1,2,...,n\}
+$$
 
 ### 性质
 
@@ -279,7 +307,9 @@ $$[a_1,a_2,\dots,a_n]:=\min\{d\in\mathbb{N}^*|a_i\mid d,~i=1,2,...,n\}$$
 1. 若 $(a_1,a_2,\dots,a_n)=d$, 则 $(\frac{a_1}{d},\frac{a_2}{d},...,\frac{a_n}{d})=1$
 1. 对于整数 $m$, 若 $(a_i,m)=1,~i=1,2,...,n$, 则 $(\prod_{i=1}^na_i,m)=1$
 1. 设 $a_1,a_2,\dots,a_n$ 是不全为零的整数, $(a_1,a_2,\dots,a_n)=d$, 则
-   $$\left\{\sum_{i=1}^na_ix_i\bigg|x_i\in\mathbb{Z},i=1,2,...,n\right\}=d\mathbb{Z}$$
+   $$
+   \left\{\sum_{i=1}^na_ix_i\bigg|x_i\in\mathbb{Z},i=1,2,...,n\right\}=d\mathbb{Z}
+   $$
 1. 设 $c\in\mathbb{Z}/\{0\},a,b\in\mathbb{Z}$, 若 $c\mid ab,(c,b)=1$, 则 $c\mid a$
    - 特别地, 若 $p$ 为素数, $p\mid ab$, 则 $p\mid a$ 或 $p\mid b$
 
@@ -288,7 +318,10 @@ $$[a_1,a_2,\dots,a_n]:=\min\{d\in\mathbb{N}^*|a_i\mid d,~i=1,2,...,n\}$$
 ##### <a href="#end-t-3.1" id="t-3.1">定理 - 3.1</a>(性质 8, Bézout 定理)
 
 设 $a_1,a_2,\dots,a_n$ 是不全为零的整数, $(a_1,a_2,\dots,a_n)=d$, 则
-$$S:=\left\{\sum_{i=1}^na_ix_i\bigg|x_i\in\mathbb{Z},i=1,2,...,n\right\}=d\mathbb{Z}$$
+
+$$
+S:=\left\{\sum_{i=1}^na_ix_i\bigg|x_i\in\mathbb{Z},i=1,2,...,n\right\}=d\mathbb{Z}
+$$
 
 ###### <a href="#t-3.1" id="p-t-3.1">证明</a>
 
@@ -297,7 +330,10 @@ $$S:=\left\{\sum_{i=1}^na_ix_i\bigg|x_i\in\mathbb{Z},i=1,2,...,n\right\}=d\mathb
 一方面, $d$ 是 $S$ 中所有数的因子, 而 $a\in S$, 故 $d\mid a$
 
 另一方面, 注意到 $a_1,a_2,\dots,a_n\in S$, 故 $a$ 是 $a_1,a_2,\dots,a_n$ 的公因子, 即有
-$$a\mid(a_1,a_2,\dots,a_n)=d$$
+
+$$
+a\mid(a_1,a_2,\dots,a_n)=d
+$$
 
 因此 $a=d$
 
@@ -345,7 +381,10 @@ $$a\mid(a_1,a_2,\dots,a_n)=d$$
 > $$
 >
 > 容易求得
-> $$F_n=\frac{\phi^n-(1-\phi)^n}{\sqrt 5},~\phi={1+\sqrt{5}\over2}$$
+>
+> $$
+> F_n=\frac{\phi^n-(1-\phi)^n}{\sqrt 5},~\phi={1+\sqrt{5}\over2}
+> $$
 
 计算 $(F_{n+1},F_{n})$ 需要 $n$ 次迭代, 此时的时间复杂度也为 $O(\log n)$
 
@@ -384,10 +423,16 @@ $$
 $$
 
 注意到
-$$a\bmod b=a-\left\lfloor\frac{a}{b}\right\rfloor b$$
+
+$$
+a\bmod b=a-\left\lfloor\frac{a}{b}\right\rfloor b
+$$
 
 故
-$$ax+by=bx'+(a-\left\lfloor\frac{a}{b}\right\rfloor b)y'$$
+
+$$
+ax+by=bx'+(a-\left\lfloor\frac{a}{b}\right\rfloor b)y'
+$$
 
 可知
 
@@ -444,13 +489,23 @@ $$
 另外在这里列出三条重要定理
 
 1. **Wilson 定理**:
-   $$(p-1)!\equiv-1\pmod p$$
+
+   $$
+   (p-1)!\equiv-1\pmod p
+   $$
 
 1. **Fermat 小定理**: 若 $(a,p)=1$, 则
-   $$a^{p-1}\equiv1\pmod p$$
+
+   $$
+   a^{p-1}\equiv1\pmod p
+   $$
 
 1. **Euler 定理**: 若 $(a,m)=1$, 则
-   $$a^{\varphi(m)}\equiv1\pmod m$$
+
+   $$
+   a^{\varphi(m)}\equiv1\pmod m
+   $$
+
    其中 $\varphi(n)$ 为 Euler 函数, 指的是 $[1,n]$ 中所有与 $n$ 互素的数的个数
 
    > 这里简单写写 Euler 函数的性质
@@ -502,10 +557,16 @@ $ac\equiv bc\pmod m\implies a\equiv b\pmod{~\frac{m}{(c,m)}}$, 特别地, 若 $(
 ##### <a href="#t-4.2" id="p-t-4.2">证明</a>
 
 由 $ac\equiv bc\pmod m$ 可得 $m\mid(a-b)c$, 故有
-$$\frac{m}{(c,m)}\bigg|(a-b)\frac{c}{(c,m)}$$
+
+$$
+\frac{m}{(c,m)}\bigg|(a-b)\frac{c}{(c,m)}
+$$
 
 而 $(\frac{m}{(c,m)},\frac{c}{(c,m)})=1$, 故 $\frac{m}{(c,m)}\mid a-b$, 即
-$$a\equiv b\pmod{~\frac{m}{(c,m)}}$$
+
+$$
+a\equiv b\pmod{~\frac{m}{(c,m)}}
+$$
 
 <a href="#p-t-4.2" id="end-t-4.2">$\Box$</a>
 
@@ -517,7 +578,9 @@ $$a\equiv b\pmod{~\frac{m}{(c,m)}}$$
 
 #### <a href="#end-t-4.3" id="t-4.3">定理 - 4.3</a> (Wilson 定理)
 
-$$(p-1)!\equiv-1\pmod p$$
+$$
+(p-1)!\equiv-1\pmod p
+$$
 
 ##### <a href="#t-4.3" id="p-t-4.3">证明</a>
 
@@ -538,7 +601,10 @@ $$(p-1)!\equiv-1\pmod p$$
 #### <a href="#end-t-4.4" id="t-4.4">定理 - 4.4</a> (Euler 定理)
 
 若 $(a,m)=1$, 则
-$$a^{\varphi(m)}\equiv1\pmod m$$
+
+$$
+a^{\varphi(m)}\equiv1\pmod m
+$$
 
 ##### <a href="#t-4.4" id="p-t-4.4">证明</a>
 
@@ -547,7 +613,10 @@ $$a^{\varphi(m)}\equiv1\pmod m$$
 由 $(a,m)=1$ 可知 $\overline{a}\in\mathbb{Z}_m^*$, 从而 $\mathbb{Z}_m^*=\{aa_0,aa_1,\dots,aa_{\varphi(m)}\}$
 
 从而在群 $\mathbb{Z}_m^*$ 中
-$$\prod_{i=1}^{\varphi(m)}a_i=\prod_{i=1}^{\varphi(m)}aa_i=a^{\varphi(m)}\prod_{i=1}^{\varphi(m)}a_i$$
+
+$$
+\prod_{i=1}^{\varphi(m)}a_i=\prod_{i=1}^{\varphi(m)}aa_i=a^{\varphi(m)}\prod_{i=1}^{\varphi(m)}a_i
+$$
 
 两边约去 $\prod_{i=1}^{\varphi(m)}a_i$, 即得 $a^{\varphi(m)}\equiv1\pmod m$
 
@@ -578,9 +647,17 @@ $$\prod_{i=1}^{\varphi(m)}a_i=\prod_{i=1}^{\varphi(m)}aa_i=a^{\varphi(m)}\prod_{
 1. exgcd
 
    扩欧求的是 $ax+by=c$ 的解, 此时我们令 $b=m$, $c=(a,m)=1$, 则有
-   $$ax+my=1$$
+
+   $$
+   ax+my=1
+   $$
+
    即
-   $$ax\equiv 1\pmod m$$
+
+   $$
+   ax\equiv 1\pmod m
+   $$
+
    这个 $x$ 就是 $a$ 的逆元
 
    时间复杂度:$O(\log m)$
@@ -679,17 +756,27 @@ $$
 $$
 
 容易发现 $x\mid M_i:=\frac{M}{m_i}$, 令 $x=M_iy$, 则可得到方程
-$$M_iy\equiv1\pmod{m_i}$$
+
+$$
+M_iy\equiv1\pmod{m_i}
+$$
 
 显然 $y\equiv M_i^{-1}\pmod{m_i}$, 令 $N_i=y$, 则 $x=M_iN_i$
 
 此时我们进行大胆猜想: 最后结果可能是
-$$x\equiv\sum_{i=1}^kb_iM_iN_i\pmod M$$
+
+$$
+x\equiv\sum_{i=1}^kb_iM_iN_i\pmod M
+$$
 
 容易验证其确实是方程组 $(6.1-1)$ 的解, 令其为 $A$
 
 假设 $x\equiv B\pmod M$ 也是方程组 $(6.1-1)$ 的解, 则有
-$$A-B\equiv0\pmod{m_i},~i=1,2,...,k$$
+
+$$
+A-B\equiv0\pmod{m_i},~i=1,2,...,k
+$$
+
 这说明方程组 $(6.1-1)$ 的全部解模 $M$ 同余
 
 <a href="#p-t-6.1" id="end-t-6.1">$\Box$</a>
@@ -740,15 +827,26 @@ $$
 $$
 
 即存在整数 $k_1,k_2$ 使得
-$$x=m_1k_1+b_1=m_2k_2+b_2$$
+
+$$
+x=m_1k_1+b_1=m_2k_2+b_2
+$$
+
 整理一下, 便有
-$$m_1k_1-m_2k_2=b_2-b_1\tag{*}$$
+
+$$
+m_1k_1-m_2k_2=b_2-b_1\tag{*}
+$$
+
 此时我们便可以通过扩欧去解决 $(*)$ 式的可解性和一组可行解
 
 更重要的是: 此时不需要 $(m_1,m_2)=1$
 
 求出 $k_1,k_2$ 之后便可得到
-$$x\equiv m_1k_1+b_1\equiv m_2k_2+b_2\pmod{[m_1,m_2]}$$
+
+$$
+x\equiv m_1k_1+b_1\equiv m_2k_2+b_2\pmod{[m_1,m_2]}
+$$
 
 <details open>
 <summary><font color='orange'>Show code</font></summary>

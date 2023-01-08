@@ -25,7 +25,9 @@ Namomo Spring Camp 2022 Div1 每日一题记录 (2022.04.16-2022.04.22)
 
 定义
 
-$$rad(n)=\prod_{\begin{matrix} p|n\\ p\in Prime \end{matrix}}p $$
+$$
+rad(n)=\prod_{\begin{matrix} p|n\\ p\in Prime \end{matrix}}p
+$$
 
 给定整数 $n$, 若存在两个正整数 $a$,$b$,满足 $a+b=n$,同时 rad($a\times b \times n$)< $n$,输出 YES, 否则输出 NO
 
