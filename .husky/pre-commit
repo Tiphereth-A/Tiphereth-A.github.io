@@ -127,6 +127,7 @@ add_space_formula() {
 
     xargs perl -i -CSD -Mutf8 -pe 's/(\p{Han})\$/$1 \$/g' $src
     xargs perl -i -CSD -Mutf8 -pe 's/\$(\p{Han})/\$ $1/g' $src
+    xargs perl -i -CSD -Mutf8 -pe 's/([^\$]*)\$\$([^\$]+)\$\$/$1\$\$\n$1$2\n$1\$\$/g' $src
   done
 }
 
