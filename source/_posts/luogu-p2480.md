@@ -1,5 +1,5 @@
 ---
-title: "题解 - [Luogu P2480] [SDOI2010]古代猪文"
+title: "题解 - [Luogu P2480] [SDOI2010] 古代猪文"
 categories:
   - 算法竞赛
   - 题解

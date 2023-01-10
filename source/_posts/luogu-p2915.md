@@ -1,5 +1,5 @@
 ---
-title: "题解 - [Luogu P2915] [USACO08NOV]奶牛混合起来Mixed Up Cows"
+title: "题解 - [Luogu P2915] [USACO08NOV] 奶牛混合起来Mixed Up Cows"
 categories:
   - 算法竞赛
   - 题解

@@ -1,5 +1,5 @@
 ---
-title: "题解 - [Luogu P3704] [SDOI2017]数字表格"
+title: "题解 - [Luogu P3704] [SDOI2017] 数字表格"
 categories:
   - 算法竞赛
   - 题解

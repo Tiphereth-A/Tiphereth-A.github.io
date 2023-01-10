@@ -1,5 +1,5 @@
 ---
-title: "题解 - [Luogu P5042 等] [集训队互测2015] 丢失的题面（ydc的题面）"
+title: "题解 - [Luogu P5042] [UOJ 100] [集训队互测2015] 丢失的题面（ydc的题面）"
 categories:
   - 算法竞赛
   - 题解
@@ -28,7 +28,7 @@ date: 2021-11-18 00:40:39
 题目链接
 
 - [洛谷 P5042](https://www.luogu.com.cn/problem/P5042)
-- [UOJ #100](https://uoj.ac/problem/100)
+- [UOJ 100](https://uoj.ac/problem/100)
 
 <!-- more -->
 

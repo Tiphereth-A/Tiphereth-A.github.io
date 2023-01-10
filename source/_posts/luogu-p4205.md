@@ -1,5 +1,5 @@
 ---
-title: "题解 - [Luogu P4205] [NOI2005]智慧珠游戏"
+title: "题解 - [Luogu P4205] [NOI2005] 智慧珠游戏"
 categories:
   - 算法竞赛
   - 题解

@@ -1,5 +1,5 @@
 ---
-title: "题解 - [CQOI2018]异或序列"
+title: "题解 - [BZOJ 5301] [LOJ 2534] [Luogu P4462] [CQOI2018] 异或序列"
 categories:
   - 算法竞赛
   - 题解

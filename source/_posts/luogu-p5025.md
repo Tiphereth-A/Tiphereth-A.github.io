@@ -1,5 +1,5 @@
 ---
-title: "题解 - [Luogu P5025] [SNOI2017]炸弹"
+title: "题解 - [Luogu P5025] [SNOI2017] 炸弹"
 categories:
   - 算法竞赛
   - 题解

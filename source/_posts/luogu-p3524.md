@@ -1,5 +1,5 @@
 ---
-title: "题解 - [Luogu P3524] [POI2011]IMP-Party"
+title: "题解 - [Luogu P3524] [POI2011] IMP-Party"
 categories:
   - 算法竞赛
   - 题解

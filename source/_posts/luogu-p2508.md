@@ -1,5 +1,5 @@
 ---
-title: "题解 - [Luogu P2508] [HAOI2008]圆上的整点"
+title: "题解 - [Luogu P2508] [HAOI2008] 圆上的整点"
 categories:
   - 算法竞赛
   - 题解

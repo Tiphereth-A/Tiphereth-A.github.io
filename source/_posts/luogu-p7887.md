@@ -1,5 +1,5 @@
 ---
-title: 题解 - 「MCOI-06」Existence of Truth
+title: 题解 - [Luogu P7887]「MCOI-06」Existence of Truth
 categories:
   - 算法竞赛
   - 题解

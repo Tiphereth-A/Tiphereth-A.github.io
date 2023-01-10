@@ -1,5 +1,5 @@
 ---
-title: 题解 - Luogu P5462【X龙珠】
+title: 题解 - [Luogu P5462]【X龙珠】
 categories:
   - 算法竞赛
   - 题解

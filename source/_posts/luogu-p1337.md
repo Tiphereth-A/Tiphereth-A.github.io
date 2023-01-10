@@ -1,5 +1,5 @@
 ---
-title: "题解 - [Luogu P1337] [JSOI2004]平衡点 / 吊打XXX"
+title: "题解 - [Luogu P1337] [JSOI2004] 平衡点 / 吊打XXX"
 categories:
   - 算法竞赛
   - 题解

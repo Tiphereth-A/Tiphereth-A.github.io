@@ -1,5 +1,5 @@
 ---
-title: "题解 - [Luogu P1829] [国家集训队]Crash的数字表格 / JZPTAB"
+title: "题解 - [Luogu P1829] [国家集训队] Crash的数字表格 / JZPTAB"
 categories:
   - 算法竞赛
   - 题解

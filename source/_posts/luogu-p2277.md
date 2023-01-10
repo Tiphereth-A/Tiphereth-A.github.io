@@ -1,5 +1,5 @@
 ---
-title: "题解 - [Luogu P2277] [HNOI2003]24点游戏"
+title: "题解 - [Luogu P2277] [HNOI2003] 24点游戏"
 categories:
   - 算法竞赛
   - 题解

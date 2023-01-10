@@ -1,5 +1,5 @@
 ---
-title: "题解 - [Luogu P4920 等] [WC2015]未来程序"
+title: "题解 - [Luogu P4920] [UOJ 73] [WC2015] 未来程序"
 categories:
   - 算法竞赛
   - 题解
@@ -25,7 +25,7 @@ date: 2021-12-13 22:48:39
 题目链接
 
 - [洛谷 P4920](https://www.luogu.com.cn/problem/P4920)
-- [UOJ #73](https://uoj.ac/problem/73)
+- [UOJ 73](https://uoj.ac/problem/73)
 
 <!-- more -->
 

@@ -1,5 +1,5 @@
 ---
-title: "题解 - [Luogu P3200] [HNOI2009]有趣的数列"
+title: "题解 - [Luogu P3200] [HNOI2009] 有趣的数列"
 categories:
   - 算法竞赛
   - 题解

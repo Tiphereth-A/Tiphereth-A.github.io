@@ -1,5 +1,5 @@
 ---
-title: "题解 - [Luogu P3183] [HAOI2016]食物链"
+title: "题解 - [Luogu P3183] [HAOI2016] 食物链"
 categories:
   - 算法竞赛
   - 题解
