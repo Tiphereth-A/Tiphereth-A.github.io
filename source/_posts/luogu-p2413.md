@@ -31,13 +31,13 @@ date: 2018-04-06 21:02:28
 $n$ 个串联元件/电路断路的概率为:
 
 $$
-P\bigg(\sum_{i=1}^{n} A_{i}\bigg)=\sum_{i=1}^nP(A_i)
+P\bigg(\bigcup_{i=1}^{n} A_{i}\bigg)=1-\prod_{i=1}^n(1-P(A_i))
 $$
 
 $n$ 个并联元件/电路断路的概率为:
 
 $$
-P\bigg(\prod_{i=1}^{n} A_{i}\bigg)=\prod_{i=1}^nP(A_i)
+P\bigg(\bigcap_{i=1}^{n} A_{i}\bigg)=\prod_{i=1}^nP(A_i)
 $$
 
 于是这个问题就转换成只含有`+ * ( )`及数字的表达式求值问题了
