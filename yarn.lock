@@ -819,10 +819,10 @@ hexo-neat@^1.0.9:
   dependencies:
     js-yaml "^3.13.1"
 
-hexo-next-giscus@^1.0.3:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/hexo-next-giscus/-/hexo-next-giscus-1.0.3.tgz#dca16efa6716c309b3dccbc30bcc5bd11ce58c3c"
-  integrity sha512-OhfwovEWntzB1FrHEQye2YWmde+P7KTHd6NSn1EWigjSaoxi7YuwImWSRY7xOligwaei14Y8C9wLRMa8sKEM2A==
+hexo-next-giscus@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/hexo-next-giscus/-/hexo-next-giscus-1.1.0.tgz#b0648c90fc151f0286d3ca27d57393ae2a7b8698"
+  integrity sha512-NRDPEKW1bpQcfiKCICsHkgtYmwQS0Mt5of5CoBAkVWGEJY2VQYQyNXm4AvrvEds9S/xe6Q7jEhY5+CygnhsXIA==
   dependencies:
     "@next-theme/utils" "^1.3.0"
 
