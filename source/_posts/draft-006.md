@@ -1,5 +1,5 @@
 ---
-title: 论文笔记 - Multiscale structural complexity of natural patterns
+title: 论文阅读笔记 - Multiscale structural complexity of natural patterns
 date: 2021-01-03 20:47:16
 categories:
   - 随笔
