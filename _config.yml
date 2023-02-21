@@ -230,7 +230,7 @@ icodeweb:
       prefix:
         - Tiphereth-A
         - CP-archives
-        - main
+        - master
         - src
       suffix:
       codehead: |
@@ -247,7 +247,7 @@ icodeweb:
       prefix:
         - Tiphereth-A
         - CP-archives
-        - main
+        - master
         - src
       suffix:
       codehead:
@@ -257,7 +257,7 @@ icodeweb:
       prefix:
         - Tiphereth-A
         - CP-archives
-        - main
+        - master
         - src
       suffix:
       codehead: |
@@ -274,7 +274,7 @@ icodeweb:
       prefix:
         - Tiphereth-A
         - CP-archives
-        - main
+        - master
         - src
       suffix:
       codehead: |
