@@ -40,6 +40,6 @@
     "@prettier/plugin-xml": "^2.2.0",
     "husky": "^8.0.3",
     "prettier": "^2.8.4",
-    "prettier-plugin-java": "^2.0.0"
+    "prettier-plugin-java": "^2.1.0"
   }
 }
