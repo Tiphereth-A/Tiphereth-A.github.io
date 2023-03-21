@@ -6,10 +6,10 @@
 title: Tifa's Blog
 subtitle: Computer & Math
 description: A blog about CP & math
-keywords:
+keywords: competitive programming, math
 author: Tifa
 language: zh-CN
-timezone: ""
+timezone: UTC
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
