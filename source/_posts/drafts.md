@@ -39,3 +39,4 @@ date: 2020-05-20 11:06:32
 - {% post_link draft-022 %}
 - {% post_link draft-023 %}
 - {% post_link draft-024 %}
+- {% post_link draft-025 %}
