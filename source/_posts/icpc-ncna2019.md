@@ -178,7 +178,7 @@ The answer is considered correct if the absolute or relative error is less than 
 
 最小圆覆盖板子题
 
-对 $x,y,z$ 方向分别求一遍，再取最小值即可
+对 $x,y,z$ 方向分别求一遍, 再取最小值即可
 
 ## B - Code Names
 
