@@ -30,5 +30,21 @@
 		"body": [
 			"[定义 - ${1:1-1}](#def-${1:1-1})"
 		]
+	},
+	"Property": {
+		"scope": "markdown",
+		"prefix": "prop",
+		"body": [
+			"{% note primary no-icon %}\n",
+			"**<a id=\"prop-${1:1-1}\">性质 - ${1:1-1}</a>** $2\n",
+			"{% endnote %}"
+		]
+	},
+	"Property quote": {
+		"scope": "markdown",
+		"prefix": "prop-q",
+		"body": [
+			"[性质 - ${1:1-1}](#prop-${1:1-1})"
+		]
 	}
 }
