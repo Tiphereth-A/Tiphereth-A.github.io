@@ -10,6 +10,5 @@ node_modules/
 public/
 .deploy*/
 _multiconfig.yml
-.vscode/
 source/_drafts/
 _imgcode_tempout/
