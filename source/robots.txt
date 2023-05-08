@@ -17,4 +17,4 @@ Disallow: /fonts/
 Disallow: /vendors/
 Disallow: /fancybox/
 
-Sitemap: https://blog.tifa-233.com/sitemap.xml
+Sitemap: https://tifa-233.com/sitemap.xml
