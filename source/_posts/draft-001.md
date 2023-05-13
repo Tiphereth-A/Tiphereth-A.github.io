@@ -22,7 +22,7 @@ $$
   f*(g*h)(n)&=\sum_{e|n}f(e)\sum_{d'|\frac{n}{e}}g(d')h\left(\frac{n}{d'e}\right)\\
   &=\sum_{e|n}\sum_{d'|\frac{n}{e}}f(e)g\left(d'\right)h\left(\frac{n}{d'e}\right)\\
   &=\sum_{d|n}\sum_{e|d}f(e)g\left(\frac{d}{e}\right)h\left(\frac{n}{d}\right)\\
-  \Bigg(&=\sum_{abc=n}f(a)g(b)h(c)\Bigg)
+  &=\sum_{abc=n}f(a)g(b)h(c)
 \end{aligned}
 $$
 
@@ -34,37 +34,62 @@ $$
 
 其中:
 
-- (1) 就是换元
+- $(1)$ 就是换元
 
-- (2) 依赖如下定理:
+- $(2)$ 依赖如下定理:
 
-### <a href="#end-t-1" id="t-1">定理 - 1</a>
+  {% note success no-icon %}
 
-$$
-\frac{d}{e}\mid \frac{n}{e}\iff e\mid d\mid n
-$$
+  **<a id="th-1-1">定理 - 1-1</a>**
 
-#### <a href="#t-1" id="p-t-1">证明</a>
+  $$
+  \frac{d}{e}\mid \frac{n}{e}\iff e\mid d\mid n
+  $$
 
-- $\implies$
+  <details open>
+  <summary>证明</summary>
 
-  一方面, $\displaystyle\frac{d}{e}\mid \frac{n}{e}\implies \left(e\cdot\frac{d}{e}\right)\mid \left(e\cdot\frac{n}{e}\right)\implies d\mid n$
+  - $\implies$
 
-  另一方面, $\displaystyle\frac{d}{e}\in\mathbb{Z}\implies e\mid d$
+    一方面
 
-  故 $e\mid d\mid n$
+    $$
+    \frac{d}{e}\mid \frac{n}{e}\implies \left(e\cdot\frac{d}{e}\right)\mid \left(e\cdot\frac{n}{e}\right)\implies d\mid n
+    $$
 
-- $\impliedby$
+    另一方面
 
-  由 $e\mid d\mid n$ 可知 $\displaystyle\frac{n}{e},\frac{n}{d},\frac{d}{e}\in\mathbb{Z}$
+    $$
+    \frac{d}{e}\in\mathbb{Z}\implies e\mid d
+    $$
 
-  又 $\displaystyle\frac{n}{e}=\frac{n}{d}\cdot\frac{d}{e}$
+    故 $e\mid d\mid n$
 
-  故 $\displaystyle\frac{d}{e}\mid \frac{n}{e}$
+  - $\impliedby$
 
-  <a href="#p-t-1" id="end-t-1">$\Box$</a>
+    由 $e\mid d\mid n$ 可知
 
-- (3) 即是交换枚举顺序, 即 先枚举 $e$ 后枚举 $d\longrightarrow$ 先枚举 $d$ 后枚举 $e$
+    $$
+    \frac{n}{e},\frac{n}{d},\frac{d}{e}\in\mathbb{Z}
+    $$
+
+    又
+
+    $$
+    \frac{n}{e}=\frac{n}{d}\cdot\frac{d}{e}
+    $$
+
+    故
+
+    $$
+    \frac{d}{e}\mid \frac{n}{e}
+    $$
+
+  </details>
+
+  {% endnote %}
+
+- $(3)$ 即是交换枚举顺序, 即 先枚举 $e$ 后枚举 $d\longrightarrow$ 先枚举 $d$ 后枚举 $e$
 
   交换前即为先枚举 $n$ 的因子 $e$, 再枚举 $d$ 满足既是 $n$ 的**因子**也是 $e$ 的**倍数**
 
