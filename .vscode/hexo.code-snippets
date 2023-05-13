@@ -21,6 +21,7 @@
 		"body": [
 			"{% note info no-icon %}\n",
 			"**<a id=\"def-${1:1-1}\">定义 - ${1:1-1}</a>** $2\n",
+			"$3\n",
 			"{% endnote %}"
 		]
 	},
@@ -37,6 +38,7 @@
 		"body": [
 			"{% note primary no-icon %}\n",
 			"**<a id=\"prop-${1:1-1}\">性质 - ${1:1-1}</a>** $2\n",
+			"$3\n",
 			"{% endnote %}"
 		]
 	},
@@ -45,6 +47,27 @@
 		"prefix": "prop-q",
 		"body": [
 			"[性质 - ${1:1-1}](#prop-${1:1-1})"
+		]
+	},
+	"Theory": {
+		"scope": "markdown",
+		"prefix": "th",
+		"body": [
+			"{% note success no-icon %}\n",
+			"**<a id=\"th-${1:1-1}\">定理 - ${1:1-1}</a>** $2\n",
+			"$3\n",
+			"<details open>",
+			"<summary>证明</summary>",
+			"\n$4\n",
+			"</details>\n",
+			"{% endnote %}"
+		]
+	},
+	"Theory quote": {
+		"scope": "markdown",
+		"prefix": "th-q",
+		"body": [
+			"[定理 - ${1:1-1}](#th-${1:1-1})"
 		]
 	}
 }
