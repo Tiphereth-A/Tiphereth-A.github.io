@@ -19,20 +19,18 @@ $\;$
 
 $$
 \begin{aligned}
-  f*(g*h)(n)&=\sum_{e|n}f(e)\sum_{d'|\frac{n}{e}}g(d')h(\frac{n}{d'e})\\
-  &=\sum_{e|n}\sum_{d'|\frac{n}{e}}f(e)g(d')h(\frac{n}{d'e})\\
-  &=\sum_{d|n}\sum_{e|d}f(e)g(\frac{d}{e})h(\frac{n}{d})\\
-  (&=\sum_{abc=n}f(a)g(b)h(c))
+  f*(g*h)(n)&=\sum_{e|n}f(e)\sum_{d'|\frac{n}{e}}g(d')h\left(\frac{n}{d'e}\right)\\
+  &=\sum_{e|n}\sum_{d'|\frac{n}{e}}f(e)g\left(d'\right)h\left(\frac{n}{d'e}\right)\\
+  &=\sum_{d|n}\sum_{e|d}f(e)g\left(\frac{d}{e}\right)h\left(\frac{n}{d}\right)\\
+  \Bigg(&=\sum_{abc=n}f(a)g(b)h(c)\Bigg)
 \end{aligned}
 $$
 
 其中第二个等号与第三个等号的转化值得注意, 它分为如下过程:
 
 $$
-\sum_{e\mid n}\sum_{d'\mid\frac{n}{e}}\xrightarrow[(1)]{d'\to\frac{d}{e}}\sum_{e\mid n}\sum_{\frac{d}{e}\mid\frac{n}{e}}\xrightarrow[(2)]{}\sum_{e\mid n}\sum_{e\mid d\mid n}\xrightarrow[(3)]{\text{交换求和号}}\sum_{d\mid n}\sum_{e\mid d}
+\sum_{e\mid n}\sum_{d'\mid\frac{n}{e}}\xrightarrow[(1)]{d'\to\frac{d}{e}}\sum_{e\mid n}\sum_{\frac{d}{e}\mid\frac{n}{e}}\xrightarrow[(2)]{}\sum_{e\mid n}\sum_{e\mid d\mid n}\xrightarrow[(3)]{\text{Swap}}\sum_{d\mid n}\sum_{e\mid d}
 $$
-
-> $\displaystyle\sum_{\frac{d}{e}\mid\frac{n}{e}}$ 的下标用`\frac{d }{e} \mid \frac{n }{e}`会出 bug, 要用`\frac{d}{e} \mid \frac{n}{e}`, 不知道为什么
 
 其中:
 
@@ -50,9 +48,9 @@ $$
 
 - $\implies$
 
-  一方面, $\displaystyle\frac{d}{e}\mid \frac{n}{e}\implies (e\cdot\frac{d}{e})\mid (e\cdot\frac{n}{e})\implies d\mid n$
+  一方面, $\displaystyle\frac{d}{e}\mid \frac{n}{e}\implies \left(e\cdot\frac{d}{e}\right)\mid \left(e\cdot\frac{n}{e}\right)\implies d\mid n$
 
-  另一方面, $\frac{d}{e}\in\mathbb{Z}\implies e\mid d$
+  另一方面, $\displaystyle\frac{d}{e}\in\mathbb{Z}\implies e\mid d$
 
   故 $e\mid d\mid n$
 
