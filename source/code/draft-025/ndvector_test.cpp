@@ -14,11 +14,9 @@ template <
 std::basic_ostream<Ch, Tr> &operator<<(std::basic_ostream<Ch, Tr> &os,
                                        const Ct &x) {
   if (x.begin() == x.end()) return os << "[]";
-  if (x.begin() == x.end()) return os;
   os << '[';
   for (auto it = x.begin(); it != x.end() - 1; ++it) os << *it << ", ";
-  os << x.back() << ']';
-  return os;
+  return os << x.back() << ']';
 }
 
 #define OUTPUT_(x) cout << #x << ": " << x << endl
