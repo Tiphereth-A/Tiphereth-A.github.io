@@ -212,14 +212,6 @@ $$
 
 {% endnote %}
 
-### 代数拟阵
-
-{% note info no-icon %}
-
-**<a id="def-3-4">定义 - 3-4</a>** 对域 $K$ 和其子域 $F$，令 $E\subset K$，定义 $\mathcal{I}$ 为 $E$ 的某些子集构成的子集族，这些子集满足对任意 $A\subseteq E$，$A$ 在 $\mathcal{I}$ 中当且仅当扩域 $F(A)$ 的超越次数等于 $|A|$，则称拟阵 $(E,\mathcal{I})$ 为**代数拟阵**（algebraic matroid）。
-
-{% endnote %}
-
 ### 划分拟阵
 
 ## 运算
