@@ -52,7 +52,7 @@ $$
 A\in\mathcal{I}_1\iff f(A)\in\mathcal{I}_2,\quad \forall A\subseteq E_1,
 $$
 
-则称 $M_1$ 和 $M_2$ **同构**。
+则称 $M_1$ 和 $M_2$ **同构**，记作 $M_1\cong M_2$.
 
 类似可定义拟阵的单同态和满同态。
 
@@ -82,7 +82,7 @@ $$
 
 {% note info no-icon %}
 
-**<a id="def-1-5">定义 - 1-5</a>** 对拟阵 $M=(E,\mathcal{I})$，定义函数 $r(A)=\max\{|X|:X\subseteq A, X\in\mathcal{I}\},~\forall A\subseteq E$，称其为拟阵 $M$ 的**秩函数**（rank function）。
+**<a id="def-1-5">定义 - 1-5</a>** 对拟阵 $M=(E,\mathcal{I})$，定义函数 $r_M(A)=\max\{|X|:X\subseteq A, X\in\mathcal{I}\},~\forall A\subseteq E$，称其为拟阵 $M$ 的**秩函数**（rank function）。不引起歧义时可简记为 $r(A)$.
 
 称 $r(M)=r(E)$ 为拟阵 $M$ 的**秩**（rank）。
 
@@ -225,6 +225,31 @@ $$
 ## 运算
 
 ### 对偶拟阵
+
+{% note info no-icon %}
+
+**<a id="def-4-1">定义 - 4-1</a>** 对拟阵 $M=(E,\mathcal{I})$，定义其**对偶拟阵**（dual matroid）为 $M^*=(E,\mathcal{I}^*)$，其中
+
+$$
+\mathcal{I}^*=\{A\subseteq E:\exists B\in\mathcal{B}(M),~B\subseteq E\setminus A\}
+$$
+
+不难验证 $M^*$ 是拟阵。
+
+若 $M\cong M^*$，则称 $M$ 为**自对偶拟阵**（self-dual matroid）。
+
+{% endnote %}
+
+对偶拟阵有如下性质：
+
+{% note primary no-icon %}
+
+**<a id="prop-4-1">性质 - 4-1</a>** 对拟阵 $M=(E,\mathcal{I})$，
+
+1. $(M^*)^*=M$；
+2. $M^*$ 的秩函数 $r_{M^*}(A)=|A|+r_{M}(E\setminus A)-r_{M}(A)$.
+
+{% endnote %}
 
 ### 拟阵的和
 
