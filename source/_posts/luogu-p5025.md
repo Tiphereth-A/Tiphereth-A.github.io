@@ -1,5 +1,5 @@
 ---
-title: "题解 - [Luogu P5025] [SNOI2017] 炸弹"
+title: "题解 - [Luogu P5025] [LOJ 2255] [SNOI2017] 炸弹"
 categories:
   - 算法竞赛
   - 题解
@@ -9,6 +9,7 @@ tags:
   - 省选
   - SNOI
   - 洛谷
+  - LibreOJ
   - 数据结构
   - 图论
   - 单调栈
@@ -17,7 +18,10 @@ tags:
 date: 2022-06-28 22:01:58
 ---
 
-[题目链接](https://www.luogu.com.cn/problem/P4205)
+## 题面
+
+- [洛谷 P5025](https://www.luogu.com.cn/problem/P4205)
+- [LOJ 2255](https://loj.ac/p/2255)
 
 <!-- more -->
 
