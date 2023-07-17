@@ -10,13 +10,12 @@
     hexo-util "2.5.0"
     js-yaml "4.1.0"
 
-"@prettier/plugin-xml@^3.0.0":
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/@prettier/plugin-xml/-/plugin-xml-3.1.0.tgz#dd0cc9750df5fd21728783e3886e5d35db620f29"
-  integrity sha512-0RskvTvwQzTOq3nKXjHT7mnTUs/b8xh1iONC0lEYyWRtSHseE2N8pEvdYSy/7dIKEA34aPHKGrSAmKjK2xPAtQ==
+"@prettier/plugin-xml@^3.1.1":
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/@prettier/plugin-xml/-/plugin-xml-3.1.1.tgz#90e9f311aaef7d4e3f177acb9a93fa56f27efe9f"
+  integrity sha512-kf20whg987pD/GWz0s1H2iA2170NnyP7chfmSkY55Dhs8wZwWxVxPItfWsfJo1FVMvTuNUPZY/hTqqHrzxb6Pg==
   dependencies:
     "@xml-tools/parser" "^1.0.11"
-    prettier ">=3.0.0"
 
 "@tootallnate/once@2":
   version "2.0.0"
@@ -1480,7 +1479,7 @@ prettier-plugin-java@^2.1.0:
     lodash "4.17.21"
     prettier "3.0.0"
 
-prettier@3.0.0, prettier@>=3.0.0, prettier@^3.0.0:
+prettier@3.0.0, prettier@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/prettier/-/prettier-3.0.0.tgz#e7b19f691245a21d618c68bc54dc06122f6105ae"
   integrity sha512-zBf5eHpwHOGPC47h0zrPyNn+eAEIdEzfywMoYn2XPi0P44Zp0tSq64rq0xAREh4auw2cJZHo9QUob+NqCQky4g==
