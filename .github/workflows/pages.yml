@@ -27,7 +27,7 @@ jobs:
       - name: Build
         run: yarn install && yarn build
       - name: Deploy
-        if: ${{ github.event_name == 'push' }}
+        if: ${{ contains(fromJSON('["push", "workflow_dispatch"]'), github.event_name) }}
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
