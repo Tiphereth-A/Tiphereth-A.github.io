@@ -4,7 +4,7 @@ using pii = std::pair<int, int>;
 using namespace std;
 const int N = 100010;
 int a[N];
-inline void solve(int t_ = 0) {
+void solve(int t_ = 0) {
   int n, k;
   cin >> n >> k;
   ll ss = 0;

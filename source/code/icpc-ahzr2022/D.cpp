@@ -11,7 +11,7 @@ Tp inc(Tp &i) {
   return ++i;
 }
 using namespace std;
-inline void solve(int t_ = 0) {
+void solve(int t_ = 0) {
   double S, ans;
   int n, a;
   cin >> n;

@@ -15,7 +15,7 @@ Tp inc(Tp &i) {
 using namespace std;
 const int MOD = 998244353;
 #define int long long
-inline void solve(int t_ = 0) {
+void solve(int t_ = 0) {
   int n, m, k;
   cin >> n >> m >> k;
   if (k == 0) return (void)(cout << (m == 0 ? 1 : 0));

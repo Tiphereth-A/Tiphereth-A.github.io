@@ -23,7 +23,7 @@ const auto STATIC__ = []() {
   }
   return 0;
 }();
-inline auto solve(int t_) -> void {
+auto solve(int t_) -> void {
   read_var_(int, n);
   for_(i, 1, n, x) {
     cin >> x;

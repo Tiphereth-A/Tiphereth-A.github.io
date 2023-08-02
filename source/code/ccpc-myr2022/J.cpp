@@ -10,7 +10,7 @@ Tp inc(Tp &i) {
   return ++i;
 }
 using namespace std;
-inline void solve(int t_ = 0) {
+void solve(int t_ = 0) {
   int n, a_[3];
   cin >> n >> a_[0] >> a_[1] >> a_[2];
   sort(a_, a_ + 3);

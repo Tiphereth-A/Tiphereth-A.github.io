@@ -20,7 +20,7 @@ struct Fenwick {
 };
 const int N = 500000 + 7;
 i64 A[N], B[N], C[N], Ans[N];
-inline void solve() {
+void solve() {
   int n, m;
   cin >> n >> m;
   for (int i = 1; i <= n; ++i) cin >> A[i], B[i] = A[i];

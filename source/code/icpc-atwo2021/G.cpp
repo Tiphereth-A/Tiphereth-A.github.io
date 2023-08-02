@@ -7,7 +7,7 @@ ll ans, f[N][2], g[N][2];
 struct Edge {
   int to, nxt, z;
 } e[N << 1];
-inline void ins(int x, int y, int z) {
+void ins(int x, int y, int z) {
   e[++num].to = y;
   e[num].nxt = h[x];
   e[num].z = z;
@@ -21,7 +21,7 @@ struct node {
   int x;
   ll f1, f2;
 } a[N];
-inline bool operator<(node x, node y) { return x.x < y.x; }
+bool operator<(node x, node y) { return x.x < y.x; }
 void dfs(int x, int fa, int c) {
   f[x][0] = 1ll;
   f[x][1] = 1ll;

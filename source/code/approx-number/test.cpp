@@ -6,7 +6,7 @@ float InvSqrt(float x, int it) {
 
   i = 0x5f3759df - (i >> 1);
   x = *(float *)&i;
-  for (register int i = 1; i <= it; ++i) x = x * (1.5f - xhalf * x * x);
+  for (int i = 1; i <= it; ++i) x = x * (1.5f - xhalf * x * x);
   return x;
 }
 float GetRErr(float test, float real) {

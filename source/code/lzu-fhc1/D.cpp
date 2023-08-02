@@ -59,8 +59,8 @@ struct Node {
 #define ls(k) (k << 1)
 
 #define rs(k) (k << 1 | 1)
-inline void push_up(int k) { sgt[k].val = sgt[rs(k)].val * sgt[ls(k)].val; }
-inline void push_down(int k) {
+void push_up(int k) { sgt[k].val = sgt[rs(k)].val * sgt[ls(k)].val; }
+void push_down(int k) {
   int f = sgt[k].f;
   sgt[k].f = 0;
   sgt[ls(k)].f = sgt[rs(k)].f = f;

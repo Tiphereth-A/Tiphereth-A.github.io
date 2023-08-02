@@ -14,7 +14,7 @@ public:
     return fx == fy ? false : (fa[fx] = fy, true);
   }
 };
-inline void solve(int t_ = 0) {
+void solve(int t_ = 0) {
   int n, m;
   cin >> n >> m;
   vector<vector<int>> ng(n + 1);

@@ -13,7 +13,7 @@ i64 exgcd(i64 &x, i64 &y, i64 a, i64 b) {
   y = 0;
   return a;
 }
-inline void solve(int t_ = 0) {
+void solve(int t_ = 0) {
   pll a, b;
   cin >> a.first >> a.second >> b.first >> b.second;
   i64 lx = b.first - a.first, ly = b.second - a.second;

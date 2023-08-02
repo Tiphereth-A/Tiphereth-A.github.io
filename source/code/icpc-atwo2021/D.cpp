@@ -3,7 +3,7 @@ using namespace std;
 #define read_var_(type, name) \
   type name;                  \
   std::cin >> name
-inline auto solve(int t_) -> void {
+auto solve(int t_) -> void {
   read_var_(int, n);
   cout << fixed << setprecision(12) << 1. * n / (2 * (n - 1)) << '\n';
 }

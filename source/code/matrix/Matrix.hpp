@@ -47,7 +47,7 @@ public:
   using data_t = Tp;
 
 protected:
-  inline constexpr friend std::ptrdiff_t _gauss(self &now) {
+  constexpr friend std::ptrdiff_t _gauss(self &now) {
     std::size_t rk = 0;
     bool neg = false;
     _for(i, 0, std::min(now.get_row(), now.get_col()), now_row = 0) {
@@ -71,7 +71,7 @@ protected:
     return static_cast<std::ptrdiff_t>(neg ? -rk : rk);
   }
 
-  inline constexpr friend std::ptrdiff_t _gauss_half(self &now) {
+  constexpr friend std::ptrdiff_t _gauss_half(self &now) {
     std::size_t rk = 0;
     bool neg = false;
     _for(i, 0, std::min(now.get_row(), now.get_col()), now_row = 0) {
@@ -94,7 +94,7 @@ protected:
     return static_cast<std::ptrdiff_t>(neg ? -rk : rk);
   }
 
-  inline constexpr friend std::ptrdiff_t _gauss_euclid(self &now) {
+  constexpr friend std::ptrdiff_t _gauss_euclid(self &now) {
     std::size_t rk = 0;
     bool neg = false;
     _for(i, 0, std::min(now.get_row(), now.get_col()), now_row = 0) {
@@ -125,7 +125,7 @@ protected:
     return static_cast<std::ptrdiff_t>(neg ? -rk : rk);
   }
 
-  inline constexpr friend std::ptrdiff_t _gauss_half_euclid(self &now) {
+  constexpr friend std::ptrdiff_t _gauss_half_euclid(self &now) {
     std::size_t rk = 0;
     bool neg = false;
     _for(i, 0, std::min(now.get_row(), now.get_col()), now_row = 0) {
@@ -188,20 +188,20 @@ public:
     return *this;
   }
 
-  inline constexpr self &clear() {
+  constexpr self &clear() {
     _for_each(i, j) this->data(i, j) = 0;
     return *this;
   }
 
-  inline constexpr const std::size_t &get_row() const { return this->row; }
-  inline constexpr const std::size_t &get_col() const { return this->col; }
-  inline constexpr const data_t &get_zero() const { return this->zero; }
-  inline constexpr const data_t &get_one() const { return this->one; }
+  constexpr const std::size_t &get_row() const { return this->row; }
+  constexpr const std::size_t &get_col() const { return this->col; }
+  constexpr const data_t &get_zero() const { return this->zero; }
+  constexpr const data_t &get_one() const { return this->one; }
 
-  inline constexpr data_t &data(const size_t &r, const size_t &c) const {
+  constexpr data_t &data(const size_t &r, const size_t &c) const {
     return const_cast<self * const>(this)->mat[r][c];
   }
-  inline constexpr data_t &data(const size_t &r, const size_t &c) {
+  constexpr data_t &data(const size_t &r, const size_t &c) {
     return this->mat[r][c];
   }
   data_t &operator()(const std::size_t &r, const std::size_t &c) {
@@ -209,52 +209,52 @@ public:
   }
 
   template <typename Unary>
-  inline constexpr self &transform_unary(Unary &&op) {
+  constexpr self &transform_unary(Unary &&op) {
     _for_each(i, j) this->data(i, j) = op(this->data(i, j));
     return *this;
   }
   template <typename Unary>
-  friend inline constexpr self calc_unary(const self &lhs, Unary &&op) {
+  friend constexpr self calc_unary(const self &lhs, Unary &&op) {
     return self(lhs).transform_unary(op);
   }
 
   template <typename Binary>
-  inline constexpr self &transform_binary(const self &rhs, Binary &&op) {
+  constexpr self &transform_binary(const self &rhs, Binary &&op) {
     _for_each(i, j) this->data(i, j) = op(this->data(i, j), rhs.data(i, j));
     return *this;
   }
   template <typename Binary>
-  friend inline constexpr self
+  friend constexpr self
   calc_binary(const self &lhs, const self &rhs, Binary &&op) {
     return self(lhs).transform_binary(rhs, op);
   }
 
-  inline constexpr friend std::ptrdiff_t gauss(self &now, normal_tag) {
+  constexpr friend std::ptrdiff_t gauss(self &now, normal_tag) {
     return _gauss(now);
   }
-  inline constexpr friend std::ptrdiff_t gauss(self &now, euclid_tag) {
+  constexpr friend std::ptrdiff_t gauss(self &now, euclid_tag) {
     return _gauss_euclid(now);
   }
 
-  inline constexpr friend std::ptrdiff_t gauss_half(self &now, normal_tag) {
+  constexpr friend std::ptrdiff_t gauss_half(self &now, normal_tag) {
     return _gauss_half(now);
   }
-  inline constexpr friend std::ptrdiff_t gauss_half(self &now, euclid_tag) {
+  constexpr friend std::ptrdiff_t gauss_half(self &now, euclid_tag) {
     return _gauss_half_euclid(now);
   }
 
-  inline constexpr self trans() {
+  constexpr self trans() {
     self ret(this->get_col(), this->get_row(), this->equ);
     _for_each(i, j) ret.data(j, i) = this->data(i, j);
     return ret;
   }
 
-  inline constexpr std::size_t rank() const {
+  constexpr std::size_t rank() const {
     self _ = self(*this);
     return std::abs(gauss_half(_, typename gauss_tag<data_t>::type()));
   }
 
-  inline constexpr data_t det() const {
+  constexpr data_t det() const {
     _square_matrix_needed;
 
     self _ = self(*this);
@@ -267,7 +267,7 @@ public:
     return ans;
   }
 
-  inline constexpr self inverse() const {
+  constexpr self inverse() const {
     _square_matrix_needed;
 
     self _(this->get_row(), this->get_row() * 2, this->equ);
@@ -287,58 +287,57 @@ public:
     return ret;
   }
 
-  inline constexpr self &add(const self &rhs) {
+  constexpr self &add(const self &rhs) {
     return this->transform_binary(rhs, std::plus<data_t>());
   }
-  inline constexpr self &minus(const self &rhs) {
+  constexpr self &minus(const self &rhs) {
     return this->transform_binary(rhs, std::minus<data_t>());
   }
-  inline constexpr self &multiply(const self &rhs) {
+  constexpr self &multiply(const self &rhs) {
     return this->transform_binary(rhs, std::multiplies<data_t>());
   }
-  inline constexpr self &divide(const self &rhs) {
+  constexpr self &divide(const self &rhs) {
     return this->transform_binary(rhs, std::divides<data_t>());
   }
-  inline constexpr self &add(const data_t &scalar) {
+  constexpr self &add(const data_t &scalar) {
     return this->transform_unary(
       [&](const data_t &x) { return std::plus<data_t>()(x, scalar); });
   }
-  inline constexpr self &minus(const data_t &scalar) {
+  constexpr self &minus(const data_t &scalar) {
     return this->transform_unary(
       [&](const data_t &x) { return std::minus<data_t>()(x, scalar); });
   }
-  inline constexpr self &multiply(const data_t &scalar) {
+  constexpr self &multiply(const data_t &scalar) {
     return this->transform_unary(
       [&](const data_t &x) { return std::multiplies<data_t>()(x, scalar); });
   }
-  inline constexpr self &divide(const data_t &scalar) {
+  constexpr self &divide(const data_t &scalar) {
     return this->transform_unary(
       [&](const data_t &x) { return std::divides<data_t>()(x, scalar); });
   }
 
-  friend inline constexpr self &add(const self &lhs, const self &rhs) {
+  friend constexpr self &add(const self &lhs, const self &rhs) {
     return self(lhs).add(rhs);
   }
-  friend inline constexpr self &minus(const self &lhs, const self &rhs) {
+  friend constexpr self &minus(const self &lhs, const self &rhs) {
     return self(lhs).minus(rhs);
   }
-  friend inline constexpr self &multiply(const self &lhs, const self &rhs) {
+  friend constexpr self &multiply(const self &lhs, const self &rhs) {
     return self(lhs).multiply(rhs);
   }
-  friend inline constexpr self &divide(const self &lhs, const self &rhs) {
+  friend constexpr self &divide(const self &lhs, const self &rhs) {
     return self(lhs).divide(rhs);
   }
-  friend inline constexpr self &add(const self &lhs, const data_t &scalar) {
+  friend constexpr self &add(const self &lhs, const data_t &scalar) {
     return self(lhs).add(scalar);
   }
-  friend inline constexpr self &minus(const self &lhs, const data_t &scalar) {
+  friend constexpr self &minus(const self &lhs, const data_t &scalar) {
     return self(lhs).minus(scalar);
   }
-  friend inline constexpr self &multiply(const self &lhs,
-                                         const data_t &scalar) {
+  friend constexpr self &multiply(const self &lhs, const data_t &scalar) {
     return self(lhs).multiply(scalar);
   }
-  friend inline constexpr self &divide(const self &lhs, const data_t &scalar) {
+  friend constexpr self &divide(const self &lhs, const data_t &scalar) {
     return self(lhs).divide(scalar);
   }
 

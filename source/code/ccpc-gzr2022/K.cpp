@@ -2,7 +2,7 @@
 using namespace std;
 using i64 = int64_t;
 const int MOD = 1e9 + 7;
-inline auto solve([[maybe_unused]] int t_ = 0) -> void {
+auto solve([[maybe_unused]] int t_ = 0) -> void {
   int n, m;
   cin >> n >> m;
   vector<vector<int>> g(n + 1), dg(n + 1);

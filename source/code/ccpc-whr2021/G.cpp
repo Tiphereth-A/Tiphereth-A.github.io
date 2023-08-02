@@ -14,7 +14,7 @@ Tp inc(Tp &i) {
 }
 using namespace std;
 const int MOD = 998244353;
-inline void solve(int t_ = 0) {
+void solve(int t_ = 0) {
   map<int, int> Map;
   int n, m;
   cin >> n >> m;

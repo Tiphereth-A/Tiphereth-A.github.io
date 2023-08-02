@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using i64 = int64_t;
 using namespace std;
-inline void solve(int t_ = 0) {
+void solve(int t_ = 0) {
   int n;
   cin >> n;
   i64 t;

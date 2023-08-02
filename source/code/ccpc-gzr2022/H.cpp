@@ -2,7 +2,7 @@
 using namespace std;
 using i64 = int64_t;
 const string AB_[2] = {"Bob", "Alice"};
-inline void solve() {
+void solve() {
   i64 n, k;
   cin >> n >> k;
   vector<bool> vis(1000000 + 1);

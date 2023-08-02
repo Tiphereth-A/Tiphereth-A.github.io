@@ -8,7 +8,7 @@ bool chkmax(T &a, T b) {
   return a < b ? a = b, true : false;
 }
 const i64 MOD = 1e9 + 7, INV2 = 5e8 + 4;
-inline constexpr i64 qpow(i64 a, i64 b = MOD - 2, const i64 &mod = MOD) {
+constexpr i64 qpow(i64 a, i64 b = MOD - 2, const i64 &mod = MOD) {
   i64 res(1);
   a %= mod;
   for (; b; b >>= 1, (a *= a) %= mod)
@@ -19,7 +19,7 @@ const int N = 2e5 + 5, P = 2e5 + 5;
 bool vis[N];
 i64 prime[P], cnt_prime;
 i64 invp2[P], f[N];
-inline void init_prime(const i64 &n = N - 1) {
+void init_prime(const i64 &n = N - 1) {
   f[1] = 1;
   for (i64 i = 2; i <= n; ++i) {
     if (!vis[i]) {
@@ -38,7 +38,7 @@ inline void init_prime(const i64 &n = N - 1) {
   }
 }
 i64 a[N], g[N];
-inline auto solve() -> void {
+auto solve() -> void {
   i64 n;
   cin >> n;
   i64 max_num = 0;

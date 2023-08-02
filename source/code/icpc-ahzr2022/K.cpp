@@ -14,7 +14,7 @@ const int N = 1000010;
 int n, Q, cnt, ch[N][27], sz[N], num[N];
 i64 sum = 0;
 i64 ss[27][27];
-inline void ins(int p, string s) {
+void ins(int p, string s) {
   for (int i = 0; i < s.length(); ++i) {
     for (int j = 0; j < 26; ++j) {
       if (j != s[i] - 'a') { ss[j][s[i] - 'a'] += sz[ch[p][j]]; }
@@ -30,7 +30,7 @@ inline void ins(int p, string s) {
   num[p]++;
   sum += sz[p] - num[p];
 }
-inline void solve(int t_ = 0) {
+void solve(int t_ = 0) {
   cin >> n >> Q;
   int root = 0;
   for (int i = 1; i <= n; ++i) {

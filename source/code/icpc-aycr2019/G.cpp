@@ -3,12 +3,12 @@ using namespace std;
 const int N = 100010;
 int n, m;
 int t[N << 2][4], tag[N << 2][4];
-inline void update(int v) {
+void update(int v) {
   for (int i = 0; i < 4; ++i) {
     t[v][i] = max(t[v][i], max(t[v << 1][i], t[v << 1 | 1][i]));
   }
 }
-inline void pushdown(int v) {
+void pushdown(int v) {
   for (int i = 0; i < 4; ++i) {
     if (tag[v][i]) {
       t[v << 1][i] += tag[v][i];
@@ -19,8 +19,7 @@ inline void pushdown(int v) {
     }
   }
 }
-inline void
-add(int v, int l, int r, int x, int y, int a2, int a3, int a5, int a7) {
+void add(int v, int l, int r, int x, int y, int a2, int a3, int a5, int a7) {
   if (x <= l && r <= y) {
     if (a2) {
       tag[v][0] += a2;
@@ -47,7 +46,7 @@ add(int v, int l, int r, int x, int y, int a2, int a3, int a5, int a7) {
   update(v);
   return;
 }
-inline int query(int v, int l, int r, int x, int y) {
+int query(int v, int l, int r, int x, int y) {
   if (x <= l && r <= y) {
     int mx = 0;
     for (int i = 0; i < 4; ++i) { mx = max(mx, t[v][i]); }

@@ -37,7 +37,7 @@ void DP(int u, int fa) {
     sz[u] += sz[v];
   }
 }
-inline void solve() {
+void solve() {
   int n;
   cin >> n;
   for (int i = 1, u, v; i < n; ++i) {

@@ -71,14 +71,14 @@ std::priority_queue<Node, std::vector<Node>, std::greater<Node>> queue;
 Point start, end;
 
 //!
-inline void init() {
+void init() {
   scanf("%d%d", &n, &m);
   for (int i = 1; i <= n; ++i)
     for (int j = 1; j <= m; ++j) scanf("%d", &__map[i][j]);
   scanf("%d%d%d%d", &start.x, &start.y, &end.x, &end.y);
 }
 
-inline _state_t main() {
+_state_t main() {
   init();
   queue.push((Node){start, 0});
   start.set_state(__forbidden__);

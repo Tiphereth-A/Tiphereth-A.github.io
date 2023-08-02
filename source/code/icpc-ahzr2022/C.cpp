@@ -13,7 +13,7 @@ Tp inc(Tp &i) {
   return ++i;
 }
 using namespace std;
-inline void solve(int t_ = 0) {
+void solve(int t_ = 0) {
   int n, k;
   cin >> n >> k;
   vector<int> p(n + 1);

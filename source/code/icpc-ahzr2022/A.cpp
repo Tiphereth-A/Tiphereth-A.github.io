@@ -20,7 +20,7 @@ void exgcd(int a, int b, int &x, int &y) {
   exgcd(b, a % b, y, x);
   y -= (a / b) * x;
 }
-inline void solve(int t_ = 0) {
+void solve(int t_ = 0) {
   int n, m, a, b, c = 0;
   cin >> n >> m;
   Rep(i, 0, n - 1) cin >> a, c += a;

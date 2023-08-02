@@ -5,7 +5,7 @@ int n, num, h[N], a[N], f[N][2][2];
 struct node {
   int to, nxt;
 } e[N << 1];
-inline void ins(int x, int y) {
+void ins(int x, int y) {
   e[++num].to = y;
   e[num].nxt = h[x];
   h[x] = num;

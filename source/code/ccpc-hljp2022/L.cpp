@@ -36,7 +36,7 @@ bool kmp(const string_view &s, const string_view &t) {
 }  // namespace KMP
 using KMP::kmp;
 #define MULTI_CASES
-inline auto solve() -> void {
+auto solve() -> void {
   string s, t;
   cin >> s >> t;
   int l1, l2;

@@ -87,7 +87,7 @@ lint_code() {
     case $src in
       *.c|*.cpp|*.h|*.hpp|*.java)
         echo "Using Clang-format"
-        clang-format -style=file:$clangformatconf -i $src
+        clang-format -style=file:$clangformatconf -i $src --verbose
         result=1
       ;;
 

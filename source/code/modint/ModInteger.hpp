@@ -18,7 +18,7 @@ protected:
   mod_t mod;
 
 private:
-  inline constexpr common_t gcd(common_t m, common_t n) const {
+  constexpr common_t gcd(common_t m, common_t n) const {
     while (n != 0) {
       common_t t = m % n;
       m = n;
@@ -38,13 +38,13 @@ public:
     : num(std::forward<self>(rhs).data()),
       mod(std::forward<self>(rhs).get_mod()) {}
 
-  inline self &operator=(const data_t &num) noexcept {
+  self &operator=(const data_t &num) noexcept {
     this->data() = num;
     return *this;
   }
 
   template <typename Up, _TRAITS(std::is_convertible<Up, self &>::value)>
-  inline self &operator=(Up &&rhs) noexcept {
+  self &operator=(Up &&rhs) noexcept {
     this->data() = std::forward<self>(rhs).data();
     this->mod = std::forward<self>(rhs).get_mod();
     return *this;
@@ -52,62 +52,62 @@ public:
 
   operator data_t() { return this->data(); }
 
-  inline constexpr self &no_check_mod() {
+  constexpr self &no_check_mod() {
     this->num %= this->get_mod();
     return *this;
   }
-  inline constexpr self &safe_mod() {
+  constexpr self &safe_mod() {
     if (this->no_check_mod().data() < 0) this->num += this->get_mod();
     return *this;
   }
 
-  inline constexpr data_t &data() noexcept { return this->num; }
-  inline constexpr data_t &data() const noexcept {
+  constexpr data_t &data() noexcept { return this->num; }
+  constexpr data_t &data() const noexcept {
     return const_cast<self * const>(this)->num;
   }
 
-  inline constexpr mod_t get_mod() const noexcept { return mod; }
+  constexpr mod_t get_mod() const noexcept { return mod; }
 
   template <typename Unary>
-  inline constexpr self &transform_unary_raw(Unary &&op) {
+  constexpr self &transform_unary_raw(Unary &&op) {
     this->data() = op(this->data());
     return *this;
   }
   template <typename Unary>
-  inline constexpr self &transform_unary(Unary &&op) {
+  constexpr self &transform_unary(Unary &&op) {
     return this->transform_unary_raw(std::move(op)).safe_mod();
   }
   template <typename Binary>
-  inline constexpr self &transform_binary_raw(const self &rhs, Binary &&op) {
+  constexpr self &transform_binary_raw(const self &rhs, Binary &&op) {
     this->data() = op(this->data(), rhs.data());
     return *this;
   }
   template <typename Binary>
-  inline constexpr self &transform_binary(const self &rhs, Binary &&op) {
+  constexpr self &transform_binary(const self &rhs, Binary &&op) {
     return this->transform_binary_raw(rhs, std::move(op)).safe_mod();
   }
 
   template <typename Unary>
-  friend inline constexpr self calc_unary_raw(const self &lhs, Unary &&op) {
+  friend constexpr self calc_unary_raw(const self &lhs, Unary &&op) {
     return self(lhs).transform_unary_raw(op);
   }
   template <typename Unary>
-  friend inline constexpr self calc_unary(const self &lhs, Unary &&op) {
+  friend constexpr self calc_unary(const self &lhs, Unary &&op) {
     return calc_unary_raw(lhs, std::move(op)).safe_mod();
   }
 
   template <typename Binary>
-  friend inline constexpr self
+  friend constexpr self
   calc_binary_raw(const self &lhs, const self &rhs, Binary &&op) {
     return self(lhs).transform_binary_raw(rhs, op);
   }
   template <typename Binary>
-  friend inline constexpr self
+  friend constexpr self
   calc_binary(const self &lhs, const self &rhs, Binary &&op) {
     return calc_binary_raw(lhs, rhs, std::move(op)).safe_mod();
   }
 
-  inline constexpr self inverse() const {
+  constexpr self inverse() const {
     if (this->gcd(this->data(), this->get_mod()) != 1)
       throw std::runtime_error("inverse not exist");
 

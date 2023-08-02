@@ -24,7 +24,7 @@ void kmp(string const &a) {
 }
 }  // namespace KMP
 using KMP::kmp, KMP::nxt;
-inline void solve(int t_ = 0) {
+void solve(int t_ = 0) {
   string s;
   cin >> s;
   int len = s.size();

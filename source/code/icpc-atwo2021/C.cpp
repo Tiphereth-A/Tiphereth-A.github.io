@@ -4,10 +4,10 @@ using namespace std;
 #define ll long long
 int n, t[N], a[N];
 ll ans = 0;
-inline void add(int x) {
+void add(int x) {
   for (; x <= n; x += x & (-x)) t[x]++;
 }
-inline int query(int x) {
+int query(int x) {
   int y = 0;
   for (; x; x -= x & (-x)) y += t[x];
   return y;

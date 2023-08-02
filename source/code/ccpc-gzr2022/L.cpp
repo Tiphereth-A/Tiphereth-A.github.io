@@ -10,12 +10,12 @@ constexpr i64 qpow(i64 a, i64 b, i64 mod) {
 }
 const int N = 2e5 + 5;
 i64 fact[N];
-inline i64 comb(i64 n, i64 m) {
+i64 comb(i64 n, i64 m) {
   if (n < m) return 0;
   return fact[n] * qpow(fact[n - m], MOD - 2, MOD) % MOD *
          qpow(fact[m], MOD - 2, MOD) % MOD;
 }
-inline void solve() {
+void solve() {
   i64 n, m;
   cin >> n >> m;
   cout << fact[n] * comb(n - 1, m - 1) % MOD << '\n';

@@ -12,7 +12,7 @@ Tp inc(Tp &i) {
 }
 using namespace std;
 #define int long long
-inline void solve(int t_ = 0) {
+void solve(int t_ = 0) {
   const int INF = 1e14;
   int n, k;
   cin >> n >> k;

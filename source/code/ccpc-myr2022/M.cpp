@@ -12,7 +12,7 @@ Tp inc(Tp &i) {
 }
 using namespace std;
 map<pair<char, char>, int> Map;
-inline void solve(int t_ = 0) {
+void solve(int t_ = 0) {
   string S;
   cin >> S;
   vector<int> A(S.size());

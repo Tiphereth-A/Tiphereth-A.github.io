@@ -18,17 +18,17 @@ int main() {
     uniform_int_distribution<unsigned> u_mn(max_n[i - 1], max_n[i]),
       u_case(1, 2);
     uniform_int_distribution<uint64_t> u_data(0, ULLONG_MAX);
-    for (register int i = 0; i < 5; ++i, ++cnt) {
+    for (int i = 0; i < 5; ++i, ++cnt) {
       ss.clear();
       ss << cnt << ".in";
       ss >> filename;
       out.open(filename);
       int n = u_mn(e), m = u_mn(e);
       out << n << " " << m << endl;
-      for (register int i = 1; i < n; ++i) out << u_data(e) << " ";
+      for (int i = 1; i < n; ++i) out << u_data(e) << " ";
       out << u_data(e) << endl;
       uniform_int_distribution<unsigned> u_range(1, n);
-      for (register int i = 0; i < m; ++i) {
+      for (int i = 0; i < m; ++i) {
         int op = u_case(e);
         unsigned x = u_range(e), y = u_range(e);
         if (op & 1)

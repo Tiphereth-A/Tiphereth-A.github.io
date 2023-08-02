@@ -81,27 +81,22 @@ public:
     : data_size(std::forward(rhs).data_size), nodes(std::forward(rhs).nodes),
       roots(std::forward(rhs).roots) {}
 
-  inline constexpr self &clear() {
+  constexpr self &clear() {
     this->nodes.clear();
     this->roots.clear();
     return *this;
   }
 
-  inline constexpr index_t &&get_data_size() const {
+  constexpr index_t &&get_data_size() const {
     return std::move(const_cast<self * const>(this)->data_size);
   }
-  inline constexpr index_t &&get_node_size() const {
-    return this->nodes.size();
-  }
-  inline constexpr index_t &&get_version_size() const {
-    return this->roots.size();
-  }
+  constexpr index_t &&get_node_size() const { return this->nodes.size(); }
+  constexpr index_t &&get_version_size() const { return this->roots.size(); }
 
-  inline constexpr nodes_t &data_nodes() const { return this->nodes; }
-  inline constexpr roots_t &data_roots() const { return this->roots; }
+  constexpr nodes_t &data_nodes() const { return this->nodes; }
+  constexpr roots_t &data_roots() const { return this->roots; }
 
-  inline constexpr self &init(const data_t * const data_array,
-                              index_t &&_size) {
+  constexpr self &init(const data_t * const data_array, index_t &&_size) {
     this->data_size = std::move(_size);
     this->nodes.reserve(this->data_size * Memory_rate);
     this->nodes.emplace_back();
@@ -111,7 +106,7 @@ public:
   }
 
   template <class Up, _TRAITS(_CONVERTIBLE(Up, data_t &))>
-  inline constexpr self &modify(index_t &&version, index_t &&pos, Up &&data) {
+  constexpr self &modify(index_t &&version, index_t &&pos, Up &&data) {
     this->roots.push_back(this->nodes.begin());
     this->_modify(1,
                   std::move(this->data_size),
@@ -122,14 +117,14 @@ public:
     return *this;
   }
 
-  inline constexpr data_t &query(index_t &&version, index_t &&pos) {
+  constexpr data_t &query(index_t &&version, index_t &&pos) {
     this->roots.push_back(this->roots[version]);
     return this->_query(
       this->roots.back(), 1, std::move(this->data_size), std::move(pos));
   }
 
   // for debug
-  inline constexpr size_t memory_used() const {
+  constexpr size_t memory_used() const {
     return sizeof(node_t) * nodes.capacity() +
            sizeof(pointer) * roots.capacity();
   }

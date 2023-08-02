@@ -7,12 +7,12 @@ constexpr bool in_same_line(pii const &u, pii const &v, pii const &w) {
   ll x2 = w.first - u.first, y2 = w.second - u.second;
   return (x1 * y2 - x2 * y1) == 0;
 }
-inline bool in_same_dir(pii const &u, pii const &v, pii const &w) {
+bool in_same_dir(pii const &u, pii const &v, pii const &w) {
   ll x1 = v.first - u.first, y1 = v.second - u.second;
   ll x2 = w.first - u.first, y2 = w.second - u.second;
   return in_same_line(u, v, w) && ((x1 * x2 + y1 * y2) > 0);
 }
-inline void print__(
+void print__(
   pii const &c, pii const &p1, pii const &p2, pii const &p3, pii const &p4) {
   cout << "YES\n";
   cout << c.first << ' ' << c.second << '\n';
@@ -21,7 +21,7 @@ inline void print__(
   cout << p3.first << ' ' << p3.second << '\n';
   cout << p4.first << ' ' << p4.second << '\n';
 }
-inline void print(
+void print(
   pii const &p0, pii const &p1, pii const &p2, pii const &p3, pii const &p4) {
   auto cond = [](pii const &x,
                  pii const &p1,
@@ -53,7 +53,7 @@ inline void print(
     return;
   }
 }
-inline void solve(int t_ = 0) {
+void solve(int t_ = 0) {
   int n;
   cin >> n;
   vector<pii> v(n);

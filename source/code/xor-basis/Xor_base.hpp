@@ -37,13 +37,13 @@ public:
   constexpr iterator end() { return this->begin() + this->size(); }
   constexpr const_iterator end() const { return this->begin() + this->size(); }
 
-  inline reverse_iterator rbegin() { return reverse_iterator(this->end()); }
-  inline const_reverse_iterator rbegin() const {
+  reverse_iterator rbegin() { return reverse_iterator(this->end()); }
+  const_reverse_iterator rbegin() const {
     return const_reverse_iterator(this->end());
   }
 
-  inline reverse_iterator rend() { return reverse_iterator(this->begin()); }
-  inline const_reverse_iterator rend() const {
+  reverse_iterator rend() { return reverse_iterator(this->begin()); }
+  const_reverse_iterator rend() const {
     return const_reverse_iterator(this->begin());
   }
 

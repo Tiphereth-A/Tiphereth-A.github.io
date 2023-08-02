@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
-inline void solve(int t_ = 0) {
+void solve(int t_ = 0) {
   string s;
   cin >> s >> s;
   for (auto &ch : s) ch = (ch == '.' ? 'C' : ch);

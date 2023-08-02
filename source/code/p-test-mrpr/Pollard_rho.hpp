@@ -4,13 +4,13 @@ using data_type = uint64_t;
 using signed_data_t = make_signed_t<data_type>;
 using unsigned_data_t = make_unsigned_t<data_type>;
 
-inline constexpr signed_data_t
+constexpr signed_data_t
 mul_mod(signed_data_t a, signed_data_t b, unsigned_data_t mod) {
   signed_data_t d = floor(1.0l * a * b / mod + 0.5l), ret = a * b - d * mod;
   return ret < 0 ? ret + mod : ret;
 }
 
-inline constexpr data_type
+constexpr data_type
 pow_mod(unsigned_data_t a, unsigned_data_t b, const unsigned_data_t &mod) {
   data_type res(1);
   a %= mod;
@@ -19,7 +19,7 @@ pow_mod(unsigned_data_t a, unsigned_data_t b, const unsigned_data_t &mod) {
   return res;
 }
 
-inline constexpr unsigned_data_t gcd(unsigned_data_t m, unsigned_data_t n) {
+constexpr unsigned_data_t gcd(unsigned_data_t m, unsigned_data_t n) {
 #if __cplusplus >= 201703L
 
 #return std::gcd(m, n);
@@ -37,7 +37,7 @@ namespace Primetest_miller_rabin {
 constexpr unsigned_data_t bases[] = {
   2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37};
 
-inline constexpr bool is_prime(unsigned_data_t n) {
+constexpr bool is_prime(unsigned_data_t n) {
   if (n <= 1) return false;
   for (unsigned_data_t a : bases)
     if (n == a) return true;
@@ -63,7 +63,7 @@ uniform_int_distribution<data_type> u;
 
 #define Rand(x) (u(e) % (x) + 1)
 
-inline data_type pollard_rho(const data_type x, const data_type y) {
+data_type pollard_rho(const data_type x, const data_type y) {
   data_type t = 0, k = 1;
   signed_data_t v0 = Rand(x - 1), v = v0;
   data_type d, s = 1;
@@ -78,7 +78,7 @@ inline data_type pollard_rho(const data_type x, const data_type y) {
   }
 }
 
-inline void resolve(data_type x, data_type &ans) {
+void resolve(data_type x, data_type &ans) {
   if (!(x ^ 1) || x <= ans) return;
   if (is_prime(x)) {
     if (ans < x) ans = x;
@@ -91,7 +91,7 @@ inline void resolve(data_type x, data_type &ans) {
   resolve(x, ans);
   resolve(y, ans);
 }
-inline data_type get_max_prime_divisor(data_type x) {
+data_type get_max_prime_divisor(data_type x) {
   data_type ans = 0;
   resolve(x, ans);
   return ans;

@@ -4,7 +4,7 @@
 #include <string>
 #include <sys/time.h>
 
-#define fp(i, l, r) for (register uint64_t i = (l); i <= (r); ++i)
+#define fp(i, l, r) for (uint64_t i = (l); i <= (r); ++i)
 #define fr(a) freopen((a), "r", stdin)
 #define fw(a) freopen((a), "w", stdout)
 #define fc fclose(stdin), fclose(stdout)

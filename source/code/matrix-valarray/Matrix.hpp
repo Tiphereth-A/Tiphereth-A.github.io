@@ -38,28 +38,25 @@ public:
   }
   constexpr size_t row_size() const { return r_sz; }
   constexpr size_t col_size() const { return c_sz; }
-  inline std::valarray<Tp> view() const { return data; }
+  std::valarray<Tp> view() const { return data; }
 
-  inline Tp &operator()(size_t r, size_t c) { return data[r * col_size() + c]; }
-  inline Tp operator()(size_t r, size_t c) const {
-    return data[r * col_size() + c];
-  }
+  Tp &operator()(size_t r, size_t c) { return data[r * col_size() + c]; }
+  Tp operator()(size_t r, size_t c) const { return data[r * col_size() + c]; }
 
-  friend inline std::istream &operator>>(std::istream &is, self &mat) {
+  friend std::istream &operator>>(std::istream &is, self &mat) {
     for (auto &i : mat.data) is >> i;
     return is;
   }
-  friend inline std::ostream &operator<<(std::ostream &os, const self &mat) {
+  friend std::ostream &operator<<(std::ostream &os, const self &mat) {
     for (size_t i = 0; i < mat.row_size(); ++i)
       for (size_t j = 0; j < mat.col_size(); ++j)
         os << mat(i, j) << " \n"[j == mat.col_size() - 1];
     return os;
   }
 
-#define INVOKES_SLICE__(name, para1_t, para1, ...)                          \
-  inline std::valarray<Tp> name(para1_t para1)                              \
-    const __VA_ARGS__ inline std::slice_array<Tp>                           \
-    name(para1_t para1) __VA_ARGS__ inline std::valarray<Tp> name##_varray( \
+#define INVOKES_SLICE__(name, para1_t, para1, ...)                             \
+  std::valarray<Tp> name(para1_t para1) const __VA_ARGS__ std::slice_array<Tp> \
+    name(para1_t para1) __VA_ARGS__ std::valarray<Tp> name##_varray(           \
       para1_t para1) const __VA_ARGS__
 
   INVOKES_SLICE__(row, size_t, r, {
@@ -76,8 +73,7 @@ public:
 
 #undef INVOKES_SLICE__
 
-  inline self
-  submatrix(size_t row_l, size_t row_r, size_t col_l, size_t col_r) const {
+  self submatrix(size_t row_l, size_t row_r, size_t col_l, size_t col_r) const {
     return self(row_r - row_l,
                 col_r - col_l,
                 data[std::gslice(row_l * col_size() + col_l,
@@ -86,7 +82,7 @@ public:
                 iszero);
   }
 
-  inline std::gslice_array<Tp>
+  std::gslice_array<Tp>
   submatrix_raw(size_t row_l, size_t row_r, size_t col_l, size_t col_r) {
     return data[std::gslice(row_l * col_size() + col_l,
                             {row_r - row_l, col_r - col_l},
@@ -94,10 +90,10 @@ public:
   }
 
 #define OPB__(op)                                                              \
-  friend inline matrix<bool> operator op(const self &lhs, const Tp &val) {     \
+  friend matrix<bool> operator op(const self &lhs, const Tp &val) {            \
     return matrix<bool>(lhs.row_size(), lhs.col_size(), lhs.data op val);      \
   }                                                                            \
-  friend inline matrix<bool> operator op(const self &lhs, const self &rhs) {   \
+  friend matrix<bool> operator op(const self &lhs, const self &rhs) {          \
     ASSERT_(lhs.row_size() == rhs.row_size() &&                                \
             lhs.col_size() == rhs.col_size());                                 \
     return matrix<bool>(lhs.row_size(), lhs.col_size(), lhs.data op rhs.data); \
@@ -112,21 +108,19 @@ public:
 
 #undef OPB__
 
-#define OP__(op)                                                           \
-  friend inline self operator op(self lhs, const Tp &val) {                \
-    return lhs op## = val;                                                 \
-  }                                                                        \
-  inline self &operator op##=(const Tp &val) {                             \
-    data op## = val;                                                       \
-    return *this;                                                          \
-  }                                                                        \
-  friend inline self operator op(self lhs, const self &rhs) {              \
-    return lhs op## = rhs;                                                 \
-  }                                                                        \
-  inline self &operator op##=(const self &rhs) {                           \
-    ASSERT_(row_size() == rhs.row_size() && col_size() == rhs.col_size()); \
-    data op## = rhs.data;                                                  \
-    return *this;                                                          \
+#define OP__(op)                                                              \
+  friend self operator op(self lhs, const Tp &val) { return lhs op## = val; } \
+  self &operator op##=(const Tp &val) {                                       \
+    data op## = val;                                                          \
+    return *this;                                                             \
+  }                                                                           \
+  friend self operator op(self lhs, const self &rhs) {                        \
+    return lhs op## = rhs;                                                    \
+  }                                                                           \
+  self &operator op##=(const self &rhs) {                                     \
+    ASSERT_(row_size() == rhs.row_size() && col_size() == rhs.col_size());    \
+    data op## = rhs.data;                                                     \
+    return *this;                                                             \
   }
 
   OP__(+)
@@ -139,18 +133,15 @@ public:
 
 #undef OP__
 
-#define OPF__(op, ...)                                             \
-  friend inline self operator op(self lhs, const Tp &val) {        \
-    return lhs op## = val;                                         \
-  }                                                                \
-  inline self &operator op##=(const Tp &val) {                     \
-    data op## = val;                                               \
-    return *this;                                                  \
-  }                                                                \
-  friend inline self operator op(const self &lhs, const self &rhs) \
-    __VA_ARGS__ inline self &                                      \
-    operator op##=(const self &rhs) {                              \
-    return *this = *this op rhs;                                   \
+#define OPF__(op, ...)                                                         \
+  friend self operator op(self lhs, const Tp &val) { return lhs op## = val; }  \
+  self &operator op##=(const Tp &val) {                                        \
+    data op## = val;                                                           \
+    return *this;                                                              \
+  }                                                                            \
+  friend self operator op(const self &lhs, const self &rhs) __VA_ARGS__ self & \
+  operator op##=(const self &rhs) {                                            \
+    return *this = *this op rhs;                                               \
   }
   OPF__(*, {
     ASSERT_(lhs.col_size() == rhs.row_size());
@@ -182,7 +173,7 @@ public:
 #undef OPF__
 
   // [lhs] [rhs] -> [lhs; rhs]
-  friend inline self merge_ud(const self &lhs, const self &rhs) {
+  friend self merge_ud(const self &lhs, const self &rhs) {
     ASSERT_(lhs.col_size() == rhs.col_size());
     self ret(lhs.row_size() + rhs.row_size(), lhs.col_size(), Tp{}, lhs.iszero);
     ret.data[std::slice(0, lhs.row_size() * lhs.col_size(), 1)] = lhs.view();
@@ -193,7 +184,7 @@ public:
   }
 
   // [lhs] [rhs] -> [lhs rhs]
-  friend inline self merge_lr(const self &lhs, const self &rhs) {
+  friend self merge_lr(const self &lhs, const self &rhs) {
     ASSERT_(lhs.row_size() == rhs.row_size());
     self ret(lhs.row_size(), lhs.col_size() + rhs.col_size(), Tp{}, lhs.iszero);
     ret.data[std::gslice(
@@ -223,7 +214,7 @@ public:
     diag_cycle(d2) = __;
   }
 
-  inline virtual int64_t
+  virtual int64_t
   do_gauss_range(size_t row_start, size_t row_end, bool clear_all = true) {
     assert(row_start < row_end && row_end <= row_size());
     size_t rk = 0;
@@ -245,17 +236,17 @@ public:
     }
     return neg ? -rk : rk;
   }
-  inline ptrdiff_t do_gauss(bool clear_all = true) {
+  ptrdiff_t do_gauss(bool clear_all = true) {
     return do_gauss_range(0, std::min(row_size(), col_size()), clear_all);
   }
 
-  inline self transpose() const {
+  self transpose() const {
     self ret(col_size(), row_size(), iszero, Tp{});
     for (size_t i = 0; i < row_size(); ++i) ret.col(i) = row(i);
     return ret;
   }
 
-  inline self inverse() const {
+  self inverse() const {
     ASSERT_(row_size() == col_size());
     self ret(row_size(), col_size(), iszero, Tp{});
     ret.diag_cycle(0) = 1;
@@ -267,10 +258,10 @@ public:
     ret = ret.submatrix(0, row_size(), col_size(), col_size() * 2);
     return ret;
   }
-  inline Tp trace() const { return diag_cycle(0).sum(); }
-  inline size_t rank() const { return std::abs(self(*this).do_gauss(false)); }
+  Tp trace() const { return diag_cycle(0).sum(); }
+  size_t rank() const { return std::abs(self(*this).do_gauss(false)); }
 
-  inline Tp det() const {
+  Tp det() const {
     ASSERT_(row_size() == col_size());
     self tmp_(*this);
     ptrdiff_t rk_ = tmp_.do_gauss(false);
@@ -307,9 +298,9 @@ public:
   matrix_int(size_t row, size_t col, const std::valarray<Tp> &data_)
     : base(row, col, isz__, data_) {}
 
-  inline int64_t do_gauss_range(size_t row_start,
-                                size_t row_end,
-                                bool clear_all = true) override {
+  int64_t do_gauss_range(size_t row_start,
+                         size_t row_end,
+                         bool clear_all = true) override {
     assert(row_start < row_end && row_end <= this->row_size());
     int64_t rk = 0;
     bool neg = false;
@@ -343,9 +334,9 @@ public:
   matrix_bool(size_t row, size_t col, const std::valarray<bool> &data_)
     : base(row, col, isz__, data_) {}
 
-  inline int64_t do_gauss_range(size_t row_start,
-                                size_t row_end,
-                                bool clear_all = true) override {
+  int64_t do_gauss_range(size_t row_start,
+                         size_t row_end,
+                         bool clear_all = true) override {
     assert(row_start < row_end && row_end <= this->row_size());
     size_t rk = 0;
     bool neg = false;

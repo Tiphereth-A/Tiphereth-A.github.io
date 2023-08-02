@@ -5,8 +5,8 @@ const int MAXN = 2e5 + 5;
 int tree[MAXN << 2];  // tree是线段树数组
 int n, N = 1;         // n是原数组实际长度, N下面会解释
 
-#define fp(i, l, r) for (register int i = (l); i <= (r); ++i)
-#define fd(i, r, l) for (register int i = (r); i >= (l); --i)
+#define fp(i, l, r) for (int i = (l); i <= (r); ++i)
+#define fd(i, r, l) for (int i = (r); i >= (l); --i)
 
 void build() {
   scanf("%d", &n);

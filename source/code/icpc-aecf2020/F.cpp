@@ -5,12 +5,8 @@ int n, m, b[N];
 struct node {
   int x, y, id, belong;
 } a[N];
-inline bool cmp1(node x, node y) {
-  return x.x < y.x || (x.x == y.x && x.y < y.y);
-}
-inline bool cmp2(node x, node y) {
-  return x.y < y.y || (x.y == y.y && x.x < y.x);
-}
+bool cmp1(node x, node y) { return x.x < y.x || (x.x == y.x && x.y < y.y); }
+bool cmp2(node x, node y) { return x.y < y.y || (x.y == y.y && x.x < y.x); }
 int main() {
   scanf("%d%d", &n, &m);
   for (int i = 1; i <= n; ++i) {

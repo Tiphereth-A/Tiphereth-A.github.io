@@ -101,7 +101,7 @@ struct Circle {
     return RELA_CP::outside_cp;
   }
 };
-inline vector<Point> ins_CC(const Circle &c1, const Circle &c2) {
+vector<Point> ins_CC(const Circle &c1, const Circle &c2) {
   assert(!is_equal(c1.o.x, c2.o.x) || !is_equal(c1.o.y, c2.o.y) ||
          !is_equal(c1.r, c2.r));
   auto state = c1.relation_C(c2);
@@ -115,9 +115,7 @@ inline vector<Point> ins_CC(const Circle &c1, const Circle &c2) {
 }
 struct ConvexHull {
   vector<Point> vs;
-  inline size_t next(size_t idx) const {
-    return idx + 1 == vs.size() ? 0 : idx + 1;
-  }
+  size_t next(size_t idx) const { return idx + 1 == vs.size() ? 0 : idx + 1; }
   explicit ConvexHull(const vector<Point> &vs_): vs(vs_) {
     ptrdiff_t sz = vs.size();
     if (sz <= 1) return;
@@ -135,7 +133,7 @@ struct ConvexHull {
     cvh.resize(sz_cvh - 1);
     vs = cvh;
   }
-  inline data_t diameter() const {
+  data_t diameter() const {
     size_t sz = vs.size();
     if (sz <= 1) return data_t{};
     size_t is = 0, js = 0;
@@ -153,7 +151,7 @@ struct ConvexHull {
     return ret;
   }
 };
-inline auto solve([[maybe_unused]] int t_ = 0) -> void {
+auto solve([[maybe_unused]] int t_ = 0) -> void {
   i64 n, r;
   cin >> n >> r;
   Circle c0(0, 0, r);

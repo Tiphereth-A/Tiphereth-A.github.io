@@ -86,7 +86,7 @@ protected:
 public:
   Hand() = default;
   // Set first 5 element as hand _
-  inline Hand &reset(const std::vector<Card> &_) {
+  Hand &reset(const std::vector<Card> &_) {
     assert(_.size() >= 5);
     cds.clear();
     for (size_t i = 0; i < 5; ++i) cds.push_back(_[i]);
@@ -99,7 +99,7 @@ public:
     return *this;
   }
   // Returns the best poker hand with the tie-breaker in [0, 2^20)
-  inline std::pair<Category, int> parse() const {
+  std::pair<Category, int> parse() const {
     assert(cds.size() == 5);
     //! The judger of all the categories
     const static std::function<std::tuple<bool, Category, int>(const Hand &)>

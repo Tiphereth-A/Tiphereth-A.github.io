@@ -5,7 +5,7 @@ using i64 = ll;
 using namespace std;
 const int MOD = 998244353;
 const int INV2 = (MOD + 1) / 2, INV3 = (MOD + 1) / 3;
-inline void solve(int t_ = 0) {
+void solve(int t_ = 0) {
   i64 n;
   cin >> n;
   auto calc = [](i64 a, i64 n) -> i64 {

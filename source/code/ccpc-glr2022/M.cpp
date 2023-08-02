@@ -3,15 +3,15 @@ using ll = long long;
 using namespace std;
 const int N = 300010;
 int n, m, a[N], t[N];
-inline void insert(int x) {
+void insert(int x) {
   for (; x <= n; x += x & (-x)) t[x]++;
 }
-inline int query(int x) {
+int query(int x) {
   int y = 0;
   for (; x; x -= x & (-x)) y += t[x];
   return y;
 }
-inline void solve(int t_ = 0) {
+void solve(int t_ = 0) {
   cin >> n >> m;
   ll ans = 0;
   for (int i = 1; i <= n; ++i) {

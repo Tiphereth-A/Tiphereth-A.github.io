@@ -5,7 +5,7 @@ const int MOD = 998244353;
 const int N = 1e7 + 5;
 int inv[N], combs[N];
 int n, m;
-inline int sum_c(int l, int r) {
+int sum_c(int l, int r) {
   return ((r <= n ? combs[r] : 0) + MOD - (l > 0 ? combs[l - 1] : 0)) % MOD;
 }
 #define FLIP1(l, r) (n - 1) - r, (n - 1) - l
@@ -23,7 +23,7 @@ int g(int l, int r) {
   r = min(r, n);
   return (sum_c(l, r) + MOD - f(FLIP1(l, r))) % MOD;
 }
-inline auto solve([[maybe_unused]] int t_ = 0) -> void {
+auto solve([[maybe_unused]] int t_ = 0) -> void {
   cin >> n >> m;
   inv[0] = inv[1] = combs[0] = 1;
   for (int i = 2; i <= n; ++i)

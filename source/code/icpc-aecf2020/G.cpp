@@ -8,10 +8,10 @@ ll sum[N << 2], ans[N];
 struct Query {
   int x, y, id;
 } q[N];
-inline bool operator<(Query x, Query y) {
+bool operator<(Query x, Query y) {
   return x.y < y.y || (x.y == y.y && x.x < y.x);
 }
-inline void pushdown(int v, int l, int r) {
+void pushdown(int v, int l, int r) {
   int mid = l + r >> 1;
   if (cov[v]) {
     cov[v] = 0;

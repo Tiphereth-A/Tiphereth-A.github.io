@@ -1,7 +1,6 @@
 //! only works properly on little-endian CPU, such as Intel CPU
 //! works better on 64-bit CPU
-inline constexpr uint64_t dec2uint_mod(const char * const num,
-                                       const uint64_t mod) {
+constexpr uint64_t dec2uint_mod(const char * const num, const uint64_t mod) {
   size_t len = strlen(num);
   if (len == 0) return 0;
   __uint128_t ans = 0;

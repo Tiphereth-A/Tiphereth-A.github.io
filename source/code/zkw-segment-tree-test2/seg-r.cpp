@@ -3,8 +3,8 @@
 #include <iostream>
 #include <sys/time.h>
 
-#define _for_u64(i, l, r) for (register u64 i = (l); i <= (r); ++i)
-#define _for_u32(i, l, r) for (register u32 i = (l); i <= (r); ++i)
+#define _for_u64(i, l, r) for (u64 i = (l); i <= (r); ++i)
+#define _for_u32(i, l, r) for (u32 i = (l); i <= (r); ++i)
 #define FINLINE __inline__ __attribute__((always_inline))
 using u64 = uint64_t;
 using u32 = uint32_t;

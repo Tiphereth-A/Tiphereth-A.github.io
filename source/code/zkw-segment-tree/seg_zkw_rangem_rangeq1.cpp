@@ -6,8 +6,8 @@ int tree[MAXN << 2];
 int add[MAXN << 2];  // 这个lazy tag表示当前结点已经更新完, 需要更新子结点
 int n, N = 1;
 
-#define fp(i, l, r) for (register int i = (l); i <= (r); ++i)
-#define fd(i, r, l) for (register int i = (r); i >= (l); --i)
+#define fp(i, l, r) for (int i = (l); i <= (r); ++i)
+#define fd(i, r, l) for (int i = (r); i >= (l); --i)
 
 void build() {
   scanf("%d", &n);

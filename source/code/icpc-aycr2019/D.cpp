@@ -31,7 +31,7 @@ constexpr i64 qpow(i64 a, i64 b, i64 mod) {
     if (b & 1) res = res * a % MOD;
   return res;
 }
-inline void solve(int t_ = 0) {
+void solve(int t_ = 0) {
   int n = 0, m, d, k;
   string s;
   cin >> s;

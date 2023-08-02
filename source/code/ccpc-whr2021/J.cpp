@@ -10,7 +10,7 @@ Tp inc(Tp &i) {
   return ++i;
 }
 using namespace std;
-inline void solve(int t_ = 0) {
+void solve(int t_ = 0) {
   i64 a, b;
   cin >> a >> b;
   cout << (b * 180) / gcd(a, b * 180) - 1 << '\n';

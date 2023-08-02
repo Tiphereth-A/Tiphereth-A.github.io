@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 using i64 = int64_t;
-inline auto solve([[maybe_unused]] int t_ = 0) -> void {
+auto solve([[maybe_unused]] int t_ = 0) -> void {
   int n, m;
   cin >> n >> m;
   vector<int> deg(n + 1);

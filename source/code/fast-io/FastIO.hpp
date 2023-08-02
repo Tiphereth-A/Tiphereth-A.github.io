@@ -1,15 +1,15 @@
 namespace fast_io {
 namespace type_traits {
 template <class Tp>
-inline constexpr bool is_char_v =
+constexpr bool is_char_v =
   std::is_same_v<Tp, char> || std::is_same_v<Tp, signed char> ||
   std::is_same_v<Tp, unsigned char>;
 template <class Tp>
-inline constexpr bool is_int_v =
+constexpr bool is_int_v =
   (std::is_integral_v<Tp> && std::is_signed_v<Tp> && !is_char_v<Tp>) ||
   std::is_same_v<Tp, __int128_t>;
 template <class Tp>
-inline constexpr bool is_uint_v =
+constexpr bool is_uint_v =
   (std::is_integral_v<Tp> && std::is_unsigned_v<Tp> && !is_char_v<Tp>) ||
   std::is_same_v<Tp, __uint128_t>;
 template <class Tp>
@@ -33,28 +33,28 @@ protected:
 public:
   explicit FastIn(FILE *file = stdin): file_(file) {}
 
-  inline char fetch() {
+  char fetch() {
     return now_ == end_ &&
                (end_ = (now_ = buffer_) + fread(buffer_, 1, BUFFER_SIZE, file_),
                 now_ == end_) ?
              EOF :
              *(now_)++;
   }
-  inline char visit() {
+  char visit() {
     return now_ == end_ &&
                (end_ = (now_ = buffer_) + fread(buffer_, 1, BUFFER_SIZE, file_),
                 now_ == end_) ?
              EOF :
              *(now_);
   }
-  inline void set_file(FILE *file) {
+  void set_file(FILE *file) {
     file_ = file;
     now_ = end_ = buffer_;
   }
-  inline bool iseof() { return visit() == EOF; }
+  bool iseof() { return visit() == EOF; }
 
   template <class Tp, std::enable_if_t<type_traits::is_int_v<Tp>> * = nullptr>
-  inline self &read(Tp &n) {
+  self &read(Tp &n) {
     bool is_neg = false;
     char ch = fetch();
     while (!isdigit(ch)) {
@@ -70,7 +70,7 @@ public:
     return *this;
   }
   template <class Tp, std::enable_if_t<type_traits::is_uint_v<Tp>> * = nullptr>
-  inline self &read(Tp &n) {
+  self &read(Tp &n) {
     char ch = fetch();
     while (!isdigit(ch)) ch = fetch();
     n = 0;
@@ -82,12 +82,12 @@ public:
   }
   //! ignore cntrl and space
   template <class Tp, std::enable_if_t<type_traits::is_char_v<Tp>> * = nullptr>
-  inline self &read(Tp &n) {
+  self &read(Tp &n) {
     while (!isgraph(n = fetch()))
       ;
     return *this;
   }
-  inline self &read(char *n) {
+  self &read(char *n) {
     char *n_ = n;
     while (!isgraph(*n_ = fetch()))
       ;
@@ -96,7 +96,7 @@ public:
     *n_ = '\0';
     return *this;
   }
-  inline self &read(std::string &n) {
+  self &read(std::string &n) {
     n.clear();
     char n_;
     while (!isgraph(n_ = fetch()))
@@ -106,16 +106,16 @@ public:
     return *this;
   }
   template <class Tp, class Up>
-  inline self &read(std::pair<Tp, Up> &p) {
+  self &read(std::pair<Tp, Up> &p) {
     return read(p.first).read(p.second);
   }
   template <typename... Ts>
-  inline self &read(std::tuple<Ts...> &p) {
+  self &read(std::tuple<Ts...> &p) {
     std::apply([&](Ts &...targs) { ((read(targs)), ...); }, p);
     return *this;
   }
 
-  inline self &getline(char *n) {
+  self &getline(char *n) {
     char *n_ = n;
     while (!isprint(*n_ = fetch()))
       ;
@@ -124,7 +124,7 @@ public:
     *n_ = '\0';
     return *this;
   }
-  inline self &getline(std::string &n) {
+  self &getline(std::string &n) {
     char n_;
     while (!isprint(n_ = fetch()))
       ;
@@ -135,7 +135,7 @@ public:
 
   //! NOT ignore cntrl and space
   template <class Tp, std::enable_if_t<type_traits::is_char_v<Tp>> * = nullptr>
-  inline self &strict_read(Tp &n) {
+  self &strict_read(Tp &n) {
     n = fetch();
     return *this;
   }
@@ -171,19 +171,19 @@ public:
 
   ~FastOut() { flush(); }
 
-  inline void flush() {
+  void flush() {
     fwrite(buffer_, 1, now_ - buffer_, file_);
     now_ = buffer_;
   }
-  inline void rebind(FILE *file) { file_ = file; }
+  void rebind(FILE *file) { file_ = file; }
 
   template <class Tp, std::enable_if_t<type_traits::is_char_v<Tp>> * = nullptr>
-  inline self &write(const Tp &n) {
+  self &write(const Tp &n) {
     if (now_ == end_) flush();
     *(now_++) = n;
     return *this;
   }
-  inline self &write(const char *n) {
+  self &write(const char *n) {
     size_t len = strlen(n), l_;
     const char *n_ = n;
     while (now_ + len >= end_) {
@@ -199,7 +199,7 @@ public:
     return *this;
   }
   template <class Tp, std::enable_if_t<type_traits::is_int_v<Tp>> * = nullptr>
-  inline self &write(Tp n) {
+  self &write(Tp n) {
     if (n < 0) {
       write('-');
       n = -n;
@@ -207,18 +207,18 @@ public:
     return write(static_cast<typename type_traits::make_uint_t<Tp>>(n));
   }
   template <class Tp, std::enable_if_t<type_traits::is_uint_v<Tp>> * = nullptr>
-  inline self &write(Tp n) {
+  self &write(Tp n) {
     now_ib_ = int_buffer_ + INT_BUFFER_SIZE - 1;
     do { *(--(now_ib_)) = char(n % 10) | '0'; } while (n /= 10);
     return write(now_ib_);
   }
-  inline self &write(const std::string &str) { return write(str.c_str()); }
+  self &write(const std::string &str) { return write(str.c_str()); }
   template <class Tp, class Up>
-  inline self &write(const std::pair<Tp, Up> &p) {
+  self &write(const std::pair<Tp, Up> &p) {
     return write(p.first).space().write(p.second);
   }
   template <typename... Ts>
-  inline self &write(const std::tuple<Ts...> &p) {
+  self &write(const std::tuple<Ts...> &p) {
     std::apply(
       [&](Ts const &...targs) {
         std::size_t n{0};
@@ -228,10 +228,10 @@ public:
     return *this;
   }
 
-  inline self &linebreak() { return write('\n'); }
-  inline self &linebreak_if(bool flag) { return flag ? linebreak() : *this; }
-  inline self &space() { return write(' '); }
-  inline self &space_if(bool flag) { return flag ? space() : *this; }
+  self &linebreak() { return write('\n'); }
+  self &linebreak_if(bool flag) { return flag ? linebreak() : *this; }
+  self &space() { return write(' '); }
+  self &space_if(bool flag) { return flag ? space() : *this; }
 
   template <class Tp>
   self &operator<<(const Tp &val) {
