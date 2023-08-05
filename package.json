@@ -29,7 +29,7 @@
     "hexo-next-giscus": "^1.1.0",
     "hexo-pangu": "^0.2.2",
     "hexo-renderer-pandoc": "^0.4.0",
-    "hexo-renderer-stylus": "^2.1.0",
+    "hexo-renderer-stylus": "^3.0.0",
     "hexo-server": "^3.0.0",
     "hexo-tag-icodeweb": "^1.1.1",
     "hexo-tag-mmedia": "^1.2.1",
