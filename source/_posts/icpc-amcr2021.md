@@ -14,7 +14,7 @@ tags:
 date: 2023-09-09 19:07:55
 ---
 
-[比赛链接](https://codeforces.com/gym/104090)
+[比赛链接](https://codeforces.com/gym/104373)
 
 进度: 5 / 11
 
