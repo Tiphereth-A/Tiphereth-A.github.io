@@ -16,7 +16,7 @@ date: 2023-09-09 19:07:55
 
 [比赛链接](https://codeforces.com/gym/104373)
 
-进度: 5 / 11
+进度: 6 / 11
 
 <!-- more -->
 
@@ -30,7 +30,7 @@ date: 2023-09-09 19:07:55
 | \*D      | Shortest Path Fast Algorithm                     |      |
 | E        | Pass the Ball!                                   |      |
 | F        | Sandpile on Clique                               |      |
-| \*G      | Cyclic Buffer                                    |      |
+| G        | Cyclic Buffer                                    |      |
 | \*H      | Permutation on Tree                              |      |
 | \*I      | LCS Spanning Tree                                |      |
 | \*J      | Colorful Tree                                    |      |
