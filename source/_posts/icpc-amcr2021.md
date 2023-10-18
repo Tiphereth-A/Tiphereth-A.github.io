@@ -16,7 +16,7 @@ date: 2023-09-09 19:07:55
 
 [比赛链接](https://codeforces.com/gym/104373)
 
-进度: 6 / 11
+进度: 7 / 11
 
 <!-- more -->
 
@@ -32,7 +32,7 @@ date: 2023-09-09 19:07:55
 | F        | Sandpile on Clique                               |      |
 | G        | Cyclic Buffer                                    |      |
 | \*H      | Permutation on Tree                              |      |
-| \*I      | LCS Spanning Tree                                |      |
+| I        | LCS Spanning Tree                                |      |
 | \*J      | Colorful Tree                                    |      |
 | K        | Link-Cut Tree                                    |      |
 
