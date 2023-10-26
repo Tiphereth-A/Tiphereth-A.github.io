@@ -25,14 +25,14 @@ date: 2021-12-12 21:24:04
 | \*A  | Strange Functions          |      |
 | \*B  | Strange Permutations       |      |
 | \*C  | Strange Matrices           |      |
-| \*D  | Strange Fractions          |      |
-| \*E  | Strange Integers           |      |
+| D    | Strange Fractions          |      |
+| E    | Strange Integers           |      |
 | \*F  | Kaiji!                     |      |
-| \*G  | Edge Groups                |      |
+| G    | Edge Groups                |      |
 | H    | Life is a Game             |      |
-| \*I  | Steadily Growing Steam     |      |
-| \*J  | Two Binary Strings Problem |      |
-| \*K  | Circle of Life             |      |
+| I    | Steadily Growing Steam     |      |
+| J    | Two Binary Strings Problem |      |
+| K    | Circle of Life             |      |
 | \*L  | Three,Three,Three          |      |
 | \*M  | Harmony in Harmony         |      |
 
