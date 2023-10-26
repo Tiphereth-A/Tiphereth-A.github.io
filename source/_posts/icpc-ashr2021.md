@@ -1,5 +1,6 @@
 ---
-title: 题解 - 2021 ICPC 亚洲区域赛(上海)
+title: VP记录 - 2021 ICPC 亚洲区域赛(上海)
+author: "Tifa & Foi"
 categories:
   - 算法竞赛
   - 题解
