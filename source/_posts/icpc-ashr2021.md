@@ -14,7 +14,7 @@ date: 2021-12-12 21:24:04
 
 [比赛链接](https://codeforces.com/gym/103446)
 
-进度: / 13
+进度: 8 / 13
 
 <!-- more -->
 
@@ -34,7 +34,7 @@ date: 2021-12-12 21:24:04
 | J    | Two Binary Strings Problem |      |
 | K    | Circle of Life             |      |
 | \*L  | Three,Three,Three          |      |
-| \*M  | Harmony in Harmony         |      |
+| M    | Harmony in Harmony         |      |
 
 {% pdf /archives/icpc-ashr2021/problems.pdf 600px %}
 
