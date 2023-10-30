@@ -37,7 +37,7 @@
     "hexo-word-counter": "^0.1.0"
   },
   "devDependencies": {
-    "@prettier/plugin-xml": "^3.2.1",
+    "@prettier/plugin-xml": "^3.2.2",
     "husky": "^8.0.3",
     "prettier": "^3.0.2",
     "prettier-plugin-java": "^2.3.1"
