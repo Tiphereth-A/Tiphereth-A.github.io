@@ -48,7 +48,7 @@ date: 2022-12-09 19:07:55
 
 [比赛链接](https://codeforces.com/gym/104090)
 
-进度: 6 / 13
+进度: 8 / 13
 
 <!-- more -->
 
@@ -62,13 +62,13 @@ date: 2022-12-09 19:07:55
 | D        | Money Game              | 简单结论                        |
 | \*E      | Oscar is All You Need   | BFS, (Splay)                    |
 | F        | Da Mi Lao Shi Ai Kan De | 签到 (模拟)                     |
-| \*G      | Subgraph Isomorphism    | 树 Hash                         |
+| G        | Subgraph Isomorphism    | 树 Hash                         |
 | \*H      | RPG Pro League          | 二分图, 网络流, Hall 定理, 拟阵 |
-| \*I      | Guess Cycle Length      | 概率, BSGS                      |
+| I        | Guess Cycle Length      | 概率, BSGS                      |
 | \*J      | Painting                | 二分, LCA                       |
 | K        | Master of Both          | Trie                            |
 | \*L      | Levenshtein Distance    | 后缀数组                        |
-| \*M      | Please Save Pigeland    | DP, DFS                         |
+| M        | Please Save Pigeland    | DP, DFS                         |
 
 [^1]: 打\*的是还没写题解的题
 [^2]: 带超链接的是找到了原题或原型
