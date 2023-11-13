@@ -1100,10 +1100,10 @@ isexe@^2.0.0:
   resolved "https://registry.yarnpkg.com/isexe/-/isexe-2.0.0.tgz#e8fbf374dc556ff8947a10dcb0572d633f2cfa10"
   integrity sha512-RHxMLp9lnKHGHRng9QFhRCMbYAcVpn69smSGcq3f36xjgVVWThj4qqLbTLlq7Ssj8B+fIQ1EuCEGI2lKsyQeIw==
 
-java-parser@2.0.5:
-  version "2.0.5"
-  resolved "https://registry.yarnpkg.com/java-parser/-/java-parser-2.0.5.tgz#6bd3e2f75670cca387b78c6a1b1d10dd29b09032"
-  integrity sha512-AwieTO24Itcu0GgP9pBXs8gkqBtkmReclpBgXF4NkbIjdS7cn7hqpebjTmb5ouYYLFR+m3yh5fR3nW1NRrthdg==
+java-parser@2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/java-parser/-/java-parser-2.1.0.tgz#94ba7624d8cb429f757861a8ee3e9563be1320ff"
+  integrity sha512-oOnFTc7jOe1ts3J/8M1iAzoBOLmY3O/vMRVTJlskFINzg4ky8OIZjx8irZaoaEZ1HIEOAd/b51vM59AaxeyRPw==
   dependencies:
     chevrotain "6.5.0"
     lodash "4.17.21"
@@ -1482,12 +1482,12 @@ postcss@^7.0.32, postcss@^7.0.7:
     picocolors "^0.2.1"
     source-map "^0.6.1"
 
-prettier-plugin-java@^2.3.1:
-  version "2.3.1"
-  resolved "https://registry.yarnpkg.com/prettier-plugin-java/-/prettier-plugin-java-2.3.1.tgz#eafd0cbb9b23eab917d8a3a40e289c731647e670"
-  integrity sha512-OYn8skqKnE5YUVL8f2ocayA6XCJK8PqsEz3pfATbDqzgdaSYDLhE/s8KrXrX9gj8KXIG6Wx0CMoXTNH8+ED22w==
+prettier-plugin-java@^2.4.0:
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/prettier-plugin-java/-/prettier-plugin-java-2.4.0.tgz#be80bd058fab5eacfa3292cf24d0207926f048e5"
+  integrity sha512-Yfso3P0H/8U6NYtpYppW07dEx+WZl48lBRmJ3YmMXHE+YS72HDRcraxMWwvqQh9hn9wkBWnqTlph8BkDwlYd5w==
   dependencies:
-    java-parser "2.0.5"
+    java-parser "2.1.0"
     lodash "4.17.21"
     prettier "3.0.3"
 
