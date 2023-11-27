@@ -21,9 +21,6 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -42,6 +39,15 @@ jobs:
         uses: actions/upload-pages-artifact@v2
         with:
           path: './public'
-      - name: Deploy
-        if: ${{ contains(fromJSON('["push", "workflow_dispatch"]'), github.event_name) }}
+
+  deploy:
+    if: ${{ contains(fromJSON('["push", "workflow_dispatch"]'), github.event_name) }}
+    needs: build
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
         uses: actions/deploy-pages@v2
