@@ -192,10 +192,6 @@ neat_js:
   exclude:
     - "*.min.js"
 
-autoprefixer:
-  exclude:
-    - "*.min.css"
-
 nofollow:
   enable: true
   field: site
