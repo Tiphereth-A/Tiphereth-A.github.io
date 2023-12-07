@@ -45,7 +45,7 @@ date: 2020-12-20 20:46:33
 | L        | Let's Play Curling                | 签到(找规律) |
 | \*M      | Monster Hunter                    | 树形 DP      |
 
-[^1]: 打\*的是还没写题解的题
+[^1]: 打\*的是还没写的题
 [^2]: 带超链接的是找到了原题或原型
 
 [官方题解](https://zhuanlan.zhihu.com/p/338249705)

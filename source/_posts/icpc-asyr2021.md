@@ -74,7 +74,7 @@ date: 2021-11-21 19:33:27
 | L        | Perfect Matchings                | 容斥定理 + 树形 DP           |
 | M        | String Problem                   | SA / SAM / Lyndon 分解 / KMP |
 
-[^1]: 打\*的是还没写题解的题
+[^1]: 打\*的是还没写的题
 
 [官方题解](official_solutions.pptx)
 

@@ -50,7 +50,7 @@ date: 2023-10-07 19:07:55
 | K        | Minimum Euclidean Distance | 计算几何 (凸包), 积分   |
 | L        | KaChang!                   | 签到                    |
 
-[^1]: 打\*的是还没写题解的题
+[^1]: 打\*的是还没写的题
 [^2]: 带超链接的是找到了原题或原型
 
 {% pdf /archives/icpc-ar1o2023/problems.pdf 600px %}

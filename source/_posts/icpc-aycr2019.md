@@ -58,7 +58,7 @@ date: 2022-11-18 19:07:55
 | \*M      | Crazy Cake               | 生成函数, DP                |
 | N        | Fibonacci Sequence       | 签到                        |
 
-[^1]: 打\*的是还没写题解的题
+[^1]: 打\*的是还没写的题
 [^2]: 带超链接的是找到了原题或原型
 
 <!-- [官方题解](official_solutions.zip) -->

@@ -69,7 +69,7 @@ date: 2022-11-17 23:00:18
 | L        | Largest Unique Wins       | 博弈论, 构造                            |
 | M        | Youth Finale              | 签到 (逆序对)                           |
 
-[^1]: 打\*的是还没写题解的题
+[^1]: 打\*的是还没写的题
 [^2]: 带超链接的是找到了原题或原型
 
 {% pdf /archives/ccpc-glr2022/statements.pdf 600px %}

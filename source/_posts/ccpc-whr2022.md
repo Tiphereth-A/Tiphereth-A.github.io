@@ -61,7 +61,7 @@ date: 2022-11-17 22:00:18
 | \*L      | Novice Magician                | 构造                       |
 | \*M      | String Master                  |                            |
 
-[^1]: 打\*的是还没写题解的题
+[^1]: 打\*的是还没写的题
 
 {% pdf /archives/ccpc-whr2022/statements.pdf 600px %}
 
