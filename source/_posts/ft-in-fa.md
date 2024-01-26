@@ -1,5 +1,5 @@
 ---
-title: 科普 - 更高更妙视角下的Fourier变换
+title: 科普 - 更高更妙视角下的 Fourier 变换
 date: 2022-09-03 04:00:27
 categories:
   - 科普

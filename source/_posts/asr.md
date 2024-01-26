@@ -60,9 +60,9 @@ Simpson 法是一种常见的数值积分算法, 其思想是用几段抛物线�
 
 - Q: 为什么要设这个 $h$
 
-  A: 是因为 Simpson 法是 Newton-Cotes 积分法的特例, 因为不是重点, 这里就不展开讲了
+  A: 是因为 Simpson 法是 Newton–Cotes 积分法的特例, 因为不是重点, 这里就不展开讲了
 
-  还有一个数值积分法叫 Simpson 3/8 法, 同样也是 Newton-Cotes 积分法的特例, 式子是这样的:
+  还有一个数值积分法叫 Simpson 3/8 法, 同样也是 Newton–Cotes 积分法的特例, 式子是这样的:
 
   $$
   \int_a^bf(x)\approx\frac{h}{8}(f(a)+3f(m_1)+3f(m_2)+f(b))
