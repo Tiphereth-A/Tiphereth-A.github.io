@@ -144,6 +144,7 @@ fix_svg() {
 
     xargs perl -i -CSD -Mutf8 -pe 's/\s*<!DOCTYPE [^\n]+\n//g' $src
     xargs perl -i -CSD -Mutf8 -0777 -pe 's/\s*<!--[^\n]*?(?:\n\s*|)?-->\n//g' $src
+    python scripts/clean_svg.py $src
   done
 }
 
