@@ -18,6 +18,10 @@ date: 2020-10-02 22:23:57
 
 <!-- more -->
 
+{% note warning %}
+<https://cplib.tifa-233.com/src/code/math/simpson.hpp> 存放了笔者对该算法/数据结构的最新实现, 建议前往此处查看相关代码
+{% endnote %}
+
 ## Simpson 法
 
 Simpson 法是一种常见的数值积分算法, 其思想是用几段抛物线去拟合原曲线, 从而近似求出其面积

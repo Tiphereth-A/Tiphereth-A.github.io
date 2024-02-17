@@ -15,15 +15,15 @@ date: 2021-10-31 21:28:15
 
 基于 C++14 标准, 实现了矩阵的四则运算, 求逆, 转置, 秩, 行列式与对输入输出流的支持
 
-{% note info %}
-本模板已弃用, 新版请参阅: {% post_link matrix-valarray %}
-{% endnote %}
-
 {% note warning %}
 仅在 GCC 下测试过
 {% endnote %}
 
 <!-- more -->
+
+{% note warning %}
+<https://cplib.tifa-233.com/src/code/lalg/mat.hpp> 存放了笔者对该算法/数据结构的最新实现, 建议前往此处查看相关代码
+{% endnote %}
 
 ## 使用说明
 

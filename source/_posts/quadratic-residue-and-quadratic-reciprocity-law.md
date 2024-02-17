@@ -1,5 +1,5 @@
 ---
-title: "笔记 - 二次剩余,legendre符号与二次互反律"
+title: "笔记 - 二次剩余, Legendre 符号与二次互反律"
 categories:
   - 笔记
   - 数学

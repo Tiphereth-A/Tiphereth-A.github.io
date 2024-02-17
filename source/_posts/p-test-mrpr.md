@@ -24,9 +24,14 @@ date: 2021-11-11 00:51:43
 
 - 仅在 GCC 下测试过
 - 求 `gcd` 的函数若在低于 C++17 下会调用非标准函数
-  {% endnote %}
+
+{% endnote %}
 
 <!-- more -->
+
+{% note warning %}
+<https://cplib.tifa-233.com/src/code/nt/is_prime.hpp>, <https://cplib.tifa-233.com/src/code/nt/pfactors.hpp> 存放了笔者对该算法/数据结构的最新实现, 建议前往此处查看相关代码
+{% endnote %}
 
 <details open>
 <summary><font color='orange'>Show code</font></summary>

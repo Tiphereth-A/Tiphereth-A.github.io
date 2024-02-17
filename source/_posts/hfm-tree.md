@@ -18,6 +18,10 @@ Huffman 编码是一种基于 Huffman 树的, 按字符概率构造的, 能保�
 
 <!-- more -->
 
+{% note warning %}
+<https://cplib.tifa-233.com/src/code/util/huffman_tree.hpp> 存放了笔者对该算法/数据结构的最新实现, 建议前往此处查看相关代码
+{% endnote %}
+
 ## 介绍
 
 Huffman 树即为根结点到所有叶子结点的带权路径长度之和最小的树

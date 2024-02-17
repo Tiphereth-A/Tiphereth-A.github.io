@@ -21,6 +21,10 @@ date: 2021-10-26 22:44:15
 
 <!-- more -->
 
+{% note warning %}
+<https://cplib.tifa-233.com/src/code/math/mint.hpp>, <https://cplib.tifa-233.com/src/code/math/mintdata_ss.hpp>, <https://cplib.tifa-233.com/src/code/math/mintdata_ds.hpp> 存放了笔者对该算法/数据结构的最新实现, 建议前往此处查看相关代码
+{% endnote %}
+
 ## 成员函数&友元函数简介
 
 ### 符号说明

@@ -18,6 +18,10 @@ date: 2020-10-06 21:45:51
 
 <!-- more -->
 
+{% note warning %}
+<https://cplib.tifa-233.com/src/code/nt/crt_mod.hpp> 存放了笔者对该算法/数据结构的最新实现, 建议前往此处查看相关代码
+{% endnote %}
+
 ## 介绍
 
 为什么 CRT 要求其模数必须两两互素?

@@ -21,6 +21,10 @@ date: 2021-11-11 19:20:54
 
 <!-- more -->
 
+{% note warning %}
+<https://cplib.tifa-233.com/src/code/opt/heuristic_sa.hpp> 存放了笔者对该算法/数据结构的最新实现, 建议前往此处查看相关代码
+{% endnote %}
+
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 

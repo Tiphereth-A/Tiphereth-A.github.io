@@ -26,6 +26,10 @@ date: 2021-12-21 21:21:01
 
 <!-- more -->
 
+{% note warning %}
+<https://cplib.tifa-233.com/src/code/fast/str2uint_mod.hpp> 存放了笔者对该算法/数据结构的最新实现, 建议前往此处查看相关代码
+{% endnote %}
+
 参见 [Fast numeric string to int – Johnny Lee – Improving stuff one bit at a time](https://johnnylee-sde.github.io/Fast-numeric-string-to-int/)
 
 <details open>

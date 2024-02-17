@@ -19,9 +19,15 @@ tags:
 date: 2021-11-12 17:59:15
 ---
 
+{% post_link hamel-basis 理论笔记 %}
+
 令 $V\subseteq\mathbb{Z}_2^n$, 异或线性基即为线性空间 $V$ 上满足一定条件的一组 Hamel 基 $(\epsilon_0,\epsilon_1,\dots,\epsilon_n)$
 
 <!-- more -->
+
+{% note warning %}
+<https://cplib.tifa-233.com/src/code/math/basis_z2.hpp> 存放了笔者对该算法/数据结构的最新实现, 建议前往此处查看相关代码
+{% endnote %}
 
 ## 线性基
 

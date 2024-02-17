@@ -25,6 +25,10 @@ DLX(Dancing Links X)是一种用于解决精确覆盖问题的优美算法
 
 <!-- more -->
 
+{% note warning %}
+<https://cplib.tifa-233.com/src/code/util/dlx.hpp> 存放了笔者对该算法/数据结构的最新实现, 建议前往此处查看相关代码
+{% endnote %}
+
 ## 精确覆盖问题
 
 > **定义** 精确覆盖问题

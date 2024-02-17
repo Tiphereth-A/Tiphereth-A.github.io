@@ -1,5 +1,5 @@
 ---
-title: 随笔 - Chicken McNugget定理 (麦乐鸡定理)
+title: 随笔 - Chicken McNugget 定理 (麦乐鸡定理)
 categories:
   - 随笔
   - 数学

@@ -30,6 +30,10 @@ date: 2022-08-22 19:00:54
 
 <!-- more -->
 
+{% note warning %}
+<https://cplib.tifa-233.com/src/code/math/gint.hpp> 存放了笔者对该算法/数据结构的最新实现, 建议前往此处查看相关代码
+{% endnote %}
+
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 

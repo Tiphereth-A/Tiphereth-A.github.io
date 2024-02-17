@@ -1,5 +1,5 @@
 ---
-title: 模板 - 基于 std::valarray 实现的矩阵
+title: 模板 - [已弃用] 基于 std::valarray 实现的矩阵
 categories:
   - 算法竞赛
   - 模板

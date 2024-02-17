@@ -167,6 +167,10 @@ $$
 
 ## 简单无向图三元环计数
 
+{% note warning %}
+<https://cplib.tifa-233.com/src/code/graph/ringenum3.hpp> 存放了笔者对该算法/数据结构的最新实现, 建议前往此处查看相关代码
+{% endnote %}
+
 ### 例题 - [Luogu P1989] 无向图三元环计数
 
 无向图 $G$ 的三元环指的是一个 $G$ 的一个子图 $G_0$, 满足 $G_0$ 有且仅有三个点 $u, v, w$, 有且仅有三条边 $\langle u, v \rangle, \langle v, w \rangle, \langle w, u \rangle$. 两个三元环 $G_1, G_2$ 不同当且仅当存在一个点 $u$, 满足 $u \in G_1$ 且 $u \notin G_2$
@@ -299,6 +303,10 @@ $$
 </details>
 
 ## 简单无向图四元环计数
+
+{% note warning %}
+<https://cplib.tifa-233.com/src/code/graph/ringcnt4.hpp> 存放了笔者对该算法/数据结构的最新实现, 建议前往此处查看相关代码
+{% endnote %}
 
 ### 做法
 

@@ -21,6 +21,10 @@ date: 2021-11-01 15:18:10
 
 <!-- more -->
 
+{% note warning %}
+<https://cplib.tifa-233.com/src/code/ds/persistent_segtree.hpp> 存放了笔者对该算法/数据结构的最新实现, 建议前往此处查看相关代码
+{% endnote %}
+
 ## 代码
 
 <details open>

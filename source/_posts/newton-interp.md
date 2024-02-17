@@ -24,6 +24,10 @@ date: 2022-08-28 21:28:15
 
 <!-- more -->
 
+{% note warning %}
+<https://cplib.tifa-233.com/src/code/math/interp_newton_n2.hpp> 存放了笔者对该算法/数据结构的最新实现, 建议前往此处查看相关代码
+{% endnote %}
+
 ## Newton 插值
 
 对给定的点 $(x_0,y_0),(x_1,y_1),\dots,(x_{n-1},y_{n-1})$, Newton 插值得到的结果为

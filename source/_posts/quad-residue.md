@@ -14,6 +14,8 @@ tags:
 date: 2021-12-31 13:06:27
 ---
 
+{% post_link quadratic-residue-and-quadratic-reciprocity-law 理论笔记 %}
+
 基于 C++17 标准, 对给定的整数 $n,p$, 若 $\left(\frac{n}{p}\right)\ne1$ 则返回 `std::nullopt`, 否则返回方程 $x^2\equiv n\pmod p$ 的一个根
 
 {% note warning %}
@@ -21,6 +23,10 @@ date: 2021-12-31 13:06:27
 {% endnote %}
 
 <!-- more -->
+
+{% note warning %}
+<https://cplib.tifa-233.com/src/code/nt/qresidue.hpp> 存放了笔者对该算法/数据结构的最新实现, 建议前往此处查看相关代码
+{% endnote %}
 
 ## 代码
 
