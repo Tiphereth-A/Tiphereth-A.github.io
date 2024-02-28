@@ -20,7 +20,7 @@ tags:
 
 1. 递归遍历当前文件夹和子文件夹
 2. 找出文件名为 `*.{apk,1}` 的所有文件
-3. 使用 <https://github.com/appknox/pyaxmlparser> 来解析 APK 的文件信息, 并按 `<应用名>-<包名>-<版本号>(<内部版本号>).apk` 的格式重命名, 若重名则删除文件
+3. 使用 <https://github.com/appknox/pyaxmlparser> 来解析 APK 的文件信息, 并按 `<应用名>-<包名>-<版本名>(<版本号>).apk` 的格式重命名, 若重名则删除文件
 
 ## 代码
 
