@@ -33,7 +33,7 @@
     "hexo-tag-icodeweb": "^1.1.1",
     "hexo-tag-mmedia": "^1.2.1",
     "hexo-theme-next": "^8.19.2",
-    "hexo-word-counter": "^0.1.0"
+    "hexo-word-counter": "^0.2.0"
   },
   "devDependencies": {
     "@prettier/plugin-xml": "^3.4.1",
