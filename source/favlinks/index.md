@@ -15,6 +15,7 @@ comments: false
 - [OEIS](https://oeis.org/)
 - [OI Wiki](https://oi-wiki.org/)
 - [Online converter](https://www.online-convert.com/)
+- [Pyrexp: Python Regular Expression Tester and Visualizer](https://pythonium.net/regex)
 - [Quick C++ Benchmarks](https://quick-bench.com/)
 - [regex101: build, test, and debug regex](https://regex101.com/)
 - [Regulex: JavaScript Regular Expression Visualizer](https://jex.im/regulex/)
