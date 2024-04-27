@@ -22,7 +22,7 @@ tags:
 
 ## 界面
 
-![](screenshot.png)
+![](screenshot.webp)
 
 ## 代码
 

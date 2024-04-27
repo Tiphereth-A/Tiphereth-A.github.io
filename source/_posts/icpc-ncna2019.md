@@ -97,7 +97,7 @@ date: 2021-03-07 18:11:53
 ## A - Weird Flecks, But OK
 
 <div style="width:25.00%" class="illustration">
-  <img src="A-1.png" alt="">
+  <img src="A-1.webp" alt="">
 </div>
 
 An artist who wanted to create an installation where his works appeared to be floating in midair has cast a large cube of clear acrylic to serve as a base. Unfortunately, during the casting, some small flecks of dirt got into the mix, and now appear as a cluster of pinpoint flaws in the otherwise clear cube
@@ -183,7 +183,7 @@ The answer is considered correct if the absolute or relative error is less than 
 ## B - Code Names
 
 <div style="width:30.00%" class="illustration">
-  <img src="B-1.png" alt="">
+  <img src="B-1.webp" alt="">
 </div>
 
 You are given $W$, a set of $N$ words that are anagrams of each other. There are no duplicate letters in any word. A set of words $S⊆W$ is called "swap-free" if there is no way to turn a word $x∈S$ into another word $y∈S$ by swapping only a single pair of (not necessarily adjacent) letters in $x$. Find the size of the largest swap-free set $S$ chosen from the given set $W$
@@ -277,7 +277,7 @@ teas
 ## C - New Maths
 
 <div style="width:30.00%" class="illustration">
-  <img src="C-1.png" alt="">
+  <img src="C-1.webp" alt="">
 </div>
 
 "Drat!" cursed Charles. "This stupid carry bar is not working in my Engine! I just tried to calculate the square of a number, but it's wrong; all of the carries are lost."
@@ -490,7 +490,7 @@ $$
 ## D - Some Sum
 
 <div style="width:50.00%" class="illustration">
-  <img src="D-1.png" alt="">
+  <img src="D-1.webp" alt="">
   <div class="description">
     illustration by Larry Pyeatt
   </div>
@@ -551,7 +551,7 @@ Odd
 ## E - Early Orders
 
 <div style="width:30.00%" class="illustration">
-  <img src="E-1.png" alt="">
+  <img src="E-1.webp" alt="">
 </div>
 
 You are given a list of integers $x_1,x_2,…,x_n$ and a number $k$. It is guaranteed that each $i$ from $1$ to $k$ appears in the list at least once
@@ -620,7 +620,7 @@ Write out on one line, separated by spaces, the lexicographically smallest subse
 
 ## F - Pulling Their Weight
 
-<div style="width:30.00%" class="illustration"><img src="F-1.jpg" alt="">
+<div style="width:30.00%" class="illustration"><img src="F-1.webp" alt="">
   <div class="description">
     <a href="https://en.wikipedia.org/wiki/File:American_bison_k5680-1.jpg">Buffalo</a>, <a href="https://commons.wikimedia.org/wiki/File:Water_Vole_(6038169781).jpg">
     vole</a>, and <a href="https://commons.wikimedia.org/wiki/File:Miniature_schnauzer.jpg">schnauzer</a>. Original images from Wikipedia.
@@ -712,7 +712,7 @@ $O(\max\{n,A\})$
 ## G - Birthday Paradox
 
 <div style="width:40.00%" class="illustration">
-  <img src="G-1.png" alt="">
+  <img src="G-1.webp" alt="">
   <div class="description">
     The probability of <span class="katex"><span class="mord mathdefault">n</span></span>
     unique birthdays among <span class="katex"><span class="mord mathdefault">n</span></span> people.
@@ -813,7 +813,7 @@ $O(k)$
 ## H - On Average They're Purple
 
 <div style="width:30.00%" class="illustration">
-  <img src="H-1.png" alt="">
+  <img src="H-1.webp" alt="">
 </div>
 
 Alice and Bob are playing a game on a simple connected graph with $N$ nodes and $M$ edges
@@ -887,7 +887,7 @@ Output the maximum number of color changes Alice can force Bob to make on his ro
 ## I - Full Depth Morning Show
 
 <div style="width:30.00%" class="illustration">
-  <img src="I-1.png" alt="">
+  <img src="I-1.webp" alt="">
 </div>
 
 All boring tree-shaped lands are alike, while all exciting tree-shaped lands are exciting in their own special ways. What makes Treeland more exciting than the other tree-shaped lands are the raddest radio hosts in the local area: Root and Leaf. Every morning on FM $32.33$(repeating of course), Root and Leaf of The Full Depth Morning Show serve up the hottest celebrity gossip and traffic updates
@@ -900,7 +900,7 @@ Each city in Treeland has its own tax on prizes: $t_i$. Let $d_{u,v}$ be the sum
 
 <div class="figure">
   <center>
-    <img src="I-2.png" alt="" style="width:70.00%">
+    <img src="I-2.webp" alt="" style="width:70.00%">
     <div class="caption">
       <b>Figure 1</b>: The map of Treeland corresponding to the
       first sample input.
@@ -997,7 +997,7 @@ $$
 ## J - This Ain't Your Grandpa's Checkerboard
 
 <div style="width:20.00%" class="illustration">
-  <img src="J-1.png" alt="">
+  <img src="J-1.webp" alt="">
 </div>
 
 You are given an $n$-by-$n$ grid where each square is colored either black or white. A grid is correct if all of the following conditions are satisfied:
@@ -1102,7 +1102,7 @@ WBWWBB
 ## K - Solar Energy
 
 <div style="width:30.00%" class="illustration">
-  <img src="K-1.png" alt="">
+  <img src="K-1.webp" alt="">
 </div>
 
 You are planning to travel in interstellar space in the hope of finding habitable planets. You have already identified $N$ stars that can recharge your spaceship via its solar panels. The only work left is to decide the orientation of the spaceship that maximizes the distance it can travel
@@ -1208,19 +1208,19 @@ $$
 
 画个图
 
-![](K-sol-1.png)
+![](K-sol-1.webp)
 
 其中<font color="#2d70b2">蓝色</font>图像为 $f_1$, <font color="#c74440">红色</font>图像为 $f_2$, <font color="#388c46">绿色</font>图像为 $f_3$
 
 我们把 $f$ 也加进去
 
-![](K-sol-2.png)
+![](K-sol-2.webp)
 
 其中<font color="#6042a6">紫色</font>图像为 $f\over3$
 
 放大一些
 
-![](K-sol-3.png)
+![](K-sol-3.webp)
 
 可以证明 $f$ 的图像存在"局部周期", 即
 

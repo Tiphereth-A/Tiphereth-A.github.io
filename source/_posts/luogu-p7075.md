@@ -126,7 +126,7 @@ $s_i$ 的格式如下:
 
 直接代公式即可
 
-> ![](1.jpg)
+> ![](1.webp)
 >
 > from _Astronomical Algorithms_
 

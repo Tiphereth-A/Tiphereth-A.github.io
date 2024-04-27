@@ -612,10 +612,6 @@ $O(m+kn\log n+k^22^k)$
 3
 ```
 
-### 样例解释
-
-[点击查看图片](https://img.51nod.com/upload/000FBF24/08D2B51B62DE30780000000000000008.png)
-
 ### 数据规模
 
 所有数据保证 $1\leq n \leq 10^5, 1 \leq h_i\leq 10^9$

@@ -62,13 +62,13 @@ $$
 >
 > 下面进一步分析如何按上述两个原则确定合适的试点. 如图 2-1 设第 1 试点、第 2 试点分别为 $x_1$ 和 $x_2$, $x_2<x_1$ 且 $x_1,x_2$ 关于 $[a,b]$ 的中心对称, 即 $x_2-a=b-x_1$
 >
-> ![](2_1.png)
+> ![](2_1.webp)
 >
 > (图 2-1, 由 GeoGebra 生成)
 >
 > 显然, 不论点 $x_2$(或点 $x_1$)是好点还是差点, 由对称性, 舍去的区间长度都等于 $b-x_1$, 不妨设 $x_2$ 是好点, $x_1$ 是差点, 于是舍去 $(x_1,b]$. 再在存优范围 $[a,x_1]$ 内安排第 3 次试验, 设试点为 $x_3$, $x_3$ 与 $x_2$ 关于 $[a,x_1]$ 的中心对称 (如图 2-2 所示)
 >
-> ![](2_2.png)
+> ![](2_2.webp)
 >
 > (图 2-2, 由 GeoGebra 生成)
 >
@@ -203,7 +203,7 @@ $$
 
 附上 [Wikipedia](https://en.wikipedia.org/wiki/Taylor%27s_theorem) 的动图
 
-![](https://upload.wikimedia.org/wikipedia/commons/3/31/Tayloranimation.gif)
+![](Tayloranimation.webp)
 
 对证明感兴趣的读者可以自行查阅相关资料
 
@@ -259,7 +259,7 @@ $$
 
 附上 [Wikipedia](https://en.wikipedia.org/wiki/Newton's_method) 的动图
 
-![](https://upload.wikimedia.org/wikipedia/commons/e/e0/NewtonIteration_Ani.gif)
+![](NewtonIteration_Ani.webp)
 
 二次收敛证明: (Wikipedia 上的, 笔者翻译 QwQ)
 

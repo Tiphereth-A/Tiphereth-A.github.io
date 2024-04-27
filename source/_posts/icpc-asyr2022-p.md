@@ -32,7 +32,7 @@ date: 2022-11-05 18:24:04
 
 ### 解题思路
 
-![](A.jpg)
+![](A.webp)
 
 > From [东北大学章程网](https://www.neu.edu.cn/constitution/), [Archived](https://web.archive.org/web/20220814200414/https://www.neu.edu.cn/constitution/)
 
