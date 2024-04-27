@@ -53,7 +53,7 @@ regen_figures() {
       imgcode/tikz/*)
         echo "Proceed as TikZ"
         xelatex -synctex=1 -interaction=nonstopmode -file-line-error -output-directory=$temp_dir $src
-        pdf2svg $temp_dir${base/%tex/pdf} $outsrc_svg || ./bin/pdf2svg-windows/dist-64bits/pdf2svg.exe $temp_dir${base/%tex/pdf} $outsrc_svg
+        pdf2svg $temp_dir${base/%tex/pdf} $outsrc_svg
         result=1
       ;;
 
