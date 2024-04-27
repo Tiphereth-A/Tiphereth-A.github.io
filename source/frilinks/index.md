@@ -34,7 +34,7 @@ avatar: 头像链接
 
   avatar 可以为空. avatar 为空, 图床无效或其他技术原因等情况时默认使用
 
-  ![/images/default-ava/ava](/images/default-ava/ava.png)
+  ![default-avatar](/images/default-ava/ava.png)
 
 - description 可以为空, 为空时与 name 相同
 - 对于博客类型友链的额外要求:
