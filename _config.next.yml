@@ -117,10 +117,11 @@ sidebar:
   position: left
   #position: right
 
-  # Manual define the sidebar width. If commented, will be default for:
-  # Muse | Mist: 320
-  # Pisces | Gemini: 240
-  #width: 300
+  # Sidebar width.
+  # Applicable to Muse | Mist and mobile of Pisces | Gemini.
+  width_expanded: 320
+  # Applicable to desktop of Pisces | Gemini.
+  width_dual_column: 240
 
   # Sidebar Display (only for Muse | Mist), available values:
   #  - post    expand on posts automatically. Default.
