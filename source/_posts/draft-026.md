@@ -24,4 +24,4 @@ tags:
 
 ## 代码
 
-{% include_code lang:python draft-026/rename_apk.py %}
+{% include_code lang:python /draft-026/rename_apk.py %}
