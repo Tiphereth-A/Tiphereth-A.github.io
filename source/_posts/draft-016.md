@@ -26,7 +26,7 @@ date: 2021-11-04 20:21:45
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:c draft-016/SEL4.c %}`
+{% include_code lang:c draft-016/SEL4.c %}
 
 </details>
 
@@ -41,7 +41,7 @@ date: 2021-11-04 20:21:45
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:c draft-016/P4.c %}`
+{% include_code lang:c draft-016/P4.c %}
 
 </details>
 
@@ -74,7 +74,7 @@ b, a, d, c, | b, d, a, c, | d, b, a, c
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:c draft-016/P4_3.c %}`
+{% include_code lang:c draft-016/P4_3.c %}
 
 </details>
 
@@ -85,7 +85,7 @@ b, a, d, c, | b, d, a, c, | d, b, a, c
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:c draft-016/CPROD3_4.c %}`
+{% include_code lang:c draft-016/CPROD3_4.c %}
 
 </details>
 

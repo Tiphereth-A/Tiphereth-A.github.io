@@ -495,7 +495,7 @@ $$
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp dlx/DLX_nodes.cpp %}`
+{% include_code lang:cpp dlx/DLX_nodes.cpp %}
 
 </details>
 
@@ -504,7 +504,7 @@ $$
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp dlx/DLX_nodes_ms.cpp %}`
+{% include_code lang:cpp dlx/DLX_nodes_ms.cpp %}
 
 </details>
 
@@ -513,7 +513,7 @@ $$
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp dlx/DLX_nodes_final.cpp %}`
+{% include_code lang:cpp dlx/DLX_nodes_final.cpp %}
 
 </details>
 
@@ -528,7 +528,7 @@ $$
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp dlx/DLX_nodes_final2.cpp %}`
+{% include_code lang:cpp dlx/DLX_nodes_final2.cpp %}
 
 </details>
 
@@ -553,7 +553,7 @@ $$
   <details open>
   <summary><font color='orange'>Show code</font></summary>
 
-  {% include_code lang:cpp dlx/DLX_macro.cpp %}`
+  {% include_code lang:cpp dlx/DLX_macro.cpp %}
 
   </details>
 
@@ -569,7 +569,7 @@ $$
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp dlx/DLX_init.cpp %}`
+{% include_code lang:cpp dlx/DLX_init.cpp %}
 
 </details>
 
