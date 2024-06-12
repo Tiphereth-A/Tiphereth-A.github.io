@@ -201,7 +201,7 @@ date: 2022-11-18 19:07:55
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb blog lang:cpp icpc-aycr2019/I.cpp %}
+{% icodeweb blog lang:python icpc-aycr2019/I.py %}
 
 </details>
 
