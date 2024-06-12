@@ -70,7 +70,7 @@ date: 2022-05-19 22:01:18
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp ccpc-hljp2022/A.cpp %}
+{% icodeweb blog lang:cpp ccpc-hljp2022/A.cpp %}
 
 </details>
 
@@ -81,7 +81,7 @@ date: 2022-05-19 22:01:18
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp ccpc-hljp2022/B.cpp %}
+{% icodeweb blog lang:cpp ccpc-hljp2022/B.cpp %}
 
 </details>
 
@@ -92,7 +92,7 @@ date: 2022-05-19 22:01:18
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp ccpc-hljp2022/C.cpp %}
+{% icodeweb blog lang:cpp ccpc-hljp2022/C.cpp %}
 
 </details>
 
@@ -103,7 +103,7 @@ date: 2022-05-19 22:01:18
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp ccpc-hljp2022/D.cpp %}
+{% icodeweb blog lang:cpp ccpc-hljp2022/D.cpp %}
 
 </details>
 
@@ -143,7 +143,7 @@ $O(n\log n)$
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp ccpc-hljp2022/E.cpp %}
+{% icodeweb blog lang:cpp ccpc-hljp2022/E.cpp %}
 
 </details>
 
@@ -154,7 +154,7 @@ $O(n\log n)$
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp ccpc-hljp2022/F.cpp %}
+{% icodeweb blog lang:cpp ccpc-hljp2022/F.cpp %}
 
 </details>
 
@@ -165,7 +165,7 @@ $O(n\log n)$
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp ccpc-hljp2022/G.cpp %}
+{% icodeweb blog lang:cpp ccpc-hljp2022/G.cpp %}
 
 </details>
 
@@ -176,7 +176,7 @@ $O(n\log n)$
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp ccpc-hljp2022/H.cpp %}
+{% icodeweb blog lang:cpp ccpc-hljp2022/H.cpp %}
 
 </details>
 
@@ -187,7 +187,7 @@ $O(n\log n)$
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp ccpc-hljp2022/I.cpp %}
+{% icodeweb blog lang:cpp ccpc-hljp2022/I.cpp %}
 
 </details>
 
@@ -198,7 +198,7 @@ $O(n\log n)$
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp ccpc-hljp2022/J.cpp %}
+{% icodeweb blog lang:cpp ccpc-hljp2022/J.cpp %}
 
 </details>
 
@@ -209,7 +209,7 @@ $O(n\log n)$
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp ccpc-hljp2022/K.cpp %}
+{% icodeweb blog lang:cpp ccpc-hljp2022/K.cpp %}
 
 </details>
 
@@ -220,6 +220,6 @@ $O(n\log n)$
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp ccpc-hljp2022/L.cpp %}
+{% icodeweb blog lang:cpp ccpc-hljp2022/L.cpp %}
 
 </details>

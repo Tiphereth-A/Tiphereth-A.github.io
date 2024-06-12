@@ -132,7 +132,7 @@ $$
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:matlab numanaexp-06/main.m %}
+{% icodeweb blog lang:matlab numanaexp-06/main.m %}
 
 </details>
 
@@ -141,7 +141,7 @@ $$
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:matlab numanaexp-06/jacobi.m %}
+{% icodeweb blog lang:matlab numanaexp-06/jacobi.m %}
 
 </details>
 
@@ -150,7 +150,7 @@ $$
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:matlab numanaexp-06/gauss_seidol.m %}
+{% icodeweb blog lang:matlab numanaexp-06/gauss_seidol.m %}
 
 </details>
 
@@ -159,7 +159,7 @@ $$
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:matlab numanaexp-06/sor.m %}
+{% icodeweb blog lang:matlab numanaexp-06/sor.m %}
 
 </details>
 

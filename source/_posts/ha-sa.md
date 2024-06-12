@@ -28,6 +28,6 @@ date: 2021-11-11 19:20:54
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp ha-sa/Simulated_annealing.hpp %}
+{% icodeweb blog lang:cpp ha-sa/Simulated_annealing.hpp %}
 
 </details>

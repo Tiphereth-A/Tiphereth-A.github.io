@@ -19,7 +19,7 @@ date: 2020-06-17 09:22:53
 
 利用宏实现
 
-{% include_code lang:c draft-002/1.c %}
+{% icodeweb blog lang:c draft-002/1.c %}
 
 其中`(void)(&_min_1 == &_min_2);`利用了不同类型指针做逻辑比较在编译过程会报错来保证两参数类型相同
 
@@ -47,7 +47,7 @@ C11 中添加了`_Generic`关键字, 使得编写泛型函数更方便了
 
 例如[^2]:
 
-{% include_code lang:c draft-002/2.c %}
+{% icodeweb blog lang:c draft-002/2.c %}
 
 输出:
 
@@ -70,4 +70,5 @@ a 为`int`, `a + 0.1f`为`float`, 所以`_Generic`执行`float`对应的操作, 
 a 为`int`, `a += 1.1f`**不改变`a`的值**, `_Generic`判断`a`的类型, 执行`int`对应的操作, 即返回`b`, 最终该语句为`b++`
 
 [^1]: [ISO/IEC 9899:201x - N1570 - Programming languages - C](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n1570.pdf)
+
 [^2]: [C11\_百度百科](https://baike.baidu.com/item/C11)

@@ -50,7 +50,7 @@ $$
 
 附程序:
 
-{% include_code lang:cpp approx-number/binary_search.cpp %}
+{% icodeweb blog lang:cpp approx-number/binary_search.cpp %}
 
 ## 0.618 法\优选法
 
@@ -135,7 +135,7 @@ $$
 
 附程序:
 
-{% include_code lang:cpp approx-number/gold_search.cpp %}
+{% icodeweb blog lang:cpp approx-number/gold_search.cpp %}
 
 读者们可以在 [洛谷 P3382](https://www.luogu.org/problemnew/show/P3382) 中测试一下(～ o ￣ 3 ￣)～
 
@@ -341,7 +341,7 @@ $$
 
 程序:
 
-{% include_code lang:cpp approx-number/newton.cpp %}
+{% icodeweb blog lang:cpp approx-number/newton.cpp %}
 
 ---
 
@@ -365,7 +365,7 @@ $$
 
 测试程序:
 
-{% include_code lang:cpp approx-number/test.cpp %}
+{% icodeweb blog lang:cpp approx-number/test.cpp %}
 
 ## 后记
 

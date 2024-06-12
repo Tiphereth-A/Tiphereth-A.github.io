@@ -16,6 +16,6 @@ RT
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp draft-018/get_cpu.cpp %}
+{% icodeweb blog lang:cpp draft-018/get_cpu.cpp %}
 
 </details>

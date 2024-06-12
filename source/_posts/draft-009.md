@@ -26,7 +26,7 @@ date: 2021-04-12 19:24:47
 
 数据如下
 
-{% include_code lang:matlab draft-009/data.m %}
+{% icodeweb blog lang:matlab draft-009/data.m %}
 
 ## 主要命令用法简介
 
@@ -66,7 +66,7 @@ date: 2021-04-12 19:24:47
 <details open>
 <summary><font color='orange'>Show code 1</font></summary>
 
-{% include_code lang:matlab draft-009/q1.m %}
+{% icodeweb blog lang:matlab draft-009/q1.m %}
 
 </details>
 
@@ -80,7 +80,7 @@ date: 2021-04-12 19:24:47
 <details open>
 <summary><font color='orange'>Show code 2</font></summary>
 
-{% include_code lang:matlab draft-009/q1.m %}
+{% icodeweb blog lang:matlab draft-009/q1.m %}
 
 </details>
 

@@ -30,6 +30,6 @@ $$
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp rpow/rpow.hpp %}
+{% icodeweb blog lang:cpp rpow/rpow.hpp %}
 
 </details>

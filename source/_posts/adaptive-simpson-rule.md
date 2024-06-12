@@ -192,7 +192,7 @@ $$
 
 附程序:
 
-{% include_code lang:cpp asr/asr.cpp %}
+{% icodeweb blog lang:cpp asr/asr.cpp %}
 
 ## 后记
 

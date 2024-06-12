@@ -59,7 +59,7 @@ date: 2021-10-26 22:44:15
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp modint/ModInteger.hpp %}
+{% icodeweb blog lang:cpp modint/ModInteger.hpp %}
 
 </details>
 
@@ -68,6 +68,6 @@ date: 2021-10-26 22:44:15
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp modint/ModInteger_exp.cpp %}
+{% icodeweb blog lang:cpp modint/ModInteger_exp.cpp %}
 
 </details>

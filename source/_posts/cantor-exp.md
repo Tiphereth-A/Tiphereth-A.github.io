@@ -105,7 +105,7 @@ $$
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp cantor-exp/Cantor_expansion.hpp %}
+{% icodeweb blog lang:cpp cantor-exp/Cantor_expansion.hpp %}
 
 </details>
 
@@ -154,7 +154,7 @@ $$
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp cantor-exp/inverse_Cantor_expansion.hpp %}
+{% icodeweb blog lang:cpp cantor-exp/inverse_Cantor_expansion.hpp %}
 
 </details>
 

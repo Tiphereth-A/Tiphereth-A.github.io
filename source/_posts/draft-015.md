@@ -75,6 +75,6 @@ $$
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp draft-015/main.cpp %}
+{% icodeweb blog lang:cpp draft-015/main.cpp %}
 
 </details>

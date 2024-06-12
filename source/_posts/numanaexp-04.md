@@ -141,7 +141,7 @@ $$
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:matlab numanaexp-04/main.m %}
+{% icodeweb blog lang:matlab numanaexp-04/main.m %}
 
 </details>
 
@@ -150,7 +150,7 @@ $$
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:matlab numanaexp-04/input_check.m %}
+{% icodeweb blog lang:matlab numanaexp-04/input_check.m %}
 
 </details>
 
@@ -159,7 +159,7 @@ $$
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:matlab numanaexp-04/integral_with_h.m %}
+{% icodeweb blog lang:matlab numanaexp-04/integral_with_h.m %}
 
 </details>
 
@@ -168,7 +168,7 @@ $$
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:matlab numanaexp-04/integral_with_eps.m %}
+{% icodeweb blog lang:matlab numanaexp-04/integral_with_eps.m %}
 
 </details>
 
@@ -179,7 +179,7 @@ $$
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:matlab numanaexp-04/trapez.m %}
+{% icodeweb blog lang:matlab numanaexp-04/trapez.m %}
 
 </details>
 
@@ -188,7 +188,7 @@ $$
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:matlab numanaexp-04/simpson.m %}
+{% icodeweb blog lang:matlab numanaexp-04/simpson.m %}
 
 </details>
 

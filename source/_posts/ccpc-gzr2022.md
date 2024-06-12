@@ -59,6 +59,7 @@ date: 2022-11-16 12:46:33
 | \*M      | XOR Sum                                             |                                     |
 
 [^1]: 打\*的是还没写的题
+
 [^2]: 带超链接的是找到了原题或原型
 
 [官方题解](official_solutions.pptx)
@@ -76,7 +77,7 @@ date: 2022-11-16 12:46:33
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp ccpc-gzr2022/A.cpp %}
+{% icodeweb blog lang:cpp ccpc-gzr2022/A.cpp %}
 
 </details>
 
@@ -91,7 +92,7 @@ date: 2022-11-16 12:46:33
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp ccpc-gzr2022/B.cpp %}
+{% icodeweb blog lang:cpp ccpc-gzr2022/B.cpp %}
 
 </details>
 
@@ -122,7 +123,7 @@ $O(m\alpha(n)+n)$
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp ccpc-gzr2022/C.cpp %}
+{% icodeweb blog lang:cpp ccpc-gzr2022/C.cpp %}
 
 </details>
 
@@ -137,7 +138,7 @@ $O(m\alpha(n)+n)$
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp ccpc-gzr2022/D.cpp %}
+{% icodeweb blog lang:cpp ccpc-gzr2022/D.cpp %}
 
 </details>
 
@@ -148,7 +149,7 @@ $O(m\alpha(n)+n)$
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp ccpc-gzr2022/E.cpp %}
+{% icodeweb blog lang:cpp ccpc-gzr2022/E.cpp %}
 
 </details>
 
@@ -163,7 +164,7 @@ $O(m\alpha(n)+n)$
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp ccpc-gzr2022/F.cpp %}
+{% icodeweb blog lang:cpp ccpc-gzr2022/F.cpp %}
 
 </details>
 
@@ -178,7 +179,7 @@ $O(m\alpha(n)+n)$
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp ccpc-gzr2022/G.cpp %}
+{% icodeweb blog lang:cpp ccpc-gzr2022/G.cpp %}
 
 </details>
 
@@ -189,7 +190,7 @@ $O(m\alpha(n)+n)$
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp ccpc-gzr2022/H.cpp %}
+{% icodeweb blog lang:cpp ccpc-gzr2022/H.cpp %}
 
 </details>
 
@@ -204,7 +205,7 @@ $O(m\alpha(n)+n)$
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp ccpc-gzr2022/I.cpp %}
+{% icodeweb blog lang:cpp ccpc-gzr2022/I.cpp %}
 
 </details>
 
@@ -219,7 +220,7 @@ $O(m\alpha(n)+n)$
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp ccpc-gzr2022/J.cpp %}
+{% icodeweb blog lang:cpp ccpc-gzr2022/J.cpp %}
 
 </details>
 
@@ -238,7 +239,7 @@ $O(m\alpha(n)+n)$
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp ccpc-gzr2022/K.cpp %}
+{% icodeweb blog lang:cpp ccpc-gzr2022/K.cpp %}
 
 </details>
 
@@ -249,7 +250,7 @@ $O(m\alpha(n)+n)$
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp ccpc-gzr2022/L.cpp %}
+{% icodeweb blog lang:cpp ccpc-gzr2022/L.cpp %}
 
 </details>
 
@@ -264,6 +265,6 @@ $O(m\alpha(n)+n)$
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp ccpc-gzr2022/M.cpp %}
+{% icodeweb blog lang:cpp ccpc-gzr2022/M.cpp %}
 
 </details>

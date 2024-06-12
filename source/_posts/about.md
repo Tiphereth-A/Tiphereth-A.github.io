@@ -33,7 +33,7 @@ date: 2020-05-04 19:07:23
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp about/init.cpp %}
+{% icodeweb blog lang:cpp about/init.cpp %}
 
 </details>
 

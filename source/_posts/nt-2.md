@@ -126,7 +126,7 @@ $$
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp nt-2/get_sum.cpp %}
+{% icodeweb blog lang:cpp nt-2/get_sum.cpp %}
 
 </details>
 
@@ -258,7 +258,7 @@ $$
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp nt-2/Dirichlet_sum.cpp %}
+{% icodeweb blog lang:cpp nt-2/Dirichlet_sum.cpp %}
 
 </details>
 
@@ -412,7 +412,7 @@ $$
    <details open>
    <summary><font color='orange'>Show code</font></summary>
 
-   {% include_code lang:cpp nt-2/euler_phi_single.cpp %}
+   {% icodeweb blog lang:cpp nt-2/euler_phi_single.cpp %}
 
    </details>
 
@@ -423,7 +423,7 @@ $$
    <details open>
    <summary><font color='orange'>Show code</font></summary>
 
-   {% include_code lang:cpp nt-2/euler_phi_seive.cpp %}
+   {% icodeweb blog lang:cpp nt-2/euler_phi_seive.cpp %}
 
    </details>
 
@@ -571,7 +571,7 @@ $$
    <details open>
    <summary><font color='orange'>Show code</font></summary>
 
-   {% include_code lang:cpp nt-2/mobius_seive.cpp %}
+   {% icodeweb blog lang:cpp nt-2/mobius_seive.cpp %}
 
    </details>
 

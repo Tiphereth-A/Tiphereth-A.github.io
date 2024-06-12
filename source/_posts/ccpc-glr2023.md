@@ -39,6 +39,7 @@ date: 2023-11-24 02:00:18
 | M        | Flipping Cards           |      |
 
 [^1]: 打\*的是还没写的题
+
 [^2]: 带超链接的是找到了原题或原型
 
 {% pdf /archives/ccpc-glr2023/statements.pdf 600px %}
@@ -58,7 +59,7 @@ date: 2023-11-24 02:00:18
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp ccpc-glr2023/A.cpp %}
+{% icodeweb blog lang:cpp ccpc-glr2023/A.cpp %}
 
 </details>
 
@@ -73,7 +74,7 @@ date: 2023-11-24 02:00:18
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp ccpc-glr2023/B.cpp %}
+{% icodeweb blog lang:cpp ccpc-glr2023/B.cpp %}
 
 </details>
 
@@ -88,7 +89,7 @@ date: 2023-11-24 02:00:18
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp ccpc-glr2023/C.cpp %}
+{% icodeweb blog lang:cpp ccpc-glr2023/C.cpp %}
 
 </details>
 
@@ -103,7 +104,7 @@ date: 2023-11-24 02:00:18
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp ccpc-glr2023/D.cpp %}
+{% icodeweb blog lang:cpp ccpc-glr2023/D.cpp %}
 
 </details>
 
@@ -118,7 +119,7 @@ date: 2023-11-24 02:00:18
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp ccpc-glr2023/E.cpp %}
+{% icodeweb blog lang:cpp ccpc-glr2023/E.cpp %}
 
 </details>
 
@@ -133,7 +134,7 @@ date: 2023-11-24 02:00:18
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp ccpc-glr2023/F.cpp %}
+{% icodeweb blog lang:cpp ccpc-glr2023/F.cpp %}
 
 </details>
 
@@ -148,7 +149,7 @@ date: 2023-11-24 02:00:18
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp ccpc-glr2023/G.cpp %}
+{% icodeweb blog lang:cpp ccpc-glr2023/G.cpp %}
 
 </details>
 
@@ -163,7 +164,7 @@ date: 2023-11-24 02:00:18
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp ccpc-glr2023/H.cpp %}
+{% icodeweb blog lang:cpp ccpc-glr2023/H.cpp %}
 
 </details>
 
@@ -178,7 +179,7 @@ date: 2023-11-24 02:00:18
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp ccpc-glr2023/I.cpp %}
+{% icodeweb blog lang:cpp ccpc-glr2023/I.cpp %}
 
 </details>
 
@@ -193,7 +194,7 @@ date: 2023-11-24 02:00:18
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp ccpc-glr2023/J.cpp %}
+{% icodeweb blog lang:cpp ccpc-glr2023/J.cpp %}
 
 </details>
 
@@ -208,7 +209,7 @@ date: 2023-11-24 02:00:18
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp ccpc-glr2023/K.cpp %}
+{% icodeweb blog lang:cpp ccpc-glr2023/K.cpp %}
 
 </details>
 
@@ -223,7 +224,7 @@ date: 2023-11-24 02:00:18
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp ccpc-glr2023/L.cpp %}
+{% icodeweb blog lang:cpp ccpc-glr2023/L.cpp %}
 
 </details>
 
@@ -238,6 +239,6 @@ date: 2023-11-24 02:00:18
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp ccpc-glr2023/M.cpp %}
+{% icodeweb blog lang:cpp ccpc-glr2023/M.cpp %}
 
 </details>

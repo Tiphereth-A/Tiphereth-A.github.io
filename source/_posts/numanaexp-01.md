@@ -131,7 +131,7 @@ $$
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp numanaexp-01/main.cpp %}
+{% icodeweb blog lang:cpp numanaexp-01/main.cpp %}
 
 </details>
 
@@ -142,7 +142,7 @@ $$
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:matlab numanaexp-01/main.m %}
+{% icodeweb blog lang:matlab numanaexp-01/main.m %}
 
 </details>
 
@@ -151,7 +151,7 @@ $$
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:matlab numanaexp-01/calc_fast.m %}
+{% icodeweb blog lang:matlab numanaexp-01/calc_fast.m %}
 
 </details>
 
@@ -160,7 +160,7 @@ $$
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:matlab numanaexp-01/error_judge.m %}
+{% icodeweb blog lang:matlab numanaexp-01/error_judge.m %}
 
 </details>
 

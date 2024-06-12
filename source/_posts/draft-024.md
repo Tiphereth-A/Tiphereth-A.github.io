@@ -26,8 +26,8 @@ tags:
 
 ## 代码
 
-{% include_code lang:cpp draft-024/euler_seive.hpp %}
+{% icodeweb blog lang:cpp draft-024/euler_seive.hpp %}
 
 ## 测试
 
-{% include_code lang:cpp draft-024/euler_seive_test.cpp %}
+{% icodeweb blog lang:cpp draft-024/euler_seive_test.cpp %}

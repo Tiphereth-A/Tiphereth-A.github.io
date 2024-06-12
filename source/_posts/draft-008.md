@@ -19,12 +19,12 @@ date: 2021-01-26 18:31:47
 
 <!-- tab 一元 -->
 
-{% include_code lang:cpp draft-008/unary.cpp %}
+{% icodeweb blog lang:cpp draft-008/unary.cpp %}
 
 <!-- endtab -->
 <!-- tab 二元 -->
 
-{% include_code lang:cpp draft-008/binary.cpp %}
+{% icodeweb blog lang:cpp draft-008/binary.cpp %}
 
 <!-- endtab -->
 
@@ -51,7 +51,7 @@ date: 2021-01-26 18:31:47
 
 以下程序和示例程序等价
 
-{% include_code lang:cpp draft-008/main.cpp %}
+{% icodeweb blog lang:cpp draft-008/main.cpp %}
 
 此处要注意一点, 因为 `using namespace std;`, 致使 `<cctype>` 中的 `toupper` 和 `<locale>` 中的 `std::toupper` 发生混淆, 此时需要加 `::` 限定作用域
 

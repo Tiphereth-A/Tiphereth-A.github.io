@@ -74,7 +74,7 @@ date: 2021-10-31 21:28:15
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp matrix/Matrix.hpp %}
+{% icodeweb blog lang:cpp matrix/Matrix.hpp %}
 
 </details>
 
@@ -83,6 +83,6 @@ date: 2021-10-31 21:28:15
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp matrix/Matrix_exp.cpp %}
+{% icodeweb blog lang:cpp matrix/Matrix_exp.cpp %}
 
 </details>

@@ -121,7 +121,7 @@ $$
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp powerful-num/main.cpp %}
+{% icodeweb blog lang:cpp powerful-num/main.cpp %}
 
 </details>
 

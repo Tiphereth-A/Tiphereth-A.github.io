@@ -33,6 +33,6 @@ date: 2021-12-31 13:06:27
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp quad-residue/quad_r.hpp %}
+{% icodeweb blog lang:cpp quad-residue/quad_r.hpp %}
 
 </details>

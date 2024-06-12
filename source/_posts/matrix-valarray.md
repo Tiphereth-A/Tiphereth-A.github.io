@@ -28,14 +28,14 @@ date: 2022-08-02 10:28:15
 
 ## 成员函数&友元函数列表
 
-{% include_code lang:cpp matrix-valarray/Matrix.h %}
+{% icodeweb blog lang:cpp matrix-valarray/Matrix.h %}
 
 ## 代码
 
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp matrix-valarray/Matrix.hpp %}
+{% icodeweb blog lang:cpp matrix-valarray/Matrix.hpp %}
 
 </details>
 
@@ -44,7 +44,7 @@ date: 2022-08-02 10:28:15
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp matrix-valarray/Matrix_exp.cpp %}
+{% icodeweb blog lang:cpp matrix-valarray/Matrix_exp.cpp %}
 
 </details>
 

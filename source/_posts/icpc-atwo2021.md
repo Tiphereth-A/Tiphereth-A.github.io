@@ -83,7 +83,7 @@ date: 2022-06-17 19:07:57
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp icpc-atwo2021/A.cpp %}
+{% icodeweb blog lang:cpp icpc-atwo2021/A.cpp %}
 
 </details>
 
@@ -94,7 +94,7 @@ date: 2022-06-17 19:07:57
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp icpc-atwo2021/B.cpp %}
+{% icodeweb blog lang:cpp icpc-atwo2021/B.cpp %}
 
 </details>
 
@@ -105,7 +105,7 @@ date: 2022-06-17 19:07:57
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp icpc-atwo2021/C.cpp %}
+{% icodeweb blog lang:cpp icpc-atwo2021/C.cpp %}
 
 </details>
 
@@ -116,7 +116,7 @@ date: 2022-06-17 19:07:57
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp icpc-atwo2021/D.cpp %}
+{% icodeweb blog lang:cpp icpc-atwo2021/D.cpp %}
 
 </details>
 
@@ -127,7 +127,7 @@ date: 2022-06-17 19:07:57
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:python icpc-atwo2021/E.py %}
+{% icodeweb blog lang:python icpc-atwo2021/E.py %}
 
 </details>
 
@@ -138,7 +138,7 @@ date: 2022-06-17 19:07:57
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp icpc-atwo2021/F.cpp %}
+{% icodeweb blog lang:cpp icpc-atwo2021/F.cpp %}
 
 </details>
 
@@ -149,7 +149,7 @@ date: 2022-06-17 19:07:57
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp icpc-atwo2021/G.cpp %}
+{% icodeweb blog lang:cpp icpc-atwo2021/G.cpp %}
 
 </details>
 
@@ -160,7 +160,7 @@ date: 2022-06-17 19:07:57
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp icpc-atwo2021/H.cpp %}
+{% icodeweb blog lang:cpp icpc-atwo2021/H.cpp %}
 
 </details>
 
@@ -171,7 +171,7 @@ date: 2022-06-17 19:07:57
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp icpc-atwo2021/I.cpp %}
+{% icodeweb blog lang:cpp icpc-atwo2021/I.cpp %}
 
 </details>
 
@@ -182,6 +182,6 @@ date: 2022-06-17 19:07:57
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp icpc-atwo2021/J.cpp %}
+{% icodeweb blog lang:cpp icpc-atwo2021/J.cpp %}
 
 </details>

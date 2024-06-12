@@ -119,7 +119,7 @@ $\begin{array}{r|l:l}
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp xor-basis/Xor_base.hpp %}
+{% icodeweb blog lang:cpp xor-basis/Xor_base.hpp %}
 
 </details>
 

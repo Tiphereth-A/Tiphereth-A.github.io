@@ -35,6 +35,6 @@ date: 2021-12-21 21:21:01
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp fast-str2uint/dec2uint_mod.hpp %}
+{% icodeweb blog lang:cpp fast-str2uint/dec2uint_mod.hpp %}
 
 </details>

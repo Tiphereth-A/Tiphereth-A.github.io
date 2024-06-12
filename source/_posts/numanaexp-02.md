@@ -144,7 +144,7 @@ date: 2021-04-16 20:49:47
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:matlab numanaexp-02/main.m %}
+{% icodeweb blog lang:matlab numanaexp-02/main.m %}
 
 </details>
 
@@ -153,7 +153,7 @@ date: 2021-04-16 20:49:47
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:matlab numanaexp-02/input_check.m %}
+{% icodeweb blog lang:matlab numanaexp-02/input_check.m %}
 
 </details>
 
@@ -162,7 +162,7 @@ date: 2021-04-16 20:49:47
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:matlab numanaexp-02/calc_lagrange.m %}
+{% icodeweb blog lang:matlab numanaexp-02/calc_lagrange.m %}
 
 </details>
 
@@ -171,7 +171,7 @@ date: 2021-04-16 20:49:47
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:matlab numanaexp-02/calc_neville.m %}
+{% icodeweb blog lang:matlab numanaexp-02/calc_neville.m %}
 
 </details>
 
@@ -180,7 +180,7 @@ date: 2021-04-16 20:49:47
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:matlab numanaexp-02/calc_newton.m %}
+{% icodeweb blog lang:matlab numanaexp-02/calc_newton.m %}
 
 </details>
 
@@ -189,7 +189,7 @@ date: 2021-04-16 20:49:47
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:matlab numanaexp-02/calc_spline3.m %}
+{% icodeweb blog lang:matlab numanaexp-02/calc_spline3.m %}
 
 </details>
 
@@ -311,6 +311,6 @@ $$
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:matlab numanaexp-02/calc_lagrange_fast.m %}
+{% icodeweb blog lang:matlab numanaexp-02/calc_lagrange_fast.m %}
 
 </details>

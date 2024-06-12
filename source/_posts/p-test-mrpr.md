@@ -36,6 +36,6 @@ date: 2021-11-11 00:51:43
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp p-test-mrpr/Pollard_rho.hpp %}
+{% icodeweb blog lang:cpp p-test-mrpr/Pollard_rho.hpp %}
 
 </details>

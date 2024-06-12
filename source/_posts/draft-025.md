@@ -16,8 +16,8 @@ tags:
 
 ## 代码
 
-{% include_code lang:cpp draft-025/ndvector.hpp %}
+{% icodeweb blog lang:cpp draft-025/ndvector.hpp %}
 
 ## 测试
 
-{% include_code lang:cpp draft-025/ndvector_test.cpp %}
+{% icodeweb blog lang:cpp draft-025/ndvector_test.cpp %}

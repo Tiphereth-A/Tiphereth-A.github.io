@@ -41,7 +41,7 @@ date: 2022-11-05 18:24:04
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:php icpc-asyr2022-p/A.php %}
+{% icodeweb blog lang:php icpc-asyr2022-p/A.php %}
 
 </details>
 
@@ -60,7 +60,7 @@ $$
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:py icpc-asyr2022-p/B.py %}
+{% icodeweb blog lang:python icpc-asyr2022-p/B.py %}
 
 </details>
 
@@ -75,7 +75,7 @@ $$
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp icpc-asyr2022-p/C.cpp %}
+{% icodeweb blog lang:cpp icpc-asyr2022-p/C.cpp %}
 
 </details>
 

@@ -179,7 +179,7 @@ $$
   <details open>
   <summary><font color='orange'>Show code</font></summary>
 
-  {% include_code lang:matlab draft-007/main.m %}
+  {% icodeweb blog lang:matlab draft-007/main.m %}
 
   </details>
 
@@ -187,7 +187,7 @@ $$
   <details open>
   <summary><font color='orange'>Show code</font></summary>
 
-  {% include_code lang:matlab draft-007/euler_solve.m %}
+  {% icodeweb blog lang:matlab draft-007/euler_solve.m %}
 
   </details>
 
@@ -195,7 +195,7 @@ $$
   <details open>
   <summary><font color='orange'>Show code</font></summary>
 
-  {% include_code lang:matlab draft-007/rk4_solve.m %}
+  {% icodeweb blog lang:matlab draft-007/rk4_solve.m %}
 
   </details>
 

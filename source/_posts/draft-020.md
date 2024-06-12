@@ -22,12 +22,12 @@ tags:
 
 ## 子元组
 
-{% include_code lang:cpp draft-020/tupleSUB.hpp %}
+{% icodeweb blog lang:cpp draft-020/tupleSUB.hpp %}
 
 ## 流式 IO
 
-{% include_code lang:cpp draft-020/tupleIO.hpp %}
+{% icodeweb blog lang:cpp draft-020/tupleIO.hpp %}
 
 ## 运算符重载
 
-{% include_code lang:cpp draft-020/tupleOO.hpp %}
+{% icodeweb blog lang:cpp draft-020/tupleOO.hpp %}

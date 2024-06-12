@@ -20,6 +20,6 @@ date: 2021-07-15 19:34:54
 <details open='open'>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp ud-heap/UD_heap.hpp %}
+{% icodeweb blog lang:cpp ud-heap/UD_heap.hpp %}
 
 </details>

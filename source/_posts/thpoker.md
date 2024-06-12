@@ -31,6 +31,6 @@ date: 2022-08-13 10:28:15
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp thpoker/TexasHoldemPoker.hpp %}
+{% icodeweb blog lang:cpp thpoker/TexasHoldemPoker.hpp %}
 
 </details>

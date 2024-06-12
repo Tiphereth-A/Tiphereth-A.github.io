@@ -94,7 +94,7 @@ date: 2021-10-24 20:15:45
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp lzu-fhc1/D.cpp %}
+{% icodeweb blog lang:cpp lzu-fhc1/D.cpp %}
 
 </details>
 

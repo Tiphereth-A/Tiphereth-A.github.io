@@ -54,14 +54,14 @@ $$
 
 ## 成员函数列表
 
-{% include_code lang:cpp newton-interp/NewtonInterp.h %}
+{% icodeweb blog lang:cpp newton-interp/NewtonInterp.h %}
 
 ## 代码
 
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp newton-interp/NewtonInterp.hpp %}
+{% icodeweb blog lang:cpp newton-interp/NewtonInterp.hpp %}
 
 </details>
 

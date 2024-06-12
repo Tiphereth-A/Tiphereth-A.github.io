@@ -59,6 +59,7 @@ date: 2022-11-18 19:07:55
 | N        | Fibonacci Sequence       | 签到                        |
 
 [^1]: 打\*的是还没写的题
+
 [^2]: 带超链接的是找到了原题或原型
 
 <!-- [官方题解](official_solutions.zip) -->
@@ -80,7 +81,7 @@ date: 2022-11-18 19:07:55
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp icpc-aycr2019/A.cpp %}
+{% icodeweb blog lang:cpp icpc-aycr2019/A.cpp %}
 
 </details>
 
@@ -95,7 +96,7 @@ date: 2022-11-18 19:07:55
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp icpc-aycr2019/B.cpp %}
+{% icodeweb blog lang:cpp icpc-aycr2019/B.cpp %}
 
 </details>
 
@@ -110,7 +111,7 @@ date: 2022-11-18 19:07:55
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp icpc-aycr2019/C.cpp %}
+{% icodeweb blog lang:cpp icpc-aycr2019/C.cpp %}
 
 </details>
 
@@ -125,7 +126,7 @@ date: 2022-11-18 19:07:55
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp icpc-aycr2019/D.cpp %}
+{% icodeweb blog lang:cpp icpc-aycr2019/D.cpp %}
 
 </details>
 
@@ -140,7 +141,7 @@ date: 2022-11-18 19:07:55
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp icpc-aycr2019/E.cpp %}
+{% icodeweb blog lang:cpp icpc-aycr2019/E.cpp %}
 
 </details>
 
@@ -155,7 +156,7 @@ date: 2022-11-18 19:07:55
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp icpc-aycr2019/F.cpp %}
+{% icodeweb blog lang:cpp icpc-aycr2019/F.cpp %}
 
 </details>
 
@@ -170,7 +171,7 @@ date: 2022-11-18 19:07:55
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp icpc-aycr2019/G.cpp %}
+{% icodeweb blog lang:cpp icpc-aycr2019/G.cpp %}
 
 </details>
 
@@ -185,7 +186,7 @@ date: 2022-11-18 19:07:55
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp icpc-aycr2019/H.cpp %}
+{% icodeweb blog lang:cpp icpc-aycr2019/H.cpp %}
 
 </details>
 
@@ -200,7 +201,7 @@ date: 2022-11-18 19:07:55
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp icpc-aycr2019/I.cpp %}
+{% icodeweb blog lang:cpp icpc-aycr2019/I.cpp %}
 
 </details>
 
@@ -215,7 +216,7 @@ date: 2022-11-18 19:07:55
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp icpc-aycr2019/J.cpp %}
+{% icodeweb blog lang:cpp icpc-aycr2019/J.cpp %}
 
 </details>
 
@@ -230,7 +231,7 @@ date: 2022-11-18 19:07:55
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp icpc-aycr2019/K.cpp %}
+{% icodeweb blog lang:cpp icpc-aycr2019/K.cpp %}
 
 </details>
 
@@ -245,7 +246,7 @@ date: 2022-11-18 19:07:55
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp icpc-aycr2019/L.cpp %}
+{% icodeweb blog lang:cpp icpc-aycr2019/L.cpp %}
 
 </details>
 
@@ -260,7 +261,7 @@ date: 2022-11-18 19:07:55
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp icpc-aycr2019/M.cpp %}
+{% icodeweb blog lang:cpp icpc-aycr2019/M.cpp %}
 
 </details>
 
@@ -275,6 +276,6 @@ date: 2022-11-18 19:07:55
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:php icpc-aycr2019/N.php %}
+{% icodeweb blog lang:php icpc-aycr2019/N.php %}
 
 </details>

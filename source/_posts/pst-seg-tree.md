@@ -30,7 +30,7 @@ date: 2021-11-01 15:18:10
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp pst-seg-tree/Persistable_seg_tree.hpp %}
+{% icodeweb blog lang:cpp pst-seg-tree/Persistable_seg_tree.hpp %}
 
 </details>
 
@@ -43,7 +43,7 @@ date: 2021-11-01 15:18:10
   <details open>
   <summary><font color='orange'>Show code</font></summary>
 
-  {% include_code lang:cpp pst-seg-tree/Persistable_seg_tree_exp.cpp %}
+  {% icodeweb blog lang:cpp pst-seg-tree/Persistable_seg_tree_exp.cpp %}
 
   </details>
 
@@ -52,6 +52,6 @@ date: 2021-11-01 15:18:10
   <details open>
   <summary><font color='orange'>Show code</font></summary>
 
-  {% include_code lang:cpp pst-seg-tree/data_gen.cpp %}
+  {% icodeweb blog lang:cpp pst-seg-tree/data_gen.cpp %}
 
   </details>

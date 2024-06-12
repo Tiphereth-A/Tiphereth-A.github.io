@@ -69,7 +69,7 @@ date: 2022-05-10 19:07:57
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp icpc-aecf2020/A.cpp %}
+{% icodeweb blog lang:cpp icpc-aecf2020/A.cpp %}
 
 </details>
 
@@ -88,7 +88,7 @@ date: 2022-05-10 19:07:57
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp icpc-aecf2020/B.cpp %}
+{% icodeweb blog lang:cpp icpc-aecf2020/B.cpp %}
 
 </details>
 
@@ -107,7 +107,7 @@ date: 2022-05-10 19:07:57
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp icpc-aecf2020/C.cpp %}
+{% icodeweb blog lang:cpp icpc-aecf2020/C.cpp %}
 
 </details>
 
@@ -126,7 +126,7 @@ date: 2022-05-10 19:07:57
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp icpc-aecf2020/D.cpp %}
+{% icodeweb blog lang:cpp icpc-aecf2020/D.cpp %}
 
 </details>
 
@@ -145,7 +145,7 @@ Slitherlink, 连边时有代价, 问最小代价
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp icpc-aecf2020/E.cpp %}
+{% icodeweb blog lang:cpp icpc-aecf2020/E.cpp %}
 
 </details>
 
@@ -170,7 +170,7 @@ Slitherlink, 连边时有代价, 问最小代价
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp icpc-aecf2020/F.cpp %}
+{% icodeweb blog lang:cpp icpc-aecf2020/F.cpp %}
 
 </details>
 
@@ -189,7 +189,7 @@ Slitherlink, 连边时有代价, 问最小代价
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp icpc-aecf2020/G.cpp %}
+{% icodeweb blog lang:cpp icpc-aecf2020/G.cpp %}
 
 </details>
 
@@ -208,7 +208,7 @@ Slitherlink, 连边时有代价, 问最小代价
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp icpc-aecf2020/H.cpp %}
+{% icodeweb blog lang:cpp icpc-aecf2020/H.cpp %}
 
 </details>
 
@@ -227,7 +227,7 @@ Slitherlink, 连边时有代价, 问最小代价
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp icpc-aecf2020/I.cpp %}
+{% icodeweb blog lang:cpp icpc-aecf2020/I.cpp %}
 
 </details>
 
@@ -248,7 +248,7 @@ Slitherlink, 连边时有代价, 问最小代价
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp icpc-aecf2020/J.cpp %}
+{% icodeweb blog lang:cpp icpc-aecf2020/J.cpp %}
 
 </details>
 
@@ -263,7 +263,7 @@ Slitherlink, 连边时有代价, 问最小代价
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp icpc-aecf2020/K.cpp %}
+{% icodeweb blog lang:cpp icpc-aecf2020/K.cpp %}
 
 </details>
 
@@ -292,7 +292,7 @@ $O(n\log^2{m})$, 其中 $m$ 为 $\{a_n\}$ 的最大值
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp icpc-aecf2020/L.cpp %}
+{% icodeweb blog lang:cpp icpc-aecf2020/L.cpp %}
 
 </details>
 
@@ -311,6 +311,6 @@ $O(n\log^2{m})$, 其中 $m$ 为 $\{a_n\}$ 的最大值
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp icpc-aecf2020/M.cpp %}
+{% icodeweb blog lang:cpp icpc-aecf2020/M.cpp %}
 
 </details>

@@ -37,6 +37,6 @@ date: 2022-08-22 19:00:54
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp gauss-int/GaussInt.hpp %}
+{% icodeweb blog lang:cpp gauss-int/GaussInt.hpp %}
 
 </details>

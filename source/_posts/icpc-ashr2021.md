@@ -53,7 +53,7 @@ date: 2021-12-12 21:24:04
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp icpc-ashr2021/A.cpp %}
+{% icodeweb blog lang:cpp icpc-ashr2021/A.cpp %}
 
 </details>
 
@@ -68,7 +68,7 @@ date: 2021-12-12 21:24:04
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp icpc-ashr2021/B.cpp %}
+{% icodeweb blog lang:cpp icpc-ashr2021/B.cpp %}
 
 </details>
 
@@ -83,7 +83,7 @@ date: 2021-12-12 21:24:04
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp icpc-ashr2021/C.cpp %}
+{% icodeweb blog lang:cpp icpc-ashr2021/C.cpp %}
 
 </details>
 
@@ -98,7 +98,7 @@ date: 2021-12-12 21:24:04
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp icpc-ashr2021/D.cpp %}
+{% icodeweb blog lang:cpp icpc-ashr2021/D.cpp %}
 
 </details>
 
@@ -113,7 +113,7 @@ date: 2021-12-12 21:24:04
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp icpc-ashr2021/E.cpp %}
+{% icodeweb blog lang:cpp icpc-ashr2021/E.cpp %}
 
 </details>
 
@@ -128,7 +128,7 @@ date: 2021-12-12 21:24:04
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp icpc-ashr2021/F.cpp %}
+{% icodeweb blog lang:cpp icpc-ashr2021/F.cpp %}
 
 </details>
 
@@ -143,7 +143,7 @@ date: 2021-12-12 21:24:04
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp icpc-ashr2021/G.cpp %}
+{% icodeweb blog lang:cpp icpc-ashr2021/G.cpp %}
 
 </details>
 
@@ -158,7 +158,7 @@ date: 2021-12-12 21:24:04
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp icpc-ashr2021/H.cpp %}
+{% icodeweb blog lang:cpp icpc-ashr2021/H.cpp %}
 
 </details>
 
@@ -173,7 +173,7 @@ date: 2021-12-12 21:24:04
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp icpc-ashr2021/I.cpp %}
+{% icodeweb blog lang:cpp icpc-ashr2021/I.cpp %}
 
 </details>
 
@@ -188,7 +188,7 @@ date: 2021-12-12 21:24:04
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp icpc-ashr2021/J.cpp %}
+{% icodeweb blog lang:cpp icpc-ashr2021/J.cpp %}
 
 </details>
 
@@ -203,7 +203,7 @@ date: 2021-12-12 21:24:04
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp icpc-ashr2021/K.cpp %}
+{% icodeweb blog lang:cpp icpc-ashr2021/K.cpp %}
 
 </details>
 
@@ -218,7 +218,7 @@ date: 2021-12-12 21:24:04
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp icpc-ashr2021/L.cpp %}
+{% icodeweb blog lang:cpp icpc-ashr2021/L.cpp %}
 
 </details>
 
@@ -233,6 +233,6 @@ date: 2021-12-12 21:24:04
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp icpc-ashr2021/M.cpp %}
+{% icodeweb blog lang:cpp icpc-ashr2021/M.cpp %}
 
 </details>

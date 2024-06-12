@@ -57,6 +57,6 @@ $$
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:matlab draft-014/cycle_sequence_generator.m %}
+{% icodeweb blog lang:matlab draft-014/cycle_sequence_generator.m %}
 
 </details>

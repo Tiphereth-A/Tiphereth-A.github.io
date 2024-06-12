@@ -85,7 +85,7 @@ date: 2021-04-22 23:05:47
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:matlab numanaexp-03/main.m %}
+{% icodeweb blog lang:matlab numanaexp-03/main.m %}
 
 </details>
 
@@ -94,7 +94,7 @@ date: 2021-04-22 23:05:47
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:matlab numanaexp-03/lsmfit.m %}
+{% icodeweb blog lang:matlab numanaexp-03/lsmfit.m %}
 
 </details>
 

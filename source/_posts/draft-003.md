@@ -14,7 +14,7 @@ date: 2020-06-22 09:33:45
 
 <!-- more -->
 
-{% include_code lang:c draft-003/1.c %}
+{% icodeweb blog lang:c draft-003/1.c %}
 
 这段代码的输出是
 
@@ -30,4 +30,4 @@ date: 2020-06-22 09:33:45
 
 我们也可以一定程度上假装用 `C` 写 `Pascal` 程序
 
-{% include_code lang:c draft-003/2.c %}
+{% icodeweb blog lang:c draft-003/2.c %}

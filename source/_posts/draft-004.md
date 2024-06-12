@@ -17,7 +17,7 @@ date: 2020-07-26 18:19:46
 
 实际上, 我们可以通过如下手段实现在编译期进行检验
 
-{% include_code lang:c draft-004/_static_assert.c %}
+{% icodeweb blog lang:c draft-004/_static_assert.c %}
 
 我们把它拆开来看
 

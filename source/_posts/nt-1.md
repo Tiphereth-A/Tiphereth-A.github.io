@@ -179,7 +179,7 @@ $$
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp nt-1/is_prime.cpp %}
+{% icodeweb blog lang:cpp nt-1/is_prime.cpp %}
 
 </details>
 
@@ -194,6 +194,7 @@ $$
 > Miller-Rabin 算法和用于质因数分解的 Pollard-Rho 算法的模板 -> {% post_link p-test-mrpr %}
 
 [^1]: 可以用 FFT 优化到 $O(k\log^2 n\log\log n\log\log\log n)$ , 参见 [此处](https://en.wikipedia.org/wiki/Miller%E2%80%93Rabin_primality_test#Complexity)
+
 [^2]: 若广义 Riemann 猜想(GRH)得到证实, 则可将检验的数换为 $2..2\lfloor\log^2 n\rfloor$ 从而使复杂度变为 $O(\log^5n)$, 参见 [此处](https://www.ams.org/mcom/1990-55-191/S0025-5718-1990-1023756-8/S0025-5718-1990-1023756-8.pdf)
 
 ### 素数筛法
@@ -218,7 +219,7 @@ $$
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp nt-1/Eratosthenes_sieve.cpp %}
+{% icodeweb blog lang:cpp nt-1/Eratosthenes_sieve.cpp %}
 
 </details>
 
@@ -251,7 +252,7 @@ $$
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp nt-1/Euler_sieve.cpp %}
+{% icodeweb blog lang:cpp nt-1/Euler_sieve.cpp %}
 
 </details>
 
@@ -360,7 +361,7 @@ $$
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp nt-1/gcd.cpp %}
+{% icodeweb blog lang:cpp nt-1/gcd.cpp %}
 
 </details>
 
@@ -448,7 +449,7 @@ $$
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp nt-1/exgcd.cpp %}
+{% icodeweb blog lang:cpp nt-1/exgcd.cpp %}
 
 </details>
 
@@ -689,7 +690,7 @@ $$
    <details open>
    <summary><font color='orange'>Show code</font></summary>
 
-   {% include_code lang:cpp nt-1/inverse_n1.cpp %}
+   {% icodeweb blog lang:cpp nt-1/inverse_n1.cpp %}
 
    </details>
 
@@ -711,7 +712,7 @@ $$
    <details open>
    <summary><font color='orange'>Show code</font></summary>
 
-   {% include_code lang:cpp nt-1/inverse_n2.cpp %}
+   {% icodeweb blog lang:cpp nt-1/inverse_n2.cpp %}
 
    </details>
 
@@ -851,7 +852,7 @@ $$
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp excrt/EXCRT.hpp %}
+{% icodeweb blog lang:cpp excrt/EXCRT.hpp %}
 
 </details>
 

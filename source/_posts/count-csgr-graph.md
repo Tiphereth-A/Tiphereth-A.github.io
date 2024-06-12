@@ -333,7 +333,7 @@ $O(m\sqrt{m})$
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp count-csgr-graph/cntsr4.cpp %}
+{% icodeweb blog lang:cpp count-csgr-graph/cntsr4.cpp %}
 
 </details>
 

@@ -256,7 +256,7 @@ $$
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:matlab numanaexp-05/main.m %}
+{% icodeweb blog lang:matlab numanaexp-05/main.m %}
 
 </details>
 
@@ -265,7 +265,7 @@ $$
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:matlab numanaexp-05/input_check.m %}
+{% icodeweb blog lang:matlab numanaexp-05/input_check.m %}
 
 </details>
 
@@ -274,7 +274,7 @@ $$
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:matlab numanaexp-05/gauss_basic.m %}
+{% icodeweb blog lang:matlab numanaexp-05/gauss_basic.m %}
 
 </details>
 
@@ -283,7 +283,7 @@ $$
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:matlab numanaexp-05/gauss_advanced.m %}
+{% icodeweb blog lang:matlab numanaexp-05/gauss_advanced.m %}
 
 </details>
 
@@ -292,7 +292,7 @@ $$
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:matlab numanaexp-05/sqrt_basic.m %}
+{% icodeweb blog lang:matlab numanaexp-05/sqrt_basic.m %}
 
 </details>
 
@@ -301,7 +301,7 @@ $$
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:matlab numanaexp-05/sqrt_advanced.m %}
+{% icodeweb blog lang:matlab numanaexp-05/sqrt_advanced.m %}
 
 </details>
 
@@ -310,7 +310,7 @@ $$
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:matlab numanaexp-05/chase.m %}
+{% icodeweb blog lang:matlab numanaexp-05/chase.m %}
 
 </details>
 

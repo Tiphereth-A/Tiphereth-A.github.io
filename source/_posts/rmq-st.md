@@ -45,7 +45,7 @@ date: 2022-05-11 12:07:50
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp rmq-st/RMQ_ST.hpp %}
+{% icodeweb blog lang:cpp rmq-st/RMQ_ST.hpp %}
 
 </details>
 

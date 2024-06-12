@@ -67,7 +67,7 @@ zkw 线段树则正好反过来, 即**自底向上**
 
 首先是定义变量:
 
-{% include_code lang:cpp from:4 to:6 zkw-segment-tree/seg_zkw_singlem_rangeq.cpp %}
+{% icodeweb blog lang:cpp from:4 to:6 zkw-segment-tree/seg_zkw_singlem_rangeq.cpp %}
 
 我们以下图为例
 
@@ -89,7 +89,7 @@ zkw 线段树则正好反过来, 即**自底向上**
 
 根据这一点, 我们可以这样建树:
 
-{% include_code lang:cpp from:8 to:16 zkw-segment-tree/seg_zkw_singlem_rangeq.cpp %}
+{% icodeweb blog lang:cpp from:8 to:16 zkw-segment-tree/seg_zkw_singlem_rangeq.cpp %}
 
 大家可以和递归版线段树做一下对比
 
@@ -109,7 +109,7 @@ zkw 线段树则正好反过来, 即**自底向上**
 
 实现很简单, 所以直接放代码
 
-{% include_code lang:cpp from:18 to:20 zkw-segment-tree/seg_zkw_singlem_rangeq.cpp %}
+{% icodeweb blog lang:cpp from:18 to:20 zkw-segment-tree/seg_zkw_singlem_rangeq.cpp %}
 
 完了?Σ(°Д°;
 
@@ -149,7 +149,7 @@ ans=<font color=#b5e61d>[2,2]+[3,3]+[4,4]+[5,5]+[6,6]</font>
 
 下面是代码
 
-{% include_code lang:cpp from:22 to:36 zkw-segment-tree/seg_zkw_singlem_rangeq.cpp %}
+{% icodeweb blog lang:cpp from:22 to:36 zkw-segment-tree/seg_zkw_singlem_rangeq.cpp %}
 
 上面的那两个疑问现在可以解释了
 
@@ -180,7 +180,7 @@ orz
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp zkw-segment-tree/seg_zkw_singlem_rangeq.cpp %}
+{% icodeweb blog lang:cpp zkw-segment-tree/seg_zkw_singlem_rangeq.cpp %}
 
 </details>
 
@@ -198,7 +198,7 @@ orz
 
 这里我们采用**标记永久化**的思想(就是**不下推 lazy tag**~~让他彻底 lazy 下去~~)
 
-{% include_code lang:cpp from:6 to:6 zkw-segment-tree/seg_zkw_rangem_rangeq1.cpp %}
+{% icodeweb blog lang:cpp from:6 to:6 zkw-segment-tree/seg_zkw_rangem_rangeq1.cpp %}
 
 我们需要在自底向上时更新结点的值, 所以我们还需要一个变量记录该结点**包含元素的个数**
 
@@ -218,7 +218,7 @@ orz
 
 下面是代码
 
-{% include_code lang:cpp from:19 to:37 zkw-segment-tree/seg_zkw_rangem_rangeq1.cpp %}
+{% icodeweb blog lang:cpp from:19 to:37 zkw-segment-tree/seg_zkw_rangem_rangeq1.cpp %}
 
 ##### 区间查询
 
@@ -232,14 +232,14 @@ orz
 
 同样, 这个也需要上推到根结点
 
-{% include_code lang:cpp from:39 to:56 zkw-segment-tree/seg_zkw_rangem_rangeq1.cpp %}
+{% icodeweb blog lang:cpp from:39 to:56 zkw-segment-tree/seg_zkw_rangem_rangeq1.cpp %}
 
 区间修改+区间查询告一段落, 整理一下代码:
 
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp zkw-segment-tree/seg_zkw_rangem_rangeq1.cpp %}
+{% icodeweb blog lang:cpp zkw-segment-tree/seg_zkw_rangem_rangeq1.cpp %}
 
 </details>
 
@@ -285,7 +285,7 @@ _~~zkw:狗拿耗子, 猫下岗了~~_
 
 直接放代码
 
-{% include_code lang:cpp zkw-segment-tree/seg_zkw_rangem_rangeq1.cpp %}
+{% icodeweb blog lang:cpp zkw-segment-tree/seg_zkw_rangem_rangeq1.cpp %}
 
 ## 大数据测试
 

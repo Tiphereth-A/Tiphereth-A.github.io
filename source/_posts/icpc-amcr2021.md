@@ -37,6 +37,7 @@ date: 2023-09-09 19:07:55
 | K        | Link-Cut Tree                                    |      |
 
 [^1]: 打\*的是还没写的题
+
 [^2]: 带超链接的是找到了原题或原型
 
 {% pdf /archives/icpc-amcr2021/problems.pdf 600px %}
@@ -46,7 +47,7 @@ date: 2023-09-09 19:07:55
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp icpc-amcr2021/spfa.cpp %}
+{% icodeweb blog lang:cpp icpc-amcr2021/spfa.cpp %}
 
 </details>
 
@@ -65,7 +66,7 @@ date: 2023-09-09 19:07:55
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp icpc-amcr2021/A.cpp %}
+{% icodeweb blog lang:cpp icpc-amcr2021/A.cpp %}
 
 </details>
 
@@ -80,7 +81,7 @@ date: 2023-09-09 19:07:55
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp icpc-amcr2021/B.cpp %}
+{% icodeweb blog lang:cpp icpc-amcr2021/B.cpp %}
 
 </details>
 
@@ -95,7 +96,7 @@ date: 2023-09-09 19:07:55
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp icpc-amcr2021/C.cpp %}
+{% icodeweb blog lang:cpp icpc-amcr2021/C.cpp %}
 
 </details>
 
@@ -110,7 +111,7 @@ date: 2023-09-09 19:07:55
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp icpc-amcr2021/D.cpp %}
+{% icodeweb blog lang:cpp icpc-amcr2021/D.cpp %}
 
 </details>
 
@@ -125,7 +126,7 @@ date: 2023-09-09 19:07:55
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp icpc-amcr2021/E.cpp %}
+{% icodeweb blog lang:cpp icpc-amcr2021/E.cpp %}
 
 </details>
 
@@ -140,7 +141,7 @@ date: 2023-09-09 19:07:55
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp icpc-amcr2021/F.cpp %}
+{% icodeweb blog lang:cpp icpc-amcr2021/F.cpp %}
 
 </details>
 
@@ -155,7 +156,7 @@ date: 2023-09-09 19:07:55
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp icpc-amcr2021/G.cpp %}
+{% icodeweb blog lang:cpp icpc-amcr2021/G.cpp %}
 
 </details>
 
@@ -170,7 +171,7 @@ date: 2023-09-09 19:07:55
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp icpc-amcr2021/H.cpp %}
+{% icodeweb blog lang:cpp icpc-amcr2021/H.cpp %}
 
 </details>
 
@@ -185,7 +186,7 @@ date: 2023-09-09 19:07:55
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp icpc-amcr2021/I.cpp %}
+{% icodeweb blog lang:cpp icpc-amcr2021/I.cpp %}
 
 </details>
 
@@ -200,7 +201,7 @@ date: 2023-09-09 19:07:55
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp icpc-amcr2021/J.cpp %}
+{% icodeweb blog lang:cpp icpc-amcr2021/J.cpp %}
 
 </details>
 
@@ -215,6 +216,6 @@ date: 2023-09-09 19:07:55
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp icpc-amcr2021/K.cpp %}
+{% icodeweb blog lang:cpp icpc-amcr2021/K.cpp %}
 
 </details>

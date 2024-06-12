@@ -133,7 +133,7 @@ $$
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp asr/asr.cpp %}
+{% icodeweb blog lang:cpp asr/asr.cpp %}
 
 </details>
 

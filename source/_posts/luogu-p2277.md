@@ -75,7 +75,7 @@ date: 2021-11-05 01:01:36
    <details open>
    <summary><font color='orange'>Show code</font></summary>
 
-   {% include_code lang:c luogu-p2277/OPANDS.c %}
+   {% icodeweb blog lang:c luogu-p2277/OPANDS.c %}
 
    </details>
 
@@ -84,7 +84,7 @@ date: 2021-11-05 01:01:36
    <details open>
    <summary><font color='orange'>Show code</font></summary>
 
-   {% include_code lang:c luogu-p2277/RMSEL.c %}
+   {% icodeweb blog lang:c luogu-p2277/RMSEL.c %}
 
    </details>
 
@@ -93,7 +93,7 @@ date: 2021-11-05 01:01:36
    <details open>
    <summary><font color='orange'>Show code</font></summary>
 
-   {% include_code lang:c luogu-p2277/P4.c %}
+   {% icodeweb blog lang:c luogu-p2277/P4.c %}
 
    </details>
 
@@ -102,7 +102,7 @@ date: 2021-11-05 01:01:36
    <details open>
    <summary><font color='orange'>Show code</font></summary>
 
-   {% include_code lang:c luogu-p2277/RMSEL4.c %}
+   {% icodeweb blog lang:c luogu-p2277/RMSEL4.c %}
 
    </details>
 
@@ -121,7 +121,7 @@ date: 2021-11-05 01:01:36
    <details open>
    <summary><font color='orange'>Show code</font></summary>
 
-   {% include_code lang:c luogu-p2277/__CALC.c %}
+   {% icodeweb blog lang:c luogu-p2277/__CALC.c %}
 
    </details>
 

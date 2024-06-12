@@ -54,7 +54,7 @@ date: 2022-11-02 20:33:27
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp icpc-asyr2018/A.cpp %}
+{% icodeweb blog lang:cpp icpc-asyr2018/A.cpp %}
 
 </details>
 
@@ -65,7 +65,7 @@ date: 2022-11-02 20:33:27
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp icpc-asyr2018/B.cpp %}
+{% icodeweb blog lang:cpp icpc-asyr2018/B.cpp %}
 
 </details>
 
@@ -76,7 +76,7 @@ date: 2022-11-02 20:33:27
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp icpc-asyr2018/C.cpp %}
+{% icodeweb blog lang:cpp icpc-asyr2018/C.cpp %}
 
 </details>
 
@@ -87,7 +87,7 @@ date: 2022-11-02 20:33:27
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp icpc-asyr2018/D.cpp %}
+{% icodeweb blog lang:cpp icpc-asyr2018/D.cpp %}
 
 </details>
 
@@ -98,7 +98,7 @@ date: 2022-11-02 20:33:27
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp icpc-asyr2018/E.cpp %}
+{% icodeweb blog lang:cpp icpc-asyr2018/E.cpp %}
 
 </details>
 
@@ -109,7 +109,7 @@ date: 2022-11-02 20:33:27
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp icpc-asyr2018/F.cpp %}
+{% icodeweb blog lang:cpp icpc-asyr2018/F.cpp %}
 
 </details>
 
@@ -120,7 +120,7 @@ date: 2022-11-02 20:33:27
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp icpc-asyr2018/G.cpp %}
+{% icodeweb blog lang:cpp icpc-asyr2018/G.cpp %}
 
 </details>
 
@@ -131,7 +131,7 @@ date: 2022-11-02 20:33:27
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp icpc-asyr2018/H.cpp %}
+{% icodeweb blog lang:cpp icpc-asyr2018/H.cpp %}
 
 </details>
 
@@ -142,7 +142,7 @@ date: 2022-11-02 20:33:27
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp icpc-asyr2018/I.cpp %}
+{% icodeweb blog lang:cpp icpc-asyr2018/I.cpp %}
 
 </details>
 
@@ -153,7 +153,7 @@ date: 2022-11-02 20:33:27
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp icpc-asyr2018/J.cpp %}
+{% icodeweb blog lang:cpp icpc-asyr2018/J.cpp %}
 
 </details>
 
@@ -164,7 +164,7 @@ date: 2022-11-02 20:33:27
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp icpc-asyr2018/K.cpp %}
+{% icodeweb blog lang:cpp icpc-asyr2018/K.cpp %}
 
 </details>
 
@@ -175,7 +175,7 @@ date: 2022-11-02 20:33:27
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp icpc-asyr2018/L.cpp %}
+{% icodeweb blog lang:cpp icpc-asyr2018/L.cpp %}
 
 </details>
 
@@ -186,6 +186,6 @@ date: 2022-11-02 20:33:27
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp icpc-asyr2018/M.cpp %}
+{% icodeweb blog lang:cpp icpc-asyr2018/M.cpp %}
 
 </details>

@@ -57,6 +57,7 @@ date: 2022-11-21 12:46:33
 | M        | Rock-Paper-Scissors Pyramid             | 思维           |
 
 [^1]: 打\*的是还没写的题
+
 [^2]: 带超链接的是找到了原题或原型
 
 {% pdf /archives/ccpc-myr2022/problems.pdf 600px %}
@@ -76,7 +77,7 @@ date: 2022-11-21 12:46:33
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp ccpc-myr2022/A.cpp %}
+{% icodeweb blog lang:cpp ccpc-myr2022/A.cpp %}
 
 </details>
 
@@ -91,7 +92,7 @@ date: 2022-11-21 12:46:33
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp ccpc-myr2022/B.cpp %}
+{% icodeweb blog lang:cpp ccpc-myr2022/B.cpp %}
 
 </details>
 
@@ -106,7 +107,7 @@ date: 2022-11-21 12:46:33
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp ccpc-myr2022/C.cpp %}
+{% icodeweb blog lang:cpp ccpc-myr2022/C.cpp %}
 
 </details>
 
@@ -121,7 +122,7 @@ date: 2022-11-21 12:46:33
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp ccpc-myr2022/D.cpp %}
+{% icodeweb blog lang:cpp ccpc-myr2022/D.cpp %}
 
 </details>
 
@@ -136,7 +137,7 @@ date: 2022-11-21 12:46:33
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp ccpc-myr2022/E.cpp %}
+{% icodeweb blog lang:cpp ccpc-myr2022/E.cpp %}
 
 </details>
 
@@ -151,7 +152,7 @@ date: 2022-11-21 12:46:33
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp ccpc-myr2022/F.cpp %}
+{% icodeweb blog lang:cpp ccpc-myr2022/F.cpp %}
 
 </details>
 
@@ -166,7 +167,7 @@ date: 2022-11-21 12:46:33
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp ccpc-myr2022/G.cpp %}
+{% icodeweb blog lang:cpp ccpc-myr2022/G.cpp %}
 
 </details>
 
@@ -181,7 +182,7 @@ date: 2022-11-21 12:46:33
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp ccpc-myr2022/H.cpp %}
+{% icodeweb blog lang:cpp ccpc-myr2022/H.cpp %}
 
 </details>
 
@@ -196,7 +197,7 @@ date: 2022-11-21 12:46:33
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp ccpc-myr2022/I.cpp %}
+{% icodeweb blog lang:cpp ccpc-myr2022/I.cpp %}
 
 </details>
 
@@ -211,7 +212,7 @@ date: 2022-11-21 12:46:33
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp ccpc-myr2022/J.cpp %}
+{% icodeweb blog lang:cpp ccpc-myr2022/J.cpp %}
 
 </details>
 
@@ -226,7 +227,7 @@ date: 2022-11-21 12:46:33
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp ccpc-myr2022/K.cpp %}
+{% icodeweb blog lang:cpp ccpc-myr2022/K.cpp %}
 
 </details>
 
@@ -241,7 +242,7 @@ date: 2022-11-21 12:46:33
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp ccpc-myr2022/L.cpp %}
+{% icodeweb blog lang:cpp ccpc-myr2022/L.cpp %}
 
 </details>
 
@@ -256,6 +257,6 @@ date: 2022-11-21 12:46:33
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp ccpc-myr2022/M.cpp %}
+{% icodeweb blog lang:cpp ccpc-myr2022/M.cpp %}
 
 </details>

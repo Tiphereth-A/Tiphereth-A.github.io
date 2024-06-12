@@ -495,7 +495,7 @@ $$
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp dlx/DLX_nodes.cpp %}
+{% icodeweb blog lang:cpp dlx/DLX_nodes.cpp %}
 
 </details>
 
@@ -504,7 +504,7 @@ $$
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp dlx/DLX_nodes_ms.cpp %}
+{% icodeweb blog lang:cpp dlx/DLX_nodes_ms.cpp %}
 
 </details>
 
@@ -513,7 +513,7 @@ $$
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp dlx/DLX_nodes_final.cpp %}
+{% icodeweb blog lang:cpp dlx/DLX_nodes_final.cpp %}
 
 </details>
 
@@ -528,7 +528,7 @@ $$
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp dlx/DLX_nodes_final2.cpp %}
+{% icodeweb blog lang:cpp dlx/DLX_nodes_final2.cpp %}
 
 </details>
 
@@ -553,7 +553,7 @@ $$
   <details open>
   <summary><font color='orange'>Show code</font></summary>
 
-  {% include_code lang:cpp dlx/DLX_macro.cpp %}
+  {% icodeweb blog lang:cpp dlx/DLX_macro.cpp %}
 
   </details>
 
@@ -569,7 +569,7 @@ $$
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp dlx/DLX_init.cpp %}
+{% icodeweb blog lang:cpp dlx/DLX_init.cpp %}
 
 </details>
 
@@ -587,7 +587,7 @@ $$
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp dlx/DLX_insert_row.cpp %}
+{% icodeweb blog lang:cpp dlx/DLX_insert_row.cpp %}
 
 </details>
 
@@ -607,7 +607,7 @@ $$
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp dlx/DLX_remove_col.cpp %}
+{% icodeweb blog lang:cpp dlx/DLX_remove_col.cpp %}
 
 </details>
 
@@ -618,7 +618,7 @@ $$
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp dlx/DLX_resume_col.cpp %}
+{% icodeweb blog lang:cpp dlx/DLX_resume_col.cpp %}
 
 </details>
 
@@ -719,7 +719,7 @@ $$
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp dlx/DLX_dance.cpp %}
+{% icodeweb blog lang:cpp dlx/DLX_dance.cpp %}
 
 </details>
 
@@ -748,6 +748,7 @@ $$
 | `resume 1`<br>![](DLX_del_10.svg) | `resume 4`<br>![](DLX_del_7.svg) |
 
 [^1]: <font color="e1d5e7">淡紫色</font>的结点是重复恢复的结点, <font color="3700cc">靛蓝色</font>的指针是重复赋值的指针
+
 [^2]: <font color="e1d5e7">淡紫色</font>的结点是重复恢复一次的结点, <font color="b266ff">浅紫色</font>的结点是重复恢复两次的结点, <font color="3700cc">靛蓝色</font>的指针是重复赋值一次的指针, <font color="a50040">枣红色</font>的指针是重复赋值两次的指针
 
 我们注意到这两种方式都是正确的, 但是如果删除和恢复的方向相同, 则会重复恢复更多结点, 连带着也会重复赋值更多指针, 所以就会变慢
@@ -824,7 +825,7 @@ $$
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp dlx/multi_DLX.hpp %}
+{% icodeweb blog lang:cpp dlx/multi_DLX.hpp %}
 
 </details>
 

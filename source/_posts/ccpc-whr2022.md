@@ -88,7 +88,7 @@ date: 2022-11-17 22:00:18
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp ccpc-whr2022/A.cpp %}
+{% icodeweb blog lang:cpp ccpc-whr2022/A.cpp %}
 
 </details>
 
@@ -103,7 +103,7 @@ date: 2022-11-17 22:00:18
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp ccpc-whr2022/B.cpp %}
+{% icodeweb blog lang:cpp ccpc-whr2022/B.cpp %}
 
 </details>
 
@@ -118,7 +118,7 @@ date: 2022-11-17 22:00:18
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp ccpc-whr2022/C.cpp %}
+{% icodeweb blog lang:cpp ccpc-whr2022/C.cpp %}
 
 </details>
 
@@ -133,7 +133,7 @@ date: 2022-11-17 22:00:18
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp ccpc-whr2022/D.cpp %}
+{% icodeweb blog lang:cpp ccpc-whr2022/D.cpp %}
 
 </details>
 
@@ -148,7 +148,7 @@ date: 2022-11-17 22:00:18
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp ccpc-whr2022/E.cpp %}
+{% icodeweb blog lang:cpp ccpc-whr2022/E.cpp %}
 
 </details>
 
@@ -163,7 +163,7 @@ date: 2022-11-17 22:00:18
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp ccpc-whr2022/F.cpp %}
+{% icodeweb blog lang:cpp ccpc-whr2022/F.cpp %}
 
 </details>
 
@@ -178,7 +178,7 @@ date: 2022-11-17 22:00:18
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp ccpc-whr2022/G.cpp %}
+{% icodeweb blog lang:cpp ccpc-whr2022/G.cpp %}
 
 </details>
 
@@ -193,7 +193,7 @@ date: 2022-11-17 22:00:18
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp ccpc-whr2022/H.cpp %}
+{% icodeweb blog lang:cpp ccpc-whr2022/H.cpp %}
 
 </details>
 
@@ -208,7 +208,7 @@ date: 2022-11-17 22:00:18
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp ccpc-whr2022/I.cpp %}
+{% icodeweb blog lang:cpp ccpc-whr2022/I.cpp %}
 
 </details>
 
@@ -223,7 +223,7 @@ date: 2022-11-17 22:00:18
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp ccpc-whr2022/J.cpp %}
+{% icodeweb blog lang:cpp ccpc-whr2022/J.cpp %}
 
 </details>
 
@@ -238,7 +238,7 @@ date: 2022-11-17 22:00:18
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp ccpc-whr2022/K.cpp %}
+{% icodeweb blog lang:cpp ccpc-whr2022/K.cpp %}
 
 </details>
 
@@ -253,7 +253,7 @@ date: 2022-11-17 22:00:18
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp ccpc-whr2022/L.cpp %}
+{% icodeweb blog lang:cpp ccpc-whr2022/L.cpp %}
 
 </details>
 
@@ -268,6 +268,6 @@ date: 2022-11-17 22:00:18
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:cpp ccpc-whr2022/M.cpp %}
+{% icodeweb blog lang:cpp ccpc-whr2022/M.cpp %}
 
 </details>

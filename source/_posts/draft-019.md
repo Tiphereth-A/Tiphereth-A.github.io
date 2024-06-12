@@ -29,7 +29,7 @@ tags:
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% include_code lang:java draft-019/Main.java %}
+{% icodeweb blog lang:java draft-019/Main.java %}
 
 </details>
 
