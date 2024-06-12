@@ -116,3 +116,16 @@ Tifa's Blog | https://blog.tifa-233.com/ | Computer & Math. | /images/apple-touc
 ### Bilibili 视频 - BV1C4411u7rK
 
 {% mmedia "bilibili" "bvid:1C4411u7rK" "quality:high" "danmaku" "allowfullscreen" %}
+
+## 插入外部代码
+
+- <https://github.com/Tiphereth-A/hexo-tag-icodeweb>
+
+{% icodeweb blog lang:cpp about/init.cpp %}
+
+## asciinema
+
+- <https://asciinema.org/>
+- <https://github.com/narongdejsrn/hexo-tag-asciinema>
+
+{% asciinema 335480 %}
