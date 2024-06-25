@@ -132,19 +132,17 @@ add_space_formula() {
 }
 
 
-fix_svg() {
+minify_svg() {
   for src in $@; do
     if [[ -n ${src##*.svg} ]]; then
       continue
     fi
 
-    echo "---fix_svg info start---"
+    echo "---minify_svg info start---"
     echo "src: "$src
-    echo "---fix_svg info end---"
+    echo "---minify_svg info end---"
 
-    xargs perl -i -CSD -Mutf8 -pe 's/\s*<!DOCTYPE [^\n]+\n//g' $src
-    xargs perl -i -CSD -Mutf8 -0777 -pe 's/\s*<!--[^\n]*?(?:\n\s*|)?-->\n//g' $src
-    python local_scripts/clean_svg.py $src
+    npx svgo $src
   done
 }
 
@@ -164,7 +162,7 @@ echo "$FILES" | xargs git add
 
 FILES=$(git diff --cached --name-only --diff-filter=ACMR | sed 's| |\\ |g')
 [ -z "$FILES" ] && exit 0
-fix_svg $FILES
+minify_svg $FILES
 echo "$FILES" | xargs git add
 
 FILES=$(git diff --cached --name-only --diff-filter=ACMR | sed 's| |\\ |g')
