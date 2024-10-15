@@ -58,6 +58,7 @@ MD 绝了
 | \*M      | 作曲家                                                        | 5000 ms / 1024 MB | 2 / 47     |              |
 
 [^1]: 打\*的是还没写的题
+
 [^2]: 带超链接的是找到了原题或原型
 
 ## A - 披荆斩棘
@@ -319,7 +320,7 @@ ACduck
   <details open>
   <summary><font color='orange'>Show code</font></summary>
 
-  {% icodeweb cpa_cpp title:icpc-cnwp2020_C_0 misc/icpc-cnwp2020/C/0.cpp %}
+  {% icodeweb blog lang:cpp icpc-cnwp2020/C0.cpp %}
 
   </details>
 
@@ -327,7 +328,7 @@ ACduck
   <details open>
   <summary><font color='orange'>Show code</font></summary>
 
-  {% icodeweb cpa_cpp title:icpc-cnwp2020_C_1 misc/icpc-cnwp2020/C/1.cpp %}
+  {% icodeweb blog lang:cpp icpc-cnwp2020/C1.cpp %}
 
   </details>
 
@@ -392,6 +393,8 @@ YES
 
 <details open>
 <summary><font color='orange'>Show code</font></summary>
+
+{% icodeweb blog lang:cpp icpc-cnwp2020/D.cpp %}
 
 </details>
 
@@ -537,7 +540,7 @@ $$
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa_cpp title:icpc-cnwp2020_F misc/icpc-cnwp2020/F/1.cpp %}
+{% icodeweb blog lang:cpp icpc-cnwp2020/F.cpp %}
 
 </details>
 
@@ -677,6 +680,15 @@ $1\leq a,b,c\leq 100000$
 
 就是求三个数的 lcm, 搞不懂为啥开了 512MB 空间
 
+### 代码参考
+
+<details open>
+<summary><font color='orange'>Show code</font></summary>
+
+{% icodeweb blog lang:cpp icpc-cnwp2020/H.cpp %}
+
+</details>
+
 ## I - 小 P 的烦恼
 
 ### Description
@@ -745,6 +757,8 @@ $(x_1, y_1)$ 中:
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
+{% icodeweb blog lang:cpp icpc-cnwp2020/I.cpp %}
+
 </details>
 
 ## J - 领地扩充
@@ -806,6 +820,8 @@ Eric 喜欢一款游戏, 游戏是在一个长方形的场地上玩. 在游戏�
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
+{% icodeweb blog lang:cpp icpc-cnwp2020/J.cpp %}
+
 </details>
 
 ## K - Tate 的魔法
@@ -857,6 +873,15 @@ Tate 对魔法非常感兴趣, 他可以通过超自然力量的干预和解释�
 ### 解题思路
 
 $O(n)$ 直接求
+
+### 代码参考
+
+<details open>
+<summary><font color='orange'>Show code</font></summary>
+
+{% icodeweb blog lang:cpp icpc-cnwp2020/K.cpp %}
+
+</details>
 
 ## L - 藤本树与树
 
@@ -946,6 +971,8 @@ $O(n)$ 直接求
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
+{% icodeweb blog lang:cpp icpc-cnwp2020/L.cpp %}
+
 </details>
 
 ## M - 作曲家
@@ -1004,5 +1031,7 @@ Jasmine 是一位作曲家, 最近她录制了两首非常受欢迎的歌曲. �
 
 <details open>
 <summary><font color='orange'>Show code</font></summary>
+
+{% icodeweb blog lang:cpp icpc-cnwp2020/M.cpp %}
 
 </details>

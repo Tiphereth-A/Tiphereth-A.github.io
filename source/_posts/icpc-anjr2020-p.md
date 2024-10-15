@@ -43,7 +43,7 @@ date: 2020-12-19 21:51:29
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa_py title:A misc/icpc-anjr2020-p/A/0.py %}
+{% icodeweb blog lang:py icpc-anjr2020-p/A.py %}
 
 </details>
 
@@ -66,7 +66,7 @@ $O(n\log n)$
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa_cpp title:B misc/icpc-anjr2020-p/B/0.cpp %}
+{% icodeweb blog lang:cpp icpc-anjr2020-p/B.cpp %}
 
 </details>
 

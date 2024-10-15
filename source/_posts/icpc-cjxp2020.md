@@ -64,6 +64,7 @@ date: 2020-11-15 23:01:18
 | M        | Zoos's Animal Codes                                      | 205 / 241  | 签到                   |
 
 [^1]: 打\*的是还没写的题
+
 [^2]: 带超链接的是找到了原题或原型
 
 [官方题解](official_solutions.zip)
@@ -110,7 +111,7 @@ $O(n\log n)$
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa_cpp title:A misc/icpc-cjxp2020/A/0.cpp %}
+{% icodeweb blog lang:cpp icpc-cjxp2020/A.cpp %}
 
 </details>
 
@@ -133,6 +134,8 @@ $O(n\log n)$
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
+{% icodeweb blog lang:cpp icpc-cjxp2020/C.cpp %}
+
 </details>
 
 ## D - Chinese Valentine's Day
@@ -147,6 +150,8 @@ $O(n\log n)$
 
 <details open>
 <summary><font color='orange'>Show code</font></summary>
+
+{% icodeweb blog lang:cpp icpc-cjxp2020/D.cpp %}
 
 </details>
 
@@ -177,7 +182,7 @@ $$
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa_cpp title:E misc/icpc-cjxp2020/E/0.cpp %}
+{% icodeweb blog lang:cpp icpc-cjxp2020/E.cpp %}
 
 </details>
 
@@ -238,7 +243,7 @@ $$
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa_cpp title:F misc/icpc-cjxp2020/F/0.cpp %}
+{% icodeweb blog lang:cpp icpc-cjxp2020/F.cpp %}
 
 </details>
 
@@ -306,7 +311,7 @@ $$
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa_cpp title:H misc/icpc-cjxp2020/H/0.cpp %}
+{% icodeweb blog lang:cpp icpc-cjxp2020/H.cpp %}
 
 </details>
 
@@ -355,7 +360,7 @@ $$
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa_cpp title:J misc/icpc-cjxp2020/J/0.cpp %}
+{% icodeweb blog lang:cpp icpc-cjxp2020/J.cpp %}
 
 </details>
 
@@ -378,7 +383,7 @@ $O(n^3+q\log B\log n)$, 其中 $B$ 表示所有询问中最大的 $b$
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa_cpp title:K misc/icpc-cjxp2020/K/0.cpp %}
+{% icodeweb blog lang:cpp icpc-cjxp2020/K.cpp %}
 
 </details>
 
@@ -396,6 +401,8 @@ $O(n^3+q\log B\log n)$, 其中 $B$ 表示所有询问中最大的 $b$
 
 <details open>
 <summary><font color='orange'>Show code</font></summary>
+
+{% icodeweb blog lang:cpp icpc-cjxp2020/L.cpp %}
 
 </details>
 

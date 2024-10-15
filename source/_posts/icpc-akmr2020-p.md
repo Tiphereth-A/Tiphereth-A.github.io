@@ -158,7 +158,7 @@ for all,$1\leq C_i \leq 100\,000\,000$ and $S \times (N-1) \leq C_i$
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa_cpp title:B misc/icpc-akmr2020-p/B/0.cpp %}
+{% icodeweb blog lang:cpp icpc-akmr2020-p/B.cpp %}
 
 </details>
 
@@ -255,6 +255,6 @@ for all $1 \leq i\leq K,1\leq S_{i}\leq 1\,000\,000,1\leq P_i \leq N$
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa_cpp title:C misc/icpc-akmr2020-p/C/0.cpp %}
+{% icodeweb blog lang:cpp icpc-akmr2020-p/C.cpp %}
 
 </details>

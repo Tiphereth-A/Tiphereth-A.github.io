@@ -69,7 +69,7 @@ date: 2021-10-24 20:15:45
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa_cpp title:A misc/lzu-fhc1/A/0.cpp %}
+{% icodeweb blog lzu-fhc1/A.cpp %}
 
 </details>
 
@@ -78,6 +78,8 @@ date: 2021-10-24 20:15:45
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
+{% icodeweb blog lzu-fhc1/B.cpp %}
+
 </details>
 
 ## C - ★★ 生命的游戏 ★★
@@ -85,7 +87,7 @@ date: 2021-10-24 20:15:45
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa_cpp title:C misc/lzu-fhc1/C/0.cpp %}
+{% icodeweb blog lzu-fhc1/C.cpp %}
 
 </details>
 
@@ -103,7 +105,9 @@ date: 2021-10-24 20:15:45
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa_cpp title:E misc/lzu-fhc1/E/0.cpp %}
+{% icodeweb blog lzu-fhc1/E.cpp %}
+
+</details>
 
 </details>
 
@@ -112,7 +116,7 @@ date: 2021-10-24 20:15:45
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa_cpp title:G misc/lzu-fhc1/G/0.cpp %}
+{% icodeweb blog lzu-fhc1/G.cpp %}
 
 </details>
 
@@ -121,7 +125,7 @@ date: 2021-10-24 20:15:45
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa_cpp title:I misc/lzu-fhc1/I/0.cpp %}
+{% icodeweb blog lzu-fhc1/I.cpp %}
 
 </details>
 
@@ -130,7 +134,7 @@ date: 2021-10-24 20:15:45
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb cpa_cpp title:J misc/lzu-fhc1/J/0.cpp %}
+{% icodeweb blog lzu-fhc1/J.cpp %}
 
 </details>
 
@@ -139,11 +143,15 @@ date: 2021-10-24 20:15:45
 <details open>
 <summary><font color='orange'>Show code</font></summary>
 
+{% icodeweb blog lzu-fhc1/K.cpp %}
+
 </details>
 
 ## L - ★★ 星星收集者 ★★
 
 <details open>
 <summary><font color='orange'>Show code</font></summary>
+
+{% icodeweb blog lzu-fhc1/L.cpp %}
 
 </details>
