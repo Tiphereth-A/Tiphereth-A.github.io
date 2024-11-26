@@ -22,11 +22,11 @@ date: 2021-12-31 13:06:27
 代码中使用了 `__builtin_ctzll`
 {% endnote %}
 
-<!-- more -->
-
 {% note warning %}
 <https://cplib.tifa-233.com/src/code/nt/qresidue.hpp> 存放了笔者对该算法/数据结构的最新实现, 建议前往此处查看相关代码
 {% endnote %}
+
+<!-- more -->
 
 ## 代码
 

@@ -18,11 +18,11 @@ date: 2022-05-11 12:07:50
 仅在 GCC 下测试过
 {% endnote %}
 
-<!-- more -->
-
 {% note warning %}
 <https://cplib.tifa-233.com/src/code/ds/st_array.hpp> 存放了笔者对该算法/数据结构的最新实现, 建议前往此处查看相关代码
 {% endnote %}
+
+<!-- more -->
 
 ## 成员函数简介
 

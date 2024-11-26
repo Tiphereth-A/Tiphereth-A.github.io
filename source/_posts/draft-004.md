@@ -1,30 +1,33 @@
 ---
-title: 随笔 - C 语言中的编译期检测版assert "-!!(e)"
+title: 随笔 - C 语言中的"操作符" "-->"
 categories:
   - 随笔
   - C
 tags:
   - C
   - 随笔
-date: 2020-07-26 18:19:46
+  - 操作符
+date: 2020-06-22 09:33:45
 ---
 
-在 <https://stackoverflow.com/questions/9229601/what-is-in-c-code> 看到个有趣的东西
+在 <https://stackoverflow.com/questions/1642028/what-is-the-operator-in-c> 看到个好玩的东西
 
 <!-- more -->
 
-众所周知, `assert()` 会在程序运行到相关代码时检验返回值的值, 如果为`0`则终止程序运行并输出指定错误信息
+{% icodeweb blog lang:c draft-003/1.c %}
 
-实际上, 我们可以通过如下手段实现在编译期进行检验
+这段代码的输出是
 
-{% icodeweb blog lang:c draft-004/_static_assert.c %}
+```text
+9 8 7 6 5 4 3 2 1 0
+```
 
-我们把它拆开来看
+这里的`-->`看起来就像操作符一样
 
-- `!!(exp)`: 如果`exp == 0`, 则该部分为`0`, 否则为`1`
-- `-!!(exp)`: 取反, 如果`exp == 0`, 则该部分为`0`, 否则为`-1`
-- `int: -!!(exp);`: 如果`exp == 0`, 则该部分为`int: 0;`, 否则为`int: -1;`
+实际上`while (x --> 0)`的意义是`while ((x--) > 0)`
 
-到这里就已经很清楚了, 占`-1`个位的变量自然是无法声明的, 而占`0`个位的变量可以声明, 且不会对程序造成任何影响
+类似的, 我们还可以写出 `while (x ----> 0)` -> `8 6 4 2 0`
 
-> 如果看不懂可以自行搜索位域(bitfield)
+我们也可以一定程度上假装用 `C` 写 `Pascal` 程序
+
+{% icodeweb blog lang:c draft-004/2.c %}

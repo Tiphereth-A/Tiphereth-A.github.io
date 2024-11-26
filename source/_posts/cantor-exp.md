@@ -20,6 +20,10 @@ date: 2020-11-14 00:12:11
 
 Cantor 展开是用于求排列字典序的算法, 逆 Cantor 展开即根据字典序还原排列的算法
 
+{% note warning %}
+<https://cplib.tifa-233.com/src/code/edh/cantor.hpp>, <https://cplib.tifa-233.com/src/code/edh/cantor_inv.hpp> 存放了笔者对该算法/数据结构的最新实现, 建议前往此处查看相关代码
+{% endnote %}
+
 <!-- more -->
 
 ## 一些定义

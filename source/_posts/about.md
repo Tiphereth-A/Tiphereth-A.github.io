@@ -13,30 +13,6 @@ date: 2020-05-04 19:07:23
 
 <!-- more -->
 
-## 目录汇总
-
-这里列出所有目录的链接
-
-{% note warning %}
-如无特殊说明, 除随笔外, 其余所有在目录列表中出现的文章的参考资料均在目录页
-{% endnote %}
-
-- {% post_link drafts 随笔 %}
-- {% post_link set-theory 集合论 %}
-- {% post_link graph-th 图论 %}
-- {% post_link diff-geo 微分几何 %}
-
-## C++代码缺省源
-
-已弃用, 目前使用的在 {% post_link cppisc %}
-
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
-{% icodeweb blog lang:cpp about/init.cpp %}
-
-</details>
-
 ## 本博客采用的部分非通用记号/名称等
 
 | 记号                      | 含义                                      | 例子                         |

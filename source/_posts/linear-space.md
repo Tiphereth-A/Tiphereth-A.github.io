@@ -19,6 +19,10 @@ date: 2020-05-27 20:37:42
 
 线性空间是基于集合的, 在集合的基础上又额外规定了各元素之间的关系
 
+{% note info %}
+本篇文章已迁移至 OI-wiki 的 [线性空间](https://oi-wiki.org/math/linear-algebra/vector-space/) 页面中
+{% endnote %}
+
 <!-- more -->
 
 ## 线性空间
@@ -581,7 +585,7 @@ $$
 
   故 $V_1,V_2\leqslant V$
 
-- 又由 $(f(x),g(x)=1$ 知 $\exists u(x),v(x)\in\mathbb{P}[x]$ 使得 $f(A)u(A)+g(A)v(A)=E$
+- 又由 $(f(x),g(x))=1$ 知 $\exists u(x),v(x)\in\mathbb{P}[x]$ 使得 $f(A)u(A)+g(A)v(A)=E$
 
   则 $\forall\alpha\in V,\alpha=f(A)u(A)\alpha+g(A)v(A)\alpha\xlongequal[\alpha_2=g(A)v(A)\alpha]{\alpha_1=f(A)u(A)\alpha}\alpha_1+\alpha_2$
 

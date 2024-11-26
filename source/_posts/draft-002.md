@@ -1,74 +1,94 @@
 ---
-title: 随笔 - C 语言的泛型
+title: 随笔 - 从卷积的结合律看多重求和
 categories:
   - 随笔
-  - C
+  - 数学
 tags:
-  - C
+  - 数学
   - 随笔
-  - 宏
-  - 泛型
-date: 2020-06-17 09:22:53
+  - 数论
+  - 卷积
+date: 2020-05-28 13:02:58
 ---
 
-简要介绍 C11 之前和之后的泛型写法
+在证明卷积的结合律时, 会涉及到二重求和的处理
 
 <!-- more -->
 
-## C11 之前
+$$
+\begin{aligned}
+  f*(g*h)(n)&=\sum_{e|n}f(e)\sum_{d'|\frac{n}{e}}g(d')h\left(\frac{n}{d'e}\right)\\
+  &=\sum_{e|n}\sum_{d'|\frac{n}{e}}f(e)g\left(d'\right)h\left(\frac{n}{d'e}\right)\\
+  &=\sum_{d|n}\sum_{e|d}f(e)g\left(\frac{d}{e}\right)h\left(\frac{n}{d}\right)\\
+  &=\sum_{abc=n}f(a)g(b)h(c)
+\end{aligned}
+$$
 
-利用宏实现
+其中第二个等号与第三个等号的转化值得注意, 它分为如下过程:
 
-{% icodeweb blog lang:c draft-002/1.c %}
+$$
+\sum_{e\mid n}\sum_{d'\mid\frac{n}{e}}\xrightarrow[(1)]{d'\to\frac{d}{e}}\sum_{e\mid n}\sum_{\frac{d}{e}\mid\frac{n}{e}}\xrightarrow[(2)]{}\sum_{e\mid n}\sum_{e\mid d\mid n}\xrightarrow[(3)]{\text{Swap}}\sum_{d\mid n}\sum_{e\mid d}
+$$
 
-其中`(void)(&_min_1 == &_min_2);`利用了不同类型指针做逻辑比较在编译过程会报错来保证两参数类型相同
+其中:
 
-## C11 之后
+- $(1)$ 就是换元
 
-C11 中添加了`_Generic`关键字, 使得编写泛型函数更方便了
+- $(2)$ 依赖如下定理:
 
-用法[^1]:
+  {% note success no-icon %}
 
-> generic-selection:
->
-> `_Generic ( assignment-expression , generic-assoc-list )`
->
-> generic-assoc-list:
->
-> > generic-association
-> >
-> > generic-assoc-list , generic-association
->
-> generic-association:
->
-> > type-name : assignment-expression
-> >
-> > `default` : assignment-expression
+  **<a id="th-1-1">定理 - 1-1</a>**
 
-例如[^2]:
+  $$
+  \frac{d}{e}\mid \frac{n}{e}\iff e\mid d\mid n
+  $$
 
-{% icodeweb blog lang:c draft-002/2.c %}
+  <details open>
+  <summary>证明</summary>
 
-输出:
+  - $\implies$
 
-```text
-intabs:12
-floatabs:12.040000
-doubleabs:13.098760
-b=0,c=1
-a=10,b=1,c=1
-```
+    一方面
 
-简要讲讲代码的含义
+    $$
+    \frac{d}{e}\mid \frac{n}{e}\implies \left(e\cdot\frac{d}{e}\right)\mid \left(e\cdot\frac{n}{e}\right)\implies d\mid n
+    $$
 
-`_Generic(a + 0.1f, int : b, float : c, default : b)++;`
+    另一方面
 
-a 为`int`, `a + 0.1f`为`float`, 所以`_Generic`执行`float`对应的操作, 即返回`c`, 最终该语句为`c++`
+    $$
+    \frac{d}{e}\in\mathbb{Z}\implies e\mid d
+    $$
 
-`_Generic(a += 1.1f, int : b, float : c, default : b)++;`
+    故 $e\mid d\mid n$
 
-a 为`int`, `a += 1.1f`**不改变`a`的值**, `_Generic`判断`a`的类型, 执行`int`对应的操作, 即返回`b`, 最终该语句为`b++`
+  - $\impliedby$
 
-[^1]: [ISO/IEC 9899:201x - N1570 - Programming languages - C](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n1570.pdf)
+    由 $e\mid d\mid n$ 可知
 
-[^2]: [C11\_百度百科](https://baike.baidu.com/item/C11)
+    $$
+    \frac{n}{e},\frac{n}{d},\frac{d}{e}\in\mathbb{Z}
+    $$
+
+    又
+
+    $$
+    \frac{n}{e}=\frac{n}{d}\cdot\frac{d}{e}
+    $$
+
+    故
+
+    $$
+    \frac{d}{e}\mid \frac{n}{e}
+    $$
+
+  </details>
+
+  {% endnote %}
+
+- $(3)$ 即是交换枚举顺序, 即 先枚举 $e$ 后枚举 $d\longrightarrow$ 先枚举 $d$ 后枚举 $e$
+
+  交换前即为先枚举 $n$ 的因子 $e$, 再枚举 $d$ 满足既是 $n$ 的**因子**也是 $e$ 的**倍数**
+
+  交换后即为先枚举 $n$ 的因子 $d$, 再枚举 $e$ 满足既是 $n$ 的**因子**也是 $d$ 的**因子**, 即枚举 $d$ 的因子 $e$

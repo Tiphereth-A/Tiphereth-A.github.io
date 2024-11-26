@@ -21,9 +21,6 @@ int main() {
   for (int num : a) {
     if (num < s.back()) s.push_back(num);
     else *lower_bound(s.begin(), s.end(), num, greater<int>()) = num;
-    // print s
-    // for (int num : s) clog << num << " ";
-    // clog << endl;
   }
 
   cout << s.size() << endl;

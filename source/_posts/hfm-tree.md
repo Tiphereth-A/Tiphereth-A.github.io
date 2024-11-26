@@ -16,11 +16,11 @@ date: 2021-07-15 18:41:12
 
 Huffman 编码是一种基于 Huffman 树的, 按字符概率构造的, 能保证编码平均长度最短的编码方式
 
-<!-- more -->
-
 {% note warning %}
 <https://cplib.tifa-233.com/src/code/util/huffman_tree.hpp> 存放了笔者对该算法/数据结构的最新实现, 建议前往此处查看相关代码
 {% endnote %}
+
+<!-- more -->
 
 ## 介绍
 

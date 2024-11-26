@@ -16,7 +16,7 @@ tags:
 date: 2021-04-26 12:58:33
 ---
 
-Powerful number 筛是一种能在最佳 $O(\sqrt n)$ 的时间下求一类积性函数前缀和的不稳定方法
+Powerful number 筛是一种能在最佳 $O(\sqrt n)$ 的时间下求一类积性函数前缀和的方法
 
 <!-- more -->
 

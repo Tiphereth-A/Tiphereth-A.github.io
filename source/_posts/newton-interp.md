@@ -22,11 +22,11 @@ date: 2022-08-28 21:28:15
 - 插入横坐标相同的点会导致除 0 从而 RE
   {% endnote %}
 
-<!-- more -->
-
 {% note warning %}
 <https://cplib.tifa-233.com/src/code/math/interp_newton_n2.hpp> 存放了笔者对该算法/数据结构的最新实现, 建议前往此处查看相关代码
 {% endnote %}
+
+<!-- more -->
 
 ## Newton 插值
 

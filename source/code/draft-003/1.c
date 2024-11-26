@@ -1,6 +1,7 @@
-#include <stdio.h>
-int main() {
-  int x = 10;
-  while (x-- > 0)  // x goes to 0
-    printf("%d ", x);
-}
+#define min(x, y)                      \
+  ({                                   \
+    typeof(x) _min_1 = (x);            \
+    typeof(y) _min_2 = (y);            \
+    (void)(&_min_1 == &_min_2);        \
+    _min_1 < _min_2 ? _min_1 : _min_2; \
+  })

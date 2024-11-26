@@ -33,6 +33,10 @@ date: 2022-09-12 00:54:15
 
 前置知识: {% post_link linear-space 线性空间 %} 的定义
 
+{% note info %}
+本篇文章已迁移至 OI-wiki 的 [线性基](https://oi-wiki.org/math/linear-algebra/basis/) 页面中
+{% endnote %}
+
 <!-- more -->
 
 ## 基础概念

@@ -1,33 +1,74 @@
 ---
-title: 随笔 - C 语言中的"操作符" "-->"
+title: 随笔 - C 语言的泛型
 categories:
   - 随笔
   - C
 tags:
   - C
   - 随笔
-  - 操作符
-date: 2020-06-22 09:33:45
+  - 宏
+  - 泛型
+date: 2020-06-17 09:22:53
 ---
 
-在 <https://stackoverflow.com/questions/1642028/what-is-the-operator-in-c> 看到个好玩的东西
+简要介绍 C11 之前和之后的泛型写法
 
 <!-- more -->
 
+## C11 之前
+
+利用宏实现
+
 {% icodeweb blog lang:c draft-003/1.c %}
 
-这段代码的输出是
+其中`(void)(&_min_1 == &_min_2);`利用了不同类型指针做逻辑比较在编译过程会报错来保证两参数类型相同
 
-```text
-9 8 7 6 5 4 3 2 1 0
-```
+## C11 之后
 
-这里的`-->`看起来就像操作符一样
+C11 中添加了`_Generic`关键字, 使得编写泛型函数更方便了
 
-实际上`while (x --> 0)`的意义是`while ((x--) > 0)`
+用法[^1]:
 
-类似的, 我们还可以写出 `while (x ----> 0)` -> `8 6 4 2 0`
+> generic-selection:
+>
+> `_Generic ( assignment-expression , generic-assoc-list )`
+>
+> generic-assoc-list:
+>
+> > generic-association
+> >
+> > generic-assoc-list , generic-association
+>
+> generic-association:
+>
+> > type-name : assignment-expression
+> >
+> > `default` : assignment-expression
 
-我们也可以一定程度上假装用 `C` 写 `Pascal` 程序
+例如[^2]:
 
 {% icodeweb blog lang:c draft-003/2.c %}
+
+输出:
+
+```text
+intabs:12
+floatabs:12.040000
+doubleabs:13.098760
+b=0,c=1
+a=10,b=1,c=1
+```
+
+简要讲讲代码的含义
+
+`_Generic(a + 0.1f, int : b, float : c, default : b)++;`
+
+a 为`int`, `a + 0.1f`为`float`, 所以`_Generic`执行`float`对应的操作, 即返回`c`, 最终该语句为`c++`
+
+`_Generic(a += 1.1f, int : b, float : c, default : b)++;`
+
+a 为`int`, `a += 1.1f`**不改变`a`的值**, `_Generic`判断`a`的类型, 执行`int`对应的操作, 即返回`b`, 最终该语句为`b++`
+
+[^1]: [ISO/IEC 9899:201x - N1570 - Programming languages - C](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n1570.pdf)
+
+[^2]: [C11\_百度百科](https://baike.baidu.com/item/C11)
