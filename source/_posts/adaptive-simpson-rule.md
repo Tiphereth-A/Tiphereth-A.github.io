@@ -15,7 +15,9 @@ date: 2018-08-12 15:33:58
 
 老文章, 可能有很多错误, 懒得修了
 
-2020.10.06 upd: 我重写了一篇介绍自适应 Simpson 算法的文章, 讲解更加清晰 -> {% post_link asr %}
+{% note info %}
+我重写了一篇介绍自适应 Simpson 算法的文章 -> {% post_link asr %}
+{% endnote %}
 
 <!--more-->
 

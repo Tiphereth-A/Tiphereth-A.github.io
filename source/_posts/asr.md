@@ -16,11 +16,11 @@ date: 2020-10-02 22:23:57
 
 自适应 Simpson 法是一种基于 Simpson 法的数值积分算法
 
-<!-- more -->
-
 {% note warning %}
 <https://cplib.tifa-233.com/src/code/math/simpson.hpp> 存放了笔者对该算法/数据结构的最新实现, 建议前往此处查看相关代码
 {% endnote %}
+
+<!-- more -->
 
 ## Simpson 法
 
@@ -146,7 +146,7 @@ $$
 
 ## 参考
 
-- <https://en.wikipedia.org/wiki/Simpson>'s_rule
+- <https://en.wikipedia.org/wiki/Simpson's_rule>
 - <https://en.wikipedia.org/wiki/Newton–Cotes_formulas>
 - <https://en.wikipedia.org/wiki/Adaptive_Simpson>'s_method
 - J N Lyness. Notes on the Adaptive Simpson Quadrature Routine[J]. Journal of the ACM, 1969, 16(3): 483–495; doi:[10.1145/321526.321537](https://doi.org/10.1145%2F321526.321537)

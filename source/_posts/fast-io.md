@@ -20,15 +20,11 @@ date: 2021-07-28 21:40:03
 
 的输入输出, 支持流式写法
 
-<!-- more -->
-
 {% note warning %}
 <https://cplib.tifa-233.com/src/code/util/fastio.hpp> 存放了笔者对该算法/数据结构的最新实现, 建议前往此处查看相关代码
 {% endnote %}
 
-~~实际上没什么应用价值, 开了 O2、关闭流同步、解绑、不使用 `std::endl` 等的 `std::cin` / `std::cout` 的性能已经和本模板差不多了, 就当作模板偏特化方面的练习了~~
-
-经测试, 当数据规模在 1e7 及以上时, 该模板效率提升显著
+<!-- more -->
 
 {% note warning %}
 

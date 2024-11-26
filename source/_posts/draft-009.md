@@ -1,99 +1,62 @@
 ---
-title: "随笔 - MATLAB 练习: 直方图, 归一化和概率分布拟合"
+title: 随笔 - 根据给定序列构造周期数列 (附 MATLAB 程序)
 categories:
   - 随笔
-  - MATLAB
+  - 数学
 tags:
+  - 数学
   - 随笔
+  - 数列
   - MATLAB
-  - 直方图
-  - 归一化
-  - 拟合
-  - 概率分布拟合
-date: 2021-04-12 19:24:47
+  - 周期数列
+  - 线性方程组
+  - Vandermonde行列式
+date: 2021-10-21 00:43:45
 ---
 
-`histogram` 和 `fitdist` 用法一例
+对于给定的一个序列 $[a_1,a_2,\dots,a_m]$, 如何构造数列 $\{f_n\}$ 满足 $\{f_n\}$ 为周期为 $m$ 的数列且 $f_i=a_i,~\forall i\in 1..m$
+
+例如数列
+
+$$
+\color{brown}f_n=\frac{2}{3}\left(-\sqrt{3}\sin\frac{\pi n}{3}-\cos\frac{\pi n}{3}+\sqrt{3}\sin\frac{2\pi n}{3}+2\cos\frac{2\pi n}{3}+\cos\pi n+4\right)
+$$
+
+以 6 为周期且 $\color{brown}(f_1,...,f_6)=(1,1,4,5,1,4)$
 
 <!-- more -->
 
-## 题目
+## 构造方法
 
-以 2011 年中国 CPI 的三个增长率 (环比增长率, 同比增长率, 累计增长率) 为例
+这里给出一种构造方法
 
-1. 根据数据做出三个增长率的直方图与折线图
-1. 用某一分布拟合归一化后的直方图并给出误差
+显然 $f_n=\sum_{i=0}^{m-1}c_i\omega_m^{i(n-1)}$ 是一个周期为 $m$ 的数列, 其中 $\omega_m=e^\frac{2\pi i}{m}$ 为 $m$ 次本原单位根
 
-数据如下
+接下来我们只需令 $f_{1..m}=a_{1..m}$ 即可
 
-{% icodeweb blog lang:matlab draft-009/data.m %}
+显然我们有
 
-## 主要命令用法简介
+$$
+\begin{bmatrix}
+  1&1&1&...&1\\
+  1&\omega&\omega^2&...&\omega^{m-1}\\
+  1&\omega^2&\omega^4&...&\omega^{2(m-1)}\\
+  \vdots&\vdots&\vdots&\ddots&\vdots\\
+  1&\omega^{m-1}&\omega^{2(m-1)}&...&\omega^{(m-1)^2}\\
+\end{bmatrix}\begin{bmatrix}
+  c_0\\c_1\\c_2\\...\\c_{m-1}
+\end{bmatrix}=\begin{bmatrix}
+  a_1\\a_2\\a_3\\...\\a_m
+\end{bmatrix}
+$$
 
-### histogram
+注意到系数矩阵为 Vandermonde 行列式, 故该方程组一定有唯一解
 
-#### 用途
-
-画直方图
-
-#### 本例中涉及的用法
-
-- `histogram(data)`: 对给定数据画直方图
-- `histogram(data, nbins)`: 指定 `bin` 数目, 对给定数据画直方图
-- `histogram(data, [], name, value)`: 更改指定属性
-- `Normalization`: 归一化属性, 默认为 `count`
-  - `count`: 即不做处理
-  - `pdf`: 概率密度函数的估计值, 使用此属性能使直方图总面积 $\leqslant 1$ ($<1$ 当且仅当数据中出现 `NaN` 等)
-- `h = histogram(data)`: `h` 为直方图对象, 用于获取和修改直方图数据
-- `h.Values`: 即每个 `bin` 对应的值
-
-### fitdist
-
-#### 用途
-
-对给定数据和概率分布类型进行拟合
-
-#### 本例中涉及的用法
-
-- `pd = fitdist(x, distname)`: 对给定数据和概率分布类型进行拟合
-
-> 实际上本题可以使用 `histfit` 命令同时绘制直方图和拟合曲线, 但因为笔者在调取其返回的句柄时出现了问题, 故未使用
-
-## 代码与结果
-
-### 问题 1
+## MATLAB 程序
 
 <details open>
-<summary><font color='orange'>Show code 1</font></summary>
+<summary><font color='orange'>Show code</font></summary>
 
-{% icodeweb blog lang:matlab draft-009/q1.m %}
-
-</details>
-
-| RGR           | YGR           | AGR           |
-| ------------- | ------------- | ------------- |
-| ![](q1-1.svg) | ![](q1-2.svg) | ![](q1-3.svg) |
-| ![](q1-4.svg) | ![](q1-5.svg) | ![](q1-6.svg) |
-
-### 问题 2
-
-<details open>
-<summary><font color='orange'>Show code 2</font></summary>
-
-{% icodeweb blog lang:matlab draft-009/q1.m %}
+{% icodeweb blog lang:matlab draft-009/cycle_sequence_generator.m %}
 
 </details>
-
-| RGR           | YGR           | AGR           |
-| ------------- | ------------- | ------------- |
-| ![](q2-1.svg) | ![](q2-2.svg) | ![](q2-3.svg) |
-
----
-
-## 主要参考资料
-
-- 姜启源, 谢金星, 叶俊. 数学模型（第五版）. 高等教育出版社, 2018, 39-40
-- [直方图 - MATLAB - MathWorks 中国](https://ww2.mathworks.cn/help/matlab/ref/matlab.graphics.chart.primitive.histogram.html)
-- [具有分布拟合的直方图 - MATLAB histfit - MathWorks 中国](https://ww2.mathworks.cn/help/stats/histfit.html)
-- [对数据进行概率分布对象拟合 - MATLAB fitdist - MathWorks 中国](https://ww2.mathworks.cn/help/stats/fitdist.html)
-- [曲线拟合和分布拟合 - MATLAB & Simulink Example - MathWorks 中国](https://ww2.mathworks.cn/help/stats/curve-fitting-and-distribution-fitting.html)

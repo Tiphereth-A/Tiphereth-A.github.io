@@ -79,4 +79,4 @@ $$
 
 ## 解题思路
 
-参见 {% post_link draft-023 %}
+参见 {% post_link draft-016 %}

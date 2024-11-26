@@ -121,7 +121,7 @@ Tifa's Blog | https://blog.tifa-233.com/ | Computer & Math. | /images/apple-touc
 
 - <https://github.com/Tiphereth-A/hexo-tag-icodeweb>
 
-{% icodeweb blog lang:cpp about/init.cpp %}
+{% icodeweb blog lang:cpp arc051b/gcd.cpp %}
 
 ## asciinema
 

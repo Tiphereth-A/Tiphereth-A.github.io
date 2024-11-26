@@ -1,21 +1,27 @@
 ---
-title: 随笔 - 获取 CPU 信息
-date: 2022-05-19 13:43:17
+title: "随笔 - C++ 的高维向量"
+date: 2023-04-16 02:43:13
 categories:
   - 随笔
   - C++
 tags:
   - 随笔
   - C++
+  - 模板元编程
 ---
 
-RT
+为了方便写高维数组以及初始化, 就简单封了一个结构体
+
+{% note warning %}
+<https://cplib.tifa-233.com/src/code/util/ndvec.hpp> 存放了笔者对该算法/数据结构的最新实现, 建议前往此处查看相关代码
+{% endnote %}
 
 <!-- more -->
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
+## 代码
 
-{% icodeweb blog lang:cpp draft-018/get_cpu.cpp %}
+{% icodeweb blog lang:cpp draft-018/ndvector.hpp %}
 
-</details>
+## 测试
+
+{% icodeweb blog lang:cpp draft-018/ndvector_test.cpp %}

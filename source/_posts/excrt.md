@@ -16,11 +16,11 @@ date: 2020-10-06 21:45:51
 
 我们都知道, CRT 用于求解的方程组要求其模数必须两两互素, 而 exCRT 则没有这条限制
 
-<!-- more -->
-
 {% note warning %}
 <https://cplib.tifa-233.com/src/code/nt/crt_mod.hpp> 存放了笔者对该算法/数据结构的最新实现, 建议前往此处查看相关代码
 {% endnote %}
+
+<!-- more -->
 
 ## 介绍
 

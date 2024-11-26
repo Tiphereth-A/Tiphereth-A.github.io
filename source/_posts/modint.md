@@ -19,11 +19,11 @@ date: 2021-10-26 22:44:15
 仅在 GCC 下测试过
 {% endnote %}
 
-<!-- more -->
-
 {% note warning %}
-<https://cplib.tifa-233.com/src/code/math/mint.hpp>, <https://cplib.tifa-233.com/src/code/math/mintdata_ss.hpp>, <https://cplib.tifa-233.com/src/code/math/mintdata_ds.hpp> 存放了笔者对该算法/数据结构的最新实现, 建议前往此处查看相关代码
+<https://cplib.tifa-233.com/src/code/math/mint.hpp>, <https://cplib.tifa-233.com/src/code/math/mint_s30.hpp>, <https://cplib.tifa-233.com/src/code/math/mint_s63.hpp>, <https://cplib.tifa-233.com/src/code/math/mint_d31.hpp>, <https://cplib.tifa-233.com/src/code/math/mint_d63.hpp> 存放了笔者对该算法/数据结构的最新实现, 其中使用了 Montgomery 约乘, 建议前往此处查看相关代码
 {% endnote %}
+
+<!-- more -->
 
 ## 成员函数&友元函数简介
 

@@ -26,6 +26,10 @@ date: 2022-10-31 22:18:28
 
 Dilworth 定理描述了偏序集的独立集个数和最大全序子集的关系
 
+{% note info %}
+本篇文章已迁移至 OI-wiki 的 [序理论](https://oi-wiki.org/math/order-theory/) 页面中
+{% endnote %}
+
 <!-- more -->
 
 ## 前置知识

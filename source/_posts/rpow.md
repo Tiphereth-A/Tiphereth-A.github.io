@@ -13,11 +13,11 @@ date: 2021-10-24 20:34:44
 
 光速幂是一种针对固定底数和模数的高速求幂算法, 其基本思路和 BSGS 相同
 
-<!-- more -->
-
 {% note warning %}
 <https://cplib.tifa-233.com/src/code/math/rpow.hpp> 存放了笔者对该算法/数据结构的最新实现, 建议前往此处查看相关代码
 {% endnote %}
+
+<!-- more -->
 
 基本思路和 BSGS 相同, 就是分成两块 $y=a\lfloor\sqrt p\rfloor+b$ 然后就有
 

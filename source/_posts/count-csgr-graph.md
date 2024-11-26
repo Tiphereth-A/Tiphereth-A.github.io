@@ -108,64 +108,6 @@ $$
 
 </details>
 
-## 无向图最小环计数 {pending}
-
-### 例题 - [Luogu P6175] 无向图的最小环问题
-
-给定一张无向图, 求图中一个至少包含 $3$ 个点的环, 环上的节点不重复, 并且环上的边的长度之和最小. 该问题称为无向图的最小环问题. 在本题中, 你需要输出最小的环的边权和. 若无解, 输出 `No solution.`
-
-#### 输入格式
-
-第一行两个正整数 $n,m$ 表示点数和边数
-
-接下来 $m$ 行, 每行三个正整数 $u,v,d$, 表示节点 $u,v$ 之间有一条长度为 $d$ 的边
-
-#### 输出格式
-
-输出边权和最小的环的边权和. 若无解, 输出 `No solution.`
-
-#### 样例输入 #1
-
-```input1
-5 7
-1 4 1
-1 3 300
-3 1 10
-1 2 16
-2 3 100
-2 5 15
-5 3 20
-```
-
-#### 样例输出 #1
-
-```output1
-61
-```
-
-#### 提示
-
-样例解释: 一种可行的方案: $1-3-5-2-1$
-
-对于 $20\%$ 的数据, $n,m \leq 10$
-
-对于 $60\%$ 的数据, $m\leq 100$
-
-对于 $100\%$ 的数据, $1\le n\leq 100$, $1\le m\leq 5\times 10^3$, $1 \leq d \leq 10^5$
-
-**无解输出包括句号**
-
-### 做法
-
-### 时间复杂度
-
-### 参考代码
-
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
-</details>
-
 ## 简单无向图三元环计数
 
 {% note warning %}
@@ -335,19 +277,6 @@ $O(m\sqrt{m})$
 <summary><font color='orange'>Show code</font></summary>
 
 {% icodeweb blog lang:cpp count-csgr-graph/cntsr4.cpp %}
-
-</details>
-
-## 简单无向图含 k 条边的连通子图计数 (k < 5) {pending}
-
-### 做法
-
-### 时间复杂度
-
-### 参考代码
-
-<details open>
-<summary><font color='orange'>Show code</font></summary>
 
 </details>
 

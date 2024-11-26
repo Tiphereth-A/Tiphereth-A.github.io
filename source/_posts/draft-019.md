@@ -1,36 +1,27 @@
 ---
-title: "随笔 - Java: 基于 ScriptEngine 和 Swing 的极简科学计算器"
-date: 2022-06-11 13:43:17
+title: "随笔 - 批量重命名 APK 文件的 Python 脚本"
+date: 2024-02-17 20:43:13
 categories:
   - 随笔
-  - Java
+  - Python
 tags:
   - 随笔
-  - Java
-  - Swing
-  - ScriptEngine
-  - 表达式求值
+  - Python
+  - 脚本
 ---
 
-基于 Java 8 编写
-
-因为懒得写 parser, 所以直接用 `javax.script.ScriptEngine#eval()` 来计算表达式了, 最终的代码很短
+为了方便整理文件, 我简单搓了个 Python 脚本来按一定格式批量重命名 APK 文件
 
 <!-- more -->
 
-> Nashorn JavaScript Engine 已于 Java 15 移除, 于 Java 11 废弃[^1]
+## 使用方式
 
-## 界面
+把脚本文件放到想要重命名的文件夹里然后运行即可, 脚本会进行如下操作:
 
-![](screenshot.webp)
+1. 递归遍历当前文件夹和子文件夹
+2. 找出文件名为 `*.{apk,1}` 的所有文件
+3. 使用 <https://github.com/appknox/pyaxmlparser> 来解析 APK 的文件信息, 并按 `<应用名>-<包名>-<版本名>(<版本号>).apk` 的格式重命名, 若重名则删除文件
 
 ## 代码
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
-{% icodeweb blog lang:java draft-019/Main.java %}
-
-</details>
-
-[^1]: [JDK-8236933](https://www.oracle.com/java/technologies/javase/15-relnote-issues.html#JDK-8236933)
+{% icodeweb blog lang:python draft-019/rename_apk.py %}

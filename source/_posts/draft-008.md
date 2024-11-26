@@ -1,62 +1,77 @@
 ---
-title: "随笔 - C++ 中的 std::transform 用法 (C++11)"
+title: 随笔 - Laplace算子的旋转不变性
 categories:
   - 随笔
-  - C++
+  - 数学
 tags:
+  - 数学
   - 随笔
-  - C++
-date: 2021-01-26 18:31:47
+  - Nabla算子
+  - Hessian矩阵
+  - Laplace算子
+  - 旋转不变性
+date: 2021-09-23 00:08:45
 ---
 
-简要记录 `std::transform` 的用法
+一道练习题
 
 <!-- more -->
 
-## 声明
+{% note success no-icon %}
 
-{% tabs tabs_1,1 %}
+**<a id="th">定理</a>** (Laplace 算子的旋转不变性)
 
-<!-- tab 一元 -->
+令
 
-{% icodeweb blog lang:cpp draft-008/unary.cpp %}
+- $O=(o_{ij})_{n\times n}\in\mathbb{R}^{n\times n}$ 是正交矩阵
+- $x=(x_1,x_2,\dots,x_n)^T\in\mathbb{R}^n$
+- $y=Ox=(y_1,y_2,\dots,y_n)^T\in\mathbb{R}^n$
 
-<!-- endtab -->
-<!-- tab 二元 -->
+则
 
-{% icodeweb blog lang:cpp draft-008/binary.cpp %}
+$$
+\Delta_x=\Delta_y
+$$
 
-<!-- endtab -->
+其中
 
-{% endtabs %}
-
-## 作用
-
-{% tabs tabs_2,1 %}
-
-<!-- tab 一元 -->
-
-对 `[__first,__last)` 内的元素应用 `__unary_op`, 并将结果储存在以 `__result` 开头的区域内
-
-<!-- endtab -->
-<!-- tab 二元 -->
-
-对 `[__first1,__last1)` 和 `[__first2,__first2+__last1-__first1)` 内的元素应用 `__binary_op`, 并将结果储存在以 `__result` 开头的区域内
-
-<!-- endtab -->
-
-{% endtabs %}
-
-### Tips
-
-以下程序和示例程序等价
-
-{% icodeweb blog lang:cpp draft-008/main.cpp %}
-
-此处要注意一点, 因为 `using namespace std;`, 致使 `<cctype>` 中的 `toupper` 和 `<locale>` 中的 `std::toupper` 发生混淆, 此时需要加 `::` 限定作用域
+- $$
+  \Delta_x:=\sum_{i=1}^n\frac{\partial^2}{\partial x_i^2}
+  $$
+- $$
+  \Delta_y:=\sum_{i=1}^n\frac{\partial^2}{\partial y_i^2}
+  $$
 
 ---
 
-## 主要参考资料
+**Proof** 显然
 
-- [std::transform - cppreference.com](https://en.cppreference.com/w/cpp/algorithm/transform)
+$$
+y_i=\sum_{j=1}^no_{ij}x_j,\ \forall i=1..n
+$$
+
+故我们有
+
+$$
+\frac{\partial}{\partial x_i}=\sum_{j=1}^n\frac{\partial}{\partial y_j}\frac{\partial y_j}{\partial x_i}=\sum_{j=1}^no_{ji}\frac{\partial}{\partial y_j}
+$$
+
+考虑 Hessian 矩阵
+
+$$
+\nabla^2_x=\left(\frac{\partial^2}{\partial x_j\partial x_i}\right)_{n\times n}=\left(\sum_{l=1}^n\sum_{k=1}^no_{lj}o_{ki}\frac{\partial^2}{\partial y_l\partial y_k}\right)_{n\times n}
+$$
+
+则
+
+$$
+\begin{aligned}
+  \Delta_x&=\operatorname{tr}(\nabla^2_x)\\
+  &=\sum_{l=1}^n\sum_{k=1}^n\left(\sum_{i=1}^no_{li}o_{ki}\right)\frac{\partial^2}{\partial y_l\partial y_k}\\
+  &=\sum_{l=1}^n\sum_{k=1}^n\delta_{kl}\frac{\partial^2}{\partial y_l\partial y_k}\\
+  &=\sum_{k=1}^n\frac{\partial^2}{\partial y_k^2}\\
+  &=\Delta_y
+\end{aligned}
+$$
+
+{% endnote %}
