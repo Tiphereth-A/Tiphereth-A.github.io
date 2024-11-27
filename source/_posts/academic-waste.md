@@ -29,6 +29,5 @@ date: 2023-04-01 09:06:31
 - {% post_link setth-04 %}
 - {% post_link symmetric-bilinear-metric-space-and-system-of-linear-equations %}
 - {% post_link thpoker %}
-- {% post_link zkw-segment-tree-test1 %}
-- {% post_link zkw-segment-tree-test2 %}
+- {% post_link zkw-segment-tree-test %}
 - {% post_link zkw-segment-tree %}

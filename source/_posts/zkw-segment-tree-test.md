@@ -40,7 +40,7 @@ comments: false
    <details open>
    <summary><font color='orange'>Show code</font></summary>
 
-   {% icodeweb blog lang:cpp zkw-segment-tree-test2/seg-r.cpp %}
+   {% icodeweb blog lang:cpp zkw-segment-tree-test/seg-r.cpp %}
 
    </details>
 
@@ -49,7 +49,7 @@ comments: false
    <details open>
    <summary><font color='orange'>Show code</font></summary>
 
-   {% icodeweb blog lang:cpp zkw-segment-tree-test2/seg-zkw.cpp %}
+   {% icodeweb blog lang:cpp zkw-segment-tree-test/seg-zkw.cpp %}
 
    </details>
 
@@ -58,7 +58,7 @@ comments: false
    <details open>
    <summary><font color='orange'>Show code</font></summary>
 
-   {% icodeweb blog lang:cpp zkw-segment-tree-test2/bit.cpp %}
+   {% icodeweb blog lang:cpp zkw-segment-tree-test/bit.cpp %}
 
    </details>
 
@@ -67,7 +67,7 @@ comments: false
    <details open>
    <summary><font color='orange'>Show code</font></summary>
 
-   {% icodeweb blog lang:cpp zkw-segment-tree-test2/data_gen.cpp %}
+   {% icodeweb blog lang:cpp zkw-segment-tree-test/data_gen.cpp %}
 
    </details>
 

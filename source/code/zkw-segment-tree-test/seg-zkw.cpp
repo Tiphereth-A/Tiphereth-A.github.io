@@ -73,8 +73,7 @@ struct node {
 u32 N = 1;
 
 FINLINE void init() {
-  for (; N <= n + 1; N <<= 1)
-    ;
+  for (; N <= n + 1; N <<= 1);
   for (u32 i = N + 1; i <= N + n; ++i) read(_now(i).sum);
   for (u32 i = N - 1; i; --i) _now(i).sum = _lch(i).sum + _rch(i).sum;
 }
