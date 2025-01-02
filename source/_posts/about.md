@@ -17,12 +17,13 @@ date: 2020-05-04 19:07:23
 
 - {% post_link drafts 随笔 %}
 - {% post_link academic-waste 学术垃圾 %}
+- {% post_link cp-template 算法竞赛模板 %}
 
 ## 本博客采用的部分非通用记号/名称等
 
 | 记号                      | 含义                                      | 例子                         |
 | ------------------------- | ----------------------------------------- | ---------------------------- |
-| $\exists_1$               | 存在唯一                                  | {% post_link setth-01 %}     |
+| $\exists_1$               | 存在唯一                                  |                              |
 | $[a,b]_A$                 | $\{x\in A:a\leqslant x\leqslant b\}$      | {% post_link jsc2021 %}      |
 | $a..b$                    | $[a,b]_\mathbb{N}$                        |                              |
 | $\operatorname{Base}_a^b$ | $(10^b)_a$                                |                              |

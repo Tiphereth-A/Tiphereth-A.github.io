@@ -40,7 +40,7 @@ date: 2021-04-22 23:05:47
 
 ## 计算公式
 
-- 最小二乘法原理 (参见 {% post_link symmetric-bilinear-metric-space-and-system-of-linear-equations %})
+- 最小二乘法原理
 
   令 $A=(\alpha_0,\alpha_1,\dots,\alpha_n),~\alpha_i\in\mathbb{R}^m,i=1,2,...,n$, 寻找 $AX=B$ 的最小二乘解 $(x_1,x_2,\dots,x_n)^T$ 即为寻找一组实数 $x_1,x_2,\dots,x_n$ 使得
 
