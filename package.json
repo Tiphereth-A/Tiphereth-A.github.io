@@ -35,7 +35,7 @@
     "hexo-tag-asciinema": "^0.0.3",
     "hexo-tag-icodeweb": "^1.1.1",
     "hexo-tag-mmedia": "^1.2.1",
-    "hexo-theme-next": "^8.21.1",
+    "hexo-theme-next": "^8.22.0",
     "hexo-word-counter": "^0.2.0"
   },
   "devDependencies": {
