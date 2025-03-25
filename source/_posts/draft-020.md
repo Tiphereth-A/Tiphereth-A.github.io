@@ -28,7 +28,7 @@ tags:
 
 其中
 
-- `is_prime_miller_rabin` 为基于 Miller-Rabin 算法的质数判断, 时间复杂度为 $O\left(n^{1/4}\right)$
+- `is_prime_miller_rabin` 为基于 Miller-Rabin 算法的质数判断, 我们认为其时间复杂度为 $O\left(n^{1/4}\right)$
 - `pollard_rho` 为 Pollard-Rho 算法, 返回入参的一个非平凡因子, 期望时间复杂度为 $O\left(p^{1/2}\right)$, 其中 $p$ 为 $n$ 的最小质因子, 不难发现 Pollard-Rho 算法的期望时间复杂度为 $O\left(n^{1/4}\right)$
 - 回调函数 `callback` 的时间复杂度为 $O(1)$
 

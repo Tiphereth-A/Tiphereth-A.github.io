@@ -1,0 +1,11 @@
+digraph {
+    1 [label = "std::basic_ostream<CharT, Traits>& operator<<(std::basic_ostream<CharT, Traits>&, const Container&)";shape = rectangle;];
+    2 [label = "std::ostream& operator<<(std::ostream&, const Container&)";shape = rectangle;color = blue;];
+    3 [label = "std::basic_ostream<CharT, Traits>& operator<<(std::basic_ostream<CharT, Traits>&, const std::basic_string<CharT, Traits, Allocator>&)";shape = rectangle;color = red;];
+    4 [label = "std::ostream& operator<<(std::ostream&, const std::string&)";shape = rectangle;];
+    
+    2 -> 1;
+    3 -> 1;
+    4 -> 2;
+    4 -> 3;
+}
