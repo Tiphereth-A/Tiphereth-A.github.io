@@ -697,9 +697,9 @@ hexo-generator-random@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/hexo-generator-random/-/hexo-generator-random-1.0.2.tgz#1eee01665063e465b520a8c8795c622d14eb701d"
 
-hexo-generator-searchdb@^1.4.1:
-  version "1.4.1"
-  resolved "https://registry.yarnpkg.com/hexo-generator-searchdb/-/hexo-generator-searchdb-1.4.1.tgz#e33c9bd22130a6705673e889b6497fcc3fe80fa5"
+hexo-generator-searchdb@^1.5.0:
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/hexo-generator-searchdb/-/hexo-generator-searchdb-1.5.0.tgz#ba7b48670e997378b3151684fffa2913b662a031"
   dependencies:
     nunjucks "^3.2.2"
 
