@@ -45,6 +45,7 @@ render_drafts: false
 post_asset_folder: true
 relative_link: false
 future: true
+syntax_highlighter: highlight.js
 highlight:
   enable: true
   auto_detect: false
@@ -160,6 +161,8 @@ sitemap:
   tags: true
   categories: true
 
+# hexo-generator-feed
+## https://github.com/hexojs/hexo-generator-feed
 feed:
   type: atom
   path: atom.xml
@@ -173,8 +176,16 @@ feed:
   autodiscovery: true
   template:
 
+# https://github.com/hexojs/hexo-renderer-pandoc
 pandoc:
   pandoc_path: pandoc
+  timeout: 1000
+  args:
+    - "-f"
+    - "markdown-superscript-subscript"
+    - "-t"
+    - "html"
+    - "--mathjax"
 
 # https://github.com/dimaslanjaka/hexo-seo
 seo:
