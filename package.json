@@ -29,7 +29,7 @@
     "hexo-next-coauthor": "github:theme-next/hexo-next-coauthor",
     "hexo-next-giscus": "^1.3.0",
     "hexo-pangu": "^0.2.3",
-    "hexo-renderer-pandoc": "^0.4.0",
+    "hexo-renderer-pandoc": "^0.5.0",
     "hexo-renderer-stylus": "^3.0.1",
     "hexo-server": "^3.0.0",
     "hexo-tag-asciinema": "^0.0.3",
