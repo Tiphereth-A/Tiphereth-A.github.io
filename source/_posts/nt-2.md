@@ -123,12 +123,7 @@ $$
 r=\left\lfloor\frac{n}{k_l}\right\rfloor=\left\lfloor{n\over{\lfloor\frac{n}{l}\rfloor} }\right\rfloor
 $$
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp nt-2/get_sum.cpp %}
-
-</details>
 
 ### 时间复杂度
 
@@ -255,12 +250,7 @@ $$
 
 预先筛出 $[1,n]$ 中的素数即可更快地处理
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp nt-2/Dirichlet_sum.cpp %}
-
-</details>
 
 #### 时间复杂度
 
@@ -409,23 +399,13 @@ $$
 
    按 $\varphi(n)=n\prod_{i=1}^{\omega(n)}\frac{p_i-1}{p_i}$ 计算即可
 
-   <details open>
-   <summary><font color='orange'>Show code</font></summary>
-
    {% icodeweb blog lang:cpp nt-2/euler_phi_single.cpp %}
-
-   </details>
 
 1. 筛法 (以 Euler 筛为例)
 
    依据积性和 $\varphi(p^a)=p^a-p^{a-1}$ 计算
 
-   <details open>
-   <summary><font color='orange'>Show code</font></summary>
-
    {% icodeweb blog lang:cpp nt-2/euler_phi_seive.cpp %}
-
-   </details>
 
 ### 例题
 
@@ -568,12 +548,7 @@ $$
 
    基于积性和定义
 
-   <details open>
-   <summary><font color='orange'>Show code</font></summary>
-
    {% icodeweb blog lang:cpp nt-2/mobius_seive.cpp %}
-
-   </details>
 
 ## Möbius 反演
 

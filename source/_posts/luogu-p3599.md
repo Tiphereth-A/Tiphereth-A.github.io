@@ -177,9 +177,4 @@ Taks2: 试判断能否构造并构造一个长度为 $n$ 的 $1\dots n$ 的排�
 
 ## 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb cpa_cpp title:Luogu_P3599 Luogu/P3599/0.cpp %}
-
-</details>

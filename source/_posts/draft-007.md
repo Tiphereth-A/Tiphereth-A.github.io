@@ -45,12 +45,7 @@ date: 2021-04-12 19:56:47
 
 > [SpecData.mat](SpecData.mat)
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:matlab draft-007/main.m %}
-
-</details>
 
 |             |             |             |             |
 | ----------- | ----------- | ----------- | ----------- |

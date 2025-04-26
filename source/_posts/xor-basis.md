@@ -116,12 +116,7 @@ $\begin{array}{r|l:l}
 
 众所周知, $\mathbb{Z}_2$ 上的加法即为异或, 故代码实现时可以将 $V$ 中元素写为无符号整形或 `std::bitset`, 加法即为异或
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp xor-basis/Xor_base.hpp %}
-
-</details>
 
 ## 例题
 

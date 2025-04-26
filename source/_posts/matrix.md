@@ -71,18 +71,8 @@ date: 2021-10-31 21:28:15
 
 ## 代码
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp matrix/Matrix.hpp %}
-
-</details>
 
 ## 示例
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp matrix/Matrix_exp.cpp %}
-
-</details>

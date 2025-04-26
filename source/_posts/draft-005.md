@@ -176,28 +176,16 @@ $$
 ## MATLAB 程序实现
 
 - 主程序
-  <details open>
-  <summary><font color='orange'>Show code</font></summary>
 
   {% icodeweb blog lang:matlab draft-005/main.m %}
 
-  </details>
-
 - Euler 方法
-  <details open>
-  <summary><font color='orange'>Show code</font></summary>
 
   {% icodeweb blog lang:matlab draft-005/euler_solve.m %}
 
-  </details>
-
 - 四阶 Runge-Kutta 方法
-  <details open>
-  <summary><font color='orange'>Show code</font></summary>
 
   {% icodeweb blog lang:matlab draft-005/rk4_solve.m %}
-
-  </details>
 
 ## 效果
 

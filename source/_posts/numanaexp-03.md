@@ -82,21 +82,11 @@ date: 2021-04-22 23:05:47
 
 ### 主程序
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:matlab numanaexp-03/main.m %}
-
-</details>
 
 ### 最小二乘法函数文件
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:matlab numanaexp-03/lsmfit.m %}
-
-</details>
 
 ## 结果讨论和分析
 

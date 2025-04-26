@@ -492,30 +492,15 @@ $$
 
 对于任意一个结点, 其均具有 4 个指针, 也就是
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp dlx/DLX_nodes.cpp %}
-
-</details>
 
 我们也可以用内存池存储
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp dlx/DLX_nodes_ms.cpp %}
-
-</details>
 
 其次, 我们还需要记录结点所在行和列的编号, 最后结点的代码如下
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp dlx/DLX_nodes_final.cpp %}
-
-</details>
 
 除此之外我们还需如下变量
 
@@ -525,12 +510,7 @@ $$
 
 最后代码如下
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp dlx/DLX_nodes_final2.cpp %}
-
-</details>
 
 - Q: `head`结点, 行首结点和列首结点存在哪里
 
@@ -550,12 +530,7 @@ $$
 
 - 为了方便后面写代码, 我们做如下宏定义
 
-  <details open>
-  <summary><font color='orange'>Show code</font></summary>
-
   {% icodeweb blog lang:cpp dlx/DLX_macro.cpp %}
-
-  </details>
 
 #### 初始化
 
@@ -566,12 +541,7 @@ $$
 
 ##### 存入`head`结点和列首结点
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp dlx/DLX_init.cpp %}
-
-</details>
 
 ##### 存入其他结点
 
@@ -584,12 +554,7 @@ $$
 
 代码实现如下
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp dlx/DLX_insert_row.cpp %}
-
-</details>
 
 ### 求解
 
@@ -604,23 +569,13 @@ $$
 
 ![](DLX_change.svg)
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp dlx/DLX_remove_col.cpp %}
-
-</details>
 
 #### 恢复
 
 恢复操作和删除操作类似, 在此不再赘述
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp dlx/DLX_resume_col.cpp %}
-
-</details>
 
 ---
 
@@ -716,12 +671,7 @@ $$
 
 加上常数优化后, 代码就是这样的
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp dlx/DLX_dance.cpp %}
-
-</details>
 
 ### 关于删除和恢复的顺序
 
@@ -765,12 +715,7 @@ $$
 
 - 洛谷 [P4929 【模板】舞蹈链（DLX）](https://www.luogu.com.cn/problem/P4929)
 
-  <details open>
-  <summary><font color='orange'>Show code</font></summary>
-
   {% icodeweb cpa_cpp title:Luogu_P4929 Luogu/P4929/0.cpp %}
-
-  </details>
 
 - 洛谷 [P1074 靶形数独](https://www.luogu.com.cn/problem/P1074) -> {% post_link luogu-p1074 题解 %}
 - 洛谷 [P4205 [NOI2005]智慧珠游戏](https://www.luogu.com.cn/problem/P4205) -> {% post_link luogu-p4205 题解 %}
@@ -822,12 +767,7 @@ $$
 
 附模板, 输入方式与 洛谷 [P4929 【模板】舞蹈链（DLX）](https://www.luogu.com.cn/problem/P4929) 相同
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp dlx/multi_DLX.hpp %}
-
-</details>
 
 ### 例题
 

@@ -56,12 +56,7 @@ date: 2023-11-24 02:00:18
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp ccpc-glr2023/A.cpp %}
-
-</details>
 
 ## B - The Game
 
@@ -71,12 +66,7 @@ date: 2023-11-24 02:00:18
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp ccpc-glr2023/B.cpp %}
-
-</details>
 
 ## C - Master of Both IV
 
@@ -86,12 +76,7 @@ date: 2023-11-24 02:00:18
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp ccpc-glr2023/C.cpp %}
-
-</details>
 
 ## D - Subway
 
@@ -101,12 +86,7 @@ date: 2023-11-24 02:00:18
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp ccpc-glr2023/D.cpp %}
-
-</details>
 
 ## E - Prefix Mahjong
 
@@ -116,12 +96,7 @@ date: 2023-11-24 02:00:18
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp ccpc-glr2023/E.cpp %}
-
-</details>
 
 ## F - Redundant Towers
 
@@ -131,12 +106,7 @@ date: 2023-11-24 02:00:18
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp ccpc-glr2023/F.cpp %}
-
-</details>
 
 ## G - Hard Brackets Problem
 
@@ -146,12 +116,7 @@ date: 2023-11-24 02:00:18
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp ccpc-glr2023/G.cpp %}
-
-</details>
 
 ## H - Sweet Sugar
 
@@ -161,12 +126,7 @@ date: 2023-11-24 02:00:18
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp ccpc-glr2023/H.cpp %}
-
-</details>
 
 ## I - Barkley II
 
@@ -176,12 +136,7 @@ date: 2023-11-24 02:00:18
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp ccpc-glr2023/I.cpp %}
-
-</details>
 
 ## J - The Phantom Menace
 
@@ -191,12 +146,7 @@ date: 2023-11-24 02:00:18
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp ccpc-glr2023/J.cpp %}
-
-</details>
 
 ## K - Randias Permutation Task
 
@@ -206,12 +156,7 @@ date: 2023-11-24 02:00:18
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp ccpc-glr2023/K.cpp %}
-
-</details>
 
 ## L - Alea Iacta Est
 
@@ -221,12 +166,7 @@ date: 2023-11-24 02:00:18
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp ccpc-glr2023/L.cpp %}
-
-</details>
 
 ## M - Flipping Cards
 
@@ -236,9 +176,4 @@ date: 2023-11-24 02:00:18
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp ccpc-glr2023/M.cpp %}
-
-</details>

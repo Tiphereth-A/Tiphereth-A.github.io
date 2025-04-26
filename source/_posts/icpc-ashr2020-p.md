@@ -83,12 +83,7 @@ $$
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-ashr2020-p/A.cpp %}
-
-</details>
 
 ## B - Strawberry
 
@@ -162,12 +157,7 @@ $$
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-ashr2020-p/B.cpp %}
-
-</details>
 
 ## C - Circle
 
@@ -181,9 +171,4 @@ $$
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-ashr2020-p/C.cpp %}
-
-</details>

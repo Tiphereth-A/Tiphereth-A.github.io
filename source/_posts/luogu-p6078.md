@@ -93,9 +93,4 @@ $O(n2^n)$
 
 ## 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb cpa_cpp title:Luogu_P6078 Luogu/P6078/0.cpp %}
-
-</details>

@@ -130,12 +130,7 @@ $$
 
 ### 代码
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp asr/asr.cpp %}
-
-</details>
 
 ### 例题
 

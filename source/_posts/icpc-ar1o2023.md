@@ -68,12 +68,7 @@ date: 2023-10-07 19:07:55
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-ar1o2023/A.cpp %}
-
-</details>
 
 ## B - String
 
@@ -83,12 +78,7 @@ date: 2023-10-07 19:07:55
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-ar1o2023/B.cpp %}
-
-</details>
 
 ## C - Multiply Then Plus
 
@@ -98,12 +88,7 @@ date: 2023-10-07 19:07:55
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-ar1o2023/C.cpp %}
-
-</details>
 
 ## D - Transitivity
 
@@ -113,12 +98,7 @@ date: 2023-10-07 19:07:55
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-ar1o2023/D.cpp %}
-
-</details>
 
 ## E - Magical Pair
 
@@ -128,12 +108,7 @@ date: 2023-10-07 19:07:55
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-ar1o2023/E.cpp %}
-
-</details>
 
 ## F - Alice and Bob
 
@@ -143,12 +118,7 @@ date: 2023-10-07 19:07:55
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-ar1o2023/F.cpp %}
-
-</details>
 
 ## G - Spanning Tree
 
@@ -158,12 +128,7 @@ date: 2023-10-07 19:07:55
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-ar1o2023/G.cpp %}
-
-</details>
 
 ## H - Range Periodicity Query
 
@@ -173,12 +138,7 @@ date: 2023-10-07 19:07:55
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-ar1o2023/H.cpp %}
-
-</details>
 
 ## I - Pa?sWorD
 
@@ -188,12 +148,7 @@ date: 2023-10-07 19:07:55
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-ar1o2023/I.cpp %}
-
-</details>
 
 ## J - Minimum Manhattan Distance
 
@@ -203,12 +158,7 @@ date: 2023-10-07 19:07:55
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-ar1o2023/J.cpp %}
-
-</details>
 
 ## K - Minimum Euclidean Distance
 
@@ -218,12 +168,7 @@ date: 2023-10-07 19:07:55
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-ar1o2023/K.cpp %}
-
-</details>
 
 ## L - KaChang!
 
@@ -233,9 +178,4 @@ date: 2023-10-07 19:07:55
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-ar1o2023/L.cpp %}
-
-</details>

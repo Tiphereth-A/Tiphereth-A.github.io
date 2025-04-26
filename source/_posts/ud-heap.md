@@ -17,9 +17,4 @@ date: 2021-07-15 19:34:54
 
 <!-- more -->
 
-<details open='open'>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp ud-heap/UD_heap.hpp %}
-
-</details>

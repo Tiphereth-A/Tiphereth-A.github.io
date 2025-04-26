@@ -108,12 +108,7 @@ $O(n\log n)$
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-cjxp2020/A.cpp %}
-
-</details>
 
 ## B - Apple
 
@@ -131,12 +126,7 @@ $O(n\log n)$
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-cjxp2020/C.cpp %}
-
-</details>
 
 ## D - Chinese Valentine's Day
 
@@ -148,12 +138,7 @@ $O(n\log n)$
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-cjxp2020/D.cpp %}
-
-</details>
 
 ## E - Color Sequence
 
@@ -179,12 +164,7 @@ $$
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-cjxp2020/E.cpp %}
-
-</details>
 
 ## F - Magical Number
 
@@ -240,12 +220,7 @@ $$
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-cjxp2020/F.cpp %}
-
-</details>
 
 ## G - Mathematical Practice
 
@@ -308,12 +283,7 @@ $$
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-cjxp2020/H.cpp %}
-
-</details>
 
 ## I - Simple Math Problem
 
@@ -357,12 +327,7 @@ $$
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-cjxp2020/J.cpp %}
-
-</details>
 
 ## K - Travel Expense
 
@@ -380,12 +345,7 @@ $O(n^3+q\log B\log n)$, 其中 $B$ 表示所有询问中最大的 $b$
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-cjxp2020/K.cpp %}
-
-</details>
 
 ## L - WZB's Harem
 
@@ -399,12 +359,7 @@ $O(n^3+q\log B\log n)$, 其中 $B$ 表示所有询问中最大的 $b$
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-cjxp2020/L.cpp %}
-
-</details>
 
 ## M - Zoos's Animal Codes
 

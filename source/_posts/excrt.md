@@ -91,9 +91,4 @@ $$
 
 ## 代码
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp excrt/EXCRT.hpp %}
-
-</details>

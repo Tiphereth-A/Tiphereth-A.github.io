@@ -56,12 +56,7 @@ date: 2023-11-24 12:46:33
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp ccpc-hrbr2023/A.cpp %}
-
-</details>
 
 ## B - Memory
 
@@ -71,12 +66,7 @@ date: 2023-11-24 12:46:33
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp ccpc-hrbr2023/B.cpp %}
-
-</details>
 
 ## C - Karshilov's Matching Problem II
 
@@ -86,12 +76,7 @@ date: 2023-11-24 12:46:33
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp ccpc-hrbr2023/C.cpp %}
-
-</details>
 
 ## D - A Simple MST Problem
 
@@ -101,12 +86,7 @@ date: 2023-11-24 12:46:33
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp ccpc-hrbr2023/D.cpp %}
-
-</details>
 
 ## E - Revenge on My Boss
 
@@ -116,12 +96,7 @@ date: 2023-11-24 12:46:33
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp ccpc-hrbr2023/E.cpp %}
-
-</details>
 
 ## F - Palindrome Path
 
@@ -131,12 +106,7 @@ date: 2023-11-24 12:46:33
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp ccpc-hrbr2023/F.cpp %}
-
-</details>
 
 ## G - The Only Way to the Destination
 
@@ -146,12 +116,7 @@ date: 2023-11-24 12:46:33
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp ccpc-hrbr2023/G.cpp %}
-
-</details>
 
 ## H - Energy Distribution
 
@@ -161,12 +126,7 @@ date: 2023-11-24 12:46:33
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp ccpc-hrbr2023/H.cpp %}
-
-</details>
 
 ## I - Rolling For Days
 
@@ -176,12 +136,7 @@ date: 2023-11-24 12:46:33
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp ccpc-hrbr2023/I.cpp %}
-
-</details>
 
 ## J - Game on a Forest
 
@@ -191,12 +146,7 @@ date: 2023-11-24 12:46:33
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp ccpc-hrbr2023/J.cpp %}
-
-</details>
 
 ## K - Omniscia Spares None
 
@@ -206,12 +156,7 @@ date: 2023-11-24 12:46:33
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp ccpc-hrbr2023/K.cpp %}
-
-</details>
 
 ## L - Palm Island
 
@@ -221,12 +166,7 @@ date: 2023-11-24 12:46:33
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp ccpc-hrbr2023/L.cpp %}
-
-</details>
 
 ## M - Painter
 
@@ -236,9 +176,4 @@ date: 2023-11-24 12:46:33
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp ccpc-hrbr2023/M.cpp %}
-
-</details>

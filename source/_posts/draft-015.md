@@ -43,9 +43,4 @@ tags:
 
 ## 代码
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp draft-015/main.cpp %}
-
-</details>

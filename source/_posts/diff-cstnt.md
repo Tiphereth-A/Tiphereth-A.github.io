@@ -72,12 +72,7 @@ $$
 
 ### 洛谷 P5960 [【模板】差分约束算法](https://www.luogu.com.cn/problem/P5960)
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb cpa_cpp title:Luogu_P5960 Luogu/P5960/0.cpp %}
-
-</details>
 
 ## 参考资料
 

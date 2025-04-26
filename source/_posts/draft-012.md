@@ -13,9 +13,4 @@ RT
 
 <!-- more -->
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp draft-012/get_cpu.cpp %}
-
-</details>

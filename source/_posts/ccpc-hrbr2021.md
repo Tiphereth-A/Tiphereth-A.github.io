@@ -55,12 +55,7 @@ date: 2023-12-01 12:46:33
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp ccpc-hrbr2021/A.cpp %}
-
-</details>
 
 ## B - Magical Subsequence
 
@@ -70,12 +65,7 @@ date: 2023-12-01 12:46:33
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp ccpc-hrbr2021/B.cpp %}
-
-</details>
 
 ## C - Colorful Tree
 
@@ -85,12 +75,7 @@ date: 2023-12-01 12:46:33
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp ccpc-hrbr2021/C.cpp %}
-
-</details>
 
 ## D - Math master
 
@@ -100,12 +85,7 @@ date: 2023-12-01 12:46:33
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp ccpc-hrbr2021/D.cpp %}
-
-</details>
 
 ## E - Power and Modulo
 
@@ -115,12 +95,7 @@ date: 2023-12-01 12:46:33
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp ccpc-hrbr2021/E.cpp %}
-
-</details>
 
 ## F - Master Spark
 
@@ -130,12 +105,7 @@ date: 2023-12-01 12:46:33
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp ccpc-hrbr2021/F.cpp %}
-
-</details>
 
 ## G - Damaged Bicycle
 
@@ -145,12 +115,7 @@ date: 2023-12-01 12:46:33
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp ccpc-hrbr2021/G.cpp %}
-
-</details>
 
 ## H - What logic for?
 
@@ -160,12 +125,7 @@ date: 2023-12-01 12:46:33
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp ccpc-hrbr2021/H.cpp %}
-
-</details>
 
 ## I - Power and Zero
 
@@ -175,12 +135,7 @@ date: 2023-12-01 12:46:33
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp ccpc-hrbr2021/I.cpp %}
-
-</details>
 
 ## J - Local Minimum
 
@@ -190,12 +145,7 @@ date: 2023-12-01 12:46:33
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp ccpc-hrbr2021/J.cpp %}
-
-</details>
 
 ## K - Wonder Egg Priority
 
@@ -205,12 +155,7 @@ date: 2023-12-01 12:46:33
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp ccpc-hrbr2021/K.cpp %}
-
-</details>
 
 ## L - Karshilov's Matching Problem
 
@@ -220,9 +165,4 @@ date: 2023-12-01 12:46:33
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp ccpc-hrbr2021/L.cpp %}
-
-</details>

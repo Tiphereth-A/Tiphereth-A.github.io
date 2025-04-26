@@ -139,9 +139,4 @@ $O(n\log n+t\sqrt{n}\log n)$
 
 ## 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb cpa_cpp title:Luogu_P7486 Luogu/P7486/0.cpp %}
-
-</details>

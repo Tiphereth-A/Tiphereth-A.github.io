@@ -138,59 +138,29 @@ $$
 
 ### 主程序
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:matlab numanaexp-04/main.m %}
-
-</details>
 
 ### 输入数据检查
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:matlab numanaexp-04/input_check.m %}
-
-</details>
 
 ### 按步长积分 (复化积分)
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:matlab numanaexp-04/integral_with_h.m %}
-
-</details>
 
 ### 按精度积分 (自适应积分)
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:matlab numanaexp-04/integral_with_eps.m %}
-
-</details>
 
 ### 辅助函数
 
 #### 梯形积分
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:matlab numanaexp-04/trapez.m %}
-
-</details>
 
 #### Simpson 积分
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:matlab numanaexp-04/simpson.m %}
-
-</details>
 
 ## 结果讨论和分析
 

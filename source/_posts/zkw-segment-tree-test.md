@@ -37,38 +37,18 @@ comments: false
 
 1. 递归线段树:
 
-   <details open>
-   <summary><font color='orange'>Show code</font></summary>
-
    {% icodeweb blog lang:cpp zkw-segment-tree-test/seg-r.cpp %}
-
-   </details>
 
 2. zkw 线段树:
 
-   <details open>
-   <summary><font color='orange'>Show code</font></summary>
-
    {% icodeweb blog lang:cpp zkw-segment-tree-test/seg-zkw.cpp %}
-
-   </details>
 
 3. 树状数组:
 
-   <details open>
-   <summary><font color='orange'>Show code</font></summary>
-
    {% icodeweb blog lang:cpp zkw-segment-tree-test/bit.cpp %}
-
-   </details>
 
 4. 数据生成器:
 
-   <details open>
-   <summary><font color='orange'>Show code</font></summary>
-
    {% icodeweb blog lang:cpp zkw-segment-tree-test/data_gen.cpp %}
-
-   </details>
 
 {% post_link zkw-segment-tree 回到原文 %}

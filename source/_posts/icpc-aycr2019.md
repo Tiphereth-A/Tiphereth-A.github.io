@@ -78,12 +78,7 @@ date: 2022-11-18 19:07:55
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-aycr2019/A.cpp %}
-
-</details>
 
 ## B - So Easy
 
@@ -93,12 +88,7 @@ date: 2022-11-18 19:07:55
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-aycr2019/B.cpp %}
-
-</details>
 
 ## C - Image Processing
 
@@ -108,12 +98,7 @@ date: 2022-11-18 19:07:55
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-aycr2019/C.cpp %}
-
-</details>
 
 ## D - Easy Problem
 
@@ -123,12 +108,7 @@ date: 2022-11-18 19:07:55
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-aycr2019/D.cpp %}
-
-</details>
 
 ## E - XOR Tree
 
@@ -138,12 +118,7 @@ date: 2022-11-18 19:07:55
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-aycr2019/E.cpp %}
-
-</details>
 
 ## F - Function!
 
@@ -153,12 +128,7 @@ date: 2022-11-18 19:07:55
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-aycr2019/F.cpp %}
-
-</details>
 
 ## G - Pot!!
 
@@ -168,12 +138,7 @@ date: 2022-11-18 19:07:55
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-aycr2019/G.cpp %}
-
-</details>
 
 ## H - Delivery Route
 
@@ -183,12 +148,7 @@ date: 2022-11-18 19:07:55
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-aycr2019/H.cpp %}
-
-</details>
 
 ## I - Base62
 
@@ -198,12 +158,7 @@ date: 2022-11-18 19:07:55
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:python icpc-aycr2019/I.py %}
-
-</details>
 
 ## J - Toad’s Travel
 
@@ -213,12 +168,7 @@ date: 2022-11-18 19:07:55
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-aycr2019/J.cpp %}
-
-</details>
 
 ## K - Largest Common Submatrix
 
@@ -228,12 +178,7 @@ date: 2022-11-18 19:07:55
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-aycr2019/K.cpp %}
-
-</details>
 
 ## L - Xian Xiang
 
@@ -243,12 +188,7 @@ date: 2022-11-18 19:07:55
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-aycr2019/L.cpp %}
-
-</details>
 
 ## M - Crazy Cake
 
@@ -258,12 +198,7 @@ date: 2022-11-18 19:07:55
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-aycr2019/M.cpp %}
-
-</details>
 
 ## N - Fibonacci Sequence
 
@@ -273,9 +208,4 @@ date: 2022-11-18 19:07:55
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:php icpc-aycr2019/N.php %}
-
-</details>

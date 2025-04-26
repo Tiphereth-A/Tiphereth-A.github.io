@@ -38,12 +38,7 @@ date: 2022-11-05 18:24:04
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:php icpc-asyr2022-p/A.php %}
-
-</details>
 
 ## B - Random Permutation
 
@@ -57,12 +52,7 @@ $$
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:python icpc-asyr2022-p/B.py %}
-
-</details>
 
 ## C - The Great Wall
 
@@ -72,12 +62,7 @@ $$
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-asyr2022-p/C.cpp %}
-
-</details>
 
 ## D - A Bite of Teyvat
 

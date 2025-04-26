@@ -106,12 +106,7 @@ $$
 
 所以该算法的复杂度即为 $O(n\log n)$
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp cantor-exp/Cantor_expansion.hpp %}
-
-</details>
 
 ## 逆 Cantor 展开
 
@@ -155,12 +150,7 @@ $$
 
 所以该算法的复杂度即为 $O(n\log n)$
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp cantor-exp/inverse_Cantor_expansion.hpp %}
-
-</details>
 
 ## 例题
 

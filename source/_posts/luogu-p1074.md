@@ -110,9 +110,4 @@ date: 2020-10-25 17:01:50
 
 ## 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb cpa_cpp title:Luogu_P1074 Luogu/P1074/0.cpp %}
-
-</details>

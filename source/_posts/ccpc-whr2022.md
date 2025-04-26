@@ -85,12 +85,7 @@ date: 2022-11-17 22:00:18
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp ccpc-whr2022/A.cpp %}
-
-</details>
 
 ## B - Recruitment
 
@@ -100,12 +95,7 @@ date: 2022-11-17 22:00:18
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp ccpc-whr2022/B.cpp %}
-
-</details>
 
 ## C - Grass
 
@@ -115,12 +105,7 @@ date: 2022-11-17 22:00:18
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp ccpc-whr2022/C.cpp %}
-
-</details>
 
 ## D - Sternhalma
 
@@ -130,12 +115,7 @@ date: 2022-11-17 22:00:18
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp ccpc-whr2022/D.cpp %}
-
-</details>
 
 ## E - Python Will be Faster than C++
 
@@ -145,12 +125,7 @@ date: 2022-11-17 22:00:18
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp ccpc-whr2022/E.cpp %}
-
-</details>
 
 ## F - Mooncake Delivery
 
@@ -160,12 +135,7 @@ date: 2022-11-17 22:00:18
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp ccpc-whr2022/F.cpp %}
-
-</details>
 
 ## G - Grade 2
 
@@ -175,12 +145,7 @@ date: 2022-11-17 22:00:18
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp ccpc-whr2022/G.cpp %}
-
-</details>
 
 ## H - Party Animals
 
@@ -190,12 +155,7 @@ date: 2022-11-17 22:00:18
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp ccpc-whr2022/H.cpp %}
-
-</details>
 
 ## I - Dragon Bloodline
 
@@ -205,12 +165,7 @@ date: 2022-11-17 22:00:18
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp ccpc-whr2022/I.cpp %}
-
-</details>
 
 ## J - Eat, Sleep, Repeat
 
@@ -220,12 +175,7 @@ date: 2022-11-17 22:00:18
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp ccpc-whr2022/J.cpp %}
-
-</details>
 
 ## K - I Wanna Maker
 
@@ -235,12 +185,7 @@ date: 2022-11-17 22:00:18
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp ccpc-whr2022/K.cpp %}
-
-</details>
 
 ## L - Novice Magician
 
@@ -250,12 +195,7 @@ date: 2022-11-17 22:00:18
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp ccpc-whr2022/L.cpp %}
-
-</details>
 
 ## M - String Master
 
@@ -265,9 +205,4 @@ date: 2022-11-17 22:00:18
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp ccpc-whr2022/M.cpp %}
-
-</details>

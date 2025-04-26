@@ -101,9 +101,4 @@ $O(q)$
 
 ## 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp baltoi2016-3/std.cpp %}
-
-</details>

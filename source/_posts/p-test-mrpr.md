@@ -33,9 +33,4 @@ date: 2021-11-11 00:51:43
 
 <!-- more -->
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp p-test-mrpr/Pollard_rho.hpp %}
-
-</details>

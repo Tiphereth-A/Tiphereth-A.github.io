@@ -118,12 +118,7 @@ $$
 
 ## 模板
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp powerful-num/main.cpp %}
-
-</details>
 
 ## 例题
 

@@ -76,9 +76,4 @@ $O\left(\sqrt{r}\right)$
 
 ## 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb cpa_cpp title:Luogu_P2508 Luogu/P2508/1.cpp %}
-
-</details>

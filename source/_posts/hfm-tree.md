@@ -40,9 +40,4 @@ Huffman 编码通过对 Huffman 树进行层序遍历得到
 
 ## 代码 (K 叉 Huffman 树)
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp hfm-tree/Huffman_tree.hpp %}
-
-</details>

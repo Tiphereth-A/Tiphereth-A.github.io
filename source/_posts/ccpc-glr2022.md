@@ -87,12 +87,7 @@ date: 2022-11-17 23:00:18
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp ccpc-glr2022/A.cpp %}
-
-</details>
 
 ## B - Code With No Forces
 
@@ -102,12 +97,7 @@ date: 2022-11-17 23:00:18
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp ccpc-glr2022/B.cpp %}
-
-</details>
 
 ## C - Array Concatenation
 
@@ -117,12 +107,7 @@ date: 2022-11-17 23:00:18
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp ccpc-glr2022/C.cpp %}
-
-</details>
 
 ## D - Alice's Dolls
 
@@ -132,12 +117,7 @@ date: 2022-11-17 23:00:18
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp ccpc-glr2022/D.cpp %}
-
-</details>
 
 ## E - Draw a triangle
 
@@ -147,12 +127,7 @@ date: 2022-11-17 23:00:18
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp ccpc-glr2022/E.cpp %}
-
-</details>
 
 ## F - Union of Circular Sectors
 
@@ -162,12 +137,7 @@ date: 2022-11-17 23:00:18
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp ccpc-glr2022/F.cpp %}
-
-</details>
 
 ## G - Group Homework
 
@@ -177,12 +147,7 @@ date: 2022-11-17 23:00:18
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp ccpc-glr2022/G.cpp %}
-
-</details>
 
 ## H - Hysteretic Racing
 
@@ -192,12 +157,7 @@ date: 2022-11-17 23:00:18
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp ccpc-glr2022/H.cpp %}
-
-</details>
 
 ## I - Invincible Hotwheels
 
@@ -207,12 +167,7 @@ date: 2022-11-17 23:00:18
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp ccpc-glr2022/I.cpp %}
-
-</details>
 
 ## J - Permutation Puzzle
 
@@ -222,12 +177,7 @@ date: 2022-11-17 23:00:18
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp ccpc-glr2022/J.cpp %}
-
-</details>
 
 ## K - Barrel Theory
 
@@ -237,12 +187,7 @@ date: 2022-11-17 23:00:18
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp ccpc-glr2022/K.cpp %}
-
-</details>
 
 ## L - Largest Unique Wins
 
@@ -252,12 +197,7 @@ date: 2022-11-17 23:00:18
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp ccpc-glr2022/L.cpp %}
-
-</details>
 
 ## M - Youth Finale
 
@@ -267,9 +207,4 @@ date: 2022-11-17 23:00:18
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp ccpc-glr2022/M.cpp %}
-
-</details>

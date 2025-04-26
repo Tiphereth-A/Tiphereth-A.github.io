@@ -90,11 +90,6 @@ date: 2021-11-21 19:33:27
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
-</details>
-
 ## B - Bitwise Exclusive-OR Sequence
 
 ### 题意简述
@@ -113,12 +108,7 @@ $O((m\alpha(n)+n)\log\max w)$
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb cpa_cpp title:B Gym/103427B/0.cpp %}
-
-</details>
 
 ## C - Cards of Magic
 
@@ -157,11 +147,6 @@ $O((m\alpha(n)+n)\log\max w)$
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
-</details>
-
 ## D - Cross the Maze
 
 ### 题意简述
@@ -171,11 +156,6 @@ $O((m\alpha(n)+n)\log\max w)$
 ### 复杂度
 
 ### 代码参考
-
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
-</details>
 
 ## E - Edward Gaming, the Champion
 
@@ -206,12 +186,7 @@ $O(n^2)$
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb cpa_cpp title:F Gym/103427F/0.cpp %}
-
-</details>
 
 ## G - Encoded Strings II
 
@@ -222,11 +197,6 @@ $O(n^2)$
 ### 复杂度
 
 ### 代码参考
-
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
-</details>
 
 ## H - Line Graph Matching
 
@@ -253,12 +223,7 @@ $O(n+m)$
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb cpa_cpp title:H Gym/103427H/0.cpp %}
-
-</details>
 
 ## I - Linear Fractional Transformation
 
@@ -315,12 +280,7 @@ $$
 
 ### 代码参考 (法一)
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb cpa_cpp title:I Gym/103427I/0.cpp %}
-
-</details>
 
 ## J - Luggage Lock
 
@@ -349,11 +309,6 @@ $$
 ### 复杂度
 
 ### 代码参考
-
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
-</details>
 
 ## L - Perfect Matchings
 
@@ -418,12 +373,7 @@ $O(n^2)$
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb cpa_cpp title:L Gym/103427L/0.cpp %}
-
-</details>
 
 ## M - String Problem
 
@@ -449,9 +399,4 @@ $O(|s|)$
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb cpa_cpp title:M Gym/103427M/0.cpp %}
-
-</details>

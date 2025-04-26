@@ -50,12 +50,7 @@ date: 2021-12-12 21:24:04
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-ashr2021/A.cpp %}
-
-</details>
 
 ## B - Strange Permutations
 
@@ -65,12 +60,7 @@ date: 2021-12-12 21:24:04
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-ashr2021/B.cpp %}
-
-</details>
 
 ## C - Strange Matrices
 
@@ -80,12 +70,7 @@ date: 2021-12-12 21:24:04
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-ashr2021/C.cpp %}
-
-</details>
 
 ## D - Strange Fractions
 
@@ -95,12 +80,7 @@ date: 2021-12-12 21:24:04
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-ashr2021/D.cpp %}
-
-</details>
 
 ## E - Strange Integers
 
@@ -110,12 +90,7 @@ date: 2021-12-12 21:24:04
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-ashr2021/E.cpp %}
-
-</details>
 
 ## F - Kaiji!
 
@@ -125,12 +100,7 @@ date: 2021-12-12 21:24:04
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-ashr2021/F.cpp %}
-
-</details>
 
 ## G - Edge Groups
 
@@ -140,12 +110,7 @@ date: 2021-12-12 21:24:04
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-ashr2021/G.cpp %}
-
-</details>
 
 ## H - Life is a Game
 
@@ -155,12 +120,7 @@ date: 2021-12-12 21:24:04
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-ashr2021/H.cpp %}
-
-</details>
 
 ## I - Steadily Growing Steam
 
@@ -170,12 +130,7 @@ date: 2021-12-12 21:24:04
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-ashr2021/I.cpp %}
-
-</details>
 
 ## J - Two Binary Strings Problem
 
@@ -185,12 +140,7 @@ date: 2021-12-12 21:24:04
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-ashr2021/J.cpp %}
-
-</details>
 
 ## K - Circle of Life
 
@@ -200,12 +150,7 @@ date: 2021-12-12 21:24:04
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-ashr2021/K.cpp %}
-
-</details>
 
 ## L - Three,Three,Three
 
@@ -215,12 +160,7 @@ date: 2021-12-12 21:24:04
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-ashr2021/L.cpp %}
-
-</details>
 
 ## M - Harmony in Harmony
 
@@ -230,9 +170,4 @@ date: 2021-12-12 21:24:04
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-ashr2021/M.cpp %}
-
-</details>

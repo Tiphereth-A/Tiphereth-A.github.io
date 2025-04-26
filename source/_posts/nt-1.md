@@ -176,12 +176,7 @@ $$
 
 所以对于要判定的整数`n`, 我们只需在`2..sqrt(n)`中枚举整数`i`验证即可
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp nt-1/is_prime.cpp %}
-
-</details>
 
 时间复杂度: $O(\sqrt n)$
 
@@ -216,12 +211,7 @@ $$
 - `2..n`从小到大枚举, 如果当前枚举的数没被标记为合数, 我们就认为这个数是素数
   - 如果这个数是素数, 我们将其倍数标记为合数
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp nt-1/Eratosthenes_sieve.cpp %}
-
-</details>
 
 ##### 时间复杂度
 
@@ -249,12 +239,7 @@ $$
 
 当然可以!
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp nt-1/Euler_sieve.cpp %}
-
-</details>
 
 ##### 时间复杂度
 
@@ -358,12 +343,7 @@ $$
 
 这就是**辗转相除法**
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp nt-1/gcd.cpp %}
-
-</details>
 
 #### 时间复杂度
 
@@ -446,12 +426,7 @@ $$
 
 接下来不断向下迭代即可, 直到 $b=0$, 此时显然有 $x=1,y=0$
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp nt-1/exgcd.cpp %}
-
-</details>
 
 时间复杂度仍为 $O(\log n)$
 
@@ -687,12 +662,7 @@ $$
    \end{aligned}
    $$
 
-   <details open>
-   <summary><font color='orange'>Show code</font></summary>
-
    {% icodeweb blog lang:cpp nt-1/inverse_n1.cpp %}
-
-   </details>
 
 1. 求任意 $n$ 个数模 $p$ 的逆元
 
@@ -709,12 +679,7 @@ $$
       $$
       故此时 $a_1,a_2,\dots,a_n$ 的逆元便可求得
 
-   <details open>
-   <summary><font color='orange'>Show code</font></summary>
-
    {% icodeweb blog lang:cpp nt-1/inverse_n2.cpp %}
-
-   </details>
 
    时间复杂度:$O(n+\log p)$
 
@@ -849,12 +814,7 @@ $$
 x\equiv m_1k_1+b_1\equiv m_2k_2+b_2\pmod{[m_1,m_2]}
 $$
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp excrt/EXCRT.hpp %}
-
-</details>
 
 ### 例题
 

@@ -134,9 +134,4 @@ $s_i$ 的格式如下:
 
 ## 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb cpa_cpp title:Luogu_P7075 Luogu/P7075/1.cpp %}
-
-</details>

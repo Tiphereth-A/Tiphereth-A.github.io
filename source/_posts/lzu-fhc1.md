@@ -66,92 +66,42 @@ date: 2021-10-24 20:15:45
 
 ## A - ★★ 比赛新机制 ★★
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lzu-fhc1/A.cpp %}
-
-</details>
 
 ## B - ★★ 体育课排队 ★★
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lzu-fhc1/B.cpp %}
-
-</details>
 
 ## C - ★★ 生命的游戏 ★★
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lzu-fhc1/C.cpp %}
-
-</details>
 
 ## D - ★★ 飞马祝福语 ★★
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp lzu-fhc1/D.cpp %}
 
-</details>
-
 ## E - ★★ 序列大团结 ★★
-
-<details open>
-<summary><font color='orange'>Show code</font></summary>
 
 {% icodeweb blog lzu-fhc1/E.cpp %}
 
 </details>
 
-</details>
-
 ## G - ★★ 糖果魔法阵 ★★
-
-<details open>
-<summary><font color='orange'>Show code</font></summary>
 
 {% icodeweb blog lzu-fhc1/G.cpp %}
 
-</details>
-
 ## I - ★★ 平形四边行 ★★
-
-<details open>
-<summary><font color='orange'>Show code</font></summary>
 
 {% icodeweb blog lzu-fhc1/I.cpp %}
 
-</details>
-
 ## J - ★★ 翻滚吧硬币 ★★
-
-<details open>
-<summary><font color='orange'>Show code</font></summary>
 
 {% icodeweb blog lzu-fhc1/J.cpp %}
 
-</details>
-
 ## K - ★★ 快乐苹果树 ★★
-
-<details open>
-<summary><font color='orange'>Show code</font></summary>
 
 {% icodeweb blog lzu-fhc1/K.cpp %}
 
-</details>
-
 ## L - ★★ 星星收集者 ★★
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lzu-fhc1/L.cpp %}
-
-</details>

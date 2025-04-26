@@ -141,57 +141,27 @@ date: 2021-04-16 20:49:47
 
 ### 主程序
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:matlab numanaexp-02/main.m %}
-
-</details>
 
 ### 输入数据检查
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:matlab numanaexp-02/input_check.m %}
-
-</details>
 
 ### Lagrange 插值
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:matlab numanaexp-02/calc_lagrange.m %}
-
-</details>
 
 ### Neville 插值
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:matlab numanaexp-02/calc_neville.m %}
-
-</details>
 
 ### Newton 插值
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:matlab numanaexp-02/calc_newton.m %}
-
-</details>
 
 ### 三次样条插值
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:matlab numanaexp-02/calc_spline3.m %}
-
-</details>
 
 ## 结果讨论和分析
 
@@ -308,9 +278,4 @@ $$
 
 ### MATLAB 程序实现
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:matlab numanaexp-02/calc_lagrange_fast.m %}
-
-</details>

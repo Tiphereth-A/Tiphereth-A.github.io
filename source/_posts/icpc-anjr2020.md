@@ -46,6 +46,7 @@ date: 2020-12-20 20:46:33
 | \*M      | Monster Hunter                    | 树形 DP      |
 
 [^1]: 打\*的是还没写的题
+
 [^2]: 带超链接的是找到了原题或原型
 
 [官方题解](https://zhuanlan.zhihu.com/p/338249705)
@@ -68,11 +69,6 @@ date: 2020-12-20 20:46:33
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
-</details>
-
 ## C - Certain Scientific Railgun
 
 ### 题意简述
@@ -83,11 +79,6 @@ date: 2020-12-20 20:46:33
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
-</details>
-
 ## D - Degree of Spanning Tree
 
 ### 题意简述
@@ -97,11 +88,6 @@ date: 2020-12-20 20:46:33
 ### 复杂度
 
 ### 代码参考
-
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
-</details>
 
 ## E - Evil Coordinate
 
@@ -122,12 +108,7 @@ date: 2020-12-20 20:46:33
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb cpa_cpp title:E Gym/102992E/0.cpp %}
-
-</details>
 
 ## F - Fireworks
 
@@ -153,12 +134,7 @@ $$
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb cpa_cpp title:F Gym/102992F/0.cpp %}
-
-</details>
 
 ## G - Go
 
@@ -169,11 +145,6 @@ $$
 ### 复杂度
 
 ### 代码参考
-
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
-</details>
 
 ## H - Harmonious Rectangle
 
@@ -189,12 +160,7 @@ $$
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb cpa_cpp title:H Gym/102992H/0.cpp %}
-
-</details>
 
 ## I - Interested in Skiing
 
@@ -206,11 +172,6 @@ $$
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
-</details>
-
 ## J - Just Another Game of Stones
 
 ### 题意简述
@@ -220,11 +181,6 @@ $$
 ### 复杂度
 
 ### 代码参考
-
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
-</details>
 
 ## K - K Co-prime Permutation
 
@@ -242,12 +198,7 @@ $$
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb cpa_cpp title:K Gym/102992K/0.cpp %}
-
-</details>
 
 ## L - Let's Play Curling
 
@@ -269,12 +220,7 @@ $$
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb cpa_cpp title:L Gym/102992L/0.cpp %}
-
-</details>
 
 ## M - Monster Hunter
 
@@ -285,8 +231,3 @@ $$
 ### 复杂度
 
 ### 代码参考
-
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
-</details>

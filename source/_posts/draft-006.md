@@ -63,12 +63,7 @@ date: 2021-04-12 19:24:47
 
 ### 问题 1
 
-<details open>
-<summary><font color='orange'>Show code 1</font></summary>
-
 {% icodeweb blog lang:matlab draft-006/q1.m %}
-
-</details>
 
 | RGR           | YGR           | AGR           |
 | ------------- | ------------- | ------------- |
@@ -77,12 +72,7 @@ date: 2021-04-12 19:24:47
 
 ### 问题 2
 
-<details open>
-<summary><font color='orange'>Show code 2</font></summary>
-
 {% icodeweb blog lang:matlab draft-006/q1.m %}
-
-</details>
 
 | RGR           | YGR           | AGR           |
 | ------------- | ------------- | ------------- |

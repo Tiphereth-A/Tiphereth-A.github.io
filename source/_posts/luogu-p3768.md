@@ -111,9 +111,4 @@ $$
 
 ## 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb cpa_cpp title:Luogu_P3768 Luogu/P3768/0.cpp %}
-
-</details>

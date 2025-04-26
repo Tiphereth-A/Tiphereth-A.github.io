@@ -67,45 +67,25 @@ date: 2022-05-19 22:01:18
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp ccpc-hljp2022/A.cpp %}
-
-</details>
 
 ## B - Lovely Fish
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp ccpc-hljp2022/B.cpp %}
-
-</details>
 
 ## C - Tree Division
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp ccpc-hljp2022/C.cpp %}
-
-</details>
 
 ## D - Collision Detector
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp ccpc-hljp2022/D.cpp %}
-
-</details>
 
 ## E - Exclusive Multiplication
 
@@ -140,86 +120,46 @@ $O(n\log n)$
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp ccpc-hljp2022/E.cpp %}
-
-</details>
 
 ## F - 342 and Xiangqi
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp ccpc-hljp2022/F.cpp %}
-
-</details>
 
 ## G - Chevonne's Necklace
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp ccpc-hljp2022/G.cpp %}
-
-</details>
 
 ## H - Kanbun
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp ccpc-hljp2022/H.cpp %}
-
-</details>
 
 ## I - Equal Sum Arrays
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp ccpc-hljp2022/I.cpp %}
-
-</details>
 
 ## J - JOJO's Happy Tree Friends
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp ccpc-hljp2022/J.cpp %}
-
-</details>
 
 ## K - Monkey Joe
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp ccpc-hljp2022/K.cpp %}
-
-</details>
 
 ## L - Let's Swap
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp ccpc-hljp2022/L.cpp %}
-
-</details>

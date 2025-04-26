@@ -253,66 +253,31 @@ $$
 
 ### 主程序
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:matlab numanaexp-05/main.m %}
-
-</details>
 
 ### 输入数据检查
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:matlab numanaexp-05/input_check.m %}
-
-</details>
 
 ### Gauss 顺序消去法
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:matlab numanaexp-05/gauss_basic.m %}
-
-</details>
 
 ### Gauss 列主元消去法
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:matlab numanaexp-05/gauss_advanced.m %}
-
-</details>
 
 ### 平方根法
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:matlab numanaexp-05/sqrt_basic.m %}
-
-</details>
 
 ### 改进平方根法
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:matlab numanaexp-05/sqrt_advanced.m %}
-
-</details>
 
 ### 追赶法
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:matlab numanaexp-05/chase.m %}
-
-</details>
 
 ## 结果讨论和分析
 

@@ -27,12 +27,7 @@ date: 2021-11-01 15:18:10
 
 ## 代码
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp pst-seg-tree/Persistable_seg_tree.hpp %}
-
-</details>
 
 ## 示例
 
@@ -40,18 +35,8 @@ date: 2021-11-01 15:18:10
 
   > 由于 64 位系统下的迭代器大小为 8 字节, 故该模板在部分测试点会 MLE, 解决方案就是把 `index_t` 换成 `uint32_t` 并将内部索引方式改成数组即可
 
-  <details open>
-  <summary><font color='orange'>Show code</font></summary>
-
   {% icodeweb blog lang:cpp pst-seg-tree/Persistable_seg_tree_exp.cpp %}
-
-  </details>
 
   > 附大数据的生成器 (from <https://www.luogu.com.cn/discuss/354067>)
 
-  <details open>
-  <summary><font color='orange'>Show code</font></summary>
-
   {% icodeweb blog lang:cpp pst-seg-tree/data_gen.cpp %}
-
-  </details>

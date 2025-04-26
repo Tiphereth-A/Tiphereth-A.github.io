@@ -54,9 +54,4 @@ $$
 
 ## MATLAB 程序
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:matlab draft-009/cycle_sequence_generator.m %}
-
-</details>

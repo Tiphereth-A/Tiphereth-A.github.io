@@ -72,39 +72,19 @@ date: 2021-11-05 01:01:36
 
 1. 我们需要一个能枚举 $\{a,b,c,d\}^3$ (乘法为 Descartes 积) 的宏定义来枚举所有运算符的情况
 
-   <details open>
-   <summary><font color='orange'>Show code</font></summary>
-
    {% icodeweb blog lang:c luogu-p2277/OPANDS.c %}
-
-   </details>
 
    然后我们需要这样的宏定义来得到每一组运算符
 
-   <details open>
-   <summary><font color='orange'>Show code</font></summary>
-
    {% icodeweb blog lang:c luogu-p2277/RMSEL.c %}
-
-   </details>
 
 1. 我们需要一个能枚举 $\{a,b,c,d\}$ 全排列的宏定义来枚举所有数的情况 (实际上, 因为这样会让编译时间过长甚至让编译器爆栈, 所以这个并没有用上)
 
-   <details open>
-   <summary><font color='orange'>Show code</font></summary>
-
    {% icodeweb blog lang:c luogu-p2277/P4.c %}
-
-   </details>
 
    然后我们需要这样的宏定义来得到每一组数
 
-   <details open>
-   <summary><font color='orange'>Show code</font></summary>
-
    {% icodeweb blog lang:c luogu-p2277/RMSEL4.c %}
-
-   </details>
 
 1. 我们需要枚举 5 种运算方式
 
@@ -118,12 +98,7 @@ date: 2021-11-05 01:01:36
 
    这个写成宏定义就很简单
 
-   <details open>
-   <summary><font color='orange'>Show code</font></summary>
-
    {% icodeweb blog lang:c luogu-p2277/__CALC.c %}
-
-   </details>
 
 接下来就是把这三部分拼接起来就好了
 
@@ -149,9 +124,4 @@ date: 2021-11-05 01:01:36
 
 ## 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb cpa_cpp title:Luogu_P2277 Luogu/P2277/0.cpp %}
-
-</details>

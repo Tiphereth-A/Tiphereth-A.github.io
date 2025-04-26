@@ -28,9 +28,4 @@ date: 2020-07-25 00:19:21
 
 ## 代码
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb cpa_cpp title:LightOJ_1259 LightOJ/1259/0.cpp %}
-
-</details>

@@ -129,39 +129,19 @@ $$
 
 ### 主程序
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:matlab numanaexp-06/main.m %}
-
-</details>
 
 ### Jacobi 迭代法
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:matlab numanaexp-06/jacobi.m %}
-
-</details>
 
 ### Gauss-Seidol 迭代法
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:matlab numanaexp-06/gauss_seidol.m %}
-
-</details>
 
 ### SOR 方法
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:matlab numanaexp-06/sor.m %}
-
-</details>
 
 ## 结果讨论和分析
 

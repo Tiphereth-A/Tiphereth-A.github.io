@@ -128,41 +128,21 @@ $$
 
 ### C++ 程序
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp numanaexp-01/main.cpp %}
-
-</details>
 
 ### MATLAB 程序
 
 #### 主程序
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:matlab numanaexp-01/main.m %}
-
-</details>
 
 #### 计算函数
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:matlab numanaexp-01/calc_fast.m %}
-
-</details>
 
 #### 误差检验函数
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:matlab numanaexp-01/error_judge.m %}
-
-</details>
 
 ## 结果讨论和分析
 

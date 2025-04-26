@@ -44,12 +44,7 @@ date: 2023-09-09 19:07:55
 
 ### D 题的附带代码
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-amcr2021/spfa.cpp %}
-
-</details>
 
 ## 官方题解
 
@@ -63,12 +58,7 @@ date: 2023-09-09 19:07:55
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-amcr2021/A.cpp %}
-
-</details>
 
 ## B - the Matching System
 
@@ -78,12 +68,7 @@ date: 2023-09-09 19:07:55
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-amcr2021/B.cpp %}
-
-</details>
 
 ## C - Laser Trap
 
@@ -93,12 +78,7 @@ date: 2023-09-09 19:07:55
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-amcr2021/C.cpp %}
-
-</details>
 
 ## D - Shortest Path Fast Algorithm
 
@@ -108,12 +88,7 @@ date: 2023-09-09 19:07:55
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-amcr2021/D.cpp %}
-
-</details>
 
 ## E - Pass the Ball!
 
@@ -123,12 +98,7 @@ date: 2023-09-09 19:07:55
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-amcr2021/E.cpp %}
-
-</details>
 
 ## F - Sandpile on Clique
 
@@ -138,12 +108,7 @@ date: 2023-09-09 19:07:55
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-amcr2021/F.cpp %}
-
-</details>
 
 ## G - Cyclic Buffer
 
@@ -153,12 +118,7 @@ date: 2023-09-09 19:07:55
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-amcr2021/G.cpp %}
-
-</details>
 
 ## H - Permutation on Tree
 
@@ -168,12 +128,7 @@ date: 2023-09-09 19:07:55
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-amcr2021/H.cpp %}
-
-</details>
 
 ## I - LCS Spanning Tree
 
@@ -183,12 +138,7 @@ date: 2023-09-09 19:07:55
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-amcr2021/I.cpp %}
-
-</details>
 
 ## J - Colorful Tree
 
@@ -198,12 +148,7 @@ date: 2023-09-09 19:07:55
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-amcr2021/J.cpp %}
-
-</details>
 
 ## K - Link-Cut Tree
 
@@ -213,9 +158,4 @@ date: 2023-09-09 19:07:55
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-amcr2021/K.cpp %}
-
-</details>

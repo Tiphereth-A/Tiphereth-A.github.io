@@ -33,9 +33,4 @@ $$
 
 ## 代码
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb cpa_cpp title:LightOJ_1370 LightOJ/1370/0.cpp %}
-
-</details>

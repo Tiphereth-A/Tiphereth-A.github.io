@@ -40,12 +40,7 @@ date: 2020-12-19 21:51:29
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:py icpc-anjr2020-p/A.py %}
-
-</details>
 
 ## B - Best Grouping
 
@@ -63,12 +58,7 @@ $O(n\log n)$
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-anjr2020-p/B.cpp %}
-
-</details>
 
 ## C - Computer Science Ability Test
 

@@ -123,9 +123,4 @@ $O(m(\log m+\alpha(n))+n^2)$
 
 ## 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp baltoi2016-2/std.cpp %}
-
-</details>

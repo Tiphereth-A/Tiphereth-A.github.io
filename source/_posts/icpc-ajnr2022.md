@@ -56,12 +56,7 @@ date: 2022-12-08 19:08:55
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-ajnr2022/A.cpp %}
-
-</details>
 
 ## B - Torch
 
@@ -71,12 +66,7 @@ date: 2022-12-08 19:08:55
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-ajnr2022/B.cpp %}
-
-</details>
 
 ## C - DFS Order 2
 
@@ -86,12 +76,7 @@ date: 2022-12-08 19:08:55
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-ajnr2022/C.cpp %}
-
-</details>
 
 ## D - Frozen Scoreboard
 
@@ -101,12 +86,7 @@ date: 2022-12-08 19:08:55
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-ajnr2022/D.cpp %}
-
-</details>
 
 ## E - Identical Parity
 
@@ -116,12 +96,7 @@ date: 2022-12-08 19:08:55
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-ajnr2022/E.cpp %}
-
-</details>
 
 ## F - Grid Points
 
@@ -131,12 +106,7 @@ date: 2022-12-08 19:08:55
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-ajnr2022/F.cpp %}
-
-</details>
 
 ## G - Quick Sort
 
@@ -146,12 +116,7 @@ date: 2022-12-08 19:08:55
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-ajnr2022/G.cpp %}
-
-</details>
 
 ## H - Set of Intervals
 
@@ -161,12 +126,7 @@ date: 2022-12-08 19:08:55
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-ajnr2022/H.cpp %}
-
-</details>
 
 ## I - Shortest Path
 
@@ -176,12 +136,7 @@ date: 2022-12-08 19:08:55
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-ajnr2022/I.cpp %}
-
-</details>
 
 ## J - Skills
 
@@ -191,12 +146,7 @@ date: 2022-12-08 19:08:55
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-ajnr2022/J.cpp %}
-
-</details>
 
 ## K - Stack Sort
 
@@ -206,12 +156,7 @@ date: 2022-12-08 19:08:55
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-ajnr2022/K.cpp %}
-
-</details>
 
 ## L - Tree Distance
 
@@ -221,12 +166,7 @@ date: 2022-12-08 19:08:55
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-ajnr2022/L.cpp %}
-
-</details>
 
 ## M - Best Carry Player
 
@@ -236,9 +176,4 @@ date: 2022-12-08 19:08:55
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-ajnr2022/M.cpp %}
-
-</details>

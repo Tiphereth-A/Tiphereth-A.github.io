@@ -26,11 +26,6 @@ tags:
 
 ## 代码
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:java draft-013/Main.java %}
-
-</details>
 
 [^1]: [JDK-8236933](https://www.oracle.com/java/technologies/javase/15-relnote-issues.html#JDK-8236933)

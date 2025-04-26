@@ -101,12 +101,7 @@ $$
 
 ### 参考代码
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb cpa_cpp title:Codeforces_11D CodeForces/11D/0.cpp %}
-
-</details>
 
 ## 简单无向图三元环计数
 
@@ -238,12 +233,7 @@ $$
 
 ### 参考代码
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb cpa_cpp title:Luogu_P1989 Luogu/P1989/0.cpp %}
-
-</details>
 
 ## 简单无向图四元环计数
 
@@ -273,12 +263,7 @@ $O(m\sqrt{m})$
 
 ### 参考代码
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp count-csgr-graph/cntsr4.cpp %}
-
-</details>
 
 ---
 

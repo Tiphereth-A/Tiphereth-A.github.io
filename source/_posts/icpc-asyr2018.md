@@ -51,141 +51,76 @@ date: 2022-11-02 20:33:27
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-asyr2018/A.cpp %}
-
-</details>
 
 ## B - Sequences Generator
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-asyr2018/B.cpp %}
-
-</details>
 
 ## C - Insertion Sort
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-asyr2018/C.cpp %}
-
-</details>
 
 ## D - Diameter of a Tree
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-asyr2018/D.cpp %}
-
-</details>
 
 ## E - The Kouga Ninja Scrolls
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-asyr2018/E.cpp %}
-
-</details>
 
 ## F - Counting Sheep in Ami Dongsuo
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-asyr2018/F.cpp %}
-
-</details>
 
 ## G - Best ACMer Solves the Hardest Problem
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-asyr2018/G.cpp %}
-
-</details>
 
 ## H - Rainbow Graph
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-asyr2018/H.cpp %}
-
-</details>
 
 ## I - Distance Between Sweethearts
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-asyr2018/I.cpp %}
-
-</details>
 
 ## J - How Much Memory Your Code Is Using?
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-asyr2018/J.cpp %}
-
-</details>
 
 ## K - Let the Flames Begin
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-asyr2018/K.cpp %}
-
-</details>
 
 ## L - Machining Disc Rotors
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-asyr2018/L.cpp %}
-
-</details>
 
 ## M - Renaissance Past in Nancy
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-asyr2018/M.cpp %}
-
-</details>

@@ -24,9 +24,4 @@ date: 2022-08-13 10:28:15
 
 ## 代码
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp thpoker/TexasHoldemPoker.hpp %}
-
-</details>

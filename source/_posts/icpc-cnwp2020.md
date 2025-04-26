@@ -258,9 +258,6 @@ ACduck
 
 我们可以构造这样的图
 
-<details open>
-<summary><font color='orange'>Show sample</font></summary>
-
 ```input1
 9 24
 1 3
@@ -289,8 +286,6 @@ ACduck
 1 8
 ```
 
-</details>
-
 画出来是这样的:
 
 ![](s-C-1.webp)
@@ -317,20 +312,12 @@ ACduck
 ### 代码参考
 
 - 正解
-  <details open>
-  <summary><font color='orange'>Show code</font></summary>
 
   {% icodeweb blog lang:cpp icpc-cnwp2020/C0.cpp %}
 
-  </details>
-
 - 乱搞
-  <details open>
-  <summary><font color='orange'>Show code</font></summary>
 
   {% icodeweb blog lang:cpp icpc-cnwp2020/C1.cpp %}
-
-  </details>
 
 ## D - 初春饰利与完美图
 
@@ -391,12 +378,7 @@ YES
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-cnwp2020/D.cpp %}
-
-</details>
 
 ## E - 御坂妹妹的芯片
 
@@ -537,12 +519,7 @@ $$
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-cnwp2020/F.cpp %}
-
-</details>
 
 ## G - 常盘台中学
 
@@ -682,12 +659,7 @@ $1\leq a,b,c\leq 100000$
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-cnwp2020/H.cpp %}
-
-</details>
 
 ## I - 小 P 的烦恼
 
@@ -754,12 +726,7 @@ $(x_1, y_1)$ 中:
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-cnwp2020/I.cpp %}
-
-</details>
 
 ## J - 领地扩充
 
@@ -817,12 +784,7 @@ Eric 喜欢一款游戏, 游戏是在一个长方形的场地上玩. 在游戏�
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-cnwp2020/J.cpp %}
-
-</details>
 
 ## K - Tate 的魔法
 
@@ -876,12 +838,7 @@ $O(n)$ 直接求
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-cnwp2020/K.cpp %}
-
-</details>
 
 ## L - 藤本树与树
 
@@ -968,12 +925,7 @@ $O(n)$ 直接求
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-cnwp2020/L.cpp %}
-
-</details>
 
 ## M - 作曲家
 
@@ -1029,9 +981,4 @@ Jasmine 是一位作曲家, 最近她录制了两首非常受欢迎的歌曲. �
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-cnwp2020/M.cpp %}
-
-</details>

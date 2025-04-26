@@ -80,108 +80,58 @@ date: 2022-06-17 19:07:57
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-atwo2021/A.cpp %}
-
-</details>
 
 ## B - Aliquot Sum
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-atwo2021/B.cpp %}
-
-</details>
 
 ## C - A Sorting Problem
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-atwo2021/C.cpp %}
-
-</details>
 
 ## D - Drunk Passenger
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-atwo2021/D.cpp %}
-
-</details>
 
 ## E - Eatcoin
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:python icpc-atwo2021/E.py %}
-
-</details>
 
 ## F - Flip
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-atwo2021/F.cpp %}
-
-</details>
 
 ## G - Garden Park
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-atwo2021/G.cpp %}
-
-</details>
 
 ## H - A Hard Problem
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-atwo2021/H.cpp %}
-
-</details>
 
 ## I - ICPC Kingdom
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-atwo2021/I.cpp %}
-
-</details>
 
 ## J - JavaScript
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-atwo2021/J.cpp %}
-
-</details>

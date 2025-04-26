@@ -101,9 +101,4 @@ ydc 还给你提供了这道题的所有数据
 
 ## 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb cpa_cpp title:Luogu_P5042 Luogu/P5042/0.cpp %}
-
-</details>

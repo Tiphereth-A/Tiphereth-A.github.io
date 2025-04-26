@@ -120,9 +120,4 @@ $O(\max\{\lg n,\sqrt p\})$
 
 ## 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb cpa_cpp title:Luogu_P4000 Luogu/P4000/0.cpp %}
-
-</details>

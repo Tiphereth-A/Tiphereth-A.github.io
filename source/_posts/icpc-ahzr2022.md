@@ -88,12 +88,7 @@ date: 2022-12-09 19:07:55
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-ahzr2022/A.cpp %}
-
-</details>
 
 ## B - Useful Algorithm
 
@@ -103,12 +98,7 @@ date: 2022-12-09 19:07:55
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-ahzr2022/B.cpp %}
-
-</details>
 
 ## C - No Bug No Game
 
@@ -118,12 +108,7 @@ date: 2022-12-09 19:07:55
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-ahzr2022/C.cpp %}
-
-</details>
 
 ## D - Money Game
 
@@ -133,12 +118,7 @@ date: 2022-12-09 19:07:55
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-ahzr2022/D.cpp %}
-
-</details>
 
 ## E - Oscar is All You Need
 
@@ -148,12 +128,7 @@ date: 2022-12-09 19:07:55
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-ahzr2022/E.cpp %}
-
-</details>
 
 ## F - Da Mi Lao Shi Ai Kan De
 
@@ -163,12 +138,7 @@ date: 2022-12-09 19:07:55
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-ahzr2022/F.cpp %}
-
-</details>
 
 ## G - Subgraph Isomorphism
 
@@ -178,12 +148,7 @@ date: 2022-12-09 19:07:55
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-ahzr2022/G.cpp %}
-
-</details>
 
 ## H - RPG Pro League
 
@@ -193,12 +158,7 @@ date: 2022-12-09 19:07:55
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-ahzr2022/H.cpp %}
-
-</details>
 
 ## I - Guess Cycle Length
 
@@ -208,12 +168,7 @@ date: 2022-12-09 19:07:55
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-ahzr2022/I.cpp %}
-
-</details>
 
 ## J - Painting
 
@@ -223,12 +178,7 @@ date: 2022-12-09 19:07:55
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-ahzr2022/J.cpp %}
-
-</details>
 
 ## K - Master of Both
 
@@ -238,12 +188,7 @@ date: 2022-12-09 19:07:55
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-ahzr2022/K.cpp %}
-
-</details>
 
 ## L - Levenshtein Distance
 
@@ -253,12 +198,7 @@ date: 2022-12-09 19:07:55
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-ahzr2022/L.cpp %}
-
-</details>
 
 ## M - Please Save Pigeland
 
@@ -268,9 +208,4 @@ date: 2022-12-09 19:07:55
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-ahzr2022/M.cpp %}
-
-</details>

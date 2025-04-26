@@ -62,12 +62,7 @@ date: 2023-11-29 19:07:55
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-anjr2023/A.cpp %}
-
-</details>
 
 ## B - Intersection over Union
 
@@ -77,12 +72,7 @@ date: 2023-11-29 19:07:55
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-anjr2023/B.cpp %}
-
-</details>
 
 ## C - Primitive Root
 
@@ -92,12 +82,7 @@ date: 2023-11-29 19:07:55
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-anjr2023/C.cpp %}
-
-</details>
 
 ## D - Red Black Tree
 
@@ -107,12 +92,7 @@ date: 2023-11-29 19:07:55
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-anjr2023/D.cpp %}
-
-</details>
 
 ## E - Extending Distance
 
@@ -122,12 +102,7 @@ date: 2023-11-29 19:07:55
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-anjr2023/E.cpp %}
-
-</details>
 
 ## F - Equivalent Rewriting
 
@@ -137,12 +112,7 @@ date: 2023-11-29 19:07:55
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-anjr2023/F.cpp %}
-
-</details>
 
 ## G - Knapsack
 
@@ -152,12 +122,7 @@ date: 2023-11-29 19:07:55
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-anjr2023/G.cpp %}
-
-</details>
 
 ## H - Puzzle: Question Mark
 
@@ -167,12 +132,7 @@ date: 2023-11-29 19:07:55
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-anjr2023/H.cpp %}
-
-</details>
 
 ## I - Counter
 
@@ -182,12 +142,7 @@ date: 2023-11-29 19:07:55
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-anjr2023/I.cpp %}
-
-</details>
 
 ## J - Suffix Structure
 
@@ -197,12 +152,7 @@ date: 2023-11-29 19:07:55
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-anjr2023/J.cpp %}
-
-</details>
 
 ## K - Grand Finale
 
@@ -212,12 +162,7 @@ date: 2023-11-29 19:07:55
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-anjr2023/K.cpp %}
-
-</details>
 
 ## L - Elevator
 
@@ -227,12 +172,7 @@ date: 2023-11-29 19:07:55
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-anjr2023/L.cpp %}
-
-</details>
 
 ## M - Trapping Rain Water
 
@@ -242,9 +182,4 @@ date: 2023-11-29 19:07:55
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-anjr2023/M.cpp %}
-
-</details>

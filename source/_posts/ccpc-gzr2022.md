@@ -74,12 +74,7 @@ date: 2022-11-16 12:46:33
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp ccpc-gzr2022/A.cpp %}
-
-</details>
 
 ## B - Ayano and sequences
 
@@ -89,12 +84,7 @@ date: 2022-11-16 12:46:33
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp ccpc-gzr2022/B.cpp %}
-
-</details>
 
 ## C - Customs Controls 2
 
@@ -120,12 +110,7 @@ $O(m\alpha(n)+n)$
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp ccpc-gzr2022/C.cpp %}
-
-</details>
 
 ## D - Digits
 
@@ -135,23 +120,13 @@ $O(m\alpha(n)+n)$
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp ccpc-gzr2022/D.cpp %}
-
-</details>
 
 ## E - Elevator
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp ccpc-gzr2022/E.cpp %}
-
-</details>
 
 ## F - Equations
 
@@ -161,12 +136,7 @@ $O(m\alpha(n)+n)$
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp ccpc-gzr2022/F.cpp %}
-
-</details>
 
 ## G - Game
 
@@ -176,23 +146,13 @@ $O(m\alpha(n)+n)$
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp ccpc-gzr2022/G.cpp %}
-
-</details>
 
 ## H - GameX
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp ccpc-gzr2022/H.cpp %}
-
-</details>
 
 ## I - Infection
 
@@ -202,12 +162,7 @@ $O(m\alpha(n)+n)$
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp ccpc-gzr2022/I.cpp %}
-
-</details>
 
 ## J - Math Exam
 
@@ -217,12 +172,7 @@ $O(m\alpha(n)+n)$
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp ccpc-gzr2022/J.cpp %}
-
-</details>
 
 ## K - Middle Point Graph
 
@@ -236,23 +186,13 @@ $O(m\alpha(n)+n)$
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp ccpc-gzr2022/K.cpp %}
-
-</details>
 
 ## L - Station of Fate
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp ccpc-gzr2022/L.cpp %}
-
-</details>
 
 ## M - XOR Sum
 
@@ -262,9 +202,4 @@ $O(m\alpha(n)+n)$
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp ccpc-gzr2022/M.cpp %}
-
-</details>

@@ -85,12 +85,7 @@ date: 2022-11-20 22:00:18
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp ccpc-whr2021/A.cpp %}
-
-</details>
 
 ## B - Subset
 
@@ -100,12 +95,7 @@ date: 2022-11-20 22:00:18
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp ccpc-whr2021/B.cpp %}
-
-</details>
 
 ## C - Assign or Multiply
 
@@ -115,12 +105,7 @@ date: 2022-11-20 22:00:18
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp ccpc-whr2021/C.cpp %}
-
-</details>
 
 ## D - Period
 
@@ -130,12 +115,7 @@ date: 2022-11-20 22:00:18
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp ccpc-whr2021/D.cpp %}
-
-</details>
 
 ## E - CHASE!
 
@@ -145,12 +125,7 @@ date: 2022-11-20 22:00:18
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp ccpc-whr2021/E.cpp %}
-
-</details>
 
 ## F - Stone
 
@@ -160,12 +135,7 @@ date: 2022-11-20 22:00:18
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp ccpc-whr2021/F.cpp %}
-
-</details>
 
 ## G - Desserts
 
@@ -175,12 +145,7 @@ date: 2022-11-20 22:00:18
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp ccpc-whr2021/G.cpp %}
-
-</details>
 
 ## H - City Safety
 
@@ -190,12 +155,7 @@ date: 2022-11-20 22:00:18
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp ccpc-whr2021/H.cpp %}
-
-</details>
 
 ## I - Distance
 
@@ -205,12 +165,7 @@ date: 2022-11-20 22:00:18
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp ccpc-whr2021/I.cpp %}
-
-</details>
 
 ## J - Circular Billiard Table
 
@@ -220,12 +175,7 @@ date: 2022-11-20 22:00:18
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp ccpc-whr2021/J.cpp %}
-
-</details>
 
 ## K - Tiny Stars
 
@@ -235,12 +185,7 @@ date: 2022-11-20 22:00:18
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp ccpc-whr2021/K.cpp %}
-
-</details>
 
 ## L - Shake Hands
 
@@ -250,12 +195,7 @@ date: 2022-11-20 22:00:18
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp ccpc-whr2021/L.cpp %}
-
-</details>
 
 ## M - 810975
 
@@ -265,9 +205,4 @@ date: 2022-11-20 22:00:18
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp ccpc-whr2021/M.cpp %}
-
-</details>

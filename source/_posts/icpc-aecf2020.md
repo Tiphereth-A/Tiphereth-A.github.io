@@ -66,12 +66,7 @@ date: 2022-05-10 19:07:57
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-aecf2020/A.cpp %}
-
-</details>
 
 ## B - Rectangle Flip 2
 
@@ -85,12 +80,7 @@ date: 2022-05-10 19:07:57
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-aecf2020/B.cpp %}
-
-</details>
 
 ## C - Random Shuffle
 
@@ -104,12 +94,7 @@ date: 2022-05-10 19:07:57
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-aecf2020/C.cpp %}
-
-</details>
 
 ## D - City Brain
 
@@ -123,12 +108,7 @@ date: 2022-05-10 19:07:57
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-aecf2020/D.cpp %}
-
-</details>
 
 ## E - Tube Master III
 
@@ -142,12 +122,7 @@ Slitherlink, 连边时有代价, 问最小代价
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-aecf2020/E.cpp %}
-
-</details>
 
 ## F - Rooks
 
@@ -167,12 +142,7 @@ Slitherlink, 连边时有代价, 问最小代价
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-aecf2020/F.cpp %}
-
-</details>
 
 ## G - Prof. Pang's sequence
 
@@ -186,12 +156,7 @@ Slitherlink, 连边时有代价, 问最小代价
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-aecf2020/G.cpp %}
-
-</details>
 
 ## H - Prof. Pang Earning Aus
 
@@ -205,12 +170,7 @@ Slitherlink, 连边时有代价, 问最小代价
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-aecf2020/H.cpp %}
-
-</details>
 
 ## I - Plants vs Zombies
 
@@ -224,12 +184,7 @@ Slitherlink, 连边时有代价, 问最小代价
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-aecf2020/I.cpp %}
-
-</details>
 
 ## J - Circle
 
@@ -245,12 +200,7 @@ Slitherlink, 连边时有代价, 问最小代价
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-aecf2020/J.cpp %}
-
-</details>
 
 ## K - Allin
 
@@ -260,12 +210,7 @@ Slitherlink, 连边时有代价, 问最小代价
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-aecf2020/K.cpp %}
-
-</details>
 
 ## L - Square
 
@@ -289,12 +234,7 @@ $O(n\log^2{m})$, 其中 $m$ 为 $\{a_n\}$ 的最大值
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-aecf2020/L.cpp %}
-
-</details>
 
 ## M - Fillomino
 
@@ -308,9 +248,4 @@ $O(n\log^2{m})$, 其中 $m$ 为 $\{a_n\}$ 的最大值
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp icpc-aecf2020/M.cpp %}
-
-</details>

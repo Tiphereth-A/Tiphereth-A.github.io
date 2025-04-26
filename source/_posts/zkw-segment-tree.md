@@ -177,12 +177,7 @@ orz
 
 **单点修改+区间查询**完结, 整理一下代码:
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp zkw-segment-tree/seg_zkw_singlem_rangeq.cpp %}
-
-</details>
 
 #### 区间修改+区间查询
 
@@ -236,12 +231,7 @@ orz
 
 区间修改+区间查询告一段落, 整理一下代码:
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp zkw-segment-tree/seg_zkw_rangem_rangeq1.cpp %}
-
-</details>
 
 ##### 区间修改+区间查询的空间优化
 

@@ -74,12 +74,7 @@ date: 2022-11-21 12:46:33
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp ccpc-myr2022/A.cpp %}
-
-</details>
 
 ## B - Call Me Call Me
 
@@ -89,12 +84,7 @@ date: 2022-11-21 12:46:33
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp ccpc-myr2022/B.cpp %}
-
-</details>
 
 ## C - Catch You Catch Me
 
@@ -104,12 +94,7 @@ date: 2022-11-21 12:46:33
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp ccpc-myr2022/C.cpp %}
-
-</details>
 
 ## D - Gambler’s Ruin
 
@@ -119,12 +104,7 @@ date: 2022-11-21 12:46:33
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp ccpc-myr2022/D.cpp %}
-
-</details>
 
 ## E - Hammer to Fall
 
@@ -134,12 +114,7 @@ date: 2022-11-21 12:46:33
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp ccpc-myr2022/E.cpp %}
-
-</details>
 
 ## F - Infinite Strife
 
@@ -149,12 +124,7 @@ date: 2022-11-21 12:46:33
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp ccpc-myr2022/F.cpp %}
-
-</details>
 
 ## G - Let Them Eat Cake
 
@@ -164,12 +134,7 @@ date: 2022-11-21 12:46:33
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp ccpc-myr2022/G.cpp %}
-
-</details>
 
 ## H - Life is Hard and Undecidable, but...
 
@@ -179,12 +144,7 @@ date: 2022-11-21 12:46:33
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp ccpc-myr2022/H.cpp %}
-
-</details>
 
 ## I - Mental Abuse To Humans
 
@@ -194,12 +154,7 @@ date: 2022-11-21 12:46:33
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp ccpc-myr2022/I.cpp %}
-
-</details>
 
 ## J - Middle Race
 
@@ -209,12 +164,7 @@ date: 2022-11-21 12:46:33
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp ccpc-myr2022/J.cpp %}
-
-</details>
 
 ## K - Pattern Matching in A Minor “Low Space”
 
@@ -224,12 +174,7 @@ date: 2022-11-21 12:46:33
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp ccpc-myr2022/K.cpp %}
-
-</details>
 
 ## L - Por Una Cabeza
 
@@ -239,12 +184,7 @@ date: 2022-11-21 12:46:33
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp ccpc-myr2022/L.cpp %}
-
-</details>
 
 ## M - Rock-Paper-Scissors Pyramid
 
@@ -254,9 +194,4 @@ date: 2022-11-21 12:46:33
 
 ### 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:cpp ccpc-myr2022/M.cpp %}
-
-</details>

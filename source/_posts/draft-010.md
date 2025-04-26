@@ -23,12 +23,7 @@ date: 2021-11-04 20:21:45
 
 ## 一些工具宏
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:c draft-010/SEL4.c %}
-
-</details>
 
 其中 `SEL4` 是取出前 4 个元素, `RM4` 是删除前 4 个元素
 
@@ -38,19 +33,11 @@ date: 2021-11-04 20:21:45
 
 首先我们定义这样的宏
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:c draft-010/P4.c %}
-
-</details>
 
 则 `P4(a, b, c, d)` 即为 `a, b, c, d` 的全排列
 
 效果如下 (为了方便查看, 每 4 个元素后均插入了 `|`, 每 12 个元素后均插入了换行符)
-
-<details open>
-<summary><font color='orange'>Show code</font></summary>
 
 ```text
 P4(a, b, c, d)
@@ -65,36 +52,21 @@ d, a, b, c, | a, d, b, c, | a, b, d, c,
 b, a, d, c, | b, d, a, c, | d, b, a, c
 ```
 
-</details>
-
 如何得到 4 个元素中取 3 个元素得到的所有排列呢
 
 只需要稍加修改
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:c draft-010/P4_3.c %}
-
-</details>
 
 ## 生成 Cartesian 积
 
 这个就相对好理解一些
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb blog lang:c draft-010/CPROD3_4.c %}
-
-</details>
 
 `CPROD3_4(a, b, c, d)` 即为 $(a,b,c,d)\oplus(a,b,c,d)\oplus(a,b,c,d)$
 
 效果如下 (为了方便查看, 每 3 个元素后均插入了 `|`, 每 12 个元素后均插入了换行符)
-
-<details open>
-<summary><font color='orange'>Show code</font></summary>
 
 ```text
 CPROD3_4(a, b, c, d)
@@ -116,5 +88,3 @@ a, b, d, | b, b, d, | c, b, d, | d, b, d,
 a, c, d, | b, c, d, | c, c, d, | d, c, d,
 a, d, d, | b, d, d, | c, d, d, | d, d, d
 ```
-
-</details>

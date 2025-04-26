@@ -272,9 +272,4 @@ $$
 
 ## 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb cpa_py title:Luogu_P3923 Luogu/P3923/0.py %}
-
-</details>

@@ -98,9 +98,4 @@ $O(n\log n)$
 
 ## 代码参考
 
-<details open>
-<summary><font color='orange'>Show code</font></summary>
-
 {% icodeweb cpa_cpp title:Luogu_P3704 Luogu/P3704/0.cpp %}
-
-</details>
