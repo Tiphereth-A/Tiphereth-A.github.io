@@ -84,8 +84,6 @@ date: 2021-10-24 20:15:45
 
 {% icodeweb blog lzu-fhc1/E.cpp %}
 
-</details>
-
 ## G - ★★ 糖果魔法阵 ★★
 
 {% icodeweb blog lzu-fhc1/G.cpp %}

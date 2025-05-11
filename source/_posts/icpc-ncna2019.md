@@ -414,23 +414,23 @@ $$
 
 令 $M_s=\sum_{i=1}^{s-1}a_ia_{s-i}\bmod10$, 则我们可以根据 $2a_0$ 和 $M_s$ 的值来确定 $a_s$ 的值, 具体如下表:
 
-```plaintext
-+----------+----------------------------------+
-|          |                M_s               |
-|    a_s   +------+------+------+------+------+
-|          |   0  |   2  |   4  |   6  |   8  |
-+------+---+------+------+------+------+------+
-|      | 0 | 0..9 |  --  |  --  |  --  |  --  |
-|      +---+------+------+------+------+------+
-|      | 2 | 0, 5 | 1, 6 | 2, 7 | 3, 8 | 4, 9 |
-|      +---+------+------+------+------+------+
-| 2a_0 | 4 | 0, 5 | 3, 8 | 1, 6 | 4, 9 | 2, 7 |
-|      +---+------+------+------+------+------+
-|      | 6 | 0, 5 | 2, 7 | 4, 9 | 1, 6 | 3, 8 |
-|      +---+------+------+------+------+------+
-|      | 8 | 0, 5 | 4, 9 | 3, 8 | 2, 7 | 1, 6 |
-+------+---+------+------+------+------+------+
-```
+<!-- prettier-ignore-start -->
++------------+----------------------------------+
+| $a_s$      | $M_s$                            |
+|            +------+------+------+------+------+
+|            | 0    | 2    | 4    | 6    | 8    |
++--------+---+------+------+------+------+------+
+| $2a_0$ | 0 | 0..9 |  --  |  --  |  --  |  --  |
+|        +---+------+------+------+------+------+
+|        | 2 | 0, 5 | 1, 6 | 2, 7 | 3, 8 | 4, 9 |
+|        +---+------+------+------+------+------+
+|        | 4 | 0, 5 | 3, 8 | 1, 6 | 4, 9 | 2, 7 |
+|        +---+------+------+------+------+------+
+|        | 6 | 0, 5 | 2, 7 | 4, 9 | 1, 6 | 3, 8 |
+|        +---+------+------+------+------+------+
+|        | 8 | 0, 5 | 4, 9 | 3, 8 | 2, 7 | 1, 6 |
++--------+---+------+------+------+------+------+
+<!-- prettier-ignore-end -->
 
 所以我们在任何一层枚举的 $a_i$ 绝大多数情况下均不会超过 $2$ 个, 唯一需要枚举 $10$ 个的情况就是 $2a_0$ 和 $M_s$ 均为 $0$ 的情况, 容易得知这种情况不会密集出现
 
@@ -491,9 +491,7 @@ $$
 
 <div style="width:50.00%" class="illustration">
   <img src="D-1.webp" alt="">
-  <div class="description">
-    illustration by Larry Pyeatt
-  </div>
+  <div class="description">illustration by Larry Pyeatt</div>
 </div>
 
 Your friend has secretly picked $N$ consecutive positive integers between $1$ and $100$, and wants you to guess if their sum is even or odd
@@ -621,10 +619,7 @@ Write out on one line, separated by spaces, the lexicographically smallest subse
 ## F - Pulling Their Weight
 
 <div style="width:30.00%" class="illustration"><img src="F-1.webp" alt="">
-  <div class="description">
-    <a href="https://en.wikipedia.org/wiki/File:American_bison_k5680-1.jpg">Buffalo</a>, <a href="https://commons.wikimedia.org/wiki/File:Water_Vole_(6038169781).jpg">
-    vole</a>, and <a href="https://commons.wikimedia.org/wiki/File:Miniature_schnauzer.jpg">schnauzer</a>. Original images from Wikipedia.
-  </div>
+  <div class="description"><a href="https://en.wikipedia.org/wiki/File:American_bison_k5680-1.jpg">Buffalo</a>, <a href="https://commons.wikimedia.org/wiki/File:Water_Vole_(6038169781).jpg">vole</a>, and <a href="https://commons.wikimedia.org/wiki/File:Miniature_schnauzer.jpg">schnauzer</a>. Original images from Wikipedia.</div>
 </div>
 
 To save money, Santa Claus has started hiring other animals besides reindeer to pull his sleigh via short term 'gig' contracts. As a result, the actual animals that show up to pull his sleigh for any given trip can vary greatly in size
@@ -635,7 +630,7 @@ To prevent such accidents in the future, Santa needs to divide the animals for a
 
 ### Input
 
-Input describes a list of animals' weights. The first line contains an integer $m (2≤m≤10^5$), indicating the number of animals. The next $m$ lines each have a positive integer. These are the weights of the animals (in ounces). Animals weighing more than $20000$ ounces are too big to pull the sleigh so no given weight exceeds this maximum
+Input describes a list of animals' weights. The first line contains an integer $m (2≤m≤10^5)$, indicating the number of animals. The next $m$ lines each have a positive integer. These are the weights of the animals (in ounces). Animals weighing more than $20000$ ounces are too big to pull the sleigh so no given weight exceeds this maximum
 
 ### Output
 
@@ -713,10 +708,7 @@ $O(\max\{n,A\})$
 
 <div style="width:40.00%" class="illustration">
   <img src="G-1.webp" alt="">
-  <div class="description">
-    The probability of <span class="katex"><span class="mord mathdefault">n</span></span>
-    unique birthdays among <span class="katex"><span class="mord mathdefault">n</span></span> people.
-  </div>
+  <div class="description">The probability of $n$ unique birthdays among $n$ people.</div>
 </div>
 
 The Birthday Paradox is the name given to the surprising fact that if there are just $23$ people in a group, there is a greater than $50\%$ chance that a pair of them share the same birthday. The underlying assumptions for this are that all birthdays are equally likely (which isn't quite true), the year has exactly $365$ days (which also isn't true), and the people in the group are uniformly randomly selected (which is a somewhat strange premise). For this problem, we'll accept these assumptions
@@ -901,10 +893,7 @@ Each city in Treeland has its own tax on prizes: $t_i$. Let $d_{u,v}$ be the sum
 <div class="figure">
   <center>
     <img src="I-2.webp" alt="" style="width:70.00%">
-    <div class="caption">
-      <b>Figure 1</b>: The map of Treeland corresponding to the
-      first sample input.
-    </div>
+    <div class="caption"><b>Figure 1</b>: The map of Treeland corresponding to the first sample input.</div>
   </center>
 </div>
 
