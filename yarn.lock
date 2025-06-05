@@ -976,10 +976,10 @@ hexo-util@^3.0.1, hexo-util@^3.3.0:
     prismjs "^1.29.0"
     strip-indent "^3.0.0"
 
-hexo-word-counter@^0.2.0:
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/hexo-word-counter/-/hexo-word-counter-0.2.0.tgz#109ec89f339ee38d4ea8252b2f41cd0e585bc8c6"
-  integrity sha512-cHFGjynprFsSrJoYEi7ar2peoavjTy7ZBDf/bQ0doXocL/ZjR42aMIcKtTi2A64KLvyTqzyb2mdKADCeclhCpQ==
+hexo-word-counter@^0.2.1:
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/hexo-word-counter/-/hexo-word-counter-0.2.1.tgz#3e5b50bb74c32d6a39ab801c4c29b0a5500af1c7"
+  integrity sha512-LkdXM9SykbVzZBGhCrYOonb/4FrNCQhVwnigt7pkVSa43Zejq3+VsG0kYmOZxDVlBmNCD1iokF6OZ3d6cYRa1Q==
   dependencies:
     cargo-cp-artifact "^0.1"
 
