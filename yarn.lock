@@ -759,13 +759,13 @@ hexo-pagination@3.0.0:
   resolved "https://registry.yarnpkg.com/hexo-pagination/-/hexo-pagination-3.0.0.tgz#b98b050bbddff25ae646e3d00ad607ac6ae77ea7"
   integrity sha512-8oo1iozloZo7TojPVYg4IxL3SJKCBdSJ908fTlIxIK7TWJIKdYnQlW31+12DBJ0NhVZA/lZisPObGF08wT8fKw==
 
-hexo-pangu@^0.3.1:
-  version "0.3.1"
-  resolved "https://registry.yarnpkg.com/hexo-pangu/-/hexo-pangu-0.3.1.tgz#4c624ee213da520bf5d4659f806e90b6ed0b131a"
-  integrity sha512-9yx3hWxKIsMfh/uyCk/HXaGlQID57C0Ebj/Vt4BTfqZU7RqaHiaYA2jEswW0rM9+cpK10Rx0McnvSJkNa6WGJg==
+hexo-pangu@^0.3.2:
+  version "0.3.2"
+  resolved "https://registry.yarnpkg.com/hexo-pangu/-/hexo-pangu-0.3.2.tgz#c8de8ce6c6d35745708ba7be62f4eebbfb8179f8"
+  integrity sha512-owFKUzivY/akSf/s3DT2f2uPW+PrCLoXNOOX8/ZSne/j3NHFZmNoyarmzwuPC70avvDJj9IB4abx55UNc2UZLQ==
   dependencies:
     jsdom "^26.0.0"
-    pangu "^5.0.0"
+    pangu "^6.0.0"
 
 hexo-renderer-pandoc@^0.5.0:
   version "0.5.0"
@@ -1348,10 +1348,10 @@ open@^8.0.9:
     is-docker "^2.1.1"
     is-wsl "^2.2.0"
 
-pangu@^5.0.0:
-  version "5.1.1"
-  resolved "https://registry.yarnpkg.com/pangu/-/pangu-5.1.1.tgz#7d96818e97aae2583c0ca5bca7db02d7d49f817c"
-  integrity sha512-n18qyrw0IJv60G8ak2ilsRuA3jTDKDjLpwQmCbiuHI251rc3SSfUc/K+j4FfBJJG3mCSbdGNAidGaa0Y5Gobyg==
+pangu@^6.0.0:
+  version "6.1.2"
+  resolved "https://registry.yarnpkg.com/pangu/-/pangu-6.1.2.tgz#0a84921942003fd43819d18403aa55aef4a75258"
+  integrity sha512-I0ExaL2FvTrXytp4/AR9s0MgP72hO2hiJH5G8ksUB/WwVA+0skiqml+ZIZfe8vHyph7ZpAAE1ktMF5gY1Tg/MQ==
 
 parse5@^7.2.1:
   version "7.3.0"
