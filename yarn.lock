@@ -1058,10 +1058,10 @@ isexe@^2.0.0:
   resolved "https://registry.yarnpkg.com/isexe/-/isexe-2.0.0.tgz#e8fbf374dc556ff8947a10dcb0572d633f2cfa10"
   integrity sha512-RHxMLp9lnKHGHRng9QFhRCMbYAcVpn69smSGcq3f36xjgVVWThj4qqLbTLlq7Ssj8B+fIQ1EuCEGI2lKsyQeIw==
 
-java-parser@2.3.4:
-  version "2.3.4"
-  resolved "https://registry.yarnpkg.com/java-parser/-/java-parser-2.3.4.tgz#61e1b1190c9ea7af1563943cbfa1e716b7f4c981"
-  integrity sha512-5fnUDL2AUYX7gs6YlfyVmvq+bFL+HlSBE+MdPdUsfaE898KObdu9aafJCKTJIzXi2IF+P/RiCA5kvGc0msxhYA==
+java-parser@3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/java-parser/-/java-parser-3.0.1.tgz#f024163a3db8e6b36017a85f3ad5a03b46797df4"
+  integrity sha512-sDIR7u9b7O2JViNUxiZRhnRz7URII/eE7g2B+BmGxDeS6Ex3OYAcCyz5oh0H4LQ+hL/BS8OJTz8apMy9xtGmrQ==
   dependencies:
     chevrotain "11.0.3"
     chevrotain-allstar "0.3.1"
@@ -1398,13 +1398,12 @@ picomatch@^2.0.4, picomatch@^2.2.1, picomatch@^2.3.1:
   resolved "https://registry.yarnpkg.com/picomatch/-/picomatch-2.3.1.tgz#3ba3833733646d9d3e4995946c1365a67fb07a42"
   integrity sha512-JU3teHTNjmE2VCGFzuY8EXzCDVwEqB2a8fsIvwaStHhAWJEeVd1o1QD80CU6+ZdEXXSLbSsuLwJjkCBWqRQUVA==
 
-prettier-plugin-java@^2.6.8:
-  version "2.6.8"
-  resolved "https://registry.yarnpkg.com/prettier-plugin-java/-/prettier-plugin-java-2.6.8.tgz#6f6928806d7b2124aac6afc8904b0ef3028e7e9f"
-  integrity sha512-bHfkGld8uRlCiEy//nqJmD4RAzMEZNZW+hZ+8Lo89CaKtBa6ZL8OkkKZKlp1/OwcpcePsRYOUhh/YlQ8QeJHfw==
+prettier-plugin-java@^2.7.1:
+  version "2.7.1"
+  resolved "https://registry.yarnpkg.com/prettier-plugin-java/-/prettier-plugin-java-2.7.1.tgz#b7b9bbab4ecd7d661af11f0e20b40bcab8bb6d61"
+  integrity sha512-e03KWvC05b3L20t+i/iPlqyivH4WSBK5XQC4buwdfz+xQVyMZzG0zRIz1Tl1wPU/m94HDiZVdldu2y+XKCf3DQ==
   dependencies:
-    java-parser "2.3.4"
-    lodash "4.17.21"
+    java-parser "3.0.1"
 
 prettier@^3.6.2:
   version "3.6.2"
