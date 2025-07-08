@@ -759,13 +759,13 @@ hexo-pagination@3.0.0:
   resolved "https://registry.yarnpkg.com/hexo-pagination/-/hexo-pagination-3.0.0.tgz#b98b050bbddff25ae646e3d00ad607ac6ae77ea7"
   integrity sha512-8oo1iozloZo7TojPVYg4IxL3SJKCBdSJ908fTlIxIK7TWJIKdYnQlW31+12DBJ0NhVZA/lZisPObGF08wT8fKw==
 
-hexo-pangu@^0.3.2:
-  version "0.3.2"
-  resolved "https://registry.yarnpkg.com/hexo-pangu/-/hexo-pangu-0.3.2.tgz#c8de8ce6c6d35745708ba7be62f4eebbfb8179f8"
-  integrity sha512-owFKUzivY/akSf/s3DT2f2uPW+PrCLoXNOOX8/ZSne/j3NHFZmNoyarmzwuPC70avvDJj9IB4abx55UNc2UZLQ==
+hexo-pangu@^0.4.0:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/hexo-pangu/-/hexo-pangu-0.4.0.tgz#6eab03e44a5174cbf1b77a44a1aaa730e1f2e396"
+  integrity sha512-UQjcJWQsfILKsFtuYDp+3jEPERiBB7h/AxueUDWIG+YlHtKDFUU98BEOcOTxYVyFH8W2644EURa4SyQbGvLE8g==
   dependencies:
-    jsdom "^26.0.0"
-    pangu "^6.0.0"
+    jsdom "^26.1.0"
+    pangu "^7.2.0"
 
 hexo-renderer-pandoc@^0.5.0:
   version "0.5.0"
@@ -1089,7 +1089,7 @@ js-yaml@^3.13.1:
     argparse "^1.0.7"
     esprima "^4.0.0"
 
-jsdom@^26.0.0:
+jsdom@^26.1.0:
   version "26.1.0"
   resolved "https://registry.yarnpkg.com/jsdom/-/jsdom-26.1.0.tgz#ab5f1c1cafc04bd878725490974ea5e8bf0c72b3"
   integrity sha512-Cvc9WUhxSMEo4McES3P7oK3QaXldCfNWp7pl2NNeiIFlCoLr3kfq9kb1fxftiwk1FLV7CvpvDfonxtzUDeSOPg==
@@ -1348,10 +1348,10 @@ open@^8.0.9:
     is-docker "^2.1.1"
     is-wsl "^2.2.0"
 
-pangu@^6.0.0:
-  version "6.1.2"
-  resolved "https://registry.yarnpkg.com/pangu/-/pangu-6.1.2.tgz#0a84921942003fd43819d18403aa55aef4a75258"
-  integrity sha512-I0ExaL2FvTrXytp4/AR9s0MgP72hO2hiJH5G8ksUB/WwVA+0skiqml+ZIZfe8vHyph7ZpAAE1ktMF5gY1Tg/MQ==
+pangu@^7.2.0:
+  version "7.2.0"
+  resolved "https://registry.yarnpkg.com/pangu/-/pangu-7.2.0.tgz#6cdf753941b84cb7754a92664c9164fc482b68f2"
+  integrity sha512-ak81fYnTD36UvRxp6yNmCyV8T/s9dtv/OS9LjTNwh3TMo5i1OhtLmFDxyw1rTZWAnfrj/00gtl883+RE2r+4tA==
 
 parse5@^7.2.1:
   version "7.3.0"
