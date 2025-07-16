@@ -1398,10 +1398,10 @@ picomatch@^2.0.4, picomatch@^2.2.1, picomatch@^2.3.1:
   resolved "https://registry.yarnpkg.com/picomatch/-/picomatch-2.3.1.tgz#3ba3833733646d9d3e4995946c1365a67fb07a42"
   integrity sha512-JU3teHTNjmE2VCGFzuY8EXzCDVwEqB2a8fsIvwaStHhAWJEeVd1o1QD80CU6+ZdEXXSLbSsuLwJjkCBWqRQUVA==
 
-prettier-plugin-java@^2.7.1:
-  version "2.7.1"
-  resolved "https://registry.yarnpkg.com/prettier-plugin-java/-/prettier-plugin-java-2.7.1.tgz#b7b9bbab4ecd7d661af11f0e20b40bcab8bb6d61"
-  integrity sha512-e03KWvC05b3L20t+i/iPlqyivH4WSBK5XQC4buwdfz+xQVyMZzG0zRIz1Tl1wPU/m94HDiZVdldu2y+XKCf3DQ==
+prettier-plugin-java@^2.7.3:
+  version "2.7.3"
+  resolved "https://registry.yarnpkg.com/prettier-plugin-java/-/prettier-plugin-java-2.7.3.tgz#8242f1366d79f24f9ba769cfbdc533d87f2709e9"
+  integrity sha512-fZfZRNDSvgLXQSHjQkXaSCLgbA9aHs71EH7RZP8IhJXUezwvWHwqRtd4131+r/zQq0QrjmMJ0ANJvLmhCY31lw==
   dependencies:
     java-parser "3.0.1"
 
