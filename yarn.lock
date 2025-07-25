@@ -759,13 +759,13 @@ hexo-pagination@3.0.0:
   resolved "https://registry.yarnpkg.com/hexo-pagination/-/hexo-pagination-3.0.0.tgz#b98b050bbddff25ae646e3d00ad607ac6ae77ea7"
   integrity sha512-8oo1iozloZo7TojPVYg4IxL3SJKCBdSJ908fTlIxIK7TWJIKdYnQlW31+12DBJ0NhVZA/lZisPObGF08wT8fKw==
 
-hexo-pangu@^0.4.0:
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/hexo-pangu/-/hexo-pangu-0.4.0.tgz#6eab03e44a5174cbf1b77a44a1aaa730e1f2e396"
-  integrity sha512-UQjcJWQsfILKsFtuYDp+3jEPERiBB7h/AxueUDWIG+YlHtKDFUU98BEOcOTxYVyFH8W2644EURa4SyQbGvLE8g==
+hexo-pangu@^0.4.1:
+  version "0.4.1"
+  resolved "https://registry.yarnpkg.com/hexo-pangu/-/hexo-pangu-0.4.1.tgz#ff65ded0a5123ed179c705721946c90d84ed3664"
+  integrity sha512-LE+hkkCadtoUCoNA3dkhladDKljmhc1rxTGNpdhtVKSVZJ+yc1DFnoxa7aPxMMgmQUw1iQtI+gyJZggMTAeTOg==
   dependencies:
     jsdom "^26.1.0"
-    pangu "^7.2.0"
+    pangu "7.2.0"
 
 hexo-renderer-pandoc@^0.5.0:
   version "0.5.0"
@@ -1348,7 +1348,7 @@ open@^8.0.9:
     is-docker "^2.1.1"
     is-wsl "^2.2.0"
 
-pangu@^7.2.0:
+pangu@7.2.0:
   version "7.2.0"
   resolved "https://registry.yarnpkg.com/pangu/-/pangu-7.2.0.tgz#6cdf753941b84cb7754a92664c9164fc482b68f2"
   integrity sha512-ak81fYnTD36UvRxp6yNmCyV8T/s9dtv/OS9LjTNwh3TMo5i1OhtLmFDxyw1rTZWAnfrj/00gtl883+RE2r+4tA==
