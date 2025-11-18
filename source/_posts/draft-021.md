@@ -26,7 +26,7 @@ date: 2025-02-25 18:19:37
 
 撞车了
 
-为什么会这样呢? 答案在于部分模板特化的 [匹配规则](https://en.cppreference.com/w/cpp/language/partial_specialization#Partial_ordering), 简单来说, 编译器不能确定你的重载和 `<string>` 里的重载哪个更特殊, 画成 Hasse 图是这样的:
+为什么会这样呢? 答案在于部分模板特化的 [匹配规则](https://cppreference.com/w/cpp/language/function_template.html#Function_template_overloading), 简单来说, 编译器不能确定你的重载和 `<string>` 里的重载哪个更特殊, 画成 Hasse 图是这样的:
 
 ![](fig1.svg)
 
@@ -38,4 +38,5 @@ date: 2025-02-25 18:19:37
 
 ## 参考资料
 
-- [Partial template specialization - cppreference.com](https://en.cppreference.com/w/cpp/language/partial_specialization)
+- [Function template - cppreference.com](https://cppreference.com/w/cpp/language/function_template.html)
+- [Partial template specialization - cppreference.com](https://cppreference.com/w/cpp/language/partial_specialization.html)
