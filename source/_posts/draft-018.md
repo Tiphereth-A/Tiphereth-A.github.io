@@ -13,7 +13,7 @@ tags:
 为了方便写高维数组以及初始化, 就简单封了一个结构体
 
 {% note warning %}
-<https://cplib.tifa-233.com/src/code/util/ndvec.hpp> 存放了笔者对该算法/数据结构的最新实现, 建议前往此处查看相关代码
+<https://cplib.tifa-233.com/include/util/ndvec.hpp> 存放了笔者对该算法/数据结构的最新实现, 建议前往此处查看相关代码
 {% endnote %}
 
 <!-- more -->

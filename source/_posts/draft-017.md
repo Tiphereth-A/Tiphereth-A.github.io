@@ -23,7 +23,7 @@ tags:
 {% endnote %}
 
 {% note warning %}
-<https://cplib.tifa-233.com/src/code/nt/lsieve_func.hpp> 存放了笔者对该算法/数据结构的最新实现, 建议前往此处查看相关代码
+<https://cplib.tifa-233.com/include/nt/lsieve_func.hpp> 存放了笔者对该算法/数据结构的最新实现, 建议前往此处查看相关代码
 {% endnote %}
 
 <!-- more -->

@@ -106,7 +106,7 @@ $$
 ## 简单无向图三元环计数
 
 {% note warning %}
-<https://cplib.tifa-233.com/src/code/graph/ringenum3.hpp> 存放了笔者对该算法/数据结构的最新实现, 建议前往此处查看相关代码
+<https://cplib.tifa-233.com/include/graph/ringenum3.hpp> 存放了笔者对该算法/数据结构的最新实现, 建议前往此处查看相关代码
 {% endnote %}
 
 ### 例题 - [Luogu P1989] 无向图三元环计数
@@ -238,7 +238,7 @@ $$
 ## 简单无向图四元环计数
 
 {% note warning %}
-<https://cplib.tifa-233.com/src/code/graph/ringcnt4.hpp> 存放了笔者对该算法/数据结构的最新实现, 建议前往此处查看相关代码
+<https://cplib.tifa-233.com/include/graph/ringcnt4.hpp> 存放了笔者对该算法/数据结构的最新实现, 建议前往此处查看相关代码
 {% endnote %}
 
 ### 做法

@@ -20,7 +20,7 @@ date: 2021-10-31 21:28:15
 {% endnote %}
 
 {% note warning %}
-<https://cplib.tifa-233.com/src/code/lalg/mat.hpp> 存放了笔者对该算法/数据结构的最新实现, 建议前往此处查看相关代码
+<https://cplib.tifa-233.com/include/lalg/mat.hpp> 存放了笔者对该算法/数据结构的最新实现, 建议前往此处查看相关代码
 {% endnote %}
 
 <!-- more -->

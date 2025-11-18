@@ -17,7 +17,7 @@ date: 2020-10-02 22:23:57
 自适应 Simpson 法是一种基于 Simpson 法的数值积分算法
 
 {% note warning %}
-<https://cplib.tifa-233.com/src/code/math/simpson.hpp> 存放了笔者对该算法/数据结构的最新实现, 建议前往此处查看相关代码
+<https://cplib.tifa-233.com/include/math/simpson.hpp> 存放了笔者对该算法/数据结构的最新实现, 建议前往此处查看相关代码
 {% endnote %}
 
 <!-- more -->

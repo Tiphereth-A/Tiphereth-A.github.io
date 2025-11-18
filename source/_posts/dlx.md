@@ -24,7 +24,7 @@ date: 2020-10-25 16:54:34
 DLX(Dancing Links X)是一种用于解决精确覆盖问题的优美算法
 
 {% note warning %}
-<https://cplib.tifa-233.com/src/code/util/dlx.hpp> 存放了笔者对该算法/数据结构的最新实现, 建议前往此处查看相关代码
+<https://cplib.tifa-233.com/include/opt/dlx.hpp> 存放了笔者对该算法/数据结构的最新实现, 建议前往此处查看相关代码
 {% endnote %}
 
 <!-- more -->
@@ -515,7 +515,6 @@ $$
 - Q: `head`结点, 行首结点和列首结点存在哪里
 
   A: 实际上
-
   - 行首结点是虚拟结点, 不需要存
 
   - `head`结点存为 `node[0]`
