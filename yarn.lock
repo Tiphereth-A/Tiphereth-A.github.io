@@ -624,10 +624,10 @@ hasown@^2.0.2:
   dependencies:
     function-bind "^1.1.2"
 
-hexo-bin-pagination@^0.0.3:
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/hexo-bin-pagination/-/hexo-bin-pagination-0.0.3.tgz#c2b48acb3a9c358b7aba5a834fd7c670faa6e932"
-  integrity sha512-6N1hx0bBsUhm9HngPNMy0JIoijofBXML1N4YzbDpISM/zNYk9tIQ5VMXy9dYgKji6498lgcScdGWhK01hAqXRA==
+hexo-bin-pagination@^0.0.4:
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/hexo-bin-pagination/-/hexo-bin-pagination-0.0.4.tgz#c81c72a11174fd4f4985fd938d930bb54e78bf4d"
+  integrity sha512-+pPSSSbLCa2cZ3nQ/f0zen/BDk63Ah2g7/v9vxV7nDjdhKWH++BFq2MmFGx6zK2R3Xp7sPNabYrJZisgLKOiJg==
   dependencies:
     "@cromarmot/pagination" "0.0.2"
     hexo-util "^2.4.0"
