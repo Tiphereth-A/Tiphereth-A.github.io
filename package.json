@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "hexo": "^8.1.1",
-    "hexo-bin-pagination": "^0.0.3",
+    "hexo-bin-pagination": "^0.0.4",
     "hexo-deployer-git": "^4.0.0",
     "hexo-filter-nofollow": "^2.0.2",
     "hexo-generator-archive": "^2.0.0",
