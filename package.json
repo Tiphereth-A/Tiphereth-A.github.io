@@ -41,7 +41,7 @@
   "devDependencies": {
     "@prettier/plugin-xml": "^3.4.2",
     "husky": "^9.1.7",
-    "prettier": "^3.7.4",
+    "prettier": "^3.8.0",
     "prettier-plugin-java": "^2.8.0",
     "svgo": "^4.0.0"
   },
