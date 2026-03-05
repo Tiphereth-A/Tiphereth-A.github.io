@@ -43,7 +43,7 @@
     "husky": "^9.1.7",
     "prettier": "^3.8.1",
     "prettier-plugin-java": "^2.8.0",
-    "svgo": "^4.0.0"
+    "svgo": "^4.0.1"
   },
   "packageManager": "yarn@1.22.22"
 }
