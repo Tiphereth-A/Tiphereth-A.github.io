@@ -11,12 +11,6 @@ on:
 
 permissions:
   contents: read
-  pages: write
-  id-token: write
-
-concurrency:
-  group: ${{ github.head_ref || 'x' }}-${{ github.workflow }}-${{ github.ref }}-pages
-  cancel-in-progress: true
 
 jobs:
   build:
@@ -47,6 +41,9 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
