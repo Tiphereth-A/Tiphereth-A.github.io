@@ -186,8 +186,6 @@ $$
 
 因其原理涉及到后面要讲的概念, 故此处略去相关讲解
 
-> Miller-Rabin 算法和用于质因数分解的 Pollard-Rho 算法的模板 -> {% post_link p-test-mrpr %}
-
 [^1]: 可以用 FFT 优化到 $O(k\log^2 n\log\log n\log\log\log n)$ , 参见 [此处](https://en.wikipedia.org/wiki/Miller%E2%80%93Rabin_primality_test#Complexity)
 
 [^2]: 若广义 Riemann 猜想(GRH)得到证实, 则可将检验的数换为 $2..2\lfloor\log^2 n\rfloor$ 从而使复杂度变为 $O(\log^5n)$, 参见 [此处](https://www.ams.org/mcom/1990-55-191/S0025-5718-1990-1023756-8/S0025-5718-1990-1023756-8.pdf)
@@ -667,7 +665,6 @@ $$
 1. 求任意 $n$ 个数模 $p$ 的逆元
 
    对于任意 $n$ 个数 $a_1,a_2,\dots,a_n$, 我们可以这样求出其逆元
-
    1. 令 $s_i=\prod_{j=1}^ia_j$
    1. 求出 $s_n$ 的逆元, 记作 $v_n$
    1. 注意到

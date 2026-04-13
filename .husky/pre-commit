@@ -34,12 +34,6 @@ regen_figures() {
         result=1
       ;;
 
-      imgcode/neato/*)
-        echo "Proceed as neato"
-        cat $src | neato -Tsvg > $outsrc_svg
-        result=1
-      ;;
-
       imgcode/drawio/*)
         echo "Proceed as drawio"
         draw.io -x -f svg -o $output_dir $src --embed-svg-images
