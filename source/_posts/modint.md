@@ -20,7 +20,7 @@ date: 2021-10-26 22:44:15
 {% endnote %}
 
 {% note warning %}
-<https://cplib.tifa-233.com/include/math/mint.hpp>, <https://cplib.tifa-233.com/include/math/mint_s30.hpp>, <https://cplib.tifa-233.com/include/math/mint_s63.hpp>, <https://cplib.tifa-233.com/include/math/mint_sbrt.hpp>, <https://cplib.tifa-233.com/include/math/mint_d31.hpp>, <https://cplib.tifa-233.com/include/math/mint_d63.hpp>, <https://cplib.tifa-233.com/include/math/mint_dbrt.hpp> 存放了笔者对该算法/数据结构的最新实现, 其中使用了 Montgomery 约乘/Barrett 约减, 建议前往此处查看相关代码
+<https://cplib.tifa-233.com/src/math/ds/mint/_base/lib.hpp>, <https://cplib.tifa-233.com/src/math/ds/mint/ms/lib.hpp>, <https://cplib.tifa-233.com/src/math/ds/mint/ms64/lib.hpp>, <https://cplib.tifa-233.com/src/math/ds/mint/bs/lib.hpp>, <https://cplib.tifa-233.com/src/math/ds/mint/md/lib.hpp>, <https://cplib.tifa-233.com/src/math/ds/mint/md64/lib.hpp>, <https://cplib.tifa-233.com/src/math/ds/mint/bd/lib.hpp> 存放了笔者对该算法/数据结构的最新实现, 其中使用了 Montgomery 约乘/Barrett 约减, 建议前往此处查看相关代码
 {% endnote %}
 
 <!-- more -->
