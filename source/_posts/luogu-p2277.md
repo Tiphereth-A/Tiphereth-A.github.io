@@ -87,7 +87,6 @@ date: 2021-11-05 01:01:36
    {% icodeweb blog lang:c luogu-p2277/RMSEL4.c %}
 
 1. 我们需要枚举 5 种运算方式
-
    - $(((a\odot b)\odot c)\odot d)$
    - $((a\odot (b\odot c))\odot d)$
    - $(a\odot ((b\odot c)\odot d))$

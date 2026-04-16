@@ -179,7 +179,6 @@ $$
   由同态基本定理, $R_e\cong\mathbb{Z}$, $R_e$ 为一整环, 从而其分式域 $\mathbb{F}_e\cong\mathbb{Q}$
 
   显然
-
   - $\mathbb{F}_e\leqslant\mathbb{F}$
   - $\mathbb{F}$ 任一素域均包含 $\mathbb{F}_e$
 

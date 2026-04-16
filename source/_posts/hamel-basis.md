@@ -87,7 +87,6 @@ date: 2022-09-12 00:54:15
 **<a id="def-1-2">定义 - 1-2</a>** 对线性空间 $(V,+,\cdot,\Bbb{P})$,
 
 1. 对于向量组 $b_1,b_2,\dots,b_m$, 令 $\{a_1,a_2,\dots,a_n\}\subseteq\{b_1,b_2,\dots,b_m\}$, 若
-
    - 向量组 $a_1,a_2,\dots,a_n$ 线性无关
    - $\forall\beta\in\{b_1,b_2,\dots,b_m\}\setminus\{a_1,a_2,\dots,a_n\}$, 向量组
 

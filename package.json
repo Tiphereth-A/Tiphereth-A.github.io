@@ -10,9 +10,6 @@
     "server": "hexo server --debug",
     "prepare": "husky"
   },
-  "hexo": {
-    "version": "8.1.1"
-  },
   "dependencies": {
     "hexo": "^8.1.1",
     "hexo-bin-pagination": "^0.0.4",
@@ -39,11 +36,12 @@
     "hexo-word-counter": "^0.2.2"
   },
   "devDependencies": {
-    "@prettier/plugin-xml": "^3.4.2",
     "husky": "^9.1.7",
-    "prettier": "^3.8.3",
-    "prettier-plugin-java": "^2.8.0",
+    "oxfmt": "^0.45.0",
     "svgo": "^4.0.1"
   },
-  "packageManager": "yarn@1.22.22"
+  "packageManager": "yarn@1.22.22",
+  "hexo": {
+    "version": "8.1.1"
+  }
 }

@@ -87,7 +87,6 @@ date: 2020-05-27 20:37:42
 1. $\mathbb{P}$ 上的 $n$ 维向量对于向量的加法和 $\mathbb{P}$ 中的数乘
 1. $\mathbb{P}$ 上的 $m\times n$ 矩阵对于矩阵的加法和 $\mathbb{P}$ 中的数乘
 1. 代数系统 $(\mathbb{P}^2,\oplus,\odot,\mathbb{P})$, 其中
-
    - $(\forall(x_1,x_2),(y_1,y_2)\in\mathbb{P}^2),(x_1,x_2)\oplus(y_1,y_2):=(x_1+y_1,x_2+y_2+x_1y_1)$
    - $(\forall(x_1,x_2)\in\mathbb{P}^2,k\in\mathbb{P}),k\odot(x_1,x_2):=\left(kx_1,kx_2+\frac{k(k-1)}{2}x_1^2\right)$
 

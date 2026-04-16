@@ -46,39 +46,38 @@ $$
 
   <details open>
   <summary>证明</summary>
-
   - $\implies$
-
+    
     一方面
-
+    
     $$
     \frac{d}{e}\mid \frac{n}{e}\implies \left(e\cdot\frac{d}{e}\right)\mid \left(e\cdot\frac{n}{e}\right)\implies d\mid n
     $$
-
+    
     另一方面
-
+    
     $$
     \frac{d}{e}\in\mathbb{Z}\implies e\mid d
     $$
-
+    
     故 $e\mid d\mid n$
-
+    
   - $\impliedby$
-
+    
     由 $e\mid d\mid n$ 可知
-
+    
     $$
     \frac{n}{e},\frac{n}{d},\frac{d}{e}\in\mathbb{Z}
     $$
-
+    
     又
-
+    
     $$
     \frac{n}{e}=\frac{n}{d}\cdot\frac{d}{e}
     $$
-
+    
     故
-
+    
     $$
     \frac{d}{e}\mid \frac{n}{e}
     $$

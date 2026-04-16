@@ -23,7 +23,6 @@ date: 2020-04-27 13:48:01
 
 1. $m$ 元运算: 一个 $A^m\to A$ 的映射
 1. 对一元运算 $\phi,\nu$
-
    1. 恒等运算: $e:A\to A;a\mapsto a$
    1. 乘法: $(\phi\circ\nu)(a):=\phi(\nu(a))$
 

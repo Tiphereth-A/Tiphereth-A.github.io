@@ -44,7 +44,6 @@ Powerful number 有如下性质
 - $\implies$:
 
   令
-
   - $P_1'=\{(p_i,\alpha_i)\in P_n:2\mid\alpha_i\}$
   - $P_2'=\{(p_i,\alpha_i)\in P_n:2\nmid\alpha_i\}$
 
@@ -55,7 +54,6 @@ Powerful number 有如下性质
   $$
 
   令
-
   - $$
     a=\prod_{(p,\alpha)\in P_1'}p^\frac{\alpha}{2}\prod_{(p,\alpha)\in P_2'}p^\frac{\alpha-3}{2}
     $$
