@@ -12,7 +12,7 @@ Petalzu's Page | https://petalzu.top/ | Face the fear, create the future. | /ima
 
 ## 如何交换友链
 
-在评论区按如下格式评论或发送邮件至 <friend-link@tifa-233.com>, 会在三个工作日内响应
+在评论区按如下格式评论或发送邮件至 `friend hyphen link at tifa hyphen 233 dot com`, 会在三个工作日内响应
 
 ```text
 name: 名字
@@ -29,7 +29,7 @@ avatar: 头像链接
   {% note warning %}
   为优化访问, 提供的 avatar 会缓存至本站, 本站不具有关于提供的 avatar 的一切权利, 同时也不承担关于提供的 avatar 的一切责任. 若有包括但不限于版权纠纷等情况, 请联系提供者而不是本站
 
-  若需更新 avatar, 请在评论区留言或发送邮件至 <friend-link@tifa-233.com>
+  若需更新 avatar, 请在评论区留言或发送邮件至 `friend hyphen link at tifa hyphen 233 dot com`
   {% endnote %}
 
   avatar 可以为空. avatar 为空, 图床无效或其他技术原因等情况时默认使用
