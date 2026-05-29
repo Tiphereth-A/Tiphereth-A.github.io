@@ -5,7 +5,8 @@ sticky: 2147483647
 date: 2020-05-04 19:07:23
 ---
 
-![](/images/TifaBlog_ba-style@nulla.top.webp)
+<img id="about-header-image" src="">
+<noscript><img src="/images/header/lab.nulla.top/ba-logo/1.webp"></noscript>
 
 一个数学系 ACMer 的小站, 主要记录与数学和算法竞赛相关的内容
 
