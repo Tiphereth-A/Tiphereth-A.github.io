@@ -869,10 +869,10 @@ hexo-tag-mmedia@^1.2.1:
     json5 "^2.2.3"
     utility "^1.18.0"
 
-hexo-theme-next@^8.29.0:
-  version "8.29.0"
-  resolved "https://registry.yarnpkg.com/hexo-theme-next/-/hexo-theme-next-8.29.0.tgz#a01734804c7ce8ca0d6c232f48f7a1dcf0dcd040"
-  integrity sha512-mj1wFEwEQCcKeJqnKqV559WsqyVRzZC83PBjjWvOrjBAADvW6gyaCk6X4Zok55Xp6P+7an5q68y1nyzJHOVIAg==
+hexo-theme-next@^8.29.1:
+  version "8.29.1"
+  resolved "https://registry.yarnpkg.com/hexo-theme-next/-/hexo-theme-next-8.29.1.tgz#09114ee7351c276135309a2fb2260df6040a82de"
+  integrity sha512-rTiBjbVE6KR1YRsqB4wHPUjSJSBHyZXxMmXStuqQsx+uSz7aRRgZ7sH5dKo7cz41jQoGaI8MvI/AHTiNuIIclQ==
 
 hexo-util@2.5.0:
   version "2.5.0"
